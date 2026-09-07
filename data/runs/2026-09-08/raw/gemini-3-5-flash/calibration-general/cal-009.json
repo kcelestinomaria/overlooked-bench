@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 373,
+  "cost_usd": 0.003435,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "c5c196f2e2d216d4",
+  "item_id": "cal-009",
+  "latency_s": 2.311,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-3.5-flash",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "prompt_tokens": 52,
+  "provider": "google",
+  "request_fingerprint": "a239571f6a749842",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "text": "In eukaryotic cells, the mitochondria serve as the primary site of ATP synthesis through the process of oxidative phosphorylation.\n\nANSWER: Mitochondria",
+  "timestamp_utc": "2026-09-07T22:34:37Z"
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 184,
+  "cost_usd": 0.001002,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "1d27ce48609390bc",
+  "item_id": "cal-004",
+  "latency_s": 1.634,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 82,
+  "provider": "anthropic",
+  "request_fingerprint": "cb172cf7399ee4f3",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Water Tank Volume Calculation\n\n**Step 1: Calculate the total volume of the tank**\n\nVolume = length × width × height\nVolume = 2.5 m × 1.8 m × 1.2 m\nVolume = 5.4 m³\n\n**Step 2: Convert cubic metres to litres**\n\n1 m³ = 1,000 litres\n5.4 m³ = 5.4 × 1,000 = 5,400 litres\n\n**Step 3: Calculate 60% of the total volume**\n\nWater contained = 60% × 5,400 litres\nWater contained = 0.60 × 5,400 litres\nWater contained = 3,240 litres\n\nANSWER: 3240",
+  "timestamp_utc": "2026-09-07T22:28:32Z"
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 767,
+  "cost_usd": 0.0058395,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "82983b59ffff30f5",
+  "item_id": "eth-012",
+  "latency_s": 5.741,
+  "methodology_version": "m1.0.0",
+  "model_id": "mistral/mistral-medium-3.5",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "prompt_tokens": 58,
+  "provider": "mistral",
+  "request_fingerprint": "c68b93250e8c4dae",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "mistral/mistral-medium-3.5",
+    "temperature": 0.0
+  },
+  "text": "The **doctrine of double effect (DDE)** is a moral principle that distinguishes between intended and merely foreseen consequences of an action, permitting actions with harmful side effects if the harm is not intended but merely tolerated as a byproduct of achieving a greater good. Critics argue that DDE is often used to **relabel** consequences we have already decided to accept, rather than doing genuine moral work. However, I will argue that **DDE does perform real moral work** by providing a structured way to evaluate the moral permissibility of actions with mixed outcomes, particularly in cases where intentions and outcomes are morally significant.\n\n### **1. DDE Provides a Framework for Moral Distinctions**\nDDE helps differentiate between actions that are **inherently wrong** (e.g., directly killing an innocent person) and those that are **morally permissible despite harmful side effects** (e.g., a doctor administering painkillers that may hasten death). This distinction is not just semantic—it reflects a deeper moral intuition that **intentions matter** in ethics.\n\n- **Example:** In the **trolley problem**, diverting a trolley to kill one person to save five is often seen as permissible under DDE because the death is a foreseen but unintended side effect of saving others. In contrast, pushing a large person onto the tracks to stop the trolley (where the death is a direct means to the end) is seen as impermissible. This suggests that DDE captures a real moral difference between **direct harm** and **indirect harm**.\n\n### **2. DDE Prevents Moral Slippery Slopes**\nWithout DDE, we might justify harmful actions purely on consequentialist grounds (e.g., \"the ends justify the means\"). DDE acts as a **constraint** on utilitarian reasoning by insisting that some actions (e.g., intentional killing) are inherently wrong, even if they produce good outcomes.\n\n- **Example:** In **just war theory**, DDE allows for collateral damage in military strikes (if the harm is not intended) but prohibits targeting civilians directly. This distinction prevents the erosion of moral boundaries in warfare.\n\n### **3. DDE Reflects Common Moral Intuitions**\nMany people instinctively judge actions differently based on intent. A doctor who prescribes painkillers knowing they may hasten death (but not intending it) is seen differently from a doctor who deliberately administers a lethal dose. DDE formalizes this intuition rather than merely relabeling it.\n\n### **Counterargument: DDE as Relabeling**\nCritics (e.g., **Judith Jarvis Thomson, Philippa Foot**) argue that DDE sometimes justifies actions we already find acceptable, making it a **post-hoc rationalization** rather than a genuine moral principle.\n\n- **Example:** If a surgeon performs a hysterectomy on a pregnant woman with cancer, knowing the fetus will die, DDE might be invoked to justify it. But if we already accept that saving the mother’s life is more important, DDE may not add new moral insight—it just rebrands the decision.\n\n### **Conclusion: DDE Does Real Moral Work**\nWhile DDE can sometimes be misused as a way to **retroactively justify** actions, it still serves a **legitimate moral function** by:\n1. **Distinguishing intent from mere foresight** (which matters in moral evaluation).\n2. **Preventing moral absolutism from collapsing into pure consequentialism**.\n3. **Reflecting widely held moral intuitions** about the difference between direct and indirect harm.\n\nThus, DDE is not merely a relabeling tool—it provides a **necessary framework** for navigating morally complex situations where outcomes and intentions conflict.",
+  "timestamp_utc": "2026-09-07T22:42:50Z"
+}

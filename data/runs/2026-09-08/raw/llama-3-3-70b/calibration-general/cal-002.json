@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 274,
+  "cost_usd": 0.00029376,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 1.988,
+  "methodology_version": "m1.0.0",
+  "model_id": "meta/llama-3.3-70b",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "prompt_tokens": 134,
+  "provider": "meta",
+  "request_fingerprint": "3383826a274a0417",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "meta/llama-3.3-70b",
+    "temperature": 0.0
+  },
+  "text": "To find the cooperative's total revenue, we need to calculate the mass of coffee that remains after drying, and then calculate the revenue from each grade of coffee.\n\nFirst, let's calculate the mass of coffee lost during drying:\n15% of 4800 kg = 0.15 x 4800 kg = 720 kg\n\nSo, the mass of coffee that remains after drying is:\n4800 kg - 720 kg = 4080 kg\n\nNext, let's calculate the mass of coffee that is graded AA:\n40% of 4080 kg = 0.4 x 4080 kg = 1632 kg\n\nThe mass of coffee that is not graded AA is:\n4080 kg - 1632 kg = 2448 kg\n\nNow, let's calculate the revenue from each grade of coffee:\nRevenue from AA coffee: 1632 kg x $6.20 per kg = $10,099.20\nRevenue from non-AA coffee: 2448 kg x $4.50 per kg = $11,016.00\n\nFinally, let's calculate the cooperative's total revenue:\nTotal revenue = Revenue from AA coffee + Revenue from non-AA coffee\n= $10,099.20 + $11,016.00\n= $21,115.20\n\nANSWER: $21,115.20",
+  "timestamp_utc": "2026-09-07T22:44:44Z"
+}

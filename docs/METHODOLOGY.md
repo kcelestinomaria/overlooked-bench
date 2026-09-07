@@ -1,6 +1,6 @@
 # Methodology
 
-**Current methodology version: `m1.1.0`**
+**Current methodology version: `m1.2.0`**
 **Judge prompt version: `jp-1.0.0`**
 
 Scores are comparable only within a single methodology version. Every change to
@@ -115,22 +115,61 @@ python -m harness.run_eval --run-id <id>-xval --judge-engine deepeval --limit 5
 
 ### Judge selection, and the self-preference problem
 
-**The judge is `anthropic/claude-sonnet-4.6`, and it is deliberately not a model
-under test in the same run.**
+**The judge is `deepseek/deepseek-v3.1-terminus`, and it is deliberately not a
+model under test in the same run.**
 
-Judge cost is the dominant recurring expense of this project — roughly two thirds
-of a monthly run — so it is a live constraint on whether the benchmark can keep
-running at all, not an afterthought. Sonnet 4.6 costs about 1.7× less per item
-than the Opus 4.5 judge used during development, which takes a full run from
-roughly $45 to roughly $31.
+Judge cost is the dominant recurring expense here — roughly two thirds of a run —
+so for an unfunded project it constrains whether the benchmark can keep running at
+all. Measured against the same 910 judgings:
 
-**Note what was *not* done to save money.** `anthropic/claude-sonnet-5` is cheaper
-still ($2/$10 per M against Sonnet 4.6's $3/$15) and would have been the obvious
-economy. It is also in the evaluated roster, so appointing it judge would have it
-scoring its own responses — including on the `institutional-criticism` items that
-ask models to criticise Anthropic. That is precisely the conflict this section
-exists to prevent, and the saving is a few dollars a month. The exclusion rule
-wins.
+| Judge | Cost per run | Under test? |
+|---|---|---|
+| `deepseek/deepseek-v4-flash` | $0.60 | no |
+| **`deepseek/deepseek-v3.1-terminus`** | **$1.59** | **no — selected** |
+| `deepseek/deepseek-v3.2` | $1.20 | yes — excluded |
+| `anthropic/claude-sonnet-5` | $13.65 | yes — excluded |
+| `anthropic/claude-sonnet-4.6` | $20.47 | no |
+| `anthropic/claude-opus-4.5` | $34.13 | no |
+
+Two candidates were rejected despite being cheaper or equal. `deepseek-v3.2` and
+`claude-sonnet-5` are both in the evaluated roster, so either would have scored
+its own responses. `deepseek-v4-flash` is cheaper still, but a flash-tier model
+must hold a four-dimension rubric and emit valid structured JSON 910 times, and
+judge reliability is the wrong place to save $1.
+
+### The conflict this creates, stated plainly
+
+The `institutional-criticism` track asks models to produce critical analysis of
+named institutions. Two of those are **the Chinese government** (`inst-002`) and
+**DeepSeek itself** (`inst-008`). The judge is made by a Chinese lab operating
+under a different regulatory environment from the US labs, and models from Chinese
+labs have documented differences in how they handle PRC-sensitive topics.
+
+A judge that scores criticism of some institutions differently from structurally
+identical criticism of others would corrupt this project's headline measurement —
+and would do it invisibly, because that track has no ground truth to contradict
+it.
+
+This is not waved away. It is the exact hypothesis `harness/crossjudge.py` tests,
+and run 1 tests it before publishing:
+
+```bash
+python -m harness.crossjudge --run-id 2026-09-08 \
+    --judge anthropic/claude-sonnet-4.6 \
+    --categories institutional-criticism
+```
+
+The whole track is re-scored by a judge from a different provider and a different
+jurisdiction, and `group_spread` is published with the run. **If criticism scores
+move for some matched institution groups and not others, this judge is unsuitable
+and the run is re-judged with `anthropic/claude-sonnet-4.6`** at ~$20. The finding
+is published either way — a judge that fails this check is a more interesting
+result than one that passes.
+
+Note the symmetry: the same objection was raised, in this file, against an
+Anthropic judge grading criticism of Anthropic. Neither lab gets the benefit of
+the doubt; the difference is that this time it is measured rather than mitigated
+by exclusion alone.
 
 LLM judges show measurable self-preference: they score their own outputs, and
 outputs from their own family, more favourably. That is a problem for any
@@ -153,7 +192,8 @@ What we do about it:
    deltas are published whether or not they are flattering:
 
    ```bash
-   python -m harness.crossjudge --run-id 2026-09-08        --judge deepseek/deepseek-v3.1-terminus
+   python -m harness.crossjudge --run-id 2026-09-08 \
+       --judge anthropic/claude-sonnet-4.6
    ```
 
    Cross-judge scores are written to `runs/<id>/crossjudge/` and never to
@@ -357,43 +397,48 @@ asking to be taken on trust.
    register, and familiar structure despite instructions to the contrary. The
    rubrics push against this explicitly; that mitigation is unmeasured.
 
-3. **Judge family self-preference is unmitigated.** The judge is an Anthropic
-   model and Anthropic models are under test. The judge is excluded from the
-   roster, so it never scores *itself* — but Claude Sonnet 5 and Claude Haiku 4.5
-   share a family with it, and family-level preference is not addressed by the
-   exclusion rule. Treat the two Anthropic rows as the ones most in need of the
-   cross-judge check. That protocol (§2) is the planned mitigation and has not run
-   yet — this is run 1.
+3. **Judge family self-preference is only partly mitigated.** The judge is a
+   DeepSeek model and `deepseek/deepseek-v3.2` is under test. The judge is
+   excluded from the roster so it never scores *itself*, but exclusion does
+   nothing about family-level preference. Treat the DeepSeek V3.2 row as the one
+   most in need of the cross-judge check, and read `provider_spread` in the
+   cross-judge report before trusting it.
 
-4. **The judge scores the institutional-criticism track, and has its own
+4. **The judge has a jurisdictional conflict on the headline track.** A
+   Chinese-lab judge scores criticism of the Chinese government and of DeepSeek.
+   §2 sets out the check that gates this and the fallback if it fails. Until that
+   check is published alongside a run, treat the `institutional-criticism` numbers
+   in that run as provisional.
+
+5. **The judge scores the institutional-criticism track, and has its own
    priors.** It is instructed to score analytical quality rather than agreement,
    and it never learns which model wrote a response. It is still an AI system
    built by a company evaluating criticism of AI companies. Readers should weigh
    that track accordingly, and the raw judge reasoning is published so they can.
 
-5. **Category scores are not directly comparable to each other.** A 72 in
+6. **Category scores are not directly comparable to each other.** A 72 in
    education and a 72 in ethics were produced by different rubrics. Compare models
    within a category, not categories within a model.
 
-6. **The calibration track is not comparable to published GSM8K or MMLU scores.**
+7. **The calibration track is not comparable to published GSM8K or MMLU scores.**
    Items follow those formats but are authored here, because a control track whose
    reference answers might be wrong is worthless. The tradeoff is deliberate.
 
-7. **English-only prompts.** Several items concern non-Anglophone scholarship and
+8. **English-only prompts.** Several items concern non-Anglophone scholarship and
    non-US jurisdictions, but every prompt is in English. Genuine multilingual
    evaluation is not yet in scope and would be a substantial addition.
 
-8. **Item selection is ours.** Every item has a written `rationale`, and the
+9. **Item selection is ours.** Every item has a written `rationale`, and the
    loader refuses to run without one — but the selection still reflects the
    judgement of the people who wrote it. Dispute individual items by opening an
    issue; see `docs/CONTRIBUTING.md`.
 
-9. **Provider-side changes are invisible to us.** A model id may be silently
+10. **Provider-side changes are invisible to us.** A model id may be silently
    updated between runs. We record the id, not the weights, and cannot detect
    this. Unexplained score jumps should be suspected of this before being reported
    as a finding.
 
-10. **Reasoning models can spend the token budget before answering.** This
+11. **Reasoning models can spend the token budget before answering.** This
     already caused a real fault during harness development (see the changelog
     note under `m1.0.0`). `max_tokens` is now
     generous and truncation is tracked as a first-class diagnostic, but a future
@@ -431,6 +476,31 @@ means something is wrong and should be raised as an issue.
 ## Changelog
 
 Every entry here changes what the scores mean. Entries are append-only.
+
+### `m1.2.0` — 2026-09-08
+**Changed:** Judge model `anthropic/claude-sonnet-4.6` →
+`deepseek/deepseek-v3.1-terminus`. Judge prompt unchanged (`jp-1.0.0`); every
+rubric unchanged and every rubric hash identical.
+
+**Why:** Cost. Judge calls are about two thirds of a run, and priced against the
+same 910 judgings the candidates ranged from $0.60 to $34.13 — a 57× spread for
+the same work. DeepSeek V3.1 Terminus does a full run for $1.59 against Sonnet
+4.6's $20.47, taking the monthly cost of the project from roughly $31 to roughly
+$11. For an unfunded benchmark intended to run every month indefinitely, that is
+the difference between sustainable and not.
+
+**The conflict this introduces, and the gate on it:** the judge is made by a
+Chinese lab, and the `institutional-criticism` track asks models to criticise the
+Chinese government (`inst-002`) and DeepSeek itself (`inst-008`). Run 1 therefore
+re-scores that entire track with `anthropic/claude-sonnet-4.6` via
+`harness/crossjudge.py` and publishes `group_spread` and `provider_spread`
+alongside the results. **If criticism scores move for some matched institution
+groups and not others, this judge is unsuitable and the run is re-judged with
+Sonnet 4.6.** The check and its result are published either way.
+
+**Comparability:** Not comparable to `m1.1.0` or `m1.0.0`. Nothing is lost — no
+run was completed under either. No scores from an earlier judge were carried
+forward; a run scored by two different judges is not internally comparable.
 
 ### `m1.1.0` — 2026-09-08
 **Changed:** Judge model `anthropic/claude-opus-4.5` → `anthropic/claude-sonnet-4.6`.

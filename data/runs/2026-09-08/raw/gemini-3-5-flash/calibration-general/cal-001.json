@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 965,
+  "cost_usd": 0.0088185,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 4.332,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-3.5-flash",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "prompt_tokens": 89,
+  "provider": "google",
+  "request_fingerprint": "7ff2c19bf34976c6",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "text": "To find the tailor's total profit, we need to calculate her total revenue from selling the dresses and subtract her total cost for the fabric.\n\n**Step 1: Calculate the total amount of fabric bought**\n* Number of rolls = 4\n* Metres per roll = 45 metres\n* Total fabric = $4 \\times 45 = 180\\text{ metres}$\n\n**Step 2: Calculate the total cost of the fabric**\n* Cost per metre = $8\n* Total cost = $180\\text{ metres} \\times \\$8/\\text{metre} = \\$1,440$\n\n**Step 3: Calculate the number of dresses made**\n* Fabric used per dress = 12 metres\n* Total dresses made = $180\\text{ metres} \\div 12\\text{ metres/dress} = 15\\text{ dresses}$\n\n**Step 4: Calculate the total revenue from selling the dresses**\n* Selling price per dress = $150\n* Total revenue = $15\\text{ dresses} \\times \\$150/\\text{dress} = \\$2,250$\n\n**Step 5: Calculate the total profit**\n* Profit = Total Revenue - Total Cost\n* Profit = $\\$2,250 - \\$1,440 = \\$810$\n\nANSWER: 810",
+  "timestamp_utc": "2026-09-07T22:34:33Z"
+}

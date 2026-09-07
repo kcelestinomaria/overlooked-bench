@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 229,
+  "cost_usd": 0.001244,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 1.789,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 99,
+  "provider": "anthropic",
+  "request_fingerprint": "7f33a74a1e28014a",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Calculating the Tailor's Profit\n\n**Step 1: Calculate total fabric purchased**\n- Number of rolls: 4\n- Length per roll: 45 metres\n- Total fabric = 4 × 45 = 180 metres\n\n**Step 2: Calculate total cost of fabric**\n- Cost per metre: $8\n- Total cost = 180 × $8 = $1,440\n\n**Step 3: Calculate number of dresses made**\n- Fabric per dress: 12 metres\n- Number of dresses = 180 ÷ 12 = 15 dresses\n\n**Step 4: Calculate total revenue from selling dresses**\n- Selling price per dress: $150\n- Total revenue = 15 × $150 = $2,250\n\n**Step 5: Calculate total profit**\n- Profit = Total revenue - Total cost\n- Profit = $2,250 - $1,440 = $810\n\nANSWER: 810",
+  "timestamp_utc": "2026-09-07T22:28:31Z"
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 191,
+  "cost_usd": 0.0006312,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 2.115,
+  "methodology_version": "m1.0.0",
+  "model_id": "moonshotai/kimi-k2.5",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "prompt_tokens": 97,
+  "provider": "moonshotai",
+  "request_fingerprint": "f24f96d42067a018",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "moonshotai/kimi-k2.5",
+    "temperature": 0.0
+  },
+  "text": " I need to find the total profit, which is total revenue minus total costs.\n\n**Step 1: Calculate total fabric purchased**\n- Number of rolls: 4\n- Metres per roll: 45\n- Total metres: 4 × 45 = 180 metres\n\n**Step 2: Calculate total cost**\n- Cost per metre: $8\n- Total cost: 180 × $8 = $1,440\n\n**Step 3: Calculate number of dresses made**\n- Fabric per dress: 12 metres\n- Number of dresses: 180 ÷ 12 = 15 dresses\n\n**Step 4: Calculate total revenue**\n- Price per dress: $150\n- Total revenue: 15 × $150 = $2,250\n\n**Step 5: Calculate profit**\n- Profit = Revenue − Cost = $2,250 − $1,440 = $810\n\nANSWER: 810",
+  "timestamp_utc": "2026-09-07T22:42:37Z"
+}

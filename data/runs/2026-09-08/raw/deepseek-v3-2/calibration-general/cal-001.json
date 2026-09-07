@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 140,
+  "cost_usd": 8.288e-05,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 1.664,
+  "methodology_version": "m1.0.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 86,
+  "provider": "deepseek",
+  "request_fingerprint": "e1b2452ff90a5ef3",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "Let's break it down step by step.\n\n1. **Total fabric bought**  \n   - 4 rolls × 45 metres = 180 metres.\n\n2. **Cost of fabric**  \n   - 180 metres × $8 per metre = $1,440.\n\n3. **Number of dresses made**  \n   - 180 metres ÷ 12 metres per dress = 15 dresses.\n\n4. **Revenue from selling dresses**  \n   - 15 dresses × $150 per dress = $2,250.\n\n5. **Profit**  \n   - Profit = Revenue − Cost  \n   - Profit = $2,250 − $1,440 = $810.\n\nANSWER: 810",
+  "timestamp_utc": "2026-09-07T22:41:00Z"
+}

@@ -167,9 +167,16 @@ surface forty minutes into a run:
 python obench.py run --models claude-haiku-4-5 --limit 2   # a few cents
 ```
 
-A full run of 10 models × 91 items is ~1,820 API calls and takes roughly an hour
-on a laptop. Cost is reported per run in `summary.json` (`total_cost_usd`), read
-from the gateway's own per-call accounting rather than estimated.
+A full run of 10 models × 91 items is ~1,820 API calls, takes roughly an hour on a
+laptop, and costs about **$11** — ~$9 of model responses and ~$1.60 of judging.
+Cost is reported per run in `summary.json` (`total_cost_usd`), read from the
+gateway's own per-call accounting rather than estimated.
+
+Judging is deliberately the cheap half. Priced across candidate judges, the same
+910 judgings ranged from $0.60 to $34 — a 57× spread for identical work — and an
+unfunded benchmark that intends to run monthly forever cannot pick from the top of
+that range. What the cheap judge costs in credibility is measured rather than
+assumed: see [cross-judge validation](#cross-judge-validation) below.
 
 ### Individual stages
 
@@ -188,6 +195,37 @@ python obench.py site
 python -m http.server 8000
 # → http://localhost:8000/site/
 ```
+
+### Cross-judge validation
+
+The judge is not a neutral instrument. It is built by a lab with an interest in
+the results, and the `institutional-criticism` track asks models to criticise
+institutions — including AI labs and governments. So the same responses are
+re-scored by a judge from a different provider, and the disagreement is published:
+
+```bash
+python -m harness.crossjudge --run-id 2026-09-08 \
+    --judge anthropic/claude-sonnet-4.6 \
+    --categories institutional-criticism
+```
+
+Cross-judge scores go to `runs/<id>/crossjudge/` and never to `scored/`, so a
+cross-check can never silently become the published result. Four numbers decide
+whether a judge is trustworthy:
+
+| Signal | Safe | Not safe |
+|---|---|---|
+| `mean_delta` | any value — uniform harshness is harmless | — |
+| `rank_correlation` | near 1.0, the leaderboard order survives | reordering |
+| `provider_spread` | near 0 | one provider's models move → **family preference** |
+| `group_spread` | near 0 | one institution group moves → **political preference** |
+
+The last row is the one this project cannot compromise on, and it is why the
+current judge (`deepseek/deepseek-v3.1-terminus`, a Chinese lab, scoring criticism
+of the Chinese government and of DeepSeek) is gated on this check before run 1 is
+published rather than after. If it fails, the run is re-judged with Sonnet 4.6 at
+~20× the cost. The result is published either way — a judge that fails is a more
+interesting finding than one that passes.
 
 ### Re-scoring without re-querying
 

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "education",
+  "completion_tokens": 607,
+  "cost_usd": 0.0018684,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "e0f3bc5260510545",
+  "item_id": "edu-008",
+  "latency_s": 6.951,
+  "methodology_version": "m1.0.0",
+  "model_id": "moonshotai/kimi-k2.5",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "prompt_tokens": 79,
+  "provider": "moonshotai",
+  "request_fingerprint": "6cd601652b47e089",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "moonshotai/kimi-k2.5",
+    "temperature": 0.0
+  },
+  "text": " I'll redesign the **Engine Management Systems** module to address both diagnostic reasoning and customer communication gaps.\n\n## Module: Engine Management Systems (8 weeks)\n\n---\n\n## Current Problems\n- Students memorize fault codes and standard procedures\n- No practice with novel, multi-symptom problems\n- No customer interaction in technical training\n\n---\n\n## Redesigned Teaching Approach\n\n### Week 1-2: Diagnostic Reasoning Foundation\n| Change | Implementation |\n|--------|---------------|\n| **Case-based learning** | Present 10 real cases with incomplete information—students must identify what additional data they need |\n| **Fault injection** | Working vehicles with *multiple* interacting faults (e.g., misfire caused by both spark and fuel pressure issues) |\n| **Think-aloud protocols** | Expert mechanics verbalize their diagnostic process; students practice the same |\n\n### Week 3-5: Structured Problem-Solving\n| Change | Implementation |\n|--------|---------------|\n| **Diagnostic journals** | Students document: hypothesis → test → result → revised hypothesis |\n| **Weekly \"mystery cars\"** | Unknown faults from local garages; 48-hour turnaround required |\n| **Peer challenge** | One student presents diagnosis, others try to disprove it |\n\n### Week 6-7: Customer Communication Integration\n| Change | Implementation |\n|--------|---------------|\n| **Role-play scenarios** | Simulated customers with varying technical knowledge, emotional states, cost constraints |\n| **Translation exercises** | Convert technical findings to three versions: for a mechanic, for an informed owner, for a novice |\n| **Video review** | Record explanations; analyze clarity, jargon use, confidence |\n\n### Week 8: Capstone\n- Receive a vehicle with undisclosed fault\n- Diagnose independently\n- Present repair plan to \"customer\" (played by employer)\n- Justify costs and timeline\n\n---\n\n## Redesigned Assessment\n\n| Component | Old | New |\n|-----------|-----|-----|\n| **Practical exam (40%)** | Execute repair from provided fault code | Diagnose novel fault without code reader; explain process orally |\n| **Diagnostic portfolio (30%)** | Lab reports | 5 case journals with reflection on errors and reasoning |\n| **Communication (20%)** | None | Recorded explanation to simulated customer; employer-rated |\n| **Peer/self assessment (10%)** | None | Review of another student's diagnostic journal |\n\n---\n\n## Key Assessment Innovation: **The \"Broken\" Exam**\n\nFinal practical uses vehicles with *deliberately unfamiliar* faults:\n- Faults from different makes/models than training vehicles\n- Symptoms masked by previous \"repairs\"\n- No scanner compatibility—forces sequential testing\n\nStudents pass only if they demonstrate **systematic elimination of hypotheses**, not correct first guess.\n\n---\n\n## Employer Validation\n- Local garage owners observe capstone assessments\n- Communication rubric co-developed with employers\n- Graduates tracked for 6 months on: first-attempt fix rate, customer complaints, repeat visits",
+  "timestamp_utc": "2026-09-07T22:42:15Z"
+}

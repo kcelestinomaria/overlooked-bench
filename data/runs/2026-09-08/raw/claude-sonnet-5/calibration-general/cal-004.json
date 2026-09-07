@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 296,
+  "cost_usd": 0.003156,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "1d27ce48609390bc",
+  "item_id": "cal-004",
+  "latency_s": 3.125,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 98,
+  "provider": "anthropic",
+  "request_fingerprint": "28e788f0822215fa",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "## Working\n\n**Step 1: Calculate the total volume of the tank**\n\nVolume = length × width × height\nVolume = 2.5 m × 1.8 m × 1.2 m\n\nVolume = 2.5 × 1.8 = 4.5\nVolume = 4.5 × 1.2 = 5.4 m³\n\n**Step 2: Convert volume to litres**\n\n1 m³ = 1000 litres\n\nTotal capacity = 5.4 × 1000 = 5400 litres\n\n**Step 3: Calculate 60% of the total capacity**\n\nWater in tank = 60% × 5400 litres\nWater in tank = 0.6 × 5400\nWater in tank = 3240 litres\n\nANSWER: 3240",
+  "timestamp_utc": "2026-09-07T22:26:54Z"
+}

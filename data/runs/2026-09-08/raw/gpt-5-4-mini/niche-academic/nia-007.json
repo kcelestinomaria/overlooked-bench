@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 474,
+  "cost_usd": 0.002178,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "f9d49ced9849e044",
+  "item_id": "nia-007",
+  "latency_s": 4.369,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 60,
+  "provider": "openai",
+  "request_fingerprint": "625e139ecdc0f3cd",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "In medieval Georgian palaeography, the three main scripts are distinguished by **form, function, and period of use**:\n\n### 1. Asomtavruli\n- The **oldest** Georgian script.\n- Written in **large, separate, rounded or geometric majuscule letters**.\n- Often used for **monumental inscriptions**, headings, and initial letters.\n- In manuscripts, it can appear more formal and decorative.\n\n### 2. Nuskhuri\n- A **smaller, more cursive and compact minuscule** script.\n- Developed after Asomtavruli and commonly used in **religious manuscripts**.\n- Usually paired with Asomtavruli in the liturgical **Khutsuri** system:\n  - **Asomtavruli** = capitals/headings\n  - **Nuskhuri** = body text\n\n### 3. Mkhedruli\n- The **later everyday script**.\n- More **rounded, fluid, and simplified** than the earlier two.\n- Originally used for **secular writing**, eventually becoming the dominant Georgian script.\n- It is the script of modern Georgian as well.\n\n## What script choice tells a scholar\nA manuscript’s script is a major clue for **dating and provenance**:\n\n- **Asomtavruli** tends to point to **earlier, more archaic contexts**, especially in inscriptions or very early manuscript traditions.\n- **Nuskhuri** is strongly associated with **medieval ecclesiastical manuscripts**, especially from the **9th–15th centuries** in liturgical settings.\n- **Mkhedruli** usually suggests a **later medieval or post-medieval** manuscript, often with **secular or administrative** use, though it later becomes general-purpose.\n\n## In practice\nA scholar uses script style to help determine:\n- **Approximate date**: older script forms generally indicate earlier manuscripts.\n- **Likely region or scribal tradition**: certain script habits can be tied to monasteries, scriptoria, or regional schools.\n- **Text type and function**: liturgical vs. secular, formal vs. practical usage.\n\nSo, script choice is not absolute proof of date or origin, but it is one of the most important palaeographic indicators for placing a Georgian manuscript in its historical and cultural context.",
+  "timestamp_utc": "2026-09-07T22:31:21Z"
+}

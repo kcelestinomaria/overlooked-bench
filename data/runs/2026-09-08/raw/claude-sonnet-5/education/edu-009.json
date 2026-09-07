@@ -1,0 +1,26 @@
+{
+  "attempts": 4,
+  "category": "education",
+  "completion_tokens": null,
+  "cost_usd": null,
+  "error": "APIStatusError: Error code: 402 - {'error': {'message': 'A positive credit balance is required for all requests, including BYOK, so fallback providers remain available. Add credits at https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai%3Fmodal%3Dtop-up to continue.', 'type': 'insufficient_funds'}}",
+  "finish_reason": null,
+  "harness_version": "0.1.0",
+  "item_content_hash": "0f67a4a970a5cb98",
+  "item_id": "edu-009",
+  "latency_s": 2.338,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": false,
+  "prompt_tokens": null,
+  "provider": "anthropic",
+  "request_fingerprint": "68b1c48d549f41a8",
+  "request_params": {
+    "max_tokens": 8000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "",
+  "timestamp_utc": "2026-09-07T22:48:57Z"
+}

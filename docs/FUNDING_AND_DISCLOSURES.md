@@ -84,7 +84,7 @@ funding section above and triggers the full disclosure requirement.
 
 The judge is an AI model, built by a company whose models this benchmark also
 evaluates, and one track explicitly asks models to criticise AI labs — including
-that company.
+that company, and to criticise the government of the country it operates in.
 
 There is no version of this project that avoids the problem. Every capable judge
 is built by a lab with an interest in the outcome. What we do instead:
@@ -94,9 +94,15 @@ is built by a lab with an interest in the outcome. What we do instead:
 - The judge's **complete reasoning for every score is committed** to the repo, so
   a reader who suspects bias can go and read the actual justification rather than
   taking a number on faith.
-- From run 2, a **cross-judge sample using a different provider's model** is run
-  each cycle and the per-model deltas are published **whether or not they are
-  flattering to the primary judge.**
+- A **cross-judge check using a different provider's model** re-scores the same
+  responses, and the deltas are published **whether or not they are flattering to
+  the primary judge.** This runs in run 1, not later: the primary judge
+  (`deepseek/deepseek-v3.1-terminus`) is made by a Chinese lab, and the
+  institutional-criticism track asks models to criticise the Chinese government
+  and DeepSeek itself. That entire track is re-scored by
+  `anthropic/claude-sonnet-4.6` before results are published, and the run falls
+  back to that judge if the check fails. See
+  [METHODOLOGY.md §2](METHODOLOGY.md#judge-selection-and-the-self-preference-problem).
 
 This is mitigation, not a solution. It is described in full in
 [METHODOLOGY.md §2](METHODOLOGY.md#judge-selection-and-the-self-preference-problem)

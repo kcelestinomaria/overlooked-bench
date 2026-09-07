@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 175,
+  "cost_usd": 0.0028425,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "a3a44f19ee87a14d",
+  "item_id": "cal-003",
+  "latency_s": 1.931,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 87,
+  "provider": "openai",
+  "request_fingerprint": "5ff13b61d6693dc0",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "Pipe A fills the tank at a rate of:\n\n- \\( \\frac{1}{4} \\) tank per hour\n\nPipe B drains the tank at a rate of:\n\n- \\( \\frac{1}{6} \\) tank per hour\n\nSince both are open together, the net rate is:\n\n\\[\n\\frac{1}{4} - \\frac{1}{6}\n\\]\n\nFind a common denominator:\n\n\\[\n\\frac{3}{12} - \\frac{2}{12} = \\frac{1}{12}\n\\]\n\nSo the tank fills at a net rate of:\n\n- \\( \\frac{1}{12} \\) tank per hour\n\nTherefore, the time to fill 1 tank is:\n\n\\[\n\\frac{1}{1/12} = 12\n\\]\n\nhours.\n\nANSWER: 12",
+  "timestamp_utc": "2026-09-07T22:30:57Z"
+}

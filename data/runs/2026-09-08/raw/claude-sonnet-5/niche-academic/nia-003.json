@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 1412,
+  "cost_usd": 0.014256,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "4a20709e2a1f57a2",
+  "item_id": "nia-003",
+  "latency_s": 18.05,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 68,
+  "provider": "anthropic",
+  "request_fingerprint": "ffdde893e24e015c",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Maslaha in Islamic Legal Theory\n\n## Basic Concept\n\n**Maslaha** (مصلحة) refers to considerations of public welfare, benefit, or utility that jurists may invoke when deriving legal rulings. It rests on the premise that Shari'a's overarching purpose is to secure human welfare and prevent harm (*dar' al-mafasid wa jalb al-masalih*).\n\n## Relationship to Established Sources\n\nMaslaha operates in a hierarchical relationship with the primary sources (Qur'an, Sunna, and *ijma'*, and by extension *qiyas*):\n\n1. **Subordinate role**: Classical theory generally holds that maslaha cannot override explicit textual rulings (*nass*). It functions primarily in areas where the texts are silent or ambiguous.\n\n2. **Categories of maslaha** (as systematized especially by al-Ghazali and later al-Shatibi):\n   - ***Maslaha mu'tabara*** – benefit explicitly recognized/supported by a text\n   - ***Maslaha mulghah*** – benefit that contradicts a text (rejected)\n   - ***Maslaha mursala*** – \"unattested\" benefit, not directly addressed by specific texts but not contradicting them either\n\n3. The most contested category is *maslaha mursala*, since it allows jurists to legislate based on rational assessment of benefit without direct textual backing.\n\n## The Maliki-Hanafi Divergence\n\n### Maliki Position\nMalikis (following Malik ibn Anas, and later systematically defended by al-Qarafi and al-Shatibi) gave **maslaha mursala** the most expansive scope among the schools:\n\n- They treated it as a **quasi-independent source** of law, especially in matters of public policy, transactions, and social welfare.\n- Justification rested on the *maqasid al-shari'a* (higher objectives of the law): preservation of religion, life, intellect, lineage, and property. If a ruling serves these objectives and doesn't contradict a specific text, it can be adopted.\n- Example: Malik permitted preemptive punishment or precautionary measures against those merely suspected of habitual crimes, based on the \"benefit\" to public order—not on direct textual command.\n\n### Hanafi Position\nHanafis were more textually conservative regarding *unrestricted* maslaha, though they achieved similar flexibility through a different mechanism:\n\n- They rejected *maslaha mursala* as an independent basis for rulings, insisting that legal reasoning remain anchored to a textual root via analogy (*qiyas*).\n- Instead, Hanafis developed **istihsan** (juristic preference)—a technique allowing departure from strict analogy when it produces an inequitable result, but always justified by reference to *some* textual or customary indicator, not \"benefit\" in the abstract.\n- Their concern was that unrestricted maslaha risked **legislating without textual mooring**, effectively allowing jurists to substitute personal judgment for divine law.\n\n## Core of the Divergence\n\n| Aspect | Maliki | Hanafi |\n|---|---|---|\n| Scope of maslaha | Broad; can generate rulings absent direct text | Narrow; suspicious of \"unattested\" benefit |\n| Mechanism | *Maslaha mursala* as quasi-source | *Istihsan* tied to textual/customary anchor |\n| Underlying concern | Fulfilling *maqasid* even without explicit text | Preventing subjective legislation under guise of \"benefit\" |\n\nIn essence, **Malikis prioritized the *spirit* and objectives of the law**, willing to extrapolate rulings from the general purposes of Shari'a even without direct textual support. **Hanafis prioritized textual discipline**, fearing that broad appeals to \"benefit\" could become a vehicle for arbitrary or purely rationalist lawmaking, and thus required any equitable departure to be textually or customarily grounded.\n\nThis divergence reflects a deeper methodological tension in Islamic legal theory between **textualist rigor** and **purposive (maqasid-based) reasoning**—a tension later addressed more systematically by al-Shatibi, who sought to integrate maslaha more firmly within a maqasid framework while still respecting textual authority.",
+  "timestamp_utc": "2026-09-07T22:24:49Z"
+}

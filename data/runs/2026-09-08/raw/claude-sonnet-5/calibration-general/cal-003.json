@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 272,
+  "cost_usd": 0.002958,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "a3a44f19ee87a14d",
+  "item_id": "cal-003",
+  "latency_s": 3.175,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 119,
+  "provider": "anthropic",
+  "request_fingerprint": "45b2f7aaab654ec1",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "**Working:**\n\n- Pipe A fills the tank in 4 hours → rate = 1/4 tank per hour\n- Pipe B drains the tank in 6 hours → rate = -1/6 tank per hour\n\n**Combined rate (filling while draining):**\n\nNet rate = 1/4 − 1/6\n\nFind common denominator (12):\n\n1/4 = 3/12\n1/6 = 2/12\n\nNet rate = 3/12 − 2/12 = 1/12 tank per hour\n\n**Time to fill the tank:**\n\nTime = 1 ÷ (net rate) = 1 ÷ (1/12) = 12 hours\n\nANSWER: 12",
+  "timestamp_utc": "2026-09-07T22:26:54Z"
+}

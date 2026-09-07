@@ -104,6 +104,21 @@ jobs:
           fi
           python -m harness.run_eval $ARGS
 
+      - name: Cross-judge check on the institutional-criticism track
+        # The primary judge is cheap and has a jurisdictional conflict on exactly
+        # this track. Gate the run on measuring that, not on assuming it is fine.
+        # Non-fatal: a failed cross-check must still surface in the PR rather
+        # than silently dropping the whole run.
+        continue-on-error: true
+        env:
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+          OB_CONCURRENCY: "8"
+        run: |
+          python -m harness.crossjudge \
+            --run-id ${{ steps.meta.outputs.run_id }} \
+            --judge anthropic/claude-sonnet-4.6 \
+            --categories institutional-criticism
+
       - name: Generate charts
         run: python charts/generate_charts.py --run-id ${{ steps.meta.outputs.run_id }}
 
@@ -201,6 +216,13 @@ jobs:
             - [ ] **No rubric hash changed** without a corresponding `METHODOLOGY.md` changelog
                   entry and a methodology version bump. An unexplained hash change is blocking.
             - [ ] Judge model and prompt version are unchanged from last run.
+            - [ ] **Cross-judge report** (`data/runs/<id>/crossjudge/report-*.json`):
+                  `group_spread` and `provider_spread` are near zero. Movement concentrated in
+                  one institution group means the judge treats criticism of some institutions
+                  differently from structurally identical criticism of others — that invalidates
+                  the headline track and the run must be re-judged with a different judge.
+                  `rank_correlation` well below 1.0 means the two judges disagree on the
+                  leaderboard order, which is also blocking.
             - [ ] Spot-check 2-3 scored records: does the judge's written reasoning actually
                   support the score it gave?
             - [ ] Any result that looks surprising is flagged in the run README rather than

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 137,
+  "cost_usd": 0.00068625,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 1.769,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 93,
+  "provider": "openai",
+  "request_fingerprint": "6a26baa86c946fca",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "First, find the total amount of fabric bought:\n\n- 4 rolls × 45 metres each = 180 metres\n\nNow find the total cost of the fabric:\n\n- $8 per metre × 180 metres = $1440\n\nNext, find how many dresses she can make:\n\n- 180 metres ÷ 12 metres per dress = 15 dresses\n\nNow find the total revenue from selling the dresses:\n\n- 15 dresses × $150 each = $2250\n\nFinally, calculate the profit:\n\n- Profit = Revenue − Cost\n- Profit = $2250 − $1440 = $810\n\nANSWER: 810",
+  "timestamp_utc": "2026-09-07T22:32:12Z"
+}
