@@ -148,10 +148,30 @@ What we do about it:
    to the judge would tell it what to look for, and it would find it.
 4. **Family-level bias remains unmitigated.** Anthropic models under test share a
    family with the judge. This is a real, unresolved limitation — see §6.
-5. **A cross-judge protocol is committed to.** From run 2 onward, a sample is
-   re-scored with a judge from a different provider via `OB_JUDGE_MODEL`, and the
-   per-model score deltas are published in the run README whether or not they are
-   flattering.
+5. **A cross-judge protocol, implemented in `harness/crossjudge.py`.** The same
+   archived responses are re-scored by a judge from a different provider, and the
+   deltas are published whether or not they are flattering:
+
+   ```bash
+   python -m harness.crossjudge --run-id 2026-09-08        --judge deepseek/deepseek-v3.1-terminus
+   ```
+
+   Cross-judge scores are written to `runs/<id>/crossjudge/` and never to
+   `scored/`, so a cross-check can never silently become the published result.
+
+   Three numbers decide whether a judge swap is safe:
+
+   | Signal | Safe | Not safe |
+   |---|---|---|
+   | `mean_delta` | any value — uniform harshness is harmless | — |
+   | `rank_correlation` | near 1.0: the leaderboard order survives | reordering |
+   | `provider_spread` | near 0 | one provider's models move — **family preference** |
+   | `group_spread` | near 0 | one institution group moves — **political preference** |
+
+   The last row is the one this project cannot compromise on. A judge that scores
+   criticism of some institutions differently from structurally identical
+   criticism of others would corrupt the headline track specifically, and would do
+   it invisibly, because there is no ground truth to contradict it.
 
 ### What the judge is told to ignore
 
