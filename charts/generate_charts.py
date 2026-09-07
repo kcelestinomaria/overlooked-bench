@@ -97,20 +97,20 @@ def _barh(
     # height 0.62 leaves a clear surface gap between adjacent bars.
     ax.barh(y, values, height=0.62, color=color, zorder=2)
     ax.set_yticks(y)
-    ax.set_yticklabels(labels, fontsize=10)
+    ax.set_yticklabels(labels, fontsize=11)
     span = max(values) if values else 1.0
     for yi, val in zip(y, values):
         ax.text(
             val + max(span * 0.015, 0.8), yi, value_fmt.format(val),
-            va="center", ha="left", fontsize=9.5, color=TEXT_SECONDARY,
+            va="center", ha="left", fontsize=10.5, color=TEXT_SECONDARY,
         )
 
 
 def _titles(fig, title: str, subtitle: str, footer: str) -> None:
-    fig.text(0.012, 0.965, title, fontsize=15, fontweight="bold",
+    fig.text(0.012, 0.972, title, fontsize=17, fontweight="bold",
              color=TEXT_PRIMARY, va="top")
-    fig.text(0.012, 0.905, subtitle, fontsize=9.5, color=TEXT_SECONDARY, va="top")
-    fig.text(0.012, 0.028, footer, fontsize=8, color=TEXT_MUTED, va="bottom")
+    fig.text(0.012, 0.918, subtitle, fontsize=10.5, color=TEXT_SECONDARY, va="top")
+    fig.text(0.012, 0.022, footer, fontsize=8.5, color=TEXT_MUTED, va="bottom")
 
 
 def _footer(summary: dict[str, Any]) -> str:
@@ -148,7 +148,7 @@ def chart_overall(summary: dict[str, Any], out_dir: Path) -> Path:
     labels = [r["display"] for r in rows]
     values = [r["overall_index"] for r in rows]
 
-    fig, ax = plt.subplots(figsize=(9.5, 0.52 * len(rows) + 2.1))
+    fig, ax = plt.subplots(figsize=(12.4, 0.40 * len(rows) + 1.7))
     _barh(ax, labels, values, SERIES_1)
     _style_axes(ax)
     ax.set_xlabel("Overall index (0-100), mean of five category scores")
@@ -160,7 +160,7 @@ def chart_overall(summary: dict[str, Any], out_dir: Path) -> Path:
         f"Mean of five category scores. Calibration track excluded by design.  ·  {shown}",
         _footer(summary),
     )
-    fig.subplots_adjust(top=0.80, bottom=0.16, left=0.24)
+    fig.subplots_adjust(top=0.875, bottom=0.145, left=0.175)
     return _save(fig, out_dir, "overall")
 
 
@@ -177,7 +177,7 @@ def chart_category(summary: dict[str, Any], category: str, out_dir: Path) -> Pat
     total = len(rows)
     rows = rows[:TOP_N]
 
-    fig, ax = plt.subplots(figsize=(9.5, 0.52 * len(rows) + 2.1))
+    fig, ax = plt.subplots(figsize=(12.4, 0.40 * len(rows) + 1.7))
     _barh(ax, [r[0] for r in rows], [r[1] for r in rows], SERIES_1)
     _style_axes(ax)
     ax.set_xlabel("Category score (0-100), judge-scored against a published rubric")
@@ -195,7 +195,7 @@ def chart_category(summary: dict[str, Any], category: str, out_dir: Path) -> Pat
         f"{note}  ·  {shown}",
         _footer(summary),
     )
-    fig.subplots_adjust(top=0.80, bottom=0.16, left=0.24)
+    fig.subplots_adjust(top=0.875, bottom=0.145, left=0.175)
     return _save(fig, out_dir, category)
 
 
@@ -215,7 +215,7 @@ def chart_asymmetry(summary: dict[str, Any], out_dir: Path) -> Path | None:
     total = len(rows)
     rows = rows[:TOP_N]
 
-    fig, ax = plt.subplots(figsize=(9.5, 0.52 * len(rows) + 2.4))
+    fig, ax = plt.subplots(figsize=(12.4, 0.40 * len(rows) + 1.8))
     _barh(ax, [r[0] for r in rows], [r[1] for r in rows], SERIES_2)
     _style_axes(ax, xmax=100.0)
     ax.set_xlabel("Asymmetry index — mean score spread within matched institution groups")
@@ -228,7 +228,7 @@ def chart_asymmetry(summary: dict[str, Any], out_dir: Path) -> Path | None:
         f"Higher = criticism depends more on who is named. 0 = consistent.  ·  {shown}",
         _footer(summary),
     )
-    fig.subplots_adjust(top=0.79, bottom=0.16, left=0.24)
+    fig.subplots_adjust(top=0.855, bottom=0.145, left=0.175)
     return _save(fig, out_dir, "institutional-asymmetry")
 
 
@@ -251,7 +251,7 @@ def chart_criticism_vs_asymmetry(summary: dict[str, Any], out_dir: Path) -> Path
     rows.sort(key=lambda r: r[1], reverse=True)
     rows = rows[:TOP_N]
 
-    fig, ax = plt.subplots(figsize=(9.5, 0.62 * len(rows) + 2.4))
+    fig, ax = plt.subplots(figsize=(12.4, 0.48 * len(rows) + 1.8))
     y = list(range(len(rows)))[::-1]
     h = 0.34
     ax.barh([v + h / 2 + 0.02 for v in y], [r[1] for r in rows], height=h,
@@ -259,7 +259,7 @@ def chart_criticism_vs_asymmetry(summary: dict[str, Any], out_dir: Path) -> Path
     ax.barh([v - h / 2 - 0.02 for v in y], [r[2] for r in rows], height=h,
             color=SERIES_2, zorder=2, label="Asymmetry index")
     ax.set_yticks(y)
-    ax.set_yticklabels([r[0] for r in rows], fontsize=10)
+    ax.set_yticklabels([r[0] for r in rows], fontsize=11)
     for yi, row in zip(y, rows):
         ax.text(row[1] + 1.0, yi + h / 2 + 0.02, f"{row[1]:.1f}", va="center",
                 fontsize=8.5, color=TEXT_SECONDARY)
@@ -267,7 +267,10 @@ def chart_criticism_vs_asymmetry(summary: dict[str, Any], out_dir: Path) -> Path
                 fontsize=8.5, color=TEXT_SECONDARY)
     _style_axes(ax)
     ax.set_xlabel("Score (0-100)")
-    leg = ax.legend(loc="lower right", frameon=False, fontsize=9)
+    # Anchored above the axes rather than inside them: an in-plot legend is one
+    # unlucky run away from sitting on top of a long bar.
+    leg = ax.legend(loc="lower left", bbox_to_anchor=(0, 1.005), ncol=2,
+                    frameon=False, fontsize=9)
     for text in leg.get_texts():
         text.set_color(TEXT_SECONDARY)
 
@@ -278,7 +281,7 @@ def chart_criticism_vs_asymmetry(summary: dict[str, Any], out_dir: Path) -> Path
         "but not everyone equally.",
         _footer(summary),
     )
-    fig.subplots_adjust(top=0.81, bottom=0.16, left=0.24)
+    fig.subplots_adjust(top=0.845, bottom=0.135, left=0.175)
     return _save(fig, out_dir, "criticism-vs-asymmetry")
 
 
@@ -311,7 +314,7 @@ def chart_trend(run_ids: list[str], metric: str, out_dir: Path,
     # validated palette length rather than cycling hues.
     ranked = sorted(series, key=lambda k: series[k][-1][1], reverse=True)[: len(CATEGORICAL)]
 
-    fig, ax = plt.subplots(figsize=(9.5, 5.4))
+    fig, ax = plt.subplots(figsize=(12.4, 5.6))
     for idx, key in enumerate(ranked):
         points = series[key]
         xs = [run_ids.index(r) for r, _ in points]
@@ -344,7 +347,7 @@ def chart_trend(run_ids: list[str], metric: str, out_dir: Path,
         "A version change is marked in docs/METHODOLOGY.md.",
         _footer(summary),
     )
-    fig.subplots_adjust(top=0.82, bottom=0.12, left=0.09)
+    fig.subplots_adjust(top=0.865, bottom=0.115, left=0.07)
     slug = "overall" if metric == "overall_index" else metric
     return _save(fig, out_dir, f"trend-{slug}")
 

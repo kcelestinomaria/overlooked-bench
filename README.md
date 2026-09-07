@@ -13,7 +13,7 @@ go unnoticed.
 This project measures five things in that gap, monthly, in public, with every raw
 model response and every judge score committed to the repository.
 
-📊 **[Leaderboard](site/)** ·
+📊 **[Leaderboard](https://kcelestinomaria.github.io/overlooked-bench/site/)** ·
 📋 **[Methodology](docs/METHODOLOGY.md)** ·
 💰 **[Funding & disclosures](docs/FUNDING_AND_DISCLOSURES.md)** ·
 🤝 **[Contributing](docs/CONTRIBUTING.md)**
@@ -133,7 +133,8 @@ machine** — it lives in `.env`, which is gitignored, and is never written into
 run artefact.
 
 ```bash
-git clone <repo> && cd overlooked-bench
+git clone https://github.com/kcelestinomaria/overlooked-bench.git
+cd overlooked-bench
 
 python -m venv .venv
 .venv/bin/pip install -r requirements.txt        # Windows: .venv\Scripts\pip

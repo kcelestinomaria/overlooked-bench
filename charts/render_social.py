@@ -42,7 +42,7 @@ TEMPLATE_DIR = Path(__file__).resolve().parent / "templates"
 CARD_WIDTH = 1600
 CARD_HEIGHT = 900
 
-REPO_URL = "github.com/overlooked-bench/overlooked-bench"
+REPO_URL = "github.com/kcelestinomaria/overlooked-bench"
 
 # One line, written for someone who is seeing this image with no caption and no
 # context, forwarded from someone they follow. It has to answer "what am I

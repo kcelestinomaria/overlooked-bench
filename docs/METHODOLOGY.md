@@ -367,7 +367,8 @@ asking to be taken on trust.
 ## 7. Reproducing a run
 
 ```bash
-git clone <repo> && cd overlooked-bench
+git clone https://github.com/kcelestinomaria/overlooked-bench.git
+cd overlooked-bench
 python -m venv .venv && .venv/bin/pip install -r requirements.txt
 cp .env.example .env          # add your AI_GATEWAY_API_KEY
 ./run.sh --run-id my-rerun
