@@ -1,6 +1,6 @@
 # Methodology
 
-**Current methodology version: `m1.0.0`**
+**Current methodology version: `m1.1.0`**
 **Judge prompt version: `jp-1.0.0`**
 
 Scores are comparable only within a single methodology version. Every change to
@@ -115,8 +115,22 @@ python -m harness.run_eval --run-id <id>-xval --judge-engine deepeval --limit 5
 
 ### Judge selection, and the self-preference problem
 
-**The judge is `anthropic/claude-opus-4.5`, and it is deliberately not a model
+**The judge is `anthropic/claude-sonnet-4.6`, and it is deliberately not a model
 under test in the same run.**
+
+Judge cost is the dominant recurring expense of this project — roughly two thirds
+of a monthly run — so it is a live constraint on whether the benchmark can keep
+running at all, not an afterthought. Sonnet 4.6 costs about 1.7× less per item
+than the Opus 4.5 judge used during development, which takes a full run from
+roughly $45 to roughly $31.
+
+**Note what was *not* done to save money.** `anthropic/claude-sonnet-5` is cheaper
+still ($2/$10 per M against Sonnet 4.6's $3/$15) and would have been the obvious
+economy. It is also in the evaluated roster, so appointing it judge would have it
+scoring its own responses — including on the `institutional-criticism` items that
+ask models to criticise Anthropic. That is precisely the conflict this section
+exists to prevent, and the saving is a few dollars a month. The exclusion rule
+wins.
 
 LLM judges show measurable self-preference: they score their own outputs, and
 outputs from their own family, more favourably. That is a problem for any
@@ -324,8 +338,12 @@ asking to be taken on trust.
    rubrics push against this explicitly; that mitigation is unmeasured.
 
 3. **Judge family self-preference is unmitigated.** The judge is an Anthropic
-   model and Anthropic models are under test. The cross-judge protocol (§2) is the
-   planned mitigation and has not run yet — this is run 1.
+   model and Anthropic models are under test. The judge is excluded from the
+   roster, so it never scores *itself* — but Claude Sonnet 5 and Claude Haiku 4.5
+   share a family with it, and family-level preference is not addressed by the
+   exclusion rule. Treat the two Anthropic rows as the ones most in need of the
+   cross-judge check. That protocol (§2) is the planned mitigation and has not run
+   yet — this is run 1.
 
 4. **The judge scores the institutional-criticism track, and has its own
    priors.** It is instructed to score analytical quality rather than agreement,
@@ -394,9 +412,36 @@ means something is wrong and should be raised as an issue.
 
 Every entry here changes what the scores mean. Entries are append-only.
 
+### `m1.1.0` — 2026-09-08
+**Changed:** Judge model `anthropic/claude-opus-4.5` → `anthropic/claude-sonnet-4.6`.
+Judge prompt is unchanged and stays at `jp-1.0.0`; every rubric is unchanged and
+every rubric hash is identical.
+
+**Why:** Judge calls are about two thirds of the cost of a run. At the Opus 4.5
+rate a full monthly run costs roughly $45, which is a real obstacle to a project
+that intends to run every month indefinitely and has no funding. Sonnet 4.6 is
+about 1.7× cheaper per item and brings a full run to roughly $31.
+
+The cheaper `anthropic/claude-sonnet-5` was rejected because it is in the
+evaluated roster; see §2.
+
+**Comparability:** Scores under `m1.1.0` are **not comparable** to any scored
+under `m1.0.0`. In practice nothing is lost — no `m1.0.0` run was ever completed
+or published. The 73 judge scores that existed from the interrupted first attempt
+were **discarded rather than reused**, because a run whose items were scored by
+two different judges is not internally comparable either, and mixing them to save
+$3 would have made the whole run uninterpretable.
+
+**Consequence for the reader:** the judge is now a mid-tier model rather than a
+frontier one. Whether that degrades scoring quality is an open question and
+exactly what the cross-judge protocol in §2 is for. If the run-2 cross-check shows
+material disagreement between Sonnet 4.6 and a frontier judge from another
+provider, that is a finding about our scoring and will be published as one.
+
 ### `m1.0.0` — 2026-09-08
 Initial methodology. Six categories, custom G-Eval metrics per category, anchored
-0–4 scale, `anthropic/claude-opus-4.5` judge at `jp-1.0.0`, native scoring engine,
+0–4 scale, `anthropic/claude-opus-4.5` judge at `jp-1.0.0` (superseded by
+`m1.1.0`), native scoring engine,
 equal category weighting with the calibration track excluded from the index.
 Defaults: `temperature 0.0`, `max_tokens 4000` (models) / `2000` (judge),
 `timeout_s 300`.

@@ -48,8 +48,20 @@ defaults:
 
 # The judge is deliberately NOT a model under test in the same run.
 # See docs/METHODOLOGY.md ("Judge selection and self-preference").
+#
+# Why Sonnet 4.6 specifically, and not the cheaper Sonnet 5:
+#   Sonnet 5 costs $2/$10 per M against Sonnet 4.6's $3/$15, so it would be the
+#   obvious economy. It is also in the evaluated roster below. Using it here
+#   would have it scoring its own responses -- including on the institutional
+#   criticism items that ask models to criticise Anthropic. Saving a few dollars
+#   a month is not worth the one property that makes this track credible.
+#   Sonnet 4.6 is a Sonnet, is not under test, and still cuts judge cost ~1.7x
+#   against Opus 4.5.
+#
+# Changing this line is a METHODOLOGY VERSION change. Scores produced under a
+# different judge are not comparable to earlier ones.
 judge:
-  model_id: anthropic/claude-opus-4.5
+  model_id: anthropic/claude-sonnet-4.6
   prompt_version: jp-1.0.0
   temperature: 0.0
   max_tokens: 2000
