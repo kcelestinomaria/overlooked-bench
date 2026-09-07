@@ -1,0 +1,291 @@
+category: org-enterprise
+version: "1.0.0"
+description: >
+  Organisational task items modelled on GDPval's structure — realistic work
+  products a practitioner would actually be asked to produce — but for the
+  organisations GDPval does not weight: small businesses, nonprofits, cooperatives,
+  non-US institutions, and informal-sector operations.
+
+  Every item states hard constraints (budget, headcount, jurisdiction, legal form,
+  timeline). Those constraints are the task. `rubric_notes` list the elements a
+  competent practitioner would include, so the judge scores against a practitioner
+  standard rather than against surface polish.
+
+items:
+  - id: org-001
+    prompt: |
+      You are advising a 12-person environmental NGO registered in Kenya. It has just
+      received a two-year restricted grant of USD 180,000 for a coastal mangrove
+      programme. The grant permits a maximum of 15% for indirect costs. The NGO
+      currently has no dedicated HR function; the Executive Director handles hiring.
+
+      Draft a hiring plan for the programme. Include roles, sequence, gross salary
+      bands in KES appropriate to the Kenyan NGO sector, the employer's statutory
+      on-costs, and how the plan fits inside the grant's direct-cost envelope over
+      two years. Show your arithmetic.
+    rationale: >
+      Tests whether the model respects a restricted-grant indirect-cost cap and
+      Kenyan statutory employment on-costs, or produces a US-shaped hiring plan with
+      a recruiting function the organisation does not have.
+    rubric_notes: |
+      A competent answer includes: role definitions with a hiring sequence tied to
+      programme milestones; salary bands plausible for the Kenyan NGO sector rather
+      than US figures converted; employer NSSF and NHIF/SHIF contributions and PAYE
+      handling identified as employer obligations; explicit arithmetic showing total
+      two-year staff cost against the 85% direct-cost envelope; and recognition that
+      the ED is the hiring function, so the process must be light.
+      Penalise: US-style benefits packages, equity compensation, applicant tracking
+      systems, a recruiter role, or any plan whose totals exceed the envelope.
+    tags: [nonprofit, kenya, hiring, budget]
+
+  - id: org-002
+    prompt: |
+      A 6-person family-owned bakery in Kraków, Poland wants to add a second
+      location. Annual revenue is PLN 1.4m with a net margin of roughly 8%. The
+      owners can raise PLN 250,000 and want no equity dilution.
+
+      Produce a one-page go/no-go analysis with a recommendation. Include the
+      financing options realistically available to a business of this size in Poland,
+      the break-even the second site must reach, and the two risks most likely to
+      sink it.
+    rationale: >
+      Small-business expansion decision in a specific EU jurisdiction, with a
+      no-dilution constraint that rules out the venture-shaped advice models default
+      to.
+    rubric_notes: |
+      A competent answer includes: a break-even calculation using the stated margin;
+      Polish-context financing (bank term loan, leasing, BGK-guaranteed lending, EU
+      regional programmes) rather than generic "seek investors"; explicit respect for
+      the no-dilution constraint; and a clear go/no-go recommendation rather than a
+      list of considerations.
+      Penalise: equity financing proposals, US SBA references, and any answer that
+      declines to give a recommendation.
+    tags: [smb, poland, finance, eu]
+
+  - id: org-003
+    prompt: |
+      A registered charity in England and Wales with an annual income of GBP 320,000
+      wants to start trading — selling training courses to local employers — to
+      reduce grant dependence.
+
+      Advise the trustees. Cover whether this can be done within the charity, when a
+      trading subsidiary becomes necessary, the tax treatment, and what the trustees
+      must do before proceeding.
+    rationale: >
+      Charity trading rules are a real, high-stakes, jurisdiction-specific question
+      where US 501(c)(3) assumptions produce confidently wrong advice.
+    rubric_notes: |
+      A competent answer covers: the distinction between primary-purpose trading and
+      non-primary-purpose trading; the small-scale trading exemption and its turnover
+      limits; when a trading subsidiary donating profits up is the right structure;
+      corporation tax treatment; trustees' duty to avoid exposing charitable assets
+      to significant risk; and the need to check the governing document for power to
+      trade.
+      Penalise heavily: any reference to 501(c)(3), UBIT, IRS, or US state law.
+    tags: [nonprofit, uk, legal, tax]
+
+  - id: org-004
+    prompt: |
+      A 40-member agricultural cooperative in Oaxaca, Mexico sells coffee through an
+      intermediary and wants to export directly. Members are smallholders averaging
+      1.5 hectares. Working capital is effectively zero between harvests.
+
+      Draft a realistic 18-month plan to move to direct export. Be explicit about
+      what the cooperative cannot do without external finance and what it can do
+      without any.
+    rationale: >
+      Cooperative structure plus zero working capital is a constraint set almost
+      absent from benchmark business tasks; the final sentence forces separation of
+      the affordable from the aspirational.
+    rubric_notes: |
+      A competent answer covers: certification requirements and their real cost and
+      timeline; the working-capital problem as the binding constraint; pre-harvest
+      finance options available to cooperatives; buyer relationships and sample
+      logistics; cooperative governance and decision-making across 40 members; and an
+      honest split between no-cost and finance-dependent steps.
+      Penalise: e-commerce or DTC brand-building advice, and any plan that assumes
+      working capital the prompt says does not exist.
+    tags: [cooperative, mexico, agriculture, export]
+
+  - id: org-005
+    prompt: |
+      You run operations for a 25-person software consultancy in Bangalore. A German
+      client wants to engage you directly rather than through your current European
+      intermediary. They have asked about GDPR compliance and want a Data Processing
+      Agreement.
+
+      Explain what you actually need to have in place, what the intermediary was
+      probably handling that you now must handle yourself, and what this will cost
+      you in time and money.
+    rationale: >
+      Cross-border data compliance for a small non-EU firm — a common real situation
+      where advice is usually written for large EU-based controllers.
+    rubric_notes: |
+      A competent answer covers: the processor role and Article 28 DPA contents;
+      transfer mechanism for India as a third country (SCCs, and a transfer impact
+      assessment); Article 32 technical and organisational measures at a scale a
+      25-person firm can implement; sub-processor disclosure; whether an Article 27
+      EU representative is required; and realistic cost and timeline.
+      Penalise: treating the consultancy as a controller, US privacy law references,
+      or enterprise-scale compliance programmes.
+    tags: [smb, india, germany, gdpr, legal]
+
+  - id: org-006
+    prompt: |
+      A community health nonprofit in the Philippines with 30 staff has been running
+      on paper records. A donor has offered PHP 400,000 for digitisation. Field staff
+      work in areas with intermittent electricity and no reliable internet. Average
+      staff digital literacy is low.
+
+      Recommend a specific approach. Name actual tools, state the total cost against
+      the PHP 400,000, and explain what happens to the system when the donor funding
+      ends in 18 months.
+    rationale: >
+      Technology advice under infrastructure constraints, with a sustainability
+      question that exposes whether the model thinks past the funded period.
+    rubric_notes: |
+      A competent answer covers: offline-first tooling with sync (e.g. KoBoToolbox,
+      CommCare, ODK) rather than always-online SaaS; device and power considerations;
+      training load given low digital literacy; a costed breakdown within PHP 400,000
+      including devices and training, not just software; and a concrete answer on
+      post-grant sustainability including recurring costs and who pays them.
+      Penalise: enterprise SaaS with per-seat pricing, cloud-only architectures, or
+      silence on what happens after month 18.
+    tags: [nonprofit, philippines, technology, sustainability]
+
+  - id: org-007
+    prompt: |
+      A 9-person marketing agency in São Paulo, Brazil wants to convert two
+      long-term contractors ("PJ") into employees ("CLT") because a client is
+      demanding it for compliance reasons.
+
+      Explain the cost difference to the agency, the legal exposure it may already
+      have from the current arrangement, and how to sequence the conversion.
+    rationale: >
+      PJ-to-CLT conversion is a live, high-cost Brazilian employment question with
+      no US analogue; a model defaulting to US contractor-classification rules will
+      be confidently wrong.
+    rubric_notes: |
+      A competent answer covers: the real loaded cost of CLT employment versus PJ
+      invoicing (FGTS, INSS employer contribution, 13th salary, vacation plus the
+      one-third constitutional bonus, notice); the risk of retroactive recognition of
+      an employment relationship and the associated liability; and a sequencing plan
+      that addresses that exposure rather than ignoring it.
+      Penalise: IRS/W-2/1099 framing, at-will assumptions, or US-style classification
+      tests.
+    tags: [smb, brazil, employment-law]
+
+  - id: org-008
+    prompt: |
+      A small independent school in Ghana with 400 pupils and 22 teachers is losing
+      money. Fees are GHS 1,800 per term; collection runs at about 70%. Teacher
+      salaries are 68% of expenditure. The board will not consider raising fees this
+      year.
+
+      Produce a turnaround plan with numbers. State plainly which of your
+      recommendations will be unpopular and why you are recommending them anyway.
+    rationale: >
+      Fee collection rather than fee level is the real lever, which requires the
+      model to work with the constraint rather than around it; the final sentence
+      tests willingness to give unwelcome advice.
+    rubric_notes: |
+      A competent answer includes: quantified analysis of the 30% collection gap as
+      the largest addressable line; concrete collection interventions appropriate to
+      the context; staffing cost analysis against the 68% figure with realistic
+      options; explicit respect for the no-fee-increase constraint; and named
+      unpopular recommendations with justification.
+      Penalise: recommending a fee increase, generic "improve marketing" advice, or
+      an answer with no arithmetic.
+    tags: [smb, ghana, education-business, turnaround]
+
+  - id: org-009
+    prompt: |
+      You advise a 15-person social enterprise in Jakarta, Indonesia. It employs
+      people with disabilities in a laundry service. A large hotel chain has offered
+      a contract that would triple revenue but requires 24-hour turnaround and
+      penalty clauses for late delivery.
+
+      Should they take it? Give a recommendation with reasoning, and if you
+      recommend taking it, specify what must change first.
+    rationale: >
+      Growth opportunity that could destroy the organisation's social mission and
+      cash position; tests whether the model weighs mission and operational risk or
+      defaults to revenue growth.
+    rubric_notes: |
+      A competent answer covers: capacity analysis against a 3x volume increase;
+      penalty clause exposure relative to the organisation's reserves; working
+      capital needed to service a large corporate payer on typical payment terms;
+      the effect of 24-hour turnaround and shift work on an employment model built
+      around accessibility; and a clear recommendation with preconditions.
+      Penalise: unconditional enthusiasm, or a considerations list with no answer.
+    tags: [social-enterprise, indonesia, operations, decision]
+
+  - id: org-010
+    prompt: |
+      A trade association representing 200 small textile manufacturers in Bangladesh
+      needs to respond to a new EU due-diligence requirement that its members'
+      buyers are beginning to enforce.
+
+      Draft guidance the association can send to members. Members are small
+      factories with limited administrative capacity, and most cannot afford
+      external consultants.
+    rationale: >
+      Compliance guidance that must be executable by the least-resourced actor in
+      the supply chain, not by the brand at the top of it.
+    rubric_notes: |
+      A competent answer: is written as guidance addressed to factory owners, not as
+      an analysis for the association; explains the requirement in plain terms;
+      breaks compliance into steps a small factory can execute without consultants;
+      distinguishes what buyers will actually ask for from the full text of the
+      regulation; and identifies where collective action through the association is
+      cheaper than each member acting alone.
+      Penalise: an answer pitched at the buyer or brand, or one that assumes a
+      compliance officer exists.
+    tags: [trade-association, bangladesh, compliance, eu]
+
+  - id: org-011
+    prompt: |
+      A municipal water utility serving 60,000 people in a mid-size town in Peru has
+      a 42% non-revenue water rate. The board has PEN 2 million and wants to "fix
+      leakage".
+
+      Advise them on how to spend it. Be specific about what fraction of non-revenue
+      water is likely to be physical loss versus commercial loss in a utility of this
+      profile, and what that implies for where the money goes.
+    rationale: >
+      Small public-sector infrastructure decision; the physical-versus-commercial
+      loss split is the crux and is the part a generic answer skips entirely.
+    rubric_notes: |
+      A competent answer covers: the distinction between physical losses and
+      commercial losses (metering, billing, illegal connections) with a plausible
+      split for a utility of this profile; the sequencing argument that measurement
+      and district metering come before pipe replacement; a costed allocation of the
+      PEN 2 million; and the observation that commercial-loss fixes usually have far
+      shorter payback than mains replacement.
+      Penalise: spending the entire budget on pipe replacement, or an answer that
+      never addresses the loss split the prompt asks for.
+    tags: [public-sector, peru, infrastructure, budget]
+
+  - id: org-012
+    prompt: |
+      A 5-person women's legal aid organisation in Amman, Jordan has one funder
+      providing 90% of its income. That funder has signalled it will exit in
+      12 months.
+
+      Produce a 12-month diversification plan. Be realistic about what a 5-person
+      organisation can execute alongside its existing casework.
+    rationale: >
+      Funder-concentration risk is the single most common existential threat to small
+      nonprofits and is almost entirely absent from benchmark task sets; the capacity
+      constraint blocks a generic fundraising-strategy answer.
+    rubric_notes: |
+      A competent answer covers: realistic funding sources for a legal aid
+      organisation in Jordan (bilateral donors, regional foundations, INGO
+      subgranting, in-kind and pro bono); a month-by-month plan whose total effort is
+      compatible with 5 people already doing casework; explicit prioritisation and a
+      statement of what will not get done; and a contingency position if
+      diversification fails.
+      Penalise: recommending a development hire the organisation cannot fund, generic
+      individual-giving or major-donor programmes inappropriate to the context, or a
+      plan requiring more staff time than exists.
+    tags: [nonprofit, jordan, fundraising, capacity]

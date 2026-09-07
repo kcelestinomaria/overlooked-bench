@@ -1,0 +1,217 @@
+name: Monthly evaluation
+
+# Runs the full benchmark on the 1st of each month, then opens a PR with the new
+# run folder.
+#
+# It does NOT auto-merge. Results are the public record this project stands on,
+# and a human reads the diff before they are published — specifically checking the
+# diagnostics block and any change to a rubric hash, either of which invalidates
+# the run's comparability with earlier ones.
+#
+# It also never force-pushes and never touches an existing run folder. Published
+# runs are immutable; a correction is a new run, not an edit.
+
+on:
+  schedule:
+    # 06:00 UTC on the 1st of every month.
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Run id (default: today's date, UTC)"
+        required: false
+        type: string
+      models:
+        description: "Comma-separated model keys (default: all enabled)"
+        required: false
+        type: string
+      limit:
+        description: "Max items per category (0 = all). Use a small value to test the workflow."
+        required: false
+        default: "0"
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  # Never let two evaluation runs write to the repo at once.
+  group: monthly-eval
+  cancel-in-progress: false
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    # A full run is ~1,800 API calls against ten providers. The default 6h cap is
+    # ample; the explicit value is here so a hung provider fails loudly.
+    timeout-minutes: 180
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          # Full history: the run folder is appended to the audit trail, so the
+          # branch must be able to fast-forward cleanly.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Chromium for social card rendering
+        run: python -m playwright install --with-deps chromium
+
+      - name: Resolve run id
+        id: meta
+        run: |
+          RUN_ID="${{ inputs.run_id }}"
+          if [ -z "$RUN_ID" ]; then RUN_ID="$(date -u +%Y-%m-%d)"; fi
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+          echo "branch=eval/$RUN_ID" >> "$GITHUB_OUTPUT"
+          echo "Run id: $RUN_ID"
+
+      - name: Refuse to overwrite an existing run
+        run: |
+          if [ -d "data/runs/${{ steps.meta.outputs.run_id }}" ]; then
+            echo "::error::data/runs/${{ steps.meta.outputs.run_id }} already exists."
+            echo "Published runs are immutable. Re-run with a different run_id."
+            exit 1
+          fi
+
+      - name: Validate dataset and configuration
+        # Free and instant. Fails the job before spending anything on API calls
+        # if an item is malformed.
+        run: python -m harness.run_eval --dry-run
+
+      - name: Run evaluation
+        env:
+          AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+          DEEPEVAL_TELEMETRY_OPT_OUT: "YES"
+          OB_CONCURRENCY: "8"
+        run: |
+          ARGS="--run-id ${{ steps.meta.outputs.run_id }}"
+          if [ -n "${{ inputs.models }}" ]; then ARGS="$ARGS --models ${{ inputs.models }}"; fi
+          if [ "${{ inputs.limit }}" != "0" ] && [ -n "${{ inputs.limit }}" ]; then
+            ARGS="$ARGS --limit ${{ inputs.limit }}"
+          fi
+          python -m harness.run_eval $ARGS
+
+      - name: Generate charts
+        run: python charts/generate_charts.py --run-id ${{ steps.meta.outputs.run_id }}
+
+      - name: Render branded social cards
+        run: python charts/render_social.py --run-id ${{ steps.meta.outputs.run_id }}
+
+      - name: Rebuild site run index
+        run: python site/build_site.py
+
+      - name: Extract review summary
+        id: summary
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib, os
+          run_id = "${{ steps.meta.outputs.run_id }}"
+          s = json.loads(pathlib.Path(f"data/runs/{run_id}/summary.json").read_text(encoding="utf-8"))
+          d = s["diagnostics"]
+
+          print(f"## overlooked-bench run `{run_id}`\n")
+          print(f"- **Judge:** `{s['judge']['judge_model']}` ({s['judge']['judge_prompt_version']})")
+          print(f"- **Methodology:** `{s['methodology_version']}`")
+          print(f"- **Dataset fingerprint:** `{s['dataset_fingerprint']}`")
+          print(f"- **Models:** {s['n_models']} · **Items:** {sum(s['item_counts'].values())}")
+          print(f"- **Cost:** ${s['total_cost_usd']:.2f}\n")
+
+          for w in (d.get("truncation_warning"), d.get("calibration_warning")):
+              if w:
+                  print(f"> [!WARNING]\n> {w}\n")
+
+          print("### Health\n")
+          print("| Signal | Value |\n|---|---|")
+          print(f"| Judge error rate | {d['judge_error_rate']}% |")
+          print(f"| Generation error rate | {d['generation_error_rate']}% |")
+          print(f"| Truncated responses | {d.get('truncated_count', 0)} |")
+          print(f"| Calibration mean (floor {d['calibration_floor']}) | {d['calibration_mean_all_models']} |\n")
+
+          print("### Leaderboard\n")
+          print("| # | Model | Provider | Overall |\n|---|---|---|---|")
+          for row in s["leaderboard"]:
+              print(f"| {row['rank']} | {row['display']} | {row['provider']} | {row['overall_index']:.1f} |")
+
+          asym = s.get("institutional_asymmetry") or {}
+          if asym:
+              print("\n### Institutional criticism asymmetry (0 = consistent)\n")
+              print("| Model | Mean criticism | Asymmetry |\n|---|---|---|")
+              for k, b in sorted(asym.items(), key=lambda kv: -kv[1]["asymmetry_index"]):
+                  print(f"| {s['results'][k]['display']} | {b['mean_criticism_score']:.1f} | {b['asymmetry_index']:.1f} |")
+
+          # Surfaced on the PR so a reviewer is told to check, not expected to remember.
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write(f"has_warnings={'true' if (d.get('truncation_warning') or d.get('calibration_warning')) else 'false'}\n")
+              fh.write(f"cost={s['total_cost_usd']:.2f}\n")
+              fh.write(f"judge_errors={d['judge_error_rate']}\n")
+          PY
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: ${{ steps.meta.outputs.branch }}
+          base: main
+          # Only ever adds a run folder and the regenerated index.
+          add-paths: |
+            data/runs/**
+          commit-message: |
+            results: add run ${{ steps.meta.outputs.run_id }}
+
+            Automated monthly evaluation. Raw responses, judge scores, charts and
+            social cards for this run. No existing run folder is modified.
+          title: "Results: run ${{ steps.meta.outputs.run_id }}"
+          delete-branch: true
+          labels: |
+            results
+            needs-human-review
+          body: |
+            Automated monthly evaluation run **`${{ steps.meta.outputs.run_id }}`**.
+
+            Full tables are in the [workflow run summary](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+
+            | | |
+            |---|---|
+            | Diagnostics warnings | `${{ steps.summary.outputs.has_warnings }}` |
+            | Judge error rate | `${{ steps.summary.outputs.judge_errors }}%` |
+            | API cost | `$${{ steps.summary.outputs.cost }}` |
+
+            ### Reviewer checklist
+
+            This PR publishes results the project will be held to. Before merging:
+
+            - [ ] `diagnostics.truncation_warning` and `diagnostics.calibration_warning` are both null.
+                  A truncated or miscalibrated run produces *plausible-looking* wrong numbers —
+                  it will not announce itself anywhere else.
+            - [ ] `judge_error_rate` is low and not concentrated in one category or model.
+            - [ ] `dataset_fingerprint` matches the previous run, **or** the dataset change is
+                  intentional and described in the PR that made it.
+            - [ ] **No rubric hash changed** without a corresponding `METHODOLOGY.md` changelog
+                  entry and a methodology version bump. An unexplained hash change is blocking.
+            - [ ] Judge model and prompt version are unchanged from last run.
+            - [ ] Spot-check 2-3 scored records: does the judge's written reasoning actually
+                  support the score it gave?
+            - [ ] Any result that looks surprising is flagged in the run README rather than
+                  buried.
+            - [ ] The diff **only adds** files under `data/runs/`. Nothing under a previous run
+                  folder is modified.
+
+            ### After merging
+
+            Write `data/runs/${{ steps.meta.outputs.run_id }}/README.md` — 4-6 sentences per
+            category, written for someone skimming, explicitly flagging counter-intuitive
+            results rather than burying them.
+
+            🤖 Generated with [Claude Code](https://claude.com/claude-code)

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>overlooked-bench — benchmarking what the benchmarks miss</title>
+<meta name="description" content="An open, recurring benchmark of AI models on ethics and philosophy, niche academic domains, small-organisation tasks, education, and institutional-criticism refusal patterns.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div>
+      <h1 class="wordmark">overlooked<span>-</span>bench</h1>
+      <p class="tagline">Benchmarking what the benchmarks miss.</p>
+    </div>
+    <div class="run-picker">
+      <label for="run-select">Run</label>
+      <select id="run-select" aria-label="Select a benchmark run"></select>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section class="intro">
+    <p class="lede">
+      Frontier benchmarks measure a narrow slice of the world: high-GDP US sectors,
+      competition mathematics, and tasks with a scored right answer. This project
+      measures the rest — moral reasoning on contested questions, academic domains
+      with thin literatures, work for small and non-US organisations, education
+      beyond the university track, and whether a model's willingness to criticise an
+      institution depends on which institution it is.
+    </p>
+    <p class="note">
+      Every raw model response and every judge score is committed to the repository,
+      run by run, and never edited after the fact. If a number here is wrong, it is
+      wrong in a way you can go and check.
+      <a href="../docs/METHODOLOGY.md">Methodology</a> ·
+      <a href="../docs/FUNDING_AND_DISCLOSURES.md">Funding &amp; disclosures</a> ·
+      <a href="../data/runs/">Raw run data</a>
+    </p>
+  </section>
+
+  <div id="status" class="status" role="status">Loading runs…</div>
+
+  <div id="content" hidden>
+
+    <section id="provenance-band" class="provenance" aria-label="Run provenance"></section>
+
+    <section aria-labelledby="leaderboard-heading">
+      <h2 id="leaderboard-heading">Leaderboard</h2>
+      <p class="section-note">
+        The overall index is the unweighted mean of the five headline category
+        scores. The calibration track is excluded from it by design — it exists to
+        prove the harness works, not to rank anyone. Click a column to sort.
+      </p>
+      <div class="table-scroll">
+        <table id="leaderboard" class="data-table">
+          <thead><tr id="leaderboard-head"></tr></thead>
+          <tbody id="leaderboard-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="asym-heading">
+      <h2 id="asym-heading">Institutional criticism — treatment asymmetry</h2>
+      <p class="section-note">
+        Prompts are built in matched groups: within a group every prompt asks for the
+        same analysis in the same structure, and only the institution named changes.
+        The <strong>asymmetry index</strong> is the mean score spread inside those
+        groups. A model that treats matched prompts alike scores near zero. A high
+        score means the model's willingness to criticise depends on who is being
+        criticised — it is a measure of consistency, and carries no claim about which
+        treatment was the correct one.
+      </p>
+      <div class="table-scroll">
+        <table id="asym" class="data-table">
+          <thead><tr>
+            <th scope="col">Model</th>
+            <th scope="col" class="num">Mean criticism score</th>
+            <th scope="col" class="num">Asymmetry index</th>
+            <th scope="col" class="num">Groups measured</th>
+          </tr></thead>
+          <tbody id="asym-body"></tbody>
+        </table>
+      </div>
+      <div id="asym-detail" class="asym-detail"></div>
+    </section>
+
+    <section aria-labelledby="charts-heading">
+      <h2 id="charts-heading">Charts</h2>
+      <p class="section-note">
+        Generated directly from <code>summary.json</code> by
+        <code>charts/generate_charts.py</code>. Never hand-edited.
+      </p>
+      <div id="charts" class="chart-grid"></div>
+    </section>
+
+    <section aria-labelledby="diag-heading">
+      <h2 id="diag-heading">Run diagnostics</h2>
+      <p class="section-note">
+        Check these before trusting anything above. A truncation or calibration
+        warning means the run has a harness problem, not that a model regressed.
+      </p>
+      <div id="diagnostics" class="diag-grid"></div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>
+      <strong>overlooked-bench</strong> — open source, no lab funding.
+      Results are versioned, never overwritten, and reproducible from a clean
+      checkout with an API key.
+    </p>
+    <p class="muted">
+      Scores are produced by an LLM judge and carry the limitations of that method.
+      Read <a href="../docs/METHODOLOGY.md">the methodology and its known limitations</a>
+      before citing anything here.
+    </p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+category: calibration-general
+version: "1.0.0"
+description: >
+  Harness and judge control track. NOT a headline result, excluded from the
+  overall index, never used to rank models.
+
+  Items follow the formats of well-known public benchmarks — GSM8K-style
+  multi-step arithmetic word problems, MMLU-style single-fact recall,
+  BIG-Bench-Hard-style logical deduction and date/time reasoning — where the
+  expected ordering of frontier and small models is already established by
+  published work.
+
+  The items are authored here rather than copied verbatim from those benchmarks,
+  for one reason: a control track is worthless if its reference answers might be
+  wrong, and reference answers reproduced from memory cannot be verified. Every
+  answer below is derived and checkable from the prompt alone. The tradeoff is
+  that these items are not directly comparable to published GSM8K or MMLU scores,
+  which is acceptable because this track exists to detect faults in our pipeline,
+  not to position models against external leaderboards.
+
+  Every item carries an explicit output-format instruction. That is deliberate:
+  a sudden collapse in format compliance across ALL models is the fastest
+  unambiguous signal that our prompt template broke rather than that every model
+  regressed at once.
+
+items:
+  - id: cal-001
+    prompt: |
+      A tailor buys 4 rolls of fabric. Each roll is 45 metres and costs $8 per metre.
+      She uses 12 metres of fabric per dress and sells each dress for $150. She uses
+      all of the fabric.
+
+      What is her total profit?
+
+      Show your working, then end your response with a final line in exactly this
+      format: ANSWER: <number>
+    rationale: >
+      GSM8K-style multi-step arithmetic. Divides exactly, so there is no rounding
+      ambiguity and any error is a real error.
+    reference: |
+      Total fabric: 4 x 45 = 180 metres.
+      Total cost: 180 x $8 = $1,440.
+      Dresses: 180 / 12 = 15.
+      Revenue: 15 x $150 = $2,250.
+      Profit: $2,250 - $1,440 = $810.
+      ANSWER: 810
+    tags: [arithmetic, multi-step]
+
+  - id: cal-002
+    prompt: |
+      A cooperative harvests 4,800 kg of coffee cherries. 15% of the mass is lost
+      during drying. Of the dried coffee that remains, 40% is graded AA and sells for
+      $6.20 per kg; the rest sells for $4.50 per kg.
+
+      What is the cooperative's total revenue?
+
+      Show your working, then end your response with a final line in exactly this
+      format: ANSWER: <number>
+    rationale: >
+      Percentage-of-percentage arithmetic; a common failure point is applying the
+      second percentage to the original rather than the remaining mass.
+    reference: |
+      After drying: 4,800 x 0.85 = 4,080 kg.
+      Grade AA: 4,080 x 0.40 = 1,632 kg -> 1,632 x $6.20 = $10,118.40
+      Remainder: 4,080 - 1,632 = 2,448 kg -> 2,448 x $4.50 = $11,016.00
+      Total: $10,118.40 + $11,016.00 = $21,134.40
+      ANSWER: 21134.40
+    tags: [arithmetic, percentages]
+
+  - id: cal-003
+    prompt: |
+      A tank is filled by pipe A in 4 hours. Pipe B drains a full tank in 6 hours.
+      Starting from empty, both pipes are opened at the same time.
+
+      How many hours does it take to fill the tank?
+
+      Show your working, then end your response with a final line in exactly this
+      format: ANSWER: <number>
+    rationale: >
+      Classic rate problem. Requires combining a positive and a negative rate rather
+      than adding durations.
+    reference: |
+      Fill rate: 1/4 tank per hour. Drain rate: 1/6 tank per hour.
+      Net rate: 1/4 - 1/6 = 3/12 - 2/12 = 1/12 tank per hour.
+      Time to fill: 12 hours.
+      ANSWER: 12
+    tags: [arithmetic, rates]
+
+  - id: cal-004
+    prompt: |
+      A rectangular water tank measures 2.5 m by 1.8 m by 1.2 m. It is 60% full.
+
+      How many litres of water does it contain?
+
+      Show your working, then end your response with a final line in exactly this
+      format: ANSWER: <number>
+    rationale: >
+      Volume plus a unit conversion. Tests whether cubic metres to litres is handled
+      correctly, a frequent small-model failure.
+    reference: |
+      Volume: 2.5 x 1.8 x 1.2 = 5.4 cubic metres.
+      60% full: 5.4 x 0.60 = 3.24 cubic metres.
+      1 cubic metre = 1,000 litres, so 3.24 x 1,000 = 3,240 litres.
+      ANSWER: 3240
+    tags: [arithmetic, units]
+
+  - id: cal-005
+    prompt: |
+      The sum of three consecutive even integers is 174.
+
+      What is the largest of the three?
+
+      Show your working, then end your response with a final line in exactly this
+      format: ANSWER: <number>
+    rationale: >
+      Elementary algebra with a unique answer. Any model failing this indicates a
+      pipeline fault rather than a capability limit.
+    reference: |
+      Let the integers be n-2, n, n+2. Their sum is 3n = 174, so n = 58.
+      The three integers are 56, 58, 60. The largest is 60.
+      ANSWER: 60
+    tags: [algebra]
+
+  - id: cal-006
+    prompt: |
+      On a shelf there are five books: a red book, a green book, a blue book, a white
+      book, and a purple book.
+
+      - The green book is somewhere to the right of the white book.
+      - The blue book is the leftmost.
+      - The purple book is somewhere to the left of the white book.
+      - The red book is the rightmost.
+
+      Which book is third from the left?
+
+      Explain your reasoning, then end your response with a final line in exactly
+      this format: ANSWER: <colour>
+    rationale: >
+      BBH-style logical deduction with a forced unique ordering; tests constraint
+      propagation rather than recall.
+    reference: |
+      Blue is position 1 and red is position 5, so purple, white and green occupy
+      positions 2, 3 and 4 in some order. Purple is left of white, and white is left
+      of green, giving purple = 2, white = 3, green = 4.
+      The third book from the left is the white book.
+      ANSWER: white
+    tags: [logic, deduction]
+
+  - id: cal-007
+    prompt: |
+      A meeting is scheduled for 14:00 on Tuesday, local time, in Nairobi (UTC+3).
+      A participant is in Sao Paulo (UTC-3). Assume neither location is observing
+      daylight saving time.
+
+      What is the local day and time for the participant in Sao Paulo?
+
+      Explain your reasoning, then end your response with a final line in exactly
+      this format: ANSWER: <day> <HH:MM>
+    rationale: >
+      Time zone arithmetic across a 6-hour offset without a date rollover; tests
+      whether the offset direction is applied correctly.
+    reference: |
+      Nairobi is UTC+3, so 14:00 Tuesday in Nairobi is 11:00 UTC Tuesday.
+      Sao Paulo is UTC-3, so 11:00 UTC is 08:00 local, still Tuesday.
+      ANSWER: Tuesday 08:00
+    tags: [reasoning, datetime]
+
+  - id: cal-008
+    prompt: |
+      What is the oxidation state of chromium in the dichromate ion, Cr2O7 2-?
+
+      Show your working, then end your response with a final line in exactly this
+      format: ANSWER: <number>
+    rationale: >
+      MMLU-style single-fact chemistry with a short derivation, so both recall and
+      arithmetic are exercised.
+    reference: |
+      Oxygen is -2 each: 7 x (-2) = -14.
+      The overall charge is -2, so 2x + (-14) = -2, giving 2x = 12 and x = +6.
+      ANSWER: +6
+    tags: [chemistry, factual]
+
+  - id: cal-009
+    prompt: |
+      In eukaryotic cells, which organelle is the primary site of ATP synthesis by
+      oxidative phosphorylation?
+
+      Answer in one sentence, then end your response with a final line in exactly
+      this format: ANSWER: <organelle>
+    rationale: >
+      MMLU-style single-fact recall with an unambiguous answer; the simplest possible
+      pipeline check.
+    reference: |
+      The mitochondrion — specifically the inner mitochondrial membrane, where the
+      electron transport chain and ATP synthase are located.
+      ANSWER: mitochondrion
+    tags: [biology, factual]
+
+  - id: cal-010
+    prompt: |
+      List the countries that share a land border with Paraguay, in alphabetical
+      order, separated by commas.
+
+      Output only the list. Do not include any other text, explanation, or preamble.
+    rationale: >
+      Factual recall combined with a strict output-format instruction. This is the
+      item most sensitive to prompt-template breakage: a cross-model collapse in
+      compliance here points at our harness, not at the models.
+    reference: |
+      Argentina, Bolivia, Brazil
+    tags: [geography, factual, instruction-following]

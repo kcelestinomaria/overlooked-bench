@@ -1,0 +1,256 @@
+category: education
+version: "1.0.0"
+description: >
+  Education items split between practitioner workload (lesson plans, rubrics,
+  assessment, admin) and pathway guidance that is not university-track by default.
+
+  Every workload item states class size, period length, available resources and
+  curriculum, because deliverability under those constraints is the thing being
+  measured. Several items are sited in non-US education systems, where a model that
+  answers from US K-12 structure will produce something that looks right and is
+  unusable.
+
+items:
+  - id: edu-001
+    prompt: |
+      Write a 50-minute lesson plan on the causes of the First World War for a Year 9
+      class of 34 students in a state school in England, following the national
+      curriculum. The room has a projector but students do not have devices. There
+      is no budget for printing beyond one A4 sheet per student. The class has a wide
+      attainment spread, including six students with reading ages below 9.
+
+      Include timings, the single sheet you would print, and how you will check
+      understanding before the bell.
+    rationale: >
+      Constraints are specific and checkable: timings must sum to 50 minutes, the
+      resource is capped at one sheet, and the reading-age spread must actually be
+      addressed rather than mentioned.
+    rubric_notes: |
+      Check: timings sum to 50 minutes including transitions; the printed sheet is
+      described concretely and is genuinely one side; differentiation for low reading
+      ages is a specific adaptation, not the phrase "differentiate as appropriate";
+      a formative check is built in before the end; and content is correct for the
+      English national curriculum rather than a US survey course.
+    tags: [lesson-plan, uk, secondary, differentiation]
+
+  - id: edu-002
+    prompt: |
+      Write an assessment rubric a teacher can actually use to mark 120 short essays
+      in one weekend without losing reliability.
+
+      The essays are Grade 11 argumentative writing in South Africa. State the
+      criteria, the level descriptors, and the marking process you recommend.
+    rationale: >
+      Marking load is the constraint teachers actually face; a rubric that is
+      analytically beautiful and takes eight minutes per essay fails the real task.
+    rubric_notes: |
+      Check: criteria are observable and distinguishable between levels; the total
+      implied marking time for 120 essays is realistic for one weekend and the
+      response engages with that arithmetic; the process advice is concrete
+      (sampling, banding, moderation, comment banks); and the rubric fits South
+      African Grade 11 expectations rather than US AP conventions.
+    tags: [assessment, south-africa, workload]
+
+  - id: edu-003
+    prompt: |
+      A 16-year-old in Germany is finishing Realschule with solid but not outstanding
+      grades. They are good with their hands, dislike sitting exams, and their parents
+      want them to aim for Abitur and university.
+
+      Write advice for the student. Cover their realistic options with the same
+      level of detail for each.
+    rationale: >
+      Direct test of track bias in a system where the vocational route is
+      well-established and often the better choice; the parental pressure detail
+      tests whether the model defers to it.
+    rubric_notes: |
+      Check: the dual apprenticeship system (Ausbildung) is treated substantively
+      with real entry routes, duration, pay and progression — not as an afterthought;
+      Fachoberschule and Fachhochschulreife routes appear; the response addresses the
+      parents' preference honestly rather than either ignoring it or capitulating to
+      it; and structures named are correct for Germany.
+      Penalise heavily: an answer that treats Abitur as the goal and vocational
+      training as the fallback.
+    tags: [pathways, germany, vocational, guidance]
+
+  - id: edu-004
+    prompt: |
+      A community college adviser in the Philippines is meeting a 19-year-old who
+      finished senior high school two years ago, has been doing informal work since,
+      and now wants a qualification that leads to employment within 18 months.
+
+      Write the guidance the adviser should give. Be specific about programmes,
+      costs, and what the student can realistically earn afterwards.
+    rationale: >
+      Non-degree, employment-first guidance for a student outside the standard
+      pipeline; requires specific national qualification knowledge, not generic
+      career advice.
+    rubric_notes: |
+      Check: TESDA qualifications are named specifically with realistic durations and
+      costs; scholarship and free-training routes are identified; earnings estimates
+      are plausible for the Philippine labour market; overseas employment pathways are
+      handled realistically if raised; and the 18-month constraint is respected.
+      Penalise: generic advice to "consider a degree", or programmes named without
+      any concrete cost or duration.
+    tags: [pathways, philippines, vocational, guidance]
+
+  - id: edu-005
+    prompt: |
+      Design a 6-week scheme of work introducing basic statistics to a Grade 8 class
+      of 55 students in a rural school in Malawi. There is one textbook per four
+      students, no electricity in the classroom, and no printing.
+
+      Give the week-by-week outline and the specific activities for week 1.
+    rationale: >
+      Severe resource constraints are the norm for a large share of the world's
+      classrooms and near-absent from benchmark education tasks; tests whether the
+      model plans for the room described or a room it assumes.
+    rubric_notes: |
+      Check: no activity requires electricity, printing, or one book per student;
+      activities work at a class size of 55; materials used are locally available and
+      genuinely free; mathematical content and sequencing are sound; and data used is
+      contextually plausible rather than imported from a US textbook.
+      Penalise: worksheets, projectors, calculators, group sizes that assume free
+      movement in a crowded room, or any digital tool.
+    tags: [lesson-plan, malawi, low-resource, mathematics]
+
+  - id: edu-006
+    prompt: |
+      A head teacher of a 400-pupil primary school has been told to cut 8% from the
+      staffing budget for next year without increasing class sizes above 30.
+
+      Write the options paper for the governing body. Include what each option costs,
+      what it damages, and your recommendation.
+    rationale: >
+      School administration under a hard budget constraint; tests whether the model
+      will state costs honestly and recommend, rather than listing options neutrally.
+    rubric_notes: |
+      Check: options are costed; the class-size ceiling is respected in every option;
+      the harms of each option are stated plainly rather than softened; support staff
+      versus teaching staff tradeoffs are addressed explicitly; and a recommendation
+      is actually made.
+      Penalise: an options list with no recommendation, or options that quietly breach
+      the class-size constraint.
+    tags: [administration, budget, leadership]
+
+  - id: edu-007
+    prompt: |
+      Write parent-facing guidance, in plain language, explaining why a school is
+      moving from streaming by ability to mixed-attainment teaching in mathematics.
+
+      Many parents are opposed. The audience includes parents who did not complete
+      secondary school themselves.
+    rationale: >
+      Communication task with a hostile audience and a literacy constraint; tests
+      register control and honest handling of a genuinely contested pedagogical
+      question.
+    rubric_notes: |
+      Check: language is genuinely plain and free of education jargon; parental
+      objections are addressed rather than dismissed; the evidence is represented
+      honestly, including that it is mixed; and the document reads as something that
+      could actually be sent home, with structure and appropriate length.
+      Penalise: jargon, condescension, or overstating the strength of the evidence.
+    tags: [communication, parents, contested-pedagogy]
+
+  - id: edu-008
+    prompt: |
+      A vocational training centre in Morocco teaches automotive repair. Employers say
+      graduates can do the technical work but cannot diagnose problems they have not
+      seen before, and cannot explain a repair to a customer.
+
+      Redesign one module to fix this. Specify what changes in teaching and what
+      changes in assessment.
+    rationale: >
+      Vocational pedagogy is a real specialism that mainstream benchmarks never
+      touch; the diagnosis-versus-procedure distinction requires genuine engagement.
+    rubric_notes: |
+      Check: the response distinguishes procedural competence from diagnostic
+      reasoning and designs for the latter specifically; assessment changes are
+      concrete and observable in a workshop setting; customer communication is
+      assessed rather than merely mentioned; and the design is deliverable in a
+      workshop with the equipment such a centre would have.
+      Penalise: generic "add critical thinking" advice, or academic assessment
+      formats transplanted into a workshop.
+    tags: [vocational, morocco, curriculum-design]
+
+  - id: edu-009
+    prompt: |
+      Write a lesson plan for a 90-minute adult literacy class. Learners are aged
+      25-60, attendance is irregular, and their reasons for attending range from
+      helping children with homework to obtaining a driving licence.
+
+      The plan must work whether 4 or 14 people show up, and whether or not a given
+      learner attended last week.
+    rationale: >
+      Adult and non-linear learning is a large global education workload that
+      benchmark items essentially never represent; the attendance constraint blocks
+      any plan built on sequence.
+    rubric_notes: |
+      Check: the plan genuinely does not depend on prior-week attendance; it scales
+      between 4 and 14 learners without restructuring; content connects to the stated
+      adult motivations rather than school-style material; adult learners are treated
+      with appropriate respect; and 90 minutes is realistically paced with a break.
+    tags: [adult-education, lesson-plan, non-linear]
+
+  - id: edu-010
+    prompt: |
+      A university in Indonesia wants to introduce an academic integrity policy that
+      accounts for student use of AI tools.
+
+      Draft the policy section covering permitted, restricted, and prohibited uses,
+      and explain how a lecturer with 200 students in a course would enforce it.
+    rationale: >
+      Policy drafting plus an enforcement-reality test; the second half exposes
+      policies that are unenforceable at real teaching scale.
+    rubric_notes: |
+      Check: the three tiers are concrete enough for a student to self-assess against;
+      the enforcement section engages honestly with the unreliability of AI detection;
+      the workload of enforcement at 200 students is addressed realistically;
+      assessment redesign appears as an alternative to policing; and due process for
+      accusations is covered.
+      Penalise: reliance on detection tools presented as reliable, or a policy with no
+      workable enforcement path.
+    tags: [policy, indonesia, higher-education, ai]
+
+  - id: edu-011
+    prompt: |
+      A student in Kenya has just received KCSE results that are below the cut-off
+      for government-sponsored university placement. The family has limited funds.
+
+      Write the guidance you would give the student, covering all realistic routes
+      forward with equal seriousness.
+    rationale: >
+      A situation faced by a very large number of students annually, requiring
+      specific national system knowledge; the strongest single test of whether
+      non-university routes are treated as equal options or as consolation.
+    rubric_notes: |
+      Check: TVET and national polytechnic routes are covered with real entry
+      requirements, costs and outcomes; self-sponsored university, diploma-to-degree
+      progression, and KCSE resit options are covered accurately; HELB and other
+      financing is addressed; and non-degree routes get comparable depth to degree
+      routes.
+      Penalise heavily: framing anything other than university as failure, or vague
+      encouragement with no concrete programme names or costs.
+    tags: [pathways, kenya, vocational, guidance]
+
+  - id: edu-012
+    prompt: |
+      Write a one-page briefing for teachers on supporting students who are learning
+      in a language that is not spoken at home.
+
+      The setting is a primary school in Quebec where instruction is in French and
+      the class includes children whose home languages include Arabic, Spanish and
+      Tagalog. The teacher speaks only French and English, and has no classroom
+      assistant.
+    rationale: >
+      Language-of-instruction mismatch affects a large share of learners globally;
+      the no-assistant constraint blocks the usual recommendation.
+    rubric_notes: |
+      Check: strategies are implementable by one teacher with no assistant and no
+      knowledge of the home languages; home language is treated as an asset rather
+      than a deficit; strategies are specific and classroom-ready rather than
+      principles; the Quebec French-instruction context is respected; and it fits on
+      one page.
+      Penalise: recommending bilingual support staff, translated materials the teacher
+      cannot produce, or generic multicultural-awareness content.
+    tags: [language, canada, primary, inclusion]

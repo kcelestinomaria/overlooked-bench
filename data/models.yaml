@@ -1,0 +1,168 @@
+# ===========================================================================
+# overlooked-bench — model registry
+# ===========================================================================
+# Adding a model to the benchmark = adding ONE entry to this file.
+# No code change is required.
+#
+# Every model is reached through the Vercel AI Gateway, which exposes an
+# OpenAI-compatible endpoint for all providers. One env var (AI_GATEWAY_API_KEY)
+# unlocks the whole roster. `api_key_env` is still declared per entry so that a
+# model can be pointed at a direct provider key later without a code change.
+#
+# FIELDS
+#   key         Stable short slug. Used in filenames and charts. NEVER reuse a
+#               key for a different underlying model — historical runs are keyed
+#               on it and reuse would silently corrupt the time series.
+#   provider    Owning lab. Used for grouping and for self-preference analysis.
+#   model_id    Exact gateway model identifier.
+#   display     Human-readable name for charts.
+#   tier        frontier | mid | small — our editorial classification.
+#   api_key_env Env var holding the credential used to reach this model.
+#   judge       true if this model is ELIGIBLE to serve as the judge.
+#   enabled     true if this model is included in the next scheduled run.
+#   notes       Free text; why the model is in the roster.
+# ===========================================================================
+
+defaults:
+  base_url_env: AI_GATEWAY_BASE_URL
+  base_url: https://ai-gateway.vercel.sh/v1
+  api_key_env: AI_GATEWAY_API_KEY
+  temperature: 0.0
+  # Generous on purpose. Several models in the roster are reasoning models that
+  # spend completion tokens on internal reasoning before emitting an answer; at
+  # 1600 they truncated mid-calculation and the calibration track caught it as a
+  # pipeline fault. Truncation is scored as failure, so a tight cap would show up
+  # as a fake capability gap. See docs/METHODOLOGY.md changelog m1.0.1.
+  max_tokens: 4000
+  timeout_s: 300
+  max_retries: 4
+
+# The judge is deliberately NOT a model under test in the same run.
+# See docs/METHODOLOGY.md ("Judge selection and self-preference").
+judge:
+  model_id: anthropic/claude-opus-4.5
+  prompt_version: jp-1.0.0
+  temperature: 0.0
+  max_tokens: 2000
+
+models:
+  - key: claude-sonnet-5
+    provider: anthropic
+    model_id: anthropic/claude-sonnet-5
+    display: Claude Sonnet 5
+    tier: frontier
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: true
+    enabled: true
+    notes: Anthropic frontier-tier workhorse.
+
+  - key: claude-haiku-4-5
+    provider: anthropic
+    model_id: anthropic/claude-haiku-4.5
+    display: Claude Haiku 4.5
+    tier: small
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Cheap tier. Most real-world SMB/nonprofit deployments run models at this price point, not frontier.
+
+  - key: gpt-5-4
+    provider: openai
+    model_id: openai/gpt-5.4
+    display: GPT-5.4
+    tier: frontier
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: true
+    enabled: true
+    notes: OpenAI frontier tier.
+
+  - key: gpt-5-4-mini
+    provider: openai
+    model_id: openai/gpt-5.4-mini
+    display: GPT-5.4 Mini
+    tier: mid
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Mid tier; the default for cost-sensitive org deployments.
+
+  - key: gemini-3-5-flash
+    provider: google
+    model_id: google/gemini-3.5-flash
+    display: Gemini 3.5 Flash
+    tier: mid
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Google mid tier; heavily used in education products.
+
+  - key: gemini-2-5-pro
+    provider: google
+    model_id: google/gemini-2.5-pro
+    display: Gemini 2.5 Pro
+    tier: frontier
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: true
+    enabled: true
+    notes: Google frontier tier.
+
+  - key: deepseek-v3-2
+    provider: deepseek
+    model_id: deepseek/deepseek-v3.2
+    display: DeepSeek V3.2
+    tier: mid
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Non-US lab. Directly relevant to the institutional-criticism track — different political pressures than US labs.
+
+  - key: kimi-k2-5
+    provider: moonshotai
+    model_id: moonshotai/kimi-k2.5
+    display: Kimi K2.5
+    tier: mid
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Non-US lab, widely deployed outside the US.
+
+  - key: mistral-medium-3-5
+    provider: mistral
+    model_id: mistral/mistral-medium-3.5
+    display: Mistral Medium 3.5
+    tier: mid
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: EU lab; EU-jurisdiction org/labour-law tasks are a stated blind spot of US-centric benchmarks.
+
+  - key: llama-3-3-70b
+    provider: meta
+    model_id: meta/llama-3.3-70b
+    display: Llama 3.3 70B
+    tier: mid
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Open-weights baseline. Self-hostable, so it is the realistic option for orgs that cannot send data to an API.
+
+  # --- Registered but not in the default run (flip `enabled` to include) ---
+  - key: gpt-oss-120b
+    provider: openai
+    model_id: openai/gpt-oss-120b
+    display: GPT-OSS 120B
+    tier: mid
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: false
+    notes: Open-weights OpenAI release; candidate for the self-hostable comparison set.
+
+  - key: qwen-3-14b
+    provider: alibaba
+    model_id: alibaba/qwen-3-14b
+    display: Qwen3 14B
+    tier: small
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: false
+    notes: Small non-US open-weights model; candidate for a low-resource-deployment track.

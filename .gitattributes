@@ -1,0 +1,11 @@
+# Normalise line endings so a run produced on Linux CI and one produced on a
+# Windows laptop do not differ by \r on every line of every JSON record.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
+
+# Results are the audit trail, not source. Collapsing them in review keeps the
+# monthly PR readable while leaving every byte diffable on demand.
+data/runs/** linguist-generated=true

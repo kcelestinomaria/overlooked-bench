@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<style>
+  /* ---------------------------------------------------------------------
+     Fixed branded social card. 1600x900 for X / LinkedIn / Bluesky.
+
+     Rendered headless by Playwright in CI. Two consequences drive the CSS:
+
+       1. No web fonts. A font fetch can fail or render differently on a CI
+          runner, and a card that silently changes typeface between months is
+          not reproducible. System stack only.
+       2. Fixed pixel dimensions, no responsive rules. This page is only ever
+          screenshotted at exactly 1600x900.
+
+     Palette is the validated dataviz default (light mode). The chart image is
+     embedded as a data URI so the page has no external requests at all.
+     --------------------------------------------------------------------- */
+
+  :root {
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-secondary: #52514e;
+    --ink-muted: #8a8880;
+    --accent: #2a78d6;
+    --rule: #e6e5e1;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 1600px;
+    height: 900px;
+    overflow: hidden;
+  }
+
+  body {
+    background: var(--surface);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+                 Arial, "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Accent rail — the one piece of pure brand on the card. */
+  .rail {
+    height: 10px;
+    background: var(--accent);
+    flex: 0 0 auto;
+  }
+
+  header {
+    flex: 0 0 auto;
+    padding: 34px 56px 18px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .wordmark {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .wordmark .dim { color: var(--accent); }
+
+  .tagline {
+    font-size: 17px;
+    color: var(--ink-secondary);
+    margin-top: 6px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .run-meta {
+    text-align: right;
+    font-size: 16px;
+    color: var(--ink-secondary);
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+  .run-meta .date {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    display: block;
+  }
+
+  /* The chart fills whatever space the frame leaves. `contain` guarantees a
+     chart of any aspect ratio is never cropped — a cropped bar chart would be
+     actively misleading, not merely ugly. */
+  main {
+    flex: 1 1 auto;
+    min-height: 0;
+    padding: 22px 56px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  footer {
+    flex: 0 0 auto;
+    padding: 16px 56px 30px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .method {
+    font-size: 15px;
+    color: var(--ink-secondary);
+    line-height: 1.45;
+    max-width: 1050px;
+  }
+
+  .source {
+    font-size: 15px;
+    color: var(--ink-muted);
+    white-space: nowrap;
+    text-align: right;
+    line-height: 1.45;
+  }
+  .source strong { color: var(--ink-secondary); font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="rail"></div>
+
+  <header>
+    <div>
+      <div class="wordmark">overlooked<span class="dim">-</span>bench</div>
+      <div class="tagline">{{ tagline }}</div>
+    </div>
+    <div class="run-meta">
+      <span class="date">{{ run_id }}</span>
+      {{ n_models }} models · {{ n_items }} items
+    </div>
+  </header>
+
+  <main>
+    <img src="data:image/png;base64,{{ chart_b64 }}" alt="{{ title }}">
+  </main>
+
+  <footer>
+    <div class="method">{{ methodology_note }}</div>
+    <div class="source">
+      <strong>{{ repo_url }}</strong><br>
+      Raw outputs and scores published for every run
+    </div>
+  </footer>
+</body>
+</html>

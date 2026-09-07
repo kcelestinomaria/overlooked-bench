@@ -1,0 +1,38 @@
+# --- Secrets: never commit ---
+.env
+.env.local
+*.key
+secrets.yaml
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- DeepEval local telemetry / cache ---
+.deepeval/
+.deepeval-cache.json
+.deepeval_telemetry.txt
+temp_test_run_data.json
+
+# --- Node / Playwright ---
+node_modules/
+.playwright/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Build output that is NOT the audit trail ---
+site/dist/
+.cache/
+
+# NOTE: data/runs/** is deliberately NOT ignored.
+# Versioned run output is the audit trail and must be committed.

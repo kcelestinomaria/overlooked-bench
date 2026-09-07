@@ -1,0 +1,161 @@
+category: niche-academic
+version: "1.0.0"
+description: >
+  Academic items from fields with thin literatures, substantial non-English
+  scholarship, unsettled evidence, or regional rather than global study. The
+  selection deliberately avoids competition mathematics, physics, and graduate exam
+  questions in well-covered fields, all of which are heavily represented both in
+  training data and in existing benchmarks.
+
+  Many items ask explicitly for the state of the evidence, not only the answer.
+  That is the point: in a thin literature, a model's register of confidence does
+  not degrade as its knowledge does, and calibration is the property that decides
+  whether a researcher can use it at all.
+
+items:
+  - id: nia-001
+    prompt: |
+      Summarise the current state of the debate over the classification of the
+      Ongota language of Ethiopia. What positions have been argued, on what evidence,
+      and how strong is that evidence?
+    rationale: >
+      A genuinely unresolved classification problem with a tiny literature and a
+      handful of contributing scholars — near-ideal for detecting invented consensus.
+    tags: [linguistics, africa, contested]
+
+  - id: nia-002
+    prompt: |
+      Explain the methodological problems in using dendrochronology for dating in
+      tropical regions, and describe which approaches have been developed to address
+      them.
+    rationale: >
+      A well-defined technical limitation whose workarounds are documented but not
+      widely popularised; tests real methodological knowledge over general familiarity.
+    tags: [archaeology, methods, tropics]
+
+  - id: nia-003
+    prompt: |
+      In Islamic legal theory, what is the relationship between maslaha and the
+      established sources of law, and where do the Maliki and Hanafi positions
+      diverge?
+    rationale: >
+      A major non-Western scholarly tradition with technical internal distinctions
+      that a surface answer will blur; tests field situatedness directly.
+    tags: [islamic-law, non-western, technical]
+
+  - id: nia-004
+    prompt: |
+      What is known about pre-colonial iron smelting technology in the Great Lakes
+      region of Africa, and what are the main disputes in the archaeometallurgical
+      literature about furnace typology and dating?
+    rationale: >
+      Regional archaeology with a real but small literature and live disputes;
+      strongly tests the distinction between depth and encyclopaedia-level summary.
+    tags: [archaeology, africa, contested]
+
+  - id: nia-005
+    prompt: |
+      Explain the concept of "ma" in Japanese aesthetics as it is treated in
+      Japanese-language scholarship, and describe how its treatment in Western
+      writing on Japanese art differs.
+    rationale: >
+      Explicitly asks for the difference between a scholarly tradition and its
+      Anglophone reception — a direct probe of the field-situatedness dimension.
+    tags: [aesthetics, japan, non-anglophone]
+
+  - id: nia-006
+    prompt: |
+      Describe the agronomic constraints specific to teff cultivation, and explain why
+      mechanisation has proved difficult. What has been tried?
+    rationale: >
+      A staple crop for tens of millions with a small, largely regional research
+      literature; lodging and mechanisation are the real technical crux.
+    tags: [agronomy, ethiopia, applied]
+
+  - id: nia-007
+    prompt: |
+      In the palaeography of medieval Georgian manuscripts, what distinguishes the
+      Asomtavruli, Nuskhuri and Mkhedruli scripts, and what does script choice tell a
+      scholar about dating and provenance?
+    rationale: >
+      Highly specialised, small field, with concrete verifiable facts — a strong
+      fabrication detector.
+    tags: [palaeography, caucasus, technical]
+
+  - id: nia-008
+    prompt: |
+      What is the current evidence on the effectiveness of community forest management
+      in Nepal, and what are the main methodological criticisms of that evidence base?
+    rationale: >
+      A well-studied policy area where the interesting content is the critique of the
+      evidence base rather than the headline finding.
+    tags: [development-studies, nepal, methods, contested]
+
+  - id: nia-009
+    prompt: |
+      Explain the debate over whether Ayurvedic rasashastra preparations should be
+      studied as pharmacology or as a distinct epistemic system, and outline the
+      strongest argument on each side.
+    rationale: >
+      Requires handling a non-Western knowledge system academically without either
+      dismissing it or abandoning scholarly standards — a failure mode in both
+      directions.
+    tags: [history-of-medicine, india, contested, non-western]
+
+  - id: nia-010
+    prompt: |
+      Describe the main disputes in the historiography of the Haitian Revolution over
+      the past thirty years, and explain what changed to produce them.
+    rationale: >
+      Historiographical rather than factual, requiring knowledge of how a field
+      moved; substantial francophone and Haitian scholarship is central.
+    tags: [history, caribbean, historiography, non-anglophone]
+
+  - id: nia-011
+    prompt: |
+      What are the principal technical obstacles to reconstructing Proto-Bantu tone,
+      and where does the field currently stand?
+    rationale: >
+      Technical historical linguistics with genuine unresolved problems; rewards
+      accurate statement of what is not known.
+    tags: [linguistics, africa, technical, contested]
+
+  - id: nia-012
+    prompt: |
+      In ethnomusicology, explain the analytical problems that arise when Western
+      transcription conventions are applied to gamelan, and what alternatives have
+      been proposed.
+    rationale: >
+      A methodological critique with a real literature; tests whether the model can
+      articulate why a dominant framework fails rather than applying it.
+    tags: [ethnomusicology, indonesia, methods]
+
+  - id: nia-013
+    prompt: |
+      Explain how customary land tenure interacts with statutory registration in
+      Papua New Guinea, and what the main scholarly criticisms of formalisation
+      programmes have been.
+    rationale: >
+      Legal-anthropological area with a small, regionally concentrated literature and
+      significant real-world stakes.
+    tags: [legal-anthropology, oceania, contested]
+
+  - id: nia-014
+    prompt: |
+      What is the state of evidence on the long-term ecological effects of the Aral
+      Sea desiccation on the surrounding terrestrial ecosystems — as distinct from the
+      aquatic and public health effects, which are better documented?
+    rationale: >
+      The prompt names the well-covered adjacent literature explicitly, so a model
+      that answers from it is visibly off-task; much relevant work is in Russian.
+    tags: [ecology, central-asia, non-anglophone, contested]
+
+  - id: nia-015
+    prompt: |
+      In the study of Ottoman waqf institutions, what have historians concluded about
+      their economic function, and what are the main disagreements about whether they
+      constrained or enabled capital formation?
+    rationale: >
+      Economic history with a substantial Turkish-language literature and a genuine
+      interpretive dispute that a surface answer will flatten into consensus.
+    tags: [economic-history, ottoman, non-anglophone, contested]
