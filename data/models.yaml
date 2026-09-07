@@ -28,12 +28,21 @@ defaults:
   base_url: https://ai-gateway.vercel.sh/v1
   api_key_env: AI_GATEWAY_API_KEY
   temperature: 0.0
-  # Generous on purpose. Several models in the roster are reasoning models that
-  # spend completion tokens on internal reasoning before emitting an answer; at
-  # 1600 they truncated mid-calculation and the calibration track caught it as a
-  # pipeline fault. Truncation is scored as failure, so a tight cap would show up
-  # as a fake capability gap. See docs/METHODOLOGY.md changelog m1.0.1.
-  max_tokens: 4000
+  # Generous on purpose, and raised twice during bring-up.
+  #
+  # Reasoning models spend completion tokens on internal reasoning BEFORE emitting
+  # any visible answer, and that spend is invisible in the response text. At 1600
+  # they truncated mid-calculation on the calibration track. At 4000 they still
+  # truncated on 31 of 910 long-form items -- and in two cases returned a
+  # perfectly successful response containing zero characters, having spent the
+  # entire 4000-token budget on reasoning.
+  #
+  # This matters more than an ordinary default because truncation is scored as
+  # failure: a tight cap does not surface as an error, it surfaces as a fake
+  # capability gap, in exactly the categories that have no ground truth to catch
+  # it. Long-form deliverable items (org-enterprise, education) are the binding
+  # constraint. See docs/METHODOLOGY.md.
+  max_tokens: 8000
   timeout_s: 300
   max_retries: 4
 

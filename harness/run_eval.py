@@ -102,14 +102,26 @@ def phase_generate(
     """Collect raw model responses. Writes each to disk as it arrives."""
     jobs: list[tuple[ModelSpec, Item]] = []
     reused = 0
+    retried = 0
     for spec in models:
         for category, items in items_by_category.items():
             for item in items:
                 path = raw_path(root, spec.key, category, item.id)
                 if path.exists() and not force:
-                    reused += 1
-                    continue
+                    prev = read_json(path)
+                    # Resume must not treat a FAILED call as finished work. A
+                    # provider outage, a rate limit, or an exhausted account
+                    # writes a record with ok=false, and caching that as
+                    # "already generated" would bake a transient failure into
+                    # the run permanently — every later resume would skip it and
+                    # the model would be scored 0 for an error that was ours.
+                    if prev is not None and prev.get("ok"):
+                        reused += 1
+                        continue
+                    retried += 1
                 jobs.append((spec, item))
+    if retried:
+        console.print(f"[yellow]Retrying {retried} previously-failed generation(s).[/yellow]")
 
     if reused:
         console.print(f"[dim]Reusing {reused} raw response(s) already on disk.[/dim]")
@@ -190,6 +202,7 @@ def phase_score(
     jobs: list[tuple[str, Item, str]] = []
     cached: list[ScoreRecord] = []
     missing_raw = 0
+    retried = 0
 
     for spec in models:
         for category, items in items_by_category.items():
@@ -197,18 +210,32 @@ def phase_score(
                 spath = scored_path(root, spec.key, category, item.id)
                 if spath.exists() and not force:
                     prev = read_json(spath)
-                    if prev:
+                    # Same rule as generation: only a SUCCESSFUL score counts as
+                    # done. A judge call that 402'd, timed out, or came back
+                    # unparseable must be re-judged on the next resume, not
+                    # cached as a permanent zero.
+                    if prev and prev.get("ok"):
                         cached.append(ScoreRecord(**prev))
                         continue
+                    if prev:
+                        retried += 1
                 raw = read_json(raw_path(root, spec.key, category, item.id))
-                if raw is None:
+                # A raw record that failed to generate has no text to judge.
+                # Scoring it would manufacture a 0 for a model that was never
+                # actually asked; leave it out so the gap stays visible.
+                if raw is None or not raw.get("ok"):
                     missing_raw += 1
                     continue
                 jobs.append((spec.key, item, raw.get("text", "")))
 
+    if retried:
+        console.print(f"[yellow]Re-judging {retried} previously-failed score(s).[/yellow]")
+
     if missing_raw:
         console.print(
-            f"[yellow]{missing_raw} item(s) have no raw response and cannot be scored.[/yellow]"
+            f"[yellow]{missing_raw} item(s) have no usable raw response and were not "
+            f"scored. They are excluded from the run rather than scored 0 — check "
+            f"`n` per category in summary.json.[/yellow]"
         )
     if cached:
         console.print(f"[dim]Reusing {len(cached)} existing score(s).[/dim]")

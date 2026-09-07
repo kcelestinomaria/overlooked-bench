@@ -303,7 +303,7 @@ interrupted run costs nothing to continue.
 ### Sampling parameters
 
 `temperature: 0.0` and a fixed `max_tokens` for every model, recorded per-run in
-`manifest.json`. Temperature 0 reduces run-to-run variance but does not eliminate
+`manifest.json` and, per response, in each raw record's `request_params`. Temperature 0 reduces run-to-run variance but does not eliminate
 it — most providers do not guarantee determinism even at 0. **Scores will move a
 little between identical runs.** Differences smaller than roughly 2 points on a
 0–100 category score should not be read as meaningful.
@@ -401,18 +401,48 @@ equal category weighting with the calibration track excluded from the index.
 Defaults: `temperature 0.0`, `max_tokens 4000` (models) / `2000` (judge),
 `timeout_s 300`.
 
-**Development note — why the token budget is that large.** The harness was
-smoke-tested before the first run, and the calibration track immediately failed
-for a reasoning model. Investigation showed `finish_reason: "length"` at 1595 of
-an initial 1600-token cap: the model had spent its completion budget on internal
-reasoning and was cut off mid-calculation. Truncated responses score 0, so a
-too-tight cap manifests as a *fake capability gap* — and it would do so most
-invisibly in exactly the categories that have no ground truth to catch it. The cap
-was raised before any run was scored, and truncation was promoted to a first-class
-run diagnostic (`diagnostics.truncated_count`, `truncated_by_model`, and a
-run-level warning).
+**Development note — why the token budget is that large, and the one caveat on
+run `2026-09-08`.** The completion-token cap was raised twice during bring-up,
+both times because of the same failure mode, and the second time is recorded in
+the run data itself.
 
-This is recorded here rather than quietly fixed because it is the clearest
-available illustration of why the control track exists: the fault produced a
-plausible-looking result, not an error, and nothing else in the pipeline would
-have flagged it. No scores were ever published under the smaller cap.
+*First raise, 1600 → 4000.* The harness was smoke-tested before the first run and
+the calibration track immediately failed for a reasoning model:
+`finish_reason: "length"` at 1595 of 1600 completion tokens. The model had spent
+its budget on internal reasoning and was cut off mid-calculation. Truncated
+responses score 0, so a too-tight cap manifests as a *fake capability gap* — and
+it does so most invisibly in exactly the categories that have no ground truth to
+catch it. Truncation was promoted to a first-class run diagnostic at the same
+time (`diagnostics.truncated_count`, `truncated_by_model`, and a run-level
+warning).
+
+*Second raise, 4000 → 8000.* An audit of the raw outputs of run `2026-09-08`,
+before scoring completed, found 31 of 910 responses still truncated — concentrated
+in the long-form deliverable categories (`org-enterprise`, `education`) and in one
+model, which lost 19 of its 91 items. Two of those responses were worse than
+truncated: they returned successfully, with `finish_reason: "length"` and **zero
+characters of text**, having spent the entire 4000-token budget on reasoning
+before emitting anything. A response like that is indistinguishable from a refusal
+unless you check `finish_reason`.
+
+*What was done about it.* The cap was raised to 8000 and **only the 31 affected
+items were regenerated**, along with any scores already derived from them. The
+remaining 879 responses were left untouched: each had already terminated naturally
+at `finish_reason: "stop"`, meaning the model had finished what it wanted to say,
+so a larger ceiling could not have changed them. Re-requesting them would have
+cost money to obtain near-identical text and would have discarded a valid audit
+trail.
+
+*The caveat this creates.* Run `2026-09-08` therefore contains responses generated
+under two different `max_tokens` values. This is disclosed rather than smoothed
+over, and it is checkable: **every raw record carries the exact cap used for it in
+`request_params.max_tokens`**, so anyone can partition the run and verify the
+claim above for themselves. Runs from `2026-10-01` onward use a single cap
+throughout.
+
+This is documented at length rather than quietly fixed because it is the clearest
+illustration available of why the control track exists and why raw outputs are
+archived before scoring. Both faults produced *plausible-looking results* rather
+than errors. Nothing else in the pipeline would have flagged either one, and a
+benchmark that had reported them would have published a confident, wrong claim
+about a model's capability.
