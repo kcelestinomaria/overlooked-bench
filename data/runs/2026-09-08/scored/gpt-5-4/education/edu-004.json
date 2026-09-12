@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a community college adviser meeting one 19-year-old student. The response addresses the learner's specific situation: finished senior high school two years ago, informal work, budget constraints, and 18-month goal. It proposes concrete, low-cost adaptations by asking questions like 'Do you need to earn while studying?', 'Do you have access to a computer and stable internet?', and 'What is your budget for tuition, transport, and daily expenses?' It offers options for different budgets (e.g., 'If budget is very limited') and preferences (e.g., hands-on vs. office work). The guidance is implementable by one adviser and is specific, not generic placeholder language.",
+    "pathway_breadth": "Pathway guidance is in scope. The response extensively covers non-degree pathways relevant to the student: TESDA qualifications (e.g., Caregiving NC II, SMAW NC I/II, Bookkeeping NC III), 1-2 year community college technical programmes, healthcare support, office support, IT, and contact center training. It provides specific durations (e.g., '2 to 6 months'), costs (e.g., 'free or heavily subsidized', '₱1,000–₱5,000'), and realistic earnings estimates (e.g., '₱12,000–₱18,000') for the Philippine labour market. It respects the 18-month constraint, avoids generic degree advice, and correctly names TESDA and national systems. Non-degree options are treated substantively with equal or greater depth than academic routes.",
+    "pedagogical_soundness": "The response is not a lesson plan with learning objectives, activities, and assessments; it is advisory guidance. Therefore, the evaluation steps for pedagogical soundness (identifying objectives, checking activities, assessments, sequencing, rubrics) are not applicable. The response does not engage with this dimension at all in the context of the prompt.",
+    "workload_realism": "The response provides guidance for an adviser, not a teaching plan requiring delivery timings, materials, or marking load. The prompt asks for 'guidance the adviser should give,' not a lesson to be delivered. Therefore, the dimension's criteria (summing activity timings, listing materials, estimating preparation/marking time, checking class size feasibility) are not relevant. The response does not engage with this dimension."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.0017062,
+  "judge_latency_s": 17.945,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan with learning objectives, activities, and assessments; it is advisory guidance. Therefore, the evaluation steps for pedagogical soundness (identifying objectives, checking activities, assessments, sequencing, rubrics) are not applicable. The response does not engage with this dimension at all in the context of the prompt.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides guidance for an adviser, not a teaching plan requiring delivery timings, materials, or marking load. The prompt asks for 'guidance the adviser should give,' not a lesson to be delivered. Therefore, the dimension's criteria (summing activity timings, listing materials, estimating preparation/marking time, checking class size feasibility) are not relevant. The response does not engage with this dimension.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response extensively covers non-degree pathways relevant to the student: TESDA qualifications (e.g., Caregiving NC II, SMAW NC I/II, Bookkeeping NC III), 1-2 year community college technical programmes, healthcare support, office support, IT, and contact center training. It provides specific durations (e.g., '2 to 6 months'), costs (e.g., 'free or heavily subsidized', '₱1,000–₱5,000'), and realistic earnings estimates (e.g., '₱12,000–₱18,000') for the Philippine labour market. It respects the 18-month constraint, avoids generic degree advice, and correctly names TESDA and national systems. Non-degree options are treated substantively with equal or greater depth than academic routes.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a community college adviser meeting one 19-year-old student. The response addresses the learner's specific situation: finished senior high school two years ago, informal work, budget constraints, and 18-month goal. It proposes concrete, low-cost adaptations by asking questions like 'Do you need to earn while studying?', 'Do you have access to a computer and stable internet?', and 'What is your budget for tuition, transport, and daily expenses?' It offers options for different budgets (e.g., 'If budget is very limited') and preferences (e.g., hands-on vs. office work). The guidance is implementable by one adviser and is specific, not generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, practical, and contextually accurate guidance for a Philippine community college adviser, focusing on short-term vocational pathways with realistic costs and earnings.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides highly specific, practical, and contextually accurate guidance for a Philippine community college adviser, focusing on short-term vocational pathways with realistic costs and earnings.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

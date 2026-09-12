@@ -1,0 +1,22 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00091152,
+  "judge_latency_s": 16.972,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about rasashastra: it describes mercury-based preparations, mentions 'marana' (digestion/processing) and 'yogavahi' (carrier properties), and correctly frames the debate between pharmacology and distinct epistemic systems. It does not invent citations or technical terms; all terms used (rasashastra, marana, yogavahi) are authentic to Ayurvedic literature. The claims about mercury's toxicity and the nature of the debate are factually correct. No invented consensus or fabricated references are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond a basic encyclopedic summary. It engages with specific concepts like 'marana' and 'yogavahi', discusses ontological commitments and reductionism, and contrasts safety as 'measurable, non-negotiable' versus 'embedded in practice wisdom'. It addresses methodological pluralism and epistemic colonialism, indicating familiarity with scholarly debates. A specialist would recognize engagement with internal debates about integration versus preservation, not just a summary of a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established and contested points. It presents both sides as arguments, not settled facts, and notes 'neither side is simply wrong'. It specifically calibrates by stating pharmacology offers 'the only reliable framework for safety' (a strong claim) while acknowledging rasashastra's 'historical success' and 'mechanisms not yet legible to Western science'. It avoids uniform confidence, e.g., 'may be' in proposing methodological pluralism. However, it could more explicitly flag where evidence is thin (e.g., on yogavahi's operationalization).\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses Ayurvedic terminology (rasashastra, marana, yogavahi) and frames the debate within the context of Ayurvedic scholarly tradition. It does not silently substitute a Western pharmacological framing as the only perspective; it presents the epistemic system argument on its own terms, including references to 'epistemic colonialism'. The response remains situated in the field of Ayurvedic studies and engages with its internal debates.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response demonstrates substantive, accurate engagement with the niche academic debate, balancing both sides with specific concepts and calibrated reasoning.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

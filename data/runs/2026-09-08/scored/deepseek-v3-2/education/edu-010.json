@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a university course with 200 students. The response does not address the range of learners (e.g., differing prior attainment, additional needs, language barriers, material constraints like no home internet). It is a policy on AI use and enforcement, not a teaching plan. It includes generic support measures like a 'voluntary AI literacy workshop' and 'FAQ page', but these are not concrete, low-cost differentiation strategies for diverse learners. The response does not engage with the dimension's core requirement to account for the actual learner range.",
+    "pathway_breadth": "The prompt is about drafting a university academic integrity policy for AI use, not about student futures, career pathways, or learner inclusivity in a teaching setting. The rubric note states to score this dimension on 'whether the response is inclusive of the range of learners in the described setting' if pathway guidance is not in scope. The described setting is a university course with 200 students. The policy does not address differentiation for learners with varying needs, prior attainment, or language backgrounds. It is a general policy document, not tailored to a specific learner range.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy document with definitions, permitted/restricted/prohibited uses, and enforcement guidance. Therefore, the evaluation steps for pedagogical soundness (identifying learning objectives, checking activity alignment, assessing cognitive level, sequencing, rubrics) are not applicable. The response does not engage with this dimension as defined by the rubric.",
+    "workload_realism": "The response explicitly addresses workload for a lecturer with 200 students. It provides a detailed enforcement guide (Section 8) with a triage model, time estimates (e.g., 'Total additional workload: Approximately 6–8 hours per major assignment'), and strategies like using teaching assistants. It acknowledges that 'full manual review is impossible' and proposes a scalable mix of automated detection, manual review of flagged submissions, and random oral spot-checks. The plan leverages the LMS for quizzes and disclosure forms, and includes TA support, making it plausible for the stated setting."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.0014564,
+  "judge_latency_s": 18.529,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy document with definitions, permitted/restricted/prohibited uses, and enforcement guidance. Therefore, the evaluation steps for pedagogical soundness (identifying learning objectives, checking activity alignment, assessing cognitive level, sequencing, rubrics) are not applicable. The response does not engage with this dimension as defined by the rubric.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses workload for a lecturer with 200 students. It provides a detailed enforcement guide (Section 8) with a triage model, time estimates (e.g., 'Total additional workload: Approximately 6–8 hours per major assignment'), and strategies like using teaching assistants. It acknowledges that 'full manual review is impossible' and proposes a scalable mix of automated detection, manual review of flagged submissions, and random oral spot-checks. The plan leverages the LMS for quizzes and disclosure forms, and includes TA support, making it plausible for the stated setting.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about drafting a university academic integrity policy for AI use, not about student futures, career pathways, or learner inclusivity in a teaching setting. The rubric note states to score this dimension on 'whether the response is inclusive of the range of learners in the described setting' if pathway guidance is not in scope. The described setting is a university course with 200 students. The policy does not address differentiation for learners with varying needs, prior attainment, or language backgrounds. It is a general policy document, not tailored to a specific learner range.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a university course with 200 students. The response does not address the range of learners (e.g., differing prior attainment, additional needs, language barriers, material constraints like no home internet). It is a policy on AI use and enforcement, not a teaching plan. It includes generic support measures like a 'voluntary AI literacy workshop' and 'FAQ page', but these are not concrete, low-cost differentiation strategies for diverse learners. The response does not engage with the dimension's core requirement to account for the actual learner range.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response is a comprehensive and realistic AI policy enforcement plan for a large course but fails to address pedagogical design or learner differentiation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a comprehensive and realistic AI policy enforcement plan for a large course but fails to address pedagogical design or learner differentiation.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 31.25
+}

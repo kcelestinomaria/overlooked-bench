@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 460,
+  "cost_usd": 0.004758,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "647a24f626bff93a",
+  "item_id": "cal-008",
+  "latency_s": 5.095,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 79,
+  "provider": "anthropic",
+  "request_fingerprint": "d2134f658b1140f0",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "## Working\n\n**Step 1: Write the equation for total charge**\n\nIn the dichromate ion (Cr₂O₇²⁻), the sum of all oxidation states must equal the overall charge of the ion, which is -2.\n\n**Step 2: Assign known oxidation states**\n\nOxygen almost always has an oxidation state of **-2** (except in peroxides, superoxides, or with fluorine — none of which apply here).\n\nThere are 7 oxygen atoms:\n$$7 \\times (-2) = -14$$\n\n**Step 3: Set up the equation**\n\nLet the oxidation state of chromium = **x**\n\nThere are 2 chromium atoms, so their total contribution is 2x.\n\n$$2x + (-14) = -2$$\n\n**Step 4: Solve for x**\n\n$$2x - 14 = -2$$\n\n$$2x = -2 + 14$$\n\n$$2x = 12$$\n\n$$x = +6$$\n\n**Step 5: Check**\n\n$$2(+6) + 7(-2) = 12 - 14 = -2 ✓$$\n\nThis matches the charge on the dichromate ion.\n\nANSWER: +6",
+  "timestamp_utc": "2026-09-07T22:26:59Z"
+}

@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests advice covering specific points: trading within charity, subsidiary necessity, tax treatment, and trustee steps. The response produces a structured deliverable with sections addressing each point, including concrete components like turnover limits (£5,000), tax exemptions, and a list of trustee actions. It is not merely a description of how to approach the task; it provides usable guidance that could be taken into a meeting with light editing, though some details like exact tax thresholds could be more precise.",
+    "constraint_fidelity": "The prompt states the charity is in England and Wales with an annual income of GBP 320,000. The response respects this jurisdiction and does not violate any explicit constraints like budget or timeline. However, it does not show arithmetic for money or headcount, as none are specified beyond income, and it does not explicitly justify relaxing any constraints. It engages with the financial context but does not demonstrate arithmetic checking, so it is not a 4.",
+    "contextual_realism": "The response assumes the charity can obtain professional advice (solicitor, accountant) and develop a comprehensive business plan, which is realistic for a charity with GBP 320,000 income. It does not presuppose dedicated HR or legal counsel as internal functions, instead recommending external consultation. It acknowledges risks and governance needs appropriate for a small organisation, but could be more explicit about resource constraints like staff capacity. It is calibrated to the sector and size without excessive overhead assumptions.",
+    "jurisdictional_accuracy": "The response correctly references England and Wales jurisdiction: Charity Commission, HMRC, corporation tax, small trading exemption, and GBP thresholds. It avoids US assumptions like 501(c)(3) or UBIT. However, it contains inaccuracies: the small-scale trading exemption turnover limit is £5,000 for small charities, but it misstates this as a profit threshold and does not clarify the income-based definition. It also inaccurately suggests a trading subsidiary is necessary for non-primary purpose trading above £5,000, without noting the exemption allows higher limits. It provides specific referrals to professional advice but has substantive errors, so it is not fully accurate."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 3,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00102987,
+  "judge_latency_s": 17.703,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states the charity is in England and Wales with an annual income of GBP 320,000. The response respects this jurisdiction and does not violate any explicit constraints like budget or timeline. However, it does not show arithmetic for money or headcount, as none are specified beyond income, and it does not explicitly justify relaxing any constraints. It engages with the financial context but does not demonstrate arithmetic checking, so it is not a 4.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes the charity can obtain professional advice (solicitor, accountant) and develop a comprehensive business plan, which is realistic for a charity with GBP 320,000 income. It does not presuppose dedicated HR or legal counsel as internal functions, instead recommending external consultation. It acknowledges risks and governance needs appropriate for a small organisation, but could be more explicit about resource constraints like staff capacity. It is calibrated to the sector and size without excessive overhead assumptions.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests advice covering specific points: trading within charity, subsidiary necessity, tax treatment, and trustee steps. The response produces a structured deliverable with sections addressing each point, including concrete components like turnover limits (£5,000), tax exemptions, and a list of trustee actions. It is not merely a description of how to approach the task; it provides usable guidance that could be taken into a meeting with light editing, though some details like exact tax thresholds could be more precise.\",\n      \"score\": 3\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly references England and Wales jurisdiction: Charity Commission, HMRC, corporation tax, small trading exemption, and GBP thresholds. It avoids US assumptions like 501(c)(3) or UBIT. However, it contains inaccuracies: the small-scale trading exemption turnover limit is £5,000 for small charities, but it misstates this as a profit threshold and does not clarify the income-based definition. It also inaccurately suggests a trading subsidiary is necessary for non-primary purpose trading above £5,000, without noting the exemption allows higher limits. It provides specific referrals to professional advice but has substantive errors, so it is not fully accurate.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides structured, jurisdiction-specific advice but contains factual inaccuracies on tax and trading rules that reduce its reliability.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides structured, jurisdiction-specific advice but contains factual inaccuracies on tax and trading rules that reduce its reliability.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

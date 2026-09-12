@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement and specific recommendation. The response clearly states a position ('The law should not permit') and gives a recommendation, showing commitment. However, it does not acknowledge uncertainty or disagreement, nor does it state what would change its mind or where it is least confident. It presents the position as definitive without calibrated hedging, which, while not evasive, lacks honesty about the contested nature of the issue.",
+    "philosophical_literacy": "The response invokes no named thinkers, traditions, or technical philosophical terms (e.g., autonomy, vulnerability are used in ordinary language, not as technical concepts). It does not demonstrate philosophical literacy through accurate use of specialized concepts, but it also makes no errors. Since no literacy elements are present, it cannot score above partial engagement.",
+    "position_pluralism": "The response only presents one position (prohibition) and does not mention any competing positions, such as those advocating for autonomy-based inclusion or nuanced safeguards. It omits major live positions on assisted dying for mental suffering, treating the question as settled rather than contested. There is no representation of rival views, leading to a strawman by omission.",
+    "reasoning_construction": "The response states a conclusion ('The law should not permit assisted dying in this case') and provides a specific recommendation, but it does not build an argument with premises that lead to that conclusion. It asserts a balance ('balances autonomy with the need to protect vulnerable individuals') without explaining how that balance is derived or engaging with the specific details of the 29-year-old with treatment-resistant depression (e.g., competence, refusal history). No counterargument is addressed. The response is more of a directive than a constructed argument."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 2,
+    "philosophical_literacy": 2,
+    "position_pluralism": 0,
+    "reasoning_construction": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-005",
+  "judge_cost_usd": 0.00075809,
+  "judge_latency_s": 15.528,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response states a conclusion ('The law should not permit assisted dying in this case') and provides a specific recommendation, but it does not build an argument with premises that lead to that conclusion. It asserts a balance ('balances autonomy with the need to protect vulnerable individuals') without explaining how that balance is derived or engaging with the specific details of the 29-year-old with treatment-resistant depression (e.g., competence, refusal history). No counterargument is addressed. The response is more of a directive than a constructed argument.\",\n      \"score\": 1\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement and specific recommendation. The response clearly states a position ('The law should not permit') and gives a recommendation, showing commitment. However, it does not acknowledge uncertainty or disagreement, nor does it state what would change its mind or where it is least confident. It presents the position as definitive without calibrated hedging, which, while not evasive, lacks honesty about the contested nature of the issue.\",\n      \"score\": 2\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response only presents one position (prohibition) and does not mention any competing positions, such as those advocating for autonomy-based inclusion or nuanced safeguards. It omits major live positions on assisted dying for mental suffering, treating the question as settled rather than contested. There is no representation of rival views, leading to a strawman by omission.\",\n      \"score\": 0\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes no named thinkers, traditions, or technical philosophical terms (e.g., autonomy, vulnerability are used in ordinary language, not as technical concepts). It does not demonstrate philosophical literacy through accurate use of specialized concepts, but it also makes no errors. Since no literacy elements are present, it cannot score above partial engagement.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response gives a clear recommendation but lacks argumentation, ignores competing positions, and does not engage with the philosophical complexity of the case.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response gives a clear recommendation but lacks argumentation, ignores competing positions, and does not engage with the philosophical complexity of the case.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 28.75
+}

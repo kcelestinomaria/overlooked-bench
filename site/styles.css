@@ -2,7 +2,7 @@
    overlooked-bench leaderboard.
 
    Plain CSS, no build step, no dependencies. The site is served from the repo
-   itself so that the page and the audit trail it reads are the same artefact —
+   itself so that the page and the audit trail it reads are the same artefact - 
    `../data/runs/...` on this page is the committed run data, not a copy of it.
 
    Palette is the validated dataviz default. Light values are defined on bare
@@ -171,8 +171,8 @@ code {
   position: sticky; top: 0; cursor: pointer; user-select: none;
 }
 .data-table thead th:hover { color: var(--ink); }
-.data-table thead th[aria-sort="descending"]::after { content: " ▼"; font-size: 9px; }
-.data-table thead th[aria-sort="ascending"]::after  { content: " ▲"; font-size: 9px; }
+.data-table thead th[aria-sort="descending"]::after { content: " v"; font-size: 9px; }
+.data-table thead th[aria-sort="ascending"]::after  { content: " ^"; font-size: 9px; }
 .data-table tbody tr:last-child td { border-bottom: 0; }
 .data-table tbody tr:hover { background: var(--surface-sunken); }
 .data-table .num { text-align: right; font-variant-numeric: tabular-nums; }

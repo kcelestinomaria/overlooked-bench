@@ -1,0 +1,22 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "eth-001",
+  "judge_cost_usd": 0.00099069,
+  "judge_latency_s": 19.964,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response concludes that Patient A should receive the machine. Premises include: greater life-years gained (27 more years for Patient A), dependency effects (four dependents face severe harm), and the 'fair innings' consideration (Patient A has had fewer life opportunities). The inference is valid as these premises directly support prioritizing Patient A. It engages specific details of the scenario (ages, dependents, survival probabilities). It addresses the strongest objection (discrimination against the elderly and higher survival probability for Patient B) and counters it by arguing survival probability isn't the only metric and harms are non-aggregative. This shows constructed argument, not just listing positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response states a clear position: 'Patient A should receive the machine.' It defends this with reasons and acknowledges uncertainty by noting survival probabilities 'matter but don't override these factors.' It shows calibrated uncertainty by leaning toward Patient A while recognizing the objection's strength. It implicitly states what would change its mind (if survival probability were decisive or if harms were aggregative) but doesn't explicitly outline conditions for changing its view. This is substantive commitment, not evasion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: prioritizing younger patients (life-years), prioritizing higher survival probability, prioritizing social utility (dependents), and egalitarian or lottery approaches. The response presents its own position (prioritizing Patient A) and the objection (prioritizing survival probability and avoiding age discrimination). An advocate of the objection would likely accept the characterisation as it captures key points (discrimination, survival benefit). It omits other positions like a random lottery or strict egalitarianism, but these are not strawmanned. There's no false balance; it treats the objection as serious without elevating fringe views.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes 'modified utilitarianism,' 'fair innings' consideration, 'non-aggregative' harms, and distinguishes 'discrimination against' vs. 'discrimination between.' These terms are used accurately: utilitarianism is applied with constraints, 'fair innings' relates to age-based allocation, and the discrimination distinction is relevant. They are load-bearing in the argument, not decorative. No misattributions or garbled terms are evident. The concepts do work in supporting the conclusion, though no named thinkers are cited, which is acceptable.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument with specific engagement and handles objections effectively.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

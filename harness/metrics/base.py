@@ -2,7 +2,7 @@
 
 Every category in this benchmark defines its own metric module. None of them use
 DeepEval's built-in generic metrics (Answer Relevancy, Faithfulness, etc.),
-because those measure whether an answer matches a reference — and the questions
+because those measure whether an answer matches a reference - and the questions
 this project cares about mostly have no reference answer. "Did the model reason
 about a contested moral question, or pattern-match a consensus talking point?"
 is not a retrieval-accuracy question, so a retrieval-accuracy metric cannot
@@ -95,7 +95,7 @@ class CategoryMetric:
         """The rubric text handed to the judge, rendered deterministically.
 
         This string is hashed into every scored record. If it changes, the hash
-        changes, and the change is visible in the run diff — which is the whole
+        changes, and the change is visible in the run diff - which is the whole
         point of versioning the rubric rather than trusting a changelog entry.
         """
         parts = [f"# Evaluation rubric: {self.name} (v{self.version})", "", self.purpose, ""]

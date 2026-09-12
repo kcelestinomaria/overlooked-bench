@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopaedia level by engaging with specific scholarly debates (e.g., Fleming's vs. Savà and Tosco's positions), evidence quality (small dataset, transcription concerns, loanword issues), and methodological nuances (pronouns as diagnostic, contact effects). It discusses the mixed-language hypothesis as a nuanced explanatory framework, indicating familiarity with the literature rather than just summaries. A specialist would recognize this as informed by primary research, not a summary of a summary, though it does not delve into highly technical linguistic analysis.",
+    "domain_accuracy": "The response makes substantive factual claims: it correctly identifies key scholars (Harold Fleming, Bernd Heine, Yoichi Tsuge, Graziano Savà, Mauro Tosco), positions (Afroasiatic, Nilo-Saharan, mixed/contact, isolate), and evidence types (lexical, pronoun systems, morphological, sociolinguistic). It accurately notes the language's near-extinction, small corpus, and contact with Ts'amakko. No invented citations, terms, or consensus are present; all claims align with established scholarly literature on Ongota. Minor details like the number of speakers ('fewer than a dozen') are plausible and not fabricated. Thus, claims are correct and load-bearing errors are absent.",
+    "field_situatedness": "The response uses frameworks and terminology from African linguistics and language classification, the field asked about. It references relevant language families (Afroasiatic, Nilo-Saharan, Cushitic), scholars in the domain, and concepts like mixed languages, contact effects, and isolates. There is no silent substitution of a Western or Anglophone adjacent field; it stays grounded in the regional scholarly tradition of Ethiopian and African linguistics.",
+    "scholarly_calibration": "The response accurately distinguishes well-established from contested points: it presents positions as argued by specific scholars, notes evidence as 'inconclusive' and 'ambiguous,' and flags uncertainties (e.g., 'dataset is small,' 'concerns about transcription accuracy,' 'match is not clean or systematic'). It avoids uniform confidence, explicitly stating the debate is 'unresolved' and the mixed-language hypothesis is 'gaining traction.' This is specific, targeted calibration, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.001172,
+  "judge_latency_s": 18.593,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims: it correctly identifies key scholars (Harold Fleming, Bernd Heine, Yoichi Tsuge, Graziano Savà, Mauro Tosco), positions (Afroasiatic, Nilo-Saharan, mixed/contact, isolate), and evidence types (lexical, pronoun systems, morphological, sociolinguistic). It accurately notes the language's near-extinction, small corpus, and contact with Ts'amakko. No invented citations, terms, or consensus are present; all claims align with established scholarly literature on Ongota. Minor details like the number of speakers ('fewer than a dozen') are plausible and not fabricated. Thus, claims are correct and load-bearing errors are absent.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopaedia level by engaging with specific scholarly debates (e.g., Fleming's vs. Savà and Tosco's positions), evidence quality (small dataset, transcription concerns, loanword issues), and methodological nuances (pronouns as diagnostic, contact effects). It discusses the mixed-language hypothesis as a nuanced explanatory framework, indicating familiarity with the literature rather than just summaries. A specialist would recognize this as informed by primary research, not a summary of a summary, though it does not delve into highly technical linguistic analysis.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately distinguishes well-established from contested points: it presents positions as argued by specific scholars, notes evidence as 'inconclusive' and 'ambiguous,' and flags uncertainties (e.g., 'dataset is small,' 'concerns about transcription accuracy,' 'match is not clean or systematic'). It avoids uniform confidence, explicitly stating the debate is 'unresolved' and the mixed-language hypothesis is 'gaining traction.' This is specific, targeted calibration, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology from African linguistics and language classification, the field asked about. It references relevant language families (Afroasiatic, Nilo-Saharan, Cushitic), scholars in the domain, and concepts like mixed languages, contact effects, and isolates. There is no silent substitution of a Western or Anglophone adjacent field; it stays grounded in the regional scholarly tradition of Ethiopian and African linguistics.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the Ongota classification debate, reflecting deep engagement with the specialist literature.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the Ongota classification debate, reflecting deep engagement with the specialist literature.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

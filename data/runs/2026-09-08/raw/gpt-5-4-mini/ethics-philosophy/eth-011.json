@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 409,
+  "cost_usd": 0.00188925,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "9f73e657883b7fda",
+  "item_id": "eth-011",
+  "latency_s": 3.808,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 65,
+  "provider": "openai",
+  "request_fingerprint": "3468e6f0b2f12496",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "She should generally choose the **fully blind process**, unless she has a very clear, legally vetted reason to use the second approach.\n\n### Recommendation\n**Default to a blind hiring process** that evaluates candidates only on job-related criteria:\n- skills and experience\n- work samples\n- structured interviews\n- job-relevant tests\n\n### Why\n1. **Fairness to individuals**\n   - A blind process reduces the chance that people are helped or harmed because of group identity rather than merit.\n   - It aligns better with equal treatment.\n\n2. **Lower legal and reputational risk**\n   - Even if both are legal in her jurisdiction, explicitly weighting demographics can look like discrimination or quota-setting.\n   - That can create employee morale issues, candidate distrust, or future policy scrutiny.\n\n3. **Better signal quality**\n   - When hiring criteria are tied to performance, the process is usually more predictive.\n   - Structured, blind evaluation tends to reduce bias more reliably than trying to correct bias by explicitly adjusting scores.\n\n4. **Avoids stereotyping**\n   - Weighting underrepresented backgrounds treats people as representatives of a group rather than as individuals.\n   - That can unintentionally penalize candidates who don’t fit a stereotype or reward candidates for the wrong reasons.\n\n### Important caveat\nIf the organization has a serious, documented diversity problem, it should usually address that through **broader recruiting and pipeline changes**:\n- wider sourcing\n- better outreach\n- inclusive job descriptions\n- structured interviews\n- standardized rubrics\n- diverse interview panels\n\nThese approaches improve representation **without** directly trading off individual evaluation.\n\n### Bottom line\nIf the choice is strictly between the two options you gave, the better recommendation is:\n\n> **Use the fully blind process.**  \n> It is more defensible, more individual-focused, and less likely to introduce unfairness or backlash.\n\nIf you'd like, I can also give a **one-paragraph version** suitable for a memo or a **decision matrix** comparing the two options.",
+  "timestamp_utc": "2026-09-07T22:31:07Z"
+}

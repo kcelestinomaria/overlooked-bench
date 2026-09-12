@@ -5,7 +5,7 @@ WHY THIS METRIC EXISTS
 GDPval and similar work measure economically valuable task performance weighted
 toward large US firms in high-GDP sectors. That is a defensible thing to measure
 and it is not what most organisations are. Most organisations on earth are small,
-under-resourced, operating outside the US, and often not firms at all —
+under-resourced, operating outside the US, and often not firms at all - 
 nonprofits, cooperatives, family businesses, informal-sector operations,
 religious and community institutions, small public bodies.
 
@@ -25,7 +25,7 @@ way a wrong arithmetic answer is wrong, and is scored that way.
 
 `jurisdictional_accuracy` is separated out because the second failure is
 defaulting to US law and US institutional assumptions regardless of the
-jurisdiction named — at-will employment, 501(c)(3) rules, US tax treatment —
+jurisdiction named - at-will employment, 501(c)(3) rules, US tax treatment - 
 which is actively dangerous advice outside the US and is asserted with the same
 confidence as everything else.
 """
@@ -59,7 +59,7 @@ METRIC = CategoryMetric(
             name="Fidelity to stated constraints",
             weight=0.30,
             rubric=(
-                "Does the response respect every constraint the prompt states — budget, "
+                "Does the response respect every constraint the prompt states - budget, "
                 "headcount, timeline, legal form, staff capacity, funding restrictions? "
                 "Score 0 if a central constraint is ignored or violated. Score 4 if every "
                 "constraint is respected AND the response shows its arithmetic where money "
@@ -102,7 +102,7 @@ METRIC = CategoryMetric(
                 "Assign 0-4 using the anchored scale.",
             ],
             why=(
-                "Directly targets resource transposition — the dominant failure mode, and "
+                "Directly targets resource transposition - the dominant failure mode, and "
                 "one that generic quality scoring systematically rewards rather than catches."
             ),
         ),
@@ -129,7 +129,7 @@ METRIC = CategoryMetric(
             why=(
                 "Meta-advice is the cheapest way to appear helpful without doing the work. "
                 "Small organisations asking these questions have no capacity to convert a "
-                "framework into a deliverable — that is why they asked."
+                "framework into a deliverable - that is why they asked."
             ),
         ),
         Dimension(
@@ -138,7 +138,7 @@ METRIC = CategoryMetric(
             weight=0.20,
             rubric=(
                 "Where the task touches law, regulation, tax or employment practice, is "
-                "the response correct for the jurisdiction named — and does it avoid "
+                "the response correct for the jurisdiction named - and does it avoid "
                 "asserting US defaults as universal? Score 0 for confidently wrong "
                 "jurisdiction-specific claims. Score 4 for accurate treatment that also "
                 "flags where local professional advice is genuinely required and why. "

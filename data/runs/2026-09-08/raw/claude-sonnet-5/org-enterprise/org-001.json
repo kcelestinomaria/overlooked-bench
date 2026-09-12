@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 8000,
+  "cost_usd": 0.080446,
+  "error": null,
+  "finish_reason": "length",
+  "harness_version": "0.1.0",
+  "item_content_hash": "0cc3468b1c92fd17",
+  "item_id": "org-001",
+  "latency_s": 93.831,
+  "methodology_version": "m1.2.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 223,
+  "provider": "anthropic",
+  "request_fingerprint": "d275b998c9061671",
+  "request_params": {
+    "max_tokens": 8000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "",
+  "timestamp_utc": "2026-09-07T23:19:06Z"
+}

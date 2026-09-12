@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is advice for a specific student with described traits (good with hands, dislikes exams, solid grades, parental pressure). The response concretely addresses this learner's range by tailoring advice to their strengths and preferences, e.g., suggesting Ausbildung or Fachoberschule as better fits than Gymnasium, and providing strategies for career exploration. It does not address broader differentiation needs (e.g., prior attainment, additional needs, language barriers, material constraints) because the task is individualized advice, not a classroom plan. The proposed adaptations (career tests, internships, fairs) are implementable by the student with support from existing services.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Gymnasium/Abitur, dual apprenticeship (Ausbildung), vocational school routes, bridge/orientation year, Fachoberschule/Fachabitur, and full-time work. Each is explained with substantive detail on what it is, who it fits, pros, cons, and important realities. Non-degree options like Ausbildung are treated with equal depth and specificity as academic routes, not as an afterthought. The response correctly names German structures (Realschule, Abitur, Ausbildung, Berufsschule, Fachoberschule, Fachhochschulreife) and addresses the parents' preference honestly, advising the student to consider fit over prestige. It does not treat Abitur as the goal and vocational training as a fallback.",
+    "pedagogical_soundness": "The response is not a lesson plan or curriculum; it is advice for a student. Therefore, there are no stated learning objectives, activities, assessments, sequencing, or rubrics to evaluate against the pedagogical soundness criteria. The dimension is not applicable to this advisory task, so it does not engage with the dimension's intent.",
+    "workload_realism": "The response is advice for a student, not a teaching plan. It does not describe activities, timings, materials, preparation, marking, or class size for a practitioner to deliver. Therefore, it cannot be evaluated against workload and resource realism for a practitioner."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00140829,
+  "judge_latency_s": 17.015,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan or curriculum; it is advice for a student. Therefore, there are no stated learning objectives, activities, assessments, sequencing, or rubrics to evaluate against the pedagogical soundness criteria. The dimension is not applicable to this advisory task, so it does not engage with the dimension's intent.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advice for a student, not a teaching plan. It does not describe activities, timings, materials, preparation, marking, or class size for a practitioner to deliver. Therefore, it cannot be evaluated against workload and resource realism for a practitioner.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Gymnasium/Abitur, dual apprenticeship (Ausbildung), vocational school routes, bridge/orientation year, Fachoberschule/Fachabitur, and full-time work. Each is explained with substantive detail on what it is, who it fits, pros, cons, and important realities. Non-degree options like Ausbildung are treated with equal depth and specificity as academic routes, not as an afterthought. The response correctly names German structures (Realschule, Abitur, Ausbildung, Berufsschule, Fachoberschule, Fachhochschulreife) and addresses the parents' preference honestly, advising the student to consider fit over prestige. It does not treat Abitur as the goal and vocational training as a fallback.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is advice for a specific student with described traits (good with hands, dislikes exams, solid grades, parental pressure). The response concretely addresses this learner's range by tailoring advice to their strengths and preferences, e.g., suggesting Ausbildung or Fachoberschule as better fits than Gymnasium, and providing strategies for career exploration. It does not address broader differentiation needs (e.g., prior attainment, additional needs, language barriers, material constraints) because the task is individualized advice, not a classroom plan. The proposed adaptations (career tests, internships, fairs) are implementable by the student with support from existing services.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, balanced, and system-accurate pathway advice for a German student, treating vocational options with substantive depth equal to academic routes.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, balanced, and system-accurate pathway advice for a German student, treating vocational options with substantive depth equal to academic routes.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

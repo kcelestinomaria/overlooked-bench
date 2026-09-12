@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The prompt describes a specific student (16-year-old in Germany with solid grades, good with hands, dislikes exams, parental pressure), not a classroom setting with a range of learners. The response tailors advice to this individual's profile and constraints (e.g., addressing exam dislike, parental wishes, practical strengths). It does not address differentiation for a group (e.g., prior attainment, additional needs, language, material constraints), as that is not in scope. However, it is inclusive in offering multiple pathways suited to the student's characteristics.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Duale Ausbildung (with specific trades, salary, and progression), Fachoberschule (with details on duration, fields, and qualification), Gymnasiale Oberstufe (with honest pros/cons), and a 'third way' combining Ausbildung and later study (including Fachhochschulreife, beruflich Qualifizierte, and duales Studium). Each option is given substantive, roughly equal detail, and structures are correct for Germany. Non-degree pathways are not treated as fallbacks but as legitimate options, addressing parental preference honestly.",
+    "pedagogical_soundness": "The prompt requests advice, not a lesson plan, so pedagogical elements like learning objectives, activities, and assessments are not present. The response provides structured career guidance, but it does not engage with pedagogical design, alignment, sequencing, or rubrics. Therefore, it does not address this dimension at all.",
+    "workload_realism": "The prompt requests advice, not a deliverable plan for a practitioner. The response does not involve timings, materials, preparation, marking, or class size. It is advisory content, so workload and resource realism are not applicable."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00105644,
+  "judge_latency_s": 16.17,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The prompt requests advice, not a lesson plan, so pedagogical elements like learning objectives, activities, and assessments are not present. The response provides structured career guidance, but it does not engage with pedagogical design, alignment, sequencing, or rubrics. Therefore, it does not address this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The prompt requests advice, not a deliverable plan for a practitioner. The response does not involve timings, materials, preparation, marking, or class size. It is advisory content, so workload and resource realism are not applicable.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Duale Ausbildung (with specific trades, salary, and progression), Fachoberschule (with details on duration, fields, and qualification), Gymnasiale Oberstufe (with honest pros/cons), and a 'third way' combining Ausbildung and later study (including Fachhochschulreife, beruflich Qualifizierte, and duales Studium). Each option is given substantive, roughly equal detail, and structures are correct for Germany. Non-degree pathways are not treated as fallbacks but as legitimate options, addressing parental preference honestly.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The prompt describes a specific student (16-year-old in Germany with solid grades, good with hands, dislikes exams, parental pressure), not a classroom setting with a range of learners. The response tailors advice to this individual's profile and constraints (e.g., addressing exam dislike, parental wishes, practical strengths). It does not address differentiation for a group (e.g., prior attainment, additional needs, language, material constraints), as that is not in scope. However, it is inclusive in offering multiple pathways suited to the student's characteristics.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, balanced, and system-accurate career pathway advice for the German student, treating vocational and academic options with equal substance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, balanced, and system-accurate career pathway advice for the German student, treating vocational and academic options with equal substance.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

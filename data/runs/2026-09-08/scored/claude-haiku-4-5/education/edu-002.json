@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners in a South African Grade 11 class, potentially with varying language proficiencies (e.g., English as an additional language) and prior attainment. The response does not address differentiation or access at all. It provides no concrete adaptations for diverse learners, no mention of language support, scaffolding, or resource constraints. It is solely focused on the marking rubric and process, with no placeholder differentiation language—it simply omits the topic entirely.",
+    "pathway_breadth": "The prompt is about creating an assessment rubric for Grade 11 argumentative essays in South Africa; it does not involve student futures or pathway guidance. Therefore, this dimension is scored on inclusivity of the learner range in the described setting. The response does not address differentiation or access for diverse learners (e.g., varying prior attainment, language needs, resources). It focuses solely on the marking process and rubric design without considering the range of learners in a South African Grade 11 class. Thus, it lacks engagement with inclusivity.",
+    "pedagogical_soundness": "The response provides a rubric with four criteria (Argument Quality, Evidence & Support, Language & Clarity, Structure & Organization) aligned to argumentative writing. Each criterion has observable, distinguishable level descriptors (e.g., 'Clear, debatable thesis' vs. 'Thesis present but may be obvious'). The criteria and descriptors are appropriate for Grade 11 cognitive demand and focus on argumentation elements. However, the rubric lacks explicit learning objectives, so alignment between objectives, activities, and assessment cannot be fully verified. The descriptors are sound and observable, but the absence of stated objectives limits full pedagogical alignment check.",
+    "workload_realism": "The response explicitly addresses the marking workload: it proposes a total of ~13 hours (2 hours Friday, 6 Saturday, 5 Sunday) for 120 essays, with a target of 3-4 minutes per essay, which sums to 6-8 hours of marking plus preparation time. This is realistic for one weekend. It assumes only a marking template and anchor essays—materials readily available to a teacher. No unrealistic resources (e.g., extra graders, specialized technology) are required. The process is feasible for one teacher with a large batch."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00118223,
+  "judge_latency_s": 18.339,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides a rubric with four criteria (Argument Quality, Evidence & Support, Language & Clarity, Structure & Organization) aligned to argumentative writing. Each criterion has observable, distinguishable level descriptors (e.g., 'Clear, debatable thesis' vs. 'Thesis present but may be obvious'). The criteria and descriptors are appropriate for Grade 11 cognitive demand and focus on argumentation elements. However, the rubric lacks explicit learning objectives, so alignment between objectives, activities, and assessment cannot be fully verified. The descriptors are sound and observable, but the absence of stated objectives limits full pedagogical alignment check.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses the marking workload: it proposes a total of ~13 hours (2 hours Friday, 6 Saturday, 5 Sunday) for 120 essays, with a target of 3-4 minutes per essay, which sums to 6-8 hours of marking plus preparation time. This is realistic for one weekend. It assumes only a marking template and anchor essays—materials readily available to a teacher. No unrealistic resources (e.g., extra graders, specialized technology) are required. The process is feasible for one teacher with a large batch.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about creating an assessment rubric for Grade 11 argumentative essays in South Africa; it does not involve student futures or pathway guidance. Therefore, this dimension is scored on inclusivity of the learner range in the described setting. The response does not address differentiation or access for diverse learners (e.g., varying prior attainment, language needs, resources). It focuses solely on the marking process and rubric design without considering the range of learners in a South African Grade 11 class. Thus, it lacks engagement with inclusivity.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners in a South African Grade 11 class, potentially with varying language proficiencies (e.g., English as an additional language) and prior attainment. The response does not address differentiation or access at all. It provides no concrete adaptations for diverse learners, no mention of language support, scaffolding, or resource constraints. It is solely focused on the marking rubric and process, with no placeholder differentiation language—it simply omits the topic entirely.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides a practical, time-efficient rubric and marking process tailored to the workload constraint but completely ignores learner diversity and inclusivity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a practical, time-efficient rubric and marking process tailored to the workload constraint but completely ignores learner diversity and inclusivity.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 53.75
+}

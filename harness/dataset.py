@@ -2,7 +2,7 @@
 
 Each category is one YAML file: `data/categories/<category>/items.yaml`.
 
-Every item carries a `rationale` — one line on why it is in the benchmark. This
+Every item carries a `rationale` - one line on why it is in the benchmark. This
 is required, not optional, and loading fails without it. A benchmark whose item
 selection cannot be explained is a benchmark whose results cannot be defended,
 and the cheapest way to guarantee the explanation exists is to make the loader
@@ -57,7 +57,7 @@ class Item:
 
 
 class DatasetError(ValueError):
-    """Raised when a dataset file is malformed. Always fatal — never skipped."""
+    """Raised when a dataset file is malformed. Always fatal - never skipped."""
 
 
 def _require(cond: bool, msg: str) -> None:
@@ -99,7 +99,7 @@ def load_category(category: str, root: Path | None = None) -> list[Item]:
         _require(
             bool(rationale),
             f"{where} ({item_id}): missing 'rationale'. Every item must record why it "
-            f"is in the benchmark — see docs/CONTRIBUTING.md",
+            f"is in the benchmark - see docs/CONTRIBUTING.md",
         )
 
         if category == "calibration-general":
@@ -147,7 +147,7 @@ def dataset_fingerprint(data: dict[str, list[Item]]) -> str:
     """One hash covering every prompt in the run.
 
     Two runs sharing this fingerprint were asked exactly the same questions, so
-    a score change between them is a model or judge change — not a dataset edit.
+    a score change between them is a model or judge change - not a dataset edit.
     """
     h = hashlib.sha256()
     for category in sorted(data):

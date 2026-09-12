@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces a complete hiring plan as requested, with roles, sequence, salary bands in KES, employer on-costs (NSSF, NHIF), and arithmetic showing fit within the direct-cost envelope. It includes concrete components: timing, FTE, duration, cost summaries, a timeline visualization, and a grant envelope verification. The output could be taken into a board meeting with light editing (e.g., adjusting specific NHIF tiers). It does not merely describe a process; it delivers the plan.",
+    "constraint_fidelity": "The response explicitly lists all constraints: grant amount (USD 180,000), 15% indirect cost cap, 2-year timeline, 12-person NGO with no dedicated HR, Kenyan jurisdiction. It respects each: total direct costs (KES 21,219,720) are under the ceiling (KES 21,420,000), indirect costs exactly hit the 15% cap, hiring sequence is provided, and it acknowledges the ED handles hiring. Arithmetic is shown throughout with line-item calculations and a final verification table. No constraints are silently violated; forex and statutory rate assumptions are flagged as risks.",
+    "contextual_realism": "The response is calibrated for a small Kenyan NGO: roles are lean (no dedicated HR, recruiter, or US-style benefits), salary bands are plausible for Kenyan NGO sector (e.g., Programme Manager KES 120,000/month), part-time roles (M&E at 0.6 FTE, Finance at 0.5 FTE) reflect limited capacity, and it notes reliance on ED oversight and local networks. It avoids tooling or process overhead that assumes large staff (e.g., no applicant tracking systems). However, it includes technical consultants (marine biologist, GIS specialist) which may strain a small budget, but these are budgeted as direct costs and are not excessive.",
+    "jurisdictional_accuracy": "The response correctly identifies Kenyan employer obligations: NSSF (6% on first KES 18,000), NHIF (tiered), and notes PAYE is an employee liability. It mentions the Housing Levy stay, showing awareness of current Kenyan legal context. Salary bands are in KES and plausible for Kenya, not US conversions. It avoids US assumptions (no equity compensation, US benefits). Referrals to professional advice are not used as a substitute; instead, it provides specific statutory details and flags monitoring of the Finance Act 2024."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00155093,
+  "judge_latency_s": 21.443,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly lists all constraints: grant amount (USD 180,000), 15% indirect cost cap, 2-year timeline, 12-person NGO with no dedicated HR, Kenyan jurisdiction. It respects each: total direct costs (KES 21,219,720) are under the ceiling (KES 21,420,000), indirect costs exactly hit the 15% cap, hiring sequence is provided, and it acknowledges the ED handles hiring. Arithmetic is shown throughout with line-item calculations and a final verification table. No constraints are silently violated; forex and statutory rate assumptions are flagged as risks.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Kenyan NGO: roles are lean (no dedicated HR, recruiter, or US-style benefits), salary bands are plausible for Kenyan NGO sector (e.g., Programme Manager KES 120,000/month), part-time roles (M&E at 0.6 FTE, Finance at 0.5 FTE) reflect limited capacity, and it notes reliance on ED oversight and local networks. It avoids tooling or process overhead that assumes large staff (e.g., no applicant tracking systems). However, it includes technical consultants (marine biologist, GIS specialist) which may strain a small budget, but these are budgeted as direct costs and are not excessive.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a complete hiring plan as requested, with roles, sequence, salary bands in KES, employer on-costs (NSSF, NHIF), and arithmetic showing fit within the direct-cost envelope. It includes concrete components: timing, FTE, duration, cost summaries, a timeline visualization, and a grant envelope verification. The output could be taken into a board meeting with light editing (e.g., adjusting specific NHIF tiers). It does not merely describe a process; it delivers the plan.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Kenyan employer obligations: NSSF (6% on first KES 18,000), NHIF (tiered), and notes PAYE is an employee liability. It mentions the Housing Levy stay, showing awareness of current Kenyan legal context. Salary bands are in KES and plausible for Kenya, not US conversions. It avoids US assumptions (no equity compensation, US benefits). Referrals to professional advice are not used as a substitute; instead, it provides specific statutory details and flags monitoring of the Finance Act 2024.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly specific, well-calculated hiring plan that meticulously respects all constraints and is tailored to a small Kenyan NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response is a highly specific, well-calculated hiring plan that meticulously respects all constraints and is tailored to a small Kenyan NGO.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

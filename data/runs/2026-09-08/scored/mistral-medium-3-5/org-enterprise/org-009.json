@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a recommendation with reasoning and, if taking the contract, specification of what must change first. The response provides a clear recommendation ('Do Not Take the Contract—Yet') with reasoning and preconditions for pursuit, covering elements like process optimization, staffing adjustments, pilot tests, and contract renegotiation. However, it lacks concrete components such as a detailed capacity analysis, penalty exposure relative to reserves, working capital calculations, or specific shift work plans, stopping short of a fully usable deliverable for a board meeting without significant expansion.",
+    "constraint_fidelity": "The prompt's constraints include: 15-person social enterprise in Jakarta, Indonesia; employs people with disabilities; contract would triple revenue; requires 24-hour turnaround and penalty clauses. The response acknowledges the 15-person team, the 24-hour turnaround, and penalty clauses as risks, but does not explicitly address the tripling of revenue in capacity analysis, nor does it show arithmetic for budget, headcount, or working capital needs. It respects constraints by not violating them, but fails to demonstrate detailed arithmetic or explicit justification for relaxing constraints, so it partially engages but with gaps.",
+    "contextual_realism": "The response assumes capabilities like investing in faster equipment and hiring temporary help, which may be feasible but does not fully account for the resource constraints of a small social enterprise (e.g., limited budget, role overlap, accessibility needs). It mentions workforce strain for employees with disabilities, showing some recognition of small-organisation realities, but lacks depth on sustainable process overhead or key-person dependency. Recommendations are somewhat calibrated but vague on tooling affordability and staff capacity.",
+    "jurisdictional_accuracy": "The prompt specifies Jakarta, Indonesia, but the response does not make any jurisdiction-specific legal, regulatory, or employment claims. It avoids asserting US defaults as universal, but also does not address Indonesian context (e.g., local labor laws, disability employment regulations, contract norms). Since the task involves contractual and employment considerations, the response is generic and lacks substantive jurisdictional accuracy, falling back on general advice without specific referrals to local professional advice. This is minimal engagement, akin to a disclaimer without content."
+  },
+  "dimension_scores": {
+    "actionability": 2,
+    "constraint_fidelity": 2,
+    "contextual_realism": 2,
+    "jurisdictional_accuracy": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-009",
+  "judge_cost_usd": 0.00090859,
+  "judge_latency_s": 18.726,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints include: 15-person social enterprise in Jakarta, Indonesia; employs people with disabilities; contract would triple revenue; requires 24-hour turnaround and penalty clauses. The response acknowledges the 15-person team, the 24-hour turnaround, and penalty clauses as risks, but does not explicitly address the tripling of revenue in capacity analysis, nor does it show arithmetic for budget, headcount, or working capital needs. It respects constraints by not violating them, but fails to demonstrate detailed arithmetic or explicit justification for relaxing constraints, so it partially engages but with gaps.\",\n      \"score\": 2\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes capabilities like investing in faster equipment and hiring temporary help, which may be feasible but does not fully account for the resource constraints of a small social enterprise (e.g., limited budget, role overlap, accessibility needs). It mentions workforce strain for employees with disabilities, showing some recognition of small-organisation realities, but lacks depth on sustainable process overhead or key-person dependency. Recommendations are somewhat calibrated but vague on tooling affordability and staff capacity.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a recommendation with reasoning and, if taking the contract, specification of what must change first. The response provides a clear recommendation ('Do Not Take the Contract—Yet') with reasoning and preconditions for pursuit, covering elements like process optimization, staffing adjustments, pilot tests, and contract renegotiation. However, it lacks concrete components such as a detailed capacity analysis, penalty exposure relative to reserves, working capital calculations, or specific shift work plans, stopping short of a fully usable deliverable for a board meeting without significant expansion.\",\n      \"score\": 2\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt specifies Jakarta, Indonesia, but the response does not make any jurisdiction-specific legal, regulatory, or employment claims. It avoids asserting US defaults as universal, but also does not address Indonesian context (e.g., local labor laws, disability employment regulations, contract norms). Since the task involves contractual and employment considerations, the response is generic and lacks substantive jurisdictional accuracy, falling back on general advice without specific referrals to local professional advice. This is minimal engagement, akin to a disclaimer without content.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides a cautious recommendation with some relevant points but lacks the detailed, concrete analysis required for a small social enterprise to make an informed decision.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response provides a cautious recommendation with some relevant points but lacks the detailed, concrete analysis required for a small social enterprise to make an informed decision.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

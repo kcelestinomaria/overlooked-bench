@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: Tuesday 08:00'. The reference answer is 'ANSWER: Tuesday 08:00'. The substance matches exactly, ignoring formatting and verbosity differences.",
+    "instruction_compliance": "The prompt instructs to 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes an explanation and ends with 'ANSWER: Tuesday 08:00', which matches the required format exactly.",
+    "reasoning_validity": "The response shows working: it correctly identifies the time zone difference as 6 hours (UTC+3 to UTC-3), subtracts 6 hours from 14:00 to get 08:00, and notes the day remains Tuesday as the subtraction does not cross midnight. Each step is valid and supports the answer given."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-007",
+  "judge_cost_usd": 0.00049491,
+  "judge_latency_s": 8.775,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: Tuesday 08:00'. The reference answer is 'ANSWER: Tuesday 08:00'. The substance matches exactly, ignoring formatting and verbosity differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it correctly identifies the time zone difference as 6 hours (UTC+3 to UTC-3), subtracts 6 hours from 14:00 to get 08:00, and notes the day remains Tuesday as the subtraction does not cross midnight. Each step is valid and supports the answer given.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs to 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes an explanation and ends with 'ANSWER: Tuesday 08:00', which matches the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and strict compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and strict compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

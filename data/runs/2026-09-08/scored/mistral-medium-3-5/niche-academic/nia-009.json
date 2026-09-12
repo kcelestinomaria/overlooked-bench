@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond an encyclopedic summary by engaging with methodological debates (e.g., reductionism vs. holism, epistemic colonialism), evidence types (RCTs vs. observational studies), and specific scholarly tensions (safety validation vs. traditional knowledge preservation). It discusses processing methods (samskara) as energetic/spiritual, not just chemical, and mentions ethnopharmacology as a bridge. It addresses regulatory challenges (FDA, EMA) and ethical issues (biopiracy). A specialist would recognize engagement with internal debates, though it does not delve into granular historical or textual nuances.",
+    "domain_accuracy": "The response makes substantive claims about Ayurvedic rasashastra: it correctly identifies heavy metals (mercury, arsenic, lead) in formulations, mentions processes like shodhana (purification) and marana (incineration), and references concepts like doshas, prakriti, and panchamahabhuta. It cites specific examples like Swarna Bhasma, Makardhwaja, and Yogendra Ras, which are real preparations. It does not invent citations or technical terms; all terminology is consistent with Ayurvedic scholarship. The safety concerns about heavy metal poisoning are documented in the literature. No factual errors or fabrications are evident.",
+    "field_situatedness": "The response consistently uses Ayurvedic terminology (rasashastra, doshas, prakriti, panchamahabhuta, shodhana, marana, bhasmas) and frames the debate within Ayurvedic theory and holistic medicine. It does not silently substitute a Western biomedical framework as the primary lens; instead, it presents the Ayurvedic epistemic system as a valid alternative. It acknowledges non-Western scholarly traditions and critiques epistemic colonialism. The framing remains rooted in the field asked about.",
+    "scholarly_calibration": "The response distinguishes between well-established and contested claims. It notes that mercury's non-toxicity after processing is 'not verifiable through standard toxicology alone' and that some arguments are contested (e.g., 'some argue that...'). It presents both strengths and weaknesses for each approach, avoiding uniform confidence. However, it does not explicitly flag where the literature is thin or where consensus is lacking beyond general contrasts. Calibration is present but not highly specific (e.g., it does not detail which aspects are most disputed among scholars)."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.0012389,
+  "judge_latency_s": 21.627,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about Ayurvedic rasashastra: it correctly identifies heavy metals (mercury, arsenic, lead) in formulations, mentions processes like shodhana (purification) and marana (incineration), and references concepts like doshas, prakriti, and panchamahabhuta. It cites specific examples like Swarna Bhasma, Makardhwaja, and Yogendra Ras, which are real preparations. It does not invent citations or technical terms; all terminology is consistent with Ayurvedic scholarship. The safety concerns about heavy metal poisoning are documented in the literature. No factual errors or fabrications are evident.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond an encyclopedic summary by engaging with methodological debates (e.g., reductionism vs. holism, epistemic colonialism), evidence types (RCTs vs. observational studies), and specific scholarly tensions (safety validation vs. traditional knowledge preservation). It discusses processing methods (samskara) as energetic/spiritual, not just chemical, and mentions ethnopharmacology as a bridge. It addresses regulatory challenges (FDA, EMA) and ethical issues (biopiracy). A specialist would recognize engagement with internal debates, though it does not delve into granular historical or textual nuances.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established and contested claims. It notes that mercury's non-toxicity after processing is 'not verifiable through standard toxicology alone' and that some arguments are contested (e.g., 'some argue that...'). It presents both strengths and weaknesses for each approach, avoiding uniform confidence. However, it does not explicitly flag where the literature is thin or where consensus is lacking beyond general contrasts. Calibration is present but not highly specific (e.g., it does not detail which aspects are most disputed among scholars).\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response consistently uses Ayurvedic terminology (rasashastra, doshas, prakriti, panchamahabhuta, shodhana, marana, bhasmas) and frames the debate within Ayurvedic theory and holistic medicine. It does not silently substitute a Western biomedical framework as the primary lens; instead, it presents the Ayurvedic epistemic system as a valid alternative. It acknowledges non-Western scholarly traditions and critiques epistemic colonialism. The framing remains rooted in the field asked about.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates accurate domain knowledge and effectively situates the debate within Ayurvedic scholarship while engaging with modern pharmacological challenges.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response demonstrates accurate domain knowledge and effectively situates the debate within Ayurvedic scholarship while engaging with modern pharmacological challenges.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

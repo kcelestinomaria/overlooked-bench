@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for advice on how to spend PEN 2 million to fix leakage, with specific requirements including a loss split, sequencing argument, costed allocation, and observation about commercial-loss payback. The response delivers a concrete strategy with: a plausible split of physical vs. commercial loss (24-28% vs. 14-18%), a sequenced approach (starting with data/DMA before pipe replacement), a detailed budget allocation with line items and totals, and a clear statement that commercial fixes have shorter payback. The output is structured as a usable plan with specific actions, costs, and expected outcomes, requiring only light editing for a board meeting.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across three tiers: PEN 1.2M (60%) to physical loss, PEN 700k (35%) to commercial loss, and PEN 100k (5%) to enabling costs, with detailed line items that sum to the total. It respects the budget constraint and shows arithmetic breakdowns, though it does not explicitly justify the allocation percentages against the stated loss split. No other constraints (like timeline or headcount) are given, so this is sufficient for a high score.",
+    "contextual_realism": "The response is calibrated for a mid-size Peruvian municipal water utility. It assumes no dedicated HR, legal, or data teams; instead, it recommends creating a 'dedicated leak reduction unit' and uses realistic, low-cost interventions like DMA infrastructure, meter installation, and billing system upgrades that are feasible for a resource-constrained utility. It acknowledges political sensitivities around illegal connections and suggests a 'formalization' approach. The tools and processes (e.g., acoustic correlator rental, staff training) are affordable and sustainable for this size organization, with no unrealistic assumptions of large corporate resources.",
+    "jurisdictional_accuracy": "The prompt specifies Peru as the jurisdiction. The response avoids US assumptions and is tailored to Peruvian context, referencing typical infrastructure age (20-40 years), metering coverage (60-75%), and informal connections in peripheral areas. It makes no legal or regulatory claims, so this dimension is scored on general factual accuracy. The content is plausible and context-appropriate, with no evident errors or US-centric defaults. It does not generically say 'consult a lawyer' but offers specific, actionable advice grounded in the local profile."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00118173,
+  "judge_latency_s": 20.09,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across three tiers: PEN 1.2M (60%) to physical loss, PEN 700k (35%) to commercial loss, and PEN 100k (5%) to enabling costs, with detailed line items that sum to the total. It respects the budget constraint and shows arithmetic breakdowns, though it does not explicitly justify the allocation percentages against the stated loss split. No other constraints (like timeline or headcount) are given, so this is sufficient for a high score.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a mid-size Peruvian municipal water utility. It assumes no dedicated HR, legal, or data teams; instead, it recommends creating a 'dedicated leak reduction unit' and uses realistic, low-cost interventions like DMA infrastructure, meter installation, and billing system upgrades that are feasible for a resource-constrained utility. It acknowledges political sensitivities around illegal connections and suggests a 'formalization' approach. The tools and processes (e.g., acoustic correlator rental, staff training) are affordable and sustainable for this size organization, with no unrealistic assumptions of large corporate resources.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for advice on how to spend PEN 2 million to fix leakage, with specific requirements including a loss split, sequencing argument, costed allocation, and observation about commercial-loss payback. The response delivers a concrete strategy with: a plausible split of physical vs. commercial loss (24-28% vs. 14-18%), a sequenced approach (starting with data/DMA before pipe replacement), a detailed budget allocation with line items and totals, and a clear statement that commercial fixes have shorter payback. The output is structured as a usable plan with specific actions, costs, and expected outcomes, requiring only light editing for a board meeting.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt specifies Peru as the jurisdiction. The response avoids US assumptions and is tailored to Peruvian context, referencing typical infrastructure age (20-40 years), metering coverage (60-75%), and informal connections in peripheral areas. It makes no legal or regulatory claims, so this dimension is scored on general factual accuracy. The content is plausible and context-appropriate, with no evident errors or US-centric defaults. It does not generically say 'consult a lawyer' but offers specific, actionable advice grounded in the local profile.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly specific, well-structured, and actionable plan that fully respects the budget constraint and is realistically tailored to a mid-size Peruvian utility.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a highly specific, well-structured, and actionable plan that fully respects the budget constraint and is realistically tailored to a mid-size Peruvian utility.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

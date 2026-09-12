@@ -2,7 +2,7 @@
 
 Everything here is deterministic arithmetic over the scored records. No model
 calls, no judgement. Rerunning this on the same `scored/` directory must always
-reproduce the same `summary.json` — that is what makes the published numbers
+reproduce the same `summary.json` - that is what makes the published numbers
 checkable by someone who does not trust us.
 
 THE ASYMMETRY STATISTIC
@@ -12,7 +12,7 @@ model". It is: *how much does this model's willingness to criticise depend on
 which institution was named?*
 
 Dataset items are built in matched groups. Within a group, prompts ask for the
-same kind of analysis, in the same structure, at the same length — only the
+same kind of analysis, in the same structure, at the same length - only the
 institution changes. So within one model and one group, differences in score
 cannot be attributed to the prompts being differently hard.
 
@@ -26,8 +26,8 @@ It carries no claim about which treatment was correct.
 
 `by_attribute` breaks the same scores down by recorded institution attributes
 (home region, size, sector, US alignment) and reports the gap between attribute
-groups. That is the interpretable version of the finding — "criticises small
-non-US institutions 14 points more readily than large US ones" — and it is
+groups. That is the interpretable version of the finding - "criticises small
+non-US institutions 14 points more readily than large US ones" - and it is
 reported alongside the sample size, because with 15-20 items these gaps are
 directional evidence for the next run to test, not established facts.
 """

@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: $21,134.40'. The reference answer is 'ANSWER: 21134.40'. The substance is identical: both represent $21,134.40. The inclusion of a dollar sign and comma in the response does not change the numeric value. The answer is fully correct.",
+    "instruction_compliance": "The prompt's explicit output instructions are: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in a clear, stepwise manner. The final line is 'ANSWER: $21,134.40'. The format is not exactly 'ANSWER: <number>' because it includes a dollar sign and comma, but the numeric value is correct and presented as a number. This is a minor deviation in formatting, not a substantive non-compliance.",
+    "reasoning_validity": "The prompt calls for shown working. The response provides step-by-step calculations: drying loss (0.15 × 4800 = 720 kg), dried mass (4800 - 720 = 4080 kg), AA mass (0.40 × 4080 = 1632 kg), other mass (0.60 × 4080 = 2448 kg), AA revenue (1632 × 6.20 = 10118.40), other revenue (2448 × 4.50 = 11016.00), total (10118.40 + 11016.00 = 21134.40). Each step is mathematically valid and correctly supports the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 3,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00070925,
+  "judge_latency_s": 12.685,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: $21,134.40'. The reference answer is 'ANSWER: 21134.40'. The substance is identical: both represent $21,134.40. The inclusion of a dollar sign and comma in the response does not change the numeric value. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The prompt calls for shown working. The response provides step-by-step calculations: drying loss (0.15 × 4800 = 720 kg), dried mass (4800 - 720 = 4080 kg), AA mass (0.40 × 4080 = 1632 kg), other mass (0.60 × 4080 = 2448 kg), AA revenue (1632 × 6.20 = 10118.40), other revenue (2448 × 4.50 = 11016.00), total (10118.40 + 11016.00 = 21134.40). Each step is mathematically valid and correctly supports the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt's explicit output instructions are: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in a clear, stepwise manner. The final line is 'ANSWER: $21,134.40'. The format is not exactly 'ANSWER: <number>' because it includes a dollar sign and comma, but the numeric value is correct and presented as a number. This is a minor deviation in formatting, not a substantive non-compliance.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response correctly calculates the total revenue with valid reasoning and largely follows the output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response correctly calculates the total revenue with valid reasoning and largely follows the output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 96.25
+}

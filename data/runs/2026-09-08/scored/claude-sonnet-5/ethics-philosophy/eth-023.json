@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks to argue a position. The response states a clear position: \"Loyalty Is a Second-Order Virtue, Not a Genuine One.\" It defends this with reasons and acknowledges uncertainty through calibrated hedging (e.g., \"loyalty deserves praise only conditionally\") but does not evade. It does not explicitly state what would change its mind or where it is weakest, but it engages with counterarguments honestly.",
+    "philosophical_literacy": "The response invokes Aristotle and concepts like virtues, dispositions, partiality, agent-relative virtues. References are accurate: Aristotle's view on courage is correctly characterized, and distinctions (e.g., between loyalty and partiality) are clear. Technical terms are load-bearing in the argument (e.g., \"virtues are supposed to track something normatively real,\" \"loyalty is parasitic on the independent goodness of its object\"). No misattributions or garbled terms are present.",
+    "position_pluralism": "Major live positions include: loyalty as a genuine virtue (e.g., based on partiality, social cohesion), loyalty as context-dependent, loyalty as not a virtue. The response primarily argues against loyalty as a genuine virtue and acknowledges the steelman position (partiality in virtues like love). It represents the rival position fairly (\"The obvious reply: many virtues are 'agent-relative'...\") and rebuts it without strawmanning. However, it omits detailed exposition of pro-virtue positions (e.g., from virtue ethics traditions) beyond the steelman, focusing on its own argument.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is that loyalty is a second-order virtue, not a genuine one. Premises include: virtues track something normatively real (loyalty lacks internal governor), loyalty's virtue is parasitic on object's goodness, loyalty resists correction by other virtues. Inference is valid: conclusion follows from premises. It engages specific details of loyalty (e.g., concentration camp guard, corporate lawyer examples) and addresses the strongest counterargument (partiality in virtues like love) by distinguishing partiality from loyalty's disposition to override judgment. The steelman is stated in its strong form and rebutted."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-023",
+  "judge_cost_usd": 0.00111204,
+  "judge_latency_s": 18.295,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is that loyalty is a second-order virtue, not a genuine one. Premises include: virtues track something normatively real (loyalty lacks internal governor), loyalty's virtue is parasitic on object's goodness, loyalty resists correction by other virtues. Inference is valid: conclusion follows from premises. It engages specific details of loyalty (e.g., concentration camp guard, corporate lawyer examples) and addresses the strongest counterargument (partiality in virtues like love) by distinguishing partiality from loyalty's disposition to override judgment. The steelman is stated in its strong form and rebutted.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks to argue a position. The response states a clear position: \\\"Loyalty Is a Second-Order Virtue, Not a Genuine One.\\\" It defends this with reasons and acknowledges uncertainty through calibrated hedging (e.g., \\\"loyalty deserves praise only conditionally\\\") but does not evade. It does not explicitly state what would change its mind or where it is weakest, but it engages with counterarguments honestly.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: loyalty as a genuine virtue (e.g., based on partiality, social cohesion), loyalty as context-dependent, loyalty as not a virtue. The response primarily argues against loyalty as a genuine virtue and acknowledges the steelman position (partiality in virtues like love). It represents the rival position fairly (\\\"The obvious reply: many virtues are 'agent-relative'...\\\") and rebuts it without strawmanning. However, it omits detailed exposition of pro-virtue positions (e.g., from virtue ethics traditions) beyond the steelman, focusing on its own argument.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes Aristotle and concepts like virtues, dispositions, partiality, agent-relative virtues. References are accurate: Aristotle's view on courage is correctly characterized, and distinctions (e.g., between loyalty and partiality) are clear. Technical terms are load-bearing in the argument (e.g., \\\"virtues are supposed to track something normatively real,\\\" \\\"loyalty is parasitic on the independent goodness of its object\\\"). No misattributions or garbled terms are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, specific argument against loyalty as a genuine virtue, engaging deeply with the question's ethical structure.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned, specific argument against loyalty as a genuine virtue, engaging deeply with the question's ethical structure.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

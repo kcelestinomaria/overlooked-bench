@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is advisory guidance for one student, not a classroom setting with a range of learners. It does not address differentiation for differing prior attainment, additional needs, or language barriers. It mentions financial aid and flexible schedules, which are access considerations for this individual, but does not engage with the dimension of differentiation for a cohort as defined in the rubric.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple non-degree pathways relevant to the student: TESDA National Certificate programs (welding, electrical, plumbing, automotive, refrigeration), short certification programs (Google IT, call center training), and community college diplomas. It provides specific durations, costs, and earnings estimates for the Philippine context, respects the 18-month constraint, and treats non-degree options substantively, not as an afterthought. It correctly identifies TESDA and avoids generic degree advice.",
+    "pedagogical_soundness": "The response is not a pedagogical plan but an advisory guidance document. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response is advisory guidance, not a lesson or unit plan requiring delivery by a teacher. It does not involve activity timings, material lists, preparation, or marking loads for a practitioner to implement. Therefore, it does not engage with the dimension of workload realism."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00105466,
+  "judge_latency_s": 13.488,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a pedagogical plan but an advisory guidance document. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advisory guidance, not a lesson or unit plan requiring delivery by a teacher. It does not involve activity timings, material lists, preparation, or marking loads for a practitioner to implement. Therefore, it does not engage with the dimension of workload realism.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple non-degree pathways relevant to the student: TESDA National Certificate programs (welding, electrical, plumbing, automotive, refrigeration), short certification programs (Google IT, call center training), and community college diplomas. It provides specific durations, costs, and earnings estimates for the Philippine context, respects the 18-month constraint, and treats non-degree options substantively, not as an afterthought. It correctly identifies TESDA and avoids generic degree advice.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is advisory guidance for one student, not a classroom setting with a range of learners. It does not address differentiation for differing prior attainment, additional needs, or language barriers. It mentions financial aid and flexible schedules, which are access considerations for this individual, but does not engage with the dimension of differentiation for a cohort as defined in the rubric.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides excellent, specific pathway guidance for the Philippine context but does not address the pedagogical or differentiation dimensions because it is an advisory document, not a teaching plan.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides excellent, specific pathway guidance for the Philippine context but does not address the pedagogical or differentiation dimensions because it is an advisory document, not a teaching plan.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

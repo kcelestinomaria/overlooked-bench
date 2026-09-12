@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'Mitochondrion' (capitalized). The reference answer's final answer is 'mitochondrion' (lowercase). The rubric states to ignore formatting, style, and verbosity entirely and compare on substance only. The substance is the same organelle. Therefore, the answer is fully correct.",
+    "instruction_compliance": "The explicit output instructions were: 1) 'Answer in one sentence,' 2) 'then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a single sentence and ends with 'ANSWER: Mitochondrion'. The format is correct; the capitalization of 'Mitochondrion' is a minor deviation but does not violate the explicit format instruction, which only specified the structure 'ANSWER: <organelle>'. All instructions are followed.",
+    "reasoning_validity": "The prompt does not explicitly call for shown working, but the response provides a one-sentence explanation that is internally consistent and factually sound: 'The mitochondrion is the organelle where oxidative phosphorylation occurs, using the electron transport chain and ATP synthase across the inner mitochondrial membrane to generate the majority of a eukaryotic cell's ATP.' This reasoning correctly supports the given answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00055625,
+  "judge_latency_s": 10.559,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'Mitochondrion' (capitalized). The reference answer's final answer is 'mitochondrion' (lowercase). The rubric states to ignore formatting, style, and verbosity entirely and compare on substance only. The substance is the same organelle. Therefore, the answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The prompt does not explicitly call for shown working, but the response provides a one-sentence explanation that is internally consistent and factually sound: 'The mitochondrion is the organelle where oxidative phosphorylation occurs, using the electron transport chain and ATP synthase across the inner mitochondrial membrane to generate the majority of a eukaryotic cell's ATP.' This reasoning correctly supports the given answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The explicit output instructions were: 1) 'Answer in one sentence,' 2) 'then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a single sentence and ends with 'ANSWER: Mitochondrion'. The format is correct; the capitalization of 'Mitochondrion' is a minor deviation but does not violate the explicit format instruction, which only specified the structure 'ANSWER: <organelle>'. All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all rubric criteria with a correct, well-reasoned, and compliant answer.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response fully meets all rubric criteria with a correct, well-reasoned, and compliant answer.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

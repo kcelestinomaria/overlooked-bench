@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with methodological and epistemic debates, such as contrasting biochemical testing with hermeneutic interpretation, discussing 'incommensurability' and 'epistemic violence,' and analyzing specific procedures like 'marana' and 'bhasma' in terms of bioavailability theories. It references scholarly tensions (e.g., scientific universalism vs. epistemic pluralism) and internal criteria (e.g., Ayurvedic diagnostic methods), which indicates familiarity with literature beyond summaries. A specialist would recognize nuanced engagement with the field's controversies.",
+    "domain_accuracy": "The response makes substantive factual claims about rasashastra, such as defining it as 'alchemical/herbo-metallic preparation of medicines, particularly involving mercury, sulfur, and minerals,' mentioning specific preparations like 'rasasindura (mercury sulfide),' and detailing concepts like 'shodhana (purification),' 'samskara (processing),' 'bhasma (calcined ash),' and 'dosha balance.' It correctly uses Ayurvedic terminology (e.g., rasa, virya, prabhava, dushivisha, ojas, agni, dhatu) and accurately outlines the debate's core positions without inventing citations or consensus. No fabricated terms or citations are evident; the claims align with established knowledge in Ayurvedic studies.",
+    "field_situatedness": "The response consistently uses Ayurvedic frameworks and terminology (e.g., rasashastra, doshas, shastric compliance) without substituting Western pharmacological framing as the primary lens. It situates the debate within Ayurvedic scholarly traditions, referencing concepts like 'yogavahi' and 'guru-shishya transmission,' and acknowledges epistemic pluralism. There is no silent substitution with dominant Anglophone fields; instead, it integrates both perspectives while maintaining the field's distinctiveness.",
+    "scholarly_calibration": "The response distinguishes between well-established and contested aspects, such as noting that mercury's neurotoxicity is not culturally relative (empirical claim) while acknowledging that safety within rasashastra depends on traditional indicators. It presents both sides as arguments without presenting either as settled fact, uses qualifiers like 'risks' and 'critics note,' and avoids uniform confidence. However, it lacks explicit uncertainty markers about its own knowledge limits, focusing more on debate structure than calibration of evidential status."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00109645,
+  "judge_latency_s": 20.047,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims about rasashastra, such as defining it as 'alchemical/herbo-metallic preparation of medicines, particularly involving mercury, sulfur, and minerals,' mentioning specific preparations like 'rasasindura (mercury sulfide),' and detailing concepts like 'shodhana (purification),' 'samskara (processing),' 'bhasma (calcined ash),' and 'dosha balance.' It correctly uses Ayurvedic terminology (e.g., rasa, virya, prabhava, dushivisha, ojas, agni, dhatu) and accurately outlines the debate's core positions without inventing citations or consensus. No fabricated terms or citations are evident; the claims align with established knowledge in Ayurvedic studies.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with methodological and epistemic debates, such as contrasting biochemical testing with hermeneutic interpretation, discussing 'incommensurability' and 'epistemic violence,' and analyzing specific procedures like 'marana' and 'bhasma' in terms of bioavailability theories. It references scholarly tensions (e.g., scientific universalism vs. epistemic pluralism) and internal criteria (e.g., Ayurvedic diagnostic methods), which indicates familiarity with literature beyond summaries. A specialist would recognize nuanced engagement with the field's controversies.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established and contested aspects, such as noting that mercury's neurotoxicity is not culturally relative (empirical claim) while acknowledging that safety within rasashastra depends on traditional indicators. It presents both sides as arguments without presenting either as settled fact, uses qualifiers like 'risks' and 'critics note,' and avoids uniform confidence. However, it lacks explicit uncertainty markers about its own knowledge limits, focusing more on debate structure than calibration of evidential status.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response consistently uses Ayurvedic frameworks and terminology (e.g., rasashastra, doshas, shastric compliance) without substituting Western pharmacological framing as the primary lens. It situates the debate within Ayurvedic scholarly traditions, referencing concepts like 'yogavahi' and 'guru-shishya transmission,' and acknowledges epistemic pluralism. There is no silent substitution with dominant Anglophone fields; instead, it integrates both perspectives while maintaining the field's distinctiveness.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive competence by accurately detailing the rasashastra debate with depth and appropriate field-specific framing.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive competence by accurately detailing the rasashastra debate with depth and appropriate field-specific framing.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

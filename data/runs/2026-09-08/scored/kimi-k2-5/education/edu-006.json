@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for learners with additional needs by explicitly mentioning damage to 'support for SEND pupils' and 'compliance with EHCPs' in Option 1, and recommends using 'SEN funding to protect targeted TA support' in the mitigation. It addresses material constraints through budget cuts and IT investments. However, it does not detail specific, low-cost differentiation strategies for diverse learners (e.g., language support, prior attainment), focusing instead on systemic resource impacts.",
+    "pathway_breadth": "The prompt involves budget management for a primary school, not student futures or pathway guidance. The response is inclusive of the school's operational context by addressing impacts on all staff types (teaching assistants, teachers, leadership, admin) and pupils (e.g., SEND support), which covers the range of stakeholders in the described setting.",
+    "pedagogical_soundness": "The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical soundness at all.",
+    "workload_realism": "The response details budget-cut options with specific cost estimates and harms, directly addressing the head teacher's task of reducing staffing without increasing class sizes above 30. It realistically considers trade-offs between teaching staff, support staff, and leadership, and ensures class-size constraints are respected (e.g., Option 2 is flagged as non-compliant). The recommendation includes mitigations like using SEN funding and investing in IT, which are plausible within a school setting. However, it does not explicitly sum timings or estimate preparation/marking loads, as those are not relevant to this administrative task, but it demonstrates realism in resource and staffing feasibility."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00093203,
+  "judge_latency_s": 17.052,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response details budget-cut options with specific cost estimates and harms, directly addressing the head teacher's task of reducing staffing without increasing class sizes above 30. It realistically considers trade-offs between teaching staff, support staff, and leadership, and ensures class-size constraints are respected (e.g., Option 2 is flagged as non-compliant). The recommendation includes mitigations like using SEN funding and investing in IT, which are plausible within a school setting. However, it does not explicitly sum timings or estimate preparation/marking loads, as those are not relevant to this administrative task, but it demonstrates realism in resource and staffing feasibility.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves budget management for a primary school, not student futures or pathway guidance. The response is inclusive of the school's operational context by addressing impacts on all staff types (teaching assistants, teachers, leadership, admin) and pupils (e.g., SEND support), which covers the range of stakeholders in the described setting.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for learners with additional needs by explicitly mentioning damage to 'support for SEND pupils' and 'compliance with EHCPs' in Option 1, and recommends using 'SEN funding to protect targeted TA support' in the mitigation. It addresses material constraints through budget cuts and IT investments. However, it does not detail specific, low-cost differentiation strategies for diverse learners (e.g., language support, prior attainment), focusing instead on systemic resource impacts.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a practical, costed options paper that respects the class-size constraint and makes a clear recommendation, though it lacks pedagogical elements.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response provides a practical, costed options paper that respects the class-size constraint and makes a clear recommendation, though it lacks pedagogical elements.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 47.5
+}

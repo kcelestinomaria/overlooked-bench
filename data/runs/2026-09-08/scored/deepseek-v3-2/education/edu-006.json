@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the range of learners, including SEND pupils (e.g., those with EHCPs and on SEN support), pupil premium children, and impacts across year groups. It proposes specific, low-cost adaptations like protecting TA support in early years and phasing cuts to maintain support. It avoids generic placeholder language and focuses on implementable actions by the existing staff.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is a budget-cutting scenario for a primary school. The response is inclusive of the range of learners in the setting by explicitly addressing impacts on SEND pupils, pupil premium children, and different year groups, and proposing mitigations to protect support. It covers the relevant learner range substantively.",
+    "pedagogical_soundness": "The response is an options paper for budget cuts, not a lesson or unit plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical alignment, sequencing, or rubric design. The rubric's evaluation steps cannot be applied as the task is administrative, not instructional.",
+    "workload_realism": "The response details staffing cuts and reorganizations (e.g., reducing TAs, merging classes) with specific cost savings and operational impacts. It respects the class-size constraint of 30. Timings and materials are not relevant here, but the feasibility of delivering the cuts with the given resources is addressed realistically, noting increased workloads and risks. The phased recommendation considers practical implementation over time."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00113286,
+  "judge_latency_s": 13.988,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget cuts, not a lesson or unit plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical alignment, sequencing, or rubric design. The rubric's evaluation steps cannot be applied as the task is administrative, not instructional.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response details staffing cuts and reorganizations (e.g., reducing TAs, merging classes) with specific cost savings and operational impacts. It respects the class-size constraint of 30. Timings and materials are not relevant here, but the feasibility of delivering the cuts with the given resources is addressed realistically, noting increased workloads and risks. The phased recommendation considers practical implementation over time.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is a budget-cutting scenario for a primary school. The response is inclusive of the range of learners in the setting by explicitly addressing impacts on SEND pupils, pupil premium children, and different year groups, and proposing mitigations to protect support. It covers the relevant learner range substantively.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the range of learners, including SEND pupils (e.g., those with EHCPs and on SEN support), pupil premium children, and impacts across year groups. It proposes specific, low-cost adaptations like protecting TA support in early years and phasing cuts to maintain support. It avoids generic placeholder language and focuses on implementable actions by the existing staff.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a thorough, realistic options paper that meets the prompt's requirements while explicitly addressing constraints and harms.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a thorough, realistic options paper that meets the prompt's requirements while explicitly addressing constraints and harms.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

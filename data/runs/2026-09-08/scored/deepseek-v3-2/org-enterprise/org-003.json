@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for advice covering specific elements: trading within charity vs. subsidiary, tax treatment, and trustees' duties. The response produces a structured briefing with clear sections addressing each element, including a summary table. It provides concrete components: threshold calculation, tax details (corporation tax, VAT, Gift Aid), and a numbered list of trustee actions. The output could be taken into a board meeting with light editing, as it is specific and usable.",
+    "constraint_fidelity": "The prompt states the charity is in England and Wales, annual income GBP 320,000, and wants to start trading (selling training courses). The response respects all constraints: it uses England and Wales jurisdiction throughout, references Charities Act 2011, HMRC, and Charity Commission, correctly calculates the small trading threshold as 25% of £320,000 = £80,000, and does not assume additional resources. It does not explicitly show arithmetic for budget projections but correctly applies the threshold. No constraints are violated.",
+    "contextual_realism": "The response is calibrated for a small charity with £320,000 income. It avoids assuming dedicated HR, legal, or procurement teams; instead, it recommends seeking professional advice (charity lawyer, accountant) as needed, which is realistic. It acknowledges role overlap (trustees handling decisions) and recommends a phased, low-risk approach ('start small, keep non-primary-purpose income under £80,000'), which respects limited capacity. No tooling or process overhead is proposed that would be unsustainable.",
+    "jurisdictional_accuracy": "The response is accurate for England and Wales jurisdiction: it references Charities Act 2011, HMRC, Charity Commission, corporation tax rates (19%/25%), Gift Aid, and VAT rules for charities. It correctly distinguishes primary-purpose vs. non-primary-purpose trading and the small trading exemption. It avoids US assumptions (no mention of 501(c)(3), UBIT, IRS). Referrals to professional advice are specific (e.g., VAT, charity lawyer) and warranted, not generic disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00133844,
+  "judge_latency_s": 18.267,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states the charity is in England and Wales, annual income GBP 320,000, and wants to start trading (selling training courses). The response respects all constraints: it uses England and Wales jurisdiction throughout, references Charities Act 2011, HMRC, and Charity Commission, correctly calculates the small trading threshold as 25% of £320,000 = £80,000, and does not assume additional resources. It does not explicitly show arithmetic for budget projections but correctly applies the threshold. No constraints are violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small charity with £320,000 income. It avoids assuming dedicated HR, legal, or procurement teams; instead, it recommends seeking professional advice (charity lawyer, accountant) as needed, which is realistic. It acknowledges role overlap (trustees handling decisions) and recommends a phased, low-risk approach ('start small, keep non-primary-purpose income under £80,000'), which respects limited capacity. No tooling or process overhead is proposed that would be unsustainable.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for advice covering specific elements: trading within charity vs. subsidiary, tax treatment, and trustees' duties. The response produces a structured briefing with clear sections addressing each element, including a summary table. It provides concrete components: threshold calculation, tax details (corporation tax, VAT, Gift Aid), and a numbered list of trustee actions. The output could be taken into a board meeting with light editing, as it is specific and usable.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for England and Wales jurisdiction: it references Charities Act 2011, HMRC, Charity Commission, corporation tax rates (19%/25%), Gift Aid, and VAT rules for charities. It correctly distinguishes primary-purpose vs. non-primary-purpose trading and the small trading exemption. It avoids US assumptions (no mention of 501(c)(3), UBIT, IRS). Referrals to professional advice are specific (e.g., VAT, charity lawyer) and warranted, not generic disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a thorough, jurisdictionally accurate, and actionable briefing that fully respects the charity's constraints and context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a thorough, jurisdictionally accurate, and actionable briefing that fully respects the charity's constraints and context.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

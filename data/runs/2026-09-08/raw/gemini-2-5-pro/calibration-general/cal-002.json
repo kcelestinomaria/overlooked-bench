@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 1969,
+  "cost_usd": 0.01982125,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 15.286,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 105,
+  "provider": "google",
+  "request_fingerprint": "28ea83869cecbfd3",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "Here is the working to calculate the cooperative's total revenue.\n\n**1. Calculate the mass of dried coffee:**\n*   Initial mass of coffee cherries: 4,800 kg\n*   Mass lost during drying: 15% of 4,800 kg = 0.15 * 4,800 = 720 kg\n*   Mass of dried coffee: 4,800 kg - 720 kg = 4,080 kg\n\n**2. Calculate the mass and revenue of AA grade coffee:**\n*   Mass of AA grade coffee: 40% of 4,080 kg = 0.40 * 4,080 = 1,632 kg\n*   Revenue from AA grade: 1,632 kg * $6.20/kg = $10,118.40\n\n**3. Calculate the mass and revenue of the other coffee:**\n*   Mass of other coffee: 4,080 kg - 1,632 kg = 2,448 kg\n*   Revenue from other coffee: 2,448 kg * $4.50/kg = $11,016.00\n\n**4. Calculate the total revenue:**\n*   Total revenue = Revenue from AA grade + Revenue from other coffee\n*   Total revenue = $10,118.40 + $11,016.00 = $21,134.40\n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-09-07T22:39:13Z"
+}

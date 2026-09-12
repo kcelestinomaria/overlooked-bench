@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopedic summary. It engages with specific methods (e.g., modified seed drills with fluted rollers, pelleted seeds, precision air seeders, swathing, stationary threshing), evidence (grain loss percentages, operational parameters), and scholarly debates (trade-offs of dwarf varieties, evolutionary-engineering mismatch). It discusses technical adaptations (header designs, threshing adjustments) and current research trajectories (variety improvement for mechanisation compatibility). A specialist would recognize detailed, literature-informed knowledge, not just a summary of summaries.",
+    "domain_accuracy": "The response makes numerous specific, substantive claims: seed size (1.5 million seeds/kg vs. 40,000 for wheat), planting depth (1-2 cm), lodging susceptibility, root architecture, flowering asynchrony, harvest window (7-10 days), elevation range (1,800-2,500m), weeding frequency (2-4 times), seeding rate (5-15 kg/ha), combine modifications (cylinder speeds 300-500 rpm vs. 800-1200 for wheat), grain losses (15-25%), specific variety 'DZ-Cr-387', and institutions like Debre Zeit Agricultural Research Center and Ethiopian Agricultural Transformation Agency. These details are factually accurate and align with known agronomic literature on teff. No invented citations, terms, or consensus are evident. The claims are load-bearing and correct.",
+    "field_situatedness": "The response is firmly situated in agronomy and agricultural engineering, the correct field for the prompt. It uses appropriate terminology (lodging, shattering, seeding rate, threshing, swathing), references Ethiopian institutions and highland conditions, and focuses on mechanisation challenges specific to teff. It does not substitute a Western framing but addresses the crop's native context and smallholder realities. The frameworks and conventions align with the field asked about.",
+    "scholarly_calibration": "The response accurately distinguishes established facts from contested or partial solutions. It presents biological constraints (seed size, lodging) as inherent characteristics, while describing attempted solutions as having 'limited adoption', 'partial successes', 'theoretical promise', or 'economically unacceptable' losses (e.g., modified combines with 15-25% losses). It notes trade-offs ('yield penalties or altered grain quality') and uncertainties ('not achieved reliable performance'). It avoids presenting any single approach as settled fact and signals where knowledge is incomplete ('remains incomplete'). The calibration is specific, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-006",
+  "judge_cost_usd": 0.0012199,
+  "judge_latency_s": 20.077,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous specific, substantive claims: seed size (1.5 million seeds/kg vs. 40,000 for wheat), planting depth (1-2 cm), lodging susceptibility, root architecture, flowering asynchrony, harvest window (7-10 days), elevation range (1,800-2,500m), weeding frequency (2-4 times), seeding rate (5-15 kg/ha), combine modifications (cylinder speeds 300-500 rpm vs. 800-1200 for wheat), grain losses (15-25%), specific variety 'DZ-Cr-387', and institutions like Debre Zeit Agricultural Research Center and Ethiopian Agricultural Transformation Agency. These details are factually accurate and align with known agronomic literature on teff. No invented citations, terms, or consensus are evident. The claims are load-bearing and correct.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopedic summary. It engages with specific methods (e.g., modified seed drills with fluted rollers, pelleted seeds, precision air seeders, swathing, stationary threshing), evidence (grain loss percentages, operational parameters), and scholarly debates (trade-offs of dwarf varieties, evolutionary-engineering mismatch). It discusses technical adaptations (header designs, threshing adjustments) and current research trajectories (variety improvement for mechanisation compatibility). A specialist would recognize detailed, literature-informed knowledge, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately distinguishes established facts from contested or partial solutions. It presents biological constraints (seed size, lodging) as inherent characteristics, while describing attempted solutions as having 'limited adoption', 'partial successes', 'theoretical promise', or 'economically unacceptable' losses (e.g., modified combines with 15-25% losses). It notes trade-offs ('yield penalties or altered grain quality') and uncertainties ('not achieved reliable performance'). It avoids presenting any single approach as settled fact and signals where knowledge is incomplete ('remains incomplete'). The calibration is specific, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response is firmly situated in agronomy and agricultural engineering, the correct field for the prompt. It uses appropriate terminology (lodging, shattering, seeding rate, threshing, swathing), references Ethiopian institutions and highland conditions, and focuses on mechanisation challenges specific to teff. It does not substitute a Western framing but addresses the crop's native context and smallholder realities. The frameworks and conventions align with the field asked about.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates expert-level, accurate, and well-calibrated knowledge of teff agronomy and mechanisation challenges.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response demonstrates expert-level, accurate, and well-calibrated knowledge of teff agronomy and mechanisation challenges.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

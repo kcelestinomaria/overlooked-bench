@@ -1,0 +1,34 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond a basic encyclopaedia level by detailing specific effectiveness outcomes (e.g., tree density, basal area, canopy cover) and listing methodological criticisms (e.g., lack of control groups, selection bias, power dynamics). It engages with evidence quality and internal scholarly debates, such as generalizability and short-term focus. However, the depth is somewhat generic and resembles a literature review summary rather than deep engagement with primary research or nuanced debate. A specialist would recognize this as a competent summary but not necessarily learn new insights.",
+    "domain_accuracy": "The response makes substantive claims about forest condition improvement, community engagement, livelihood benefits, and biodiversity conservation, citing specific studies. However, the references provided are generic and appear fabricated (e.g., 'Pokharel et al. (2015). Community forest management in Nepal: A review of the literature. Journal of Forest and Livelihood, 13(1), 1-15.' — this journal exists, but the article details are suspiciously uniform and lack specific corroboration). The methodological criticisms listed are plausible and align with known issues in the field, but the repeated citation of the same fabricated sources undermines the accuracy. Invented citations are heavily penalized per the rubric.",
+    "field_situatedness": "The response uses appropriate terminology and frameworks from the field of community forest management in Nepal, referencing concepts like 'social cohesion,' 'collective action,' 'power dynamics,' and 'equity.' It does not substitute a Western or Anglophone framing but stays focused on the regional context, including mention of marginalized communities and local policy. The scholarly conventions align with environmental sociology and forest policy studies relevant to Nepal.",
+    "scholarly_calibration": "The response distinguishes between established findings and methodological limitations. It presents effectiveness claims with confidence but pairs them with a detailed list of criticisms, indicating awareness of evidential gaps. For example, it notes 'lack of control groups' and 'limited generalizability' as specific issues. However, it does not explicitly calibrate confidence levels for individual claims (e.g., which findings are robust vs. contested). The calibration is implicit through the structure but lacks targeted nuance. It avoids blanket disclaimers and presents contested points as such."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 1,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [
+    "fabrication_suspected"
+  ],
+  "item_id": "nia-008",
+  "judge_cost_usd": 0.00113787,
+  "judge_latency_s": 19.121,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about forest condition improvement, community engagement, livelihood benefits, and biodiversity conservation, citing specific studies. However, the references provided are generic and appear fabricated (e.g., 'Pokharel et al. (2015). Community forest management in Nepal: A review of the literature. Journal of Forest and Livelihood, 13(1), 1-15.' — this journal exists, but the article details are suspiciously uniform and lack specific corroboration). The methodological criticisms listed are plausible and align with known issues in the field, but the repeated citation of the same fabricated sources undermines the accuracy. Invented citations are heavily penalized per the rubric.\",\n      \"score\": 1\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond a basic encyclopaedia level by detailing specific effectiveness outcomes (e.g., tree density, basal area, canopy cover) and listing methodological criticisms (e.g., lack of control groups, selection bias, power dynamics). It engages with evidence quality and internal scholarly debates, such as generalizability and short-term focus. However, the depth is somewhat generic and resembles a literature review summary rather than deep engagement with primary research or nuanced debate. A specialist would recognize this as a competent summary but not necessarily learn new insights.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between established findings and methodological limitations. It presents effectiveness claims with confidence but pairs them with a detailed list of criticisms, indicating awareness of evidential gaps. For example, it notes 'lack of control groups' and 'limited generalizability' as specific issues. However, it does not explicitly calibrate confidence levels for individual claims (e.g., which findings are robust vs. contested). The calibration is implicit through the structure but lacks targeted nuance. It avoids blanket disclaimers and presents contested points as such.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology and frameworks from the field of community forest management in Nepal, referencing concepts like 'social cohesion,' 'collective action,' 'power dynamics,' and 'equity.' It does not substitute a Western or Anglophone framing but stays focused on the regional context, including mention of marginalized communities and local policy. The scholarly conventions align with environmental sociology and forest policy studies relevant to Nepal.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive engagement and plausible content but is marred by fabricated citations that severely undermine its trustworthiness.\",\n  \"flags\": [\"fabrication_suspected\"]\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive engagement and plausible content but is marred by fabricated citations that severely undermine its trustworthiness.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 57.5
+}

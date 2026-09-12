@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which matches the reference answer 'ANSWER: 21134.40' exactly in substance (the number 21134.40). The intermediate calculations also align with the reference: dried mass 4,080 kg, AA mass 1,632 kg, remainder 2,448 kg, AA revenue $10,118.40, other revenue $11,016.00, total $21,134.40. This is fully correct.",
+    "instruction_compliance": "The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in steps and ends with 'ANSWER: 21134.40', which matches the required format precisely (including the colon, space, and number without currency symbol). All instructions are followed.",
+    "reasoning_validity": "The item calls for shown working, and the response provides step-by-step calculations: drying loss (0.15 × 4800 = 720 kg), dried mass (4800 - 720 = 4080 kg), AA mass (0.40 × 4080 = 1632 kg), other mass (0.60 × 4080 = 2448 kg), revenues (1632 × 6.20 = 10118.40, 2448 × 4.50 = 11016.00), total sum (10118.40 + 11016.00 = 21134.40). Each step is mathematically valid and logically supports the final answer, with no errors or inconsistencies."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00069962,
+  "judge_latency_s": 15.058,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which matches the reference answer 'ANSWER: 21134.40' exactly in substance (the number 21134.40). The intermediate calculations also align with the reference: dried mass 4,080 kg, AA mass 1,632 kg, remainder 2,448 kg, AA revenue $10,118.40, other revenue $11,016.00, total $21,134.40. This is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working, and the response provides step-by-step calculations: drying loss (0.15 × 4800 = 720 kg), dried mass (4800 - 720 = 4080 kg), AA mass (0.40 × 4080 = 1632 kg), other mass (0.60 × 4080 = 2448 kg), revenues (1632 × 6.20 = 10118.40, 2448 × 4.50 = 11016.00), total sum (10118.40 + 11016.00 = 21134.40). Each step is mathematically valid and logically supports the final answer, with no errors or inconsistencies.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in steps and ends with 'ANSWER: 21134.40', which matches the required format precisely (including the colon, space, and number without currency symbol). All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

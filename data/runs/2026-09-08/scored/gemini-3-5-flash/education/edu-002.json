@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is Grade 11 in South Africa, implying a range of learners in language proficiency and prior attainment. The response does not address differentiation for learners with additional needs, language challenges, or material constraints. It focuses on efficient marking for all students uniformly, with a whole-class feedback sheet that aggregates common errors. There is no concrete adaptation for diverse learners (e.g., scaffolding, support for English additional language learners). The approach is generic in terms of learner range, with no specific low-cost differentiation strategies mentioned.",
+    "pathway_breadth": "The prompt is about creating an assessment rubric for marking essays, not about student futures or pathway guidance. Therefore, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The rubric includes level descriptors from 'Excellent' to 'Unacceptable', covering a wide performance range. The marking process includes calibration with anchor papers and a whole-class feedback system that addresses common errors, which implicitly supports differentiation by focusing on class-wide trends rather than individual deficits. However, it does not explicitly address specific learner needs (e.g., language barriers, prior attainment).",
+    "pedagogical_soundness": "The response provides a rubric with two criteria (Content, Planning & Argumentation; Language, Style & Editing) aligned to South African CAPS Grade 11 argumentative writing (50-mark scale). The level descriptors are observable and distinguishable (e.g., 'Flawless Argument' vs. 'Clear Argument', 'Virtually error-free' vs. 'Minor errors'). The assessment measures the stated objectives: argumentation and language use. Sequencing is coherent, with a calibration phase before marking. The rubric is simplified to reduce decision fatigue, which is pedagogically sound for efficient marking.",
+    "workload_realism": "The response explicitly calculates marking time: 120 essays in 8 hours (4 minutes per essay), broken into four 2-hour sessions over a weekend. It provides a detailed schedule and a feasible marking protocol (single-scan method, no personalized comments). Materials assumed (highlighter, paper, photocopier) are typical in a school setting. The process accounts for the stated class size (120 essays) and avoids unrealistic marking loads by eliminating detailed feedback per essay. The arithmetic is realistic for one weekend."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00136938,
+  "judge_latency_s": 19.297,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides a rubric with two criteria (Content, Planning & Argumentation; Language, Style & Editing) aligned to South African CAPS Grade 11 argumentative writing (50-mark scale). The level descriptors are observable and distinguishable (e.g., 'Flawless Argument' vs. 'Clear Argument', 'Virtually error-free' vs. 'Minor errors'). The assessment measures the stated objectives: argumentation and language use. Sequencing is coherent, with a calibration phase before marking. The rubric is simplified to reduce decision fatigue, which is pedagogically sound for efficient marking.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly calculates marking time: 120 essays in 8 hours (4 minutes per essay), broken into four 2-hour sessions over a weekend. It provides a detailed schedule and a feasible marking protocol (single-scan method, no personalized comments). Materials assumed (highlighter, paper, photocopier) are typical in a school setting. The process accounts for the stated class size (120 essays) and avoids unrealistic marking loads by eliminating detailed feedback per essay. The arithmetic is realistic for one weekend.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about creating an assessment rubric for marking essays, not about student futures or pathway guidance. Therefore, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The rubric includes level descriptors from 'Excellent' to 'Unacceptable', covering a wide performance range. The marking process includes calibration with anchor papers and a whole-class feedback system that addresses common errors, which implicitly supports differentiation by focusing on class-wide trends rather than individual deficits. However, it does not explicitly address specific learner needs (e.g., language barriers, prior attainment).\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is Grade 11 in South Africa, implying a range of learners in language proficiency and prior attainment. The response does not address differentiation for learners with additional needs, language challenges, or material constraints. It focuses on efficient marking for all students uniformly, with a whole-class feedback sheet that aggregates common errors. There is no concrete adaptation for diverse learners (e.g., scaffolding, support for English additional language learners). The approach is generic in terms of learner range, with no specific low-cost differentiation strategies mentioned.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides a highly practical and realistic rubric and marking process tailored to South African Grade 11, with strong focus on workload efficiency and pedagogical clarity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a highly practical and realistic rubric and marking process tailored to South African Grade 11, with strong focus on workload efficiency and pedagogical clarity.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 72.5
+}

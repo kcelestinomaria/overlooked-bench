@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks to 'Argue a position,' and the response clearly states a position: 'The Doctrine of Double Effect Does Real Moral Work.' It defends this with reasons (e.g., distinction tracks moral intuitions, provides limits) and acknowledges uncertainty: 'It's not a perfect doctrine—the line between intention and foresight can blur, and reasonable people disagree on cases.' This is calibrated uncertainty, not evasion. It does not explicitly state what would change its mind, but it honestly notes weaknesses, showing commitment under uncertainty.",
+    "philosophical_literacy": "The response invokes technical terms accurately: 'Doctrine of Double Effect,' 'intended vs. foreseen harms,' 'consequentialism,' and 'agency.' It correctly outlines DDE's conditions and applies them to examples. The concepts are load-bearing in the argument—e.g., using DDE to distinguish cases and constrain consequentialism. There are no misattributions or garbled terms. It does not rely on excessive citations but uses relevant philosophical vocabulary correctly to support the reasoning.",
+    "position_pluralism": "The response acknowledges the rival position: 'The \"relabeling\" charge' is presented as a criticism, and it is characterized fairly—citing that critics argue we relabel harms based on conclusions. An advocate of this view would likely accept this characterization. However, it omits other major live positions, such as alternative frameworks (e.g., consequentialist rejections or virtue ethics perspectives) that might challenge DDE's moral work. It does not strawman the relabeling charge, but breadth is limited to one counterargument, lacking full pluralism.",
+    "reasoning_construction": "The response builds an argument with a clear conclusion: 'The Doctrine of Double Effect Does Real Moral Work.' Premises include: DDE distinguishes intended vs. foreseen harms, this distinction tracks moral intuitions (e.g., surgeon vs. doctor examples), and it matters for agency, limiting principles, and constraining consequentialism. The inference is valid—the conclusion depends on these premises. It engages specific details of the scenario by applying DDE to concrete cases and addresses the strongest counterargument ('relabeling charge') by arguing that DDE constrains coherent claims about intentions. However, it could delve deeper into nuanced objections, but it meets the criteria for a constructed argument."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-012",
+  "judge_cost_usd": 0.00102965,
+  "judge_latency_s": 18.809,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument with a clear conclusion: 'The Doctrine of Double Effect Does Real Moral Work.' Premises include: DDE distinguishes intended vs. foreseen harms, this distinction tracks moral intuitions (e.g., surgeon vs. doctor examples), and it matters for agency, limiting principles, and constraining consequentialism. The inference is valid—the conclusion depends on these premises. It engages specific details of the scenario by applying DDE to concrete cases and addresses the strongest counterargument ('relabeling charge') by arguing that DDE constrains coherent claims about intentions. However, it could delve deeper into nuanced objections, but it meets the criteria for a constructed argument.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks to 'Argue a position,' and the response clearly states a position: 'The Doctrine of Double Effect Does Real Moral Work.' It defends this with reasons (e.g., distinction tracks moral intuitions, provides limits) and acknowledges uncertainty: 'It's not a perfect doctrine—the line between intention and foresight can blur, and reasonable people disagree on cases.' This is calibrated uncertainty, not evasion. It does not explicitly state what would change its mind, but it honestly notes weaknesses, showing commitment under uncertainty.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges the rival position: 'The \\\"relabeling\\\" charge' is presented as a criticism, and it is characterized fairly—citing that critics argue we relabel harms based on conclusions. An advocate of this view would likely accept this characterization. However, it omits other major live positions, such as alternative frameworks (e.g., consequentialist rejections or virtue ethics perspectives) that might challenge DDE's moral work. It does not strawman the relabeling charge, but breadth is limited to one counterargument, lacking full pluralism.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes technical terms accurately: 'Doctrine of Double Effect,' 'intended vs. foreseen harms,' 'consequentialism,' and 'agency.' It correctly outlines DDE's conditions and applies them to examples. The concepts are load-bearing in the argument—e.g., using DDE to distinguish cases and constrain consequentialism. There are no misattributions or garbled terms. It does not rely on excessive citations but uses relevant philosophical vocabulary correctly to support the reasoning.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument for DDE's moral significance but lacks comprehensive treatment of competing philosophical positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned argument for DDE's moral significance but lacks comprehensive treatment of competing philosophical positions.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 81.25
+}

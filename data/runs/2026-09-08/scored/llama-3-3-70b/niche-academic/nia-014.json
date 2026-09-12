@@ -1,0 +1,34 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response lists eight points covering biodiversity, vegetation, soil, dust storms, nutrient cycling, wildlife, microclimate, and agriculture, but each is described at a general, summary level without engagement with specific methods, evidence quality, or scholarly debates. For example, it states 'changes in vegetation' but does not discuss measurement techniques or conflicting hypotheses. A specialist would recognize this as a compilation of summary-level findings, not a deep dive into the literature. It answers the prompt but does not go significantly beyond what an encyclopedia article might provide.",
+    "domain_accuracy": "The response makes substantive claims about biodiversity loss, vegetation shifts, soil degradation, dust storms, nutrient cycling, wildlife impacts, microclimate changes, and agricultural effects, citing specific authors and years. However, I cannot verify the existence or accuracy of these citations (e.g., Kuznetsov 1997, Novikova 1999, Lioubimtseva 2003) as no reference material was provided and my knowledge is insufficient to corroborate them. The claims themselves are plausible and consistent with general knowledge of the Aral Sea crisis, but the rubric penalizes invented citations heavily in thin-literature domains. Without verification, I must score conservatively.",
+    "field_situatedness": "The response uses terminology and frameworks appropriate to environmental science and ecology (e.g., 'biodiversity,' 'soil degradation,' 'nutrient cycling'), which aligns with the field asked about (ecological effects of desiccation). It does not silently substitute a Western or Anglophone framing; the cited authors have names suggesting regional expertise (e.g., Russian or Central Asian scholars). The response is situated in the correct scholarly tradition without apparent substitution.",
+    "scholarly_calibration": "The response presents all claims with uniform confidence, citing specific studies as if they are settled facts, without distinguishing well-established from contested points. For instance, it states microclimate changes 'have altered the regional microclimate' without noting uncertainties or debate. The concluding note acknowledges 'a need for further research,' but this is a generic disclaimer attached to the entire answer, not targeted calibration. There is no signaling of differing evidential status among the claims, which the rubric penalizes."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 2,
+    "field_situatedness": 4,
+    "scholarly_calibration": 1
+  },
+  "error": null,
+  "flags": [
+    "fabrication_suspected"
+  ],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00104585,
+  "judge_latency_s": 19.081,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about biodiversity loss, vegetation shifts, soil degradation, dust storms, nutrient cycling, wildlife impacts, microclimate changes, and agricultural effects, citing specific authors and years. However, I cannot verify the existence or accuracy of these citations (e.g., Kuznetsov 1997, Novikova 1999, Lioubimtseva 2003) as no reference material was provided and my knowledge is insufficient to corroborate them. The claims themselves are plausible and consistent with general knowledge of the Aral Sea crisis, but the rubric penalizes invented citations heavily in thin-literature domains. Without verification, I must score conservatively.\",\n      \"score\": 2\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response lists eight points covering biodiversity, vegetation, soil, dust storms, nutrient cycling, wildlife, microclimate, and agriculture, but each is described at a general, summary level without engagement with specific methods, evidence quality, or scholarly debates. For example, it states 'changes in vegetation' but does not discuss measurement techniques or conflicting hypotheses. A specialist would recognize this as a compilation of summary-level findings, not a deep dive into the literature. It answers the prompt but does not go significantly beyond what an encyclopedia article might provide.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response presents all claims with uniform confidence, citing specific studies as if they are settled facts, without distinguishing well-established from contested points. For instance, it states microclimate changes 'have altered the regional microclimate' without noting uncertainties or debate. The concluding note acknowledges 'a need for further research,' but this is a generic disclaimer attached to the entire answer, not targeted calibration. There is no signaling of differing evidential status among the claims, which the rubric penalizes.\",\n      \"score\": 1\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks appropriate to environmental science and ecology (e.g., 'biodiversity,' 'soil degradation,' 'nutrient cycling'), which aligns with the field asked about (ecological effects of desiccation). It does not silently substitute a Western or Anglophone framing; the cited authors have names suggesting regional expertise (e.g., Russian or Central Asian scholars). The response is situated in the correct scholarly tradition without apparent substitution.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a plausible, organized summary but relies on unverifiable citations and lacks depth and calibration.\",\n  \"flags\": [\"fabrication_suspected\"]\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a plausible, organized summary but relies on unverifiable citations and lacks depth and calibration.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 50.0
+}

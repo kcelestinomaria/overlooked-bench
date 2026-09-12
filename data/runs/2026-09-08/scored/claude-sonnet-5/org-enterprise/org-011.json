@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests advice on how to spend PEN 2 million, with specifics on loss split and allocation. The response produces a usable deliverable: it provides a plausible physical/commercial loss split (55–65% vs. 35–45%), a costed allocation with line items and ranges (e.g., audit: PEN 150,000–200,000), sequencing (audit first, then targeted interventions), and clear recommendations on what to avoid. It is not just a description of process; it includes concrete components like meter replacement programs, pressure management, and reserve funds. With light editing, this could be taken into a board meeting.",
+    "constraint_fidelity": "The prompt's constraints: a municipal water utility in Peru, 60,000 people, 42% NRW, PEN 2 million budget to 'fix leakage'. The response respects all constraints: it is tailored to a Peruvian utility, addresses the NRW rate, and allocates exactly PEN 2 million across categories (audit: PEN 150,000–200,000; commercial loss: PEN 700,000–900,000; physical loss: PEN 700,000–900,000; reserve: PEN 100,000–150,000), with the sum within the range of 2 million. It shows arithmetic by providing cost ranges and a split, though not a single precise total, but the allocation is clearly bounded by the budget. No constraint is ignored or violated.",
+    "contextual_realism": "The response is calibrated to a mid-size Peruvian utility, acknowledging typical network issues (aging asbestos-cement/PVC, pressure zones), meter age (>10 years), peri-urban illegal connections, and regulatory context (Sunass). It avoids assuming dedicated teams or expensive tooling without training, warning against unused equipment from donor projects. It recognizes small-organization realities: staff capacity for sustaining equipment, contingency for rainy season repairs, and prioritizes cost-effective interventions (pressure management, meter replacement) over blanket pipe replacement. No unrealistic capabilities are assumed.",
+    "jurisdictional_accuracy": "The response is accurate for Peru: it references Peruvian context (EPS-scale, Sunass regulation, Andean/coastal pressure issues, typical meter age, peri-urban expansion). It avoids US assumptions, using local terms (e.g., 'sol per m³', 'Sunass'). It provides substantive content without generic 'consult a lawyer' disclaimers. The regulatory and operational claims (e.g., tariff review performance based on collection efficiency) are plausible for Peru. No jurisdictional inaccuracies are present."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00121548,
+  "judge_latency_s": 20.609,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: a municipal water utility in Peru, 60,000 people, 42% NRW, PEN 2 million budget to 'fix leakage'. The response respects all constraints: it is tailored to a Peruvian utility, addresses the NRW rate, and allocates exactly PEN 2 million across categories (audit: PEN 150,000–200,000; commercial loss: PEN 700,000–900,000; physical loss: PEN 700,000–900,000; reserve: PEN 100,000–150,000), with the sum within the range of 2 million. It shows arithmetic by providing cost ranges and a split, though not a single precise total, but the allocation is clearly bounded by the budget. No constraint is ignored or violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated to a mid-size Peruvian utility, acknowledging typical network issues (aging asbestos-cement/PVC, pressure zones), meter age (>10 years), peri-urban illegal connections, and regulatory context (Sunass). It avoids assuming dedicated teams or expensive tooling without training, warning against unused equipment from donor projects. It recognizes small-organization realities: staff capacity for sustaining equipment, contingency for rainy season repairs, and prioritizes cost-effective interventions (pressure management, meter replacement) over blanket pipe replacement. No unrealistic capabilities are assumed.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests advice on how to spend PEN 2 million, with specifics on loss split and allocation. The response produces a usable deliverable: it provides a plausible physical/commercial loss split (55–65% vs. 35–45%), a costed allocation with line items and ranges (e.g., audit: PEN 150,000–200,000), sequencing (audit first, then targeted interventions), and clear recommendations on what to avoid. It is not just a description of process; it includes concrete components like meter replacement programs, pressure management, and reserve funds. With light editing, this could be taken into a board meeting.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for Peru: it references Peruvian context (EPS-scale, Sunass regulation, Andean/coastal pressure issues, typical meter age, peri-urban expansion). It avoids US assumptions, using local terms (e.g., 'sol per m³', 'Sunass'). It provides substantive content without generic 'consult a lawyer' disclaimers. The regulatory and operational claims (e.g., tariff review performance based on collection efficiency) are plausible for Peru. No jurisdictional inaccuracies are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excellently addresses all rubric dimensions with specific, realistic, and actionable advice tailored to a Peruvian municipal utility.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excellently addresses all rubric dimensions with specific, realistic, and actionable advice tailored to a Peruvian municipal utility.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 98,
+  "cost_usd": 0.00051825,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "e22f8d7bee6eeb19",
+  "item_id": "cal-007",
+  "latency_s": 1.36,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 103,
+  "provider": "openai",
+  "request_fingerprint": "026d4c771ffb7b19",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "Nairobi is at UTC+3 and São Paulo is at UTC-3, so Nairobi is 6 hours ahead of São Paulo.\n\nIf the meeting is at 14:00 on Tuesday in Nairobi, subtract 6 hours to convert to São Paulo time:\n- 14:00 - 6 hours = 08:00\n\nThe day stays Tuesday because subtracting 6 hours from 14:00 does not cross midnight.\n\nANSWER: Tuesday 08:00",
+  "timestamp_utc": "2026-09-07T22:32:15Z"
+}

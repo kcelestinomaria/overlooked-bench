@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: White'. The reference answer's final answer is 'ANSWER: white'. The substance matches exactly (ignoring capitalization differences as per rubric guidance on formatting/phrasing). The reasoning leads to the correct conclusion that the white book is third from the left.",
+    "instruction_compliance": "The prompt explicitly instructs: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <colour>'. The response includes an explanation and ends with 'ANSWER: White', which matches the required format (colour value provided, capitalization difference is irrelevant per rubric). All instructions are followed.",
+    "reasoning_validity": "The response shows step-by-step working: positions blue at 1 and red at 5, deduces remaining positions 2-4 for purple, white, green, correctly interprets 'purple left of white' and 'green right of white' to establish order Purple, White, Green, and places them into positions 2, 3, 4 respectively. Each step is logically valid and directly supports the final answer. No invalid reasoning is present."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-006",
+  "judge_cost_usd": 0.00059443,
+  "judge_latency_s": 11.898,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: White'. The reference answer's final answer is 'ANSWER: white'. The substance matches exactly (ignoring capitalization differences as per rubric guidance on formatting/phrasing). The reasoning leads to the correct conclusion that the white book is third from the left.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows step-by-step working: positions blue at 1 and red at 5, deduces remaining positions 2-4 for purple, white, green, correctly interprets 'purple left of white' and 'green right of white' to establish order Purple, White, Green, and places them into positions 2, 3, 4 respectively. Each step is logically valid and directly supports the final answer. No invalid reasoning is present.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <colour>'. The response includes an explanation and ends with 'ANSWER: White', which matches the required format (colour value provided, capitalization difference is irrelevant per rubric). All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, logically sound, and complies with all output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response is fully correct, logically sound, and complies with all output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

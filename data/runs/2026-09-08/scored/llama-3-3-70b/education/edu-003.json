@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes a specific 16-year-old student with particular strengths and preferences. The response tailors advice to this student's profile (e.g., 'good with their hands, dislike sitting exams') and suggests options accordingly. It does not address a broader range of learners (e.g., differing prior attainment, additional needs, language barriers) because the prompt is for individualized advice. The proposed adaptations (e.g., research, discussions, trial courses) are implementable by the student and family. It avoids generic placeholder language. However, it does not explicitly account for material constraints or additional needs beyond the student's stated profile, which limits its comprehensiveness for the dimension's full intent.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Ausbildung, Fachhochschulreife, Berufsfachschule, and Gymnasium/Abitur. Each is described with pros and cons at a similar level of detail, treating vocational routes substantively, not as afterthoughts. It addresses the parents' preference honestly by including the Gymnasium option but noting its cons. The structures named (e.g., Ausbildung, Fachhochschulreife) are correct for Germany. However, it lacks specific detail on entry requirements, durations, pay, or progression timelines (e.g., for Ausbildung, it mentions 'less emphasis on sitting exams' but not typical duration or apprenticeship pay). This stops short of the depth a competent practitioner would provide, placing it at a partial level.",
+    "pedagogical_soundness": "The response is not a pedagogical plan but advice on educational pathways. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response is advice, not a lesson or unit plan requiring delivery. It does not specify timings, materials, preparation, or marking loads. Therefore, it does not engage with the dimension of workload realism at all."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00103874,
+  "judge_latency_s": 17.087,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a pedagogical plan but advice on educational pathways. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advice, not a lesson or unit plan requiring delivery. It does not specify timings, materials, preparation, or marking loads. Therefore, it does not engage with the dimension of workload realism at all.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Ausbildung, Fachhochschulreife, Berufsfachschule, and Gymnasium/Abitur. Each is described with pros and cons at a similar level of detail, treating vocational routes substantively, not as afterthoughts. It addresses the parents' preference honestly by including the Gymnasium option but noting its cons. The structures named (e.g., Ausbildung, Fachhochschulreife) are correct for Germany. However, it lacks specific detail on entry requirements, durations, pay, or progression timelines (e.g., for Ausbildung, it mentions 'less emphasis on sitting exams' but not typical duration or apprenticeship pay). This stops short of the depth a competent practitioner would provide, placing it at a partial level.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes a specific 16-year-old student with particular strengths and preferences. The response tailors advice to this student's profile (e.g., 'good with their hands, dislike sitting exams') and suggests options accordingly. It does not address a broader range of learners (e.g., differing prior attainment, additional needs, language barriers) because the prompt is for individualized advice. The proposed adaptations (e.g., research, discussions, trial courses) are implementable by the student and family. It avoids generic placeholder language. However, it does not explicitly account for material constraints or additional needs beyond the student's stated profile, which limits its comprehensiveness for the dimension's full intent.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides balanced, student-centered advice on German educational pathways but lacks the concrete details needed for full practitioner utility.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides balanced, student-centered advice on German educational pathways but lacks the concrete details needed for full practitioner utility.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 27.5
+}

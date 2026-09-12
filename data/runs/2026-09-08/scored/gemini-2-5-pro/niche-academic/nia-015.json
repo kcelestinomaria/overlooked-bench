@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopaedia level. It engages with specific scholarly debates (traditional vs. revisionist views), details methodological and evidential points (e.g., the function of cash waqfs as proto-banks, the legal tool of ijarateyn for flexibility), and discusses internal disagreements about capital formation. It references key historians and their arguments, showing familiarity with the literature rather than just summaries. A specialist would recognize this as a competent engagement with the field's debates.",
+    "domain_accuracy": "The response makes numerous substantive claims that are correct: it accurately describes the functions of waqfs (public services, wealth redistribution, family wealth preservation, cash waqfs), correctly identifies key scholars and debates (Gibb, Bowen, Barkan, Çizakça, Kuran), uses proper terminology (evkaf, waqfiyya, mütevelli, ijarateyn, cash waqf), and presents a nuanced synthesis. No invented citations, terms, or consensus are evident; all references align with established Ottoman economic historiography. Minor errors are absent, and load-bearing claims are accurate.",
+    "field_situatedness": "The response is firmly situated in Ottoman economic history, using appropriate terminology (evkaf, waqfiyya, mütevelli, ijarateyn, cash waqf) and frameworks (e.g., Islamic legal contexts, comparisons to Western European development). It does not silently substitute a Western or Anglophone framing; instead, it engages with the field's specific debates and scholars (e.g., Çizakça, Kuran). The framing respects the regional scholarly tradition and incorporates non-English scholarship where relevant.",
+    "scholarly_calibration": "The response effectively distinguishes between well-established conclusions and contested points. It signals where consensus exists (e.g., 'Historians generally agree that waqf... were a cornerstone') and where debates are active (e.g., 'This is where the major historical disagreement lies'). It presents both the 'constraint' and 'enabling' arguments without presenting either as settled fact, and concludes with a nuanced synthesis noting contradictory effects. Calibration is specific and targeted, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00128042,
+  "judge_latency_s": 18.934,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are correct: it accurately describes the functions of waqfs (public services, wealth redistribution, family wealth preservation, cash waqfs), correctly identifies key scholars and debates (Gibb, Bowen, Barkan, Çizakça, Kuran), uses proper terminology (evkaf, waqfiyya, mütevelli, ijarateyn, cash waqf), and presents a nuanced synthesis. No invented citations, terms, or consensus are evident; all references align with established Ottoman economic historiography. Minor errors are absent, and load-bearing claims are accurate.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopaedia level. It engages with specific scholarly debates (traditional vs. revisionist views), details methodological and evidential points (e.g., the function of cash waqfs as proto-banks, the legal tool of ijarateyn for flexibility), and discusses internal disagreements about capital formation. It references key historians and their arguments, showing familiarity with the literature rather than just summaries. A specialist would recognize this as a competent engagement with the field's debates.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response effectively distinguishes between well-established conclusions and contested points. It signals where consensus exists (e.g., 'Historians generally agree that waqf... were a cornerstone') and where debates are active (e.g., 'This is where the major historical disagreement lies'). It presents both the 'constraint' and 'enabling' arguments without presenting either as settled fact, and concludes with a nuanced synthesis noting contradictory effects. Calibration is specific and targeted, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response is firmly situated in Ottoman economic history, using appropriate terminology (evkaf, waqfiyya, mütevelli, ijarateyn, cash waqf) and frameworks (e.g., Islamic legal contexts, comparisons to Western European development). It does not silently substitute a Western or Anglophone framing; instead, it engages with the field's specific debates and scholars (e.g., Çizakça, Kuran). The framing respects the regional scholarly tradition and incorporates non-English scholarship where relevant.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and nuanced engagement with Ottoman waqf historiography, effectively balancing scholarly debates and field-specific knowledge.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and nuanced engagement with Ottoman waqf historiography, effectively balancing scholarly debates and field-specific knowledge.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

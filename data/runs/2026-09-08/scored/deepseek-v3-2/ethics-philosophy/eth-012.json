@@ -1,0 +1,22 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "eth-012",
+  "judge_cost_usd": 0.00140801,
+  "judge_latency_s": 26.336,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument with premises and a conclusion. Conclusion: 'The doctrine of double effect (DDE) is not merely a post hoc relabeling... it performs genuine and indispensable moral work.' Premises include: the distinction between intended vs. foreseen harm tracks a real moral difference (e.g., terror vs. tactical bomber cases), DDE explains intuitions in hard cases (e.g., trolley problem variants), it grounds legal norms (e.g., just war theory), and it protects moral agency (e.g., Kantian respect). The inference is valid: the conclusion follows from these premises, which are applied to the specific scenario (e.g., analyzing the prompt's question directly). The response engages specific details (e.g., contrasting bombers, trolley variants) and addresses a strong counterargument ('the skeptic might object...') in its strongest form (that DDE is invoked after deciding acceptability), then rebuts it by explaining DDE's epistemic role. This shows constructed argument, not just listing positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks to 'Argue a position,' requiring a judgement. The response states a clear position: 'DDE is not merely a post hoc relabeling... it performs genuine and indispensable moral work.' It defends this with reasons (e.g., distinction in agency, explanatory power in cases). It acknowledges uncertainty implicitly by engaging with skepticism ('the skeptic might object') and contrasting views (consequentialism, pacifism), but does not hedge or evade; it reaches a defended conclusion. However, it does not explicitly state what would change its mind or where it is least confident, which is a criterion for a 4. It shows calibrated commitment but stops short of full metacognitive reflection on its own uncertainty.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response identifies and represents major live positions: it mentions consequentialism ('a crude consequentialism that says both are permissible'), pacifism/absolutism ('a rigid pacifism that says both are impermissible'), and skepticism (the objector's view that DDE is relabeling). Each is characterized fairly: consequentialism is described as focusing on outcomes, pacifism as rejecting all killing, and skepticism as challenging DDE's epistemic role. An advocate of these positions would likely accept the characterizations as accurate summaries. There is no strawmanning or omission of major positions (e.g., deontological alternatives are implied in the agency discussion). No false balance is present; fringe views are not elevated. The treatment is substantive, not just a list.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes technical terms and traditions accurately: doctrine of double effect (DDE), consequentialism, Kantian injunction ('treating humanity merely as a means'), just war theory, non-combatant immunity, and concepts like intended vs. foreseen harm, means vs. side effects. All are used correctly and are load-bearing in the argument (e.g., DDE distinguishes terror/tactical bombers, Kantian respect supports the agency argument). There are no misattributions or garbled terms. The response does not rely on citation density but integrates concepts to reason effectively. Accuracy and relevance are high, though it uses no named thinkers beyond Kant (implied), which is sufficient for correctness.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, specific argument defending DDE's moral work, engaging deeply with the prompt and rival positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

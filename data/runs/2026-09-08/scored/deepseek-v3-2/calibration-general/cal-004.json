@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240' in substance. The numerical value is correct, and formatting differences are ignored as per the rubric.",
+    "instruction_compliance": "The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 3240', matching the required format exactly, including the colon and number without units.",
+    "reasoning_validity": "The response shows working: it calculates volume as 2.5 × 1.8 × 1.2 = 5.4 m³, then 60% of that as 0.60 × 5.4 = 3.24 m³, and converts to litres via 3.24 × 1000 = 3240 L. Each step is mathematically valid and supports the final answer, with no errors or inconsistencies."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-004",
+  "judge_cost_usd": 0.00054381,
+  "judge_latency_s": 10.552,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240' in substance. The numerical value is correct, and formatting differences are ignored as per the rubric.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it calculates volume as 2.5 × 1.8 × 1.2 = 5.4 m³, then 60% of that as 0.60 × 5.4 = 3.24 m³, and converts to litres via 3.24 × 1000 = 3240 L. Each step is mathematically valid and supports the final answer, with no errors or inconsistencies.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 3240', matching the required format exactly, including the colon and number without units.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and strict compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and strict compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

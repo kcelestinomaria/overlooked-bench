@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position. The response states a clear position: 'I will argue that Ubuntu philosophy is not merely compatible with individual rights asserted against the community, but actually *requires* them for its own coherence.' It defends this decisively, acknowledges uncertainty implicitly by addressing counterarguments, and shows calibrated reasoning without evasion. It does not explicitly state what would change its mind, but the argument is committed and well-defended.",
+    "philosophical_literacy": "The response invokes Ubuntu philosophy accurately, distinguishing ontological vs. normative claims, and uses terms like 'relational rights' and 'communitarianism' correctly. It does not name-drop thinkers or use excessive technical jargon, but the concepts are load-bearing in the argument (e.g., ontological claim, relational rights). There are no inaccuracies or garbled terms; the reasoning is philosophically sound without reliance on decorative references.",
+    "position_pluralism": "The response focuses on arguing its own position rather than surveying rival views. It mentions one counterargument: 'The critic might object that \"rights against community\" presupposes the antagonistic individualism Ubuntu rejects.' This is a major live position, and it is represented fairly as a strong objection, not a strawman. However, it does not list or describe other competing positions (e.g., pure communitarian views), but given the prompt's instruction to 'argue a position rather than describing both views,' this omission is appropriate. The treatment of the counterargument is accurate and respectful.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is that Ubuntu is compatible with and requires individual rights. Premises include: Ubuntu is ontological not normative; rights protect relationships; rights are relational, not possessive; rights enforce community obligations. It engages specifics by distinguishing ontological vs. normative, relational rights, and addresses the strongest counterargument about antagonistic individualism by redefining rights as relational. Inference is valid, moving from premises to conclusion."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-016",
+  "judge_cost_usd": 0.00088968,
+  "judge_latency_s": 17.489,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is that Ubuntu is compatible with and requires individual rights. Premises include: Ubuntu is ontological not normative; rights protect relationships; rights are relational, not possessive; rights enforce community obligations. It engages specifics by distinguishing ontological vs. normative, relational rights, and addresses the strongest counterargument about antagonistic individualism by redefining rights as relational. Inference is valid, moving from premises to conclusion.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position. The response states a clear position: 'I will argue that Ubuntu philosophy is not merely compatible with individual rights asserted against the community, but actually *requires* them for its own coherence.' It defends this decisively, acknowledges uncertainty implicitly by addressing counterarguments, and shows calibrated reasoning without evasion. It does not explicitly state what would change its mind, but the argument is committed and well-defended.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response focuses on arguing its own position rather than surveying rival views. It mentions one counterargument: 'The critic might object that \\\"rights against community\\\" presupposes the antagonistic individualism Ubuntu rejects.' This is a major live position, and it is represented fairly as a strong objection, not a strawman. However, it does not list or describe other competing positions (e.g., pure communitarian views), but given the prompt's instruction to 'argue a position rather than describing both views,' this omission is appropriate. The treatment of the counterargument is accurate and respectful.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes Ubuntu philosophy accurately, distinguishing ontological vs. normative claims, and uses terms like 'relational rights' and 'communitarianism' correctly. It does not name-drop thinkers or use excessive technical jargon, but the concepts are load-bearing in the argument (e.g., ontological claim, relational rights). There are no inaccuracies or garbled terms; the reasoning is philosophically sound without reliance on decorative references.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a sophisticated, well-reasoned argument that directly engages the prompt's philosophical tension.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response constructs a sophisticated, well-reasoned argument that directly engages the prompt's philosophical tension.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a specific approach with tools, cost breakdown, and sustainability plan. The response delivers a concrete recommendation: offline-first digitisation using Android devices, ODK/Kobo, and LibreOffice/Sheets. It includes a detailed budget table with line items and totals, a tools list, workflows, and a clear sustainability plan with post-grant costs. The output is a usable deliverable that could be taken into a meeting with light editing; it does not merely describe a process or stop at a framework.",
+    "constraint_fidelity": "The prompt's constraints: PHP 400,000 budget, 30 staff with low digital literacy, intermittent electricity and no reliable internet, donor funding ends in 18 months. The response respects all constraints: it proposes offline-first tools (ODK/Kobo), addresses low digital literacy with simple training, includes power banks for intermittent electricity, and provides a detailed budget totaling PHP 356,000, leaving PHP 44,000 remaining. It explicitly addresses post-18-month sustainability with a plan and cost estimates. The arithmetic adds up correctly in the budget table. No constraints are ignored or violated.",
+    "contextual_realism": "The response is calibrated for a small nonprofit in the Philippines with 30 staff and low digital literacy. It assumes no dedicated IT or HR functions, uses affordable Android devices and free/open tools (ODK, Kobo, LibreOffice), and includes practical considerations like power banks, printed cheat sheets, and training sessions. It avoids enterprise SaaS or cloud-only architectures. It acknowledges small-organisation realities: role overlap (training internal 'super users'), limited recurring costs post-grant, and graceful degradation if funding lapses. The process overhead (simple workflows, role-based training) appears sustainable at this staffing level.",
+    "jurisdictional_accuracy": "The prompt involves the Philippines jurisdiction but does not specify legal or regulatory requirements. The response avoids US assumptions (e.g., no mention of US-specific tax or employment norms) and focuses on practical, tool-agnostic advice. It is factually accurate regarding offline tools and budget in PHP. It does not make jurisdiction-specific legal claims, so no verification against Philippine law is needed. The response provides substantive content rather than generic 'consult a lawyer' disclaimers. Since the prompt does not involve law/regulation, scoring on general factual accuracy: the advice is accurate and appropriate for the context."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00131704,
+  "judge_latency_s": 18.514,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: PHP 400,000 budget, 30 staff with low digital literacy, intermittent electricity and no reliable internet, donor funding ends in 18 months. The response respects all constraints: it proposes offline-first tools (ODK/Kobo), addresses low digital literacy with simple training, includes power banks for intermittent electricity, and provides a detailed budget totaling PHP 356,000, leaving PHP 44,000 remaining. It explicitly addresses post-18-month sustainability with a plan and cost estimates. The arithmetic adds up correctly in the budget table. No constraints are ignored or violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small nonprofit in the Philippines with 30 staff and low digital literacy. It assumes no dedicated IT or HR functions, uses affordable Android devices and free/open tools (ODK, Kobo, LibreOffice), and includes practical considerations like power banks, printed cheat sheets, and training sessions. It avoids enterprise SaaS or cloud-only architectures. It acknowledges small-organisation realities: role overlap (training internal 'super users'), limited recurring costs post-grant, and graceful degradation if funding lapses. The process overhead (simple workflows, role-based training) appears sustainable at this staffing level.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a specific approach with tools, cost breakdown, and sustainability plan. The response delivers a concrete recommendation: offline-first digitisation using Android devices, ODK/Kobo, and LibreOffice/Sheets. It includes a detailed budget table with line items and totals, a tools list, workflows, and a clear sustainability plan with post-grant costs. The output is a usable deliverable that could be taken into a meeting with light editing; it does not merely describe a process or stop at a framework.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves the Philippines jurisdiction but does not specify legal or regulatory requirements. The response avoids US assumptions (e.g., no mention of US-specific tax or employment norms) and focuses on practical, tool-agnostic advice. It is factually accurate regarding offline tools and budget in PHP. It does not make jurisdiction-specific legal claims, so no verification against Philippine law is needed. The response provides substantive content rather than generic 'consult a lawyer' disclaimers. Since the prompt does not involve law/regulation, scoring on general factual accuracy: the advice is accurate and appropriate for the context.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a highly specific, budget-conscious, and sustainable offline-first digitisation plan tailored to the nonprofit's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response provides a highly specific, budget-conscious, and sustainable offline-first digitisation plan tailored to the nonprofit's constraints.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

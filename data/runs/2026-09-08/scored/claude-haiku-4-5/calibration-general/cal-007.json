@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: Tuesday 08:00'. The reference answer is 'ANSWER: Tuesday 08:00'. The substance matches exactly, ignoring formatting differences. The answer is fully correct.",
+    "instruction_compliance": "The prompt's explicit output instructions are: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes an explanation (e.g., 'Let me work through this step by step...') and ends with 'ANSWER: Tuesday 08:00', which matches the required format exactly, including the colon, spacing, and 24-hour time. All instructions are fully complied with.",
+    "reasoning_validity": "The item calls for shown working. The response provides step-by-step reasoning: 'Step 1: Convert Nairobi time to UTC ... 14:00 Tuesday - 3 hours = 11:00 Tuesday (UTC)' and 'Step 2: Convert UTC to Sao Paulo time ... 11:00 Tuesday - 3 hours = 08:00 Tuesday (Sao Paulo local time)'. Each step is mathematically sound and correctly applies timezone offsets. The verification step also correctly calculates the 6-hour difference. The stated answer follows logically from the working."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-007",
+  "judge_cost_usd": 0.0006297,
+  "judge_latency_s": 11.288,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: Tuesday 08:00'. The reference answer is 'ANSWER: Tuesday 08:00'. The substance matches exactly, ignoring formatting differences. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working. The response provides step-by-step reasoning: 'Step 1: Convert Nairobi time to UTC ... 14:00 Tuesday - 3 hours = 11:00 Tuesday (UTC)' and 'Step 2: Convert UTC to Sao Paulo time ... 11:00 Tuesday - 3 hours = 08:00 Tuesday (Sao Paulo local time)'. Each step is mathematically sound and correctly applies timezone offsets. The verification step also correctly calculates the 6-hour difference. The stated answer follows logically from the working.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt's explicit output instructions are: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes an explanation (e.g., 'Let me work through this step by step...') and ends with 'ANSWER: Tuesday 08:00', which matches the required format exactly, including the colon, spacing, and 24-hour time. All instructions are fully complied with.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

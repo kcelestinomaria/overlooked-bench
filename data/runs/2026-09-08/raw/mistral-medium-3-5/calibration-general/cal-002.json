@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 398,
+  "cost_usd": 0.003171,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 2.065,
+  "methodology_version": "m1.0.0",
+  "model_id": "mistral/mistral-medium-3.5",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "prompt_tokens": 124,
+  "provider": "mistral",
+  "request_fingerprint": "d680f7ad225d4175",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "mistral/mistral-medium-3.5",
+    "temperature": 0.0
+  },
+  "text": "Let's break down the problem step by step to find the cooperative's total revenue.\n\n1. **Initial Mass of Coffee Cherries:**\n   - The cooperative harvests **4,800 kg** of coffee cherries.\n\n2. **Mass Lost During Drying:**\n   - **15%** of the mass is lost during drying.\n   - Mass lost = 15% of 4,800 kg = 0.15 × 4,800 = **720 kg**\n   - Mass remaining after drying = 4,800 kg - 720 kg = **4,080 kg**\n\n3. **Grading the Dried Coffee:**\n   - **40%** of the dried coffee is graded AA.\n     - Mass of AA coffee = 40% of 4,080 kg = 0.40 × 4,080 = **1,632 kg**\n     - Revenue from AA coffee = 1,632 kg × $6.20/kg = **$10,118.40**\n   - The remaining **60%** is graded lower.\n     - Mass of lower-grade coffee = 60% of 4,080 kg = 0.60 × 4,080 = **2,448 kg**\n     - Revenue from lower-grade coffee = 2,448 kg × $4.50/kg = **$11,016.00**\n\n4. **Total Revenue:**\n   - Total revenue = Revenue from AA coffee + Revenue from lower-grade coffee\n   - Total revenue = $10,118.40 + $11,016.00 = **$21,134.40**\n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-09-07T22:43:59Z"
+}

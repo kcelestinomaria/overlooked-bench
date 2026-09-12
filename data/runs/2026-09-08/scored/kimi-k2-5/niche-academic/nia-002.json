@@ -1,0 +1,22 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "nia-002",
+  "judge_cost_usd": 0.00117608,
+  "judge_latency_s": 22.878,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are correct and specific. For example, it correctly identifies problems like 'absence of distinct annual growth rings,' 'false rings,' 'missing rings,' and 'diffuse-porous' anatomy. It accurately lists approaches such as 'high-resolution microscopy,' 'radiocarbon bomb peak dating,' 'stable isotope analysis (δ¹⁸O, δ¹³C),' 'X-ray densitometry,' and 'regional curve standardization (RCS).' It references real-world successes like the 'Monsoon Asia Drought Atlas' and locations like Thailand, Vietnam, India, and Mexico. No invented citations, terms, or consensus are evident; all claims align with established methodological literature in tropical dendrochronology. Errors are minimal or absent, and load-bearing claims are accurate.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopaedia level by engaging with specific methodological details and scholarly debates. It discusses anatomical irregularities (e.g., 'indistinct boundaries,' 'false rings'), technical methods (e.g., 'cambial marking,' '¹⁴C wiggle-matching,' 'machine learning classification'), and ecological factors (e.g., 'competition-driven growth,' 'mycorrhizal dependencies'). It cites ongoing research directions like 'tropical-specific wood anatomy databases' and 'sub-annual resolution techniques,' indicating familiarity with current literature. A specialist would recognize this as informed by the field's internal discussions, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates accurate calibration by distinguishing well-established from contested points. It presents challenges as general issues (e.g., 'often fails,' 'frequently show') without overstating certainty. It notes successes like the 'Monsoon Asia Drought Atlas' as demonstrations of feasibility, not universal solutions. It avoids presenting hypotheses as settled fact; for example, it lists approaches as developed methods without claiming they resolve all problems. However, it lacks explicit signals of evidential status differences (e.g., not flagging which methods are more experimental vs. established), so calibration is implicit rather than specific. This prevents a top score but is above generic disclaimers.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response consistently uses the frameworks and terminology of dendrochronology and tropical ecology, not substituting an adjacent field. It employs field-specific terms like 'diffuse-porous,' 'cambial marking,' 'regional curve standardization (RCS),' and 'multi-proxy integration.' It references tropical-specific contexts (e.g., 'tropical dry forest species,' 'high-elevation tropical trees') and scholarly initiatives like the 'Tropical Dendrochronology research community.' There is no silent substitution with Western or Anglophone framings; it directly addresses the regional scholarly tradition of tropical dendrochronology.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"This response demonstrates substantive, accurate, and detailed knowledge of tropical dendrochronology's methodological challenges and solutions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

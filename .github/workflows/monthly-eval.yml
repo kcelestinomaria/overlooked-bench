@@ -4,7 +4,7 @@ name: Monthly evaluation
 # run folder.
 #
 # It does NOT auto-merge. Results are the public record this project stands on,
-# and a human reads the diff before they are published — specifically checking the
+# and a human reads the diff before they are published - specifically checking the
 # diagnostics block and any change to a rubric hash, either of which invalidates
 # the run's comparability with earlier ones.
 #
@@ -141,7 +141,7 @@ jobs:
           print(f"- **Judge:** `{s['judge']['judge_model']}` ({s['judge']['judge_prompt_version']})")
           print(f"- **Methodology:** `{s['methodology_version']}`")
           print(f"- **Dataset fingerprint:** `{s['dataset_fingerprint']}`")
-          print(f"- **Models:** {s['n_models']} · **Items:** {sum(s['item_counts'].values())}")
+          print(f"- **Models:** {s['n_models']} | **Items:** {sum(s['item_counts'].values())}")
           print(f"- **Cost:** ${s['total_cost_usd']:.2f}\n")
 
           for w in (d.get("truncation_warning"), d.get("calibration_warning")):
@@ -197,7 +197,7 @@ jobs:
 
             Full tables are in the [workflow run summary](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
 
-            | | |
+            | |
             |---|---|
             | Diagnostics warnings | `${{ steps.summary.outputs.has_warnings }}` |
             | Judge error rate | `${{ steps.summary.outputs.judge_errors }}%` |
@@ -208,7 +208,7 @@ jobs:
             This PR publishes results the project will be held to. Before merging:
 
             - [ ] `diagnostics.truncation_warning` and `diagnostics.calibration_warning` are both null.
-                  A truncated or miscalibrated run produces *plausible-looking* wrong numbers —
+                  A truncated or miscalibrated run produces *plausible-looking* wrong numbers - 
                   it will not announce itself anywhere else.
             - [ ] `judge_error_rate` is low and not concentrated in one category or model.
             - [ ] `dataset_fingerprint` matches the previous run, **or** the dataset change is
@@ -219,7 +219,7 @@ jobs:
             - [ ] **Cross-judge report** (`data/runs/<id>/crossjudge/report-*.json`):
                   `group_spread` and `provider_spread` are near zero. Movement concentrated in
                   one institution group means the judge treats criticism of some institutions
-                  differently from structurally identical criticism of others — that invalidates
+                  differently from structurally identical criticism of others - that invalidates
                   the headline track and the run must be re-judged with a different judge.
                   `rank_correlation` well below 1.0 means the two judges disagree on the
                   leaderboard order, which is also blocking.
@@ -232,8 +232,8 @@ jobs:
 
             ### After merging
 
-            Write `data/runs/${{ steps.meta.outputs.run_id }}/README.md` — 4-6 sentences per
+            Write `data/runs/${{ steps.meta.outputs.run_id }}/README.md` - 4-6 sentences per
             category, written for someone skimming, explicitly flagging counter-intuitive
             results rather than burying them.
 
-            🤖 Generated with [Claude Code](https://claude.com/claude-code)
+            Generated with [Claude Code](https://claude.com/claude-code)

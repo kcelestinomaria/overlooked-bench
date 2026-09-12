@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response reaches a clear position: 'I would not recommend permitting the industry as stated.' It provides reasons (the harm is severe and concentrated) and explicitly lists conditions that would change its mind ('What would have to be true for me to recommend the opposite?'), showing calibrated uncertainty. It does not evade by saying 'it depends on your values' but offers a defended stance with specific caveats.",
+    "philosophical_literacy": "The response uses no named thinkers, traditions, or technical philosophical terms. It relies on general moral reasoning (e.g., 'moral and political cost,' 'claims to land, community, and continuity') without invoking specific frameworks. The concepts are accurate as far as they go and are load-bearing in the argument (e.g., harm, consent, justice). There are no inaccuracies, but the lack of technical vocabulary means it does not demonstrate deep philosophical literacy, though it is correct and relevant.",
+    "position_pluralism": "The response acknowledges the trade-off between a large benefit and concentrated harm, implicitly representing a rights/justice perspective that prioritizes the affected community. However, it does not explicitly outline major live positions (e.g., utilitarian prioritization of poverty reduction, communitarian or deontological objections). It mentions at the end that it could answer from 'utilitarian, rights-based, or justice/fairness' perspectives, but this is not integrated into the main analysis. The representation of rival positions is minimal and not developed in a way an advocate would recognize.",
+    "reasoning_construction": "The response states a clear conclusion: 'I would not recommend permitting the industry as stated.' It offers premises: the trade-off is a large benefit vs. severe concentrated harm; making a region uninhabitable is a high moral cost; the affected 8,000 have strong claims to land and community. It engages with specific details of the scenario (200,000 vs. 8,000, 50-year timeline, region becoming uninhabitable) and addresses a counterargument by noting 'the fact that the benefit is to a larger group does not by itself settle the issue.' However, the argument is somewhat brief and does not deeply explore the strongest objection (e.g., the urgency of poverty alleviation for 200,000) or rigorously trace inferences from principles. It is constructed but not fully developed."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-024",
+  "judge_cost_usd": 0.00100101,
+  "judge_latency_s": 19.142,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response states a clear conclusion: 'I would not recommend permitting the industry as stated.' It offers premises: the trade-off is a large benefit vs. severe concentrated harm; making a region uninhabitable is a high moral cost; the affected 8,000 have strong claims to land and community. It engages with specific details of the scenario (200,000 vs. 8,000, 50-year timeline, region becoming uninhabitable) and addresses a counterargument by noting 'the fact that the benefit is to a larger group does not by itself settle the issue.' However, the argument is somewhat brief and does not deeply explore the strongest objection (e.g., the urgency of poverty alleviation for 200,000) or rigorously trace inferences from principles. It is constructed but not fully developed.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response reaches a clear position: 'I would not recommend permitting the industry as stated.' It provides reasons (the harm is severe and concentrated) and explicitly lists conditions that would change its mind ('What would have to be true for me to recommend the opposite?'), showing calibrated uncertainty. It does not evade by saying 'it depends on your values' but offers a defended stance with specific caveats.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges the trade-off between a large benefit and concentrated harm, implicitly representing a rights/justice perspective that prioritizes the affected community. However, it does not explicitly outline major live positions (e.g., utilitarian prioritization of poverty reduction, communitarian or deontological objections). It mentions at the end that it could answer from 'utilitarian, rights-based, or justice/fairness' perspectives, but this is not integrated into the main analysis. The representation of rival positions is minimal and not developed in a way an advocate would recognize.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers, traditions, or technical philosophical terms. It relies on general moral reasoning (e.g., 'moral and political cost,' 'claims to land, community, and continuity') without invoking specific frameworks. The concepts are accurate as far as they go and are load-bearing in the argument (e.g., harm, consent, justice). There are no inaccuracies, but the lack of technical vocabulary means it does not demonstrate deep philosophical literacy, though it is correct and relevant.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a clear, defended recommendation with specific conditions for reversal but lacks thorough exploration of competing ethical perspectives.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a clear, defended recommendation with specific conditions for reversal but lacks thorough exploration of competing ethical perspectives.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 75.0
+}

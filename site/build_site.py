@@ -2,7 +2,7 @@
 
     python site/build_site.py
 
-The site is otherwise fully static — `index.html`, `styles.css` and `app.js` are
+The site is otherwise fully static - `index.html`, `styles.css` and `app.js` are
 hand-written and never generated. The only thing that needs building is
 `data/runs/index.json`, a list of published runs, because a browser cannot
 enumerate a directory over HTTP.

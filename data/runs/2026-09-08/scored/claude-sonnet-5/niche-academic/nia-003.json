@@ -1,0 +1,22 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00123909,
+  "judge_latency_s": 19.618,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: defines maslaha, its hierarchical role, categories (mu'tabara, mulghah, mursala), and positions of Maliki and Hanafi schools. It cites al-Ghazali, al-Shatibi, Malik ibn Anas, al-Qarafi, and references maqasid al-shari'a. All these are correct and standard in Islamic legal theory. No invented citations, terms, or consensus are present. The example of Malik permitting preemptive punishment is accurate. The explanation of Hanafi istihsan as an alternative mechanism is correct. All claims are load-bearing and verified.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for relationship and divergence between Maliki and Hanafi positions. The response goes beyond encyclopedic level by engaging with specific mechanisms: maslaha mursala as quasi-independent source for Malikis, istihsan for Hanafis, and underlying methodological tensions. It references scholarly figures (al-Ghazali, al-Shatibi, al-Qarafi) and concepts (maqasid al-shari'a). It contrasts textualist rigor vs. purposive reasoning, indicating awareness of internal debate. A specialist would recognize this as competent engagement with the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it notes maslaha mursala is 'most contested category,' describes Maliki position as 'expansive scope,' Hanafi as 'more textually conservative,' and flags underlying concerns (risk of subjective legislation). It presents positions as school-specific without presenting one as settled fact. However, it lacks explicit calibration on evidential status of specific claims (e.g., dating of concepts) and does not flag where knowledge might be weak. Calibration is present but not highly specific; it avoids uniform confidence but could be more nuanced.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Islamic legal theory (usul al-fiqh). The response uses correct Arabic terminology (maslaha, nass, ijma', qiyas, maslaha mursala, istihsan, maqasid al-shari'a) and frameworks (hierarchical sources, school-specific positions). It cites key scholars from the tradition (Malik, al-Ghazali, al-Shatibi, al-Qarafi). There is no silent substitution of Western or Anglophone framing; it remains firmly within the Islamic scholarly tradition.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response demonstrates accurate, detailed knowledge of Islamic legal theory with clear differentiation between Maliki and Hanafi positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

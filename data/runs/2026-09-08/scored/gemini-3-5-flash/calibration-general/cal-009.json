@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'Mitochondria'. The reference answer is 'mitochondrion'. The question asks for 'which organelle', singular. The response provides the plural 'Mitochondria', which is substantively incorrect as it names a different grammatical number. The reference explicitly gives 'mitochondrion' as the answer. Therefore, the answer does not match the reference on substance.",
+    "instruction_compliance": "Explicit output instructions: 1) Answer in one sentence, 2) End with a final line in exactly the format 'ANSWER: <organelle>'. The response provides one sentence and then a final line 'ANSWER: Mitochondria'. It complies with both instructions, though the organelle name is plural rather than singular.",
+    "reasoning_validity": "The item does not explicitly call for shown working, but the response provides a one-sentence explanation: 'In eukaryotic cells, the mitochondria serve as the primary site of ATP synthesis through the process of oxidative phosphorylation.' This statement is internally consistent and factually correct regarding the role of mitochondria. The reasoning is valid and supports the answer given, even though the answer itself is incorrect in form."
+  },
+  "dimension_scores": {
+    "correctness": 0,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00053056,
+  "judge_latency_s": 11.629,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'Mitochondria'. The reference answer is 'mitochondrion'. The question asks for 'which organelle', singular. The response provides the plural 'Mitochondria', which is substantively incorrect as it names a different grammatical number. The reference explicitly gives 'mitochondrion' as the answer. Therefore, the answer does not match the reference on substance.\",\n      \"score\": 0\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item does not explicitly call for shown working, but the response provides a one-sentence explanation: 'In eukaryotic cells, the mitochondria serve as the primary site of ATP synthesis through the process of oxidative phosphorylation.' This statement is internally consistent and factually correct regarding the role of mitochondria. The reasoning is valid and supports the answer given, even though the answer itself is incorrect in form.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"Explicit output instructions: 1) Answer in one sentence, 2) End with a final line in exactly the format 'ANSWER: <organelle>'. The response provides one sentence and then a final line 'ANSWER: Mitochondria'. It complies with both instructions, though the organelle name is plural rather than singular.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response follows instructions and has valid reasoning but fails correctness by providing a plural answer where the reference expects singular.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response follows instructions and has valid reasoning but fails correctness by providing a plural answer where the reference expects singular.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

@@ -1,0 +1,34 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for explanation of 'ma' in Japanese-language scholarship and comparison to Western treatment. The response provides a definition, links to other concepts, and contrasts perspectives, but remains at an introductory, survey-like level. It mentions 'complex and multifaceted' but does not engage with specific scholarly debates, methods, or evidence from Japanese sources. It lacks detail on internal scholarly discourse (e.g., different interpretations among Japanese scholars, historical evolution, or methodological approaches). A specialist would recognize this as a summary of common knowledge, not deep engagement with the literature.",
+    "domain_accuracy": "The response makes several substantive claims: defines 'ma' as 'space,' 'gap,' or 'interval'; links it to concepts like 'yūgen' and 'wabi-sabi'; states it is treated as complex in Japanese scholarship encompassing time, space, and perception; cites philosopher Isozaki Arata; contrasts Western treatment as superficial, focusing on visual/spatial aspects; mentions Christopher Alexander. The definition and general description are accurate. However, the citation 'Isozaki Arata' appears to be a fabrication—Isozaki Arata is a prominent Japanese architect, not primarily known as a philosopher or aesthetician writing extensively on 'ma' in the manner implied; this is an invented citation. The mention of Christopher Alexander is plausible but not central. The error is load-bearing as it falsely presents specific scholarly authority.",
+    "field_situatedness": "The response correctly identifies the field as Japanese aesthetics and uses relevant terminology ('ma,' 'yūgen,' 'wabi-sabi'). It frames the discussion within Japanese philosophical and cultural contexts, not substituting a Western framework. It acknowledges Japanese-language scholarship and contrasts it with Western writing, maintaining the requested focus. There is no silent substitution of an Anglophone adjacent field; it stays situated in the Japanese tradition.",
+    "scholarly_calibration": "The response distinguishes between Japanese and Western treatments, noting differences in depth and focus, which implies some calibration. It states Western writers 'often fail to fully capture its complexity' and may reduce it, but does not specify which aspects are well-established versus contested within Japanese scholarship itself. It presents the Japanese view as uniformly complex and the Western as superficial without nuance about variations or debates. There is no targeted calibration regarding evidential status (e.g., which claims are speculative or well-supported). The disclaimer about growing interest in recent years is general, not specific calibration."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 2,
+    "field_situatedness": 4,
+    "scholarly_calibration": 2
+  },
+  "error": null,
+  "flags": [
+    "fabrication_suspected"
+  ],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00102624,
+  "judge_latency_s": 24.946,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: defines 'ma' as 'space,' 'gap,' or 'interval'; links it to concepts like 'yūgen' and 'wabi-sabi'; states it is treated as complex in Japanese scholarship encompassing time, space, and perception; cites philosopher Isozaki Arata; contrasts Western treatment as superficial, focusing on visual/spatial aspects; mentions Christopher Alexander. The definition and general description are accurate. However, the citation 'Isozaki Arata' appears to be a fabrication—Isozaki Arata is a prominent Japanese architect, not primarily known as a philosopher or aesthetician writing extensively on 'ma' in the manner implied; this is an invented citation. The mention of Christopher Alexander is plausible but not central. The error is load-bearing as it falsely presents specific scholarly authority.\",\n      \"score\": 2\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for explanation of 'ma' in Japanese-language scholarship and comparison to Western treatment. The response provides a definition, links to other concepts, and contrasts perspectives, but remains at an introductory, survey-like level. It mentions 'complex and multifaceted' but does not engage with specific scholarly debates, methods, or evidence from Japanese sources. It lacks detail on internal scholarly discourse (e.g., different interpretations among Japanese scholars, historical evolution, or methodological approaches). A specialist would recognize this as a summary of common knowledge, not deep engagement with the literature.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between Japanese and Western treatments, noting differences in depth and focus, which implies some calibration. It states Western writers 'often fail to fully capture its complexity' and may reduce it, but does not specify which aspects are well-established versus contested within Japanese scholarship itself. It presents the Japanese view as uniformly complex and the Western as superficial without nuance about variations or debates. There is no targeted calibration regarding evidential status (e.g., which claims are speculative or well-supported). The disclaimer about growing interest in recent years is general, not specific calibration.\",\n      \"score\": 2\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly identifies the field as Japanese aesthetics and uses relevant terminology ('ma,' 'yūgen,' 'wabi-sabi'). It frames the discussion within Japanese philosophical and cultural contexts, not substituting a Western framework. It acknowledges Japanese-language scholarship and contrasts it with Western writing, maintaining the requested focus. There is no silent substitution of an Anglophone adjacent field; it stays situated in the Japanese tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a competent overview but includes a fabricated citation and lacks depth beyond introductory survey level.\",\n  \"flags\": [\"fabrication_suspected\"]\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a competent overview but includes a fabricated citation and lacks depth beyond introductory survey level.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 55.0
+}

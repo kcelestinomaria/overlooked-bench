@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states a position: 'Yes: there is often a morally relevant difference... but it is not fundamental...' It defends this with reasons and acknowledges uncertainty through calibrated hedging (e.g., 'usually,' 'often,' 'can be'), not evasion. It explicitly states what determines when the distinction matters (e.g., stringency of duty, intention, special obligations) and addresses where it might not apply, showing honesty about disagreement and conditions for change.",
+    "philosophical_literacy": "The response invokes concepts like negative vs. positive duties, rights-violation, intention, and consequentialism accurately and uses them load-bearingly in the argument (e.g., 'Negative duties are generally stricter than positive duties' to explain why killing is usually worse). It does not name-drop thinkers or traditions but correctly applies technical terms (e.g., 'intention,' 'rights,' 'consequentialist') without garbling them. The reasoning is philosophically sound without relying on decorative references.",
+    "position_pluralism": "The response acknowledges major live positions, including the view that outcomes matter most (consequentialist objection) and that the distinction can be arbitrary due to redescription. It represents these positions fairly, as advocates would recognize them, without strawmanning. It does not omit significant positions (e.g., deontological or rights-based views are integrated into the argument). There is no false balance; it treats the consequentialist objection as serious but critiques it substantively, without elevating fringe views.",
+    "reasoning_construction": "The response builds a clear argument with a specific conclusion: 'There is a morally relevant difference between killing and letting die, but it is derivative rather than absolute.' It offers premises such as the asymmetry between negative and positive duties, rights-violation vs. non-provision of benefit, intention, and special obligations, and applies them to the specific scenario (e.g., euthanasia, triage, global poverty). It engages with the strongest counterarguments (e.g., consequentialist objection and the act/omission collapse objection) in their strongest forms, not strawmen. The inference from premises to conclusion is valid and well-structured."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-006",
+  "judge_cost_usd": 0.00148333,
+  "judge_latency_s": 17.105,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument with a specific conclusion: 'There is a morally relevant difference between killing and letting die, but it is derivative rather than absolute.' It offers premises such as the asymmetry between negative and positive duties, rights-violation vs. non-provision of benefit, intention, and special obligations, and applies them to the specific scenario (e.g., euthanasia, triage, global poverty). It engages with the strongest counterarguments (e.g., consequentialist objection and the act/omission collapse objection) in their strongest forms, not strawmen. The inference from premises to conclusion is valid and well-structured.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states a position: 'Yes: there is often a morally relevant difference... but it is not fundamental...' It defends this with reasons and acknowledges uncertainty through calibrated hedging (e.g., 'usually,' 'often,' 'can be'), not evasion. It explicitly states what determines when the distinction matters (e.g., stringency of duty, intention, special obligations) and addresses where it might not apply, showing honesty about disagreement and conditions for change.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges major live positions, including the view that outcomes matter most (consequentialist objection) and that the distinction can be arbitrary due to redescription. It represents these positions fairly, as advocates would recognize them, without strawmanning. It does not omit significant positions (e.g., deontological or rights-based views are integrated into the argument). There is no false balance; it treats the consequentialist objection as serious but critiques it substantively, without elevating fringe views.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes concepts like negative vs. positive duties, rights-violation, intention, and consequentialism accurately and uses them load-bearingly in the argument (e.g., 'Negative duties are generally stricter than positive duties' to explain why killing is usually worse). It does not name-drop thinkers or traditions but correctly applies technical terms (e.g., 'intention,' 'rights,' 'consequentialist') without garbling them. The reasoning is philosophically sound without relying on decorative references.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a well-reasoned, nuanced argument that directly engages with the prompt's specifics and handles counterarguments effectively.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a well-reasoned, nuanced argument that directly engages with the prompt's specifics and handles counterarguments effectively.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

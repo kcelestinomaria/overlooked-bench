@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'mitochondrion', which matches the reference answer's 'mitochondrion'. The reference specifies 'The mitochondrion — specifically the inner mitochondrial membrane...' but the rubric states to compare on substance only, ignoring formatting and verbosity. The core answer is identical, so it is fully correct.",
+    "instruction_compliance": "The prompt instructs: 'Answer in one sentence, then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides one sentence ('In eukaryotic cells, the mitochondrion is the primary site of ATP synthesis by oxidative phosphorylation.') and ends with 'ANSWER: mitochondrion' on a separate line, matching the exact format. All explicit instructions are followed.",
+    "reasoning_validity": "The item does not call for shown working; it asks for a one-sentence answer. The response is internally consistent: it directly states the mitochondrion as the site, with no contradictory or unsupported claims. There is no reasoning to validate beyond the statement, which is sound."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00050175,
+  "judge_latency_s": 11.276,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'mitochondrion', which matches the reference answer's 'mitochondrion'. The reference specifies 'The mitochondrion — specifically the inner mitochondrial membrane...' but the rubric states to compare on substance only, ignoring formatting and verbosity. The core answer is identical, so it is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item does not call for shown working; it asks for a one-sentence answer. The response is internally consistent: it directly states the mitochondrion as the site, with no contradictory or unsupported claims. There is no reasoning to validate beyond the statement, which is sound.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs: 'Answer in one sentence, then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides one sentence ('In eukaryotic cells, the mitochondrion is the primary site of ATP synthesis by oxidative phosphorylation.') and ends with 'ANSWER: mitochondrion' on a separate line, matching the exact format. All explicit instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response perfectly matches the reference answer and complies with all formatting instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response perfectly matches the reference answer and complies with all formatting instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

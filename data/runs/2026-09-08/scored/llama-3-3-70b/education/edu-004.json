@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes a single 19-year-old student with a specific background. The response provides general program advice but does not address the range of learners or any specific differentiation for prior attainment, additional needs, language, or material constraints. It contains no concrete adaptations or mention of accessibility.",
+    "pathway_breadth": "Pathway guidance is in scope. The response exclusively covers technical-vocational and certificate programs (e.g., Welding, Electrical Installation, Automotive Servicing) that are non-degree and relevant to the Philippine context and the 18-month constraint. It provides specific durations, cost ranges, and salary estimates. It does not mention university degrees. However, it fails to name specific TESDA qualifications or identify scholarship/free-training routes as noted in the item-specific rubric, and the cost structure (per semester) is generic and not clearly tied to TESDA or specific institutions. The depth is substantive but lacks the specific national system detail required for excellence.",
+    "pedagogical_soundness": "The response does not present a pedagogical plan with learning objectives, activities, and assessments. It is a career guidance list, not a lesson or curriculum. Therefore, it does not engage with the dimension of pedagogical alignment, sequencing, or observable rubrics at all.",
+    "workload_realism": "The response is advisory guidance, not a delivery plan for a practitioner. It does not describe activities with timings, required materials, or marking loads. Therefore, it cannot be evaluated for workload or resource feasibility for a teaching scenario."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00087274,
+  "judge_latency_s": 14.118,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a pedagogical plan with learning objectives, activities, and assessments. It is a career guidance list, not a lesson or curriculum. Therefore, it does not engage with the dimension of pedagogical alignment, sequencing, or observable rubrics at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advisory guidance, not a delivery plan for a practitioner. It does not describe activities with timings, required materials, or marking loads. Therefore, it cannot be evaluated for workload or resource feasibility for a teaching scenario.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response exclusively covers technical-vocational and certificate programs (e.g., Welding, Electrical Installation, Automotive Servicing) that are non-degree and relevant to the Philippine context and the 18-month constraint. It provides specific durations, cost ranges, and salary estimates. It does not mention university degrees. However, it fails to name specific TESDA qualifications or identify scholarship/free-training routes as noted in the item-specific rubric, and the cost structure (per semester) is generic and not clearly tied to TESDA or specific institutions. The depth is substantive but lacks the specific national system detail required for excellence.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes a single 19-year-old student with a specific background. The response provides general program advice but does not address the range of learners or any specific differentiation for prior attainment, additional needs, language, or material constraints. It contains no concrete adaptations or mention of accessibility.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides relevant vocational pathway advice but lacks the specific TESDA and scholarship details required for the Philippine context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides relevant vocational pathway advice but lacks the specific TESDA and scholarship details required for the Philippine context.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 23.75
+}

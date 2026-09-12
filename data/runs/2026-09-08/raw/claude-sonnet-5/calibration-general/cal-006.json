@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 412,
+  "cost_usd": 0.004438,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "6bfb84015aab2a3a",
+  "item_id": "cal-006",
+  "latency_s": 4.365,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 159,
+  "provider": "anthropic",
+  "request_fingerprint": "01a18cda1d6fdd50",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "**Setting up constraints:**\n- Blue = position 1 (leftmost)\n- Red = position 5 (rightmost)\n- Purple < White < Green (in position)\n\n**Filling in positions 2, 3, 4:**\nSince Blue and Red occupy positions 1 and 5, the remaining three books (Purple, White, Green) must fill positions 2, 3, and 4.\n\nGiven the order constraint Purple < White < Green, they must be placed in that exact sequence:\n- Position 2 = Purple\n- Position 3 = White\n- Position 4 = Green\n\n**Final arrangement:**\n1. Blue\n2. Purple\n3. White\n4. Green\n5. Red\n\n**Verification:**\n- Green (4) is right of White (3) ✓\n- Blue is leftmost ✓\n- Purple (2) is left of White (3) ✓\n- Red is rightmost ✓\n\nANSWER: white",
+  "timestamp_utc": "2026-09-07T22:26:57Z"
+}

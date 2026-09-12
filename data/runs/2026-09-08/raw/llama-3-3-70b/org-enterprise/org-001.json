@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1058,
+  "cost_usd": 0.00088128,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "0cc3468b1c92fd17",
+  "item_id": "org-001",
+  "latency_s": 6.573,
+  "methodology_version": "m1.0.0",
+  "model_id": "meta/llama-3.3-70b",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "prompt_tokens": 166,
+  "provider": "meta",
+  "request_fingerprint": "654b11d314b8a8d6",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "meta/llama-3.3-70b",
+    "temperature": 0.0
+  },
+  "text": "To develop a hiring plan for the coastal mangrove programme, we need to first determine the direct cost envelope available for personnel and other direct expenses. The grant is USD 180,000, and a maximum of 15% can be used for indirect costs.\n\n1. **Calculate the indirect cost amount:**\n   - Indirect cost percentage: 15%\n   - Total grant amount: USD 180,000\n   - Indirect cost amount: 15% of USD 180,000 = 0.15 * USD 180,000 = USD 27,000\n\n2. **Calculate the direct cost envelope:**\n   - Total grant amount: USD 180,000\n   - Indirect cost amount: USD 27,000\n   - Direct cost envelope: USD 180,000 - USD 27,000 = USD 153,000\n\n3. **Convert the direct cost envelope to Kenyan Shillings (KES):**\n   - Assuming an exchange rate of 1 USD = 120 KES (Note: This rate may fluctuate and should be adjusted according to the current rate at the time of planning)\n   - Direct cost envelope in KES: USD 153,000 * 120 KES/USD = KES 18,360,000\n\n4. **Determine the personnel costs:**\n   - For simplicity, let's allocate 70% of the direct cost envelope for personnel costs, which is a common allocation in many projects.\n   - Personnel cost allocation: 70% of KES 18,360,000 = 0.70 * KES 18,360,000 = KES 12,852,000\n\n5. **Hiring Plan:**\n   - Given the programme's focus and the need for effective management and implementation, we will hire the following roles:\n     1. **Programme Manager:** To oversee the programme, ensure its objectives are met, and manage the team.\n     2. **Conservation Officer:** To work directly on mangrove conservation efforts, including community engagement and habitat restoration.\n     3. **Administrative Assistant:** To provide administrative support, including financial management, reporting, and logistics.\n     4. **Field Officer:** To assist in field activities, data collection, and community outreach.\n\n6. **Sequence of Hiring:**\n   - **Month 1-3:** Programme Manager and Administrative Assistant\n   - **Month 4-6:** Conservation Officer and Field Officer\n\n7. **Gross Salary Bands in KES:**\n   - **Programme Manager:** KES 120,000 - KES 150,000 per month\n   - **Conservation Officer:** KES 90,000 - KES 120,000 per month\n   - **Administrative Assistant:** KES 60,000 - KES 80,000 per month\n   - **Field Officer:** KES 50,000 - KES 70,000 per month\n\n8. **Employer's Statutory On-costs:**\n   - Assuming an average on-cost of 30% of the gross salary for benefits, taxes, and other statutory requirements.\n\n9. **Total Personnel Costs Over Two Years:**\n   - **Programme Manager (24 months):** Average KES 135,000/month * 24 months = KES 3,240,000\n   - **Conservation Officer (20 months, starting 4 months after the programme begins):** Average KES 105,000/month * 20 months = KES 2,100,000\n   - **Administrative Assistant (24 months):** Average KES 70,000/month * 24 months = KES 1,680,000\n   - **Field Officer (20 months, starting 4 months after the programme begins):** Average KES 60,000/month * 20 months = KES 1,200,000\n   - **Total Gross Salaries:** KES 3,240,000 + KES 2,100,000 + KES 1,680,000 + KES 1,200,000 = KES 8,220,000\n   - **On-costs (30% of total gross salaries):** 0.30 * KES 8,220,000 = KES 2,466,000\n   - **Total Personnel Costs:** KES 8,220,000 (gross salaries) + KES 2,466,000 (on-costs) = KES 10,686,000\n\n10. **Fit Within the Direct Cost Envelope:**\n    - Total personnel costs over two years: KES 10,686,000\n    - Available for personnel costs: KES 12,852,000\n    - The hiring plan fits within the allocated personnel cost envelope, leaving KES 2,166,000 for contingencies, training, or additional personnel needs that may arise during the programme.\n\nThis plan allows for a balanced team to manage and implement the coastal mangrove programme effectively while staying within the budget constraints provided by the grant.",
+  "timestamp_utc": "2026-09-07T22:44:24Z"
+}

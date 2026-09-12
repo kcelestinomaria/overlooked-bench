@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final line is 'ANSWER: white', which exactly matches the reference answer's final answer 'ANSWER: white'. The substantive answer is correct, ignoring formatting differences.",
+    "instruction_compliance": "The prompt explicitly instructs to 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <colour>'. The response includes an explanation and ends with 'ANSWER: white', matching the required format exactly.",
+    "reasoning_validity": "The response shows working: it sets up constraints, deduces that positions 2-4 are for Purple, White, Green, correctly interprets 'Purple < White < Green' as a strict order, and assigns positions accordingly. Each step is valid and logically supports the answer. The verification step confirms all constraints are satisfied."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-006",
+  "judge_cost_usd": 0.00053877,
+  "judge_latency_s": 8.737,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final line is 'ANSWER: white', which exactly matches the reference answer's final answer 'ANSWER: white'. The substantive answer is correct, ignoring formatting differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it sets up constraints, deduces that positions 2-4 are for Purple, White, Green, correctly interprets 'Purple < White < Green' as a strict order, and assigns positions accordingly. Each step is valid and logically supports the answer. The verification step confirms all constraints are satisfied.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <colour>'. The response includes an explanation and ends with 'ANSWER: white', matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, logically sound, and perfectly complies with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, logically sound, and perfectly complies with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

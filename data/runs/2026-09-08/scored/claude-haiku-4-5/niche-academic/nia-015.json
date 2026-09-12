@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks about historians' conclusions and main disagreements. The response goes beyond encyclopedic summary by engaging with specific scholarly debates (e.g., Timur Kuran's constraint argument vs. enablement counterarguments), mentions methodological issues like the counterfactual problem, and identifies unresolved questions like regional variation and periodization. A specialist would recognize this as engagement with the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes substantive claims: waqfs served roles like resource mobilization and urban development; Timur Kuran argues they constrained capital formation by making assets inalienable; critics argue they mobilized capital and provided flexibility. These are correct and reflect established scholarly positions. No invented citations, terms, or consensus are presented. The claims are accurate and load-bearing for the answer.",
+    "field_situatedness": "The question is about Ottoman waqf institutions, a field within Ottoman economic history. The response uses appropriate terminology (waqf, inalienable, capital formation) and frameworks (economic function, institutional constraints), and cites a relevant scholar (Timur Kuran). It does not silently substitute a Western or Anglophone framing; it engages directly with the field's debates.",
+    "scholarly_calibration": "The response distinguishes consensus ('Historians generally agree') from debate ('Some scholars...', 'Critics of this view...') and flags unresolved questions. It presents Kuran's argument as one position, not settled fact, and notes the debate remains active. This is specific, targeted calibration, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00073434,
+  "judge_latency_s": 13.98,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: waqfs served roles like resource mobilization and urban development; Timur Kuran argues they constrained capital formation by making assets inalienable; critics argue they mobilized capital and provided flexibility. These are correct and reflect established scholarly positions. No invented citations, terms, or consensus are presented. The claims are accurate and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks about historians' conclusions and main disagreements. The response goes beyond encyclopedic summary by engaging with specific scholarly debates (e.g., Timur Kuran's constraint argument vs. enablement counterarguments), mentions methodological issues like the counterfactual problem, and identifies unresolved questions like regional variation and periodization. A specialist would recognize this as engagement with the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes consensus ('Historians generally agree') from debate ('Some scholars...', 'Critics of this view...') and flags unresolved questions. It presents Kuran's argument as one position, not settled fact, and notes the debate remains active. This is specific, targeted calibration, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Ottoman waqf institutions, a field within Ottoman economic history. The response uses appropriate terminology (waqf, inalienable, capital formation) and frameworks (economic function, institutional constraints), and cites a relevant scholar (Timur Kuran). It does not silently substitute a Western or Anglophone framing; it engages directly with the field's debates.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive competence by accurately summarizing key debates and calibrating confidence appropriately.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive competence by accurately summarizing key debates and calibrating confidence appropriately.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

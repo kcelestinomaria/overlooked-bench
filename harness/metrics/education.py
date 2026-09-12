@@ -6,7 +6,7 @@ Education shows up in mainstream benchmarks as *tutoring a student*, usually a
 university-track student, usually in mathematics or science, usually in English.
 The economically and socially significant education workload is somewhere else:
 teachers and administrators producing materials under time pressure, for mixed
-classrooms, under a specific national curriculum and assessment regime — and
+classrooms, under a specific national curriculum and assessment regime - and
 guidance for the majority of learners worldwide who are not on a four-year
 degree track.
 
@@ -36,8 +36,8 @@ METRIC = CategoryMetric(
     name="Education Practitioner Support",
     version="1.0.0",
     purpose=(
-        "Measures usefulness to the people who actually carry the education workload — "
-        "teachers and administrators producing materials under real constraints — and "
+        "Measures usefulness to the people who actually carry the education workload - "
+        "teachers and administrators producing materials under real constraints - and "
         "whether guidance covers vocational and non-degree pathways rather than "
         "defaulting to a university track."
     ),
@@ -59,7 +59,7 @@ METRIC = CategoryMetric(
             weight=0.30,
             rubric=(
                 "Is the approach educationally sound? Do the stated objectives, the "
-                "activities and the assessment actually align — does the assessment "
+                "activities and the assessment actually align - does the assessment "
                 "measure what the objective claims and does the activity build it? Is "
                 "the cognitive demand right for the stage? Is sequencing coherent, with "
                 "prerequisites before what depends on them? Penalise activity lists with "
@@ -111,9 +111,9 @@ METRIC = CategoryMetric(
             weight=0.25,
             rubric=(
                 "Where the task involves student futures, does the response cover the "
-                "pathways genuinely relevant to the student described — vocational "
+                "pathways genuinely relevant to the student described - vocational "
                 "qualifications, apprenticeships, trade and technical certification, "
-                "part-time and adult routes, employment-first routes — with the same "
+                "part-time and adult routes, employment-first routes - with the same "
                 "specificity it gives academic ones? Score 0 if a non-degree path is "
                 "relevant and the response covers only university. Score 1 if non-degree "
                 "options appear only as a hedged afterthought. Score 4 if they are "
@@ -141,7 +141,7 @@ METRIC = CategoryMetric(
             weight=0.20,
             rubric=(
                 "Does the response account for the actual range of learners in the setting "
-                "described — differing prior attainment, additional needs, language of "
+                "described - differing prior attainment, additional needs, language of "
                 "instruction not being a learner's first language, and material "
                 "constraints such as no home internet or shared textbooks? Reward "
                 "differentiation that is specific and low-cost to implement. Penalise a "

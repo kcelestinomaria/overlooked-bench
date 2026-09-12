@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 649,
+  "cost_usd": 0.003309,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "f9d49ced9849e044",
+  "item_id": "nia-007",
+  "latency_s": 7.123,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 64,
+  "provider": "anthropic",
+  "request_fingerprint": "2aeae11e3556f29c",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Medieval Georgian Scripts: Palaeographic Distinctions\n\n## The Three Scripts\n\n**Asomtavruli** (\"capital letters\")\n- The oldest Georgian script, used from ~5th century onwards\n- Large, monumental letterforms with pronounced serifs\n- Primarily used for liturgical and formal texts\n- Each letter occupies roughly equal space (more geometric)\n- Gradually fell out of everyday use but persisted in religious contexts\n\n**Nuskhuri** (\"small hand\")\n- Developed around 11th century as a cursive derivative of Asomtavruli\n- More compact and flowing, with connected letterforms\n- Became the standard for administrative, literary, and scholarly texts\n- Intermediate in size between Asomtavruli and later scripts\n- Dominated from ~11th-18th centuries\n\n**Mkhedruli** (\"secular script\")\n- Emerged around 11th-12th century, fully established by 13th century\n- Smaller, more angular, with minimal serifs\n- Eventually became the standard for all purposes\n- Gradually replaced Nuskhuri from the medieval period onward\n- Remains the modern Georgian script\n\n## Palaeographic Distinctions\n\n| Feature | Asomtavruli | Nuskhuri | Mkhedruli |\n|---------|-------------|----------|-----------|\n| Letter connection | Separate | Connected | Separate/connected |\n| Serifs | Pronounced | Moderate | Minimal |\n| Formality | Highly formal | Mixed | Increasingly casual |\n| Baseline | Regular | Flowing | Regular |\n\n## Dating and Provenance Implications\n\n**Script choice reveals:**\n\n- **Chronological framework**: Asomtavruli dominance suggests pre-11th century; Nuskhuri prevalence indicates 11th-18th centuries; Mkhedruli suggests 13th century onward (with increasing frequency)\n\n- **Text function**: \n  - Asomtavruli = liturgical, monumental, or archaizing intent\n  - Nuskhuri = scholarly, administrative, or literary purposes\n  - Mkhedruli = secular, practical, or later composition\n\n- **Institutional origin**:\n  - Monastic scriptoria often maintained Asomtavruli longer for sacred texts\n  - Royal courts and administrative centers adopted Mkhedruli earlier\n  - Regional variation existed (some monasteries conservatively preserved older scripts)\n\n- **Scribal training and status**: Script choice reflected the scribe's education level and the manuscript's intended audience\n\n- **Textual tradition**: Mixed scripts sometimes indicate copying from older exemplars or deliberate archaism\n\n**Caveat**: Palimpsests, reuse of manuscripts, and scribal conservatism complicate dating; script analysis must be combined with codicological, linguistic, and historical evidence.",
+  "timestamp_utc": "2026-09-07T22:27:24Z"
+}

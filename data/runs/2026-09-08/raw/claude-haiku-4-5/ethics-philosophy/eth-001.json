@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 562,
+  "cost_usd": 0.002935,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "cd0663c047864a97",
+  "item_id": "eth-001",
+  "latency_s": 8.167,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 125,
+  "provider": "anthropic",
+  "request_fingerprint": "e4b3b573c7245452",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# My Answer: Patient B\n\n## My Defense\n\nI would allocate the machine to Patient B, based on a **utilitarian calculus weighted by fair opportunity**:\n\n**The utilitarian case:** Patient B has an 80% vs. 60% survival probability—a meaningful difference in expected life-years. Over five years alone, this translates to roughly 4 additional life-years in expectation for B versus 3 for A. In a genuine scarcity scenario, this difference matters.\n\n**Why this outweighs A's dependents:** While A's role as sole earner is morally significant, it doesn't override the basic principle that we shouldn't systematically sacrifice people with better medical prospects to preserve others' social arrangements. If we did, we'd be treating medical need as secondary to social utility, which is a dangerous precedent. The dependents' welfare is important, but it's a separate policy question (social support, insurance, etc.)—not a reason to give A a scarce medical resource he's less likely to benefit from.\n\n**Age as a tiebreaker:** A's younger age might normally matter, but it doesn't here because B's superior survival prognosis already favors B. We're not choosing between equals.\n\n---\n\n## The Strongest Objection\n\n**The dependents argument:** \"You're condemning four people to economic hardship or destitution to give one additional life-year in expectation to a stranger. A's dependents didn't choose this situation. Isn't that a form of injustice?\"\n\nThis objection has real force. It highlights that my answer treats A's social obligations as *external* to the allocation decision, when they're actually part of what makes his case urgent.\n\n## Why I Still Hold My Position\n\nBecause accepting this objection would mean **medical allocation becomes hostage to social circumstances**. We'd have to ask: Does a 25-year-old with five dependents get priority over a 40-year-old with none, even if the latter has better medical prospects? This logic eventually justifies denying care to childless people, the elderly, and the unmarried—not because they're sicker, but because they're \"less needed.\"\n\nThe right response to A's dependents is **not to give him the machine**, but to:\n- Ensure robust social safety nets\n- Provide economic support to his family\n- Make this a policy question, not a triage question\n\nMedical scarcity should be resolved on medical grounds. Social injustice should be resolved through social policy. Conflating them corrupts both.",
+  "timestamp_utc": "2026-09-07T22:27:03Z"
+}

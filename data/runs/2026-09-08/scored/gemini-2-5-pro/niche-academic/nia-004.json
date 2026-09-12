@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopaedia level. It engages with specific scholarly debates (dating controversy, old wood effect, morphological vs. processual typology), cites key researchers (Schmidt, Killick), and discusses methodological issues (radiocarbon dating challenges, perishable evidence for bellows). It explains the thermodynamic principles of induced vs. forced draft and links furnace design to labor and technological choices. A specialist would recognize this as engagement with the literature, not a summary of summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims: it correctly describes the direct bloomery process, materials (lateritic ironstones, charcoal), components (shaft furnaces, tuyeres), and the Buhaya innovation with reeds and high temperatures (1600-1800°C). It accurately cites Peter Schmidt and David Killick, their positions on dating (early dates vs. old wood effect), and the shift in consensus. It correctly identifies Urewe culture and key debates (dating, furnace typology, forced vs. induced draft). No invented citations, terms, or consensus are present; all claims align with established archaeometallurgical literature. Minor quibbles (e.g., exact temperature ranges may be debated) are not load-bearing errors.",
+    "field_situatedness": "The response is firmly situated in African archaeometallurgy and history. It uses field-specific terminology (direct process, bloom, slag, tuyeres, chaîne opératoire) and focuses on regional scholarship (Schmidt's work in Buhaya, Killick's critiques). It centers the Great Lakes region and its specific innovations (Buhaya high-temperature process) without substituting a Western or Anglophone framing. It acknowledges non-English scholarship where relevant (e.g., Urewe culture) and maintains appropriate regional context.",
+    "scholarly_calibration": "The response consistently distinguishes well-established knowledge from contested claims. It presents the dating debate as a dispute, noting Schmidt's early dates are 'viewed with considerable skepticism' and that the field has shifted to 'more conservative dates.' It frames furnace typology as an ongoing debate between morphological and processual approaches. It avoids presenting any contested point as settled fact and provides specific calibration (e.g., 'the debate has matured...'). No blanket disclaimers are used; uncertainty is targeted and informative."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-004",
+  "judge_cost_usd": 0.00134063,
+  "judge_latency_s": 21.329,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims: it correctly describes the direct bloomery process, materials (lateritic ironstones, charcoal), components (shaft furnaces, tuyeres), and the Buhaya innovation with reeds and high temperatures (1600-1800°C). It accurately cites Peter Schmidt and David Killick, their positions on dating (early dates vs. old wood effect), and the shift in consensus. It correctly identifies Urewe culture and key debates (dating, furnace typology, forced vs. induced draft). No invented citations, terms, or consensus are present; all claims align with established archaeometallurgical literature. Minor quibbles (e.g., exact temperature ranges may be debated) are not load-bearing errors.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopaedia level. It engages with specific scholarly debates (dating controversy, old wood effect, morphological vs. processual typology), cites key researchers (Schmidt, Killick), and discusses methodological issues (radiocarbon dating challenges, perishable evidence for bellows). It explains the thermodynamic principles of induced vs. forced draft and links furnace design to labor and technological choices. A specialist would recognize this as engagement with the literature, not a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes well-established knowledge from contested claims. It presents the dating debate as a dispute, noting Schmidt's early dates are 'viewed with considerable skepticism' and that the field has shifted to 'more conservative dates.' It frames furnace typology as an ongoing debate between morphological and processual approaches. It avoids presenting any contested point as settled fact and provides specific calibration (e.g., 'the debate has matured...'). No blanket disclaimers are used; uncertainty is targeted and informative.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response is firmly situated in African archaeometallurgy and history. It uses field-specific terminology (direct process, bloom, slag, tuyeres, chaîne opératoire) and focuses on regional scholarship (Schmidt's work in Buhaya, Killick's critiques). It centers the Great Lakes region and its specific innovations (Buhaya high-temperature process) without substituting a Western or Anglophone framing. It acknowledges non-English scholarship where relevant (e.g., Urewe culture) and maintains appropriate regional context.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of the topic, engaging deeply with both established facts and scholarly disputes in the field.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of the topic, engaging deeply with both established facts and scholarly disputes in the field.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

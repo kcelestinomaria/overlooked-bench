@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes a lecturer with 200 students in an Indonesian university course, implying a range of learners (e.g., varying language proficiency, prior knowledge). The response does not address differentiation or access needs. There is no mention of adaptations for students with additional needs, language barriers, or material constraints. It uses generic enforcement steps without any concrete differentiation strategies, falling under 'placeholder differentiation language with no content.'",
+    "pathway_breadth": "The prompt involves drafting an academic integrity policy for AI use at an Indonesian university, not student futures or pathway guidance. Per the rubric, when pathway guidance is not in scope, this dimension should be scored on 'whether the response is inclusive of the range of learners in the described setting.' The policy applies uniformly to all students in the course but does not address differentiation for learners with varying needs (e.g., language support, accessibility) that might relate to AI use. It is a generic policy without inclusion considerations.",
+    "pedagogical_soundness": "The response does not present a learning design with objectives, activities, and assessments, so pedagogical alignment cannot be evaluated. The rubric's evaluation steps (identify learning objectives, check activity alignment, assess cognitive level, etc.) are not applicable to this policy-drafting task. Therefore, the response does not engage with this dimension at all.",
+    "workload_realism": "The enforcement section mentions 'authenticity checks' using 'plagiarism detection software and AI-specific detection tools' and 'regular feedback' for 200 students, but does not address the workload implications. It does not estimate preparation or marking time, nor does it acknowledge the unreliability of detection tools or the impracticality of detailed feedback at that scale. The item-specific notes penalize 'reliance on detection tools presented as reliable' and require addressing 'workload of enforcement at 200 students... realistically'; the response fails to do this, offering generic steps without realistic consideration of time or resources."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 0,
+    "workload_realism": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00094948,
+  "judge_latency_s": 16.738,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a learning design with objectives, activities, and assessments, so pedagogical alignment cannot be evaluated. The rubric's evaluation steps (identify learning objectives, check activity alignment, assess cognitive level, etc.) are not applicable to this policy-drafting task. Therefore, the response does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The enforcement section mentions 'authenticity checks' using 'plagiarism detection software and AI-specific detection tools' and 'regular feedback' for 200 students, but does not address the workload implications. It does not estimate preparation or marking time, nor does it acknowledge the unreliability of detection tools or the impracticality of detailed feedback at that scale. The item-specific notes penalize 'reliance on detection tools presented as reliable' and require addressing 'workload of enforcement at 200 students... realistically'; the response fails to do this, offering generic steps without realistic consideration of time or resources.\",\n      \"score\": 1\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves drafting an academic integrity policy for AI use at an Indonesian university, not student futures or pathway guidance. Per the rubric, when pathway guidance is not in scope, this dimension should be scored on 'whether the response is inclusive of the range of learners in the described setting.' The policy applies uniformly to all students in the course but does not address differentiation for learners with varying needs (e.g., language support, accessibility) that might relate to AI use. It is a generic policy without inclusion considerations.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes a lecturer with 200 students in an Indonesian university course, implying a range of learners (e.g., varying language proficiency, prior knowledge). The response does not address differentiation or access needs. There is no mention of adaptations for students with additional needs, language barriers, or material constraints. It uses generic enforcement steps without any concrete differentiation strategies, falling under 'placeholder differentiation language with no content.'\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The policy draft provides clear tiers but fails to address practical enforcement workload and differentiation for a large class.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The policy draft provides clear tiers but fails to address practical enforcement workload and differentiation for a large class.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 12.5
+}

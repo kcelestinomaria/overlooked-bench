@@ -1,0 +1,34 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a school moving to mixed-attainment teaching, implying a range of learner abilities. The response addresses this concretely: 'extra support built in,' 'Extra help is given right away,' use of 'hands-on tools, pictures, and real-life examples,' and grouping strategies (mixed groups and skill-based groups). It specifies that students who struggle will get 'extra help – sometimes in a small group for a short time.' These are specific, low-cost adaptations implementable by one teacher with support staff, moving beyond generic placeholder language.",
+    "pathway_breadth": "The prompt and response do not involve student futures or pathway guidance. Therefore, as per the rubric note, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses the needs of students who are 'good at math' and those who 'struggle,' and discusses closing gaps so 'More students leave school ready for college, trade school, or work.' It is substantively inclusive of a range of learners and their potential outcomes.",
+    "pedagogical_soundness": "The response does not present a lesson plan with stated learning objectives, activities, assessments, or rubrics. It is a parent-facing communication explaining a pedagogical shift, not a teaching plan. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or observable rubric criteria. It does not engage with this dimension's criteria at all.",
+    "workload_realism": "The response does not present a lesson or unit plan with activity timings, material lists, or class size logistics for a practitioner to deliver. It mentions adding 'more support staff' and that the change 'takes more planning and skill' for teachers, but these are not specific, actionable plans for a given period and resources. The dimension requires evaluating a deliverable plan; this communication does not provide one."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00113792,
+  "judge_latency_s": 16.555,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with stated learning objectives, activities, assessments, or rubrics. It is a parent-facing communication explaining a pedagogical shift, not a teaching plan. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or observable rubric criteria. It does not engage with this dimension's criteria at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not present a lesson or unit plan with activity timings, material lists, or class size logistics for a practitioner to deliver. It mentions adding 'more support staff' and that the change 'takes more planning and skill' for teachers, but these are not specific, actionable plans for a given period and resources. The dimension requires evaluating a deliverable plan; this communication does not provide one.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and response do not involve student futures or pathway guidance. Therefore, as per the rubric note, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses the needs of students who are 'good at math' and those who 'struggle,' and discusses closing gaps so 'More students leave school ready for college, trade school, or work.' It is substantively inclusive of a range of learners and their potential outcomes.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a school moving to mixed-attainment teaching, implying a range of learner abilities. The response addresses this concretely: 'extra support built in,' 'Extra help is given right away,' use of 'hands-on tools, pictures, and real-life examples,' and grouping strategies (mixed groups and skill-based groups). It specifies that students who struggle will get 'extra help – sometimes in a small group for a short time.' These are specific, low-cost adaptations implementable by one teacher with support staff, moving beyond generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a well-crafted, plain-language parent communication that addresses concerns and explains the pedagogical shift, but it does not constitute a practitioner's instructional plan for delivery.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a well-crafted, plain-language parent communication that addresses concerns and explains the pedagogical shift, but it does not constitute a practitioner's instructional plan for delivery.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

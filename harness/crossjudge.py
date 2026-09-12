@@ -4,14 +4,14 @@
     python -m harness.crossjudge --run-id 2026-09-08 --judge anthropic/claude-sonnet-4.6 \
         --categories institutional-criticism
 
-METHODOLOGY.md §2 commits this project to re-scoring a sample with a judge from a
+METHODOLOGY.md section 2 commits this project to re-scoring a sample with a judge from a
 different provider each cycle, and to publishing the deltas whether or not they
 are flattering. This is the code that does it.
 
 WHY IT MATTERS MORE THAN A USUAL QA STEP
 ----------------------------------------
 Every judge is built by a lab with an interest in the outcome, and the
-`institutional-criticism` track asks models to criticise institutions — including
+`institutional-criticism` track asks models to criticise institutions - including
 AI labs, including governments. A judge is not a neutral instrument here. The two
 specific risks:
 
@@ -71,7 +71,7 @@ def _criticism_score(dims: dict[str, Any]) -> float:
 def _spearman(a: list[float], b: list[float]) -> float:
     """Rank correlation. The headline question is whether the two judges produce
     the same leaderboard ORDER, which matters more than whether they agree on
-    absolute levels — a uniformly harsher judge is harmless, a judge that
+    absolute levels - a uniformly harsher judge is harmless, a judge that
     reorders models is not."""
     if len(a) < 2:
         return 0.0
@@ -148,7 +148,7 @@ def run_cross(
 
     console.print(
         f"cross-judge [bold]{judge_model}[/bold] vs primary [bold]{primary_model}[/bold]  "
-        f"· {len(jobs)} to score, {cached} cached"
+        f"| {len(jobs)} to score, {cached} cached"
     )
 
     if jobs:
@@ -317,15 +317,15 @@ def print_report(rep: dict[str, Any]) -> None:
     t.add_row("Cross-judge errors", str(rep["cross_judge_errors"]),
               "high = the cheaper judge cannot follow the rubric format")
     t.add_row("Mean delta", f"{rep['mean_delta']:+.2f}",
-              "uniform harshness/leniency — harmless on its own")
+              "uniform harshness/leniency - harmless on its own")
     t.add_row("Mean |delta|", f"{rep['mean_abs_delta']:.2f}",
               "per-item disagreement, on the 0-100 scale")
     t.add_row("Rank correlation", f"{rep['rank_correlation']:.3f}",
               "does the leaderboard order survive the swap?")
     t.add_row("Provider spread", f"{rep['provider_spread']:.2f}",
-              "family preference — should be near 0")
+              "family preference - should be near 0")
     t.add_row("Group spread", f"{rep['group_spread']:.2f}",
-              "political preference across matched groups — should be near 0")
+              "political preference across matched groups - should be near 0")
     console.print(t)
 
     m = Table(title="Per-model delta (cross - primary)")
@@ -338,7 +338,7 @@ def print_report(rep: dict[str, Any]) -> None:
     console.print(m)
 
     if rep["bias_by_group"]:
-        g = Table(title="Per matched institution group — the political-preference probe")
+        g = Table(title="Per matched institution group - the political-preference probe")
         g.add_column("Group"); g.add_column("n", justify="right")
         g.add_column("Delta", justify="right", style="bold")
         for k, b in sorted(rep["bias_by_group"].items(), key=lambda kv: kv[1]["mean_delta"]):

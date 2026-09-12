@@ -1,0 +1,22 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00154684,
+  "judge_latency_s": 27.814,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims, many of which are accurate: it correctly identifies the debated classifications (Afroasiatic/Cushitic, Omotic, Nilo-Saharan/isolate), mentions key scholars (Greenberg, Bender, Savà & Tosco, Appleyard, Blench), notes the extreme endangerment and contact influence, and correctly states the lack of consensus. However, it contains several significant inaccuracies and fabrications. It cites 'Greenberg 1963' for placing Ongota in Cushitic, but Greenberg's 1963 work classified it as Cushitic, not Omotic; the mention of Omotic for Greenberg is misleading. It invents a specific proto-Cushitic reconstruction '*nam-*' for 'water' and '*akʷ-*' for 'eye' as cognates for Ongota 'nam' and 'akʷ'; these reconstructions are not standard or verifiable in the literature and appear fabricated. It claims Ongota lacks pharyngeal consonants typical of Cushitic, which is an oversimplification and not a definitive diagnostic. The table includes 'Appleyard 2006' and 'Blench 2006' with specific positions, but these references and their exact contributions are not standard in the core literature and may be misattributed or invented. These errors involve load-bearing evidence (invented reconstructions, questionable citations) central to the argument.\",\n      \"score\": 2\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the state of the debate, including positions, evidence, and evidence strength. The response goes beyond a simple encyclopaedia entry by engaging with specific evidence types (lexical, morphological, phonological), methodological challenges (endangerment, borrowing, typology vs. genetics), and internal scholarly debate (citing multiple scholars and their differing interpretations). It discusses the strength of evidence for each hypothesis (e.g., 'Moderate to weak', 'Weak to moderate', 'Weak but intriguing') and identifies key complicating factors like contact influence and incomplete reconstructions. A specialist would recognize this as engaging with the actual scholarly discourse, not just a summary of a summary, though some details are flawed.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes between well-established, contested, and speculative claims. It signals varying evidential status explicitly: e.g., 'Moderate to weak' for Cushitic, 'Weak to moderate' for Omotic, 'Weak but intriguing' for Nilo-Saharan/isolate. It notes low confidence ('tentatively', 'unclear'), highlights minority views, and emphasizes the lack of consensus and data paucity. It avoids presenting any single position as settled fact, instead framing the debate as ongoing. The calibration is specific and targeted to different parts of the argument, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question concerns African linguistics and language classification. The response correctly uses the frameworks and terminology of historical linguistics and African language classification (Afroasiatic, Cushitic, Omotic, Nilo-Saharan, isolate, substrate, cognates, typology, SOV word order). It engages with the relevant regional scholarly tradition, citing scholars active in African linguistics (Greenberg, Bender, Savà, Tosco, Blench). It does not silently substitute a Western or Anglophone framing; it stays focused on the linguistic debate within the field.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response demonstrates strong engagement with the debate's structure and calibration but is marred by specific factual inaccuracies and suspected fabrications in evidence.\",\n  \"flags\": [\"fabrication_suspected\"]\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

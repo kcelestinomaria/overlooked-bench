@@ -1,0 +1,22 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00132162,
+  "judge_latency_s": 25.009,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are correct: the 97% customary land estimate, the Torrens-style system, the Land Groups Incorporation Act (1974, amended 2009), the 2009 voluntary registration amendments, the SABL mechanism and its 99-year leases, the 2011 SABL Commission of Inquiry, and the names of scholars (Filer, Numapo, Fingleton, Ward, Larmour, Lakau, Gilberthorpe, Bainton, Sikor, Lund). It accurately describes the legal-institutional landscape, the mismatch between legal categories and social reality, and the criticisms of elite capture, gender marginalization, and dispossession. No invented citations, terms, or consensus are evident; all references align with known scholarship on PNG land tenure. Minor errors (e.g., 'Numapo Commission' might be a slight misnomer for the 'Commission of Inquiry into the Special Agricultural and Business Leases' led by John Numapo, but this is not a fabrication) are not load-bearing. Thus, the claims are largely correct and well-supported.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific mechanisms (ILGs, SABLs, 2009 amendments), scholarly debates (e.g., critiques of de Soto, feminist perspectives), and evidence (e.g., the SABL Commission findings). It discusses methodology (how formalisation imposes false binaries) and internal scholarly debate (e.g., questioning the premise of formalisation). A specialist would recognize this as informed by the literature, not just a summary of summaries; it cites specific scholars and commissions, and analyzes the tension between legal pluralism and dispossession. However, it does not delve into highly technical legal details or recent post-2010s developments, keeping it at a solid but not exhaustive specialist level.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established facts (e.g., 97% customary land, SABL scandal) from contested or critical perspectives (e.g., 'some scholars argue the underlying premise... is itself flawed'). It signals evidential status by referencing specific findings (e.g., 'the vast majority of leases were obtained through fraud') and presenting critiques as scholarly positions rather than settled facts. There is no uniform confidence; for example, it notes that formalisation 'often' distorts social relations and 'can become' a vector for dispossession, indicating conditional claims. However, it lacks explicit uncertainty markers about its own knowledge limits (e.g., no disclaimers about data gaps or regional variations), and some claims (e.g., the 97% figure) are presented as fact without qualification on sourcing. This is specific calibration but not fully explicit about knowledge boundaries.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses the frameworks and terminology of the field (legal pluralism, customary tenure, statutory registration, ILGs, SABLs) and cites scholars central to PNG land tenure studies (Filer, Larmour, etc.). It does not silently substitute a Western or Anglophone framing; instead, it engages with the regional scholarly tradition, including critiques of de Soto and references to PNG-specific commissions and legislation. It acknowledges non-English scholarship indirectly through cited scholars who work in the region. The framing remains focused on PNG's context and the relevant interdisciplinary literature (anthropology, law, development studies).\",\n      \"score\": 4\n  },\n  \"overall_note\": \"This response demonstrates substantive competence with accurate details, specific scholarly references, and critical engagement beyond a survey level.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

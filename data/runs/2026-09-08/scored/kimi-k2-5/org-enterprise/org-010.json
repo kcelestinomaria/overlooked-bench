@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requested 'draft guidance the association can send to members.' The response produces that guidance in usable form: it is structured as a guidance note with clear sections, step-by-step actions, timelines, templates, and resources. It includes concrete components like document checklists, policy examples, supplier mapping tables, and common mistakes. It could be taken into a meeting with light editing (e.g., filling in association contact details). It does not merely describe how to approach the task; it delivers the guidance directly.",
+    "constraint_fidelity": "The prompt's constraints: the audience is small textile manufacturers in Bangladesh with limited administrative capacity and inability to afford external consultants. The response is explicitly written as guidance for factory owners, uses simple steps, avoids recommending consultants, and suggests free/low-cost resources. It respects all constraints without violating them. However, it does not show explicit arithmetic for money or headcount (not directly required here), so it does not reach the 'shows arithmetic' level for a 4. It fully honors constraints without silent violations.",
+    "contextual_realism": "The response is calibrated for small factories: it assumes no dedicated compliance officer (designates 'one person (owner, manager, or supervisor)'), uses low-tech record-keeping ('simple systems that do not require computers'), relies on existing local resources (BGMEA, ILO, BRAC, DIFE), and acknowledges role overlap. It avoids tooling or process overhead that would overwhelm small staff. It explicitly addresses small-organisation realities like using envelopes for worker files and renewing certificates through local offices.",
+    "jurisdictional_accuracy": "The jurisdiction is Bangladesh/EU. The response references local entities (RAJUK, DIFE, BGMEA, BRAC) and documents (NID) specific to Bangladesh, avoiding US assumptions. It correctly identifies EU regulations (CSDDD) and buyer requirements. It provides substantive content rather than generic 'consult a lawyer' disclaimers (though includes a brief note at the end). It flags where local advice might be needed (e.g., renewing certificates through local offices). No confidently wrong jurisdiction-specific claims are made."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00114416,
+  "judge_latency_s": 18.872,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: the audience is small textile manufacturers in Bangladesh with limited administrative capacity and inability to afford external consultants. The response is explicitly written as guidance for factory owners, uses simple steps, avoids recommending consultants, and suggests free/low-cost resources. It respects all constraints without violating them. However, it does not show explicit arithmetic for money or headcount (not directly required here), so it does not reach the 'shows arithmetic' level for a 4. It fully honors constraints without silent violations.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories: it assumes no dedicated compliance officer (designates 'one person (owner, manager, or supervisor)'), uses low-tech record-keeping ('simple systems that do not require computers'), relies on existing local resources (BGMEA, ILO, BRAC, DIFE), and acknowledges role overlap. It avoids tooling or process overhead that would overwhelm small staff. It explicitly addresses small-organisation realities like using envelopes for worker files and renewing certificates through local offices.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested 'draft guidance the association can send to members.' The response produces that guidance in usable form: it is structured as a guidance note with clear sections, step-by-step actions, timelines, templates, and resources. It includes concrete components like document checklists, policy examples, supplier mapping tables, and common mistakes. It could be taken into a meeting with light editing (e.g., filling in association contact details). It does not merely describe how to approach the task; it delivers the guidance directly.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Bangladesh/EU. The response references local entities (RAJUK, DIFE, BGMEA, BRAC) and documents (NID) specific to Bangladesh, avoiding US assumptions. It correctly identifies EU regulations (CSDDD) and buyer requirements. It provides substantive content rather than generic 'consult a lawyer' disclaimers (though includes a brief note at the end). It flags where local advice might be needed (e.g., renewing certificates through local offices). No confidently wrong jurisdiction-specific claims are made.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable and contextually realistic guidance document tailored to small Bangladeshi textile factories.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response is a highly actionable and contextually realistic guidance document tailored to small Bangladeshi textile factories.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

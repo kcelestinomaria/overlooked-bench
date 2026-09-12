@@ -1,0 +1,22 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "org-004",
+  "judge_cost_usd": 0.00117808,
+  "judge_latency_s": 22.31,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: 40-member cooperative in Oaxaca, Mexico; smallholders averaging 1.5 hectares; working capital effectively zero between harvests; 18-month plan. The response provides an 18-month timeline and acknowledges the need for external finance, but it violates the working capital constraint by recommending actions that require funding without explicitly justifying the violation. For example, 'Month 4-6: Market Research and Export Readiness (No External Finance Required)' includes 'Attend trade shows, conferences, and online forums,' which likely involves travel and registration costs not accounted for, assuming zero working capital. It also proposes hiring staff and investing in technology without showing arithmetic for how the cooperative could afford these with zero working capital, and the estimated finance needs ($100,000–$200,000 initial) are stated but not justified against the cooperative's resource reality. This is a silent violation of the central constraint, so score 0.\",\n      \"score\": 0\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes capabilities a resource-constrained cooperative lacks: hiring an export manager, quality control specialist, logistics coordinator; hiring a consultant; investing in software and technology; attending trade shows and conferences; and securing $100,000–$200,000 in financing without addressing how a cooperative with zero working capital could access this. It ignores small-organisation realities like role overlap, volunteer labour, and key-person dependency, instead proposing dedicated staff and overhead that would consume non-existent resources. It does not acknowledge cooperative governance across 40 members or pre-harvest finance options. This shows poor calibration to the organisation's size and resource level, so score 1.\",\n      \"score\": 1\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a realistic 18-month plan with an explicit split between no-cost and finance-dependent steps. The response produces a timeline with phases labeled as requiring or not requiring external finance, and lists external finance requirements and estimated needs. However, it is vague and generic: steps like 'Develop a basic export plan' or 'Create a basic marketing strategy' lack concrete components (e.g., specific certification costs, sample logistics, governance processes). It describes a framework rather than a usable deliverable; a practitioner would need substantial editing to implement it. It partially addresses the requested split but stops short of providing actionable details, so score 2.\",\n      \"score\": 2\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt specifies Oaxaca, Mexico, but the response makes no jurisdiction-specific claims about certification requirements, regulatory compliance, or finance options for Mexican cooperatives. It generically mentions certifications like Fairtrade and Organic without addressing Mexican standards or costs. There are no confidently wrong jurisdictional claims, but also no accurate treatment; it avoids US assumptions but provides no substantive content for Mexico. The referral to professional advice is implicit but not specific. Since the task involves regulatory and certification elements, the lack of jurisdictional accuracy results in minimal engagement, so score 1.\",\n      \"score\": 1\n  },\n  \"overall_note\": \"The plan ignores the working capital constraint and proposes unrealistic resource assumptions for a small cooperative.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

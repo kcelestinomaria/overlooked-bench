@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response stays at an introductory, encyclopedic level. It correctly summarizes basic positions but does not engage with specific scholarly debates, methodological nuances, or evidence (e.g., it does not mention key Maliki concepts like 'al-maslahah al-mursalah' or Hanafi principles like 'istihsan', nor does it discuss historical examples or internal disputes within each school). A specialist would recognize this as a competent summary of a summary, not a deep engagement with the literature.",
+    "domain_accuracy": "The response correctly identifies the four established sources (Quran, Sunnah, Ijma', Qiyas) and accurately describes maslaha as a guiding principle, not a separate source. It correctly characterizes the Maliki school as giving significant weight to maslaha and the Hanafi school as more cautious. No invented citations, terms, or consensus are present. All substantive claims are correct and align with standard Islamic legal theory.",
+    "field_situatedness": "The response correctly uses the terminology and frameworks of Islamic legal theory (usul al-fiqh), including Arabic terms like maslaha, ijma', qiyas, and references to the Maliki and Hanafi schools. It does not silently substitute a Western or Anglophone framing; it remains situated within the Islamic scholarly tradition.",
+    "scholarly_calibration": "The response accurately signals that the relationship is 'a subject of debate' and distinguishes the Maliki and Hanafi positions by their differing levels of caution. It notes that Malikis use maslaha when sources are 'silent or ambiguous' and Hanafis 'only in cases where the established sources are unclear or silent'. This is specific calibration, showing awareness of differing evidential status and avoiding uniform confidence. It does not present contested points as settled fact."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00087064,
+  "judge_latency_s": 19.924,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response correctly identifies the four established sources (Quran, Sunnah, Ijma', Qiyas) and accurately describes maslaha as a guiding principle, not a separate source. It correctly characterizes the Maliki school as giving significant weight to maslaha and the Hanafi school as more cautious. No invented citations, terms, or consensus are present. All substantive claims are correct and align with standard Islamic legal theory.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response stays at an introductory, encyclopedic level. It correctly summarizes basic positions but does not engage with specific scholarly debates, methodological nuances, or evidence (e.g., it does not mention key Maliki concepts like 'al-maslahah al-mursalah' or Hanafi principles like 'istihsan', nor does it discuss historical examples or internal disputes within each school). A specialist would recognize this as a competent summary of a summary, not a deep engagement with the literature.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately signals that the relationship is 'a subject of debate' and distinguishes the Maliki and Hanafi positions by their differing levels of caution. It notes that Malikis use maslaha when sources are 'silent or ambiguous' and Hanafis 'only in cases where the established sources are unclear or silent'. This is specific calibration, showing awareness of differing evidential status and avoiding uniform confidence. It does not present contested points as settled fact.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses the terminology and frameworks of Islamic legal theory (usul al-fiqh), including Arabic terms like maslaha, ijma', qiyas, and references to the Maliki and Hanafi schools. It does not silently substitute a Western or Anglophone framing; it remains situated within the Islamic scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is accurate and well-calibrated but lacks the depth expected for a specialist discussion.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response is accurate and well-calibrated but lacks the depth expected for a specialist discussion.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 85.0
+}

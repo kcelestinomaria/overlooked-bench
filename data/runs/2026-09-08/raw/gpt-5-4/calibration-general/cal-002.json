@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 203,
+  "cost_usd": 0.003315,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 2.38,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 108,
+  "provider": "openai",
+  "request_fingerprint": "e400b6837454cd2c",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "Start with the fresh coffee cherries:\n\n- Initial mass = 4,800 kg\n\nDrying loss is 15%, so 85% remains:\n\n- Dried coffee = 4,800 × 0.85 = 4,080 kg\n\nNow split the dried coffee by grade:\n\n- AA grade = 40% of 4,080 = 0.40 × 4,080 = 1,632 kg\n- Other grade = 60% of 4,080 = 0.60 × 4,080 = 2,448 kg\n\nCompute revenue from each grade:\n\n- AA revenue = 1,632 × 6.20 = 10,118.40\n- Other revenue = 2,448 × 4.50 = 11,016.00\n\nTotal revenue:\n\n- Total = 10,118.40 + 11,016.00 = 21,134.40\n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-09-07T22:30:57Z"
+}

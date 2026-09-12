@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for historians' conclusions and main disagreements, which is a specialist inquiry. The response accurately outlines the two main theses (constraint vs. enabling) but does not engage with specific methodologies, evidence (e.g., court records, account books), key scholars (e.g., Çizakça, İnalcık, Kuran), or nuances of the debate (e.g., changes over time, regional variations). It provides a competent summary of the debate's structure but at a level a general reference article or textbook might offer. A specialist would recognize this as a summary of the debate, not a deep engagement with it.",
+    "domain_accuracy": "The response makes several substantive claims: that historians agree waqfs were economically important; that they organized services, managed property, channeled surplus, and stabilized economic life; that a 'constraint thesis' argues they limited capital mobility and accumulation; and that an 'enabling thesis' argues they supported capital formation. These are accurate, high-level summaries of established scholarly debates in Ottoman economic history. No invented citations, terms, or consensus are presented. The claims are correct and not load-bearingly erroneous.",
+    "field_situatedness": "The question is about Ottoman waqf institutions, a topic in Ottoman economic history. The response uses appropriate terminology ('waqfs', 'inalienable endowments', 'capital mobility', 'capital formation') and frames the debate in terms of economic function and capital, which aligns with the scholarly tradition of Ottoman economic history. It does not silently substitute a Western economic framework in a distorting way; it engages with the field on its own terms.",
+    "scholarly_calibration": "The response distinguishes between what is generally agreed ('historians generally agree on one basic point') and what is disputed ('the main disagreement is about how that importance should be interpreted'). It presents the two theses as opposing views without presenting either as settled fact. However, it lacks specific calibration about the evidential status of claims (e.g., noting which aspects are well-documented vs. inferred, or how consensus may have shifted). The calibration is present but broad, not finely grained to the state of the field."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00086487,
+  "judge_latency_s": 17.497,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: that historians agree waqfs were economically important; that they organized services, managed property, channeled surplus, and stabilized economic life; that a 'constraint thesis' argues they limited capital mobility and accumulation; and that an 'enabling thesis' argues they supported capital formation. These are accurate, high-level summaries of established scholarly debates in Ottoman economic history. No invented citations, terms, or consensus are presented. The claims are correct and not load-bearingly erroneous.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for historians' conclusions and main disagreements, which is a specialist inquiry. The response accurately outlines the two main theses (constraint vs. enabling) but does not engage with specific methodologies, evidence (e.g., court records, account books), key scholars (e.g., Çizakça, İnalcık, Kuran), or nuances of the debate (e.g., changes over time, regional variations). It provides a competent summary of the debate's structure but at a level a general reference article or textbook might offer. A specialist would recognize this as a summary of the debate, not a deep engagement with it.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between what is generally agreed ('historians generally agree on one basic point') and what is disputed ('the main disagreement is about how that importance should be interpreted'). It presents the two theses as opposing views without presenting either as settled fact. However, it lacks specific calibration about the evidential status of claims (e.g., noting which aspects are well-documented vs. inferred, or how consensus may have shifted). The calibration is present but broad, not finely grained to the state of the field.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Ottoman waqf institutions, a topic in Ottoman economic history. The response uses appropriate terminology ('waqfs', 'inalienable endowments', 'capital mobility', 'capital formation') and frames the debate in terms of economic function and capital, which aligns with the scholarly tradition of Ottoman economic history. It does not silently substitute a Western economic framework in a distorting way; it engages with the field on its own terms.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response accurately summarizes the core economic debate about Ottoman waqfs but lacks the depth of engagement with evidence and scholarship that a specialist would expect.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response accurately summarizes the core economic debate about Ottoman waqfs but lacks the depth of engagement with evidence and scholarship that a specialist would expect.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 80.0
+}

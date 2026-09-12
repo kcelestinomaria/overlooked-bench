@@ -1,5 +1,5 @@
 # ===========================================================================
-# overlooked-bench — model registry
+# overlooked-bench - model registry
 # ===========================================================================
 # Adding a model to the benchmark = adding ONE entry to this file.
 # No code change is required.
@@ -11,12 +11,12 @@
 #
 # FIELDS
 #   key         Stable short slug. Used in filenames and charts. NEVER reuse a
-#               key for a different underlying model — historical runs are keyed
+#               key for a different underlying model - historical runs are keyed
 #               on it and reuse would silently corrupt the time series.
 #   provider    Owning lab. Used for grouping and for self-preference analysis.
 #   model_id    Exact gateway model identifier.
 #   display     Human-readable name for charts.
-#   tier        frontier | mid | small — our editorial classification.
+#   tier        frontier | mid | small - our editorial classification.
 #   api_key_env Env var holding the credential used to reach this model.
 #   judge       true if this model is ELIGIBLE to serve as the judge.
 #   enabled     true if this model is included in the next scheduled run.
@@ -147,7 +147,7 @@ models:
     api_key_env: AI_GATEWAY_API_KEY
     judge: false
     enabled: true
-    notes: Non-US lab. Directly relevant to the institutional-criticism track — different political pressures than US labs.
+    notes: Non-US lab. Directly relevant to the institutional-criticism track - different political pressures than US labs.
 
   - key: kimi-k2-5
     provider: moonshotai

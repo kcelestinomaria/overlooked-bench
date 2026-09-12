@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240' in substance. The intermediate calculations (5.4 cubic metres, 3.24 cubic metres, 3240 litres) are also correct and align with the reference. Formatting differences (e.g., use of LaTeX) are ignored per rubric guidance.",
+    "instruction_compliance": "The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in clear steps and ends with 'ANSWER: 3240', which matches the required format exactly, including the colon and no extra spaces or units. All instructions are fully complied with.",
+    "reasoning_validity": "The item calls for shown working, and the response provides step-by-step calculations: volume = 2.5 × 1.8 × 1.2 = 5.4 m³, water volume = 0.6 × 5.4 = 3.24 m³, conversion to litres = 3.24 × 1000 = 3240 litres. Each step is mathematically valid, correctly applies the percentage and unit conversion, and logically leads to the stated answer. No errors or inconsistencies are present."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-004",
+  "judge_cost_usd": 0.00059042,
+  "judge_latency_s": 10.846,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240' in substance. The intermediate calculations (5.4 cubic metres, 3.24 cubic metres, 3240 litres) are also correct and align with the reference. Formatting differences (e.g., use of LaTeX) are ignored per rubric guidance.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working, and the response provides step-by-step calculations: volume = 2.5 × 1.8 × 1.2 = 5.4 m³, water volume = 0.6 × 5.4 = 3.24 m³, conversion to litres = 3.24 × 1000 = 3240 litres. Each step is mathematically valid, correctly applies the percentage and unit conversion, and logically leads to the stated answer. No errors or inconsistencies are present.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in clear steps and ends with 'ANSWER: 3240', which matches the required format exactly, including the colon and no extra spaces or units. All instructions are fully complied with.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

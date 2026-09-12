@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: Tuesday 08:00'. The reference answer is 'ANSWER: Tuesday 08:00'. The substance matches exactly, ignoring formatting differences. The answer is fully correct.",
+    "instruction_compliance": "The prompt instructs: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes an explanation and ends with 'ANSWER: Tuesday 08:00', which matches the required format exactly. All explicit instructions are followed.",
+    "reasoning_validity": "The item calls for shown working. The response explains: 'The time difference between Nairobi (UTC+3) and Sao Paulo (UTC-3) is 6 hours (3 - (-3) = 6). Since Sao Paulo is 6 hours behind Nairobi, we subtract 6 hours from the Nairobi time: 14:00 - 6 hours = 08:00.' This reasoning is sound and correctly supports the answer. It is internally consistent and valid."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-007",
+  "judge_cost_usd": 0.00056423,
+  "judge_latency_s": 10.334,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: Tuesday 08:00'. The reference answer is 'ANSWER: Tuesday 08:00'. The substance matches exactly, ignoring formatting differences. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working. The response explains: 'The time difference between Nairobi (UTC+3) and Sao Paulo (UTC-3) is 6 hours (3 - (-3) = 6). Since Sao Paulo is 6 hours behind Nairobi, we subtract 6 hours from the Nairobi time: 14:00 - 6 hours = 08:00.' This reasoning is sound and correctly supports the answer. It is internally consistent and valid.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes an explanation and ends with 'ANSWER: Tuesday 08:00', which matches the required format exactly. All explicit instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

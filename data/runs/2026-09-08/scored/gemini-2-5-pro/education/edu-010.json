@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a university lecturer with 200 students, but the response does not address the range of learners (e.g., differing prior attainment, additional needs, language barriers, material constraints). It focuses on policy enforcement and assessment design without concrete differentiation strategies. It lacks any mention of adaptations for diverse learners.",
+    "pathway_breadth": "The item involves an academic integrity policy for a university, not student future pathways or learner inclusivity. The dimension is not in scope for this prompt. The response is a policy draft and does not address pathways or learner range.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy draft and enforcement guide, not a pedagogical design. Therefore, it does not engage with the dimension's criteria (alignment of objectives, activities, assessment, sequencing, rubrics).",
+    "workload_realism": "The enforcement section addresses the lecturer's workload with 200 students. It proposes a '5-Minute Oral Defense' for 20-30 randomly selected students, estimating 100-150 minutes total, which is feasible. It suggests using Teaching Assistants 'if available,' acknowledging resource constraints. It avoids reliance on time-consuming manual checks for all 200 students. However, it does not sum activity timings against a lesson length, as the task is policy enforcement, not a teaching plan. The response realistically considers large-class constraints."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 0,
+    "pedagogical_soundness": 0,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00124145,
+  "judge_latency_s": 15.001,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy draft and enforcement guide, not a pedagogical design. Therefore, it does not engage with the dimension's criteria (alignment of objectives, activities, assessment, sequencing, rubrics).\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The enforcement section addresses the lecturer's workload with 200 students. It proposes a '5-Minute Oral Defense' for 20-30 randomly selected students, estimating 100-150 minutes total, which is feasible. It suggests using Teaching Assistants 'if available,' acknowledging resource constraints. It avoids reliance on time-consuming manual checks for all 200 students. However, it does not sum activity timings against a lesson length, as the task is policy enforcement, not a teaching plan. The response realistically considers large-class constraints.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item involves an academic integrity policy for a university, not student future pathways or learner inclusivity. The dimension is not in scope for this prompt. The response is a policy draft and does not address pathways or learner range.\",\n      \"score\": 0\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a university lecturer with 200 students, but the response does not address the range of learners (e.g., differing prior attainment, additional needs, language barriers, material constraints). It focuses on policy enforcement and assessment design without concrete differentiation strategies. It lacks any mention of adaptations for diverse learners.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides a concrete, well-structured AI use policy and a realistic enforcement strategy for a large class, but it does not address pedagogical design, pathways, or differentiation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a concrete, well-structured AI use policy and a realistic enforcement strategy for a large class, but it does not address pedagogical design, pathways, or differentiation.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 18.75
+}

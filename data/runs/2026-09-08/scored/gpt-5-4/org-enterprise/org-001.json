@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requested a hiring plan with roles, sequence, salary bands, employer on-costs, and arithmetic fitting the grant. The response delivers exactly that: defines five roles with salary bands in KES, provides a phased hiring sequence tied to months, details employer statutory on-costs (NSSF, housing levy, NITA), includes explicit arithmetic showing total two-year staff cost (KES 13,763,896) against the direct-cost envelope (KES 22,950,000), and leaves a balance. It is concrete, with line items and totals, and could be taken into a meeting with light editing. It does not just describe a process; it produces the deliverable.",
+    "constraint_fidelity": "The response explicitly lists constraints: USD 180,000 grant, 15% indirect cost cap (max USD 27,000), two-year duration, Kenyan NGO, no dedicated HR, ED handles hiring. It respects all constraints: calculates direct-cost envelope as USD 153,000 (KES 22,950,000 at assumed exchange rate), proposes hiring plan with total cost of USD 91,759 (KES 13,763,896), leaving USD 61,241 for other direct costs, thus staying within the envelope. It shows arithmetic for salaries, on-costs, and totals, and acknowledges the ED's hiring role with light processes. No constraint is silently violated.",
+    "contextual_realism": "The response is calibrated for a 12-person Kenyan NGO with no HR: proposes lean team, avoids separate HR/M&E/admin roles, uses part-time finance allocation, suggests outsourcing recruitment support, and emphasizes fixed-term contracts and simple supervision lines. It acknowledges small-organisation realities like role overlap (Coordinator helps with hiring), limited capacity (outsource HR tasks), and avoids expensive tooling or overhead. However, it includes a Driver role which may be feasible but assumes vehicle access; it offers an optional leaner version to address this. Overall, it realistically adapts to resource constraints.",
+    "jurisdictional_accuracy": "The response correctly addresses Kenyan jurisdiction: uses Kenyan salary bands for NGO sector, identifies employer statutory on-costs (NSSF, housing levy at 1.5%, NITA levy), notes SHIF transition without assuming US defaults, and mentions PAYE handling. It avoids US assumptions like equity compensation or applicant tracking systems. Referrals to professional advice (e.g., on SHIF) are specific and warranted, not generic disclaimers. The salary bands are plausible for Kenya, not US conversions. There are no confidently wrong jurisdiction-specific claims."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00197232,
+  "judge_latency_s": 20.471,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly lists constraints: USD 180,000 grant, 15% indirect cost cap (max USD 27,000), two-year duration, Kenyan NGO, no dedicated HR, ED handles hiring. It respects all constraints: calculates direct-cost envelope as USD 153,000 (KES 22,950,000 at assumed exchange rate), proposes hiring plan with total cost of USD 91,759 (KES 13,763,896), leaving USD 61,241 for other direct costs, thus staying within the envelope. It shows arithmetic for salaries, on-costs, and totals, and acknowledges the ED's hiring role with light processes. No constraint is silently violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a 12-person Kenyan NGO with no HR: proposes lean team, avoids separate HR/M&E/admin roles, uses part-time finance allocation, suggests outsourcing recruitment support, and emphasizes fixed-term contracts and simple supervision lines. It acknowledges small-organisation realities like role overlap (Coordinator helps with hiring), limited capacity (outsource HR tasks), and avoids expensive tooling or overhead. However, it includes a Driver role which may be feasible but assumes vehicle access; it offers an optional leaner version to address this. Overall, it realistically adapts to resource constraints.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested a hiring plan with roles, sequence, salary bands, employer on-costs, and arithmetic fitting the grant. The response delivers exactly that: defines five roles with salary bands in KES, provides a phased hiring sequence tied to months, details employer statutory on-costs (NSSF, housing levy, NITA), includes explicit arithmetic showing total two-year staff cost (KES 13,763,896) against the direct-cost envelope (KES 22,950,000), and leaves a balance. It is concrete, with line items and totals, and could be taken into a meeting with light editing. It does not just describe a process; it produces the deliverable.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly addresses Kenyan jurisdiction: uses Kenyan salary bands for NGO sector, identifies employer statutory on-costs (NSSF, housing levy at 1.5%, NITA levy), notes SHIF transition without assuming US defaults, and mentions PAYE handling. It avoids US assumptions like equity compensation or applicant tracking systems. Referrals to professional advice (e.g., on SHIF) are specific and warranted, not generic disclaimers. The salary bands are plausible for Kenya, not US conversions. There are no confidently wrong jurisdiction-specific claims.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, context-aware hiring plan that strictly adheres to all constraints and is immediately usable for the Kenyan NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a detailed, context-aware hiring plan that strictly adheres to all constraints and is immediately usable for the Kenyan NGO.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

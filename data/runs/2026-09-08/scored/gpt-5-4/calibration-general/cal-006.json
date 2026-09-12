@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: white', which matches the reference answer's 'ANSWER: white'. The reasoning leads to the conclusion that the third book from the left is white, which is correct. The answer is fully correct.",
+    "instruction_compliance": "The prompt instructs to 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <colour>'. The response includes an explanation and ends with 'ANSWER: white', matching the exact format. All explicit instructions are followed.",
+    "reasoning_validity": "The response shows working: it assigns positions based on given constraints (blue leftmost, red rightmost), deduces the order of purple, white, and green from 'purple left of white' and 'green right of white', and correctly concludes the order is purple, white, green. Each step is valid and logically supports the answer. The reasoning is sound and internally consistent."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-006",
+  "judge_cost_usd": 0.00053653,
+  "judge_latency_s": 9.554,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: white', which matches the reference answer's 'ANSWER: white'. The reasoning leads to the conclusion that the third book from the left is white, which is correct. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it assigns positions based on given constraints (blue leftmost, red rightmost), deduces the order of purple, white, and green from 'purple left of white' and 'green right of white', and correctly concludes the order is purple, white, green. Each step is valid and logically supports the answer. The reasoning is sound and internally consistent.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs to 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <colour>'. The response includes an explanation and ends with 'ANSWER: white', matching the exact format. All explicit instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response correctly answers the question with valid reasoning and full compliance to instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response correctly answers the question with valid reasoning and full compliance to instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

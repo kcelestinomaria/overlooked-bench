@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the relationship and divergence between Maliki and Hanafi positions, a specialist topic. The response goes beyond encyclopedic level by engaging with methodological specifics: it contrasts al-masalih al-mursalah vs. istihsan, discusses theoretical bases (e.g., Malikis viewing Shariah as coherent whole, Hanafis' textualist wariness), and provides examples tied to juristic reasoning. It addresses internal scholarly debate on the role of reason vs. revelation and practical implications. A specialist would recognize this as competent engagement with the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes substantive claims: maslaha is a rational tool subordinate to primary sources; Maliki position grants formal independent status as al-masalih al-mursalah, citing al-Shatibi; Hanafi position uses istihsan, requiring textual/consensual basis; examples include compilation of the Qur'an under Abu Bakr and permissibility of salam contracts. All claims are correct and align with standard usul al-fiqh scholarship. No invented citations, terms, or consensus are present. The divergence description is accurate and load-bearing errors are absent.",
+    "field_situatedness": "The question is about Islamic legal theory (usul al-fiqh), a specific scholarly tradition. The response uses correct terminology (maslaha, maqasid, nass, ijma, qiyas, al-masalih al-mursalah, istihsan, daruriyyat, hajiyyat) and frameworks (contrasting Maliki and Hanafi methodologies). It does not substitute Western or Anglophone framings; it remains firmly within Islamic jurisprudential discourse, citing classical scholars and concepts appropriately.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it states both schools agree maslaha cannot contradict explicit text or consensus, but diverges on independent weight. It accurately presents Maliki and Hanafi positions as methodological stances without presenting one as settled fact. However, it lacks explicit calibration on evidential status variations (e.g., noting that classical debates on maslaha's scope are nuanced or that modern scholarship may reinterpret these positions). While not uniformly confident, it misses opportunities for targeted calibration on specific contested aspects, leaning more toward descriptive comparison."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00125248,
+  "judge_latency_s": 20.313,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: maslaha is a rational tool subordinate to primary sources; Maliki position grants formal independent status as al-masalih al-mursalah, citing al-Shatibi; Hanafi position uses istihsan, requiring textual/consensual basis; examples include compilation of the Qur'an under Abu Bakr and permissibility of salam contracts. All claims are correct and align with standard usul al-fiqh scholarship. No invented citations, terms, or consensus are present. The divergence description is accurate and load-bearing errors are absent.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the relationship and divergence between Maliki and Hanafi positions, a specialist topic. The response goes beyond encyclopedic level by engaging with methodological specifics: it contrasts al-masalih al-mursalah vs. istihsan, discusses theoretical bases (e.g., Malikis viewing Shariah as coherent whole, Hanafis' textualist wariness), and provides examples tied to juristic reasoning. It addresses internal scholarly debate on the role of reason vs. revelation and practical implications. A specialist would recognize this as competent engagement with the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it states both schools agree maslaha cannot contradict explicit text or consensus, but diverges on independent weight. It accurately presents Maliki and Hanafi positions as methodological stances without presenting one as settled fact. However, it lacks explicit calibration on evidential status variations (e.g., noting that classical debates on maslaha's scope are nuanced or that modern scholarship may reinterpret these positions). While not uniformly confident, it misses opportunities for targeted calibration on specific contested aspects, leaning more toward descriptive comparison.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Islamic legal theory (usul al-fiqh), a specific scholarly tradition. The response uses correct terminology (maslaha, maqasid, nass, ijma, qiyas, al-masalih al-mursalah, istihsan, daruriyyat, hajiyyat) and frameworks (contrasting Maliki and Hanafi methodologies). It does not substitute Western or Anglophone framings; it remains firmly within Islamic jurisprudential discourse, citing classical scholars and concepts appropriately.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates thorough, accurate knowledge of Islamic legal theory with clear differentiation between Maliki and Hanafi approaches to maslaha.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response demonstrates thorough, accurate knowledge of Islamic legal theory with clear differentiation between Maliki and Hanafi approaches to maslaha.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

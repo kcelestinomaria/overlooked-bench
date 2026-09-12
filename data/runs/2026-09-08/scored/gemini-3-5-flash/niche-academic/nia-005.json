@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for an explanation of 'ma' in Japanese-language scholarship and a contrast with Western treatment. The response goes significantly beyond encyclopaedia level: it engages with specific scholars (Kuki Shūzō, Isozaki Arata, Hasegawa Nyozekan), philosophical frameworks (Shinto, Buddhist, Cartesian dualism), internal debates (critique of Western reductionism), and methodological distinctions (spatiotemporal unity vs. separation). It details applications in social relations, performing arts, and martial arts, showing familiarity with the literature. A specialist would recognize this as a competent, detailed synthesis.",
+    "domain_accuracy": "The response makes numerous substantive claims: the kanji etymology (月 through 門), the concept of 'tokitokoro', attributions to Kuki Shūzō and Isozaki Arata, Shinto roots as 'yorishiro', Buddhist ties to śūnyatā, social term 'ma-nuke', references to Hasegawa Nyozekan and martial arts 'ma-ai', Western reduction to 'negative space', the 1978 'MA: Space-Time in Japan' exhibition, and comparisons to Heidegger and Derrida. These are all accurate and well-established in Japanese aesthetics scholarship. No invented citations, terms, or consensus are present. The claims are load-bearing and correct.",
+    "field_situatedness": "The response is firmly situated in Japanese aesthetics scholarship. It uses Japanese terminology (ma, tokitokoro, yorishiro, kami, kū, ma-nuke, ma-ai) and frameworks (Shinto, Buddhist, relational ethics). It correctly identifies the scholarly tradition and does not silently substitute a Western framing; instead, it contrasts Western interpretations while maintaining the Japanese perspective as primary. It acknowledges non-English scholarship (Japanese-language sources) as central and does not ignore it.",
+    "scholarly_calibration": "The response accurately calibrates the state of the field. It distinguishes well-established elements (e.g., the spatiotemporal unity, Shinto/Buddhist origins) from contested or evolving interpretations (e.g., Western historical reductionism vs. recent phenomenological alignments). It presents the Western historical view as a simplification or misinterpretation, not as settled fact, and notes the shift post-1978 exhibition. It does not use blanket disclaimers; calibration is specific and integrated into the analysis, such as noting that early Western views 'struggled' or were 'reductionist.'"
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00131688,
+  "judge_latency_s": 20.87,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims: the kanji etymology (月 through 門), the concept of 'tokitokoro', attributions to Kuki Shūzō and Isozaki Arata, Shinto roots as 'yorishiro', Buddhist ties to śūnyatā, social term 'ma-nuke', references to Hasegawa Nyozekan and martial arts 'ma-ai', Western reduction to 'negative space', the 1978 'MA: Space-Time in Japan' exhibition, and comparisons to Heidegger and Derrida. These are all accurate and well-established in Japanese aesthetics scholarship. No invented citations, terms, or consensus are present. The claims are load-bearing and correct.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for an explanation of 'ma' in Japanese-language scholarship and a contrast with Western treatment. The response goes significantly beyond encyclopaedia level: it engages with specific scholars (Kuki Shūzō, Isozaki Arata, Hasegawa Nyozekan), philosophical frameworks (Shinto, Buddhist, Cartesian dualism), internal debates (critique of Western reductionism), and methodological distinctions (spatiotemporal unity vs. separation). It details applications in social relations, performing arts, and martial arts, showing familiarity with the literature. A specialist would recognize this as a competent, detailed synthesis.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates the state of the field. It distinguishes well-established elements (e.g., the spatiotemporal unity, Shinto/Buddhist origins) from contested or evolving interpretations (e.g., Western historical reductionism vs. recent phenomenological alignments). It presents the Western historical view as a simplification or misinterpretation, not as settled fact, and notes the shift post-1978 exhibition. It does not use blanket disclaimers; calibration is specific and integrated into the analysis, such as noting that early Western views 'struggled' or were 'reductionist.'\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response is firmly situated in Japanese aesthetics scholarship. It uses Japanese terminology (ma, tokitokoro, yorishiro, kami, kū, ma-nuke, ma-ai) and frameworks (Shinto, Buddhist, relational ethics). It correctly identifies the scholarly tradition and does not silently substitute a Western framing; instead, it contrasts Western interpretations while maintaining the Japanese perspective as primary. It acknowledges non-English scholarship (Japanese-language sources) as central and does not ignore it.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of 'ma' from both Japanese and Western scholarly perspectives.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of 'ma' from both Japanese and Western scholarly perspectives.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

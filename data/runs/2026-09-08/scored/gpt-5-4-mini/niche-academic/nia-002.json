@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopaedia level by detailing specific methodological problems (e.g., 'false rings,' 'missing rings,' 'multiple rings,' 'limited crossdating opportunities') and approaches (e.g., 'multi-proxy crossdating,' 'wood anatomy and image analysis,' 'event-marker approaches'). It engages with evidence quality and methodological challenges, indicating familiarity with the literature rather than just summaries. A specialist would recognize this as substantive engagement with the field's technical debates.",
+    "domain_accuracy": "The response makes substantive claims about dendrochronology in tropical regions, such as 'weak or absent seasonality,' 'false, missing, or multiple rings,' 'ring boundaries can be difficult to identify,' and approaches like 'use of species with demonstrable annual rings,' 'anatomical validation of rings,' 'stable isotope analysis,' and 'radiocarbon “bomb pulse” and calibration.' These are all correct and standard in the literature. No invented citations, terms, or consensus are present. The claims are accurate and load-bearing to the answer.",
+    "field_situatedness": "The response uses appropriate frameworks and terminology from dendrochronology and tropical ecology, such as 'crossdating,' 'annual growth rings,' 'false rings,' 'stable isotope analysis,' and 'radiocarbon bomb pulse.' It does not substitute a Western or Anglophone framing; it correctly focuses on tropical-specific issues like rainfall patterns and species diversity. The scholarly tradition is accurately reflected without ignoring non-English scholarship where central.",
+    "scholarly_calibration": "The response distinguishes well-established from contested aspects implicitly but not explicitly. For example, it states 'dendrochronology is harder in the tropics' and 'ring counting unreliable,' which are established, but does not flag where knowledge is weak or where debates exist (e.g., specific species suitability or regional variability). It presents approaches as developed solutions without noting uncertainties or ongoing research. There is no blanket disclaimer, but calibration is not specific or targeted; it lacks explicit signaling of evidential status differences."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-002",
+  "judge_cost_usd": 0.00100865,
+  "judge_latency_s": 16.674,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about dendrochronology in tropical regions, such as 'weak or absent seasonality,' 'false, missing, or multiple rings,' 'ring boundaries can be difficult to identify,' and approaches like 'use of species with demonstrable annual rings,' 'anatomical validation of rings,' 'stable isotope analysis,' and 'radiocarbon “bomb pulse” and calibration.' These are all correct and standard in the literature. No invented citations, terms, or consensus are present. The claims are accurate and load-bearing to the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopaedia level by detailing specific methodological problems (e.g., 'false rings,' 'missing rings,' 'multiple rings,' 'limited crossdating opportunities') and approaches (e.g., 'multi-proxy crossdating,' 'wood anatomy and image analysis,' 'event-marker approaches'). It engages with evidence quality and methodological challenges, indicating familiarity with the literature rather than just summaries. A specialist would recognize this as substantive engagement with the field's technical debates.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested aspects implicitly but not explicitly. For example, it states 'dendrochronology is harder in the tropics' and 'ring counting unreliable,' which are established, but does not flag where knowledge is weak or where debates exist (e.g., specific species suitability or regional variability). It presents approaches as developed solutions without noting uncertainties or ongoing research. There is no blanket disclaimer, but calibration is not specific or targeted; it lacks explicit signaling of evidential status differences.\",\n      \"score\": 2\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate frameworks and terminology from dendrochronology and tropical ecology, such as 'crossdating,' 'annual growth rings,' 'false rings,' 'stable isotope analysis,' and 'radiocarbon bomb pulse.' It does not substitute a Western or Anglophone framing; it correctly focuses on tropical-specific issues like rainfall patterns and species diversity. The scholarly tradition is accurately reflected without ignoring non-English scholarship where central.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain accuracy and depth but lacks explicit scholarly calibration on uncertainties.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain accuracy and depth but lacks explicit scholarly calibration on uncertainties.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

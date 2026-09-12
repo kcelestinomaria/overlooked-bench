@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response explicitly addresses the range of learners, particularly vulnerable pupils, in the setting. It discusses impacts on 'SEND pupils' and 'lower-attaining pupils' across options (e.g., Option 1: 'Reduced support for SEND pupils') and proposes mitigations like protecting 'core class teacher structure'. The adaptations are implementable by the head teacher and governing body without requiring additional adults. It goes beyond generic language by specifying concrete harms and trade-offs.",
+    "pathway_breadth": "The item involves budget reduction options for a school, not student futures or pathway guidance. The response is inclusive of the range of operational considerations (e.g., SEND support, leadership capacity, staffing structures) relevant to the setting. It does not cover academic or vocational pathways, as that is out of scope, but it addresses the breadth of impacts on the school community.",
+    "pedagogical_soundness": "The response is an options paper for budget reduction, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical alignment, cognitive demand, sequencing, or rubric design. The rubric dimension is not applicable to this administrative task, so the response does not address it.",
+    "workload_realism": "The response provides a detailed options paper for budget cuts, estimating savings (e.g., '£146,000' for Option 1) and respecting the class-size constraint ('no class above 30 pupils'). It lists specific staffing reductions (e.g., 'Remove 2 full-time equivalent teaching assistants') and considers feasibility within a 400-pupil primary school setting. The timings and resource assumptions (e.g., 'Total staffing budget: £1,800,000') are plausible for the context, and the preparation/marking load is not relevant here. The options are realistic for a head teacher to deliver under the given constraints."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00174519,
+  "judge_latency_s": 16.126,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget reduction, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical alignment, cognitive demand, sequencing, or rubric design. The rubric dimension is not applicable to this administrative task, so the response does not address it.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides a detailed options paper for budget cuts, estimating savings (e.g., '£146,000' for Option 1) and respecting the class-size constraint ('no class above 30 pupils'). It lists specific staffing reductions (e.g., 'Remove 2 full-time equivalent teaching assistants') and considers feasibility within a 400-pupil primary school setting. The timings and resource assumptions (e.g., 'Total staffing budget: £1,800,000') are plausible for the context, and the preparation/marking load is not relevant here. The options are realistic for a head teacher to deliver under the given constraints.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item involves budget reduction options for a school, not student futures or pathway guidance. The response is inclusive of the range of operational considerations (e.g., SEND support, leadership capacity, staffing structures) relevant to the setting. It does not cover academic or vocational pathways, as that is out of scope, but it addresses the breadth of impacts on the school community.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response explicitly addresses the range of learners, particularly vulnerable pupils, in the setting. It discusses impacts on 'SEND pupils' and 'lower-attaining pupils' across options (e.g., Option 1: 'Reduced support for SEND pupils') and proposes mitigations like protecting 'core class teacher structure'. The adaptations are implementable by the head teacher and governing body without requiring additional adults. It goes beyond generic language by specifying concrete harms and trade-offs.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a thorough, realistic options paper that respects all constraints and makes a clear recommendation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a thorough, realistic options paper that respects all constraints and makes a clear recommendation.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

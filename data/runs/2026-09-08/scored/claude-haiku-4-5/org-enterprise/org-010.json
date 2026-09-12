@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests 'draft guidance the association can send to members.' The response produces a complete guidance document addressed to factory owners, with concrete components: step-by-step actions, templates (checklists, contracts, response templates), timelines, roles, FAQs, and association support. It is not a description of how to approach the task; it is the deliverable itself. It could be taken into a meeting with light editing (e.g., filling in association name and date). It explains requirements plainly, breaks compliance into steps, distinguishes buyer asks from full regulation, and identifies collective action.",
+    "constraint_fidelity": "The prompt states constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it is written as guidance for factory owners, provides steps executable without consultants, emphasizes internal role assignment instead of hiring, and includes low-cost certification options. It does not assume a compliance officer exists. It shows arithmetic for certification costs (e.g., SEDEX ~$500-1000) and timelines. No constraints are violated or silently exceeded.",
+    "contextual_realism": "The response is calibrated for small factories with limited capacity: it recommends simple folders, checklists, one-page profiles, spreadsheet tracking, and internal role assignment (e.g., assigning existing managers as leads). It avoids presupposing dedicated HR or legal counsel, instead suggesting templates and basic steps. It acknowledges small-organisation realities like phased wage increases, affordable solutions, and peer learning. However, it assumes some administrative capability (e.g., creating inventories, tracking chemicals) but provides templates to mitigate overhead. No tooling or process overhead is unsustainable for this staffing level.",
+    "jurisdictional_accuracy": "The jurisdiction is Bangladesh/EU. The response avoids US assumptions: it references Bangladesh legal minimum wage and working hours (e.g., 'Set a maximum 60-hour week (Bangladesh legal limit)'), suggests translating templates to Bengali, and mentions local environmental authorities. It does not assert US defaults (e.g., at-will employment, US tax categories). It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it includes a final note about consulting local authorities. Factual accuracy is maintained for general guidance, with no confidently wrong jurisdiction-specific claims."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00144735,
+  "judge_latency_s": 19.182,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it is written as guidance for factory owners, provides steps executable without consultants, emphasizes internal role assignment instead of hiring, and includes low-cost certification options. It does not assume a compliance officer exists. It shows arithmetic for certification costs (e.g., SEDEX ~$500-1000) and timelines. No constraints are violated or silently exceeded.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories with limited capacity: it recommends simple folders, checklists, one-page profiles, spreadsheet tracking, and internal role assignment (e.g., assigning existing managers as leads). It avoids presupposing dedicated HR or legal counsel, instead suggesting templates and basic steps. It acknowledges small-organisation realities like phased wage increases, affordable solutions, and peer learning. However, it assumes some administrative capability (e.g., creating inventories, tracking chemicals) but provides templates to mitigate overhead. No tooling or process overhead is unsustainable for this staffing level.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests 'draft guidance the association can send to members.' The response produces a complete guidance document addressed to factory owners, with concrete components: step-by-step actions, templates (checklists, contracts, response templates), timelines, roles, FAQs, and association support. It is not a description of how to approach the task; it is the deliverable itself. It could be taken into a meeting with light editing (e.g., filling in association name and date). It explains requirements plainly, breaks compliance into steps, distinguishes buyer asks from full regulation, and identifies collective action.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Bangladesh/EU. The response avoids US assumptions: it references Bangladesh legal minimum wage and working hours (e.g., 'Set a maximum 60-hour week (Bangladesh legal limit)'), suggests translating templates to Bengali, and mentions local environmental authorities. It does not assert US defaults (e.g., at-will employment, US tax categories). It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it includes a final note about consulting local authorities. Factual accuracy is maintained for general guidance, with no confidently wrong jurisdiction-specific claims.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable, context-aware guidance document that fully respects the constraints and needs of small Bangladeshi textile factories.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a highly actionable, context-aware guidance document that fully respects the constraints and needs of small Bangladeshi textile factories.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

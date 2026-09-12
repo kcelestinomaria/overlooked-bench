@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the relationship and divergence between Maliki and Hanafi positions. The response goes beyond encyclopedic summary by engaging with specific jurisprudential mechanisms: it distinguishes maslaha mursala for Malikis and indirect incorporation via istihsan, 'urf for Hanafis, and frames the divergence as jurisprudential form. It addresses the core debate about independent authority versus mediated reasoning, showing familiarity with internal scholarly discourse, though it lacks deeper methodological or evidentiary nuances a specialist might expect.",
+    "domain_accuracy": "The response makes substantive claims: maslaha is not an independent source overriding primary sources (Qur'an, Sunna, ijma', qiyas); Malikis use maslaha mursala when no clear text exists, without contradiction; Hanafis incorporate maslaha indirectly via qiyas, istihsan, 'urf, necessity. All claims are correct and align with standard Islamic legal theory. No invented citations, terms, or consensus are present. The answer is accurate on key points.",
+    "field_situatedness": "The response correctly uses Islamic legal theory frameworks and terminology: maslaha, usul, Qur'an, Sunna, ijma', qiyas, maslaha mursala, istihsan, 'urf, Shari'a. It stays within the Islamic scholarly tradition without substituting Western or Anglophone framings. The vocabulary and framing are appropriate to the field.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it states maslaha is 'generally treated' within framework, not independent in 'mainstream usul', and notes Malikis 'are most closely associated' with maslaha mursala, while Hanafis are 'generally more cautious'. It presents divergence as a disagreement about jurisprudential form, not settled fact. However, it lacks specific calibration on evidential status (e.g., citing scholars or debates) and uses moderate confidence uniformly without flagging uncertainties in thin literature."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.0008917,
+  "judge_latency_s": 16.945,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: maslaha is not an independent source overriding primary sources (Qur'an, Sunna, ijma', qiyas); Malikis use maslaha mursala when no clear text exists, without contradiction; Hanafis incorporate maslaha indirectly via qiyas, istihsan, 'urf, necessity. All claims are correct and align with standard Islamic legal theory. No invented citations, terms, or consensus are present. The answer is accurate on key points.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the relationship and divergence between Maliki and Hanafi positions. The response goes beyond encyclopedic summary by engaging with specific jurisprudential mechanisms: it distinguishes maslaha mursala for Malikis and indirect incorporation via istihsan, 'urf for Hanafis, and frames the divergence as jurisprudential form. It addresses the core debate about independent authority versus mediated reasoning, showing familiarity with internal scholarly discourse, though it lacks deeper methodological or evidentiary nuances a specialist might expect.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it states maslaha is 'generally treated' within framework, not independent in 'mainstream usul', and notes Malikis 'are most closely associated' with maslaha mursala, while Hanafis are 'generally more cautious'. It presents divergence as a disagreement about jurisprudential form, not settled fact. However, it lacks specific calibration on evidential status (e.g., citing scholars or debates) and uses moderate confidence uniformly without flagging uncertainties in thin literature.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses Islamic legal theory frameworks and terminology: maslaha, usul, Qur'an, Sunna, ijma', qiyas, maslaha mursala, istihsan, 'urf, Shari'a. It stays within the Islamic scholarly tradition without substituting Western or Anglophone framings. The vocabulary and framing are appropriate to the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response accurately and clearly explains the core relationship and divergence between Maliki and Hanafi positions on maslaha using correct field-specific terminology.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response accurately and clearly explains the core relationship and divergence between Maliki and Hanafi positions on maslaha using correct field-specific terminology.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

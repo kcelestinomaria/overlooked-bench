@@ -11,9 +11,9 @@ PHASES
   3. summarise Aggregate `scored/` into `runs/<id>/summary.json`.
 
 The scoring phase deliberately re-reads raw output from disk rather than using
-the objects still in memory from phase 1. That is slightly wasteful and it is
-the point: it makes it structurally impossible for scoring code to score
-something other than what was archived, and it means `--stage score` can be
+the objects still in memory from phase 1. The redundancy is deliberate: it makes
+it structurally impossible for scoring code to score something other than what
+was archived, and it means `--stage score` can be
 re-run months later against the same raw files and must reproduce the same
 numbers. Raw files are never modified or deleted by this program.
 
@@ -88,7 +88,7 @@ def read_json(path: Path) -> dict[str, Any] | None:
 
 
 # ---------------------------------------------------------------------------
-# Phase 1 — generation
+# Phase 1 - generation
 # ---------------------------------------------------------------------------
 
 
@@ -113,7 +113,7 @@ def phase_generate(
                     # provider outage, a rate limit, or an exhausted account
                     # writes a record with ok=false, and caching that as
                     # "already generated" would bake a transient failure into
-                    # the run permanently — every later resume would skip it and
+                    # the run permanently - every later resume would skip it and
                     # the model would be scored 0 for an error that was ours.
                     if prev is not None and prev.get("ok"):
                         reused += 1
@@ -184,7 +184,7 @@ def load_raw(
 
 
 # ---------------------------------------------------------------------------
-# Phase 2 — scoring
+# Phase 2 - scoring
 # ---------------------------------------------------------------------------
 
 
@@ -234,7 +234,7 @@ def phase_score(
     if missing_raw:
         console.print(
             f"[yellow]{missing_raw} item(s) have no usable raw response and were not "
-            f"scored. They are excluded from the run rather than scored 0 — check "
+            f"scored. They are excluded from the run rather than scored 0 - check "
             f"`n` per category in summary.json.[/yellow]"
         )
     if cached:
@@ -279,7 +279,7 @@ def phase_score(
 
 
 def print_leaderboard(summary: dict[str, Any]) -> None:
-    table = Table(title=f"overlooked-bench {summary['run_id']} — overall index (0-100)")
+    table = Table(title=f"overlooked-bench {summary['run_id']} - overall index (0-100)")
     table.add_column("#", justify="right", style="dim")
     table.add_column("Model")
     table.add_column("Provider", style="dim")
@@ -315,7 +315,7 @@ def print_leaderboard(summary: dict[str, Any]) -> None:
 
     asym = summary.get("institutional_asymmetry") or {}
     if asym:
-        at = Table(title="Institutional criticism — asymmetry index (0 = consistent)")
+        at = Table(title="Institutional criticism - asymmetry index (0 = consistent)")
         at.add_column("Model")
         at.add_column("Mean criticism", justify="right")
         at.add_column("Asymmetry", justify="right", style="bold")
@@ -390,7 +390,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.dry_run:
         for cat, items in items_by_category.items():
             console.print(f"  {cat}: {len(items)} items")
-        console.print("[green]Dry run OK — config and dataset are valid. No API calls made.[/green]")
+        console.print("[green]Dry run OK - config and dataset are valid. No API calls made.[/green]")
         return 0
 
     missing_keys = sorted({m.api_key_env for m in all_models if not m.api_key})
@@ -447,7 +447,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if not scores:
-        console.print("[red]No scores produced — cannot summarise.[/red]")
+        console.print("[red]No scores produced - cannot summarise.[/red]")
         return 1
 
     summary = build_summary(

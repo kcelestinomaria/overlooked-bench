@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific technical obstacles like tone splitting, merging, spreading, downdrift, morphophonological interactions, and data unevenness. It discusses methodological issues such as the need for detailed morphophonological analysis beyond lexical cognates and acknowledges debates about the proto-system's nature (pitch-accent vs. canonical tone). A specialist would recognize this as informed by the literature, not just a summary of summaries, though it does not delve into highly granular evidence or cite specific studies.",
+    "domain_accuracy": "The response makes substantive claims such as 'tone is often underdocumented or inconsistently documented,' 'tone systems are highly affected by later innovations,' 'tone is strongly shaped by morphology,' and 'the inherited tone system may have been small and structurally different from many modern systems.' These are accurate and reflect standard challenges in Bantu tone reconstruction. It correctly notes debates about whether Proto-Bantu had a simple H vs. toneless contrast, a two-tone system, or accent-like properties, and states there is 'no universally accepted full reconstruction.' No invented citations, terms, or consensus are presented; all claims align with established scholarly understanding.",
+    "field_situatedness": "The response uses appropriate frameworks and terminology from Bantu historical linguistics, such as 'Proto-Bantu tone,' 'tone splitting and merging,' 'register tone changes,' 'morphophonological analysis,' 'noun class prefixes,' and references to subgroup histories and diachronic processes. It does not silently substitute a Western or Anglophone adjacent field's framing; it stays focused on Bantu-specific issues like morphology-syntax interactions and data unevenness across the family.",
+    "scholarly_calibration": "The response distinguishes well-established points from contested ones. It states broad consensus that 'tone was already present in Proto-Bantu' and is 'phonologically important,' while noting less certain points like 'the exact size and nature of the proto-tone inventory' and whether it was 'pitch-accent-like' or canonical. It explicitly says reconstructions remain 'hypothesis-driven and partial' and there is 'no universally accepted full reconstruction.' This shows targeted calibration, not uniform confidence or blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00102593,
+  "judge_latency_s": 17.607,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims such as 'tone is often underdocumented or inconsistently documented,' 'tone systems are highly affected by later innovations,' 'tone is strongly shaped by morphology,' and 'the inherited tone system may have been small and structurally different from many modern systems.' These are accurate and reflect standard challenges in Bantu tone reconstruction. It correctly notes debates about whether Proto-Bantu had a simple H vs. toneless contrast, a two-tone system, or accent-like properties, and states there is 'no universally accepted full reconstruction.' No invented citations, terms, or consensus are presented; all claims align with established scholarly understanding.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific technical obstacles like tone splitting, merging, spreading, downdrift, morphophonological interactions, and data unevenness. It discusses methodological issues such as the need for detailed morphophonological analysis beyond lexical cognates and acknowledges debates about the proto-system's nature (pitch-accent vs. canonical tone). A specialist would recognize this as informed by the literature, not just a summary of summaries, though it does not delve into highly granular evidence or cite specific studies.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established points from contested ones. It states broad consensus that 'tone was already present in Proto-Bantu' and is 'phonologically important,' while noting less certain points like 'the exact size and nature of the proto-tone inventory' and whether it was 'pitch-accent-like' or canonical. It explicitly says reconstructions remain 'hypothesis-driven and partial' and there is 'no universally accepted full reconstruction.' This shows targeted calibration, not uniform confidence or blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate frameworks and terminology from Bantu historical linguistics, such as 'Proto-Bantu tone,' 'tone splitting and merging,' 'register tone changes,' 'morphophonological analysis,' 'noun class prefixes,' and references to subgroup histories and diachronic processes. It does not silently substitute a Western or Anglophone adjacent field's framing; it stays focused on Bantu-specific issues like morphology-syntax interactions and data unevenness across the family.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates accurate, well-calibrated knowledge of the technical challenges in Proto-Bantu tone reconstruction, with specific engagement beyond introductory levels.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates accurate, well-calibrated knowledge of the technical challenges in Proto-Bantu tone reconstruction, with specific engagement beyond introductory levels.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

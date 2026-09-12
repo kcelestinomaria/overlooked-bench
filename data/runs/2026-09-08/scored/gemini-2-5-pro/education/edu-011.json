@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes a single student with specific constraints (limited funds, below-cutoff KCSE). The response addresses this range concretely by focusing on affordable pathways (TVET, entrepreneurship), funding options (HELB, CDF, bursaries), and low-barrier entry strategies. It does not use generic placeholder differentiation language; instead, it tailors advice to the student's financial and academic situation. The proposed adaptations (research, applying for aid) are implementable by the student/family without requiring a practitioner.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple realistic routes for a Kenyan student with below-cutoff KCSE results and limited funds: TVET (with specific institution types like National Polytechnics, TTIs, VTCs), self-sponsored university via diploma progression, KCSE resit/bridging courses, and entrepreneurship/skills-based pathways. It provides real entry requirements, costs, funding options (HELB, CDF, Uwezo Fund), and outcomes, treating non-degree routes (TVET, entrepreneurship) with comparable depth and seriousness as academic routes. It avoids framing non-university as failure and gives concrete program names and strategies.",
+    "pedagogical_soundness": "The response is guidance, not a lesson plan, so it lacks explicit learning objectives, activities, and assessments. The rubric's evaluation steps (identify objectives, check activities, check assessment alignment, check sequencing, check rubrics) cannot be applied. The content is informative and structured, but it does not engage with the pedagogical dimension as defined.",
+    "workload_realism": "The response is guidance for a student, not a plan for a practitioner to deliver. It does not describe activities with timings, required materials, preparation, or marking load for a teacher or administrator. The rubric's evaluation steps (sum timings, list materials, estimate preparation/marking, check class size) are not applicable. The advice is practical for the student, but the dimension is not engaged."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00122147,
+  "judge_latency_s": 18.317,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is guidance, not a lesson plan, so it lacks explicit learning objectives, activities, and assessments. The rubric's evaluation steps (identify objectives, check activities, check assessment alignment, check sequencing, check rubrics) cannot be applied. The content is informative and structured, but it does not engage with the pedagogical dimension as defined.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is guidance for a student, not a plan for a practitioner to deliver. It does not describe activities with timings, required materials, preparation, or marking load for a teacher or administrator. The rubric's evaluation steps (sum timings, list materials, estimate preparation/marking, check class size) are not applicable. The advice is practical for the student, but the dimension is not engaged.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple realistic routes for a Kenyan student with below-cutoff KCSE results and limited funds: TVET (with specific institution types like National Polytechnics, TTIs, VTCs), self-sponsored university via diploma progression, KCSE resit/bridging courses, and entrepreneurship/skills-based pathways. It provides real entry requirements, costs, funding options (HELB, CDF, Uwezo Fund), and outcomes, treating non-degree routes (TVET, entrepreneurship) with comparable depth and seriousness as academic routes. It avoids framing non-university as failure and gives concrete program names and strategies.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes a single student with specific constraints (limited funds, below-cutoff KCSE). The response addresses this range concretely by focusing on affordable pathways (TVET, entrepreneurship), funding options (HELB, CDF, bursaries), and low-barrier entry strategies. It does not use generic placeholder differentiation language; instead, it tailors advice to the student's financial and academic situation. The proposed adaptations (research, applying for aid) are implementable by the student/family without requiring a practitioner.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, specific, and practical pathway guidance tailored to the Kenyan student's context, excelling in pathway breadth and differentiation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, specific, and practical pathway guidance tailored to the Kenyan student's context, excelling in pathway breadth and differentiation.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

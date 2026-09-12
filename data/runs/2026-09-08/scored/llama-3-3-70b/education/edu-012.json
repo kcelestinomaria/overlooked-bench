@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response identifies a learner range (students with home languages other than French) and addresses it with strategies like visual aids, simplified language, and peer support, which are implementable by one teacher with no assistant. However, it lacks concrete differentiation for varying proficiency levels, additional needs, or material constraints (e.g., no mention of adapting for students without home internet). Tips like 'use online resources' may not be accessible to all. The strategies are somewhat specific but include placeholder language like 'Cultural Sensitivity' without detailed content.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is about supporting language learners in a classroom. Therefore, scoring shifts to whether the response is inclusive of the range of learners in the described setting. The response acknowledges students from Arabic, Spanish, and Tagalog backgrounds and offers general strategies (e.g., 'Cultural Sensitivity', 'peer support') that apply to diverse learners. However, it lacks specificity in addressing varying prior attainment, language proficiency levels, or material constraints (e.g., no home internet), making the inclusivity partial.",
+    "pedagogical_soundness": "The response does not state explicit learning objectives, activities, or assessments, nor does it align them. It provides a list of general strategies (e.g., 'Visual Aids', 'Peer Support') without specifying how they build toward measurable outcomes or how assessment would measure language acquisition. There is no sequencing, rubric, or evidence of pedagogical alignment. The content is generic and lacks the through-line required for sound pedagogy in this context.",
+    "workload_realism": "The response does not include timings, a lesson plan, or specific materials, so timings cannot be summed or checked against a unit length. It assumes access to 'online resources' and 'online translation tools' without confirming availability in the Quebec primary school setting. Strategies like 'inviting guest speakers' may require coordination time not accounted for. However, most strategies (e.g., visual aids, simplified language) are low-cost and feasible for one teacher with no assistant, though the lack of concrete implementation details limits realism."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 1,
+    "workload_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.0009422,
+  "judge_latency_s": 18.626,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not state explicit learning objectives, activities, or assessments, nor does it align them. It provides a list of general strategies (e.g., 'Visual Aids', 'Peer Support') without specifying how they build toward measurable outcomes or how assessment would measure language acquisition. There is no sequencing, rubric, or evidence of pedagogical alignment. The content is generic and lacks the through-line required for sound pedagogy in this context.\",\n      \"score\": 1\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not include timings, a lesson plan, or specific materials, so timings cannot be summed or checked against a unit length. It assumes access to 'online resources' and 'online translation tools' without confirming availability in the Quebec primary school setting. Strategies like 'inviting guest speakers' may require coordination time not accounted for. However, most strategies (e.g., visual aids, simplified language) are low-cost and feasible for one teacher with no assistant, though the lack of concrete implementation details limits realism.\",\n      \"score\": 2\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is about supporting language learners in a classroom. Therefore, scoring shifts to whether the response is inclusive of the range of learners in the described setting. The response acknowledges students from Arabic, Spanish, and Tagalog backgrounds and offers general strategies (e.g., 'Cultural Sensitivity', 'peer support') that apply to diverse learners. However, it lacks specificity in addressing varying prior attainment, language proficiency levels, or material constraints (e.g., no home internet), making the inclusivity partial.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response identifies a learner range (students with home languages other than French) and addresses it with strategies like visual aids, simplified language, and peer support, which are implementable by one teacher with no assistant. However, it lacks concrete differentiation for varying proficiency levels, additional needs, or material constraints (e.g., no mention of adapting for students without home internet). Tips like 'use online resources' may not be accessible to all. The strategies are somewhat specific but include placeholder language like 'Cultural Sensitivity' without detailed content.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides generic, principle-based strategies rather than specific, classroom-ready guidance tailored to the Quebec context and one-teacher constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides generic, principle-based strategies rather than specific, classroom-ready guidance tailored to the Quebec context and one-teacher constraints.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 42.5
+}

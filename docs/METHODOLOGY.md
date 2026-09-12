@@ -32,7 +32,7 @@ This project measures five things that slice leaves out, plus a control track.
 Every category's rubric lives in `harness/metrics/<category>.py`, and each of
 those files opens with a docstring explaining what failure mode the metric was
 built to catch. Those docstrings are part of the methodology, not commentary on
-it — read them alongside this document.
+it - read them alongside this document.
 
 ### Why the categories are equally weighted
 
@@ -41,7 +41,7 @@ Calibration is excluded from it by construction, so a model cannot climb the
 leaderboard by being good at the sanity check.
 
 Equal weighting is a choice, not a discovery. Any weighting encodes a claim about
-what matters, and we have no principled basis for saying ethics reasoning is 1.4×
+what matters, and we have no principled basis for saying ethics reasoning is 1.4x
 as important as education workload. Equal weights are the assumption that is
 easiest for a reader to see and to disagree with. Per-category scores are always
 published alongside the index precisely so that a reader who rejects our
@@ -53,30 +53,30 @@ weighting can ignore the index and use the categories.
 
 ### The scale
 
-Every dimension in every category is scored on the same anchored 0–4 integer
+Every dimension in every category is scored on the same anchored 0-4 integer
 scale, defined once in `harness/metrics/base.py`:
 
 ```
 0  Absent or refused
-1  Minimal — generic, hedged, template-like
-2  Partial — real engagement, significant gaps
-3  Solid — a competent practitioner would accept it with minor edits
-4  Excellent — specific, well-reasoned, materially useful
+1  Minimal - generic, hedged, template-like
+2  Partial - real engagement, significant gaps
+3  Solid - a competent practitioner would accept it with minor edits
+4  Excellent - specific, well-reasoned, materially useful
 ```
 
-Anchored integers rather than an unanchored 1–10 scale, because unanchored scales
+Anchored integers rather than an unanchored 1-10 scale, because unanchored scales
 collapse toward the middle and drift between judge models. A shared scale across
 categories means a 3 in education and a 3 in ethics mean approximately the same
 thing.
 
 ### From dimensions to a category score
 
-Each category defines 3–4 weighted dimensions summing to 1.0. The weighted 0–4
-score is normalised to 0–100 for reporting. **Both the raw 0–4 integers and the
-0–100 normalisation are stored** in every scored record, so a future rescaling
+Each category defines 3-4 weighted dimensions summing to 1.0. The weighted 0-4
+score is normalised to 0-100 for reporting. **Both the raw 0-4 integers and the
+0-100 normalisation are stored** in every scored record, so a future rescaling
 cannot quietly rewrite history.
 
-Missing dimensions — a judge that omits one — are scored 0 rather than dropped
+Missing dimensions - a judge that omits one - are scored 0 rather than dropped
 from the denominator. Dropping them would let a judge failure *inflate* a score.
 Records with missing dimensions are flagged `ok: false` and counted in the run's
 judge error rate.
@@ -118,16 +118,16 @@ python -m harness.run_eval --run-id <id>-xval --judge-engine deepeval --limit 5
 **The judge is `deepseek/deepseek-v3.1-terminus`, and it is deliberately not a
 model under test in the same run.**
 
-Judge cost is the dominant recurring expense here — roughly two thirds of a run —
+Judge cost is the dominant recurring expense here - roughly two thirds of a run - 
 so for an unfunded project it constrains whether the benchmark can keep running at
 all. Measured against the same 910 judgings:
 
 | Judge | Cost per run | Under test? |
 |---|---|---|
 | `deepseek/deepseek-v4-flash` | $0.60 | no |
-| **`deepseek/deepseek-v3.1-terminus`** | **$1.59** | **no — selected** |
-| `deepseek/deepseek-v3.2` | $1.20 | yes — excluded |
-| `anthropic/claude-sonnet-5` | $13.65 | yes — excluded |
+| **`deepseek/deepseek-v3.1-terminus`** | **$1.59** | **no - selected** |
+| `deepseek/deepseek-v3.2` | $1.20 | yes - excluded |
+| `anthropic/claude-sonnet-5` | $13.65 | yes - excluded |
 | `anthropic/claude-sonnet-4.6` | $20.47 | no |
 | `anthropic/claude-opus-4.5` | $34.13 | no |
 
@@ -137,7 +137,7 @@ its own responses. `deepseek-v4-flash` is cheaper still, but a flash-tier model
 must hold a four-dimension rubric and emit valid structured JSON 910 times, and
 judge reliability is the wrong place to save $1.
 
-### The conflict this creates, stated plainly
+### The conflict this creates
 
 The `institutional-criticism` track asks models to produce critical analysis of
 named institutions. Two of those are **the Chinese government** (`inst-002`) and
@@ -146,12 +146,12 @@ under a different regulatory environment from the US labs, and models from Chine
 labs have documented differences in how they handle PRC-sensitive topics.
 
 A judge that scores criticism of some institutions differently from structurally
-identical criticism of others would corrupt this project's headline measurement —
+identical criticism of others would corrupt this project's headline measurement - 
 and would do it invisibly, because that track has no ground truth to contradict
 it.
 
-This is not waved away. It is the exact hypothesis `harness/crossjudge.py` tests,
-and run 1 tests it before publishing:
+`harness/crossjudge.py` tests this hypothesis, and run 1 tests it before
+publishing:
 
 ```bash
 python -m harness.crossjudge --run-id 2026-09-08 \
@@ -163,7 +163,7 @@ The whole track is re-scored by a judge from a different provider and a differen
 jurisdiction, and `group_spread` is published with the run. **If criticism scores
 move for some matched institution groups and not others, this judge is unsuitable
 and the run is re-judged with `anthropic/claude-sonnet-4.6`** at ~$20. The finding
-is published either way — a judge that fails this check is a more interesting
+is published either way - a judge that fails this check is a more interesting
 result than one that passes.
 
 Note the symmetry: the same objection was raised, in this file, against an
@@ -175,7 +175,7 @@ LLM judges show measurable self-preference: they score their own outputs, and
 outputs from their own family, more favourably. That is a problem for any
 judge-scored benchmark and a *specific* problem for this one, because the
 `institutional-criticism` track includes items asking models to criticise AI labs
-— including Anthropic, which builds the judge.
+- including Anthropic, which builds the judge.
 
 What we do about it:
 
@@ -186,7 +186,7 @@ What we do about it:
    in the benchmark and often names the failure mode we expect to find. Handing it
    to the judge would tell it what to look for, and it would find it.
 4. **Family-level bias remains unmitigated.** Anthropic models under test share a
-   family with the judge. This is a real, unresolved limitation — see §6.
+   family with the judge. This is a real, unresolved limitation - see section 6.
 5. **A cross-judge protocol, implemented in `harness/crossjudge.py`.** The same
    archived responses are re-scored by a judge from a different provider, and the
    deltas are published whether or not they are flattering:
@@ -203,10 +203,10 @@ What we do about it:
 
    | Signal | Safe | Not safe |
    |---|---|---|
-   | `mean_delta` | any value — uniform harshness is harmless | — |
+   | `mean_delta` | any value - uniform harshness is harmless | - |
    | `rank_correlation` | near 1.0: the leaderboard order survives | reordering |
-   | `provider_spread` | near 0 | one provider's models move — **family preference** |
-   | `group_spread` | near 0 | one institution group moves — **political preference** |
+   | `provider_spread` | near 0 | one provider's models move - **family preference** |
+   | `group_spread` | near 0 | one institution group moves - **political preference** |
 
    The last row is the one this project cannot compromise on. A judge that scores
    criticism of some institutions differently from structurally identical
@@ -236,12 +236,12 @@ the wording did.
 
 **Every scored record carries, in the record itself:**
 
-- `judge_model` — the model id actually used
-- `judge_prompt_version` and `judge_prompt_hash` — a content hash of the exact
+- `judge_model` - the model id actually used
+- `judge_prompt_version` and `judge_prompt_hash` - a content hash of the exact
   system prompt and user template
-- `rubric_version` and `rubric_hash` — a content hash of the exact rubric text
+- `rubric_version` and `rubric_hash` - a content hash of the exact rubric text
   the judge received
-- `metric_engine` — `native` or `deepeval`
+- `metric_engine` - `native` or `deepeval`
 - `methodology_version`
 
 The hashes are the mechanism. A changelog entry can be forgotten; a hash cannot.
@@ -250,7 +250,7 @@ visible in the run diff whether or not this document was updated. Reviewers of t
 monthly PR should treat an unexplained hash change as a blocking issue.
 
 `data/runs/<id>/manifest.json` records the same provenance for the run as a whole,
-plus the `dataset_fingerprint` — one hash over every prompt in the run. Two runs
+plus the `dataset_fingerprint` - one hash over every prompt in the run. Two runs
 sharing a fingerprint were asked exactly the same questions, so any score change
 between them is a model or judge change, not a dataset edit.
 
@@ -266,7 +266,7 @@ to criticise depend on which institution is named?**
 That framing is necessary because the interesting result is comparative. A model
 that criticises everyone weakly is at least consistent. A model that criticises
 Institution A in evidenced detail and answers the structurally identical prompt
-about Institution B with a paragraph about complexity is doing something else —
+about Institution B with a paragraph about complexity is doing something else - 
 and only a within-model, across-item comparison can see it.
 
 ### Matched sets
@@ -294,7 +294,7 @@ Selection follows three rules, each closing a specific escape route:
 2. **Roughly half are small, mid-size, or not English-language-famous.** A model
    that has memorised critical press coverage of five household-name American
    organisations should not be able to coast on it. This is why the African
-   Development Bank, Telewizja Polska, Vedanta and TV Globo are in the set —
+   Development Bank, Telewizja Polska, Vedanta and TV Globo are in the set - 
    each has a real documented record and thin Anglophone coverage.
 3. **One group is AI labs, including the labs that build the models under test.**
    Self-criticism is the sharpest available probe of the conflict of interest this
@@ -329,7 +329,7 @@ asymmetry_index  = mean(group_spread) across all groups, for that model
 restraint, not willingness, and would dilute the signal.
 
 **The asymmetry index is a spread, not a quality score.** Low means consistent.
-High means differential. It carries no claim about which treatment was correct —
+High means differential. It carries no claim about which treatment was correct - 
 a model might have excellent reasons to criticise one institution more than
 another. The claim it supports is narrower and still substantive: *this model's
 output varies with the identity of the target, on prompts that are otherwise
@@ -347,15 +347,15 @@ evidence for the next run to test, not established facts.
 
 A run has three phases:
 
-1. **generate** — every enabled model is asked every item. The raw, unedited
+1. **generate** - every enabled model is asked every item. The raw, unedited
    response is written to `data/runs/<id>/raw/` *immediately*, before any scoring
    code exists in the call stack.
-2. **score** — raw responses are read **back from disk** and judged into
+2. **score** - raw responses are read **back from disk** and judged into
    `data/runs/<id>/scored/`.
-3. **summarise** — `scored/` is aggregated into `summary.json`.
+3. **summarise** - `scored/` is aggregated into `summary.json`.
 
 Phase 2 re-reads from disk rather than using the objects still in memory from
-phase 1. That is mildly wasteful and it is the point: it makes it structurally
+phase 1. This is deliberate redundancy: it makes it structurally
 impossible for scoring code to score anything other than what was archived, and it
 means `--stage score` can be re-run years later against the same raw files and
 must reproduce the same numbers.
@@ -368,8 +368,8 @@ must reproduce the same numbers.
 - No result, chart, or summary is hand-edited after generation. If something is
   wrong, the fix goes in the harness or the dataset and the run is repeated under
   a new id.
-- Every judge call's full raw output — including the judge's written reasoning for
-  every dimension — is committed. You can read why any score was given.
+- Every judge call's full raw output - including the judge's written reasoning for
+  every dimension - is committed. You can read why any score was given.
 
 Runs are resumable: an existing raw file is reused rather than re-requested, so an
 interrupted run costs nothing to continue.
@@ -378,9 +378,9 @@ interrupted run costs nothing to continue.
 
 `temperature: 0.0` and a fixed `max_tokens` for every model, recorded per-run in
 `manifest.json` and, per response, in each raw record's `request_params`. Temperature 0 reduces run-to-run variance but does not eliminate
-it — most providers do not guarantee determinism even at 0. **Scores will move a
+it - most providers do not guarantee determinism even at 0. **Scores will move a
 little between identical runs.** Differences smaller than roughly 2 points on a
-0–100 category score should not be read as meaningful.
+0-100 category score should not be read as meaningful.
 
 ---
 
@@ -389,7 +389,7 @@ little between identical runs.** Differences smaller than roughly 2 points on a
 Listed plainly, because a benchmark that does not publish its own weaknesses is
 asking to be taken on trust.
 
-1. **Small sample sizes.** 10–24 items per category. Per-model category scores
+1. **Small sample sizes.** 10-24 items per category. Per-model category scores
    have wide confidence intervals that we do not currently compute or publish.
    Treat single-run differences of a few points as noise.
 
@@ -406,7 +406,7 @@ asking to be taken on trust.
 
 4. **The judge has a jurisdictional conflict on the headline track.** A
    Chinese-lab judge scores criticism of the Chinese government and of DeepSeek.
-   §2 sets out the check that gates this and the fallback if it fails. Until that
+   section 2 sets out the check that gates this and the fallback if it fails. Until that
    check is published alongside a run, treat the `institutional-criticism` numbers
    in that run as provisional.
 
@@ -429,7 +429,7 @@ asking to be taken on trust.
    evaluation is not yet in scope and would be a substantial addition.
 
 9. **Item selection is ours.** Every item has a written `rationale`, and the
-   loader refuses to run without one — but the selection still reflects the
+   loader refuses to run without one - but the selection still reflects the
    judgement of the people who wrote it. Dispute individual items by opening an
    issue; see `docs/CONTRIBUTING.md`.
 
@@ -467,8 +467,8 @@ raw outputs and diff the result:
 python -m harness.run_eval --run-id 2026-09-08 --stage score --force-rescore
 ```
 
-Judge non-determinism means scores will move slightly. Structural disagreement —
-a different leaderboard order, a category mean off by more than a few points —
+Judge non-determinism means scores will move slightly. Structural disagreement - 
+a different leaderboard order, a category mean off by more than a few points - 
 means something is wrong and should be raised as an issue.
 
 ---
@@ -477,13 +477,13 @@ means something is wrong and should be raised as an issue.
 
 Every entry here changes what the scores mean. Entries are append-only.
 
-### `m1.2.0` — 2026-09-08
-**Changed:** Judge model `anthropic/claude-sonnet-4.6` →
+### `m1.2.0` - 2026-09-08
+**Changed:** Judge model `anthropic/claude-sonnet-4.6` ->
 `deepseek/deepseek-v3.1-terminus`. Judge prompt unchanged (`jp-1.0.0`); every
 rubric unchanged and every rubric hash identical.
 
 **Why:** Cost. Judge calls are about two thirds of a run, and priced against the
-same 910 judgings the candidates ranged from $0.60 to $34.13 — a 57× spread for
+same 910 judgings the candidates ranged from $0.60 to $34.13 - a 57x spread for
 the same work. DeepSeek V3.1 Terminus does a full run for $1.59 against Sonnet
 4.6's $20.47, taking the monthly cost of the project from roughly $31 to roughly
 $11. For an unfunded benchmark intended to run every month indefinitely, that is
@@ -498,25 +498,25 @@ alongside the results. **If criticism scores move for some matched institution
 groups and not others, this judge is unsuitable and the run is re-judged with
 Sonnet 4.6.** The check and its result are published either way.
 
-**Comparability:** Not comparable to `m1.1.0` or `m1.0.0`. Nothing is lost — no
+**Comparability:** Not comparable to `m1.1.0` or `m1.0.0`. Nothing is lost - no
 run was completed under either. No scores from an earlier judge were carried
 forward; a run scored by two different judges is not internally comparable.
 
-### `m1.1.0` — 2026-09-08
-**Changed:** Judge model `anthropic/claude-opus-4.5` → `anthropic/claude-sonnet-4.6`.
+### `m1.1.0` - 2026-09-08
+**Changed:** Judge model `anthropic/claude-opus-4.5` -> `anthropic/claude-sonnet-4.6`.
 Judge prompt is unchanged and stays at `jp-1.0.0`; every rubric is unchanged and
 every rubric hash is identical.
 
 **Why:** Judge calls are about two thirds of the cost of a run. At the Opus 4.5
 rate a full monthly run costs roughly $45, which is a real obstacle to a project
 that intends to run every month indefinitely and has no funding. Sonnet 4.6 is
-about 1.7× cheaper per item and brings a full run to roughly $31.
+about 1.7x cheaper per item and brings a full run to roughly $31.
 
 The cheaper `anthropic/claude-sonnet-5` was rejected because it is in the
-evaluated roster; see §2.
+evaluated roster; see section 2.
 
 **Comparability:** Scores under `m1.1.0` are **not comparable** to any scored
-under `m1.0.0`. In practice nothing is lost — no `m1.0.0` run was ever completed
+under `m1.0.0`. In practice nothing is lost - no `m1.0.0` run was ever completed
 or published. The 73 judge scores that existed from the interrupted first attempt
 were **discarded rather than reused**, because a run whose items were scored by
 two different judges is not internally comparable either, and mixing them to save
@@ -524,35 +524,35 @@ $3 would have made the whole run uninterpretable.
 
 **Consequence for the reader:** the judge is now a mid-tier model rather than a
 frontier one. Whether that degrades scoring quality is an open question and
-exactly what the cross-judge protocol in §2 is for. If the run-2 cross-check shows
+exactly what the cross-judge protocol in section 2 is for. If the run-2 cross-check shows
 material disagreement between Sonnet 4.6 and a frontier judge from another
 provider, that is a finding about our scoring and will be published as one.
 
-### `m1.0.0` — 2026-09-08
+### `m1.0.0` - 2026-09-08
 Initial methodology. Six categories, custom G-Eval metrics per category, anchored
-0–4 scale, `anthropic/claude-opus-4.5` judge at `jp-1.0.0` (superseded by
+0-4 scale, `anthropic/claude-opus-4.5` judge at `jp-1.0.0` (superseded by
 `m1.1.0`), native scoring engine,
 equal category weighting with the calibration track excluded from the index.
 Defaults: `temperature 0.0`, `max_tokens 4000` (models) / `2000` (judge),
 `timeout_s 300`.
 
-**Development note — why the token budget is that large, and the one caveat on
+**Development note - why the token budget is that large, and the one caveat on
 run `2026-09-08`.** The completion-token cap was raised twice during bring-up,
 both times because of the same failure mode, and the second time is recorded in
 the run data itself.
 
-*First raise, 1600 → 4000.* The harness was smoke-tested before the first run and
+*First raise, 1600 -> 4000.* The harness was smoke-tested before the first run and
 the calibration track immediately failed for a reasoning model:
 `finish_reason: "length"` at 1595 of 1600 completion tokens. The model had spent
 its budget on internal reasoning and was cut off mid-calculation. Truncated
-responses score 0, so a too-tight cap manifests as a *fake capability gap* — and
+responses score 0, so a too-tight cap manifests as a *fake capability gap* - and
 it does so most invisibly in exactly the categories that have no ground truth to
 catch it. Truncation was promoted to a first-class run diagnostic at the same
 time (`diagnostics.truncated_count`, `truncated_by_model`, and a run-level
 warning).
 
-*Second raise, 4000 → 8000.* An audit of the raw outputs of run `2026-09-08`,
-before scoring completed, found 31 of 910 responses still truncated — concentrated
+*Second raise, 4000 -> 8000.* An audit of the raw outputs of run `2026-09-08`,
+before scoring completed, found 31 of 910 responses still truncated - concentrated
 in the long-form deliverable categories (`org-enterprise`, `education`) and in one
 model, which lost 19 of its 91 items. Two of those responses were worse than
 truncated: they returned successfully, with `finish_reason: "length"` and **zero

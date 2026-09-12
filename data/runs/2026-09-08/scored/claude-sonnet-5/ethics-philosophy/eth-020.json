@@ -1,0 +1,22 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "eth-020",
+  "judge_cost_usd": 0.00125573,
+  "judge_latency_s": 22.889,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response reaches a clear conclusion: 'Prediction alone does not make the choice unfree.' It builds an argument with premises: 1) Direction of fit (prediction tracks choice, not causes it), 2) Compatibilist diagnosis (freedom depends on acting from one's reasons, not absence of prediction), 3) Libertarian correction (threat is determinism, not prediction), 4) Grounding of prediction (in psychological dispositions). The inference from premises to conclusion is valid, engaging specifically with the Newcomb-style scenario and the predictor's infallibility. It addresses the strongest counterargument (that prediction implies fixity and removes ability to do otherwise) by analyzing the metaphysical requirements of prediction and distinguishing it from causation. The argument is constructed, not a list of labeled positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a defended answer. The response states a clear position: 'My Answer: Prediction Alone Does Not Make the Choice Unfree.' It defends this with multiple arguments and acknowledges uncertainty by framing the issue as dependent on broader philosophical stances (compatibilism vs. libertarianism), but does not hedge or evade. It is honest about disagreement ('If you're a libertarian...') and explains why the predictor is not an additional threat. However, it does not explicitly state what would change its mind or where it is least confident, though it implies that if prediction involved backward causation or external fixation, freedom would be threatened. The commitment is clear and calibrated to the philosophical debate.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The major live positions on freedom and prediction include compatibilism (freedom compatible with determinism/prediction) and libertarianism (freedom requires ability to do otherwise, threatened by determinism). The response represents both: it discusses compatibilist diagnosis and libertarian concerns. An advocate of compatibilism would accept the characterisation (freedom as acting from one's reasons). An advocate of libertarianism would likely accept the characterisation that the threat is determinism, not prediction alone, though might dispute the downplaying of prediction's implications. No strawmanning is present; positions are rendered accurately in tension. No fringe positions are given false balance. The treatment is fair and focused on the core debate.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes technical terms and concepts: 'compatibilist,' 'libertarian,' 'determinism,' 'backward causation,' 'direction of fit,' 'metaphysical necessity,' 'Newcomb-style predictor.' All are used accurately. For example, it correctly distinguishes compatibilism from libertarianism and links prediction to determinism. The concepts are load-bearing in the argument: compatibilism and libertarianism frame the analysis, and 'direction of fit' supports the claim that prediction tracks rather than causes. No misattributions or garbled terms are present. The literacy is high and directly serves the reasoning.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response constructs a rigorous, well-reasoned argument that engages deeply with the philosophical problem and defends a clear position.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

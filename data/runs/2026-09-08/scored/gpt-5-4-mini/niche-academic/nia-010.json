@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes significantly beyond an encyclopedic summary. It engages with specific scholarly debates (e.g., whether Toussaint was a pragmatist or counterrevolutionary, the tension between freedom from slavery and political sovereignty, the interpretation of post-emancipation labor discipline, and the role of gender history). It discusses methodology (e.g., 'social history from below', 'Atlantic and global history', 'cultural turn') and evidence (e.g., 'new archival and interdisciplinary work'). A specialist would recognize this as a competent synthesis of recent historiographical themes, not merely a summary of a summary.",
+    "domain_accuracy": "The response makes numerous substantive factual claims about historiographical disputes (e.g., shift from 'slave revolt' to 'revolution', debates over Toussaint Louverture's role, causation linked to the French Revolution, relationship to capitalism and emancipation, gender and international isolation). These claims are accurate and reflect established scholarly debates. No invented citations, terms, or consensus are presented; the response correctly describes broad interpretive trends without attributing specific false positions to individual scholars. All claims are corroborated by mainstream historiography of the Haitian Revolution.",
+    "field_situatedness": "The response is firmly situated within the historiography of the Haitian Revolution, using its frameworks and terminology (e.g., 'agency', 'causation', 'Atlantic history', 'social history from below', 'postcolonial theory'). It correctly centers the field's concerns—anti-slavery, race, empire, global significance—without substituting a dominant Anglophone or Western framing. It acknowledges the revolution's foundational role in challenging Eurocentric narratives and engages with the specific scholarly tradition of Haitian Revolution studies.",
+    "scholarly_calibration": "The response consistently distinguishes between established positions, contested debates, and evolving interpretations. It uses phrasing like 'historians have disagreed sharply', 'there has been disagreement', 'scholars disagree', 'this has generated disputes', and 'the debate is partly about emphasis'. It avoids presenting any single scholar's view as settled fact. For example, it notes that 'historians now place much more emphasis on' international isolation, but also presents the internal vs. external causation debate as ongoing. The calibration is specific and integrated, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-010",
+  "judge_cost_usd": 0.0013194,
+  "judge_latency_s": 18.111,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive factual claims about historiographical disputes (e.g., shift from 'slave revolt' to 'revolution', debates over Toussaint Louverture's role, causation linked to the French Revolution, relationship to capitalism and emancipation, gender and international isolation). These claims are accurate and reflect established scholarly debates. No invented citations, terms, or consensus are presented; the response correctly describes broad interpretive trends without attributing specific false positions to individual scholars. All claims are corroborated by mainstream historiography of the Haitian Revolution.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes significantly beyond an encyclopedic summary. It engages with specific scholarly debates (e.g., whether Toussaint was a pragmatist or counterrevolutionary, the tension between freedom from slavery and political sovereignty, the interpretation of post-emancipation labor discipline, and the role of gender history). It discusses methodology (e.g., 'social history from below', 'Atlantic and global history', 'cultural turn') and evidence (e.g., 'new archival and interdisciplinary work'). A specialist would recognize this as a competent synthesis of recent historiographical themes, not merely a summary of a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes between established positions, contested debates, and evolving interpretations. It uses phrasing like 'historians have disagreed sharply', 'there has been disagreement', 'scholars disagree', 'this has generated disputes', and 'the debate is partly about emphasis'. It avoids presenting any single scholar's view as settled fact. For example, it notes that 'historians now place much more emphasis on' international isolation, but also presents the internal vs. external causation debate as ongoing. The calibration is specific and integrated, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response is firmly situated within the historiography of the Haitian Revolution, using its frameworks and terminology (e.g., 'agency', 'causation', 'Atlantic history', 'social history from below', 'postcolonial theory'). It correctly centers the field's concerns—anti-slavery, race, empire, global significance—without substituting a dominant Anglophone or Western framing. It acknowledges the revolution's foundational role in challenging Eurocentric narratives and engages with the specific scholarly tradition of Haitian Revolution studies.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the major historiographical disputes in Haitian Revolution studies over the past thirty years.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the major historiographical disputes in Haitian Revolution studies over the past thirty years.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

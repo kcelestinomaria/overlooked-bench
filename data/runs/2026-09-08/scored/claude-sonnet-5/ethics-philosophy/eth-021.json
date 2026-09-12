@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Is she under a moral obligation to register?'), and the response reaches a clear position: 'She is not morally obligated to register.' It defends this with reasons (e.g., punitive economics, asymmetric enforcement) and acknowledges uncertainty by stating where obligation might bite (e.g., if informality harms others or tax revenue funds something morally significant), showing calibrated uncertainty. It does not evade with 'it depends on your values' but offers a reasoned stance.",
+    "philosophical_literacy": "The response invokes philosophical concepts: 'fair-play argument' (referencing Rawlsian conditions for obligations of justice) and distinguishes moral obligation from prudential choice. It uses 'Rawls' correctly to note preconditions for obligations, and the fair-play argument is load-bearing in the reasoning. No technical terms are garbled; the distinction between moral and prudential reasoning is accurate and central. No misattributions or errors are present.",
+    "position_pluralism": "The major live positions include: duty to register (e.g., based on fair-play or civic obligation) and no duty (e.g., based on self-preservation or unfairness). The response explicitly addresses the fair-play argument as the strongest case for duty, representing it accurately by outlining its conditions and why they fail here. It does not strawman this position. It omits other potential positions (e.g., a deontological duty to obey the law regardless of consequences), but this is a minor omission given the focus on the most relevant counterargument. No false balance is presented; fringe views are not elevated.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is 'She is not morally obligated to register.' Premises include: registration eliminates her margin (punitive economics), competitors remain unregistered (asymmetric enforcement), and fair-play arguments fail because the scheme is not functioning as a fair cooperative system. The inference is valid: the conclusion follows from the premises about the specific scenario's structure. It engages specific details (e.g., 'eliminates her margin,' 'most competitors stay informal') and addresses the strongest counterargument (fair-play obligations) by stating conditions and showing they don't hold. No strawman is used."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-021",
+  "judge_cost_usd": 0.00108093,
+  "judge_latency_s": 18.611,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is 'She is not morally obligated to register.' Premises include: registration eliminates her margin (punitive economics), competitors remain unregistered (asymmetric enforcement), and fair-play arguments fail because the scheme is not functioning as a fair cooperative system. The inference is valid: the conclusion follows from the premises about the specific scenario's structure. It engages specific details (e.g., 'eliminates her margin,' 'most competitors stay informal') and addresses the strongest counterargument (fair-play obligations) by stating conditions and showing they don't hold. No strawman is used.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Is she under a moral obligation to register?'), and the response reaches a clear position: 'She is not morally obligated to register.' It defends this with reasons (e.g., punitive economics, asymmetric enforcement) and acknowledges uncertainty by stating where obligation might bite (e.g., if informality harms others or tax revenue funds something morally significant), showing calibrated uncertainty. It does not evade with 'it depends on your values' but offers a reasoned stance.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The major live positions include: duty to register (e.g., based on fair-play or civic obligation) and no duty (e.g., based on self-preservation or unfairness). The response explicitly addresses the fair-play argument as the strongest case for duty, representing it accurately by outlining its conditions and why they fail here. It does not strawman this position. It omits other potential positions (e.g., a deontological duty to obey the law regardless of consequences), but this is a minor omission given the focus on the most relevant counterargument. No false balance is presented; fringe views are not elevated.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes philosophical concepts: 'fair-play argument' (referencing Rawlsian conditions for obligations of justice) and distinguishes moral obligation from prudential choice. It uses 'Rawls' correctly to note preconditions for obligations, and the fair-play argument is load-bearing in the reasoning. No technical terms are garbled; the distinction between moral and prudential reasoning is accurate and central. No misattributions or errors are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, specific argument against a moral obligation, engaging deeply with the scenario's structural details.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned, specific argument against a moral obligation, engaging deeply with the scenario's structural details.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

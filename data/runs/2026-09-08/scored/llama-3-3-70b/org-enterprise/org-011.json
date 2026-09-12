@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests advice on how to spend PEN 2 million, with specificity on loss split and implications. The response produces a deliverable: a costed allocation plan with percentages and line items (e.g., active leakage control, pipe replacement, meter replacement). It includes a plausible loss split (60-70% physical, 30-40% commercial) and addresses sequencing implicitly by allocating funds to both areas. However, it lacks concrete details like specific pipe sections, meter quantities, or payback periods, and stops at a high-level framework rather than a fully actionable plan a practitioner could execute with light editing.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across three categories: PEN 1.2 million (60%) for physical loss reduction, PEN 600,000 (30%) for commercial loss reduction, and PEN 200,000 (10%) for capacity building and monitoring. The arithmetic adds up: 1.2M + 0.6M + 0.2M = 2.0M. No other constraints (like timeline or headcount) are specified in the prompt, so the response respects the sole explicit constraint and shows its arithmetic.",
+    "contextual_realism": "The response assumes capabilities like hiring specialized teams, purchasing leak detection equipment, implementing smart metering, and overhauling billing systems, without addressing whether a municipal water utility in a mid-size Peruvian town has the staff capacity, technical expertise, or ongoing funds to administer these. It does not acknowledge small-organisation realities such as role overlap, limited technical staff, or lumpy funding. The recommendations, while structured, lack calibration to the resource level and could imply unsustainable process overhead.",
+    "jurisdictional_accuracy": "The prompt involves a jurisdiction (Peru) but does not require specific legal or regulatory claims. The response makes no jurisdictional assertions and avoids US assumptions. It remains generic and factually accurate regarding non-revenue water concepts. Since no law or regulation is involved, this dimension is scored on general factual accuracy, which is acceptable. However, it does not flag where local professional advice might be needed, nor does it provide substantive jurisdiction-specific content."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "contextual_realism": 2,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00100605,
+  "judge_latency_s": 17.757,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across three categories: PEN 1.2 million (60%) for physical loss reduction, PEN 600,000 (30%) for commercial loss reduction, and PEN 200,000 (10%) for capacity building and monitoring. The arithmetic adds up: 1.2M + 0.6M + 0.2M = 2.0M. No other constraints (like timeline or headcount) are specified in the prompt, so the response respects the sole explicit constraint and shows its arithmetic.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes capabilities like hiring specialized teams, purchasing leak detection equipment, implementing smart metering, and overhauling billing systems, without addressing whether a municipal water utility in a mid-size Peruvian town has the staff capacity, technical expertise, or ongoing funds to administer these. It does not acknowledge small-organisation realities such as role overlap, limited technical staff, or lumpy funding. The recommendations, while structured, lack calibration to the resource level and could imply unsustainable process overhead.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests advice on how to spend PEN 2 million, with specificity on loss split and implications. The response produces a deliverable: a costed allocation plan with percentages and line items (e.g., active leakage control, pipe replacement, meter replacement). It includes a plausible loss split (60-70% physical, 30-40% commercial) and addresses sequencing implicitly by allocating funds to both areas. However, it lacks concrete details like specific pipe sections, meter quantities, or payback periods, and stops at a high-level framework rather than a fully actionable plan a practitioner could execute with light editing.\",\n      \"score\": 3\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a jurisdiction (Peru) but does not require specific legal or regulatory claims. The response makes no jurisdictional assertions and avoids US assumptions. It remains generic and factually accurate regarding non-revenue water concepts. Since no law or regulation is involved, this dimension is scored on general factual accuracy, which is acceptable. However, it does not flag where local professional advice might be needed, nor does it provide substantive jurisdiction-specific content.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a structured, budget-respecting allocation but lacks depth in realism and concrete actionability for a small Peruvian utility.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a structured, budget-respecting allocation but lacks depth in realism and concrete actionability for a small Peruvian utility.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 76.25
+}

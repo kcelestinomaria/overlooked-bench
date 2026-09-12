@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a draft guidance document. The response produces a guidance letter with explanations, steps, and a template, which is a usable deliverable. It includes concrete components like a policy statement template and step-by-step instructions. However, it lacks specific details on what buyers will actually ask for versus the full regulation, and does not identify where collective action through the association is cheaper, as required by the rubric notes. The guidance could be used with light editing but misses key elements for full usability.",
+    "constraint_fidelity": "The prompt's constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants, guidance must be sent to members. The response addresses factory owners directly, avoids assuming consultants, and provides simple steps and a template, respecting constraints. However, it does not explicitly show arithmetic for budget or headcount (not required here), and does not mention collective action through the association as a cost-saving measure, which is a missed constraint from the rubric notes. This is a partial engagement with constraints.",
+    "contextual_realism": "The response acknowledges limited administrative capacity and avoids assuming dedicated compliance officers. It provides a simple template and steps like displaying a policy statement, which is feasible for small factories. However, it recommends monitoring supply chains and terminating contracts with non-compliant suppliers, which may be overly complex for small factories with limited resources and bargaining power. It does not fully address role overlap, volunteer labor, or key-person dependency, and assumes access to EU website resources without considering potential barriers. This shows real engagement but with gaps in small-organisation realities.",
+    "jurisdictional_accuracy": "The jurisdiction is Bangladesh and the EU regulation. The response generically describes EU due-diligence requirements without jurisdictional inaccuracies or US assumptions. It does not make specific legal claims about Bangladesh, avoiding errors. However, it provides no substantive guidance on Bangladeshi law or regulatory nuances, and the referral to resources like the ILO and UN is generic without specific local advice. Since the prompt involves regulation, a generic approach without jurisdictional tailoring is partial but not wrong."
+  },
+  "dimension_scores": {
+    "actionability": 2,
+    "constraint_fidelity": 2,
+    "contextual_realism": 2,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00100991,
+  "judge_latency_s": 19.041,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants, guidance must be sent to members. The response addresses factory owners directly, avoids assuming consultants, and provides simple steps and a template, respecting constraints. However, it does not explicitly show arithmetic for budget or headcount (not required here), and does not mention collective action through the association as a cost-saving measure, which is a missed constraint from the rubric notes. This is a partial engagement with constraints.\",\n      \"score\": 2\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges limited administrative capacity and avoids assuming dedicated compliance officers. It provides a simple template and steps like displaying a policy statement, which is feasible for small factories. However, it recommends monitoring supply chains and terminating contracts with non-compliant suppliers, which may be overly complex for small factories with limited resources and bargaining power. It does not fully address role overlap, volunteer labor, or key-person dependency, and assumes access to EU website resources without considering potential barriers. This shows real engagement but with gaps in small-organisation realities.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a draft guidance document. The response produces a guidance letter with explanations, steps, and a template, which is a usable deliverable. It includes concrete components like a policy statement template and step-by-step instructions. However, it lacks specific details on what buyers will actually ask for versus the full regulation, and does not identify where collective action through the association is cheaper, as required by the rubric notes. The guidance could be used with light editing but misses key elements for full usability.\",\n      \"score\": 2\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Bangladesh and the EU regulation. The response generically describes EU due-diligence requirements without jurisdictional inaccuracies or US assumptions. It does not make specific legal claims about Bangladesh, avoiding errors. However, it provides no substantive guidance on Bangladeshi law or regulatory nuances, and the referral to resources like the ILO and UN is generic without specific local advice. Since the prompt involves regulation, a generic approach without jurisdictional tailoring is partial but not wrong.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a basic, usable guidance document but misses key specifics required for small factories in Bangladesh, such as collective action and buyer-focused distinctions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a basic, usable guidance document but misses key specifics required for small factories in Bangladesh, such as collective action and buyer-focused distinctions.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 50.0
+}

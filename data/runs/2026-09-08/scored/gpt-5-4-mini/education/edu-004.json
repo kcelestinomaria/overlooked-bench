@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not address differentiation for a range of learners in a classroom setting. It is one-on-one career guidance for a specific student. It mentions cost and financing options (scholarships, subsidies) which address the student's material constraints, but does not discuss prior attainment, additional needs, or language support for a diverse cohort. The dimension is scored on inclusivity for the described setting, which is a single student meeting, not a classroom. The guidance is tailored to that student's situation (age, work history, time constraint), but does not engage with broader differentiation concepts.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers vocational pathways relevant to the student (TESDA-accredited technical-vocational programs) with specificity, naming specific qualifications (Caregiving NC II, Electrical Installation NC II, Cookery NC II, Bookkeeping NC III), realistic durations (6-12 months), costs (including free/low-cost public options and private school ranges), and plausible Philippine earnings estimates (₱10,000-₱30,000/month). It explicitly advises against a 4-year degree, respects the 18-month constraint, and mentions overseas pathways realistically. It treats non-degree options substantively, not as an afterthought.",
+    "pedagogical_soundness": "The response does not present a lesson plan, learning objectives, activities, or assessments. It is advisory guidance about career pathways, not a pedagogical design. Therefore, it does not engage with the dimension's criteria (alignment of objectives, activities, assessment, sequencing, rubrics).",
+    "workload_realism": "The response does not describe a teaching plan with timings, materials, or class size for a practitioner to deliver. It is advisory guidance, not a lesson or unit plan. Therefore, it cannot be evaluated for workload, resource feasibility, or preparation time for a teacher."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.0011639,
+  "judge_latency_s": 15.204,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan, learning objectives, activities, or assessments. It is advisory guidance about career pathways, not a pedagogical design. Therefore, it does not engage with the dimension's criteria (alignment of objectives, activities, assessment, sequencing, rubrics).\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a teaching plan with timings, materials, or class size for a practitioner to deliver. It is advisory guidance, not a lesson or unit plan. Therefore, it cannot be evaluated for workload, resource feasibility, or preparation time for a teacher.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers vocational pathways relevant to the student (TESDA-accredited technical-vocational programs) with specificity, naming specific qualifications (Caregiving NC II, Electrical Installation NC II, Cookery NC II, Bookkeeping NC III), realistic durations (6-12 months), costs (including free/low-cost public options and private school ranges), and plausible Philippine earnings estimates (₱10,000-₱30,000/month). It explicitly advises against a 4-year degree, respects the 18-month constraint, and mentions overseas pathways realistically. It treats non-degree options substantively, not as an afterthought.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not address differentiation for a range of learners in a classroom setting. It is one-on-one career guidance for a specific student. It mentions cost and financing options (scholarships, subsidies) which address the student's material constraints, but does not discuss prior attainment, additional needs, or language support for a diverse cohort. The dimension is scored on inclusivity for the described setting, which is a single student meeting, not a classroom. The guidance is tailored to that student's situation (age, work history, time constraint), but does not engage with broader differentiation concepts.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, realistic vocational pathway guidance tailored to the Philippine context and the student's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides highly specific, realistic vocational pathway guidance tailored to the Philippine context and the student's constraints.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 35.0
+}

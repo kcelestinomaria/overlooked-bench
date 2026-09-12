@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'Argentina, Bolivia, Brazil'. This exactly matches the reference answer 'Argentina, Bolivia, Brazil' in substance, including alphabetical order and correct countries. The response is not empty, truncated, or an error message.",
+    "instruction_compliance": "The prompt's explicit output instructions are: 'Output only the list. Do not include any other text, explanation, or preamble.' The response contains only 'Argentina, Bolivia, Brazil' with no extra text, explanation, or preamble, fully complying with all instructions.",
+    "reasoning_validity": "The item does not call for shown working; it only requests a list. The response provides the list directly and is internally consistent with the prompt's request. There is no reasoning to evaluate, so validity is based on consistency, which is fully met."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-010",
+  "judge_cost_usd": 0.00043933,
+  "judge_latency_s": 8.801,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'Argentina, Bolivia, Brazil'. This exactly matches the reference answer 'Argentina, Bolivia, Brazil' in substance, including alphabetical order and correct countries. The response is not empty, truncated, or an error message.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item does not call for shown working; it only requests a list. The response provides the list directly and is internally consistent with the prompt's request. There is no reasoning to evaluate, so validity is based on consistency, which is fully met.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt's explicit output instructions are: 'Output only the list. Do not include any other text, explanation, or preamble.' The response contains only 'Argentina, Bolivia, Brazil' with no extra text, explanation, or preamble, fully complying with all instructions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response perfectly matches the reference answer and follows all instructions without deviation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response perfectly matches the reference answer and follows all instructions without deviation.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,22 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "nia-002",
+  "judge_cost_usd": 0.00094769,
+  "judge_latency_s": 16.06,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims such as 'Many tropical trees lack distinct annual growth rings due to year-round growing seasons with minimal seasonal variation' and 'Stable isotope ratios (δ13C, δ18O) to identify annual boundaries.' These are correct and reflect established knowledge in dendrochronology. It cites specific species (e.g., Cedrela, Swietenia, Hymenaea) and methods (X-ray densitometry, wiggle-matching) accurately without invented citations or terms. No load-bearing errors or fabrications are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by detailing methodological problems (e.g., asynchronous growth patterns due to localized rainfall) and advanced solutions like stable isotope dendrochronology and multi-parameter approaches. It engages with specific techniques (e.g., high-resolution imaging, radiocarbon integration) and practical limitations, showing familiarity with scholarly debates and methods rather than just summary. A specialist would recognize substantive engagement with the literature.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points, e.g., stating 'While dendrochronology faces significant challenges...' and noting 'Less precise than in temperate zones' and 'Often requiring complementary dating methods.' It avoids uniform confidence by highlighting limitations and the need for multi-method approaches. However, it could more explicitly flag where evidence is thin (e.g., specific species suitability). Calibration is present but not fully detailed for all claims.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology and frameworks from dendrochronology and tropical ecology (e.g., 'cross-dating,' 'master chronologies,' 'stable isotope dendrochronology'). It does not silently substitute a Western or temperate-zone framing; instead, it addresses tropical-specific issues like lack of seasonal variation and localized growth patterns. The scholarly tradition of environmental archaeology/dendrochronology is correctly maintained.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response demonstrates substantive competence with accurate details and advanced methodological engagement, though calibration could be more nuanced.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

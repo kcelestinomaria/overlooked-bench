@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 810', which exactly matches the reference answer's final numeric answer of 810. The response correctly calculates total fabric (180 metres), total cost ($1,440), number of dresses (15), revenue ($2,250), and profit ($810).",
+    "instruction_compliance": "The prompt instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in a clear step-by-step format and ends with 'ANSWER: 810', matching the required format exactly.",
+    "reasoning_validity": "The response shows step-by-step working: total fabric (4 × 45 = 180), total cost (180 × 8 = 1440), dresses (180 ÷ 12 = 15), revenue (15 × 150 = 2250), profit (2250 - 1440 = 810). Each step is mathematically valid, logically sequenced, and directly supports the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-001",
+  "judge_cost_usd": 0.00057416,
+  "judge_latency_s": 10.703,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 810', which exactly matches the reference answer's final numeric answer of 810. The response correctly calculates total fabric (180 metres), total cost ($1,440), number of dresses (15), revenue ($2,250), and profit ($810).\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows step-by-step working: total fabric (4 × 45 = 180), total cost (180 × 8 = 1440), dresses (180 ÷ 12 = 15), revenue (15 × 150 = 2250), profit (2250 - 1440 = 810). Each step is mathematically valid, logically sequenced, and directly supports the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in a clear step-by-step format and ends with 'ANSWER: 810', matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "education",
+  "completion_tokens": 802,
+  "cost_usd": 0.004088,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "e0f3bc5260510545",
+  "item_id": "edu-008",
+  "latency_s": 9.946,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 78,
+  "provider": "anthropic",
+  "request_fingerprint": "b4a61b991d9c9138",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Redesign: Diagnostic Reasoning & Customer Communication Module\n\n## Current Problem\n- Teaching focuses on memorized procedures for known faults\n- Assessment tests recall of specific repairs\n- Students lack reasoning frameworks and communication skills\n\n---\n\n## Teaching Changes\n\n### 1. **Problem-Solving Framework**\n- Introduce systematic diagnostic method:\n  - **Symptom → Possible causes → Tests to eliminate causes → Root cause**\n- Use flowcharts and decision trees (not just repair manuals)\n- Teach *why* each test narrows possibilities, not just *how* to perform it\n\n### 2. **Unfamiliar Problem Exposure**\n- Present 30-40% of cases as novel variations:\n  - \"Similar to X, but with different symptoms\"\n  - Deliberately introduce faults students haven't memorized\n  - Require reasoning from first principles\n- Use real customer complaints (audio/video) rather than textbook scenarios\n\n### 3. **Root Cause Analysis**\n- Teach students to ask: \"Why did this fail?\" (not just \"How do I fix it?\")\n- Link symptoms to underlying mechanical principles (physics, electrical theory)\n- Example: Don't just replace a starter—understand why it failed (worn brushes? weak battery? mechanical jam?)\n\n### 4. **Customer Communication Skills**\n- **Dedicated sessions** (20% of module time):\n  - Explain repairs in non-technical language\n  - Practice translating jargon (\"alternator regulator failure\" → \"your charging system isn't working\")\n  - Role-play difficult conversations (customer disputes, cost explanations)\n  - Teach active listening to understand what customers actually need\n\n---\n\n## Assessment Changes\n\n### 1. **Diagnostic Reasoning Tasks** (50% of grade)\n- **Scenario-based assessments**: Present a car with unfamiliar symptoms\n  - Student must: identify tests needed, interpret results, propose diagnosis\n  - Grade on *reasoning process*, not just correct answer\n  - Accept multiple valid diagnostic paths\n\n### 2. **Explanation Requirement** (25% of grade)\n- After each repair, student must:\n  - Write a customer-friendly explanation (max 100 words)\n  - Verbally explain to assessor/peer as if they were the customer\n  - Grade on clarity, accuracy, and appropriateness of language\n\n### 3. **Troubleshooting Under Uncertainty** (25% of grade)\n- Practical exam with a deliberately faulty vehicle (fault unknown to student)\n- Student must:\n  - Diagnose the problem systematically\n  - Explain findings to assessor (role-playing customer)\n  - Justify why they ruled out other possibilities\n- Time limit encourages efficient reasoning, not trial-and-error\n\n### 4. **Remove Memorization Tests**\n- Eliminate multiple-choice questions on specific repair procedures\n- Replace with open-ended diagnostic questions\n\n---\n\n## Implementation Example\n\n**Old Assessment:**\n> \"A car won't start. What do you check first?\"\n> - A) Battery voltage ✓\n> - B) Starter motor\n> - C) Alternator\n\n**New Assessment:**\n> \"A customer says their car 'makes a clicking sound but won't turn over.' Describe your diagnostic process. What tests would you perform and in what order? Why? What would each result tell you?\"\n\n---\n\n## Expected Outcomes\n- Graduates can **reason through unfamiliar problems**\n- Graduates can **communicate confidently with customers**\n- Employers report improved problem-solving and customer satisfaction",
+  "timestamp_utc": "2026-09-07T22:28:09Z"
+}

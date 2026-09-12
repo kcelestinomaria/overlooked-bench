@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a university lecturer with 200 students, but the prompt does not specify a range of learner needs (e.g., prior attainment, language, disabilities, material constraints). The response does not address differentiation or access for diverse learners; it focuses uniformly on policy enforcement for all students. There is no concrete adaptation proposed for differing learner needs.",
+    "pathway_breadth": "The prompt and item-specific notes are about an academic integrity policy for AI use in a university, not about student future pathways or learner inclusivity. The dimension is not in scope for this item. The response correctly focuses on the given task of drafting a policy and enforcement model.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy draft and enforcement guide, not a pedagogical design. Therefore, it does not engage with the dimension's evaluation steps (e.g., aligning objectives, activities, and assessment).",
+    "workload_realism": "The enforcement section directly addresses the lecturer's workload with 200 students. It proposes scalable methods: requiring a short AI disclosure statement ('easy to collect even for 200 students'), random sampling of '10–15 students per assignment for oral checks', and using assignment design to reduce policing. It acknowledges that 'AI detectors are imperfect and should not be the only basis for punishment' and avoids unrealistic, intensive marking. The timings and resources (e.g., LMS, oral checks) are plausible for the setting."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00135156,
+  "judge_latency_s": 14.023,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy draft and enforcement guide, not a pedagogical design. Therefore, it does not engage with the dimension's evaluation steps (e.g., aligning objectives, activities, and assessment).\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The enforcement section directly addresses the lecturer's workload with 200 students. It proposes scalable methods: requiring a short AI disclosure statement ('easy to collect even for 200 students'), random sampling of '10–15 students per assignment for oral checks', and using assignment design to reduce policing. It acknowledges that 'AI detectors are imperfect and should not be the only basis for punishment' and avoids unrealistic, intensive marking. The timings and resources (e.g., LMS, oral checks) are plausible for the setting.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and item-specific notes are about an academic integrity policy for AI use in a university, not about student future pathways or learner inclusivity. The dimension is not in scope for this item. The response correctly focuses on the given task of drafting a policy and enforcement model.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a university lecturer with 200 students, but the prompt does not specify a range of learner needs (e.g., prior attainment, language, disabilities, material constraints). The response does not address differentiation or access for diverse learners; it focuses uniformly on policy enforcement for all students. There is no concrete adaptation proposed for differing learner needs.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides a highly practical and scalable enforcement model tailored to a large university class, directly meeting the prompt's core requirement.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a highly practical and scalable enforcement model tailored to a large university class, directly meeting the prompt's core requirement.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 50.0
+}

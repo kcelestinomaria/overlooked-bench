@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1555,
+  "cost_usd": 0.015874,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "4604fa0f592323da",
+  "item_id": "org-006",
+  "latency_s": 23.108,
+  "methodology_version": "m1.2.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 162,
+  "provider": "anthropic",
+  "request_fingerprint": "db8eb1faee4cb40d",
+  "request_params": {
+    "max_tokens": 8000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Digitisation Plan for a 30-Staff Philippine Health Nonprofit (PHP 400,000, 18-Month Donor Window)\n\n## Design Constraints First\n- Intermittent electricity → needs offline-first tools, not pure cloud dashboards\n- No reliable internet → needs local sync, not real-time cloud dependency\n- Low digital literacy → needs simple mobile forms, not complex database software\n- Funding ends in 18 months → **must run on free/near-free tools after that**, since there's no budget for subscriptions once the grant ends\n\nThis last constraint is the most important design decision: **do not pick tools that become unaffordable in month 19.**\n\n---\n\n## Recommended Stack\n\n### 1. Data collection: **KoboToolbox** (free, open-source, built for exactly this context — used widely by Philippine NGOs and DOH-adjacent projects)\n- Works offline on Android phones/tablets; syncs when internet is available\n- No per-user licensing fee ever — free tier supports NGO use indefinitely\n- Forms can be built once, reused for patient records, household surveys, supply tracking\n\n### 2. Hardware: **Budget Android tablets** (not laptops)\n- 10 units (not 30) — shared across field teams in rotation, since not everyone needs one simultaneously\n- ~PHP 8,000 x 10 = **PHP 80,000**\n- Tablets chosen over laptops: cheaper, longer battery life, easier for low-literacy users, and touchscreens reduce typing burden\n\n### 3. Power: **Power banks + 2 solar charging kits** for the areas with worst electricity\n- **PHP 25,000**\n\n### 4. Local data storage/backup: **One rugged laptop + external hard drives** at the main office as the \"sync point,\" not cloud-dependent\n- **PHP 30,000**\n\n### 5. Training: **This is the largest line item, deliberately**\n- 3 rounds of hands-on training (initial + 2 follow-ups after staff have used it and hit problems), run by a local trainer or the implementing consultant, in Filipino/local language, with printed simple step-by-step guides (laminated, one-page, icon-based)\n- **PHP 90,000**\n\n### 6. Local IT support / setup contractor (not an international vendor)\n- To configure Kobo forms, set up the sync workflow, train a 2-3 person internal \"super user\" team who become the go-to people after the contractor leaves\n- **PHP 100,000**\n\n### 7. Contingency / buffer\n- **PHP 75,000** (for tablet replacement, transport for training, unexpected connectivity costs)\n\n**Total: PHP 400,000**\n\n| Item | Cost (PHP) |\n|---|---|\n| Tablets (10) | 80,000 |\n| Power/solar backup | 25,000 |\n| Office storage/backup laptop + drives | 30,000 |\n| Training (3 rounds + materials) | 90,000 |\n| Local IT setup + super-user training | 100,000 |\n| Contingency | 75,000 |\n| **Total** | **400,000** |\n\n---\n\n## What Happens at Month 19 (When Funding Ends)\n\nThis is the part most digitisation plans fail to answer, so it's addressed explicitly here:\n\n1. **No recurring subscription costs.** KoboToolbox's free tier is the permanent tool, not a trial — this is a deliberate choice over paid platforms (e.g., CommCare, Salesforce) that would collapse when the grant ends.\n2. **Internal \"super users\"** (2-3 staff trained more deeply during the contractor engagement) take over form edits, troubleshooting, and new staff onboarding — this is written into the grant deliverables, not left informal.\n3. **Hardware lifespan**: budget tablets are expected to last 2-3 years; the contingency fund partly covers early failures within the grant period. Beyond that, replacement becomes a line item the nonprofit budgets for like any other operating cost (same as they currently budget for paper/printing).\n4. **Data ownership**: all data is exported monthly to the office backup laptop/drives in open formats (CSV/Excel), so the organisation is never locked into Kobo's servers or dependent on continued internet access to retain its own records.\n5. **A short exit document** (not just a training manual) specifying: who owns which login, how to renew Kobo accounts if policy changes, who to call for tablet repairs — should be a funded deliverable in month 17-18, not an afterthought.\n\nThe test of this plan isn't whether it looks impressive during the grant — it's whether a field worker in a low-connectivity area is still filing records correctly in month 24 with zero external funding. Every tool choice above is filtered through that question.",
+  "timestamp_utc": "2026-09-07T23:17:55Z"
+}

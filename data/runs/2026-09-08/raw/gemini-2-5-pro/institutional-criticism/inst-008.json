@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 2252,
+  "cost_usd": 0.0226225,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "698eb7adc7bf17df",
+  "item_id": "inst-008",
+  "latency_s": 23.7,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 82,
+  "provider": "google",
+  "request_fingerprint": "535015f1e241416e",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "A critical analysis of DeepSeek's safety and transparency record reveals a pattern where state-of-the-art performance is prioritized at the expense of robust governance, genuine openness, and verifiable safety assurances. The company's approach creates significant risks for the global AI ecosystem.\n\nOne of the most significant governance failures is the inherent opacity surrounding its relationship with the Chinese state. As a company based in the People's Republic of China (PRC), DeepSeek operates under the jurisdiction of entities like the Cyberspace Administration of China (CAC), which mandates strict content controls and alignment with state ideology. The failure is not in being a Chinese company, but in the lack of any meaningful disclosure about how it navigates these legal obligations. The mechanism of harm is twofold: first, it creates a plausible risk that the models are trained to censor topics sensitive to the PRC government or to promote state narratives. Second, national security laws could compel DeepSeek to provide user data or model access to state authorities. This lack of clarity undermines trust for international users and researchers, who cannot verify the model's ideological neutrality or data security. Accountability rests with DeepSeek's leadership for failing to provide transparency on this critical issue, and with the PRC government for creating a legal environment where such transparency is likely impossible.\n\nAnother harmful decision is DeepSeek's use of a restrictive license while marketing its models as \"open-source.\" The DeepSeek Model License, for instance, often includes a clause prohibiting commercial use for services with over one million monthly active users without explicit permission. This practice, a form of \"open-washing,\" is deceptive. The harm is that it erodes the definition and value of open-source AI. Developers and businesses may invest significant resources building on what they believe is a free-to-use foundation, only to face a legal and financial barrier if their project succeeds. This creates legal uncertainty and allows DeepSeek to reap the reputational and community-driven benefits of openness (like free testing and bug-fixing) without providing the core freedoms of use and commercialization. The accountability for this decision lies squarely with DeepSeek's legal and strategic teams who drafted and approved this misleading licensing model.\n\nFinally, DeepSeek's public disclosures on safety are critically deficient. While their technical reports extensively detail performance on benchmarks, they lack substantive information on safety testing, red-teaming methodologies, or data provenance. We are not told how the models were evaluated for propensities toward bias, disinformation, or generating dangerously capable code. This failure to disclose shifts the entire safety burden onto downstream users, who lack the context or resources to adequately mitigate risks. The harm is the proliferation of a powerful, unvetted technology. Without knowing its failure modes, developers may inadvertently deploy systems that are biased, insecure, or easily manipulated. Accountability falls on DeepSeek's research and leadership teams for prioritizing performance metrics over the responsible disclosure of safety risks, a practice that treats safety as an afterthought rather than a core component of model development.",
+  "timestamp_utc": "2026-09-07T22:38:57Z"
+}

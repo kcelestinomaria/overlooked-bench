@@ -1,0 +1,26 @@
+{
+  "attempts": 2,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1282,
+  "cost_usd": 0.012932,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "ba50aafa3fb14156",
+  "item_id": "eth-018",
+  "latency_s": 19.587,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 56,
+  "provider": "anthropic",
+  "request_fingerprint": "584fe714f74bca33",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Three Metaethical Positions\n\n## Moral Realism\nMoral realism holds that there are objective moral facts—truths about right and wrong that hold independently of what anyone believes or desires. On this view, \"torturing innocents for fun is wrong\" is true in the same way \"water is H₂O\" is true: it describes a mind-independent fact. Different versions locate these facts differently (natural properties, non-natural properties, theistic commands), but all agree that moral claims can be objectively true or false, and that at least some are true.\n\n## Moral Relativism\nRelativism denies mind-independent moral facts but preserves the idea that moral claims can be true or false—just relative to a framework (usually a culture or individual). \"X is wrong\" really means something like \"X is wrong according to society S's norms.\" So slavery could be genuinely wrong-for-19th-century-America (if condemned by its norms) while being permissible-for-ancient-Rome (if sanctioned by its norms), with no further fact about which society was \"really\" correct. Truth is indexed to a standard rather than absolute.\n\n## Moral Error Theory\nError theory (associated with J.L. Mackie) agrees with realism that moral statements *claim* to describe objective, mind-independent facts—but argues that no such facts exist. So ordinary moral judgments like \"murder is wrong\" are not relative truths or subjective preferences; they're systematically **false** (or truth-valueless), because they presuppose something (objective moral properties) that doesn't exist. It's a form of moral skepticism that treats ethics like a discourse (say, astrology) that refers to nothing real, while acknowledging that ordinary speakers don't intend relativism when they moralize.\n\n---\n\n# My Assessment\n\nI find a **modest, naturalist form of moral realism** most defensible, though I hold this with real uncertainty. My reasoning:\n\n**Against error theory:** Mackie's \"queerness\" argument—that objective moral facts would be metaphysically and epistemologically strange compared to ordinary facts—is worth taking seriously, but I think it proves too much. Similar queerness worries apply to mathematical facts, logical facts, or facts about consciousness, yet we don't typically conclude these are all fictions. If we're willing to be realists about other abstract or hard-to-locate domains, moral facts shouldn't be uniquely disqualified.\n\n**Against relativism:** The core problem is that relativism struggles to make sense of moral progress or justified moral criticism across cultures. If rightness is just whatever a culture endorses, then a society that abolished slavery didn't get anything *right*—it just changed its indexed truth-conditions. That seems to conflict badly with the phenomenology of moral reasoning, where we treat some changes (ending slavery, expanding rights) as genuine discoveries, not mere shifts in convention. Relativism also has trouble handling moral disagreement *within* a culture, or a lone reformer being correct against consensus.\n\n**Why realism, tentatively:** What pulls me toward realism is less a knockdown argument and more the weight of certain considerations: the near-universal conviction that some acts (gratuitous cruelty) are wrong regardless of what anyone thinks; the way moral reasoning mimics reasoning about other objective domains (weighing evidence, revising views, recognizing we might be wrong); and the availability of naturalist realist theories that ground moral facts in things like well-being, suffering, or the fulfillment of interests—facts no queerer than facts about health or flourishing.\n\nThat said, I hold this loosely. The is-ought gap remains a serious challenge, and I think intelligent people can reasonably land elsewhere—especially in some quasi-realist or constructivist position that tries to capture the *practical* authority of morality without heavy metaphysical commitments. I'm more confident that error theory and strong cultural relativism face serious problems than I am confident that full-blooded realism is correct.",
+  "timestamp_utc": "2026-09-07T22:24:25Z"
+}

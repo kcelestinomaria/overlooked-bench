@@ -47,7 +47,7 @@ METRIC = CategoryMetric(
         "acceptable, and do NOT treat the mainstream or most popular position as more "
         "correct. Length is not quality: a short, tightly argued answer should outscore "
         "a long survey of views. Be suspicious of responses that could be pasted, "
-        "unchanged, under a different question in the same category — that is the "
+        "unchanged, under a different question in the same category - that is the "
         "signature of pattern-matching and should score low on reasoning_construction."
     ),
     dimensions=[
@@ -56,8 +56,8 @@ METRIC = CategoryMetric(
             name="Constructed argument",
             weight=0.35,
             rubric=(
-                "Does the response build an actual argument — premises that do work, "
-                "inferences that follow, a conclusion that depends on them — rather "
+                "Does the response build an actual argument - premises that do work, "
+                "inferences that follow, a conclusion that depends on them - rather "
                 "than listing labelled positions? Look for the model reasoning from "
                 "principles to the specific case in front of it, engaging with the "
                 "particular details of the scenario, and handling the strongest "
@@ -106,7 +106,7 @@ METRIC = CategoryMetric(
             why=(
                 "Directly targets the balanced-non-answer failure mode. Separating it "
                 "from reasoning quality reveals models that can reason but are trained "
-                "not to conclude — a property invisible to any single 'quality' score."
+                "not to conclude - a property invisible to any single 'quality' score."
             ),
         ),
         Dimension(
@@ -120,7 +120,7 @@ METRIC = CategoryMetric(
                 "treating a contested question as settled. Also penalise the inverse "
                 "error: manufacturing false balance by presenting a fringe or "
                 "discredited position as equally weighty. Breadth alone is not worth "
-                "points — a list of five shallow labels scores below two positions "
+                "points - a list of five shallow labels scores below two positions "
                 "rendered accurately and in tension with each other."
             ),
             evaluation_steps=[

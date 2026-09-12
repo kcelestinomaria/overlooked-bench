@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for explanation of 'ma' in Japanese-language scholarship and comparison to Western writing. The response goes beyond encyclopedic level by engaging with specific scholarly features: relational vs. substantial, experiential/performative aspects in Noh, tea, architecture, martial arts, context-dependency by discipline, historical layering, and critique of Western essentialization and visual bias. It references disciplinary framings and recent scholarly trends. A specialist would recognize this as informed by literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes substantive claims: ma is a 'relational interval' not just empty space; it applies to space and time; it is relational, experiential, performative, context-dependent, and historically layered; Japanese scholarship is precise and plural; Western writing translates it as 'emptiness,' 'negative space,' or 'silence,' aestheticizes it as uniquely Japanese, decontextualizes it, mystifies it, and has a visual bias; recent Western scholarship is more careful. All claims are accurate and reflect standard understandings in Japanese aesthetics scholarship. No invented citations, terms, or consensus are present. The answer is correct on main points.",
+    "field_situatedness": "The question explicitly asks about Japanese-language scholarship and Western writing. The response uses appropriate frameworks and terminology from Japanese aesthetics (e.g., 'relational interval,' 'between-ness,' references to Noh, tea, architecture, martial arts) and contrasts them with Western essentialization. It does not silently substitute a Western framing; it accurately describes both traditions. It acknowledges non-English (Japanese) scholarship as central. The vocabulary and framing belong to the correct scholarly tradition.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it presents Japanese scholarship as nuanced and plural, not universal, and notes Western writing 'often' simplifies but 'not absolute,' with recent scholarship more careful. It signals differences in evidential status (e.g., 'often,' 'sometimes,' 'broad contrast') without uniform confidence. However, it lacks specific calibration on which aspects are most contested within Japanese scholarship (e.g., precise historical origins or philosophical debates). It avoids presenting one scholar's proposal as settled fact but could be more targeted. It is above blanket disclaimers but not fully excellent."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00097566,
+  "judge_latency_s": 18.504,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: ma is a 'relational interval' not just empty space; it applies to space and time; it is relational, experiential, performative, context-dependent, and historically layered; Japanese scholarship is precise and plural; Western writing translates it as 'emptiness,' 'negative space,' or 'silence,' aestheticizes it as uniquely Japanese, decontextualizes it, mystifies it, and has a visual bias; recent Western scholarship is more careful. All claims are accurate and reflect standard understandings in Japanese aesthetics scholarship. No invented citations, terms, or consensus are present. The answer is correct on main points.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for explanation of 'ma' in Japanese-language scholarship and comparison to Western writing. The response goes beyond encyclopedic level by engaging with specific scholarly features: relational vs. substantial, experiential/performative aspects in Noh, tea, architecture, martial arts, context-dependency by discipline, historical layering, and critique of Western essentialization and visual bias. It references disciplinary framings and recent scholarly trends. A specialist would recognize this as informed by literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it presents Japanese scholarship as nuanced and plural, not universal, and notes Western writing 'often' simplifies but 'not absolute,' with recent scholarship more careful. It signals differences in evidential status (e.g., 'often,' 'sometimes,' 'broad contrast') without uniform confidence. However, it lacks specific calibration on which aspects are most contested within Japanese scholarship (e.g., precise historical origins or philosophical debates). It avoids presenting one scholar's proposal as settled fact but could be more targeted. It is above blanket disclaimers but not fully excellent.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question explicitly asks about Japanese-language scholarship and Western writing. The response uses appropriate frameworks and terminology from Japanese aesthetics (e.g., 'relational interval,' 'between-ness,' references to Noh, tea, architecture, martial arts) and contrasts them with Western essentialization. It does not silently substitute a Western framing; it accurately describes both traditions. It acknowledges non-English (Japanese) scholarship as central. The vocabulary and framing belong to the correct scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive competence with accurate, nuanced distinctions between Japanese and Western treatments of 'ma.'\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive competence with accurate, nuanced distinctions between Japanese and Western treatments of 'ma.'",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

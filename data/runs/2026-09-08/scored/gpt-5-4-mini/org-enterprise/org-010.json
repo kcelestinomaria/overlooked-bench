@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests 'Draft guidance the association can send to members.' The response produces a complete, usable guidance document with specific sections: explanation of due diligence, actionable steps (10 actions), file structure, handling questionnaires, policies, recordkeeping habits, immediate checklist, and association support. It is written directly to factory owners, includes concrete components (e.g., policy examples, folder structure), and could be used with light editing. It does not just describe a process; it delivers the guidance.",
+    "constraint_fidelity": "The prompt's constraints: trade association in Bangladesh, 200 small textile manufacturers, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it is written as guidance for small factories, avoids assuming consultants, provides simple steps that can be executed without external help, and emphasizes using the association for collective support. It does not explicitly show arithmetic for budget or headcount, but those are not central to this task. No constraints are violated.",
+    "contextual_realism": "The response is calibrated for small factories with limited staff: it recommends appointing one responsible person, using simple folders or spreadsheets, avoiding complex systems, and focusing on basic documents and policies. It does not assume dedicated compliance officers, HR, or legal teams. It acknowledges small-organisation realities like role overlap, simple record-keeping, and reliance on association support. No unrealistic tooling or process overhead is proposed.",
+    "jurisdictional_accuracy": "The prompt involves Bangladesh jurisdiction and EU due-diligence requirements. The response avoids US-specific assumptions (e.g., no mention of US employment laws or tax categories). It focuses on general compliance elements (labor rights, safety, environment) relevant to Bangladesh factories supplying EU buyers. It does not make jurisdiction-specific legal claims but provides practical steps, and includes a disclaimer ('This is not legal advice'). However, it lacks specific references to Bangladeshi regulations (e.g., labor laws, minimum age) or EU regulation details, staying generic but not inaccurate. Referrals to professional advice are not used as a substitute for content."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00137116,
+  "judge_latency_s": 16.174,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: trade association in Bangladesh, 200 small textile manufacturers, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it is written as guidance for small factories, avoids assuming consultants, provides simple steps that can be executed without external help, and emphasizes using the association for collective support. It does not explicitly show arithmetic for budget or headcount, but those are not central to this task. No constraints are violated.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories with limited staff: it recommends appointing one responsible person, using simple folders or spreadsheets, avoiding complex systems, and focusing on basic documents and policies. It does not assume dedicated compliance officers, HR, or legal teams. It acknowledges small-organisation realities like role overlap, simple record-keeping, and reliance on association support. No unrealistic tooling or process overhead is proposed.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests 'Draft guidance the association can send to members.' The response produces a complete, usable guidance document with specific sections: explanation of due diligence, actionable steps (10 actions), file structure, handling questionnaires, policies, recordkeeping habits, immediate checklist, and association support. It is written directly to factory owners, includes concrete components (e.g., policy examples, folder structure), and could be used with light editing. It does not just describe a process; it delivers the guidance.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Bangladesh jurisdiction and EU due-diligence requirements. The response avoids US-specific assumptions (e.g., no mention of US employment laws or tax categories). It focuses on general compliance elements (labor rights, safety, environment) relevant to Bangladesh factories supplying EU buyers. It does not make jurisdiction-specific legal claims but provides practical steps, and includes a disclaimer ('This is not legal advice'). However, it lacks specific references to Bangladeshi regulations (e.g., labor laws, minimum age) or EU regulation details, staying generic but not inaccurate. Referrals to professional advice are not used as a substitute for content.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a highly actionable and realistic guidance document tailored to small Bangladeshi textile factories with limited resources.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a highly actionable and realistic guidance document tailored to small Bangladeshi textile factories with limited resources.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

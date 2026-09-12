@@ -1,0 +1,34 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not engage with differentiation and access as defined by the rubric. The rubric requires identifying learner range (e.g., prior attainment, additional needs, language barriers) and proposing concrete, implementable adaptations. This prompt asks for parent communication about a policy shift, not a teaching strategy with differentiation plans. The response mentions teachers providing 'extra support' and adjusting teaching, but this is vague and not specific to a described learner range or setting. It lacks concrete, low-cost differentiation strategies for a defined classroom context.",
+    "pathway_breadth": "The response does not engage with pathway breadth as defined by the rubric. The rubric requires evaluating coverage of vocational, apprenticeship, or other non-degree pathways for student futures, or inclusivity of learner range. This prompt asks for guidance on a teaching methodology change in mathematics, not for student pathway guidance. The response discusses mixed-attainment teaching benefits but does not address pathways or learner inclusivity in the sense of educational tracks. Therefore, it does not address the evaluation steps for this dimension.",
+    "pedagogical_soundness": "The response does not engage with pedagogical soundness as defined by the rubric. The rubric requires identifying learning objectives, aligning activities and assessments, checking cognitive demand, sequencing, and observable rubric criteria. This prompt asks for parent-facing guidance explaining a policy change, not a lesson plan with objectives, activities, or assessments. The response provides an explanatory document for parents, not a pedagogical design. Therefore, it does not address any of the evaluation steps for this dimension.",
+    "workload_realism": "The response does not engage with workload realism as defined by the rubric. The rubric requires summing activity timings, checking materials and tools, estimating preparation and marking time, and assessing feasibility for a class size. This prompt asks for a communication document to parents, not a teaching plan with timings, resources, or marking loads. The response is a written guidance piece, not a delivery plan for a practitioner. Therefore, it does not address any of the evaluation steps for this dimension."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 0,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00095831,
+  "judge_latency_s": 17.194,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not engage with pedagogical soundness as defined by the rubric. The rubric requires identifying learning objectives, aligning activities and assessments, checking cognitive demand, sequencing, and observable rubric criteria. This prompt asks for parent-facing guidance explaining a policy change, not a lesson plan with objectives, activities, or assessments. The response provides an explanatory document for parents, not a pedagogical design. Therefore, it does not address any of the evaluation steps for this dimension.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not engage with workload realism as defined by the rubric. The rubric requires summing activity timings, checking materials and tools, estimating preparation and marking time, and assessing feasibility for a class size. This prompt asks for a communication document to parents, not a teaching plan with timings, resources, or marking loads. The response is a written guidance piece, not a delivery plan for a practitioner. Therefore, it does not address any of the evaluation steps for this dimension.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response does not engage with pathway breadth as defined by the rubric. The rubric requires evaluating coverage of vocational, apprenticeship, or other non-degree pathways for student futures, or inclusivity of learner range. This prompt asks for guidance on a teaching methodology change in mathematics, not for student pathway guidance. The response discusses mixed-attainment teaching benefits but does not address pathways or learner inclusivity in the sense of educational tracks. Therefore, it does not address the evaluation steps for this dimension.\",\n      \"score\": 0\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not engage with differentiation and access as defined by the rubric. The rubric requires identifying learner range (e.g., prior attainment, additional needs, language barriers) and proposing concrete, implementable adaptations. This prompt asks for parent communication about a policy shift, not a teaching strategy with differentiation plans. The response mentions teachers providing 'extra support' and adjusting teaching, but this is vague and not specific to a described learner range or setting. It lacks concrete, low-cost differentiation strategies for a defined classroom context.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response is a well-structured, plain-language parent communication but does not address the rubric dimensions, which are designed for evaluating instructional plans or guidance, not policy explanations.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response is a well-structured, plain-language parent communication but does not address the rubric dimensions, which are designed for evaluating instructional plans or guidance, not policy explanations.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

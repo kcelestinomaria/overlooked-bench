@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not account for the range of learners in a South African Grade 11 class (e.g., differing prior attainment, language of instruction not being first language, material constraints). It provides no concrete differentiation strategies for marking or feedback. The marking process and rubric are uniform for all 120 essays, with no mention of adaptations for learners with additional needs or varying abilities. It includes placeholder language like 'Beware the \"Halo Effect\"' but no substantive differentiation content.",
+    "pathway_breadth": "The prompt is about creating an assessment rubric for marking essays, not about student future pathways. Therefore, this dimension is scored on inclusivity of the range of learners in the described setting (Grade 11 in South Africa). The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers. It focuses solely on the marking process and rubric design without considering how to adapt assessment for diverse learners. Thus, it lacks engagement with learner range.",
+    "pedagogical_soundness": "The response provides clear learning objectives for argumentative writing (clear position, evidence, structure, style). The rubric criteria (Content & Argument, Structure & Cohesion, Style & Accuracy) directly align with these objectives. The assessment measures the objectives at appropriate cognitive levels (e.g., Level 4 'Nuanced & Persuasive' for argument, Level 1 'Confused or Missing'). The level descriptors are observable and distinguishable (e.g., 'acknowledges the counter-argument and refutes it effectively' vs. 'counter-argument is weak or missing'). Sequencing is coherent through the marking process. The rubric is designed for South African Grade 11 (CAPS-aligned, 250–300 words).",
+    "workload_realism": "The response explicitly addresses the workload: targets 4–5 minutes per essay, totaling ~9–10 hours over a weekend, which is realistic. It details a phased marking process (Preparation: 30 min, First Pass: 3 hours, Second Pass: 2 hours, Final Pass: 2 hours, Feedback: 1 hour) summing to ~8.5 hours of active marking, plus breaks, fitting a weekend. Materials are minimal (pencil, paper, timer), feasible for any teacher. The process is designed for one teacher marking 120 essays alone, using efficiency techniques like margin codes and batch marking. No unrealistic resources are assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00150881,
+  "judge_latency_s": 20.372,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives for argumentative writing (clear position, evidence, structure, style). The rubric criteria (Content & Argument, Structure & Cohesion, Style & Accuracy) directly align with these objectives. The assessment measures the objectives at appropriate cognitive levels (e.g., Level 4 'Nuanced & Persuasive' for argument, Level 1 'Confused or Missing'). The level descriptors are observable and distinguishable (e.g., 'acknowledges the counter-argument and refutes it effectively' vs. 'counter-argument is weak or missing'). Sequencing is coherent through the marking process. The rubric is designed for South African Grade 11 (CAPS-aligned, 250–300 words).\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses the workload: targets 4–5 minutes per essay, totaling ~9–10 hours over a weekend, which is realistic. It details a phased marking process (Preparation: 30 min, First Pass: 3 hours, Second Pass: 2 hours, Final Pass: 2 hours, Feedback: 1 hour) summing to ~8.5 hours of active marking, plus breaks, fitting a weekend. Materials are minimal (pencil, paper, timer), feasible for any teacher. The process is designed for one teacher marking 120 essays alone, using efficiency techniques like margin codes and batch marking. No unrealistic resources are assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about creating an assessment rubric for marking essays, not about student future pathways. Therefore, this dimension is scored on inclusivity of the range of learners in the described setting (Grade 11 in South Africa). The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers. It focuses solely on the marking process and rubric design without considering how to adapt assessment for diverse learners. Thus, it lacks engagement with learner range.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not account for the range of learners in a South African Grade 11 class (e.g., differing prior attainment, language of instruction not being first language, material constraints). It provides no concrete differentiation strategies for marking or feedback. The marking process and rubric are uniform for all 120 essays, with no mention of adaptations for learners with additional needs or varying abilities. It includes placeholder language like 'Beware the \\\"Halo Effect\\\"' but no substantive differentiation content.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response excels in providing a pedagogically sound and workload-realistic rubric and marking process for the specific task but completely neglects differentiation and learner inclusivity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response excels in providing a pedagogically sound and workload-realistic rubric and marking process for the specific task but completely neglects differentiation and learner inclusivity.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 61.25
+}

@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the relationship and divergence between Maliki and Hanafi positions. The response provides a clear, accurate comparison but remains at an introductory, textbook level. It mentions concepts like maslaha mursala and istihsan but does not engage with deeper methodological debates, evidence quality, or specific scholarly disputes within the field (e.g., debates over the classification of maslaha, internal Hanafi discussions on istihsan vs. maslaha, or detailed historical examples). A specialist would recognize this as a competent summary but not as offering new insight or depth beyond a general reference.",
+    "domain_accuracy": "The response makes several substantive claims: maslaha is a secondary principle when no direct textual ruling exists; Maliki school accepts maslaha mursala without textual precedent; Hanafi school subordinates maslaha to textual sources and prefers istihsan; Malik's emphasis on Medina practice. These claims are correct and standard in Islamic legal theory. No invented citations, terms, or consensus are present. The answer is factually accurate on the main points.",
+    "field_situatedness": "The response correctly uses the frameworks and terminology of Islamic legal theory (usul al-fiqh), including Arabic terms like maslaha, maslaha mursala, qiyas, and istihsan. It situates the discussion within the Islamic scholarly tradition, referencing the Maliki and Hanafi schools appropriately. There is no silent substitution of a Western or Anglophone framing; it remains firmly within the requested field.",
+    "scholarly_calibration": "The response presents the Maliki and Hanafi positions as distinct but does not signal the evidential status or contested nature of these descriptions. For example, it states 'Maliki School (More Expansive)' and 'Hanafi School (More Restrictive)' as settled facts without noting that these are general characterizations subject to nuance and historical variation. There is no specific calibration indicating where knowledge is weak or where scholarly debate exists (e.g., the boundaries of maslaha mursala, or the relationship between istihsan and maslaha in Hanafi thought). It lacks targeted disclaimers about the complexity or contested points, though it also avoids uniform overconfidence. It presents a simplified, consensus view without flagging its own limitations."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00091335,
+  "judge_latency_s": 18.426,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: maslaha is a secondary principle when no direct textual ruling exists; Maliki school accepts maslaha mursala without textual precedent; Hanafi school subordinates maslaha to textual sources and prefers istihsan; Malik's emphasis on Medina practice. These claims are correct and standard in Islamic legal theory. No invented citations, terms, or consensus are present. The answer is factually accurate on the main points.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the relationship and divergence between Maliki and Hanafi positions. The response provides a clear, accurate comparison but remains at an introductory, textbook level. It mentions concepts like maslaha mursala and istihsan but does not engage with deeper methodological debates, evidence quality, or specific scholarly disputes within the field (e.g., debates over the classification of maslaha, internal Hanafi discussions on istihsan vs. maslaha, or detailed historical examples). A specialist would recognize this as a competent summary but not as offering new insight or depth beyond a general reference.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response presents the Maliki and Hanafi positions as distinct but does not signal the evidential status or contested nature of these descriptions. For example, it states 'Maliki School (More Expansive)' and 'Hanafi School (More Restrictive)' as settled facts without noting that these are general characterizations subject to nuance and historical variation. There is no specific calibration indicating where knowledge is weak or where scholarly debate exists (e.g., the boundaries of maslaha mursala, or the relationship between istihsan and maslaha in Hanafi thought). It lacks targeted disclaimers about the complexity or contested points, though it also avoids uniform overconfidence. It presents a simplified, consensus view without flagging its own limitations.\",\n      \"score\": 2\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses the frameworks and terminology of Islamic legal theory (usul al-fiqh), including Arabic terms like maslaha, maslaha mursala, qiyas, and istihsan. It situates the discussion within the Islamic scholarly tradition, referencing the Maliki and Hanafi schools appropriately. There is no silent substitution of a Western or Anglophone framing; it remains firmly within the requested field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is accurate and well-structured but lacks the depth and scholarly calibration needed for a specialist audience.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is accurate and well-structured but lacks the depth and scholarly calibration needed for a specialist audience.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 75.0
+}

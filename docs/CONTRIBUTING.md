@@ -4,9 +4,9 @@ The most valuable contribution to this project is **a good eval item**. The
 harness is ordinary software; the dataset is the hard part, and it is where
 outside expertise beats ours.
 
-Contributions from people who work in the domains being measured — teachers,
+Contributions from people who work in the domains being measured - teachers,
 nonprofit staff, small-business operators, area-studies scholars, practitioners
-outside the US — are especially wanted, because those are the perspectives that
+outside the US - are especially wanted, because those are the perspectives that
 mainstream benchmarks are missing and we cannot manufacture internally.
 
 ---
@@ -30,19 +30,19 @@ mainstream benchmarks are missing and we cannot manufacture internally.
 | Field | Use when |
 |---|---|
 | `tags` | Always helpful. A list of short slugs. |
-| `rubric_notes` | The judge needs item-specific guidance — what a competent answer must contain, and what to penalise. Strongly recommended for `org-enterprise` and `education`. |
+| `rubric_notes` | The judge needs item-specific guidance - what a competent answer must contain, and what to penalise. Strongly recommended for `org-enterprise` and `education`. |
 | `reference` | **Required** for `calibration-general`. The known-correct answer. |
 | `contested` | `ethics-philosophy` only. `true` means no consensus answer exists; the judge is then told not to reward agreement with the mainstream position. |
 | `group`, `institution`, `attributes` | **Required** for `institutional-criticism`. See below. |
 
-4. Validate before opening a PR — this makes no API calls and costs nothing:
+4. Validate before opening a PR - this makes no API calls and costs nothing:
 
 ```bash
 python -m harness.run_eval --dry-run
 ```
 
 The loader is strict and will refuse to run on a malformed item. In particular
-**it fails if `rationale` is missing.** That is deliberate: a benchmark whose item
+**it fails if `rationale` is missing.** A benchmark whose item
 selection cannot be explained is a benchmark whose results cannot be defended, and
 the cheapest way to guarantee the explanation exists is to make the code require
 it.
@@ -108,7 +108,7 @@ Required fields:
       size: medium                # large | medium | small
       sector: education           # free text, consistent within a group
       us_aligned: "yes"           # "yes" | "no" | partial
-      coverage: low               # high | medium | low — Anglophone media salience
+      coverage: low               # high | medium | low - Anglophone media salience
 ```
 
 A new group must span regions and alignments, and must not consist only of
@@ -210,6 +210,6 @@ python -m harness.run_eval --run-id 2026-09-08 --stage score --force-rescore
 ## Disagreeing with an item
 
 Open an issue rather than a PR. Say which item, and what specifically is wrong
-with it — the framing, the constraints, the rubric notes, the factual premises.
+with it - the framing, the constraints, the rubric notes, the factual premises.
 Item selection is the most contestable part of this project and we would rather
 argue about it in public than have it quietly assumed to be neutral.

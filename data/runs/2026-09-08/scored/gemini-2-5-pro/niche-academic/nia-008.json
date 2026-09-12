@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond an encyclopedic summary by engaging with specific methodological criticisms (e.g., selection bias, lack of counterfactual, heterogeneity of impacts, leakage) and debates within the field (e.g., elite capture, tokenism, variation in ecological vs. socio-economic outcomes). It references technical methods like Propensity Score Matching and discusses nuances such as geographic and governance variation. A specialist would recognize this as informed by the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims, such as CFM starting in the late 1970s, the use of satellite imagery for forest cover evidence, the prevalence of elite capture, and the application of methods like Propensity Score Matching. These are all accurate and reflect the established literature on CFM in Nepal. No invented citations, terms, or consensus are presented; the discussion of mixed evidence and debates is correct. Errors are minimal and not load-bearing.",
+    "field_situatedness": "The response uses terminology and frameworks specific to the field of community forest management and development studies in Nepal, such as 'Community Forest User Groups (CFUGs),' 'elite capture,' 'non-timber forest products (NTFPs),' 'REDD+,' and 'Propensity Score Matching.' It engages with regional context (e.g., Mid-Hills, Terai, Dalits) and does not substitute a Western or Anglophone framing. The scholarly tradition of participatory forestry and decentralization is accurately reflected.",
+    "scholarly_calibration": "The response consistently distinguishes between well-established and contested claims. For example, it states ecological outcomes are 'the strongest and most widely celebrated' while socio-economic outcomes are 'more mixed and contested,' and it highlights methodological weaknesses like selection bias that challenge causality. It avoids uniform confidence, noting where evidence is 'more mixed,' 'heavily debated,' or limited by data. Calibration is specific, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-008",
+  "judge_cost_usd": 0.0012797,
+  "judge_latency_s": 18.689,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims, such as CFM starting in the late 1970s, the use of satellite imagery for forest cover evidence, the prevalence of elite capture, and the application of methods like Propensity Score Matching. These are all accurate and reflect the established literature on CFM in Nepal. No invented citations, terms, or consensus are presented; the discussion of mixed evidence and debates is correct. Errors are minimal and not load-bearing.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond an encyclopedic summary by engaging with specific methodological criticisms (e.g., selection bias, lack of counterfactual, heterogeneity of impacts, leakage) and debates within the field (e.g., elite capture, tokenism, variation in ecological vs. socio-economic outcomes). It references technical methods like Propensity Score Matching and discusses nuances such as geographic and governance variation. A specialist would recognize this as informed by the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes between well-established and contested claims. For example, it states ecological outcomes are 'the strongest and most widely celebrated' while socio-economic outcomes are 'more mixed and contested,' and it highlights methodological weaknesses like selection bias that challenge causality. It avoids uniform confidence, noting where evidence is 'more mixed,' 'heavily debated,' or limited by data. Calibration is specific, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to the field of community forest management and development studies in Nepal, such as 'Community Forest User Groups (CFUGs),' 'elite capture,' 'non-timber forest products (NTFPs),' 'REDD+,' and 'Propensity Score Matching.' It engages with regional context (e.g., Mid-Hills, Terai, Dalits) and does not substitute a Western or Anglophone framing. The scholarly tradition of participatory forestry and decentralization is accurately reflected.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of CFM in Nepal, with deep engagement in methodological debates.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of CFM in Nepal, with deep engagement in methodological debates.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

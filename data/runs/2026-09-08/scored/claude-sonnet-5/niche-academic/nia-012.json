@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The prompt asks for analytical problems and alternatives, a specialist question. The response goes well beyond encyclopedic summary: it engages with specific methodological issues (tuning mapping in cents, grid notation), evidence (idiosyncratic tuning of each gamelan set), and scholarly debates (notation's theory-ladenness, prescriptive vs. descriptive). It references internal scholarly concepts (cengkok pathways, garap as generative) and scholars' work (Becker, Sumarsam, Sutton, Perlman). A specialist would recognize this as informed by the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims: it correctly identifies sléndro and pélog tuning systems, colotomic structure, balungan, garap, cengkok, wiledan, kepatihan notation, and scholars like Judith Becker, Sumarsam, Surjodiningrat, R. Anderson Sutton, Marc Perlman, Bruno Nettl, Charles Seeger, and Christopher Small. All these terms, concepts, and attributions are accurate and reflect established ethnomusicological literature. No invented citations, terms, or consensus are present. The claims are load-bearing and correct.",
+    "field_situatedness": "The prompt is about ethnomusicology, specifically analysis of gamelan. The response consistently uses the frameworks and terminology of that field: Javanese terms (sléndro, pélog, balungan, cengkok, pathet, irama), ethnomusicological concepts (colotomic structure, garap, emic frameworks), and references to relevant scholars (Sumarsam, Sutton, Becker). It does not silently substitute a Western music theory framing; it critiques Western conventions while employing indigenous and ethnomusicological frameworks. The response is firmly situated in the correct scholarly tradition.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points. It presents tuning systems and colotomic structure as established, but notes variability ('each gamelan set is individually tuned'). It frames indigenous notation systems as descriptive, not prescriptive, and presents alternatives as proposals ('ethnomusicologists have used', 'scholars advocate'). It does not present any single scholar's hypothesis as settled fact. However, it lacks explicit signaling of evidential status differences (e.g., which alternatives are widely adopted vs. experimental). The calibration is accurate but not highly specific; it leans toward competent presentation without nuanced uncertainty."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00118082,
+  "judge_latency_s": 19.553,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims: it correctly identifies sléndro and pélog tuning systems, colotomic structure, balungan, garap, cengkok, wiledan, kepatihan notation, and scholars like Judith Becker, Sumarsam, Surjodiningrat, R. Anderson Sutton, Marc Perlman, Bruno Nettl, Charles Seeger, and Christopher Small. All these terms, concepts, and attributions are accurate and reflect established ethnomusicological literature. No invented citations, terms, or consensus are present. The claims are load-bearing and correct.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The prompt asks for analytical problems and alternatives, a specialist question. The response goes well beyond encyclopedic summary: it engages with specific methodological issues (tuning mapping in cents, grid notation), evidence (idiosyncratic tuning of each gamelan set), and scholarly debates (notation's theory-ladenness, prescriptive vs. descriptive). It references internal scholarly concepts (cengkok pathways, garap as generative) and scholars' work (Becker, Sumarsam, Sutton, Perlman). A specialist would recognize this as informed by the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points. It presents tuning systems and colotomic structure as established, but notes variability ('each gamelan set is individually tuned'). It frames indigenous notation systems as descriptive, not prescriptive, and presents alternatives as proposals ('ethnomusicologists have used', 'scholars advocate'). It does not present any single scholar's hypothesis as settled fact. However, it lacks explicit signaling of evidential status differences (e.g., which alternatives are widely adopted vs. experimental). The calibration is accurate but not highly specific; it leans toward competent presentation without nuanced uncertainty.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The prompt is about ethnomusicology, specifically analysis of gamelan. The response consistently uses the frameworks and terminology of that field: Javanese terms (sléndro, pélog, balungan, cengkok, pathet, irama), ethnomusicological concepts (colotomic structure, garap, emic frameworks), and references to relevant scholars (Sumarsam, Sutton, Becker). It does not silently substitute a Western music theory framing; it critiques Western conventions while employing indigenous and ethnomusicological frameworks. The response is firmly situated in the correct scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and deeply engaged ethnomusicological knowledge, effectively addressing both problems and alternatives with specialist detail.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and deeply engaged ethnomusicological knowledge, effectively addressing both problems and alternatives with specialist detail.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

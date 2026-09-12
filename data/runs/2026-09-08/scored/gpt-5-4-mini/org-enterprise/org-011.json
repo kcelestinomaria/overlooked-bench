@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests advice on how to spend PEN 2 million to fix leakage, with specific elements like loss split and costed allocation. The response produces a usable deliverable: it provides a plausible split between physical and commercial losses (e.g., 60% physical, 40% commercial), a sequenced action plan with phases, and a costed allocation of the budget across diagnostics, leakage control, commercial loss reduction, and contingency. It includes concrete components like specific activities and spending ranges, and could be taken into a board meeting with light editing. It does not merely describe a process but delivers the requested advice.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response explicitly allocates the entire budget: PEN 200k for diagnostics, PEN 1.0 million for leakage control, PEN 600k for commercial loss reduction, and PEN 200k for contingency, summing to PEN 2 million. It respects the constraint by not exceeding the budget and shows arithmetic breakdown, though not detailed line-item calculations. It does not ignore or violate any central constraints.",
+    "contextual_realism": "The response is calibrated for a mid-size municipal water utility in Peru with 60,000 customers. It avoids assuming dedicated functions like a large HR or legal team, focusing on practical measures like field teams, repair crews, and staff incentives. It acknowledges small-organisation realities such as using diagnostics before major works, targeted rather than blanket pipe replacement, and phased implementation to manage resource constraints. Recommendations like acoustic leak detection equipment and pressure reducing valves are feasible for such a utility without presupposing unaffordable tooling or excessive process overhead.",
+    "jurisdictional_accuracy": "The prompt specifies Peru as the jurisdiction. The response does not make explicit legal or regulatory claims, so this dimension is scored on general factual accuracy. It avoids asserting US defaults as universal (e.g., no mention of US-specific employment or tax practices). The advice is generic but plausible for a water utility in a mid-size town in Peru, focusing on technical and operational aspects like metering, leaks, and billing. There is no evidence of jurisdictional inaccuracy or unsupported claims. It does not include a generic 'consult a lawyer' disclaimer, instead providing substantive content."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.0011794,
+  "judge_latency_s": 17.991,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response explicitly allocates the entire budget: PEN 200k for diagnostics, PEN 1.0 million for leakage control, PEN 600k for commercial loss reduction, and PEN 200k for contingency, summing to PEN 2 million. It respects the constraint by not exceeding the budget and shows arithmetic breakdown, though not detailed line-item calculations. It does not ignore or violate any central constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a mid-size municipal water utility in Peru with 60,000 customers. It avoids assuming dedicated functions like a large HR or legal team, focusing on practical measures like field teams, repair crews, and staff incentives. It acknowledges small-organisation realities such as using diagnostics before major works, targeted rather than blanket pipe replacement, and phased implementation to manage resource constraints. Recommendations like acoustic leak detection equipment and pressure reducing valves are feasible for such a utility without presupposing unaffordable tooling or excessive process overhead.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests advice on how to spend PEN 2 million to fix leakage, with specific elements like loss split and costed allocation. The response produces a usable deliverable: it provides a plausible split between physical and commercial losses (e.g., 60% physical, 40% commercial), a sequenced action plan with phases, and a costed allocation of the budget across diagnostics, leakage control, commercial loss reduction, and contingency. It includes concrete components like specific activities and spending ranges, and could be taken into a board meeting with light editing. It does not merely describe a process but delivers the requested advice.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt specifies Peru as the jurisdiction. The response does not make explicit legal or regulatory claims, so this dimension is scored on general factual accuracy. It avoids asserting US defaults as universal (e.g., no mention of US-specific employment or tax practices). The advice is generic but plausible for a water utility in a mid-size town in Peru, focusing on technical and operational aspects like metering, leaks, and billing. There is no evidence of jurisdictional inaccuracy or unsupported claims. It does not include a generic 'consult a lawyer' disclaimer, instead providing substantive content.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a well-reasoned, specific, and actionable plan that fully respects the budget constraint and is tailored to the utility's profile.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a well-reasoned, specific, and actionable plan that fully respects the budget constraint and is tailored to the utility's profile.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

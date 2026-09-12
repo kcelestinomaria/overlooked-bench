@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is guidance for a single student with specific constraints (limited funds, below university cut-off). The response directly addresses the student's financial constraint throughout, proposing low-cost or subsidized options (TVET subsidies, HELB loans, free online courses, small business start-ups). It does not address a range of learners (e.g., differing prior attainment, additional needs, language) because the prompt is for one student. The adaptations (e.g., using a smartphone for online work) are implementable by the student. There is no generic placeholder language.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple realistic routes for a Kenyan student with below-cutoff KCSE results and limited funds: self-sponsored university with HELB, TVET (with specific institutions like Kabete National Polytechnic, costs, bursaries, and progression), KCSE retake, apprenticeships (mentioning NITA), entrepreneurship, and online certifications. Non-degree routes (TVET, apprenticeships, entrepreneurship) are treated with substantive depth, specific programme names, costs, and outcomes, comparable to the university route. It does not frame non-university options as failure and provides concrete details.",
+    "pedagogical_soundness": "The response is not a lesson plan but guidance. It does not state learning objectives, activities, or assessments. Therefore, it does not engage with the dimension of pedagogical alignment, sequencing, or observable rubrics.",
+    "workload_realism": "The response is guidance for a student, not a delivery plan for a practitioner. It does not involve practitioner timings, materials, preparation, or class size. Therefore, it does not engage with the dimension of workload and resource realism for a teacher or administrator."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00118758,
+  "judge_latency_s": 15.489,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan but guidance. It does not state learning objectives, activities, or assessments. Therefore, it does not engage with the dimension of pedagogical alignment, sequencing, or observable rubrics.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is guidance for a student, not a delivery plan for a practitioner. It does not involve practitioner timings, materials, preparation, or class size. Therefore, it does not engage with the dimension of workload and resource realism for a teacher or administrator.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple realistic routes for a Kenyan student with below-cutoff KCSE results and limited funds: self-sponsored university with HELB, TVET (with specific institutions like Kabete National Polytechnic, costs, bursaries, and progression), KCSE retake, apprenticeships (mentioning NITA), entrepreneurship, and online certifications. Non-degree routes (TVET, apprenticeships, entrepreneurship) are treated with substantive depth, specific programme names, costs, and outcomes, comparable to the university route. It does not frame non-university options as failure and provides concrete details.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is guidance for a single student with specific constraints (limited funds, below university cut-off). The response directly addresses the student's financial constraint throughout, proposing low-cost or subsidized options (TVET subsidies, HELB loans, free online courses, small business start-ups). It does not address a range of learners (e.g., differing prior attainment, additional needs, language) because the prompt is for one student. The adaptations (e.g., using a smartphone for online work) are implementable by the student. There is no generic placeholder language.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, specific, and actionable pathway guidance tailored to the Kenyan context and the student's financial constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, specific, and actionable pathway guidance tailored to the Kenyan context and the student's financial constraints.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

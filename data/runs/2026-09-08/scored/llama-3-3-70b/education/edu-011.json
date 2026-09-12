@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is generic guidance to a single student, not a teaching plan for a range of learners. It does not address differentiation for varying prior attainment, additional needs, language barriers, or material constraints in a classroom setting. The advice is personalized to the student's financial situation but does not constitute differentiation in an instructional context. Thus, it does not engage with the dimension of differentiation and access as defined.",
+    "pathway_breadth": "The prompt explicitly involves pathway guidance for a Kenyan student with below-cutoff KCSE results and limited funds. The response lists multiple routes: repeat KCSE, diploma/certificate courses, private universities, TVET, apprenticeships, online courses, entrepreneurship, and volunteering. It covers non-degree options like TVET and apprenticeships with some detail, stating they are 'more affordable' and lead to certification or employment. However, it lacks the specificity required by the item-specific notes: it does not provide real entry requirements (e.g., specific KCSE grades for TVET), concrete costs, real programme names (e.g., specific TVET institutions or diploma programmes), accurate details on diploma-to-degree progression, or specifics on HELB/financing. Non-degree routes are listed but without comparable depth to degree routes; for example, private universities are mentioned with similar generality as TVET. It avoids framing non-university as failure, but the content is generic and lacks the concrete, system-accurate details needed for a practitioner to use directly. This represents partial engagement with significant gaps in specificity and correctness for the Kenyan context.",
+    "pedagogical_soundness": "The response does not present a pedagogical plan with learning objectives, activities, or assessments. It is a guidance list for a student's future pathways, not an instructional design. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response does not describe a teaching plan with timings, materials, or class size to evaluate. It is advisory content, not a delivery plan for a practitioner. Thus, it does not engage with the dimension of workload and resource realism."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00100036,
+  "judge_latency_s": 18.447,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a pedagogical plan with learning objectives, activities, or assessments. It is a guidance list for a student's future pathways, not an instructional design. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a teaching plan with timings, materials, or class size to evaluate. It is advisory content, not a delivery plan for a practitioner. Thus, it does not engage with the dimension of workload and resource realism.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt explicitly involves pathway guidance for a Kenyan student with below-cutoff KCSE results and limited funds. The response lists multiple routes: repeat KCSE, diploma/certificate courses, private universities, TVET, apprenticeships, online courses, entrepreneurship, and volunteering. It covers non-degree options like TVET and apprenticeships with some detail, stating they are 'more affordable' and lead to certification or employment. However, it lacks the specificity required by the item-specific notes: it does not provide real entry requirements (e.g., specific KCSE grades for TVET), concrete costs, real programme names (e.g., specific TVET institutions or diploma programmes), accurate details on diploma-to-degree progression, or specifics on HELB/financing. Non-degree routes are listed but without comparable depth to degree routes; for example, private universities are mentioned with similar generality as TVET. It avoids framing non-university as failure, but the content is generic and lacks the concrete, system-accurate details needed for a practitioner to use directly. This represents partial engagement with significant gaps in specificity and correctness for the Kenyan context.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is generic guidance to a single student, not a teaching plan for a range of learners. It does not address differentiation for varying prior attainment, additional needs, language barriers, or material constraints in a classroom setting. The advice is personalized to the student's financial situation but does not constitute differentiation in an instructional context. Thus, it does not engage with the dimension of differentiation and access as defined.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides a broad list of post-KCSE options but lacks the concrete, system-specific details required for effective practitioner guidance in Kenya.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a broad list of post-KCSE options but lacks the concrete, system-specific details required for effective practitioner guidance in Kenya.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 12.5
+}

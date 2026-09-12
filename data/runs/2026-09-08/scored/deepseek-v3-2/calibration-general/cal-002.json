@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.4'. The reference answer is 'ANSWER: 21134.40'. The substance is identical: both represent $21,134.40. The difference is one trailing zero, which is irrelevant formatting per the rubric's instruction to ignore formatting, style, and verbosity. The answer is fully correct.",
+    "instruction_compliance": "The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 21134.4'. The format is exactly as requested, with 'ANSWER:' followed by the number. The number is correct; the absence of a trailing zero does not violate the explicit format instruction, which only specifies '<number>'. All instructions are followed.",
+    "reasoning_validity": "The response shows step-by-step working: calculates mass after drying (4,800 × 0.85 = 4,080 kg), AA grade mass (4,080 × 0.40 = 1,632 kg) and revenue ($10,118.40), non-AA mass (4,080 × 0.60 = 2,448 kg) and revenue ($11,016.00), and total ($21,134.40). Each step is mathematically sound, logically consistent, and directly supports the final answer. No invalid reasoning is present."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00066278,
+  "judge_latency_s": 13.109,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.4'. The reference answer is 'ANSWER: 21134.40'. The substance is identical: both represent $21,134.40. The difference is one trailing zero, which is irrelevant formatting per the rubric's instruction to ignore formatting, style, and verbosity. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows step-by-step working: calculates mass after drying (4,800 × 0.85 = 4,080 kg), AA grade mass (4,080 × 0.40 = 1,632 kg) and revenue ($10,118.40), non-AA mass (4,080 × 0.60 = 2,448 kg) and revenue ($11,016.00), and total ($21,134.40). Each step is mathematically sound, logically consistent, and directly supports the final answer. No invalid reasoning is present.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 21134.4'. The format is exactly as requested, with 'ANSWER:' followed by the number. The number is correct; the absence of a trailing zero does not violate the explicit format instruction, which only specifies '<number>'. All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

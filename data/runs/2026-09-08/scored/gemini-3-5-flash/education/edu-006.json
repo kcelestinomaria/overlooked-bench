@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a 400-pupil primary school with a class-size constraint. The response addresses the range of learners by detailing how each option affects support for 'vulnerable learners,' 'lower-ability pupils,' and those with SEND, particularly in Options B and C. It concretely links TA reductions to damaged academic progress and intervention loss. However, it does not propose specific, low-cost differentiation strategies for teachers to implement; it focuses on systemic resource cuts and their consequences. The consideration is present but not in the form of actionable classroom adaptations.",
+    "pathway_breadth": "The item does not involve student futures, pathway guidance, or a specific learner cohort. It is a budgetary and staffing decision paper. Therefore, scoring is based on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses impacts on vulnerable learners, SEND provision, and academic progress across options, showing consideration for the diverse pupil body of a 400-pupil primary school.",
+    "pedagogical_soundness": "The prompt is a budgeting and staffing options paper, not a lesson or curriculum design task. The response does not state learning objectives, design activities, or create assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response is a realistic options paper for a head teacher under a budget constraint. It respects the class-size ceiling (maintaining 14 classes for 400 pupils), costs each option precisely to £120,000, and details specific, plausible staffing changes (e.g., redefining DHT role, reducing TA FTE). The savings calculations and operational impacts (e.g., safeguarding risk, teacher workload) are grounded in a real school setting. A head teacher could feasibly present this to a governing body."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.0012491,
+  "judge_latency_s": 16.444,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The prompt is a budgeting and staffing options paper, not a lesson or curriculum design task. The response does not state learning objectives, design activities, or create assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a realistic options paper for a head teacher under a budget constraint. It respects the class-size ceiling (maintaining 14 classes for 400 pupils), costs each option precisely to £120,000, and details specific, plausible staffing changes (e.g., redefining DHT role, reducing TA FTE). The savings calculations and operational impacts (e.g., safeguarding risk, teacher workload) are grounded in a real school setting. A head teacher could feasibly present this to a governing body.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures, pathway guidance, or a specific learner cohort. It is a budgetary and staffing decision paper. Therefore, scoring is based on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses impacts on vulnerable learners, SEND provision, and academic progress across options, showing consideration for the diverse pupil body of a 400-pupil primary school.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a 400-pupil primary school with a class-size constraint. The response addresses the range of learners by detailing how each option affects support for 'vulnerable learners,' 'lower-ability pupils,' and those with SEND, particularly in Options B and C. It concretely links TA reductions to damaged academic progress and intervention loss. However, it does not propose specific, low-cost differentiation strategies for teachers to implement; it focuses on systemic resource cuts and their consequences. The consideration is present but not in the form of actionable classroom adaptations.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"A professionally structured, financially precise options paper that respects all constraints and makes a clear, justified recommendation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A professionally structured, financially precise options paper that respects all constraints and makes a clear, justified recommendation.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 60.0
+}

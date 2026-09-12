@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopaedia level. It engages with specific technical mechanisms (e.g., tone shift, downstep accumulation, polarity, Meeussen's Rule), methodological issues (language-internal morphotonemic analysis before comparison), and scholarly debates (binary vs. privative tone specification, reconstructibility of nominal vs. verbal tone). It references ongoing projects and database gaps (e.g., tonal annotation efforts, uneven coverage across ~500 languages). A specialist would recognize detailed, literature-aware discussion, not just a summary of summaries.",
+    "domain_accuracy": "The response makes substantive claims that are largely correct and specific to Bantu tonology. It correctly identifies obstacles like tonal instability, grammatical tone interference, downstep/register neutralization, tone melody reassignment, sparse documentation, areal diffusion, and the 'High-Toned Root' puzzle. It accurately cites key scholars (Hyman, Meeussen, Kisseberth, Odden) and references Meeussen's 1967 work and the Bantu Lexical Reconstructions (BLR) database. No invented citations, terms, or consensus are present. Minor possible oversimplifications (e.g., stating 'General consensus: Proto-Bantu had a two-height (H/L) tone system, likely privative' might slightly overstate certainty, but this is not a fabrication. Overall, claims are accurate and load-bearing errors are absent.",
+    "field_situatedness": "The response is firmly situated in Bantu tonology, using field-specific terminology (e.g., grammatical tone, downstep, downdrift, register neutralization, tone melody reassignment, Meeussen's Rule, morphotonemic analysis) and frameworks. It centers Bantu-specific scholarship (Hyman, Meeussen, Kisseberth, Odden) and resources (BLR). There is no silent substitution of a Western or Anglophone adjacent field's framing; it correctly addresses the regional scholarly tradition and its conventions.",
+    "scholarly_calibration": "The response consistently distinguishes well-established from contested or incomplete aspects. It notes consensus on Proto-Bantu having a two-height system 'likely privative', but presents the 'High-Toned Root' puzzle as a 'long-standing difficulty'. It specifies that verb tone melodies are 'relatively well reconstructed' with 'reasonable confidence', while nominal tone is 'comparatively less secure', 'patchier', and 'more contested'. It highlights database gaps and methodological labor-intensiveness. No blanket disclaimers are used; calibration is specific and accurate across claims of differing evidential status."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00114086,
+  "judge_latency_s": 20.392,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are largely correct and specific to Bantu tonology. It correctly identifies obstacles like tonal instability, grammatical tone interference, downstep/register neutralization, tone melody reassignment, sparse documentation, areal diffusion, and the 'High-Toned Root' puzzle. It accurately cites key scholars (Hyman, Meeussen, Kisseberth, Odden) and references Meeussen's 1967 work and the Bantu Lexical Reconstructions (BLR) database. No invented citations, terms, or consensus are present. Minor possible oversimplifications (e.g., stating 'General consensus: Proto-Bantu had a two-height (H/L) tone system, likely privative' might slightly overstate certainty, but this is not a fabrication. Overall, claims are accurate and load-bearing errors are absent.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopaedia level. It engages with specific technical mechanisms (e.g., tone shift, downstep accumulation, polarity, Meeussen's Rule), methodological issues (language-internal morphotonemic analysis before comparison), and scholarly debates (binary vs. privative tone specification, reconstructibility of nominal vs. verbal tone). It references ongoing projects and database gaps (e.g., tonal annotation efforts, uneven coverage across ~500 languages). A specialist would recognize detailed, literature-aware discussion, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes well-established from contested or incomplete aspects. It notes consensus on Proto-Bantu having a two-height system 'likely privative', but presents the 'High-Toned Root' puzzle as a 'long-standing difficulty'. It specifies that verb tone melodies are 'relatively well reconstructed' with 'reasonable confidence', while nominal tone is 'comparatively less secure', 'patchier', and 'more contested'. It highlights database gaps and methodological labor-intensiveness. No blanket disclaimers are used; calibration is specific and accurate across claims of differing evidential status.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response is firmly situated in Bantu tonology, using field-specific terminology (e.g., grammatical tone, downstep, downdrift, register neutralization, tone melody reassignment, Meeussen's Rule, morphotonemic analysis) and frameworks. It centers Bantu-specific scholarship (Hyman, Meeussen, Kisseberth, Odden) and resources (BLR). There is no silent substitution of a Western or Anglophone adjacent field's framing; it correctly addresses the regional scholarly tradition and its conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level competence in Bantu tonology, with accurate, deep, well-calibrated, and field-situated content.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level competence in Bantu tonology, with accurate, deep, well-calibrated, and field-situated content.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

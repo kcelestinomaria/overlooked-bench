@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic summary by engaging with methodological issues (e.g., 'systematic sound correspondences', 'standard comparative methods'), evidence quality ('sparse and poor-quality data'), and scholarly debate (assessing strength of hypotheses, noting dominance of isolate view). It explains why classification is difficult (contact, borrowing, mixed typology), which a specialist would recognize as informed. However, it lacks specific references to scholars, publications, or detailed historical proposals, keeping it at a solid but not excellent depth.",
+    "domain_accuracy": "The response correctly identifies the three main classification positions (Nilo-Saharan, Afroasiatic, isolate/unclassified), accurately describes the evidence used (lexical similarities, typological features, borrowing) and the assessment of that evidence as weak or insufficient. It correctly notes the language's heavy borrowing, poor documentation, and lack of systematic sound correspondences. No invented citations, terms, or consensus are presented; claims align with established linguistic debate. Minor inaccuracies: mention of possible Bantu influence is speculative and not typical in literature, but not load-bearing.",
+    "field_situatedness": "The response uses appropriate linguistic terminology (e.g., 'language isolate', 'genetic affiliation', 'borrowing', 'sound correspondences', 'typological features') and frameworks from historical linguistics and African language classification. It correctly situates the debate within African linguistics, referencing relevant families (Nilo-Saharan, Afroasiatic, Cushitic, Omotic) without substituting Western or Anglophone framings. No silent substitution of adjacent fields is evident.",
+    "scholarly_calibration": "The response consistently distinguishes evidential status: labels Nilo-Saharan evidence as 'weak', Afroasiatic as 'unproven' and 'insufficient', and isolate view as 'most defensible'. It notes uncertainty ('no consensus', 'still unresolved') and contextualizes confidence levels (e.g., 'heavily contact-shaped and poorly documented'). It avoids presenting contested points as settled and provides targeted calibration per hypothesis, not just a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00103526,
+  "judge_latency_s": 17.648,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response correctly identifies the three main classification positions (Nilo-Saharan, Afroasiatic, isolate/unclassified), accurately describes the evidence used (lexical similarities, typological features, borrowing) and the assessment of that evidence as weak or insufficient. It correctly notes the language's heavy borrowing, poor documentation, and lack of systematic sound correspondences. No invented citations, terms, or consensus are presented; claims align with established linguistic debate. Minor inaccuracies: mention of possible Bantu influence is speculative and not typical in literature, but not load-bearing.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic summary by engaging with methodological issues (e.g., 'systematic sound correspondences', 'standard comparative methods'), evidence quality ('sparse and poor-quality data'), and scholarly debate (assessing strength of hypotheses, noting dominance of isolate view). It explains why classification is difficult (contact, borrowing, mixed typology), which a specialist would recognize as informed. However, it lacks specific references to scholars, publications, or detailed historical proposals, keeping it at a solid but not excellent depth.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes evidential status: labels Nilo-Saharan evidence as 'weak', Afroasiatic as 'unproven' and 'insufficient', and isolate view as 'most defensible'. It notes uncertainty ('no consensus', 'still unresolved') and contextualizes confidence levels (e.g., 'heavily contact-shaped and poorly documented'). It avoids presenting contested points as settled and provides targeted calibration per hypothesis, not just a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate linguistic terminology (e.g., 'language isolate', 'genetic affiliation', 'borrowing', 'sound correspondences', 'typological features') and frameworks from historical linguistics and African language classification. It correctly situates the debate within African linguistics, referencing relevant families (Nilo-Saharan, Afroasiatic, Cushitic, Omotic) without substituting Western or Anglophone framings. No silent substitution of adjacent fields is evident.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates accurate, well-calibrated knowledge of the Ongota classification debate with appropriate depth for a specialist audience.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response demonstrates accurate, well-calibrated knowledge of the Ongota classification debate with appropriate depth for a specialist audience.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

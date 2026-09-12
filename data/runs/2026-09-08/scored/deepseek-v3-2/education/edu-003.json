@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is advice for a single student with specific traits (good with hands, dislikes exams). The response addresses this learner's needs by tailoring options to their preferences and suggesting career counseling. However, it does not address a range of learners in a classroom setting (e.g., differing prior attainment, additional needs, language barriers, material constraints), as the prompt is for individual advice. The dimension is scored on inclusivity for the described setting; here, the focus is on one student's profile, not a cohort, so engagement is minimal for broader differentiation.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Duale Ausbildung (vocational training), Fachoberschule (FOS), Duales Studium, and Berufliches Gymnasium. Each is treated with substantive detail on entry routes, duration, pay, progression, and outcomes, correctly within the German system. Non-degree options (Ausbildung) are not an afterthought but presented as a primary option with equal depth. The response addresses the parents' preference honestly, advising against forcing Abitur if unsuitable.",
+    "pedagogical_soundness": "The response is advice, not a lesson plan, so explicit learning objectives, activities, and assessments are not present. It does not engage with pedagogical design elements like alignment of objectives, activities, and assessments. Therefore, it does not address the dimension's criteria at all.",
+    "workload_realism": "The response provides advice to a student, not a plan for a practitioner to deliver. It does not involve timings, materials, preparation, marking, or class size for a teacher or administrator. Thus, it does not engage with the dimension's focus on practitioner workload and resource feasibility."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00133077,
+  "judge_latency_s": 15.469,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is advice, not a lesson plan, so explicit learning objectives, activities, and assessments are not present. It does not engage with pedagogical design elements like alignment of objectives, activities, and assessments. Therefore, it does not address the dimension's criteria at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides advice to a student, not a plan for a practitioner to deliver. It does not involve timings, materials, preparation, marking, or class size for a teacher or administrator. Thus, it does not engage with the dimension's focus on practitioner workload and resource feasibility.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Duale Ausbildung (vocational training), Fachoberschule (FOS), Duales Studium, and Berufliches Gymnasium. Each is treated with substantive detail on entry routes, duration, pay, progression, and outcomes, correctly within the German system. Non-degree options (Ausbildung) are not an afterthought but presented as a primary option with equal depth. The response addresses the parents' preference honestly, advising against forcing Abitur if unsuitable.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is advice for a single student with specific traits (good with hands, dislikes exams). The response addresses this learner's needs by tailoring options to their preferences and suggesting career counseling. However, it does not address a range of learners in a classroom setting (e.g., differing prior attainment, additional needs, language barriers, material constraints), as the prompt is for individual advice. The dimension is scored on inclusivity for the described setting; here, the focus is on one student's profile, not a cohort, so engagement is minimal for broader differentiation.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides excellent, specific, and balanced pathway advice for a German student, correctly covering vocational and academic options with realistic detail.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides excellent, specific, and balanced pathway advice for a German student, correctly covering vocational and academic options with realistic detail.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 30.0
+}

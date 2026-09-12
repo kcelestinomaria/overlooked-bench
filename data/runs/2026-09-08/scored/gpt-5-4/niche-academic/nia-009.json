@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond a basic encyclopedic summary by engaging with methodological and epistemic tensions (e.g., 'What counts as evidence?', 'theory-dependent evidence', 'epistemic irreducibility'), discusses specific Ayurvedic concepts (shodhana, marana) and their philosophical significance, and outlines arguments rooted in public health, safety, decolonial concerns, and incommensurability. It addresses the debate at a specialist level, showing familiarity with the literature and internal scholarly discourse, not just a surface summary.",
+    "domain_accuracy": "The response makes substantive claims about the debate, including key terms (rasashastra, bhasma, rasaushadhi, shodhana, marana, guna, virya, vipaka, prabhava, dosha, agni), correctly frames the core philosophical and public-health tensions, and accurately describes the positions without inventing citations, consensus, or technical terms. All claims align with established scholarly understanding of the Ayurvedic pharmacology vs. epistemic system debate. No factual errors or fabrications are detected.",
+    "field_situatedness": "The response correctly situates the debate within Ayurvedic scholarship, using appropriate Sanskrit terminology (rasashastra, bhasma, shodhana, marana, dosha, etc.) and framing the epistemic system argument in terms of Ayurvedic concepts (guna, virya, vipaka, prabhava, agni). It does not silently substitute a Western biomedical framework as the only lens; instead, it presents the distinct epistemic system position on its own terms, acknowledging decolonial concerns and theory-laden evidence. The vocabulary and framing belong to the Ayurvedic and cross-cultural philosophy of medicine tradition asked about.",
+    "scholarly_calibration": "The response consistently distinguishes between well-established points (e.g., rasashastra involves processed metals, safety concerns exist) and contested philosophical/epistemic issues (e.g., whether pharmacology is universal or one system among others). It presents both sides as substantive positions within a debate, not as settled facts, and notes a 'balanced synthesis' as a middle ground. It avoids uniform confidence, instead calibrating by highlighting the 'deepest fault line' and theory-dependence of evidence. No blanket disclaimer is used; calibration is specific and integrated."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00122488,
+  "judge_latency_s": 18.534,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about the debate, including key terms (rasashastra, bhasma, rasaushadhi, shodhana, marana, guna, virya, vipaka, prabhava, dosha, agni), correctly frames the core philosophical and public-health tensions, and accurately describes the positions without inventing citations, consensus, or technical terms. All claims align with established scholarly understanding of the Ayurvedic pharmacology vs. epistemic system debate. No factual errors or fabrications are detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond a basic encyclopedic summary by engaging with methodological and epistemic tensions (e.g., 'What counts as evidence?', 'theory-dependent evidence', 'epistemic irreducibility'), discusses specific Ayurvedic concepts (shodhana, marana) and their philosophical significance, and outlines arguments rooted in public health, safety, decolonial concerns, and incommensurability. It addresses the debate at a specialist level, showing familiarity with the literature and internal scholarly discourse, not just a surface summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes between well-established points (e.g., rasashastra involves processed metals, safety concerns exist) and contested philosophical/epistemic issues (e.g., whether pharmacology is universal or one system among others). It presents both sides as substantive positions within a debate, not as settled facts, and notes a 'balanced synthesis' as a middle ground. It avoids uniform confidence, instead calibrating by highlighting the 'deepest fault line' and theory-dependence of evidence. No blanket disclaimer is used; calibration is specific and integrated.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly situates the debate within Ayurvedic scholarship, using appropriate Sanskrit terminology (rasashastra, bhasma, shodhana, marana, dosha, etc.) and framing the epistemic system argument in terms of Ayurvedic concepts (guna, virya, vipaka, prabhava, agni). It does not silently substitute a Western biomedical framework as the only lens; instead, it presents the distinct epistemic system position on its own terms, acknowledging decolonial concerns and theory-laden evidence. The vocabulary and framing belong to the Ayurvedic and cross-cultural philosophy of medicine tradition asked about.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated engagement with the specialized debate, showing depth beyond summary and correct field situatedness.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated engagement with the specialized debate, showing depth beyond summary and correct field situatedness.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

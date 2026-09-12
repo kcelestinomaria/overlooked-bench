@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopaedia level by engaging with specific evidence types (e.g., 'consonant inventory', 'verb morphology'), methodological challenges ('establishing reliable cognates'), and scholarly debate (noting institutional inertia and lack of consensus). It addresses the strength of evidence and internal scholarly positions, which a specialist would recognize as informed by the literature rather than a mere summary.",
+    "domain_accuracy": "The response makes substantive claims: names proponents (Hetzron, Hayward, Blench), describes phonological, lexical, and grammatical evidence for Afroasiatic and Nilo-Saharan classifications, and notes weaknesses like small speaker population and limited documentation. These claims are factually correct and align with known scholarship on Ongota. No invented citations, terms, or consensus are presented; the description of the debate as unresolved with weak evidence is accurate.",
+    "field_situatedness": "The response uses appropriate frameworks and terminology from African linguistics and Ethiopianist scholarship, referencing language families (Afroasiatic, Nilo-Saharan), concepts like 'isolate status', and scholars in the field (Hetzron, Hayward, Blench). It does not substitute a Western or Anglophone framing; it stays focused on the regional scholarly tradition and evidence-based debate.",
+    "scholarly_calibration": "The response accurately distinguishes between well-established and contested points: it labels evidence as 'thin', 'ambiguous', 'speculative', and 'weak', and notes that Afroasiatic classification is a 'working hypothesis' due to 'institutional inertia rather than compelling evidence'. It avoids uniform confidence, explicitly stating the debate is 'unresolved' and an 'open problem'. This is specific, targeted calibration, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00081063,
+  "judge_latency_s": 14.878,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: names proponents (Hetzron, Hayward, Blench), describes phonological, lexical, and grammatical evidence for Afroasiatic and Nilo-Saharan classifications, and notes weaknesses like small speaker population and limited documentation. These claims are factually correct and align with known scholarship on Ongota. No invented citations, terms, or consensus are presented; the description of the debate as unresolved with weak evidence is accurate.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopaedia level by engaging with specific evidence types (e.g., 'consonant inventory', 'verb morphology'), methodological challenges ('establishing reliable cognates'), and scholarly debate (noting institutional inertia and lack of consensus). It addresses the strength of evidence and internal scholarly positions, which a specialist would recognize as informed by the literature rather than a mere summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately distinguishes between well-established and contested points: it labels evidence as 'thin', 'ambiguous', 'speculative', and 'weak', and notes that Afroasiatic classification is a 'working hypothesis' due to 'institutional inertia rather than compelling evidence'. It avoids uniform confidence, explicitly stating the debate is 'unresolved' and an 'open problem'. This is specific, targeted calibration, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate frameworks and terminology from African linguistics and Ethiopianist scholarship, referencing language families (Afroasiatic, Nilo-Saharan), concepts like 'isolate status', and scholars in the field (Hetzron, Hayward, Blench). It does not substitute a Western or Anglophone framing; it stays focused on the regional scholarly tradition and evidence-based debate.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates thorough, accurate, and well-calibrated engagement with the niche academic debate on Ongota classification.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates thorough, accurate, and well-calibrated engagement with the niche academic debate on Ongota classification.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,22 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "eth-015",
+  "judge_cost_usd": 0.00134715,
+  "judge_latency_s": 24.864,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument with a clear conclusion: 'There is indeed a profound duty to oneself, and to harm oneself—even in total isolation and without dependents—is morally wrong.' It offers premises from Kantian ethics (treating humanity as an end, not a means), virtue ethics (obligation to flourish), and a communitarian argument (illusion of isolation). The inference from premises to conclusion is valid, as each premise directly supports the wrongness of self-harm. It engages specific details of the scenario by addressing the 'no dependents' condition and the concept of harming only oneself. It addresses the strongest counterargument (the autonomy objection) by stating it and rebutting it: 'true autonomy requires a rational agent to exercise it... protecting the individual's *future* autonomy.' The argument is constructed, not merely a list of labeled positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks to 'Argue a position,' which requires a judgement. The response states a clear position: 'There is indeed a profound duty to oneself, and to harm oneself—even in total isolation and without dependents—is morally wrong.' It defends this with reasons (Kantian, virtue ethics, communitarian arguments) and addresses uncertainty by acknowledging the counterargument ('Defenders of the libertarian view...') and rebutting it. It does not deflect to the reader or evade with 'it depends on your values.' However, it does not explicitly state what would change its mind or where it is least confident, which is a feature of a 4 score. It shows calibrated commitment but stops short of full metacognitive reflection on its own uncertainty.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions on this question include: 1) The harm principle/libertarian view (no duty to oneself, self-harm is not wrong if it harms no others), 2) Duty to oneself based on deontological or virtue ethics (self-harm is wrong), and 3) Possibly communitarian or relational views. The response includes the harm principle position ('the modern secular world is deeply committed to the \\\"harm principle\\\"...') and represents it accurately as Mill's view. It also includes its own duty-based position. It does not strawman the harm principle; it presents it fairly and then argues against it. However, it omits other potential positions, such as purely consequentialist views that might focus on overall well-being without a strict duty, or existentialist perspectives. The treatment of the included rival position is fair, but breadth is limited to one major counterposition.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes named thinkers and technical terms: John Stuart Mill and the 'harm principle,' Immanuel Kant and the 'Formula of Humanity,' Aristotelian virtue ethics and 'eudaimonia,' and concepts like 'rational agency,' 'autonomy,' and 'communitarian.' All references are accurate: Mill's harm principle is correctly described, Kant's Formula of Humanity is properly cited and applied to self-harm, and virtue ethics is accurately linked to flourishing. These concepts are load-bearing in the argument—each is used to build a case for a duty to oneself. There are no garbled terms or misattributions. The response demonstrates correct and relevant philosophical literacy without mere citation density.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, philosophically literate argument for a duty to oneself, engaging specifically with the prompt's scenario and counterarguments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

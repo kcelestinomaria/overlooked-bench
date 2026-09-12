@@ -1,0 +1,22 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "eth-020",
+  "judge_cost_usd": 0.00118732,
+  "judge_latency_s": 19.436,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument with a clear conclusion: 'No, the mere fact that a perfect predictor tells you you will choose box B does not by itself make your choice unfree.' It offers premises: prediction is epistemic, not causal; freedom depends on the theory (compatibilist vs. libertarian); a choice from one's own reasons can be free. It engages specific details of the scenario (perfect predictor, box B choice) and addresses the strongest counterargument: 'if the prediction is infallible, could I have done otherwise?' It distinguishes libertarian and compatibilist responses. The inference from premises to conclusion is valid, and the argument is constructed rather than a list of positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a defended answer. The response states a position: 'No, not necessarily; the choice can still be free.' It defends this with reasons (prediction vs. causation, compatibilist framework) and acknowledges uncertainty by noting dependence on the theory of freedom and that it 'raises serious questions for libertarian accounts.' It distinguishes calibrated uncertainty ('if one insists that freedom requires the genuine ability to do otherwise...') from evasion. It does not explicitly state what would change its mind, but it implies that under libertarian assumptions, the answer might differ, showing honest handling of disagreement.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The major live positions on foreknowledge and freedom are libertarian, compatibilist, and hard determinist. The response includes all three: libertarian freedom (requires ability to do otherwise), compatibilist freedom (flows from reasons even if determined), and hard determinist view (if future fixed, not free). Each is characterized accurately; an advocate would accept the descriptions. No fringe positions are given false balance. The response presents them in tension, not as a shallow list, and does not treat the question as settled.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes technical terms: 'libertarian freedom,' 'compatibilist freedom,' 'hard determinist,' 'epistemic certainty vs causal necessity,' 'Newcomb-style reasoning,' 'fatalism.' These are accurate and load-bearing in the argument (e.g., distinguishing libertarian and compatibilist accounts to defend the conclusion). It correctly explains concepts like prediction reflecting rather than causing choice. No misattributions or garbled terms are present. The concepts are used relevantly, not decoratively.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument that engages deeply with the scenario and fairly represents competing philosophical positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

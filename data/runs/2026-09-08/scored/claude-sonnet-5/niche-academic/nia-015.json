@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopaedia level by engaging with specific scholarly debates, methodologies (e.g., normative legal texts vs. court records), evidence types, and internal disagreements (e.g., methodological critiques, comparative frameworks, causation vs. correlation). It addresses nuances like chronological and regional variation, which a specialist would recognize as indicative of familiarity with the literature, not just summaries. The answer is pitched at a specialist level appropriate to the prompt.",
+    "domain_accuracy": "The response makes substantive factual claims that are correct: it accurately describes the waqf institution, mentions key scholars (Timur Kuran, Murat Çizakça, Miriam Hoexter), identifies cash waqfs (para vakıfları) and legal mechanisms (istiglal, bey' bil-wafa, istibdal), and outlines historiographical debates. No invented citations, terms, or consensus are present; all references align with established scholarship. Errors are absent, and claims are load-bearing to the answer.",
+    "field_situatedness": "The response uses the frameworks, terminology, and conventions of Ottoman and Islamic economic history: it employs field-specific terms (waqf, cash waqfs, para vakıfları, istiglal, bey' bil-wafa, istibdal), references relevant scholars (Kuran, Çizakça, Hoexter), and engages with debates central to the field (e.g., the 'Great Divergence', property rights theory). It does not silently substitute a Western or Anglophone framing; it remains situated in the Ottoman/Islamic scholarly tradition.",
+    "scholarly_calibration": "The response accurately distinguishes between established and contested points: it presents the constraint and enabling theses as debated, notes methodological disagreements, and highlights uncertainties (e.g., 'disagreement over whether the correct comparison is...', 'The debate remains active'). It avoids uniform confidence, signaling where claims are hypotheses or disputed (e.g., 'Some argue...', 'Critics of Kuran argue...'). Calibration is specific and targeted, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00098842,
+  "judge_latency_s": 16.422,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims that are correct: it accurately describes the waqf institution, mentions key scholars (Timur Kuran, Murat Çizakça, Miriam Hoexter), identifies cash waqfs (para vakıfları) and legal mechanisms (istiglal, bey' bil-wafa, istibdal), and outlines historiographical debates. No invented citations, terms, or consensus are present; all references align with established scholarship. Errors are absent, and claims are load-bearing to the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopaedia level by engaging with specific scholarly debates, methodologies (e.g., normative legal texts vs. court records), evidence types, and internal disagreements (e.g., methodological critiques, comparative frameworks, causation vs. correlation). It addresses nuances like chronological and regional variation, which a specialist would recognize as indicative of familiarity with the literature, not just summaries. The answer is pitched at a specialist level appropriate to the prompt.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately distinguishes between established and contested points: it presents the constraint and enabling theses as debated, notes methodological disagreements, and highlights uncertainties (e.g., 'disagreement over whether the correct comparison is...', 'The debate remains active'). It avoids uniform confidence, signaling where claims are hypotheses or disputed (e.g., 'Some argue...', 'Critics of Kuran argue...'). Calibration is specific and targeted, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses the frameworks, terminology, and conventions of Ottoman and Islamic economic history: it employs field-specific terms (waqf, cash waqfs, para vakıfları, istiglal, bey' bil-wafa, istibdal), references relevant scholars (Kuran, Çizakça, Hoexter), and engages with debates central to the field (e.g., the 'Great Divergence', property rights theory). It does not silently substitute a Western or Anglophone framing; it remains situated in the Ottoman/Islamic scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and nuanced engagement with Ottoman waqf historiography, reflecting deep domain competence and scholarly calibration.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and nuanced engagement with Ottoman waqf historiography, reflecting deep domain competence and scholarly calibration.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

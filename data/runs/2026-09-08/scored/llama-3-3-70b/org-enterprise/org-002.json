@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a one-page go/no-go analysis with a recommendation, financing options, break-even, and top risks. The response produces a structured analysis with sections for financing, break-even, risks, and recommendation. However, the break-even calculation is vague (20-24 months) and not based on the stated margin; it lacks concrete line items and totals for a budget. The recommendation is 'proceed with caution' rather than a clear go/no-go, and the deliverable is more descriptive than usable with light editing. It includes some components but stops short of a practitioner-ready output.",
+    "constraint_fidelity": "The prompt states constraints: 6-person family-owned bakery in Kraków, annual revenue PLN 1.4m, net margin roughly 8%, owners can raise PLN 250,000, want no equity dilution. The response explicitly respects the no-dilution constraint by not proposing equity financing. However, it violates the budget constraint: it assumes an initial investment of PLN 750,000, which exceeds the available PLN 250,000 without justification, and it does not show arithmetic linking the margin to break-even. It also does not justify the silent violation of the funding limit. Therefore, it fails to respect a central constraint.",
+    "contextual_realism": "The response assumes financing options like a bank loan of PLN 500,000-750,000 and leasing payments of PLN 10,000-20,000 monthly, which may be unrealistic for a small bakery with PLN 1.4m revenue and 8% margin (net income ~PLN 112,000). It also assumes monthly expenses of PLN 30,000 and revenue of PLN 40,000 without grounding in the bakery's current scale. It acknowledges operational complexity risks but does not deeply engage with small-organisation realities like role overlap, limited management capacity, or lumpy funding. The recommendations are generic and not tailored to a 6-person family business.",
+    "jurisdictional_accuracy": "The prompt specifies Poland (Kraków). The response mentions Polish-context financing options like bank loans, leasing, and EU grants, which are appropriate. It avoids US-specific references like SBA. However, it does not include specific Polish programs like BGK-guaranteed lending or EU regional programmes as noted in the rubric. The legal/regulatory content is minimal, and it does not flag where local professional advice is needed. Since the task involves financing in Poland, the response is partially accurate but lacks depth and specificity for the jurisdiction."
+  },
+  "dimension_scores": {
+    "actionability": 2,
+    "constraint_fidelity": 0,
+    "contextual_realism": 1,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.00103214,
+  "judge_latency_s": 20.001,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: 6-person family-owned bakery in Kraków, annual revenue PLN 1.4m, net margin roughly 8%, owners can raise PLN 250,000, want no equity dilution. The response explicitly respects the no-dilution constraint by not proposing equity financing. However, it violates the budget constraint: it assumes an initial investment of PLN 750,000, which exceeds the available PLN 250,000 without justification, and it does not show arithmetic linking the margin to break-even. It also does not justify the silent violation of the funding limit. Therefore, it fails to respect a central constraint.\",\n      \"score\": 0\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes financing options like a bank loan of PLN 500,000-750,000 and leasing payments of PLN 10,000-20,000 monthly, which may be unrealistic for a small bakery with PLN 1.4m revenue and 8% margin (net income ~PLN 112,000). It also assumes monthly expenses of PLN 30,000 and revenue of PLN 40,000 without grounding in the bakery's current scale. It acknowledges operational complexity risks but does not deeply engage with small-organisation realities like role overlap, limited management capacity, or lumpy funding. The recommendations are generic and not tailored to a 6-person family business.\",\n      \"score\": 1\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a one-page go/no-go analysis with a recommendation, financing options, break-even, and top risks. The response produces a structured analysis with sections for financing, break-even, risks, and recommendation. However, the break-even calculation is vague (20-24 months) and not based on the stated margin; it lacks concrete line items and totals for a budget. The recommendation is 'proceed with caution' rather than a clear go/no-go, and the deliverable is more descriptive than usable with light editing. It includes some components but stops short of a practitioner-ready output.\",\n      \"score\": 2\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt specifies Poland (Kraków). The response mentions Polish-context financing options like bank loans, leasing, and EU grants, which are appropriate. It avoids US-specific references like SBA. However, it does not include specific Polish programs like BGK-guaranteed lending or EU regional programmes as noted in the rubric. The legal/regulatory content is minimal, and it does not flag where local professional advice is needed. Since the task involves financing in Poland, the response is partially accurate but lacks depth and specificity for the jurisdiction.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a structured analysis but fundamentally violates the budget constraint and lacks concrete, realistic calculations for a small Polish bakery.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a structured analysis but fundamentally violates the budget constraint and lacks concrete, realistic calculations for a small Polish bakery.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 28.75
+}

@@ -1,0 +1,22 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00155038,
+  "judge_latency_s": 22.647,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states the charity is in England and Wales, has an annual income of GBP 320,000, and wants to start trading to reduce grant dependence. The response respects all constraints: it addresses the jurisdiction (England and Wales), uses GBP currency, references Charity Commission and HMRC, and discusses tax rates and thresholds applicable there. It does not ignore or violate any central constraint. However, it does not explicitly show arithmetic for budget or headcount (none are specified in the prompt), so it does not meet the 'show arithmetic' criterion for a 4. It does not relax any constraints. It is specific to the jurisdiction and income level.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small charity with GBP 320,000 income. It acknowledges resource constraints by recommending professional advisors but noting costs (~£1,500–£3,000), suggesting modest initial trading income (<£50,000), and providing a phased timeline (6–8 weeks) that seems feasible. It does not assume dedicated HR, legal, or data teams; instead, it advises trustees to oversee, engage external advisors, and set up basic systems. It recognizes role overlap (trustee oversight, finance subcommittee) and small-organisation realities like separate cost codes, insurance, and governance structures. However, it includes some overhead (e.g., monthly reports, quarterly VAT returns) that might be demanding but is framed as manageable.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks to 'Advise the trustees' covering specific topics: whether trading can be done within the charity, when a subsidiary becomes necessary, tax treatment, and what trustees must do. The response produces a comprehensive advisory document with sections addressing each point: it explains primary-purpose vs. non-primary-purpose trading, discusses subsidiary necessity with thresholds (e.g., >£100,000), details tax treatment (corporation tax, VAT), and provides a phased checklist of trustee actions. It is not just a description of how to approach the task; it delivers concrete components like tables, examples, timelines, and a practical checklist. The output could be taken into a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for England and Wales jurisdiction. It correctly covers: primary-purpose trading vs. non-primary-purpose trading, small-scale trading exemption (implied via thresholds like <£50,000), when a trading subsidiary is needed, corporation tax treatment (19% rate, exempt for primary-purpose), trustees' duty to avoid risk, and checking the governing document. It references correct entities (Charity Commission, HMRC, Companies House) and thresholds (VAT registration >£85,000). It avoids US assumptions (no mention of 501(c)(3), UBIT, IRS). It includes specific referrals to professional advice (e.g., consult accountant) but also provides substantive content, not just a generic disclaimer. All legal/regulatory claims appear accurate for the jurisdiction.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"This response provides a thorough, jurisdictionally accurate, and actionable advisory document tailored to a small English/Welsh charity's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

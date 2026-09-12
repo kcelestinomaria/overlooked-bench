@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a specific approach with actual tools, total cost, and sustainability plan. The response produces a usable deliverable: it names specific tools (KoboToolbox, Samsung tablets, Romoss power banks), provides a costed breakdown with line items and totals within PHP 400,000, and explains post-grant sustainability with recurring costs and funding sources. It is not a framework or process description; it could be taken into a meeting with light editing. All item-specific rubric notes (offline-first tooling, device/power considerations, training, cost breakdown, sustainability) are covered concretely.",
+    "constraint_fidelity": "The prompt's constraints: Philippines jurisdiction, 30 staff, PHP 400,000 budget, intermittent electricity, no reliable internet, low digital literacy, 18-month donor funding. The response respects all constraints: uses tools suitable for offline-first and low literacy (KoboToolbox), provides a detailed budget totaling exactly PHP 400,000 with arithmetic shown, addresses electricity and internet constraints with power banks and offline sync, and explicitly plans for post-18-month sustainability. No constraints are ignored or silently violated.",
+    "contextual_realism": "The response is calibrated for a small nonprofit with 30 staff and low resources. It avoids enterprise SaaS and cloud-only architectures, uses free/open-source tools (KoboToolbox, Google Sheets), selects affordable and locally repairable hardware (Samsung tablets), includes training and 'Super-Users' to address low digital literacy, and acknowledges role overlap (e.g., staff as tech support). It does not assume dedicated IT, HR, or legal functions; instead, it uses a one-time local IT consultant and builds internal capacity. The process overhead (weekly sync, buddy system) is sustainable given the staffing level.",
+    "jurisdictional_accuracy": "The jurisdiction is the Philippines. The response avoids US assumptions: it uses locally available hardware (Samsung tablets widely available in the Philippines), references local mobile carriers (Smart, Globe), and considers local languages (Tagalog/Cebuano) for training. It does not assert US legal or employment norms. While it does not delve into Philippine-specific regulations (e.g., data privacy laws), it focuses on practical, factual accuracy for the context. Referrals to professional advice are not used as a substitute for content; the response is substantive and tailored to the jurisdiction."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00125575,
+  "judge_latency_s": 19.964,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: Philippines jurisdiction, 30 staff, PHP 400,000 budget, intermittent electricity, no reliable internet, low digital literacy, 18-month donor funding. The response respects all constraints: uses tools suitable for offline-first and low literacy (KoboToolbox), provides a detailed budget totaling exactly PHP 400,000 with arithmetic shown, addresses electricity and internet constraints with power banks and offline sync, and explicitly plans for post-18-month sustainability. No constraints are ignored or silently violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small nonprofit with 30 staff and low resources. It avoids enterprise SaaS and cloud-only architectures, uses free/open-source tools (KoboToolbox, Google Sheets), selects affordable and locally repairable hardware (Samsung tablets), includes training and 'Super-Users' to address low digital literacy, and acknowledges role overlap (e.g., staff as tech support). It does not assume dedicated IT, HR, or legal functions; instead, it uses a one-time local IT consultant and builds internal capacity. The process overhead (weekly sync, buddy system) is sustainable given the staffing level.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a specific approach with actual tools, total cost, and sustainability plan. The response produces a usable deliverable: it names specific tools (KoboToolbox, Samsung tablets, Romoss power banks), provides a costed breakdown with line items and totals within PHP 400,000, and explains post-grant sustainability with recurring costs and funding sources. It is not a framework or process description; it could be taken into a meeting with light editing. All item-specific rubric notes (offline-first tooling, device/power considerations, training, cost breakdown, sustainability) are covered concretely.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is the Philippines. The response avoids US assumptions: it uses locally available hardware (Samsung tablets widely available in the Philippines), references local mobile carriers (Smart, Globe), and considers local languages (Tagalog/Cebuano) for training. It does not assert US legal or employment norms. While it does not delve into Philippine-specific regulations (e.g., data privacy laws), it focuses on practical, factual accuracy for the context. Referrals to professional advice are not used as a substitute for content; the response is substantive and tailored to the jurisdiction.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides a highly practical, constraint-aware digitization plan with a fully costed budget and clear sustainability strategy.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response provides a highly practical, constraint-aware digitization plan with a fully costed budget and clear sustainability strategy.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

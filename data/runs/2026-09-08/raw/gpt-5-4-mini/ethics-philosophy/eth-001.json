@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 474,
+  "cost_usd": 0.00222375,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "cd0663c047864a97",
+  "item_id": "eth-001",
+  "latency_s": 4.237,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 121,
+  "provider": "openai",
+  "request_fingerprint": "6e1b2e993591bb32",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "A defensible answer is: **Patient B should get the machine, if the clinic must choose on the basis of prognosis alone.**\n\n### Why\nWhen a life-sustaining resource is scarce and the clinic has no established allocation policy, the least arbitrary criterion is often **medical prognosis**: who is more likely to benefit from the machine over time. Here, Patient B has an **80% five-year survival prognosis**, compared with Patient A’s **60%**. If the machine can sustain one patient indefinitely but only one can use it, giving it to the patient with the better expected medical outcome is a straightforward way to maximize the chance that the resource is used effectively.\n\nThis is not a claim that Patient A’s life matters less. It is a claim that, in a tie-breaking situation, the better prognosis provides a morally relevant reason to prefer one patient over the other. In a hard scarcity case, choosing the patient more likely to survive longer is a common principle because it aims at **medical utility** and avoids making the decision depend on factors unrelated to the treatment itself.\n\n### Strongest objection\nThe strongest objection is that this ignores **fairness and social context**. Patient A is younger and is the sole earner for four dependents, so denying A the machine could impose severe hardship on multiple other people. A critic could argue that a just allocation should not focus only on the patient’s own survival odds; it should also consider **age, dependents, and broader social consequences**. On that view, Patient A might have a stronger claim because saving A could indirectly protect four others from serious harm.\n\n### Why I still hold the view\nI still think B should get the machine because incorporating dependents and social role can become highly speculative and unevenly applied. If the clinic has **no policy**, the most ethically defensible default is to use the **most directly relevant medical criterion** available: prognosis. Dependents matter morally, but once a clinic starts weighting them ad hoc, it risks inconsistency, bias, and decisions based on social value rather than equal respect for persons. Prognosis is more objective and more tightly connected to the treatment itself.\n\nSo, while the case for A is strong on humanitarian grounds, I would still prioritize **Patient B** on the basis of **better survival prognosis and clearer allocation fairness**.",
+  "timestamp_utc": "2026-09-07T22:31:03Z"
+}

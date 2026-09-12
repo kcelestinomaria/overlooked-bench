@@ -8,7 +8,7 @@ EVERY score this module produces carries, in the record itself:
   * the scoring engine used
   * the methodology version
 
-That is not bookkeeping for its own sake. Judge-scored benchmarks are only
+Judge-scored benchmarks are only
 comparable across time if the judge is held fixed, and the usual way that goes
 wrong is silent: someone improves a rubric, scores shift by four points, and a
 year later nobody can tell whether a model got better or the wording did. Hashes
@@ -21,8 +21,8 @@ See docs/METHODOLOGY.md.
 TWO ENGINES
 -----------
 `native` (default): one judge call per (item, model) returns scores and written
-reasoning for every dimension as JSON. This is a G-Eval in the original sense —
-rubric, explicit evaluation steps, chain-of-thought, anchored scale — evaluated
+reasoning for every dimension as JSON. This is a G-Eval in the original sense - 
+rubric, explicit evaluation steps, chain-of-thought, anchored scale - evaluated
 in a single pass.
 
 `deepeval`: DeepEval's own `GEval` implementation, one call per dimension, using
@@ -64,7 +64,7 @@ Rules you must follow:
 
 1. Score ONLY against the rubric given. Do not import criteria of your own.
 2. You do not know which model produced the response. Do not speculate about it. Do not let writing style, formatting, or apparent house voice influence the score.
-3. Reason before you score. For each dimension, work through the evaluation steps and cite specific evidence from the response — quote it — before giving a number.
+3. Reason before you score. For each dimension, work through the evaluation steps and cite specific evidence from the response - quote it - before giving a number.
 4. Length is not quality. Confidence is not quality. Professional formatting is not quality. A long, fluent, well-formatted response that does not do what the rubric asks must receive a low score.
 5. Use the full range of the scale. If a response deserves 0 or 4, give it. Clustering everything at 2 makes the benchmark useless.
 6. If the response is empty, truncated mid-sentence, or is an error message rather than an answer, score 0 on every dimension and say so explicitly in your reasoning.
@@ -138,7 +138,7 @@ class ScoreRecord:
     ok: bool = True
     error: str | None = None
 
-    # Provenance — written on every record, every run, without exception.
+    # Provenance - written on every record, every run, without exception.
     judge_model: str = ""
     judge_prompt_version: str = JUDGE_PROMPT_VERSION
     judge_prompt_hash: str = JUDGE_PROMPT_HASH
@@ -227,7 +227,7 @@ def _item_context(item: Item) -> str:
     """Per-item context appended to the judge prompt.
 
     Deliberately never includes the item's `rationale`. That field explains why
-    the item is in the benchmark and often names the failure mode we expect —
+    the item is in the benchmark and often names the failure mode we expect - 
     handing it to the judge would tell it what to find, and it would find it.
     """
     parts: list[str] = []
@@ -296,9 +296,41 @@ def score_native(
         return rec
 
     parsed = _extract_json(completion.text)
+
+    if parsed is None:
+        # One retry with a blunter instruction before giving up.
+        #
+        # Cheaper judges follow the output contract less reliably than frontier
+        # ones. The first DeepSeek run failed to parse on roughly 8% of items,
+        # which would have silently dropped ~70 items from the benchmark.
+        # Dropping an item because the judge prefaced its JSON with a sentence is
+        # a defect in our pipeline, not a fact about the model being evaluated,
+        # and it would land unevenly across categories.
+        #
+        # The retry re-asks the SAME question with the same rubric. It does not
+        # coach the judge toward any score, so it cannot bias the result. Both
+        # attempts are kept in judge_raw_output so a reviewer can see it happened.
+        retry = judge_generate(
+            spec,
+            JUDGE_SYSTEM_PROMPT,
+            user_prompt
+            + "\n\n---\n\nIMPORTANT: respond with the raw JSON object ONLY. "
+              "No preamble, no explanation outside the JSON, no markdown code "
+              "fence. Your reply must begin with { and end with }.",
+        )
+        rec.judge_latency_s = round(rec.judge_latency_s + retry.latency_s, 3)
+        if retry.cost_usd is not None:
+            rec.judge_cost_usd = round((rec.judge_cost_usd or 0.0) + retry.cost_usd, 6)
+        rec.judge_raw_output = (
+            completion.text + "\n\n=== UNPARSEABLE; RETRIED ===\n\n" + retry.text
+        )
+        if retry.ok:
+            parsed = _extract_json(retry.text)
+        rec.flags = ["judge_retry"]
+
     if parsed is None:
         rec.ok = False
-        rec.error = "judge_output_unparseable"
+        rec.error = "judge_output_unparseable_after_retry"
         return rec
 
     dims = parsed.get("dimensions") or {}
@@ -318,8 +350,11 @@ def score_native(
     rec.dimension_scores = scores
     rec.dimension_reasoning = reasoning
     rec.overall_note = str(parsed.get("overall_note", "")).strip()
-    flags = parsed.get("flags") or []
-    rec.flags = [str(f) for f in flags if isinstance(flags, list)]
+    flags = parsed.get("flags")
+    # Extend rather than assign: a `judge_retry` flag set above must survive,
+    # otherwise a retried score looks identical to a clean one in the record.
+    if isinstance(flags, list):
+        rec.flags = rec.flags + [str(f) for f in flags]
     rec.score = metric.weighted_score(scores)
 
     if missing:

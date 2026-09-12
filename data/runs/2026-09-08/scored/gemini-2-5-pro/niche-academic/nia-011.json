@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for principal technical obstacles and current standing, a specialist topic. The response goes beyond encyclopedic level by engaging with specific technical details: it explains tonal reversal, downstep origins, depressor consonants with examples, vowel length interactions, morphotonology in verbal and nominal systems, and current research shifts like reconstructing tonal grammar and the augment. It discusses scholarly debates (e.g., four-tone hypothesis set aside) and methodologies (computational phylogenetics). A specialist would recognize this as informed by the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that are correct: it accurately describes Meeussen's two-tone system, examples like *-bàdá, obstacles like tonal reversal, depressor consonants, interaction with segmental phonology, morphotonology, data scarcity, the shift to grammatical reconstruction, focus on regional reconstructions, and computational methods. It correctly cites Larry Hyman and references like Bantu Lexical Reconstructions 3. No invented citations, terms, or consensus are evident; all claims align with established knowledge in Bantu historical linguistics. Minor errors are absent or negligible.",
+    "field_situatedness": "The response uses frameworks, terminology, and conventions specific to Bantu historical linguistics and African linguistics: it employs terms like Proto-Bantu, Meeussen's rules, depressor consonants, morphotonology, tonal melodies, augment/pre-prefix, and references key scholars (Meeussen, Hyman). It does not substitute a Western or Anglophone adjacent field's framing; it stays firmly within the Bantu scholarly tradition, acknowledging non-English scholarship (e.g., Meeussen's work). The vocabulary is appropriate and field-specific.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points accurately. It presents the two-tone hypothesis as consensus ('the consensus remains firmly behind'), notes the four-tone hypothesis as largely set aside, and describes ongoing debates like the origin of downstep ('a topic of ongoing debate and refinement'). It signals evidential status without uniform confidence: for example, it states data scarcity makes reconstructions 'tentative' and that current work is 'refining' Meeussen's rules. Calibration is specific, not blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00133526,
+  "judge_latency_s": 20.35,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are correct: it accurately describes Meeussen's two-tone system, examples like *-bàdá, obstacles like tonal reversal, depressor consonants, interaction with segmental phonology, morphotonology, data scarcity, the shift to grammatical reconstruction, focus on regional reconstructions, and computational methods. It correctly cites Larry Hyman and references like Bantu Lexical Reconstructions 3. No invented citations, terms, or consensus are evident; all claims align with established knowledge in Bantu historical linguistics. Minor errors are absent or negligible.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for principal technical obstacles and current standing, a specialist topic. The response goes beyond encyclopedic level by engaging with specific technical details: it explains tonal reversal, downstep origins, depressor consonants with examples, vowel length interactions, morphotonology in verbal and nominal systems, and current research shifts like reconstructing tonal grammar and the augment. It discusses scholarly debates (e.g., four-tone hypothesis set aside) and methodologies (computational phylogenetics). A specialist would recognize this as informed by the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points accurately. It presents the two-tone hypothesis as consensus ('the consensus remains firmly behind'), notes the four-tone hypothesis as largely set aside, and describes ongoing debates like the origin of downstep ('a topic of ongoing debate and refinement'). It signals evidential status without uniform confidence: for example, it states data scarcity makes reconstructions 'tentative' and that current work is 'refining' Meeussen's rules. Calibration is specific, not blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks, terminology, and conventions specific to Bantu historical linguistics and African linguistics: it employs terms like Proto-Bantu, Meeussen's rules, depressor consonants, morphotonology, tonal melodies, augment/pre-prefix, and references key scholars (Meeussen, Hyman). It does not substitute a Western or Anglophone adjacent field's framing; it stays firmly within the Bantu scholarly tradition, acknowledging non-English scholarship (e.g., Meeussen's work). The vocabulary is appropriate and field-specific.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated expertise in Proto-Bantu tone reconstruction, addressing both obstacles and current research with depth and specificity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated expertise in Proto-Bantu tone reconstruction, addressing both obstacles and current research with depth and specificity.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

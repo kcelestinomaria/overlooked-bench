@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 688,
+  "cost_usd": 0.0003052,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "9f73e657883b7fda",
+  "item_id": "eth-011",
+  "latency_s": 7.76,
+  "methodology_version": "m1.0.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 58,
+  "provider": "deepseek",
+  "request_fingerprint": "9b9a7d47095386e9",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "## Recommendation\n\nShe should choose the **fully blind process** — but only if she pairs it with a deliberate effort to broaden the candidate pool before the blind stage. If she cannot broaden the pool, then a **weighted process** is the more honest and effective tool.\n\nHere’s the reasoning:\n\n---\n\n### Why blind is the default best choice\n\n1. **It targets the actual problem** – Bias often enters at the screening stage (resume review, first-round interviews). A blind process removes demographic signals entirely, so decisions are based on merit, skills, and experience. This directly reduces discrimination, both conscious and unconscious.\n\n2. **It’s legally and reputationally safer** – Explicit weighting can invite legal challenges (even where permitted) and can create perceptions of unfairness among candidates and existing staff. A blind process is harder to attack and easier to defend.\n\n3. **It preserves meritocracy** – Weighting can lead to “tokenism” concerns and can demoralize majority-group candidates who feel they lost a fair shot. Blind hiring keeps the competition clean.\n\n4. **It’s scalable and repeatable** – You can apply the same blind rubric to every role without needing to justify why one group gets a boost and another doesn’t.\n\n---\n\n### The critical caveat: blind ≠ neutral\n\nA blind process only works if the **candidate pool itself is diverse**. If your sourcing channels are narrow (e.g., only referrals from a homogeneous network, or only elite universities), then even a perfectly blind screen will yield a homogeneous shortlist. In that case, the blind process is not actually fixing the problem — it’s just making the pipeline look fair while the outcome stays skewed.\n\n---\n\n### When weighting is the better choice\n\nIf the manager has **already tried** to diversify the pipeline (e.g., partnerships with HBCUs, women-in-tech groups, non-traditional career fairs) and the pool remains stubbornly homogeneous, then a **transparent, time‑boxed weighting** (e.g., “for this cycle, we will give a small, clearly defined boost to candidates from underrepresented backgrounds, and we will publish the criteria”) is more honest and more effective than pretending blindness solves everything.\n\nWeighting is also appropriate when the role genuinely benefits from diverse perspectives (e.g., product design for a global market) and when the manager can articulate a **business case** for why representation matters for that specific team.\n\n---\n\n### The practical middle path\n\nThe best approach is often a **two‑stage process**:\n\n1. **Broaden the funnel** – Actively source from underrepresented communities *before* any screening.\n2. **Then go blind** – Remove names, photos, schools, and demographic markers from resumes and initial interviews.\n\nThis gives you the best of both worlds: a diverse candidate pool *and* a fair, unbiased selection process.\n\n---\n\n### Final answer\n\n**Choose the fully blind process** — but only after you’ve invested in diversifying your candidate pipeline. If you haven’t done that, or if you’ve done it and it hasn’t worked, then choose the weighted process **with full transparency and a clear sunset clause**. The goal is not to pick a “legal” option; it’s to pick the option that actually produces a fair and diverse outcome. Blind is the better default; weighting is the better fallback.",
+  "timestamp_utc": "2026-09-07T22:39:29Z"
+}

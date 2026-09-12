@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes a single student with specific constraints (limited funds, below-cut-off KCSE). The response accounts for this range by consistently addressing financial constraints (costs, loans, free options), and proposes adaptations like using free online resources, cyber cafés for internet, and seeking NGO support. It is tailored to one student's situation, not a generic classroom. The proposed guidance is implementable by the student (or a counselor giving it) without requiring extra resources. There is no generic 'differentiate as needed' placeholder; adaptations are concrete (e.g., 'use free Wi-Fi at libraries or cyber cafés').",
+    "pathway_breadth": "Pathway guidance is explicitly in scope. The response covers a wide range of realistic pathways for a Kenyan student with below-cut-off KCSE results and limited funds. It substantively covers TVET (with specific colleges, costs, and the TVET portal), national polytechnics, self-sponsored university (parallel programs), KCSE resit, online courses, entrepreneurship, military/NYS, and alternative education. Non-degree routes (TVET, online courses, entrepreneurship, NYS) are given comparable depth and specificity to degree routes, with real entry requirements, costs, and outcomes. It correctly names Kenyan institutions (KNEC, HELB, TVET CDACC, NITA, specific universities) and avoids framing non-university paths as failure. It meets the item-specific notes.",
+    "pedagogical_soundness": "The response is not a lesson plan or pedagogical design; it is career guidance. There are no stated learning objectives, activities, or assessments to evaluate for alignment, sequencing, or cognitive demand. The rubric's evaluation steps (identify objectives, check activities, check assessment) are not applicable to this type of response. Therefore, it does not engage with the dimension of pedagogical soundness as defined.",
+    "workload_realism": "The dimension evaluates whether a plan could be delivered by a practitioner. This response is guidance for a student, not a practitioner's delivery plan. There are no activity timings, materials, or class sizes to sum or check against a setting. The implied 'workload' is for the student to research and act, not for a teacher to prepare and mark. It does not engage with the dimension's core concern of practitioner workload realism."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00149675,
+  "judge_latency_s": 19.59,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan or pedagogical design; it is career guidance. There are no stated learning objectives, activities, or assessments to evaluate for alignment, sequencing, or cognitive demand. The rubric's evaluation steps (identify objectives, check activities, check assessment) are not applicable to this type of response. Therefore, it does not engage with the dimension of pedagogical soundness as defined.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The dimension evaluates whether a plan could be delivered by a practitioner. This response is guidance for a student, not a practitioner's delivery plan. There are no activity timings, materials, or class sizes to sum or check against a setting. The implied 'workload' is for the student to research and act, not for a teacher to prepare and mark. It does not engage with the dimension's core concern of practitioner workload realism.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is explicitly in scope. The response covers a wide range of realistic pathways for a Kenyan student with below-cut-off KCSE results and limited funds. It substantively covers TVET (with specific colleges, costs, and the TVET portal), national polytechnics, self-sponsored university (parallel programs), KCSE resit, online courses, entrepreneurship, military/NYS, and alternative education. Non-degree routes (TVET, online courses, entrepreneurship, NYS) are given comparable depth and specificity to degree routes, with real entry requirements, costs, and outcomes. It correctly names Kenyan institutions (KNEC, HELB, TVET CDACC, NITA, specific universities) and avoids framing non-university paths as failure. It meets the item-specific notes.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes a single student with specific constraints (limited funds, below-cut-off KCSE). The response accounts for this range by consistently addressing financial constraints (costs, loans, free options), and proposes adaptations like using free online resources, cyber cafés for internet, and seeking NGO support. It is tailored to one student's situation, not a generic classroom. The proposed guidance is implementable by the student (or a counselor giving it) without requiring extra resources. There is no generic 'differentiate as needed' placeholder; adaptations are concrete (e.g., 'use free Wi-Fi at libraries or cyber cafés').\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, specific, and financially-aware guidance covering multiple pathways for a Kenyan student, excelling in pathway breadth and differentiation for the individual's context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, specific, and financially-aware guidance covering multiple pathways for a Kenyan student, excelling in pathway breadth and differentiation for the individual's context.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

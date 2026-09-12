@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# overlooked-bench — one command to run the whole pipeline.
+# overlooked-bench - one command to run the whole pipeline.
 #
 #   ./run.sh                      # full run, today's date as the run id
 #   ./run.sh --run-id 2026-10-01  # ...or a specific run id

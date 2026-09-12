@@ -1,0 +1,34 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('If yes, state the conditions precisely. If no, explain...'), but the response declines to take a position. It states 'There's no consensus' and ends by deflecting to the reader ('What's your own intuition...'). While it acknowledges uncertainty honestly, it evades answering by providing only an exposition of views without stating which considerations are decisive or what would change its mind. Calibrated uncertainty would involve leaning toward a position with reasons; here, there is no position quoted.",
+    "philosophical_literacy": "The response invokes named thinkers (Rawls), traditions (democratic theorists, civic republicans, deliberative democrats, constitutionalists), and technical terms (civil disobedience, proportionality, democratic legitimacy). These are accurate: Rawls is correctly referenced, and distinctions like 'property damage' vs. 'violence' are handled appropriately. The concepts are load-bearing in structuring the exposition (e.g., Rawls' conditions frame the debate). There are no garbled terms or misattributions. However, the use is more decorative than argumentative since no position is built from them.",
+    "position_pluralism": "The response lists major live positions: the conditional justification view (with thresholds) and the case against (citing deliberative democrats/constitutionalists). It also mentions what critics say citizens should do instead. An advocate of the conditional justification view would likely accept the characterisation (e.g., thresholds like 'proportionate damage'), and an opponent would recognise the objections (e.g., 'coercion that bypasses reason-giving'). It does not strawman either side, and it avoids false balance by not presenting fringe views as equal. However, it omits some nuanced positions (e.g., radical democratic perspectives that might justify more aggressive disobedience), but the two main camps are covered fairly.",
+    "reasoning_construction": "The response does not build an actual argument with premises leading to a conclusion. It presents two labeled positions ('The Case for Conditional Justification' and 'The Case Against') and an overview of alternatives, but never states or defends its own conclusion. The inference is absent; the response ends by asking the user's intuition rather than deriving a position from premises. It engages specific details (e.g., thresholds like 'legal channels have been exhausted') but only as part of a survey, not as applied reasoning. It does not address the strongest counterargument to any specific line because it takes no line. This is pattern-matching a familiar summary format."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 0,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 1
+  },
+  "error": null,
+  "flags": [
+    "refusal"
+  ],
+  "item_id": "eth-019",
+  "judge_cost_usd": 0.00102043,
+  "judge_latency_s": 22.102,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response does not build an actual argument with premises leading to a conclusion. It presents two labeled positions ('The Case for Conditional Justification' and 'The Case Against') and an overview of alternatives, but never states or defends its own conclusion. The inference is absent; the response ends by asking the user's intuition rather than deriving a position from premises. It engages specific details (e.g., thresholds like 'legal channels have been exhausted') but only as part of a survey, not as applied reasoning. It does not address the strongest counterargument to any specific line because it takes no line. This is pattern-matching a familiar summary format.\",\n      \"score\": 1\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('If yes, state the conditions precisely. If no, explain...'), but the response declines to take a position. It states 'There's no consensus' and ends by deflecting to the reader ('What's your own intuition...'). While it acknowledges uncertainty honestly, it evades answering by providing only an exposition of views without stating which considerations are decisive or what would change its mind. Calibrated uncertainty would involve leaning toward a position with reasons; here, there is no position quoted.\",\n      \"score\": 0\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response lists major live positions: the conditional justification view (with thresholds) and the case against (citing deliberative democrats/constitutionalists). It also mentions what critics say citizens should do instead. An advocate of the conditional justification view would likely accept the characterisation (e.g., thresholds like 'proportionate damage'), and an opponent would recognise the objections (e.g., 'coercion that bypasses reason-giving'). It does not strawman either side, and it avoids false balance by not presenting fringe views as equal. However, it omits some nuanced positions (e.g., radical democratic perspectives that might justify more aggressive disobedience), but the two main camps are covered fairly.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes named thinkers (Rawls), traditions (democratic theorists, civic republicans, deliberative democrats, constitutionalists), and technical terms (civil disobedience, proportionality, democratic legitimacy). These are accurate: Rawls is correctly referenced, and distinctions like 'property damage' vs. 'violence' are handled appropriately. The concepts are load-bearing in structuring the exposition (e.g., Rawls' conditions frame the debate). There are no garbled terms or misattributions. However, the use is more decorative than argumentative since no position is built from them.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a competent survey of philosophical positions but refuses to take a stand or construct an argument as the prompt explicitly requested.\",\n  \"flags\": [\"refusal\"]\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response provides a competent survey of philosophical positions but refuses to take a stand or construct an argument as the prompt explicitly requested.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 38.75
+}

@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the learner range implied by the setting: children learning in a language not spoken at home. It provides specific, low-cost differentiation strategies implementable by one teacher with no assistant: using visuals and gestures to make French comprehensible, allowing wait time and varied response modes (pointing, drawing), using partner talk, seating arrangements, and supporting home languages without speaking them (e.g., inviting word sharing, multilingual labels). It avoids generic placeholder language and focuses on practical adaptations for language development and participation.",
+    "pathway_breadth": "The item does not involve student future pathway guidance; it is about supporting multilingual learners in a primary classroom. Therefore, scoring is based on inclusivity of the range of learners described. The response directly addresses the specific setting: primary school in Quebec, instruction in French, home languages of Arabic, Spanish, Tagalog, and a teacher speaking only French and English. It provides strategies tailored to this linguistic diversity (e.g., valuing home languages, using multilingual labels, supporting comprehension) and is inclusive of these learners without defaulting to a generic multicultural approach.",
+    "pedagogical_soundness": "The response does not present a specific lesson plan with stated learning objectives, activities, and aligned assessments. It provides general principles and strategies (e.g., 'Make instruction comprehensible', 'Support oral participation') but lacks explicit learning objectives, a sequence of activities, or assessments tied to them. Therefore, it cannot be evaluated for alignment between objectives, activities, and assessments, or for sequencing and prerequisites. It is a briefing of general advice, not a pedagogical plan.",
+    "workload_realism": "The response lists strategies that are generally low-cost and implementable by one teacher with no assistant (e.g., using visuals, gestures, routines, partner talk, wait time). It does not require specific materials beyond basic classroom supplies (pictures, real objects, visual schedules) or unrealistic technology. It avoids recommending bilingual staff or translated materials the teacher cannot produce. The strategies are presented as integrated into normal teaching, not adding excessive preparation or marking load. The briefing itself is designed to fit on one page."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 1,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00108387,
+  "judge_latency_s": 18.25,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a specific lesson plan with stated learning objectives, activities, and aligned assessments. It provides general principles and strategies (e.g., 'Make instruction comprehensible', 'Support oral participation') but lacks explicit learning objectives, a sequence of activities, or assessments tied to them. Therefore, it cannot be evaluated for alignment between objectives, activities, and assessments, or for sequencing and prerequisites. It is a briefing of general advice, not a pedagogical plan.\",\n      \"score\": 1\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response lists strategies that are generally low-cost and implementable by one teacher with no assistant (e.g., using visuals, gestures, routines, partner talk, wait time). It does not require specific materials beyond basic classroom supplies (pictures, real objects, visual schedules) or unrealistic technology. It avoids recommending bilingual staff or translated materials the teacher cannot produce. The strategies are presented as integrated into normal teaching, not adding excessive preparation or marking load. The briefing itself is designed to fit on one page.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student future pathway guidance; it is about supporting multilingual learners in a primary classroom. Therefore, scoring is based on inclusivity of the range of learners described. The response directly addresses the specific setting: primary school in Quebec, instruction in French, home languages of Arabic, Spanish, Tagalog, and a teacher speaking only French and English. It provides strategies tailored to this linguistic diversity (e.g., valuing home languages, using multilingual labels, supporting comprehension) and is inclusive of these learners without defaulting to a generic multicultural approach.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the learner range implied by the setting: children learning in a language not spoken at home. It provides specific, low-cost differentiation strategies implementable by one teacher with no assistant: using visuals and gestures to make French comprehensible, allowing wait time and varied response modes (pointing, drawing), using partner talk, seating arrangements, and supporting home languages without speaking them (e.g., inviting word sharing, multilingual labels). It avoids generic placeholder language and focuses on practical adaptations for language development and participation.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly practical and context-specific briefing offering implementable strategies for a teacher working alone with multilingual learners.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response is a highly practical and context-specific briefing offering implementable strategies for a teacher working alone with multilingual learners.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

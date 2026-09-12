@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the current state of debate, positions argued, evidence, and strength of evidence. The response lists three positions with named scholars and years, and mentions types of evidence (phonology, grammar, vocabulary, loanwords). However, it stays at a general summary level: it does not engage with specific methodological debates (e.g., comparative method vs. contact linguistics), detail the evidence quality (e.g., number of cognates, regularity of sound correspondences), or discuss internal scholarly critiques. A specialist would recognize this as a competent but introductory overview, not a deep engagement with the literature.",
+    "domain_accuracy": "The response makes several substantive claims: Harold Fleming (2002) and Azeb Amha (2012) argue Ongota is a language isolate; Mauro Tosco (2000) and Richard Hayward (2000) propose Afro-Asiatic affiliation; Gerrit Dimmendaal (2011) suggests a mixed language hypothesis. It provides examples: Ongota word for water 'bila' cognate with Somali 'biyo'; borrowed words from Amharic. I cannot verify these specific citations or examples from my own knowledge, and the prompt provides no reference material. The response does not invent obviously false technical terms or consensus, but given the niche domain and lack of corroboration, I must score conservatively. The claims appear plausible but unverified.",
+    "field_situatedness": "The question is about linguistic classification of an Ethiopian language, a subfield of African linguistics/historical linguistics. The response uses appropriate terminology ('language isolate', 'Afro-Asiatic', 'Cushitic branch', 'phonology', 'cognates', 'loanwords', 'genetic relationship') and cites scholars active in African linguistics (Fleming, Amha, Tosco, Hayward, Dimmendaal). It does not silently substitute a Western framing; it engages with the specific debate within the field. No indication of ignoring non-English scholarship.",
+    "scholarly_calibration": "The response distinguishes between positions and notes the evidence is not conclusive, stating 'the debate remains ongoing' and 'lack of comprehensive linguistic documentation and analysis makes it difficult to rule out relationships.' It specifically calibrates: for the isolate hypothesis, 'lack of comprehensive documentation' hinders ruling out relationships; for Afro-Asiatic, similarities 'may be due to language contact'; for mixed language, 'challenging to determine the extent.' This is targeted calibration, not a blanket disclaimer, and it avoids presenting any position as settled fact."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 2,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00104827,
+  "judge_latency_s": 20.136,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: Harold Fleming (2002) and Azeb Amha (2012) argue Ongota is a language isolate; Mauro Tosco (2000) and Richard Hayward (2000) propose Afro-Asiatic affiliation; Gerrit Dimmendaal (2011) suggests a mixed language hypothesis. It provides examples: Ongota word for water 'bila' cognate with Somali 'biyo'; borrowed words from Amharic. I cannot verify these specific citations or examples from my own knowledge, and the prompt provides no reference material. The response does not invent obviously false technical terms or consensus, but given the niche domain and lack of corroboration, I must score conservatively. The claims appear plausible but unverified.\",\n      \"score\": 2\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the current state of debate, positions argued, evidence, and strength of evidence. The response lists three positions with named scholars and years, and mentions types of evidence (phonology, grammar, vocabulary, loanwords). However, it stays at a general summary level: it does not engage with specific methodological debates (e.g., comparative method vs. contact linguistics), detail the evidence quality (e.g., number of cognates, regularity of sound correspondences), or discuss internal scholarly critiques. A specialist would recognize this as a competent but introductory overview, not a deep engagement with the literature.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between positions and notes the evidence is not conclusive, stating 'the debate remains ongoing' and 'lack of comprehensive linguistic documentation and analysis makes it difficult to rule out relationships.' It specifically calibrates: for the isolate hypothesis, 'lack of comprehensive documentation' hinders ruling out relationships; for Afro-Asiatic, similarities 'may be due to language contact'; for mixed language, 'challenging to determine the extent.' This is targeted calibration, not a blanket disclaimer, and it avoids presenting any position as settled fact.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about linguistic classification of an Ethiopian language, a subfield of African linguistics/historical linguistics. The response uses appropriate terminology ('language isolate', 'Afro-Asiatic', 'Cushitic branch', 'phonology', 'cognates', 'loanwords', 'genetic relationship') and cites scholars active in African linguistics (Fleming, Amha, Tosco, Hayward, Dimmendaal). It does not silently substitute a Western framing; it engages with the specific debate within the field. No indication of ignoring non-English scholarship.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a structured, plausible summary of the debate with appropriate calibration but lacks depth and unverified specifics.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a structured, plausible summary of the debate with appropriate calibration but lacks depth and unverified specifics.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 60.0
+}

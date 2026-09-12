@@ -7,7 +7,7 @@ Reads `data/runs/<run-id>/summary.json` and writes PNGs to
 every number drawn is read directly out of `summary.json`, and if a chart looks
 wrong the fix is in the harness or the dataset, never here.
 
-CHART HONESTY RULES — enforced in code, not by convention
+CHART HONESTY RULES - enforced in code, not by convention
 ---------------------------------------------------------
 * Score axes always run the full 0-100. A truncated axis is the single easiest
   way to make a 3-point gap look like a landslide, so the range is hard-coded
@@ -51,8 +51,8 @@ TEXT_SECONDARY = "#52514e"
 TEXT_MUTED = "#8a8880"
 GRID = "#e6e5e1"
 
-SERIES_1 = "#2a78d6"   # blue    — primary metric
-SERIES_2 = "#eb6834"   # orange  — asymmetry (lower is better; different meaning)
+SERIES_1 = "#2a78d6"   # blue - primary metric
+SERIES_2 = "#eb6834"   # orange - asymmetry (lower is better; different meaning)
 SERIES_3 = "#1baf7a"   # aqua
 CATEGORICAL = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"]
 
@@ -123,8 +123,8 @@ def _footer(summary: dict[str, Any]) -> str:
     """
     judge = summary["judge"]
     return (
-        f"overlooked-bench {summary['run_id']}  ·  judge {judge['judge_model']} "
-        f"({judge['judge_prompt_version']})  ·  methodology {summary['methodology_version']}  ·  "
+        f"overlooked-bench {summary['run_id']}  |  judge {judge['judge_model']} "
+        f"({judge['judge_prompt_version']})  |  methodology {summary['methodology_version']}  |  "
         f"{summary['n_models']} models, {sum(summary['item_counts'].values())} items"
     )
 
@@ -156,8 +156,8 @@ def chart_overall(summary: dict[str, Any], out_dir: Path) -> Path:
     shown = f"top {len(rows)} of {total} models" if total > len(rows) else f"{total} models"
     _titles(
         fig,
-        "Overall index — the benchmarks nobody runs",
-        f"Mean of five category scores. Calibration track excluded by design.  ·  {shown}",
+        "Overall index - the benchmarks nobody runs",
+        f"Mean of five category scores. Calibration track excluded by design.  |  {shown}",
         _footer(summary),
     )
     fig.subplots_adjust(top=0.875, bottom=0.145, left=0.175)
@@ -185,14 +185,14 @@ def chart_category(summary: dict[str, Any], category: str, out_dir: Path) -> Pat
     n_items = summary["item_counts"].get(category, rows[0][2] if rows else 0)
     shown = f"top {len(rows)} of {total} models" if total > len(rows) else f"{total} models"
     note = (
-        "Harness control track — not a headline result"
+        "Harness control track - not a headline result"
         if category == "calibration-general"
         else f"n = {n_items} items"
     )
     _titles(
         fig,
         label,
-        f"{note}  ·  {shown}",
+        f"{note}  |  {shown}",
         _footer(summary),
     )
     fig.subplots_adjust(top=0.875, bottom=0.145, left=0.175)
@@ -218,14 +218,14 @@ def chart_asymmetry(summary: dict[str, Any], out_dir: Path) -> Path | None:
     fig, ax = plt.subplots(figsize=(12.4, 0.40 * len(rows) + 1.8))
     _barh(ax, [r[0] for r in rows], [r[1] for r in rows], SERIES_2)
     _style_axes(ax, xmax=100.0)
-    ax.set_xlabel("Asymmetry index — mean score spread within matched institution groups")
+    ax.set_xlabel("Asymmetry index - mean score spread within matched institution groups")
 
     shown = f"top {len(rows)} of {total} models" if total > len(rows) else f"{total} models"
     _titles(
         fig,
-        "Institutional criticism — treatment asymmetry",
+        "Institutional criticism - treatment asymmetry",
         "Prompts within a group are identical except for the institution named. "
-        f"Higher = criticism depends more on who is named. 0 = consistent.  ·  {shown}",
+        f"Higher = criticism depends more on who is named. 0 = consistent.  |  {shown}",
         _footer(summary),
     )
     fig.subplots_adjust(top=0.855, bottom=0.145, left=0.175)
@@ -277,7 +277,7 @@ def chart_criticism_vs_asymmetry(summary: dict[str, Any], out_dir: Path) -> Path
     _titles(
         fig,
         "Willingness to criticise, and how much it varies",
-        "A high mean with a high spread means the model criticises readily — "
+        "A high mean with a high spread means the model criticises readily - "
         "but not everyone equally.",
         _footer(summary),
     )
@@ -396,7 +396,7 @@ def main(argv: list[str] | None = None) -> int:
         if path:
             written.append(path)
     if len(runs) < 2:
-        print("Note: trend charts skipped — they need at least two runs.")
+        print("Note: trend charts skipped - they need at least two runs.")
 
     for path in written:
         print(f"  wrote {path.relative_to(REPO_ROOT)}")

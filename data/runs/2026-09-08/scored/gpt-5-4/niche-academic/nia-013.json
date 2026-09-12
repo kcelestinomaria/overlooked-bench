@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopedia level by engaging with specific mechanisms (ILGs, SABLs), scholarly debates (e.g., the 'dead capital' thesis critique, internal inequality within groups), and methodological issues (legal simplification, boundary disputes). It discusses evidence quality (state capacity weaknesses) and internal scholarly nuances (the defensive use of registration). A specialist would recognize detailed engagement with the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that are correct: it accurately states that 95–97% of land in PNG is held under customary tenure, that the Constitution and land laws recognize it, and that mechanisms like Incorporated Land Groups (ILGs) and lease–lease-back arrangements exist. It correctly identifies Special Agricultural and Business Leases (SABLs) as a point of criticism. No invented citations, terms, or consensus are presented; all claims align with established scholarship on PNG land tenure. Minor errors are absent, and the content is load-bearing and accurate.",
+    "field_situatedness": "The response uses terminology and frameworks specific to the field of PNG land tenure and development studies, such as 'customary tenure,' 'Incorporated Land Groups,' 'lease–lease-back,' and 'Special Agricultural and Business Leases.' It does not silently substitute a Western or Anglophone framing; it engages with the regional scholarly tradition focusing on social relations, local histories, and critiques of formalisation programmes in the PNG context. Non-English scholarship is not explicitly cited, but the framing remains appropriate to the field.",
+    "scholarly_calibration": "The response consistently distinguishes between well-established facts (e.g., dominance of customary tenure) and contested or critical perspectives (e.g., whether formalisation creates security or dispossession). It signals evidential status, such as noting that 'scholars argue' or 'critics argue,' and presents a nuanced position in section 5, acknowledging that not all scholars reject every form of registration. It avoids blanket disclaimers and uniform confidence, offering specific calibration throughout."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00125104,
+  "judge_latency_s": 16.401,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are correct: it accurately states that 95–97% of land in PNG is held under customary tenure, that the Constitution and land laws recognize it, and that mechanisms like Incorporated Land Groups (ILGs) and lease–lease-back arrangements exist. It correctly identifies Special Agricultural and Business Leases (SABLs) as a point of criticism. No invented citations, terms, or consensus are presented; all claims align with established scholarship on PNG land tenure. Minor errors are absent, and the content is load-bearing and accurate.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopedia level by engaging with specific mechanisms (ILGs, SABLs), scholarly debates (e.g., the 'dead capital' thesis critique, internal inequality within groups), and methodological issues (legal simplification, boundary disputes). It discusses evidence quality (state capacity weaknesses) and internal scholarly nuances (the defensive use of registration). A specialist would recognize detailed engagement with the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes between well-established facts (e.g., dominance of customary tenure) and contested or critical perspectives (e.g., whether formalisation creates security or dispossession). It signals evidential status, such as noting that 'scholars argue' or 'critics argue,' and presents a nuanced position in section 5, acknowledging that not all scholars reject every form of registration. It avoids blanket disclaimers and uniform confidence, offering specific calibration throughout.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to the field of PNG land tenure and development studies, such as 'customary tenure,' 'Incorporated Land Groups,' 'lease–lease-back,' and 'Special Agricultural and Business Leases.' It does not silently substitute a Western or Anglophone framing; it engages with the regional scholarly tradition focusing on social relations, local histories, and critiques of formalisation programmes in the PNG context. Non-English scholarship is not explicitly cited, but the framing remains appropriate to the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and nuanced engagement with the prompt, reflecting deep scholarly competence across all rubric dimensions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and nuanced engagement with the prompt, reflecting deep scholarly competence across all rubric dimensions.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

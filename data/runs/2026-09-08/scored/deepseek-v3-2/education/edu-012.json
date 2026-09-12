@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response directly and concretely addresses the range of learners (plurilingual learners in a French-instruction setting). It provides specific, low-cost differentiation strategies: visual supports, scaffolding oral interaction (sentence starters, Think-Pair-Share), adapting reading/writing, leveraging home language (language detective, cognates), and allowing non-verbal responses. It explicitly considers the teacher's language constraints and lack of assistant. There is no generic 'differentiate as needed' placeholder; every suggestion is content-rich and implementable by one practitioner.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about supporting language learners in a primary classroom. Therefore, per the rubric, this dimension is scored on 'whether the response is inclusive of the range of learners in the described setting.' The response is explicitly and substantively inclusive of learners with home languages of Arabic, Spanish, and Tagalog. It treats home language as an asset, provides specific strategies for this range, and respects the Quebec French-instruction context. It addresses the full described learner range concretely.",
+    "pedagogical_soundness": "The response does not present a specific lesson plan with stated learning objectives, activities, and assessments to evaluate alignment. It is a briefing document offering general strategies and principles. Therefore, steps 1-5 of the evaluation (identifying objectives, checking activity alignment, assessing assessments, sequencing, rubric criteria) cannot be applied as there are no specific instructional sequences to judge. The briefing is pedagogically informed but does not demonstrate pedagogical soundness in the structured, aligned way the dimension requires for a teaching plan.",
+    "workload_realism": "The strategies proposed (e.g., labeling everything, using visuals, sentence starters, Think-Pair-Share, TPR, bilingual books if available, home language connection sheets) are all implementable by a single teacher with no assistant and no knowledge of the home languages, using common classroom resources. The briefing explicitly acknowledges the constraint ('you work without a classroom assistant'). Timings are not specified for a lesson, so summation is not required, but the 'Quick Reference' and general strategies are low-cost and classroom-ready. Preparation time (creating labels, finding visuals) is proportionate."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 1,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00123569,
+  "judge_latency_s": 19.812,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a specific lesson plan with stated learning objectives, activities, and assessments to evaluate alignment. It is a briefing document offering general strategies and principles. Therefore, steps 1-5 of the evaluation (identifying objectives, checking activity alignment, assessing assessments, sequencing, rubric criteria) cannot be applied as there are no specific instructional sequences to judge. The briefing is pedagogically informed but does not demonstrate pedagogical soundness in the structured, aligned way the dimension requires for a teaching plan.\",\n      \"score\": 1\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The strategies proposed (e.g., labeling everything, using visuals, sentence starters, Think-Pair-Share, TPR, bilingual books if available, home language connection sheets) are all implementable by a single teacher with no assistant and no knowledge of the home languages, using common classroom resources. The briefing explicitly acknowledges the constraint ('you work without a classroom assistant'). Timings are not specified for a lesson, so summation is not required, but the 'Quick Reference' and general strategies are low-cost and classroom-ready. Preparation time (creating labels, finding visuals) is proportionate.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about supporting language learners in a primary classroom. Therefore, per the rubric, this dimension is scored on 'whether the response is inclusive of the range of learners in the described setting.' The response is explicitly and substantively inclusive of learners with home languages of Arabic, Spanish, and Tagalog. It treats home language as an asset, provides specific strategies for this range, and respects the Quebec French-instruction context. It addresses the full described learner range concretely.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response directly and concretely addresses the range of learners (plurilingual learners in a French-instruction setting). It provides specific, low-cost differentiation strategies: visual supports, scaffolding oral interaction (sentence starters, Think-Pair-Share), adapting reading/writing, leveraging home language (language detective, cognates), and allowing non-verbal responses. It explicitly considers the teacher's language constraints and lack of assistant. There is no generic 'differentiate as needed' placeholder; every suggestion is content-rich and implementable by one practitioner.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a highly practical, asset-based briefing that provides concrete, implementable strategies for a teacher working alone in a multilingual Quebec primary classroom.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This is a highly practical, asset-based briefing that provides concrete, implementable strategies for a teacher working alone in a multilingual Quebec primary classroom.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

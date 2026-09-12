@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests 'draft guidance the association can send to members'. The response produces usable guidance: it is written for factory owners, includes a self-assessment checklist, low-cost fixes, document lists, and next steps. It provides concrete components (templates, cost estimates, sample responses to buyers) that could be taken into a meeting with light editing. It does not merely describe the process; it delivers the guidance.",
+    "constraint_fidelity": "The prompt states constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it provides low-cost solutions (free templates, Excel, suggestion boxes), avoids recommending consultants, and explicitly says 'without hiring consultants'. It shows arithmetic for low-cost fixes (e.g., fire extinguishers BDT 2,000–5,000). No central constraint is ignored or violated.",
+    "contextual_realism": "The response is calibrated for small factories with limited capacity: it assumes no dedicated HR or compliance officers, uses simple tools (Excel, suggestion boxes, WhatsApp), acknowledges role overlap (appoint a trusted staff member), and focuses on free resources (government guidelines, buyer training). It avoids tooling they cannot afford or administer (e.g., no expensive audits). Small-organisation realities like key-person dependency and no slack are addressed through practical steps.",
+    "jurisdictional_accuracy": "The jurisdiction is Bangladesh. The response references Bangladesh-specific elements: minimum wage (BDT 8,000/month), Bangladesh Labour Act 2006, Bangladesh Fire Service. It avoids US assumptions (e.g., no mention of at-will employment or US tax categories). It provides accurate local resources and flags where professional advice may be needed ('consult a professional'), but this is not a substitute for substantive content. No confidently wrong jurisdiction-specific claims are made."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00119135,
+  "judge_latency_s": 16.131,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it provides low-cost solutions (free templates, Excel, suggestion boxes), avoids recommending consultants, and explicitly says 'without hiring consultants'. It shows arithmetic for low-cost fixes (e.g., fire extinguishers BDT 2,000–5,000). No central constraint is ignored or violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories with limited capacity: it assumes no dedicated HR or compliance officers, uses simple tools (Excel, suggestion boxes, WhatsApp), acknowledges role overlap (appoint a trusted staff member), and focuses on free resources (government guidelines, buyer training). It avoids tooling they cannot afford or administer (e.g., no expensive audits). Small-organisation realities like key-person dependency and no slack are addressed through practical steps.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests 'draft guidance the association can send to members'. The response produces usable guidance: it is written for factory owners, includes a self-assessment checklist, low-cost fixes, document lists, and next steps. It provides concrete components (templates, cost estimates, sample responses to buyers) that could be taken into a meeting with light editing. It does not merely describe the process; it delivers the guidance.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Bangladesh. The response references Bangladesh-specific elements: minimum wage (BDT 8,000/month), Bangladesh Labour Act 2006, Bangladesh Fire Service. It avoids US assumptions (e.g., no mention of at-will employment or US tax categories). It provides accurate local resources and flags where professional advice may be needed ('consult a professional'), but this is not a substitute for substantive content. No confidently wrong jurisdiction-specific claims are made.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly practical, context-aware guidance document that directly addresses the needs of small Bangladeshi factories with actionable steps.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response is a highly practical, context-aware guidance document that directly addresses the needs of small Bangladeshi factories with actionable steps.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

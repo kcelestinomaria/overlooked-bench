@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes a specific student (19-year-old, informal work background, time constraint). The response addresses this individual's needs by focusing on fast, affordable, employment-focused pathways. It considers financial access via scholarships and free training, and advises verifying local demand. However, it does not address a range of learners (e.g., differing prior attainment, additional needs, language barriers) because the prompt is for one student. The guidance is concrete and implementable for this student's situation, but the rubric notes to score on inclusivity of the range of learners in the described setting; here, the setting is a single student, so the response appropriately targets that individual without generic placeholder differentiation.",
+    "pathway_breadth": "Pathway guidance is in scope. The response focuses exclusively on non-degree pathways relevant to the Philippine context: TESDA technical-vocational programmes (e.g., Electrical Installation, Automotive Servicing, Caregiving), short courses with NC certification, and mentions community college associate programmes only if ladderized/fast-track. It substantively covers vocational routes with specific durations, costs, scholarships (TWSP, UAQTEA), and earnings. It correctly avoids defaulting to a university track and names TESDA qualifications realistically. It treats non-degree options with depth, not as an afterthought.",
+    "pedagogical_soundness": "The response is not a lesson plan but an advisory guide. It does not state learning objectives, activities, or assessments for a classroom. Instead, it provides structured steps for career guidance. Therefore, it does not engage with the dimension of pedagogical soundness as defined by the rubric (alignment of objectives, activities, assessment).",
+    "workload_realism": "The response outlines a sequence of actions for an adviser and student (e.g., visiting offices, checking scholarships, enrolling in courses). The tasks are feasible for a community college adviser to guide and for a student to execute within real-world constraints. It does not prescribe unrealistic preparation or marking loads, as it is advisory, not instructional. The guidance is actionable and time-bound (e.g., 'This month,' '4–8 months')."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00137882,
+  "judge_latency_s": 17.888,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan but an advisory guide. It does not state learning objectives, activities, or assessments for a classroom. Instead, it provides structured steps for career guidance. Therefore, it does not engage with the dimension of pedagogical soundness as defined by the rubric (alignment of objectives, activities, assessment).\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response outlines a sequence of actions for an adviser and student (e.g., visiting offices, checking scholarships, enrolling in courses). The tasks are feasible for a community college adviser to guide and for a student to execute within real-world constraints. It does not prescribe unrealistic preparation or marking loads, as it is advisory, not instructional. The guidance is actionable and time-bound (e.g., 'This month,' '4–8 months').\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response focuses exclusively on non-degree pathways relevant to the Philippine context: TESDA technical-vocational programmes (e.g., Electrical Installation, Automotive Servicing, Caregiving), short courses with NC certification, and mentions community college associate programmes only if ladderized/fast-track. It substantively covers vocational routes with specific durations, costs, scholarships (TWSP, UAQTEA), and earnings. It correctly avoids defaulting to a university track and names TESDA qualifications realistically. It treats non-degree options with depth, not as an afterthought.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes a specific student (19-year-old, informal work background, time constraint). The response addresses this individual's needs by focusing on fast, affordable, employment-focused pathways. It considers financial access via scholarships and free training, and advises verifying local demand. However, it does not address a range of learners (e.g., differing prior attainment, additional needs, language barriers) because the prompt is for one student. The guidance is concrete and implementable for this student's situation, but the rubric notes to score on inclusivity of the range of learners in the described setting; here, the setting is a single student, so the response appropriately targets that individual without generic placeholder differentiation.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, realistic, and actionable vocational guidance tailored to the Philippine context and the student's 18-month constraint.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides highly specific, realistic, and actionable vocational guidance tailored to the Philippine context and the student's 18-month constraint.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 65.0
+}

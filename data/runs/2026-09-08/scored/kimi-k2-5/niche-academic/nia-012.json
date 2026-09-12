@@ -1,0 +1,22 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {},
+  "dimension_scores": {},
+  "error": "judge_output_unparseable",
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00134505,
+  "judge_latency_s": 25.361,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are correct: it accurately describes Javanese gamelan tuning systems (sléndro and pélog), colotomic structure, instruments (bonang, saron, gender), concepts (balungan, cengkok, wilet, garap, ombak), and transmission practices (nggamel). It correctly cites Mantle Hood's numerical systems and his 1954 work, Javanese cipher notation (kepatihan), and scholars like Judith Becker, Charles Seeger, Steven Feld, Timothy Rice, R. Anderson Sutton, and Marc Perlman. No invented citations, terms, or consensus are evident; all claims align with established ethnomusicological knowledge. Minor inaccuracies include the description of pélog as 'seven tones with unequal intervals'—while generally correct, it oversimplifies as pélog often uses subsets of seven tones—but this is not load-bearing. Overall, the claims are highly accurate.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopaedia level. It engages with specific analytical problems (e.g., tuning mismatches, timbral omissions, colotomic distortion) and scholarly debates (e.g., transcription as analysis vs. neutral documentation). It details methodological alternatives (Hood's numerical systems, time-unit boxes, kinesonic notation, spectrographic tools) and theoretical reorientations (ethnomusicological critique, performance-centered analysis). A specialist would recognize familiarity with the literature, such as references to Hood's 1954 work and contemporary scholars like Sutton and Perlman. It does not merely summarize but analyzes implications, e.g., 'notation implies a score-based tradition foreign to Javanese practice' and 'treating transcription not as translation but as cross-cultural dialogue.'\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates accurate calibration by distinguishing well-established from contested points. It presents certain facts as settled (e.g., tuning systems, colotomic structure) but flags uncertainties and limitations: it notes that Hood's systems 'still struggle with timbral and temporal nuances,' describes kinesonic notation as 'labor-intensive,' and states that some scholars 'question whether transcription is appropriate at all.' It avoids presenting one scholar's proposal as fact; instead, it frames alternatives as proposals or critiques. However, it lacks explicit calibration on evidential status for some claims (e.g., the description of pélog intervals could note variability), and it does not signal where its own knowledge might be weak. Overall, calibration is specific and targeted, not a blanket disclaimer.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response consistently uses the frameworks and terminology of ethnomusicology and Javanese gamelan studies. It employs indigenous terms (sléndro, pélog, ombak, balungan, cengkok, etc.) and references scholars central to the field (Hood, Becker, Seeger, Feld, Rice, Sutton, Perlman). It does not silently substitute a Western musicological framing; instead, it critiques Western conventions while exploring alternatives rooted in Javanese and Balinese practices (e.g., kepatihan notation). The response is situated squarely within ethnomusicology, addressing cross-cultural analytical issues as the field would.\",\n      \"score\": 4\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate ethnomusicological knowledge with specific critiques of Western transcription and well-documented alternatives.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": false,
+  "overall_note": "",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 0.0
+}

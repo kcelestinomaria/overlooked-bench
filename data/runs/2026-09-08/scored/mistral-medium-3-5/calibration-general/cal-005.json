@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 60', which exactly matches the reference answer 'ANSWER: 60' in substance. The response correctly identifies the largest integer as 60, and the verification step confirms the sum is 174. Formatting differences are ignored per the rubric.",
+    "instruction_compliance": "The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working step-by-step and ends with 'ANSWER: 60' on its own line, matching the required format exactly. All instructions are followed.",
+    "reasoning_validity": "The response shows working: it defines variables as consecutive even integers (x, x+2, x+4), sets up the equation x + (x+2) + (x+4) = 174, simplifies to 3x + 6 = 174, solves for x = 56, and computes the largest as x+4 = 60. Each step is mathematically valid and supports the answer. The verification step further confirms correctness. No invalid reasoning is present."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-005",
+  "judge_cost_usd": 0.00060116,
+  "judge_latency_s": 11.52,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 60', which exactly matches the reference answer 'ANSWER: 60' in substance. The response correctly identifies the largest integer as 60, and the verification step confirms the sum is 174. Formatting differences are ignored per the rubric.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it defines variables as consecutive even integers (x, x+2, x+4), sets up the equation x + (x+2) + (x+4) = 174, simplifies to 3x + 6 = 174, solves for x = 56, and computes the largest as x+4 = 60. Each step is mathematically valid and supports the answer. The verification step further confirms correctness. No invalid reasoning is present.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working step-by-step and ends with 'ANSWER: 60' on its own line, matching the required format exactly. All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all rubric criteria with correct answer, valid reasoning, and strict compliance to output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response fully meets all rubric criteria with correct answer, valid reasoning, and strict compliance to output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

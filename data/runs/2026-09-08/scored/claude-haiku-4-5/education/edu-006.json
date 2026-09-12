@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners (e.g., SEND, EAL). The response concretely addresses this by detailing how cuts to support staff (Options 2 and 3) would damage support for vulnerable pupils, including reduced intervention capacity and potential breaches of SEND commitments. It does not propose specific teaching adaptations, but it acknowledges the impact on differentiation and access through staffing decisions, which is implementable by the head teacher within the given constraints.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about staffing budget cuts. Therefore, scoring is based on inclusivity of the learner range in the described setting. The response explicitly addresses impacts on vulnerable pupils (SEND, EAL, disadvantaged learners) in Options 2 and 3, showing consideration for the range of learners in the school.",
+    "pedagogical_soundness": "The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, activities, assessments, sequencing, or rubrics. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response provides a realistic implementation timeline (Months 1-3, Summer, September) and acknowledges consultation, redundancy, and planning processes. It assumes no unrealistic resources (e.g., no extra staff or technology) and the class-size constraint (max 30) is respected in all options. The preparation and marking load is not relevant here, but the operational planning is feasible for a head teacher in the described setting."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00098864,
+  "judge_latency_s": 13.394,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, activities, assessments, sequencing, or rubrics. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides a realistic implementation timeline (Months 1-3, Summer, September) and acknowledges consultation, redundancy, and planning processes. It assumes no unrealistic resources (e.g., no extra staff or technology) and the class-size constraint (max 30) is respected in all options. The preparation and marking load is not relevant here, but the operational planning is feasible for a head teacher in the described setting.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about staffing budget cuts. Therefore, scoring is based on inclusivity of the learner range in the described setting. The response explicitly addresses impacts on vulnerable pupils (SEND, EAL, disadvantaged learners) in Options 2 and 3, showing consideration for the range of learners in the school.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners (e.g., SEND, EAL). The response concretely addresses this by detailing how cuts to support staff (Options 2 and 3) would damage support for vulnerable pupils, including reduced intervention capacity and potential breaches of SEND commitments. It does not propose specific teaching adaptations, but it acknowledges the impact on differentiation and access through staffing decisions, which is implementable by the head teacher within the given constraints.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is a well-structured, realistic options paper that meets the prompt's specific requirements while considering impacts on vulnerable learners.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a well-structured, realistic options paper that meets the prompt's specific requirements while considering impacts on vulnerable learners.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 52.5
+}

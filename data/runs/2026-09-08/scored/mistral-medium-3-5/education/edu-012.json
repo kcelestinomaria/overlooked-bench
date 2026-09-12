@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the learner range (students with different home languages) with specific, low-cost strategies implementable by one teacher: using visuals, peer support, simplified language, sentence starters, and validating home languages. It avoids generic placeholder language and does not require a second adult. Examples like 'Allow students to respond in English initially' and 'Use pictures, charts, and demonstrations' are practical for the setting.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about supporting multilingual learners in a classroom. The response is inclusive of the range of learners described (Arabic, Spanish, Tagalog speakers) by offering strategies that value home languages and address language barriers. It treats home languages as an asset (e.g., inviting students to share words) and is specific to the Quebec French-instruction context without defaulting to other systems.",
+    "pedagogical_soundness": "The response does not explicitly state learning objectives, activities, or assessments, so alignment cannot be evaluated. It provides general strategies (e.g., 'Use visuals & gestures,' 'Simplify language') but lacks a through-line connecting objectives, activities, and assessment. There is no mention of sequencing, prerequisites, or rubrics. While the strategies are educationally sound in principle, the response is a list of tips rather than a pedagogical plan with measurable outcomes.",
+    "workload_realism": "The strategies are generally low-cost and implementable by one teacher with no assistant (e.g., using visuals, peer support, gestures). No unrealistic materials (like translated content the teacher cannot produce) are recommended. However, the response does not specify timings, a lesson/unit length, or marking loads, so feasibility cannot be fully assessed against a real timetable. The suggestions are classroom-ready and respect resource constraints, but the lack of concrete timing sums prevents a higher score."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 1,
+    "workload_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00091485,
+  "judge_latency_s": 16.48,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not explicitly state learning objectives, activities, or assessments, so alignment cannot be evaluated. It provides general strategies (e.g., 'Use visuals & gestures,' 'Simplify language') but lacks a through-line connecting objectives, activities, and assessment. There is no mention of sequencing, prerequisites, or rubrics. While the strategies are educationally sound in principle, the response is a list of tips rather than a pedagogical plan with measurable outcomes.\",\n      \"score\": 1\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The strategies are generally low-cost and implementable by one teacher with no assistant (e.g., using visuals, peer support, gestures). No unrealistic materials (like translated content the teacher cannot produce) are recommended. However, the response does not specify timings, a lesson/unit length, or marking loads, so feasibility cannot be fully assessed against a real timetable. The suggestions are classroom-ready and respect resource constraints, but the lack of concrete timing sums prevents a higher score.\",\n      \"score\": 2\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about supporting multilingual learners in a classroom. The response is inclusive of the range of learners described (Arabic, Spanish, Tagalog speakers) by offering strategies that value home languages and address language barriers. It treats home languages as an asset (e.g., inviting students to share words) and is specific to the Quebec French-instruction context without defaulting to other systems.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the learner range (students with different home languages) with specific, low-cost strategies implementable by one teacher: using visuals, peer support, simplified language, sentence starters, and validating home languages. It avoids generic placeholder language and does not require a second adult. Examples like 'Allow students to respond in English initially' and 'Use pictures, charts, and demonstrations' are practical for the setting.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides practical, classroom-ready strategies for supporting multilingual learners but lacks explicit pedagogical structure and timing details.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response provides practical, classroom-ready strategies for supporting multilingual learners but lacks explicit pedagogical structure and timing details.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 53.75
+}

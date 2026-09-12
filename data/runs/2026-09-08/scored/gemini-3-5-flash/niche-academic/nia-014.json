@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond an encyclopaedia level. It engages with specific ecological processes (e.g., primary succession stages on the dry seabed, detailed vegetation shifts), methodological evidence (satellite remote sensing, soil chemistry profiling, climatological data), and scholarly debates (e.g., the focus on managing the Aralkum as a new biome). It provides detail indicative of familiarity with the literature, such as the 90% reduction in nesting bird species and the specific effects of aeolian deposition on photosynthesis. A specialist would recognize substantive engagement.",
+    "domain_accuracy": "The response makes numerous substantive factual claims, such as the formation of the Aralkum Desert, the collapse of Tugay forests, the role of species like Saxaul, and the effects of salt/dust storms. These are consistent with established scientific literature on the Aral Sea disaster. It does not invent citations, technical terms, or consensus. For example, it correctly identifies processes like soil salinization, specific plant species (Haloxylon ammodendron), and the impact on regional climate. All claims appear accurate and load-bearing to the answer.",
+    "field_situatedness": "The response correctly uses the frameworks and terminology of environmental science and ecology, the field pertinent to the question. It employs specific ecological terms (e.g., 'regime shift,' 'primary succession,' 'halophytes,' 'aeolian processes') and references regional specifics (e.g., Aralkum Desert, Tugay forests, Saxaul). It does not silently substitute a Western or Anglophone framing; it addresses the regional context of Central Asia appropriately, including mitigation efforts by Uzbekistan and Kazakhstan.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points. It presents robust evidence (e.g., 'robust and highly quantified') for soil degradation and desertification, while noting areas like terrestrial faunal collapse as 'strong, though historically less prioritized.' It avoids presenting hypotheses as settled fact and acknowledges ongoing research (e.g., 'one of the most active areas of current research' for aeolian processes). It does not use blanket disclaimers but provides targeted calibration, such as the partial recovery in the Northern Aral Sea being 'modest.'"
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00127333,
+  "judge_latency_s": 19.143,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive factual claims, such as the formation of the Aralkum Desert, the collapse of Tugay forests, the role of species like Saxaul, and the effects of salt/dust storms. These are consistent with established scientific literature on the Aral Sea disaster. It does not invent citations, technical terms, or consensus. For example, it correctly identifies processes like soil salinization, specific plant species (Haloxylon ammodendron), and the impact on regional climate. All claims appear accurate and load-bearing to the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond an encyclopaedia level. It engages with specific ecological processes (e.g., primary succession stages on the dry seabed, detailed vegetation shifts), methodological evidence (satellite remote sensing, soil chemistry profiling, climatological data), and scholarly debates (e.g., the focus on managing the Aralkum as a new biome). It provides detail indicative of familiarity with the literature, such as the 90% reduction in nesting bird species and the specific effects of aeolian deposition on photosynthesis. A specialist would recognize substantive engagement.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points. It presents robust evidence (e.g., 'robust and highly quantified') for soil degradation and desertification, while noting areas like terrestrial faunal collapse as 'strong, though historically less prioritized.' It avoids presenting hypotheses as settled fact and acknowledges ongoing research (e.g., 'one of the most active areas of current research' for aeolian processes). It does not use blanket disclaimers but provides targeted calibration, such as the partial recovery in the Northern Aral Sea being 'modest.'\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses the frameworks and terminology of environmental science and ecology, the field pertinent to the question. It employs specific ecological terms (e.g., 'regime shift,' 'primary succession,' 'halophytes,' 'aeolian processes') and references regional specifics (e.g., Aralkum Desert, Tugay forests, Saxaul). It does not silently substitute a Western or Anglophone framing; it addresses the regional context of Central Asia appropriately, including mitigation efforts by Uzbekistan and Kazakhstan.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated expertise on the terrestrial ecological effects of the Aral Sea desiccation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated expertise on the terrestrial ecological effects of the Aral Sea desiccation.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

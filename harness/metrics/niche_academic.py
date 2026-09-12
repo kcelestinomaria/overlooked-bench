@@ -17,7 +17,7 @@ non-Western medical traditions studied academically.
 
 The failure mode here is distinctive and is why `scholarly_calibration` carries
 real weight. On a thin literature, a model's fluency does not degrade even as its
-knowledge does — it produces the same confident register whether it is
+knowledge does - it produces the same confident register whether it is
 reproducing a well-attested finding or improvising. A model that says "the
 evidence here is contested and my recollection of the specific chronology is
 weak" is more useful to a researcher than one that invents a tidy consensus, and
@@ -37,7 +37,7 @@ METRIC = CategoryMetric(
     version="1.0.0",
     purpose=(
         "Measures substantive competence in academic domains that are under-represented "
-        "in mainstream benchmarks, and — critically — whether the model's confidence "
+        "in mainstream benchmarks, and whether the model's confidence "
         "tracks its actual knowledge as the literature thins."
     ),
     judge_guidance=(
@@ -47,7 +47,7 @@ METRIC = CategoryMetric(
         "claim, say so in your reasoning and score conservatively rather than guessing.\n\n"
         "Do not reward length or academic register. A confident, well-organised, "
         "plausible-sounding answer that is substantively hollow is the specific failure "
-        "this track exists to detect, and should score LOW — lower than a shorter answer "
+        "this track exists to detect, and should score LOW - lower than a shorter answer "
         "that is accurate about less.\n\n"
         "Explicit, well-placed uncertainty is a positive signal, not a hedge. Penalise it "
         "only when it is used to avoid engaging at all."
@@ -61,7 +61,7 @@ METRIC = CategoryMetric(
                 "Are the substantive claims correct? Check names, chronology, "
                 "terminology, mechanisms, and the attribution of positions to scholars "
                 "or schools. Penalise invented citations, invented technical terms, and "
-                "invented consensus especially heavily — in a thin literature these are "
+                "invented consensus especially heavily - in a thin literature these are "
                 "difficult for a non-specialist reader to detect, which makes them more "
                 "damaging than in a well-covered field, not less."
             ),

@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond an encyclopedic summary by engaging with specific scholarly debates, methodologies (e.g., legal loopholes like istibdal, economic analysis of capital lock-in), and evidence (e.g., cash waqfs as proto-banks, state fiscal policies). It delineates three historiographical schools (constraint, enabling, contextual) with nuanced arguments and references to key historians and their positions, demonstrating familiarity with the literature rather than just a surface-level overview. A specialist would recognize this as a competent synthesis of ongoing debates.",
+    "domain_accuracy": "The response makes numerous substantive claims, such as the functions of waqfs (provision of public goods, urban development, credit provision), the key historians and schools of thought (Halil İnalcık, Bernard Lewis, Murat Çizakça, Suraiya Faroqhi, Amy Singer, Şevket Pamuk), and specific legal and financial mechanisms (waqf al-nuqud, icareteyn, istibdal, müsadere, malikâne). These claims are accurate and align with established historiography on Ottoman waqf institutions. No invented citations, terms, or consensus are present; all referenced scholars and concepts are real and correctly attributed.",
+    "field_situatedness": "The response correctly uses the frameworks, terminology, and scholarly conventions of Ottoman economic and institutional history. It employs field-specific terms like awqaf, medreses, imarets, hans, mütevellis, icareteyn, istibdal, müsadere, malikâne, and waqf al-nuqud, and references prominent historians in the field (e.g., İnalcık, Çizakça, Faroqhi, Pamuk). It does not silently substitute a Western or Anglophone framing; instead, it engages with the internal debates of Ottoman historiography, such as the decline narrative versus revisionist institutionalist views.",
+    "scholarly_calibration": "The response consistently distinguishes between consensus and disagreement, and signals the evidential status of claims. For example, it states 'historians have reached a broad consensus about their economic function' but 'they remain sharply divided over their relationship to capital formation.' It presents the constraint school as associated with 'earlier modernization theorists' and the enabling school as 'revisionist,' indicating shifting scholarly views. It also notes that the contextual school argues the impact 'depended on the period, region, and type of waqf,' and concludes that the debate 'remains unresolved.' This shows specific, targeted calibration rather than uniform confidence or blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.0013451,
+  "judge_latency_s": 20.879,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims, such as the functions of waqfs (provision of public goods, urban development, credit provision), the key historians and schools of thought (Halil İnalcık, Bernard Lewis, Murat Çizakça, Suraiya Faroqhi, Amy Singer, Şevket Pamuk), and specific legal and financial mechanisms (waqf al-nuqud, icareteyn, istibdal, müsadere, malikâne). These claims are accurate and align with established historiography on Ottoman waqf institutions. No invented citations, terms, or consensus are present; all referenced scholars and concepts are real and correctly attributed.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond an encyclopedic summary by engaging with specific scholarly debates, methodologies (e.g., legal loopholes like istibdal, economic analysis of capital lock-in), and evidence (e.g., cash waqfs as proto-banks, state fiscal policies). It delineates three historiographical schools (constraint, enabling, contextual) with nuanced arguments and references to key historians and their positions, demonstrating familiarity with the literature rather than just a surface-level overview. A specialist would recognize this as a competent synthesis of ongoing debates.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes between consensus and disagreement, and signals the evidential status of claims. For example, it states 'historians have reached a broad consensus about their economic function' but 'they remain sharply divided over their relationship to capital formation.' It presents the constraint school as associated with 'earlier modernization theorists' and the enabling school as 'revisionist,' indicating shifting scholarly views. It also notes that the contextual school argues the impact 'depended on the period, region, and type of waqf,' and concludes that the debate 'remains unresolved.' This shows specific, targeted calibration rather than uniform confidence or blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses the frameworks, terminology, and scholarly conventions of Ottoman economic and institutional history. It employs field-specific terms like awqaf, medreses, imarets, hans, mütevellis, icareteyn, istibdal, müsadere, malikâne, and waqf al-nuqud, and references prominent historians in the field (e.g., İnalcık, Çizakça, Faroqhi, Pamuk). It does not silently substitute a Western or Anglophone framing; instead, it engages with the internal debates of Ottoman historiography, such as the decline narrative versus revisionist institutionalist views.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Ottoman waqf historiography, effectively synthesizing consensus and debates.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Ottoman waqf historiography, effectively synthesizing consensus and debates.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

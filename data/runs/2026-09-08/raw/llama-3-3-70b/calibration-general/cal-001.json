@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 163,
+  "cost_usd": 0.00020232,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 1.327,
+  "methodology_version": "m1.0.0",
+  "model_id": "meta/llama-3.3-70b",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "prompt_tokens": 118,
+  "provider": "meta",
+  "request_fingerprint": "538083be4c42a389",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "meta/llama-3.3-70b",
+    "temperature": 0.0
+  },
+  "text": "To find the total profit, we need to calculate the total cost of the fabric and the total revenue from selling the dresses.\n\nFirst, let's calculate the total length of fabric:\n4 rolls * 45 metres per roll = 180 metres\n\nThe total cost of the fabric is:\n180 metres * $8 per metre = $1440\n\nNow, let's calculate the number of dresses that can be made with the fabric:\n180 metres / 12 metres per dress = 15 dresses\n\nThe total revenue from selling the dresses is:\n15 dresses * $150 per dress = $2250\n\nThe total profit is the difference between the total revenue and the total cost:\nTotal profit = Total revenue - Total cost\n= $2250 - $1440\n= $810\n\nANSWER: 810",
+  "timestamp_utc": "2026-09-07T22:44:43Z"
+}

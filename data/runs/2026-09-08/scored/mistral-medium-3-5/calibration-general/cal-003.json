@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 12', which exactly matches the reference answer 'ANSWER: 12'. The numerical answer is correct, and the response is not empty or truncated.",
+    "instruction_compliance": "The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 12', matching the required format exactly.",
+    "reasoning_validity": "The response shows working: it correctly identifies Pipe A's fill rate as 1/4 tank/hour and Pipe B's drain rate as -1/6 tank/hour, computes the net rate as 1/4 - 1/6 = 1/12 tank/hour, and correctly calculates the time as 1 / (1/12) = 12 hours. Each step is valid and logically supports the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-003",
+  "judge_cost_usd": 0.00060543,
+  "judge_latency_s": 9.27,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 12', which exactly matches the reference answer 'ANSWER: 12'. The numerical answer is correct, and the response is not empty or truncated.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it correctly identifies Pipe A's fill rate as 1/4 tank/hour and Pipe B's drain rate as -1/6 tank/hour, computes the net rate as 1/4 - 1/6 = 1/12 tank/hour, and correctly calculates the time as 1 / (1/12) = 12 hours. Each step is valid and logically supports the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 12', matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

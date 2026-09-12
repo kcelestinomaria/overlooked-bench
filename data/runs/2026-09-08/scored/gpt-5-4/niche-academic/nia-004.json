@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopedia level by engaging with specific scholarly debates, methodological issues, and historiographic context. It discusses disputes over dating methods (e.g., radiocarbon challenges), classification debates (e.g., natural-draft identification, slag-tapping significance), and the relationship between archaeology and ethnography. It cites internal critiques, such as the caution against using typology for chronology and the warnings about ethnographic analogy. A specialist would recognize this as engagement with the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that are correct and well-aligned with the literature. It correctly identifies the geographic scope, the importance of shaft and natural-draft furnaces, the debates over early dating and typological sequences, and the critique of diffusionist models. It does not invent citations, technical terms, or false consensus. For example, it accurately notes disputes over early dates due to 'problematic stratigraphy' and 'old wood' problems, and correctly describes the shift away from linear evolutionary models. No load-bearing errors or fabrications are present.",
+    "field_situatedness": "The response correctly uses the frameworks and terminology of African archaeometallurgy and Great Lakes regional scholarship. It focuses on local variability, critiques of diffusionist models, and engagement with ethnography—central concerns in the field. It does not silently substitute a Western or Anglophone adjacent framing; instead, it emphasizes indigenous innovation and regional debates. Vocabulary (e.g., 'shaft furnaces,' 'slag-tapping,' 'Bantu-language dispersals') is appropriate and situated within the relevant scholarly tradition.",
+    "scholarly_calibration": "The response consistently distinguishes well-established points from contested ones and signals evidential status. It presents broad consensus on technological sophistication and social importance, but explicitly flags disputes (e.g., 'probably the biggest controversy' on dating, 'strongly dispute' on typological sequences). It notes methodological limitations (e.g., 'collapsed shafts are hard to reconstruct reliably') and avoids presenting contested claims as settled. Calibration is specific and integrated, not a blanket disclaimer. For instance, it contrasts 'the early-date position' with 'the skeptical/revisionist position' and explains why each matters."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-004",
+  "judge_cost_usd": 0.00141065,
+  "judge_latency_s": 18.941,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are correct and well-aligned with the literature. It correctly identifies the geographic scope, the importance of shaft and natural-draft furnaces, the debates over early dating and typological sequences, and the critique of diffusionist models. It does not invent citations, technical terms, or false consensus. For example, it accurately notes disputes over early dates due to 'problematic stratigraphy' and 'old wood' problems, and correctly describes the shift away from linear evolutionary models. No load-bearing errors or fabrications are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopedia level by engaging with specific scholarly debates, methodological issues, and historiographic context. It discusses disputes over dating methods (e.g., radiocarbon challenges), classification debates (e.g., natural-draft identification, slag-tapping significance), and the relationship between archaeology and ethnography. It cites internal critiques, such as the caution against using typology for chronology and the warnings about ethnographic analogy. A specialist would recognize this as engagement with the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes well-established points from contested ones and signals evidential status. It presents broad consensus on technological sophistication and social importance, but explicitly flags disputes (e.g., 'probably the biggest controversy' on dating, 'strongly dispute' on typological sequences). It notes methodological limitations (e.g., 'collapsed shafts are hard to reconstruct reliably') and avoids presenting contested claims as settled. Calibration is specific and integrated, not a blanket disclaimer. For instance, it contrasts 'the early-date position' with 'the skeptical/revisionist position' and explains why each matters.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses the frameworks and terminology of African archaeometallurgy and Great Lakes regional scholarship. It focuses on local variability, critiques of diffusionist models, and engagement with ethnography—central concerns in the field. It does not silently substitute a Western or Anglophone adjacent framing; instead, it emphasizes indigenous innovation and regional debates. Vocabulary (e.g., 'shaft furnaces,' 'slag-tapping,' 'Bantu-language dispersals') is appropriate and situated within the relevant scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level competence by accurately synthesizing known information while detailing specific scholarly disputes with well-calibrated confidence.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level competence by accurately synthesizing known information while detailing specific scholarly disputes with well-calibrated confidence.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

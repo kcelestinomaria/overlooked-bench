@@ -11,9 +11,9 @@ Items are drawn from well-covered public benchmark material with known-good
 answers, where the expected ordering of frontier and small models is already
 established by other people's published work. If a run produces plausible
 category scores but the calibration track shows a strong model failing simple
-verifiable questions, the problem is almost certainly ours — a truncated
+verifiable questions, the problem is almost certainly ours - a truncated
 `max_tokens`, a transport error being scored as a bad answer, a broken judge
-prompt, a model id silently routing somewhere unexpected — and not a discovery
+prompt, a model id silently routing somewhere unexpected - and not a discovery
 about the model. Without this track those failure modes would surface as
 interesting-looking findings in the tracks that have no ground truth, which is
 exactly where they would be hardest to catch and most damaging to publish.
@@ -43,7 +43,7 @@ METRIC = CategoryMetric(
         "Be strict and mechanical here. This track exists to detect faults in our own "
         "pipeline, so leniency defeats its purpose. If the response is empty, truncated "
         "mid-sentence, or is an API error message rather than an answer, score 0 on every "
-        "dimension and say so explicitly in your reasoning — that is a pipeline fault we "
+        "dimension and say so explicitly in your reasoning - that is a pipeline fault we "
         "need to see, not a model weakness.\n\n"
         "Differences in formatting, phrasing or verbosity are irrelevant as long as the "
         "substantive answer matches the reference."
@@ -58,7 +58,7 @@ METRIC = CategoryMetric(
                 "correct answer, 2 for partially correct where the item has multiple "
                 "parts, 0 for incorrect, empty, or truncated. Ignore formatting, style "
                 "and verbosity entirely. If the response reaches the right answer by "
-                "faulty reasoning, still score correctness on the answer — reasoning is "
+                "faulty reasoning, still score correctness on the answer - reasoning is "
                 "scored separately."
             ),
             evaluation_steps=[

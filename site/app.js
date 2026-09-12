@@ -3,7 +3,7 @@
 
    Reads the committed run data directly: `../data/runs/index.json` for the list
    of runs, then `../data/runs/<id>/summary.json` for the selected one. There is
-   no API and no database — the page renders the same files a reviewer would read
+   no API and no database - the page renders the same files a reviewer would read
    by hand, which is the point.
 
    Because it uses fetch(), it needs to be served over HTTP. From the repo root:
@@ -33,7 +33,7 @@ let sortState = { key: 'overall_index', dir: 'desc' };
 
 /* --- helpers ------------------------------------------------------------- */
 
-const fmt = (v, d = 1) => (v === null || v === undefined ? '—' : Number(v).toFixed(d));
+const fmt = (v, d = 1) => (v === null || v === undefined ? ' - ' : Number(v).toFixed(d));
 
 function el(tag, props = {}, children = []) {
   const node = document.createElement(tag);
@@ -49,7 +49,7 @@ function el(tag, props = {}, children = []) {
   return node;
 }
 
-/* A number with a magnitude bar behind it. The number is always present —
+/* A number with a magnitude bar behind it. The number is always present - 
    never a bar on its own, which would force the reader to estimate. */
 function barCell(value, max = 100, warn = false) {
   const pct = Math.max(0, Math.min(100, (Number(value) / max) * 100));
@@ -151,7 +151,7 @@ function renderLeaderboard(s) {
     tr.appendChild(el('td', {}, [
       el('div', { class: 'model-name', text: row.display }),
       el('div', { class: 'provider' }, [
-        row.provider + ' · ',
+        row.provider + ' | ',
         el('span', { class: 'tier', text: row.tier }),
       ]),
     ]));
@@ -183,7 +183,7 @@ function renderAsymmetry(s) {
   els.asymDetail.replaceChildren(...rows.map((r) => {
     const det = el('details');
     det.appendChild(el('summary', {
-      text: `${r.display} — attribute gaps and per-group spread`,
+      text: `${r.display} - attribute gaps and per-group spread`,
     }));
     const body = el('div', { class: 'body' });
 
@@ -198,9 +198,9 @@ function renderAsymmetry(s) {
       const values = Object.entries(block.by_value)
         .sort((a, b) => b[1].mean - a[1].mean)
         .map(([v, d]) => `${v} ${fmt(d.mean)} (n=${d.n})`)
-        .join('  ·  ');
+        .join('  |  ');
       body.appendChild(el('div', { class: 'gap-row' }, [
-        el('span', { class: 'k', text: `${attr} — gap ${fmt(block.gap)}` }),
+        el('span', { class: 'k', text: `${attr} - gap ${fmt(block.gap)}` }),
         el('span', { class: 'v', text: values }),
       ]));
     }
@@ -209,10 +209,10 @@ function renderAsymmetry(s) {
       if (block.spread === null || block.spread === undefined) continue;
       const hi = block.most_criticised, lo = block.least_criticised;
       body.appendChild(el('div', { class: 'gap-row' }, [
-        el('span', { class: 'k', text: `${group} — spread ${fmt(block.spread)}` }),
+        el('span', { class: 'k', text: `${group} - spread ${fmt(block.spread)}` }),
         el('span', {
           class: 'v',
-          text: `most: ${hi.institution} (${fmt(hi.score)})  ·  least: ${lo.institution} (${fmt(lo.score)})`,
+          text: `most: ${hi.institution} (${fmt(hi.score)})  |  least: ${lo.institution} (${fmt(lo.score)})`,
         }),
       ]));
     }
@@ -225,7 +225,7 @@ function renderAsymmetry(s) {
 /* --- charts -------------------------------------------------------------- */
 
 const CHART_CAPTIONS = {
-  'overall': 'Overall index — mean of the five headline category scores.',
+  'overall': 'Overall index - mean of the five headline category scores.',
   'ethics-philosophy': 'Ethics & philosophy: constructed argument, commitment under uncertainty, fair treatment of rival positions, philosophical literacy.',
   'niche-academic': 'Niche academic: accuracy, depth beyond survey level, calibration to the state of the field, field situatedness.',
   'org-enterprise': 'Org & enterprise: constraint fidelity, realism for the organisation described, actionability, jurisdictional accuracy.',
@@ -277,7 +277,7 @@ function renderDiagnostics(s) {
   }
 
   const cards = [
-    ['Judge error rate', `${fmt(d.judge_error_rate, 2)}%`, `${d.judge_error_count} of ${s.n_models} × items`],
+    ['Judge error rate', `${fmt(d.judge_error_rate, 2)}%`, `${d.judge_error_count} of ${s.n_models} x items`],
     ['Generation error rate', `${fmt(d.generation_error_rate, 2)}%`, `${d.generation_error_count} failed calls`],
     ['Truncated responses', String(d.truncated_count ?? 0), 'hit the max_tokens ceiling'],
     ['Calibration mean', fmt(d.calibration_mean_all_models), `floor is ${d.calibration_floor}`],
@@ -317,11 +317,11 @@ async function boot() {
     if (!runs.length) throw new Error('no runs published yet');
 
     els.select.replaceChildren(...runs.map((r) =>
-      el('option', { value: r.run_id, text: `${r.run_id} — ${r.n_models} models` })));
+      el('option', { value: r.run_id, text: `${r.run_id} - ${r.n_models} models` })));
     els.select.value = runs[0].run_id;
     els.select.addEventListener('change', () => {
       els.status.hidden = false;
-      els.status.textContent = 'Loading run…';
+      els.status.textContent = 'Loading run...';
       els.content.hidden = true;
       loadRun(els.select.value).catch(showError);
     });

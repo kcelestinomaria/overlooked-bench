@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic summary by engaging with specific methodological criticisms (e.g., 'survivorship bias,' 'counterfactual weaknesses,' 'publication and geographic bias') and recent developments like 'quasi-experimental designs using satellite imagery' and 'attention to distributional outcomes and intersectionality.' It addresses internal scholarly debates on evidence quality and attribution challenges, indicating familiarity with the literature rather than just summaries. A specialist would recognize this as a competent synthesis of current debates.",
+    "domain_accuracy": "The response makes substantive claims such as 'improved forest cover and regeneration in community-managed forests compared to government-managed or open-access forests,' 'elite capture: Wealthier, higher-caste, and male-headed households often dominate CFUG committees,' and methodological criticisms like 'selection bias and endogeneity' and 'non-random assignment.' These claims align with established literature on Nepal's CFM, including known issues of equity, governance, and research design. No invented citations, terms, or consensus are presented; all points are corroborated by the field's evidence base. Errors are minimal and not load-bearing.",
+    "field_situatedness": "The response uses terminology and frameworks specific to Nepal's CFM scholarship, such as 'community forest user group (CFUG),' 'NTFP,' 'mid-hills,' 'Terai,' and references to local social dynamics (caste, Dalits, ethnic minorities). It does not substitute a Western or Anglophone framing but engages with the regional scholarly tradition, including governance innovations and methodological critiques rooted in Nepal's context.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points, e.g., presenting 'positive findings' as supported by 'multiple studies' but noting 'mixed or negative findings' like 'elite capture' and 'limited poverty reduction.' It signals evidential differences, such as 'most studies compare CFM to government forests... but these are not ideal counterfactuals' and 'possible positive publication bias.' Calibration is specific, not blanket, and contested issues are not presented as settled fact."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-008",
+  "judge_cost_usd": 0.00097152,
+  "judge_latency_s": 17.261,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims such as 'improved forest cover and regeneration in community-managed forests compared to government-managed or open-access forests,' 'elite capture: Wealthier, higher-caste, and male-headed households often dominate CFUG committees,' and methodological criticisms like 'selection bias and endogeneity' and 'non-random assignment.' These claims align with established literature on Nepal's CFM, including known issues of equity, governance, and research design. No invented citations, terms, or consensus are presented; all points are corroborated by the field's evidence base. Errors are minimal and not load-bearing.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic summary by engaging with specific methodological criticisms (e.g., 'survivorship bias,' 'counterfactual weaknesses,' 'publication and geographic bias') and recent developments like 'quasi-experimental designs using satellite imagery' and 'attention to distributional outcomes and intersectionality.' It addresses internal scholarly debates on evidence quality and attribution challenges, indicating familiarity with the literature rather than just summaries. A specialist would recognize this as a competent synthesis of current debates.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points, e.g., presenting 'positive findings' as supported by 'multiple studies' but noting 'mixed or negative findings' like 'elite capture' and 'limited poverty reduction.' It signals evidential differences, such as 'most studies compare CFM to government forests... but these are not ideal counterfactuals' and 'possible positive publication bias.' Calibration is specific, not blanket, and contested issues are not presented as settled fact.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to Nepal's CFM scholarship, such as 'community forest user group (CFUG),' 'NTFP,' 'mid-hills,' 'Terai,' and references to local social dynamics (caste, Dalits, ethnic minorities). It does not substitute a Western or Anglophone framing but engages with the regional scholarly tradition, including governance innovations and methodological critiques rooted in Nepal's context.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepal's community forest management evidence and its methodological limitations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepal's community forest management evidence and its methodological limitations.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: +6'. The reference answer is 'ANSWER: +6'. The substance matches exactly, ignoring formatting and verbosity differences.",
+    "instruction_compliance": "Explicit instructions: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: +6' on its own line, matching the required format exactly.",
+    "reasoning_validity": "The item calls for shown working. The response shows each step: states the rules, sets up the equation (2x + (7 * -2) = -2), solves correctly (2x - 14 = -2, 2x = 12, x = +6). All steps are valid and support the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-008",
+  "judge_cost_usd": 0.00050816,
+  "judge_latency_s": 9.504,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: +6'. The reference answer is 'ANSWER: +6'. The substance matches exactly, ignoring formatting and verbosity differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working. The response shows each step: states the rules, sets up the equation (2x + (7 * -2) = -2), solves correctly (2x - 14 = -2, 2x = 12, x = +6). All steps are valid and support the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"Explicit instructions: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: +6' on its own line, matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all rubric criteria with correct answer, valid reasoning, and strict format compliance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response fully meets all rubric criteria with correct answer, valid reasoning, and strict format compliance.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -18,7 +18,7 @@ description: >
   which is acceptable because this track exists to detect faults in our pipeline,
   not to position models against external leaderboards.
 
-  Every item carries an explicit output-format instruction. That is deliberate:
+  Every item carries an explicit output-format instruction:
   a sudden collapse in format compliance across ALL models is the fastest
   unambiguous signal that our prompt template broke rather than that every model
   regressed at once.

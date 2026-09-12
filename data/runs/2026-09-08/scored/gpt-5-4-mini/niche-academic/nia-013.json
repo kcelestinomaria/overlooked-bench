@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopaedia level by engaging with specific scholarly criticisms (e.g., formalisation misrepresents customary tenure by assuming stable groups, can undermine customary governance, increase inequality, not reduce conflict, be driven by investment agendas, and face implementation challenges). It shows awareness of internal debates about power shifts, alienation, and development agendas. A specialist would recognize this as a substantive summary of key critiques in the literature, not just a surface summary.",
+    "domain_accuracy": "The response makes substantive claims that are correct: it correctly states that customary land is dominant in PNG, held by clans/lineages under customary law; that statutory registration is used for leases, incorporated land groups; and that formalisation programs are criticized for misrepresenting customary tenure, undermining governance, increasing inequality, not reducing conflict, being driven by investment agendas, and having implementation difficulties. All these points align with established scholarly literature on land tenure in PNG. No invented citations, terms, or consensus are presented. The claims are accurate and load-bearing to the answer.",
+    "field_situatedness": "The response uses appropriate terminology and frameworks from the field of land tenure studies in PNG, referencing customary land tenure, statutory registration, formalisation programmes, clans, lineages, customary governance, and alienation. It does not silently substitute a Western or Anglophone framing; it correctly situates the discussion within the context of PNG's customary systems and scholarly critiques from development and anthropology. Non-English scholarship is not explicitly cited, but the framing aligns with the field's conventions.",
+    "scholarly_calibration": "The response distinguishes between well-established and contested points implicitly but not explicitly. It presents criticisms as scholarly consensus without signaling evidential status differences (e.g., it does not note which criticisms are widely accepted vs. debated). There is no specific calibration (e.g., noting secure vs. hypothetical aspects) or acknowledgment of knowledge gaps. However, it avoids uniform confidence by framing criticisms as scholarly perspectives ('scholars have raised', 'many scholars argue'). This is better than a blanket disclaimer but lacks targeted calibration."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.0009299,
+  "judge_latency_s": 16.787,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are correct: it correctly states that customary land is dominant in PNG, held by clans/lineages under customary law; that statutory registration is used for leases, incorporated land groups; and that formalisation programs are criticized for misrepresenting customary tenure, undermining governance, increasing inequality, not reducing conflict, being driven by investment agendas, and having implementation difficulties. All these points align with established scholarly literature on land tenure in PNG. No invented citations, terms, or consensus are presented. The claims are accurate and load-bearing to the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopaedia level by engaging with specific scholarly criticisms (e.g., formalisation misrepresents customary tenure by assuming stable groups, can undermine customary governance, increase inequality, not reduce conflict, be driven by investment agendas, and face implementation challenges). It shows awareness of internal debates about power shifts, alienation, and development agendas. A specialist would recognize this as a substantive summary of key critiques in the literature, not just a surface summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established and contested points implicitly but not explicitly. It presents criticisms as scholarly consensus without signaling evidential status differences (e.g., it does not note which criticisms are widely accepted vs. debated). There is no specific calibration (e.g., noting secure vs. hypothetical aspects) or acknowledgment of knowledge gaps. However, it avoids uniform confidence by framing criticisms as scholarly perspectives ('scholars have raised', 'many scholars argue'). This is better than a blanket disclaimer but lacks targeted calibration.\",\n      \"score\": 2\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology and frameworks from the field of land tenure studies in PNG, referencing customary land tenure, statutory registration, formalisation programmes, clans, lineages, customary governance, and alienation. It does not silently substitute a Western or Anglophone framing; it correctly situates the discussion within the context of PNG's customary systems and scholarly critiques from development and anthropology. Non-English scholarship is not explicitly cited, but the framing aligns with the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain accuracy and depth but lacks explicit scholarly calibration on evidential status.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain accuracy and depth but lacks explicit scholarly calibration on evidential status.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

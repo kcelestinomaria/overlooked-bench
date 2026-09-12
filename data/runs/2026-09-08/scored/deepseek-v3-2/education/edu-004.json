@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a community college adviser meeting one 19-year-old student. The response addresses the student's specific background (2-year gap, informal work) and includes concrete, low-cost adaptations: checking English proficiency for BPO, advising on part-time work while studying, guiding to use school computer lab if no home laptop, and reminding to bring required documents (Diploma, Form 137, government ID). It provides actionable budgeting advice and scholarship application help. It does not use generic placeholder language; adaptations are specific and implementable by the adviser.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple pathways genuinely available in the Philippines: TESDA National Certificates (NC II) for vocational training (Food and Beverage Services, Housekeeping, Contact Center Services, Electrical Installation, Welding) and Associate/Diploma programs (Associate in Computer Technology, Hotel and Restaurant Management, Industrial Technology). It treats non-degree (TESDA) and degree-related (Associate) options with substantive detail, including specific durations (3-6 months for NC II, 18-month compressed plan), costs (free to ₱15,000), and plausible earnings (₱12,000–₱22,000/month). It respects the 18-month constraint with a hybrid plan and correctly identifies TESDA, scholarships (TWSP), and Philippine labour market earnings. It does not default to a 4-year degree.",
+    "pedagogical_soundness": "The response is not a lesson plan but a guidance script. It does not state learning objectives, design activities, or create assessments. Therefore, it does not engage with the dimension of pedagogical soundness (alignment of objectives, activities, assessment, sequencing, or rubrics). The rubric's evaluation steps cannot be applied, as the task is advisory, not instructional design.",
+    "workload_realism": "The response is a guidance script for an adviser, not a delivery plan for a teacher. It does not describe activities with timings, required materials, or marking loads. Therefore, it does not engage with the dimension of workload realism (summing timings, checking resources, estimating preparation/marking, or class size feasibility). The evaluation steps are not applicable to this advisory task."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00127161,
+  "judge_latency_s": 19.055,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan but a guidance script. It does not state learning objectives, design activities, or create assessments. Therefore, it does not engage with the dimension of pedagogical soundness (alignment of objectives, activities, assessment, sequencing, or rubrics). The rubric's evaluation steps cannot be applied, as the task is advisory, not instructional design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a guidance script for an adviser, not a delivery plan for a teacher. It does not describe activities with timings, required materials, or marking loads. Therefore, it does not engage with the dimension of workload realism (summing timings, checking resources, estimating preparation/marking, or class size feasibility). The evaluation steps are not applicable to this advisory task.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple pathways genuinely available in the Philippines: TESDA National Certificates (NC II) for vocational training (Food and Beverage Services, Housekeeping, Contact Center Services, Electrical Installation, Welding) and Associate/Diploma programs (Associate in Computer Technology, Hotel and Restaurant Management, Industrial Technology). It treats non-degree (TESDA) and degree-related (Associate) options with substantive detail, including specific durations (3-6 months for NC II, 18-month compressed plan), costs (free to ₱15,000), and plausible earnings (₱12,000–₱22,000/month). It respects the 18-month constraint with a hybrid plan and correctly identifies TESDA, scholarships (TWSP), and Philippine labour market earnings. It does not default to a 4-year degree.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a community college adviser meeting one 19-year-old student. The response addresses the student's specific background (2-year gap, informal work) and includes concrete, low-cost adaptations: checking English proficiency for BPO, advising on part-time work while studying, guiding to use school computer lab if no home laptop, and reminding to bring required documents (Diploma, Form 137, government ID). It provides actionable budgeting advice and scholarship application help. It does not use generic placeholder language; adaptations are specific and implementable by the adviser.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, realistic, and actionable vocational and academic pathway guidance tailored to the Philippine context and the student's 18-month employment goal.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides highly specific, realistic, and actionable vocational and academic pathway guidance tailored to the Philippine context and the student's 18-month employment goal.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

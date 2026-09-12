@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 6', which matches the reference answer's 'ANSWER: +6' in substance (both indicate +6). The reference explicitly states '+6', and the response gives '6', which is equivalent for oxidation state. No formatting differences matter per rubric. The answer is fully correct.",
+    "instruction_compliance": "Explicit instructions: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 6'. The format matches exactly except for the '+' sign, but the rubric says 'ignore formatting, style and verbosity entirely' for correctness, and the instruction specifies 'ANSWER: <number>'; '6' is a number, so it complies. No deviations.",
+    "reasoning_validity": "The item calls for shown working. The response shows each step: oxygen oxidation state (-2), total oxygen contribution (7 × -2 = -14), overall charge (-2), setting up equation 2x + (-14) = -2, solving to 2x = 12, x = +6. All steps are valid and correctly support the answer. No errors or inconsistencies."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-008",
+  "judge_cost_usd": 0.0005792,
+  "judge_latency_s": 11.872,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 6', which matches the reference answer's 'ANSWER: +6' in substance (both indicate +6). The reference explicitly states '+6', and the response gives '6', which is equivalent for oxidation state. No formatting differences matter per rubric. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working. The response shows each step: oxygen oxidation state (-2), total oxygen contribution (7 × -2 = -14), overall charge (-2), setting up equation 2x + (-14) = -2, solving to 2x = 12, x = +6. All steps are valid and correctly support the answer. No errors or inconsistencies.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"Explicit instructions: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 6'. The format matches exactly except for the '+' sign, but the rubric says 'ignore formatting, style and verbosity entirely' for correctness, and the instruction specifies 'ANSWER: <number>'; '6' is a number, so it complies. No deviations.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all rubric criteria with correct answer, valid reasoning, and strict instruction compliance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response fully meets all rubric criteria with correct answer, valid reasoning, and strict instruction compliance.",
+  "rubric_hash": "958f87dc04cdd1dd",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

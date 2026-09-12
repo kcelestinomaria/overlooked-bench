@@ -6,7 +6,7 @@
 provider, or company whose products it evaluates.**
 
 It has no funding from anyone else either. It is unfunded volunteer work. Costs
-are API charges only — approximately tens of US dollars per monthly run, paid
+are API charges only - approximately tens of US dollars per monthly run, paid
 personally by the maintainers.
 
 No lab has reviewed, previewed, commissioned, sponsored, or been consulted on the
@@ -18,10 +18,10 @@ publication.
 
 ## The commitment
 
-This section is the point of the document, and it is binding on the maintainers.
+This section is binding on the maintainers.
 
 1. **Any funding, grant, sponsorship, commissioned work, paid consulting, equity,
-   or in-kind support — including donated API credits — from any AI lab, model
+   or in-kind support - including donated API credits - from any AI lab, model
    provider, or party with a material interest in the results will be disclosed
    at the top of this file, publicly, BEFORE any results referencing that period
    are published.**
@@ -72,7 +72,7 @@ Disclosed because they are relationships even when they are not funding.
 
 | Vendor | Role | Paid? | Notes |
 |---|---|---|---|
-| Vercel AI Gateway | Single API endpoint used to reach every evaluated model | Yes — standard metered pricing, paid by maintainers | No commercial relationship beyond paying published rates. Vercel does not build models evaluated here and has no visibility into or influence over results. |
+| Vercel AI Gateway | Single API endpoint used to reach every evaluated model | Yes - standard metered pricing, paid by maintainers | No commercial relationship beyond paying published rates. Vercel does not build models evaluated here and has no visibility into or influence over results. |
 | GitHub | Code hosting, CI, results publication | Free tier | Standard public-repository terms. |
 
 If any of these becomes a sponsored or discounted arrangement, it moves to the
@@ -83,7 +83,7 @@ funding section above and triggers the full disclosure requirement.
 ## The conflict we cannot design away
 
 The judge is an AI model, built by a company whose models this benchmark also
-evaluates, and one track explicitly asks models to criticise AI labs — including
+evaluates, and one track explicitly asks models to criticise AI labs - including
 that company, and to criticise the government of the country it operates in.
 
 There is no version of this project that avoids the problem. Every capable judge
@@ -102,11 +102,11 @@ is built by a lab with an interest in the outcome. What we do instead:
   and DeepSeek itself. That entire track is re-scored by
   `anthropic/claude-sonnet-4.6` before results are published, and the run falls
   back to that judge if the check fails. See
-  [METHODOLOGY.md §2](METHODOLOGY.md#judge-selection-and-the-self-preference-problem).
+  [METHODOLOGY.md section 2](METHODOLOGY.md#judge-selection-and-the-self-preference-problem).
 
 This is mitigation, not a solution. It is described in full in
-[METHODOLOGY.md §2](METHODOLOGY.md#judge-selection-and-the-self-preference-problem)
-and listed among the known limitations in §6.
+[METHODOLOGY.md section 2](METHODOLOGY.md#judge-selection-and-the-self-preference-problem)
+and listed among the known limitations in section 6.
 
 ---
 

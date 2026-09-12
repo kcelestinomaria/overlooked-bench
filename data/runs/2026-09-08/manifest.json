@@ -1,0 +1,124 @@
+{
+  "dataset_fingerprint": "78198b54a6f421a2",
+  "harness_version": "0.1.0",
+  "item_counts": {
+    "calibration-general": 10,
+    "education": 12,
+    "ethics-philosophy": 24,
+    "institutional-criticism": 18,
+    "niche-academic": 15,
+    "org-enterprise": 12
+  },
+  "judge": {
+    "judge_max_tokens": 2000,
+    "judge_model": "deepseek/deepseek-v3.1-terminus",
+    "judge_prompt_hash": "71150128d9966002",
+    "judge_prompt_version": "jp-1.0.0",
+    "judge_temperature": 0.0,
+    "methodology_version": "m1.2.0",
+    "metric_engine": "native",
+    "rubric_hashes": {
+      "calibration-general": "958f87dc04cdd1dd",
+      "education": "354de6036e071fa8",
+      "ethics-philosophy": "5ac42b278c4bf234",
+      "institutional-criticism": "aa9183e1f22b6d16",
+      "niche-academic": "25dae73dc6623e3e",
+      "org-enterprise": "ec54e82f734da3f6"
+    }
+  },
+  "limit_per_category": null,
+  "methodology_version": "m1.2.0",
+  "models": [
+    {
+      "key": "claude-sonnet-5",
+      "max_tokens": 8000,
+      "model_id": "anthropic/claude-sonnet-5",
+      "provider": "anthropic",
+      "temperature": 0.0,
+      "tier": "frontier"
+    },
+    {
+      "key": "claude-haiku-4-5",
+      "max_tokens": 8000,
+      "model_id": "anthropic/claude-haiku-4.5",
+      "provider": "anthropic",
+      "temperature": 0.0,
+      "tier": "small"
+    },
+    {
+      "key": "gpt-5-4",
+      "max_tokens": 8000,
+      "model_id": "openai/gpt-5.4",
+      "provider": "openai",
+      "temperature": 0.0,
+      "tier": "frontier"
+    },
+    {
+      "key": "gpt-5-4-mini",
+      "max_tokens": 8000,
+      "model_id": "openai/gpt-5.4-mini",
+      "provider": "openai",
+      "temperature": 0.0,
+      "tier": "mid"
+    },
+    {
+      "key": "gemini-3-5-flash",
+      "max_tokens": 8000,
+      "model_id": "google/gemini-3.5-flash",
+      "provider": "google",
+      "temperature": 0.0,
+      "tier": "mid"
+    },
+    {
+      "key": "gemini-2-5-pro",
+      "max_tokens": 8000,
+      "model_id": "google/gemini-2.5-pro",
+      "provider": "google",
+      "temperature": 0.0,
+      "tier": "frontier"
+    },
+    {
+      "key": "deepseek-v3-2",
+      "max_tokens": 8000,
+      "model_id": "deepseek/deepseek-v3.2",
+      "provider": "deepseek",
+      "temperature": 0.0,
+      "tier": "mid"
+    },
+    {
+      "key": "kimi-k2-5",
+      "max_tokens": 8000,
+      "model_id": "moonshotai/kimi-k2.5",
+      "provider": "moonshotai",
+      "temperature": 0.0,
+      "tier": "mid"
+    },
+    {
+      "key": "mistral-medium-3-5",
+      "max_tokens": 8000,
+      "model_id": "mistral/mistral-medium-3.5",
+      "provider": "mistral",
+      "temperature": 0.0,
+      "tier": "mid"
+    },
+    {
+      "key": "llama-3-3-70b",
+      "max_tokens": 8000,
+      "model_id": "meta/llama-3.3-70b",
+      "provider": "meta",
+      "temperature": 0.0,
+      "tier": "mid"
+    }
+  ],
+  "python": "3.12.10",
+  "rubric_hashes": {
+    "calibration-general": "958f87dc04cdd1dd",
+    "education": "354de6036e071fa8",
+    "ethics-philosophy": "5ac42b278c4bf234",
+    "institutional-criticism": "aa9183e1f22b6d16",
+    "niche-academic": "25dae73dc6623e3e",
+    "org-enterprise": "ec54e82f734da3f6"
+  },
+  "run_id": "2026-09-08",
+  "started_utc": "2026-09-07T23:17:32Z"
+}

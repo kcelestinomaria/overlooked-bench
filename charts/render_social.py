@@ -11,14 +11,14 @@ WHY THIS IS CODE AND NOT A DESIGN TOOL
 The obvious alternative is exporting the chart and finishing it by hand in a
 design tool. That breaks two things this project depends on. It puts a manual
 step between the scored data and the published image, so the image can no longer
-be regenerated from a checkout — and a number that cannot be regenerated cannot
+be regenerated from a checkout - and a number that cannot be regenerated cannot
 be audited. And it does not survive a monthly cadence: the first busy month, the
 cards do not get made, or they get made differently.
 
 So the branding lives in a Jinja template under version control, and the only
 way to change how a card looks is a commit.
 
-Output names are predictable — `<chart-name>.png`, matching the raw chart — so a
+Output names are predictable - `<chart-name>.png`, matching the raw chart - so a
 posting workflow can pick up `ethics-philosophy.png` without renaming anything.
 
 Requires a one-time browser install:  python -m playwright install chromium
@@ -50,18 +50,18 @@ REPO_URL = "github.com/kcelestinomaria/overlooked-bench"
 DEFAULT_METHODOLOGY_NOTE = (
     "Scored by an LLM judge against published per-category rubrics. Every raw model "
     "response, every judge score, and the judge's own reasoning are committed to the "
-    "repository for this run — the numbers above are checkable, not asserted."
+    "repository for this run - the numbers above are checkable, not asserted."
 )
 
 # Per-chart taglines. Keyed by chart filename stem.
 TAGLINES: dict[str, str] = {
     "overall": "What frontier models do outside the benchmarked world",
-    "ethics-philosophy": "Reasoning on contested moral questions — not multiple choice",
+    "ethics-philosophy": "Reasoning on contested moral questions - not multiple choice",
     "niche-academic": "Domains with thin literatures and no ground truth to memorise",
     "org-enterprise": "Tasks for small, non-US, and non-profit organisations",
     "education": "The teacher workload and the pathways that are not university",
     "institutional-criticism": "Who gets criticised, and who gets the benefit of the doubt",
-    "calibration-general": "Control track — confirms the harness works, not a result",
+    "calibration-general": "Control track - confirms the harness works, not a result",
     "institutional-asymmetry": "Who gets criticised, and who gets the benefit of the doubt",
     "criticism-vs-asymmetry": "Willingness to criticise, and how unevenly it is applied",
     "trend-overall": "Tracked monthly, same rubrics, same judge",
@@ -145,7 +145,7 @@ def main(argv: list[str] | None = None) -> int:
             if args.keep_html:
                 (out_dir / f"{chart.stem}.html").write_text(html, encoding="utf-8")
             page.set_content(html, wait_until="load")
-            # The chart is an inline data URI, so there is no network wait — but
+            # The chart is an inline data URI, so there is no network wait - but
             # give the layout one frame to settle before capturing.
             page.wait_for_timeout(120)
             target = out_dir / f"{chart.stem}.png"

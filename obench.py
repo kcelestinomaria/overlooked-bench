@@ -1,4 +1,4 @@
-"""overlooked-bench — one command for the whole pipeline.
+"""overlooked-bench - one command for the whole pipeline.
 
     python obench.py run                     # full pipeline, today's date as run id
     python obench.py run --run-id 2026-10-01 # ...or a specific run id
@@ -11,7 +11,7 @@
     4. social    branded 1600x900 cards via Playwright
     5. site      rebuild the run index the leaderboard reads
 
-Individual stages are runnable on their own — useful because stages 3-5 are free
+Individual stages are runnable on their own - useful because stages 3-5 are free
 and instant, so iterating on a chart never means re-running the models:
 
     python obench.py charts --run-id 2026-09-08
@@ -62,14 +62,14 @@ def cmd_doctor(_: argparse.Namespace) -> int:
             __import__(mod)
             print(f"  import {mod:<12} ok")
         except ImportError:
-            print(f"  import {mod:<12} \033[31mMISSING\033[0m — pip install -r requirements.txt")
+            print(f"  import {mod:<12} \033[31mMISSING\033[0m - pip install -r requirements.txt")
             ok = False
 
     try:
         import deepeval  # noqa: F401
         print("  import deepeval    ok (cross-validation engine available)")
     except ImportError:
-        print("  import deepeval    \033[33mmissing\033[0m — the default `native` engine still works")
+        print("  import deepeval    \033[33mmissing\033[0m - the default `native` engine still works")
 
     env_file = REPO_ROOT / ".env"
     print(f"\n  .env              {'found' if env_file.exists() else 'NOT FOUND'}")
@@ -80,7 +80,7 @@ def cmd_doctor(_: argparse.Namespace) -> int:
     load_env()
     key = os.environ.get("AI_GATEWAY_API_KEY", "")
     if key:
-        print(f"  AI_GATEWAY_API_KEY set ({key[:8]}…{key[-4:]}, {len(key)} chars)")
+        print(f"  AI_GATEWAY_API_KEY set ({key[:8]}...{key[-4:]}, {len(key)} chars)")
     else:
         print("  AI_GATEWAY_API_KEY \033[31mNOT SET\033[0m")
         ok = False
@@ -93,7 +93,7 @@ def cmd_doctor(_: argparse.Namespace) -> int:
         print(f"    providers       {', '.join(providers)}")
         print(f"  judge             {registry.judge.model_id} ({registry.judge.prompt_version})")
         if any(m.model_id == registry.judge.model_id for m in enabled):
-            print("    \033[33mwarn\033[0m the judge is also a model under test — see METHODOLOGY.md §2")
+            print("    \033[33mwarn\033[0m the judge is also a model under test - see METHODOLOGY.md section 2")
     except Exception as exc:  # noqa: BLE001
         print(f"  registry          \033[31mFAILED\033[0m {exc}")
         ok = False
@@ -105,7 +105,7 @@ def cmd_doctor(_: argparse.Namespace) -> int:
             browser.close()
         print("  playwright        chromium ok")
     except Exception:  # noqa: BLE001
-        print("  playwright        \033[33mnot ready\033[0m — python -m playwright install chromium")
+        print("  playwright        \033[33mnot ready\033[0m - python -m playwright install chromium")
 
     # Built outside the f-string: backslash escapes inside f-string expressions
     # are a syntax error before Python 3.12, and this project supports 3.11.
@@ -160,7 +160,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         code = fn(args)
         if code != 0:
             print(f"\n\033[31mStage '{name}' failed (exit {code}). Stopping.\033[0m")
-            print("Nothing already written has been modified — raw responses and any "
+            print("Nothing already written has been modified - raw responses and any "
                   "scores already produced are still on disk, and re-running resumes "
                   "from where this stopped.")
             return code
@@ -172,7 +172,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     print(f"  charts    {run_path}/charts/")
     print(f"  social    {run_path}/social/")
     print("\nPreview the leaderboard:")
-    print("  python -m http.server 8000   →   http://localhost:8000/site/")
+    print("  python -m http.server 8000   ->   http://localhost:8000/site/")
     return 0
 
 

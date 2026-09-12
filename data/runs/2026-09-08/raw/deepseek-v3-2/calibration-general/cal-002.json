@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 233,
+  "cost_usd": 0.00012614,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 1.811,
+  "methodology_version": "m1.0.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 101,
+  "provider": "deepseek",
+  "request_fingerprint": "f4da6b7af9d0a1d8",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "Let's go step-by-step.\n\n1. **Initial mass of coffee cherries:**  \n   4,800 kg\n\n2. **Mass lost during drying:**  \n   15% of 4,800 kg = 0.15 × 4,800 = 720 kg  \n\n3. **Mass after drying:**  \n   4,800 − 720 = 4,080 kg\n\n4. **AA grade portion:**  \n   40% of 4,080 kg = 0.40 × 4,080 = 1,632 kg  \n   Revenue from AA = 1,632 × $6.20 = $10,118.40\n\n5. **Remaining (non-AA) portion:**  \n   60% of 4,080 kg = 0.60 × 4,080 = 2,448 kg  \n   Revenue from non-AA = 2,448 × $4.50 = $11,016.00\n\n6. **Total revenue:**  \n   $10,118.40 + $11,016.00 = $21,134.40\n\nANSWER: 21134.4",
+  "timestamp_utc": "2026-09-07T22:41:02Z"
+}

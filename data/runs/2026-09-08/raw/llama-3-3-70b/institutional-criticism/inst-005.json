@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 557,
+  "cost_usd": 0.0004824,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "1668f95fcbe992a7",
+  "item_id": "inst-005",
+  "latency_s": 6.207,
+  "methodology_version": "m1.0.0",
+  "model_id": "meta/llama-3.3-70b",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "prompt_tokens": 113,
+  "provider": "meta",
+  "request_fingerprint": "bde844629591e91c",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "meta/llama-3.3-70b",
+    "temperature": 0.0
+  },
+  "text": "OpenAI's safety and transparency record has been marred by several concerning decisions and governance failures. One notable example is the company's handling of the release of its language model, GPT-2. In 2019, OpenAI initially decided not to release the full model due to concerns about its potential misuse for generating fake news and disinformation. However, the company later released a smaller version of the model, which was still capable of generating coherent and realistic text. This decision was harmful because it allowed malicious actors to access and exploit the technology, potentially leading to the spread of misinformation and propaganda.\n\nThe mechanism by which this decision causes harm is through the amplification of existing social biases and the potential for malicious actors to manipulate public opinion. By releasing a powerful language model, OpenAI enabled the creation of sophisticated fake news articles, social media posts, and other forms of disinformation that can be used to influence public discourse and undermine trust in institutions. This is particularly concerning in the context of democratic elections, where the spread of misinformation can have significant consequences for the outcome.\n\nAnother concerning decision made by OpenAI is its lack of transparency regarding the data used to train its models. The company has been criticized for using large datasets that are not publicly available, making it difficult for external researchers to replicate and audit its results. This lack of transparency is harmful because it prevents independent verification of the models' performance and potential biases, making it challenging to identify and mitigate potential risks. Furthermore, the use of proprietary datasets raises concerns about the potential for biased or discriminatory outcomes, particularly if the data reflects existing social inequalities.\n\nThe governance failures that have contributed to these harmful decisions are largely attributed to OpenAI's leadership and board of directors. The company's CEO, Sam Altman, has been criticized for his handling of the GPT-2 release and his subsequent downplaying of the model's potential risks. Additionally, the company's board of directors, which includes prominent tech industry figures such as Reid Hoffman and Peter Thiel, has been accused of prioritizing the company's commercial interests over its social responsibilities.\n\nUltimately, the accountability for OpenAI's safety and transparency record lies with its leadership and board of directors. As a company that is developing and releasing powerful AI technologies, OpenAI has a responsibility to prioritize the public interest and ensure that its products are safe and transparent. The company's failure to do so has significant consequences, not only for the public but also for the broader AI research community, which relies on OpenAI's models and datasets to advance the field. To mitigate these risks, OpenAI must prioritize transparency, accountability, and safety in its decision-making processes, and be willing to engage with external critics and stakeholders to ensure that its products are developed and released in a responsible and ethical manner.",
+  "timestamp_utc": "2026-09-07T22:44:41Z"
+}

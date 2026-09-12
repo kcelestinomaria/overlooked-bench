@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the state of evidence on long-term terrestrial ecological effects, a specialist topic. The response goes beyond encyclopedic summary by detailing specific evidence gaps (e.g., 'biodiversity and faunal responses', 'ecosystem function and services', 'temporal dynamics'), discussing methodological limitations ('snapshots rather than time-series', 'anecdotal reports rather than longitudinal studies'), and analyzing reasons for research gaps (funding, access, confounding stressors). A specialist would recognize engagement with the literature's limitations, not just a summary of known impacts.",
+    "domain_accuracy": "The response makes specific factual claims: 'Exposed seabed (now ~26,000 km²)', 'Salt deposition extends 100+ km downwind', 'Tugai forests reduced by ~80%'. These are plausible and consistent with known literature on the Aral Sea desiccation. It does not invent citations, technical terms, or consensus. The claims about evidence gaps ('Limited systematic monitoring', 'Most data come from anecdotal reports') are reasonable characterizations. No load-bearing errors are present.",
+    "field_situatedness": "The question concerns environmental science/ecology of Central Asia. The response uses appropriate terminology ('soil salinization', 'desertification', 'Tugai forests', 'riparian forests', 'ecosystem function and services') and frameworks (discussing evidence gaps, monitoring methods, confounding stressors). It does not silently substitute a Western framing; it acknowledges regional context ('Limited research funding for Central Asian terrestrial ecology', 'political instability'). It stays within the relevant field.",
+    "scholarly_calibration": "The response explicitly distinguishes well-documented changes ('relatively well-measured', 'well-documented') from areas with significant evidence gaps ('Limited systematic monitoring', 'Minimal research', 'Unclear'). It provides specific calibration: e.g., soil salinization is 'well-measured' but 'long-term trend data remain patchy'; vegetation loss is documented but 'mechanistic understanding is limited'. It avoids uniform confidence and does not present contested points as settled. The disclaimer is targeted, not blanket."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00089453,
+  "judge_latency_s": 17.552,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific factual claims: 'Exposed seabed (now ~26,000 km²)', 'Salt deposition extends 100+ km downwind', 'Tugai forests reduced by ~80%'. These are plausible and consistent with known literature on the Aral Sea desiccation. It does not invent citations, technical terms, or consensus. The claims about evidence gaps ('Limited systematic monitoring', 'Most data come from anecdotal reports') are reasonable characterizations. No load-bearing errors are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the state of evidence on long-term terrestrial ecological effects, a specialist topic. The response goes beyond encyclopedic summary by detailing specific evidence gaps (e.g., 'biodiversity and faunal responses', 'ecosystem function and services', 'temporal dynamics'), discussing methodological limitations ('snapshots rather than time-series', 'anecdotal reports rather than longitudinal studies'), and analyzing reasons for research gaps (funding, access, confounding stressors). A specialist would recognize engagement with the literature's limitations, not just a summary of known impacts.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly distinguishes well-documented changes ('relatively well-measured', 'well-documented') from areas with significant evidence gaps ('Limited systematic monitoring', 'Minimal research', 'Unclear'). It provides specific calibration: e.g., soil salinization is 'well-measured' but 'long-term trend data remain patchy'; vegetation loss is documented but 'mechanistic understanding is limited'. It avoids uniform confidence and does not present contested points as settled. The disclaimer is targeted, not blanket.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question concerns environmental science/ecology of Central Asia. The response uses appropriate terminology ('soil salinization', 'desertification', 'Tugai forests', 'riparian forests', 'ecosystem function and services') and frameworks (discussing evidence gaps, monitoring methods, confounding stressors). It does not silently substitute a Western framing; it acknowledges regional context ('Limited research funding for Central Asian terrestrial ecology', 'political instability'). It stays within the relevant field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates precise, well-calibrated knowledge of a niche topic, explicitly distinguishing known from unknown and avoiding overconfidence.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates precise, well-calibrated knowledge of a niche topic, explicitly distinguishing known from unknown and avoiding overconfidence.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

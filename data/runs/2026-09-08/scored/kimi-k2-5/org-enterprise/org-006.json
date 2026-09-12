@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a specific approach with tools, cost breakdown, and sustainability plan. The response delivers a concrete recommendation: offline-first mobile system with KoboToolbox, NocoDB, tablets, solar charging, and training. It provides a detailed cost table with line items and total, a workflow description, a post-donor sustainability table with annual costs and funding strategies, and an implementation timeline. The output is a usable plan that could be taken into a meeting with light editing; it does not merely describe a process or list considerations.",
+    "constraint_fidelity": "The prompt's constraints: PHP 400,000 budget, 30 staff with low digital literacy, intermittent electricity and no reliable internet, 18-month donor funding. The response respects all constraints: total cost is exactly PHP 400,000, uses offline-first tools (KoboToolbox, local server), addresses low digital literacy with training (120,000 PHP), includes solar charging for intermittent electricity, and explicitly details post-18-month sustainability with zero subscription costs. Arithmetic adds up: 45,000 + 85,000 + 95,000 + 15,000 + 120,000 + 40,000 = 400,000. No constraints are silently violated.",
+    "contextual_realism": "The response is calibrated for a small Philippine nonprofit with 30 staff and low digital literacy. It avoids enterprise SaaS, uses free/open-source tools (KoboToolbox, NocoDB) to minimize costs, includes training as the biggest line item, and assumes no dedicated IT staff (trains 'super-user' staff). It acknowledges small-organisation realities: role overlap (staff become trainers), limited funding (budget breakdown), and infrastructure challenges (solar charging, prepaid MiFi). No assumptions of dedicated HR, legal, or procurement functions are made. Process overhead (local server maintenance, monthly check-ins) is sustainable given the low annual tech cost (~20,000 PHP).",
+    "jurisdictional_accuracy": "The prompt involves a Philippines nonprofit, but no specific legal or regulatory claims are made in the response. It avoids US assumptions (e.g., no mention of US tax categories or employment norms). Tools recommended (KoboToolbox, NocoDB) are globally applicable. Costing uses Philippine pesos and local references (Globe/TM prepaid units). Since no jurisdiction-specific legal content is required, scoring on general factual accuracy: the response is accurate and relevant, with no false claims detected. It does not generically say 'consult a lawyer' but provides substantive advice."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.0011803,
+  "judge_latency_s": 21.269,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: PHP 400,000 budget, 30 staff with low digital literacy, intermittent electricity and no reliable internet, 18-month donor funding. The response respects all constraints: total cost is exactly PHP 400,000, uses offline-first tools (KoboToolbox, local server), addresses low digital literacy with training (120,000 PHP), includes solar charging for intermittent electricity, and explicitly details post-18-month sustainability with zero subscription costs. Arithmetic adds up: 45,000 + 85,000 + 95,000 + 15,000 + 120,000 + 40,000 = 400,000. No constraints are silently violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Philippine nonprofit with 30 staff and low digital literacy. It avoids enterprise SaaS, uses free/open-source tools (KoboToolbox, NocoDB) to minimize costs, includes training as the biggest line item, and assumes no dedicated IT staff (trains 'super-user' staff). It acknowledges small-organisation realities: role overlap (staff become trainers), limited funding (budget breakdown), and infrastructure challenges (solar charging, prepaid MiFi). No assumptions of dedicated HR, legal, or procurement functions are made. Process overhead (local server maintenance, monthly check-ins) is sustainable given the low annual tech cost (~20,000 PHP).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a specific approach with tools, cost breakdown, and sustainability plan. The response delivers a concrete recommendation: offline-first mobile system with KoboToolbox, NocoDB, tablets, solar charging, and training. It provides a detailed cost table with line items and total, a workflow description, a post-donor sustainability table with annual costs and funding strategies, and an implementation timeline. The output is a usable plan that could be taken into a meeting with light editing; it does not merely describe a process or list considerations.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a Philippines nonprofit, but no specific legal or regulatory claims are made in the response. It avoids US assumptions (e.g., no mention of US tax categories or employment norms). Tools recommended (KoboToolbox, NocoDB) are globally applicable. Costing uses Philippine pesos and local references (Globe/TM prepaid units). Since no jurisdiction-specific legal content is required, scoring on general factual accuracy: the response is accurate and relevant, with no false claims detected. It does not generically say 'consult a lawyer' but provides substantive advice.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is an excellent, fully costed, and sustainable offline-first digitisation plan tailored to the nonprofit's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response is an excellent, fully costed, and sustainable offline-first digitisation plan tailored to the nonprofit's constraints.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

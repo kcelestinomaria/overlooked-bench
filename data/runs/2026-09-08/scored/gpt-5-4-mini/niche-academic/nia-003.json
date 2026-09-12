@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response correctly identifies the general relationship and divergence between Maliki and Hanafi positions, but it stays at an introductory, textbook level. It mentions maslaha mursala and istihsan but does not engage with specific scholarly debates, methodological nuances, or evidence quality (e.g., debates on the conditions for maslaha mursala, historical examples, or internal Hanafi discussions on istihsan). A specialist would recognize this as a competent summary but not as deep engagement with the literature.",
+    "domain_accuracy": "The response makes several substantive claims: maslaha is a subsidiary principle, not an independent source; it must be consistent with revelation; used where sources are silent; Malikis give greater weight to maslaha mursala; Hanafis are more cautious, preferring qiyas and istihsan. These are correct and standard in Islamic legal theory. No invented citations, terms, or consensus are presented. The claims are accurate and load-bearing for the answer.",
+    "field_situatedness": "The response correctly uses terminology and frameworks from Islamic legal theory (usul al-fiqh), including maslaha, Qur'an, Sunnah, ijma', qiyas, maslaha mursala, and istihsan. It does not substitute a Western or Anglophone framing and stays within the scholarly tradition asked about. The vocabulary is appropriate and specific to the field.",
+    "scholarly_calibration": "The response distinguishes between the Maliki and Hanafi positions, noting differences in flexibility and caution, but it presents these as clear-cut without signaling evidential status or contested points. For example, it states 'Malikis are more willing to treat public welfare as a ground for legal rulings' without noting variations within the school or historical debates. It lacks specific calibration (e.g., acknowledging that maslaha's role is debated even within schools) and does not flag where knowledge might be weak. However, it avoids uniform confidence by contrasting the two positions, though not with nuanced uncertainty."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00088073,
+  "judge_latency_s": 16.5,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: maslaha is a subsidiary principle, not an independent source; it must be consistent with revelation; used where sources are silent; Malikis give greater weight to maslaha mursala; Hanafis are more cautious, preferring qiyas and istihsan. These are correct and standard in Islamic legal theory. No invented citations, terms, or consensus are presented. The claims are accurate and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response correctly identifies the general relationship and divergence between Maliki and Hanafi positions, but it stays at an introductory, textbook level. It mentions maslaha mursala and istihsan but does not engage with specific scholarly debates, methodological nuances, or evidence quality (e.g., debates on the conditions for maslaha mursala, historical examples, or internal Hanafi discussions on istihsan). A specialist would recognize this as a competent summary but not as deep engagement with the literature.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between the Maliki and Hanafi positions, noting differences in flexibility and caution, but it presents these as clear-cut without signaling evidential status or contested points. For example, it states 'Malikis are more willing to treat public welfare as a ground for legal rulings' without noting variations within the school or historical debates. It lacks specific calibration (e.g., acknowledging that maslaha's role is debated even within schools) and does not flag where knowledge might be weak. However, it avoids uniform confidence by contrasting the two positions, though not with nuanced uncertainty.\",\n      \"score\": 2\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses terminology and frameworks from Islamic legal theory (usul al-fiqh), including maslaha, Qur'an, Sunnah, ijma', qiyas, maslaha mursala, and istihsan. It does not substitute a Western or Anglophone framing and stays within the scholarly tradition asked about. The vocabulary is appropriate and specific to the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is accurate and well-structured but lacks the depth and scholarly nuance expected for a specialist question.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is accurate and well-structured but lacks the depth and scholarly nuance expected for a specialist question.",
+  "rubric_hash": "25dae73dc6623e3e",
+  "rubric_version": "1.0.0",
+  "score": 75.0
+}

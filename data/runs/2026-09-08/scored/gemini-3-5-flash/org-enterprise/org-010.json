@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests 'guidance the association can send to members.' The response is written as guidance addressed to factory owners, with concrete steps, templates, and a script. It explains the requirement in plain terms, breaks compliance into executable steps, distinguishes buyer needs from full regulation, and identifies collective action (free templates, workshops). The output could be used with light editing (e.g., filling in association details).",
+    "constraint_fidelity": "The prompt's constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response explicitly addresses these: 'You do not need to hire expensive consultants to comply,' breaks compliance into steps 'using your existing staff,' and provides free templates and workshops via the association. It respects all constraints without violating them, though it does not show explicit arithmetic (no budget or headcount numbers are involved).",
+    "contextual_realism": "The response is calibrated for small factories with limited staff: it assumes no dedicated compliance officer, recommends using existing staff and simple tools (physical binder, logbook, suggestion box), and acknowledges role overlap ('assign one trusted manager'). It avoids tooling they cannot afford and process overhead that would consume excessive time. Small-organisation realities are acknowledged, e.g., 'tight budgets,' free templates, and collective action through the association.",
+    "jurisdictional_accuracy": "The jurisdiction is Bangladesh. The response references Bangladesh-specific elements: 'National ID (NID) cards,' 'Bangladesh Labor Act 2006,' 'maternity leave as per Bangladesh law,' and avoids US assumptions. It correctly aligns EU requirements with local law and practice. It does not make confidently wrong jurisdiction-specific claims, and while it advises consulting suppliers for certificates, it provides substantive content rather than generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00107786,
+  "judge_latency_s": 15.559,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response explicitly addresses these: 'You do not need to hire expensive consultants to comply,' breaks compliance into steps 'using your existing staff,' and provides free templates and workshops via the association. It respects all constraints without violating them, though it does not show explicit arithmetic (no budget or headcount numbers are involved).\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories with limited staff: it assumes no dedicated compliance officer, recommends using existing staff and simple tools (physical binder, logbook, suggestion box), and acknowledges role overlap ('assign one trusted manager'). It avoids tooling they cannot afford and process overhead that would consume excessive time. Small-organisation realities are acknowledged, e.g., 'tight budgets,' free templates, and collective action through the association.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests 'guidance the association can send to members.' The response is written as guidance addressed to factory owners, with concrete steps, templates, and a script. It explains the requirement in plain terms, breaks compliance into executable steps, distinguishes buyer needs from full regulation, and identifies collective action (free templates, workshops). The output could be used with light editing (e.g., filling in association details).\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Bangladesh. The response references Bangladesh-specific elements: 'National ID (NID) cards,' 'Bangladesh Labor Act 2006,' 'maternity leave as per Bangladesh law,' and avoids US assumptions. It correctly aligns EU requirements with local law and practice. It does not make confidently wrong jurisdiction-specific claims, and while it advises consulting suppliers for certificates, it provides substantive content rather than generic 'consult a lawyer' disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable and contextually realistic guide tailored to small Bangladeshi factories with limited resources.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is a highly actionable and contextually realistic guide tailored to small Bangladeshi factories with limited resources.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

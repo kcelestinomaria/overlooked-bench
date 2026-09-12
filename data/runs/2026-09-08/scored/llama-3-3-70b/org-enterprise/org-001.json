@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces a hiring plan with roles, sequence, salary bands, and arithmetic, as requested. It includes concrete components: role definitions, hiring timeline, gross salary bands, on-cost calculation, and total cost against the envelope. However, it lacks detailed role definitions tied to programme milestones, and the on-costs are generic (30%) rather than specifying Kenyan statutory obligations (NSSF, NHIF/SHIF, PAYE). The plan could be used with light editing but misses some specifics from the rubric notes.",
+    "constraint_fidelity": "The response respects the grant amount (USD 180,000), indirect cost cap (15%), and two-year timeline. It calculates direct costs (USD 153,000) and converts to KES, showing arithmetic. However, it silently introduces a new constraint by allocating 70% of direct costs to personnel without justification from the prompt, and uses an assumed exchange rate (1 USD = 120 KES) without noting it as a variable. The total personnel cost (KES 10,686,000) fits within the derived envelope (KES 12,852,000), but the 70% allocation is an unstated assumption. This is a partial violation, so score is reduced.",
+    "contextual_realism": "The response proposes four new roles without considering the existing 12-person NGO's capacity to integrate them or the ED's hiring burden. It assumes a 30% on-cost for statutory obligations but does not specify Kenyan employer contributions (NSSF, NHIF/SHIF, PAYE) as required, using a generic percentage. Salary bands are provided but not explicitly justified as plausible for Kenyan NGO sector. It acknowledges no dedicated HR but does not tailor the hiring process to be light for the ED. Small-organisation realities like role overlap or volunteer use are ignored.",
+    "jurisdictional_accuracy": "The response uses Kenyan Shillings (KES) and mentions statutory on-costs, but does not accurately identify employer obligations like NSSF and NHIF/SHIF contributions or PAYE handling—instead using a generic 30% on-cost. It avoids US-specific assumptions like equity compensation or US benefits, but fails to provide jurisdictionally accurate details. The exchange rate assumption is noted as variable, but no referral to local professional advice is made. This is partially accurate but lacks required specificity."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 3,
+    "contextual_realism": 2,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00114761,
+  "judge_latency_s": 18.877,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects the grant amount (USD 180,000), indirect cost cap (15%), and two-year timeline. It calculates direct costs (USD 153,000) and converts to KES, showing arithmetic. However, it silently introduces a new constraint by allocating 70% of direct costs to personnel without justification from the prompt, and uses an assumed exchange rate (1 USD = 120 KES) without noting it as a variable. The total personnel cost (KES 10,686,000) fits within the derived envelope (KES 12,852,000), but the 70% allocation is an unstated assumption. This is a partial violation, so score is reduced.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response proposes four new roles without considering the existing 12-person NGO's capacity to integrate them or the ED's hiring burden. It assumes a 30% on-cost for statutory obligations but does not specify Kenyan employer contributions (NSSF, NHIF/SHIF, PAYE) as required, using a generic percentage. Salary bands are provided but not explicitly justified as plausible for Kenyan NGO sector. It acknowledges no dedicated HR but does not tailor the hiring process to be light for the ED. Small-organisation realities like role overlap or volunteer use are ignored.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a hiring plan with roles, sequence, salary bands, and arithmetic, as requested. It includes concrete components: role definitions, hiring timeline, gross salary bands, on-cost calculation, and total cost against the envelope. However, it lacks detailed role definitions tied to programme milestones, and the on-costs are generic (30%) rather than specifying Kenyan statutory obligations (NSSF, NHIF/SHIF, PAYE). The plan could be used with light editing but misses some specifics from the rubric notes.\",\n      \"score\": 3\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response uses Kenyan Shillings (KES) and mentions statutory on-costs, but does not accurately identify employer obligations like NSSF and NHIF/SHIF contributions or PAYE handling—instead using a generic 30% on-cost. It avoids US-specific assumptions like equity compensation or US benefits, but fails to provide jurisdictionally accurate details. The exchange rate assumption is noted as variable, but no referral to local professional advice is made. This is partially accurate but lacks required specificity.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a structured hiring plan with arithmetic but misses key Kenyan-specific details and makes unstated assumptions about budget allocation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a structured hiring plan with arithmetic but misses key Kenyan-specific details and makes unstated assumptions about budget allocation.",
+  "rubric_hash": "ec54e82f734da3f6",
+  "rubric_version": "1.0.0",
+  "score": 63.75
+}

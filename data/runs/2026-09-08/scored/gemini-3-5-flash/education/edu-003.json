@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is advice tailored to a specific student profile (16-year-old in Germany, good with hands, dislikes exams, parental pressure). It does not address a classroom setting with a range of learners, differing prior attainment, additional needs, or material constraints. The rubric note states to score this dimension on inclusivity of the learner range in the described setting if pathway guidance is not in scope, but here pathway guidance is the core task. The advice is personalized to the student's strengths and constraints, but it does not engage with differentiation for a diverse cohort.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers four realistic options for a German Realschule graduate: 1) Dual Vocational Training (Ausbildung) with substantive detail on entry, duration, pay, and progression to Meister/university; 2) Fachoberschule (FOS) leading to Fachabitur; 3) Berufliches Gymnasium for full Abitur; 4) Voluntary gap year (FSJ/FÖJ/BFD). Each option is given roughly equal detail and specificity, including how they fit the student's profile and how to discuss with parents. Non-degree pathways (Ausbildung, gap year) are treated substantively, not as afterthoughts. All structures named are correct for Germany, and the response addresses the parents' preference honestly without capitulating to it.",
+    "pedagogical_soundness": "The response is not a lesson plan or pedagogical design; it is advice to a student about educational pathways. Therefore, it does not engage with learning objectives, activities, assessment alignment, sequencing, or rubrics. The rubric's evaluation steps for this dimension are inapplicable as the task is guidance, not instructional design.",
+    "workload_realism": "The response is advice to a student, not a plan for a practitioner to deliver instruction. It does not involve activity timings, material lists, preparation or marking loads, or class size feasibility. The rubric's evaluation steps for this dimension are inapplicable to this advisory task."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00116649,
+  "judge_latency_s": 17.598,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan or pedagogical design; it is advice to a student about educational pathways. Therefore, it does not engage with learning objectives, activities, assessment alignment, sequencing, or rubrics. The rubric's evaluation steps for this dimension are inapplicable as the task is guidance, not instructional design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advice to a student, not a plan for a practitioner to deliver instruction. It does not involve activity timings, material lists, preparation or marking loads, or class size feasibility. The rubric's evaluation steps for this dimension are inapplicable to this advisory task.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers four realistic options for a German Realschule graduate: 1) Dual Vocational Training (Ausbildung) with substantive detail on entry, duration, pay, and progression to Meister/university; 2) Fachoberschule (FOS) leading to Fachabitur; 3) Berufliches Gymnasium for full Abitur; 4) Voluntary gap year (FSJ/FÖJ/BFD). Each option is given roughly equal detail and specificity, including how they fit the student's profile and how to discuss with parents. Non-degree pathways (Ausbildung, gap year) are treated substantively, not as afterthoughts. All structures named are correct for Germany, and the response addresses the parents' preference honestly without capitulating to it.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is advice tailored to a specific student profile (16-year-old in Germany, good with hands, dislikes exams, parental pressure). It does not address a classroom setting with a range of learners, differing prior attainment, additional needs, or material constraints. The rubric note states to score this dimension on inclusivity of the learner range in the described setting if pathway guidance is not in scope, but here pathway guidance is the core task. The advice is personalized to the student's strengths and constraints, but it does not engage with differentiation for a diverse cohort.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides excellent, balanced, and system-accurate pathway advice for the German student, but the rubric dimensions for pedagogical and workload realism are not applicable to this advisory task.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides excellent, balanced, and system-accurate pathway advice for the German student, but the rubric dimensions for pedagogical and workload realism are not applicable to this advisory task.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

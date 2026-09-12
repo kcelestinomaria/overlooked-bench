@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 192,
+  "cost_usd": 0.00319,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "6bfb84015aab2a3a",
+  "item_id": "cal-006",
+  "latency_s": 2.388,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 124,
+  "provider": "openai",
+  "request_fingerprint": "6e6cc8461d7dd697",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "Let the five positions from left to right be 1, 2, 3, 4, 5.\n\nWe know:\n- The **blue** book is the leftmost, so blue is in position **1**.\n- The **red** book is the rightmost, so red is in position **5**.\n\nThat leaves positions 2, 3, and 4 for **purple**, **white**, and **green**.\n\nWe also know:\n- **Green** is somewhere to the right of **white**.\n- **Purple** is somewhere to the left of **white**.\n\nSo among purple, white, and green, the only possible left-to-right order is:\n\n**purple, white, green**\n\nThus:\n- Position 2 = purple\n- Position 3 = white\n- Position 4 = green\n\nSo the book **third from the left is the white book**.\n\nANSWER: white",
+  "timestamp_utc": "2026-09-07T22:30:59Z"
+}

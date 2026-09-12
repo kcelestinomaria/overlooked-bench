@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Argue a position'), and the response states a clear position: 'it is coherent to say that a person can be harmed by an event that occurs after their death.' It provides reasons (harm as violation of interests) and explores implications. However, it does not explicitly acknowledge uncertainty or state what would change its mind (e.g., if harm requires experiential states). The hedging is minimal, but the response lacks calibrated uncertainty, stopping short of excellent.",
+    "philosophical_literacy": "The response invokes no named thinkers, traditions, or technical terms (e.g., no mention of Feinberg, Epicurus, or concepts like 'ante-mortem harm'). It uses general concepts like 'interests, rights, or dignity' accurately but at a basic level. These concepts are load-bearing in the argument (harm is defined through them). Accuracy is maintained, but depth is limited. A response without technical vocabulary but reasoning correctly should score 3, but here the reasoning is simplistic.",
+    "position_pluralism": "Major live positions on this question include: the 'yes' position (harm can occur posthumously via interests), the 'no' position (harm requires an existing subject), and intermediate views (e.g., harm as affecting ante-mortem interests). The response only presents the 'yes' position without acknowledging rival positions. An advocate of the 'no' position would not find their view represented. There is no strawmanning, but omission of major positions is significant, making it minimal engagement.",
+    "reasoning_construction": "The response reaches a conclusion: 'it is coherent to say that a person can be harmed by an event that occurs after their death.' Premises offered include: harm can be a violation of interests, rights, or dignity that persists after death; a broken promise betrays trust and expectations. The inference from premises to conclusion is valid but basic, linking harm to posthumous interests. It engages specific details of the scenario (e.g., broken promise to care for family) but does not address the strongest counterargument (e.g., the 'no subject' objection that harm requires an existing subject to experience it). The argument is constructed but lacks depth in handling objections, making it partial."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 2,
+    "position_pluralism": 1,
+    "reasoning_construction": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-013",
+  "judge_cost_usd": 0.00099293,
+  "judge_latency_s": 18.626,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response reaches a conclusion: 'it is coherent to say that a person can be harmed by an event that occurs after their death.' Premises offered include: harm can be a violation of interests, rights, or dignity that persists after death; a broken promise betrays trust and expectations. The inference from premises to conclusion is valid but basic, linking harm to posthumous interests. It engages specific details of the scenario (e.g., broken promise to care for family) but does not address the strongest counterargument (e.g., the 'no subject' objection that harm requires an existing subject to experience it). The argument is constructed but lacks depth in handling objections, making it partial.\",\n      \"score\": 2\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Argue a position'), and the response states a clear position: 'it is coherent to say that a person can be harmed by an event that occurs after their death.' It provides reasons (harm as violation of interests) and explores implications. However, it does not explicitly acknowledge uncertainty or state what would change its mind (e.g., if harm requires experiential states). The hedging is minimal, but the response lacks calibrated uncertainty, stopping short of excellent.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions on this question include: the 'yes' position (harm can occur posthumously via interests), the 'no' position (harm requires an existing subject), and intermediate views (e.g., harm as affecting ante-mortem interests). The response only presents the 'yes' position without acknowledging rival positions. An advocate of the 'no' position would not find their view represented. There is no strawmanning, but omission of major positions is significant, making it minimal engagement.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes no named thinkers, traditions, or technical terms (e.g., no mention of Feinberg, Epicurus, or concepts like 'ante-mortem harm'). It uses general concepts like 'interests, rights, or dignity' accurately but at a basic level. These concepts are load-bearing in the argument (harm is defined through them). Accuracy is maintained, but depth is limited. A response without technical vocabulary but reasoning correctly should score 3, but here the reasoning is simplistic.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response takes a clear position but lacks engagement with opposing arguments and philosophical depth.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response takes a clear position but lacks engagement with opposing arguments and philosophical depth.",
+  "rubric_hash": "5ac42b278c4bf234",
+  "rubric_version": "1.0.0",
+  "score": 50.0
+}

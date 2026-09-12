@@ -1,0 +1,34 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a parent audience, not a classroom of learners. The response does not address differentiation for a range of learners in an instructional setting. It mentions teaching strategies like 'same task, different depths' and 'careful grouping' but as general explanations to parents, not as concrete, implementable adaptations for specific student needs. The evaluation steps (identifying learner range, proposing implementable adaptations) are not engaged with substantively.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. As per the rubric note, for items where pathway guidance is not in scope, this dimension is scored on inclusivity of the learner range. The response addresses parents with varied educational backgrounds (including those who did not complete secondary school) and discusses benefits for all students (e.g., 'every child deserves the chance to succeed'), showing inclusivity. However, it does not detail specific adaptations for different learner types.",
+    "pedagogical_soundness": "The response does not present a lesson plan with stated learning objectives, activities, assessments, sequencing, or rubrics. It is a parent-facing communication explaining a policy change, not a pedagogical plan. Therefore, it does not engage with the dimension's evaluation steps (e.g., aligning objectives, activities, and assessments).",
+    "workload_realism": "The response is a communication document, not a teaching plan requiring delivery timings, materials, preparation, or marking. It mentions teacher training but does not detail a practitioner's workload for instruction. The dimension's evaluation steps (summing activity timings, listing materials, estimating marking time) are not applicable."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00096612,
+  "judge_latency_s": 16.514,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "71150128d9966002",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with stated learning objectives, activities, assessments, sequencing, or rubrics. It is a parent-facing communication explaining a policy change, not a pedagogical plan. Therefore, it does not engage with the dimension's evaluation steps (e.g., aligning objectives, activities, and assessments).\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a communication document, not a teaching plan requiring delivery timings, materials, preparation, or marking. It mentions teacher training but does not detail a practitioner's workload for instruction. The dimension's evaluation steps (summing activity timings, listing materials, estimating marking time) are not applicable.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. As per the rubric note, for items where pathway guidance is not in scope, this dimension is scored on inclusivity of the learner range. The response addresses parents with varied educational backgrounds (including those who did not complete secondary school) and discusses benefits for all students (e.g., 'every child deserves the chance to succeed'), showing inclusivity. However, it does not detail specific adaptations for different learner types.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a parent audience, not a classroom of learners. The response does not address differentiation for a range of learners in an instructional setting. It mentions teaching strategies like 'same task, different depths' and 'careful grouping' but as general explanations to parents, not as concrete, implementable adaptations for specific student needs. The evaluation steps (identifying learner range, proposing implementable adaptations) are not engaged with substantively.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"This is a well-crafted parent communication that addresses objections plainly, but it does not engage with the core pedagogical planning dimensions of the rubric.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.2.0",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "This is a well-crafted parent communication that addresses objections plainly, but it does not engage with the core pedagogical planning dimensions of the rubric.",
+  "rubric_hash": "354de6036e071fa8",
+  "rubric_version": "1.0.0",
+  "score": 17.5
+}
