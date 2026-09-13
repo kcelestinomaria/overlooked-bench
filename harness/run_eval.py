@@ -22,6 +22,7 @@ an interrupted run costs nothing to continue. `--force-regenerate` starts a fres
 run id instead of overwriting, because overwriting raw output would destroy the
 audit trail that makes this project worth trusting.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

@@ -29,6 +29,7 @@ jurisdiction named - at-will employment, 501(c)(3) rules, US tax treatment -
 which is actively dangerous advice outside the US and is asserted with the same
 confidence as everything else.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from .base import CategoryMetric, Dimension
 

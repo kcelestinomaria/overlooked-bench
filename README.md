@@ -348,4 +348,30 @@ the footer of every social card.
 
 ## License
 
-Code: MIT. Dataset and results: CC BY 4.0. See [LICENSE](LICENSE).
+Three parts, because the repository contains three different kinds of thing:
+
+| Path | Licence |
+|---|---|
+| `harness/`, `charts/`, `site/`, and the run scripts | **AGPL-3.0-or-later** |
+| `data/categories/` - the benchmark items | **CC BY-SA 4.0** |
+| `data/runs/` - results, charts, cards - and `docs/` | **CC BY 4.0** |
+
+The harness is AGPL because this project's claim is that a score cannot change
+without the change being visible, and the AGPL's network clause says the same
+thing in licence form: run a **modified** harness as a public service and you
+owe your users the diff. Running the benchmark privately, including inside a
+company and including on unreleased models, triggers nothing — that is not
+distribution. It places no obligation on any model you score.
+
+The items are share-alike so that a derived item set stays arguable-with rather
+than disappearing into a product. The results are the most permissive of the
+three on purpose: they are largely facts about measurements, and they exist to
+be quoted — with the run id and methodology version attached, or the number
+is not checkable.
+
+Reuse the code and the data freely. The **name** is not part of that grant: if
+you publish results from a modified version, say that it is modified and carry
+the rubric hashes your run actually used.
+
+Full reasoning, including the position on model-response copyright and on
+training contamination, is in [LICENSING.md](LICENSING.md).

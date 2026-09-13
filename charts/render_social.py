@@ -23,6 +23,7 @@ posting workflow can pick up `ethics-philosophy.png` without renaming anything.
 
 Requires a one-time browser install:  python -m playwright install chromium
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

@@ -12,6 +12,7 @@ into `site/`. The page therefore reads the exact files that constitute the audit
 trail, not a transformed copy of them. If the site shows a number, that number is
 in the committed `summary.json`, and anyone can diff the two.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

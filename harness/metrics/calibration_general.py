@@ -26,6 +26,7 @@ Design consequence: this is the one metric in the project that scores against a
 reference answer, and correctness is weighted heavily. That is appropriate here
 and would be wrong everywhere else in the benchmark.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from .base import CategoryMetric, Dimension
 

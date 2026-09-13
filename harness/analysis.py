@@ -31,6 +31,7 @@ non-US institutions 14 points more readily than large US ones" - and it is
 reported alongside the sample size, because with 15-20 items these gaps are
 directional evidence for the next run to test, not established facts.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

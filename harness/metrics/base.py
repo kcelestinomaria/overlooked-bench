@@ -18,6 +18,7 @@ Scores are stored twice: the raw 0-4 integer (what the judge actually said) and
 a 0-100 normalisation (what charts display). Storing both means a rescaling can
 never quietly rewrite history.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

@@ -24,6 +24,7 @@ and instant, so iterating on a chart never means re-running the models:
 The API key is read from `.env` in the repo root and never leaves this machine.
 It is not written into any run artefact, and `.env` is gitignored.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

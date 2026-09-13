@@ -35,6 +35,7 @@ agree. If they diverge materially, that is a finding about our scoring and is
 reported, not smoothed over. Cross-engine agreement is recorded in the run
 summary.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

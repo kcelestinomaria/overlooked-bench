@@ -32,6 +32,7 @@ Cross-judge scores are written to `runs/<id>/crossjudge/<slug>/` and NEVER to
 `scored/`. The primary judge's scores remain the run's published result; nothing
 here can silently overwrite them.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

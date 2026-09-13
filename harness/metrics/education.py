@@ -28,6 +28,7 @@ treatment. `pathway_breadth` is a separate dimension because a model can be
 pedagogically excellent and still systematically steer every student toward one
 track.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from .base import CategoryMetric, Dimension
 

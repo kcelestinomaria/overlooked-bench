@@ -12,6 +12,7 @@ should be able to see what was run, what the judge was, what the numbers were,
 and - above all - what was WRONG with the run, without opening a 3MB JSON blob.
 Diagnostics are therefore printed above the results rather than in a footnote.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 
