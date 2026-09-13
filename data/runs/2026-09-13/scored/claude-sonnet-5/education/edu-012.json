@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the learner range (students with different home languages) and proposes specific, low-cost adaptations implementable by one teacher with no assistant. Examples include: accepting non-verbal participation, using visual supports, strategic pairing, simplifying language, allowing thinking in home language, and using translation tools thoughtfully. It avoids generic placeholder language and focuses on practical, classroom-ready strategies that respect the Quebec context and teacher constraints.",
+    "pathway_breadth": "The prompt is about supporting language learners in a primary school classroom, not about student futures or educational pathways. As per the rubric, for items not involving pathway guidance, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses the range of learners (children with home languages of Arabic, Spanish, Tagalog learning in French) and provides inclusive strategies (e.g., leveraging home languages as assets, accommodating the silent period, differentiating assessment). It is substantively inclusive.",
+    "pedagogical_soundness": "The response does not present a lesson plan with stated learning objectives, activities, and assessments to evaluate alignment. It is a briefing document providing general strategies and principles (e.g., 'Understanding the Silent Period', 'Practical Strategies', 'A Note on Assessment'). Therefore, it cannot be assessed for pedagogical alignment, sequencing, or rubric criteria as defined in the evaluation steps. It engages with the topic but not in the structured educational design format the dimension requires.",
+    "workload_realism": "The briefing suggests strategies that are generally low-resource and implementable by one teacher with no assistant (e.g., 'Use visual supports constantly', 'Pair strategically', 'Simplify your language'). It does not prescribe specific timed activities, materials, or marking loads that could be checked against a lesson plan. The strategies are plausible for the Quebec primary school setting with the stated constraints. However, it lacks the detailed plan (timings, material lists) needed to fully evaluate realism against the steps, so it is partially engaged but not a deliverable plan."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 1,
+    "workload_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00100693,
+  "judge_latency_s": 18.653,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with stated learning objectives, activities, and assessments to evaluate alignment. It is a briefing document providing general strategies and principles (e.g., 'Understanding the Silent Period', 'Practical Strategies', 'A Note on Assessment'). Therefore, it cannot be assessed for pedagogical alignment, sequencing, or rubric criteria as defined in the evaluation steps. It engages with the topic but not in the structured educational design format the dimension requires.\",\n      \"score\": 1\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The briefing suggests strategies that are generally low-resource and implementable by one teacher with no assistant (e.g., 'Use visual supports constantly', 'Pair strategically', 'Simplify your language'). It does not prescribe specific timed activities, materials, or marking loads that could be checked against a lesson plan. The strategies are plausible for the Quebec primary school setting with the stated constraints. However, it lacks the detailed plan (timings, material lists) needed to fully evaluate realism against the steps, so it is partially engaged but not a deliverable plan.\",\n      \"score\": 2\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about supporting language learners in a primary school classroom, not about student futures or educational pathways. As per the rubric, for items not involving pathway guidance, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses the range of learners (children with home languages of Arabic, Spanish, Tagalog learning in French) and provides inclusive strategies (e.g., leveraging home languages as assets, accommodating the silent period, differentiating assessment). It is substantively inclusive.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the learner range (students with different home languages) and proposes specific, low-cost adaptations implementable by one teacher with no assistant. Examples include: accepting non-verbal participation, using visual supports, strategic pairing, simplifying language, allowing thinking in home language, and using translation tools thoughtfully. It avoids generic placeholder language and focuses on practical, classroom-ready strategies that respect the Quebec context and teacher constraints.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a practical, context-aware briefing offering specific, implementable strategies for a teacher supporting multilingual learners without assistant support.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is a practical, context-aware briefing offering specific, implementable strategies for a teacher supporting multilingual learners without assistant support.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 65.0
+}

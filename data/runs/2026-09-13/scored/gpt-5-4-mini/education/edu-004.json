@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a one-on-one advising session with a specific 19-year-old student who has been doing informal work. The response is tailored to that individual's constraints (time, cost, employment goal). It addresses access by detailing cost ranges, financing options (scholarships, subsidies), and practical advice on choosing affordable, accredited schools. It does not need to address a range of learners in a classroom, as the item is about individual guidance. The proposed guidance is fully implementable by the single adviser. Therefore, it concretely addresses the learner's specific situation and receives a 4.",
+    "pathway_breadth": "Pathway guidance is explicitly in scope. The response covers technical-vocational pathways (TESDA-accredited courses) in depth, with multiple specific examples (Caregiving, Electrical Installation, Cookery, Bookkeeping). It correctly names Philippine qualifications (NC II/III), provides realistic durations (6-12 months), costs (including free/low-cost options), and plausible earnings estimates for the local labor market. It respects the 18-month constraint and explicitly advises against a 4-year degree. Non-degree options are treated substantively, not as an afterthought. Therefore, it demonstrates excellent pathway breadth and receives a 4.",
+    "pedagogical_soundness": "The response does not present a lesson plan, curriculum, or educational intervention with stated learning objectives, activities, and aligned assessments. It is a career guidance script, not a pedagogical design. Therefore, it cannot be evaluated for pedagogical alignment, sequencing, or rubric design. It receives a 0 as it does not engage with this dimension at all.",
+    "workload_realism": "The response is a guidance script for an adviser, not a lesson or unit plan requiring delivery by a teacher. There are no activity timings to sum, no materials to list for a classroom, and no marking load to estimate. The 'workload' here is the adviser's counseling time, which is implied to be a single session. The advice is specific and actionable for that context. It is realistic for a community college adviser to deliver this guidance in a meeting. Therefore, it is fully feasible and receives a 4."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00125318,
+  "judge_latency_s": 20.102,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan, curriculum, or educational intervention with stated learning objectives, activities, and aligned assessments. It is a career guidance script, not a pedagogical design. Therefore, it cannot be evaluated for pedagogical alignment, sequencing, or rubric design. It receives a 0 as it does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a guidance script for an adviser, not a lesson or unit plan requiring delivery by a teacher. There are no activity timings to sum, no materials to list for a classroom, and no marking load to estimate. The 'workload' here is the adviser's counseling time, which is implied to be a single session. The advice is specific and actionable for that context. It is realistic for a community college adviser to deliver this guidance in a meeting. Therefore, it is fully feasible and receives a 4.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is explicitly in scope. The response covers technical-vocational pathways (TESDA-accredited courses) in depth, with multiple specific examples (Caregiving, Electrical Installation, Cookery, Bookkeeping). It correctly names Philippine qualifications (NC II/III), provides realistic durations (6-12 months), costs (including free/low-cost options), and plausible earnings estimates for the local labor market. It respects the 18-month constraint and explicitly advises against a 4-year degree. Non-degree options are treated substantively, not as an afterthought. Therefore, it demonstrates excellent pathway breadth and receives a 4.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a one-on-one advising session with a specific 19-year-old student who has been doing informal work. The response is tailored to that individual's constraints (time, cost, employment goal). It addresses access by detailing cost ranges, financing options (scholarships, subsidies), and practical advice on choosing affordable, accredited schools. It does not need to address a range of learners in a classroom, as the item is about individual guidance. The proposed guidance is fully implementable by the single adviser. Therefore, it concretely addresses the learner's specific situation and receives a 4.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, practical, and system-accurate vocational guidance tailored to the Philippine context and the student's 18-month employment goal.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides highly specific, practical, and system-accurate vocational guidance tailored to the Philippine context and the student's 18-month employment goal.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

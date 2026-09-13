@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 60', which exactly matches the reference answer 'ANSWER: 60' in substance. The answer is fully correct.",
+    "instruction_compliance": "The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 60', complying fully with both instructions.",
+    "reasoning_validity": "The response shows working: it sets up the equation (n-2) + n + (n+2) = 174, simplifies to 3n = 174, solves for n = 58, finds the integers as 56, 58, 60, and checks the sum. Each step is mathematically valid and correctly supports the answer of 60."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-005",
+  "judge_cost_usd": 0.00049223,
+  "judge_latency_s": 9.755,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 60', which exactly matches the reference answer 'ANSWER: 60' in substance. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it sets up the equation (n-2) + n + (n+2) = 174, simplifies to 3n = 174, solves for n = 58, finds the integers as 56, 58, 60, and checks the sum. Each step is mathematically valid and correctly supports the answer of 60.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 60', complying fully with both instructions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

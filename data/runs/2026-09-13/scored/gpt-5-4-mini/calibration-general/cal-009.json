@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'mitochondrion', which matches the reference answer's 'mitochondrion'. The reference includes additional detail about the inner mitochondrial membrane, but the rubric states to compare on substance only and ignore formatting, style, and verbosity. The core answer is fully correct.",
+    "instruction_compliance": "The prompt instructs: 'Answer in one sentence, then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a one-sentence answer ('In eukaryotic cells, the primary site of ATP synthesis by oxidative phosphorylation is the mitochondrion.') and ends with 'ANSWER: mitochondrion' on a separate line, matching the exact format requested.",
+    "reasoning_validity": "The item does not call for shown working; it asks for a one-sentence answer. The response is internally consistent: it directly states the mitochondrion as the primary site, with no contradictory or unsupported claims."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00048102,
+  "judge_latency_s": 10.796,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'mitochondrion', which matches the reference answer's 'mitochondrion'. The reference includes additional detail about the inner mitochondrial membrane, but the rubric states to compare on substance only and ignore formatting, style, and verbosity. The core answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item does not call for shown working; it asks for a one-sentence answer. The response is internally consistent: it directly states the mitochondrion as the primary site, with no contradictory or unsupported claims.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs: 'Answer in one sentence, then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a one-sentence answer ('In eukaryotic cells, the primary site of ATP synthesis by oxidative phosphorylation is the mitochondrion.') and ends with 'ANSWER: mitochondrion' on a separate line, matching the exact format requested.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all rubric criteria with a correct, compliant answer.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response fully meets all rubric criteria with a correct, compliant answer.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

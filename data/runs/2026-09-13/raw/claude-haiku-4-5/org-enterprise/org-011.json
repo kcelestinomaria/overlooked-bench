@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1209,
+  "cost_usd": 0.006157,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "41014c00b9a48097",
+  "item_id": "org-011",
+  "latency_s": 13.841,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 112,
+  "provider": "anthropic",
+  "request_fingerprint": "2571d60444ee26d9",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Water Loss Reduction Strategy for Peruvian Municipality\n\n## Diagnostic: Splitting the 42% Non-Revenue Water\n\nFor a mid-size Peruvian utility with this profile, I'd estimate:\n\n| Category | % of NRW | Likely Range |\n|----------|----------|--------------|\n| **Physical Loss (leakage)** | 24-28% | 57-67% of NRW |\n| **Commercial Loss** | 14-18% | 33-43% of NRW |\n\n**Reasoning:** Mid-size Peruvian utilities typically have:\n- Aging infrastructure (many systems 20-40 years old)\n- Moderate metering coverage (60-75%)\n- Significant informal connections in peripheral areas\n- Some billing system weaknesses but not catastrophic\n\nThis is worse than developed countries (15-20% NRW) but better than very poorly managed systems (50%+).\n\n---\n\n## Recommended Budget Allocation: PEN 2 Million\n\n### **Tier 1: Physical Loss (60% = PEN 1.2M)**\n\n**1. District Metering Areas (DMA) infrastructure – PEN 600k**\n- Install 8-12 DMAs with flow meters and isolation valves\n- Enables leak detection and isolates problem zones\n- ROI: Typically recovers 3-5% of system water within 2 years\n- *Specific action:* Map high-loss zones first (use night flow analysis)\n\n**2. Pipe replacement in priority zones – PEN 450k**\n- Target oldest/highest-loss districts identified via DMA data\n- Replace 15-20 km of distribution mains (asbestos cement, unlined cast iron)\n- Focus on areas with >30% physical loss\n- *Specific action:* Prioritize by age + pressure + soil corrosivity\n\n**3. Pressure management – PEN 150k**\n- Install pressure reducing valves in high-pressure zones\n- Reduces stress on aging pipes (leakage is pressure-sensitive)\n- Quick win: 2-3% water savings with minimal capex\n\n---\n\n### **Tier 2: Commercial Loss (35% = PEN 700k)**\n\n**1. Meter installation & replacement – PEN 350k**\n- Install meters on 3,000-4,000 unmetered connections\n- Replace 2,000-3,000 faulty/old meters (accuracy <95%)\n- Focus on high-consumption customers first (industrial, commercial)\n- *Specific action:* Audit shows ~15-20% of connections unmetered in typical Peruvian systems\n\n**2. Billing system upgrade – PEN 200k**\n- Implement/upgrade customer information system (CIS) with automated billing\n- Reduce billing errors and improve collection\n- Integrate with meter data management\n- *Specific action:* Reduces commercial loss by 2-3% through better accuracy\n\n**3. Illegal connection detection & formalization – PEN 150k**\n- Targeted survey of high-loss neighborhoods\n- Formalize connections (install meters, register customers)\n- Enforcement + incentives for legalization\n- *Specific action:* Typically recovers 1-2% of system water\n\n---\n\n### **Tier 3: Enabling/Soft Costs (5% = PEN 100k)**\n\n- Leak detection equipment rental (acoustic correlators)\n- Staff training on DMA management\n- Community awareness campaign\n- Contingency\n\n---\n\n## Expected Outcomes (Conservative Estimate)\n\n| Intervention | Water Recovery | Timeline |\n|--------------|-----------------|----------|\n| DMA + pressure mgmt | 3-4% | 18-24 months |\n| Pipe replacement | 2-3% | 24-36 months |\n| Metering | 2-3% | 12-18 months |\n| Billing/commercial | 1-2% | 6-12 months |\n| **Total** | **8-12%** | **Phased** |\n\n**In absolute terms:** 8-12% of 60,000 people's supply = 1,200-1,800 m³/day recovered\n- At PEN 8-10/m³ wholesale cost = **PEN 3.5-6.5M annual value**\n- Payback period: 3-4 years\n\n---\n\n## Critical Implementation Notes\n\n1. **Start with data:** Conduct night flow analysis and DMA pilot before major capex\n2. **Sequence matters:** Get metering/billing right *before* major pipe work (otherwise you won't know if it worked)\n3. **Institutional:** Assign a dedicated leak reduction unit; this isn't a one-time project\n4. **Political reality:** Illegal connections are politically sensitive—frame as \"formalization\" not \"enforcement\"\n5. **Sustainability:** Budget PEN 150-200k annually for ongoing DMA maintenance and leak detection\n\n---\n\n## Why Not Just \"Fix Leakage\"?\n\nThe board's framing is common but incomplete. **One-third of your water loss is commercial**, not physical. Spending all PEN 2M on pipes alone would miss the biggest bang-for-buck opportunity in metering and billing.",
+  "timestamp_utc": "2026-09-07T22:27:50Z"
+}

@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond a general encyclopedia summary by detailing specific ecological changes (soil salinization, Tugai forest loss) and explicitly identifying evidence gaps (biodiversity monitoring, ecosystem function studies, temporal dynamics). It engages with methodological limitations ('satellite imagery and field surveys', 'anecdotal reports rather than longitudinal studies') and contextualizes the research challenges (funding, access, multiple stressors). A specialist would recognize this as a nuanced assessment of the literature's state, not just a summary of basic facts.",
+    "domain_accuracy": "The response makes specific claims: 'Exposed seabed (now ~26,000 km²)', 'Salt deposition extends 100+ km downwind', 'Tugai forests reduced by ~80%'. These are plausible and consistent with known literature on the Aral Sea crisis, and no invented citations, terms, or consensus are presented. The claims about evidence gaps (e.g., 'Limited systematic monitoring', 'Most studies are snapshots') are accurate reflections of the state of research. No factual errors are evident.",
+    "field_situatedness": "The response correctly uses terminology and frameworks from environmental science and ecology, the field implied by the prompt (ecological effects). It references specific ecosystems ('Tugai forests'), processes ('salinization', 'desertification'), and methodological contexts ('satellite imagery', 'field surveys'). It does not silently substitute a different scholarly tradition (e.g., public health or hydrology alone) and remains focused on terrestrial ecology. The framing is appropriate to the interdisciplinary environmental science literature on the Aral Sea.",
+    "scholarly_calibration": "The response clearly distinguishes well-documented from poorly understood aspects. It labels 'Well-Documented Terrestrial Changes' (soil salinization, vegetation loss) and 'Significant Evidence Gaps' (biodiversity, ecosystem function, temporal dynamics). It uses calibrated language: 'relatively well-measured', 'though long-term trend data remain patchy', 'mechanistic understanding is limited', 'Unclear whether observed declines are driven by...', 'Minimal research'. It avoids uniform confidence and presents contested or unknown points as such, without blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00089308,
+  "judge_latency_s": 20.007,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims: 'Exposed seabed (now ~26,000 km²)', 'Salt deposition extends 100+ km downwind', 'Tugai forests reduced by ~80%'. These are plausible and consistent with known literature on the Aral Sea crisis, and no invented citations, terms, or consensus are presented. The claims about evidence gaps (e.g., 'Limited systematic monitoring', 'Most studies are snapshots') are accurate reflections of the state of research. No factual errors are evident.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond a general encyclopedia summary by detailing specific ecological changes (soil salinization, Tugai forest loss) and explicitly identifying evidence gaps (biodiversity monitoring, ecosystem function studies, temporal dynamics). It engages with methodological limitations ('satellite imagery and field surveys', 'anecdotal reports rather than longitudinal studies') and contextualizes the research challenges (funding, access, multiple stressors). A specialist would recognize this as a nuanced assessment of the literature's state, not just a summary of basic facts.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response clearly distinguishes well-documented from poorly understood aspects. It labels 'Well-Documented Terrestrial Changes' (soil salinization, vegetation loss) and 'Significant Evidence Gaps' (biodiversity, ecosystem function, temporal dynamics). It uses calibrated language: 'relatively well-measured', 'though long-term trend data remain patchy', 'mechanistic understanding is limited', 'Unclear whether observed declines are driven by...', 'Minimal research'. It avoids uniform confidence and presents contested or unknown points as such, without blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses terminology and frameworks from environmental science and ecology, the field implied by the prompt (ecological effects). It references specific ecosystems ('Tugai forests'), processes ('salinization', 'desertification'), and methodological contexts ('satellite imagery', 'field surveys'). It does not silently substitute a different scholarly tradition (e.g., public health or hydrology alone) and remains focused on terrestrial ecology. The framing is appropriate to the interdisciplinary environmental science literature on the Aral Sea.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a well-calibrated, specific overview of the evidence state, accurately distinguishing known impacts from major research gaps.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a well-calibrated, specific overview of the evidence state, accurately distinguishing known impacts from major research gaps.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

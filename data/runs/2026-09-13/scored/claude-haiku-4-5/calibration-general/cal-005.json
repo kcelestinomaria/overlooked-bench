@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 60', which matches the reference answer 'ANSWER: 60' exactly. The response correctly identifies the largest integer as 60, and the underlying integers (56, 58, 60) are correct. Formatting and verbosity differences are ignored per rubric guidance.",
+    "instruction_compliance": "The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 60', matching the required format exactly. All instructions are followed.",
+    "reasoning_validity": "The response shows working: it defines the integers as n, n+2, n+4, sets up the equation n + (n+2) + (n+4) = 174, solves correctly to n=56, and derives the integers 56, 58, 60. Each step is mathematically valid and supports the final answer. The reasoning is sound and internally consistent."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-005",
+  "judge_cost_usd": 0.00055521,
+  "judge_latency_s": 10.944,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 60', which matches the reference answer 'ANSWER: 60' exactly. The response correctly identifies the largest integer as 60, and the underlying integers (56, 58, 60) are correct. Formatting and verbosity differences are ignored per rubric guidance.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it defines the integers as n, n+2, n+4, sets up the equation n + (n+2) + (n+4) = 174, solves correctly to n=56, and derives the integers 56, 58, 60. Each step is mathematically valid and supports the final answer. The reasoning is sound and internally consistent.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 60', matching the required format exactly. All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all rubric criteria with correct answer, valid reasoning, and strict compliance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response fully meets all rubric criteria with correct answer, valid reasoning, and strict compliance.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

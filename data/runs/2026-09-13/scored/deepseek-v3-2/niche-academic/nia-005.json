@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with methodology (phenomenological, linguistic), evidence (grammatical roots, social practices like haragei), and scholarly debates (e.g., Isozaki rejecting Western separation of time and space). It discusses internal dimensions (ontological, temporal, ethical) and contrasts specific treatments in Japanese vs. Western scholarship, indicating familiarity with the literature rather than summaries. A specialist would recognize this as a nuanced analysis, not a summary of a summary.",
+    "domain_accuracy": "The response makes substantive claims: it correctly identifies ma as a foundational principle, cites Japanese scholars (Watsuji Tetsurō, Nishida Kitarō, Isozaki Arata, Okakura Kakuzō) and their works (e.g., Watsuji's 'Fūdo', Isozaki's essay 'Ma: Japanese Time-Space', Okakura's 'The Book of Tea'), describes ma as dynamic, generative, and relational, and contrasts it with Western reductions to negative space. It references specific Western writers (Donald Keene, Arthur Danto) and events (the 1978 'Ma: Space-Time in Japan' exhibition). All claims align with established scholarship; no invented citations, terms, or consensus are detected. The factual content is accurate and load-bearing errors are absent.",
+    "field_situatedness": "The response correctly situates the concept in Japanese aesthetics, using frameworks and terminology from Japanese-language scholarship (e.g., ma as aidagara, mu, engawa, ma-ai, haragei, sasshi) and citing Japanese scholars. It contrasts this with Western Anglophone framings without silently substituting them. It acknowledges non-English scholarship as central and avoids reducing the concept to a dominant Western aesthetic tradition.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it presents ma as foundational but 'notoriously elusive', notes Western tendencies (e.g., 'often reduces', 'frequently equated') without overgeneralizing, and acknowledges sophisticated Western attempts to bridge gaps. It signals differences in evidential status (e.g., Japanese scholarship's embeddedness vs. Western exoticization) without presenting any single scholar's proposal as settled fact. Calibration is specific and targeted, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.0012465,
+  "judge_latency_s": 20.485,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: it correctly identifies ma as a foundational principle, cites Japanese scholars (Watsuji Tetsurō, Nishida Kitarō, Isozaki Arata, Okakura Kakuzō) and their works (e.g., Watsuji's 'Fūdo', Isozaki's essay 'Ma: Japanese Time-Space', Okakura's 'The Book of Tea'), describes ma as dynamic, generative, and relational, and contrasts it with Western reductions to negative space. It references specific Western writers (Donald Keene, Arthur Danto) and events (the 1978 'Ma: Space-Time in Japan' exhibition). All claims align with established scholarship; no invented citations, terms, or consensus are detected. The factual content is accurate and load-bearing errors are absent.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with methodology (phenomenological, linguistic), evidence (grammatical roots, social practices like haragei), and scholarly debates (e.g., Isozaki rejecting Western separation of time and space). It discusses internal dimensions (ontological, temporal, ethical) and contrasts specific treatments in Japanese vs. Western scholarship, indicating familiarity with the literature rather than summaries. A specialist would recognize this as a nuanced analysis, not a summary of a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it presents ma as foundational but 'notoriously elusive', notes Western tendencies (e.g., 'often reduces', 'frequently equated') without overgeneralizing, and acknowledges sophisticated Western attempts to bridge gaps. It signals differences in evidential status (e.g., Japanese scholarship's embeddedness vs. Western exoticization) without presenting any single scholar's proposal as settled fact. Calibration is specific and targeted, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly situates the concept in Japanese aesthetics, using frameworks and terminology from Japanese-language scholarship (e.g., ma as aidagara, mu, engawa, ma-ai, haragei, sasshi) and citing Japanese scholars. It contrasts this with Western Anglophone framings without silently substituting them. It acknowledges non-English scholarship as central and avoids reducing the concept to a dominant Western aesthetic tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and nuanced understanding of ma, effectively contrasting Japanese and Western scholarly treatments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and nuanced understanding of ma, effectively contrasting Japanese and Western scholarly treatments.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

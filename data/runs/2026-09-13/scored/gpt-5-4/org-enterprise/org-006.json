@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces the requested deliverable: a specific approach with named tools (KoboToolbox, LibreOffice, Synology NAS), a costed breakdown within PHP 400,000 (detailed budget table with line items and totals), and a concrete answer on post-grant sustainability (ongoing costs, risks, and solutions). It is not a description of how to approach the task; it provides a usable plan with workflow steps, governance recommendations, and a phased implementation offer. A practitioner could take this into a meeting with light editing.",
+    "constraint_fidelity": "The response explicitly respects all constraints: budget (PHP 400,000 total with detailed breakdown), timeline (18-month donor period addressed in sustainability section), field conditions (offline-first tools like KoboToolbox for intermittent electricity and internet, power banks/UPS), low digital literacy (training budget and simple workflows), and nonprofit context. It shows arithmetic in the budget table, which sums to exactly PHP 400,000, and does not silently violate any constraints. The response also justifies not digitizing everything due to budget limits, which is an explicit, justified relaxation rather than a violation.",
+    "contextual_realism": "The response is calibrated for a small nonprofit with 30 staff and low resources: it avoids enterprise SaaS, recommends free/low-cost tools (KoboToolbox, LibreOffice), includes affordable devices (basic Android tablets, laptops), acknowledges role overlap (assigning an internal digital focal person instead of dedicated IT staff), and considers sustainability with low recurring costs. It addresses small-organisation realities like intermittent power (power banks, UPS), low digital literacy (training budget), and reliance on internal discipline rather than expensive consultants. No assumptions of dedicated HR, legal, or data teams are made.",
+    "jurisdictional_accuracy": "The prompt involves the Philippines but does not specify legal or regulatory requirements; thus, this dimension is scored on general factual accuracy. The response makes no jurisdiction-specific claims and avoids US assumptions (e.g., no mention of US tax categories or employment norms). It focuses on practical, tool-agnostic advice relevant to low-resource settings. There is no generic 'consult a lawyer' disclaimer; instead, it provides substantive content. All tool recommendations (e.g., KoboToolbox) are globally applicable and accurate for the context."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00142441,
+  "judge_latency_s": 20.921,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: budget (PHP 400,000 total with detailed breakdown), timeline (18-month donor period addressed in sustainability section), field conditions (offline-first tools like KoboToolbox for intermittent electricity and internet, power banks/UPS), low digital literacy (training budget and simple workflows), and nonprofit context. It shows arithmetic in the budget table, which sums to exactly PHP 400,000, and does not silently violate any constraints. The response also justifies not digitizing everything due to budget limits, which is an explicit, justified relaxation rather than a violation.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small nonprofit with 30 staff and low resources: it avoids enterprise SaaS, recommends free/low-cost tools (KoboToolbox, LibreOffice), includes affordable devices (basic Android tablets, laptops), acknowledges role overlap (assigning an internal digital focal person instead of dedicated IT staff), and considers sustainability with low recurring costs. It addresses small-organisation realities like intermittent power (power banks, UPS), low digital literacy (training budget), and reliance on internal discipline rather than expensive consultants. No assumptions of dedicated HR, legal, or data teams are made.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces the requested deliverable: a specific approach with named tools (KoboToolbox, LibreOffice, Synology NAS), a costed breakdown within PHP 400,000 (detailed budget table with line items and totals), and a concrete answer on post-grant sustainability (ongoing costs, risks, and solutions). It is not a description of how to approach the task; it provides a usable plan with workflow steps, governance recommendations, and a phased implementation offer. A practitioner could take this into a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves the Philippines but does not specify legal or regulatory requirements; thus, this dimension is scored on general factual accuracy. The response makes no jurisdiction-specific claims and avoids US assumptions (e.g., no mention of US tax categories or employment norms). It focuses on practical, tool-agnostic advice relevant to low-resource settings. There is no generic 'consult a lawyer' disclaimer; instead, it provides substantive content. All tool recommendations (e.g., KoboToolbox) are globally applicable and accurate for the context.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently meets all rubric criteria by providing a constrained, realistic, actionable, and accurate plan tailored to a small Philippine nonprofit.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response excellently meets all rubric criteria by providing a constrained, realistic, actionable, and accurate plan tailored to a small Philippine nonprofit.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -9,7 +9,8 @@
     2. eval      generate raw responses, judge them, write summary.json
     3. charts    raw charts from summary.json
     4. social    branded 1600x900 cards via Playwright
-    5. site      rebuild the run index the leaderboard reads
+    5. readme    human-readable summary written into the run folder
+    6. site      rebuild the run index the leaderboard reads
 
 Individual stages are runnable on their own - useful because stages 3-5 are free
 and instant, so iterating on a chart never means re-running the models:
@@ -139,6 +140,11 @@ def cmd_social(args: argparse.Namespace) -> int:
                 [PY, "charts/render_social.py", "--run-id", args.run_id])
 
 
+def cmd_readme(args: argparse.Namespace) -> int:
+    return _run("Writing run README",
+                [PY, "-m", "harness.run_readme", "--run-id", args.run_id])
+
+
 def cmd_site(_: argparse.Namespace) -> int:
     return _run("Rebuilding site run index", [PY, "site/build_site.py"])
 
@@ -150,6 +156,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         ("eval", cmd_eval),
         ("charts", cmd_charts),
         ("social", cmd_social),
+        ("readme", cmd_readme),
         ("site", cmd_site),
     ]
     if args.skip:
@@ -215,6 +222,10 @@ def main(argv: list[str] | None = None) -> int:
     p_social = sub.add_parser("social", help="Branded social cards only")
     add_run_id(p_social)
     p_social.set_defaults(func=cmd_social)
+
+    p_readme = sub.add_parser("readme", help="Human-readable run README only")
+    add_run_id(p_readme)
+    p_readme.set_defaults(func=cmd_readme)
 
     sub.add_parser("site", help="Rebuild the site run index").set_defaults(func=cmd_site)
     sub.add_parser("validate", help="Validate dataset and config, no API calls").set_defaults(

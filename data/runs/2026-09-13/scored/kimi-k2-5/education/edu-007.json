@@ -1,0 +1,34 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a school communicating with parents of varying educational backgrounds. The learner range implied is the parents themselves, who 'include parents who did not complete secondary school.' The response addresses this concretely by using plain language, avoiding jargon, and structuring information accessibly (e.g., headings, bullet points). It is implementable as a written document. It does not contain placeholder differentiation language; it is tailored for comprehension.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about communicating a teaching method change to parents. Therefore, as per the rubric note, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The response addresses parental concerns for children of different perceived ability levels (e.g., 'bright children,' 'students in lower sets') and emphasizes keeping 'all future options open,' showing consideration for the full range of students in mixed-attainment classes. It does this substantively throughout.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, or assessments. It is a parent-facing communication explaining a policy change, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or rubric criteria. It engages with educational concepts but not in the structured way this dimension requires.",
+    "workload_realism": "The response does not describe a lesson or unit plan with timings, materials, or class size for a practitioner to deliver. It is a communication document, not an instructional plan. Therefore, it cannot be evaluated for the sum of activity timings, material availability, preparation time, or feasibility at a stated class size."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00099176,
+  "judge_latency_s": 16.24,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, or assessments. It is a parent-facing communication explaining a policy change, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or rubric criteria. It engages with educational concepts but not in the structured way this dimension requires.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a lesson or unit plan with timings, materials, or class size for a practitioner to deliver. It is a communication document, not an instructional plan. Therefore, it cannot be evaluated for the sum of activity timings, material availability, preparation time, or feasibility at a stated class size.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about communicating a teaching method change to parents. Therefore, as per the rubric note, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The response addresses parental concerns for children of different perceived ability levels (e.g., 'bright children,' 'students in lower sets') and emphasizes keeping 'all future options open,' showing consideration for the full range of students in mixed-attainment classes. It does this substantively throughout.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a school communicating with parents of varying educational backgrounds. The learner range implied is the parents themselves, who 'include parents who did not complete secondary school.' The response addresses this concretely by using plain language, avoiding jargon, and structuring information accessibly (e.g., headings, bullet points). It is implementable as a written document. It does not contain placeholder differentiation language; it is tailored for comprehension.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a well-crafted, plain-language parent communication that addresses concerns and explains the rationale for a policy change, but it does not constitute a pedagogical plan for practitioners.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response is a well-crafted, plain-language parent communication that addresses concerns and explains the rationale for a policy change, but it does not constitute a pedagogical plan for practitioners.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

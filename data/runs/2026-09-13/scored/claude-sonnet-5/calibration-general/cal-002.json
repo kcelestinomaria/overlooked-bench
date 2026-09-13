@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which matches the reference answer 'ANSWER: 21134.40' exactly in substance (the number 21134.40). The intermediate calculations also align with the reference: 4,800 × 0.85 = 4,080 kg, 4,080 × 0.40 = 1,632 kg, 1,632 × 6.20 = $10,118.40, 2,448 × 4.50 = $11,016.00, and sum = $21,134.40. Formatting differences (e.g., dollar signs) are ignored per rubric guidance.",
+    "instruction_compliance": "The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in a structured section and ends with 'ANSWER: 21134.40', matching the required format precisely (including the colon, space, and number without dollar sign). All instructions are followed.",
+    "reasoning_validity": "The item calls for shown working, and the response provides step-by-step calculations: Step 1 correctly computes dried mass (4,800 × 0.85 = 4,080 kg), Step 2 correctly splits into grades (40% AA = 1,632 kg, 60% remainder = 2,448 kg), Step 3 correctly calculates revenues (1,632 × 6.20 = $10,118.40, 2,448 × 4.50 = $11,016.00), and Step 4 correctly sums them ($21,134.40). Each step is valid and logically supports the final answer, with no errors or inconsistencies."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.000757,
+  "judge_latency_s": 15.595,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which matches the reference answer 'ANSWER: 21134.40' exactly in substance (the number 21134.40). The intermediate calculations also align with the reference: 4,800 × 0.85 = 4,080 kg, 4,080 × 0.40 = 1,632 kg, 1,632 × 6.20 = $10,118.40, 2,448 × 4.50 = $11,016.00, and sum = $21,134.40. Formatting differences (e.g., dollar signs) are ignored per rubric guidance.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working, and the response provides step-by-step calculations: Step 1 correctly computes dried mass (4,800 × 0.85 = 4,080 kg), Step 2 correctly splits into grades (40% AA = 1,632 kg, 60% remainder = 2,448 kg), Step 3 correctly calculates revenues (1,632 × 6.20 = $10,118.40, 2,448 × 4.50 = $11,016.00), and Step 4 correctly sums them ($21,134.40). Each step is valid and logically supports the final answer, with no errors or inconsistencies.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in a structured section and ends with 'ANSWER: 21134.40', matching the required format precisely (including the colon, space, and number without dollar sign). All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and strict compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and strict compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

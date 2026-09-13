@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 3240', which matches the reference answer 'ANSWER: 3240' exactly in substance. The response correctly calculates the volume as 5.4 m³, converts to litres (5,400 litres), and then takes 60% to get 3,240 litres. The answer is fully correct.",
+    "instruction_compliance": "The prompt instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in steps and ends with 'ANSWER: 3240', which matches the required format exactly. All explicit output instructions are followed.",
+    "reasoning_validity": "The response shows working in steps. Step 1 correctly calculates the total volume as 5.4 m³. Step 2 converts cubic metres to litres, but does so prematurely before applying the 60% factor, stating '5.4 m³ = 5.4 × 1,000 = 5,400 litres'. Step 3 then correctly calculates 60% of 5,400 litres to get 3,240 litres. The reasoning is valid overall because the steps are mathematically sound and lead to the correct answer, even though the order of operations (converting before taking percentage) is unconventional but equivalent. The answer follows from the working shown."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-004",
+  "judge_cost_usd": 0.00061311,
+  "judge_latency_s": 13.57,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 3240', which matches the reference answer 'ANSWER: 3240' exactly in substance. The response correctly calculates the volume as 5.4 m³, converts to litres (5,400 litres), and then takes 60% to get 3,240 litres. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working in steps. Step 1 correctly calculates the total volume as 5.4 m³. Step 2 converts cubic metres to litres, but does so prematurely before applying the 60% factor, stating '5.4 m³ = 5.4 × 1,000 = 5,400 litres'. Step 3 then correctly calculates 60% of 5,400 litres to get 3,240 litres. The reasoning is valid overall because the steps are mathematically sound and lead to the correct answer, even though the order of operations (converting before taking percentage) is unconventional but equivalent. The answer follows from the working shown.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in steps and ends with 'ANSWER: 3240', which matches the required format exactly. All explicit output instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response correctly answers the question with valid reasoning and fully complies with formatting instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response correctly answers the question with valid reasoning and fully complies with formatting instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

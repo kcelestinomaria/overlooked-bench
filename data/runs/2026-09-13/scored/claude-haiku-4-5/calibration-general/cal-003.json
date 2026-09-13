@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 12', which exactly matches the reference answer 'ANSWER: 12'. The substance is identical, ignoring formatting and verbosity.",
+    "instruction_compliance": "The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 12', which matches the required format exactly.",
+    "reasoning_validity": "The response shows working: it calculates fill rate (1/4), drain rate (1/6), net rate (1/4 - 1/6 = 1/12), and time (1 ÷ 1/12 = 12). Each step is mathematically sound and correctly supports the answer of 12 hours."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-003",
+  "judge_cost_usd": 0.00050999,
+  "judge_latency_s": 9.617,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 12', which exactly matches the reference answer 'ANSWER: 12'. The substance is identical, ignoring formatting and verbosity.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it calculates fill rate (1/4), drain rate (1/6), net rate (1/4 - 1/6 = 1/12), and time (1 ÷ 1/12 = 12). Each step is mathematically sound and correctly supports the answer of 12 hours.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 12', which matches the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, validly reasoned, and perfectly compliant with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, validly reasoned, and perfectly compliant with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

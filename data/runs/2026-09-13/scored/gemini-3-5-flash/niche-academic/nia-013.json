@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopaedia level. It engages with specific legal mechanisms (ILGs, VCLR, SABLs), scholarly debates (e.g., 'freezing' of boundaries, elite capture, SABL scandal, disenfranchisement of women, critique of de Soto's 'dead capital'), and evidence (5 million hectares, 2013 Commission of Inquiry). It discusses methodology (GPS mapping, bureaucratic processes) and internal scholarly perspectives. A specialist would recognize detailed engagement with the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims: 97% of land under customary tenure, 800+ language groups, ILG Act (1974, amended 2009), Land Registration (Amendment) Act 2009, SABL system, 5 million hectares alienated 2003-2011, scholars cited (Colin Filer, Jim Fingleton, John Burton, Helen Szoke), de Soto theory, DLPP issues. All these are factually correct and align with established literature on PNG land tenure. No invented citations, terms, or consensus are present. The claims are load-bearing and accurate.",
+    "field_situatedness": "The response is firmly situated in the correct field—interdisciplinary scholarship on PNG land tenure, drawing from anthropology, law, geography, and development studies. It uses field-specific terminology (customary tenure, statutory registration, ILGs, VCLR, SABLs, 'big men', matrilineal societies) and frameworks (critiques of formalisation, neoliberal development theory). It does not substitute a Western framing but engages with the regional scholarly tradition, including non-English scholarship where relevant (e.g., citing PNG-specific scholars and policies).",
+    "scholarly_calibration": "The response accurately calibrates confidence. It distinguishes well-established facts (97% customary land, ILG mechanism) from contested or critical points (e.g., 'scholars argue this \"freezes\" what was once fluid', 'Scholars argue this theory fails in PNG', 'Scholarly consensus suggests...'). It presents criticisms as scholarly positions, not settled fact, and flags where evidence is thin (e.g., 'often referred to as a \"land mafia\"'). No blanket disclaimer is used; calibration is specific and targeted."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00120083,
+  "judge_latency_s": 20.948,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims: 97% of land under customary tenure, 800+ language groups, ILG Act (1974, amended 2009), Land Registration (Amendment) Act 2009, SABL system, 5 million hectares alienated 2003-2011, scholars cited (Colin Filer, Jim Fingleton, John Burton, Helen Szoke), de Soto theory, DLPP issues. All these are factually correct and align with established literature on PNG land tenure. No invented citations, terms, or consensus are present. The claims are load-bearing and accurate.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopaedia level. It engages with specific legal mechanisms (ILGs, VCLR, SABLs), scholarly debates (e.g., 'freezing' of boundaries, elite capture, SABL scandal, disenfranchisement of women, critique of de Soto's 'dead capital'), and evidence (5 million hectares, 2013 Commission of Inquiry). It discusses methodology (GPS mapping, bureaucratic processes) and internal scholarly perspectives. A specialist would recognize detailed engagement with the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates confidence. It distinguishes well-established facts (97% customary land, ILG mechanism) from contested or critical points (e.g., 'scholars argue this \\\"freezes\\\" what was once fluid', 'Scholars argue this theory fails in PNG', 'Scholarly consensus suggests...'). It presents criticisms as scholarly positions, not settled fact, and flags where evidence is thin (e.g., 'often referred to as a \\\"land mafia\\\"'). No blanket disclaimer is used; calibration is specific and targeted.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response is firmly situated in the correct field—interdisciplinary scholarship on PNG land tenure, drawing from anthropology, law, geography, and development studies. It uses field-specific terminology (customary tenure, statutory registration, ILGs, VCLR, SABLs, 'big men', matrilineal societies) and frameworks (critiques of formalisation, neoliberal development theory). It does not substitute a Western framing but engages with the regional scholarly tradition, including non-English scholarship where relevant (e.g., citing PNG-specific scholars and policies).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge, specific detail, and well-calibrated scholarly engagement on a complex, niche topic.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge, specific detail, and well-calibrated scholarly engagement on a complex, niche topic.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

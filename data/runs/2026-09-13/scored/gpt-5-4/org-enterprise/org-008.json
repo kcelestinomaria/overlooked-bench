@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requested a 'turnaround plan with numbers'. The response produces a detailed plan with quantified analysis: it calculates the collection gap (30% of GHS 2.16m = GHS 648,000 uncollected), proposes concrete interventions (signed payment plans, pay-before-midterm policy, early payment incentive), analyzes staffing costs (suggests reducing teacher payroll by 12% via not replacing leavers or removing 2-3 teachers), and provides a combined financial effect (GHS 673,760 improvement). It includes a timeline (30 days, 31-90 days, terms 2-3) and a dashboard for governance. The output could be taken into a board meeting with light editing.",
+    "constraint_fidelity": "The response explicitly respects the 'no fee increase' constraint, stating 'the board will not raise fees this year' and 'without raising the listed fee'. It works within the given numbers: 400 pupils, 22 teachers, GHS 1,800 per term, 70% collection, 68% teacher salary proportion. It models expenditure based on these, showing arithmetic for revenue (GHS 2,160,000 potential, GHS 1,512,000 actual), loss (GHS 288,000), and savings (e.g., GHS 324,000 from collection improvement, GHS 146,880 from payroll reduction). All constraints are honored and arithmetic is shown.",
+    "contextual_realism": "The response is calibrated for a small school in Ghana. It assumes no dedicated HR, legal, or procurement teams; interventions like SMS/calls for arrears, prepaid utility controls, and 3-quote procurement are feasible for limited staff. It acknowledges role overlap (fee collection taskforce, board oversight) and uses modest non-fee income sources (vacation classes, facility rental) appropriate for scale. It recognizes small-organisation realities: 'staff may fear student withdrawals', 'morale may suffer', and avoids tooling or process overhead that would require extra capacity. However, it does assume some administrative capacity for tasks like payment plans and enrolment campaigns, which is realistic.",
+    "jurisdictional_accuracy": "The prompt involves a school in Ghana; the response makes no jurisdiction-specific legal or regulatory claims. It avoids asserting US defaults (e.g., no mention of US tax categories, employment laws, or contract norms). Recommendations like fee collection enforcement, staffing adjustments, and non-fee income are generic but context-appropriate. Since no law/regulation is involved, this dimension is scored on general factual accuracy: the arithmetic and assumptions are consistent and plausible for a Ghanaian school context. There are no factual inaccuracies."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-008",
+  "judge_cost_usd": 0.0017392,
+  "judge_latency_s": 24.048,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the 'no fee increase' constraint, stating 'the board will not raise fees this year' and 'without raising the listed fee'. It works within the given numbers: 400 pupils, 22 teachers, GHS 1,800 per term, 70% collection, 68% teacher salary proportion. It models expenditure based on these, showing arithmetic for revenue (GHS 2,160,000 potential, GHS 1,512,000 actual), loss (GHS 288,000), and savings (e.g., GHS 324,000 from collection improvement, GHS 146,880 from payroll reduction). All constraints are honored and arithmetic is shown.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small school in Ghana. It assumes no dedicated HR, legal, or procurement teams; interventions like SMS/calls for arrears, prepaid utility controls, and 3-quote procurement are feasible for limited staff. It acknowledges role overlap (fee collection taskforce, board oversight) and uses modest non-fee income sources (vacation classes, facility rental) appropriate for scale. It recognizes small-organisation realities: 'staff may fear student withdrawals', 'morale may suffer', and avoids tooling or process overhead that would require extra capacity. However, it does assume some administrative capacity for tasks like payment plans and enrolment campaigns, which is realistic.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested a 'turnaround plan with numbers'. The response produces a detailed plan with quantified analysis: it calculates the collection gap (30% of GHS 2.16m = GHS 648,000 uncollected), proposes concrete interventions (signed payment plans, pay-before-midterm policy, early payment incentive), analyzes staffing costs (suggests reducing teacher payroll by 12% via not replacing leavers or removing 2-3 teachers), and provides a combined financial effect (GHS 673,760 improvement). It includes a timeline (30 days, 31-90 days, terms 2-3) and a dashboard for governance. The output could be taken into a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a school in Ghana; the response makes no jurisdiction-specific legal or regulatory claims. It avoids asserting US defaults (e.g., no mention of US tax categories, employment laws, or contract norms). Recommendations like fee collection enforcement, staffing adjustments, and non-fee income are generic but context-appropriate. Since no law/regulation is involved, this dimension is scored on general factual accuracy: the arithmetic and assumptions are consistent and plausible for a Ghanaian school context. There are no factual inaccuracies.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, quantified turnaround plan that directly addresses the school's financial gaps while respecting all stated constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a detailed, quantified turnaround plan that directly addresses the school's financial gaps while respecting all stated constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

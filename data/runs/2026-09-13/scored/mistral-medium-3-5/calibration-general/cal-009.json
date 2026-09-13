@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'mitochondrion', which matches the reference answer's 'mitochondrion'. The reference specifies 'The mitochondrion — specifically the inner mitochondrial membrane...', but the rubric states to compare on substance only and ignore formatting, style, and verbosity. The core answer is identical.",
+    "instruction_compliance": "Explicit instructions: (1) answer in one sentence, (2) end with a final line in exactly the format 'ANSWER: <organelle>'. The response has one sentence ('The primary site... mitochondrion.') and ends with 'ANSWER: mitochondrion'. It fully complies.",
+    "reasoning_validity": "The item does not call for shown working; it asks for a one-sentence answer. The response is internally consistent: the sentence directly states the mitochondrion as the primary site, and the ANSWER line repeats it. There is no invalid reasoning to penalize."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00047048,
+  "judge_latency_s": 9.855,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'mitochondrion', which matches the reference answer's 'mitochondrion'. The reference specifies 'The mitochondrion — specifically the inner mitochondrial membrane...', but the rubric states to compare on substance only and ignore formatting, style, and verbosity. The core answer is identical.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item does not call for shown working; it asks for a one-sentence answer. The response is internally consistent: the sentence directly states the mitochondrion as the primary site, and the ANSWER line repeats it. There is no invalid reasoning to penalize.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"Explicit instructions: (1) answer in one sentence, (2) end with a final line in exactly the format 'ANSWER: <organelle>'. The response has one sentence ('The primary site... mitochondrion.') and ends with 'ANSWER: mitochondrion'. It fully complies.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response perfectly matches the reference answer and follows all instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response perfectly matches the reference answer and follows all instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

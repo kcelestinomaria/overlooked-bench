@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for learners with differing needs, such as SEND pupils and pupil premium children, by detailing how cuts to TA hours and SENCo time would affect their support (e.g., 'loss of in-class support for SEND pupils', 'targeted catch-up support' reduced). It proposes mitigations like protecting TA hours in Year 1 and phasing cuts. The adaptations are concrete and tied to resource constraints, though implemented at an organizational level rather than classroom differentiation. It avoids generic placeholder language.",
+    "pathway_breadth": "The prompt involves budget management for a primary school, not student futures or pathway guidance. The rubric note states to score this dimension on 'whether the response is inclusive of the range of learners in the described setting' when pathway guidance is not in scope. The response addresses the range of learners by considering impacts on SEND pupils, pupil premium children, and different year groups (e.g., protecting early years support, noting regression for children with mild/moderate needs). It is specific to the school's cohort.",
+    "pedagogical_soundness": "The response is an options paper for budget cuts, not a lesson or unit plan. It does not state learning objectives, activities, assessments, or rubrics. Therefore, it does not engage with pedagogical soundness as defined by the rubric's evaluation steps (identifying objectives, aligning activities and assessments, checking sequencing, etc.).",
+    "workload_realism": "The response details staffing cuts (e.g., reducing TAs from 4.2 to 2.1 FTE, making SENCo part-time) and their impacts on workload (e.g., 'teachers will have to cover more administrative and pastoral tasks, reducing planning time'). It respects the class-size constraint (cap of 30) and sums cost savings to meet the 8% target. The feasibility is assessed within the given school context (400 pupils, current staffing). The phased recommendation considers practical implementation over two years. This shows real engagement with workload and resource constraints specific to the setting."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00124086,
+  "judge_latency_s": 18.78,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget cuts, not a lesson or unit plan. It does not state learning objectives, activities, assessments, or rubrics. Therefore, it does not engage with pedagogical soundness as defined by the rubric's evaluation steps (identifying objectives, aligning activities and assessments, checking sequencing, etc.).\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response details staffing cuts (e.g., reducing TAs from 4.2 to 2.1 FTE, making SENCo part-time) and their impacts on workload (e.g., 'teachers will have to cover more administrative and pastoral tasks, reducing planning time'). It respects the class-size constraint (cap of 30) and sums cost savings to meet the 8% target. The feasibility is assessed within the given school context (400 pupils, current staffing). The phased recommendation considers practical implementation over two years. This shows real engagement with workload and resource constraints specific to the setting.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves budget management for a primary school, not student futures or pathway guidance. The rubric note states to score this dimension on 'whether the response is inclusive of the range of learners in the described setting' when pathway guidance is not in scope. The response addresses the range of learners by considering impacts on SEND pupils, pupil premium children, and different year groups (e.g., protecting early years support, noting regression for children with mild/moderate needs). It is specific to the school's cohort.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for learners with differing needs, such as SEND pupils and pupil premium children, by detailing how cuts to TA hours and SENCo time would affect their support (e.g., 'loss of in-class support for SEND pupils', 'targeted catch-up support' reduced). It proposes mitigations like protecting TA hours in Year 1 and phasing cuts. The adaptations are concrete and tied to resource constraints, though implemented at an organizational level rather than classroom differentiation. It avoids generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response thoroughly analyzes budget cut options with specific costs, damages, and a clear recommendation while adhering to the class-size constraint.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response thoroughly analyzes budget cut options with specific costs, damages, and a clear recommendation while adhering to the class-size constraint.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

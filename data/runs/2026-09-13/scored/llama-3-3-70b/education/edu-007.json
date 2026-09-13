@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners (different abilities in math) and parents with varying educational backgrounds. The response addresses differentiation concretely by stating 'Our teachers will provide extra support to students who need it, while also challenging those who are more advanced' and 'Our teachers will continue to monitor their progress and adjust their teaching to meet the needs of all students.' These adaptations are implementable by one practitioner with stated resources (teacher training and support). It avoids placeholder language.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. The response is inclusive in addressing all parents, including those who did not complete secondary school, by using plain language and addressing concerns. It covers the range of learners by discussing support for struggling and excelling students in mixed-attainment settings.",
+    "pedagogical_soundness": "The response does not state specific learning objectives, activities, or assessments; it is a parent-facing communication explaining a policy change, not a pedagogical plan. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response does not describe a lesson or unit plan with timings, materials, or class size; it is a parent-facing document. Therefore, it does not engage with the dimension of workload realism at all."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00083395,
+  "judge_latency_s": 15.173,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not state specific learning objectives, activities, or assessments; it is a parent-facing communication explaining a policy change, not a pedagogical plan. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a lesson or unit plan with timings, materials, or class size; it is a parent-facing document. Therefore, it does not engage with the dimension of workload realism at all.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. The response is inclusive in addressing all parents, including those who did not complete secondary school, by using plain language and addressing concerns. It covers the range of learners by discussing support for struggling and excelling students in mixed-attainment settings.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners (different abilities in math) and parents with varying educational backgrounds. The response addresses differentiation concretely by stating 'Our teachers will provide extra support to students who need it, while also challenging those who are more advanced' and 'Our teachers will continue to monitor their progress and adjust their teaching to meet the needs of all students.' These adaptations are implementable by one practitioner with stated resources (teacher training and support). It avoids placeholder language.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is a well-crafted, plain-language parent communication that addresses concerns and explains the rationale for a teaching change, but it does not engage with pedagogical or workload planning dimensions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response is a well-crafted, plain-language parent communication that addresses concerns and explains the rationale for a teaching change, but it does not engage with pedagogical or workload planning dimensions.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 33.75
+}

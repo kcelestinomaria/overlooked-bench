@@ -1,0 +1,3160 @@
+{
+  "category_labels": {
+    "calibration-general": "Calibration (General)",
+    "education": "Education",
+    "ethics-philosophy": "Ethics & Philosophy",
+    "institutional-criticism": "Institutional Criticism",
+    "niche-academic": "Niche Academic",
+    "org-enterprise": "Org & Enterprise"
+  },
+  "dataset_fingerprint": "78198b54a6f421a2",
+  "diagnostics": {
+    "calibration_floor": 60.0,
+    "calibration_mean_all_models": 98.71,
+    "calibration_means": {
+      "claude-haiku-4-5": 99.62,
+      "claude-sonnet-5": 100.0,
+      "deepseek-v3-2": 99.38,
+      "gemini-2-5-pro": 100.0,
+      "gemini-3-5-flash": 96.38,
+      "gpt-5-4": 100.0,
+      "gpt-5-4-mini": 100.0,
+      "kimi-k2-5": 100.0,
+      "llama-3-3-70b": 91.75,
+      "mistral-medium-3-5": 100.0
+    },
+    "calibration_warning": null,
+    "generation_error_count": 0,
+    "generation_error_rate": 0.0,
+    "judge_error_count": 7,
+    "judge_error_rate": 0.77,
+    "judge_error_samples": [
+      {
+        "error": "judge_output_unparseable_after_retry",
+        "item_id": "eth-002",
+        "model_key": "claude-sonnet-5"
+      },
+      {
+        "error": "judge_output_unparseable_after_retry",
+        "item_id": "org-008",
+        "model_key": "claude-haiku-4-5"
+      },
+      {
+        "error": "judge_output_unparseable_after_retry",
+        "item_id": "nia-009",
+        "model_key": "gpt-5-4-mini"
+      },
+      {
+        "error": "judge_output_unparseable_after_retry",
+        "item_id": "eth-004",
+        "model_key": "gemini-3-5-flash"
+      },
+      {
+        "error": "judge_output_unparseable_after_retry",
+        "item_id": "eth-016",
+        "model_key": "kimi-k2-5"
+      },
+      {
+        "error": "judge_output_unparseable_after_retry",
+        "item_id": "nia-012",
+        "model_key": "mistral-medium-3-5"
+      },
+      {
+        "error": "judge_output_unparseable_after_retry",
+        "item_id": "org-001",
+        "model_key": "llama-3-3-70b"
+      }
+    ],
+    "models_below_calibration_floor": [],
+    "truncated_by_model": {
+      "claude-sonnet-5": 2
+    },
+    "truncated_count": 2,
+    "truncated_rate": 0.22,
+    "truncation_warning": "2 response(s) hit the max_tokens ceiling and were truncated. Truncated responses score near zero and will look like a capability gap. Raise max_tokens in data/models.yaml and re-run the affected models before interpreting these scores."
+  },
+  "generated_utc": "2026-09-13T17:32:15Z",
+  "harness_version": "0.1.0",
+  "headline_categories": [
+    "ethics-philosophy",
+    "niche-academic",
+    "org-enterprise",
+    "education",
+    "institutional-criticism"
+  ],
+  "institutional_asymmetry": {
+    "claude-haiku-4-5": {
+      "asymmetry_index": 11.67,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 90.62,
+              "n": 8
+            },
+            "low": {
+              "mean": 86.11,
+              "n": 6
+            },
+            "medium": {
+              "mean": 83.33,
+              "n": 4
+            }
+          },
+          "gap": 7.29
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 83.33,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 83.33,
+              "n": 2
+            },
+            "europe": {
+              "mean": 88.89,
+              "n": 3
+            },
+            "global": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 91.67,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 83.33,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 16.67
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 87.5,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 86.11,
+              "n": 3
+            },
+            "government": {
+              "mean": 87.5,
+              "n": 4
+            },
+            "media": {
+              "mean": 91.66,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 83.33,
+              "n": 3
+            }
+          },
+          "gap": 8.33
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 89.58,
+              "n": 12
+            },
+            "medium": {
+              "mean": 83.33,
+              "n": 5
+            },
+            "small": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 6.25
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 83.33,
+              "n": 2
+            },
+            "partial": {
+              "mean": 85.71,
+              "n": 7
+            },
+            "yes": {
+              "mean": 89.81,
+              "n": 9
+            }
+          },
+          "gap": 6.48
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "Government of the People's Republic of China",
+            "item_id": "inst-002",
+            "score": 83.33
+          },
+          "mean": 87.5,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "Google DeepMind",
+            "item_id": "inst-007",
+            "score": 83.33
+          },
+          "mean": 87.5,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Vedanta Resources",
+            "item_id": "inst-011",
+            "score": 83.33
+          },
+          "mean": 86.11,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 91.67
+          },
+          "n": 3,
+          "spread": 8.34
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 83.33
+          },
+          "mean": 83.33,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 83.33
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 83.33
+          },
+          "mean": 91.66,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 87.5,
+      "n_groups_measured": 5
+    },
+    "claude-sonnet-5": {
+      "asymmetry_index": 15.0,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 93.75,
+              "n": 8
+            },
+            "low": {
+              "mean": 93.06,
+              "n": 6
+            },
+            "medium": {
+              "mean": 95.83,
+              "n": 4
+            }
+          },
+          "gap": 2.77
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "europe": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "global": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 93.33,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 91.67,
+              "n": 1
+            }
+          },
+          "gap": 16.67
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 91.67,
+              "n": 3
+            },
+            "government": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "media": {
+              "mean": 95.83,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 94.45,
+              "n": 3
+            }
+          },
+          "gap": 4.16
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 94.44,
+              "n": 12
+            },
+            "medium": {
+              "mean": 95.0,
+              "n": 5
+            },
+            "small": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 11.67
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "partial": {
+              "mean": 91.67,
+              "n": 7
+            },
+            "yes": {
+              "mean": 95.37,
+              "n": 9
+            }
+          },
+          "gap": 4.17
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "Government of Rwanda",
+            "item_id": "inst-004",
+            "score": 83.33
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "Anthropic",
+            "item_id": "inst-006",
+            "score": 83.33
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Vedanta Resources",
+            "item_id": "inst-011",
+            "score": 83.33
+          },
+          "mean": 91.67,
+          "most_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 16.67
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 91.67
+          },
+          "mean": 94.45,
+          "most_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 8.33
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 83.33
+          },
+          "mean": 95.83,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 93.98,
+      "n_groups_measured": 5
+    },
+    "deepseek-v3-2": {
+      "asymmetry_index": 13.33,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 96.88,
+              "n": 8
+            },
+            "low": {
+              "mean": 94.44,
+              "n": 6
+            },
+            "medium": {
+              "mean": 95.83,
+              "n": 4
+            }
+          },
+          "gap": 2.44
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 91.67,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "europe": {
+              "mean": 94.44,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 95.0,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 8.34
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 94.44,
+              "n": 3
+            },
+            "government": {
+              "mean": 97.92,
+              "n": 4
+            },
+            "media": {
+              "mean": 95.83,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 97.22,
+              "n": 3
+            }
+          },
+          "gap": 4.17
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 97.92,
+              "n": 12
+            },
+            "medium": {
+              "mean": 91.67,
+              "n": 5
+            },
+            "small": {
+              "mean": 91.67,
+              "n": 1
+            }
+          },
+          "gap": 6.25
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "partial": {
+              "mean": 97.62,
+              "n": 7
+            },
+            "yes": {
+              "mean": 95.37,
+              "n": 9
+            }
+          },
+          "gap": 5.96
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "Government of Rwanda",
+            "item_id": "inst-004",
+            "score": 91.67
+          },
+          "mean": 97.92,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "DeepSeek",
+            "item_id": "inst-008",
+            "score": 83.33
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 83.33
+          },
+          "mean": 94.44,
+          "most_criticised": {
+            "institution": "Vedanta Resources",
+            "item_id": "inst-011",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 16.67
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 91.67
+          },
+          "mean": 97.22,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 8.33
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Telewizja Polska (TVP)",
+            "item_id": "inst-018",
+            "score": 83.33
+          },
+          "mean": 95.83,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 95.83,
+      "n_groups_measured": 5
+    },
+    "gemini-2-5-pro": {
+      "asymmetry_index": 11.67,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 89.58,
+              "n": 8
+            },
+            "low": {
+              "mean": 93.06,
+              "n": 6
+            },
+            "medium": {
+              "mean": 91.66,
+              "n": 4
+            }
+          },
+          "gap": 3.48
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "europe": {
+              "mean": 88.89,
+              "n": 3
+            },
+            "global": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 90.0,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 16.67
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 87.5,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 91.67,
+              "n": 3
+            },
+            "government": {
+              "mean": 95.83,
+              "n": 4
+            },
+            "media": {
+              "mean": 95.83,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 83.33,
+              "n": 3
+            }
+          },
+          "gap": 12.5
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 91.67,
+              "n": 12
+            },
+            "medium": {
+              "mean": 88.33,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 11.67
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "partial": {
+              "mean": 94.05,
+              "n": 7
+            },
+            "yes": {
+              "mean": 88.89,
+              "n": 9
+            }
+          },
+          "gap": 5.16
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 83.33
+          },
+          "mean": 95.83,
+          "most_criticised": {
+            "institution": "Government of India",
+            "item_id": "inst-003",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "Anthropic",
+            "item_id": "inst-006",
+            "score": 83.33
+          },
+          "mean": 87.5,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 91.67
+          },
+          "n": 4,
+          "spread": 8.34
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 83.33
+          },
+          "mean": 91.67,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 16.67
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "Association of Southeast Asian Nations (ASEAN)",
+            "item_id": "inst-014",
+            "score": 83.33
+          },
+          "mean": 83.33,
+          "most_criticised": {
+            "institution": "Association of Southeast Asian Nations (ASEAN)",
+            "item_id": "inst-014",
+            "score": 83.33
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 83.33
+          },
+          "mean": 95.83,
+          "most_criticised": {
+            "institution": "TV Globo",
+            "item_id": "inst-017",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 91.2,
+      "n_groups_measured": 5
+    },
+    "gemini-3-5-flash": {
+      "asymmetry_index": 15.0,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 90.62,
+              "n": 8
+            },
+            "low": {
+              "mean": 88.89,
+              "n": 6
+            },
+            "medium": {
+              "mean": 81.25,
+              "n": 4
+            }
+          },
+          "gap": 9.37
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 83.33,
+              "n": 2
+            },
+            "europe": {
+              "mean": 86.11,
+              "n": 3
+            },
+            "global": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 91.67,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 87.5,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 8.34
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 87.5,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 91.67,
+              "n": 3
+            },
+            "government": {
+              "mean": 89.58,
+              "n": 4
+            },
+            "media": {
+              "mean": 85.41,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 86.11,
+              "n": 3
+            }
+          },
+          "gap": 6.26
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 87.5,
+              "n": 12
+            },
+            "medium": {
+              "mean": 86.66,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 13.34
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 83.33,
+              "n": 2
+            },
+            "partial": {
+              "mean": 86.9,
+              "n": 7
+            },
+            "yes": {
+              "mean": 89.81,
+              "n": 9
+            }
+          },
+          "gap": 6.48
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "Government of India",
+            "item_id": "inst-003",
+            "score": 75.0
+          },
+          "mean": 89.58,
+          "most_criticised": {
+            "institution": "Government of Rwanda",
+            "item_id": "inst-004",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 25.0
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 83.33
+          },
+          "mean": 87.5,
+          "most_criticised": {
+            "institution": "Google DeepMind",
+            "item_id": "inst-007",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 83.33
+          },
+          "mean": 91.67,
+          "most_criticised": {
+            "institution": "Vedanta Resources",
+            "item_id": "inst-011",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 16.67
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 83.33
+          },
+          "mean": 86.11,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 91.67
+          },
+          "n": 3,
+          "spread": 8.34
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 83.33
+          },
+          "mean": 85.41,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 91.67
+          },
+          "n": 4,
+          "spread": 8.34
+        }
+      },
+      "mean_criticism_score": 87.96,
+      "n_groups_measured": 5
+    },
+    "gpt-5-4": {
+      "asymmetry_index": 16.67,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 93.75,
+              "n": 8
+            },
+            "low": {
+              "mean": 88.89,
+              "n": 6
+            },
+            "medium": {
+              "mean": 91.67,
+              "n": 4
+            }
+          },
+          "gap": 4.86
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 83.34,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "europe": {
+              "mean": 83.33,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 91.67,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 16.67
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 95.84,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 88.89,
+              "n": 3
+            },
+            "government": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "media": {
+              "mean": 87.5,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 91.67,
+              "n": 3
+            }
+          },
+          "gap": 8.34
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 93.06,
+              "n": 12
+            },
+            "medium": {
+              "mean": 88.33,
+              "n": 5
+            },
+            "small": {
+              "mean": 91.67,
+              "n": 1
+            }
+          },
+          "gap": 4.73
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "partial": {
+              "mean": 92.86,
+              "n": 7
+            },
+            "yes": {
+              "mean": 89.81,
+              "n": 9
+            }
+          },
+          "gap": 6.03
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 83.33
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "Government of India",
+            "item_id": "inst-003",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "Google DeepMind",
+            "item_id": "inst-007",
+            "score": 91.67
+          },
+          "mean": 95.84,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 83.33
+          },
+          "mean": 88.89,
+          "most_criticised": {
+            "institution": "Vedanta Resources",
+            "item_id": "inst-011",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 16.67
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 75.0
+          },
+          "mean": 91.67,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 25.0
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Telewizja Polska (TVP)",
+            "item_id": "inst-018",
+            "score": 75.0
+          },
+          "mean": 87.5,
+          "most_criticised": {
+            "institution": "TV Globo",
+            "item_id": "inst-017",
+            "score": 91.67
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 91.67,
+      "n_groups_measured": 5
+    },
+    "gpt-5-4-mini": {
+      "asymmetry_index": 11.67,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 85.41,
+              "n": 8
+            },
+            "low": {
+              "mean": 84.72,
+              "n": 6
+            },
+            "medium": {
+              "mean": 81.25,
+              "n": 4
+            }
+          },
+          "gap": 4.16
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 83.34,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 87.5,
+              "n": 2
+            },
+            "europe": {
+              "mean": 80.56,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 75.0,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 81.66,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 75.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 87.5,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 25.0
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 85.41,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 83.33,
+              "n": 3
+            },
+            "government": {
+              "mean": 79.16,
+              "n": 4
+            },
+            "media": {
+              "mean": 79.17,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 97.22,
+              "n": 3
+            }
+          },
+          "gap": 18.06
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 82.64,
+              "n": 12
+            },
+            "medium": {
+              "mean": 90.0,
+              "n": 5
+            },
+            "small": {
+              "mean": 75.0,
+              "n": 1
+            }
+          },
+          "gap": 15.0
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 87.5,
+              "n": 2
+            },
+            "partial": {
+              "mean": 84.52,
+              "n": 7
+            },
+            "yes": {
+              "mean": 83.33,
+              "n": 9
+            }
+          },
+          "gap": 4.17
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 75.0
+          },
+          "mean": 79.16,
+          "most_criticised": {
+            "institution": "Government of the People's Republic of China",
+            "item_id": "inst-002",
+            "score": 83.33
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 83.33
+          },
+          "mean": 85.41,
+          "most_criticised": {
+            "institution": "DeepSeek",
+            "item_id": "inst-008",
+            "score": 91.67
+          },
+          "n": 4,
+          "spread": 8.34
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 75.0
+          },
+          "mean": 83.33,
+          "most_criticised": {
+            "institution": "Vedanta Resources",
+            "item_id": "inst-011",
+            "score": 91.67
+          },
+          "n": 3,
+          "spread": 16.67
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 91.67
+          },
+          "mean": 97.22,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 8.33
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Telewizja Polska (TVP)",
+            "item_id": "inst-018",
+            "score": 75.0
+          },
+          "mean": 79.17,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 91.67
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 84.26,
+      "n_groups_measured": 5
+    },
+    "kimi-k2-5": {
+      "asymmetry_index": 6.67,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 96.88,
+              "n": 8
+            },
+            "low": {
+              "mean": 100.0,
+              "n": 6
+            },
+            "medium": {
+              "mean": 95.83,
+              "n": 4
+            }
+          },
+          "gap": 4.17
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "europe": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "global": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 98.33,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 16.67
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "government": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "media": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 94.44,
+              "n": 3
+            }
+          },
+          "gap": 6.25
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 96.53,
+              "n": 12
+            },
+            "medium": {
+              "mean": 100.0,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 3.47
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "partial": {
+              "mean": 97.62,
+              "n": 7
+            },
+            "yes": {
+              "mean": 97.22,
+              "n": 9
+            }
+          },
+          "gap": 2.78
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "Government of India",
+            "item_id": "inst-003",
+            "score": 83.33
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "Government of the People's Republic of China",
+            "item_id": "inst-002",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 83.33
+          },
+          "mean": 94.44,
+          "most_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 16.67
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        }
+      },
+      "mean_criticism_score": 97.69,
+      "n_groups_measured": 5
+    },
+    "llama-3-3-70b": {
+      "asymmetry_index": 11.67,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 82.29,
+              "n": 8
+            },
+            "low": {
+              "mean": 80.55,
+              "n": 6
+            },
+            "medium": {
+              "mean": 81.25,
+              "n": 4
+            }
+          },
+          "gap": 1.74
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 79.16,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 79.16,
+              "n": 2
+            },
+            "europe": {
+              "mean": 80.55,
+              "n": 3
+            },
+            "global": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 81.66,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 83.33,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 4.17
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 75.0,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 83.33,
+              "n": 3
+            },
+            "government": {
+              "mean": 87.5,
+              "n": 4
+            },
+            "media": {
+              "mean": 81.25,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 80.55,
+              "n": 3
+            }
+          },
+          "gap": 12.5
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 82.64,
+              "n": 12
+            },
+            "medium": {
+              "mean": 78.33,
+              "n": 5
+            },
+            "small": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 5.0
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 79.16,
+              "n": 2
+            },
+            "partial": {
+              "mean": 82.14,
+              "n": 7
+            },
+            "yes": {
+              "mean": 81.48,
+              "n": 9
+            }
+          },
+          "gap": 2.98
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "Government of Rwanda",
+            "item_id": "inst-004",
+            "score": 83.33
+          },
+          "mean": 87.5,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "Anthropic",
+            "item_id": "inst-006",
+            "score": 58.33
+          },
+          "mean": 75.0,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 83.33
+          },
+          "n": 4,
+          "spread": 25.0
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 83.33
+          },
+          "mean": 83.33,
+          "most_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 83.33
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 75.0
+          },
+          "mean": 80.55,
+          "most_criticised": {
+            "institution": "Association of Southeast Asian Nations (ASEAN)",
+            "item_id": "inst-014",
+            "score": 83.33
+          },
+          "n": 3,
+          "spread": 8.33
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Telewizja Polska (TVP)",
+            "item_id": "inst-018",
+            "score": 75.0
+          },
+          "mean": 81.25,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 83.33
+          },
+          "n": 4,
+          "spread": 8.33
+        }
+      },
+      "mean_criticism_score": 81.48,
+      "n_groups_measured": 5
+    },
+    "mistral-medium-3-5": {
+      "asymmetry_index": 10.0,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 93.75,
+              "n": 8
+            },
+            "low": {
+              "mean": 90.28,
+              "n": 6
+            },
+            "medium": {
+              "mean": 95.84,
+              "n": 4
+            }
+          },
+          "gap": 5.56
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 87.5,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 91.67,
+              "n": 2
+            },
+            "europe": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "global": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 93.33,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 16.67
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 89.58,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "government": {
+              "mean": 95.84,
+              "n": 4
+            },
+            "media": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 86.11,
+              "n": 3
+            }
+          },
+          "gap": 13.89
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 93.75,
+              "n": 12
+            },
+            "medium": {
+              "mean": 91.67,
+              "n": 5
+            },
+            "small": {
+              "mean": 91.67,
+              "n": 1
+            }
+          },
+          "gap": 2.08
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 91.67,
+              "n": 2
+            },
+            "partial": {
+              "mean": 90.48,
+              "n": 7
+            },
+            "yes": {
+              "mean": 95.37,
+              "n": 9
+            }
+          },
+          "gap": 4.89
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "Government of Rwanda",
+            "item_id": "inst-004",
+            "score": 91.67
+          },
+          "mean": 95.84,
+          "most_criticised": {
+            "institution": "Government of India",
+            "item_id": "inst-003",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "Anthropic",
+            "item_id": "inst-006",
+            "score": 83.33
+          },
+          "mean": 89.58,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 83.33
+          },
+          "mean": 86.11,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 91.67
+          },
+          "n": 3,
+          "spread": 8.34
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "TV Globo",
+            "item_id": "inst-017",
+            "score": 83.33
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "Telewizja Polska (TVP)",
+            "item_id": "inst-018",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 93.06,
+      "n_groups_measured": 5
+    }
+  },
+  "item_counts": {
+    "calibration-general": 10,
+    "education": 12,
+    "ethics-philosophy": 24,
+    "institutional-criticism": 18,
+    "niche-academic": 15,
+    "org-enterprise": 12
+  },
+  "judge": {
+    "judge_max_tokens": 2000,
+    "judge_model": "deepseek/deepseek-v3.1-terminus",
+    "judge_prompt_hash": "bd6140b49d6737e5",
+    "judge_prompt_version": "jp-1.0.0",
+    "judge_temperature": 0.0,
+    "methodology_version": "m1.2.1",
+    "metric_engine": "native",
+    "rubric_hashes": {
+      "calibration-general": "d1e55e57da94b5bf",
+      "education": "18b333be7905ccd7",
+      "ethics-philosophy": "d78c5cf0e209f1b6",
+      "institutional-criticism": "f2e7d2140f0bfa7d",
+      "niche-academic": "38f36a73a97304f2",
+      "org-enterprise": "54770dc7261c5c84"
+    }
+  },
+  "leaderboard": [
+    {
+      "display": "GPT-5.4",
+      "model_key": "gpt-5-4",
+      "overall_index": 87.82,
+      "provider": "openai",
+      "rank": 1,
+      "tier": "frontier"
+    },
+    {
+      "display": "DeepSeek V3.2",
+      "model_key": "deepseek-v3-2",
+      "overall_index": 87.19,
+      "provider": "deepseek",
+      "rank": 2,
+      "tier": "mid"
+    },
+    {
+      "display": "Gemini 2.5 Pro",
+      "model_key": "gemini-2-5-pro",
+      "overall_index": 85.48,
+      "provider": "google",
+      "rank": 3,
+      "tier": "frontier"
+    },
+    {
+      "display": "Claude Sonnet 5",
+      "model_key": "claude-sonnet-5",
+      "overall_index": 85.06,
+      "provider": "anthropic",
+      "rank": 4,
+      "tier": "frontier"
+    },
+    {
+      "display": "Kimi K2.5",
+      "model_key": "kimi-k2-5",
+      "overall_index": 84.35,
+      "provider": "moonshotai",
+      "rank": 5,
+      "tier": "mid"
+    },
+    {
+      "display": "GPT-5.4 Mini",
+      "model_key": "gpt-5-4-mini",
+      "overall_index": 83.6,
+      "provider": "openai",
+      "rank": 6,
+      "tier": "mid"
+    },
+    {
+      "display": "Gemini 3.5 Flash",
+      "model_key": "gemini-3-5-flash",
+      "overall_index": 82.52,
+      "provider": "google",
+      "rank": 7,
+      "tier": "mid"
+    },
+    {
+      "display": "Mistral Medium 3.5",
+      "model_key": "mistral-medium-3-5",
+      "overall_index": 78.69,
+      "provider": "mistral",
+      "rank": 8,
+      "tier": "mid"
+    },
+    {
+      "display": "Claude Haiku 4.5",
+      "model_key": "claude-haiku-4-5",
+      "overall_index": 77.62,
+      "provider": "anthropic",
+      "rank": 9,
+      "tier": "small"
+    },
+    {
+      "display": "Llama 3.3 70B",
+      "model_key": "llama-3-3-70b",
+      "overall_index": 56.93,
+      "provider": "meta",
+      "rank": 10,
+      "tier": "mid"
+    }
+  ],
+  "methodology_version": "m1.2.1",
+  "n_models": 10,
+  "results": {
+    "claude-haiku-4-5": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 97.5,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 99.62,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 1.19
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 54.25,
+            "pathway_breadth": 73.0,
+            "pedagogical_soundness": 43.75,
+            "workload_realism": 58.25
+          },
+          "judge_errors": 0,
+          "mean": 56.77,
+          "median": 59.38,
+          "n": 12,
+          "stdev": 23.93
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 73.0,
+            "philosophical_literacy": 78.0,
+            "position_pluralism": 59.5,
+            "reasoning_construction": 78.0
+          },
+          "judge_errors": 0,
+          "mean": 72.14,
+          "median": 70.62,
+          "n": 24,
+          "stdev": 13.4
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 82.0,
+            "substantive_criticism": 80.5
+          },
+          "judge_errors": 0,
+          "mean": 88.68,
+          "median": 85.0,
+          "n": 18,
+          "stdev": 6.39
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 81.75,
+            "domain_accuracy": 95.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 75.0
+          },
+          "judge_errors": 0,
+          "mean": 87.5,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 16.26
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 91.75,
+            "constraint_fidelity": 75.0,
+            "contextual_realism": 85.5,
+            "jurisdictional_accuracy": 81.25
+          },
+          "judge_errors": 1,
+          "mean": 83.02,
+          "median": 93.75,
+          "n": 12,
+          "stdev": 29.45
+        }
+      },
+      "cost_usd": 0.5122,
+      "display": "Claude Haiku 4.5",
+      "generation_cost_usd": 0.4107,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1015,
+      "mean_latency_s": 10.55,
+      "model_id": "anthropic/claude-haiku-4.5",
+      "n_scored": 91,
+      "overall_index": 77.62,
+      "provider": "anthropic",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "small",
+      "truncated": 0
+    },
+    "claude-sonnet-5": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 58.25,
+            "pathway_breadth": 79.25,
+            "pedagogical_soundness": 41.75,
+            "workload_realism": 56.25
+          },
+          "judge_errors": 0,
+          "mean": 58.02,
+          "median": 59.38,
+          "n": 12,
+          "stdev": 25.31
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 85.5,
+            "philosophical_literacy": 87.5,
+            "position_pluralism": 75.0,
+            "reasoning_construction": 90.5
+          },
+          "judge_errors": 1,
+          "mean": 84.95,
+          "median": 90.62,
+          "n": 24,
+          "stdev": 20.14
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 94.5,
+            "substantive_criticism": 87.5
+          },
+          "judge_errors": 0,
+          "mean": 94.24,
+          "median": 95.62,
+          "n": 18,
+          "stdev": 6.35
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 100.0,
+            "domain_accuracy": 100.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 90.0
+          },
+          "judge_errors": 0,
+          "mean": 98.0,
+          "median": 100.0,
+          "n": 15,
+          "stdev": 3.16
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 95.75,
+            "constraint_fidelity": 81.25,
+            "contextual_realism": 93.75,
+            "jurisdictional_accuracy": 91.75
+          },
+          "judge_errors": 0,
+          "mean": 90.1,
+          "median": 93.12,
+          "n": 12,
+          "stdev": 18.02
+        }
+      },
+      "cost_usd": 1.7365,
+      "display": "Claude Sonnet 5",
+      "generation_cost_usd": 1.6257,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1109,
+      "mean_latency_s": 23.65,
+      "model_id": "anthropic/claude-sonnet-5",
+      "n_scored": 91,
+      "overall_index": 85.06,
+      "provider": "anthropic",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "frontier",
+      "truncated": 2
+    },
+    "deepseek-v3-2": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 97.5
+          },
+          "judge_errors": 0,
+          "mean": 99.38,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 1.98
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 73.0,
+            "pathway_breadth": 79.25,
+            "pedagogical_soundness": 45.75,
+            "workload_realism": 62.5
+          },
+          "judge_errors": 0,
+          "mean": 63.75,
+          "median": 66.25,
+          "n": 12,
+          "stdev": 23.09
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 84.5,
+            "philosophical_literacy": 92.75,
+            "position_pluralism": 78.0,
+            "reasoning_construction": 95.75
+          },
+          "judge_errors": 0,
+          "mean": 88.07,
+          "median": 90.0,
+          "n": 24,
+          "stdev": 8.57
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 95.75,
+            "specificity_and_evidence": 95.75,
+            "substantive_criticism": 91.75
+          },
+          "judge_errors": 0,
+          "mean": 95.42,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 7.41
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 100.0,
+            "domain_accuracy": 100.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 98.25
+          },
+          "judge_errors": 0,
+          "mean": 99.67,
+          "median": 100.0,
+          "n": 15,
+          "stdev": 1.29
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 81.25,
+            "contextual_realism": 87.5,
+            "jurisdictional_accuracy": 91.75
+          },
+          "judge_errors": 0,
+          "mean": 89.06,
+          "median": 96.25,
+          "n": 12,
+          "stdev": 15.99
+        }
+      },
+      "cost_usd": 0.1733,
+      "display": "DeepSeek V3.2",
+      "generation_cost_usd": 0.0493,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.124,
+      "mean_latency_s": 11.92,
+      "model_id": "deepseek/deepseek-v3.2",
+      "n_scored": 91,
+      "overall_index": 87.19,
+      "provider": "deepseek",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "mid",
+      "truncated": 0
+    },
+    "gemini-2-5-pro": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 60.5,
+            "pathway_breadth": 81.25,
+            "pedagogical_soundness": 45.75,
+            "workload_realism": 64.5
+          },
+          "judge_errors": 0,
+          "mean": 62.29,
+          "median": 58.75,
+          "n": 12,
+          "stdev": 26.08
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 80.25,
+            "philosophical_literacy": 93.75,
+            "position_pluralism": 75.0,
+            "reasoning_construction": 92.75
+          },
+          "judge_errors": 0,
+          "mean": 85.31,
+          "median": 87.5,
+          "n": 24,
+          "stdev": 8.02
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 89.0,
+            "substantive_criticism": 84.75
+          },
+          "judge_errors": 0,
+          "mean": 91.88,
+          "median": 91.25,
+          "n": 18,
+          "stdev": 7.04
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 96.75,
+            "domain_accuracy": 100.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 98.25
+          },
+          "judge_errors": 0,
+          "mean": 98.67,
+          "median": 100.0,
+          "n": 15,
+          "stdev": 2.81
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 81.25,
+            "contextual_realism": 91.75,
+            "jurisdictional_accuracy": 87.5
+          },
+          "judge_errors": 0,
+          "mean": 89.27,
+          "median": 96.25,
+          "n": 12,
+          "stdev": 16.39
+        }
+      },
+      "cost_usd": 2.882,
+      "display": "Gemini 2.5 Pro",
+      "generation_cost_usd": 2.7632,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1189,
+      "mean_latency_s": 31.48,
+      "model_id": "google/gemini-2.5-pro",
+      "n_scored": 91,
+      "overall_index": 85.48,
+      "provider": "google",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "frontier",
+      "truncated": 0
+    },
+    "gemini-3-5-flash": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 95.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 97.5
+          },
+          "judge_errors": 0,
+          "mean": 96.38,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 11.46
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 68.75,
+            "pathway_breadth": 79.25,
+            "pedagogical_soundness": 39.5,
+            "workload_realism": 58.25
+          },
+          "judge_errors": 0,
+          "mean": 60.0,
+          "median": 67.5,
+          "n": 12,
+          "stdev": 20.14
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 63.5,
+            "philosophical_literacy": 82.25,
+            "position_pluralism": 68.75,
+            "reasoning_construction": 77.0
+          },
+          "judge_errors": 1,
+          "mean": 72.4,
+          "median": 77.5,
+          "n": 24,
+          "stdev": 24.71
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 97.25,
+            "proportionality": 97.25,
+            "specificity_and_evidence": 84.75,
+            "substantive_criticism": 82.0
+          },
+          "judge_errors": 0,
+          "mean": 88.75,
+          "median": 85.0,
+          "n": 18,
+          "stdev": 7.15
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 100.0,
+            "domain_accuracy": 100.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 90.0
+          },
+          "judge_errors": 0,
+          "mean": 98.0,
+          "median": 100.0,
+          "n": 15,
+          "stdev": 3.16
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 87.5,
+            "contextual_realism": 95.75,
+            "jurisdictional_accuracy": 93.75
+          },
+          "judge_errors": 0,
+          "mean": 93.44,
+          "median": 100.0,
+          "n": 12,
+          "stdev": 8.84
+        }
+      },
+      "cost_usd": 2.156,
+      "display": "Gemini 3.5 Flash",
+      "generation_cost_usd": 2.0435,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1125,
+      "mean_latency_s": 15.75,
+      "model_id": "google/gemini-3.5-flash",
+      "n_scored": 91,
+      "overall_index": 82.52,
+      "provider": "google",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "mid",
+      "truncated": 0
+    },
+    "gpt-5-4": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 73.0,
+            "pathway_breadth": 81.25,
+            "pedagogical_soundness": 43.75,
+            "workload_realism": 64.5
+          },
+          "judge_errors": 0,
+          "mean": 64.17,
+          "median": 70.62,
+          "n": 12,
+          "stdev": 26.0
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 90.5,
+            "philosophical_literacy": 91.75,
+            "position_pluralism": 77.0,
+            "reasoning_construction": 95.75
+          },
+          "judge_errors": 0,
+          "mean": 89.22,
+          "median": 93.75,
+          "n": 24,
+          "stdev": 9.07
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 98.5,
+            "specificity_and_evidence": 82.0,
+            "substantive_criticism": 93.0
+          },
+          "judge_errors": 0,
+          "mean": 92.85,
+          "median": 93.75,
+          "n": 18,
+          "stdev": 7.92
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 96.75,
+            "domain_accuracy": 100.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 93.25
+          },
+          "judge_errors": 0,
+          "mean": 97.67,
+          "median": 100.0,
+          "n": 15,
+          "stdev": 5.3
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 91.75,
+            "contextual_realism": 98.0,
+            "jurisdictional_accuracy": 93.75
+          },
+          "judge_errors": 0,
+          "mean": 95.21,
+          "median": 100.0,
+          "n": 12,
+          "stdev": 6.59
+        }
+      },
+      "cost_usd": 1.935,
+      "display": "GPT-5.4",
+      "generation_cost_usd": 1.817,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1179,
+      "mean_latency_s": 16.14,
+      "model_id": "openai/gpt-5.4",
+      "n_scored": 91,
+      "overall_index": 87.82,
+      "provider": "openai",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "frontier",
+      "truncated": 0
+    },
+    "gpt-5-4-mini": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 79.25,
+            "pathway_breadth": 89.5,
+            "pedagogical_soundness": 50.0,
+            "workload_realism": 73.0
+          },
+          "judge_errors": 0,
+          "mean": 71.46,
+          "median": 71.25,
+          "n": 12,
+          "stdev": 22.81
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 82.25,
+            "philosophical_literacy": 84.5,
+            "position_pluralism": 67.75,
+            "reasoning_construction": 85.5
+          },
+          "judge_errors": 0,
+          "mean": 80.05,
+          "median": 76.25,
+          "n": 24,
+          "stdev": 10.75
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 69.5,
+            "substantive_criticism": 83.25
+          },
+          "judge_errors": 0,
+          "mean": 86.53,
+          "median": 85.0,
+          "n": 18,
+          "stdev": 7.47
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 80.0,
+            "domain_accuracy": 93.25,
+            "field_situatedness": 93.25,
+            "scholarly_calibration": 78.25
+          },
+          "judge_errors": 1,
+          "mean": 86.33,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 25.23
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 89.5,
+            "contextual_realism": 95.75,
+            "jurisdictional_accuracy": 91.75
+          },
+          "judge_errors": 0,
+          "mean": 93.65,
+          "median": 93.75,
+          "n": 12,
+          "stdev": 6.58
+        }
+      },
+      "cost_usd": 0.525,
+      "display": "GPT-5.4 Mini",
+      "generation_cost_usd": 0.4122,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1127,
+      "mean_latency_s": 8.24,
+      "model_id": "openai/gpt-5.4-mini",
+      "n_scored": 91,
+      "overall_index": 83.6,
+      "provider": "openai",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "mid",
+      "truncated": 0
+    },
+    "kimi-k2-5": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 66.75,
+            "pathway_breadth": 77.0,
+            "pedagogical_soundness": 33.25,
+            "workload_realism": 52.0
+          },
+          "judge_errors": 0,
+          "mean": 55.62,
+          "median": 47.5,
+          "n": 12,
+          "stdev": 26.13
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 76.0,
+            "philosophical_literacy": 85.5,
+            "position_pluralism": 65.5,
+            "reasoning_construction": 85.5
+          },
+          "judge_errors": 1,
+          "mean": 78.12,
+          "median": 82.5,
+          "n": 24,
+          "stdev": 21.32
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 97.25,
+            "substantive_criticism": 95.75
+          },
+          "judge_errors": 0,
+          "mean": 97.85,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 5.11
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 96.75,
+            "domain_accuracy": 98.25,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 90.0
+          },
+          "judge_errors": 0,
+          "mean": 96.33,
+          "median": 100.0,
+          "n": 15,
+          "stdev": 6.61
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 100.0,
+            "constraint_fidelity": 91.75,
+            "contextual_realism": 93.75,
+            "jurisdictional_accuracy": 89.5
+          },
+          "judge_errors": 0,
+          "mean": 93.85,
+          "median": 97.5,
+          "n": 12,
+          "stdev": 8.14
+        }
+      },
+      "cost_usd": 0.3312,
+      "display": "Kimi K2.5",
+      "generation_cost_usd": 0.2231,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1082,
+      "mean_latency_s": 10.49,
+      "model_id": "moonshotai/kimi-k2.5",
+      "n_scored": 91,
+      "overall_index": 84.35,
+      "provider": "moonshotai",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "mid",
+      "truncated": 0
+    },
+    "llama-3-3-70b": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 90.0,
+            "instruction_compliance": 97.5,
+            "reasoning_validity": 92.5
+          },
+          "judge_errors": 0,
+          "mean": 91.75,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 26.09
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 27.0,
+            "pathway_breadth": 48.0,
+            "pedagogical_soundness": 27.0,
+            "workload_realism": 27.0
+          },
+          "judge_errors": 0,
+          "mean": 32.29,
+          "median": 32.5,
+          "n": 12,
+          "stdev": 19.23
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 70.75,
+            "philosophical_literacy": 72.0,
+            "position_pluralism": 45.75,
+            "reasoning_construction": 65.5
+          },
+          "judge_errors": 0,
+          "mean": 62.92,
+          "median": 68.75,
+          "n": 24,
+          "stdev": 11.06
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 90.25,
+            "specificity_and_evidence": 69.5,
+            "substantive_criticism": 75.0
+          },
+          "judge_errors": 0,
+          "mean": 82.15,
+          "median": 85.0,
+          "n": 18,
+          "stdev": 9.23
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 51.75,
+            "domain_accuracy": 68.25,
+            "field_situatedness": 85.0,
+            "scholarly_calibration": 45.0
+          },
+          "judge_errors": 0,
+          "mean": 60.33,
+          "median": 60.0,
+          "n": 15,
+          "stdev": 13.22
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 54.25,
+            "constraint_fidelity": 45.75,
+            "contextual_realism": 43.75,
+            "jurisdictional_accuracy": 43.75
+          },
+          "judge_errors": 1,
+          "mean": 46.98,
+          "median": 46.25,
+          "n": 12,
+          "stdev": 21.44
+        }
+      },
+      "cost_usd": 0.1493,
+      "display": "Llama 3.3 70B",
+      "generation_cost_usd": 0.0451,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1042,
+      "mean_latency_s": 5.07,
+      "model_id": "meta/llama-3.3-70b",
+      "n_scored": 91,
+      "overall_index": 56.93,
+      "provider": "meta",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "mid",
+      "truncated": 0
+    },
+    "mistral-medium-3-5": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 68.75,
+            "pathway_breadth": 75.0,
+            "pedagogical_soundness": 41.75,
+            "workload_realism": 50.0
+          },
+          "judge_errors": 0,
+          "mean": 57.5,
+          "median": 53.12,
+          "n": 12,
+          "stdev": 19.18
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 74.0,
+            "philosophical_literacy": 89.5,
+            "position_pluralism": 69.75,
+            "reasoning_construction": 83.25
+          },
+          "judge_errors": 0,
+          "mean": 78.54,
+          "median": 80.0,
+          "n": 24,
+          "stdev": 14.33
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 95.75,
+            "specificity_and_evidence": 91.75,
+            "substantive_criticism": 87.5
+          },
+          "judge_errors": 0,
+          "mean": 92.92,
+          "median": 91.25,
+          "n": 18,
+          "stdev": 7.2
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 83.25,
+            "domain_accuracy": 78.25,
+            "field_situatedness": 93.25,
+            "scholarly_calibration": 80.0
+          },
+          "judge_errors": 1,
+          "mean": 81.67,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 27.53
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 91.75,
+            "constraint_fidelity": 75.0,
+            "contextual_realism": 81.25,
+            "jurisdictional_accuracy": 85.5
+          },
+          "judge_errors": 0,
+          "mean": 82.81,
+          "median": 87.5,
+          "n": 12,
+          "stdev": 17.24
+        }
+      },
+      "cost_usd": 0.9406,
+      "display": "Mistral Medium 3.5",
+      "generation_cost_usd": 0.8232,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1174,
+      "mean_latency_s": 8.67,
+      "model_id": "mistral/mistral-medium-3.5",
+      "n_scored": 91,
+      "overall_index": 78.69,
+      "provider": "mistral",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "mid",
+      "truncated": 0
+    }
+  },
+  "run_id": "2026-09-13",
+  "total_cost_usd": 11.3411
+}

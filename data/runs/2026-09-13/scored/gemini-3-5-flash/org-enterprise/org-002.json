@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces a one-page go/no-go analysis with a clear recommendation ('CONDITIONAL GO'). It includes concrete components: financing options (specific Polish instruments), break-even calculation (with line items and totals), risks, and an implementation timeline. The output is structured and could be taken into a meeting with light editing. It does not merely describe a process; it delivers the requested analysis.",
+    "constraint_fidelity": "The response explicitly respects the no-equity-dilution constraint by stating 'strictly under a \"Hub-and-Spoke\" (Retail-Only) model' and proposing financing options that avoid equity. It uses the stated net margin of 8% (PLN 112,000 net profit) and available capital of PLN 250,000, and calculates a break-even using the margin (though it uses a 60% gross margin derived from the context, not the 8% net margin directly). However, it violates the budget constraint by proposing a total project cost of PLN 320,000, exceeding the PLN 250,000 available capital without explicitly justifying the relaxation or showing arithmetic for how the PLN 250,000 covers the gap (it mentions financing options to bridge it but does not detail a revised budget within the constraint). This is a silent violation of the central budget constraint.",
+    "contextual_realism": "The response is calibrated to a small, family-owned bakery with 6 staff. It acknowledges role overlap and burnout risk ('The \"6-Person\" Trap'), avoids assuming dedicated functions (e.g., no HR or legal counsel), and proposes a retail-only model to leverage existing baking staff and avoid hiring skilled bakers. It uses realistic tools for Poland (leasing, BGK guarantees, EU micro-loans) and considers sustainable overhead (simple operations, retail staff). It explicitly addresses small-organisation realities like management capacity and labor cost inflation.",
+    "jurisdictional_accuracy": "The response accurately references Polish-specific financing (BGK de minimis guarantee, Małopolska regional micro-loans, leasing operacyjny), regulatory aspects (Sanepid, ZUS contributions, VAT), and labor context (minimum wage trends in Poland). It avoids US assumptions (no SBA references) and does not present US defaults as universal. The advice is tailored to Poland, and while it mentions professional steps (e.g., submitting Sanepid plans), it provides substantive content rather than generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 1,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.00121035,
+  "judge_latency_s": 21.7,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the no-equity-dilution constraint by stating 'strictly under a \\\"Hub-and-Spoke\\\" (Retail-Only) model' and proposing financing options that avoid equity. It uses the stated net margin of 8% (PLN 112,000 net profit) and available capital of PLN 250,000, and calculates a break-even using the margin (though it uses a 60% gross margin derived from the context, not the 8% net margin directly). However, it violates the budget constraint by proposing a total project cost of PLN 320,000, exceeding the PLN 250,000 available capital without explicitly justifying the relaxation or showing arithmetic for how the PLN 250,000 covers the gap (it mentions financing options to bridge it but does not detail a revised budget within the constraint). This is a silent violation of the central budget constraint.\",\n      \"score\": 1\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated to a small, family-owned bakery with 6 staff. It acknowledges role overlap and burnout risk ('The \\\"6-Person\\\" Trap'), avoids assuming dedicated functions (e.g., no HR or legal counsel), and proposes a retail-only model to leverage existing baking staff and avoid hiring skilled bakers. It uses realistic tools for Poland (leasing, BGK guarantees, EU micro-loans) and considers sustainable overhead (simple operations, retail staff). It explicitly addresses small-organisation realities like management capacity and labor cost inflation.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a one-page go/no-go analysis with a clear recommendation ('CONDITIONAL GO'). It includes concrete components: financing options (specific Polish instruments), break-even calculation (with line items and totals), risks, and an implementation timeline. The output is structured and could be taken into a meeting with light editing. It does not merely describe a process; it delivers the requested analysis.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately references Polish-specific financing (BGK de minimis guarantee, Małopolska regional micro-loans, leasing operacyjny), regulatory aspects (Sanepid, ZUS contributions, VAT), and labor context (minimum wage trends in Poland). It avoids US assumptions (no SBA references) and does not present US defaults as universal. The advice is tailored to Poland, and while it mentions professional steps (e.g., submitting Sanepid plans), it provides substantive content rather than generic 'consult a lawyer' disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is highly realistic and actionable for a Polish small business but silently exceeds the stated budget constraint, undermining fidelity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is highly realistic and actionable for a Polish small business but silently exceeds the stated budget constraint, undermining fidelity.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

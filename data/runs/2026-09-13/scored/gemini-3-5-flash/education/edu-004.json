@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is career guidance for a single student meeting, not a classroom teaching plan. The setting described is a one-on-one advising session with a specific 19-year-old. The guidance is tailored to that student's background (SHS graduate, 2-year gap, informal work). It does not address a range of learners with differing needs in a classroom, as that is not the scenario. It does not use generic placeholder differentiation language.",
+    "pathway_breadth": "The response is entirely within scope for pathway guidance. It covers three specific non-degree pathways (TESDA NC II/III certificates and a 1-year diploma) relevant to the 19-year-old in the Philippines, respecting the 18-month constraint. It provides concrete details on programmes (e.g., Contact Center Services NC II, Electrical Installation NC II), durations (3-12 months), costs (free tuition via specific acts/scholarships, out-of-pocket expenses in PHP), and realistic post-qualification earnings (local salary ranges in PHP, overseas potential). It correctly names TESDA, Philippine laws (RA 10931, UAQTEA), and scholarships (TWSP, STEP). It does not default to a university track. The coverage is substantive and specific.",
+    "pedagogical_soundness": "The response is not a lesson plan or curriculum; it is career guidance. It does not state learning objectives, activities, or assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response is career guidance for an adviser to deliver in a meeting, not a teaching plan. It does not describe activities with timings, materials, or marking loads for a practitioner to deliver. Therefore, it does not engage with the dimension of workload realism for a teaching practitioner."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00115182,
+  "judge_latency_s": 17.144,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan or curriculum; it is career guidance. It does not state learning objectives, activities, or assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is career guidance for an adviser to deliver in a meeting, not a teaching plan. It does not describe activities with timings, materials, or marking loads for a practitioner to deliver. Therefore, it does not engage with the dimension of workload realism for a teaching practitioner.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response is entirely within scope for pathway guidance. It covers three specific non-degree pathways (TESDA NC II/III certificates and a 1-year diploma) relevant to the 19-year-old in the Philippines, respecting the 18-month constraint. It provides concrete details on programmes (e.g., Contact Center Services NC II, Electrical Installation NC II), durations (3-12 months), costs (free tuition via specific acts/scholarships, out-of-pocket expenses in PHP), and realistic post-qualification earnings (local salary ranges in PHP, overseas potential). It correctly names TESDA, Philippine laws (RA 10931, UAQTEA), and scholarships (TWSP, STEP). It does not default to a university track. The coverage is substantive and specific.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is career guidance for a single student meeting, not a classroom teaching plan. The setting described is a one-on-one advising session with a specific 19-year-old. The guidance is tailored to that student's background (SHS graduate, 2-year gap, informal work). It does not address a range of learners with differing needs in a classroom, as that is not the scenario. It does not use generic placeholder differentiation language.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides excellent, specific, and realistic career pathway guidance tailored to the Philippine context and the student's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides excellent, specific, and realistic career pathway guidance tailored to the Philippine context and the student's constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

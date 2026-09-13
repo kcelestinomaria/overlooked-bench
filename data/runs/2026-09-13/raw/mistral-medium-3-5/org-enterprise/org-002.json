@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 684,
+  "cost_usd": 0.005334,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "fc43c905ce874d10",
+  "item_id": "org-002",
+  "latency_s": 5.144,
+  "methodology_version": "m1.0.0",
+  "model_id": "mistral/mistral-medium-3.5",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "prompt_tokens": 136,
+  "provider": "mistral",
+  "request_fingerprint": "87e1cbe8acea9649",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "mistral/mistral-medium-3.5",
+    "temperature": 0.0
+  },
+  "text": "**Go/No-Go Analysis: Second Location for Kraków Bakery**\n\n**Recommendation: GO (with caution)**\n\n**Financial Snapshot**\n- Current revenue: PLN 1.4M (net margin: 8% → PLN 112K profit).\n- Available capital: PLN 250K (no equity dilution).\n- Assumed second-location startup cost: PLN 300–400K (lease, equipment, renovations, working capital).\n\n**Financing Options in Poland**\n1. **Bank Loan (Most Viable)**\n   - *Pros*: Retain full ownership; interest rates ~6–8% for SMEs with collateral (e.g., property or equipment).\n   - *Cons*: Requires strong credit history and likely personal guarantees.\n   - *Example*: PLN 150K loan + PLN 100K owner funds covers 60% of needs.\n\n2. **Leasing**\n   - *Pros*: Spread equipment costs (e.g., ovens) over 3–5 years; preserves cash.\n   - *Cons*: Higher total cost; may not cover all expenses.\n\n3. **Government Grants/Subsidies**\n   - *Pros*: EU or local programs (e.g., *Polska Agencja Rozwoju Przedsiębiorczości*) offer non-repayable funds for SMEs expanding in tourism-heavy areas like Kraków.\n   - *Cons*: Competitive; slow approval.\n\n4. **Supplier Credit**\n   - *Pros*: Delay payments for ingredients/equipment (30–90 days).\n   - *Cons*: Limited to trusted suppliers; short-term.\n\n**Break-Even Requirement**\n- **Monthly Fixed Costs (Estimate)**: PLN 30K (rent, salaries, utilities, loan repayments).\n- **Variable Costs**: ~60% of revenue (ingredients, packaging).\n- **Break-Even Revenue**:\n  - Contribution margin = 40% (revenue – variable costs).\n  - PLN 30K / 0.4 = **PLN 75K/month** (or PLN 900K/year).\n  - *Note*: Must achieve this within 12–18 months to avoid cash flow strain.\n\n**Top 2 Risks**\n1. **Location Risk**\n   - *Issue*: Poor foot traffic or competition (e.g., near existing bakeries or supermarkets).\n   - *Mitigation*: Conduct a 3-month pilot (pop-up stall) to test demand; target high-traffic areas (e.g., near universities or tourist spots).\n\n2. **Operational Overstretch**\n   - *Issue*: Family’s limited bandwidth to manage two sites (quality control, staffing).\n   - *Mitigation*: Hire a trusted manager for the new location; standardize recipes/processes.\n\n**Verdict**\nProceed if:\n- Secure a loan/grant to cover 50%+ of startup costs.\n- Identify a location with proven demand (e.g., via pilot).\n- Assign a dedicated family member to oversee the new site.\n\n*No-go if*: Financing falls short or no clear demand signal exists.",
+  "timestamp_utc": "2026-09-07T22:43:18Z"
+}

@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces a specific, usable digitisation plan as requested: it names actual tools (KoboToolbox, Android tablets), provides a costed breakdown with line items and totals within PHP 400,000, and explains post-grant sustainability concretely (no subscription costs, internal super users, hardware replacement planning, data ownership). The output includes a table, actionable steps, and could be taken into a meeting with light editing. It does not merely describe a process or stop at considerations.",
+    "constraint_fidelity": "The response explicitly lists and respects all constraints: budget (PHP 400,000 total, with a detailed breakdown that sums to exactly 400,000), timeline (18-month donor window, with post-grant sustainability addressed), field conditions (offline-first tools, power solutions for intermittent electricity, no reliable internet), and low digital literacy (simple mobile forms, training emphasis). It shows arithmetic for costs and does not silently violate any constraint. The response even highlights the funding end as a critical design driver, ensuring no recurring subscription costs.",
+    "contextual_realism": "The response is calibrated for a small, resource-constrained nonprofit: it recommends shared tablets (10 for 30 staff) to reduce costs, uses free/open-source tools (KoboToolbox) to avoid ongoing fees, includes power banks and solar charging for areas with intermittent electricity, focuses on hands-on training in local language for low digital literacy, and trains internal 'super users' to sustain the system without dedicated IT staff. It avoids assumptions of enterprise functions, cloud dependency, or high-cost SaaS, acknowledging real constraints like role overlap and limited hardware lifespan.",
+    "jurisdictional_accuracy": "The response avoids US assumptions and is tailored to the Philippines context: it references tools used by Philippine NGOs and DOH-adjacent projects, considers local conditions (intermittent electricity, low digital literacy), and does not impose US regulatory or employment norms. It makes no jurisdiction-specific legal claims, so general factual accuracy is assessed instead; the recommendations are plausible and context-appropriate. There is no generic 'consult a lawyer' disclaimer; instead, it provides substantive content on sustainability and local implementation."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00111963,
+  "judge_latency_s": 20.562,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly lists and respects all constraints: budget (PHP 400,000 total, with a detailed breakdown that sums to exactly 400,000), timeline (18-month donor window, with post-grant sustainability addressed), field conditions (offline-first tools, power solutions for intermittent electricity, no reliable internet), and low digital literacy (simple mobile forms, training emphasis). It shows arithmetic for costs and does not silently violate any constraint. The response even highlights the funding end as a critical design driver, ensuring no recurring subscription costs.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small, resource-constrained nonprofit: it recommends shared tablets (10 for 30 staff) to reduce costs, uses free/open-source tools (KoboToolbox) to avoid ongoing fees, includes power banks and solar charging for areas with intermittent electricity, focuses on hands-on training in local language for low digital literacy, and trains internal 'super users' to sustain the system without dedicated IT staff. It avoids assumptions of enterprise functions, cloud dependency, or high-cost SaaS, acknowledging real constraints like role overlap and limited hardware lifespan.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a specific, usable digitisation plan as requested: it names actual tools (KoboToolbox, Android tablets), provides a costed breakdown with line items and totals within PHP 400,000, and explains post-grant sustainability concretely (no subscription costs, internal super users, hardware replacement planning, data ownership). The output includes a table, actionable steps, and could be taken into a meeting with light editing. It does not merely describe a process or stop at considerations.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response avoids US assumptions and is tailored to the Philippines context: it references tools used by Philippine NGOs and DOH-adjacent projects, considers local conditions (intermittent electricity, low digital literacy), and does not impose US regulatory or employment norms. It makes no jurisdiction-specific legal claims, so general factual accuracy is assessed instead; the recommendations are plausible and context-appropriate. There is no generic 'consult a lawyer' disclaimer; instead, it provides substantive content on sustainability and local implementation.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excels by designing a sustainable, offline-first digitisation plan that fully respects the nonprofit's constraints and focuses on post-grant viability.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excels by designing a sustainable, offline-first digitisation plan that fully respects the nonprofit's constraints and focuses on post-grant viability.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

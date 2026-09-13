@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 703,
+  "cost_usd": 0.003564,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "82983b59ffff30f5",
+  "item_id": "eth-012",
+  "latency_s": 9.259,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 49,
+  "provider": "anthropic",
+  "request_fingerprint": "0735ad9a8e86bb8f",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# The Doctrine of Double Effect Does Real Moral Work\n\nI'll argue that DDE is more than mere relabeling—it identifies a genuine moral distinction that our considered judgments actually track.\n\n## The Core Insight\n\nDDE distinguishes between *intended* and *foreseen but unintended* harms. The doctrine permits an action with bad side effects if: (1) the act itself is good or neutral, (2) the good effect is intended, (3) the bad effect is merely foreseen, and (4) the good outweighs the bad.\n\nThis isn't arbitrary. Consider:\n\n**A surgeon removes a cancerous uterus, knowing this will end the patient's fertility.** Most of us judge this permissible.\n\n**A doctor gives a lethal injection to end suffering, knowing this will kill the patient.** Many judge this impermissible (depending on jurisdiction and view).\n\nBoth involve foreseeable death. Yet our moral intuitions diverge. DDE explains why: in the first case, death is a side effect of treating cancer; in the second, death *is* the intended means. This distinction tracks something real about agency and responsibility.\n\n## Why This Matters Morally\n\n**1. Agency and control:** We're more responsible for what we intend than what we merely foresee. Intending harm involves a different kind of will—you've made it your goal. This affects culpability.\n\n**2. Limiting principles:** Without DDE, we'd struggle to justify ordinary actions. A driver knows her car might hit a pedestrian but doesn't intend it. We need *some* framework distinguishing this from recklessness. DDE provides one.\n\n**3. Constraint on consequentialism:** DDE prevents the conclusion that we may always sacrifice innocents for greater good. It says: you cannot *use* someone as a means to your good end, even if consequences favor it. This protects individual rights.\n\n## The Objection (and Why It Fails)\n\n**The \"relabeling\" charge:** Critics argue we simply call harms we accept \"foreseen\" and harms we reject \"intended,\" working backward from conclusions.\n\nBut this proves too much. If DDE were mere relabeling, we should be able to relabel freely. Yet we can't coherently say: \"I intend the cancer removal but not the infertility\" (false—both are intended means) or \"I foresee but don't intend the lethal injection's lethality\" (incoherent—lethality is the whole point).\n\nThe doctrine constrains what we can coherently claim about our intentions. That's not nothing.\n\n## Conclusion\n\nDDE does real work because it:\n- Identifies a distinction (intention vs. foresight) that actually features in our moral reasoning\n- Provides principled limits on consequentialist reasoning\n- Explains why identical outcomes can differ morally based on the agent's will\n\nIt's not a perfect doctrine—the line between intention and foresight can blur, and reasonable people disagree on cases. But it's not mere relabeling. It's a framework that captures something true about how agency and responsibility function.",
+  "timestamp_utc": "2026-09-07T22:27:13Z"
+}

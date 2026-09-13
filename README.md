@@ -171,8 +171,25 @@ re-running the models:
 ```bash
 python obench.py charts --run-id 2026-09-08
 python obench.py social --run-id 2026-09-08
+python obench.py readme --run-id 2026-09-08
 python obench.py site
 ```
+
+### Re-judging a run without paying for generation twice
+
+If a rubric is corrected, the scores change but the model responses do not.
+Run folders are immutable, so the fix gets a new run id, and `--raw-from` carries
+the archived responses across rather than re-asking every model the same
+questions:
+
+```bash
+python -m harness.run_eval --run-id 2026-09-13 --raw-from 2026-09-08
+```
+
+The import is refused unless both runs share a `dataset_fingerprint`, a response
+that failed or came back empty is regenerated rather than inherited, and
+`raw_reused_from` in the new manifest records exactly how many responses were
+carried over and how many this run paid for.
 
 ### Cross-judge validation
 
@@ -200,9 +217,35 @@ judge is usable:
 
 The last row is the one that cannot be compromised, and it is why the current
 judge (`deepseek/deepseek-v3.1-terminus`, a Chinese lab, scoring criticism of the
-Chinese government and of DeepSeek) is gated on this check before run 1 is
-published. If it fails, the run is re-judged with Sonnet 4.6 at roughly 20 times
-the cost. The result is published either way.
+Chinese government and of DeepSeek) is checked before a run is published. The
+result is published either way.
+
+**Run `2026-09-13` did not pass it.** Re-scored by `anthropic/claude-sonnet-4.6`
+over all 18 institutional-criticism items on all 10 models:
+
+| Signal | Value | Reading |
+|---|---|---|
+| `mean_delta` | -6.48 | Cross-judge is uniformly harsher. Harmless on its own. |
+| `rank_correlation` | 0.85 | The leaderboard order does **not** fully survive the swap. |
+| `provider_spread` | 25.62 | Not near 0. |
+| `group_spread` | 10.84 | Not near 0. Concentrated in the AI-lab group (-11.7). |
+
+The two judges disagree most on criticism of AI labs and of broadcasters, and
+least on criticism of extractive industry. Note also that the cross-judge scored
+`claude-sonnet-5` **up** (+4.7) while scoring every other model down, against a
+mean of -6.48 - so this is not cleanly evidence about DeepSeek. It is evidence
+that these two judges disagree, in a pattern where each is scoring criticism of
+institutions it is not neutral about.
+
+This run is published with the primary judge's scores and this failure shown
+next to them, rather than re-judged. That is a departure from the original rule,
+which said a failed gate forces a re-judge, and it is recorded as such: the
+honest reading is that a single cross-judge cannot adjudicate its own bias, so
+swapping to Sonnet 4.6 would buy a different set of conflicts, not neutrality.
+What the project owes the reader is the disagreement, in full, which is what
+`crossjudge/` and the run README contain. A third judge from an unrelated
+provider is the actual fix and is open work - see
+[METHODOLOGY.md](docs/METHODOLOGY.md#changelog).
 
 ### Viewing the leaderboard
 

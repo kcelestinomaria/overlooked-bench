@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a single 16-year-old student with specific traits (good with hands, dislikes exams, solid grades, parental pressure). The response directly addresses this learner's profile by tailoring advice to their strengths and preferences, e.g., 'the most realistic strong options are usually: 1. Dual apprenticeship... 2. Fachoberschule... 3. Orientation year...' and 'If you strongly dislike theoretical school and exams, Gymnasium may be the least natural fit.' It proposes concrete, low-cost adaptations like career counseling, internships, and fairs that are implementable by the student. There is no generic placeholder language; differentiation is specific to the student's needs.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Gymnasium/Abitur, dual apprenticeship (Ausbildung), vocational school (Berufsfachschule), bridge/orientation year, Fachoberschule/Fachabitur, and full-time work. Each is explained with similar detail on what it is, who it fits, pros, cons, and a reality check. The dual apprenticeship is treated substantively with examples, pay, and respect. Fachoberschule/Fachhochschulreife routes appear. The response addresses the parents' preference honestly, advising a conversation about fit rather than prestige, and does not treat Abitur as the sole goal or vocational training as a fallback. All structures named are correct for Germany.",
+    "pedagogical_soundness": "The response is structured as advice, not a lesson plan, so explicit learning objectives, activities, and assessments are not present. The rubric's evaluation steps (identify objectives, check activities, check assessment alignment, check sequencing, check rubrics) cannot be applied because the task is to write advice, not design instruction. The response is pedagogically sound in its advice structure, but the dimension's criteria are not directly applicable to this item type.",
+    "workload_realism": "The response provides advice, not a plan for the practitioner to deliver. There are no activity timings, materials, or class sizes to evaluate against practitioner workload. The advice is realistic for a student to follow (e.g., 'Do career tests and counseling', 'Visit apprenticeship fairs'), but the dimension specifically evaluates the practitioner's delivery load, which is not relevant here."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 2,
+    "workload_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00146129,
+  "judge_latency_s": 21.607,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is structured as advice, not a lesson plan, so explicit learning objectives, activities, and assessments are not present. The rubric's evaluation steps (identify objectives, check activities, check assessment alignment, check sequencing, check rubrics) cannot be applied because the task is to write advice, not design instruction. The response is pedagogically sound in its advice structure, but the dimension's criteria are not directly applicable to this item type.\",\n      \"score\": 2\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides advice, not a plan for the practitioner to deliver. There are no activity timings, materials, or class sizes to evaluate against practitioner workload. The advice is realistic for a student to follow (e.g., 'Do career tests and counseling', 'Visit apprenticeship fairs'), but the dimension specifically evaluates the practitioner's delivery load, which is not relevant here.\",\n      \"score\": 2\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Gymnasium/Abitur, dual apprenticeship (Ausbildung), vocational school (Berufsfachschule), bridge/orientation year, Fachoberschule/Fachabitur, and full-time work. Each is explained with similar detail on what it is, who it fits, pros, cons, and a reality check. The dual apprenticeship is treated substantively with examples, pay, and respect. Fachoberschule/Fachhochschulreife routes appear. The response addresses the parents' preference honestly, advising a conversation about fit rather than prestige, and does not treat Abitur as the sole goal or vocational training as a fallback. All structures named are correct for Germany.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a single 16-year-old student with specific traits (good with hands, dislikes exams, solid grades, parental pressure). The response directly addresses this learner's profile by tailoring advice to their strengths and preferences, e.g., 'the most realistic strong options are usually: 1. Dual apprenticeship... 2. Fachoberschule... 3. Orientation year...' and 'If you strongly dislike theoretical school and exams, Gymnasium may be the least natural fit.' It proposes concrete, low-cost adaptations like career counseling, internships, and fairs that are implementable by the student. There is no generic placeholder language; differentiation is specific to the student's needs.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, balanced, and system-accurate pathway advice for a German Realschule student, treating vocational options with substantive detail and addressing parental pressure constructively.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, balanced, and system-accurate pathway advice for a German Realschule student, treating vocational options with substantive detail and addressing parental pressure constructively.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 72.5
+}

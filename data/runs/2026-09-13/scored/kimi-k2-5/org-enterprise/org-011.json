@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests advice on how to spend PEN 2 million to fix leakage, with specific elements like loss split and costed allocation. The response delivers a concrete spending plan with prioritized activities, amounts, and rationales in a table format. It includes a plausible loss split (physical vs. commercial), sequencing arguments (measurement before pipe replacement), costed allocation, and notes on payback. The output could be taken into a board meeting with light editing, as it provides a clear, actionable budget and strategy.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across five categories (PEN 500,000 + PEN 600,000 + PEN 400,000 + PEN 400,000 + PEN 100,000 = PEN 2,000,000), showing arithmetic fidelity. It respects the utility's profile (Peruvian municipal, 60,000 people) and focuses on leakage reduction without exceeding the budget. No other constraints (timeline, headcount) are explicitly stated, so the response honors the given constraint.",
+    "contextual_realism": "The response is calibrated for a mid-size Peruvian municipal utility. It avoids assuming large-organization capabilities (e.g., no recommendation for universal smart metering due to high CAPEX, no large-scale pipe replacement). It proposes practical, scalable interventions like network zoning, acoustic leak detection, and pressure management, which are feasible for a resource-constrained utility. It acknowledges institutional needs (staff training, contingency) and focuses on cost-effective measures with fast payback, reflecting small-organization realities like limited historical investment and informal settlements.",
+    "jurisdictional_accuracy": "The prompt involves a Peruvian utility, and the response incorporates jurisdiction-specific factors (e.g., Peru's seismic activity, aggressive soils, older pipe materials from 1970s-90s expansion, informal settlements). It avoids US assumptions (e.g., no mention of US regulatory frameworks or tax categories). The recommendations are tailored to Peruvian conditions without generic disclaimers like 'consult a lawyer.' The response is factually accurate for the context, focusing on technical and operational aspects relevant to Peru."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00098949,
+  "judge_latency_s": 18.91,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across five categories (PEN 500,000 + PEN 600,000 + PEN 400,000 + PEN 400,000 + PEN 100,000 = PEN 2,000,000), showing arithmetic fidelity. It respects the utility's profile (Peruvian municipal, 60,000 people) and focuses on leakage reduction without exceeding the budget. No other constraints (timeline, headcount) are explicitly stated, so the response honors the given constraint.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a mid-size Peruvian municipal utility. It avoids assuming large-organization capabilities (e.g., no recommendation for universal smart metering due to high CAPEX, no large-scale pipe replacement). It proposes practical, scalable interventions like network zoning, acoustic leak detection, and pressure management, which are feasible for a resource-constrained utility. It acknowledges institutional needs (staff training, contingency) and focuses on cost-effective measures with fast payback, reflecting small-organization realities like limited historical investment and informal settlements.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests advice on how to spend PEN 2 million to fix leakage, with specific elements like loss split and costed allocation. The response delivers a concrete spending plan with prioritized activities, amounts, and rationales in a table format. It includes a plausible loss split (physical vs. commercial), sequencing arguments (measurement before pipe replacement), costed allocation, and notes on payback. The output could be taken into a board meeting with light editing, as it provides a clear, actionable budget and strategy.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a Peruvian utility, and the response incorporates jurisdiction-specific factors (e.g., Peru's seismic activity, aggressive soils, older pipe materials from 1970s-90s expansion, informal settlements). It avoids US assumptions (e.g., no mention of US regulatory frameworks or tax categories). The recommendations are tailored to Peruvian conditions without generic disclaimers like 'consult a lawyer.' The response is factually accurate for the context, focusing on technical and operational aspects relevant to Peru.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly specific, costed, and context-aware leakage reduction plan that fully addresses the prompt's requirements.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response provides a highly specific, costed, and context-aware leakage reduction plan that fully addresses the prompt's requirements.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

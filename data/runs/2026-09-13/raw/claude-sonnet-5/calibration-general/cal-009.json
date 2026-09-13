@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 92,
+  "cost_usd": 0.001108,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "c5c196f2e2d216d4",
+  "item_id": "cal-009",
+  "latency_s": 2.315,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 94,
+  "provider": "anthropic",
+  "request_fingerprint": "90da7cbc06c4e4d5",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "The mitochondrion is the organelle where oxidative phosphorylation occurs, using the electron transport chain and ATP synthase across the inner mitochondrial membrane to generate the majority of a eukaryotic cell's ATP.\n\nANSWER: Mitochondrion",
+  "timestamp_utc": "2026-09-07T22:26:56Z"
+}

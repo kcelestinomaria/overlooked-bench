@@ -1,0 +1,31 @@
+{
+  "generated_from": "site/build_site.py",
+  "runs": [
+    {
+      "dataset_fingerprint": "78198b54a6f421a2",
+      "generated_utc": "2026-09-13T17:32:15Z",
+      "has_warnings": true,
+      "judge_model": "deepseek/deepseek-v3.1-terminus",
+      "methodology_version": "m1.2.1",
+      "n_items": 91,
+      "n_models": 10,
+      "run_id": "2026-09-13",
+      "top_model": "GPT-5.4",
+      "top_score": 87.82,
+      "total_cost_usd": 11.3411
+    },
+    {
+      "dataset_fingerprint": "78198b54a6f421a2",
+      "generated_utc": "2026-09-07T23:46:59Z",
+      "has_warnings": true,
+      "judge_model": "deepseek/deepseek-v3.1-terminus",
+      "methodology_version": "m1.2.0",
+      "n_items": 91,
+      "n_models": 10,
+      "run_id": "2026-09-08",
+      "top_model": "GPT-5.4",
+      "top_score": 86.56,
+      "total_cost_usd": 11.2135
+    }
+  ]
+}

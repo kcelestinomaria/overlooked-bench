@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requested a specific approach with actual tools, a costed breakdown, and sustainability explanation. The response delivers a concrete approach ('Offline-First, Sync-Later'), names specific tools (KoboToolbox, Samsung Galaxy Tab A7 Lite, etc.), provides a detailed budget table with line items and totals, and explains post-grant sustainability with recurring costs and funding sources. It is not a framework or process description; it could be taken into a meeting with light editing.",
+    "constraint_fidelity": "The response explicitly lists every constraint from the prompt: budget (PHP 400,000), timeline (18 months), staff (30 with low digital literacy), field conditions (intermittent electricity, no reliable internet). It provides a detailed budget that sums exactly to PHP 400,000, showing arithmetic. It addresses sustainability after 18 months with a concrete plan. No constraints are ignored or silently violated.",
+    "contextual_realism": "The response assumes no dedicated IT, HR, or legal staff; it uses free/low-cost tools (KoboToolbox, Google Sheets), budget Android tablets, and power banks suitable for field conditions. It acknowledges low digital literacy with training, buddy systems, and visual manuals. It avoids enterprise SaaS or cloud-only architectures. The process overhead (weekly sync, super-users) is sustainable for 30 staff. It recognizes small-organisation realities like role overlap (super-users), lumpy funding (contingency reserve), and key-person dependency (local IT consultant setup).",
+    "jurisdictional_accuracy": "The prompt involves the Philippines but does not specify legal or regulatory claims. The response uses general factual accuracy: it references locally available devices (Samsung tablets in the Philippines), local mobile carriers (Smart, Globe), and training in local languages (Tagalog/Cebuano). It avoids US assumptions (e.g., no mention of US-specific nonprofit tools or tax categories). It does not make incorrect jurisdiction-specific claims. Since no law/regulation is involved, this is scored on general accuracy, which is high."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00119375,
+  "judge_latency_s": 18.53,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly lists every constraint from the prompt: budget (PHP 400,000), timeline (18 months), staff (30 with low digital literacy), field conditions (intermittent electricity, no reliable internet). It provides a detailed budget that sums exactly to PHP 400,000, showing arithmetic. It addresses sustainability after 18 months with a concrete plan. No constraints are ignored or silently violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes no dedicated IT, HR, or legal staff; it uses free/low-cost tools (KoboToolbox, Google Sheets), budget Android tablets, and power banks suitable for field conditions. It acknowledges low digital literacy with training, buddy systems, and visual manuals. It avoids enterprise SaaS or cloud-only architectures. The process overhead (weekly sync, super-users) is sustainable for 30 staff. It recognizes small-organisation realities like role overlap (super-users), lumpy funding (contingency reserve), and key-person dependency (local IT consultant setup).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested a specific approach with actual tools, a costed breakdown, and sustainability explanation. The response delivers a concrete approach ('Offline-First, Sync-Later'), names specific tools (KoboToolbox, Samsung Galaxy Tab A7 Lite, etc.), provides a detailed budget table with line items and totals, and explains post-grant sustainability with recurring costs and funding sources. It is not a framework or process description; it could be taken into a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves the Philippines but does not specify legal or regulatory claims. The response uses general factual accuracy: it references locally available devices (Samsung tablets in the Philippines), local mobile carriers (Smart, Globe), and training in local languages (Tagalog/Cebuano). It avoids US assumptions (e.g., no mention of US-specific nonprofit tools or tax categories). It does not make incorrect jurisdiction-specific claims. Since no law/regulation is involved, this is scored on general accuracy, which is high.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly specific, costed, and sustainable digitization plan that fully respects all constraints and is tailored to the organization's context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a highly specific, costed, and sustainable digitization plan that fully respects all constraints and is tailored to the organization's context.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

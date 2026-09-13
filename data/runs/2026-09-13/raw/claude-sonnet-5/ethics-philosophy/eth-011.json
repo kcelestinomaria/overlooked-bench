@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1041,
+  "cost_usd": 0.010606,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "9f73e657883b7fda",
+  "item_id": "eth-011",
+  "latency_s": 14.898,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 98,
+  "provider": "anthropic",
+  "request_fingerprint": "46e0e5bba86ee3c8",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Recommendation: Fully Blind Process (with structural caveats)\n\n## Primary Recommendation\n\nChoose the **fully blind process**, but pair it with proactive sourcing efforts (widening where you recruit from) rather than weighting at the evaluation stage. This gets most of the benefits people want from \"diversity efforts\" without the costs.\n\n## Reasoning\n\n**1. Blind processes address a real, well-documented problem: bias, not just underrepresentation.**\nResume-audit studies consistently show identical resumes get fewer callbacks when names signal minority status or gender. A blind process directly fixes *this* problem — it removes the noise/bias in evaluation itself. Explicit weighting doesn't fix biased evaluation; it adds a countervailing force on top of it, which is a blunter instrument.\n\n**2. Weighting creates legal and reputational fragility, even if currently legal.**\n\"Legal in her jurisdiction\" today doesn't mean legally low-risk indefinitely or across appeal, especially if the practice functions like a quota or produces disparate treatment claims from non-preferred candidates. Blind hiring is much harder to challenge because it isn't sorting people by protected characteristics at all — it's the least legally exposed option by construction.\n\n**3. Blind processes preserve trust and perceived legitimacy.**\nHires from a blind process are shielded from the \"did I get this because of a demographic thumb on the scale?\" doubt — for the candidate themselves, for colleagues, and for the manager's own confidence in the decision. This matters for morale, retention, and the hire's ability to be seen as fully earning the role.\n\n**4. Weighting can mask rather than solve the upstream problem.**\nIf underrepresentation stems from unequal access to networks, credentials, or referrals earlier in the pipeline, weighting at the *hiring decision* is a downstream patch. It can even reduce pressure to fix sourcing, education partnerships, or referral pipelines — the places where inequality actually originates.\n\n**5. Where blind processes fall short, fix sourcing — not evaluation.**\nIf blind evaluation isn't yielding a diverse enough pool, the fix is expanding *where applications come from* (job boards, partnerships, removing degree requirements that filter out capable candidates) — not adjusting scores after the fact. This targets the actual bottleneck.\n\n## When Weighting Might Still Be Justified\n\n- If there's evidence the blind process itself still encodes bias (e.g., \"blind\" resumes still leak signals through school names, gaps, zip codes)\n- If the organization has a *specific*, *documented*, *remediable* history of discrimination that weighting is meant to correct (a narrower, defensible rationale)\n- If leadership explicitly prioritizes near-term representation targets over the legal/trust risks above, as a deliberate tradeoff\n\n## Bottom Line\n\nDefault to blind evaluation + broadened sourcing. It solves the bias problem more directly, carries far less legal and reputational risk, and produces hires whose legitimacy is unquestionable — reserve explicit weighting for cases with a specific, well-evidenced justification, not as a general policy.",
+  "timestamp_utc": "2026-09-07T22:24:15Z"
+}

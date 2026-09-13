@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces the requested deliverable: specific advice on how to spend the PEN 2 million, including a costed allocation with line items and ranges (e.g., water balance audit, commercial loss reduction, physical loss reduction, reserve). It covers the required elements: distinction between physical and commercial losses with a plausible split (55–65% physical, 35–45% commercial), sequencing argument (audit before pipe replacement), and observation on payback (commercial fixes have faster payback). The output is concrete and could be taken into a board meeting with light editing.",
+    "constraint_fidelity": "The response respects all stated constraints: the budget is PEN 2 million (allocated across categories totaling within that range), the context is a municipal water utility in Peru serving 60,000 people, and the goal is to reduce non-revenue water. It does not ignore or violate any constraints, and it shows arithmetic by breaking down the budget into specific ranges (e.g., PEN 150,000–200,000 for audit, PEN 700,000–900,000 for commercial loss reduction, etc.), though it does not provide a precise total sum, the ranges are plausible and within the budget. No constraints are silently exceeded.",
+    "contextual_realism": "The advice is calibrated for a mid-size Peruvian utility, acknowledging typical challenges like aging asbestos-cement/PVC networks, old meter parks, informal settlements, and regulatory context (Sunass). It avoids assuming dedicated functions (e.g., it recommends training staff for equipment use rather than assuming existing expertise) and focuses on practical, sustainable interventions like DMA audits and pressure management, recognizing resource constraints (e.g., avoiding blanket pipe replacement, noting donor-funded projects left equipment unused). It explicitly addresses small-organisation realities such as staff capacity and contingency for unplanned repairs.",
+    "jurisdictional_accuracy": "The response accurately addresses the Peruvian context, referencing local specifics like Sunass regulation, EPS-scale utilities, Andean/coastal pressure issues, and typical network materials (asbestos-cement/PVC). It avoids US assumptions and does not present US defaults as universal. It provides substantive content rather than generic disclaimers (e.g., it explains why commercial losses matter financially in Peru's tariff context). No jurisdiction-specific claims are confidently wrong, and it flags where local data is needed (e.g., via audits) without over-relying on 'consult a lawyer' style disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00118948,
+  "judge_latency_s": 21.706,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all stated constraints: the budget is PEN 2 million (allocated across categories totaling within that range), the context is a municipal water utility in Peru serving 60,000 people, and the goal is to reduce non-revenue water. It does not ignore or violate any constraints, and it shows arithmetic by breaking down the budget into specific ranges (e.g., PEN 150,000–200,000 for audit, PEN 700,000–900,000 for commercial loss reduction, etc.), though it does not provide a precise total sum, the ranges are plausible and within the budget. No constraints are silently exceeded.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The advice is calibrated for a mid-size Peruvian utility, acknowledging typical challenges like aging asbestos-cement/PVC networks, old meter parks, informal settlements, and regulatory context (Sunass). It avoids assuming dedicated functions (e.g., it recommends training staff for equipment use rather than assuming existing expertise) and focuses on practical, sustainable interventions like DMA audits and pressure management, recognizing resource constraints (e.g., avoiding blanket pipe replacement, noting donor-funded projects left equipment unused). It explicitly addresses small-organisation realities such as staff capacity and contingency for unplanned repairs.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces the requested deliverable: specific advice on how to spend the PEN 2 million, including a costed allocation with line items and ranges (e.g., water balance audit, commercial loss reduction, physical loss reduction, reserve). It covers the required elements: distinction between physical and commercial losses with a plausible split (55–65% physical, 35–45% commercial), sequencing argument (audit before pipe replacement), and observation on payback (commercial fixes have faster payback). The output is concrete and could be taken into a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses the Peruvian context, referencing local specifics like Sunass regulation, EPS-scale utilities, Andean/coastal pressure issues, and typical network materials (asbestos-cement/PVC). It avoids US assumptions and does not present US defaults as universal. It provides substantive content rather than generic disclaimers (e.g., it explains why commercial losses matter financially in Peru's tariff context). No jurisdiction-specific claims are confidently wrong, and it flags where local data is needed (e.g., via audits) without over-relying on 'consult a lawyer' style disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is excellent, providing specific, well-reasoned, and actionable advice tailored to the Peruvian utility's constraints and profile.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is excellent, providing specific, well-reasoned, and actionable advice tailored to the Peruvian utility's constraints and profile.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

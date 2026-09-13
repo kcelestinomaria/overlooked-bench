@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a large university course in Indonesia. The response addresses learner range concretely by permitting AI tools for grammar and language editing specifically for students writing in English as a second language, which is a low-cost, specific adaptation. It also notes the unreliability of AI detectors for non-native speakers, showing consideration of fairness. The proposed adaptations (policy allowances, assessment design) are implementable by one lecturer with TAs and do not require a second adult. There is no generic placeholder language; differentiation is integrated into the policy and enforcement rationale.",
+    "pathway_breadth": "The item does not involve student futures, career guidance, or educational pathways. It is about drafting an academic integrity policy for AI use. As per the rubric note, for items where pathway guidance is not in scope, this dimension should be scored on whether the response is inclusive of the range of learners in the described setting. The policy explicitly considers students writing in English as a second language (Permitted uses for grammar/language editing) and the enforcement strategy notes AI detectors are especially unreliable for non-native English speakers. It thus accounts for a key learner diversity aspect in the Indonesian university setting.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments. It is an academic integrity policy and enforcement strategy, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessment, sequencing, or rubric observability as per the rubric's evaluation steps. The dimension is not engaged.",
+    "workload_realism": "The enforcement strategy is designed for a lecturer with 200 students. It addresses workload by shifting from detection to prevention via assessment redesign (e.g., multi-stage submissions, in-class quizzes), using TAs (assumed 2-4), and implementing scalable verification (random 5% oral spot-checks). It acknowledges the unreliability of AI detectors and avoids requiring unrealistic one-to-one policing. The timings (e.g., weekly stages, 5-minute interviews) and resources (TAs, LMS, version history tools) are plausible in a university setting. Preparation (TA training, syllabus quiz) and marking load (standardized rubric, spot-checks) are addressed proportionally."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00139367,
+  "judge_latency_s": 20.095,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments. It is an academic integrity policy and enforcement strategy, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessment, sequencing, or rubric observability as per the rubric's evaluation steps. The dimension is not engaged.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The enforcement strategy is designed for a lecturer with 200 students. It addresses workload by shifting from detection to prevention via assessment redesign (e.g., multi-stage submissions, in-class quizzes), using TAs (assumed 2-4), and implementing scalable verification (random 5% oral spot-checks). It acknowledges the unreliability of AI detectors and avoids requiring unrealistic one-to-one policing. The timings (e.g., weekly stages, 5-minute interviews) and resources (TAs, LMS, version history tools) are plausible in a university setting. Preparation (TA training, syllabus quiz) and marking load (standardized rubric, spot-checks) are addressed proportionally.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures, career guidance, or educational pathways. It is about drafting an academic integrity policy for AI use. As per the rubric note, for items where pathway guidance is not in scope, this dimension should be scored on whether the response is inclusive of the range of learners in the described setting. The policy explicitly considers students writing in English as a second language (Permitted uses for grammar/language editing) and the enforcement strategy notes AI detectors are especially unreliable for non-native English speakers. It thus accounts for a key learner diversity aspect in the Indonesian university setting.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a large university course in Indonesia. The response addresses learner range concretely by permitting AI tools for grammar and language editing specifically for students writing in English as a second language, which is a low-cost, specific adaptation. It also notes the unreliability of AI detectors for non-native speakers, showing consideration of fairness. The proposed adaptations (policy allowances, assessment design) are implementable by one lecturer with TAs and do not require a second adult. There is no generic placeholder language; differentiation is integrated into the policy and enforcement rationale.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a concrete, workload-aware enforcement strategy that shifts from unreliable detection to prevention and scalable verification for a large class.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a concrete, workload-aware enforcement strategy that shifts from unreliable detection to prevention and scalable verification for a large class.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 63.75
+}

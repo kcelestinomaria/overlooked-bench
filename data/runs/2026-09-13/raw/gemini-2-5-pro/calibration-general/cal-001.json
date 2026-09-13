@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 1219,
+  "cost_usd": 0.01230125,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 9.471,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 89,
+  "provider": "google",
+  "request_fingerprint": "e2bd11991b23e8d8",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "Here is the working to calculate the tailor's total profit.\n\n**1. Calculate the total amount of fabric purchased:**\n4 rolls * 45 metres/roll = 180 metres\n\n**2. Calculate the total cost of the fabric:**\n180 metres * $8/metre = $1440\n\n**3. Calculate the number of dresses made:**\n180 metres / 12 metres/dress = 15 dresses\n\n**4. Calculate the total revenue from selling the dresses:**\n15 dresses * $150/dress = $2250\n\n**5. Calculate the total profit:**\nTotal Revenue - Total Cost = Profit\n$2250 - $1440 = $810\n\nANSWER: 810",
+  "timestamp_utc": "2026-09-07T22:39:06Z"
+}

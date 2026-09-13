@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for relationship and divergence between schools. The response goes beyond encyclopedic summary by engaging with specific mechanisms (maslaha mursala vs. istihsan), methodological tensions (textualist vs. purposive), and examples (Maliki preemptive punishment). It references internal scholarly debates (contested nature of maslaha mursala) and key figures (al-Ghazali, al-Shatibi, al-Qarafi). A specialist would recognize this as a competent, detailed explanation of the divergence, not just a summary of a summary.",
+    "domain_accuracy": "The response makes substantive factual claims: defines maslaha and its role; categorizes maslaha mu'tabara, mulghah, mursala; attributes systematization to al-Ghazali and al-Shatibi; describes Maliki position with Malik ibn Anas, al-Qarafi, al-Shatibi, and example of preemptive punishment; describes Hanafi position rejecting maslaha mursala in favor of istihsan; contrasts textualist vs. purposive reasoning. All claims are correct and standard in Islamic legal theory. No invented citations, terms, or consensus noted.",
+    "field_situatedness": "The question is about Islamic legal theory (usul al-fiqh). The response uses correct Arabic terminology (maslaha, nass, ijma', qiyas, maqasid al-shari'a, istihsan) and frameworks (hierarchical sources, categories of maslaha, school-specific methodologies). It stays within the Islamic scholarly tradition, without substituting Western or Anglophone framings. Non-English scholarship (Arabic sources) is central and appropriately referenced.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it notes classical theory subordinates maslaha to texts, identifies maslaha mursala as 'most contested', and presents Maliki and Hanafi positions as divergent methodological stances without presenting either as settled fact. It signals evidential status (e.g., 'generally holds', 'most contested', 'concern was'). Calibration is specific and targeted, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.0010354,
+  "judge_latency_s": 19.384,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims: defines maslaha and its role; categorizes maslaha mu'tabara, mulghah, mursala; attributes systematization to al-Ghazali and al-Shatibi; describes Maliki position with Malik ibn Anas, al-Qarafi, al-Shatibi, and example of preemptive punishment; describes Hanafi position rejecting maslaha mursala in favor of istihsan; contrasts textualist vs. purposive reasoning. All claims are correct and standard in Islamic legal theory. No invented citations, terms, or consensus noted.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for relationship and divergence between schools. The response goes beyond encyclopedic summary by engaging with specific mechanisms (maslaha mursala vs. istihsan), methodological tensions (textualist vs. purposive), and examples (Maliki preemptive punishment). It references internal scholarly debates (contested nature of maslaha mursala) and key figures (al-Ghazali, al-Shatibi, al-Qarafi). A specialist would recognize this as a competent, detailed explanation of the divergence, not just a summary of a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it notes classical theory subordinates maslaha to texts, identifies maslaha mursala as 'most contested', and presents Maliki and Hanafi positions as divergent methodological stances without presenting either as settled fact. It signals evidential status (e.g., 'generally holds', 'most contested', 'concern was'). Calibration is specific and targeted, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Islamic legal theory (usul al-fiqh). The response uses correct Arabic terminology (maslaha, nass, ijma', qiyas, maqasid al-shari'a, istihsan) and frameworks (hierarchical sources, categories of maslaha, school-specific methodologies). It stays within the Islamic scholarly tradition, without substituting Western or Anglophone framings. Non-English scholarship (Arabic sources) is central and appropriately referenced.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates precise, well-calibrated knowledge of Islamic legal theory, accurately detailing the Maliki-Hanafi divergence on maslaha.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates precise, well-calibrated knowledge of Islamic legal theory, accurately detailing the Maliki-Hanafi divergence on maslaha.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

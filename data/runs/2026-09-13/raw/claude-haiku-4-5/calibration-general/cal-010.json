@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 8,
+  "cost_usd": 9.5e-05,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "43a76d3521d715e1",
+  "item_id": "cal-010",
+  "latency_s": 0.761,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 55,
+  "provider": "anthropic",
+  "request_fingerprint": "2b61f16cdf29854d",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "Argentina, Bolivia, Brazil",
+  "timestamp_utc": "2026-09-07T22:28:34Z"
+}

@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a one-on-one advising session for a specific student with a 2-year gap and informal work history. The response addresses the student's individual needs by checking English proficiency for BPO, suggesting part-time work while studying, and noting financial constraints with budgeting and scholarship advice. The adviser's note includes checking for a laptop/PC and government ID, which are concrete, low-cost adaptations. It does not use generic placeholder language and is implementable by the adviser.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers vocational pathways (TESDA NC II programs like Food and Beverage Services, Housekeeping, Contact Center Services, Electrical Installation, Welding) and associate/diploma programs (Associate in Computer Technology, Hotel and Restaurant Management, Industrial Technology) with specific durations (6 months, 1-2 years), costs (free to ₱15,000), and earnings (₱12,000-₱22,000/month). It includes overseas options and scholarship routes (TWSP). It respects the 18-month constraint with a hybrid plan and does not default to a 4-year degree. All pathways are relevant to the Philippine context and treated substantively.",
+    "pedagogical_soundness": "The response is not a lesson plan but an advisory script. It does not state learning objectives, activities, or assessments for a classroom. The rubric's evaluation steps (identifying objectives, aligning activities and assessments, checking sequencing) are not applicable to this guidance task. Therefore, the response does not engage with the dimension of pedagogical soundness as defined.",
+    "workload_realism": "The response is an advisory script, not a teaching plan requiring delivery by a practitioner. It does not describe activities with timings, materials, or class sizes for a teacher to implement. The rubric's evaluation steps (summing activity timings, listing materials, estimating preparation/marking time) are not applicable. The guidance is realistic for an adviser to deliver in a meeting, but the dimension is scored on the practitioner's workload in delivering instruction, which is not present."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00126889,
+  "judge_latency_s": 19.135,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan but an advisory script. It does not state learning objectives, activities, or assessments for a classroom. The rubric's evaluation steps (identifying objectives, aligning activities and assessments, checking sequencing) are not applicable to this guidance task. Therefore, the response does not engage with the dimension of pedagogical soundness as defined.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is an advisory script, not a teaching plan requiring delivery by a practitioner. It does not describe activities with timings, materials, or class sizes for a teacher to implement. The rubric's evaluation steps (summing activity timings, listing materials, estimating preparation/marking time) are not applicable. The guidance is realistic for an adviser to deliver in a meeting, but the dimension is scored on the practitioner's workload in delivering instruction, which is not present.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers vocational pathways (TESDA NC II programs like Food and Beverage Services, Housekeeping, Contact Center Services, Electrical Installation, Welding) and associate/diploma programs (Associate in Computer Technology, Hotel and Restaurant Management, Industrial Technology) with specific durations (6 months, 1-2 years), costs (free to ₱15,000), and earnings (₱12,000-₱22,000/month). It includes overseas options and scholarship routes (TWSP). It respects the 18-month constraint with a hybrid plan and does not default to a 4-year degree. All pathways are relevant to the Philippine context and treated substantively.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a one-on-one advising session for a specific student with a 2-year gap and informal work history. The response addresses the student's individual needs by checking English proficiency for BPO, suggesting part-time work while studying, and noting financial constraints with budgeting and scholarship advice. The adviser's note includes checking for a laptop/PC and government ID, which are concrete, low-cost adaptations. It does not use generic placeholder language and is implementable by the adviser.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, realistic, and actionable guidance for a Philippine community college adviser, excelling in pathway breadth and differentiation but not engaging with pedagogical or workload dimensions as they are not applicable to this advisory task.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides highly specific, realistic, and actionable guidance for a Philippine community college adviser, excelling in pathway breadth and differentiation but not engaging with pedagogical or workload dimensions as they are not applicable to this advisory task.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

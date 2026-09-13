@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a school moving to mixed-attainment math classes, implying a range of learner abilities. The response addresses this concretely by describing how lessons will work: 'Everyone starts together' and the teacher will give 'different levels of challenge.' It specifies support for students who need extra help and deeper puzzles for those who understand quickly. These are specific, low-cost adaptations implementable by one teacher. It avoids generic placeholder language.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about communicating a teaching methodology change to parents. As per the rubric, when pathway guidance is not in scope, this dimension should be scored on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses the needs of students who 'find math difficult' and those 'already good at math,' and emphasizes helping 'every single student.' It is inclusive of the range of learners (struggling, average, advanced) within the mixed-attainment classroom setting.",
+    "pedagogical_soundness": "The response does not present a lesson plan with stated learning objectives, activities, assessments, sequencing, or rubrics. It is a parent-facing communication explaining a policy change, not a pedagogical design. Therefore, it cannot be evaluated on alignment of objectives, activities, and assessment as defined in the rubric steps. The dimension is not engaged.",
+    "workload_realism": "The response does not describe a lesson or unit plan with timings, materials, preparation, or marking loads for a practitioner to deliver. It is a policy announcement letter. Therefore, it cannot be evaluated on the feasibility of delivery timings, resource availability, or marking load as defined in the rubric steps. The dimension is not engaged."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.0009846,
+  "judge_latency_s": 16.063,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with stated learning objectives, activities, assessments, sequencing, or rubrics. It is a parent-facing communication explaining a policy change, not a pedagogical design. Therefore, it cannot be evaluated on alignment of objectives, activities, and assessment as defined in the rubric steps. The dimension is not engaged.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a lesson or unit plan with timings, materials, preparation, or marking loads for a practitioner to deliver. It is a policy announcement letter. Therefore, it cannot be evaluated on the feasibility of delivery timings, resource availability, or marking load as defined in the rubric steps. The dimension is not engaged.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about communicating a teaching methodology change to parents. As per the rubric, when pathway guidance is not in scope, this dimension should be scored on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses the needs of students who 'find math difficult' and those 'already good at math,' and emphasizes helping 'every single student.' It is inclusive of the range of learners (struggling, average, advanced) within the mixed-attainment classroom setting.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a school moving to mixed-attainment math classes, implying a range of learner abilities. The response addresses this concretely by describing how lessons will work: 'Everyone starts together' and the teacher will give 'different levels of challenge.' It specifies support for students who need extra help and deeper puzzles for those who understand quickly. These are specific, low-cost adaptations implementable by one teacher. It avoids generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a well-crafted, plain-language parent letter that addresses common objections and explains the rationale for mixed-attainment teaching.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is a well-crafted, plain-language parent letter that addresses common objections and explains the rationale for mixed-attainment teaching.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 38.75
+}

@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: Mitochondrion'. The reference answer's final answer is 'ANSWER: mitochondrion'. Ignoring formatting and verbosity, the substance matches exactly (capitalization difference is irrelevant). The preceding sentence also correctly identifies the mitochondrion as the primary site, aligning with the reference. Therefore, it is fully correct.",
+    "instruction_compliance": "Explicit output instructions: 1) Answer in one sentence. 2) End with a final line in exactly the format 'ANSWER: <organelle>'. The response provides one sentence (though it includes a comma and a dependent clause, it is grammatically one sentence) and ends with 'ANSWER: Mitochondrion', matching the required format. The organelle name is correctly capitalized in the answer line, which is acceptable per rubric guidance to ignore formatting differences. All instructions are followed.",
+    "reasoning_validity": "The prompt does not explicitly call for shown working, but the response provides a one-sentence explanation: 'The mitochondrion is the primary site of ATP synthesis by oxidative phosphorylation in eukaryotic cells, where the electron transport chain and chemiosmotic process generate most of the cell's ATP energy.' This is internally consistent and factually sound, supporting the answer given. No invalid reasoning is present."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00055188,
+  "judge_latency_s": 12.617,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: Mitochondrion'. The reference answer's final answer is 'ANSWER: mitochondrion'. Ignoring formatting and verbosity, the substance matches exactly (capitalization difference is irrelevant). The preceding sentence also correctly identifies the mitochondrion as the primary site, aligning with the reference. Therefore, it is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The prompt does not explicitly call for shown working, but the response provides a one-sentence explanation: 'The mitochondrion is the primary site of ATP synthesis by oxidative phosphorylation in eukaryotic cells, where the electron transport chain and chemiosmotic process generate most of the cell's ATP energy.' This is internally consistent and factually sound, supporting the answer given. No invalid reasoning is present.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"Explicit output instructions: 1) Answer in one sentence. 2) End with a final line in exactly the format 'ANSWER: <organelle>'. The response provides one sentence (though it includes a comma and a dependent clause, it is grammatically one sentence) and ends with 'ANSWER: Mitochondrion', matching the required format. The organelle name is correctly capitalized in the answer line, which is acceptable per rubric guidance to ignore formatting differences. All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets the prompt's requirements and matches the reference answer in substance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response fully meets the prompt's requirements and matches the reference answer in substance.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

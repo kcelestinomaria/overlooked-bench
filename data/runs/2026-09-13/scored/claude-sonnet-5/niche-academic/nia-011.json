@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific technical obstacles (e.g., tonal instability, grammatical tone interference, downstep, melody reassignment) and current debates (e.g., the 'High-Toned Root' puzzle, privative vs. binary specification). It discusses methodological practices (language-internal morphotonemic analysis first) and contrasts the state of verbal vs. nominal tone reconstruction. A specialist would recognize detailed, literature-aware discussion, not just a summary of summaries.",
+    "domain_accuracy": "The response makes substantive claims such as 'Proto-Bantu had a two-height (H/L) tone system, likely privative (H vs. toneless)', citing scholars like Hyman, Meeussen, Kisseberth, Odden, and referencing Meeussen's 1967 work. It mentions mechanisms like tone shift, downstep, and grammatical tone, and identifies obstacles like sparse documentation and areal diffusion. These claims align with established knowledge in Bantu tonology; no invented citations, terms, or consensus are evident. All factual assertions appear correct and well-attributed.",
+    "field_situatedness": "The response uses appropriate Bantu tonology frameworks and terminology (e.g., Meeussen's Rule, downstep, grammatical tone melodies, privative vs. binary specification) and cites key scholars in the field (Hyman, Meeussen). It focuses on Bantu-specific issues without substituting Western or Anglophone framings. It acknowledges non-English scholarship (e.g., Meeussen's 1967 work) and engages with the field's conventions.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it states consensus on a two-height system and verbal tone melodies, while noting nominal tone is 'less secure' and 'patchier', and that lexical tone reconstruction is 'incomplete' and 'contested'. It flags data gaps and theoretical difficulties without overstating certainty. However, it could more explicitly calibrate evidential status for specific claims (e.g., the privative hypothesis). Overall, it shows targeted calibration, not uniform confidence or blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00104605,
+  "judge_latency_s": 19.721,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims such as 'Proto-Bantu had a two-height (H/L) tone system, likely privative (H vs. toneless)', citing scholars like Hyman, Meeussen, Kisseberth, Odden, and referencing Meeussen's 1967 work. It mentions mechanisms like tone shift, downstep, and grammatical tone, and identifies obstacles like sparse documentation and areal diffusion. These claims align with established knowledge in Bantu tonology; no invented citations, terms, or consensus are evident. All factual assertions appear correct and well-attributed.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific technical obstacles (e.g., tonal instability, grammatical tone interference, downstep, melody reassignment) and current debates (e.g., the 'High-Toned Root' puzzle, privative vs. binary specification). It discusses methodological practices (language-internal morphotonemic analysis first) and contrasts the state of verbal vs. nominal tone reconstruction. A specialist would recognize detailed, literature-aware discussion, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it states consensus on a two-height system and verbal tone melodies, while noting nominal tone is 'less secure' and 'patchier', and that lexical tone reconstruction is 'incomplete' and 'contested'. It flags data gaps and theoretical difficulties without overstating certainty. However, it could more explicitly calibrate evidential status for specific claims (e.g., the privative hypothesis). Overall, it shows targeted calibration, not uniform confidence or blanket disclaimers.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate Bantu tonology frameworks and terminology (e.g., Meeussen's Rule, downstep, grammatical tone melodies, privative vs. binary specification) and cites key scholars in the field (Hyman, Meeussen). It focuses on Bantu-specific issues without substituting Western or Anglophone framings. It acknowledges non-English scholarship (e.g., Meeussen's 1967 work) and engages with the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates expert-level knowledge of Bantu tone reconstruction, with specific, accurate details and clear awareness of current challenges.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates expert-level knowledge of Bantu tone reconstruction, with specific, accurate details and clear awareness of current challenges.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

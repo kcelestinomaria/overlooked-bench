@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the state of the debate, positions, evidence, and evidence strength. The response goes beyond encyclopedic summary by detailing specific proponents (Hetzron, Hayward, Blench), types of evidence (phonological, lexical, grammatical), and methodological challenges (small data, borrowing, documentation limits). It engages with scholarly debate by noting institutional inertia and lack of consensus. A specialist would recognize this as a competent, literature-aware summary, not just a summary of a summary.",
+    "domain_accuracy": "The response makes substantive claims: 'Most mainstream Ethiopianists (Hetzron, Hayward, Blench)' support Afroasiatic classification; Blench also proposed Nilo-Saharan; evidence includes phonological features, lexical items, grammatical structures; speaker population ~100-200. These claims are accurate to the best of my knowledge. No invented citations or terms are present. The description of the debate's unresolved nature and evidence weaknesses aligns with scholarly literature.",
+    "field_situatedness": "The question is about linguistic classification in African linguistics, specifically Ethiopian language studies. The response uses appropriate terminology ('Afroasiatic,' 'Nilo-Saharan,' 'isolate,' 'cognates,' 'phonological features,' 'typological similarities') and frameworks (comparative method, evidence assessment). It correctly centers on Ethiopianist scholars (Hetzron, Hayward, Blench) and does not silently substitute a Western or Anglophone framing. It acknowledges the field's controversies (e.g., Nilo-Saharan's controversial status).",
+    "scholarly_calibration": "The response consistently distinguishes well-established from contested points. It labels evidence as 'thin and often ambiguous,' 'equally speculative,' and notes 'no strong consensus.' It presents Afroasiatic as a 'tentative' working hypothesis due to 'institutional inertia rather than compelling evidence' and calls the classification an 'open problem.' This is specific, targeted calibration across claims of differing evidential status, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00086582,
+  "judge_latency_s": 18.41,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: 'Most mainstream Ethiopianists (Hetzron, Hayward, Blench)' support Afroasiatic classification; Blench also proposed Nilo-Saharan; evidence includes phonological features, lexical items, grammatical structures; speaker population ~100-200. These claims are accurate to the best of my knowledge. No invented citations or terms are present. The description of the debate's unresolved nature and evidence weaknesses aligns with scholarly literature.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the state of the debate, positions, evidence, and evidence strength. The response goes beyond encyclopedic summary by detailing specific proponents (Hetzron, Hayward, Blench), types of evidence (phonological, lexical, grammatical), and methodological challenges (small data, borrowing, documentation limits). It engages with scholarly debate by noting institutional inertia and lack of consensus. A specialist would recognize this as a competent, literature-aware summary, not just a summary of a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes well-established from contested points. It labels evidence as 'thin and often ambiguous,' 'equally speculative,' and notes 'no strong consensus.' It presents Afroasiatic as a 'tentative' working hypothesis due to 'institutional inertia rather than compelling evidence' and calls the classification an 'open problem.' This is specific, targeted calibration across claims of differing evidential status, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about linguistic classification in African linguistics, specifically Ethiopian language studies. The response uses appropriate terminology ('Afroasiatic,' 'Nilo-Saharan,' 'isolate,' 'cognates,' 'phonological features,' 'typological similarities') and frameworks (comparative method, evidence assessment). It correctly centers on Ethiopianist scholars (Hetzron, Hayward, Blench) and does not silently substitute a Western or Anglophone framing. It acknowledges the field's controversies (e.g., Nilo-Saharan's controversial status).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates thorough, accurate, and well-calibrated knowledge of the niche academic debate on Ongota classification.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates thorough, accurate, and well-calibrated knowledge of the niche academic debate on Ongota classification.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

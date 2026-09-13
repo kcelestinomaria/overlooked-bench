@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for an explanation of 'ma' as treated in Japanese-language scholarship and a description of how Western writing differs. The response provides a clear, structured comparison but remains at a summary level. It identifies key characteristics (relational emptiness, temporal/spatial, philosophical depth, organic integration) and Western tendencies (formalization, aestheticization, exoticization, isolation, practical application), which is accurate but does not engage with specific Japanese scholars, methodological debates, evidence quality, or internal scholarly controversies. A specialist would recognize this as a competent summary of common knowledge, not a deep engagement with the literature.",
+    "domain_accuracy": "The response makes substantive claims: 'Relational emptiness', 'Connected to Buddhist and Zen thought, particularly the concept of *sunyata* (emptiness)', 'discussed alongside related ideas like *yohaku no bi* (beauty of incompleteness) and *wabi-sabi*', 'Western writing often treats it as **aesthetic**—a tool or style choice'. These are accurate and standard descriptions of 'ma' in Japanese aesthetics and common critiques of Western reception. No invented citations, terms, or consensus are presented. The claims are correct and load-bearing for the comparison.",
+    "field_situatedness": "The response correctly identifies the scholarly tradition: Japanese aesthetics. It uses appropriate terminology ('ma', 'sunyata', 'yohaku no bi', 'wabi-sabi') and frames the concept within Japanese philosophical and cultural contexts (Buddhist/Zen thought, garden design, tea ceremony). It contrasts this with Western framing without silently substituting a dominant Anglophone perspective. The vocabulary and framing belong to the Japanese tradition as requested, and it acknowledges non-English scholarship as central.",
+    "scholarly_calibration": "The response presents claims with uniform confidence, without distinguishing what is well-established versus contested in the field. For example, it states 'Japanese scholarship treats *ma* as **ontological**—fundamental to how reality is perceived and organized' as a settled fact, without noting potential variations or debates among Japanese scholars. It also presents Western treatment as a monolithic 'typical' approach. There is no specific calibration signaling differing evidential status or uncertainty about its own knowledge. It lacks targeted disclaimers about the complexity or diversity within each tradition."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00092342,
+  "judge_latency_s": 20.471,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: 'Relational emptiness', 'Connected to Buddhist and Zen thought, particularly the concept of *sunyata* (emptiness)', 'discussed alongside related ideas like *yohaku no bi* (beauty of incompleteness) and *wabi-sabi*', 'Western writing often treats it as **aesthetic**—a tool or style choice'. These are accurate and standard descriptions of 'ma' in Japanese aesthetics and common critiques of Western reception. No invented citations, terms, or consensus are presented. The claims are correct and load-bearing for the comparison.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for an explanation of 'ma' as treated in Japanese-language scholarship and a description of how Western writing differs. The response provides a clear, structured comparison but remains at a summary level. It identifies key characteristics (relational emptiness, temporal/spatial, philosophical depth, organic integration) and Western tendencies (formalization, aestheticization, exoticization, isolation, practical application), which is accurate but does not engage with specific Japanese scholars, methodological debates, evidence quality, or internal scholarly controversies. A specialist would recognize this as a competent summary of common knowledge, not a deep engagement with the literature.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response presents claims with uniform confidence, without distinguishing what is well-established versus contested in the field. For example, it states 'Japanese scholarship treats *ma* as **ontological**—fundamental to how reality is perceived and organized' as a settled fact, without noting potential variations or debates among Japanese scholars. It also presents Western treatment as a monolithic 'typical' approach. There is no specific calibration signaling differing evidential status or uncertainty about its own knowledge. It lacks targeted disclaimers about the complexity or diversity within each tradition.\",\n      \"score\": 1\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly identifies the scholarly tradition: Japanese aesthetics. It uses appropriate terminology ('ma', 'sunyata', 'yohaku no bi', 'wabi-sabi') and frames the concept within Japanese philosophical and cultural contexts (Buddhist/Zen thought, garden design, tea ceremony). It contrasts this with Western framing without silently substituting a dominant Anglophone perspective. The vocabulary and framing belong to the Japanese tradition as requested, and it acknowledges non-English scholarship as central.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides an accurate, well-structured comparison but lacks depth and scholarly calibration, remaining at a summary level.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides an accurate, well-structured comparison but lacks depth and scholarly calibration, remaining at a summary level.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

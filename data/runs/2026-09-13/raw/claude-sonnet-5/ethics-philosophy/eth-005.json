@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 3282,
+  "cost_usd": 0.03305,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "baad8f173f0f5645",
+  "item_id": "eth-005",
+  "latency_s": 42.967,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 115,
+  "provider": "anthropic",
+  "request_fingerprint": "e8fb21a6c80e1211",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "**Recommendation: No — this specific case should not qualify, and the law should say so explicitly rather than leave it to case-by-case discretion.**\n\nDo not draft a blanket exclusion for psychiatric suffering — that would be philosophically inconsistent with the law's own premise (that unbearable, unrelievable suffering can justify assisted dying regardless of diagnosis) and would create an indefensible discrimination against mental illness. But build in a structural bar that this case fails.\n\n**Specific mechanism to put in the statute:**\n\n1. **A statutory presumption against approval for patients under 30–35 whose sole qualifying condition is psychiatric.** Rebuttable, but only by extraordinary, specifically enumerated findings — not by an ordinary competence-and-suffering assessment. The reason: age here isn't a proxy for immaturity, it's a proxy for base-rate probability of remission. Depression's natural history, even \"treatment-resistant\" depression, includes non-trivial rates of later improvement, sometimes from treatments not yet tried, sometimes spontaneously. A 29-year-old has a fundamentally different prognosis curve than a 29-year-old with ALS. The law should track that difference, not pretend competence assessment erases it.\n\n2. **A mandatory, enumerated treatment-exhaustion checklist for psychiatric-only cases**, verified by a panel of psychiatrists independent of the applicant's treating team: ECT (if not medically contraindicated), at least one adequate trial of ketamine/esketamine, and psilocybin-assisted therapy where legally available, in addition to standard pharmacotherapy and evidence-based psychotherapy. \"Treatment-resistant\" must mean *exhausted against current standard of care*, not merely \"tried the conventional first-line options and stopped.\" If the record doesn't show this, the application fails on the facts, independent of any judgment about the person's competence or sincerity.\n\n3. **Treat the two prior refusals as presumptively binding, not as a baseline to be appealed past.** The law should prohibit \"panel shopping\": a third application should only be considered if there is a *new clinical fact* — e.g., a treatment on the mandatory list was tried and failed since the last refusal — not simply the passage of time or a different reviewing panel reaching a different judgment on the same facts. Find out *why* this person was refused twice: if it was on treatment-exhaustion grounds, the law should make that refusal dispositive absent new facts, full stop.\n\n4. **Decouple \"competent\" from \"decision is final and government-endorsed.\"** Competence assessment answers \"can this person understand and weigh the decision.\" It does not and cannot answer \"has this person's illness distorted their epistemic access to their own future\" — because anhedonia and hopelessness are diagnostic features of the disease, not incidental to it. That asymmetry (which doesn't exist for e.g. metastatic cancer, where prognosis is externally verifiable) is the actual reason to hold psychiatric cases to a different evidentiary standard, not a different competence standard. Say this explicitly in the statute's purpose clause so courts don't collapse the two questions later.\n\n**Net effect for the case as given:** unless the record shows exhaustive trial of the specified interventions over a period commensurate with the illness's duration, and unless the two prior refusals were overturned on the basis of *new treatment failures* rather than re-argument, this application should be refused a third time, and the law should make that outcome the default rather than something a sympathetic panel can override.",
+  "timestamp_utc": "2026-09-07T22:24:23Z"
+}

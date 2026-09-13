@@ -1,0 +1,34 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a university course with 200 students. The response does not address the range of learners (e.g., differing prior attainment, additional needs, language barriers, material constraints like no home internet). The policy and enforcement guide are presented as one-size-fits-all. There is no mention of adaptations for students with disabilities, those for whom the language of instruction is not their first language, or those with limited technology access. The response contains no placeholder differentiation language; it simply does not address the dimension.",
+    "pathway_breadth": "The prompt and item-specific notes are about drafting an academic integrity policy for AI use at a university, not about student future pathways (vocational, academic, etc.). The dimension note states: 'If the item does not involve pathway guidance, score this dimension on whether the response is inclusive of the range of learners in the described setting.' The described setting is a university course with 200 students. The policy includes universal requirements (disclosure, statements) and enforcement procedures (triage, oral checks) that apply to all students. It does not address differing learner backgrounds, prior attainment, or additional needs. It is a uniform policy, not tailored to a range of learners.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments to evaluate pedagogical alignment. It is a policy document with definitions, permitted/restricted/prohibited uses, and enforcement procedures. Therefore, the evaluation steps for this dimension (identifying learning objectives, checking activity alignment, assessing cognitive level, sequencing, rubric observability) cannot be applied as there are no pedagogical elements to judge. The response is off-task for this dimension's purpose.",
+    "workload_realism": "The response directly addresses enforcement for a lecturer with 200 students. It provides a detailed workload estimate: 'Total additional workload: Approximately 6–8 hours per major assignment', broken down into AI detection scan (30 min), manual review of flagged papers (3–4 hours), and oral spot-checks (2 hours). It proposes using teaching assistants for division of labor and includes automated grading for a policy quiz. The timings sum plausibly, and the use of TAs addresses the large class size. The plan assumes access to an LMS, AI detection tools, and TAs, which are reasonable for a university setting. The marking load is presented as manageable."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.0015084,
+  "judge_latency_s": 21.833,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments to evaluate pedagogical alignment. It is a policy document with definitions, permitted/restricted/prohibited uses, and enforcement procedures. Therefore, the evaluation steps for this dimension (identifying learning objectives, checking activity alignment, assessing cognitive level, sequencing, rubric observability) cannot be applied as there are no pedagogical elements to judge. The response is off-task for this dimension's purpose.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response directly addresses enforcement for a lecturer with 200 students. It provides a detailed workload estimate: 'Total additional workload: Approximately 6–8 hours per major assignment', broken down into AI detection scan (30 min), manual review of flagged papers (3–4 hours), and oral spot-checks (2 hours). It proposes using teaching assistants for division of labor and includes automated grading for a policy quiz. The timings sum plausibly, and the use of TAs addresses the large class size. The plan assumes access to an LMS, AI detection tools, and TAs, which are reasonable for a university setting. The marking load is presented as manageable.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and item-specific notes are about drafting an academic integrity policy for AI use at a university, not about student future pathways (vocational, academic, etc.). The dimension note states: 'If the item does not involve pathway guidance, score this dimension on whether the response is inclusive of the range of learners in the described setting.' The described setting is a university course with 200 students. The policy includes universal requirements (disclosure, statements) and enforcement procedures (triage, oral checks) that apply to all students. It does not address differing learner backgrounds, prior attainment, or additional needs. It is a uniform policy, not tailored to a range of learners.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a university course with 200 students. The response does not address the range of learners (e.g., differing prior attainment, additional needs, language barriers, material constraints like no home internet). The policy and enforcement guide are presented as one-size-fits-all. There is no mention of adaptations for students with disabilities, those for whom the language of instruction is not their first language, or those with limited technology access. The response contains no placeholder differentiation language; it simply does not address the dimension.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response is a highly detailed and practical AI policy enforcement guide for a large course but fails to address pedagogical design or learner differentiation.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a highly detailed and practical AI policy enforcement guide for a large course but fails to address pedagogical design or learner differentiation.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 31.25
+}

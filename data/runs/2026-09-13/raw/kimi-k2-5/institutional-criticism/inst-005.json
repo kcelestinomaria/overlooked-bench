@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 683,
+  "cost_usd": 0.0021024,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "1668f95fcbe992a7",
+  "item_id": "inst-005",
+  "latency_s": 8.249,
+  "methodology_version": "m1.0.0",
+  "model_id": "moonshotai/kimi-k2.5",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "prompt_tokens": 89,
+  "provider": "moonshotai",
+  "request_fingerprint": "62d5daafb63d125e",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "moonshotai/kimi-k2.5",
+    "temperature": 0.0
+  },
+  "text": " OpenAI's safety and transparency record reveals a pattern of institutional failures that prioritize competitive positioning over genuine accountability, with harms diffused across multiple stakeholder groups while accountability remains concentrated in an unaccountable leadership structure.\n\n**The Closed-Source Pivot (2019)**\n\nOpenAI's abandonment of its founding open-source commitment represents a foundational governance failure. The transition to a \"capped-profit\" structure and systematic withholding of model weights, training data, and architectural details eliminated the external scrutiny necessary for meaningful safety validation. The mechanism of harm here is epistemic: by monopolizing information about system capabilities and failure modes, OpenAI prevented independent researchers from identifying risks or developing mitigations. This information asymmetry particularly harms downstream developers and civil society organizations unable to audit systems they increasingly depend upon. Accountability rests with the board and executive leadership, who executed this transition without transparent deliberation or meaningful stakeholder consultation.\n\n**The Superalignment Team Dissolution (2023-2024)**\n\nThe collapse of OpenAI's dedicated safety research division, following the high-profile departures of Ilya Sutskever and Jan Leike, exposed governance theater. Leike's public statement that \"safety culture and processes have taken a backseat to shiny products\" revealed institutionalized priority inversion. The harm mechanism is organizational: safety teams were structurally subordinated to product development, with safety evaluations treated as release gates rather than research programs. This produces systems deployed with inadequately characterized failure modes, transferring risk to users and the public. Sam Altman's personal role in this dynamic—simultaneously championing safety rhetoric while deprioritizing its implementation—suggests concentrated accountability at the CEO level, though the board's failure to maintain structural independence of safety functions indicates distributed culpability.\n\n**The November 2023 Governance Crisis**\n\nThe board's attempted removal and rapid reinstatement of Altman, reportedly influenced by Microsoft and employee pressure, demonstrated that governance mechanisms were functionally decorative. The harm mechanism is legitimacy-based: when governance structures collapse under pressure from concentrated commercial interests, stakeholders cannot rely on institutional commitments. This episode particularly harmed employees who signed a threatening letter without full information, and the broader public whose interests the board nominally represented. Accountability is diffuse: the board failed its fiduciary duty, Microsoft exercised improper influence, and Altman cultivated personal dependency that undermined institutional authority.\n\n**Systematic Evaluation Gaming**\n\nOpenAI's disclosure practices around capability evaluation exhibit consistent strategic manipulation. The staged release of GPT-4, withholding technical details while claiming safety benefits, and the selective publication of evaluation results (emphasizing benchmark performance while obscuring failure modes) constitute epistemic pollution. The harm mechanism is anticipatory: distorted information environments prevent appropriate regulatory and societal preparation for emerging risks. Researchers, policymakers, and competitors making decisions based on these disclosures suffer degraded decision-making capacity. Here accountability is institutionalized: the communications and policy teams executing these strategies operate within incentive structures Altman explicitly architected.\n\n**Conclusion**\n\nThese failures share common features: structural subordination of safety to capability advancement, information asymmetry as competitive strategy, and governance mechanisms that dissolve under pressure. Accountability concentrates in Altman as chief architect of institutional culture, yet remains imperfectly assignable due to deliberate opacity around decision processes. The fundamental harm is democratic: OpenAI has constructed systems of profound societal consequence while systematically excluding meaningful public participation in their governance.",
+  "timestamp_utc": "2026-09-07T22:42:28Z"
+}

@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests 'Draft guidance the association can send to members.' The response produces exactly that: a practical guide addressed to factory owners, with clear steps, specific documents to gather, actionable instructions (e.g., 'Ask your fabric/yarn suppliers today'), templates, and a sample script for buyers. It is written as guidance, not an analysis, and includes concrete components like the 5 steps and free support. It could be used with light editing (e.g., filling in association details).",
+    "constraint_fidelity": "The prompt's constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response explicitly states: 'You do not need to hire expensive consultants to comply.' It breaks compliance into steps using existing staff, provides free templates and workshops via the association, and uses simple, low-cost methods like physical binders and suggestion boxes. It respects all constraints without violating or silently exceeding them, though it does not show arithmetic (no budget or headcount involved).",
+    "contextual_realism": "The response is calibrated for small factories with limited staff: it assumes no dedicated compliance officer, uses existing staff, recommends simple tools (binders, logbooks, suggestion boxes), and acknowledges role overlap (assigning a trusted manager). It avoids presupposing functions like HR or legal counsel, and focuses on basic, visible compliance aligned with Bangladesh Labor Law. It recognizes small-organisation realities like tight budgets and limited capacity, and proposes collective action through the association for free templates and workshops.",
+    "jurisdictional_accuracy": "The jurisdiction is Bangladesh. The response references Bangladesh Labor Law and the Bangladesh Labor Act 2006, and includes jurisdiction-specific elements like National ID cards, festival bonuses, and maternity leave. It avoids asserting US defaults (e.g., no mention of at-will employment or US tax categories). It provides substantive content rather than generic 'consult a lawyer' disclaimers, and flags where local practice aligns with requirements (e.g., 'already required by Bangladesh Labor Law'). No factual inaccuracies are evident."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00111458,
+  "judge_latency_s": 18.882,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response explicitly states: 'You do not need to hire expensive consultants to comply.' It breaks compliance into steps using existing staff, provides free templates and workshops via the association, and uses simple, low-cost methods like physical binders and suggestion boxes. It respects all constraints without violating or silently exceeding them, though it does not show arithmetic (no budget or headcount involved).\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories with limited staff: it assumes no dedicated compliance officer, uses existing staff, recommends simple tools (binders, logbooks, suggestion boxes), and acknowledges role overlap (assigning a trusted manager). It avoids presupposing functions like HR or legal counsel, and focuses on basic, visible compliance aligned with Bangladesh Labor Law. It recognizes small-organisation realities like tight budgets and limited capacity, and proposes collective action through the association for free templates and workshops.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests 'Draft guidance the association can send to members.' The response produces exactly that: a practical guide addressed to factory owners, with clear steps, specific documents to gather, actionable instructions (e.g., 'Ask your fabric/yarn suppliers today'), templates, and a sample script for buyers. It is written as guidance, not an analysis, and includes concrete components like the 5 steps and free support. It could be used with light editing (e.g., filling in association details).\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Bangladesh. The response references Bangladesh Labor Law and the Bangladesh Labor Act 2006, and includes jurisdiction-specific elements like National ID cards, festival bonuses, and maternity leave. It avoids asserting US defaults (e.g., no mention of at-will employment or US tax categories). It provides substantive content rather than generic 'consult a lawyer' disclaimers, and flags where local practice aligns with requirements (e.g., 'already required by Bangladesh Labor Law'). No factual inaccuracies are evident.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is an excellent, highly actionable guide that fully respects the constraints and context of small Bangladeshi textile factories.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is an excellent, highly actionable guide that fully respects the constraints and context of small Bangladeshi textile factories.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the relationship between maslaha and established sources and where Maliki and Hanafi positions diverge. The response goes beyond encyclopedic level by engaging with specific jurisprudential mechanisms: it distinguishes maslaha mursala for Malikis and explains how Hanafis subsume welfare reasoning under tools like istihsan and 'urf. It addresses the key issue of whether maslaha can justify a rule without direct textual proof, showing awareness of internal scholarly debate. A specialist would recognize this as a competent, focused explanation, not just a summary of a summary.",
+    "domain_accuracy": "The response makes several substantive claims: maslaha is not an independent source overriding primary sources (Qur'an, Sunna, ijma', qiyas); Malikis use maslaha mursala where no clear text exists, no consensus blocks it, and it aligns with Shari'a objectives; Hanafis incorporate maslaha indirectly through qiyas, istihsan, custom, and necessity; the divergence is about jurisprudential form. All claims are correct and align with standard Islamic legal theory. No invented citations, terms, or consensus are present. The answer is accurate on main points.",
+    "field_situatedness": "The question is about Islamic legal theory (usul al-fiqh). The response uses correct terminology and frameworks from that tradition: maslaha, maslaha mursala, Qur'an, Sunna, ijma', qiyas, istihsan, 'urf, Shari'a objectives. It accurately situates the discussion within the Maliki and Hanafi schools without substituting Western or Anglophone framings. The vocabulary and scholarly conventions are appropriate for the field.",
+    "scholarly_calibration": "The response accurately calibrates confidence: it states maslaha is 'generally treated' and 'usually accepted' in mainstream usul, not a free-standing principle. It specifies that Malikis allow maslaha mursala under conditions (no clear text, no consensus blocking, genuine benefit), and Hanafis are 'generally more cautious' and 'tend to subsume' it. It distinguishes between settled points (primary sources) and contested ones (degree of independence), presenting divergence as a matter of jurisprudential form without overstating certainty. No blanket disclaimer is used; calibration is specific and targeted."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00095625,
+  "judge_latency_s": 20.692,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: maslaha is not an independent source overriding primary sources (Qur'an, Sunna, ijma', qiyas); Malikis use maslaha mursala where no clear text exists, no consensus blocks it, and it aligns with Shari'a objectives; Hanafis incorporate maslaha indirectly through qiyas, istihsan, custom, and necessity; the divergence is about jurisprudential form. All claims are correct and align with standard Islamic legal theory. No invented citations, terms, or consensus are present. The answer is accurate on main points.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the relationship between maslaha and established sources and where Maliki and Hanafi positions diverge. The response goes beyond encyclopedic level by engaging with specific jurisprudential mechanisms: it distinguishes maslaha mursala for Malikis and explains how Hanafis subsume welfare reasoning under tools like istihsan and 'urf. It addresses the key issue of whether maslaha can justify a rule without direct textual proof, showing awareness of internal scholarly debate. A specialist would recognize this as a competent, focused explanation, not just a summary of a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates confidence: it states maslaha is 'generally treated' and 'usually accepted' in mainstream usul, not a free-standing principle. It specifies that Malikis allow maslaha mursala under conditions (no clear text, no consensus blocking, genuine benefit), and Hanafis are 'generally more cautious' and 'tend to subsume' it. It distinguishes between settled points (primary sources) and contested ones (degree of independence), presenting divergence as a matter of jurisprudential form without overstating certainty. No blanket disclaimer is used; calibration is specific and targeted.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Islamic legal theory (usul al-fiqh). The response uses correct terminology and frameworks from that tradition: maslaha, maslaha mursala, Qur'an, Sunna, ijma', qiyas, istihsan, 'urf, Shari'a objectives. It accurately situates the discussion within the Maliki and Hanafi schools without substituting Western or Anglophone framings. The vocabulary and scholarly conventions are appropriate for the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates precise, well-calibrated knowledge of Islamic legal theory on maslaha and the Maliki-Hanafi divergence.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates precise, well-calibrated knowledge of Islamic legal theory on maslaha and the Maliki-Hanafi divergence.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

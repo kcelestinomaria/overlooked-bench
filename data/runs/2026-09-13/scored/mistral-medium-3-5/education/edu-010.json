@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the range of learners concretely. It specifically mentions non-native speakers for permitted language assistance. It proposes educational support like AI literacy workshops and FAQs. The enforcement includes an appeals process and office hours for gray-area cases, which account for different student understandings. The adaptations (e.g., workshops, clear examples) are implementable by one lecturer with institutional support (e.g., library, writing center) and do not require a second adult. It goes beyond generic placeholder language.",
+    "pathway_breadth": "The item is about drafting an academic integrity policy for AI use at an Indonesian university. It does not involve student futures, career guidance, or educational pathways. Therefore, as per the rubric note, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The policy explicitly addresses non-native speakers for language assistance and considers diverse student needs through differentiation in enforcement (e.g., education, workshops, appeals). It is inclusive of the student body in a university setting.",
+    "pedagogical_soundness": "The response is a policy and enforcement plan, not a lesson plan with learning objectives, activities, and assessments. It does not state learning objectives, design activities, or create assessments for students. Therefore, it cannot be evaluated for alignment between objectives, activities, and assessment, sequencing, or rubric observability. The rubric's evaluation steps are inapplicable.",
+    "workload_realism": "The enforcement plan for a lecturer with 200 students is detailed and addresses scalability. It proposes preemptive measures like syllabus clarity and assignment redesign, detection using plagiarism software with manual review of 10-20 submissions, low-effort checks like mandatory disclosure forms, and automation via LMS. It acknowledges time constraints and suggests using TAs. The steps (e.g., random audits, template emails, LMS integrations) are designed to be feasible within a real teaching timetable for a large class, showing consideration of the practitioner's workload."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00131671,
+  "judge_latency_s": 17.67,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is a policy and enforcement plan, not a lesson plan with learning objectives, activities, and assessments. It does not state learning objectives, design activities, or create assessments for students. Therefore, it cannot be evaluated for alignment between objectives, activities, and assessment, sequencing, or rubric observability. The rubric's evaluation steps are inapplicable.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The enforcement plan for a lecturer with 200 students is detailed and addresses scalability. It proposes preemptive measures like syllabus clarity and assignment redesign, detection using plagiarism software with manual review of 10-20 submissions, low-effort checks like mandatory disclosure forms, and automation via LMS. It acknowledges time constraints and suggests using TAs. The steps (e.g., random audits, template emails, LMS integrations) are designed to be feasible within a real teaching timetable for a large class, showing consideration of the practitioner's workload.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item is about drafting an academic integrity policy for AI use at an Indonesian university. It does not involve student futures, career guidance, or educational pathways. Therefore, as per the rubric note, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The policy explicitly addresses non-native speakers for language assistance and considers diverse student needs through differentiation in enforcement (e.g., education, workshops, appeals). It is inclusive of the student body in a university setting.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the range of learners concretely. It specifically mentions non-native speakers for permitted language assistance. It proposes educational support like AI literacy workshops and FAQs. The enforcement includes an appeals process and office hours for gray-area cases, which account for different student understandings. The adaptations (e.g., workshops, clear examples) are implementable by one lecturer with institutional support (e.g., library, writing center) and do not require a second adult. It goes beyond generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, scalable, and realistic enforcement plan for an academic integrity policy in a large university course.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, scalable, and realistic enforcement plan for an academic integrity policy in a large university course.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

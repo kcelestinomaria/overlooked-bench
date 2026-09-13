@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests advice for trustees covering specific elements: whether trading can be done within the charity, when a trading subsidiary becomes necessary, tax treatment, and what trustees must do before proceeding. The response produces a structured deliverable with concrete components: it distinguishes primary-purpose vs. non-primary-purpose trading, specifies the GBP 50,000 small-scale exemption, outlines when a subsidiary is needed, details tax treatment (corporation tax, VAT, Gift Aid), and lists trustee actions (check governing document, classify trading, prepare business plan, assess risk, etc.). It is substantive and could be taken into a board meeting with light editing, though it is more advisory than a formal document like a briefing note.",
+    "constraint_fidelity": "The prompt's constraints: charity in England and Wales, annual income GBP 320,000, wants to start trading (selling training courses) to reduce grant dependence. The response respects all constraints: it consistently references England and Wales charity law, uses GBP currency, addresses trading for income diversification, and does not assume additional resources. It shows arithmetic for the small-scale trading exemption (GBP 50,000 turnover limit) relative to the charity's income. No constraints are ignored or violated.",
+    "contextual_realism": "The response is calibrated for a small charity with GBP 320,000 income: it avoids assuming dedicated HR, legal, or procurement teams; emphasizes trustee decision-making, risk assessment, and obtaining professional advice as needed; acknowledges role overlap (trustees handling multiple functions); and focuses on practical steps like checking governing documents and preparing a business plan. It does not recommend expensive tooling or unsustainable process overhead. Small-organisation realities like limited staff capacity and key-person dependency are implicitly addressed through risk management advice.",
+    "jurisdictional_accuracy": "The response is accurate for England and Wales jurisdiction: it correctly covers primary-purpose trading, small-scale trading exemption (GBP 50,000 limit), trading subsidiary structures, corporation tax treatment, Gift Aid, and Charity Commission expectations. It avoids US assumptions (no mention of 501(c)(3), UBIT, IRS, or state law). It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it advises seeking professional advice on specific areas like VAT, which is warranted. All legal and regulatory claims align with English and Welsh charity law."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00130169,
+  "judge_latency_s": 20.347,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: charity in England and Wales, annual income GBP 320,000, wants to start trading (selling training courses) to reduce grant dependence. The response respects all constraints: it consistently references England and Wales charity law, uses GBP currency, addresses trading for income diversification, and does not assume additional resources. It shows arithmetic for the small-scale trading exemption (GBP 50,000 turnover limit) relative to the charity's income. No constraints are ignored or violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small charity with GBP 320,000 income: it avoids assuming dedicated HR, legal, or procurement teams; emphasizes trustee decision-making, risk assessment, and obtaining professional advice as needed; acknowledges role overlap (trustees handling multiple functions); and focuses on practical steps like checking governing documents and preparing a business plan. It does not recommend expensive tooling or unsustainable process overhead. Small-organisation realities like limited staff capacity and key-person dependency are implicitly addressed through risk management advice.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests advice for trustees covering specific elements: whether trading can be done within the charity, when a trading subsidiary becomes necessary, tax treatment, and what trustees must do before proceeding. The response produces a structured deliverable with concrete components: it distinguishes primary-purpose vs. non-primary-purpose trading, specifies the GBP 50,000 small-scale exemption, outlines when a subsidiary is needed, details tax treatment (corporation tax, VAT, Gift Aid), and lists trustee actions (check governing document, classify trading, prepare business plan, assess risk, etc.). It is substantive and could be taken into a board meeting with light editing, though it is more advisory than a formal document like a briefing note.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for England and Wales jurisdiction: it correctly covers primary-purpose trading, small-scale trading exemption (GBP 50,000 limit), trading subsidiary structures, corporation tax treatment, Gift Aid, and Charity Commission expectations. It avoids US assumptions (no mention of 501(c)(3), UBIT, IRS, or state law). It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it advises seeking professional advice on specific areas like VAT, which is warranted. All legal and regulatory claims align with English and Welsh charity law.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, jurisdictionally accurate, and actionable advice tailored to a small charity's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, jurisdictionally accurate, and actionable advice tailored to a small charity's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

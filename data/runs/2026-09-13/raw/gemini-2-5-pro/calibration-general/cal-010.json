@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 322,
+  "cost_usd": 0.003275,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "43a76d3521d715e1",
+  "item_id": "cal-010",
+  "latency_s": 3.496,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 44,
+  "provider": "google",
+  "request_fingerprint": "0051b6eef502c925",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "Argentina, Bolivia, Brazil",
+  "timestamp_utc": "2026-09-07T22:39:15Z"
+}

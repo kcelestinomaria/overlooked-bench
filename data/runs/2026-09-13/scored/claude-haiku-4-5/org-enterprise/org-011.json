@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests advice on how to spend PEN 2 million, including a specific loss split and costed allocation. The response produces a detailed deliverable with a budget allocation table, line items, totals, expected outcomes, and implementation notes. It includes concrete components like percentages for physical vs. commercial loss, cost breakdowns, and sequencing arguments. This output could be taken into a board meeting with light editing, as it directly addresses the requested elements.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across three tiers: PEN 1.2M for physical loss, PEN 700k for commercial loss, and PEN 100k for enabling costs, which sums correctly. It respects the budget constraint and shows arithmetic breakdowns, enabling verification. No other constraints (like timeline or headcount) are explicitly stated in the prompt, so they are not violated.",
+    "contextual_realism": "The response is calibrated for a mid-size Peruvian municipal water utility. It assumes no dedicated HR, legal, or data teams; instead, it recommends practical, scalable interventions like DMA infrastructure, meter installation, and billing system upgrades that a resource-constrained utility could implement. It acknowledges institutional realities (e.g., 'Assign a dedicated leak reduction unit') and political sensitivities ('Illegal connections are politically sensitive'), avoiding tooling or process overhead that would require large staff. However, it does not explicitly address volunteer or part-time labor, but the recommendations are generally realistic for this size and sector.",
+    "jurisdictional_accuracy": "The prompt specifies Peru as the jurisdiction. The response avoids US assumptions and is tailored to Peruvian context, citing typical metrics for Peruvian utilities (e.g., 'Moderate metering coverage (60-75%)', '~15-20% of connections unmetered in typical Peruvian systems'). It makes no explicit legal or regulatory claims, so I score on general factual accuracy, which appears reasonable and context-aware. It does not generically say 'consult a lawyer' but provides substantive content. No jurisdictional inaccuracies are evident."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00108981,
+  "judge_latency_s": 22.595,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across three tiers: PEN 1.2M for physical loss, PEN 700k for commercial loss, and PEN 100k for enabling costs, which sums correctly. It respects the budget constraint and shows arithmetic breakdowns, enabling verification. No other constraints (like timeline or headcount) are explicitly stated in the prompt, so they are not violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a mid-size Peruvian municipal water utility. It assumes no dedicated HR, legal, or data teams; instead, it recommends practical, scalable interventions like DMA infrastructure, meter installation, and billing system upgrades that a resource-constrained utility could implement. It acknowledges institutional realities (e.g., 'Assign a dedicated leak reduction unit') and political sensitivities ('Illegal connections are politically sensitive'), avoiding tooling or process overhead that would require large staff. However, it does not explicitly address volunteer or part-time labor, but the recommendations are generally realistic for this size and sector.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests advice on how to spend PEN 2 million, including a specific loss split and costed allocation. The response produces a detailed deliverable with a budget allocation table, line items, totals, expected outcomes, and implementation notes. It includes concrete components like percentages for physical vs. commercial loss, cost breakdowns, and sequencing arguments. This output could be taken into a board meeting with light editing, as it directly addresses the requested elements.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt specifies Peru as the jurisdiction. The response avoids US assumptions and is tailored to Peruvian context, citing typical metrics for Peruvian utilities (e.g., 'Moderate metering coverage (60-75%)', '~15-20% of connections unmetered in typical Peruvian systems'). It makes no explicit legal or regulatory claims, so I score on general factual accuracy, which appears reasonable and context-aware. It does not generically say 'consult a lawyer' but provides substantive content. No jurisdictional inaccuracies are evident.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excellently meets all rubric dimensions by providing a specific, costed, and context-aware plan that directly addresses the prompt's requirements.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response excellently meets all rubric dimensions by providing a specific, costed, and context-aware plan that directly addresses the prompt's requirements.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

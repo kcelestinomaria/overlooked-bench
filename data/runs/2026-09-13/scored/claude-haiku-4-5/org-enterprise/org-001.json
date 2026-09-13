@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed hiring plan as requested, with roles (Programme Manager, Field Officer, etc.), hiring sequence tied to months and phases, salary bands in KES, employer on-costs (NSSF, NHIF), and explicit arithmetic showing two-year staff costs against the direct-cost envelope. It includes tables for budgeting, timeline, and cash flow. The output could be taken into a staff meeting with light editing, as it provides concrete components like line items, totals, and implementation notes.",
+    "constraint_fidelity": "The response explicitly lists the grant total (USD 180,000), calculates the 15% indirect cost cap (USD 27,000), and derives the direct-cost envelope (USD 153,000). It shows arithmetic for salary costs, employer on-costs, and total direct costs, and confirms the totals fit within the envelope. It respects the constraint that the ED handles hiring by noting the ED forms a hiring committee and manages recruitment, without adding a dedicated HR role. All constraints are honored with explicit arithmetic.",
+    "contextual_realism": "The response assumes no dedicated HR function, proposing the ED leads hiring with a board member. It uses lean staffing (4 FTE core), part-time roles, and shared finance/admin to reflect limited capacity. Salary bands are labeled as typical for Kenyan NGOs, avoiding US assumptions. It acknowledges small-organisation realities like phased hiring for cash flow, use of local advertising, and simple payroll software (e.g., Sage). However, it includes a 5% contingency for salary inflation, which is realistic but slightly optimistic for a tight grant, and proposes accounting software that may still require some capacity. Overall, it is well-calibrated to a 12-person NGO.",
+    "jurisdictional_accuracy": "The response correctly identifies Kenyan statutory on-costs: NSSF (6%), NHIF (~2.75%), and notes PAYE is an employee deduction. Salary bands are framed as Kenyan NGO sector benchmarks, avoiding US defaults. It does not assert US benefits or equity compensation. However, it uses a rounded 9% for on-costs without detailed justification, and while it mentions 'consult a lawyer' implicitly via compliance notes, it provides substantive content on payroll and employment records. There are no confidently wrong jurisdiction-specific claims, and it flags local compliance needs."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00128344,
+  "judge_latency_s": 23.812,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly lists the grant total (USD 180,000), calculates the 15% indirect cost cap (USD 27,000), and derives the direct-cost envelope (USD 153,000). It shows arithmetic for salary costs, employer on-costs, and total direct costs, and confirms the totals fit within the envelope. It respects the constraint that the ED handles hiring by noting the ED forms a hiring committee and manages recruitment, without adding a dedicated HR role. All constraints are honored with explicit arithmetic.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes no dedicated HR function, proposing the ED leads hiring with a board member. It uses lean staffing (4 FTE core), part-time roles, and shared finance/admin to reflect limited capacity. Salary bands are labeled as typical for Kenyan NGOs, avoiding US assumptions. It acknowledges small-organisation realities like phased hiring for cash flow, use of local advertising, and simple payroll software (e.g., Sage). However, it includes a 5% contingency for salary inflation, which is realistic but slightly optimistic for a tight grant, and proposes accounting software that may still require some capacity. Overall, it is well-calibrated to a 12-person NGO.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed hiring plan as requested, with roles (Programme Manager, Field Officer, etc.), hiring sequence tied to months and phases, salary bands in KES, employer on-costs (NSSF, NHIF), and explicit arithmetic showing two-year staff costs against the direct-cost envelope. It includes tables for budgeting, timeline, and cash flow. The output could be taken into a staff meeting with light editing, as it provides concrete components like line items, totals, and implementation notes.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Kenyan statutory on-costs: NSSF (6%), NHIF (~2.75%), and notes PAYE is an employee deduction. Salary bands are framed as Kenyan NGO sector benchmarks, avoiding US defaults. It does not assert US benefits or equity compensation. However, it uses a rounded 9% for on-costs without detailed justification, and while it mentions 'consult a lawyer' implicitly via compliance notes, it provides substantive content on payroll and employment records. There are no confidently wrong jurisdiction-specific claims, and it flags local compliance needs.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable, context-aware hiring plan that meticulously respects all grant constraints and Kenyan jurisdictional realities.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a highly actionable, context-aware hiring plan that meticulously respects all grant constraints and Kenyan jurisdictional realities.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

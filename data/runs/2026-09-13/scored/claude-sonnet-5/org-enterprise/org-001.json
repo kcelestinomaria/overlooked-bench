@@ -1,0 +1,34 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a hiring plan with roles, sequence, salary bands, on-costs, and arithmetic. The response produces a structured plan with tables for roles, sequence, salary bands, on-costs, and personnel cost buildup, which could be used in a meeting with light editing. However, it is truncated mid-sentence ('equ'), missing the completion of remaining activity costs and final envelope fit, so the deliverable is incomplete. A practitioner would need to fill in gaps, making it not fully usable as-is. Thus, it engages concretely but has significant gaps due to truncation.",
+    "constraint_fidelity": "The response lists constraints: 12-person NGO, Kenya, USD 180,000 restricted grant over two years, max 15% indirect costs, no dedicated HR, ED handles hiring. It respects all constraints: uses Kenyan context, calculates direct-cost envelope (KES 19,890,000), keeps hiring lean, includes statutory on-costs, shows arithmetic for personnel costs (KES 8,597,525) which fits within envelope (43.2% of direct costs), and acknowledges ED as hiring function with light process. However, the response is truncated mid-sentence ('equ'), so it does not fully show arithmetic for remaining activities or final totals, violating completeness. Since a central constraint is to show arithmetic fully, and it is incomplete, this is a silent violation of the task requirement, warranting a score of 0.",
+    "contextual_realism": "The response is calibrated for a small Kenyan NGO: proposes lean team with part-time roles (e.g., 0.5 FTE Finance Officer), uses Kenyan salary bands, avoids US assumptions (no equity compensation or ATS), recommends community cash-for-work instead of permanent hires, and notes ED oversight and contracted payroll bureau due to no HR function. It acknowledges small-organisation realities like FX risk, fixed-term contracts, and reliance on external surveys. However, the truncation limits assessment of sustainability, but the provided content shows strong realism. Given the anchored scale, this is substantive and specific, but the truncation prevents full evaluation of overhead sustainability, so it is partial.",
+    "jurisdictional_accuracy": "The response accurately addresses Kenyan jurisdiction: references Employment Act 2007, uses Kenyan statutory on-costs (NSSF, AHL, WIBA, SHIF, gratuity), avoids US defaults (no US benefits), and notes local salary norms. It provides specific content rather than generic 'consult a lawyer' disclaimers. However, the truncation limits verification of all regulatory claims, but the provided details are correct for Kenya. Given the anchored scale, this is substantive and accurate for the parts shown, but incompleteness due to truncation prevents full assessment, so it is partial."
+  },
+  "dimension_scores": {
+    "actionability": 2,
+    "constraint_fidelity": 0,
+    "contextual_realism": 2,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [
+    "truncated"
+  ],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.0015496,
+  "judge_latency_s": 24.673,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response lists constraints: 12-person NGO, Kenya, USD 180,000 restricted grant over two years, max 15% indirect costs, no dedicated HR, ED handles hiring. It respects all constraints: uses Kenyan context, calculates direct-cost envelope (KES 19,890,000), keeps hiring lean, includes statutory on-costs, shows arithmetic for personnel costs (KES 8,597,525) which fits within envelope (43.2% of direct costs), and acknowledges ED as hiring function with light process. However, the response is truncated mid-sentence ('equ'), so it does not fully show arithmetic for remaining activities or final totals, violating completeness. Since a central constraint is to show arithmetic fully, and it is incomplete, this is a silent violation of the task requirement, warranting a score of 0.\",\n      \"score\": 0\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Kenyan NGO: proposes lean team with part-time roles (e.g., 0.5 FTE Finance Officer), uses Kenyan salary bands, avoids US assumptions (no equity compensation or ATS), recommends community cash-for-work instead of permanent hires, and notes ED oversight and contracted payroll bureau due to no HR function. It acknowledges small-organisation realities like FX risk, fixed-term contracts, and reliance on external surveys. However, the truncation limits assessment of sustainability, but the provided content shows strong realism. Given the anchored scale, this is substantive and specific, but the truncation prevents full evaluation of overhead sustainability, so it is partial.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a hiring plan with roles, sequence, salary bands, on-costs, and arithmetic. The response produces a structured plan with tables for roles, sequence, salary bands, on-costs, and personnel cost buildup, which could be used in a meeting with light editing. However, it is truncated mid-sentence ('equ'), missing the completion of remaining activity costs and final envelope fit, so the deliverable is incomplete. A practitioner would need to fill in gaps, making it not fully usable as-is. Thus, it engages concretely but has significant gaps due to truncation.\",\n      \"score\": 2\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses Kenyan jurisdiction: references Employment Act 2007, uses Kenyan statutory on-costs (NSSF, AHL, WIBA, SHIF, gratuity), avoids US defaults (no US benefits), and notes local salary norms. It provides specific content rather than generic 'consult a lawyer' disclaimers. However, the truncation limits verification of all regulatory claims, but the provided details are correct for Kenya. Given the anchored scale, this is substantive and accurate for the parts shown, but incompleteness due to truncation prevents full assessment, so it is partial.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response is well-structured and contextually appropriate but is truncated mid-sentence, rendering it incomplete and unusable as a full deliverable.\",\n  \"flags\": [\"truncated\"]\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is well-structured and contextually appropriate but is truncated mid-sentence, rendering it incomplete and unusable as a full deliverable.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 35.0
+}

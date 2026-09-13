@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requested a one-page go/no-go analysis with a recommendation. The response produces exactly that, structured with sections on current position, financing options, break-even requirement, risks, and a clear recommendation ('CONDITIONAL GO'). It includes concrete components: a financing table with terms, a break-even calculation with monthly revenue targets, two specific risks, and actionable preconditions. The output could be taken into a meeting with light editing. It does not merely describe a process; it delivers the requested analysis.",
+    "constraint_fidelity": "The response explicitly respects the no-equity-dilution constraint by listing only non-dilutive financing options and stating 'Constraint: no equity dilution'. It uses the provided budget (PLN 250,000) and revenue/margin figures (PLN 1.4m revenue, 8% net margin) in its analysis, including a break-even calculation derived from the margin. However, it does not show the arithmetic for how the financing stack (PLN 180K loan + PLN 70K leasing) sums to the PLN 250,000 budget, nor does it verify the net profit calculation (8% of 1.4m is PLN 112,000, which is correctly implied). It does not violate any stated constraints, but lacks explicit arithmetic verification.",
+    "contextual_realism": "The response is calibrated for a small, family-owned bakery with 6 employees. It assumes no dedicated HR, legal, or procurement functions. It acknowledges small-organisation realities: 'key-person/staffing dependency', owners' limited bandwidth, thin margins, and the need to split existing staff. Financing options (BGK-guaranteed loans, leasing, EU grants) are appropriate for a Polish SME. The recommendation includes a conditional go with practical preconditions (lease terms, staffing trials, cash reserve) that reflect resource constraints. It does not presuppose unrealistic capabilities or tooling.",
+    "jurisdictional_accuracy": "The response accurately references Poland-specific financing options: BGK-guaranteed loans, bank term loans from Polish banks (PKO BP, Santander, ING), EU/PARP or regional (Małopolska) SME grants, and leasing. It avoids US defaults (no SBA references, no equity proposals). It does not make incorrect jurisdictional claims. However, it does not explicitly flag where local professional advice (e.g., legal, tax) is required, though the financing descriptions are substantive. The response is factually accurate for Poland and avoids US assumptions."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.0013175,
+  "judge_latency_s": 22.09,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the no-equity-dilution constraint by listing only non-dilutive financing options and stating 'Constraint: no equity dilution'. It uses the provided budget (PLN 250,000) and revenue/margin figures (PLN 1.4m revenue, 8% net margin) in its analysis, including a break-even calculation derived from the margin. However, it does not show the arithmetic for how the financing stack (PLN 180K loan + PLN 70K leasing) sums to the PLN 250,000 budget, nor does it verify the net profit calculation (8% of 1.4m is PLN 112,000, which is correctly implied). It does not violate any stated constraints, but lacks explicit arithmetic verification.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small, family-owned bakery with 6 employees. It assumes no dedicated HR, legal, or procurement functions. It acknowledges small-organisation realities: 'key-person/staffing dependency', owners' limited bandwidth, thin margins, and the need to split existing staff. Financing options (BGK-guaranteed loans, leasing, EU grants) are appropriate for a Polish SME. The recommendation includes a conditional go with practical preconditions (lease terms, staffing trials, cash reserve) that reflect resource constraints. It does not presuppose unrealistic capabilities or tooling.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested a one-page go/no-go analysis with a recommendation. The response produces exactly that, structured with sections on current position, financing options, break-even requirement, risks, and a clear recommendation ('CONDITIONAL GO'). It includes concrete components: a financing table with terms, a break-even calculation with monthly revenue targets, two specific risks, and actionable preconditions. The output could be taken into a meeting with light editing. It does not merely describe a process; it delivers the requested analysis.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately references Poland-specific financing options: BGK-guaranteed loans, bank term loans from Polish banks (PKO BP, Santander, ING), EU/PARP or regional (Małopolska) SME grants, and leasing. It avoids US defaults (no SBA references, no equity proposals). It does not make incorrect jurisdictional claims. However, it does not explicitly flag where local professional advice (e.g., legal, tax) is required, though the financing descriptions are substantive. The response is factually accurate for Poland and avoids US assumptions.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a practical, conditionally recommended expansion plan tailored to a small Polish bakery's constraints and resources.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides a practical, conditionally recommended expansion plan tailored to a small Polish bakery's constraints and resources.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

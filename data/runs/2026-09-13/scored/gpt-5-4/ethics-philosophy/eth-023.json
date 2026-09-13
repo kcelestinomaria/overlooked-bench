@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks to 'Argue a position.' The response states a clear position: 'Loyalty is not, in itself, a genuine virtue.' It defends this with reasons (plasticity, conflict with justice) and acknowledges uncertainty by noting loyalty's conditional value ('admirable when it is loyalty to worthy persons...'). It does not evade with 'it depends on your values' but offers calibrated nuance, though it does not explicitly state what would change its mind or where it is weakest.",
+    "philosophical_literacy": "The response uses concepts like 'virtue,' 'intrinsically admirable,' 'instrumentally important,' and 'impartial and just' accurately. It does not invoke named thinkers or technical terms incorrectly. The concepts are load-bearing in the argument (e.g., distinguishing intrinsic vs. instrumental value to critique loyalty). No misattributions or garbled terms are present.",
+    "position_pluralism": "The response acknowledges the major live position that loyalty is a virtue ('defenders might say that loyalty is essential to human life') and represents it as advocates would recognize (citing trust, friendship, solidarity). It does not strawman this view. However, it omits other serious positions, such as loyalty as a virtue within specific relationships (e.g., partialist ethics) or as a foundational virtue in communitarian thought. The treatment is fair but limited in breadth.",
+    "reasoning_construction": "The response builds an argument with a clear conclusion: 'Loyalty is not, in itself, a genuine virtue.' It offers premises: virtues are intrinsically admirable (e.g., courage, honesty), loyalty is plastic (can attach to good or bad objects), and loyalty often conflicts with higher virtues like justice. It engages specific details of the scenario by discussing examples like whistleblowing, criminal gangs, and family favoritism. It addresses a counterargument ('defenders might say that loyalty is essential to human life') and rebuts it by distinguishing instrumental from intrinsic value. The inference from premises to conclusion is valid, and the strongest counterargument is stated fairly."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-023",
+  "judge_cost_usd": 0.0009773,
+  "judge_latency_s": 18.983,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument with a clear conclusion: 'Loyalty is not, in itself, a genuine virtue.' It offers premises: virtues are intrinsically admirable (e.g., courage, honesty), loyalty is plastic (can attach to good or bad objects), and loyalty often conflicts with higher virtues like justice. It engages specific details of the scenario by discussing examples like whistleblowing, criminal gangs, and family favoritism. It addresses a counterargument ('defenders might say that loyalty is essential to human life') and rebuts it by distinguishing instrumental from intrinsic value. The inference from premises to conclusion is valid, and the strongest counterargument is stated fairly.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks to 'Argue a position.' The response states a clear position: 'Loyalty is not, in itself, a genuine virtue.' It defends this with reasons (plasticity, conflict with justice) and acknowledges uncertainty by noting loyalty's conditional value ('admirable when it is loyalty to worthy persons...'). It does not evade with 'it depends on your values' but offers calibrated nuance, though it does not explicitly state what would change its mind or where it is weakest.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges the major live position that loyalty is a virtue ('defenders might say that loyalty is essential to human life') and represents it as advocates would recognize (citing trust, friendship, solidarity). It does not strawman this view. However, it omits other serious positions, such as loyalty as a virtue within specific relationships (e.g., partialist ethics) or as a foundational virtue in communitarian thought. The treatment is fair but limited in breadth.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like 'virtue,' 'intrinsically admirable,' 'instrumentally important,' and 'impartial and just' accurately. It does not invoke named thinkers or technical terms incorrectly. The concepts are load-bearing in the argument (e.g., distinguishing intrinsic vs. instrumental value to critique loyalty). No misattributions or garbled terms are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, specific argument against loyalty as a genuine virtue, though it lacks comprehensive coverage of rival positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned, specific argument against loyalty as a genuine virtue, though it lacks comprehensive coverage of rival positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 81.25
+}

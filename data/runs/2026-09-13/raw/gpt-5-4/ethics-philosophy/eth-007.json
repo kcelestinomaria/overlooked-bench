@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 678,
+  "cost_usd": 0.010385,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "9cc2c03c85186ccc",
+  "item_id": "eth-007",
+  "latency_s": 9.269,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 86,
+  "provider": "openai",
+  "request_fingerprint": "52a96e1df54094b2",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "She ought to keep trying to stop the harm, but in a way that minimizes new harm to herself and to others. In her specific situation, that most likely means: document everything, get confidential legal advice immediately, make one more targeted protected escalation through whatever regulator, ombuds, auditor, board committee, or protected whistleblower channel exists, and disclose only the minimum necessary to people who can act. Publicly “going nuclear” right now is not what she most likely ought to do first, because the cost to her is extreme and she has dependent parents; but doing nothing is also not acceptable if serious preventable harm is likely.\n\nA good practical ordering is:\n\n1. **Confirm the facts carefully**\n   - Make sure the flaw is real, material, and likely to cause serious financial harm, not just a speculative risk.\n   - Write a clear timeline: what the flaw is, who is affected, likelihood, severity, what she reported, to whom, and the responses.\n\n2. **Preserve evidence lawfully**\n   - Keep contemporaneous notes and retain documents she is legally allowed to keep.\n   - Do **not** steal broad datasets, customer information, or source code beyond what counsel says is necessary.\n\n3. **Get a lawyer experienced in whistleblower/employment law**\n   - Before any external disclosure.\n   - She needs advice on NDA limits, retaliation risk, protected disclosures, and whether there are safe channels where the NDA does not bar reporting.\n\n4. **Use protected external channels**\n   - Depending on the industry, that could be a regulator, financial authority, consumer protection agency, data protection authority, safety authority, external auditor, or the company’s board/audit committee.\n   - The aim is to reach actors who can stop the harm without forcing her into immediate public martyrdom.\n\n5. **Make one final internal escalation only if counsel advises it**\n   - Ideally in writing, narrowly framed around user harm, legal risk, and urgency.\n   - If prior escalation truly failed twice over eight months, she has already substantially met her internal duty.\n\n6. **Prepare for retaliation**\n   - Quietly stabilize finances, update résumé, seek allies, and plan for job loss.\n   - Her obligations to her parents matter morally; she is not required to choose recklessness.\n\n7. **Go public only if**\n   - the danger is serious and imminent,\n   - protected channels fail or are compromised,\n   - and public disclosure is the only realistic way to prevent the harm.\n   - Even then, disclose minimally and ideally through counsel or a responsible journalist/regulator, not via a broad indiscriminate dump.\n\nSo, **what ought she to do?**  \nShe ought **not** simply stay silent, and she also ought **not** impulsively break the NDA in public tomorrow. She ought to **pursue protected whistleblowing now**, with legal counsel, because preventing serious harm to users outweighs loyalty to the employer, but she may reasonably give significant weight to her own survival and her duty to support her parents. If all protected avenues fail and the harm remains likely and serious, then she may be morally justified—perhaps required—to make a carefully limited external disclosure despite the NDA.\n\nIn short: **escalate externally through protected lawful channels immediately; public exposure is a last resort, not the first.**",
+  "timestamp_utc": "2026-09-07T22:28:44Z"
+}

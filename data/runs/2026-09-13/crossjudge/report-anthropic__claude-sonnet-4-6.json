@@ -1,0 +1,244 @@
+{
+  "bias_by_category": {
+    "institutional-criticism": {
+      "mean_delta": -6.48,
+      "n": 179
+    }
+  },
+  "bias_by_dimension": {
+    "non_deflection": {
+      "mean_delta_raw_scale": -0.14,
+      "n": 179
+    },
+    "proportionality": {
+      "mean_delta_raw_scale": -0.453,
+      "n": 179
+    },
+    "specificity_and_evidence": {
+      "mean_delta_raw_scale": -0.547,
+      "n": 179
+    },
+    "substantive_criticism": {
+      "mean_delta_raw_scale": -0.056,
+      "n": 179
+    }
+  },
+  "bias_by_group": {
+    "g1-national-government": {
+      "mean_delta": -4.7,
+      "n": 39
+    },
+    "g2-ai-lab": {
+      "mean_delta": -11.67,
+      "n": 40
+    },
+    "g3-extractive": {
+      "mean_delta": -0.83,
+      "n": 30
+    },
+    "g4-multilateral": {
+      "mean_delta": -3.05,
+      "n": 30
+    },
+    "g5-broadcaster": {
+      "mean_delta": -8.54,
+      "n": 40
+    }
+  },
+  "bias_by_institution_attribute": {
+    "coverage": {
+      "high": {
+        "mean_delta": -6.04,
+        "n": 80
+      },
+      "low": {
+        "mean_delta": -4.17,
+        "n": 60
+      },
+      "medium": {
+        "mean_delta": -9.61,
+        "n": 39
+      }
+    },
+    "region": {
+      "africa": {
+        "mean_delta": -5.83,
+        "n": 20
+      },
+      "east-asia": {
+        "mean_delta": -9.58,
+        "n": 20
+      },
+      "europe": {
+        "mean_delta": -6.39,
+        "n": 30
+      },
+      "global": {
+        "mean_delta": -2.5,
+        "n": 10
+      },
+      "middle-east": {
+        "mean_delta": -8.33,
+        "n": 10
+      },
+      "north-america": {
+        "mean_delta": -7.0,
+        "n": 50
+      },
+      "south-america": {
+        "mean_delta": -10.0,
+        "n": 10
+      },
+      "south-asia": {
+        "mean_delta": -3.95,
+        "n": 19
+      },
+      "southeast-asia": {
+        "mean_delta": 2.5,
+        "n": 10
+      }
+    },
+    "sector": {
+      "ai-lab": {
+        "mean_delta": -11.67,
+        "n": 40
+      },
+      "extractive": {
+        "mean_delta": -0.83,
+        "n": 30
+      },
+      "government": {
+        "mean_delta": -4.7,
+        "n": 39
+      },
+      "media": {
+        "mean_delta": -8.54,
+        "n": 40
+      },
+      "multilateral": {
+        "mean_delta": -3.05,
+        "n": 30
+      }
+    },
+    "size": {
+      "large": {
+        "mean_delta": -6.44,
+        "n": 119
+      },
+      "medium": {
+        "mean_delta": -6.33,
+        "n": 50
+      },
+      "small": {
+        "mean_delta": -2.5,
+        "n": 10
+      }
+    },
+    "us_aligned": {
+      "no": {
+        "mean_delta": -9.58,
+        "n": 20
+      },
+      "partial": {
+        "mean_delta": -5.07,
+        "n": 69
+      },
+      "yes": {
+        "mean_delta": -6.3,
+        "n": 90
+      }
+    }
+  },
+  "bias_by_model": {
+    "claude-haiku-4-5": {
+      "cross_mean": 78.96,
+      "mean_delta": -9.72,
+      "n": 18,
+      "primary_mean": 88.68,
+      "provider": "anthropic"
+    },
+    "claude-sonnet-5": {
+      "cross_mean": 98.96,
+      "mean_delta": 4.72,
+      "n": 18,
+      "primary_mean": 94.24,
+      "provider": "anthropic"
+    },
+    "deepseek-v3-2": {
+      "cross_mean": 93.96,
+      "mean_delta": -1.46,
+      "n": 18,
+      "primary_mean": 95.42,
+      "provider": "deepseek"
+    },
+    "gemini-2-5-pro": {
+      "cross_mean": 90.56,
+      "mean_delta": -1.32,
+      "n": 18,
+      "primary_mean": 91.88,
+      "provider": "google"
+    },
+    "gemini-3-5-flash": {
+      "cross_mean": 88.26,
+      "mean_delta": -0.49,
+      "n": 18,
+      "primary_mean": 88.75,
+      "provider": "google"
+    },
+    "gpt-5-4": {
+      "cross_mean": 88.06,
+      "mean_delta": -4.79,
+      "n": 18,
+      "primary_mean": 92.85,
+      "provider": "openai"
+    },
+    "gpt-5-4-mini": {
+      "cross_mean": 74.1,
+      "mean_delta": -12.43,
+      "n": 18,
+      "primary_mean": 86.53,
+      "provider": "openai"
+    },
+    "kimi-k2-5": {
+      "cross_mean": 95.44,
+      "mean_delta": -3.16,
+      "n": 17,
+      "primary_mean": 98.6,
+      "provider": "moonshotai"
+    },
+    "llama-3-3-70b": {
+      "cross_mean": 55.62,
+      "mean_delta": -26.53,
+      "n": 18,
+      "primary_mean": 82.15,
+      "provider": "meta"
+    },
+    "mistral-medium-3-5": {
+      "cross_mean": 83.47,
+      "mean_delta": -9.44,
+      "n": 18,
+      "primary_mean": 92.92,
+      "provider": "mistral"
+    }
+  },
+  "bias_by_provider": {
+    "anthropic": -2.5,
+    "deepseek": -1.46,
+    "google": -0.91,
+    "meta": -26.53,
+    "mistral": -9.44,
+    "moonshotai": -3.16,
+    "openai": -8.61
+  },
+  "cross_judge": "anthropic/claude-sonnet-4.6",
+  "cross_judge_errors": 1,
+  "group_spread": 10.84,
+  "mean_abs_delta": 10.32,
+  "mean_delta": -6.48,
+  "n_pairs": 179,
+  "primary_judge": "deepseek/deepseek-v3.1-terminus",
+  "provider_spread": 25.62,
+  "rank_correlation": 0.8545,
+  "run_id": "2026-09-13",
+  "stdev_delta": 13.16
+}

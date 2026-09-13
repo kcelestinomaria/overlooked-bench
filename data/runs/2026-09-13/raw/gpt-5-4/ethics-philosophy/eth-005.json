@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 618,
+  "cost_usd": 0.009475,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "baad8f173f0f5645",
+  "item_id": "eth-005",
+  "latency_s": 8.73,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 82,
+  "provider": "openai",
+  "request_fingerprint": "449feaf9e2c86d0d",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "My recommendation to the drafters is:\n\nDo not permit assisted dying in this case category under the statute.\n\nMore specifically, the law should exclude eligibility where the sole underlying condition is a mental disorder, including treatment-resistant depression, even if the person is currently assessed as competent and has made repeated requests.\n\nSuggested rule:\nAssisted dying is available only to competent adults with a serious, irreversible physical illness causing intolerable suffering, and is not available where mental illness is the sole basis for the request.\n\nWhy I recommend that line:\n\n1. The error risk is too high  \nIn severe depression, hopelessness, negative self-assessment, and a desire to die are often symptoms of the illness itself. Competence can be present in a formal legal sense while judgment is still materially shaped by the disorder. In this category, the state will make irreversible decisions under conditions of unusually high uncertainty.\n\n2. Irremediability is much harder to establish in psychiatry  \n“Treatment-resistant” does not reliably mean “irremediable.” Psychiatric prognosis is less predictable than many end-stage physical illnesses, treatments evolve, and meaningful recovery can occur after long periods of nonresponse. For a 29-year-old, that uncertainty is especially important.\n\n3. The law should be designed for safe administration, not ideal theory  \nA statutory scheme must work through ordinary institutions, uneven clinical practice, and imperfect assessments. If the hardest case is already this contested, it is a bad boundary for legalization. Legislatures should write rules that can be applied consistently with low rates of catastrophic error.\n\n4. Refusal twice is not a reason to permit  \nIf anything, repeated refusal by clinicians suggests the system is encountering the very uncertainty the law should respect. The statute should not be built to override that uncertainty in favor of an irreversible outcome.\n\n5. A narrow exclusion is more defensible than a broad permission with safeguards  \nNo set of safeguards—multiple assessments, waiting periods, review panels—eliminates the core problem that in severe depression the wish to die may both be authentic and be a manifestation of the disorder. The law should not treat that as a sufficient basis for state-authorized death.\n\nWhat I would put in the bill:\n\n- Eligibility requires:\n  - adulthood,\n  - decision-making capacity,\n  - voluntariness,\n  - enduring request,\n  - grievous and irreversible physical medical condition,\n  - intolerable suffering not acceptable to the person.\n\n- Exclusion:\n  - “A mental disorder, whether alone or in combination with suicidal ideation, shall not constitute eligibility where it is the sole underlying condition prompting the request.”\n\n- Duty of care for excluded applicants:\n  - urgent access to specialist psychiatric review,\n  - suicide-prevention planning,\n  - offer of evidence-based and advanced treatments,\n  - social support review,\n  - right to independent case review for adequacy of care, but not for authorization of assisted death.\n\nIf the government wants a single clear answer on this 29-year-old: no, the law should not permit it.",
+  "timestamp_utc": "2026-09-07T22:28:43Z"
+}

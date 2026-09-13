@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for advice covering specific points. The response produces a comprehensive advisory document with sections on each requested element: whether trading can be done within the charity, when a subsidiary is needed, tax treatment, and trustee actions. It includes concrete components like exemption thresholds, tax rates, governance requirements, and a recommended structure diagram. The output could be taken into a board meeting with light editing; it is not merely a description of how to approach the task.",
+    "constraint_fidelity": "The prompt states the charity is in England and Wales with annual income GBP 320,000, wants to start trading to reduce grant dependence. The response respects all constraints: it correctly references England/Wales jurisdiction (Charities Act 2011, HMRC, VAT thresholds in GBP), uses the given income figure to calculate the small-scale exemption (£5,000 vs £80,000), and does not assume additional resources. It shows arithmetic for the exemption and VAT threshold. No constraints are ignored or violated.",
+    "contextual_realism": "The response is calibrated for a small charity with £320k income. It avoids assuming dedicated functions (e.g., recommends board review, not a legal team), focuses on practical steps like checking governing documents and obtaining insurance, acknowledges administrative costs of a subsidiary, and considers cash flow for VAT. It recognizes role overlap (trustees handling decisions) and does not propose tooling or process overhead beyond what such an organisation could manage. Small-organisation realities like reserves policy and risk management are addressed appropriately.",
+    "jurisdictional_accuracy": "The response is accurate for England and Wales, citing correct laws (Charities Act 2011, CTA 2010), regulatory bodies (Charity Commission, HMRC), and thresholds (VAT £85,000). It avoids US assumptions (no mention of 501(c)(3), UBIT, IRS). It provides substantive content on tax treatment and legal requirements, not just generic 'consult a lawyer' disclaimers. It flags where professional advice might be needed (e.g., VAT implications) but still gives specific guidance. All jurisdiction-specific claims appear correct."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00130354,
+  "judge_latency_s": 17.695,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states the charity is in England and Wales with annual income GBP 320,000, wants to start trading to reduce grant dependence. The response respects all constraints: it correctly references England/Wales jurisdiction (Charities Act 2011, HMRC, VAT thresholds in GBP), uses the given income figure to calculate the small-scale exemption (£5,000 vs £80,000), and does not assume additional resources. It shows arithmetic for the exemption and VAT threshold. No constraints are ignored or violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small charity with £320k income. It avoids assuming dedicated functions (e.g., recommends board review, not a legal team), focuses on practical steps like checking governing documents and obtaining insurance, acknowledges administrative costs of a subsidiary, and considers cash flow for VAT. It recognizes role overlap (trustees handling decisions) and does not propose tooling or process overhead beyond what such an organisation could manage. Small-organisation realities like reserves policy and risk management are addressed appropriately.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for advice covering specific points. The response produces a comprehensive advisory document with sections on each requested element: whether trading can be done within the charity, when a subsidiary is needed, tax treatment, and trustee actions. It includes concrete components like exemption thresholds, tax rates, governance requirements, and a recommended structure diagram. The output could be taken into a board meeting with light editing; it is not merely a description of how to approach the task.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for England and Wales, citing correct laws (Charities Act 2011, CTA 2010), regulatory bodies (Charity Commission, HMRC), and thresholds (VAT £85,000). It avoids US assumptions (no mention of 501(c)(3), UBIT, IRS). It provides substantive content on tax treatment and legal requirements, not just generic 'consult a lawyer' disclaimers. It flags where professional advice might be needed (e.g., VAT implications) but still gives specific guidance. All jurisdiction-specific claims appear correct.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is an excellent, jurisdictionally accurate, and actionable advisory document that fully respects the charity's constraints and context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response is an excellent, jurisdictionally accurate, and actionable advisory document that fully respects the charity's constraints and context.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

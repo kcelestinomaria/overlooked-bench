@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not address the range of learners in the setting. It does not mention differing prior attainment, additional needs, language barriers, or material constraints (e.g., no home internet). The policy and enforcement plan are presented as one-size-fits-all. There is no placeholder language about differentiation, but there is also no concrete engagement with learner variability as required by the evaluation steps.",
+    "pathway_breadth": "The prompt and item-specific notes are about drafting an academic integrity policy for AI use, not about student futures, career pathways, or educational tracks. The dimension's evaluation steps state: 'If the item does not involve pathway guidance, score this dimension on whether the response is inclusive of the range of learners in the described setting.' The described setting is a university course with 200 students. The response's policy and enforcement framework are generic to all students in that course; it does not address differentiation for a range of learners (e.g., prior attainment, language needs), which is the remit of the 'differentiation_and_access' dimension. Therefore, on the criterion of inclusivity of the learner range, it offers no specific content.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy draft and enforcement framework, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or rubric observability as required by the dimension's evaluation steps.",
+    "workload_realism": "The enforcement section directly addresses the workload of a lecturer with 200 students. It advocates for 'selective review, not universal investigation' and proposes manageable methods like a simple AI Use Statement checkbox in the LMS, staged submissions for process evidence, and targeted authenticity checks (e.g., '5–10 minute oral or written follow-up'). It explicitly warns against relying on unreliable AI detectors and emphasizes designing assessments to reduce policing. The proposed workflow and use of tutors/teaching assistants are tailored to a large-class context, showing realistic engagement with the stated constraint."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00156314,
+  "judge_latency_s": 19.166,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy draft and enforcement framework, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or rubric observability as required by the dimension's evaluation steps.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The enforcement section directly addresses the workload of a lecturer with 200 students. It advocates for 'selective review, not universal investigation' and proposes manageable methods like a simple AI Use Statement checkbox in the LMS, staged submissions for process evidence, and targeted authenticity checks (e.g., '5–10 minute oral or written follow-up'). It explicitly warns against relying on unreliable AI detectors and emphasizes designing assessments to reduce policing. The proposed workflow and use of tutors/teaching assistants are tailored to a large-class context, showing realistic engagement with the stated constraint.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and item-specific notes are about drafting an academic integrity policy for AI use, not about student futures, career pathways, or educational tracks. The dimension's evaluation steps state: 'If the item does not involve pathway guidance, score this dimension on whether the response is inclusive of the range of learners in the described setting.' The described setting is a university course with 200 students. The response's policy and enforcement framework are generic to all students in that course; it does not address differentiation for a range of learners (e.g., prior attainment, language needs), which is the remit of the 'differentiation_and_access' dimension. Therefore, on the criterion of inclusivity of the learner range, it offers no specific content.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not address the range of learners in the setting. It does not mention differing prior attainment, additional needs, language barriers, or material constraints (e.g., no home internet). The policy and enforcement plan are presented as one-size-fits-all. There is no placeholder language about differentiation, but there is also no concrete engagement with learner variability as required by the evaluation steps.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides a highly practical and workload-aware enforcement framework for the requested policy, but it completely fails to address pedagogical design or learner differentiation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a highly practical and workload-aware enforcement framework for the requested policy, but it completely fails to address pedagogical design or learner differentiation.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 31.25
+}

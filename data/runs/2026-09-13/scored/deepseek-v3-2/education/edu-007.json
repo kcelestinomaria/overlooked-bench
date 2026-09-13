@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a school communicating with parents of varying educational backgrounds. The 'learner range' in this context includes parents 'who did not complete secondary school themselves.' The response concretely addresses this by using plain language, avoiding jargon, and structuring information accessibly. It also addresses differentiation for students in the classroom context: 'extra support built in,' 'extra help is given right away,' 'hands-on tools, pictures, and real-life examples,' and targeted small-group work. These adaptations are presented as implementable by the teacher with support staff, not requiring unrealistic resources. It goes beyond placeholder language with specific examples.",
+    "pathway_breadth": "The prompt and response do not involve student futures or pathway guidance (e.g., vocational vs. academic routes). As per the rubric, for items where pathway guidance is not in scope, this dimension should be scored on 'whether the response is inclusive of the range of learners in the described setting.' The response explicitly addresses inclusivity for a range of learners: it discusses benefits for 'all students,' addresses worries for both children 'good at math' and those who 'struggle,' and mentions closing gaps for students from 'poorer families or certain backgrounds.' It is substantively inclusive of the described parent and student audience.",
+    "pedagogical_soundness": "The response does not present a specific lesson plan with stated learning objectives, activities, and assessments to evaluate alignment. It is a parent-facing communication explaining a pedagogical shift, not a teaching plan. Therefore, it cannot be scored on the criteria of objective-activity-assessment alignment, sequencing, or rubric design. It engages with pedagogical concepts (e.g., mixed-attainment teaching, peer learning) but not in the structured, evaluable way the dimension requires.",
+    "workload_realism": "The response does not describe a specific lesson or unit plan with timings, materials, or class size details for a practitioner to deliver. It mentions general classroom practices (e.g., 'teacher teaches the whole class together,' 'students work in small groups') and resource additions ('adding more support staff'), but these are not tied to a concrete plan with a stated period and resources. The dimension requires evaluating the feasibility of a specific instructional plan, which is not present."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00120392,
+  "judge_latency_s": 20.158,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a specific lesson plan with stated learning objectives, activities, and assessments to evaluate alignment. It is a parent-facing communication explaining a pedagogical shift, not a teaching plan. Therefore, it cannot be scored on the criteria of objective-activity-assessment alignment, sequencing, or rubric design. It engages with pedagogical concepts (e.g., mixed-attainment teaching, peer learning) but not in the structured, evaluable way the dimension requires.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a specific lesson or unit plan with timings, materials, or class size details for a practitioner to deliver. It mentions general classroom practices (e.g., 'teacher teaches the whole class together,' 'students work in small groups') and resource additions ('adding more support staff'), but these are not tied to a concrete plan with a stated period and resources. The dimension requires evaluating the feasibility of a specific instructional plan, which is not present.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and response do not involve student futures or pathway guidance (e.g., vocational vs. academic routes). As per the rubric, for items where pathway guidance is not in scope, this dimension should be scored on 'whether the response is inclusive of the range of learners in the described setting.' The response explicitly addresses inclusivity for a range of learners: it discusses benefits for 'all students,' addresses worries for both children 'good at math' and those who 'struggle,' and mentions closing gaps for students from 'poorer families or certain backgrounds.' It is substantively inclusive of the described parent and student audience.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a school communicating with parents of varying educational backgrounds. The 'learner range' in this context includes parents 'who did not complete secondary school themselves.' The response concretely addresses this by using plain language, avoiding jargon, and structuring information accessibly. It also addresses differentiation for students in the classroom context: 'extra support built in,' 'extra help is given right away,' 'hands-on tools, pictures, and real-life examples,' and targeted small-group work. These adaptations are presented as implementable by the teacher with support staff, not requiring unrealistic resources. It goes beyond placeholder language with specific examples.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a well-crafted, plain-language parent communication that effectively addresses concerns and explains the pedagogical shift, but it does not constitute a lesson plan for practitioner delivery.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a well-crafted, plain-language parent communication that effectively addresses concerns and explains the pedagogical shift, but it does not constitute a lesson plan for practitioner delivery.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

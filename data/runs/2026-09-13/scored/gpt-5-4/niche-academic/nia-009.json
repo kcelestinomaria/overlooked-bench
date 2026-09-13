@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for an explanation of a scholarly debate and the strongest arguments on each side. The response moves beyond a basic encyclopedic definition by engaging with the philosophical and methodological stakes (e.g., 'What counts as evidence?', 'epistemic irreducibility', 'theory-dependent evidence', 'decolonial concern'), contrasting ontological frameworks, and outlining specific arguments from public health and epistemic perspectives. It demonstrates familiarity with the internal scholarly debate and its theoretical underpinnings, not just a summary of facts. A specialist would recognize this as a competent engagement with the debate's depth.",
+    "domain_accuracy": "The response makes substantive factual claims about Ayurvedic rasashastra, including key terms (bhasma, rasaushadhi, shodhana, marana, guna, virya, vipaka, prabhava, dosha, agni), the debate's core positions, and arguments. All terms and conceptual descriptions are accurate and reflect genuine aspects of Ayurvedic scholarship and the contemporary interdisciplinary debate. No invented citations, terms, or consensus are presented. The claims are load-bearing and correct.",
+    "field_situatedness": "The question is about Ayurvedic rasashastra, a domain within Indian medical and philosophical traditions. The response correctly uses and explains key Sanskrit terminology central to the field (e.g., rasashastra, bhasma, shodhana, marana, dosha, guna) and frames the debate within Ayurvedic epistemic concepts. It does not silently substitute a Western biomedical framework as the sole lens; instead, it explicitly contrasts the Ayurvedic system with modern pharmacology as part of the debate. The framing remains situated in the interdisciplinary conversation about Ayurveda.",
+    "scholarly_calibration": "The response accurately distinguishes between contested and more established aspects. It presents the debate as a genuine disagreement ('The deepest fault line'), outlines two opposing positions without presenting either as settled fact, and offers a 'balanced synthesis' as a middle ground adopted by 'many scholars and practitioners.' It does not make uniform confidence claims; instead, it frames arguments as belonging to specific sides. There is no blanket disclaimer. The calibration is specific and reflects the contested state of the field."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00120607,
+  "judge_latency_s": 20.233,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims about Ayurvedic rasashastra, including key terms (bhasma, rasaushadhi, shodhana, marana, guna, virya, vipaka, prabhava, dosha, agni), the debate's core positions, and arguments. All terms and conceptual descriptions are accurate and reflect genuine aspects of Ayurvedic scholarship and the contemporary interdisciplinary debate. No invented citations, terms, or consensus are presented. The claims are load-bearing and correct.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for an explanation of a scholarly debate and the strongest arguments on each side. The response moves beyond a basic encyclopedic definition by engaging with the philosophical and methodological stakes (e.g., 'What counts as evidence?', 'epistemic irreducibility', 'theory-dependent evidence', 'decolonial concern'), contrasting ontological frameworks, and outlining specific arguments from public health and epistemic perspectives. It demonstrates familiarity with the internal scholarly debate and its theoretical underpinnings, not just a summary of facts. A specialist would recognize this as a competent engagement with the debate's depth.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately distinguishes between contested and more established aspects. It presents the debate as a genuine disagreement ('The deepest fault line'), outlines two opposing positions without presenting either as settled fact, and offers a 'balanced synthesis' as a middle ground adopted by 'many scholars and practitioners.' It does not make uniform confidence claims; instead, it frames arguments as belonging to specific sides. There is no blanket disclaimer. The calibration is specific and reflects the contested state of the field.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Ayurvedic rasashastra, a domain within Indian medical and philosophical traditions. The response correctly uses and explains key Sanskrit terminology central to the field (e.g., rasashastra, bhasma, shodhana, marana, dosha, guna) and frames the debate within Ayurvedic epistemic concepts. It does not silently substitute a Western biomedical framework as the sole lens; instead, it explicitly contrasts the Ayurvedic system with modern pharmacology as part of the debate. The framing remains situated in the interdisciplinary conversation about Ayurveda.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates a sophisticated, accurate, and well-calibrated understanding of the scholarly debate, articulating strong arguments from both sides with appropriate field-specific terminology.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates a sophisticated, accurate, and well-calibrated understanding of the scholarly debate, articulating strong arguments from both sides with appropriate field-specific terminology.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

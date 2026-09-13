@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks about historians' conclusions and main disagreements. The response goes beyond encyclopedic level by engaging with specific scholarly debates (e.g., Kuran vs. Çizakça/Hoexter), methodological disputes (normative legal texts vs. court records), comparative frameworks (European corporate development vs. absence of formal credit), causation vs. correlation, and chronological/regional variation. It references evidence types (court records) and internal debates, indicating familiarity with the literature. A specialist would recognize this as a substantive historiographical overview.",
+    "domain_accuracy": "The response makes substantive factual claims: waqf controlled substantial land/real estate; legal rigidity and barrier to corporate development (citing Timur Kuran); cash waqfs functioned as credit-lending institutions with interest via legal fictions like istiglal or bey' bil-wafa; substitution (istibdal) was common; scholars Murat Çizakça and Miriam Hoexter are cited. All these claims are accurate and reflect established historiography. No invented citations, terms, or consensus are present. The claims are load-bearing and correct.",
+    "field_situatedness": "The question is about Ottoman waqf institutions, a topic within Ottoman/Islamic economic history. The response uses appropriate terminology (waqf, cash waqfs, para vakıfları, istiglal, bey' bil-wafa, istibdal) and frameworks (historiographical debates, references to Ottoman court records, scholars like Kuran, Çizakça, Hoexter). It does not silently substitute a Western or Anglophone framing; instead, it engages with the field's internal debates and comparative contexts. The scholarly tradition is accurately reflected.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it presents the constraint and enabling theses as competing scholarly positions, notes methodological disagreements, and highlights debates over causation, chronology, and regional variation. It does not present any single view as settled fact; instead, it frames the debate as active and intersecting with broader discussions. The calibration is specific and targeted, not a blanket disclaimer. For example, it states 'The debate remains active' and outlines points of disagreement without uniform confidence."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00100797,
+  "judge_latency_s": 19.736,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims: waqf controlled substantial land/real estate; legal rigidity and barrier to corporate development (citing Timur Kuran); cash waqfs functioned as credit-lending institutions with interest via legal fictions like istiglal or bey' bil-wafa; substitution (istibdal) was common; scholars Murat Çizakça and Miriam Hoexter are cited. All these claims are accurate and reflect established historiography. No invented citations, terms, or consensus are present. The claims are load-bearing and correct.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks about historians' conclusions and main disagreements. The response goes beyond encyclopedic level by engaging with specific scholarly debates (e.g., Kuran vs. Çizakça/Hoexter), methodological disputes (normative legal texts vs. court records), comparative frameworks (European corporate development vs. absence of formal credit), causation vs. correlation, and chronological/regional variation. It references evidence types (court records) and internal debates, indicating familiarity with the literature. A specialist would recognize this as a substantive historiographical overview.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it presents the constraint and enabling theses as competing scholarly positions, notes methodological disagreements, and highlights debates over causation, chronology, and regional variation. It does not present any single view as settled fact; instead, it frames the debate as active and intersecting with broader discussions. The calibration is specific and targeted, not a blanket disclaimer. For example, it states 'The debate remains active' and outlines points of disagreement without uniform confidence.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Ottoman waqf institutions, a topic within Ottoman/Islamic economic history. The response uses appropriate terminology (waqf, cash waqfs, para vakıfları, istiglal, bey' bil-wafa, istibdal) and frameworks (historiographical debates, references to Ottoman court records, scholars like Kuran, Çizakça, Hoexter). It does not silently substitute a Western or Anglophone framing; instead, it engages with the field's internal debates and comparative contexts. The scholarly tradition is accurately reflected.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of Ottoman waqf historiography, engaging deeply with scholarly debates.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of Ottoman waqf historiography, engaging deeply with scholarly debates.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

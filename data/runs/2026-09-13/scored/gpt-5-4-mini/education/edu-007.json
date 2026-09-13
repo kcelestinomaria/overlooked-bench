@@ -1,0 +1,34 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a school moving to mixed-attainment teaching, implying a range of learner abilities in one class. The response concretely addresses this range by listing how teachers will adapt: 'asking different questions, giving different levels of support, using activities that can be tackled in different ways, helping children move on when they are ready.' It states 'No child will be held back, and no child will be left behind.' These are specific, low-cost strategies implementable by one teacher. It avoids generic placeholder language.",
+    "pathway_breadth": "The item does not involve student futures, career guidance, or academic/vocational pathways. The prompt is about explaining a teaching methodology change to parents. Therefore, as per the rubric note, this dimension is scored on 'whether the response is inclusive of the range of learners in the described setting.' The response explicitly addresses teaching children 'with a range of starting points' and ensuring work is suitable for each child, showing inclusivity for the learner range implied by mixed-attainment teaching. It is substantive and specific to the setting.",
+    "pedagogical_soundness": "The response does not present a lesson plan with stated learning objectives, activities, assessments, or rubrics. It is a parent-facing explanation about a pedagogical shift, not a pedagogical design itself. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or observable rubric criteria. It engages with the concept of mixed-attainment teaching but not in the way this dimension requires.",
+    "workload_realism": "The response does not describe a lesson or unit plan with timings, materials, preparation, or marking loads for a practitioner to deliver. It is a communication document for parents. Therefore, it cannot be evaluated for the sum of activity timings, availability of materials, or feasibility for a teacher's timetable and class size."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00098309,
+  "judge_latency_s": 18.294,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with stated learning objectives, activities, assessments, or rubrics. It is a parent-facing explanation about a pedagogical shift, not a pedagogical design itself. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or observable rubric criteria. It engages with the concept of mixed-attainment teaching but not in the way this dimension requires.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a lesson or unit plan with timings, materials, preparation, or marking loads for a practitioner to deliver. It is a communication document for parents. Therefore, it cannot be evaluated for the sum of activity timings, availability of materials, or feasibility for a teacher's timetable and class size.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures, career guidance, or academic/vocational pathways. The prompt is about explaining a teaching methodology change to parents. Therefore, as per the rubric note, this dimension is scored on 'whether the response is inclusive of the range of learners in the described setting.' The response explicitly addresses teaching children 'with a range of starting points' and ensuring work is suitable for each child, showing inclusivity for the learner range implied by mixed-attainment teaching. It is substantive and specific to the setting.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a school moving to mixed-attainment teaching, implying a range of learner abilities in one class. The response concretely addresses this range by listing how teachers will adapt: 'asking different questions, giving different levels of support, using activities that can be tackled in different ways, helping children move on when they are ready.' It states 'No child will be held back, and no child will be left behind.' These are specific, low-cost strategies implementable by one teacher. It avoids generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a well-structured, plain-language parent communication that addresses concerns and explains the pedagogical shift, but it does not constitute a lesson plan for practitioner use.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is a well-structured, plain-language parent communication that addresses concerns and explains the pedagogical shift, but it does not constitute a lesson plan for practitioner use.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 229,
+  "cost_usd": 0.0007542,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 3.658,
+  "methodology_version": "m1.0.0",
+  "model_id": "moonshotai/kimi-k2.5",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "prompt_tokens": 112,
+  "provider": "moonshotai",
+  "request_fingerprint": "cf76fbf9f9e142e2",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "moonshotai/kimi-k2.5",
+    "temperature": 0.0
+  },
+  "text": " I need to find the total revenue from selling coffee cherries after drying and grading.\n\n## Step 1: Calculate mass after drying\nMass lost during drying: 15% of 4,800 kg = 0.15 × 4,800 = 720 kg\n\nDried coffee remaining: 4,800 − 720 = **4,080 kg**\n\n## Step 2: Calculate amounts of each grade\nGrade AA (40%): 0.40 × 4,080 = **1,632 kg**\n\nOther grade (60%): 0.60 × 4,080 = **2,448 kg**\n\n## Step 3: Calculate revenue from each grade\nRevenue from Grade AA: 1,632 × $6.20 = $10,118.40\n\nRevenue from other grade: 2,448 × $4.50 = $11,016.00\n\n## Step 4: Calculate total revenue\nTotal revenue = $10,118.40 + $11,016.00 = **$21,134.40**\n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-09-07T22:42:38Z"
+}

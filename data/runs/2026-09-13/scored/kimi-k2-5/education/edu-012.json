@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the learner range (children acquiring French with different home languages) with specific, low-cost strategies implementable by one teacher: 'Visual and Concrete Supports', 'Structured, Predictable Language', 'Differentiated Output Expectations' (e.g., 'Accept non-verbal, drawn, or partially French responses'), and 'Peer and Collaborative Learning'. It avoids generic placeholder language and provides actionable ideas that do not require a second adult or knowledge of home languages, aligning with the setting constraints.",
+    "pathway_breadth": "The prompt and item-specific notes are about supporting multilingual learners in a classroom, not about student futures or educational pathways. As per the rubric, for items not involving pathway guidance, this dimension is scored on 'whether the response is inclusive of the range of learners in the described setting'. The response explicitly addresses students with home languages of Arabic, Spanish, and Tagalog in a French-instruction context, treating home language as an asset and offering strategies for this range. It is inclusive of the described learner range.",
+    "pedagogical_soundness": "The response does not present a specific lesson plan with stated learning objectives, activities, and aligned assessments. It provides general teaching strategies (e.g., 'Use images, gestures...', 'Differentiated Output Expectations') but lacks explicit learning objectives, a sequence of activities, or assessments to evaluate alignment and cognitive demand. Therefore, it cannot be scored on the pedagogical soundness criteria as defined in the evaluation steps.",
+    "workload_realism": "The strategies listed ('Use images, gestures...', 'Label classroom objects', 'Pair students with supportive French-speaking peers') are generally low-cost and implementable by one teacher with no assistant, using available materials. The briefing does not specify detailed timings or materials that conflict with the setting. It is a one-page briefing of principles and strategies, not a detailed lesson plan with timed activities, so workload realism in terms of summing timings is not directly applicable, but the suggestions appear feasible for the described context."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.0009131,
+  "judge_latency_s": 18.231,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a specific lesson plan with stated learning objectives, activities, and aligned assessments. It provides general teaching strategies (e.g., 'Use images, gestures...', 'Differentiated Output Expectations') but lacks explicit learning objectives, a sequence of activities, or assessments to evaluate alignment and cognitive demand. Therefore, it cannot be scored on the pedagogical soundness criteria as defined in the evaluation steps.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The strategies listed ('Use images, gestures...', 'Label classroom objects', 'Pair students with supportive French-speaking peers') are generally low-cost and implementable by one teacher with no assistant, using available materials. The briefing does not specify detailed timings or materials that conflict with the setting. It is a one-page briefing of principles and strategies, not a detailed lesson plan with timed activities, so workload realism in terms of summing timings is not directly applicable, but the suggestions appear feasible for the described context.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and item-specific notes are about supporting multilingual learners in a classroom, not about student futures or educational pathways. As per the rubric, for items not involving pathway guidance, this dimension is scored on 'whether the response is inclusive of the range of learners in the described setting'. The response explicitly addresses students with home languages of Arabic, Spanish, and Tagalog in a French-instruction context, treating home language as an asset and offering strategies for this range. It is inclusive of the described learner range.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the learner range (children acquiring French with different home languages) with specific, low-cost strategies implementable by one teacher: 'Visual and Concrete Supports', 'Structured, Predictable Language', 'Differentiated Output Expectations' (e.g., 'Accept non-verbal, drawn, or partially French responses'), and 'Peer and Collaborative Learning'. It avoids generic placeholder language and provides actionable ideas that do not require a second adult or knowledge of home languages, aligning with the setting constraints.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a practical, asset-focused briefing with specific, implementable strategies for a teacher in the given Quebec context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response is a practical, asset-focused briefing with specific, implementable strategies for a teacher in the given Quebec context.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 63.75
+}

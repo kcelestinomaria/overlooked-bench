@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1188,
+  "cost_usd": 0.01221,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "cd0663c047864a97",
+  "item_id": "eth-001",
+  "latency_s": 20.36,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 165,
+  "provider": "anthropic",
+  "request_fingerprint": "7abf916544887770",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# The Decision\n\n**Patient A should receive the machine**, though this is a genuinely hard case, not an easy one.\n\n## The Case for Patient A\n\nAbsent a formal allocation policy, the clinic still needs a defensible principle, not just a coin flip or first-come-first-served default. I'd weigh three factors:\n\n1. **Prognosis is close enough that it shouldn't be dispositive alone.** 80% vs. 60% five-year survival is a real difference, but both are substantial — this isn't a case of one patient likely to die on the machine within months. When survival odds are both reasonably good, other ethically relevant factors properly enter the calculus.\n\n2. **Dependents create third-party stakes.** This isn't just about maximizing one patient's welfare against another's. Four people's wellbeing — plausibly their food security, housing stability, and future prospects — hang on Patient A's survival in a way that has no analogue for Patient B. Utilitarian calculus that only counts patient-years of survival misses this; a fuller accounting of consequences has to include dependents.\n\n3. **Age as a tiebreaker, not a verdict.** Patient A is 34; a longer remaining life course, if the treatment succeeds, means more total years of life and (given the survival odds) a reasonable expectation of raising those dependents to independence. This is the \"fair innings\" consideration — not that Patient B's life matters less, but that equalizing life-years across people has some ethical pull when other factors are close.\n\nNone of these factors is individually decisive. Together, they tip a genuinely close call toward A.\n\n## The Strongest Objection\n\n**Using dependents as a criterion punishes Patient B for something outside her control (not having a family) and imports social worth judgments into medical allocation — exactly the kind of criterion medical ethics has historically warned against (cf. the 1960s Seattle \"God Committee,\" which used social-worth criteria and is now widely regarded as a cautionary tale, not a model).** If clinics start asking \"whose death would hurt society more,\" we head toward valuing people by earning potential, family structure, or perceived social utility — a road that predictably discriminates against the elderly, disabled, unemployed, and childless in ways we should resist. Patient B didn't choose to live alone; treating that as a strike against her survival claim is troubling.\n\n## Why I Hold the Position Anyway\n\nI take this objection seriously enough that I wouldn't want \"social worth\" as a *general* clinic policy — it's too easily abused and too corrosive to the principle that medicine treats patients, not resumes.\n\nBut there's a difference between **social worth as a global ranking principle** and **dependents as one narrow, ethically relevant fact in a genuinely tied case**. The dependents aren't a proxy for A being a \"better person\" — they're four identifiable people whose welfare is causally tied to this specific decision. Ignoring that isn't neutrality; it's just a different substantive choice about what counts as a morally relevant consequence.\n\nThe honest caveat: this argument only holds because prognosis was *close*. If Patient B's survival odds were 80% against Patient A's 30%, I'd allocate to B despite the dependents — prognosis should dominate when the gap is large enough, and dependents should only function as a tiebreaker among otherwise comparable medical cases, not as a trump card against large differences in expected benefit.\n\nThe deeper admission: reasonable people who weight \"avoid social-worth reasoning\" more heavily than I do would land on B, or on a lottery. I don't think I can fully refute that position — I think I'm making a defensible judgment call under real moral uncertainty, not discovering a uniquely correct answer.",
+  "timestamp_utc": "2026-09-07T22:24:01Z"
+}

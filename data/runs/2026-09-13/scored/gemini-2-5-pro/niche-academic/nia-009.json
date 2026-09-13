@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the debate and strongest arguments on each side. The response goes beyond encyclopedic summary by engaging with methodological and epistemic tensions: it contrasts reductionist vs. holistic validation, discusses standardization vs. personalized application, and mentions specific concepts like synergistic holism, anupanas, and the irreducibility of process. It references internal scholarly debates (e.g., safety vs. epistemic integrity) and proposes a middle ground ('Ayurvedic biology'). A specialist would recognize this as a substantive engagement with the debate, not just a summary of a summary.",
+    "domain_accuracy": "The response makes substantive claims about Rasashastra: defines it as 'the science of mercury' and other materials, mentions processes like shodhana and marana, and describes bhasmas. It correctly identifies the debate's core tension between reductionist pharmacology and holistic Ayurvedic epistemology. It does not invent citations, technical terms, or consensus. All claims align with standard scholarly descriptions of the field. No factual errors are present.",
+    "field_situatedness": "The question is about Ayurvedic Rasashastra, a traditional Indian medical system. The response uses appropriate terminology from that tradition: Rasashastra, samskaras, shodhana, marana, bhasmas, Tridosha, Vata/Pitta/Kapha, Prakriti, Vikriti, anupanas. It frames the debate within Ayurvedic concepts and does not silently substitute a Western biomedical framework as the only valid perspective; instead, it contrasts the frameworks explicitly. The response is firmly situated in the Ayurvedic scholarly tradition.",
+    "scholarly_calibration": "The response accurately calibrates confidence levels. It presents the pharmacological safety argument as a priority but not as settled fact, noting the need for proof. It presents the epistemic system view as a coherent alternative, not as proven. It distinguishes between what is claimed by each side (e.g., 'Ayurveda argues that...') and does not present contested points as settled. It concludes by noting the 'fundamental clash' and a 'potential middle ground,' signaling ongoing debate. There is no blanket disclaimer; calibration is specific to each argument's evidential status."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00122381,
+  "judge_latency_s": 20.097,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about Rasashastra: defines it as 'the science of mercury' and other materials, mentions processes like shodhana and marana, and describes bhasmas. It correctly identifies the debate's core tension between reductionist pharmacology and holistic Ayurvedic epistemology. It does not invent citations, technical terms, or consensus. All claims align with standard scholarly descriptions of the field. No factual errors are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the debate and strongest arguments on each side. The response goes beyond encyclopedic summary by engaging with methodological and epistemic tensions: it contrasts reductionist vs. holistic validation, discusses standardization vs. personalized application, and mentions specific concepts like synergistic holism, anupanas, and the irreducibility of process. It references internal scholarly debates (e.g., safety vs. epistemic integrity) and proposes a middle ground ('Ayurvedic biology'). A specialist would recognize this as a substantive engagement with the debate, not just a summary of a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates confidence levels. It presents the pharmacological safety argument as a priority but not as settled fact, noting the need for proof. It presents the epistemic system view as a coherent alternative, not as proven. It distinguishes between what is claimed by each side (e.g., 'Ayurveda argues that...') and does not present contested points as settled. It concludes by noting the 'fundamental clash' and a 'potential middle ground,' signaling ongoing debate. There is no blanket disclaimer; calibration is specific to each argument's evidential status.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Ayurvedic Rasashastra, a traditional Indian medical system. The response uses appropriate terminology from that tradition: Rasashastra, samskaras, shodhana, marana, bhasmas, Tridosha, Vata/Pitta/Kapha, Prakriti, Vikriti, anupanas. It frames the debate within Ayurvedic concepts and does not silently substitute a Western biomedical framework as the only valid perspective; instead, it contrasts the frameworks explicitly. The response is firmly situated in the Ayurvedic scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates a thorough, accurate, and well-calibrated understanding of the scholarly debate, using appropriate field-specific terminology and engaging with both sides substantively.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response demonstrates a thorough, accurate, and well-calibrated understanding of the scholarly debate, using appropriate field-specific terminology and engaging with both sides substantively.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

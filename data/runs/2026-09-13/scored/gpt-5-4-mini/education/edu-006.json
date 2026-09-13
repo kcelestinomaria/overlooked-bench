@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the range of learners, particularly SEND and lower-attaining pupils, by specifying protections (e.g., 'protect one-to-one and EHCP-funded provision') and harms from cuts (e.g., 'Risks widening attainment gaps'). It proposes low-cost, implementable mitigations like prioritizing interventions by need, which one practitioner could manage without requiring additional adults. It avoids generic placeholder language.",
+    "pathway_breadth": "The item is about staffing budget cuts for a primary school, not student futures or educational pathways. The response is inclusive of the range of learners in the setting by explicitly addressing impacts on vulnerable pupils (e.g., SEND, disadvantaged) and proposing mitigations to protect their support, thus engaging with the learner range.",
+    "pedagogical_soundness": "The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response provides specific options with estimated savings (e.g., '£30,000–£50,000' from reducing TA hours) and explicitly respects the class-size constraint of 30. It considers the school's typical staffing structure and operational realities, such as protecting SEND support and leadership capacity. The proposed blended package sums to the required £80,000 saving and is framed as implementable within the school's context, addressing preparation and impact risks."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00131525,
+  "judge_latency_s": 15.813,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides specific options with estimated savings (e.g., '£30,000–£50,000' from reducing TA hours) and explicitly respects the class-size constraint of 30. It considers the school's typical staffing structure and operational realities, such as protecting SEND support and leadership capacity. The proposed blended package sums to the required £80,000 saving and is framed as implementable within the school's context, addressing preparation and impact risks.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item is about staffing budget cuts for a primary school, not student futures or educational pathways. The response is inclusive of the range of learners in the setting by explicitly addressing impacts on vulnerable pupils (e.g., SEND, disadvantaged) and proposing mitigations to protect their support, thus engaging with the learner range.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the range of learners, particularly SEND and lower-attaining pupils, by specifying protections (e.g., 'protect one-to-one and EHCP-funded provision') and harms from cuts (e.g., 'Risks widening attainment gaps'). It proposes low-cost, implementable mitigations like prioritizing interventions by need, which one practitioner could manage without requiring additional adults. It avoids generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, realistic options paper that meets the budget constraint while explicitly protecting vulnerable learners and respecting class-size limits.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a detailed, realistic options paper that meets the budget constraint while explicitly protecting vulnerable learners and respecting class-size limits.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 63.75
+}

@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific analytical problems and scholarly alternatives in ethnomusicology. It discusses methodology (e.g., how Western notation distorts gamelan's tuning and rhythm), evidence (e.g., citing cipher notation and indigenous concepts), and internal debates (e.g., shifting from harmony-based analysis to local categories). A specialist would recognize this as informed by the literature, not just a summary of summaries, as it details functional transcription and hybrid approaches that reflect current scholarly practice.",
+    "domain_accuracy": "The response makes substantive claims that are correct: it accurately identifies problems with Western staff notation for gamelan (e.g., fixed pitch assumptions, misrepresentation of interval structure, rhythm distortions, overemphasis on discrete works, marginalization of timbre, and difficulty capturing polyphonic layering) and lists valid alternatives (cipher notation/kepatihan, indigenous theoretical categories like balungan and colotomic structure, multi-layered transcription, graphic representations, audio-based analysis, and hybrid methods). It uses proper terminology (sléndro, pélog, colotomic cycles, pathet) without inventing citations or consensus. No factual errors or fabrications are evident.",
+    "field_situatedness": "The response correctly uses the frameworks and terminology of ethnomusicology and gamelan studies, not substituting a Western or Anglophone framing. It employs indigenous concepts (sléndro, pélog, balungan, colotomic structure, pathet) and cites specific notation systems (kepatihan). The analysis is situated within the field's scholarly tradition, focusing on non-Western musical logic and avoiding silent substitution with dominant adjacent fields like Western music theory.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points accurately. It presents problems as inherent to Western notation (e.g., 'fixed pitch assumptions' are presented as settled issues) and alternatives as proposed solutions (e.g., 'scholars have proposed analyzing gamelan through local concepts'), without overstating consensus. It does not use blanket disclaimers but offers specific calibration, such as noting that cipher notation 'still does not capture everything.' No contested points are presented as settled fact, and evidential status is appropriately signaled."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00106189,
+  "judge_latency_s": 20.286,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are correct: it accurately identifies problems with Western staff notation for gamelan (e.g., fixed pitch assumptions, misrepresentation of interval structure, rhythm distortions, overemphasis on discrete works, marginalization of timbre, and difficulty capturing polyphonic layering) and lists valid alternatives (cipher notation/kepatihan, indigenous theoretical categories like balungan and colotomic structure, multi-layered transcription, graphic representations, audio-based analysis, and hybrid methods). It uses proper terminology (sléndro, pélog, colotomic cycles, pathet) without inventing citations or consensus. No factual errors or fabrications are evident.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific analytical problems and scholarly alternatives in ethnomusicology. It discusses methodology (e.g., how Western notation distorts gamelan's tuning and rhythm), evidence (e.g., citing cipher notation and indigenous concepts), and internal debates (e.g., shifting from harmony-based analysis to local categories). A specialist would recognize this as informed by the literature, not just a summary of summaries, as it details functional transcription and hybrid approaches that reflect current scholarly practice.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points accurately. It presents problems as inherent to Western notation (e.g., 'fixed pitch assumptions' are presented as settled issues) and alternatives as proposed solutions (e.g., 'scholars have proposed analyzing gamelan through local concepts'), without overstating consensus. It does not use blanket disclaimers but offers specific calibration, such as noting that cipher notation 'still does not capture everything.' No contested points are presented as settled fact, and evidential status is appropriately signaled.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses the frameworks and terminology of ethnomusicology and gamelan studies, not substituting a Western or Anglophone framing. It employs indigenous concepts (sléndro, pélog, balungan, colotomic structure, pathet) and cites specific notation systems (kepatihan). The analysis is situated within the field's scholarly tradition, focusing on non-Western musical logic and avoiding silent substitution with dominant adjacent fields like Western music theory.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of ethnomusicological issues in gamelan transcription.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of ethnomusicological issues in gamelan transcription.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is advice for a specific student, not a teaching plan for a range of learners. It does not address differentiation for differing prior attainment, additional needs, language barriers, or material constraints in a classroom setting. It does not engage with the dimension of differentiation and access.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Duale Ausbildung (with specific trades, salary, and progression), Fachoberschule (with details on duration and purpose), Gymnasiale Oberstufe, and a 'third way' combining Ausbildung and later study. It treats non-degree options (Ausbildung) substantively with real entry routes, duration, pay, and progression, not as an afterthought. It addresses the parents' preference honestly and structures are correct for Germany. It gives equal weight and detail to each option, avoiding treating Abitur as the goal and vocational as a fallback.",
+    "pedagogical_soundness": "The response is not a pedagogical plan but advice. It does not state learning objectives, activities, assessments, or sequencing. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response is advice, not a delivery plan for a practitioner. It does not involve activity timings, materials, preparation, marking, or class size. It does not engage with the dimension of workload realism."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00098144,
+  "judge_latency_s": 14.971,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a pedagogical plan but advice. It does not state learning objectives, activities, assessments, or sequencing. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advice, not a delivery plan for a practitioner. It does not involve activity timings, materials, preparation, marking, or class size. It does not engage with the dimension of workload realism.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Duale Ausbildung (with specific trades, salary, and progression), Fachoberschule (with details on duration and purpose), Gymnasiale Oberstufe, and a 'third way' combining Ausbildung and later study. It treats non-degree options (Ausbildung) substantively with real entry routes, duration, pay, and progression, not as an afterthought. It addresses the parents' preference honestly and structures are correct for Germany. It gives equal weight and detail to each option, avoiding treating Abitur as the goal and vocational as a fallback.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is advice for a specific student, not a teaching plan for a range of learners. It does not address differentiation for differing prior attainment, additional needs, language barriers, or material constraints in a classroom setting. It does not engage with the dimension of differentiation and access.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides excellent, balanced pathway advice for the German student but does not address pedagogical, workload, or differentiation dimensions as they are not applicable to this advisory task.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides excellent, balanced pathway advice for the German student but does not address pedagogical, workload, or differentiation dimensions as they are not applicable to this advisory task.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

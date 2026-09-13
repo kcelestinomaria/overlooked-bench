@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific agronomic and mechanization details. It discusses methods like row planting vs. broadcasting, seed coating/pelleting, improved seeders/drills, small-scale harvesters/threshers, and agronomic innovations (e.g., lodging-resistant varieties, fertilizer management). It addresses why standard machinery fails and the limitations of attempted solutions (e.g., 'partial success,' 'grain losses,' 'clogging'). A specialist would recognize this as informed by technical literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes substantive claims about teff's agronomic constraints (e.g., very small seed size, shallow planting depth, lodging susceptibility, weed sensitivity) and mechanization challenges (e.g., standard cereal machinery designed for wheat/barley/maize/rice performs poorly, issues with seed drills, combines, threshers). These claims are factually correct and align with established agronomic literature on teff. No invented citations, terms, or consensus are presented. The details are accurate and load-bearing for the answer.",
+    "field_situatedness": "The response uses appropriate agronomic and agricultural engineering terminology (e.g., 'seed drills,' 'lodging,' 'threshers,' 'seedbed preparation,' 'broadcasting,' 'row planting') and focuses on teff-specific constraints without substituting a Western framing. It correctly situates teff as an Ethiopian cereal and addresses mechanization challenges relative to standard cereal machinery. There is no silent substitution of an Anglophone adjacent field; it remains grounded in crop science and agricultural mechanization relevant to teff.",
+    "scholarly_calibration": "The response distinguishes between established constraints and attempted solutions, with calibrated language. For example, it notes modified sowing equipment has had 'only partial success,' performance of harvesters/threshers has been 'limited by' specific factors, and 'full mechanization remains challenging.' It does not present contested points as settled (e.g., seed pelleting is described as exploratory work). However, it lacks explicit signaling of evidential status differences (e.g., which constraints are most robustly documented vs. more debated). The calibration is present but not highly specific, leaning toward general accuracy without nuanced uncertainty."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-006",
+  "judge_cost_usd": 0.00103387,
+  "judge_latency_s": 20.888,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about teff's agronomic constraints (e.g., very small seed size, shallow planting depth, lodging susceptibility, weed sensitivity) and mechanization challenges (e.g., standard cereal machinery designed for wheat/barley/maize/rice performs poorly, issues with seed drills, combines, threshers). These claims are factually correct and align with established agronomic literature on teff. No invented citations, terms, or consensus are presented. The details are accurate and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific agronomic and mechanization details. It discusses methods like row planting vs. broadcasting, seed coating/pelleting, improved seeders/drills, small-scale harvesters/threshers, and agronomic innovations (e.g., lodging-resistant varieties, fertilizer management). It addresses why standard machinery fails and the limitations of attempted solutions (e.g., 'partial success,' 'grain losses,' 'clogging'). A specialist would recognize this as informed by technical literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between established constraints and attempted solutions, with calibrated language. For example, it notes modified sowing equipment has had 'only partial success,' performance of harvesters/threshers has been 'limited by' specific factors, and 'full mechanization remains challenging.' It does not present contested points as settled (e.g., seed pelleting is described as exploratory work). However, it lacks explicit signaling of evidential status differences (e.g., which constraints are most robustly documented vs. more debated). The calibration is present but not highly specific, leaning toward general accuracy without nuanced uncertainty.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate agronomic and agricultural engineering terminology (e.g., 'seed drills,' 'lodging,' 'threshers,' 'seedbed preparation,' 'broadcasting,' 'row planting') and focuses on teff-specific constraints without substituting a Western framing. It correctly situates teff as an Ethiopian cereal and addresses mechanization challenges relative to standard cereal machinery. There is no silent substitution of an Anglophone adjacent field; it remains grounded in crop science and agricultural mechanization relevant to teff.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain accuracy and depth, with well-calibrated discussion of mechanization challenges and solutions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain accuracy and depth, with well-calibrated discussion of mechanization challenges and solutions.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

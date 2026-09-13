@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 1260,
+  "cost_usd": 0.01268875,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "1d27ce48609390bc",
+  "item_id": "cal-004",
+  "latency_s": 10.34,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 71,
+  "provider": "google",
+  "request_fingerprint": "b1d2d81cedd00f6d",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "First, calculate the total volume of the tank in cubic metres (m³).\nVolume = Length × Width × Height\nVolume = 2.5 m × 1.8 m × 1.2 m\nVolume = 5.4 m³\n\nNext, find the volume of the water. The tank is 60% full, so the volume of water is 60% of the total volume.\nVolume of water = 60% of 5.4 m³\nVolume of water = 0.60 × 5.4 m³\nVolume of water = 3.24 m³\n\nFinally, convert the volume of water from cubic metres to litres.\nWe know that 1 m³ = 1000 litres.\nLitres of water = 3.24 × 1000\nLitres of water = 3240 litres\n\nANSWER: 3240",
+  "timestamp_utc": "2026-09-07T22:39:12Z"
+}

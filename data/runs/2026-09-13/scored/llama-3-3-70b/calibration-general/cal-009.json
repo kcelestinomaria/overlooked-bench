@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The reference answer's final line is 'ANSWER: mitochondrion'. The model's response ends with 'ANSWER: mitochondria'. 'Mitochondria' is the plural form, while 'mitochondrion' is singular. The prompt asks for 'which organelle', implying singular. The substantive answer is correct in identifying the organelle, but the specific form does not exactly match the reference. Since the rubric states to compare on substance only and ignore formatting/phrasing, and the organelle is correctly identified, this is a fully correct answer. Score 4.",
+    "instruction_compliance": "Explicit output instructions: 1) Answer in one sentence. 2) End with a final line in exactly the format 'ANSWER: <organelle>'. The response has a one-sentence answer and ends with 'ANSWER: mitochondria'. The format is correct, though 'mitochondria' is plural while the reference uses singular; the instruction does not specify singular/plural, only the format. Compliance is full. Score 4.",
+    "reasoning_validity": "The item does not explicitly call for shown working, but the response provides a one-sentence explanation: 'The primary site of ATP synthesis by oxidative phosphorylation in eukaryotic cells is the mitochondria, where the process of cellular respiration takes place and energy is generated in the form of ATP.' This is internally consistent and factually correct, supporting the answer. No invalid reasoning is present. Score 4."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.0005908,
+  "judge_latency_s": 13.206,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The reference answer's final line is 'ANSWER: mitochondrion'. The model's response ends with 'ANSWER: mitochondria'. 'Mitochondria' is the plural form, while 'mitochondrion' is singular. The prompt asks for 'which organelle', implying singular. The substantive answer is correct in identifying the organelle, but the specific form does not exactly match the reference. Since the rubric states to compare on substance only and ignore formatting/phrasing, and the organelle is correctly identified, this is a fully correct answer. Score 4.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item does not explicitly call for shown working, but the response provides a one-sentence explanation: 'The primary site of ATP synthesis by oxidative phosphorylation in eukaryotic cells is the mitochondria, where the process of cellular respiration takes place and energy is generated in the form of ATP.' This is internally consistent and factually correct, supporting the answer. No invalid reasoning is present. Score 4.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"Explicit output instructions: 1) Answer in one sentence. 2) End with a final line in exactly the format 'ANSWER: <organelle>'. The response has a one-sentence answer and ends with 'ANSWER: mitochondria'. The format is correct, though 'mitochondria' is plural while the reference uses singular; the instruction does not specify singular/plural, only the format. Compliance is full. Score 4.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response correctly identifies the mitochondrion and fully complies with instructions, with minor pluralization difference from the reference.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response correctly identifies the mitochondrion and fully complies with instructions, with minor pluralization difference from the reference.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

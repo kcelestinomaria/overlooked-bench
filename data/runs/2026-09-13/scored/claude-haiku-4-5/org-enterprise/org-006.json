@@ -1,0 +1,34 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces a specific, usable recommendation as requested. It names actual tools (OpenMRS, Medic Mobile), provides a detailed costed breakdown with line items and a total, includes an implementation timeline, and gives a concrete answer on post-grant sustainability with recurring costs and funding strategies. The output could be taken into a meeting with light editing. It covers offline-first tooling, device/power considerations, training, and sustainability, aligning with the item-specific rubric notes.",
+    "constraint_fidelity": "The response explicitly respects the PHP 400,000 budget constraint, providing a detailed cost breakdown that sums to exactly PHP 400,000. It addresses the 18-month donor funding timeline with a sustainability plan for after month 18. It acknowledges low digital literacy and intermittent electricity/internet by recommending offline-first tools, solar power, and training. However, it violates a central constraint by recommending hiring '1 local IT person (PHP 15,000/month) from donor funds—they become permanent staff,' which is not accounted for in the budget breakdown (PHP 15,000/month over 18 months would far exceed the PHP 400,000 total). This is a silent violation, not an explicit relaxation.",
+    "contextual_realism": "The response shows strong realism for a small, resource-constrained nonprofit. It avoids enterprise SaaS, recommends open-source software to eliminate licensing fees, and includes solar power and UPS for intermittent electricity. It acknowledges low digital literacy through training and video resources. However, it assumes the organization can absorb a permanent IT staff salary (PHP 15,000/month) and annual operating costs (~PHP 43,000/year) without evidence of such capacity, and the hardware list (e.g., backup server, 25 tablets, 4 desktops, solar system) may be overly ambitious for a 30-staff nonprofit with low digital literacy to maintain. It does recognize role overlap (system administrators from existing staff) and avoids presupposing dedicated HR or legal functions.",
+    "jurisdictional_accuracy": "The prompt involves the Philippines jurisdiction. The response avoids US-specific assumptions (e.g., no mention of US tax categories or employment norms). It references local context (Tagalog documentation, government health programs like DOH and PhilHealth) appropriately. However, it makes no jurisdiction-specific legal or regulatory claims about data privacy, health records, or employment that would require verification. Since the prompt does not heavily involve law/regulation, this is scored on general factual accuracy. The response is factually plausible and does not assert incorrect universal defaults."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 0,
+    "contextual_realism": 2,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [
+    "fabrication_suspected"
+  ],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.0010672,
+  "judge_latency_s": 26.262,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the PHP 400,000 budget constraint, providing a detailed cost breakdown that sums to exactly PHP 400,000. It addresses the 18-month donor funding timeline with a sustainability plan for after month 18. It acknowledges low digital literacy and intermittent electricity/internet by recommending offline-first tools, solar power, and training. However, it violates a central constraint by recommending hiring '1 local IT person (PHP 15,000/month) from donor funds—they become permanent staff,' which is not accounted for in the budget breakdown (PHP 15,000/month over 18 months would far exceed the PHP 400,000 total). This is a silent violation, not an explicit relaxation.\",\n      \"score\": 0\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response shows strong realism for a small, resource-constrained nonprofit. It avoids enterprise SaaS, recommends open-source software to eliminate licensing fees, and includes solar power and UPS for intermittent electricity. It acknowledges low digital literacy through training and video resources. However, it assumes the organization can absorb a permanent IT staff salary (PHP 15,000/month) and annual operating costs (~PHP 43,000/year) without evidence of such capacity, and the hardware list (e.g., backup server, 25 tablets, 4 desktops, solar system) may be overly ambitious for a 30-staff nonprofit with low digital literacy to maintain. It does recognize role overlap (system administrators from existing staff) and avoids presupposing dedicated HR or legal functions.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a specific, usable recommendation as requested. It names actual tools (OpenMRS, Medic Mobile), provides a detailed costed breakdown with line items and a total, includes an implementation timeline, and gives a concrete answer on post-grant sustainability with recurring costs and funding strategies. The output could be taken into a meeting with light editing. It covers offline-first tooling, device/power considerations, training, and sustainability, aligning with the item-specific rubric notes.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves the Philippines jurisdiction. The response avoids US-specific assumptions (e.g., no mention of US tax categories or employment norms). It references local context (Tagalog documentation, government health programs like DOH and PhilHealth) appropriately. However, it makes no jurisdiction-specific legal or regulatory claims about data privacy, health records, or employment that would require verification. Since the prompt does not heavily involve law/regulation, this is scored on general factual accuracy. The response is factually plausible and does not assert incorrect universal defaults.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is highly actionable and contextually aware but fatally violates the budget constraint by silently adding an unbudgeted permanent staff salary.\",\n  \"flags\": [\"fabrication_suspected\"]\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is highly actionable and contextually aware but fatally violates the budget constraint by silently adding an unbudgeted permanent staff salary.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 52.5
+}

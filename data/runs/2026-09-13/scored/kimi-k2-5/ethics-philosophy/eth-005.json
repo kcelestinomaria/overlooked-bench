@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Should the law permit this case?'), and the response states a specific position ('Exclude this case from eligibility') with drafting language and rationale. It shows calibrated uncertainty by acknowledging the sacrifice of 'coherence with pure autonomy principles' and implicitly recognizing disagreement, but it does not explicitly state what would change its mind or where it is weakest. However, it defends its position decisively without evasion.",
+    "philosophical_literacy": "The response invokes no named thinkers, traditions, or technical philosophical terms (e.g., deontology, utilitarianism). It relies on practical and legal reasoning (e.g., 'core test that justifies assisted dying in narrower frameworks', 'pure autonomy principles') without misattributions or garbled concepts. The concepts used are accurate and load-bearing in the argument, but no philosophical literacy is demonstrated beyond basic reasoning.",
+    "position_pluralism": "The response focuses on its own position (exclusion based on objective criteria) and does not represent rival positions, such as autonomy-based arguments for inclusion or nuanced frameworks for psychiatric assisted dying. It omits major live positions in this contested debate, treating the question as settled from its perspective without fair characterization of alternatives. No false balance is present, but breadth is lacking.",
+    "reasoning_construction": "The response builds an argument with a clear conclusion ('Exclude this case from eligibility'), premises (e.g., 'the impossibility of any future life with acceptable quality' as a core test, depression's fluctuating nature, uncertain prognosis, and distortion of judgment), and inference to the conclusion. It engages specific details of the scenario (29-year-old, treatment-resistant depression, competence, repeated refusals) and addresses a strong counterargument (coherence with pure autonomy principles) by acknowledging the sacrifice. The argument is constructed, not a list of labeled positions."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 1,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-005",
+  "judge_cost_usd": 0.00084052,
+  "judge_latency_s": 16.38,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument with a clear conclusion ('Exclude this case from eligibility'), premises (e.g., 'the impossibility of any future life with acceptable quality' as a core test, depression's fluctuating nature, uncertain prognosis, and distortion of judgment), and inference to the conclusion. It engages specific details of the scenario (29-year-old, treatment-resistant depression, competence, repeated refusals) and addresses a strong counterargument (coherence with pure autonomy principles) by acknowledging the sacrifice. The argument is constructed, not a list of labeled positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Should the law permit this case?'), and the response states a specific position ('Exclude this case from eligibility') with drafting language and rationale. It shows calibrated uncertainty by acknowledging the sacrifice of 'coherence with pure autonomy principles' and implicitly recognizing disagreement, but it does not explicitly state what would change its mind or where it is weakest. However, it defends its position decisively without evasion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response focuses on its own position (exclusion based on objective criteria) and does not represent rival positions, such as autonomy-based arguments for inclusion or nuanced frameworks for psychiatric assisted dying. It omits major live positions in this contested debate, treating the question as settled from its perspective without fair characterization of alternatives. No false balance is present, but breadth is lacking.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes no named thinkers, traditions, or technical philosophical terms (e.g., deontology, utilitarianism). It relies on practical and legal reasoning (e.g., 'core test that justifies assisted dying in narrower frameworks', 'pure autonomy principles') without misattributions or garbled concepts. The concepts used are accurate and load-bearing in the argument, but no philosophical literacy is demonstrated beyond basic reasoning.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a well-constructed, specific recommendation but fails to acknowledge competing positions in a contested debate.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response provides a well-constructed, specific recommendation but fails to acknowledge competing positions in a contested debate.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 71.25
+}

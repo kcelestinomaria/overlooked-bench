@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1370,
+  "cost_usd": 0.01404,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "fc43c905ce874d10",
+  "item_id": "org-002",
+  "latency_s": 18.074,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 170,
+  "provider": "anthropic",
+  "request_fingerprint": "26f9c1e706c9f8d7",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Go/No-Go Analysis: Second Bakery Location (Kraków)\n\n## Current Position\n- Revenue: PLN 1.4M | Net margin: ~8% (~PLN 112,000 net profit)\n- 6 employees, single location, self-funded expansion target: PLN 250,000\n- Constraint: no equity dilution\n\n## Financing Options (Non-Dilutive, Realistic for This Scale)\n\n| Option | Typical Terms in Poland | Fit |\n|---|---|---|\n| **De minimis BGK guarantee loan** (via commercial bank, e.g., PKO BP, Santander, ING) | Guarantees up to 80% of loan; bank rate ~8-11% (WIBOR + margin) | **Best fit** — reduces collateral burden, standard for SMEs |\n| **Bank term loan (unsecured/secured by owner)** | PLN 150-300K range, 5-7 yr term, rate ~10-12% | Viable if owners have clean credit history and property collateral |\n| **EU/PARP or regional (Małopolska) SME grants** | Co-financing 30-50%, but slow (6-12mo approval), competitive | Worth applying in parallel, but not a Plan A due to timeline |\n| **Leasing** (equipment: ovens, proofers, display cases) | Covers 40-60% of buildout capex, preserves cash for lease deposit/fit-out | **Recommended layer** — pair with loan for equipment-heavy portion |\n| **Supplier trade credit / advance from flour-supply partners** | Informal, small scale | Minor supplement only |\n\n**Recommended stack:** BGK-guaranteed bank loan (~PLN 180K) + equipment leasing (~PLN 70K) — keeps cash flow flexible and avoids over-leveraging on one instrument.\n\n## Break-Even Requirement for Site #2\n\nAssuming similar cost structure to Site 1:\n- Estimated fixed costs (rent, 3-4 new staff, utilities): ~PLN 25,000-30,000/month\n- Bakery gross margin (typical): ~55-60%\n- **Required monthly revenue to break even: ~PLN 45,000-50,000** (PLN 540K-600K annualized)\n- This represents **~40% of current single-site revenue** — an aggressive but not unreasonable target if location is strong, but it means Site 2 needs to hit roughly 60-70% of Site 1's productivity within 12-18 months to justify the debt service.\n\n## Two Risks Most Likely to Sink This\n\n1. **Debt service outpacing thin margins.** At 8% net margin, loan repayments (est. PLN 4,000-5,000/month combined for loan+lease) consume a large share of profit cushion. A slow ramp-up (common in bakeries — 6-12 months to build local customer habit) could force owners to divert cash from Site 1, destabilizing the whole business.\n\n2. **Key-person/staffing dependency.** With only 6 people running Site 1, opening Site 2 requires either poaching-quality new hires or splitting existing trained staff (bakers, recipe consistency) across two sites. Bakery quality/brand consistency failures at the new site are a common cause of underperformance — and owners' bandwidth to manage two locations simultaneously is a real operational risk, not just financial.\n\n## Recommendation: **CONDITIONAL GO**\n\nProceed **only if**:\n- A signed lease is secured in a location with foot traffic ≥70% of Site 1's, at comparable or lower rent per m²\n- Owners pre-identify and (ideally) trial a site manager/lead baker for 2-3 months before opening\n- Financing is structured as BGK-guaranteed loan + leasing (not a single large unsecured loan)\n- A 12-month cash reserve buffer (~PLN 50-60K) is kept aside, separate from the 250K capex, to cover ramp-up losses\n\nIf lease terms or staffing certainty aren't in place, **delay 6 months** rather than launch under financial and operational strain — the margin cushion is too thin to absorb a slow start.",
+  "timestamp_utc": "2026-09-07T22:25:21Z"
+}
