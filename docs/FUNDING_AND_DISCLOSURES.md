@@ -56,13 +56,23 @@ This section is binding on the maintainers.
 
 ## Maintainer interests
 
-| Maintainer | Relevant interests | As of |
-|---|---|---|
-| _(maintainer)_ | None declared | 2026-09-08 |
+| Maintainer | Affiliation | Relevant interests | As of |
+|---|---|---|---|
+| _(maintainer)_ | Student, Strathmore University (Nairobi, Kenya) and KTH Royal Institute of Technology (Stockholm, Sweden) | None declared | 2026-09-13 |
 
 Fill this in honestly, including small holdings and past employment. "Relevant"
 means any relationship with an organisation appearing in `data/models.yaml` or in
 the `institutional-criticism` dataset.
+
+**On the university affiliation.** It is listed because it is a real
+relationship and this file exists to state those, not because either institution
+has any role in the project. Neither university funds, hosts, supervises,
+reviews, or endorses this benchmark; neither has seen results before
+publication; and neither appears in `data/models.yaml` or in the
+`institutional-criticism` dataset, so it creates no scoring conflict. If that
+ever changes - university funding, academic supervision, or a credit toward a
+degree - it moves to the funding section above and triggers the full disclosure
+requirement.
 
 ---
 

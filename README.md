@@ -337,6 +337,22 @@ the new run folder. It never auto-merges and never force-pushes. A human reviews
 the diff, including diagnostics and any rubric hash changes, before results are
 published.
 
+## Who builds this
+
+overlooked-bench is maintained by a student at Strathmore University in Nairobi,
+Kenya, and KTH Royal Institute of Technology in Stockholm, Sweden.
+
+It is **not** a project of either university and carries no institutional
+endorsement. Neither funds, hosts, supervises, or reviews it, and neither has
+seen results before publication. The affiliation is listed because it is a real
+relationship and this project states those, not because either institution
+stands behind the numbers. See
+[FUNDING_AND_DISCLOSURES.md](docs/FUNDING_AND_DISCLOSURES.md).
+
+New to benchmarks? [What are AI benchmarks?](https://kcelestinomaria.github.io/overlooked-bench/site/what-are-ai-benchmarks/)
+is a short, plain-English explainer: how models get scored, and six questions to
+ask before believing any leaderboard number, including this one.
+
 ## Funding
 
 No lab funding, and no funding from anyone else. Costs are API charges paid by the
