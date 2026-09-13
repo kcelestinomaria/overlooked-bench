@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Submit this file directly in Google Search Console and Bing Webmaster Tools.
+
+  robots.txt cannot help here: on a github.io PROJECT site, crawlers only read
+  robots.txt at the domain root (kcelestinomaria.github.io/robots.txt), which
+  belongs to a different repository. Per-page <meta name="robots"> tags are used
+  instead, and they work.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kcelestinomaria.github.io/overlooked-bench/site/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kcelestinomaria.github.io/overlooked-bench/site/what-are-ai-benchmarks/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

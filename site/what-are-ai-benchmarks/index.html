@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>What Are AI Benchmarks? How to Read an AI Model Score | overlooked-bench</title>
+<meta name="description" content="A plain-English guide to AI benchmarks: what they are, how models are scored, what a leaderboard number can and cannot tell you, and six questions to ask before believing one. From overlooked-bench, an open benchmark built by students in Nairobi.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://kcelestinomaria.github.io/overlooked-bench/site/what-are-ai-benchmarks/">
+<meta name="author" content="overlooked-bench">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="overlooked-bench">
+<meta property="og:title" content="What Are AI Benchmarks? How to Read an AI Model Score">
+<meta property="og:description" content="What AI benchmarks are, how models get scored, and six questions to ask before believing a leaderboard number.">
+<meta property="og:url" content="https://kcelestinomaria.github.io/overlooked-bench/site/what-are-ai-benchmarks/">
+<meta property="og:image" content="https://kcelestinomaria.github.io/overlooked-bench/data/runs/2026-09-13/social/overall.png">
+<meta property="og:image:alt" content="Bar chart of ten AI models scored on five overlooked categories.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Are AI Benchmarks? How to Read an AI Model Score">
+<meta name="twitter:description" content="What AI benchmarks are, how models get scored, and six questions to ask before believing a leaderboard number.">
+<meta name="twitter:image" content="https://kcelestinomaria.github.io/overlooked-bench/data/runs/2026-09-13/social/overall.png">
+
+<link rel="stylesheet" href="../styles.css">
+<style>
+  /* Page-specific: a reading column, narrower than the leaderboard's tables. */
+  .prose { max-width: 68ch; }
+  .prose h2 { margin-top: 2.4rem; font-size: 1.45rem; line-height: 1.25; }
+  .prose h3 { margin-top: 1.8rem; font-size: 1.1rem; }
+  .prose p, .prose li { color: var(--ink-secondary); }
+  .prose strong { color: var(--ink); }
+  .breadcrumb { font-size: .9rem; color: var(--ink-muted); margin: 1.5rem 0 0; }
+  .tldr {
+    background: var(--surface-sunken); border-left: 3px solid var(--accent);
+    padding: 1rem 1.25rem; margin: 1.5rem 0 0; border-radius: 2px;
+  }
+  .tldr p { margin: 0; color: var(--ink); }
+  .tldr p + p { margin-top: .6rem; }
+  .qlist { counter-reset: q; list-style: none; padding: 0; margin: 1.2rem 0 0; }
+  .qlist > li { counter-increment: q; position: relative; padding-left: 2.6rem; margin-bottom: 1.1rem; }
+  .qlist > li::before {
+    content: counter(q); position: absolute; left: 0; top: .1rem;
+    width: 1.8rem; height: 1.8rem; border-radius: 50%;
+    background: var(--accent-soft); color: var(--ink);
+    display: grid; place-items: center; font-size: .85rem; font-weight: 600;
+  }
+  .qlist b { display: block; color: var(--ink); }
+  .glossary { margin: 1.2rem 0 0; }
+  .glossary dt { font-weight: 600; color: var(--ink); margin-top: .9rem; }
+  .glossary dd { margin: .15rem 0 0; color: var(--ink-secondary); }
+  .faq details {
+    border-bottom: 1px solid var(--rule); padding: .85rem 0;
+  }
+  .faq summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+  .faq summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .faq p { margin: .6rem 0 0; }
+  .cta {
+    display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0 0; padding: 0; list-style: none;
+  }
+  .cta a {
+    display: inline-block; padding: .6rem 1rem; border: 1px solid var(--rule);
+    border-radius: 3px; text-decoration: none; background: var(--surface-raised);
+  }
+  .cta a:hover { border-color: var(--accent); text-decoration: none; }
+  .cta a.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div>
+      <a href="../" style="text-decoration:none">
+        <h1 class="wordmark">overlooked<span>-</span>bench</h1>
+      </a>
+      <p class="tagline">Benchmarking what the benchmarks miss.</p>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../">Leaderboard</a> &rsaquo; What are AI benchmarks?
+  </nav>
+
+  <article class="prose">
+    <h1 style="font-size:2rem;line-height:1.15;margin:.6rem 0 0">What are AI benchmarks?</h1>
+
+    <div class="tldr">
+      <p><strong>Short version.</strong> An AI benchmark is a fixed set of tasks, a fixed way of
+      scoring the answers, and a published result. It measures one thing, under one procedure,
+      at one moment.</p>
+      <p>A leaderboard number is not a fact about how intelligent a model is. It is a
+      measurement, and like any measurement it is only as good as the questions asked, the
+      scoring rule used, and whether anyone can check it.</p>
+    </div>
+
+    <h2>The four parts of any benchmark</h2>
+    <p>Almost every benchmark, from the largest industry suite to this one, is built from the
+    same four pieces. Knowing them is most of what you need to read a result critically.</p>
+
+    <ol>
+      <li><strong>A dataset</strong> - the actual questions or tasks. This is the benchmark's
+      real content, and the part that most determines what it measures.</li>
+      <li><strong>A harness</strong> - the code that sends each task to each model under
+      identical conditions and records what comes back.</li>
+      <li><strong>A scoring rule</strong> - how an answer becomes a number. Sometimes it is
+      exact matching against a known answer. Increasingly, for open-ended work, it is another
+      AI model reading the response against a written rubric.</li>
+      <li><strong>A published result</strong> - the leaderboard. This is the only part most
+      people ever see, which is the problem.</li>
+    </ol>
+
+    <h2>Why the same model gets different scores</h2>
+    <p>Two benchmarks can score the same model differently without either being dishonest.
+    They asked different questions, or scored them by a different rule, or ran the model with
+    different settings. A score is meaningful <em>relative to a procedure</em>, and comparing
+    numbers across benchmarks that do not share one is close to meaningless.</p>
+    <p>This is also why serious benchmarks version their methodology. If a rubric is reworded
+    and scores shift by four points, a reader needs to be able to tell whether models changed
+    or the ruler did.</p>
+
+    <h2>Six questions to ask about any benchmark result</h2>
+    <p>You do not need to be a machine-learning researcher to pressure-test a claim. These six
+    questions do most of the work.</p>
+
+    <ol class="qlist">
+      <li><b>What is actually in the test set, and can I look at it?</b>
+      If the questions are secret, you are being asked to trust a number you cannot inspect.
+      Sometimes there are good reasons for that. It is still a cost.</li>
+
+      <li><b>How many items is it?</b>
+      A gap of one or two points across ninety questions is usually noise. Benchmarks that
+      report a winner without reporting sample size are hiding the most important caveat.</li>
+
+      <li><b>Who or what did the scoring?</b>
+      If another AI model graded the answers, that model has its own biases - including toward
+      responses that resemble its own writing. Ask whether anyone checked.</li>
+
+      <li><b>Could the model have seen this before?</b>
+      If benchmark questions end up in training data, the model may be recalling rather than
+      reasoning. This is called <em>contamination</em>, and it quietly inflates scores.</li>
+
+      <li><b>Can the result be reproduced?</b>
+      Published raw outputs and a runnable harness mean anyone can check. A PDF with a table
+      in it means you are taking someone's word.</li>
+
+      <li><b>What is not being measured?</b>
+      Every benchmark chooses a slice of the world. The choice is an argument about what
+      matters, and it is rarely stated out loud.</li>
+    </ol>
+
+    <h2>A short glossary</h2>
+    <dl class="glossary">
+      <dt>Contamination</dt>
+      <dd>When test questions have leaked into a model's training data, so a high score may
+      reflect memorisation rather than ability.</dd>
+
+      <dt>LLM-as-judge</dt>
+      <dd>Using one AI model to grade another's open-ended answers against a rubric. Practical
+      and cheap; also introduces the judge's own preferences into the result.</dd>
+
+      <dt>Rubric</dt>
+      <dd>The written standard a grader scores against - the dimensions being judged and what
+      each score level means.</dd>
+
+      <dt>Control or calibration track</dt>
+      <dd>Questions with known answers, included not to rank anyone but to prove the machinery
+      works. If models fail these, something is broken in the harness.</dd>
+
+      <dt>Held-out set</dt>
+      <dd>Questions deliberately kept unpublished, so there is something left to test with if
+      the public set becomes contaminated.</dd>
+
+      <dt>Methodology version</dt>
+      <dd>A label on the exact rules a score was produced under. Scores from different
+      methodology versions are not comparable.</dd>
+    </dl>
+
+    <h2>Why we built another one</h2>
+    <p>Public benchmarks cluster where measurement is cheap and consensus exists: competition
+    mathematics, code, graduate exams in well-resourced fields, and tasks weighted toward
+    high-GDP US economic sectors. Those are worth measuring. They are also a narrow slice of
+    what these systems are actually used for.</p>
+    <p><strong>overlooked-bench</strong> measures five things that mainstream evaluations skip:
+    reasoning about contested moral questions, academic domains with thin literatures and
+    substantial non-English scholarship, work for small organisations outside the US, education
+    under real classroom constraints, and whether a model's willingness to criticise an
+    institution depends on which institution is named.</p>
+    <p>Every raw model response, every judge score, and the judge's own written reasoning are
+    committed to a public repository, run by run, and never edited after the fact. When we
+    found that our own rubric wording had drifted between runs, the published hashes caught it,
+    and the fix is in the changelog rather than quietly applied.</p>
+
+    <h2>Who we are</h2>
+    <p>overlooked-bench was started in September 2026 by students at
+    <strong>Strathmore University in Nairobi, Kenya</strong>. It is not a university project and
+    carries no institutional endorsement - the university is where we study, not a sponsor.</p>
+    <p>It has no funding from any AI laboratory, model provider, or anyone else. Costs are API
+    charges, paid personally, of roughly the price of a few coffees per monthly run. Any future
+    funding will be disclosed before any results from that period are published.</p>
+    <p>We built it partly because the gap it measures is real, and partly for a second reason
+    that matters as much to us: <strong>most public conversation about AI runs on numbers that
+    almost nobody can check.</strong> Benchmark scores get quoted in headlines, in launch posts,
+    and in policy arguments, stripped of the sample size, the scoring method, and the caveats
+    that would tell you how much weight they can hold. Publishing a leaderboard without also
+    teaching people how to read one seemed to us like part of the problem.</p>
+    <p>So the working rule is that anything we publish should be checkable by someone who did
+    not build it - which is also why this page exists.</p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Are AI benchmarks reliable?</summary>
+        <p>They are reliable for the narrow thing they measure, if the methodology is sound and
+        published. They become unreliable when a score is treated as a general statement about a
+        model's quality, when the test set may be contaminated, or when nobody can inspect how
+        the scoring was done.</p>
+      </details>
+      <details>
+        <summary>What is the difference between a benchmark and an evaluation?</summary>
+        <p>In practice the terms overlap. "Benchmark" usually implies a fixed, shared, repeatable
+        test used to compare systems against each other. "Evaluation" is broader and often
+        one-off - measuring whether a particular system does a particular job well enough.</p>
+      </details>
+      <details>
+        <summary>Can AI models be trained to pass benchmarks?</summary>
+        <p>Yes, and this is a live problem. A model can score highly by having seen the questions
+        (contamination) or by being optimised for the format of the test rather than the ability
+        it is meant to stand in for. Held-out question sets and regularly refreshed items are the
+        usual defences.</p>
+      </details>
+      <details>
+        <summary>Why use an AI model to grade another AI model?</summary>
+        <p>Because much of what people actually use these systems for has no single right answer,
+        so exact matching does not work, and human grading at scale is expensive. The honest
+        approach is to publish the judge's reasoning, re-score with a second judge from a
+        different provider, and publish the disagreement - which is what we do.</p>
+      </details>
+      <details>
+        <summary>Is overlooked-bench free to use?</summary>
+        <p>Yes. The harness is open source under AGPL-3.0, the benchmark items are CC BY-SA 4.0,
+        and the results are CC BY 4.0. You can run it yourself against your own models with one
+        API key.</p>
+      </details>
+    </div>
+
+    <h2>Read the results</h2>
+    <ul class="cta">
+      <li><a class="primary" href="../">View the leaderboard</a></li>
+      <li><a href="https://github.com/kcelestinomaria/overlooked-bench">Open-source repository</a></li>
+      <li><a href="../../docs/METHODOLOGY.md">Methodology &amp; known limitations</a></li>
+      <li><a href="../../docs/CONTRIBUTING.md">Contribute an item</a></li>
+    </ul>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>
+      <strong>overlooked-bench</strong> - open source, no lab funding. Built by students at
+      Strathmore University, Nairobi.
+    </p>
+    <p class="muted">
+      <a href="../">Leaderboard</a> |
+      <a href="./">What are AI benchmarks?</a> |
+      <a href="https://github.com/kcelestinomaria/overlooked-bench">Source code</a> |
+      <a href="../../docs/METHODOLOGY.md">Methodology</a> |
+      <a href="../../docs/FUNDING_AND_DISCLOSURES.md">Funding &amp; disclosures</a>
+    </p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://kcelestinomaria.github.io/overlooked-bench/site/what-are-ai-benchmarks/#article",
+      "headline": "What are AI benchmarks?",
+      "description": "A plain-English guide to AI benchmarks: what they are, how models are scored, and six questions to ask before believing a leaderboard number.",
+      "inLanguage": "en",
+      "datePublished": "2026-09-13",
+      "dateModified": "2026-09-13",
+      "image": "https://kcelestinomaria.github.io/overlooked-bench/data/runs/2026-09-13/social/overall.png",
+      "mainEntityOfPage": "https://kcelestinomaria.github.io/overlooked-bench/site/what-are-ai-benchmarks/",
+      "author": { "@id": "https://kcelestinomaria.github.io/overlooked-bench/#org" },
+      "publisher": { "@id": "https://kcelestinomaria.github.io/overlooked-bench/#org" },
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://kcelestinomaria.github.io/overlooked-bench/#org",
+      "name": "overlooked-bench",
+      "url": "https://kcelestinomaria.github.io/overlooked-bench/site/",
+      "description": "An open, recurring benchmark of AI models on categories mainstream evaluations do not cover. Built by students at Strathmore University, Nairobi.",
+      "foundingDate": "2026-09",
+      "foundingLocation": { "@type": "Place", "name": "Nairobi, Kenya" },
+      "sameAs": [ "https://github.com/kcelestinomaria/overlooked-bench" ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "overlooked-bench",
+          "item": "https://kcelestinomaria.github.io/overlooked-bench/site/" },
+        { "@type": "ListItem", "position": 2, "name": "What are AI benchmarks?",
+          "item": "https://kcelestinomaria.github.io/overlooked-bench/site/what-are-ai-benchmarks/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are AI benchmarks reliable?",
+          "acceptedAnswer": { "@type": "Answer", "text": "They are reliable for the narrow thing they measure, if the methodology is sound and published. They become unreliable when a score is treated as a general statement about a model's quality, when the test set may be contaminated, or when nobody can inspect how the scoring was done." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a benchmark and an evaluation?",
+          "acceptedAnswer": { "@type": "Answer", "text": "In practice the terms overlap. Benchmark usually implies a fixed, shared, repeatable test used to compare systems against each other. Evaluation is broader and often one-off, measuring whether a particular system does a particular job well enough." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI models be trained to pass benchmarks?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. A model can score highly by having seen the questions, which is called contamination, or by being optimised for the format of the test rather than the ability it stands in for. Held-out question sets and regularly refreshed items are the usual defences." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why use an AI model to grade another AI model?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Because much of what people use these systems for has no single right answer, so exact matching does not work, and human grading at scale is expensive. The honest approach is to publish the judge's reasoning, re-score with a second judge from a different provider, and publish the disagreement." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is overlooked-bench free to use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The harness is open source under AGPL-3.0, the benchmark items are CC BY-SA 4.0, and the results are CC BY 4.0. You can run it yourself against your own models with one API key." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
