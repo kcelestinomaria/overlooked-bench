@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a primary school with 400 pupils and a class-size limit. The response addresses learner range by noting 'SEN/EHCP obligations' and 'vulnerable cohorts' in the damage sections of options (e.g., Option 1 mentions reduced support for additional needs). However, it does not propose concrete, low-cost differentiation strategies for teachers to implement; it focuses on budget cuts and structural changes. The differentiation is implied through resource allocation rather than specific classroom adaptations. It has token engagement but lacks substantive, implementable differentiation content.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about staffing budget cuts. Therefore, per the rubric, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The response mentions 'pupils with additional needs', 'vulnerable cohorts', and 'SEN/EHCP obligations', showing consideration for diverse learners. However, it does not explicitly address other ranges like language barriers or material constraints. It has some inclusivity but is not comprehensive.",
+    "pedagogical_soundness": "The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, activities, assessments, or rubrics. Therefore, it does not engage with pedagogical soundness at all.",
+    "workload_realism": "The response provides options with cost savings, impacts, and feasibility, but lacks concrete timings, specific material lists, or detailed preparation/marking estimates. It assumes a setting (primary school) and respects the class-size constraint, but the feasibility judgments (e.g., 'High', 'Medium') are generic. The item-specific notes ask for costed options and respect for class-size ceiling, which are partially met (costs are placeholder like '£[A]', class size is addressed). However, without real numbers, a practitioner cannot fully assess deliverability. It is partially engaged but vague."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 0,
+    "workload_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00122057,
+  "judge_latency_s": 19.455,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, activities, assessments, or rubrics. Therefore, it does not engage with pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides options with cost savings, impacts, and feasibility, but lacks concrete timings, specific material lists, or detailed preparation/marking estimates. It assumes a setting (primary school) and respects the class-size constraint, but the feasibility judgments (e.g., 'High', 'Medium') are generic. The item-specific notes ask for costed options and respect for class-size ceiling, which are partially met (costs are placeholder like '£[A]', class size is addressed). However, without real numbers, a practitioner cannot fully assess deliverability. It is partially engaged but vague.\",\n      \"score\": 2\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about staffing budget cuts. Therefore, per the rubric, this dimension is scored on whether the response is inclusive of the range of learners in the described setting. The response mentions 'pupils with additional needs', 'vulnerable cohorts', and 'SEN/EHCP obligations', showing consideration for diverse learners. However, it does not explicitly address other ranges like language barriers or material constraints. It has some inclusivity but is not comprehensive.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a primary school with 400 pupils and a class-size limit. The response addresses learner range by noting 'SEN/EHCP obligations' and 'vulnerable cohorts' in the damage sections of options (e.g., Option 1 mentions reduced support for additional needs). However, it does not propose concrete, low-cost differentiation strategies for teachers to implement; it focuses on budget cuts and structural changes. The differentiation is implied through resource allocation rather than specific classroom adaptations. It has token engagement but lacks substantive, implementable differentiation content.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response is a structured options paper that addresses the budget constraint and class-size limit but relies heavily on placeholders and generic impacts.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response is a structured options paper that addresses the budget constraint and class-size limit but relies heavily on placeholders and generic impacts.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 30.0
+}

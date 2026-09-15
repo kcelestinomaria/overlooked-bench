@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1083,
+  "cost_usd": 0.005546,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "fc43c905ce874d10",
+  "item_id": "org-002",
+  "latency_s": 12.262,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 131,
+  "provider": "anthropic",
+  "request_fingerprint": "3b9caabefeedffae",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# GO/NO-GO ANALYSIS: SECOND BAKERY LOCATION\n**Kraków-based Family Bakery Expansion**\n\n---\n\n## EXECUTIVE SUMMARY\n**RECOMMENDATION: CONDITIONAL GO** – Expansion is viable if management can secure debt financing and the new location achieves 70% of flagship revenue within 18 months. Without additional capital beyond PLN 250k, the project carries unacceptable risk.\n\n---\n\n## FINANCIAL FOUNDATION\n\n| Metric | Value |\n|--------|-------|\n| Current Annual Revenue | PLN 1.4m |\n| Net Profit (8% margin) | PLN 112,000 |\n| Available Capital | PLN 250,000 |\n| Estimated Build-out Cost | PLN 350–450k |\n| **Funding Gap** | **PLN 100–200k** |\n\n---\n\n## REALISTIC FINANCING OPTIONS IN POLAND\n\n1. **Bank Loan (Primary Option)**\n   - PKO BP, ING, Santander offer SME loans up to PLN 500k\n   - Requirements: 2–3 years audited financials (✓ available), personal guarantees, 20–30% equity injection (✓ covered by PLN 250k)\n   - Terms: 5–7 year amortization, 6–8% interest\n   - **Realistic amount: PLN 150–200k**\n\n2. **Government-Backed Schemes**\n   - PARP (Polish Agency for Enterprise Development) microfinance: up to PLN 100k, lower rates\n   - BGK (Bank Gospodarstwa Krajowego) guarantees reduce bank risk\n   - **Timeline: 4–8 weeks**\n\n3. **Supplier Credit**\n   - Equipment manufacturers (ovens, display cases) often offer 12–24 month terms\n   - Reduces immediate cash outlay by ~PLN 50–80k\n\n4. **NOT Realistic:** Equity investors, venture capital, or private equity for a PLN 1.4m bakery\n\n---\n\n## BREAK-EVEN ANALYSIS\n\n**New Location Requirements:**\n\n| Scenario | Annual Revenue | Monthly Revenue | Payback Period |\n|----------|---|---|---|\n| **Conservative (60% of flagship)** | PLN 840k | PLN 70k | 4.5 years |\n| **Target (70% of flagship)** | PLN 980k | PLN 82k | 3.8 years |\n| **Optimistic (85% of flagship)** | PLN 1.19m | PLN 99k | 2.9 years |\n\n**Minimum viable:** PLN 70k/month (8% net margin = PLN 5,600/month profit contribution). Below this, the expansion destroys family wealth.\n\n---\n\n## TWO CRITICAL RISKS\n\n### 1. **Market Cannibalization & Location Dependency** (Probability: HIGH)\n   - Kraków's bakery market is mature; a second location may steal 20–30% of flagship sales rather than add net revenue\n   - **Impact:** Combined revenue could stagnate at PLN 1.5–1.6m instead of growing to PLN 2.3m, making debt service unsustainable\n   - **Mitigation:** Conduct detailed foot-traffic and demographic analysis; choose location in underserved district (e.g., Nowa Huta, Podgórze), not within 2km of flagship\n\n### 2. **Operational Overextension & Quality Degradation** (Probability: MEDIUM-HIGH)\n   - A 6-person team cannot simultaneously run two locations; requires hiring 4–5 new staff\n   - Bakery quality is owner-dependent; scaling production and maintaining standards is notoriously difficult\n   - **Impact:** Reputation damage, customer churn at both sites, margin compression below 8%\n   - **Mitigation:** Hire experienced bakery manager (PLN 4–5k/month) before opening; implement standardized recipes and processes; plan for 12-month ramp-up, not immediate profitability\n\n---\n\n## CONDITIONS FOR GO DECISION\n\n✓ Secure PLN 150–200k bank/government loan at <7% interest  \n✓ Identify location with <15% cannibalization risk (demographic/geographic analysis)  \n✓ Hire dedicated manager 2 months pre-launch  \n✓ Commit to 18-month break-even timeline with monthly KPI tracking  \n✓ Maintain PLN 50k emergency reserve (not allocated to expansion)\n\n**If any condition cannot be met: DEFER expansion 12–18 months.**",
+  "timestamp_utc": "2026-09-07T22:27:36Z"
+}

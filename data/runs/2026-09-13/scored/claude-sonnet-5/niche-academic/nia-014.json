@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific scholarly debates, methodological constraints, and evidence gaps. It discusses remote-sensing studies, limited field research, German-Uzbek/Kazakh-Russian collaborations, and distinguishes well-documented areas (e.g., deltaic tugai loss) from poorly understood ones (e.g., soil microbial ecology, faunal responses). A specialist would recognize this as informed by the literature, not just a summary of summaries, and it provides actionable research guidance.",
+    "domain_accuracy": "The response makes substantive factual claims that are correct: it accurately identifies the Aralkum Desert formation, key researchers (Breckle, Wucherer), dominant plant species (Tamarix, Haloxylon), dust transport monitoring via Landsat/MODIS, tugai forest loss in deltas, and methodological constraints like baseline problems and political fragmentation. It does not invent citations, terms, or consensus; all referenced elements are real and well-documented in the literature on the Aral Sea. No load-bearing errors are present.",
+    "field_situatedness": "The response uses appropriate frameworks and terminology from the field of dryland ecology and Central Asian environmental science, not a dominant Anglophone substitution. It references region-specific concepts like 'tugai' forests, 'Aralkum' Desert, and scholars (Breckle, Wucherer) central to the literature. It acknowledges non-English scholarship (e.g., German-Uzbek collaborations) and regional political contexts (Kazakhstan/Uzbekistan fragmentation), staying situated in the correct scholarly tradition.",
+    "scholarly_calibration": "The response consistently distinguishes well-established from contested or poorly evidenced claims. It signals evidential differences: e.g., 'reasonably well-documented' for dust transport and delta degradation versus 'poorly understood' for soil chemistry and faunal responses, and notes that some claims 'rest on inference' rather than continuous monitoring. It avoids blanket disclaimers and provides specific calibration, such as flagging which literature is most citable and which areas require caution."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00098793,
+  "judge_latency_s": 19.946,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims that are correct: it accurately identifies the Aralkum Desert formation, key researchers (Breckle, Wucherer), dominant plant species (Tamarix, Haloxylon), dust transport monitoring via Landsat/MODIS, tugai forest loss in deltas, and methodological constraints like baseline problems and political fragmentation. It does not invent citations, terms, or consensus; all referenced elements are real and well-documented in the literature on the Aral Sea. No load-bearing errors are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific scholarly debates, methodological constraints, and evidence gaps. It discusses remote-sensing studies, limited field research, German-Uzbek/Kazakh-Russian collaborations, and distinguishes well-documented areas (e.g., deltaic tugai loss) from poorly understood ones (e.g., soil microbial ecology, faunal responses). A specialist would recognize this as informed by the literature, not just a summary of summaries, and it provides actionable research guidance.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes well-established from contested or poorly evidenced claims. It signals evidential differences: e.g., 'reasonably well-documented' for dust transport and delta degradation versus 'poorly understood' for soil chemistry and faunal responses, and notes that some claims 'rest on inference' rather than continuous monitoring. It avoids blanket disclaimers and provides specific calibration, such as flagging which literature is most citable and which areas require caution.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate frameworks and terminology from the field of dryland ecology and Central Asian environmental science, not a dominant Anglophone substitution. It references region-specific concepts like 'tugai' forests, 'Aralkum' Desert, and scholars (Breckle, Wucherer) central to the literature. It acknowledges non-English scholarship (e.g., German-Uzbek collaborations) and regional political contexts (Kazakhstan/Uzbekistan fragmentation), staying situated in the correct scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level competence by accurately synthesizing evidence, highlighting gaps, and providing calibrated, field-specific insights.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level competence by accurately synthesizing evidence, highlighting gaps, and providing calibrated, field-specific insights.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

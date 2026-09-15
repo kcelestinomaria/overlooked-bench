@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requested 'Draft guidance the association can send to members.' The response produces that guidance in usable form: it is written as guidance addressed to factory owners, includes specific steps (e.g., 5-step action plan), templates, checklists, and association support. It explains the requirement in plain terms, distinguishes buyer requests from full regulation, and identifies collective action. The output could be taken into a meeting with light editing (e.g., filling in association details). It does not merely describe a process; it delivers the guidance.",
+    "constraint_fidelity": "The prompt's constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it explicitly says 'No new hire needed', 'without hiring consultants', 'free self-assessment checklist', 'free group training sessions', 'template documents', 'peer helpdesk', and 'shared-cost group audits'. It shows arithmetic by specifying steps like 'Payroll records (recent 3–6 months)' and 'One Page' mapping, but does not detail budget calculations. It does not violate any constraints and explicitly addresses cost-saving measures. However, it does not show detailed arithmetic for money or headcount, so it is not a 4.",
+    "contextual_realism": "The response is calibrated for small factories with limited capacity: it avoids assuming dedicated compliance officers (says 'assign this to an existing manager'), uses low-cost tools like a 'Compliance Folder' and 'suggestion box', acknowledges role overlap, and leverages collective action through the association. It does not presuppose functions like HR or legal counsel, instead providing templates and peer support. The process overhead (e.g., monthly reviews, simple mapping) is sustainable for small staff. Small-organisation realities like using existing documents and avoiding expensive certifications are acknowledged.",
+    "jurisdictional_accuracy": "The jurisdiction is Bangladesh and EU regulations. The response avoids US assumptions: it references EU-specific regulations (CSDDD, EU Deforestation Regulation), uses terms like 'Bangla' for language, and does not mention US employment practices. It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it includes a disclaimer at the end. It correctly focuses on EU buyer requirements and suggests local association support. No jurisdictional inaccuracies are evident, and it flags where collective legal support might be needed."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00117796,
+  "judge_latency_s": 21.47,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it explicitly says 'No new hire needed', 'without hiring consultants', 'free self-assessment checklist', 'free group training sessions', 'template documents', 'peer helpdesk', and 'shared-cost group audits'. It shows arithmetic by specifying steps like 'Payroll records (recent 3–6 months)' and 'One Page' mapping, but does not detail budget calculations. It does not violate any constraints and explicitly addresses cost-saving measures. However, it does not show detailed arithmetic for money or headcount, so it is not a 4.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories with limited capacity: it avoids assuming dedicated compliance officers (says 'assign this to an existing manager'), uses low-cost tools like a 'Compliance Folder' and 'suggestion box', acknowledges role overlap, and leverages collective action through the association. It does not presuppose functions like HR or legal counsel, instead providing templates and peer support. The process overhead (e.g., monthly reviews, simple mapping) is sustainable for small staff. Small-organisation realities like using existing documents and avoiding expensive certifications are acknowledged.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested 'Draft guidance the association can send to members.' The response produces that guidance in usable form: it is written as guidance addressed to factory owners, includes specific steps (e.g., 5-step action plan), templates, checklists, and association support. It explains the requirement in plain terms, distinguishes buyer requests from full regulation, and identifies collective action. The output could be taken into a meeting with light editing (e.g., filling in association details). It does not merely describe a process; it delivers the guidance.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Bangladesh and EU regulations. The response avoids US assumptions: it references EU-specific regulations (CSDDD, EU Deforestation Regulation), uses terms like 'Bangla' for language, and does not mention US employment practices. It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it includes a disclaimer at the end. It correctly focuses on EU buyer requirements and suggests local association support. No jurisdictional inaccuracies are evident, and it flags where collective legal support might be needed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable and realistic guidance document tailored to small Bangladeshi factories, effectively leveraging collective association support.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is a highly actionable and realistic guidance document tailored to small Bangladeshi factories, effectively leveraging collective association support.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

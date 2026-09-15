@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "education",
+  "completion_tokens": 970,
+  "cost_usd": 0.00442125,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "e0f3bc5260510545",
+  "item_id": "edu-008",
+  "latency_s": 7.335,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 75,
+  "provider": "openai",
+  "request_fingerprint": "38872eef39ffe2cc",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "Here is one practical redesign of a single module that would address both problems: **weak diagnostic reasoning** and **weak customer explanation**.\n\n## Module to redesign\n**Module:** Automotive Fault Diagnosis and Customer Communication  \n**Level:** Final-year vocational module  \n**Goal:** Students learn how to diagnose unfamiliar faults systematically and explain findings and repairs clearly to customers.\n\n---\n\n## 1) Changes in teaching\n\n### A. Teach diagnosis as a process, not a list of faults\nInstead of organizing lessons by “this fault, this fix,” teach a repeatable diagnostic method:\n\n1. Confirm the complaint  \n2. Gather evidence  \n3. Check systems and likely causes  \n4. Test systematically  \n5. Eliminate options  \n6. Decide on repair  \n7. Verify the fix\n\nStudents should repeatedly practice this method on **new, unseen faults**, not just standard textbook cases.\n\n### B. Use problem-based workshops\nEach week, give students a vehicle with a fault they have not been told in advance. They must:\n- interview the “customer”\n- inspect the vehicle\n- identify the likely cause\n- justify their reasoning\n- recommend the repair\n\nThis builds flexibility and real diagnostic thinking.\n\n### C. Include “why” questions during teaching\nInstructors should ask students:\n- Why did you choose that test?\n- What evidence supports your diagnosis?\n- What other causes did you rule out?\n- Why is this repair better than replacing the whole part?\n\nThis helps students learn to explain their thinking, not just perform tasks.\n\n### D. Add communication practice\nBuild short role-play sessions into the module:\n- one student acts as customer\n- one acts as mechanic\n- one observes and gives feedback\n\nStudents practice:\n- speaking in simple language\n- avoiding jargon\n- explaining the fault, repair, cost, and next steps\n- answering customer questions politely and confidently\n\n### E. Use bilingual or plain-language support if needed\nIn Morocco, some students may work in Arabic, Darija, French, or mixed language. Teach them to:\n- translate technical terms into plain customer language\n- use diagrams or visual aids\n- explain the same repair in simple terms\n\n### F. Show real examples from the workplace\nUse:\n- job cards\n- customer complaints\n- service reports\n- photos and videos of faults\n- examples of good and bad explanations\n\nThis makes learning closer to actual garage work.\n\n---\n\n## 2) Changes in assessment\n\n### A. Replace single-solution practical tests with unseen fault diagnosis\nStudents should be assessed on a vehicle or training rig with an **unknown fault**. They must:\n- identify the problem\n- perform tests\n- explain their reasoning\n- propose and carry out the repair\n- confirm the vehicle is working correctly\n\nAssessment should reward the **method**, not only the final answer.\n\n### B. Use an oral explanation assessment\nAfter the practical task, each student gives a short customer-style explanation:\n- what the problem was\n- what caused it\n- what repair was done\n- why that repair was needed\n- what the customer should do next\n\nThis can be assessed by the instructor using a checklist.\n\n### C. Include a written job-card/report\nStudents complete a simple service report with:\n- complaint\n- diagnosis\n- tests carried out\n- parts replaced\n- final result\n- plain-language customer summary\n\nThis checks whether they can communicate clearly in writing.\n\n### D. Assess decision-making, not only speed\nMarking criteria should include:\n- correct use of diagnostic steps\n- quality of testing\n- logical reasoning\n- safety\n- clarity of explanation\n- professionalism with the customer\n\nDo not give most marks for finishing quickly, because that encourages guessing.\n\n### E. Use a rubric with two separate communication outcomes\nAssess:\n1. **Technical diagnosis**\n2. **Customer communication**\n\nThis makes communication a real skill, not an extra bonus.\n\n---\n\n## Example assessment structure\n\n### Practical test: 60%\n- 30% diagnostic process\n- 15% repair quality\n- 15% safety and verification\n\n### Oral customer explanation: 20%\n- clarity\n- accuracy\n- use of simple language\n- confidence and professionalism\n\n### Written job sheet/report: 20%\n- completeness\n- correct terminology\n- clear summary for customer\n\n---\n\n## Why this redesign works\nIt fixes the employer complaints directly:\n\n- **“They can do the technical work but cannot diagnose unseen problems”**  \n  → students practice unknown faults and systematic reasoning.\n\n- **“They cannot explain a repair to a customer”**  \n  → students rehearse oral and written explanations in plain language.\n\n---\n\nIf you want, I can also turn this into a **one-page curriculum template** with learning outcomes, teaching activities, and assessment criteria.",
+  "timestamp_utc": "2026-09-07T22:31:56Z"
+}

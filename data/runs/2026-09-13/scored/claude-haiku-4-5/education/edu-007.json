@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described involves parents opposed to mixed-attainment teaching, with a range of learner abilities implied. The response addresses differentiation concretely by describing how teachers will give different tasks based on student needs, use small groups, and provide targeted support. It is implementable by one practitioner (the teacher) and avoids placeholder language. However, it lacks detail on specific adaptations for additional needs or material constraints, making it solid but not excellent.",
+    "pathway_breadth": "The prompt does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. As per the rubric, for items not involving pathway guidance, score this dimension on whether the response is inclusive of the range of learners in the described setting. The response addresses parents with varying educational backgrounds (including those who did not complete secondary school) and students with different ability levels (e.g., 'If your child finds maths easy' and 'If your child finds maths difficult'), showing inclusivity. However, it is not substantive about pathways, so it is partial engagement.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments, so the evaluation steps for pedagogical soundness (identifying objectives, checking alignment, assessing cognitive level, sequencing, rubrics) are not applicable. The prompt asks for parent-facing guidance explaining a policy change, not a pedagogical plan. Therefore, it does not engage with this dimension at all.",
+    "workload_realism": "The response does not describe a teaching plan with timings, materials, preparation, or class size details. It is a communication document for parents, not a delivery plan for practitioners. Therefore, it does not engage with this dimension at all."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00090924,
+  "judge_latency_s": 20.287,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments, so the evaluation steps for pedagogical soundness (identifying objectives, checking alignment, assessing cognitive level, sequencing, rubrics) are not applicable. The prompt asks for parent-facing guidance explaining a policy change, not a pedagogical plan. Therefore, it does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a teaching plan with timings, materials, preparation, or class size details. It is a communication document for parents, not a delivery plan for practitioners. Therefore, it does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. As per the rubric, for items not involving pathway guidance, score this dimension on whether the response is inclusive of the range of learners in the described setting. The response addresses parents with varying educational backgrounds (including those who did not complete secondary school) and students with different ability levels (e.g., 'If your child finds maths easy' and 'If your child finds maths difficult'), showing inclusivity. However, it is not substantive about pathways, so it is partial engagement.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described involves parents opposed to mixed-attainment teaching, with a range of learner abilities implied. The response addresses differentiation concretely by describing how teachers will give different tasks based on student needs, use small groups, and provide targeted support. It is implementable by one practitioner (the teacher) and avoids placeholder language. However, it lacks detail on specific adaptations for additional needs or material constraints, making it solid but not excellent.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response effectively communicates a policy change to parents in plain language but does not address the pedagogical and workload dimensions as they are not relevant to the prompt.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response effectively communicates a policy change to parents in plain language but does not address the pedagogical and workload dimensions as they are not relevant to the prompt.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 27.5
+}

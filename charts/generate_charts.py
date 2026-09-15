@@ -26,6 +26,7 @@ categorical slots in fixed order). Adjacent-pair CVD and normal-vision checks
 pass; the contrast warning on lighter slots is discharged by the always-on value
 labels.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

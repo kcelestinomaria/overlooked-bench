@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 234,
+  "cost_usd": 0.001261,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "a3a44f19ee87a14d",
+  "item_id": "cal-003",
+  "latency_s": 2.116,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 91,
+  "provider": "anthropic",
+  "request_fingerprint": "c3c9f44a08846ac6",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Tank Filling Problem\n\n**Given information:**\n- Pipe A fills the tank in 4 hours\n- Pipe B drains the tank in 6 hours\n- Both pipes are open simultaneously\n- Tank starts empty\n\n**Working:**\n\nFirst, I'll find the rate at which each pipe works (in tanks per hour):\n\n**Pipe A's rate:** 1/4 tank per hour (filling)\n\n**Pipe B's rate:** 1/6 tank per hour (draining)\n\n**Net rate** when both pipes are open:\n- Net rate = 1/4 - 1/6 (subtracting because B drains)\n- Net rate = 3/12 - 2/12\n- Net rate = 1/12 tank per hour\n\n**Time to fill one complete tank:**\n- Time = 1 tank ÷ (1/12 tank per hour)\n- Time = 1 × 12/1\n- Time = 12 hours\n\nANSWER: 12",
+  "timestamp_utc": "2026-09-07T22:28:31Z"
+}

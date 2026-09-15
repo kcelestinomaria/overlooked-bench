@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic summary by detailing mechanisms (e.g., salt aerosol deposition, soil electrical conductivity changes), citing specific research gaps (e.g., lack of longitudinal studies on soil recovery, limited vegetation succession data), and engaging with scholarly debates (e.g., attribution of climate feedbacks confounded by global warming). It addresses methodology (e.g., modeling vs. validation) and evidence quality, providing a synthesis that a specialist would recognize as informed by the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes numerous substantive factual claims, such as the collapse of Tugai forests by 80–90%, dust emissions of 20–50 million tons/year, and abandonment of 1.5 million ha of cropland. It cites specific studies (e.g., Breckle et al., 2001; Zavialov et al., 2012) and uses correct terminology (e.g., Aralkum Desert, halophytes, saxaul). No invented citations or consensus are evident; the claims align with established literature on the Aral Sea. Minor gaps exist (e.g., some evidence is localized), but no load-bearing errors are present.",
+    "field_situatedness": "The response uses frameworks and terminology specific to environmental science, ecology, and arid land studies (e.g., soil salinization, halophytes, aeolian processes, Tugai forests). It cites regional scholars (e.g., Breckle, Wucherer, Zavialov) and engages with Central Asian contexts (e.g., Karakalpakstan, Kyzylkum Desert). There is no silent substitution of a Western framing; it remains grounded in the physical and ecological literature relevant to the Aral Sea basin.",
+    "scholarly_calibration": "The response consistently distinguishes well-documented from poorly understood aspects, using explicit sections like 'Evidence Gaps' and 'Poorly understood.' It signals varying evidential status—e.g., dust composition is 'well-studied,' while ecological impacts are 'poorly studied'; climate feedbacks are 'model-based' and 'not well-validated.' It avoids uniform confidence and presents contested points (e.g., dust suppressing rainfall) as hypotheses. The calibration is specific and targeted, not a blanket disclaimer."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00146978,
+  "judge_latency_s": 19.752,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive factual claims, such as the collapse of Tugai forests by 80–90%, dust emissions of 20–50 million tons/year, and abandonment of 1.5 million ha of cropland. It cites specific studies (e.g., Breckle et al., 2001; Zavialov et al., 2012) and uses correct terminology (e.g., Aralkum Desert, halophytes, saxaul). No invented citations or consensus are evident; the claims align with established literature on the Aral Sea. Minor gaps exist (e.g., some evidence is localized), but no load-bearing errors are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic summary by detailing mechanisms (e.g., salt aerosol deposition, soil electrical conductivity changes), citing specific research gaps (e.g., lack of longitudinal studies on soil recovery, limited vegetation succession data), and engaging with scholarly debates (e.g., attribution of climate feedbacks confounded by global warming). It addresses methodology (e.g., modeling vs. validation) and evidence quality, providing a synthesis that a specialist would recognize as informed by the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes well-documented from poorly understood aspects, using explicit sections like 'Evidence Gaps' and 'Poorly understood.' It signals varying evidential status—e.g., dust composition is 'well-studied,' while ecological impacts are 'poorly studied'; climate feedbacks are 'model-based' and 'not well-validated.' It avoids uniform confidence and presents contested points (e.g., dust suppressing rainfall) as hypotheses. The calibration is specific and targeted, not a blanket disclaimer.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology specific to environmental science, ecology, and arid land studies (e.g., soil salinization, halophytes, aeolian processes, Tugai forests). It cites regional scholars (e.g., Breckle, Wucherer, Zavialov) and engages with Central Asian contexts (e.g., Karakalpakstan, Kyzylkum Desert). There is no silent substitution of a Western framing; it remains grounded in the physical and ecological literature relevant to the Aral Sea basin.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the terrestrial ecological impacts of the Aral Sea desiccation, with explicit attention to evidence gaps.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the terrestrial ecological impacts of the Aral Sea desiccation, with explicit attention to evidence gaps.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

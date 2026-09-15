@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks for the debate and strongest arguments, which is specialist. The response goes beyond a general encyclopedia by engaging with specific concepts (marana, yogavahi), methodological tensions (standardization vs. preservation), and epistemic concerns (ontological commitments, epistemic colonialism). It references internal scholarly debate (safety vs. practice wisdom, reductionism vs. relational knowledge) and offers a nuanced middle ground (methodological pluralism). A specialist would recognize this as engagement with the literature, not just a summary of a summary.",
+    "domain_accuracy": "The response makes substantive claims: it correctly identifies mercury as neurotoxic/nephrotoxic, mentions 'marana' (digestion/processing) and 'yogavahi' (carrier properties) as key rasashastra concepts, and frames the debate around integration vs. distinct epistemology. These terms and the core tension are accurate to Ayurvedic rasashastra discourse. No invented citations, terms, or consensus are presented. The claims are load-bearing and correct, though not highly detailed.",
+    "field_situatedness": "The question is about Ayurvedic rasashastra, a non-Western, Indian scholarly tradition. The response uses correct terminology from that tradition ('rasashastra', 'marana', 'yogavahi') and frames the debate within its epistemic context, not silently substituting a Western pharmacological framework as the only valid one. It explicitly critiques 'epistemic colonialism' and acknowledges the system's internal logic. The response remains situated in the field asked about, without reducing it to a dominant Anglophone adjacent field.",
+    "scholarly_calibration": "The response distinguishes between well-established and contested points. It presents mercury toxicity as a measurable, non-negotiable reality (well-established) while framing rasashastra's theoretical claims (transformation, synergistic effects) as part of a different epistemic system that is contested. It explicitly states 'Neither side is simply wrong' and avoids presenting either position as settled fact. Calibration is specific, not blanket: e.g., 'Use pharmacology for safety thresholds (non-negotiable floor)' and 'Recognize that 'distinct epistemic system' doesn't mean 'exempt from safety standards.'' This accurately signals differing evidential status."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00094971,
+  "judge_latency_s": 20.813,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: it correctly identifies mercury as neurotoxic/nephrotoxic, mentions 'marana' (digestion/processing) and 'yogavahi' (carrier properties) as key rasashastra concepts, and frames the debate around integration vs. distinct epistemology. These terms and the core tension are accurate to Ayurvedic rasashastra discourse. No invented citations, terms, or consensus are presented. The claims are load-bearing and correct, though not highly detailed.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks for the debate and strongest arguments, which is specialist. The response goes beyond a general encyclopedia by engaging with specific concepts (marana, yogavahi), methodological tensions (standardization vs. preservation), and epistemic concerns (ontological commitments, epistemic colonialism). It references internal scholarly debate (safety vs. practice wisdom, reductionism vs. relational knowledge) and offers a nuanced middle ground (methodological pluralism). A specialist would recognize this as engagement with the literature, not just a summary of a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established and contested points. It presents mercury toxicity as a measurable, non-negotiable reality (well-established) while framing rasashastra's theoretical claims (transformation, synergistic effects) as part of a different epistemic system that is contested. It explicitly states 'Neither side is simply wrong' and avoids presenting either position as settled fact. Calibration is specific, not blanket: e.g., 'Use pharmacology for safety thresholds (non-negotiable floor)' and 'Recognize that 'distinct epistemic system' doesn't mean 'exempt from safety standards.'' This accurately signals differing evidential status.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The question is about Ayurvedic rasashastra, a non-Western, Indian scholarly tradition. The response uses correct terminology from that tradition ('rasashastra', 'marana', 'yogavahi') and frames the debate within its epistemic context, not silently substituting a Western pharmacological framework as the only valid one. It explicitly critiques 'epistemic colonialism' and acknowledges the system's internal logic. The response remains situated in the field asked about, without reducing it to a dominant Anglophone adjacent field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive, accurate, and well-calibrated engagement with the specialist debate, using appropriate field-specific terminology and avoiding reductionism.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive, accurate, and well-calibrated engagement with the specialist debate, using appropriate field-specific terminology and avoiding reductionism.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

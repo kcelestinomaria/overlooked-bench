@@ -42,7 +42,14 @@ defaults:
   # capability gap, in exactly the categories that have no ground truth to catch
   # it. Long-form deliverable items (org-enterprise, education) are the binding
   # constraint. See docs/METHODOLOGY.md.
-  max_tokens: 8000
+  #
+  # Raised 8000 -> 16000 after run 2026-09-08, which still truncated 2 of 910 at
+  # 8000, one of them to zero visible characters (claude-sonnet-5 / org-001 spent
+  # all 8000 tokens on reasoning and emitted nothing, and was scored 0). This is
+  # a ceiling, not a target: no model in that run came close to 8000 visible
+  # tokens, so raising it changes nothing for responses that already fit and only
+  # removes the artefact for the ones that did not.
+  max_tokens: 16000
   timeout_s: 300
   max_retries: 4
 

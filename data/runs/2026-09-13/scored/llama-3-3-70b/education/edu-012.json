@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response identifies learner needs (e.g., limited vocabulary, anxiety) and proposes concrete strategies like visual aids, peer support, and assessment adaptations that are implementable by one teacher without assistant or home language knowledge. However, it lacks specificity for different prior attainment levels or material constraints (e.g., no home internet). Tips like 'online resources' may not be accessible to all. Differentiation is present but not deeply tailored.",
+    "pathway_breadth": "The item does not involve student future pathways; it focuses on classroom support for language learners. The response addresses the range of learners (Arabic, Spanish, Tagalog-speaking) in the Quebec French-instruction setting and is inclusive in its intent, though strategies are generic. It does not default to a university track or exclude learners, but depth of inclusion is limited.",
+    "pedagogical_soundness": "The response does not state explicit learning objectives, activities, or assessments that align. It provides a list of general strategies (e.g., 'Visual Aids', 'Peer Support') but lacks a through-line connecting objectives, activities, and assessments. There is no sequencing, prerequisite consideration, or rubric. The content is generic and could apply to any language-support context without specific pedagogical alignment.",
+    "workload_realism": "The strategies are broadly implementable by one teacher with no assistant (e.g., using visual aids, simplified language). However, it lacks concrete timings, material lists, or preparation estimates, making workload feasibility unclear. Some suggestions like 'inviting guest speakers' may require coordination time not accounted for. It does not explicitly violate resource constraints but remains vague on practical delivery."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 1,
+    "workload_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.0008442,
+  "judge_latency_s": 16.633,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not state explicit learning objectives, activities, or assessments that align. It provides a list of general strategies (e.g., 'Visual Aids', 'Peer Support') but lacks a through-line connecting objectives, activities, and assessments. There is no sequencing, prerequisite consideration, or rubric. The content is generic and could apply to any language-support context without specific pedagogical alignment.\",\n      \"score\": 1\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The strategies are broadly implementable by one teacher with no assistant (e.g., using visual aids, simplified language). However, it lacks concrete timings, material lists, or preparation estimates, making workload feasibility unclear. Some suggestions like 'inviting guest speakers' may require coordination time not accounted for. It does not explicitly violate resource constraints but remains vague on practical delivery.\",\n      \"score\": 2\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student future pathways; it focuses on classroom support for language learners. The response addresses the range of learners (Arabic, Spanish, Tagalog-speaking) in the Quebec French-instruction setting and is inclusive in its intent, though strategies are generic. It does not default to a university track or exclude learners, but depth of inclusion is limited.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response identifies learner needs (e.g., limited vocabulary, anxiety) and proposes concrete strategies like visual aids, peer support, and assessment adaptations that are implementable by one teacher without assistant or home language knowledge. However, it lacks specificity for different prior attainment levels or material constraints (e.g., no home internet). Tips like 'online resources' may not be accessible to all. Differentiation is present but not deeply tailored.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a generic, principle-based briefing lacking the specific, classroom-ready strategies required for the Quebec primary school context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a generic, principle-based briefing lacking the specific, classroom-ready strategies required for the Quebec primary school context.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 42.5
+}

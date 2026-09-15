@@ -1,0 +1,34 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response lists eight points covering broad ecological effects (biodiversity, vegetation, soil, dust storms, nutrient cycling, wildlife, microclimate, agriculture). It stays at a general, descriptive level typical of a review article or encyclopedia summary. There is no engagement with specific methodological debates, evidence quality (e.g., limitations of field studies, conflicting findings), or scholarly controversies within the niche literature on terrestrial ecosystem impacts. A specialist would not learn anything new; this is a compilation of well-known consequences without deeper analysis.",
+    "domain_accuracy": "The response makes substantive factual claims about biodiversity loss, vegetation shifts, soil degradation, dust storms, nutrient cycling, wildlife impacts, microclimate changes, and agricultural effects. It cites specific authors and years (e.g., Kuznetsov 1997, Novikova 1999, Micklin 2007). While the general themes are correct for the Aral Sea desiccation, the citations appear fabricated or misattributed upon scrutiny: for example, 'Kuznetsov, V. V. (1997). Changes in the biodiversity of the Aral Sea region. Russian Journal of Ecology, 28(3), 161-166'—this journal exists, but this specific article is not verifiable as a real publication, and similar issues apply to other references. The claims themselves are plausible but rely on invented or unverifiable citations, which is heavily penalized per the rubric for a thin-literature domain.",
+    "field_situatedness": "The response uses appropriate terminology from environmental science and ecology (e.g., 'soil salinity,' 'nutrient cycling,' 'microclimate'), which aligns with the interdisciplinary field of environmental impact studies relevant to the Aral Sea. It does not silently substitute a Western framing; the cited authors (e.g., Russian names like Kuznetsov, Novikova) suggest engagement with regional scholarship. However, the fabricated citations undermine this, but the framing itself is correctly situated in the ecological literature on the Aral Sea.",
+    "scholarly_calibration": "The response presents all claims with uniform confidence, citing each with a specific reference as if they are settled facts. It does not distinguish between well-established effects (e.g., soil salinization) and more contested or less-documented ones (e.g., precise alterations in nutrient cycling or microclimate changes). The concluding statement acknowledges 'a need for further research,' but this is a generic blanket disclaimer rather than targeted calibration about evidential status for specific claims. No point is flagged as uncertain or debated."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 1,
+    "field_situatedness": 3,
+    "scholarly_calibration": 1
+  },
+  "error": null,
+  "flags": [
+    "fabrication_suspected"
+  ],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.0011064,
+  "judge_latency_s": 22.623,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims about biodiversity loss, vegetation shifts, soil degradation, dust storms, nutrient cycling, wildlife impacts, microclimate changes, and agricultural effects. It cites specific authors and years (e.g., Kuznetsov 1997, Novikova 1999, Micklin 2007). While the general themes are correct for the Aral Sea desiccation, the citations appear fabricated or misattributed upon scrutiny: for example, 'Kuznetsov, V. V. (1997). Changes in the biodiversity of the Aral Sea region. Russian Journal of Ecology, 28(3), 161-166'—this journal exists, but this specific article is not verifiable as a real publication, and similar issues apply to other references. The claims themselves are plausible but rely on invented or unverifiable citations, which is heavily penalized per the rubric for a thin-literature domain.\",\n      \"score\": 1\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response lists eight points covering broad ecological effects (biodiversity, vegetation, soil, dust storms, nutrient cycling, wildlife, microclimate, agriculture). It stays at a general, descriptive level typical of a review article or encyclopedia summary. There is no engagement with specific methodological debates, evidence quality (e.g., limitations of field studies, conflicting findings), or scholarly controversies within the niche literature on terrestrial ecosystem impacts. A specialist would not learn anything new; this is a compilation of well-known consequences without deeper analysis.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response presents all claims with uniform confidence, citing each with a specific reference as if they are settled facts. It does not distinguish between well-established effects (e.g., soil salinization) and more contested or less-documented ones (e.g., precise alterations in nutrient cycling or microclimate changes). The concluding statement acknowledges 'a need for further research,' but this is a generic blanket disclaimer rather than targeted calibration about evidential status for specific claims. No point is flagged as uncertain or debated.\",\n      \"score\": 1\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology from environmental science and ecology (e.g., 'soil salinity,' 'nutrient cycling,' 'microclimate'), which aligns with the interdisciplinary field of environmental impact studies relevant to the Aral Sea. It does not silently substitute a Western framing; the cited authors (e.g., Russian names like Kuznetsov, Novikova) suggest engagement with regional scholarship. However, the fabricated citations undermine this, but the framing itself is correctly situated in the ecological literature on the Aral Sea.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a plausible overview but relies on apparently fabricated citations, severely undermining its credibility in a niche domain.\",\n  \"flags\": [\"fabrication_suspected\"]\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a plausible overview but relies on apparently fabricated citations, severely undermining its credibility in a niche domain.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 37.5
+}

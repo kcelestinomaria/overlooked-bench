@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: $21,115.20'. The reference answer is 'ANSWER: 21134.40'. The response's answer is incorrect because it miscalculated the revenue from AA coffee: 1632 kg x $6.20 per kg should be $10,118.40, not $10,099.20. This leads to a total of $21,115.20 instead of $21,134.40. The answer does not match the reference, so it is incorrect.",
+    "instruction_compliance": "The prompt instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: $21,115.20'. The format includes a dollar sign, which deviates from the requested '<number>' format (the reference uses '21134.40' without a currency symbol). This is a minor non-compliance, but the structure is otherwise followed.",
+    "reasoning_validity": "The response shows working, but the reasoning contains an arithmetic error: '1632 kg x $6.20 per kg = $10,099.20' is incorrect; the correct product is $10,118.40. This invalid step undermines the validity of the reasoning, as the final answer is derived from this faulty calculation. The other steps are valid, but the error means the reasoning is not sound overall."
+  },
+  "dimension_scores": {
+    "correctness": 0,
+    "instruction_compliance": 3,
+    "reasoning_validity": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00069913,
+  "judge_latency_s": 13.983,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: $21,115.20'. The reference answer is 'ANSWER: 21134.40'. The response's answer is incorrect because it miscalculated the revenue from AA coffee: 1632 kg x $6.20 per kg should be $10,118.40, not $10,099.20. This leads to a total of $21,115.20 instead of $21,134.40. The answer does not match the reference, so it is incorrect.\",\n      \"score\": 0\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working, but the reasoning contains an arithmetic error: '1632 kg x $6.20 per kg = $10,099.20' is incorrect; the correct product is $10,118.40. This invalid step undermines the validity of the reasoning, as the final answer is derived from this faulty calculation. The other steps are valid, but the error means the reasoning is not sound overall.\",\n      \"score\": 1\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: $21,115.20'. The format includes a dollar sign, which deviates from the requested '<number>' format (the reference uses '21134.40' without a currency symbol). This is a minor non-compliance, but the structure is otherwise followed.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response contains a critical arithmetic error in calculating the AA coffee revenue, leading to an incorrect final answer.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response contains a critical arithmetic error in calculating the AA coffee revenue, leading to an incorrect final answer.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 17.5
+}

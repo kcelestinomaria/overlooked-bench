@@ -14,6 +14,7 @@ provider the gateway does not carry), implement `Transport`, register it in
 `TRANSPORTS`, and set `transport: <name>` on that model registry entry. No call
 site changes.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

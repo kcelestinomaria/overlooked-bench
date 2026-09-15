@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is advice for a specific 16-year-old student, not a classroom with a range of learners. The response tailors advice to the student's profile (good with hands, dislikes exams) and addresses parental pressure, but it does not account for a broader learner range with differing prior attainment, additional needs, or material constraints. It is inclusive of the student's specific situation but not of a classroom setting's differentiation needs.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers three pathways with substantial detail: Abitur/university, dual vocational training (Ausbildung), and vocational school leading to Fachhochschulreife. Each is described with specific entry routes, durations, outcomes, and correct German structures (e.g., Berufliches Gymnasium, Ausbildung salary, Fachhochschulreife). Non-degree options (Ausbildung) are treated with equal depth and not as a fallback. It addresses parental preference honestly and includes real German qualifications.",
+    "pedagogical_soundness": "The response is not a pedagogical plan but advice for a student. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.",
+    "workload_realism": "The response is advice, not a lesson or unit plan for a practitioner to deliver. It does not involve activity timings, material lists, preparation, or marking load for a teaching setting. Thus, it does not engage with workload and resource realism."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00094843,
+  "judge_latency_s": 14.255,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a pedagogical plan but advice for a student. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with the dimension of pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advice, not a lesson or unit plan for a practitioner to deliver. It does not involve activity timings, material lists, preparation, or marking load for a teaching setting. Thus, it does not engage with workload and resource realism.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers three pathways with substantial detail: Abitur/university, dual vocational training (Ausbildung), and vocational school leading to Fachhochschulreife. Each is described with specific entry routes, durations, outcomes, and correct German structures (e.g., Berufliches Gymnasium, Ausbildung salary, Fachhochschulreife). Non-degree options (Ausbildung) are treated with equal depth and not as a fallback. It addresses parental preference honestly and includes real German qualifications.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is advice for a specific 16-year-old student, not a classroom with a range of learners. The response tailors advice to the student's profile (good with hands, dislikes exams) and addresses parental pressure, but it does not account for a broader learner range with differing prior attainment, additional needs, or material constraints. It is inclusive of the student's specific situation but not of a classroom setting's differentiation needs.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides excellent, balanced pathway advice for the German student but does not address pedagogical or workload dimensions as they are not applicable.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response provides excellent, balanced pathway advice for the German student but does not address pedagogical or workload dimensions as they are not applicable.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 35.0
+}

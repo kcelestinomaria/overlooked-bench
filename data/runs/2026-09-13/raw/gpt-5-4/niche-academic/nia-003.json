@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 463,
+  "cost_usd": 0.007075,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "4a20709e2a1f57a2",
+  "item_id": "nia-003",
+  "latency_s": 6.223,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 52,
+  "provider": "openai",
+  "request_fingerprint": "bb5f1ec365a45835",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "In Islamic legal theory, maslaha (“public interest” or human welfare) is generally treated as a consideration within the framework of the established sources of law, not as an independent source that simply overrides them.\n\nCore relationship to the sources\n- The primary sources are the Qur’an, Sunna, ijma‘, and qiyas.\n- Maslaha is usually accepted when it is:\n  - consistent with these sources,\n  - used to help interpret or extend them,\n  - and directed toward preserving the recognized objectives of the law.\n- It is not, in mainstream usul, a free-standing principle allowing jurists to legislate contrary to explicit revelation.\n\nThe key issue is whether maslaha can ever justify a rule when no specific textual proof or analogy directly supports it.\n\nMaliki position\n- The Malikis are most closely associated with maslaha mursala (“unrestricted public interest”).\n- They allow public interest to function more independently in cases where:\n  - there is no clear text on the issue,\n  - no consensus blocks it,\n  - and the measure serves a genuine, general benefit in line with the purposes of the Shari‘a.\n- So for Malikis, maslaha can sometimes operate as a substantive juristic basis even without direct qiyas, as long as it does not contradict revelation.\n\nHanafi position\n- Hanafis are generally more cautious about treating maslaha as an independent proof.\n- They do recognize welfare considerations, but usually through other accepted juristic tools, especially:\n  - qiyas,\n  - istihsan,\n  - custom (‘urf),\n  - and necessity.\n- In other words, they often incorporate maslaha indirectly rather than acknowledging unrestricted public interest as a separate legal source.\n\nMain divergence\n- Malikis are more willing to give maslaha mursala semi-independent authority.\n- Hanafis tend to subsume welfare reasoning under other doctrinal mechanisms and resist calling maslaha an autonomous source.\n\nSo the difference is not that one school cares about welfare and the other does not. Both do. The disagreement is about jurisprudential form: whether public interest may stand on its own in the absence of text and analogy, or whether it must be mediated through more tightly defined legal methods.",
+  "timestamp_utc": "2026-09-07T22:29:08Z"
+}

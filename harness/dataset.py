@@ -13,6 +13,7 @@ reusing an id for different content would silently corrupt the time series.
 `content_hash` fingerprints the prompt text, so an edited prompt is detectable in
 a run diff even if the id stayed the same.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

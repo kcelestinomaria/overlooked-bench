@@ -28,6 +28,7 @@ a question in a regional field using the framework of the dominant Anglophone
 adjacent field, which produces text that is not exactly wrong but that no
 scholar in that field would have written.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from .base import CategoryMetric, Dimension
 

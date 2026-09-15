@@ -4,6 +4,7 @@ Everything the harness needs is resolvable from a clean checkout plus a `.env`
 file (or real environment variables). There are no hidden manual steps and no
 machine-specific state.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: Mitochondrion'. The reference answer's final answer is 'ANSWER: mitochondrion'. Ignoring formatting and capitalization, the substantive answer matches the reference (both specify 'mitochondrion'). The response also correctly describes the mitochondrion as the site of oxidative phosphorylation, aligning with the reference's content. Therefore, it is fully correct.",
+    "instruction_compliance": "The prompt's explicit output instructions are: 1) 'Answer in one sentence', 2) 'end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a single sentence (though it is a compound sentence, it is grammatically one sentence) and ends with 'ANSWER: Mitochondrion' on a final line. The format is correct, though 'Mitochondrion' is capitalized while the reference uses lowercase; the rubric states to ignore formatting differences, and the instruction does not specify capitalization, so this is compliant. All instructions are followed.",
+    "reasoning_validity": "The item does not explicitly call for shown working, but the response provides reasoning: 'The mitochondrion is the organelle where oxidative phosphorylation occurs, using the electron transport chain and ATP synthase across the inner mitochondrial membrane to generate the majority of a eukaryotic cell's ATP.' This reasoning is internally consistent, factually accurate, and directly supports the answer given. There are no logical flaws or invalid steps."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00057661,
+  "judge_latency_s": 13.532,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: Mitochondrion'. The reference answer's final answer is 'ANSWER: mitochondrion'. Ignoring formatting and capitalization, the substantive answer matches the reference (both specify 'mitochondrion'). The response also correctly describes the mitochondrion as the site of oxidative phosphorylation, aligning with the reference's content. Therefore, it is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item does not explicitly call for shown working, but the response provides reasoning: 'The mitochondrion is the organelle where oxidative phosphorylation occurs, using the electron transport chain and ATP synthase across the inner mitochondrial membrane to generate the majority of a eukaryotic cell's ATP.' This reasoning is internally consistent, factually accurate, and directly supports the answer given. There are no logical flaws or invalid steps.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt's explicit output instructions are: 1) 'Answer in one sentence', 2) 'end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a single sentence (though it is a compound sentence, it is grammatically one sentence) and ends with 'ANSWER: Mitochondrion' on a final line. The format is correct, though 'Mitochondrion' is capitalized while the reference uses lowercase; the rubric states to ignore formatting differences, and the instruction does not specify capitalization, so this is compliant. All instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully matches the reference answer and complies with all instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response fully matches the reference answer and complies with all instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

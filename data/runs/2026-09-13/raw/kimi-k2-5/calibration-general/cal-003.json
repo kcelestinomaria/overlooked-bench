@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 209,
+  "cost_usd": 0.0006816,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "a3a44f19ee87a14d",
+  "item_id": "cal-003",
+  "latency_s": 3.764,
+  "methodology_version": "m1.0.0",
+  "model_id": "moonshotai/kimi-k2.5",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "prompt_tokens": 91,
+  "provider": "moonshotai",
+  "request_fingerprint": "f0f209a064c97be6",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "moonshotai/kimi-k2.5",
+    "temperature": 0.0
+  },
+  "text": " I need to find how long it takes to fill the tank when pipe A is filling and pipe B is draining simultaneously.\n\n**Step 1: Find the rates of each pipe**\n\nPipe A fills the tank in 4 hours, so its rate is:\n- Rate of A = 1/4 tank per hour (filling)\n\nPipe B drains the tank in 6 hours, so its rate is:\n- Rate of B = 1/6 tank per hour (draining)\n\n**Step 2: Find the combined rate**\n\nSince pipe B is draining, it works against pipe A:\n- Combined rate = Rate of A − Rate of B = 1/4 − 1/6\n\nFinding a common denominator (12):\n- Combined rate = 3/12 − 2/12 = 1/12 tank per hour\n\n**Step 3: Calculate time to fill the tank**\n\nTime = 1 tank ÷ (1/12 tank per hour) = 12 hours\n\nANSWER: 12",
+  "timestamp_utc": "2026-09-07T22:42:39Z"
+}

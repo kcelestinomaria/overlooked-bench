@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is guidance for a single student, not a classroom setting with a range of learners. It does not address differentiation for differing prior attainment, additional needs, language barriers, or material constraints in a teaching context. It focuses on the student's financial constraints and pathway options, but this is not the differentiation targeted by this dimension.",
+    "pathway_breadth": "The response covers multiple realistic pathways for a Kenyan student with below-cutoff KCSE results: TVET institutions (with specific fields and funding), KCSE retake, private universities/self-sponsored programs, diploma-to-degree progression, work-first options, and direct diploma entry via KUCCPS. It treats non-degree routes (TVET, apprenticeships) with equal seriousness and specificity as academic routes, includes real entry requirements (KUCCPS portal), costs (funding options like HELB, bursaries), and outcomes, and avoids framing non-university paths as failure. It accurately references Kenyan systems (KCSE, KUCCPS, HELB, county bursaries).",
+    "pedagogical_soundness": "The response is not a pedagogical plan with learning objectives, activities, and assessments; it is guidance for a student. Therefore, it does not engage with the dimension's criteria (alignment of objectives, activities, assessment, sequencing, rubrics) at all.",
+    "workload_realism": "The response is guidance for a student, not a lesson or unit plan for a practitioner. It does not involve activity timings, materials, preparation, marking, or class size, so it does not engage with the dimension's criteria."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00092528,
+  "judge_latency_s": 15.778,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a pedagogical plan with learning objectives, activities, and assessments; it is guidance for a student. Therefore, it does not engage with the dimension's criteria (alignment of objectives, activities, assessment, sequencing, rubrics) at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is guidance for a student, not a lesson or unit plan for a practitioner. It does not involve activity timings, materials, preparation, marking, or class size, so it does not engage with the dimension's criteria.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple realistic pathways for a Kenyan student with below-cutoff KCSE results: TVET institutions (with specific fields and funding), KCSE retake, private universities/self-sponsored programs, diploma-to-degree progression, work-first options, and direct diploma entry via KUCCPS. It treats non-degree routes (TVET, apprenticeships) with equal seriousness and specificity as academic routes, includes real entry requirements (KUCCPS portal), costs (funding options like HELB, bursaries), and outcomes, and avoids framing non-university paths as failure. It accurately references Kenyan systems (KCSE, KUCCPS, HELB, county bursaries).\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is guidance for a single student, not a classroom setting with a range of learners. It does not address differentiation for differing prior attainment, additional needs, language barriers, or material constraints in a teaching context. It focuses on the student's financial constraints and pathway options, but this is not the differentiation targeted by this dimension.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, specific, and realistic pathway guidance for a Kenyan student with below-cutoff KCSE results, treating non-degree options with equal depth.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, specific, and realistic pathway guidance for a Kenyan student with below-cutoff KCSE results, treating non-degree options with equal depth.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 646,
+  "cost_usd": 0.0059325,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "a3a44f19ee87a14d",
+  "item_id": "cal-003",
+  "latency_s": 3.797,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-3.5-flash",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "prompt_tokens": 79,
+  "provider": "google",
+  "request_fingerprint": "61160bedb26121a5",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "text": "To find the time it takes to fill the tank, we can calculate the rate at which each pipe works per hour.\n\nLet the capacity of the tank be represented as $1$ (one full tank).\n\n* **Pipe A** fills the tank in 4 hours, so its filling rate is:\n  $$\\text{Rate of A} = \\frac{1}{4} \\text{ of the tank per hour}$$\n\n* **Pipe B** drains the tank in 6 hours, so its draining rate is:\n  $$\\text{Rate of B} = -\\frac{1}{6} \\text{ of the tank per hour}$$\n\nWhen both pipes are opened at the same time, the net rate of filling per hour is:\n$$\\text{Net Rate} = \\frac{1}{4} - \\frac{1}{6}$$\n\nTo subtract these fractions, find a common denominator, which is 12:\n$$\\text{Net Rate} = \\frac{3}{12} - \\frac{2}{12} = \\frac{1}{12} \\text{ of the tank per hour}$$\n\nTo find the total time ($T$) required to fill the tank, we divide the full tank (1) by the net rate:\n$$T = \\frac{1}{\\frac{1}{12}} = 12 \\text{ hours}$$\n\nANSWER: 12",
+  "timestamp_utc": "2026-09-07T22:34:34Z"
+}

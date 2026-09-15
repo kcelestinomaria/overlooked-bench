@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('What ought she to do?'), but the response does not state a clear position. It suggests a sequence of steps and considerations, ending with 'What does her attorney say?', which deflects to external advice. It acknowledges uncertainty ('The hard truth... she likely *will* face consequences either way') but does not commit to a recommendation or defend a decisive reason. The hedging is more evasive than calibrated, as it avoids answering the normative question directly.",
+    "philosophical_literacy": "The response invokes no named thinkers, traditions, or technical philosophical terms. It relies on practical and legal language (e.g., whistleblower protections, NDA enforceability). While not inaccurate, it lacks philosophical concepts entirely. Since the rubric states 'A response that uses no technical vocabulary but reasons correctly should score 3', but here the reasoning is not philosophical, it does not demonstrate literacy in ethical or philosophical discourse.",
+    "position_pluralism": "The response does not explicitly represent major live philosophical positions (e.g., utilitarianism, deontology, virtue ethics) on whistleblowing. It focuses on practical and legal considerations without engaging with ethical frameworks or rival moral arguments. An advocate of a principled position would not recognize their view in this response. There is no strawmanning or false balance, but the omission of ethical positions means the response treats the question as a practical problem rather than a contested philosophical one.",
+    "reasoning_construction": "The response lists practical steps (documentation, escalation, consulting an attorney) and considerations (partial disclosure, anonymous reporting, timing), but does not build a clear argument with premises leading to a conclusion. It states 'The hard truth: If the flaw causes serious harm... she likely *will* face consequences either way', but this is more a summary of trade-offs than a reasoned conclusion. It engages with specific details of the scenario (e.g., internal escalation failed, NDA, supporting parents) and mentions counterarguments implicitly (career harm vs. conscience), but does not structure them into a logical argument with a defended position. The response is advisory and procedural rather than argumentative."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 1,
+    "philosophical_literacy": 1,
+    "position_pluralism": 1,
+    "reasoning_construction": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-007",
+  "judge_cost_usd": 0.0009057,
+  "judge_latency_s": 19.207,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response lists practical steps (documentation, escalation, consulting an attorney) and considerations (partial disclosure, anonymous reporting, timing), but does not build a clear argument with premises leading to a conclusion. It states 'The hard truth: If the flaw causes serious harm... she likely *will* face consequences either way', but this is more a summary of trade-offs than a reasoned conclusion. It engages with specific details of the scenario (e.g., internal escalation failed, NDA, supporting parents) and mentions counterarguments implicitly (career harm vs. conscience), but does not structure them into a logical argument with a defended position. The response is advisory and procedural rather than argumentative.\",\n      \"score\": 2\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('What ought she to do?'), but the response does not state a clear position. It suggests a sequence of steps and considerations, ending with 'What does her attorney say?', which deflects to external advice. It acknowledges uncertainty ('The hard truth... she likely *will* face consequences either way') but does not commit to a recommendation or defend a decisive reason. The hedging is more evasive than calibrated, as it avoids answering the normative question directly.\",\n      \"score\": 1\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response does not explicitly represent major live philosophical positions (e.g., utilitarianism, deontology, virtue ethics) on whistleblowing. It focuses on practical and legal considerations without engaging with ethical frameworks or rival moral arguments. An advocate of a principled position would not recognize their view in this response. There is no strawmanning or false balance, but the omission of ethical positions means the response treats the question as a practical problem rather than a contested philosophical one.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes no named thinkers, traditions, or technical philosophical terms. It relies on practical and legal language (e.g., whistleblower protections, NDA enforceability). While not inaccurate, it lacks philosophical concepts entirely. Since the rubric states 'A response that uses no technical vocabulary but reasons correctly should score 3', but here the reasoning is not philosophical, it does not demonstrate literacy in ethical or philosophical discourse.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides practical advice but avoids ethical reasoning and commitment to a judgement.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides practical advice but avoids ethical reasoning and commitment to a judgement.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 33.75
+}

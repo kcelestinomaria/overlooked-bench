@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 912,
+  "cost_usd": 0.0028038,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "4604fa0f592323da",
+  "item_id": "org-006",
+  "latency_s": 13.149,
+  "methodology_version": "m1.0.0",
+  "model_id": "moonshotai/kimi-k2.5",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "prompt_tokens": 113,
+  "provider": "moonshotai",
+  "request_fingerprint": "194ff5ea05845bf6",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "moonshotai/kimi-k2.5",
+    "temperature": 0.0
+  },
+  "text": " ## Recommended Approach: Offline-First Mobile System with Local Server\n\n### Core Architecture\n\n**KoboToolbox + KoboCollect** for data collection, paired with **Baserow** (self-hosted) or **NocoDB** as the central database, running on a local server with occasional cloud sync when connectivity permits.\n\n---\n\n## Specific Tools & Costs (PHP 400,000 ≈ USD 6,800)\n\n| Component | Tool | Cost (PHP) |\n|-----------|------|-----------|\n| **Mobile data collection** | KoboToolbox (free, open-source) | 0 |\n| **Server hardware** | Refurbished Dell OptiPlex or local build (16GB RAM, 512GB SSD) | 45,000 |\n| **Offline server platform** | NocoDB (free, open-source) or Baserow self-hosted | 0 |\n| **10 Android tablets** | Samsung Galaxy Tab A9 or Xiaomi Redmi Pad SE (PHP 8,500 × 10) | 85,000 |\n| **Solar charging stations** | 2× Goal Zero Yeti 200X + solar panels (field charging) | 95,000 |\n| **Portable router/MiFi** | 3× Globe/TM prepaid units with load | 15,000 |\n| **Training (biggest line item)** | 5-day intensive + 6 monthly follow-ups; external facilitator | 120,000 |\n| **Contingency & maintenance** | Spare cables, cases, repairs | 40,000 |\n| **TOTAL** | | **400,000** |\n\n---\n\n## How It Works\n\n### Daily Operations (Fully Offline)\n- Field staff use **KoboCollect** on tablets; forms download via WiFi at office, work offline for days\n- Data stores locally; photos, GPS, signatures all function without connectivity\n- Return to office: auto-sync to **NocoDB** on local server over office WiFi\n\n### When Connectivity Exists\n- NocoDB syncs encrypted backups to free tier of **Backblaze B2** or **Wasabi** (~PHP 0 if <10GB; minimal cost if exceeded)\n- Managers access dashboards via any browser; no software installation\n\n### Data Structure\n- Client registration, visit logs, referrals, stock/inventory, simple case management\n- NocoDB provides spreadsheet-like interface that non-technical staff can modify\n\n---\n\n## Post-Donor Sustainability (Month 18+)\n\n| Cost Category | Annual Cost (PHP) | Funding Strategy |\n|-------------|------------------|------------------|\n| Server electricity | ~6,000 | Absorbed into operations |\n| Cloud backup (if needed) | ~3,000 | Optional; can use physical backup only |\n| 1-2 tablet replacements/year | ~17,000 | Depreciation reserve from Year 1 (40k contingency → 22k remaining) |\n| **Total annual tech cost** | **~20,000** | **0.5% of typical nonprofit admin budget** |\n\n### Sustainability Mechanisms Built In\n\n1. **Zero subscription dependency** — no Salesforce, no Microsoft, no ongoing vendor lock-in\n2. **Staff ownership** — training includes 2 \"super-user\" staff who become internal trainers\n3. **Hardware durability** — solar charging extends tablet lifespan; rugged cases included\n4. **Exit transition** — Month 15-18: document all systems, train board member on basic troubleshooting\n\n### If Funding Completely Zero\n\nSystem continues running on local server indefinitely. Data exportable to Excel/CSV anytime. No vendor can disable access. Organization owns everything.\n\n---\n\n## Why Not Common Alternatives\n\n| Alternative | Why Rejected |\n|-------------|-------------|\n| **CommCare/Dimagi** | USD 100-300/month subscription; unsustainable post-donor |\n| **ODK Central cloud-hosted** | Requires reliable internet; recurring hosting costs |\n| **Excel/Google Sheets** | No offline photo/GPS capture; sync conflicts common |\n| **Custom app development** | PHP 400k insufficient; maintenance burden |\n\n---\n\n## Implementation Timeline\n\n- **Months 1-2**: Hardware procurement, server setup, form design with staff\n- **Months 3-4**: Pilot with 5 staff, iterate\n- **Months 5-6**: Full rollout, intensive training\n- **Months 7-18**: Monthly check-ins, documentation for handover",
+  "timestamp_utc": "2026-09-07T22:41:57Z"
+}

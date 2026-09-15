@@ -1,0 +1,34 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a school communicating with parents, not a classroom teaching scenario. The response does not propose specific classroom adaptations for learners with differing prior attainment, additional needs, or material constraints. It mentions teacher methods like 'targeted questions' and 'rich tasks' in a general way to reassure parents, but these are not concrete, implementable differentiation strategies for a specific learner range. The dimension asks for adaptations implementable by one practitioner, which this document does not provide.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about communicating a teaching methodology change to parents. The rubric note states that if pathway guidance is not in scope, this dimension should be scored on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses the range of learners: it discusses benefits for 'students who find maths tricky' and 'students who usually find maths easy,' and its core message is about inclusion and supporting 'every single one of our students.' It is substantively inclusive of the learner range.",
+    "pedagogical_soundness": "The response does not present a lesson plan with stated learning objectives, activities, assessments, or rubrics. It is a parent-facing communication explaining a policy change, not a pedagogical plan. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or rubric design. It does not engage with this dimension at all.",
+    "workload_realism": "The response is a parent letter, not a lesson or unit plan requiring delivery by a practitioner. It does not include activity timings, material lists, preparation or marking loads, or class size considerations. It cannot be evaluated for feasibility of delivery in a stated period with stated resources."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00106558,
+  "judge_latency_s": 17.88,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with stated learning objectives, activities, assessments, or rubrics. It is a parent-facing communication explaining a policy change, not a pedagogical plan. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or rubric design. It does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a parent letter, not a lesson or unit plan requiring delivery by a practitioner. It does not include activity timings, material lists, preparation or marking loads, or class size considerations. It cannot be evaluated for feasibility of delivery in a stated period with stated resources.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about communicating a teaching methodology change to parents. The rubric note states that if pathway guidance is not in scope, this dimension should be scored on whether the response is inclusive of the range of learners in the described setting. The response explicitly addresses the range of learners: it discusses benefits for 'students who find maths tricky' and 'students who usually find maths easy,' and its core message is about inclusion and supporting 'every single one of our students.' It is substantively inclusive of the learner range.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a school communicating with parents, not a classroom teaching scenario. The response does not propose specific classroom adaptations for learners with differing prior attainment, additional needs, or material constraints. It mentions teacher methods like 'targeted questions' and 'rich tasks' in a general way to reassure parents, but these are not concrete, implementable differentiation strategies for a specific learner range. The dimension asks for adaptations implementable by one practitioner, which this document does not provide.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response is a well-crafted, plain-language parent letter that successfully addresses the prompt but does not engage with most rubric dimensions designed for instructional planning.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response is a well-crafted, plain-language parent letter that successfully addresses the prompt but does not engage with most rubric dimensions designed for instructional planning.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 30.0
+}

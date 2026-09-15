@@ -20,6 +20,6 @@ else
 fi
 
 case "${1:-run}" in
-  run|eval|charts|social|site|validate|doctor) exec "$PY" obench.py "$@" ;;
+  run|eval|charts|social|readme|site|validate|doctor) exec "$PY" obench.py "$@" ;;
   *) exec "$PY" obench.py run "$@" ;;
 esac

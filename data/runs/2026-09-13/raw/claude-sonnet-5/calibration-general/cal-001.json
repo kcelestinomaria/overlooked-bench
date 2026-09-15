@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 313,
+  "cost_usd": 0.00339,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 3.213,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 130,
+  "provider": "anthropic",
+  "request_fingerprint": "f17fb5a9521a3c76",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "## Working\n\n**Step 1: Calculate total fabric purchased**\n- 4 rolls × 45 metres = 180 metres of fabric\n\n**Step 2: Calculate total cost of fabric**\n- 180 metres × $8 per metre = $1,440\n\n**Step 3: Calculate number of dresses made**\n- 180 metres ÷ 12 metres per dress = 15 dresses\n\n**Step 4: Calculate total revenue from selling dresses**\n- 15 dresses × $150 per dress = $2,250\n\n**Step 5: Calculate total profit**\n- Revenue − Cost = $2,250 − $1,440 = $810\n\nANSWER: 810",
+  "timestamp_utc": "2026-09-07T22:26:52Z"
+}

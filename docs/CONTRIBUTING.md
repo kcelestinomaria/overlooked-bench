@@ -213,3 +213,35 @@ Open an issue rather than a PR. Say which item, and what specifically is wrong
 with it - the framing, the constraints, the rubric notes, the factual premises.
 Item selection is the most contestable part of this project and we would rather
 argue about it in public than have it quietly assumed to be neutral.
+
+---
+
+## Licensing your contribution
+
+By opening a pull request you agree that your contribution is licensed under the
+licence covering the path you are changing:
+
+| You are changing | Your contribution is licensed under |
+|---|---|
+| `harness/`, `charts/`, `site/`, `obench.py`, run scripts, workflows | AGPL-3.0-or-later |
+| `data/categories/` - benchmark items | CC BY-SA 4.0 |
+| `docs/` | CC BY 4.0 |
+
+You keep the copyright in what you wrote. This grant is what lets the project
+distribute it, and it is stated here because a benchmark that cannot say what
+its items are licensed under cannot be relied on by anyone downstream.
+
+Two specific asks:
+
+- **Do not paste text you do not have the right to license.** Items lifted from
+  a textbook, an exam paper, a company's internal documents, or another
+  benchmark's dataset cannot be accepted, however good they are. Write the
+  prompt yourself.
+- **Say so if an item comes from your professional context.** An item drawn from
+  real work at a named organisation is often the most valuable kind, and also
+  the kind most likely to carry obligations you have not thought about.
+  Paraphrase, remove identifying detail, and note in the PR that you have done
+  so.
+
+Full detail, including why the three parts differ, is in
+[LICENSING.md](../LICENSING.md).

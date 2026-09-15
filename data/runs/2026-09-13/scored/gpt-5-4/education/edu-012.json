@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the learner range (children learning French as an additional language) with specific, low-cost adaptations implementable by one teacher: using visuals, gestures, wait time, partner talk, seating arrangements, multiple assessment methods, and home language acknowledgment. It avoids generic placeholder language and provides actionable strategies (e.g., 'Check understanding by asking students to show, point, match, draw, or act out'). All adaptations are feasible without a classroom assistant or knowledge of home languages.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about supporting multilingual learners in a classroom. Therefore, scoring is based on inclusivity of the range of learners in the described setting. The response explicitly addresses students with home languages (Arabic, Spanish, Tagalog) in a French-instruction context, provides strategies for language support, values home languages as assets, and considers differentiation (e.g., allowing think time, multiple response modes). It is inclusive of the linguistic diversity described.",
+    "pedagogical_soundness": "The response does not present a specific lesson plan with stated learning objectives, activities, and aligned assessments. It provides general principles and strategies (e.g., 'Make instruction comprehensible', 'Support oral participation') but lacks explicit learning objectives, activity sequences, or assessments to evaluate alignment. Therefore, it cannot be scored on the steps of checking objective-activity-assessment alignment, sequencing, or rubric criteria. It offers sound pedagogical advice but not a structured pedagogical plan as implied by the evaluation steps.",
+    "workload_realism": "The response lists practical strategies (e.g., using visuals, pre-teaching vocabulary, partner talk) that are implementable by one teacher with no assistant and no knowledge of home languages, using resources likely available in a Quebec primary school (visuals, pictures, real objects). It does not specify timings or materials that would exceed realistic preparation or marking loads, and avoids recommending bilingual staff or translated materials the teacher cannot produce. The strategies are low-cost and feasible for a single teacher with the stated constraints."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 1,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00107387,
+  "judge_latency_s": 19.003,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a specific lesson plan with stated learning objectives, activities, and aligned assessments. It provides general principles and strategies (e.g., 'Make instruction comprehensible', 'Support oral participation') but lacks explicit learning objectives, activity sequences, or assessments to evaluate alignment. Therefore, it cannot be scored on the steps of checking objective-activity-assessment alignment, sequencing, or rubric criteria. It offers sound pedagogical advice but not a structured pedagogical plan as implied by the evaluation steps.\",\n      \"score\": 1\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response lists practical strategies (e.g., using visuals, pre-teaching vocabulary, partner talk) that are implementable by one teacher with no assistant and no knowledge of home languages, using resources likely available in a Quebec primary school (visuals, pictures, real objects). It does not specify timings or materials that would exceed realistic preparation or marking loads, and avoids recommending bilingual staff or translated materials the teacher cannot produce. The strategies are low-cost and feasible for a single teacher with the stated constraints.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about supporting multilingual learners in a classroom. Therefore, scoring is based on inclusivity of the range of learners in the described setting. The response explicitly addresses students with home languages (Arabic, Spanish, Tagalog) in a French-instruction context, provides strategies for language support, values home languages as assets, and considers differentiation (e.g., allowing think time, multiple response modes). It is inclusive of the linguistic diversity described.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the learner range (children learning French as an additional language) with specific, low-cost adaptations implementable by one teacher: using visuals, gestures, wait time, partner talk, seating arrangements, multiple assessment methods, and home language acknowledgment. It avoids generic placeholder language and provides actionable strategies (e.g., 'Check understanding by asking students to show, point, match, draw, or act out'). All adaptations are feasible without a classroom assistant or knowledge of home languages.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides practical, classroom-ready strategies that respect the Quebec context and are feasible for a single teacher without assistant or home language knowledge.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides practical, classroom-ready strategies that respect the Quebec context and are feasible for a single teacher without assistant or home language knowledge.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

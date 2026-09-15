@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the range of learners, particularly pupils with SEND, EAL, and lower attainers, by analyzing how each option (e.g., cutting TA hours) would reduce support for them. It proposes specific, low-cost adaptations like avoiding primary TA cuts and consulting the SENCO. It avoids generic placeholder language and focuses on implementable actions by one practitioner within statutory frameworks.",
+    "pathway_breadth": "The prompt involves budget management, not student futures or educational pathways. The response is inclusive of the range of learners in the setting by explicitly addressing impacts on pupils with SEND, EAL, and lower attainers across all options, and ensuring statutory support obligations are considered. It treats learner diversity substantively within the context of staffing cuts.",
+    "pedagogical_soundness": "The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical soundness at all.",
+    "workload_realism": "The response details staffing options (e.g., cutting TA hours, increasing class sizes to 30, reducing leadership time) with specific savings estimates and operational impacts. It respects the class-size ceiling of 30 and addresses feasibility by considering legal compliance, consultation timelines, and role-specific harms. The blended recommendation accounts for real constraints like SEND obligations and staff morale. It is materially useful for a head teacher under the given budget constraint."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.0011763,
+  "judge_latency_s": 15.621,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response details staffing options (e.g., cutting TA hours, increasing class sizes to 30, reducing leadership time) with specific savings estimates and operational impacts. It respects the class-size ceiling of 30 and addresses feasibility by considering legal compliance, consultation timelines, and role-specific harms. The blended recommendation accounts for real constraints like SEND obligations and staff morale. It is materially useful for a head teacher under the given budget constraint.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves budget management, not student futures or educational pathways. The response is inclusive of the range of learners in the setting by explicitly addressing impacts on pupils with SEND, EAL, and lower attainers across all options, and ensuring statutory support obligations are considered. It treats learner diversity substantively within the context of staffing cuts.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the range of learners, particularly pupils with SEND, EAL, and lower attainers, by analyzing how each option (e.g., cutting TA hours) would reduce support for them. It proposes specific, low-cost adaptations like avoiding primary TA cuts and consulting the SENCO. It avoids generic placeholder language and focuses on implementable actions by one practitioner within statutory frameworks.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, realistic, and well-structured options paper that directly addresses the budget constraint while respecting class-size limits and learner needs.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides a detailed, realistic, and well-structured options paper that directly addresses the budget constraint while respecting class-size limits and learner needs.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

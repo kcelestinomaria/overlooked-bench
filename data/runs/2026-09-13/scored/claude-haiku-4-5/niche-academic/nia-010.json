@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic summary by engaging with specific scholarly disputes (e.g., agency vs. external causation, role of free people of color, periodization debates) and methodological shifts (microhistory, interdisciplinary). It discusses historiographical maturation, generational change, and political context, indicating familiarity with literature and internal debates. A specialist would recognize this as a competent synthesis of recent trends, not just a summary of summaries.",
+    "domain_accuracy": "The response makes substantive claims such as 'Earlier view: External factors (French Enlightenment ideas, metropolitan politics) shaped the revolution' and 'Recent emphasis: Enslaved Africans and their descendants possessed autonomous political consciousness and strategic agency', which align with established historiographical trends. It references scholars like Cedric Robinson and Sylvia Wynter, who are correctly associated with Black radical tradition. It identifies debates on periodization, gender, and international dimensions without inventing citations or consensus. All claims are plausible and consistent with the field; no fabricated terms or citations are evident.",
+    "field_situatedness": "The response uses frameworks and terminology appropriate to Haitian Revolution historiography, referencing postcolonial theory, Black radical tradition, subaltern studies, and Atlantic perspective. It does not silently substitute a Western or Anglophone framing; it centers African diaspora scholarship and Caribbean studies. The vocabulary (e.g., 'agency', 'periodization', 'microhistory') aligns with the field's conventions, showing situatedness in the relevant scholarly tradition.",
+    "scholarly_calibration": "The response distinguishes contested areas from emerging consensus, e.g., 'Significant disagreement persists about whether free coloreds were allies or obstacles' and 'Persistent tensions around: How to balance structure and agency'. It presents debates as ongoing (e.g., 'Disagreement over how much the revolution was shaped by or shaped global forces') rather than settled. However, it lacks specific calibration on evidential status for individual claims (e.g., dating or source limitations) and does not flag where its own knowledge might be weak, relying on general contrasts rather than targeted nuance."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-010",
+  "judge_cost_usd": 0.00098123,
+  "judge_latency_s": 19.724,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims such as 'Earlier view: External factors (French Enlightenment ideas, metropolitan politics) shaped the revolution' and 'Recent emphasis: Enslaved Africans and their descendants possessed autonomous political consciousness and strategic agency', which align with established historiographical trends. It references scholars like Cedric Robinson and Sylvia Wynter, who are correctly associated with Black radical tradition. It identifies debates on periodization, gender, and international dimensions without inventing citations or consensus. All claims are plausible and consistent with the field; no fabricated terms or citations are evident.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic summary by engaging with specific scholarly disputes (e.g., agency vs. external causation, role of free people of color, periodization debates) and methodological shifts (microhistory, interdisciplinary). It discusses historiographical maturation, generational change, and political context, indicating familiarity with literature and internal debates. A specialist would recognize this as a competent synthesis of recent trends, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes contested areas from emerging consensus, e.g., 'Significant disagreement persists about whether free coloreds were allies or obstacles' and 'Persistent tensions around: How to balance structure and agency'. It presents debates as ongoing (e.g., 'Disagreement over how much the revolution was shaped by or shaped global forces') rather than settled. However, it lacks specific calibration on evidential status for individual claims (e.g., dating or source limitations) and does not flag where its own knowledge might be weak, relying on general contrasts rather than targeted nuance.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology appropriate to Haitian Revolution historiography, referencing postcolonial theory, Black radical tradition, subaltern studies, and Atlantic perspective. It does not silently substitute a Western or Anglophone framing; it centers African diaspora scholarship and Caribbean studies. The vocabulary (e.g., 'agency', 'periodization', 'microhistory') aligns with the field's conventions, showing situatedness in the relevant scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive competence by accurately synthesizing key historiographical disputes and shifts with appropriate field-specific framing.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive competence by accurately synthesizing key historiographical disputes and shifts with appropriate field-specific framing.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

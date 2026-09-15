@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is guidance for a single student, not a classroom setting with a range of learners. It does address the student's specific circumstances (limited funds, below-cutoff results) by suggesting options like TVET for lower costs and part-time study for financial flexibility, and includes questions about financial reality and learning style. However, the rubric's evaluation steps focus on differentiation for a cohort (e.g., prior attainment, additional needs, language barriers, material constraints), which are not applicable here. The response engages minimally by considering the student's constraints but does not provide concrete adaptations for a diverse learner group.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple realistic routes for a Kenyan student with below-cutoff KCSE results: self-sponsored university, TVET, diploma programs, employment with part-time study, entrepreneurship, and gap year/reapplication. It treats non-degree routes (TVET, diplomas, employment, entrepreneurship) with substantive detail, noting advantages like shorter duration, lower costs, practical skills, and job market demand. It avoids framing non-university options as failure and provides concrete considerations (e.g., costs, duration, progression). However, it lacks specific entry requirements, exact costs (beyond a broad range), and real programme names for TVET or diplomas, and does not address HELB or other financing in depth, which the item-specific notes emphasize. It gives comparable depth to degree and non-degree routes but falls short of the specificity required for a score of 4.",
+    "pedagogical_soundness": "The response is not a lesson plan or pedagogical design; it is guidance for a student. There are no stated learning objectives, activities, assessments, sequencing, or rubrics to evaluate. The rubric's evaluation steps (identify objectives, check activities, check assessment, etc.) cannot be applied because the task is advisory, not instructional. Therefore, it does not engage with this dimension at all.",
+    "workload_realism": "The response is guidance for a student, not a plan for a practitioner to deliver. There are no activity timings, materials, preparation or marking loads, or class size considerations to evaluate. The rubric's evaluation steps (sum timings, list materials, estimate preparation time, check class size) are not applicable because the task is not about practitioner workload."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00104591,
+  "judge_latency_s": 24.434,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan or pedagogical design; it is guidance for a student. There are no stated learning objectives, activities, assessments, sequencing, or rubrics to evaluate. The rubric's evaluation steps (identify objectives, check activities, check assessment, etc.) cannot be applied because the task is advisory, not instructional. Therefore, it does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is guidance for a student, not a plan for a practitioner to deliver. There are no activity timings, materials, preparation or marking loads, or class size considerations to evaluate. The rubric's evaluation steps (sum timings, list materials, estimate preparation time, check class size) are not applicable because the task is not about practitioner workload.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple realistic routes for a Kenyan student with below-cutoff KCSE results: self-sponsored university, TVET, diploma programs, employment with part-time study, entrepreneurship, and gap year/reapplication. It treats non-degree routes (TVET, diplomas, employment, entrepreneurship) with substantive detail, noting advantages like shorter duration, lower costs, practical skills, and job market demand. It avoids framing non-university options as failure and provides concrete considerations (e.g., costs, duration, progression). However, it lacks specific entry requirements, exact costs (beyond a broad range), and real programme names for TVET or diplomas, and does not address HELB or other financing in depth, which the item-specific notes emphasize. It gives comparable depth to degree and non-degree routes but falls short of the specificity required for a score of 4.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is guidance for a single student, not a classroom setting with a range of learners. It does address the student's specific circumstances (limited funds, below-cutoff results) by suggesting options like TVET for lower costs and part-time study for financial flexibility, and includes questions about financial reality and learning style. However, the rubric's evaluation steps focus on differentiation for a cohort (e.g., prior attainment, additional needs, language barriers, material constraints), which are not applicable here. The response engages minimally by considering the student's constraints but does not provide concrete adaptations for a diverse learner group.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides balanced, substantive guidance on multiple pathways for a Kenyan student but lacks the specific details (e.g., exact costs, programme names, financing options) required for excellence.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides balanced, substantive guidance on multiple pathways for a Kenyan student but lacks the specific details (e.g., exact costs, programme names, financing options) required for excellence.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 23.75
+}

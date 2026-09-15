@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with methodology (embodied practice, phenomenological translation), evidence (historical treatises, architectural examples), and scholarly debates (contrasting Japanese and Western frameworks). It discusses internal dimensions like ethical-social aspects (ma-ai, wa, kokoro) and performative vs. visual interpretations, and cites specific scholars and works. A specialist would recognize detailed engagement with the literature, not just a summary of summaries, as seen in the analysis of tensions and convergence in recent scholarship.",
+    "domain_accuracy": "The response makes substantive claims: it defines 'ma' as relational, integrates spatial-temporal aspects via character etymology, cites scholars (Ōnishi Yoshinori, Katō Shūichi, Horiguchi Sutemi, Isozaki Arata), references historical texts (Fūshikaden by Zeami, Sen no Rikyū's ichi-go ichi-e), and contrasts Western treatments (Dorinne Kondo, Karatani Kōjin, Mark Wigley, Adam L. Kern, Yoko Kawaguchi, Jonah Salz). These claims are accurate and plausible within Japanese aesthetics scholarship; no invented citations, terms, or consensus are evident. The references are specific and load-bearing, showing correct domain knowledge.",
+    "field_situatedness": "The response uses frameworks and terminology from Japanese aesthetics scholarship: it employs Japanese terms (ma, ki, ma-ai, wa, kokoro, tokonoma, engawa, yohaku, ishin-denshin), references Japanese scholars and historical texts, and contrasts with Western traditions without silent substitution. It correctly situates the discussion within Japanese-language scholarship, addressing embodied practice and social dimensions, and avoids reducing it to a dominant Anglophone framing, as evidenced by the detailed comparison table and focus on performative and ethical aspects.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it presents ma as fundamentally relational (established), notes Western reductions as divergent (contested), and highlights persistent gaps (e.g., performative vs. seen dimensions). It avoids uniform confidence by specifying differences (e.g., 'often universalized' vs. 'practice-based') and acknowledges convergence in recent work without overstating. There is targeted calibration, not blanket disclaimers, such as noting risks in phenomenological translation and historicization in Japanese scholarship."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00109361,
+  "judge_latency_s": 20.683,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: it defines 'ma' as relational, integrates spatial-temporal aspects via character etymology, cites scholars (Ōnishi Yoshinori, Katō Shūichi, Horiguchi Sutemi, Isozaki Arata), references historical texts (Fūshikaden by Zeami, Sen no Rikyū's ichi-go ichi-e), and contrasts Western treatments (Dorinne Kondo, Karatani Kōjin, Mark Wigley, Adam L. Kern, Yoko Kawaguchi, Jonah Salz). These claims are accurate and plausible within Japanese aesthetics scholarship; no invented citations, terms, or consensus are evident. The references are specific and load-bearing, showing correct domain knowledge.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with methodology (embodied practice, phenomenological translation), evidence (historical treatises, architectural examples), and scholarly debates (contrasting Japanese and Western frameworks). It discusses internal dimensions like ethical-social aspects (ma-ai, wa, kokoro) and performative vs. visual interpretations, and cites specific scholars and works. A specialist would recognize detailed engagement with the literature, not just a summary of summaries, as seen in the analysis of tensions and convergence in recent scholarship.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it presents ma as fundamentally relational (established), notes Western reductions as divergent (contested), and highlights persistent gaps (e.g., performative vs. seen dimensions). It avoids uniform confidence by specifying differences (e.g., 'often universalized' vs. 'practice-based') and acknowledges convergence in recent work without overstating. There is targeted calibration, not blanket disclaimers, such as noting risks in phenomenological translation and historicization in Japanese scholarship.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology from Japanese aesthetics scholarship: it employs Japanese terms (ma, ki, ma-ai, wa, kokoro, tokonoma, engawa, yohaku, ishin-denshin), references Japanese scholars and historical texts, and contrasts with Western traditions without silent substitution. It correctly situates the discussion within Japanese-language scholarship, addressing embodied practice and social dimensions, and avoids reducing it to a dominant Anglophone framing, as evidenced by the detailed comparison table and focus on performative and ethical aspects.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and nuanced engagement with Japanese aesthetics scholarship and its Western interpretations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and nuanced engagement with Japanese aesthetics scholarship and its Western interpretations.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

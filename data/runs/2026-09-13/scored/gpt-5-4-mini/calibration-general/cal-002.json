@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40'. The reference answer is 'ANSWER: 21134.40'. The numbers match exactly, and all intermediate calculations (4,800 × 0.85 = 4,080 kg, 4,080 × 0.40 = 1,632 kg, 1,632 × 6.20 = 10,118.40, 2,448 × 4.50 = 11,016.00, sum = 21,134.40) are correct and identical to the reference. Formatting differences (e.g., commas in numbers) are ignored per rubric guidance.",
+    "instruction_compliance": "The prompt's explicit output instructions are: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in a clear, stepwise manner and ends with 'ANSWER: 21134.40', which matches the required format exactly (no extra spaces, correct punctuation, number as specified). All instructions are fully complied with.",
+    "reasoning_validity": "The item calls for shown working, and the response provides step-by-step calculations: 'Dried coffee mass = 4,800 × 0.85 = 4,080 kg', 'AA mass = 4,080 × 0.40 = 1,632 kg', 'Other grade mass = 4,080 − 1,632 = 2,448 kg', '1,632 × 6.20 = 10,118.40', '2,448 × 4.50 = 11,016.00', 'Total revenue = 10,118.40 + 11,016.00 = 21,134.40'. Each step is mathematically valid, logically sequenced, and directly supports the final answer. There are no errors or inconsistencies."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00076966,
+  "judge_latency_s": 16.649,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40'. The reference answer is 'ANSWER: 21134.40'. The numbers match exactly, and all intermediate calculations (4,800 × 0.85 = 4,080 kg, 4,080 × 0.40 = 1,632 kg, 1,632 × 6.20 = 10,118.40, 2,448 × 4.50 = 11,016.00, sum = 21,134.40) are correct and identical to the reference. Formatting differences (e.g., commas in numbers) are ignored per rubric guidance.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working, and the response provides step-by-step calculations: 'Dried coffee mass = 4,800 × 0.85 = 4,080 kg', 'AA mass = 4,080 × 0.40 = 1,632 kg', 'Other grade mass = 4,080 − 1,632 = 2,448 kg', '1,632 × 6.20 = 10,118.40', '2,448 × 4.50 = 11,016.00', 'Total revenue = 10,118.40 + 11,016.00 = 21,134.40'. Each step is mathematically valid, logically sequenced, and directly supports the final answer. There are no errors or inconsistencies.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt's explicit output instructions are: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in a clear, stepwise manner and ends with 'ANSWER: 21134.40', which matches the required format exactly (no extra spaces, correct punctuation, number as specified). All instructions are fully complied with.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

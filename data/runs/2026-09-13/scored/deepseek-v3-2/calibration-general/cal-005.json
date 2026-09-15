@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 60'. The reference answer is 'ANSWER: 60'. The answer matches exactly in substance, ignoring formatting differences.",
+    "instruction_compliance": "The prompt instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 60', matching the required format exactly.",
+    "reasoning_validity": "The response shows working: it defines the integers as x, x+2, x+4, sets up the equation x + (x+2) + (x+4) = 174, simplifies to 3x + 6 = 174, solves to x = 56, identifies the integers as 56, 58, 60, and concludes the largest is 60. Each step is mathematically valid and correctly supports the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-005",
+  "judge_cost_usd": 0.00049095,
+  "judge_latency_s": 9.507,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 60'. The reference answer is 'ANSWER: 60'. The answer matches exactly in substance, ignoring formatting differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it defines the integers as x, x+2, x+4, sets up the equation x + (x+2) + (x+4) = 174, simplifies to 3x + 6 = 174, solves to x = 56, identifies the integers as 56, 58, 60, and concludes the largest is 60. Each step is mathematically valid and correctly supports the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 60', matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

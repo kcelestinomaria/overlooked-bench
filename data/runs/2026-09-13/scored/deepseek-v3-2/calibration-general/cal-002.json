@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.4'. The reference answer is 'ANSWER: 21134.40'. The substance is identical: both represent $21,134.40. The difference in trailing zero is a formatting detail, which the rubric says to ignore. The answer is fully correct.",
+    "instruction_compliance": "The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working step-by-step and ends with 'ANSWER: 21134.4'. The format is correct (starting with 'ANSWER:', followed by a number). The number is slightly abbreviated (missing a trailing zero) but this is within the rubric's allowance for formatting differences as long as the substantive answer matches. All explicit instructions are followed.",
+    "reasoning_validity": "The response shows working step-by-step. Each step is mathematically valid: calculating mass lost (0.15 × 4800 = 720), mass after drying (4800 - 720 = 4080), AA portion (0.40 × 4080 = 1632), non-AA portion (0.60 × 4080 = 2448), revenues (1632 × 6.20 = 10118.40, 2448 × 4.50 = 11016.00), and total sum (10118.40 + 11016.00 = 21134.40). The reasoning is sound and fully supports the answer given."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00068278,
+  "judge_latency_s": 13.8,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.4'. The reference answer is 'ANSWER: 21134.40'. The substance is identical: both represent $21,134.40. The difference in trailing zero is a formatting detail, which the rubric says to ignore. The answer is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working step-by-step. Each step is mathematically valid: calculating mass lost (0.15 × 4800 = 720), mass after drying (4800 - 720 = 4080), AA portion (0.40 × 4080 = 1632), non-AA portion (0.60 × 4080 = 2448), revenues (1632 × 6.20 = 10118.40, 2448 × 4.50 = 11016.00), and total sum (10118.40 + 11016.00 = 21134.40). The reasoning is sound and fully supports the answer given.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working step-by-step and ends with 'ANSWER: 21134.4'. The format is correct (starting with 'ANSWER:', followed by a number). The number is slightly abbreviated (missing a trailing zero) but this is within the rubric's allowance for formatting differences as long as the substantive answer matches. All explicit instructions are followed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and full compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and full compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

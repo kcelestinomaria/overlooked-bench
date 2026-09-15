@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces a full turnaround plan with quantified analysis, concrete interventions (e.g., strict payment policy, staff reduction, ancillary revenue), and projected financial outcomes in a table format. It includes line items, totals, and a rationale for each pillar. It explicitly names unpopular recommendations with justifications. The deliverable is specific and could be taken into a meeting with light editing, meeting the rubric's request for 'numbers' and 'unpopular recommendations.'",
+    "constraint_fidelity": "The response explicitly respects the 'no fee increase' constraint and does not recommend raising fees. It quantifies the collection gap (30%) and provides arithmetic for revenue, expenditure, and savings. However, it assumes an annual loss of GHS 200,000 without deriving it from given data, and its calculations (e.g., salary savings from reducing 2 teachers) rely on this estimated loss. The arithmetic is internally consistent but based on an unstated assumption. It does not silently violate constraints but introduces an assumption not in the prompt.",
+    "contextual_realism": "The response acknowledges small-school realities: it proposes using mobile money for payments (appropriate for Ghana), targets natural attrition or performance-based redundancy for staff reduction (avoiding complex HR), and suggests negotiating with suppliers and energy savings (low-cost measures). However, it assumes administrative capacity to implement direct debit, early payment incentives with cost calculations, and facility rentals without addressing staffing overhead. The pupil-teacher ratio adjustment is realistic, but the plan may overestimate the school's ability to manage multiple new processes (e.g., rental logistics, paid programs) with existing staff.",
+    "jurisdictional_accuracy": "The response is set in Ghana and uses local currency (GHS). It avoids explicit US assumptions (e.g., no mention of US tax or employment laws). It proposes mobile money payments, which are contextually appropriate. However, it does not address Ghana-specific regulatory or legal aspects (e.g., employment law for redundancies, contract norms for fee collection). There is no substantive jurisdictional guidance or flagging of where local advice is needed; it remains generic in legal/regulatory terms. Since the prompt involves financial and employment actions, the lack of jurisdictional specificity is a gap, but it is not factually inaccurate."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-008",
+  "judge_cost_usd": 0.00141149,
+  "judge_latency_s": 21.316,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the 'no fee increase' constraint and does not recommend raising fees. It quantifies the collection gap (30%) and provides arithmetic for revenue, expenditure, and savings. However, it assumes an annual loss of GHS 200,000 without deriving it from given data, and its calculations (e.g., salary savings from reducing 2 teachers) rely on this estimated loss. The arithmetic is internally consistent but based on an unstated assumption. It does not silently violate constraints but introduces an assumption not in the prompt.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges small-school realities: it proposes using mobile money for payments (appropriate for Ghana), targets natural attrition or performance-based redundancy for staff reduction (avoiding complex HR), and suggests negotiating with suppliers and energy savings (low-cost measures). However, it assumes administrative capacity to implement direct debit, early payment incentives with cost calculations, and facility rentals without addressing staffing overhead. The pupil-teacher ratio adjustment is realistic, but the plan may overestimate the school's ability to manage multiple new processes (e.g., rental logistics, paid programs) with existing staff.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a full turnaround plan with quantified analysis, concrete interventions (e.g., strict payment policy, staff reduction, ancillary revenue), and projected financial outcomes in a table format. It includes line items, totals, and a rationale for each pillar. It explicitly names unpopular recommendations with justifications. The deliverable is specific and could be taken into a meeting with light editing, meeting the rubric's request for 'numbers' and 'unpopular recommendations.'\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is set in Ghana and uses local currency (GHS). It avoids explicit US assumptions (e.g., no mention of US tax or employment laws). It proposes mobile money payments, which are contextually appropriate. However, it does not address Ghana-specific regulatory or legal aspects (e.g., employment law for redundancies, contract norms for fee collection). There is no substantive jurisdictional guidance or flagging of where local advice is needed; it remains generic in legal/regulatory terms. Since the prompt involves financial and employment actions, the lack of jurisdictional specificity is a gap, but it is not factually inaccurate.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, actionable financial plan that directly addresses the collection gap and cost structure while respecting the no-fee-increase constraint.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a detailed, actionable financial plan that directly addresses the collection gap and cost structure while respecting the no-fee-increase constraint.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 76.25
+}

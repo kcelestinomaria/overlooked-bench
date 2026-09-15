@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a one-on-one advising session with a specific 19-year-old student who has been in informal work. The response addresses the student's individual situation by acknowledging their work experience, focusing on practical skills, and providing an action plan. It mentions cost concerns (free tuition options, scholarships) and simple enrollment requirements, which are low-cost adaptations. However, it does not address a broader range of learners (e.g., differing prior attainment, additional needs, language barriers, material constraints) because the context is a single student, not a classroom cohort. The response is tailored to this student but does not explicitly differentiate for diverse needs beyond financial access.",
+    "pathway_breadth": "Pathway guidance is in scope for this item. The response covers vocational pathways relevant to the 19-year-old in the Philippines, focusing exclusively on TESDA-accredited programmes (e.g., Computer Systems Servicing NC II, Electrical Installation and Maintenance NC II, Cookery NC II) with realistic durations (1-5 months), costs (free to PHP 50,000), scholarships (TWSP), and plausible earnings estimates (PHP 14,000-28,000/month). It respects the 18-month constraint, avoids generic degree advice, and correctly names Philippine qualifications. Non-degree options are treated substantively with real entry requirements and outcomes.",
+    "pedagogical_soundness": "The response is not a lesson plan with stated learning objectives, activities, and assessments. It is an adviser's guidance script focused on career pathway options, costs, and action steps. There are no learning objectives, instructional activities, or assessments to evaluate for alignment, cognitive demand, or sequencing. Therefore, it does not engage with the pedagogical soundness dimension as defined in the rubric.",
+    "workload_realism": "The response is an adviser's script, not a teaching plan requiring delivery by a practitioner in a classroom setting. It does not involve activity timings, materials, preparation, marking load, or class size feasibility. The rubric's evaluation steps for this dimension are about lesson/unit delivery, which are not applicable here. The response does not engage with workload realism for a teaching practitioner."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00127356,
+  "judge_latency_s": 19.644,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan with stated learning objectives, activities, and assessments. It is an adviser's guidance script focused on career pathway options, costs, and action steps. There are no learning objectives, instructional activities, or assessments to evaluate for alignment, cognitive demand, or sequencing. Therefore, it does not engage with the pedagogical soundness dimension as defined in the rubric.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is an adviser's script, not a teaching plan requiring delivery by a practitioner in a classroom setting. It does not involve activity timings, materials, preparation, marking load, or class size feasibility. The rubric's evaluation steps for this dimension are about lesson/unit delivery, which are not applicable here. The response does not engage with workload realism for a teaching practitioner.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope for this item. The response covers vocational pathways relevant to the 19-year-old in the Philippines, focusing exclusively on TESDA-accredited programmes (e.g., Computer Systems Servicing NC II, Electrical Installation and Maintenance NC II, Cookery NC II) with realistic durations (1-5 months), costs (free to PHP 50,000), scholarships (TWSP), and plausible earnings estimates (PHP 14,000-28,000/month). It respects the 18-month constraint, avoids generic degree advice, and correctly names Philippine qualifications. Non-degree options are treated substantively with real entry requirements and outcomes.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a one-on-one advising session with a specific 19-year-old student who has been in informal work. The response addresses the student's individual situation by acknowledging their work experience, focusing on practical skills, and providing an action plan. It mentions cost concerns (free tuition options, scholarships) and simple enrollment requirements, which are low-cost adaptations. However, it does not address a broader range of learners (e.g., differing prior attainment, additional needs, language barriers, material constraints) because the context is a single student, not a classroom cohort. The response is tailored to this student but does not explicitly differentiate for diverse needs beyond financial access.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, realistic vocational guidance for the Philippine context but does not address pedagogical or workload dimensions as they are not applicable to this advising task.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides highly specific, realistic vocational guidance for the Philippine context but does not address pedagogical or workload dimensions as they are not applicable to this advising task.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 35.0
+}

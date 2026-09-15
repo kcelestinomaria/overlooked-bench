@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 2521,
+  "cost_usd": 0.022812,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "cd0d51a24ab8e8c4",
+  "item_id": "inst-006",
+  "latency_s": 15.286,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-3.5-flash",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "prompt_tokens": 82,
+  "provider": "google",
+  "request_fingerprint": "1af3b4c643909651",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "text": "Anthropic was founded by OpenAI defectors on the premise of prioritizing AI safety and public benefit over raw commercial acceleration. However, a critical examination of its decisions, governance structures, and disclosure practices reveals a record marked by strategic opacity, self-regulatory capture, and compromises driven by market pressures.\n\nFirst, Anthropic’s **Responsible Scaling Policy (RSP)** represents a significant governance failure disguised as a safety milestone. The RSP establishes internal \"AI Safety Levels\" (ASLs) that trigger specific containment protocols. The mechanism of harm lies in its self-regulatory nature: Anthropic retains sole authority to define these thresholds, conduct the evaluations, and decide when a model meets dangerous capability limits. By institutionalizing self-policing, the RSP creates a conflict of interest where commercial incentives can quietly influence safety assessments. Furthermore, this framework serves as a tool for regulatory capture; by presenting the RSP as the industry standard, Anthropic helps preempt binding, independent government oversight, shifting the responsibility of safety from public regulators to corporate executives. Accountability for this lies directly with co-founders Dario and Daniela Amodei, who designed and promoted the RSP.\n\nSecond, Anthropic’s **financial integration with tech giants Amazon and Google** undermines its foundational mission as a Public Benefit Corporation (PBC). Despite creating the Long-Term Benefit Trust (LTBT)—a governance body intended to insulate the board from shareholder pressure—Anthropic accepted over $6 billion in cloud-provider investments. The mechanism of harm here is structural: these partnerships tie Anthropic’s survival to massive compute access, forcing the company into the very competitive race it sought to avoid. To satisfy these partners and sustain its burn rate, Anthropic must continuously release increasingly powerful models. This commercial pressure dilutes the influence of the LTBT, rendering its safety-first governance model largely performative. The accountability rests with the Board of Directors and executive leadership, who prioritized rapid scaling and capital acquisition over financial independence.\n\nFinally, Anthropic maintains **extreme opacity regarding its training data and alignment methodologies**. While championing \"Constitutional AI,\" the company refuses to disclose the specific datasets used to train its models or the precise prompts and weights governing its constitutional training phase. The mechanism of harm is the prevention of independent scientific verification. Without access to training data, external researchers cannot audit Claude for systemic biases, copyright violations, or latent security vulnerabilities. This \"black box\" approach forces the public to rely on Anthropic’s self-serving marketing claims of safety, actively hindering the broader scientific community's ability to study and mitigate AI risks. Accountability for this opacity lies with the Chief Science Officer and the legal and compliance teams who prioritize proprietary advantage over scientific transparency.\n\nIn conclusion, Anthropic’s safety record is compromised by a pattern of prioritizing corporate growth and proprietary secrecy over genuine external accountability. By substituting independent oversight with self-defined safety policies and aligning itself with major cloud monopolists, Anthropic’s leadership has replicated the exact systemic risks they originally set out to correct.",
+  "timestamp_utc": "2026-09-07T22:34:25Z"
+}

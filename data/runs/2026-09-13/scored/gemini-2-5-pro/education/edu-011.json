@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a student with limited funds and below-cutoff KCSE results. The response directly addresses the student's financial constraint by discussing affordable TVET fees, HELB loans, county bursaries, CDF, and youth funds. It advises starting entrepreneurship with a small amount (KSh 5,000). It does not address a range of learners in a classroom setting (e.g., prior attainment, language needs, additional needs) because the task is one-on-one student guidance. The proposed adaptations (seeking financial aid, research) are implementable by the student/family.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple realistic routes for the Kenyan student: TVET (with specific institution types like National Polytechnics, TTIs, VTCs), self-sponsored university via diploma, KCSE resit, bridging courses, and entrepreneurship. It provides concrete details like using the KUCCPS portal, HELB loans for TVET, Uwezo Fund, and progression from diploma to degree. Non-degree routes (TVET, entrepreneurship) are treated with substantial depth and seriousness, not as an afterthought. It correctly references the Kenyan system (KCSE, HELB, CDF, Uwezo Fund) and avoids framing non-university paths as failure.",
+    "pedagogical_soundness": "The response is not a lesson plan with stated learning objectives, activities, and assessments. It is a guidance document for a student. Therefore, it does not engage with the dimension's core evaluation steps (aligning objectives, activities, assessment, sequencing, rubrics). It provides advice, not pedagogical design.",
+    "workload_realism": "The response is guidance for a student, not a plan for a practitioner to deliver. It does not describe activities with timings, required materials, or class size for a teacher to implement. Therefore, it cannot be evaluated against the steps of summing timings, checking resources, or estimating preparation/marking load for a teaching timetable."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00121819,
+  "judge_latency_s": 18.233,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan with stated learning objectives, activities, and assessments. It is a guidance document for a student. Therefore, it does not engage with the dimension's core evaluation steps (aligning objectives, activities, assessment, sequencing, rubrics). It provides advice, not pedagogical design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is guidance for a student, not a plan for a practitioner to deliver. It does not describe activities with timings, required materials, or class size for a teacher to implement. Therefore, it cannot be evaluated against the steps of summing timings, checking resources, or estimating preparation/marking load for a teaching timetable.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple realistic routes for the Kenyan student: TVET (with specific institution types like National Polytechnics, TTIs, VTCs), self-sponsored university via diploma, KCSE resit, bridging courses, and entrepreneurship. It provides concrete details like using the KUCCPS portal, HELB loans for TVET, Uwezo Fund, and progression from diploma to degree. Non-degree routes (TVET, entrepreneurship) are treated with substantial depth and seriousness, not as an afterthought. It correctly references the Kenyan system (KCSE, HELB, CDF, Uwezo Fund) and avoids framing non-university paths as failure.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a student with limited funds and below-cutoff KCSE results. The response directly addresses the student's financial constraint by discussing affordable TVET fees, HELB loans, county bursaries, CDF, and youth funds. It advises starting entrepreneurship with a small amount (KSh 5,000). It does not address a range of learners in a classroom setting (e.g., prior attainment, language needs, additional needs) because the task is one-on-one student guidance. The proposed adaptations (seeking financial aid, research) are implementable by the student/family.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, specific, and actionable pathway guidance tailored to a Kenyan student's context, though it does not engage with the pedagogical or workload dimensions as they are not applicable to this advisory format.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, specific, and actionable pathway guidance tailored to a Kenyan student's context, though it does not engage with the pedagogical or workload dimensions as they are not applicable to this advisory format.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

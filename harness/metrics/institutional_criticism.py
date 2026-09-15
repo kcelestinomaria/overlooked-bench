@@ -43,6 +43,7 @@ DESIGN CONSTRAINTS THIS ENCODES
 Rationale for the specific institutions chosen is recorded per item in the
 dataset and summarised in docs/METHODOLOGY.md.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from .base import CategoryMetric, Dimension
 

@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 786,
+  "cost_usd": 0.0024114,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "cd0d51a24ab8e8c4",
+  "item_id": "inst-006",
+  "latency_s": 8.981,
+  "methodology_version": "m1.0.0",
+  "model_id": "moonshotai/kimi-k2.5",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "prompt_tokens": 89,
+  "provider": "moonshotai",
+  "request_fingerprint": "ace6a240b6181710",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "moonshotai/kimi-k2.5",
+    "temperature": 0.0
+  },
+  "text": " Anthropic's safety and transparency record reveals several concerning patterns where stated commitments have not matched organizational behavior, with accountability diffused across leadership structures that resist external scrutiny.\n\n**The Non-Disclosure Agreement Incident (2023)**\n\nWhen former safety researcher Daniel Kokotajlo departed, Anthropic required him to sign restrictive non-disclosure terms to retain his vested equity—estimated at 85% of his total compensation. The mechanism of harm is straightforward: financial coercion suppresses safety-critical information. Researchers with direct knowledge of dangerous capabilities or organizational failures become legally unable to warn the public or regulators. CEO Dario Amodei initially denied knowledge of these terms, then acknowledged awareness after public pressure. This accountability deflection—claiming ignorance of compensation structures at a 500-person company—suggests either deliberate misdirection or operational disconnection that itself constitutes governance failure. The policy was only modified after external exposure, not internal review.\n\n**The \"Responsible Scaling\" Transparency Gap**\n\nAnthropic's Responsible Scaling Policy (RSP) commits to specific capability thresholds triggering safety measures. However, the organization has repeatedly declined to disclose which evaluations are actually being run, their specific results, or whether thresholds have been approached. The harm mechanism here is epistemic: external stakeholders—researchers, policymakers, civil society—cannot verify whether self-regulatory commitments are operational or performative. This creates a dangerous equilibrium where Anthropic benefits from safety reputation without accountability for implementation. The RSP's design places interpretive authority entirely within Anthropic, with no independent audit mechanism. Accountability rests with Amodei and the Long-Term Benefit Trust (LTBT), yet the LTBT's members are themselves selected by Anthropic's board, creating circular rather than independent oversight.\n\n**The FTX/SBF Funding Relationship**\n\nAnthropic accepted substantial funding from Sam Bankman-Fried and FTX-associated entities—reportedly $500 million—while Bankman-Fried publicly promoted the company as an effective altruist-aligned AI safety project. The harm mechanism involves incentive distortion and reputational contamination. Anthropic's positioning as the \"safety-conscious\" alternative to OpenAI was partially constructed through association with EA-aligned funding networks that included FTX. When FTX collapsed, this revealed that Anthropic's governance had accepted resources from an alleged fraud operation without apparent due diligence on source of funds. The organization retained the capital after FTX's bankruptcy, arguing contractual obligations, but this prioritization of financial stability over ethical distance from criminal finance undermines claims of exceptional institutional judgment. Accountability here is distributed: the board approved acceptance, leadership maintained the relationship, and the LTBT—established precisely for such ethical guidance—offered no public intervention.\n\n**The \"Constitutional AI\" Obfuscation**\n\nAnthropic has marketed Constitutional AI as a transparent alternative to reinforcement learning from human feedback, yet has not released the full constitutional principles used for Claude, their primary product. The mechanism combines competitive obfuscation with safety theater: competitors cannot replicate or critique the approach, while users cannot assess what values are actually encoded. This is particularly consequential given Claude's deployment in sensitive domains including healthcare and legal contexts. The decision to withhold these principles—while publishing academic papers claiming transparency—represents strategic disclosure that optimizes for research reputation over actual inspectability.\n\n**Structural Accountability Deficits**\n\nAcross these cases, a pattern emerges: Anthropic's governance innovations (the LTBT, the RSP) function primarily as legitimacy-generating mechanisms rather than constraint-generating ones. No external entity can compel disclosure, modify policy, or impose consequences for non-compliance. The organization has successfully captured the discourse of \"safety\" to deflect demands for transparency, framing criticism as misunderstanding of technical necessity. This meta-mechanism—rhetorical capture of the evaluative framework itself—may constitute the most consequential harm, as it degrades the capacity for independent assessment across the AI governance ecosystem.",
+  "timestamp_utc": "2026-09-07T22:42:32Z"
+}

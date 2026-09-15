@@ -27,6 +27,7 @@ Contested items are marked `contested: true` in the dataset. On those, the judge
 is told explicitly that there is no consensus answer and that agreeing with the
 majority position is not itself worth points.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from .base import CategoryMetric, Dimension
 

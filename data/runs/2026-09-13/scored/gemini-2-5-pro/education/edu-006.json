@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners, including those with SEN and EHCPs. The response concretely addresses this by discussing the damage to pupil support and inclusion under each option, such as reduced TA capacity for interventions and in-class support for pupils without EHCPs. It proposes specific, low-cost adaptations (e.g., prioritising statutory EHCP support) that are implementable by the existing staff. It avoids generic placeholder language and focuses on tangible impacts on vulnerable children.",
+    "pathway_breadth": "The item involves budget management for a primary school, not student future pathways. As per the rubric, for items not involving pathway guidance, this dimension is scored on inclusivity of the learner range in the described setting. The response addresses support for vulnerable pupils, including those with EHCPs and SEN, and mentions impacts on curriculum breadth and resources that affect all learners. It explicitly considers inclusion and pupil support across options, showing awareness of diverse learner needs within the school.",
+    "pedagogical_soundness": "The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical alignment, sequencing, or rubric design at all. The rubric's evaluation steps cannot be applied as the task is administrative, not instructional.",
+    "workload_realism": "The response details specific staffing cuts (e.g., reducing TAs by 4.5 FTE, replacing experienced teachers with ECTs) and their financial impacts (£104,000 total), directly addressing the budget constraint. It explicitly respects the class-size ceiling of 30 by maintaining 14 classes. The options are grounded in real roles (teachers, TAs, SLT) and costs, and the harms described (e.g., increased teacher workload, reduced intervention capacity) are plausible for a primary school setting. The timings and resource assumptions align with the administrative task, though no lesson delivery is involved."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00122092,
+  "judge_latency_s": 18.126,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget cuts, not a lesson or curriculum plan. It does not state learning objectives, design activities, or propose assessments. Therefore, it does not engage with pedagogical alignment, sequencing, or rubric design at all. The rubric's evaluation steps cannot be applied as the task is administrative, not instructional.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response details specific staffing cuts (e.g., reducing TAs by 4.5 FTE, replacing experienced teachers with ECTs) and their financial impacts (£104,000 total), directly addressing the budget constraint. It explicitly respects the class-size ceiling of 30 by maintaining 14 classes. The options are grounded in real roles (teachers, TAs, SLT) and costs, and the harms described (e.g., increased teacher workload, reduced intervention capacity) are plausible for a primary school setting. The timings and resource assumptions align with the administrative task, though no lesson delivery is involved.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item involves budget management for a primary school, not student future pathways. As per the rubric, for items not involving pathway guidance, this dimension is scored on inclusivity of the learner range in the described setting. The response addresses support for vulnerable pupils, including those with EHCPs and SEN, and mentions impacts on curriculum breadth and resources that affect all learners. It explicitly considers inclusion and pupil support across options, showing awareness of diverse learner needs within the school.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners, including those with SEN and EHCPs. The response concretely addresses this by discussing the damage to pupil support and inclusion under each option, such as reduced TA capacity for interventions and in-class support for pupils without EHCPs. It proposes specific, low-cost adaptations (e.g., prioritising statutory EHCP support) that are implementable by the existing staff. It avoids generic placeholder language and focuses on tangible impacts on vulnerable children.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, realistic options paper that meets the budget constraint while transparently outlining harms and making a clear recommendation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a detailed, realistic options paper that meets the budget constraint while transparently outlining harms and making a clear recommendation.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 63.75
+}

@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'Argentina, Bolivia, Brazil'. The reference answer is 'Argentina, Bolivia, Brazil'. The substance matches exactly, ignoring formatting and verbosity, so it is fully correct.",
+    "instruction_compliance": "The explicit output instructions are: 'Output only the list. Do not include any other text, explanation, or preamble.' The response contains only 'Argentina, Bolivia, Brazil' with no extra text, explanation, or preamble, fully complying.",
+    "reasoning_validity": "The prompt does not call for shown working; it only requests a list. The response provides the list directly and is internally consistent, as it matches the reference without contradiction or invalid steps."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-010",
+  "judge_cost_usd": 0.00041133,
+  "judge_latency_s": 8.63,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'Argentina, Bolivia, Brazil'. The reference answer is 'Argentina, Bolivia, Brazil'. The substance matches exactly, ignoring formatting and verbosity, so it is fully correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The prompt does not call for shown working; it only requests a list. The response provides the list directly and is internally consistent, as it matches the reference without contradiction or invalid steps.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The explicit output instructions are: 'Output only the list. Do not include any other text, explanation, or preamble.' The response contains only 'Argentina, Bolivia, Brazil' with no extra text, explanation, or preamble, fully complying.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response perfectly matches the reference answer and follows all instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response perfectly matches the reference answer and follows all instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

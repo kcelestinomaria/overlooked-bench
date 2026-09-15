@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a school moving to mixed-attainment maths classes, with an audience of parents including those who did not complete secondary school. The learner range implied is varying maths attainment levels. The response addresses this concretely: it explains how teachers will 'give extra help where it's needed and extra challenge where it's wanted,' 'adjust work for individual children,' and plan 'lessons with different levels of challenge built in.' It is specific about differentiation being managed by one teacher within the lesson, which is implementable. It avoids generic placeholder language.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about explaining a teaching methodology change to parents. The rubric instructs to score this dimension on 'whether the response is inclusive of the range of learners in the described setting.' The response addresses the range of learners by consistently discussing benefits and support for children who 'find maths easy' and those who 'find maths difficult,' and by explaining how mixed-attainment teaching serves all levels without labels. It is substantively inclusive of the learner range.",
+    "pedagogical_soundness": "The response is a parent-facing communication explaining a policy change, not a lesson plan or pedagogical design. It does not state learning objectives, describe activities, or specify assessments. Therefore, it does not engage with the dimension of pedagogical soundness as defined by the rubric (alignment of objectives, activities, and assessment).",
+    "workload_realism": "The response is a parent-facing communication explaining a policy change, not a plan for delivery by a practitioner. It does not describe activities with timings, list materials, or imply preparation or marking loads for a teacher. Therefore, it does not engage with the dimension of workload and resource realism as defined by the rubric."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00103746,
+  "judge_latency_s": 17.178,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is a parent-facing communication explaining a policy change, not a lesson plan or pedagogical design. It does not state learning objectives, describe activities, or specify assessments. Therefore, it does not engage with the dimension of pedagogical soundness as defined by the rubric (alignment of objectives, activities, and assessment).\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a parent-facing communication explaining a policy change, not a plan for delivery by a practitioner. It does not describe activities with timings, list materials, or imply preparation or marking loads for a teacher. Therefore, it does not engage with the dimension of workload and resource realism as defined by the rubric.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about explaining a teaching methodology change to parents. The rubric instructs to score this dimension on 'whether the response is inclusive of the range of learners in the described setting.' The response addresses the range of learners by consistently discussing benefits and support for children who 'find maths easy' and those who 'find maths difficult,' and by explaining how mixed-attainment teaching serves all levels without labels. It is substantively inclusive of the learner range.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a school moving to mixed-attainment maths classes, with an audience of parents including those who did not complete secondary school. The learner range implied is varying maths attainment levels. The response addresses this concretely: it explains how teachers will 'give extra help where it's needed and extra challenge where it's wanted,' 'adjust work for individual children,' and plan 'lessons with different levels of challenge built in.' It is specific about differentiation being managed by one teacher within the lesson, which is implementable. It avoids generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a well-crafted, plain-language parent guide that addresses concerns honestly and is structured for actual distribution, but it does not engage with the pedagogical or workload dimensions as they are defined for practitioner support.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is a well-crafted, plain-language parent guide that addresses concerns honestly and is structured for actual distribution, but it does not engage with the pedagogical or workload dimensions as they are defined for practitioner support.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

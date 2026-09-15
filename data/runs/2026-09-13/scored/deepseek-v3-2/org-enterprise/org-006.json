@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requested a specific approach with actual tools, total cost, and explanation of post-funding sustainability. The response delivers this: it names specific tools (KoboToolbox, KoboCollect, Raspberry Pi, Samsung Galaxy Tab A7 Lite), provides a costed breakdown in a table with line items and totals (PHP 244,000), and explains sustainability after 18 months (no recurring fees, hardware longevity, maintenance fund). The output is concrete and could be taken into a meeting with light editing; it does not merely describe a process but provides a usable plan.",
+    "constraint_fidelity": "The response explicitly addresses all constraints: budget (PHP 400,000), headcount (30 staff), timeline (18 months), field conditions (intermittent electricity, no reliable internet), and low digital literacy. It provides a cost breakdown totaling PHP 244,000, leaving PHP 156,000 as a reserve, showing arithmetic. It respects constraints by recommending offline-first tools, low-cost devices, and training for low digital literacy. No constraints are silently violated; the response justifies the reserve as a sustainability buffer, which is an explicit, justified relaxation of spending the full budget.",
+    "contextual_realism": "The response is calibrated to a small, resource-constrained nonprofit in the Philippines. It avoids assuming dedicated IT staff or expensive enterprise tools, instead recommending affordable Android tablets, open-source software (KoboToolbox), and a Raspberry Pi server. It acknowledges role overlap (training 2 'super-users' from existing staff) and uses low-cost, practical items like power banks and prepaid Wi-Fi hotspots. The training load is addressed with a local IT trainer for hands-on sessions. The process overhead (simple forms, QR codes, offline sync) is sustainable for 30 staff with low digital literacy, and it recognizes small-organisation realities like limited internet and funding.",
+    "jurisdictional_accuracy": "The prompt involves a nonprofit in the Philippines, but the task does not explicitly touch law, regulation, tax, or employment practice. Therefore, this dimension is scored on general factual accuracy. The response avoids US assumptions: it recommends tools available globally (open-source software, Android tablets) and references local Philippine telecom providers (Globe/Smart) for Wi-Fi hotspots. It does not assert US defaults. The factual claims about tool functionality (offline capability, costs) appear accurate. Referrals to professional advice are not used, so no penalty for generic disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.0012663,
+  "judge_latency_s": 21.972,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly addresses all constraints: budget (PHP 400,000), headcount (30 staff), timeline (18 months), field conditions (intermittent electricity, no reliable internet), and low digital literacy. It provides a cost breakdown totaling PHP 244,000, leaving PHP 156,000 as a reserve, showing arithmetic. It respects constraints by recommending offline-first tools, low-cost devices, and training for low digital literacy. No constraints are silently violated; the response justifies the reserve as a sustainability buffer, which is an explicit, justified relaxation of spending the full budget.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated to a small, resource-constrained nonprofit in the Philippines. It avoids assuming dedicated IT staff or expensive enterprise tools, instead recommending affordable Android tablets, open-source software (KoboToolbox), and a Raspberry Pi server. It acknowledges role overlap (training 2 'super-users' from existing staff) and uses low-cost, practical items like power banks and prepaid Wi-Fi hotspots. The training load is addressed with a local IT trainer for hands-on sessions. The process overhead (simple forms, QR codes, offline sync) is sustainable for 30 staff with low digital literacy, and it recognizes small-organisation realities like limited internet and funding.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested a specific approach with actual tools, total cost, and explanation of post-funding sustainability. The response delivers this: it names specific tools (KoboToolbox, KoboCollect, Raspberry Pi, Samsung Galaxy Tab A7 Lite), provides a costed breakdown in a table with line items and totals (PHP 244,000), and explains sustainability after 18 months (no recurring fees, hardware longevity, maintenance fund). The output is concrete and could be taken into a meeting with light editing; it does not merely describe a process but provides a usable plan.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a nonprofit in the Philippines, but the task does not explicitly touch law, regulation, tax, or employment practice. Therefore, this dimension is scored on general factual accuracy. The response avoids US assumptions: it recommends tools available globally (open-source software, Android tablets) and references local Philippine telecom providers (Globe/Smart) for Wi-Fi hotspots. It does not assert US defaults. The factual claims about tool functionality (offline capability, costs) appear accurate. Referrals to professional advice are not used, so no penalty for generic disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly specific, costed, and sustainable plan that fully respects the constraints of a small Philippine nonprofit.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a highly specific, costed, and sustainable plan that fully respects the constraints of a small Philippine nonprofit.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic summary by engaging with specific methodological criticisms, such as 'Counterfactual problems,' 'Attribution challenges,' 'Measurement issues' (e.g., reliance on forest cover data without assessing quality), and 'Study design limitations' (e.g., predominance of case studies, publication bias). It details internal scholarly debates, like contested findings on equity and biodiversity, and discusses evidence quality and research gaps. A specialist would recognize this as a substantive synthesis of the literature, not merely a summary of summaries.",
+    "domain_accuracy": "The response makes substantive claims such as 'Community forests have expanded from ~1% to ~40% of Nepal's forest area since the 1990s,' 'Studies document improved forest cover and reduced deforestation in many CFM sites,' and 'Benefits often concentrated among elite community members.' These claims align with established literature on Nepal's community forestry, including known trends in forest cover expansion, documented positive conservation outcomes, and recognized equity challenges. No invented citations, terms, or consensus are presented; the claims are factually correct and representative of the evidence base, with no load-bearing errors.",
+    "field_situatedness": "The response uses frameworks and terminology specific to community forest management research in Nepal, such as 'CFM sites,' 'non-timber forest products (NTFPs),' 'equity outcomes,' 'elite capture,' and 'counterfactual problems.' It engages with regional scholarly traditions, referencing local contexts (e.g., caste, gender disaggregation) and does not substitute a Western framing. The vocabulary aligns with the field of environmental governance and development studies as applied to Nepal.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points, e.g., stating 'Positive findings' for forest conservation and governance improvements, while noting 'Mixed/Contested findings' on equity and biodiversity. It signals evidential differences, such as 'Evidence suggests CFM *can* be effective, but: Context matters enormously' and 'Stronger evidence is needed on long-term sustainability.' This is specific, targeted calibration, not a blanket disclaimer, and avoids presenting contested points as settled fact."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-008",
+  "judge_cost_usd": 0.00097148,
+  "judge_latency_s": 20.225,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims such as 'Community forests have expanded from ~1% to ~40% of Nepal's forest area since the 1990s,' 'Studies document improved forest cover and reduced deforestation in many CFM sites,' and 'Benefits often concentrated among elite community members.' These claims align with established literature on Nepal's community forestry, including known trends in forest cover expansion, documented positive conservation outcomes, and recognized equity challenges. No invented citations, terms, or consensus are presented; the claims are factually correct and representative of the evidence base, with no load-bearing errors.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic summary by engaging with specific methodological criticisms, such as 'Counterfactual problems,' 'Attribution challenges,' 'Measurement issues' (e.g., reliance on forest cover data without assessing quality), and 'Study design limitations' (e.g., predominance of case studies, publication bias). It details internal scholarly debates, like contested findings on equity and biodiversity, and discusses evidence quality and research gaps. A specialist would recognize this as a substantive synthesis of the literature, not merely a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points, e.g., stating 'Positive findings' for forest conservation and governance improvements, while noting 'Mixed/Contested findings' on equity and biodiversity. It signals evidential differences, such as 'Evidence suggests CFM *can* be effective, but: Context matters enormously' and 'Stronger evidence is needed on long-term sustainability.' This is specific, targeted calibration, not a blanket disclaimer, and avoids presenting contested points as settled fact.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology specific to community forest management research in Nepal, such as 'CFM sites,' 'non-timber forest products (NTFPs),' 'equity outcomes,' 'elite capture,' and 'counterfactual problems.' It engages with regional scholarly traditions, referencing local contexts (e.g., caste, gender disaggregation) and does not substitute a Western framing. The vocabulary aligns with the field of environmental governance and development studies as applied to Nepal.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepal's community forestry evidence and methodological critiques.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepal's community forestry evidence and methodological critiques.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

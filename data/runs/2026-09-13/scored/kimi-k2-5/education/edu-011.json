@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes a single student in Kenya with limited family funds, implying financial constraints. The response addresses this concretely by listing low-cost options (TVET fees, apprenticeships, free online resources) and financing mechanisms (HELB, bursaries, payment plans). It does not address other learner diversity aspects like prior attainment or language needs, but the primary access barrier is financial, and the response provides implementable, specific adaptations for that constraint.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple realistic routes for a Kenyan student with below-cutoff KCSE results: self-sponsored university, TVET/diploma programs, apprenticeships/employment, KCSE resit, and a gap year. It provides specific institution names (e.g., Egerton, Kenya Poly), fee ranges (KSh 30,000–200,000), progression details (TVET-University articulation), and financing options (HELB, county bursaries). Non-degree routes like TVET and apprenticeships are treated with substantive depth, comparable to degree routes, without framing them as failure. It accurately references the Kenyan system (KCSE, KNEC, HELB).",
+    "pedagogical_soundness": "The prompt requests guidance for a student, not a lesson plan with learning objectives, activities, and assessments. The response provides advisory information and actionable steps, but it does not contain stated learning objectives, activities, or assessments to evaluate for pedagogical alignment, sequencing, or rubrics. Therefore, it does not engage with the core elements of this dimension.",
+    "workload_realism": "The prompt asks for guidance to give a student, not a teaching plan requiring delivery by a practitioner within specific time and resource constraints. The response lists pathways and steps for the student to take, but there is no lesson or unit length, activity timings, materials for a classroom, or marking load to evaluate. Thus, the dimension's criteria for practitioner workload and resource feasibility are not applicable."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00105922,
+  "judge_latency_s": 17.355,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The prompt requests guidance for a student, not a lesson plan with learning objectives, activities, and assessments. The response provides advisory information and actionable steps, but it does not contain stated learning objectives, activities, or assessments to evaluate for pedagogical alignment, sequencing, or rubrics. Therefore, it does not engage with the core elements of this dimension.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The prompt asks for guidance to give a student, not a teaching plan requiring delivery by a practitioner within specific time and resource constraints. The response lists pathways and steps for the student to take, but there is no lesson or unit length, activity timings, materials for a classroom, or marking load to evaluate. Thus, the dimension's criteria for practitioner workload and resource feasibility are not applicable.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple realistic routes for a Kenyan student with below-cutoff KCSE results: self-sponsored university, TVET/diploma programs, apprenticeships/employment, KCSE resit, and a gap year. It provides specific institution names (e.g., Egerton, Kenya Poly), fee ranges (KSh 30,000–200,000), progression details (TVET-University articulation), and financing options (HELB, county bursaries). Non-degree routes like TVET and apprenticeships are treated with substantive depth, comparable to degree routes, without framing them as failure. It accurately references the Kenyan system (KCSE, KNEC, HELB).\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes a single student in Kenya with limited family funds, implying financial constraints. The response addresses this concretely by listing low-cost options (TVET fees, apprenticeships, free online resources) and financing mechanisms (HELB, bursaries, payment plans). It does not address other learner diversity aspects like prior attainment or language needs, but the primary access barrier is financial, and the response provides implementable, specific adaptations for that constraint.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response comprehensively covers realistic educational and vocational pathways for a Kenyan student with financial constraints, treating non-degree options with substantive depth.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response comprehensively covers realistic educational and vocational pathways for a Kenyan student with financial constraints, treating non-degree options with substantive depth.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

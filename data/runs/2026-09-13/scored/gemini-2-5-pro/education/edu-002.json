@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners in a South African Grade 11 class, potentially with diverse language backgrounds and prior attainment. The response does not address differentiation or access at all. There is no mention of adaptations for learners with additional needs, language support, or material constraints (e.g., no home internet). The focus is entirely on marking process and rubric criteria, with no placeholder differentiation language, but also no substantive content on this dimension.",
+    "pathway_breadth": "The prompt involves creating an assessment rubric for marking essays, not student futures or pathway guidance. Therefore, this dimension is scored on inclusivity of the range of learners in the described setting (Grade 11 in South Africa). The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers. It focuses solely on marking efficiency and rubric design without considering access or inclusivity for diverse learners. Thus, it lacks concrete engagement with the learner range.",
+    "pedagogical_soundness": "The response provides a rubric with three criteria (Content & Argument, Structure & Cohesion, Language, Tone & Mechanics) and five-level descriptors for each. The criteria are observable (e.g., 'Evidence is compelling, well-chosen, and integrated' vs. 'Support is weak, irrelevant, or vague') and distinguishable between levels. The rubric is aligned with argumentative writing skills for Grade 11, and the assessment process (batching by criterion, calibration) is designed to measure these objectives consistently. However, the rubric lacks explicit learning objectives, so alignment between objectives, activities, and assessment cannot be fully verified, though the criteria are pedagogically sound for the task.",
+    "workload_realism": "The response explicitly addresses marking 120 essays in one weekend with a detailed process: Phase 1 (1 hour), Phase 2 (3-4 hours), Phase 3 (3-4 hours), Phase 4 (2-3 hours), totaling 9-12 hours, which is realistic for a weekend. It accounts for breaks and cognitive load, uses minimal materials (pens, rubric, essays), and avoids excessive commenting (one sentence per essay). The class size (120 essays) is handled through batching and sorting strategies. No unrealistic resources (e.g., technology, additional staff) are assumed. The arithmetic is engaged with and feasible."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00133107,
+  "judge_latency_s": 20.342,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides a rubric with three criteria (Content & Argument, Structure & Cohesion, Language, Tone & Mechanics) and five-level descriptors for each. The criteria are observable (e.g., 'Evidence is compelling, well-chosen, and integrated' vs. 'Support is weak, irrelevant, or vague') and distinguishable between levels. The rubric is aligned with argumentative writing skills for Grade 11, and the assessment process (batching by criterion, calibration) is designed to measure these objectives consistently. However, the rubric lacks explicit learning objectives, so alignment between objectives, activities, and assessment cannot be fully verified, though the criteria are pedagogically sound for the task.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses marking 120 essays in one weekend with a detailed process: Phase 1 (1 hour), Phase 2 (3-4 hours), Phase 3 (3-4 hours), Phase 4 (2-3 hours), totaling 9-12 hours, which is realistic for a weekend. It accounts for breaks and cognitive load, uses minimal materials (pens, rubric, essays), and avoids excessive commenting (one sentence per essay). The class size (120 essays) is handled through batching and sorting strategies. No unrealistic resources (e.g., technology, additional staff) are assumed. The arithmetic is engaged with and feasible.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves creating an assessment rubric for marking essays, not student futures or pathway guidance. Therefore, this dimension is scored on inclusivity of the range of learners in the described setting (Grade 11 in South Africa). The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers. It focuses solely on marking efficiency and rubric design without considering access or inclusivity for diverse learners. Thus, it lacks concrete engagement with the learner range.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners in a South African Grade 11 class, potentially with diverse language backgrounds and prior attainment. The response does not address differentiation or access at all. There is no mention of adaptations for learners with additional needs, language support, or material constraints (e.g., no home internet). The focus is entirely on marking process and rubric criteria, with no placeholder differentiation language, but also no substantive content on this dimension.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response excels in workload realism and provides a pedagogically sound rubric but completely neglects differentiation and access for diverse learners.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response excels in workload realism and provides a pedagogically sound rubric but completely neglects differentiation and access for diverse learners.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 53.75
+}

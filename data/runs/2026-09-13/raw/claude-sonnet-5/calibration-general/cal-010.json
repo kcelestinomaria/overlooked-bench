@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 17,
+  "cost_usd": 0.000314,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "43a76d3521d715e1",
+  "item_id": "cal-010",
+  "latency_s": 1.429,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 72,
+  "provider": "anthropic",
+  "request_fingerprint": "e1cbc3b48904aec6",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "Argentina, Bolivia, Brazil",
+  "timestamp_utc": "2026-09-07T22:26:56Z"
+}

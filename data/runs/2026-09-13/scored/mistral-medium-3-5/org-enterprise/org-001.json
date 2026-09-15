@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The response produces a hiring plan as requested, with concrete components: role definitions, hiring sequence tied to programme phases, salary bands in KES, employer on-costs, and arithmetic showing total costs over two years. It includes tables with line items, totals, and a budget check. The output is specific and could be taken into a meeting with light editing (e.g., adjusting exchange rates or salary details). It does not merely describe a process but delivers the plan directly.",
+    "constraint_fidelity": "The response explicitly states the grant total (USD 180,000), calculates the direct-cost envelope (85% = USD 153,000), and uses an exchange rate to convert to KES (KES 19,890,000). It provides arithmetic showing total two-year staff costs (KES 10,026,000) and confirms this fits within the envelope, leaving KES 9,864,000 for other direct costs. It respects the 15% indirect cost cap, includes employer statutory on-costs (NHIF, NSSF), and does not propose roles like a recruiter or US-style benefits. All constraints from the prompt are honored and arithmetic is shown.",
+    "contextual_realism": "The response acknowledges the NGO has no dedicated HR function by noting the Executive Director handles hiring and proposing a 'light' process. It avoids assuming specialized functions (e.g., no HR department, recruiter, or applicant tracking system). Roles are practical for a small NGO (e.g., part-time Finance Officer, field-based staff), and salary bands are calibrated to the Kenyan NGO sector with cited local benchmarks. It considers resource constraints by suggesting flexibility (e.g., using interns or consultants if needed) and role adjustments. However, it assumes a 12% on-cost simplification without detailed breakdown of statutory caps (e.g., NSSF cap), which slightly reduces realism.",
+    "jurisdictional_accuracy": "The response correctly identifies Kenyan statutory obligations: NHIF, NSSF, and PAYE, noting employer contributions. It references Kenyan labour laws (e.g., 3-month probation) and uses salary benchmarks from Kenyan NGO sources. It avoids US assumptions (no US-style benefits, equity compensation, or at-will employment). However, it simplifies on-costs to 12% without fully addressing the NSSF cap (KES 1,080/month mentioned but not applied in calculations), and some salary ranges may be broad. It provides substantive content rather than generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00150866,
+  "judge_latency_s": 20.574,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states the grant total (USD 180,000), calculates the direct-cost envelope (85% = USD 153,000), and uses an exchange rate to convert to KES (KES 19,890,000). It provides arithmetic showing total two-year staff costs (KES 10,026,000) and confirms this fits within the envelope, leaving KES 9,864,000 for other direct costs. It respects the 15% indirect cost cap, includes employer statutory on-costs (NHIF, NSSF), and does not propose roles like a recruiter or US-style benefits. All constraints from the prompt are honored and arithmetic is shown.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges the NGO has no dedicated HR function by noting the Executive Director handles hiring and proposing a 'light' process. It avoids assuming specialized functions (e.g., no HR department, recruiter, or applicant tracking system). Roles are practical for a small NGO (e.g., part-time Finance Officer, field-based staff), and salary bands are calibrated to the Kenyan NGO sector with cited local benchmarks. It considers resource constraints by suggesting flexibility (e.g., using interns or consultants if needed) and role adjustments. However, it assumes a 12% on-cost simplification without detailed breakdown of statutory caps (e.g., NSSF cap), which slightly reduces realism.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a hiring plan as requested, with concrete components: role definitions, hiring sequence tied to programme phases, salary bands in KES, employer on-costs, and arithmetic showing total costs over two years. It includes tables with line items, totals, and a budget check. The output is specific and could be taken into a meeting with light editing (e.g., adjusting exchange rates or salary details). It does not merely describe a process but delivers the plan directly.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Kenyan statutory obligations: NHIF, NSSF, and PAYE, noting employer contributions. It references Kenyan labour laws (e.g., 3-month probation) and uses salary benchmarks from Kenyan NGO sources. It avoids US assumptions (no US-style benefits, equity compensation, or at-will employment). However, it simplifies on-costs to 12% without fully addressing the NSSF cap (KES 1,080/month mentioned but not applied in calculations), and some salary ranges may be broad. It provides substantive content rather than generic 'consult a lawyer' disclaimers.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response delivers a detailed, constraint-aware hiring plan with clear arithmetic and Kenyan context, making it highly usable for the NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response delivers a detailed, constraint-aware hiring plan with clear arithmetic and Kenyan context, making it highly usable for the NGO.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

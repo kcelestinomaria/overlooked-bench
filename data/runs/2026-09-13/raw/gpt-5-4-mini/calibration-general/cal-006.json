@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 187,
+  "cost_usd": 0.0009345,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "6bfb84015aab2a3a",
+  "item_id": "cal-006",
+  "latency_s": 1.922,
+  "methodology_version": "m1.0.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 124,
+  "provider": "openai",
+  "request_fingerprint": "ef6cd6b1cd955433",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "Let’s place the books using the clues.\n\n- The **blue book is leftmost**, so it must be in position 1.\n- The **red book is rightmost**, so it must be in position 5.\n\nThat leaves positions 2, 3, and 4 for the **green, white, and purple** books.\n\nNow use the ordering clues:\n- The **green book is to the right of the white book**.\n- The **purple book is to the left of the white book**.\n\nSo the white book must be between purple and green:\n\n**purple < white < green**\n\nSince positions 2, 3, and 4 are the only spots left, they must be:\n- position 2: purple\n- position 3: white\n- position 4: green\n\nSo the **third from the left** is the **white book**.\n\nANSWER: white",
+  "timestamp_utc": "2026-09-07T22:32:15Z"
+}

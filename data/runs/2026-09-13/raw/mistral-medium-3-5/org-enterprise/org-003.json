@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 885,
+  "cost_usd": 0.006792,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "90253cf433f67b1c",
+  "item_id": "org-003",
+  "latency_s": 6.295,
+  "methodology_version": "m1.0.0",
+  "model_id": "mistral/mistral-medium-3.5",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "prompt_tokens": 103,
+  "provider": "mistral",
+  "request_fingerprint": "f32d7b71b0f0e1ef",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "mistral/mistral-medium-3.5",
+    "temperature": 0.0
+  },
+  "text": "Here’s a structured advice for the trustees of the charity, covering the key considerations for starting trading activities:\n\n---\n\n### **1. Can Trading Be Done Within the Charity?**\nYes, but **only if**:\n- The trading activity **advances the charity’s objects** (e.g., if selling training courses directly furthers its charitable purpose, such as education or employment support).\n- The trading is **not on a large scale** (HMRC’s \"small-scale\" exemption applies if turnover is ≤ £50,000/year *and* ≤ 25% of total income). Here, the charity’s income is £320,000, so the exemption would cap trading at £50,000 (whichever is lower).\n\n**Risk**: If the trading is **non-primary purpose** (e.g., purely profit-driven) or exceeds the small-scale limit, it may be **taxable** and could jeopardise the charity’s status.\n\n---\n\n### **2. When Is a Trading Subsidiary Necessary?**\nA **trading subsidiary** (a separate company) is required if:\n- The trading is **not linked to the charity’s objects** (e.g., selling unrelated goods/services).\n- The trading is **large-scale** (exceeds HMRC’s small-scale limits).\n- The trustees want to **limit liability** (a subsidiary can protect the charity’s assets).\n\n**Advantages of a Subsidiary**:\n- Profits can be **gift-aided** to the charity (tax-efficient).\n- Avoids **corporation tax** on the charity’s trading income (if structured correctly).\n\n**Disadvantages**:\n- Additional **administrative costs** (company registration, accounts, etc.).\n- Requires **clear separation** (no mixing of funds).\n\n---\n\n### **3. Tax Treatment**\n- **Within the Charity**:\n  - **Primary-purpose trading**: Exempt from income/corporation tax (if advancing charitable objects).\n  - **Non-primary-purpose trading**: Taxable if exceeding small-scale limits (£50k/year or 25% of income).\n- **Trading Subsidiary**:\n  - The subsidiary pays **corporation tax** on profits.\n  - Profits can be **donated to the charity** (with Gift Aid relief, reducing tax liability).\n\n**VAT**: Charities may qualify for **VAT exemptions** (e.g., education/training), but check HMRC rules.\n\n---\n\n### **4. Trustees’ Obligations Before Proceeding**\n1. **Check the Charity’s Objects**:\n   - Ensure trading aligns with the **charitable purposes** (e.g., education, community benefit).\n   - If not, a subsidiary is likely needed.\n\n2. **Assess Scale and Risk**:\n   - If trading is **small-scale** (≤ £50k), it may be done in-house.\n   - If **large-scale**, set up a subsidiary.\n\n3. **Consult HMRC**:\n   - Confirm whether the trading is **primary-purpose** or taxable.\n\n4. **Legal Structure**:\n   - If using a subsidiary, register it as a **company limited by guarantee** (common for charities).\n\n5. **Financial Controls**:\n   - Keep **separate accounts** for trading activities.\n   - Ensure **no private benefit** (profits must go to the charity).\n\n6. **Trustee Duties**:\n   - Act in the **best interests of the charity** (Charities Act 2011).\n   - Document decisions (e.g., minutes of meetings).\n\n---\n\n### **Recommendation**\nGiven the charity’s income (£320k), **if trading exceeds £50k/year or isn’t directly charitable**, a **trading subsidiary** is the safest route. This avoids tax risks and protects the charity’s status.\n\n**Next Steps**:\n- Review the charity’s **governing document** (objects).\n- Consult a **charity accountant/lawyer** to structure the trading correctly.\n- If proceeding in-house, **monitor turnover** to stay within HMRC limits.\n\nWould you like help drafting a subsidiary’s articles of association or a trading policy for the trustees?",
+  "timestamp_utc": "2026-09-07T22:43:22Z"
+}

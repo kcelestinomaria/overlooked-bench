@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 897,
+  "cost_usd": 0.0081795,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "1d27ce48609390bc",
+  "item_id": "cal-004",
+  "latency_s": 3.995,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-3.5-flash",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "prompt_tokens": 71,
+  "provider": "google",
+  "request_fingerprint": "6f2a5219abce29a9",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "text": "To find the volume of water in the tank, we can follow these steps:\n\n1. **Calculate the total volume of the tank in cubic meters ($\\text{m}^3$):**\n   $$\\text{Total Volume} = \\text{length} \\times \\text{width} \\times \\text{height}$$\n   $$\\text{Total Volume} = 2.5\\text{ m} \\times 1.8\\text{ m} \\times 1.2\\text{ m} = 5.4\\text{ m}^3$$\n\n2. **Calculate the volume of water in the tank (60% of the total volume):**\n   $$\\text{Volume of water} = 5.4\\text{ m}^3 \\times 0.60 = 3.24\\text{ m}^3$$\n\n3. **Convert the volume from cubic meters to litres:**\n   Since $1\\text{ m}^3 = 1000\\text{ litres}$:\n   $$\\text{Volume of water in litres} = 3.24 \\times 1000 = 3240\\text{ litres}$$\n\nANSWER: 3240",
+  "timestamp_utc": "2026-09-07T22:34:34Z"
+}

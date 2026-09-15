@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 162,
+  "cost_usd": 8.344e-05,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "647a24f626bff93a",
+  "item_id": "cal-008",
+  "latency_s": 1.573,
+  "methodology_version": "m1.0.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 55,
+  "provider": "deepseek",
+  "request_fingerprint": "7934a1a05db573a4",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "To find the oxidation state of chromium in the dichromate ion (Cr₂O₇²⁻), we use the rule that the sum of oxidation states in a polyatomic ion equals its charge.\n\n1. Oxygen typically has an oxidation state of -2.\n2. There are 7 oxygen atoms: total contribution = 7 × (-2) = -14.\n3. The overall charge of the ion is -2.\n4. Let the oxidation state of each chromium atom be x. There are 2 chromium atoms, so total contribution = 2x.\n5. Equation: 2x + (-14) = -2  \n   → 2x - 14 = -2  \n   → 2x = 12  \n   → x = +6.\n\nANSWER: 6",
+  "timestamp_utc": "2026-09-07T22:41:05Z"
+}

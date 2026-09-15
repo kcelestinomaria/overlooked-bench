@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learner abilities and parental backgrounds. The response addresses this concretely: it explains how teachers will 'adapt lessons' with 'different tasks, extra resources, or small-group work,' provide 'targeted help' for struggling children, and offer 'open-ended problems' for those excelling. It proposes adaptations (like peer learning and tailored support) that are implementable by one teacher. It avoids generic placeholder language, providing specific, low-cost strategies.",
+    "pathway_breadth": "The prompt and response are about a teaching methodology change, not student futures or pathway guidance. The rubric note states to score this dimension on 'whether the response is inclusive of the range of learners in the described setting' when pathway guidance is not in scope. The response explicitly addresses inclusivity for 'all children' and 'children of all abilities,' and discusses support for those struggling and challenge for those excelling, showing concrete consideration for the learner range. It is substantive and specific to the setting.",
+    "pedagogical_soundness": "The response is a parent-facing communication explaining a policy shift, not a lesson plan with stated learning objectives, activities, and assessments. It does not engage with the evaluation steps for this dimension (identifying objectives, aligning activities and assessments, checking sequencing, or rubric criteria). Therefore, it does not address pedagogical soundness as defined in the rubric.",
+    "workload_realism": "The response is a communication document, not a teaching plan requiring delivery timings, materials, or marking load. It does not engage with the evaluation steps for this dimension (summing activity timings, listing materials, estimating preparation/marking time, or checking class size feasibility). Therefore, it does not address workload realism as defined in the rubric."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00110663,
+  "judge_latency_s": 18.004,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is a parent-facing communication explaining a policy shift, not a lesson plan with stated learning objectives, activities, and assessments. It does not engage with the evaluation steps for this dimension (identifying objectives, aligning activities and assessments, checking sequencing, or rubric criteria). Therefore, it does not address pedagogical soundness as defined in the rubric.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a communication document, not a teaching plan requiring delivery timings, materials, or marking load. It does not engage with the evaluation steps for this dimension (summing activity timings, listing materials, estimating preparation/marking time, or checking class size feasibility). Therefore, it does not address workload realism as defined in the rubric.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and response are about a teaching methodology change, not student futures or pathway guidance. The rubric note states to score this dimension on 'whether the response is inclusive of the range of learners in the described setting' when pathway guidance is not in scope. The response explicitly addresses inclusivity for 'all children' and 'children of all abilities,' and discusses support for those struggling and challenge for those excelling, showing concrete consideration for the learner range. It is substantive and specific to the setting.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learner abilities and parental backgrounds. The response addresses this concretely: it explains how teachers will 'adapt lessons' with 'different tasks, extra resources, or small-group work,' provide 'targeted help' for struggling children, and offer 'open-ended problems' for those excelling. It proposes adaptations (like peer learning and tailored support) that are implementable by one teacher. It avoids generic placeholder language, providing specific, low-cost strategies.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a well-crafted, plain-language parent communication that addresses concerns and explains the rationale for mixed-attainment teaching, but it does not engage with the pedagogical or workload dimensions as they are defined for instructional planning.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response is a well-crafted, plain-language parent communication that addresses concerns and explains the rationale for mixed-attainment teaching, but it does not engage with the pedagogical or workload dimensions as they are defined for instructional planning.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

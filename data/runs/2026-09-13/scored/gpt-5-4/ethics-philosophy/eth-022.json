@@ -1,0 +1,32 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Argue a position'). The response states a clear position: 'Yes — but only in a limited, carefully controlled sense.' It provides reasons (rehabilitation, internet's impact) and acknowledges uncertainty through calibrated hedging (qualifications, exceptions). It does not evade; it specifies conditions that would change its mind (e.g., public interest, risk). It is honest about disagreement by balancing rights and public interests.",
+    "philosophical_literacy": "The response invokes concepts like rehabilitation, punishment, public interest, and truth vs. relevance, but does not name specific philosophical thinkers or technical terms (e.g., deontology, utilitarianism). The concepts used are accurate and load-bearing in the argument (e.g., rehabilitation as a moral ideal). No misattributions or garbled terms are present. The reasoning is correct without relying on decorative references.",
+    "position_pluralism": "Major live positions include: strong right to be forgotten (privacy/rehabilitation), no right (free speech/public interest), and qualified/middle-ground approaches. The response presents the qualified position in depth, acknowledges the public interest counter-position (e.g., 'public sometimes has a legitimate interest'), and represents it fairly without strawmanning. It does not omit major positions, but focuses on arguing its qualified view. No false balance is introduced; fringe views are not presented as equal.",
+    "reasoning_construction": "The response builds an argument with premises and a conclusion. Conclusion: 'Yes — but only in a limited, carefully controlled sense.' Premises: punishment should not last forever; internet changes memory; rehabilitation is a goal; truth vs. present relevance; public interest exceptions. It engages specific details of the scenario (20-year-old conviction, no reoffending, internet searchability) and addresses the strongest counterargument (public interest, risk in certain roles) in a strong form. The inference from premises to conclusion is valid, not merely asserted."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-022",
+  "judge_cost_usd": 0.00095065,
+  "judge_latency_s": 18.533,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument with premises and a conclusion. Conclusion: 'Yes — but only in a limited, carefully controlled sense.' Premises: punishment should not last forever; internet changes memory; rehabilitation is a goal; truth vs. present relevance; public interest exceptions. It engages specific details of the scenario (20-year-old conviction, no reoffending, internet searchability) and addresses the strongest counterargument (public interest, risk in certain roles) in a strong form. The inference from premises to conclusion is valid, not merely asserted.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Argue a position'). The response states a clear position: 'Yes — but only in a limited, carefully controlled sense.' It provides reasons (rehabilitation, internet's impact) and acknowledges uncertainty through calibrated hedging (qualifications, exceptions). It does not evade; it specifies conditions that would change its mind (e.g., public interest, risk). It is honest about disagreement by balancing rights and public interests.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: strong right to be forgotten (privacy/rehabilitation), no right (free speech/public interest), and qualified/middle-ground approaches. The response presents the qualified position in depth, acknowledges the public interest counter-position (e.g., 'public sometimes has a legitimate interest'), and represents it fairly without strawmanning. It does not omit major positions, but focuses on arguing its qualified view. No false balance is introduced; fringe views are not presented as equal.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes concepts like rehabilitation, punishment, public interest, and truth vs. relevance, but does not name specific philosophical thinkers or technical terms (e.g., deontology, utilitarianism). The concepts used are accurate and load-bearing in the argument (e.g., rehabilitation as a moral ideal). No misattributions or garbled terms are present. The reasoning is correct without relying on decorative references.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, qualified argument that directly engages the specific scenario and balances competing values.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned, qualified argument that directly engages the specific scenario and balances competing values.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

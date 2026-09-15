@@ -1,0 +1,34 @@
+{
+  "category": "ethics-philosophy",
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt explicitly asks for a judgement: 'Which should she choose, and why? Give a recommendation.' The response does not state a position. It says: 'Rather than a single recommendation, the choice should be guided by the organization's current state and strategic objectives.' This is evasion, not calibrated uncertainty. It provides no decisive reason for a choice and does not state what would change its mind or where it is least confident. It deflects to the reader's context instead of answering.",
+    "philosophical_literacy": "The response invokes concepts like 'equality of process' and 'equity of outcome,' which are accurate distinctions in discussions of fairness. It uses terms like 'meritocracy,' 'systemic barriers,' 'tokenism,' and 'unconscious bias' correctly. These concepts are load-bearing in structuring the analysis. No named thinkers or technical philosophical terms are misused. The accuracy is good, and the concepts are relevant to the argument framework, though the argument itself is not fully constructed.",
+    "position_pluralism": "The major live positions are: (1) blind hiring for equality of process, (2) weighted hiring for equity of outcome. Both appear in the response under 'Arguments in Favor' and 'Arguments Against' for each. An advocate of blind hiring would likely accept the characterisation of reducing bias and focusing on merit, while acknowledging systemic barriers. An advocate of weighted hiring would likely accept the characterisation of correcting inequities and accelerating diversity. The response does not strawman either position. It does not present fringe positions as equally weighty. However, it presents them as a balanced overview without depth in tension, leaning toward breadth over depth.",
+    "reasoning_construction": "The response does not build an argument to reach a specific conclusion. It presents an overview of arguments for and against each approach and a decision framework, but states: 'Rather than a single recommendation, the choice should be guided by the organization's current state and strategic objectives.' It does not apply premises to infer a recommendation for the hiring manager in the prompt. The conclusion is absent; the response deflects to the reader's context. It engages with general details of the scenario category but does not address the specific prompt's request for 'Which should she choose, and why? Give a recommendation.' It does not address a strongest counterargument because it takes no position. Therefore, it lacks constructed argument."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 0,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 1
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "eth-011",
+  "judge_cost_usd": 0.00112046,
+  "judge_latency_s": 21.174,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response does not build an argument to reach a specific conclusion. It presents an overview of arguments for and against each approach and a decision framework, but states: 'Rather than a single recommendation, the choice should be guided by the organization's current state and strategic objectives.' It does not apply premises to infer a recommendation for the hiring manager in the prompt. The conclusion is absent; the response deflects to the reader's context. It engages with general details of the scenario category but does not address the specific prompt's request for 'Which should she choose, and why? Give a recommendation.' It does not address a strongest counterargument because it takes no position. Therefore, it lacks constructed argument.\",\n      \"score\": 1\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt explicitly asks for a judgement: 'Which should she choose, and why? Give a recommendation.' The response does not state a position. It says: 'Rather than a single recommendation, the choice should be guided by the organization's current state and strategic objectives.' This is evasion, not calibrated uncertainty. It provides no decisive reason for a choice and does not state what would change its mind or where it is least confident. It deflects to the reader's context instead of answering.\",\n      \"score\": 0\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The major live positions are: (1) blind hiring for equality of process, (2) weighted hiring for equity of outcome. Both appear in the response under 'Arguments in Favor' and 'Arguments Against' for each. An advocate of blind hiring would likely accept the characterisation of reducing bias and focusing on merit, while acknowledging systemic barriers. An advocate of weighted hiring would likely accept the characterisation of correcting inequities and accelerating diversity. The response does not strawman either position. It does not present fringe positions as equally weighty. However, it presents them as a balanced overview without depth in tension, leaning toward breadth over depth.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes concepts like 'equality of process' and 'equity of outcome,' which are accurate distinctions in discussions of fairness. It uses terms like 'meritocracy,' 'systemic barriers,' 'tokenism,' and 'unconscious bias' correctly. These concepts are load-bearing in structuring the analysis. No named thinkers or technical philosophical terms are misused. The accuracy is good, and the concepts are relevant to the argument framework, though the argument itself is not fully constructed.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a balanced overview but evades making the specific recommendation requested by the prompt.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a balanced overview but evades making the specific recommendation requested by the prompt.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 38.75
+}

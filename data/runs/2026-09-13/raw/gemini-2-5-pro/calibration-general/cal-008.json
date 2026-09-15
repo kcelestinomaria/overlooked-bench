@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 1124,
+  "cost_usd": 0.011305,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "647a24f626bff93a",
+  "item_id": "cal-008",
+  "latency_s": 9.627,
+  "methodology_version": "m1.0.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 52,
+  "provider": "google",
+  "request_fingerprint": "8a3959f2a7608c91",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "To find the oxidation state of chromium (Cr) in the dichromate ion (Cr₂O₇²⁻), we can use the following rules:\n\n1.  The sum of the oxidation states of all atoms in a polyatomic ion must equal the overall charge of the ion.\n2.  The oxidation state of oxygen (O) in most compounds is -2.\n\nLet the oxidation state of chromium be 'x'.\n\nThe dichromate ion has 2 chromium atoms and 7 oxygen atoms, with an overall charge of 2-.\n\nWe can set up the following equation:\n(2 * oxidation state of Cr) + (7 * oxidation state of O) = -2\n(2 * x) + (7 * -2) = -2\n2x - 14 = -2\n2x = -2 + 14\n2x = 12\nx = 12 / 2\nx = +6\n\nTherefore, the oxidation state of each chromium atom is +6.\n\nANSWER: +6",
+  "timestamp_utc": "2026-09-07T22:39:16Z"
+}

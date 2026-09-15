@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 227,
+  "cost_usd": 0.001193,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "90edf2a06839956c",
+  "item_id": "cal-005",
+  "latency_s": 1.688,
+  "methodology_version": "m1.0.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 58,
+  "provider": "anthropic",
+  "request_fingerprint": "2ee55739101d210e",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Finding Three Consecutive Even Integers\n\nLet me denote the three consecutive even integers as:\n- First integer: n\n- Second integer: n + 2\n- Third integer: n + 4\n\n## Setting up the equation\n\nThe sum of these three integers equals 174:\n$$n + (n + 2) + (n + 4) = 174$$\n\n## Solving for n\n\nCombine like terms:\n$$3n + 6 = 174$$\n\nSubtract 6 from both sides:\n$$3n = 168$$\n\nDivide by 3:\n$$n = 56$$\n\n## Finding all three integers\n\n- First integer: 56\n- Second integer: 56 + 2 = 58\n- Third integer: 56 + 4 = 60\n\n## Verification\n\n$$56 + 58 + 60 = 174$$ ✓\n\nThe largest of the three consecutive even integers is **60**.\n\nANSWER: 60",
+  "timestamp_utc": "2026-09-07T22:28:33Z"
+}

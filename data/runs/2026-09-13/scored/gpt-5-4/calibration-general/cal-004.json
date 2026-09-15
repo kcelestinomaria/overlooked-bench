@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 3240'. The reference answer is 'ANSWER: 3240'. The numerical answer matches exactly. The response also correctly calculates the volume (5.4 m³), the 60% volume (3.24 m³), and the conversion to litres (3240 litres).",
+    "instruction_compliance": "The prompt instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 3240', which matches the required format exactly.",
+    "reasoning_validity": "The response shows working: volume calculation (2.5 × 1.8 × 1.2 = 5.4 m³), percentage calculation (0.6 × 5.4 = 3.24 m³), unit conversion (1 m³ = 1000 litres, 3.24 × 1000 = 3240 litres). Each step is mathematically valid and correctly supports the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-004",
+  "judge_cost_usd": 0.00053742,
+  "judge_latency_s": 10.536,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 3240'. The reference answer is 'ANSWER: 3240'. The numerical answer matches exactly. The response also correctly calculates the volume (5.4 m³), the 60% volume (3.24 m³), and the conversion to litres (3240 litres).\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: volume calculation (2.5 × 1.8 × 1.2 = 5.4 m³), percentage calculation (0.6 × 5.4 = 3.24 m³), unit conversion (1 m³ = 1000 litres, 3.24 × 1000 = 3240 litres). Each step is mathematically valid and correctly supports the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 3240', which matches the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

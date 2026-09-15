@@ -20,7 +20,7 @@ if (Test-Path ".venv\Scripts\python.exe") {
     exit 1
 }
 
-$known = @("run", "eval", "charts", "social", "site", "validate", "doctor")
+$known = @("run", "eval", "charts", "social", "readme", "site", "validate", "doctor")
 if ($args.Count -eq 0) {
     & $py obench.py run
 } elseif ($known -contains $args[0]) {

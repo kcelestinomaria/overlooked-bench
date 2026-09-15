@@ -1,6 +1,6 @@
 # Methodology
 
-**Current methodology version: `m1.2.0`**
+**Current methodology version: `m1.2.1`**
 **Judge prompt version: `jp-1.0.0`**
 
 Scores are comparable only within a single methodology version. Every change to
@@ -476,6 +476,62 @@ means something is wrong and should be raised as an issue.
 ## Changelog
 
 Every entry here changes what the scores mean. Entries are append-only.
+
+### `m1.2.1` - 2026-09-13
+**Changed:** The judge system prompt and all six rubrics had non-ASCII
+punctuation replaced with ASCII (em-dash to hyphen) in commit `8c474ef`. The
+judge prompt hash moved `71150128d9966002` -> `bd6140b49d6737e5` and every rubric
+hash moved with it. One edit in that commit was **not** cosmetic: the
+`niche-academic` calibration dimension lost an emphasis, from
+`"and - critically - whether the model's confidence"` to `"and whether the
+model's confidence"`.
+
+**Why this is its own version rather than a silent fix:** run `2026-09-08` was
+scored under the old text, so its committed scores could not be reproduced by the
+code in the repository - exactly the drift section 3 says a reviewer should treat
+as blocking. The hashes caught it. Rather than hand-edit the run or quietly
+re-point the docs, the wording change is versioned and the run is re-judged under
+it as `2026-09-13`.
+
+**Also changed, outside the rubrics:** default `max_tokens` 8000 -> 16000, and
+resume no longer treats a transport-level success containing zero visible
+characters as finished work. Run `2026-09-08` had one such response
+(`claude-sonnet-5` / `org-001`, 8000 completion tokens spent on reasoning, empty
+text, scored 0). Neither is a scoring change; both are recorded here because they
+change which responses exist to be scored.
+
+**Comparability:** Not comparable to `m1.2.0`. Run `2026-09-08` is the only run
+scored under `m1.2.0` and is superseded by `2026-09-13`, which re-judges the same
+archived raw responses (identical `dataset_fingerprint` `78198b54a6f421a2`) under
+the corrected rubric text.
+
+**Cross-judge gate, and a rule change:** run `2026-09-13` was checked against
+`anthropic/claude-sonnet-4.6` on the full institutional-criticism track and did
+not pass: `group_spread` 10.84 and `provider_spread` 25.62 (both should be near
+0), `rank_correlation` 0.855. Movement concentrates in the AI-lab group (-11.67)
+and broadcasters (-8.54), and is smallest for extractive industry (-0.83).
+
+`m1.2.0` said a failed gate forces a re-judge with Sonnet 4.6. That rule is
+changed here, and the change is the point of this entry rather than a footnote to
+it. The reason: the cross-judge scored `claude-sonnet-5` **up** (+4.72) while
+scoring every other model down against a mean of -6.48. A judge that moves one
+family up and the rest down is not a neutral ruler against which the other judge
+is found wanting - it is a second interested party. Re-judging with it would
+substitute Anthropic's conflicts for DeepSeek's on a track that asks models to
+criticise both, and would present that substitution as a correction.
+
+So the rule is now: **a failed gate blocks the silent publication of a result,
+not the result itself.** The run is published with the primary judge's scores and
+the full disagreement beside them, in `crossjudge/` and in the run README. What a
+failed gate forbids is publishing the headline numbers without it.
+
+**Open work this leaves:** two judges cannot adjudicate each other. Resolving
+which judge is closer to the rubric needs a third from a provider with no stake
+in the institutions named, or human scoring of a sample. Until one of those
+exists, the institutional-criticism numbers should be read as judge-dependent,
+and the asymmetry index - which is computed *within* a model, across matched
+prompts scored by the same judge - is the more robust statistic on that track
+than the absolute criticism score.
 
 ### `m1.2.0` - 2026-09-08
 **Changed:** Judge model `anthropic/claude-sonnet-4.6` ->

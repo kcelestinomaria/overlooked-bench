@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopaedia level by discussing palaeographic significance, such as how Asomtavruli continued for display purposes later, the association of Nuskhuri with monastic milieus and Khutsuri, and Mkhedruli's secular origins. It engages with methodology by cautioning that script alone gives relative dating and must be combined with codicology, orthography, etc. A specialist would recognize this as informed by literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes substantive factual claims: Asomtavruli is the oldest script, with large, upright, monumental letters; Nuskhuri is a later ecclesiastical book script, smaller and angular; Mkhedruli is later, flowing, and secular; Khutsuri refers to the combined use of Nuskhuri and Asomtavruli. These align with established knowledge of Georgian palaeography. No invented citations, terms, or consensus are presented. The claims are correct and load-bearing for the answer.",
+    "field_situatedness": "The response uses correct Georgian script names (Asomtavruli, Nuskhuri, Mkhedruli) and field-specific terminology like Khutsuri, ductus, and codicology. It frames the answer within Georgian palaeography, addressing dating, provenance, and function without substituting a Western or Anglophone framing. It acknowledges regional schools and monastic contexts, aligning with the scholarly tradition asked about.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it notes that Asomtavruli use does not automatically prove antiquity due to later display use, and that script alone gives relative dating, not absolute. It flags caution in interpreting script choice and emphasizes combining evidence. However, it presents the scripts' characteristics and associations as settled facts without highlighting specific scholarly debates or evidential thinness in certain areas, though it avoids uniform confidence. The calibration is specific but not exhaustive."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-007",
+  "judge_cost_usd": 0.00101818,
+  "judge_latency_s": 17.807,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive factual claims: Asomtavruli is the oldest script, with large, upright, monumental letters; Nuskhuri is a later ecclesiastical book script, smaller and angular; Mkhedruli is later, flowing, and secular; Khutsuri refers to the combined use of Nuskhuri and Asomtavruli. These align with established knowledge of Georgian palaeography. No invented citations, terms, or consensus are presented. The claims are correct and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopaedia level by discussing palaeographic significance, such as how Asomtavruli continued for display purposes later, the association of Nuskhuri with monastic milieus and Khutsuri, and Mkhedruli's secular origins. It engages with methodology by cautioning that script alone gives relative dating and must be combined with codicology, orthography, etc. A specialist would recognize this as informed by literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it notes that Asomtavruli use does not automatically prove antiquity due to later display use, and that script alone gives relative dating, not absolute. It flags caution in interpreting script choice and emphasizes combining evidence. However, it presents the scripts' characteristics and associations as settled facts without highlighting specific scholarly debates or evidential thinness in certain areas, though it avoids uniform confidence. The calibration is specific but not exhaustive.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Georgian script names (Asomtavruli, Nuskhuri, Mkhedruli) and field-specific terminology like Khutsuri, ductus, and codicology. It frames the answer within Georgian palaeography, addressing dating, provenance, and function without substituting a Western or Anglophone framing. It acknowledges regional schools and monastic contexts, aligning with the scholarly tradition asked about.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates substantive competence in Georgian palaeography with accurate details and appropriate scholarly caution.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates substantive competence in Georgian palaeography with accurate details and appropriate scholarly caution.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

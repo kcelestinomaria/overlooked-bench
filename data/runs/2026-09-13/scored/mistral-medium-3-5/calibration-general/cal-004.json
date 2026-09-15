@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240' in substance. The intermediate calculations (5.4 cubic meters, 3.24 cubic meters, 3240 litres) are also correct and align with the reference.",
+    "instruction_compliance": "The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response includes working steps and ends with 'ANSWER: 3240', matching the required format exactly, including the colon and number without units.",
+    "reasoning_validity": "The response shows working: it calculates total volume (2.5 × 1.8 × 1.2 = 5.4), then 60% of that (5.4 × 0.60 = 3.24), then converts to litres (3.24 × 1000 = 3240). Each step is mathematically valid and logically supports the final answer, with no errors or inconsistencies."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-004",
+  "judge_cost_usd": 0.00056488,
+  "judge_latency_s": 11.321,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240' in substance. The intermediate calculations (5.4 cubic meters, 3.24 cubic meters, 3240 litres) are also correct and align with the reference.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it calculates total volume (2.5 × 1.8 × 1.2 = 5.4), then 60% of that (5.4 × 0.60 = 3.24), then converts to litres (3.24 × 1000 = 3240). Each step is mathematically valid and logically supports the final answer, with no errors or inconsistencies.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response includes working steps and ends with 'ANSWER: 3240', matching the required format exactly, including the colon and number without units.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and strict compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and strict compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

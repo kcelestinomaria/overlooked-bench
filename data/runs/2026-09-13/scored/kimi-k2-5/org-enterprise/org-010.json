@@ -1,0 +1,32 @@
+{
+  "category": "org-enterprise",
+  "dimension_reasoning": {
+    "actionability": "The prompt requested 'Draft guidance the association can send to members.' The response produces exactly that: a structured guidance note with clear sections, step-by-step actions, timelines, templates, and resources. It is written for factory owners, explains requirements plainly, breaks compliance into steps, distinguishes buyer requests from full regulation, and identifies collective action (association templates, meetings). It could be used with light editing (e.g., filling in association details). It does not merely describe a process; it delivers the guidance.",
+    "constraint_fidelity": "The prompt's constraints: trade association in Bangladesh, 200 small textile manufacturers, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it is written as guidance for factory owners, uses low-cost resources (BGMEA, ILO, BRAC/BSR, association templates), avoids recommending consultants, and focuses on simple, executable steps without assuming dedicated compliance staff. It does not explicitly show arithmetic for money or headcount, but those are not central to this task. No constraints are violated.",
+    "contextual_realism": "The response is calibrated for small factories with limited capacity: it recommends simple document gathering, basic written policies without lawyers, low-cost resources, and designating an existing person (owner, manager, supervisor) to handle requests. It avoids assuming dedicated HR, legal, or compliance officers. It acknowledges small-organisation realities like using envelopes for worker files, simple logbooks, and reliance on local government offices. However, it could more explicitly address role overlap or volunteer labour, but the steps are sustainable for small staff.",
+    "jurisdictional_accuracy": "The jurisdiction is Bangladesh/EU. The response references local entities (RAJUK, DIFE, BGMEA, ILO Better Work Bangladesh, BRAC/BSR) and documents (NID, factory licenses) specific to Bangladesh. It avoids US assumptions (e.g., no mention of at-will employment or US tax categories). It provides substantive content while including a generic disclaimer to contact DIFE or a lawyer, but this is not a substitute for content. The guidance appears accurate for the context, though it does not deeply analyse EU regulations, which is appropriate for this audience."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00117344,
+  "judge_latency_s": 18.964,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: trade association in Bangladesh, 200 small textile manufacturers, limited administrative capacity, cannot afford external consultants. The response respects all constraints: it is written as guidance for factory owners, uses low-cost resources (BGMEA, ILO, BRAC/BSR, association templates), avoids recommending consultants, and focuses on simple, executable steps without assuming dedicated compliance staff. It does not explicitly show arithmetic for money or headcount, but those are not central to this task. No constraints are violated.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories with limited capacity: it recommends simple document gathering, basic written policies without lawyers, low-cost resources, and designating an existing person (owner, manager, supervisor) to handle requests. It avoids assuming dedicated HR, legal, or compliance officers. It acknowledges small-organisation realities like using envelopes for worker files, simple logbooks, and reliance on local government offices. However, it could more explicitly address role overlap or volunteer labour, but the steps are sustainable for small staff.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested 'Draft guidance the association can send to members.' The response produces exactly that: a structured guidance note with clear sections, step-by-step actions, timelines, templates, and resources. It is written for factory owners, explains requirements plainly, breaks compliance into steps, distinguishes buyer requests from full regulation, and identifies collective action (association templates, meetings). It could be used with light editing (e.g., filling in association details). It does not merely describe a process; it delivers the guidance.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Bangladesh/EU. The response references local entities (RAJUK, DIFE, BGMEA, ILO Better Work Bangladesh, BRAC/BSR) and documents (NID, factory licenses) specific to Bangladesh. It avoids US assumptions (e.g., no mention of at-will employment or US tax categories). It provides substantive content while including a generic disclaimer to contact DIFE or a lawyer, but this is not a substitute for content. The guidance appears accurate for the context, though it does not deeply analyse EU regulations, which is appropriate for this audience.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable and contextually realistic guidance note tailored to small Bangladeshi textile factories.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response is a highly actionable and contextually realistic guidance note tailored to small Bangladeshi textile factories.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

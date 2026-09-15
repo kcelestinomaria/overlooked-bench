@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a one-on-one advising session for a specific 19-year-old with informal work experience. The response addresses the learner's range by starting with an assessment of the student's SHS track, budget, work preferences, and location. It proposes concrete, low-cost adaptations based on budget (e.g., 'If you have no budget:' apply for TESDA scholarships, use free online courses). It accounts for material constraints by identifying free/scholarship routes and location-specific program availability. The proposed adaptations are implementable by the single adviser in the session. It goes beyond generic placeholder language.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers a broad range of pathways genuinely available in the Philippines: multiple specific TESDA vocational qualifications (e.g., Electrical Installation NC II, Automotive Servicing NC II), 2-year diploma programs (e.g., Diploma in IT, HRM), and short digital/freelance courses. It treats non-degree options (TESDA, digital courses) substantively with specific durations, costs, and earnings, and correctly identifies the national system (TESDA, CHED). It respects the 18-month constraint and does not default to a generic university degree. It provides realistic earnings for the Philippine labor market and mentions overseas pathways (POEA).",
+    "pedagogical_soundness": "The response is not a lesson plan with learning objectives, activities, and assessments; it is advisory guidance. Therefore, the evaluation steps for pedagogical soundness (identifying learning objectives, checking alignment with activities and assessments, sequencing) are not applicable. The response does not engage with this dimension's criteria at all.",
+    "workload_realism": "The response is advisory guidance for a counselor, not a delivery plan for a teacher. There are no activity timings to sum, no materials list for a classroom, and no marking load implied. The dimension's evaluation steps (summing timings, checking materials, estimating preparation/marking time, checking class size feasibility) are not applicable. The response does not engage with this dimension's criteria."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00172142,
+  "judge_latency_s": 19.373,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan with learning objectives, activities, and assessments; it is advisory guidance. Therefore, the evaluation steps for pedagogical soundness (identifying learning objectives, checking alignment with activities and assessments, sequencing) are not applicable. The response does not engage with this dimension's criteria at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advisory guidance for a counselor, not a delivery plan for a teacher. There are no activity timings to sum, no materials list for a classroom, and no marking load implied. The dimension's evaluation steps (summing timings, checking materials, estimating preparation/marking time, checking class size feasibility) are not applicable. The response does not engage with this dimension's criteria.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers a broad range of pathways genuinely available in the Philippines: multiple specific TESDA vocational qualifications (e.g., Electrical Installation NC II, Automotive Servicing NC II), 2-year diploma programs (e.g., Diploma in IT, HRM), and short digital/freelance courses. It treats non-degree options (TESDA, digital courses) substantively with specific durations, costs, and earnings, and correctly identifies the national system (TESDA, CHED). It respects the 18-month constraint and does not default to a generic university degree. It provides realistic earnings for the Philippine labor market and mentions overseas pathways (POEA).\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a one-on-one advising session for a specific 19-year-old with informal work experience. The response addresses the learner's range by starting with an assessment of the student's SHS track, budget, work preferences, and location. It proposes concrete, low-cost adaptations based on budget (e.g., 'If you have no budget:' apply for TESDA scholarships, use free online courses). It accounts for material constraints by identifying free/scholarship routes and location-specific program availability. The proposed adaptations are implementable by the single adviser in the session. It goes beyond generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, actionable, and system-accurate vocational and educational pathway guidance tailored to the Philippine context and the student's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response provides highly specific, actionable, and system-accurate vocational and educational pathway guidance tailored to the Philippine context and the student's constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

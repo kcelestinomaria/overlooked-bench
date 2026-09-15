@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 932,
+  "cost_usd": 0.002871,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "fc43c905ce874d10",
+  "item_id": "org-002",
+  "latency_s": 14.04,
+  "methodology_version": "m1.0.0",
+  "model_id": "moonshotai/kimi-k2.5",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "prompt_tokens": 125,
+  "provider": "moonshotai",
+  "request_fingerprint": "b2413ab1e14e2b00",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "moonshotai/kimi-k2.5",
+    "temperature": 0.0
+  },
+  "text": " # GO/NO-GO ANALYSIS: SECOND BAKERY LOCATION\n\n## EXECUTIVE SUMMARY\n**RECOMMENDATION: CONDITIONAL GO** — Proceed only if break-even achievable within 18 months and operational risks mitigated.\n\n---\n\n## FINANCIAL SNAPSHOT\n\n| Metric | Value |\n|--------|-------|\n| Current revenue | PLN 1.4m |\n| Net profit (8%) | PLN 112,000 |\n| Available capital | PLN 250,000 |\n| **Capital as % of revenue** | **18%** |\n\n---\n\n## REALISTIC FINANCING OPTIONS (Poland, 2024)\n\n| Source | Likely Amount | Terms | Feasibility |\n|--------|-------------|-------|-------------|\n| **Bank loan (BGŻ/PKO BP/Santander)** | PLN 300–500k | 7–10% p.a., 3–5yr, personal guarantees required | **Primary option** — revenue history supports ~400k with 1.4x DSCR |\n| **Leasing (equipment)** | PLN 80–120k | 8–12% p.a., preserves cash | Standard for ovens/refrigeration |\n| **EU grant (PARP/Regional Funds)** | PLN 50–150k | 50% co-financing, 6–12mo approval | **Apply now** — long lead time |\n| **Trade credit (suppliers)** | PLN 30–50k | 30–60 day terms | Negotiable with 2+ year relationships |\n| **Family loan** | PLN 50–100k | 0–5% informal | Cultural norm, document properly |\n\n**Realistic total capital stack: PLN 500–750k**\n\n---\n\n## BREAK-EVEN ANALYSIS\n\n### Assumed Second Site Economics\n\n| Item | Estimate |\n|------|----------|\n| Rent (Kraków district, 60–80m²) | PLN 8–12k/month |\n| Fit-out + equipment | PLN 300–400k |\n| Working capital | PLN 100k |\n| Staff (3 FTE: baker, seller, manager) | PLN 18k/month |\n| Utilities, packaging, transport | PLN 6k/month |\n\n**Total first-year cash need: ~PLN 600k**\n\n### Break-Even Threshold\n\n| Scenario | Monthly Revenue Required | Timeline |\n|----------|------------------------|----------|\n| **Operational break-even** (cover variable costs) | PLN 35k | Month 4–6 |\n| **Full break-even** (cover all fixed costs incl. depreciation) | PLN 52k | **Month 14–18** |\n| **Cash payback** (recover initial investment) | — | **Year 3–4** |\n\n**Critical milestone:** Site must generate **PLN 55k/month** by month 18 or drain becomes unsustainable.\n\n---\n\n## TOP TWO RISKS\n\n### 1. **LOCATION FAILURE** (Probability: 35% | Impact: Fatal)\n- Kraków's bakery market is saturated (Żabka, Lidl in-store, 30+ artisan competitors)\n- Wrong district = 40% revenue shortfall vs. pro forma\n- **Mitigation:** 6-month pop-up or market stall to validate demand; avoid long lease until proven\n\n### 2. **OPERATIONAL STRETCH** (Probability: 45% | Impact: Severe)\n- 6-person family cannot oversee two sites; quality/culture dilution\n- Key baker poached or burned out\n- **Mitigation:** Promote family member to site manager with profit share; hire experienced (not trainee) head baker; maintain 90-day cash reserve\n\n---\n\n## DECISION FRAMEWORK\n\n| Criterion | Status |\n|-----------|--------|\n| Financing secured? | ⚠️ **GO if** bank pre-approval + EU grant application submitted |\n| Break-even credible? | ⚠️ **GO if** comparable site in target district confirms PLN 60k+ monthly |\n| Risk mitigation? | ⚠️ **GO if** family manager identified + 6-month validation period negotiated |\n\n**NO-GO triggers:** No bank pre-approval; lease >5 years without exit clause; target district has >3 established competitors within 500m.\n\n---\n\n*Analysis date: 2024 | Currency: PLN | Assumes stable inflation <5%*",
+  "timestamp_utc": "2026-09-07T22:41:53Z"
+}

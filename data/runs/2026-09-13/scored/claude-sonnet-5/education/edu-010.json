@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting described is a university course with 200 students. The response identifies one specific learner need: 'non-native English speakers' for whom translation assistance is a permitted use. However, it does not address the broader range of learners (differing prior attainment, additional needs, material constraints like no home internet) that would be present in such a setting. The enforcement guidance is procedural and scalable but not adapted for diverse learner needs. There is no concrete differentiation proposed; the mention of non-native speakers is a minor accommodation within the policy rules, not a teaching adaptation.",
+    "pathway_breadth": "The prompt and response are about drafting a university academic integrity policy, not about student future pathways (vocational, academic, etc.). As per the rubric note, when pathway guidance is not in scope, this dimension should be scored on 'whether the response is inclusive of the range of learners in the described setting.' The policy explicitly considers 'non-native English speakers' for permitted translation assistance and designs enforcement for a large, diverse class of 200. It does not address other learner differences like prior attainment or additional needs, but its core function is rule-setting, not differentiation. Engagement with inclusivity is minimal and incidental.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy draft and enforcement guidance, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessment, sequencing, or rubric observability. The dimension is not engaged.",
+    "workload_realism": "The enforcement guidance explicitly addresses the workload for a lecturer with 200 students. It proposes a 'layered, scalable enforcement strategy' including preventive assessment redesign, technology-assisted detection as a screening tool, a tiered review process with automated screening and statistical sampling (e.g., 'Teaching assistants manually review a random 20% plus all flagged submissions'), delegation to TAs, front-loaded clarity via a mandatory quiz, and efficient adjudication protocols. It acknowledges practical constraints ('Given the practical constraints') and aims to reduce the lecturer's per-case burden. The timings and material assumptions (e.g., TAs, detection software, LMS) are plausible for a university setting, though the availability of TAs is assumed. The plan is designed for feasibility at scale."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00124699,
+  "judge_latency_s": 20.48,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments. It is a policy draft and enforcement guidance, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessment, sequencing, or rubric observability. The dimension is not engaged.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The enforcement guidance explicitly addresses the workload for a lecturer with 200 students. It proposes a 'layered, scalable enforcement strategy' including preventive assessment redesign, technology-assisted detection as a screening tool, a tiered review process with automated screening and statistical sampling (e.g., 'Teaching assistants manually review a random 20% plus all flagged submissions'), delegation to TAs, front-loaded clarity via a mandatory quiz, and efficient adjudication protocols. It acknowledges practical constraints ('Given the practical constraints') and aims to reduce the lecturer's per-case burden. The timings and material assumptions (e.g., TAs, detection software, LMS) are plausible for a university setting, though the availability of TAs is assumed. The plan is designed for feasibility at scale.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and response are about drafting a university academic integrity policy, not about student future pathways (vocational, academic, etc.). As per the rubric note, when pathway guidance is not in scope, this dimension should be scored on 'whether the response is inclusive of the range of learners in the described setting.' The policy explicitly considers 'non-native English speakers' for permitted translation assistance and designs enforcement for a large, diverse class of 200. It does not address other learner differences like prior attainment or additional needs, but its core function is rule-setting, not differentiation. Engagement with inclusivity is minimal and incidental.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting described is a university course with 200 students. The response identifies one specific learner need: 'non-native English speakers' for whom translation assistance is a permitted use. However, it does not address the broader range of learners (differing prior attainment, additional needs, material constraints like no home internet) that would be present in such a setting. The enforcement guidance is procedural and scalable but not adapted for diverse learner needs. There is no concrete differentiation proposed; the mention of non-native speakers is a minor accommodation within the policy rules, not a teaching adaptation.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides a concrete, scalable enforcement plan that honestly addresses the workload and detection challenges for a large class.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides a concrete, scalable enforcement plan that honestly addresses the workload and detection challenges for a large class.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 36.25
+}

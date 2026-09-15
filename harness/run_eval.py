@@ -22,6 +22,7 @@ an interrupted run costs nothing to continue. `--force-regenerate` starts a fres
 run id instead of overwriting, because overwriting raw output would destroy the
 audit trail that makes this project worth trusting.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 
@@ -77,6 +78,27 @@ def write_json(path: Path, payload: dict[str, Any]) -> None:
     tmp.replace(path)
 
 
+def usable_raw(rec: dict[str, Any] | None) -> bool:
+    """True if an archived raw record is a real answer that can be judged.
+
+    `ok` alone is not enough. A reasoning model can return a transport-level
+    success that contains zero characters, having spent its entire completion
+    budget on internal reasoning before emitting any visible text - run
+    2026-09-08 has exactly that for claude-sonnet-5 on org-001, at 8000
+    completion tokens and `finish_reason: length`.
+
+    Such a record is scored 0 on every dimension, which is indistinguishable in
+    the leaderboard from a model that answered badly. Worse, the old predicate
+    (`rec.get("ok")`) treated it as finished work, so every subsequent resume
+    skipped it and the artefact became permanent. Requiring visible text means a
+    raised max_tokens ceiling actually re-requests these instead of silently
+    inheriting the zero.
+    """
+    if rec is None or not rec.get("ok"):
+        return False
+    return bool((rec.get("text") or "").strip())
+
+
 def read_json(path: Path) -> dict[str, Any] | None:
     if not path.exists():
         return None
@@ -115,7 +137,7 @@ def phase_generate(
                     # "already generated" would bake a transient failure into
                     # the run permanently - every later resume would skip it and
                     # the model would be scored 0 for an error that was ours.
-                    if prev is not None and prev.get("ok"):
+                    if usable_raw(prev):
                         reused += 1
                         continue
                     retried += 1
@@ -167,6 +189,65 @@ def phase_generate(
                 progress.advance(task)
 
     return load_raw(root, models, items_by_category)
+
+
+def import_raw(
+    root: Path,
+    source_run: str,
+    models: list[ModelSpec],
+    items_by_category: dict[str, list[Item]],
+    fingerprint: str,
+) -> tuple[int, int]:
+    """Copy archived raw responses from an earlier run into this one.
+
+    Run folders are immutable, so a scoring-side fix (a corrected rubric, a
+    judge-prompt change, a judge that failed to parse) needs a NEW run id.
+    Re-asking every model the same questions to get byte-identical answers would
+    cost the full generation budget to change nothing, so the raw archive is
+    carried over instead.
+
+    Two guards keep that honest. The dataset fingerprint of the source run must
+    match this one, or the responses answer different prompts and the import is
+    refused. And only records that pass `usable_raw` are copied, so an empty or
+    failed response is re-requested under this run's model config rather than
+    inherited. `raw_reused_from` is written into the manifest either way, so a
+    reader can always tell which responses this run paid for.
+    """
+    src_root = run_dir(source_run)
+    src_manifest = read_json(src_root / "manifest.json") or {}
+    src_fp = src_manifest.get("dataset_fingerprint")
+    if src_fp != fingerprint:
+        raise SystemExit(
+            f"Refusing --raw-from {source_run}: dataset fingerprint {src_fp} does not "
+            f"match this run's {fingerprint}. Those responses answer different prompts."
+        )
+
+    copied = 0
+    skipped = 0
+    for spec in models:
+        for category, items in items_by_category.items():
+            for item in items:
+                dest = raw_path(root, spec.key, category, item.id)
+                if dest.exists():
+                    # Already imported on an earlier invocation. Count it from
+                    # the marker written into the record rather than skipping
+                    # it, so re-running a later stage reports the same
+                    # provenance instead of a misleading zero.
+                    existing = read_json(dest) or {}
+                    if existing.get("imported_from_run") == source_run:
+                        copied += 1
+                    else:
+                        skipped += 1
+                    continue
+                rec = read_json(raw_path(src_root, spec.key, category, item.id))
+                if not usable_raw(rec):
+                    skipped += 1
+                    continue
+                rec = dict(rec or {})
+                rec["imported_from_run"] = source_run
+                write_json(dest, rec)
+                copied += 1
+    return copied, skipped
 
 
 def load_raw(
@@ -352,6 +433,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
                    help="Re-request responses already archived. Use a NEW --run-id instead "
                         "unless you intend to replace an in-progress run.")
     p.add_argument("--force-rescore", action="store_true", help="Re-judge already-scored items")
+    p.add_argument("--raw-from", default="",
+                   help="Reuse archived raw responses from this run id instead of "
+                        "re-querying. Requires an identical dataset fingerprint. Used to "
+                        "re-judge a run under a corrected rubric without paying for "
+                        "generation twice; recorded in the manifest as raw_reused_from.")
     p.add_argument("--dry-run", action="store_true",
                    help="Validate config and dataset, print the plan, make no API calls")
     return p.parse_args(argv)
@@ -402,6 +488,28 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     root.mkdir(parents=True, exist_ok=True)
+
+    # The manifest is rewritten on every invocation, including a later
+    # `--stage score` on an existing run. Provenance already recorded there must
+    # survive that rewrite, or a run whose raw output was imported would lose the
+    # record of it the moment it was re-judged.
+    prior_manifest = read_json(root / "manifest.json") or {}
+    imported = prior_manifest.get("raw_reused_from")
+
+    if args.raw_from:
+        if args.raw_from == args.run_id:
+            console.print("[red]--raw-from must name a different run than --run-id.[/red]")
+            return 2
+        copied, skipped = import_raw(
+            root, args.raw_from, all_models, items_by_category, fingerprint
+        )
+        imported = {"run_id": args.raw_from, "responses_copied": copied,
+                    "responses_regenerated": skipped}
+        console.print(
+            f"[dim]Imported {copied} raw response(s) from {args.raw_from}; "
+            f"{skipped} unusable or missing and will be regenerated.[/dim]"
+        )
+
     write_json(root / "manifest.json", {
         "run_id": args.run_id,
         "started_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
@@ -417,6 +525,7 @@ def main(argv: list[str] | None = None) -> int:
         "judge": judge_provenance(registry.judge, args.judge_engine),
         "rubric_hashes": all_rubric_hashes(),
         "limit_per_category": args.limit or None,
+        "raw_reused_from": imported,
         "python": sys.version.split()[0],
     })
 

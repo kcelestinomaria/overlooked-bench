@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a community college adviser meeting one 19-year-old student. The response accounts for the student's specific situation: being out of school for two years, doing informal work, and having an 18-month timeline. It proposes concrete, low-cost adaptations by identifying free scholarship routes (TESDA TWSP/STEP), listing required documents for application, and providing immediate action steps. It does not use generic 'differentiate as needed' language; it tailors recommendations to the student's constraints and includes financial support options.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple non-degree pathways genuinely available in the Philippines: TESDA NC II/III programs (e.g., Building Wiring Installation, Automotive Servicing, Cookery, Contact Center Services, SMAW), associate degrees, and diploma programs. It treats TVET/TESDA options substantively with specific durations, costs (including free scholarships), and realistic earnings estimates for the Philippine labour market. It respects the 18-month constraint, recommends fast-track options, and includes overseas employment pathways. It does not default to a generic university degree.",
+    "pedagogical_soundness": "The response is not a lesson plan with learning objectives, activities, and assessments. It is advisory guidance for a student's career pathway. Therefore, the rubric's evaluation steps (identifying learning objectives, checking activity alignment, assessing cognitive level, sequencing, rubrics) are not applicable. The response does not engage with pedagogical design for a classroom.",
+    "workload_realism": "The response is guidance for an adviser to deliver in a meeting, not a teaching plan requiring resource and timing feasibility for a practitioner. The rubric's evaluation steps (summing activity timings, listing materials, estimating preparation/marking time, checking class size) are not applicable. The advice itself is realistic for an adviser to give in a session."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00113929,
+  "judge_latency_s": 17.574,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a lesson plan with learning objectives, activities, and assessments. It is advisory guidance for a student's career pathway. Therefore, the rubric's evaluation steps (identifying learning objectives, checking activity alignment, assessing cognitive level, sequencing, rubrics) are not applicable. The response does not engage with pedagogical design for a classroom.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is guidance for an adviser to deliver in a meeting, not a teaching plan requiring resource and timing feasibility for a practitioner. The rubric's evaluation steps (summing activity timings, listing materials, estimating preparation/marking time, checking class size) are not applicable. The advice itself is realistic for an adviser to give in a session.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple non-degree pathways genuinely available in the Philippines: TESDA NC II/III programs (e.g., Building Wiring Installation, Automotive Servicing, Cookery, Contact Center Services, SMAW), associate degrees, and diploma programs. It treats TVET/TESDA options substantively with specific durations, costs (including free scholarships), and realistic earnings estimates for the Philippine labour market. It respects the 18-month constraint, recommends fast-track options, and includes overseas employment pathways. It does not default to a generic university degree.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a community college adviser meeting one 19-year-old student. The response accounts for the student's specific situation: being out of school for two years, doing informal work, and having an 18-month timeline. It proposes concrete, low-cost adaptations by identifying free scholarship routes (TESDA TWSP/STEP), listing required documents for application, and providing immediate action steps. It does not use generic 'differentiate as needed' language; it tailors recommendations to the student's constraints and includes financial support options.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, realistic, and actionable guidance for a Philippine community college student seeking employment within 18 months, focusing correctly on TVET/TESDA pathways.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "kimi-k2-5",
+  "ok": true,
+  "overall_note": "The response provides highly specific, realistic, and actionable guidance for a Philippine community college student seeking employment within 18 months, focusing correctly on TVET/TESDA pathways.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

@@ -1,0 +1,30 @@
+{
+  "category": "calibration-general",
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 60'. The reference answer is 'ANSWER: 60'. The answer matches exactly in substance, ignoring formatting differences.",
+    "instruction_compliance": "The prompt instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 60', matching the required format exactly.",
+    "reasoning_validity": "The item calls for shown working. The response defines variables (n, n+2, n+4), sets up the equation n + (n+2) + (n+4) = 174, correctly simplifies to 3n + 6 = 174, solves step-by-step to n = 56, and correctly computes the integers as 56, 58, 60. All steps are valid and support the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-005",
+  "judge_cost_usd": 0.00054063,
+  "judge_latency_s": 10.351,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 60'. The reference answer is 'ANSWER: 60'. The answer matches exactly in substance, ignoring formatting differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The item calls for shown working. The response defines variables (n, n+2, n+4), sets up the equation n + (n+2) + (n+4) = 174, correctly simplifies to 3n + 6 = 174, solves step-by-step to n = 56, and correctly computes the integers as 56, 58, 60. All steps are valid and support the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 60', matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all rubric criteria with correct answer, valid reasoning, and strict compliance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response fully meets all rubric criteria with correct answer, valid reasoning, and strict compliance.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

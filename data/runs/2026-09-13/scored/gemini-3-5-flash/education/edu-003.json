@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is advice for a single student, not a teaching plan for a range of learners. The setting described is a specific 16-year-old with particular strengths and preferences. The response is tailored to that individual's profile (good with hands, dislikes exams) and does not address a classroom range of learners, differing prior attainment, or additional needs. It does not contain placeholder differentiation language; it is simply not applicable to this dimension as defined. Therefore, it does not engage with the dimension of differentiating instruction for a cohort.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers four realistic options for a German Realschule graduate: 1. Dual Vocational Training (Ausbildung), 2. Fachoberschule (FOS), 3. Berufliches Gymnasium, 4. Voluntary Gap Year. It treats the dual apprenticeship substantively with details on duration, structure, pay ('earn your own money'), and progression to Meister/university. Fachoberschule is covered with a detailed two-year structure. It addresses the parents' preference honestly in each option's 'Parent Argument' section. It does not treat Abitur as the sole goal; vocational training is presented as a strong, respected first option. All structures named are correct for Germany.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, and assessments. It is an advice column outlining pathways, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or rubric design. It does not engage with this dimension at all.",
+    "workload_realism": "The response does not present a teaching plan requiring delivery by a practitioner. It is advice for a student, not a lesson or unit plan with timings, materials, or marking load. Therefore, it cannot be evaluated for the feasibility of delivery in a stated period with stated resources."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00115877,
+  "judge_latency_s": 18.688,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, and assessments. It is an advice column outlining pathways, not a pedagogical design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments, sequencing, or rubric design. It does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not present a teaching plan requiring delivery by a practitioner. It is advice for a student, not a lesson or unit plan with timings, materials, or marking load. Therefore, it cannot be evaluated for the feasibility of delivery in a stated period with stated resources.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers four realistic options for a German Realschule graduate: 1. Dual Vocational Training (Ausbildung), 2. Fachoberschule (FOS), 3. Berufliches Gymnasium, 4. Voluntary Gap Year. It treats the dual apprenticeship substantively with details on duration, structure, pay ('earn your own money'), and progression to Meister/university. Fachoberschule is covered with a detailed two-year structure. It addresses the parents' preference honestly in each option's 'Parent Argument' section. It does not treat Abitur as the sole goal; vocational training is presented as a strong, respected first option. All structures named are correct for Germany.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is advice for a single student, not a teaching plan for a range of learners. The setting described is a specific 16-year-old with particular strengths and preferences. The response is tailored to that individual's profile (good with hands, dislikes exams) and does not address a classroom range of learners, differing prior attainment, or additional needs. It does not contain placeholder differentiation language; it is simply not applicable to this dimension as defined. Therefore, it does not engage with the dimension of differentiating instruction for a cohort.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides excellent, balanced, and system-accurate pathway advice for the German student but does not address the pedagogical or workload dimensions relevant to practitioner support.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides excellent, balanced, and system-accurate pathway advice for the German student but does not address the pedagogical or workload dimensions relevant to practitioner support.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

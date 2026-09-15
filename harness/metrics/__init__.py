@@ -15,6 +15,7 @@ the change is visible in the run diff, whether or not anyone remembered to updat
 the changelog. This is deliberate: METHODOLOGY.md records intent, but the hash
 is the thing that cannot be forgotten to update.
 """
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from __future__ import annotations
 

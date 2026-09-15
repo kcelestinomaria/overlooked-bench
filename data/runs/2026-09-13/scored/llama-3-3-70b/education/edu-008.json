@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners in a vocational centre, but the response does not address differentiation for differing prior attainment, additional needs, or language barriers (e.g., Arabic/French instruction). It includes generic elements like 'small groups' and 'peer assessment' but no concrete, low-cost adaptations for diverse learners. There is no mention of material constraints (e.g., limited tools, shared resources). The response lacks specific, implementable differentiation strategies.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about redesigning a vocational training module. Therefore, scoring is based on inclusivity of the learner range in the described setting (Moroccan vocational automotive repair centre). The response does not address learner diversity (e.g., prior attainment, language needs, material constraints). It focuses solely on pedagogical changes without differentiation for varied learners, so it lacks inclusivity.",
+    "pedagogical_soundness": "The response states objectives: 'developing problem-solving skills, critical thinking, and communication abilities' and specifically 'diagnose complex problems' and 'explain repairs to customers'. Activities like case studies, guided discovery, and role-plays plausibly build toward these. Assessments include practical troubleshooting exams (measuring diagnosis), oral presentations (measuring communication), and reflective reports (measuring reasoning). Sequencing is implied but not detailed; criteria for rubrics are not provided, so observable distinctions are unclear. The alignment is present but lacks specificity in cognitive demand and rubric design.",
+    "workload_realism": "The response lists activities (case studies, role-plays, guest lectures) and assessments (practical exams, oral presentations, reflective reports) but provides no timings, class size, or resource constraints. It assumes a workshop setting but does not specify equipment availability, preparation time, or marking load. For example, 'practical troubleshooting exams' in a 'simulated workshop environment' are plausible but feasibility depends on unstated resources like vehicle availability and instructor ratios. Without concrete parameters, realism cannot be verified."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 2,
+    "workload_realism": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-008",
+  "judge_cost_usd": 0.00094591,
+  "judge_latency_s": 19.479,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states objectives: 'developing problem-solving skills, critical thinking, and communication abilities' and specifically 'diagnose complex problems' and 'explain repairs to customers'. Activities like case studies, guided discovery, and role-plays plausibly build toward these. Assessments include practical troubleshooting exams (measuring diagnosis), oral presentations (measuring communication), and reflective reports (measuring reasoning). Sequencing is implied but not detailed; criteria for rubrics are not provided, so observable distinctions are unclear. The alignment is present but lacks specificity in cognitive demand and rubric design.\",\n      \"score\": 2\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response lists activities (case studies, role-plays, guest lectures) and assessments (practical exams, oral presentations, reflective reports) but provides no timings, class size, or resource constraints. It assumes a workshop setting but does not specify equipment availability, preparation time, or marking load. For example, 'practical troubleshooting exams' in a 'simulated workshop environment' are plausible but feasibility depends on unstated resources like vehicle availability and instructor ratios. Without concrete parameters, realism cannot be verified.\",\n      \"score\": 1\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about redesigning a vocational training module. Therefore, scoring is based on inclusivity of the learner range in the described setting (Moroccan vocational automotive repair centre). The response does not address learner diversity (e.g., prior attainment, language needs, material constraints). It focuses solely on pedagogical changes without differentiation for varied learners, so it lacks inclusivity.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners in a vocational centre, but the response does not address differentiation for differing prior attainment, additional needs, or language barriers (e.g., Arabic/French instruction). It includes generic elements like 'small groups' and 'peer assessment' but no concrete, low-cost adaptations for diverse learners. There is no mention of material constraints (e.g., limited tools, shared resources). The response lacks specific, implementable differentiation strategies.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides a structured outline for module redesign but lacks the concrete, setting-specific details needed for practical implementation by a vocational instructor.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "llama-3-3-70b",
+  "ok": true,
+  "overall_note": "The response provides a structured outline for module redesign but lacks the concrete, setting-specific details needed for practical implementation by a vocational instructor.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 32.5
+}

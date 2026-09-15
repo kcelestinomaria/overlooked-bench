@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners in Grade 11 in South Africa, but the response does not address differentiation for differing prior attainment, additional needs, or language constraints. It provides no specific, low-cost adaptations for learners struggling with argumentative writing or those with limited resources. The marking process is uniform for all 120 essays, with no mention of accommodations. The response contains placeholder language like 'trust your gut' but no substantive differentiation content.",
+    "pathway_breadth": "The prompt is about creating an assessment rubric for marking essays, not about student futures or pathway guidance. Therefore, this dimension is scored on inclusivity of the range of learners in the described setting (Grade 11 in South Africa). The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers; it focuses solely on marking efficiency and rubric design. It lacks concrete adaptations for diverse learners, so it does not demonstrate inclusivity.",
+    "pedagogical_soundness": "The response provides a rubric with three criteria (Content & Argument, Structure & Cohesion, Style & Accuracy) aligned to Grade 11 argumentative writing. Each criterion has observable, distinguishable level descriptors (e.g., Level 4 'Nuanced & Persuasive' vs. Level 3 'Clear & Relevant'). The assessment measures the stated objectives: Content & Argument assesses position and evidence, Structure & Cohesion assesses logical flow, and Style & Accuracy assesses language control. Sequencing is coherent, with preparation, marking passes, and feedback phases. The rubric avoids measuring recall while claiming analysis; it focuses on argumentation and writing skills appropriate for the stage.",
+    "workload_realism": "The response explicitly targets 4–5 minutes per essay, totaling ~9–10 hours over a weekend, which is realistic for 120 essays. It details a marking process with timed phases (e.g., Phase 2: 3 hours for first 60 essays), breaks, and a 10% reliability check. Materials are minimal (pencil, paper, timer), assuming no special technology. Preparation and marking load is proportionate, with advice to avoid lengthy comments and use feedback codes. The process is feasible for one teacher with a large class size, avoiding one-to-one attention."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00146681,
+  "judge_latency_s": 19.52,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides a rubric with three criteria (Content & Argument, Structure & Cohesion, Style & Accuracy) aligned to Grade 11 argumentative writing. Each criterion has observable, distinguishable level descriptors (e.g., Level 4 'Nuanced & Persuasive' vs. Level 3 'Clear & Relevant'). The assessment measures the stated objectives: Content & Argument assesses position and evidence, Structure & Cohesion assesses logical flow, and Style & Accuracy assesses language control. Sequencing is coherent, with preparation, marking passes, and feedback phases. The rubric avoids measuring recall while claiming analysis; it focuses on argumentation and writing skills appropriate for the stage.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly targets 4–5 minutes per essay, totaling ~9–10 hours over a weekend, which is realistic for 120 essays. It details a marking process with timed phases (e.g., Phase 2: 3 hours for first 60 essays), breaks, and a 10% reliability check. Materials are minimal (pencil, paper, timer), assuming no special technology. Preparation and marking load is proportionate, with advice to avoid lengthy comments and use feedback codes. The process is feasible for one teacher with a large class size, avoiding one-to-one attention.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about creating an assessment rubric for marking essays, not about student futures or pathway guidance. Therefore, this dimension is scored on inclusivity of the range of learners in the described setting (Grade 11 in South Africa). The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers; it focuses solely on marking efficiency and rubric design. It lacks concrete adaptations for diverse learners, so it does not demonstrate inclusivity.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners in Grade 11 in South Africa, but the response does not address differentiation for differing prior attainment, additional needs, or language constraints. It provides no specific, low-cost adaptations for learners struggling with argumentative writing or those with limited resources. The marking process is uniform for all 120 essays, with no mention of accommodations. The response contains placeholder language like 'trust your gut' but no substantive differentiation content.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response excels in providing a practical, time-efficient rubric and marking process tailored to the teacher's workload but completely neglects learner differentiation and inclusivity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response excels in providing a practical, time-efficient rubric and marking process tailored to the teacher's workload but completely neglects learner differentiation and inclusivity.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 66.25
+}

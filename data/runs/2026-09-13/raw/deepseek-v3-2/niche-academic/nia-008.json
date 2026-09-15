@@ -1,0 +1,27 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 921,
+  "cost_usd": 0.00039746,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "imported_from_run": "2026-09-08",
+  "item_content_hash": "7bcf687c2d2f7fea",
+  "item_id": "nia-008",
+  "latency_s": 8.972,
+  "methodology_version": "m1.0.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 38,
+  "provider": "deepseek",
+  "request_fingerprint": "c5706247803ba86b",
+  "request_params": {
+    "max_tokens": 4000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "**Current Evidence on Effectiveness**\n\nCommunity forest management (CFM) in Nepal is widely regarded as one of the most successful examples of decentralized natural resource governance in the developing world. The evidence base, built over three decades, generally supports positive outcomes across several domains:\n\n1. **Forest condition (ecological)**: Numerous peer-reviewed studies (e.g., from *Global Environmental Change*, *Forest Policy and Economics*, and the *Journal of Forest and Livelihood*) consistently show that community-managed forests have significantly higher canopy cover, tree density, basal area, and species diversity compared to state-managed or open-access forests. A landmark meta-analysis by Oldekop et al. (2019) in *Nature Sustainability* found that CFM in Nepal reduced deforestation rates by ~37% relative to control areas, with effects strengthening over time.\n\n2. **Livelihoods and equity**: Evidence is more mixed. Some studies (e.g., by Agrawal and Chhatre) show modest income gains from forest products (fuelwood, fodder, timber), but these are often skewed toward wealthier households. Poorer households, especially women and lower castes, may face restricted access due to exclusionary rules. However, CFM has been linked to improved social capital, collective action, and local governance capacity.\n\n3. **Carbon and climate**: Recent studies (e.g., in *Environmental Research Letters*) indicate that CFM forests store more above-ground carbon than comparable non-CFM forests, though the magnitude varies by region and management intensity.\n\n4. **Biodiversity**: Evidence is positive but less robust. Some studies show higher bird and mammal richness in CFM forests, but others find that active management (e.g., pruning, thinning) can reduce understory diversity.\n\n**Main Methodological Criticisms of the Evidence Base**\n\nDespite the generally favorable narrative, the evidence base faces several serious methodological challenges:\n\n1. **Selection bias and non-random placement**: CFM user groups are not randomly assigned. Forests that are easier to manage, closer to villages, or already in better condition were often selected for CFM. Many studies fail to control for this \"baseline condition\" bias, leading to overestimation of CFM's impact. Quasi-experimental designs (e.g., propensity score matching) are increasingly used but remain rare.\n\n2. **Lack of counterfactuals**: Many studies compare CFM forests to government-managed or open-access forests, but these are not true counterfactuals because they differ in history, enforcement, and community characteristics. Few studies use rigorous before-after-control-intervention (BACI) designs.\n\n3. **Spatial and temporal scale issues**: Most studies are small-scale, single-district, or short-term (1–5 years). This limits generalizability and fails to capture long-term dynamics (e.g., forest succession, rule changes, elite capture over time). National-level analyses often rely on remote sensing that cannot detect subtle ecological changes or governance quality.\n\n4. **Measurement and definitional inconsistency**: \"Effectiveness\" is defined variably (e.g., canopy cover vs. biodiversity vs. income). Studies often use different indicators, making cross-study comparison difficult. Also, \"community\" is treated as a homogeneous unit, ignoring internal heterogeneity (caste, gender, wealth) that affects outcomes.\n\n5. **Publication bias and positive-outcome bias**: Journals and researchers tend to publish successful CFM cases, while failures or null results are underrepresented. This skews the meta-evidence toward positive conclusions.\n\n6. **Attribution and confounding**: Many studies fail to control for external factors such as migration, remittances, road access, or national forest policies (e.g., leasehold forestry) that independently affect forest outcomes. This makes it hard to attribute changes solely to CFM.\n\n7. **Governance and process indicators are under-measured**: Most quantitative studies focus on biophysical outcomes, but the \"effectiveness\" of CFM also depends on institutional quality (e.g., rule enforcement, benefit-sharing, participation). These are rarely measured rigorously, leading to an incomplete picture.\n\n**Conclusion**\n\nThe current evidence strongly suggests that CFM in Nepal has improved forest cover and reduced deforestation, but the magnitude of these effects is likely overstated due to selection bias and weak counterfactuals. Livelihood and equity outcomes are more nuanced and context-dependent. To strengthen the evidence base, future research should adopt randomized or quasi-experimental designs, use long-term panel data, incorporate governance and equity metrics, and actively publish null or negative results.",
+  "timestamp_utc": "2026-09-07T22:39:55Z"
+}

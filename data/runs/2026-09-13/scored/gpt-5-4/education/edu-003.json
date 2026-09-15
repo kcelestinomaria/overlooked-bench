@@ -1,0 +1,32 @@
+{
+  "category": "education",
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes a single 16-year-old student with specific traits (good with hands, dislikes exams, solid grades, parental pressure). The response addresses this learner's range concretely by tailoring advice to their practical strengths and learning preferences, proposing adaptations like internships and career guidance. It does not mention broader learner diversity (e.g., prior attainment, additional needs, language barriers) because the prompt focuses on one student, but it does account for that student's specific context. The proposed adaptations are implementable by the student themselves, not requiring practitioner resources.",
+    "pathway_breadth": "Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Ausbildung (with specific examples like electrician, mechatronics technician, and details on dual system, pay, progression), Fachoberschule, Berufliches Gymnasium, Fachhochschulreife, and Abitur routes. It treats non-degree options substantively, not as fallbacks, with equal detail for each, addresses parents' preference honestly, and correctly names German structures (e.g., Berufsschule, Meister, Agentur für Arbeit). It meets the item-specific notes by giving real entry routes, duration, pay, and progression for Ausbildung.",
+    "pedagogical_soundness": "The response is advice, not a lesson plan, so there are no stated learning objectives, activities, or assessments to align. It provides structured guidance but does not involve pedagogical design elements like sequencing, cognitive demand, or observable rubric criteria. Therefore, it does not engage with the dimension's core focus on educational soundness in teaching design.",
+    "workload_realism": "The response is advice for a student, not a delivery plan for a practitioner. It does not specify timings, materials, preparation, marking load, or class size for a teacher or administrator to implement. It suggests actions for the student (e.g., internships, research) but does not address practitioner workload or resource constraints."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00133675,
+  "judge_latency_s": 18.376,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is advice, not a lesson plan, so there are no stated learning objectives, activities, or assessments to align. It provides structured guidance but does not involve pedagogical design elements like sequencing, cognitive demand, or observable rubric criteria. Therefore, it does not engage with the dimension's core focus on educational soundness in teaching design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is advice for a student, not a delivery plan for a practitioner. It does not specify timings, materials, preparation, marking load, or class size for a teacher or administrator to implement. It suggests actions for the student (e.g., internships, research) but does not address practitioner workload or resource constraints.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"Pathway guidance is in scope. The response covers multiple pathways relevant to a German Realschule graduate: Ausbildung (with specific examples like electrician, mechatronics technician, and details on dual system, pay, progression), Fachoberschule, Berufliches Gymnasium, Fachhochschulreife, and Abitur routes. It treats non-degree options substantively, not as fallbacks, with equal detail for each, addresses parents' preference honestly, and correctly names German structures (e.g., Berufsschule, Meister, Agentur für Arbeit). It meets the item-specific notes by giving real entry routes, duration, pay, and progression for Ausbildung.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes a single 16-year-old student with specific traits (good with hands, dislikes exams, solid grades, parental pressure). The response addresses this learner's range concretely by tailoring advice to their practical strengths and learning preferences, proposing adaptations like internships and career guidance. It does not mention broader learner diversity (e.g., prior attainment, additional needs, language barriers) because the prompt focuses on one student, but it does account for that student's specific context. The proposed adaptations are implementable by the student themselves, not requiring practitioner resources.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response excellently covers German educational pathways with substantive, balanced detail, directly meeting the prompt's core requirement.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response excellently covers German educational pathways with substantive, balanced detail, directly meeting the prompt's core requirement.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

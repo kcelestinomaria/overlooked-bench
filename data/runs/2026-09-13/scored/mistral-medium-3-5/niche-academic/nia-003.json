@@ -1,0 +1,32 @@
+{
+  "category": "niche-academic",
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The question asks about the relationship and divergence between Maliki and Hanafi positions. The response goes beyond encyclopedic level by engaging with specific methods (istiṣlāḥ, istiḥsān), linking maslaha to maqāṣid al-sharīʿa, providing concrete examples (ʿarāyā, maytah), and contrasting the schools' flexibility and theoretical grounding. It addresses internal scholarly distinctions (e.g., maslaha mursala treatment) and would be recognized by a specialist as competent, though it does not delve into nuanced debates or historical development within each school.",
+    "domain_accuracy": "The response makes substantive claims: maslaha is a secondary source; types of maslaha (mursala, mulgha, muʿtabara); Maliki receptiveness and use of istiṣlāḥ; Hanafi subsumption under istiḥsān as a subset of qiyās; examples like ʿarāyā sales and maytah in necessity. All these are correct and standard in uṣūl al-fiqh. No invented citations, terms, or consensus. The factual content is accurate and load-bearing claims are correct.",
+    "field_situatedness": "The response correctly uses the frameworks and terminology of Islamic legal theory (uṣūl al-fiqh): maslaha, adilla, Qur’an, Sunnah, ijmāʿ, qiyās, istiṣlāḥ, istiḥsān, maqāṣid al-sharīʿa, naṣṣ, gharar, ḍarūra. It situates the discussion within the Islamic scholarly tradition without substituting a Western or Anglophone framing. The examples (ʿarāyā, maytah) are specific to fiqh. No silent substitution of adjacent fields occurs.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it notes maslaha is generally secondary, cannot override explicit text, and that Malikis are 'most receptive' while Hanafis are 'more cautious.' It specifies that Malikis treat it as 'de facto independent in certain cases' and Hanafis require textual or consensus support for maslaha mursala. However, it presents the typology of maslaha (mursala, mulgha, muʿtabara) as standard without noting variations in acceptance across schools beyond the Maliki-Hanafi split. Calibration is present but not highly detailed on evidential status of each subtype."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.0011971,
+  "judge_latency_s": 20.656,
+  "judge_model": "deepseek/deepseek-v3.1-terminus",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: maslaha is a secondary source; types of maslaha (mursala, mulgha, muʿtabara); Maliki receptiveness and use of istiṣlāḥ; Hanafi subsumption under istiḥsān as a subset of qiyās; examples like ʿarāyā sales and maytah in necessity. All these are correct and standard in uṣūl al-fiqh. No invented citations, terms, or consensus. The factual content is accurate and load-bearing claims are correct.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The question asks about the relationship and divergence between Maliki and Hanafi positions. The response goes beyond encyclopedic level by engaging with specific methods (istiṣlāḥ, istiḥsān), linking maslaha to maqāṣid al-sharīʿa, providing concrete examples (ʿarāyā, maytah), and contrasting the schools' flexibility and theoretical grounding. It addresses internal scholarly distinctions (e.g., maslaha mursala treatment) and would be recognized by a specialist as competent, though it does not delve into nuanced debates or historical development within each school.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it notes maslaha is generally secondary, cannot override explicit text, and that Malikis are 'most receptive' while Hanafis are 'more cautious.' It specifies that Malikis treat it as 'de facto independent in certain cases' and Hanafis require textual or consensus support for maslaha mursala. However, it presents the typology of maslaha (mursala, mulgha, muʿtabara) as standard without noting variations in acceptance across schools beyond the Maliki-Hanafi split. Calibration is present but not highly detailed on evidential status of each subtype.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses the frameworks and terminology of Islamic legal theory (uṣūl al-fiqh): maslaha, adilla, Qur’an, Sunnah, ijmāʿ, qiyās, istiṣlāḥ, istiḥsān, maqāṣid al-sharīʿa, naṣṣ, gharar, ḍarūra. It situates the discussion within the Islamic scholarly tradition without substituting a Western or Anglophone framing. The examples (ʿarāyā, maytah) are specific to fiqh. No silent substitution of adjacent fields occurs.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates accurate, structured knowledge of Islamic legal theory with clear differentiation between Maliki and Hanafi approaches.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.2.1",
+  "metric_engine": "native",
+  "model_key": "mistral-medium-3-5",
+  "ok": true,
+  "overall_note": "The response demonstrates accurate, structured knowledge of Islamic legal theory with clear differentiation between Maliki and Hanafi approaches.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}
