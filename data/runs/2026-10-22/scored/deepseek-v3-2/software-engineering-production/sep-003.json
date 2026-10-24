@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with schema, code snippets, rollout plan (week-by-week tasks), and specific risks. Includes concrete commands (SQL, Python), estimates (e.g., 'takes ~2 minutes' for aggregation job), and verification steps (load testing, monitoring). Engineers could execute immediately.",
+    "constraint_fidelity": "The response respects all hard constraints: uses only existing PostgreSQL (no new services), states 'can be implemented in 4 weeks' with 3 engineers implicitly, and calculates cost increase at $180/month (1.9% < 8%). It explicitly addresses each constraint with arithmetic.",
+    "maintainability": "Explicitly states risks (advisory lock contention, data loss, manual rollback) and accepted debt. Complexity is proportionate (uses existing stack, no new services). Includes monitoring dashboards and handoff documentation. Code is straightforward Django/PostgreSQL patterns familiar to the team.",
+    "production_realism": "Accounts for production scale: calculates 21,600 queries/sec peak load and states current RDS handles ~25,000 queries/sec (86% utilization). Addresses locking (advisory locks), partial failure (UNLOGGED table data loss risk), rollback (feature flag disable), and observability (metrics/dashboards). Fits team skills with Django/PostgreSQL."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-003",
+  "judge_cost_usd": 0.0012244,
+  "judge_latency_s": 9.838,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses only existing PostgreSQL (no new services), states 'can be implemented in 4 weeks' with 3 engineers implicitly, and calculates cost increase at $180/month (1.9% < 8%). It explicitly addresses each constraint with arithmetic.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for production scale: calculates 21,600 queries/sec peak load and states current RDS handles ~25,000 queries/sec (86% utilization). Addresses locking (advisory locks), partial failure (UNLOGGED table data loss risk), rollback (feature flag disable), and observability (metrics/dashboards). Fits team skills with Django/PostgreSQL.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with schema, code snippets, rollout plan (week-by-week tasks), and specific risks. Includes concrete commands (SQL, Python), estimates (e.g., 'takes ~2 minutes' for aggregation job), and verification steps (load testing, monitoring). Engineers could execute immediately.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Explicitly states risks (advisory lock contention, data loss, manual rollback) and accepted debt. Complexity is proportionate (uses existing stack, no new services). Includes monitoring dashboards and handoff documentation. Code is straightforward Django/PostgreSQL patterns familiar to the team.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design with detailed arithmetic and actionable rollout plan.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design with detailed arithmetic and actionable rollout plan.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

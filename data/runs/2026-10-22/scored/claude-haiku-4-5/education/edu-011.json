@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "This dimension evaluates accounting for learner diversity in an educational setting, but the response is directed at a single student and family, not a classroom. It does not address a range of learners, prior attainment, additional needs, or material constraints in a teaching context, so it does not engage with this dimension.",
+    "pathway_breadth": "The response covers multiple non-degree pathways with specificity: TVET ('2–3 year diplomas in practical fields'), skilled trades ('electrician, plumber, mason, mechanic'), apprenticeships ('learn while earning'), entrepreneurship ('start small: retail, services'), and part-time study. It gives comparable depth to self-sponsored university, including costs ('₹200k–500k+ annually'), entry requirements, and outcomes. It accurately references Kenyan systems (KCSE, TVET) and avoids framing non-degree options as failure, instead stating 'each has genuine merit' and 'not a lesser path'. It meets the item-specific notes by covering TVET, polytechnic equivalents, self-sponsored university, resits, and financing considerations.",
+    "pedagogical_soundness": "This dimension evaluates educational planning, but the prompt requests guidance for a student, not a lesson plan. The response provides advice rather than pedagogical design, so it does not engage with learning objectives, activities, assessments, or sequencing. Therefore, it scores 0.",
+    "workload_realism": "This dimension assesses feasibility for practitioners delivering instruction, but the response is student guidance, not a teaching plan. It does not involve timings, materials, or marking load for a practitioner, so it does not engage with this dimension at all."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00090017,
+  "judge_latency_s": 43.936,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension evaluates educational planning, but the prompt requests guidance for a student, not a lesson plan. The response provides advice rather than pedagogical design, so it does not engage with learning objectives, activities, assessments, or sequencing. Therefore, it scores 0.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension assesses feasibility for practitioners delivering instruction, but the response is student guidance, not a teaching plan. It does not involve timings, materials, or marking load for a practitioner, so it does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple non-degree pathways with specificity: TVET ('2–3 year diplomas in practical fields'), skilled trades ('electrician, plumber, mason, mechanic'), apprenticeships ('learn while earning'), entrepreneurship ('start small: retail, services'), and part-time study. It gives comparable depth to self-sponsored university, including costs ('₹200k–500k+ annually'), entry requirements, and outcomes. It accurately references Kenyan systems (KCSE, TVET) and avoids framing non-degree options as failure, instead stating 'each has genuine merit' and 'not a lesser path'. It meets the item-specific notes by covering TVET, polytechnic equivalents, self-sponsored university, resits, and financing considerations.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"This dimension evaluates accounting for learner diversity in an educational setting, but the response is directed at a single student and family, not a classroom. It does not address a range of learners, prior attainment, additional needs, or material constraints in a teaching context, so it does not engage with this dimension.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, specific, and balanced guidance on multiple pathways relevant to a Kenyan student with limited funds and below-cutoff KCSE results.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, specific, and balanced guidance on multiple pathways relevant to a Kenyan student with limited funds and below-cutoff KCSE results.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "This dimension is not applicable as the response provides individualized advice to one student rather than addressing a range of learners in a classroom setting. The rubric requires evaluating adaptations for differing prior attainment, additional needs, or material constraints across a cohort, which doesn't apply here.",
+    "pathway_breadth": "The response covers multiple German pathways substantively: 'Ausbildung' with details on duration ('vocational training in a company plus lessons'), pay ('earn money while training'), and progression ('Meister, Techniker, Fachwirt'); 'Fachoberschule' and 'Fachabitur' routes; and addresses parental preferences honestly ('Your parents probably want security, status... But they may be assuming that academic automatically means better'). All pathways are treated with equal depth and specificity.",
+    "pedagogical_soundness": "This dimension is not applicable as the response provides career advice rather than instructional design. The rubric requires evaluating learning objectives, activities, assessments, and sequencing, none of which are present in this advisory response.",
+    "workload_realism": "This dimension is not applicable as the response provides career advice rather than instructional planning. The rubric requires evaluating lesson timings, material availability, and preparation/marking loads, none of which are relevant to this advisory content."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00125682,
+  "judge_latency_s": 30.122,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable as the response provides career advice rather than instructional design. The rubric requires evaluating learning objectives, activities, assessments, and sequencing, none of which are present in this advisory response.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension is not applicable as the response provides career advice rather than instructional planning. The rubric requires evaluating lesson timings, material availability, and preparation/marking loads, none of which are relevant to this advisory content.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple German pathways substantively: 'Ausbildung' with details on duration ('vocational training in a company plus lessons'), pay ('earn money while training'), and progression ('Meister, Techniker, Fachwirt'); 'Fachoberschule' and 'Fachabitur' routes; and addresses parental preferences honestly ('Your parents probably want security, status... But they may be assuming that academic automatically means better'). All pathways are treated with equal depth and specificity.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"This dimension is not applicable as the response provides individualized advice to one student rather than addressing a range of learners in a classroom setting. The rubric requires evaluating adaptations for differing prior attainment, additional needs, or material constraints across a cohort, which doesn't apply here.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"Excellent coverage of German vocational and academic pathways with substantive detail and balanced consideration of parental preferences.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "Excellent coverage of German vocational and academic pathways with substantive detail and balanced consideration of parental preferences.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

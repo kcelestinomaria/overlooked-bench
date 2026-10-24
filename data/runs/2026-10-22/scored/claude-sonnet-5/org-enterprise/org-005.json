@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a concrete breakdown of requirements, costs, and timelines in usable form. It includes specific line items (e.g., 'Legal review/negotiation: ₹1.5–4 lakh', 'EU Representative: €1,000–3,000/year'), roles ('designated point of contact'), and actionable steps ('SCCs non-negotiable', 'need a Transfer Impact Assessment'). It could be taken into a meeting with light editing.",
+    "constraint_fidelity": "The prompt describes a 25-person software consultancy in Bangalore. The response respects this constraint by recommending measures appropriate for a small firm (e.g., 'you don't need a formal DPO at 25 people', 'internal compliance owner time' estimates of 20-40 hours). It provides cost estimates in Indian rupees and euros, showing arithmetic fidelity. No constraints are silently violated.",
+    "contextual_realism": "The response is calibrated for a small consultancy: it avoids enterprise-scale recommendations, focuses on practical measures ('encryption, access control, retention/deletion policy'), acknowledges role overlap ('a designated point of contact' instead of dedicated HR/legal), and considers cost realities ('is the margin on this direct relationship worth the fixed compliance overhead?'). It recognizes resource constraints like internal time investment and limited budget.",
+    "jurisdictional_accuracy": "The response accurately addresses GDPR for a German client and India as a third country: it covers SCCs, Transfer Impact Assessment (referencing Schrems II), Article 27 EU representative requirements, and avoids US assumptions. It correctly notes India lacks an adequacy decision and discusses Indian law implications (e.g., 'government surveillance access, IT Act provisions'). It provides specific jurisdictional advice without generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-005",
+  "judge_cost_usd": 0.00098554,
+  "judge_latency_s": 39.946,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 25-person software consultancy in Bangalore. The response respects this constraint by recommending measures appropriate for a small firm (e.g., 'you don't need a formal DPO at 25 people', 'internal compliance owner time' estimates of 20-40 hours). It provides cost estimates in Indian rupees and euros, showing arithmetic fidelity. No constraints are silently violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small consultancy: it avoids enterprise-scale recommendations, focuses on practical measures ('encryption, access control, retention/deletion policy'), acknowledges role overlap ('a designated point of contact' instead of dedicated HR/legal), and considers cost realities ('is the margin on this direct relationship worth the fixed compliance overhead?'). It recognizes resource constraints like internal time investment and limited budget.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a concrete breakdown of requirements, costs, and timelines in usable form. It includes specific line items (e.g., 'Legal review/negotiation: ₹1.5–4 lakh', 'EU Representative: €1,000–3,000/year'), roles ('designated point of contact'), and actionable steps ('SCCs non-negotiable', 'need a Transfer Impact Assessment'). It could be taken into a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses GDPR for a German client and India as a third country: it covers SCCs, Transfer Impact Assessment (referencing Schrems II), Article 27 EU representative requirements, and avoids US assumptions. It correctly notes India lacks an adequacy decision and discusses Indian law implications (e.g., 'government surveillance access, IT Act provisions'). It provides specific jurisdictional advice without generic 'consult a lawyer' disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a highly specific, actionable, and jurisdictionally accurate plan tailored to a small Bangalore consultancy's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response provides a highly specific, actionable, and jurisdictionally accurate plan tailored to a small Bangalore consultancy's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

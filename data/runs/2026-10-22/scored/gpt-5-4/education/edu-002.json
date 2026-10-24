@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners (Grade 11 in South Africa, with varying writing abilities). The response addresses this through the rubric's levels (e.g., Level 1 to 5 descriptors) and marking rules like 'Reward quality of argument, not agreement with the teacher' and 'Do not let one feature dominate all marks', which help avoid bias. However, it does not concretely address additional needs (e.g., language support, accommodations) or material constraints (e.g., no home internet). Differentiation is implied through the rubric's flexibility but not specified for diverse learners.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about creating an assessment rubric. The response is inclusive of the range of learners by addressing reliability across varying essay quality (e.g., anchor scripts for strong, average, weak essays) and rules like 'Ignore handwriting unless it affects legibility' and 'Do not adjust standards based on what you know about the learner', which promote fairness. However, it does not explicitly address factors like language barriers or prior attainment beyond general marking consistency.",
+    "pedagogical_soundness": "The rubric aligns objectives (argument, organization, language, editing) with specific criteria and level descriptors. For example, 'Argument and Response to Topic' assesses relevance, stance, and development, which matches argumentative writing goals. Activities (marking process) build toward assessment through calibration and comparison. Assessment levels are observable (e.g., 'clear stance', 'logical paragraphing') and distinguishable between bands (e.g., Level 5 vs. Level 4 descriptors). Sequencing is coherent with prerequisites implied in level progression. However, the rubric lacks explicit learning objectives for the students, focusing instead on assessment criteria.",
+    "workload_realism": "The response explicitly addresses timing: 'each essay takes 6–7 minutes', totaling '12 to 14 hours' for 120 essays, which is realistic for a weekend. Materials are minimal (paper, codes like 'AR', 'ORG') and assume no special resources. Marking process (batches, anchors, limited annotation) is designed for one teacher without additional support. Class size (120) is accounted for with batching and recalibration. The arithmetic is engaged: '120 essays will take roughly 12 to 14 hours total' and 'aim for 5–6 minutes per essay'."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00160588,
+  "judge_latency_s": 48.96,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The rubric aligns objectives (argument, organization, language, editing) with specific criteria and level descriptors. For example, 'Argument and Response to Topic' assesses relevance, stance, and development, which matches argumentative writing goals. Activities (marking process) build toward assessment through calibration and comparison. Assessment levels are observable (e.g., 'clear stance', 'logical paragraphing') and distinguishable between bands (e.g., Level 5 vs. Level 4 descriptors). Sequencing is coherent with prerequisites implied in level progression. However, the rubric lacks explicit learning objectives for the students, focusing instead on assessment criteria.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses timing: 'each essay takes 6–7 minutes', totaling '12 to 14 hours' for 120 essays, which is realistic for a weekend. Materials are minimal (paper, codes like 'AR', 'ORG') and assume no special resources. Marking process (batches, anchors, limited annotation) is designed for one teacher without additional support. Class size (120) is accounted for with batching and recalibration. The arithmetic is engaged: '120 essays will take roughly 12 to 14 hours total' and 'aim for 5–6 minutes per essay'.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about creating an assessment rubric. The response is inclusive of the range of learners by addressing reliability across varying essay quality (e.g., anchor scripts for strong, average, weak essays) and rules like 'Ignore handwriting unless it affects legibility' and 'Do not adjust standards based on what you know about the learner', which promote fairness. However, it does not explicitly address factors like language barriers or prior attainment beyond general marking consistency.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners (Grade 11 in South Africa, with varying writing abilities). The response addresses this through the rubric's levels (e.g., Level 1 to 5 descriptors) and marking rules like 'Reward quality of argument, not agreement with the teacher' and 'Do not let one feature dominate all marks', which help avoid bias. However, it does not concretely address additional needs (e.g., language support, accommodations) or material constraints (e.g., no home internet). Differentiation is implied through the rubric's flexibility but not specified for diverse learners.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a highly practical and realistic rubric and marking process tailored for efficiency and reliability in grading 120 essays.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a highly practical and realistic rubric and marking process tailored for efficiency and reliability in grading 120 essays.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

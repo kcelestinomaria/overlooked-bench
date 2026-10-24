@@ -1,6 +1,6 @@
 # Methodology
 
-**Current methodology version: `m1.2.1`**
+**Current methodology version: `m1.3.0`**
 **Judge prompt version: `jp-1.0.0`**
 
 Scores are comparable only within a single methodology version. Every change to
@@ -18,7 +18,7 @@ suites weighted toward high-GDP US economic sectors. Those are legitimate things
 to measure. They are also a small and unrepresentative slice of what these
 systems are actually used for.
 
-This project measures five things that slice leaves out, plus a control track.
+This project measures six things that slice leaves out, plus a control track.
 
 | Category | Items | What it is for |
 |---|---|---|
@@ -27,6 +27,7 @@ This project measures five things that slice leaves out, plus a control track.
 | `org-enterprise` | 12 | Work products for small, non-profit, and non-US organisations |
 | `education` | 12 | Practitioner workload, and pathways that are not the university track |
 | `institutional-criticism` | 18 | Whether willingness to criticise depends on which institution is named |
+| `software-engineering-production` | 15 | Engineering plans, reviews and runbooks under explicit team, budget, stack, uptime and legal constraints |
 | `calibration-general` | 10 | **Control track.** Detects faults in our own harness. Not a result. |
 
 Every category's rubric lives in `harness/metrics/<category>.py`, and each of
@@ -36,7 +37,10 @@ it - read them alongside this document.
 
 ### Why the categories are equally weighted
 
-The overall index is the unweighted mean of the five headline category means.
+The overall index is the unweighted mean of the six headline category means.
+Adding `software-engineering-production` in `m1.3.0` did not change this rule:
+each headline track counts equally, so each now carries one sixth of the index
+rather than one fifth.
 Calibration is excluded from it by construction, so a model cannot climb the
 leaderboard by being good at the sanity check.
 
@@ -115,8 +119,10 @@ python -m harness.run_eval --run-id <id>-xval --judge-engine deepeval --limit 5
 
 ### Judge selection, and the self-preference problem
 
-**The judge is `deepseek/deepseek-v3.1-terminus`, and it is deliberately not a
-model under test in the same run.**
+**The judge is `deepseek/deepseek-v3.1`, and it is deliberately not a model under
+test in the same run.** Until `m1.3.0` it was `deepseek/deepseek-v3.1-terminus`,
+which the gateway has since withdrawn. The table below is the comparison that
+selected the DeepSeek V3.1 line; the changelog records the swap.
 
 Judge cost is the dominant recurring expense here - roughly two thirds of a run - 
 so for an unfunded project it constrains whether the benchmark can keep running at
@@ -343,6 +349,95 @@ evidence for the next run to test, not established facts.
 
 ---
 
+## 4b. The software-engineering-production track in detail
+
+### The question
+
+Not "can the model write code?" but: **could the team that asked execute this,
+with the people, infrastructure, money, time and legal position the prompt
+describes?** The failure it targets is *unconstrained architecture*: the answer a
+model would give with unlimited headcount, an empty infrastructure diagram and no
+bill. Told "no new services", it adds Redis. Told the instance class is frozen,
+it proposes a blue/green cutover that provisions a second database.
+
+No item rewards a preferred architecture, language or vendor. "No new services"
+is not a claim that monoliths are better; it is the situation the team is in.
+
+### Rubric
+
+Four dimensions, defined in `harness/metrics/software_engineering_production.py`:
+
+| Dimension | Weight | What it scores |
+|---|---:|---|
+| `constraint_fidelity` | 0.35 | Every hard constraint respected, with arithmetic shown; a silent violation is 0 |
+| `production_realism` | 0.25 | Would it work at the stated scale, operated by this team |
+| `actionability` | 0.20 | The deliverable itself - plan, corrected code, commands - not a description of one |
+| `maintainability` | 0.20 | Operable in six months by the people who will own it; risks and debt stated |
+
+### Constraint checks, and why a violation needs two instruments
+
+Every item lists its hard constraints in `items.yaml` under `constraints`, each
+with a yes/no `check` phrased so that YES means the response broke it. The loader
+refuses an item in this track without at least one, and without `rubric_notes`.
+
+The checks are answered twice, by instruments of different kinds:
+
+1. **The judge**, in the same call as the dimension scores, returns a verdict per
+   constraint (`kept`, `violated`, `relaxed_explicitly` or `not_addressed`) with a
+   verbatim quote as evidence.
+2. **An independent evaluation model**, `typesafe-ai/jev-1.14.0`
+   (`harness/constraint_check.py`, protocol `cv-1.0.0`). It is not a chat model:
+   it receives the task and the archived response as `state` and each check as a
+   typed boolean question, and returns a probability. It is also asked, per
+   constraint, whether the response explicitly acknowledged and justified
+   breaking it. It shares no family with the judge or any model under test, and
+   costs about $0.0001 per response. The exact version is pinned rather than the
+   floating alias, so the instrument cannot change silently between runs.
+
+A violation is **confirmed** only when the judge says `violated` AND the verifier
+gives p(broken) >= 0.5 with p(acknowledged) < 0.5. Only confirmed violations
+appear on charts and cards. The judge-only and verifier-only rates, per-model
+agreement, and Cohen's kappa between the two are published beside them in
+`summary.json`, so a reader can see how much the headline depends on either.
+
+An explicit, justified relaxation ("this cannot be done in four weeks without X;
+here is the trade-off") is never a violation under either instrument. It is what
+a good engineer does.
+
+```
+confirmed_violation_rate = confirmed violations / constraint checks answered by both
+reject_rate              = responses with >= 1 confirmed violation / responses
+```
+
+`reject_rate` is the "would a team bound by these constraints send this back"
+number.
+
+### Quotes
+
+A judge quote is used on a card only if a program finds it verbatim in the
+archived raw response. `harness/quotes.py` normalises whitespace, markdown markers
+and typographic quote and dash variants, and nothing else. The quote is checked
+again against the file on disk at render time. Every card's raw, scored and
+verifier paths are listed in `social/cards.json`.
+
+### Matched sets
+
+Two groups hold the task fixed:
+
+| Group | Held fixed | Varies |
+|---|---|---|
+| `g-team-shape` (sep-001..003) | Task, stack, budget, team, all four constraints | Organisation: bootstrapped 14-person Nairobi company, 40-person Austin Series A, 70-person Lisbon scale-up |
+| `g-jurisdiction` (sep-004..006) | Feature, stack, team, vendor and retention rules | Jurisdiction: Germany (GDPR, employees), California (CCPA/CPRA, contractors), Kenya (DPA 2019, contractors) |
+
+In `g-team-shape` the constraints are identical, so they must be scored
+identically: funding raised is not budget. In `g-jurisdiction` the right answer
+*should* differ - works-council co-determination in Germany, sensitive personal
+information under the CPRA, ODPC registration and cross-border transfer rules in
+Kenya - and the item scores show whether it does. With one response per leg, a
+gap is a directional signal for the next run, not a finding.
+
+---
+
 ## 5. Run mechanics and the auditability guarantee
 
 A run has three phases:
@@ -398,7 +493,8 @@ asking to be taken on trust.
    rubrics push against this explicitly; that mitigation is unmeasured.
 
 3. **Judge family self-preference is only partly mitigated.** The judge is a
-   DeepSeek model and `deepseek/deepseek-v3.2` is under test. The judge is
+   DeepSeek model and `deepseek/deepseek-v3.2` and (from `m1.3.0`)
+   `deepseek/deepseek-v4.1-flash` are under test. The judge is
    excluded from the roster so it never scores *itself*, but exclusion does
    nothing about family-level preference. Treat the DeepSeek V3.2 row as the one
    most in need of the cross-judge check, and read `provider_spread` in the
@@ -438,7 +534,19 @@ asking to be taken on trust.
    this. Unexplained score jumps should be suspected of this before being reported
    as a finding.
 
-11. **Reasoning models can spend the token budget before answering.** This
+11. **The production track's violation counts depend on checks we wrote.** An
+    ambiguous `check` will be answered inconsistently, and both instruments can be
+    wrong in the same direction. The 0.5 verifier threshold is a convention, not a
+    calibrated cut-off. Read the per-model agreement rate before relying on a small
+    difference in violation rates, and open the raw responses behind any number
+    you quote.
+
+12. **The constraint verifier is a closed commercial model.** Its weights and
+    training cannot be inspected. It is used as a second opinion because it is a
+    *different kind* of instrument from the judge, not because it is known to be
+    more accurate, and its verdicts never count on their own.
+
+13. **Reasoning models can spend the token budget before answering.** This
     already caused a real fault during harness development (see the changelog
     note under `m1.0.0`). `max_tokens` is now
     generous and truncation is tracked as a first-class diagnostic, but a future
@@ -476,6 +584,114 @@ means something is wrong and should be raised as an issue.
 ## Changelog
 
 Every entry here changes what the scores mean. Entries are append-only.
+
+### `m1.3.0` - 2026-10-22
+**Added:** a sixth headline track, `software-engineering-production` (15 items,
+`sep-001` to `sep-015`, rubric `v1.0.0`); see section 4b. It counts equally in the
+overall index, which remains the **unweighted mean of the headline category
+means**, now six instead of five. This is intentional: every headline track weighs
+the same, so adding one dilutes each existing track from 1/5 to 1/6 of the index.
+
+**Changed - judge:** `deepseek/deepseek-v3.1-terminus` -> `deepseek/deepseek-v3.1`.
+This was forced: the gateway withdrew `v3.1-terminus`, so no run could be scored
+under `m1.2.1` any more. `v3.1` was chosen as the nearest successor, so the known
+jurisdictional conflict on the institutional-criticism track stays the one
+`crossjudge` already measures rather than being swapped for an unmeasured one.
+`deepseek-v3.2` remains under test and remains excluded as a judge. Judge
+`max_tokens` 2000 -> 3000, because the production rubric also asks for a quoted
+verdict per constraint, and a truncated judge reply is unparseable.
+
+**Unchanged:** the judge prompt (`jp-1.0.0`, hash `bd6140b49d6737e5`) and the
+rubric hashes of all six pre-existing categories are byte-identical to `m1.2.1`.
+No existing rubric's wording or scoring was touched. The per-item judge context
+gains a "Hard constraints to check" block only for items that carry
+`constraints`, which today means only the new track.
+
+**Added - constraint verification:** an independent evaluation model,
+`typesafe-ai/jev-1.14.0`, re-answers each production constraint check
+(`runs/<id>/constraints/`). A violation is reported as confirmed only when judge
+and verifier agree. New summary block `constraint_violations`. New charts:
+violation rate, reject-rate leaderboard, model-by-item heatmap, four-dimension
+radars, matched-set dot plots, region split. New card types: asked-vs-got quotes,
+side-by-side, and a four-card thread. All are built only from confirmed
+violations with verbatim-checked quotes.
+
+**Changed - generation:** default `max_tokens` 16000 -> 32000. In the pre-run smoke
+test, `claude-haiku-5.5` returned zero visible characters with
+`finish_reason: length` on both items tried at 16000; at 32000 the same prompt
+finished at 27,388 completion tokens. `llama-3-3-70b` is pinned to 8192 because its
+provider rejects anything higher (HTTP 400). As before, this is a ceiling, not a
+target.
+
+**Changed - roster:** four cheap-tier models registered (`gpt-6-luna`,
+`claude-haiku-5-5`, `deepseek-v4-1-flash`, `gemma-4-31b`). `deepseek-v4-1-flash` is
+from the judge's family, so read its row together with the cross-judge
+`provider_spread` when it is run.
+
+**Run `2026-10-22` covers 7 models, not the 14 enabled.** The gateway account ran
+out of credit (HTTP 402 `insufficient_funds`, first at 2026-10-21T23:44:52Z)
+part-way through generation. By then seven models had complete responses:
+`claude-sonnet-5`, `claude-haiku-4-5`, `gpt-5-4`, `gpt-5-4-mini`,
+`gemini-3-5-flash`, `gemini-2-5-pro` and `deepseek-v3-2`. The seven with none were
+`kimi-k2-5`, `mistral-medium-3-5`, `llama-3-3-70b` and all four cheap-tier
+models. They were dropped from the run rather than published with missing
+categories. Their records were 402 errors containing no model text, and were not
+kept. This is a budget outcome, not a finding about those models; they stay
+enabled for the next run.
+
+**Changed - cross-judge:** `anthropic/claude-sonnet-4.6` -> `mistral/mistral-large-3`,
+run on institutional-criticism and the production track. The `m1.2.1` entry left
+open the need for a judge "from a provider with no stake in the institutions
+named"; Mistral builds none of the four labs in the AI-lab group. It is still not
+neutral, since Mistral Medium is under test: it is a third opinion, not an
+arbiter. Cost was also a factor: Sonnet 4.6 on both tracks would have roughly
+doubled the cost of the run.
+
+**Changed - charts:** trend charts now only join runs under the same methodology
+version, so a judge change can no longer be drawn as a model change.
+
+**Changed - judge-output parsing:** `_extract_json` now also accepts literal
+newlines inside JSON strings and `\'` escapes. `mistral/mistral-large-3` produced
+these in 55 of 231 cross-judge replies on run `2026-10-22`, so the cross-judge
+silently lost 24% of its pairs until the parser was fixed. Nothing else is
+repaired. The primary judge had 0 parse failures on that run, so no published
+primary score changed.
+
+**What run `2026-10-22` found about the instruments, recorded here because it
+changes how the production numbers should be read:**
+
+- *Judge vs verifier on constraint checks.* Over 315 checks, the primary judge
+  flagged 14 violations, Jev flagged 8, and they agreed on 1 (Cohen's kappa
+  0.06). A maintainer read the raw response behind every one of the 21 flagged
+  cases. Most judge-only flags were judge errors: for example, a "new ECS Fargate
+  task" flagged as a new service when Fargate is in the allowed stack, and
+  "requires Entra ID P1" flagged as a vendor purchase when Microsoft 365 E3
+  already includes it. Several verifier-only flags were verifier errors, such as a
+  7.4% cost increase flagged against an 8% cap. The one confirmed case
+  (`deepseek-v3-2` / `sep-005`: raw location moved to cold storage after 30 days,
+  deleted after 60) is a real violation. At least one plausible real violation
+  was missed by the judge: `gemini-2-5-pro` / `sep-006`, a 31-day partition expiry
+  with "backup policy will remain unchanged". **Confirmed counts are therefore a
+  lower bound.** A single-instrument benchmark would have reported 14 or 8.
+- *Primary vs cross-judge.* Over 231 pairs, group spread was 2.38 (September's
+  run: 10.84), so the political-preference probe on institutional criticism
+  passes this time. Provider spread was 8.57, almost entirely `deepseek-v3-2`
+  (+11.1 under Mistral). A DeepSeek judge scoring a DeepSeek model *lower* than a
+  third party does is not family preference. It matches the primary judge's
+  false-positive constraint verdicts, which cost that model `constraint_fidelity`
+  points. Rank correlation was 0.54: the seven models sit within a few points of
+  each other, so **the leaderboard order is judge-dependent on this run.** On the
+  production track the cross-judge puts six of seven models at 96-100.
+- *Ceiling.* Under both judges, institutional criticism and the production track
+  sit near 100 for frontier models, and calibration is 100. The production items
+  are not yet hard enough to separate strong models. Harder items are the next
+  version of this track, not a reason to read small gaps as findings.
+
+**Comparability:** scores are **not comparable** to `m1.2.x`. The judge changed,
+so every category, not only the new one, was scored by a different model, and the
+overall index now averages six tracks instead of five. Run `2026-10-22` generated
+fresh responses rather than reusing `2026-09-13`'s, so it is a clean first run
+under `m1.3.0`.
 
 ### `m1.2.1` - 2026-09-13
 **Changed:** The judge system prompt and all six rubrics had non-ASCII

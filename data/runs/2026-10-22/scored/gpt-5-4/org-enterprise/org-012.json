@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed diversification plan with concrete components: month-by-month actions (e.g., 'Month 1: meet current donor, map budget risk'), income targets, specific funding sources, and tools (e.g., '2-page organisational profile'). It includes prioritization ('Lane A: highest priority') and contingency planning ('trigger financial contingency planning'). It is usable with light editing for a board meeting.",
+    "constraint_fidelity": "The response explicitly respects all constraints: 5-person team ('Because the organisation is small, diversification must be embedded lightly'), 12-month timeline (month-by-quarter plan), and existing casework ('designed to be realistic for a small team that must continue delivering legal aid'). It shows arithmetic in income target mix (e.g., 'Current donor or taper funding: 30–40%') and staffing allocation ('fundraising coordination: 0.2–0.3 FTE'). It does not violate any constraints and justifies realistic targets.",
+    "contextual_realism": "The response is calibrated for a small Jordanian NGO: avoids recommending dedicated fundraising hires ('does not need to be a full-time fundraiser'), focuses on manageable prospects ('8–12 high-priority prospects'), acknowledges role overlap ('All staff contribute'), and avoids US-centric assumptions (e.g., no individual giving emphasis). It recognizes constraints like limited capacity ('cap activity at 4–6 serious applications') and uses region-appropriate sources (e.g., 'embassies, UN agencies, women’s rights funds active in Jordan/MENA').",
+    "jurisdictional_accuracy": "The response avoids US assumptions and focuses on Jordan/MENA context: recommends regional sources ('embassies, UN agencies, women’s rights funds active in Jordan/MENA'), acknowledges local norms ('Ramadan/Zakat-linked support if legally and reputationally appropriate'), and does not assert US defaults. It is factually accurate for the region and provides specific advice without generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-012",
+  "judge_cost_usd": 0.0019796,
+  "judge_latency_s": 42.006,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: 5-person team ('Because the organisation is small, diversification must be embedded lightly'), 12-month timeline (month-by-quarter plan), and existing casework ('designed to be realistic for a small team that must continue delivering legal aid'). It shows arithmetic in income target mix (e.g., 'Current donor or taper funding: 30–40%') and staffing allocation ('fundraising coordination: 0.2–0.3 FTE'). It does not violate any constraints and justifies realistic targets.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Jordanian NGO: avoids recommending dedicated fundraising hires ('does not need to be a full-time fundraiser'), focuses on manageable prospects ('8–12 high-priority prospects'), acknowledges role overlap ('All staff contribute'), and avoids US-centric assumptions (e.g., no individual giving emphasis). It recognizes constraints like limited capacity ('cap activity at 4–6 serious applications') and uses region-appropriate sources (e.g., 'embassies, UN agencies, women’s rights funds active in Jordan/MENA').\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed diversification plan with concrete components: month-by-month actions (e.g., 'Month 1: meet current donor, map budget risk'), income targets, specific funding sources, and tools (e.g., '2-page organisational profile'). It includes prioritization ('Lane A: highest priority') and contingency planning ('trigger financial contingency planning'). It is usable with light editing for a board meeting.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response avoids US assumptions and focuses on Jordan/MENA context: recommends regional sources ('embassies, UN agencies, women’s rights funds active in Jordan/MENA'), acknowledges local norms ('Ramadan/Zakat-linked support if legally and reputationally appropriate'), and does not assert US defaults. It is factually accurate for the region and provides specific advice without generic 'consult a lawyer' disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates exceptional realism and actionability for a small Jordanian NGO, with a detailed, constraint-aware plan.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates exceptional realism and actionability for a small Jordanian NGO, with a detailed, constraint-aware plan.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

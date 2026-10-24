@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a one-page go/no-go analysis with a clear conditional recommendation ('GO — but only under these conditions'), includes break-even calculations (PLN 60k–80k monthly revenue target), lists financing options (bank loans, leasing, BGK-backed lending), and identifies two specific risks. It provides concrete components like cost ranges, revenue thresholds, and mitigation strategies. The output could be used in a meeting with light editing, though it lacks a formal summary table or explicit go/no-go verdict in a highlighted format.",
+    "constraint_fidelity": "The response explicitly respects the no-equity-dilution constraint by stating 'Least realistic / less attractive: Private equity / external investors: rejected due to no dilution' and structuring financing around debt and leasing. It uses the PLN 250,000 owner capital and calculates break-even using the 8% margin (net profit ~PLN 112k/year derived from PLN 1.4m revenue * 8%). However, it does not show arithmetic for the break-even calculation (e.g., fixed costs divided by gross margin is stated but not computed step-by-step), and it relaxes the budget constraint by suggesting a project cost up to PLN 500k without explicit justification for exceeding the PLN 250k owner capital. This is a silent violation rather than an explicit relaxation.",
+    "contextual_realism": "The response is calibrated to a small family bakery: it avoids assuming dedicated HR/legal teams, recommends practical financing like leasing and BGK-backed loans, acknowledges limited profit (~PLN 112k/year) and cash flow constraints, and emphasizes risks like location sensitivity and cash burn during ramp-up. It proposes a 'retail-led, not full duplicate production' site to reduce overhead and suggests phased hiring, which aligns with small-organisation realities. However, it assumes a gross margin of 65% without justification from the prompt's net margin of 8%, which may be optimistic.",
+    "jurisdictional_accuracy": "The response accurately references Poland-specific financing options like 'BGK de minimis guarantees' and 'EU/local grants', avoiding US assumptions (no SBA references). It does not make incorrect jurisdictional claims and tailors advice to Polish context. However, it does not flag areas where local professional advice is required (e.g., legal aspects of leasing or permits), and the gross margin assumption (65%) is not justified with Polish bakery data, though this is a minor issue. The response is factually accurate and context-aware."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 2,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.00123532,
+  "judge_latency_s": 52.152,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the no-equity-dilution constraint by stating 'Least realistic / less attractive: Private equity / external investors: rejected due to no dilution' and structuring financing around debt and leasing. It uses the PLN 250,000 owner capital and calculates break-even using the 8% margin (net profit ~PLN 112k/year derived from PLN 1.4m revenue * 8%). However, it does not show arithmetic for the break-even calculation (e.g., fixed costs divided by gross margin is stated but not computed step-by-step), and it relaxes the budget constraint by suggesting a project cost up to PLN 500k without explicit justification for exceeding the PLN 250k owner capital. This is a silent violation rather than an explicit relaxation.\",\n      \"score\": 2\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated to a small family bakery: it avoids assuming dedicated HR/legal teams, recommends practical financing like leasing and BGK-backed loans, acknowledges limited profit (~PLN 112k/year) and cash flow constraints, and emphasizes risks like location sensitivity and cash burn during ramp-up. It proposes a 'retail-led, not full duplicate production' site to reduce overhead and suggests phased hiring, which aligns with small-organisation realities. However, it assumes a gross margin of 65% without justification from the prompt's net margin of 8%, which may be optimistic.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a one-page go/no-go analysis with a clear conditional recommendation ('GO — but only under these conditions'), includes break-even calculations (PLN 60k–80k monthly revenue target), lists financing options (bank loans, leasing, BGK-backed lending), and identifies two specific risks. It provides concrete components like cost ranges, revenue thresholds, and mitigation strategies. The output could be used in a meeting with light editing, though it lacks a formal summary table or explicit go/no-go verdict in a highlighted format.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately references Poland-specific financing options like 'BGK de minimis guarantees' and 'EU/local grants', avoiding US assumptions (no SBA references). It does not make incorrect jurisdictional claims and tailors advice to Polish context. However, it does not flag areas where local professional advice is required (e.g., legal aspects of leasing or permits), and the gross margin assumption (65%) is not justified with Polish bakery data, though this is a minor issue. The response is factually accurate and context-aware.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a practical, conditional recommendation with realistic Polish financing options and risk awareness, but silently exceeds the owner capital constraint.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a practical, conditional recommendation with realistic Polish financing options and risk awareness, but silently exceeds the owner capital constraint.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 73.75
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 255,
+  "cost_usd": 0.002361,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "43a76d3521d715e1",
+  "item_id": "cal-010",
+  "latency_s": 1.94,
+  "methodology_version": "m1.3.0",
+  "model_id": "google/gemini-3.5-flash",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "prompt_tokens": 44,
+  "provider": "google",
+  "request_fingerprint": "c7dffd007a9523bc",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "google/gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "text": "Argentina, Bolivia, Brazil",
+  "timestamp_utc": "2026-10-21T23:41:08Z"
+}

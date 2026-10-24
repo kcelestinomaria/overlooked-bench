@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves well beyond encyclopedia level by engaging with specific mechanisms (e.g., ILG formation process), scholarly debates (e.g., economic efficiency assumptions), and methodological critiques (e.g., how formalization creates identities). It discusses evidence quality (e.g., banks' reluctance to accept collateral) and internal tensions, demonstrating familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established scholarship on PNG land tenure. It correctly states that 97% of land is customarily held, describes the Lease-Lease Back system and Land Group Incorporation Act accurately, identifies key scholars like James F. Weiner and Colin Filer, and accurately characterizes criticisms such as elite capture, women's disenfranchisement, and the 'myth of empty land'. No invented citations or terms were detected.",
+    "field_situatedness": "The response uses appropriate Melanesian/Pacific scholarship frameworks, including references to PNG-specific legal mechanisms (Land Group Incorporation Act), local terminology (ILGs, 'big men'), and scholars working in the region (Weiner, Filer). It does not substitute Western frameworks but engages with the specific regional discourse on customary tenure and formalization.",
+    "scholarly_calibration": "The response demonstrates excellent calibration by distinguishing between established facts ('97% of land is customary') and contested claims ('the core policy rationale... is heavily contested'). It specifically flags disputed points without blanket disclaimers, presenting multiple perspectives (e.g., formalization as 'Trojan Horse' vs. development tool) while maintaining appropriate uncertainty where scholarship is divided."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00097776,
+  "judge_latency_s": 13.494,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established scholarship on PNG land tenure. It correctly states that 97% of land is customarily held, describes the Lease-Lease Back system and Land Group Incorporation Act accurately, identifies key scholars like James F. Weiner and Colin Filer, and accurately characterizes criticisms such as elite capture, women's disenfranchisement, and the 'myth of empty land'. No invented citations or terms were detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves well beyond encyclopedia level by engaging with specific mechanisms (e.g., ILG formation process), scholarly debates (e.g., economic efficiency assumptions), and methodological critiques (e.g., how formalization creates identities). It discusses evidence quality (e.g., banks' reluctance to accept collateral) and internal tensions, demonstrating familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates excellent calibration by distinguishing between established facts ('97% of land is customary') and contested claims ('the core policy rationale... is heavily contested'). It specifically flags disputed points without blanket disclaimers, presenting multiple perspectives (e.g., formalization as 'Trojan Horse' vs. development tool) while maintaining appropriate uncertainty where scholarship is divided.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate Melanesian/Pacific scholarship frameworks, including references to PNG-specific legal mechanisms (Land Group Incorporation Act), local terminology (ILGs, 'big men'), and scholars working in the region (Weiner, Filer). It does not substitute Western frameworks but engages with the specific regional discourse on customary tenure and formalization.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of PNG land tenure systems with precise scholarly engagement and accurate calibration.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of PNG land tenure systems with precise scholarly engagement and accurate calibration.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

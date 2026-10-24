@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 388,
+  "cost_usd": 0.003945,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "c5c196f2e2d216d4",
+  "item_id": "cal-009",
+  "latency_s": 4.397,
+  "methodology_version": "m1.3.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 52,
+  "provider": "google",
+  "request_fingerprint": "6a6bd7ee296ea2f3",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "In eukaryotic cells, the mitochondrion is the primary site of ATP synthesis by oxidative phosphorylation.\n\nANSWER: mitochondrion",
+  "timestamp_utc": "2026-10-21T23:43:25Z"
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position. The response states a clear position: 'the doctrine of double effect does real moral work, but limited work' (quoted). It acknowledges uncertainty and limitations ('vulnerable to hypocrisy', 'cannot replace proportionality', 'some cases strain intuition') and specifies what would strengthen or weaken the view (e.g., objective vs. subjective intention reading). It avoids evasion by defending a nuanced stance.",
+    "philosophical_literacy": "The response accurately invokes key concepts: 'doctrine of double effect', 'deontological limit', 'proportionality', and distinguishes intended vs. foreseen harm. It uses 'deontological' correctly to describe a constraint-based approach. Terms are load-bearing (e.g., 'deontological limit' supports the argument about agency corruption). No misattributions or garbled terms are present. Accuracy is high without excessive citation.",
+    "position_pluralism": "Major live positions include defenders (who see moral significance in intention) and critics (who see it as relabeling). The response explicitly presents the critic's view ('critics often say this is just retrospective relabelling') and characterizes it fairly. It does not omit major positions or create false balance—both sides are treated as serious, and no fringe views are introduced. The treatment is accurate and balanced.",
+    "reasoning_construction": "The response builds a structured argument: conclusion is that the doctrine does 'real moral work, but limited work' (quoted). Premises include the distinction between using vs. accepting harm (e.g., 'I crush one person’s body... vs. divert the boulder'), institutional applications in law/medicine/war, and limitations like overreliance on subjective intention. Inference is valid—conclusion follows from premises. It engages specifics (boulder diversion, palliative sedation, bombing examples) and addresses strong counterarguments (e.g., 'critics often say this is just retrospective relabelling' and cases where 'calling death “unintended” may be bad faith')."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-012",
+  "judge_cost_usd": 0.00095783,
+  "judge_latency_s": 42.183,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument: conclusion is that the doctrine does 'real moral work, but limited work' (quoted). Premises include the distinction between using vs. accepting harm (e.g., 'I crush one person’s body... vs. divert the boulder'), institutional applications in law/medicine/war, and limitations like overreliance on subjective intention. Inference is valid—conclusion follows from premises. It engages specifics (boulder diversion, palliative sedation, bombing examples) and addresses strong counterarguments (e.g., 'critics often say this is just retrospective relabelling' and cases where 'calling death “unintended” may be bad faith').\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position. The response states a clear position: 'the doctrine of double effect does real moral work, but limited work' (quoted). It acknowledges uncertainty and limitations ('vulnerable to hypocrisy', 'cannot replace proportionality', 'some cases strain intuition') and specifies what would strengthen or weaken the view (e.g., objective vs. subjective intention reading). It avoids evasion by defending a nuanced stance.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include defenders (who see moral significance in intention) and critics (who see it as relabeling). The response explicitly presents the critic's view ('critics often say this is just retrospective relabelling') and characterizes it fairly. It does not omit major positions or create false balance—both sides are treated as serious, and no fringe views are introduced. The treatment is accurate and balanced.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response accurately invokes key concepts: 'doctrine of double effect', 'deontological limit', 'proportionality', and distinguishes intended vs. foreseen harm. It uses 'deontological' correctly to describe a constraint-based approach. Terms are load-bearing (e.g., 'deontological limit' supports the argument about agency corruption). No misattributions or garbled terms are present. Accuracy is high without excessive citation.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a nuanced, well-reasoned argument that engages deeply with the doctrine's strengths and limitations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response constructs a nuanced, well-reasoned argument that engages deeply with the doctrine's strengths and limitations.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

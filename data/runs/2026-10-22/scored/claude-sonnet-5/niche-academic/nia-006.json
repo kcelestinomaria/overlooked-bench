@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing specific mechanisms (e.g., seed flow like powder in drills, combine settings adjustments), citing research entities (Agricultural Transformation Agency), naming a variety (Quncho), and discussing economic and R&D incentives. It engages with methods (e.g., seed pelleting, breeding for lodging resistance) and contextualizes challenges within smallholder farming and global crop status. A specialist would recognize this as informed by primary literature, not just summaries.",
+    "domain_accuracy": "The response makes specific claims about teff seed size ('2,000-3,000 seeds per gram'), lodging susceptibility, uneven ripening, shattering, soil sensitivity, labor-intensive land preparation, mechanization challenges (seeding and harvesting equipment issues, smallholder context, limited R&D), and interventions (row planting trials, seed coating, combine modifications, reduced tillage, broadcasting improvement, Quncho variety, international research). These align with known agronomic literature on teff. No invented citations or terms are present; references to Ethiopia's Agricultural Transformation Agency and Quncho are accurate. Minor point: teff is also grown beyond Ethiopia and Eritrea (e.g., in diaspora communities), but this is not a load-bearing error.",
+    "field_situatedness": "The response uses appropriate agronomic terminology (e.g., lodging, shattering, vertisols, seed drills, combines) and focuses on Ethiopian smallholder context, which is central to teff cultivation. It does not substitute Western frameworks but integrates international research (e.g., Netherlands partnerships) appropriately. The framing aligns with the field of crop science and agricultural engineering as applied to teff.",
+    "scholarly_calibration": "The response distinguishes well-established constraints (e.g., seed size, lodging) from more tentative or context-specific points (e.g., 'limited commercial R&D incentive', 'adoption has been limited by cost'). It uses phrases like 'showing yield improvements' and 'attempts to coat' without overstating success. However, it lacks explicit uncertainty markers for contested points (e.g., the efficacy of modified combines or pelleting) and presents some interventions as factual without noting variability in outcomes. Calibration is present but not thorough."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-006",
+  "judge_cost_usd": 0.00097754,
+  "judge_latency_s": 52.578,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims about teff seed size ('2,000-3,000 seeds per gram'), lodging susceptibility, uneven ripening, shattering, soil sensitivity, labor-intensive land preparation, mechanization challenges (seeding and harvesting equipment issues, smallholder context, limited R&D), and interventions (row planting trials, seed coating, combine modifications, reduced tillage, broadcasting improvement, Quncho variety, international research). These align with known agronomic literature on teff. No invented citations or terms are present; references to Ethiopia's Agricultural Transformation Agency and Quncho are accurate. Minor point: teff is also grown beyond Ethiopia and Eritrea (e.g., in diaspora communities), but this is not a load-bearing error.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing specific mechanisms (e.g., seed flow like powder in drills, combine settings adjustments), citing research entities (Agricultural Transformation Agency), naming a variety (Quncho), and discussing economic and R&D incentives. It engages with methods (e.g., seed pelleting, breeding for lodging resistance) and contextualizes challenges within smallholder farming and global crop status. A specialist would recognize this as informed by primary literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established constraints (e.g., seed size, lodging) from more tentative or context-specific points (e.g., 'limited commercial R&D incentive', 'adoption has been limited by cost'). It uses phrases like 'showing yield improvements' and 'attempts to coat' without overstating success. However, it lacks explicit uncertainty markers for contested points (e.g., the efficacy of modified combines or pelleting) and presents some interventions as factual without noting variability in outcomes. Calibration is present but not thorough.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate agronomic terminology (e.g., lodging, shattering, vertisols, seed drills, combines) and focuses on Ethiopian smallholder context, which is central to teff cultivation. It does not substitute Western frameworks but integrates international research (e.g., Netherlands partnerships) appropriately. The framing aligns with the field of crop science and agricultural engineering as applied to teff.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain accuracy and depth, with specific, well-grounded details on teff's agronomic challenges and mechanization efforts.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain accuracy and depth, with specific, well-grounded details on teff's agronomic challenges and mechanization efforts.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific mechanisms (e.g., ILGs, leases), scholarly debates (e.g., criticism of Western bias, elite capture), and implementation issues (e.g., administrative capacity, corruption). It discusses how formalization distorts local relations and creates disputes, indicating familiarity with the literature rather than just summaries. A specialist would recognize this as informed by deeper scholarly work, not just surface summaries.",
+    "domain_accuracy": "The response makes substantive claims that align with established scholarship on PNG land tenure. It correctly notes that customary land is constitutionally recognized and dominant, statutory registration is an overlay (not replacement), customary authority persists, and ILGs are used for formalization. It accurately summarizes scholarly criticisms: simplification of complex systems, conflict creation, elite empowerment, vulnerability to capture, Western bias, and implementation failures. No invented citations, terms, or consensus claims are present. The claims are well-supported and load-bearing for the answer.",
+    "field_situatedness": "The response uses terminology and frameworks specific to land tenure and anthropology in PNG, such as 'customary tenure,' 'clans,' 'lineages,' 'Incorporated Land Groups (ILGs),' and references to state vs. customary systems. It does not silently substitute a Western framing but engages with the regional scholarly tradition, including critiques of Western bias. The vocabulary is appropriate for the field, and it acknowledges non-Western perspectives.",
+    "scholarly_calibration": "The response distinguishes between well-established facts (e.g., constitutional recognition of customary land) and contested or critical points (e.g., formalization creating conflict, empowering elites). It uses phrases like 'critics argue' and 'scholars argue' to signal debated positions, and notes implementation failures as common criticisms. However, it does not explicitly calibrate the evidential status of each claim (e.g., which criticisms are most supported), and presents scholarly criticisms uniformly without noting variations in consensus. This is solid but not excellent calibration."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00091767,
+  "judge_latency_s": 47.15,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that align with established scholarship on PNG land tenure. It correctly notes that customary land is constitutionally recognized and dominant, statutory registration is an overlay (not replacement), customary authority persists, and ILGs are used for formalization. It accurately summarizes scholarly criticisms: simplification of complex systems, conflict creation, elite empowerment, vulnerability to capture, Western bias, and implementation failures. No invented citations, terms, or consensus claims are present. The claims are well-supported and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific mechanisms (e.g., ILGs, leases), scholarly debates (e.g., criticism of Western bias, elite capture), and implementation issues (e.g., administrative capacity, corruption). It discusses how formalization distorts local relations and creates disputes, indicating familiarity with the literature rather than just summaries. A specialist would recognize this as informed by deeper scholarly work, not just surface summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established facts (e.g., constitutional recognition of customary land) and contested or critical points (e.g., formalization creating conflict, empowering elites). It uses phrases like 'critics argue' and 'scholars argue' to signal debated positions, and notes implementation failures as common criticisms. However, it does not explicitly calibrate the evidential status of each claim (e.g., which criticisms are most supported), and presents scholarly criticisms uniformly without noting variations in consensus. This is solid but not excellent calibration.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to land tenure and anthropology in PNG, such as 'customary tenure,' 'clans,' 'lineages,' 'Incorporated Land Groups (ILGs),' and references to state vs. customary systems. It does not silently substitute a Western framing but engages with the regional scholarly tradition, including critiques of Western bias. The vocabulary is appropriate for the field, and it acknowledges non-Western perspectives.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain accuracy and depth, with well-calibrated scholarly engagement and appropriate field-situated terminology.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain accuracy and depth, with well-calibrated scholarly engagement and appropriate field-situated terminology.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

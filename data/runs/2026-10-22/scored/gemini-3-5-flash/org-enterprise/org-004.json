@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for a 'realistic 18-month plan' with explicit split between no-cost and finance-dependent steps. The response produces a detailed, phased plan with timelines, specific activities (e.g., Month 1-2: Establish Export Committee), costs, and funding mechanisms. It includes concrete components like quality protocols, buyer pitching strategies, financial calculations, and a summary table. It is not a description of how to approach the task but a deliverable that could be used with light editing (e.g., in a cooperative meeting or for securing financing).",
+    "constraint_fidelity": "The prompt states constraints: 40-member cooperative in Oaxaca, zero working capital between harvests, 18-month plan, explicit split between no-cost and finance-dependent steps. The response honors all constraints: it explicitly lists 'What the Coop CANNOT Do Without Finance' and 'What the Coop CAN Do with Zero Finance', provides an 18-month roadmap with phases, and details costs and funding sources. It acknowledges the working capital constraint and does not assume it exists, instead proposing pre-financing or loans. The arithmetic is shown (e.g., 30,000 kg production, $30,000–$45,000 USD needed for member payments), and the plan respects the cooperative's size and resource level.",
+    "contextual_realism": "The response is calibrated for a small agricultural cooperative: it assumes no dedicated HR, legal, or procurement teams; relies on collective labor and volunteer roles (e.g., Export Committee); uses low-cost tools (smartphones, free protocols); and acknowledges key constraints like role overlap (members leading initiatives), volunteer labor, and the need for external financing. It avoids tooling or processes that would require significant overhead (e.g., e-commerce or DTC branding is penalized as per rubric notes). It recognizes small-organisation realities such as the 'coyote problem', pre-harvest cash needs, and the use of sweat equity.",
+    "jurisdictional_accuracy": "The prompt involves Mexico (Oaxaca), and the response includes jurisdiction-specific details: references to Mexican tax authority (SAT), RFC, Padrón de Exportadores, SENASICA certificates, local terms like 'coyotes' and 'beneficio seco', and Mexican institutions (FIRA). It avoids US assumptions (e.g., no mention of US tax categories or employment practices). It provides substantive content on legal and regulatory steps (e.g., SAT registration) and flags where professional advice might be needed (e.g., customs brokers) without over-relying on generic disclaimers. The information appears accurate for Mexico."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-004",
+  "judge_cost_usd": 0.00142235,
+  "judge_latency_s": 61.702,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: 40-member cooperative in Oaxaca, zero working capital between harvests, 18-month plan, explicit split between no-cost and finance-dependent steps. The response honors all constraints: it explicitly lists 'What the Coop CANNOT Do Without Finance' and 'What the Coop CAN Do with Zero Finance', provides an 18-month roadmap with phases, and details costs and funding sources. It acknowledges the working capital constraint and does not assume it exists, instead proposing pre-financing or loans. The arithmetic is shown (e.g., 30,000 kg production, $30,000–$45,000 USD needed for member payments), and the plan respects the cooperative's size and resource level.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small agricultural cooperative: it assumes no dedicated HR, legal, or procurement teams; relies on collective labor and volunteer roles (e.g., Export Committee); uses low-cost tools (smartphones, free protocols); and acknowledges key constraints like role overlap (members leading initiatives), volunteer labor, and the need for external financing. It avoids tooling or processes that would require significant overhead (e.g., e-commerce or DTC branding is penalized as per rubric notes). It recognizes small-organisation realities such as the 'coyote problem', pre-harvest cash needs, and the use of sweat equity.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for a 'realistic 18-month plan' with explicit split between no-cost and finance-dependent steps. The response produces a detailed, phased plan with timelines, specific activities (e.g., Month 1-2: Establish Export Committee), costs, and funding mechanisms. It includes concrete components like quality protocols, buyer pitching strategies, financial calculations, and a summary table. It is not a description of how to approach the task but a deliverable that could be used with light editing (e.g., in a cooperative meeting or for securing financing).\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Mexico (Oaxaca), and the response includes jurisdiction-specific details: references to Mexican tax authority (SAT), RFC, Padrón de Exportadores, SENASICA certificates, local terms like 'coyotes' and 'beneficio seco', and Mexican institutions (FIRA). It avoids US assumptions (e.g., no mention of US tax categories or employment practices). It provides substantive content on legal and regulatory steps (e.g., SAT registration) and flags where professional advice might be needed (e.g., customs brokers) without over-relying on generic disclaimers. The information appears accurate for Mexico.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels by providing a highly actionable, contextually realistic plan that strictly adheres to all constraints and demonstrates deep understanding of the cooperative's challenges and opportunities.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response excels by providing a highly actionable, contextually realistic plan that strictly adheres to all constraints and demonstrates deep understanding of the cooperative's challenges and opportunities.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

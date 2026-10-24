@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response acknowledges the student's background (SHS graduate, 2 years informal work) and provides concrete, low-cost pathways. It addresses financial accessibility through free tuition and minimal out-of-pocket costs. However, it doesn't specifically address potential learning differences, language barriers, or other individual needs beyond the general context.",
+    "pathway_breadth": "The response provides excellent pathway breadth specific to the Philippine context. It covers three substantive vocational pathways (Tech/BPO, Skilled Trades, Hospitality) with TESDA National Certificates, realistic durations (1-6 months), specific costs (₱1,500-₱6,000 out-of-pocket), and plausible salary ranges (₱12,000-₱24,000 starting). It correctly identifies free tuition under RA 10931 and avoids defaulting to university options.",
+    "pedagogical_soundness": "This dimension evaluates educational planning, but the response provides career guidance rather than teaching materials. There are no learning objectives, activities, or assessments to evaluate for pedagogical alignment. The content is advisory, not instructional.",
+    "workload_realism": "This dimension evaluates teaching workload feasibility, but the response provides career guidance rather than teaching plans. There are no lesson timings, materials, or marking loads to assess. The content is advisory, not instructional."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00110523,
+  "judge_latency_s": 38.269,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension evaluates educational planning, but the response provides career guidance rather than teaching materials. There are no learning objectives, activities, or assessments to evaluate for pedagogical alignment. The content is advisory, not instructional.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension evaluates teaching workload feasibility, but the response provides career guidance rather than teaching plans. There are no lesson timings, materials, or marking loads to assess. The content is advisory, not instructional.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response provides excellent pathway breadth specific to the Philippine context. It covers three substantive vocational pathways (Tech/BPO, Skilled Trades, Hospitality) with TESDA National Certificates, realistic durations (1-6 months), specific costs (₱1,500-₱6,000 out-of-pocket), and plausible salary ranges (₱12,000-₱24,000 starting). It correctly identifies free tuition under RA 10931 and avoids defaulting to university options.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response acknowledges the student's background (SHS graduate, 2 years informal work) and provides concrete, low-cost pathways. It addresses financial accessibility through free tuition and minimal out-of-pocket costs. However, it doesn't specifically address potential learning differences, language barriers, or other individual needs beyond the general context.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides excellent, specific vocational pathway guidance tailored to the Philippine context and the student's 18-month employment goal.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response provides excellent, specific vocational pathway guidance tailored to the Philippine context and the student's 18-month employment goal.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

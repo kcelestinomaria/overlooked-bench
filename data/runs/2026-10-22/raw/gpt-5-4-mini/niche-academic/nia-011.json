@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 921,
+  "cost_usd": 0.004173,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "52b9b041491ad3bb",
+  "item_id": "nia-011",
+  "latency_s": 5.523,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 38,
+  "provider": "openai",
+  "request_fingerprint": "1a0018356ceb631c",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "Reconstructing Proto-Bantu tone is hard for several intertwined reasons, and the field is still making progress but has not reached a single fully agreed reconstruction.\n\n## Main technical obstacles\n\n### 1. Tone is highly unstable diachronically\nUnlike consonants and vowels, tone often changes through:\n- **tonogenesis** from segmental features,\n- **tone spreading and shifting**,\n- **register changes**,\n- **downdrift/downstep**, and\n- **automatic phonetic reanalysis**.\n\nSo even when you have good modern data, the ancestral tonal system may be obscured by a long history of later innovation.\n\n### 2. Tone is often more morphologically than lexically conditioned\nIn many Bantu languages, tone is controlled by:\n- noun class morphology,\n- tense/aspect/mood,\n- verb extensions,\n- syntactic domains,\n- prosodic phrase structure.\n\nThis means tone patterns do not map neatly onto individual words. That makes comparison across languages much harder than for segmental phonology.\n\n### 3. Surface tone frequently reflects later innovations rather than inheritance\nMany Bantu languages have developed highly different tone systems independently. What looks like shared inheritance may instead be:\n- parallel innovation,\n- areal diffusion,\n- similar phonetic evolution from distinct sources.\n\nDistinguishing inherited Proto-Bantu tone from later language-specific changes is one of the biggest problems.\n\n### 4. The evidence base is uneven\nSome Bantu languages are well described, but many have:\n- limited tonal documentation,\n- inconsistent transcription traditions,\n- analyses that do not separate phonetic pitch from phonological tone,\n- incomplete lexical coverage.\n\nThis makes large-scale comparative work difficult, especially for deeper historical reconstruction.\n\n### 5. Comparative tone correspondences are hard to establish\nFor segmental reconstruction, regular sound correspondences are usually clearer. For tone, one must decide:\n- what counts as a correspondence,\n- how to compare melodies versus individual tone marks,\n- how to treat tone on affixes,\n- how to handle floating tone and tonal opacity.\n\nBecause tone can be realized differently even when underlyingly the same, correspondence sets are much less straightforward.\n\n### 6. Prosodic structure complicates the picture\nTone can interact with:\n- footing,\n- phrase accent,\n- enclisis/proclisis,\n- tone shift at the right edge of prosodic domains.\n\nThis means a form’s surface tone may depend on its position in a phrase, not just on lexical or inherited underlying tone.\n\n---\n\n## Where the field currently stands\n\n### Broad consensus\nMost scholars agree that **Proto-Bantu had a tonal system**, and that tone was **phonologically contrastive** and important in the grammar. There is also broad agreement that the language was **not simply a free-pitch system without tonal contrasts**.\n\n### What is not fully settled\nThe main unresolved issues are:\n- **the exact inventory of Proto-Bantu tone contrasts**,\n- whether Proto-Bantu had **two level tones** or a more restricted system,\n- how much of modern Bantu tonal diversity reflects **inherited tonal classes** versus **later innovations**,\n- how tone was distributed across **lexical roots, noun classes, and verbal morphology**,\n- the role of **floating tones** and **tonal melodies** in the ancestor.\n\n### Current state of reconstruction\nThe field has moved away from trying to reconstruct Proto-Bantu tone purely as a simple set of lexical H/L contrasts. Instead, current work tends to:\n- reconstruct **tonal behavior tied to morphology**,\n- use **comparative evidence from multiple branches**,\n- model **historical tonal processes** such as tone spreading, deletion, and floating tones,\n- and treat Proto-Bantu tone as a system whose modern descendants have been heavily restructured.\n\nIn other words, there is now a stronger consensus that Proto-Bantu tone must be reconstructed as part of the **full morphological-prosodic system**, not just as isolated lexical pitch accents.\n\n### Bottom line\nThe field can say with confidence that Proto-Bantu had tone, but **the precise shape of that system remains partly controversial**. Reconstruction is advancing through better descriptive data and more careful historical-comparative methods, yet tone remains one of the hardest aspects of Proto-Bantu to recover.\n\nIf you want, I can also give you:\n1. a more **technical summary** with terms like floating H, downstep, and tonal melodies, or  \n2. a **brief historiography** of major proposals in Proto-Bantu tone reconstruction.",
+  "timestamp_utc": "2026-10-21T23:39:26Z"
+}

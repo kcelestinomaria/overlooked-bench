@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with methodological tensions (safety vs. cultural integrity, integration vs. preservation) and epistemological authority questions. It discusses specific Ayurvedic concepts like samskaras transforming metal properties and individualized treatment based on prakriti. However, it lacks engagement with specific scholarly debates or evidence quality assessments within rasashastra literature.",
+    "domain_accuracy": "The response correctly identifies key Ayurvedic concepts: rasashastra as mineral/metallic preparations, samskaras (processing methods), rasa/virya/prabhava as therapeutic principles, and prakriti (individual constitution). It accurately characterizes the debate between pharmacological validation and epistemic distinctness without inventing citations or consensus. All terminology appears authentic to Ayurvedic scholarship.",
+    "field_situatedness": "The response correctly uses Ayurvedic terminology (rasashastra, samskaras, rasa, virya, prabhava, prakriti) and frames the debate within Ayurveda's philosophical context. It doesn't substitute Western frameworks but rather contrasts them appropriately. The discussion remains grounded in Ayurvedic concepts rather than silently shifting to biomedical paradigms.",
+    "scholarly_calibration": "The response demonstrates good calibration by distinguishing between contested areas ('defining appropriate remains contested') and presenting both sides as valid perspectives. It avoids uniform confidence - for example, describing pharmacological approach as prioritizing safety while epistemic approach emphasizes cultural integrity. However, it doesn't explicitly flag where knowledge might be weak or where specific claims are particularly disputed within the field."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00075722,
+  "judge_latency_s": 13.494,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response correctly identifies key Ayurvedic concepts: rasashastra as mineral/metallic preparations, samskaras (processing methods), rasa/virya/prabhava as therapeutic principles, and prakriti (individual constitution). It accurately characterizes the debate between pharmacological validation and epistemic distinctness without inventing citations or consensus. All terminology appears authentic to Ayurvedic scholarship.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with methodological tensions (safety vs. cultural integrity, integration vs. preservation) and epistemological authority questions. It discusses specific Ayurvedic concepts like samskaras transforming metal properties and individualized treatment based on prakriti. However, it lacks engagement with specific scholarly debates or evidence quality assessments within rasashastra literature.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates good calibration by distinguishing between contested areas ('defining appropriate remains contested') and presenting both sides as valid perspectives. It avoids uniform confidence - for example, describing pharmacological approach as prioritizing safety while epistemic approach emphasizes cultural integrity. However, it doesn't explicitly flag where knowledge might be weak or where specific claims are particularly disputed within the field.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses Ayurvedic terminology (rasashastra, samskaras, rasa, virya, prabhava, prakriti) and frames the debate within Ayurveda's philosophical context. It doesn't substitute Western frameworks but rather contrasts them appropriately. The discussion remains grounded in Ayurvedic concepts rather than silently shifting to biomedical paradigms.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A well-structured response that accurately captures the core debate in Ayurvedic rasashastra studies while demonstrating appropriate field-specific knowledge.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A well-structured response that accurately captures the core debate in Ayurvedic rasashastra studies while demonstrating appropriate field-specific knowledge.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

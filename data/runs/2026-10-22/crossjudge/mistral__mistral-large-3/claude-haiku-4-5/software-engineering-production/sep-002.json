@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a complete design, rollout plan, and risk assessment as requested. 2. It includes specific code (middleware, models, management commands), SQL schemas, and exact commands (e.g., cron job). 3. The rollout plan has a clear sequence, owners, and verification steps (e.g., load testing, monitoring). 4. An engineer could execute this with minimal edits, such as filling in tenant extraction logic or API key verification.",
+    "constraint_fidelity": "1. The response explicitly states no new infrastructure services are added, using only PostgreSQL and in-process memory (C1 kept). 2. The rollout plan is designed for three engineers and four weeks (C2 kept). 3. The cost analysis shows a 1.6% increase in cloud spend, well within the 8% cap (C3 kept). 4. The response includes detailed arithmetic for capacity, latency, and cost, allowing verification of constraints. No constraints are silently violated or relaxed without justification.",
+    "maintainability": "1. The solution is proportionate to the team (3 engineers) and leaves clear seams (feature flags, runbooks, documentation). 2. Risks and accepted debt are explicitly stated (e.g., usage event loss on container crash, optimistic lock contention). 3. The design avoids added complexity (e.g., no new services) and uses straightforward patterns (token bucket, periodic aggregation). 4. Observability is addressed via monitoring dashboards and alerts.",
+    "production_realism": "1. The response accounts for the stated scale (1,200 rps) and team skill mix (3 backend engineers). 2. It addresses failure modes: optimistic locking for rate limiting, connection pool exhaustion, and latency impacts. 3. The design avoids new infrastructure and uses existing PostgreSQL, fitting the team's operational capacity. 4. The proposal includes monitoring, rollback via feature flags, and load testing in staging. 5. No technically incorrect claims about PostgreSQL or Django are made."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-002",
+  "judge_cost_usd": 0.0040276,
+  "judge_latency_s": 7.787,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states no new infrastructure services are added, using only PostgreSQL and in-process memory (C1 kept). 2. The rollout plan is designed for three engineers and four weeks (C2 kept). 3. The cost analysis shows a 1.6% increase in cloud spend, well within the 8% cap (C3 kept). 4. The response includes detailed arithmetic for capacity, latency, and cost, allowing verification of constraints. No constraints are silently violated or relaxed without justification.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (1,200 rps) and team skill mix (3 backend engineers). 2. It addresses failure modes: optimistic locking for rate limiting, connection pool exhaustion, and latency impacts. 3. The design avoids new infrastructure and uses existing PostgreSQL, fitting the team's operational capacity. 4. The proposal includes monitoring, rollback via feature flags, and load testing in staging. 5. No technically incorrect claims about PostgreSQL or Django are made.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a complete design, rollout plan, and risk assessment as requested. 2. It includes specific code (middleware, models, management commands), SQL schemas, and exact commands (e.g., cron job). 3. The rollout plan has a clear sequence, owners, and verification steps (e.g., load testing, monitoring). 4. An engineer could execute this with minimal edits, such as filling in tenant extraction logic or API key verification.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (3 engineers) and leaves clear seams (feature flags, runbooks, documentation). 2. Risks and accepted debt are explicitly stated (e.g., usage event loss on container crash, optimistic lock contention). 3. The design avoids added complexity (e.g., no new services) and uses straightforward patterns (token bucket, periodic aggregation). 4. Observability is addressed via monitoring dashboards and alerts.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a meticulously detailed, constraint-aware design that could be executed immediately by the team.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a meticulously detailed, constraint-aware design that could be executed immediately by the team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

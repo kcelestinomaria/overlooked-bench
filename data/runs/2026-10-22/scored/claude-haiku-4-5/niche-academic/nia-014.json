@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by identifying specific evidence gaps (faunal responses, soil ecosystem functioning, long-term resilience, indirect cascading effects) and reasons for research limitations (geopolitical instability, funding priorities, baseline difficulties). It engages with methodological challenges and what is unknown, showing familiarity with the literature rather than just summaries.",
+    "domain_accuracy": "The response makes specific claims: '100,000+ tons annually at peak' dust/salt mobilization, soil salinization 'extending 100+ km downwind', 'loss of riparian and delta wetland vegetation', 'expansion of salt-tolerant steppe species'. These are consistent with scientific literature on the Aral Sea disaster. No invented citations, terms, or consensus claims are present. The claims are load-bearing and accurate for the domain.",
+    "field_situatedness": "The response uses terminology and framing appropriate to environmental science and ecology (e.g., 'soil salinization', 'plant community composition', 'nutrient cycling', 'biotic communities'). It does not substitute a Western or Anglophone framing and addresses the regional context (e.g., 'tugai forests', geopolitical instability) without ignoring non-English scholarship where relevant.",
+    "scholarly_calibration": "The response explicitly distinguishes well-documented changes ('Well-Documented Terrestrial Changes') from 'Critical Evidence Gaps', providing specific calibration: e.g., 'Most work focuses on the lost aquatic bird habitat rather than terrestrial community restructuring' and 'Few longitudinal studies tracking whether ecosystems stabilize...'. It avoids uniform confidence and accurately signals where knowledge is weak."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00071868,
+  "judge_latency_s": 39.439,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims: '100,000+ tons annually at peak' dust/salt mobilization, soil salinization 'extending 100+ km downwind', 'loss of riparian and delta wetland vegetation', 'expansion of salt-tolerant steppe species'. These are consistent with scientific literature on the Aral Sea disaster. No invented citations, terms, or consensus claims are present. The claims are load-bearing and accurate for the domain.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by identifying specific evidence gaps (faunal responses, soil ecosystem functioning, long-term resilience, indirect cascading effects) and reasons for research limitations (geopolitical instability, funding priorities, baseline difficulties). It engages with methodological challenges and what is unknown, showing familiarity with the literature rather than just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly distinguishes well-documented changes ('Well-Documented Terrestrial Changes') from 'Critical Evidence Gaps', providing specific calibration: e.g., 'Most work focuses on the lost aquatic bird habitat rather than terrestrial community restructuring' and 'Few longitudinal studies tracking whether ecosystems stabilize...'. It avoids uniform confidence and accurately signals where knowledge is weak.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and framing appropriate to environmental science and ecology (e.g., 'soil salinization', 'plant community composition', 'nutrient cycling', 'biotic communities'). It does not substitute a Western or Anglophone framing and addresses the regional context (e.g., 'tugai forests', geopolitical instability) without ignoring non-English scholarship where relevant.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates high competence by accurately detailing known effects, explicitly identifying evidence gaps, and situating the discussion within the ecological field.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates high competence by accurately detailing known effects, explicitly identifying evidence gaps, and situating the discussion within the ecological field.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

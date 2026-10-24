@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for advice on how to spend the PEN 2 million, including a costed allocation and a split between physical and commercial losses. The response produces a detailed advisory memo with a specific budget table (line items and totals), a phased plan (diagnostics, quick wins, balanced attack), and concrete components like DMA setup, meter replacement, and staff training. It provides a plausible loss split (physical: 22-25%, commercial: 17-20%) and argues for sequencing (measurement before pipe replacement). This output could be taken into a board meeting with light editing.",
+    "constraint_fidelity": "The prompt's constraints are: a municipal water utility in Peru, serving 60,000 people, PEN 2 million budget, and a 42% NRW rate. The response respects all constraints: it is tailored to a Peruvian context, allocates exactly PEN 2 million (with a detailed budget table summing to 2,000,000), and addresses the NRW rate. It explicitly avoids spending the entire budget on pipe replacement, as penalized in the rubric notes. The arithmetic adds up: 450,000 + 150,000 + 700,000 + 500,000 + 200,000 = 2,000,000.",
+    "contextual_realism": "The response is calibrated for a small municipal utility in Peru. It avoids assuming dedicated HR, legal, or procurement teams; instead, it focuses on training existing staff (PEN 100,000 for training), using temporary staff or local consultants for database audits (PEN 150,000), and purchasing basic, affordable equipment like acoustic listening sticks and leak correlators (PEN 150,000). It acknowledges role overlap by recommending training for engineers and technicians, and it emphasizes a pilot approach to manage limited resources. No tooling or process overhead is proposed that would be unaffordable or unsustainable.",
+    "jurisdictional_accuracy": "The prompt involves a Peruvian utility, but no specific legal or regulatory claims are made in the response. It avoids US assumptions (e.g., no mention of US tax categories, employment practices, or contract norms). The advice is general and technical (e.g., IWA water audit standards, DMA principles), which is appropriate for the task. Since the prompt does not involve law or regulation, this dimension is scored on general factual accuracy, and the response is accurate and contextually appropriate."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00137547,
+  "judge_latency_s": 64.29,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints are: a municipal water utility in Peru, serving 60,000 people, PEN 2 million budget, and a 42% NRW rate. The response respects all constraints: it is tailored to a Peruvian context, allocates exactly PEN 2 million (with a detailed budget table summing to 2,000,000), and addresses the NRW rate. It explicitly avoids spending the entire budget on pipe replacement, as penalized in the rubric notes. The arithmetic adds up: 450,000 + 150,000 + 700,000 + 500,000 + 200,000 = 2,000,000.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small municipal utility in Peru. It avoids assuming dedicated HR, legal, or procurement teams; instead, it focuses on training existing staff (PEN 100,000 for training), using temporary staff or local consultants for database audits (PEN 150,000), and purchasing basic, affordable equipment like acoustic listening sticks and leak correlators (PEN 150,000). It acknowledges role overlap by recommending training for engineers and technicians, and it emphasizes a pilot approach to manage limited resources. No tooling or process overhead is proposed that would be unaffordable or unsustainable.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for advice on how to spend the PEN 2 million, including a costed allocation and a split between physical and commercial losses. The response produces a detailed advisory memo with a specific budget table (line items and totals), a phased plan (diagnostics, quick wins, balanced attack), and concrete components like DMA setup, meter replacement, and staff training. It provides a plausible loss split (physical: 22-25%, commercial: 17-20%) and argues for sequencing (measurement before pipe replacement). This output could be taken into a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a Peruvian utility, but no specific legal or regulatory claims are made in the response. It avoids US assumptions (e.g., no mention of US tax categories, employment practices, or contract norms). The advice is general and technical (e.g., IWA water audit standards, DMA principles), which is appropriate for the task. Since the prompt does not involve law or regulation, this dimension is scored on general factual accuracy, and the response is accurate and contextually appropriate.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently addresses all rubric dimensions with a specific, actionable, and constraint-aware plan tailored to a small Peruvian utility.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response excellently addresses all rubric dimensions with a specific, actionable, and constraint-aware plan tailored to a small Peruvian utility.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

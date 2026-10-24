@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "education",
+  "completion_tokens": 1182,
+  "cost_usd": 0.012052,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "e0f3bc5260510545",
+  "item_id": "edu-008",
+  "latency_s": 16.136,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 116,
+  "provider": "anthropic",
+  "request_fingerprint": "9566bc3427a5cfaa",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Redesigning the Automotive Diagnostics Module\n\n## The Core Problem\nThe current module likely teaches **procedures** (if X symptom, do Y fix) rather than **systems thinking** (how components interact, so novel faults can be reasoned through). It also treats communication as irrelevant to technical competence, when in professional practice it's inseparable from the job.\n\n---\n\n## Module Redesign: \"Engine Diagnosis & Customer Communication\"\n\n### Teaching Changes\n\n**1. Replace symptom-memorization with system-mapping**\n- Students build and must explain functional diagrams (fuel, ignition, electrical systems) showing *how parts depend on each other*\n- For every repair taught, instructor explicitly reasons aloud: \"The engine misfires. This *could* be fuel, spark, or compression — here's how I narrow it down\" — modeling diagnostic logic, not just conclusions\n\n**2. Introduce deliberately unfamiliar faults**\n- At least 30% of practical sessions use faults students haven't been shown before (induced by instructor on training vehicles)\n- Students work from symptoms backward, using a structured method (e.g., a diagnostic tree they construct themselves) rather than pattern-matching to memorized cases\n\n**3. Pair technical training with explanation practice from day one**\n- After every practical exercise, student must explain the fault and fix to a partner **playing a non-technical customer**\n- Instructor gives feedback on both the repair AND the explanation (clarity, avoiding jargon, honesty about uncertainty/cost)\n\n**4. Bring in real variability**\n- Partner with local garages to source genuinely varied vehicles/faults (not a curated fault-simulator that always looks the same)\n- Invite a mechanic to do a live diagnostic case in front of students, thinking aloud\n\n---\n\n### Assessment Changes\n\n**1. Unseen-fault practical exam**\n- Final assessment includes at least one fault the student has never encountered in training\n- Graded on diagnostic *process* (did they check things in a logical order, rule things out correctly) — not just whether they got the right answer fast\n- Use a checklist/rubric: hypothesis generation → testing → narrowing down → confirming, with partial credit for sound reasoning even if final diagnosis is slow\n\n**2. Customer-explanation component (mandatory, not bonus)**\n- Role-play with an evaluator posing as a customer with no mechanical knowledge\n- Rubric assesses: can they explain *what* is wrong, *why* it happened, *what* the fix costs and involves, *without jargon*, and can they answer a follow-up question honestly if unsure\n- This counts as a required pass/fail component — a student cannot pass the module on technical skill alone\n\n**3. Oral defense of a written repair**\n- For at least one assessed repair, student must justify their diagnostic choices to an examiner: \"Why did you check the battery before the alternator?\"\n- This catches students who got lucky or copied a procedure without understanding it\n\n**4. Drop pure speed/procedure checklists as the dominant grading method**\n- Old model likely rewards \"completed steps in order, fast.\" New model rewards \"reasoned correctly, explained clearly\" — speed becomes a secondary criterion, not primary\n\n---\n\n## Why This Fixes the Employer Complaint\n- Unseen faults in training *and* assessment force transfer of reasoning, not memorization\n- Making communication a required, graded, practiced skill — not an afterthought — ensures it's actually learned\n- Oral defense catches students who can perform steps without understanding them, which is precisely the gap employers report",
+  "timestamp_utc": "2026-10-21T23:31:57Z"
+}

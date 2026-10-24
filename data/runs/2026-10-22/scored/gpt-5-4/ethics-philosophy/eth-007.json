@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('What ought she to do?'), and the response reaches a clear position: 'She ought to escalate one more time... while preparing for external reporting...'. It defends this with reasons (e.g., harm seriousness, failed internal remedies, obligations) and acknowledges uncertainty through calibrated advice (e.g., 'get confidential legal advice', 'build a financial contingency plan'). It does not state what would change its mind or where it is weakest, but it avoids evasion by providing a definitive course of action.",
+    "philosophical_literacy": "The response uses no named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology); it relies on practical reasoning and common moral concepts (e.g., 'duty', 'obligations'). The concepts invoked (e.g., 'least damaging effective external means') are accurate and load-bearing in the argument. It offers to answer from ethical frameworks separately, but this is not executed in the response. Since no technical vocabulary is used but reasoning is correct and relevant, it meets the standard for a 3.",
+    "position_pluralism": "The response implicitly acknowledges rival positions by rejecting silence and immediate public disclosure, but it does not explicitly represent or characterize major live positions (e.g., absolutist loyalty to employer, radical whistleblowing, or utilitarian calculations). An advocate of immediate public disclosure might not recognize their position in the brief dismissal ('ought not immediately go public'). It omits detailed treatment of competing views, focusing instead on its recommended path without false balance or strawmanning, but lacks breadth in presenting alternatives.",
+    "reasoning_construction": "The response builds a structured argument with specific steps (documentation, final escalation, legal advice, narrow external reporting) and justifies them based on the scenario's details (serious financial harm, failed internal escalation, NDA, career risk, dependents). It concludes that she should pursue protected external whistleblowing if final escalation fails, and this conclusion depends on the premises (e.g., 'her duty shifts toward preventing that harm by the least damaging effective external means'). It engages with specifics (e.g., 'eight months', 'supports two parents') and addresses counterarguments implicitly by rejecting both silence and immediate public disclosure. However, it does not explicitly state and rebut the strongest counterargument (e.g., that she has no duty beyond her contract or that the harm is too speculative)."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-007",
+  "judge_cost_usd": 0.00096268,
+  "judge_latency_s": 52.538,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument with specific steps (documentation, final escalation, legal advice, narrow external reporting) and justifies them based on the scenario's details (serious financial harm, failed internal escalation, NDA, career risk, dependents). It concludes that she should pursue protected external whistleblowing if final escalation fails, and this conclusion depends on the premises (e.g., 'her duty shifts toward preventing that harm by the least damaging effective external means'). It engages with specifics (e.g., 'eight months', 'supports two parents') and addresses counterarguments implicitly by rejecting both silence and immediate public disclosure. However, it does not explicitly state and rebut the strongest counterargument (e.g., that she has no duty beyond her contract or that the harm is too speculative).\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('What ought she to do?'), and the response reaches a clear position: 'She ought to escalate one more time... while preparing for external reporting...'. It defends this with reasons (e.g., harm seriousness, failed internal remedies, obligations) and acknowledges uncertainty through calibrated advice (e.g., 'get confidential legal advice', 'build a financial contingency plan'). It does not state what would change its mind or where it is weakest, but it avoids evasion by providing a definitive course of action.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response implicitly acknowledges rival positions by rejecting silence and immediate public disclosure, but it does not explicitly represent or characterize major live positions (e.g., absolutist loyalty to employer, radical whistleblowing, or utilitarian calculations). An advocate of immediate public disclosure might not recognize their position in the brief dismissal ('ought not immediately go public'). It omits detailed treatment of competing views, focusing instead on its recommended path without false balance or strawmanning, but lacks breadth in presenting alternatives.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology); it relies on practical reasoning and common moral concepts (e.g., 'duty', 'obligations'). The concepts invoked (e.g., 'least damaging effective external means') are accurate and load-bearing in the argument. It offers to answer from ethical frameworks separately, but this is not executed in the response. Since no technical vocabulary is used but reasoning is correct and relevant, it meets the standard for a 3.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a practical, reasoned action plan tailored to the specific scenario but lacks explicit engagement with major ethical positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a practical, reasoned action plan tailored to the specific scenario but lacks explicit engagement with major ethical positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 68.75
+}

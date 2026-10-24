@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with etymology, philosophical roots (Zen Buddhism), specific applications across multiple arts (Noh, music, rock gardens, architecture), and scholarly debates (Isozaki's work). It analyzes the structural and phenomenological aspects, showing familiarity with the literature rather than summaries, and would provide insight to a specialist.",
+    "domain_accuracy": "The response makes substantive claims about the etymology of 'ma' (門 + 日), its spatio-temporal nature, its relational and active character, its connection to Zen Buddhist 'mu', and its applications in Noh theatre, music, conversation, rock gardens, and architecture. These align with established Japanese scholarship, including reference to Arata Isozaki's 1978 exhibition. The contrast with Western treatment as 'negative space', spatial emphasis, design principle, and exoticism is accurately characterized. No invented citations or terms are detected.",
+    "field_situatedness": "The response uses Japanese terminology (ma, kūkan, jikan, mu, engawa, ma-ai) and frameworks (Zen Buddhism, phenomenological experience, relational aesthetics) specific to Japanese scholarship. It correctly contrasts with Western frameworks (negative space, figure-ground theory) without substituting them, staying rooted in the Japanese tradition.",
+    "scholarly_calibration": "The response distinguishes between well-established aspects (e.g., relational nature, spatio-temporal fusion) and areas of interpretation (e.g., connection to 'mu'), but does not explicitly flag evidential status or uncertainties. It presents the Japanese scholarly view authoritatively without noting contested points, though the description is accurate. It lacks specific calibration markers like 'one hypothesis among several'."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00106815,
+  "judge_latency_s": 45.102,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about the etymology of 'ma' (門 + 日), its spatio-temporal nature, its relational and active character, its connection to Zen Buddhist 'mu', and its applications in Noh theatre, music, conversation, rock gardens, and architecture. These align with established Japanese scholarship, including reference to Arata Isozaki's 1978 exhibition. The contrast with Western treatment as 'negative space', spatial emphasis, design principle, and exoticism is accurately characterized. No invented citations or terms are detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with etymology, philosophical roots (Zen Buddhism), specific applications across multiple arts (Noh, music, rock gardens, architecture), and scholarly debates (Isozaki's work). It analyzes the structural and phenomenological aspects, showing familiarity with the literature rather than summaries, and would provide insight to a specialist.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established aspects (e.g., relational nature, spatio-temporal fusion) and areas of interpretation (e.g., connection to 'mu'), but does not explicitly flag evidential status or uncertainties. It presents the Japanese scholarly view authoritatively without noting contested points, though the description is accurate. It lacks specific calibration markers like 'one hypothesis among several'.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Japanese terminology (ma, kūkan, jikan, mu, engawa, ma-ai) and frameworks (Zen Buddhism, phenomenological experience, relational aesthetics) specific to Japanese scholarship. It correctly contrasts with Western frameworks (negative space, figure-ground theory) without substituting them, staying rooted in the Japanese tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate engagement with Japanese scholarship on 'ma' and effectively contrasts it with Western interpretations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate engagement with Japanese scholarship on 'ma' and effectively contrasts it with Western interpretations.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

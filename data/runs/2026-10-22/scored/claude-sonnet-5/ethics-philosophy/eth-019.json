@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgment, and the response clearly states a position: 'yes, but within a narrow and demanding set of conditions.' It provides calibrated uncertainty by acknowledging contested aspects (e.g., climate activism cases) and explicitly notes where it is uncertain ('I don't think there's a clean formula') and what challenges exist (e.g., honest self-assessment). It does not evade but defends its stance while recognizing limitations.",
+    "philosophical_literacy": "The response uses concepts like democratic legitimacy, proportionality, and civil disobedience accurately and applies them load-bearingly (e.g., distinguishing 'civil' disobedience via openness and accountability). It references historical examples (King, Plowshares) appropriately without misattribution. No technical terms are garbled, and the reasoning is correct without relying on dense citations, though it does not invoke named philosophical traditions or thinkers explicitly.",
+    "position_pluralism": "The response implicitly acknowledges rival positions by contrasting civil disobedience with democratic processes and addressing concerns about legitimacy and activism bias. However, it does not explicitly list or characterize major live positions (e.g., absolute pacifism, consequentialist views, or legalist objections) in a way that advocates would recognize. It focuses on constructing its own argument rather than surveying alternatives, missing breadth in representing competing views.",
+    "reasoning_construction": "The response builds a structured argument: it concludes that property-damaging civil disobedience is justified under narrow conditions, supported by premises like exhaustion of conventional channels, grave injustice, proportionality, non-endangerment, openness, and communicative intent. It engages with specific details of democratic legitimacy and historical examples (e.g., slavery, segregation), addresses counterarguments (e.g., democratic processes deserve deference but can fail), and states the strongest objections (e.g., activists' self-assessment bias). The inference from premises to conclusion is valid and context-specific."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-019",
+  "judge_cost_usd": 0.00092158,
+  "judge_latency_s": 44.223,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument: it concludes that property-damaging civil disobedience is justified under narrow conditions, supported by premises like exhaustion of conventional channels, grave injustice, proportionality, non-endangerment, openness, and communicative intent. It engages with specific details of democratic legitimacy and historical examples (e.g., slavery, segregation), addresses counterarguments (e.g., democratic processes deserve deference but can fail), and states the strongest objections (e.g., activists' self-assessment bias). The inference from premises to conclusion is valid and context-specific.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgment, and the response clearly states a position: 'yes, but within a narrow and demanding set of conditions.' It provides calibrated uncertainty by acknowledging contested aspects (e.g., climate activism cases) and explicitly notes where it is uncertain ('I don't think there's a clean formula') and what challenges exist (e.g., honest self-assessment). It does not evade but defends its stance while recognizing limitations.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response implicitly acknowledges rival positions by contrasting civil disobedience with democratic processes and addressing concerns about legitimacy and activism bias. However, it does not explicitly list or characterize major live positions (e.g., absolute pacifism, consequentialist views, or legalist objections) in a way that advocates would recognize. It focuses on constructing its own argument rather than surveying alternatives, missing breadth in representing competing views.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like democratic legitimacy, proportionality, and civil disobedience accurately and applies them load-bearingly (e.g., distinguishing 'civil' disobedience via openness and accountability). It references historical examples (King, Plowshares) appropriately without misattribution. No technical terms are garbled, and the reasoning is correct without relying on dense citations, though it does not invoke named philosophical traditions or thinkers explicitly.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response excels in constructing a nuanced, well-reasoned argument with calibrated uncertainty but falls short in explicitly addressing rival positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excels in constructing a nuanced, well-reasoned argument with calibrated uncertainty but falls short in explicitly addressing rival positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

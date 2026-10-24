@@ -104,9 +104,13 @@ jobs:
           fi
           python -m harness.run_eval $ARGS
 
-      - name: Cross-judge check on the institutional-criticism track
-        # The primary judge is cheap and has a jurisdictional conflict on exactly
-        # this track. Gate the run on measuring that, not on assuming it is fine.
+      - name: Cross-judge check on institutional-criticism and production tracks
+        # The primary judge is cheap and has a jurisdictional conflict on the
+        # institutional-criticism track. Gate the run on measuring that, not on
+        # assuming it is fine. Mistral is used from m1.3.0: a third provider that
+        # builds none of the institutions in the AI-lab group. The production track
+        # is included so a second judge's constraint verdicts are reported next to
+        # the independent verifier's.
         # Non-fatal: a failed cross-check must still surface in the PR rather
         # than silently dropping the whole run.
         continue-on-error: true
@@ -116,8 +120,8 @@ jobs:
         run: |
           python -m harness.crossjudge \
             --run-id ${{ steps.meta.outputs.run_id }} \
-            --judge anthropic/claude-sonnet-4.6 \
-            --categories institutional-criticism
+            --judge mistral/mistral-large-3 \
+            --categories institutional-criticism,software-engineering-production
 
       - name: Generate charts
         run: python charts/generate_charts.py --run-id ${{ steps.meta.outputs.run_id }}
@@ -225,6 +229,9 @@ jobs:
                   leaderboard order, which is also blocking.
             - [ ] Spot-check 2-3 scored records: does the judge's written reasoning actually
                   support the score it gave?
+            - [ ] **Constraint violations** (`summary.json` -> `constraint_violations`): the
+                  judge-verifier kappa is reported and not near zero. Open two cards listed in
+                  `social/cards.json` and read the raw responses: is each violation real?
             - [ ] Any result that looks surprising is flagged in the run README rather than
                   buried.
             - [ ] The diff **only adds** files under `data/runs/`. Nothing under a previous run

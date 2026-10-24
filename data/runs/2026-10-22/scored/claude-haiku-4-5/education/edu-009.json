@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the learner range: arrival activity is voluntary and low-pressure, stations allow choice based on level/goals (e.g., Station A for struggling readers, Station B for intermediates), writing focuses on communication not perfection, digital station accommodates those with specific goals. Adaptations are low-cost and implementable by one facilitator (circulating, optional pairing). It avoids generic 'differentiate as needed' language and provides specific strategies.",
+    "pathway_breadth": "This item does not involve student futures pathway guidance; it is a lesson plan for an adult literacy class. The response is inclusive of the range of learners: addresses varied goals (helping children, driving license, job applications), uses real-world materials relevant to adult lives, and allows choice in activities. It respects adult motivations and avoids school-style material.",
+    "pedagogical_soundness": "The response provides clear learning objectives implicitly through real-world applications (reading medicine labels, writing texts/job applications, decoding skills). Activities align with objectives: arrival activation builds engagement, whole-group focuses on practical reading, stations target specific skills. Assessment is informal observation of decoding attempts, writing attempts, questions asked, and attendance - which aligns with adult literacy goals of confidence and engagement rather than formal testing. Sequencing is logical: warm-up, instruction, practice, reflection. However, the rubric criteria are not fully observable or distinguishable (e.g., 'can they decode new words?' lacks specificity).",
+    "workload_realism": "Timings sum to 85 minutes (10+15+45+15), close to 90 minutes with natural transitions. Materials are low-cost and realistic (posters, real-world texts, writing supplies). Preparation involves gathering texts and creating posters/handouts, manageable for one teacher. Marking is minimal (observation-based). For 14 learners, the plan suggests recruiting a volunteer for Station C, which may not be available; without volunteer, Station C with 14 learners could be challenging for one facilitator circulating. The 'if 4 people' adaptation is feasible."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-009",
+  "judge_cost_usd": 0.00110327,
+  "judge_latency_s": 52.621,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives implicitly through real-world applications (reading medicine labels, writing texts/job applications, decoding skills). Activities align with objectives: arrival activation builds engagement, whole-group focuses on practical reading, stations target specific skills. Assessment is informal observation of decoding attempts, writing attempts, questions asked, and attendance - which aligns with adult literacy goals of confidence and engagement rather than formal testing. Sequencing is logical: warm-up, instruction, practice, reflection. However, the rubric criteria are not fully observable or distinguishable (e.g., 'can they decode new words?' lacks specificity).\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 85 minutes (10+15+45+15), close to 90 minutes with natural transitions. Materials are low-cost and realistic (posters, real-world texts, writing supplies). Preparation involves gathering texts and creating posters/handouts, manageable for one teacher. Marking is minimal (observation-based). For 14 learners, the plan suggests recruiting a volunteer for Station C, which may not be available; without volunteer, Station C with 14 learners could be challenging for one facilitator circulating. The 'if 4 people' adaptation is feasible.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures pathway guidance; it is a lesson plan for an adult literacy class. The response is inclusive of the range of learners: addresses varied goals (helping children, driving license, job applications), uses real-world materials relevant to adult lives, and allows choice in activities. It respects adult motivations and avoids school-style material.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the learner range: arrival activity is voluntary and low-pressure, stations allow choice based on level/goals (e.g., Station A for struggling readers, Station B for intermediates), writing focuses on communication not perfection, digital station accommodates those with specific goals. Adaptations are low-cost and implementable by one facilitator (circulating, optional pairing). It avoids generic 'differentiate as needed' language and provides specific strategies.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a well-structured, flexible lesson plan that effectively addresses adult learners' real-world needs and variable attendance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This is a well-structured, flexible lesson plan that effectively addresses adult learners' real-world needs and variable attendance.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 86.25
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses learner range implicitly through activities like small team work, role rotation, and structured worksheets, which can support varied prior attainment. It suggests using local languages for communication practice, acknowledging language diversity. However, it does not explicitly address additional needs (e.g., disabilities), material constraints (e.g., limited tools), or other differentiation strategies. The adaptations proposed (e.g., coaching, reflection) are low-cost and implementable by one practitioner, but lack specificity for diverse learners.",
+    "pathway_breadth": "The prompt involves vocational training for automotive repair in Morocco, which is inherently non-degree and employment-focused. The response is entirely oriented toward workplace readiness, with emphasis on employer-identified skills (diagnosis, communication) and real-world scenarios (e.g., using local languages like Darija/French/Arabic). It does not mention academic pathways, as they are irrelevant here, and instead focuses substantively on vocational competence. Thus, it is inclusive and appropriate for the setting.",
+    "pedagogical_soundness": "The response clearly states learning objectives: diagnose unfamiliar problems systematically, justify diagnosis with evidence, select/perform repair, explain to customer. Activities align: diagnostic worksheets, fault-finding scenarios, unknown-fault practice, role-play communication, and reflection build directly toward these objectives. Assessment measures reasoning (practical diagnostic task, diagnostic log) and communication (oral explanation) at appropriate cognitive levels. Sequencing is coherent with diagnostic process taught first, then guided practice, then independent application. Rubrics include observable criteria like 'gathers relevant information', 'uses tools safely', 'clarity', 'accuracy'.",
+    "workload_realism": "The response assumes a vocational workshop setting with vehicles and tools, which is realistic for automotive repair training. Activities like small team scenarios, role-play, and diagnostic worksheets are feasible with typical class sizes. Timings are implied (e.g., 'every 1-2 weeks') but not explicitly summed against a module length, and preparation/marking load for rubrics and logs is not quantified. However, the use of in-workshop activities and peer assessment (e.g., role-play checklists) suggests manageable workload. No unrealistic resources (e.g., extra staff, advanced tech) are assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-008",
+  "judge_cost_usd": 0.00131837,
+  "judge_latency_s": 48.57,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response clearly states learning objectives: diagnose unfamiliar problems systematically, justify diagnosis with evidence, select/perform repair, explain to customer. Activities align: diagnostic worksheets, fault-finding scenarios, unknown-fault practice, role-play communication, and reflection build directly toward these objectives. Assessment measures reasoning (practical diagnostic task, diagnostic log) and communication (oral explanation) at appropriate cognitive levels. Sequencing is coherent with diagnostic process taught first, then guided practice, then independent application. Rubrics include observable criteria like 'gathers relevant information', 'uses tools safely', 'clarity', 'accuracy'.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response assumes a vocational workshop setting with vehicles and tools, which is realistic for automotive repair training. Activities like small team scenarios, role-play, and diagnostic worksheets are feasible with typical class sizes. Timings are implied (e.g., 'every 1-2 weeks') but not explicitly summed against a module length, and preparation/marking load for rubrics and logs is not quantified. However, the use of in-workshop activities and peer assessment (e.g., role-play checklists) suggests manageable workload. No unrealistic resources (e.g., extra staff, advanced tech) are assumed.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves vocational training for automotive repair in Morocco, which is inherently non-degree and employment-focused. The response is entirely oriented toward workplace readiness, with emphasis on employer-identified skills (diagnosis, communication) and real-world scenarios (e.g., using local languages like Darija/French/Arabic). It does not mention academic pathways, as they are irrelevant here, and instead focuses substantively on vocational competence. Thus, it is inclusive and appropriate for the setting.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses learner range implicitly through activities like small team work, role rotation, and structured worksheets, which can support varied prior attainment. It suggests using local languages for communication practice, acknowledging language diversity. However, it does not explicitly address additional needs (e.g., disabilities), material constraints (e.g., limited tools), or other differentiation strategies. The adaptations proposed (e.g., coaching, reflection) are low-cost and implementable by one practitioner, but lack specificity for diverse learners.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a thorough, practical redesign focused on diagnostic reasoning and customer communication, directly addressing employer feedback with pedagogically sound and vocationally relevant strategies.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a thorough, practical redesign focused on diagnostic reasoning and customer communication, directly addressing employer feedback with pedagogically sound and vocationally relevant strategies.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

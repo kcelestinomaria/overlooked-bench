@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a specific, usable plan: names actual tools (KoboToolbox, Samsung tablets, Synology NAS), provides a costed breakdown with line items and totals, explains the offline-first approach, and details sustainability post-funding (zero recurring costs, internal Super Users, hardware replacement fund). It could be taken to a staff meeting with light editing.",
+    "constraint_fidelity": "The response respects all constraints: uses PHP 400,000 budget (provides detailed breakdown totaling exactly PHP 400,000), addresses intermittent electricity (power banks), no reliable internet (offline-first tools), low digital literacy (simple app, training), and 30 staff (allocates 20 tablets for field staff). Arithmetic adds up correctly: 240,000 + 20,000 + 40,000 + 40,000 + 18,000 + 25,000 + 17,000 = 400,000.",
+    "contextual_realism": "The response is highly realistic for a small nonprofit: uses free/open-source tools (KoboToolbox, LibreOffice) to avoid recurring costs, recommends durable but affordable hardware (Samsung Galaxy Tab A series), includes training for low digital literacy, and creates 'Super Users' for internal support instead of assuming dedicated IT staff. It acknowledges role overlap (data manager role) and plans for gradual hardware replacement from annual budget.",
+    "jurisdictional_accuracy": "The prompt does not involve specific legal or regulatory claims; instead, it focuses on operational and technical recommendations. The response uses general factual accuracy: recommends tools appropriate for the Philippines (e.g., market-based pricing in PHP, local IT consultant) and avoids US assumptions. It does not make jurisdictional errors and provides practical, context-aware advice."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00125218,
+  "judge_latency_s": 50.169,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: uses PHP 400,000 budget (provides detailed breakdown totaling exactly PHP 400,000), addresses intermittent electricity (power banks), no reliable internet (offline-first tools), low digital literacy (simple app, training), and 30 staff (allocates 20 tablets for field staff). Arithmetic adds up correctly: 240,000 + 20,000 + 40,000 + 40,000 + 18,000 + 25,000 + 17,000 = 400,000.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is highly realistic for a small nonprofit: uses free/open-source tools (KoboToolbox, LibreOffice) to avoid recurring costs, recommends durable but affordable hardware (Samsung Galaxy Tab A series), includes training for low digital literacy, and creates 'Super Users' for internal support instead of assuming dedicated IT staff. It acknowledges role overlap (data manager role) and plans for gradual hardware replacement from annual budget.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a specific, usable plan: names actual tools (KoboToolbox, Samsung tablets, Synology NAS), provides a costed breakdown with line items and totals, explains the offline-first approach, and details sustainability post-funding (zero recurring costs, internal Super Users, hardware replacement fund). It could be taken to a staff meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt does not involve specific legal or regulatory claims; instead, it focuses on operational and technical recommendations. The response uses general factual accuracy: recommends tools appropriate for the Philippines (e.g., market-based pricing in PHP, local IT consultant) and avoids US assumptions. It does not make jurisdictional errors and provides practical, context-aware advice.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels in providing a realistic, actionable, and sustainable plan tailored to the constraints of a small Philippine nonprofit.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response excels in providing a realistic, actionable, and sustainable plan tailored to the constraints of a small Philippine nonprofit.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('What ought she to do?'), but the response avoids taking a clear ethical stance. It defers to legal and practical considerations ('consult a lawyer', 'explore whether she can afford the financial risk') without stating a moral position. It uses hedging language ('may be justified', 'worth exploring') and does not specify what would change its mind or where uncertainty lies ethically. It shifts the decision to external factors rather than committing to an ought.",
+    "philosophical_literacy": "The response uses no named thinkers, traditions, or technical philosophical terms (e.g., no mention of consequentialism, deontology, virtue ethics). It relies on practical and legal concepts ('whistleblower protections', 'NDA') without connecting them to ethical reasoning. Since no philosophical content is invoked, accuracy is not an issue, but the absence of any ethical framework means the response does not demonstrate philosophical literacy in addressing the moral question.",
+    "position_pluralism": "The response presents only one approach: a cautious, legalistic path with internal escalation and confidential reporting. It omits major live positions, such as immediate public whistleblowing (prioritizing user harm over career) or absolute adherence to the NDA (prioritizing contractual duty). An advocate of immediate action would not recognize their position here, as it is dismissed without engagement. There is no representation of competing ethical frameworks (e.g., utilitarianism vs. deontology) or their tensions.",
+    "reasoning_construction": "The response provides a sequence of actions ('Document everything', 'Consult a lawyer', 'Try one more internal path', 'Contact regulators') but does not build an argument with premises leading to a conclusion. It lists practical steps without justifying why they are morally obligatory or preferable. It does not engage with the ethical specifics (e.g., weighing harm to users vs. career impact) or address counterarguments (e.g., why not go public immediately). The conclusion is implied (a cautious, legalistic approach) but not reasoned from ethical principles."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 1,
+    "philosophical_literacy": 1,
+    "position_pluralism": 1,
+    "reasoning_construction": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-007",
+  "judge_cost_usd": 0.00083563,
+  "judge_latency_s": 50.962,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response provides a sequence of actions ('Document everything', 'Consult a lawyer', 'Try one more internal path', 'Contact regulators') but does not build an argument with premises leading to a conclusion. It lists practical steps without justifying why they are morally obligatory or preferable. It does not engage with the ethical specifics (e.g., weighing harm to users vs. career impact) or address counterarguments (e.g., why not go public immediately). The conclusion is implied (a cautious, legalistic approach) but not reasoned from ethical principles.\",\n      \"score\": 1\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('What ought she to do?'), but the response avoids taking a clear ethical stance. It defers to legal and practical considerations ('consult a lawyer', 'explore whether she can afford the financial risk') without stating a moral position. It uses hedging language ('may be justified', 'worth exploring') and does not specify what would change its mind or where uncertainty lies ethically. It shifts the decision to external factors rather than committing to an ought.\",\n      \"score\": 1\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response presents only one approach: a cautious, legalistic path with internal escalation and confidential reporting. It omits major live positions, such as immediate public whistleblowing (prioritizing user harm over career) or absolute adherence to the NDA (prioritizing contractual duty). An advocate of immediate action would not recognize their position here, as it is dismissed without engagement. There is no representation of competing ethical frameworks (e.g., utilitarianism vs. deontology) or their tensions.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers, traditions, or technical philosophical terms (e.g., no mention of consequentialism, deontology, virtue ethics). It relies on practical and legal concepts ('whistleblower protections', 'NDA') without connecting them to ethical reasoning. Since no philosophical content is invoked, accuracy is not an issue, but the absence of any ethical framework means the response does not demonstrate philosophical literacy in addressing the moral question.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response avoids ethical reasoning by focusing solely on practical and legal steps without engaging the moral dilemma.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response avoids ethical reasoning by focusing solely on practical and legal steps without engaging the moral dilemma.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

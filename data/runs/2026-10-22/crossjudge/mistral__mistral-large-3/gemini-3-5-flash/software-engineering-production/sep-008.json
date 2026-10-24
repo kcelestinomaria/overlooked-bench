@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete migration plan with phases, exact SQL commands, and verification steps. 2. It includes sequence (e.g., 'Days 1–3'), owners (e.g., 'Engineer 1'), and estimates (e.g., '~1,000 rows per second'). 3. The cutover transaction is provided with a lock_timeout, and the backfill script is described in detail. 4. Verification steps (e.g., `SELECT count(*) FROM shipment_events WHERE new_id IS NULL`) are specific and actionable. An engineer could execute this with minimal edits.",
+    "constraint_fidelity": "1. The response explicitly computes the runway (31.9 days) and respects the 5-minute maintenance window constraint by using a short transaction for cutover. 2. It adheres to the no-new-instance constraint by working within the existing db.m6g.large instance and only increasing storage by 200 GB (within the allowed limit). 3. The plan includes a stopgap (negative sequence values) to buy time if needed, ensuring the migration finishes before key exhaustion. 4. The response shows arithmetic for storage (720 GB free after increase) and backfill rate (~1,000 rows/sec), allowing verification of constraints. No silent violations are present.",
+    "maintainability": "1. The solution is proportionate to the team: the backfill script is throttled, and the DBA handles autovacuum tuning. 2. Risks and debt are explicitly stated (e.g., negative IDs breaking integrations, precision loss in frontends). 3. The plan leaves clear seams: old columns are retained until validation, and triggers are dropped post-cutover. 4. Observability is addressed via monitoring (CPU, IOPS, latency) and verification queries. 5. The rollback plan is concrete (swap column names back).",
+    "production_realism": "1. The response accounts for the weak instance (2 vCPU, 8 GiB RAM) by throttling the backfill script dynamically based on CPU, IOPS, and latency. 2. It addresses failure modes: concurrent indexing, lock timeouts, and rollback plans. 3. The operational burden is proportionate to the team (2 engineers + part-time DBA), with clear task assignments. 4. The plan avoids direct ALTER COLUMN TYPE, which would lock the table, and instead uses the add-new-bigint-column pattern. 5. It includes monitoring for replication lag, WAL, and IOPS, which are critical for the stated scale (900 writes/sec, 1.7B rows)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.0027471,
+  "judge_latency_s": 9.349,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly computes the runway (31.9 days) and respects the 5-minute maintenance window constraint by using a short transaction for cutover. 2. It adheres to the no-new-instance constraint by working within the existing db.m6g.large instance and only increasing storage by 200 GB (within the allowed limit). 3. The plan includes a stopgap (negative sequence values) to buy time if needed, ensuring the migration finishes before key exhaustion. 4. The response shows arithmetic for storage (720 GB free after increase) and backfill rate (~1,000 rows/sec), allowing verification of constraints. No silent violations are present.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the weak instance (2 vCPU, 8 GiB RAM) by throttling the backfill script dynamically based on CPU, IOPS, and latency. 2. It addresses failure modes: concurrent indexing, lock timeouts, and rollback plans. 3. The operational burden is proportionate to the team (2 engineers + part-time DBA), with clear task assignments. 4. The plan avoids direct ALTER COLUMN TYPE, which would lock the table, and instead uses the add-new-bigint-column pattern. 5. It includes monitoring for replication lag, WAL, and IOPS, which are critical for the stated scale (900 writes/sec, 1.7B rows).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete migration plan with phases, exact SQL commands, and verification steps. 2. It includes sequence (e.g., 'Days 1–3'), owners (e.g., 'Engineer 1'), and estimates (e.g., '~1,000 rows per second'). 3. The cutover transaction is provided with a lock_timeout, and the backfill script is described in detail. 4. Verification steps (e.g., `SELECT count(*) FROM shipment_events WHERE new_id IS NULL`) are specific and actionable. An engineer could execute this with minimal edits.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team: the backfill script is throttled, and the DBA handles autovacuum tuning. 2. Risks and debt are explicitly stated (e.g., negative IDs breaking integrations, precision loss in frontends). 3. The plan leaves clear seams: old columns are retained until validation, and triggers are dropped post-cutover. 4. Observability is addressed via monitoring (CPU, IOPS, latency) and verification queries. 5. The rollback plan is concrete (swap column names back).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a meticulously detailed, constraint-aware migration plan that could be executed as-is by the team.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is a meticulously detailed, constraint-aware migration plan that could be executed as-is by the team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

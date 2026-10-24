@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgment, and the response clearly states a position: 'Patient B should get the machine.' It defends this with reasons (medical benefit, fairness) and acknowledges uncertainty by stating 'the case for A is powerful' and addressing the counterargument. It does not explicitly state what would change its mind or where it is weakest, but it shows calibrated uncertainty by recognizing the strength of the objection.",
+    "philosophical_literacy": "The response invokes concepts like 'moral worth,' 'utilitarian,' and 'fairness,' but does not use technical terms inaccurately or name specific thinkers. The reference to utilitarianism is accurate and load-bearing in the counterargument. The reasoning is correct and relevant without relying on dense terminology, focusing on principled argument.",
+    "position_pluralism": "Major live positions include: medical benefit (favoring B), utilitarian/social impact (favoring A), and possibly age-based or other criteria. The response presents the medical benefit position (its own) and the utilitarian counterargument ('A should get the machine because saving A would likely protect not only A’s life but also the welfare of four dependents'). Both are represented accurately and in tension. It does not strawman or omit key positions, and there is no false balance with fringe views.",
+    "reasoning_construction": "The response reaches a conclusion: 'Patient B should get the machine.' Premises include: expected medical benefit (80% vs 60% survival), fairness (treats persons equally), avoidance of controversial social judgments, institutional consistency, and age not being decisive. The inference is valid—the conclusion depends on these premises. It engages specific details (prognosis percentages, dependents, age) and addresses the strongest counterargument (utilitarian view favoring A due to dependents) in its strongest form. However, it does not fully apply a framework (e.g., utilitarianism vs. deontology) to the specifics, relying more on principled reasoning."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 4,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-001",
+  "judge_cost_usd": 0.00092633,
+  "judge_latency_s": 44.783,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response reaches a conclusion: 'Patient B should get the machine.' Premises include: expected medical benefit (80% vs 60% survival), fairness (treats persons equally), avoidance of controversial social judgments, institutional consistency, and age not being decisive. The inference is valid—the conclusion depends on these premises. It engages specific details (prognosis percentages, dependents, age) and addresses the strongest counterargument (utilitarian view favoring A due to dependents) in its strongest form. However, it does not fully apply a framework (e.g., utilitarianism vs. deontology) to the specifics, relying more on principled reasoning.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgment, and the response clearly states a position: 'Patient B should get the machine.' It defends this with reasons (medical benefit, fairness) and acknowledges uncertainty by stating 'the case for A is powerful' and addressing the counterargument. It does not explicitly state what would change its mind or where it is weakest, but it shows calibrated uncertainty by recognizing the strength of the objection.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: medical benefit (favoring B), utilitarian/social impact (favoring A), and possibly age-based or other criteria. The response presents the medical benefit position (its own) and the utilitarian counterargument ('A should get the machine because saving A would likely protect not only A’s life but also the welfare of four dependents'). Both are represented accurately and in tension. It does not strawman or omit key positions, and there is no false balance with fringe views.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes concepts like 'moral worth,' 'utilitarian,' and 'fairness,' but does not use technical terms inaccurately or name specific thinkers. The reference to utilitarianism is accurate and load-bearing in the counterargument. The reasoning is correct and relevant without relying on dense terminology, focusing on principled argument.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument favoring medical prognosis while fairly addressing the utilitarian counterpoint.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned argument favoring medical prognosis while fairly addressing the utilitarian counterpoint.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 81.25
+}

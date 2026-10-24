@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific analytical problems (e.g., tuning variability, colotomic vs. metrical structure, relational elaboration), methodological critiques (e.g., notation as ideology), and scholarly debates (e.g., the limitations of kepatihan notation, generative approaches). It discusses underlying theoretical issues like the prescriptive/descriptive distinction and reflects familiarity with the literature, not just summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that are accurate: it correctly identifies sléndro and pélog tunings, colotomic structure, stratified polyphony, balungan, cengkok, and kepatihan notation. It accurately cites scholars like Judith Becker, Sumarsam, Mantle Hood, Marc Perlman, Martin Hatch, Charles Keil, Steven Feld, and Charles Seeger, and their contributions are well-attributed. There are no invented citations or terms; all terminology is standard in ethnomusicology.",
+    "field_situatedness": "The response uses ethnomusicological frameworks and terminology (e.g., emic/etic, colotomic structure, balungan, cengkok, pathet) and centers non-Western concepts like gamelan's unique tunings and cyclical structures. It does not substitute Western musical frameworks but critiques them, and it engages with scholars from the field (e.g., Sumarsam, Becker) and their work on Indonesian music traditions.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it notes that kepatihan notation 'is often treated as more authentic' but critiques its colonial influences and limitations, and it presents alternatives as proposals (e.g., 'scholars like... have advocated', 'some analysts... proposed'). It avoids uniform confidence by framing ideas as scholarly contributions rather than settled facts, though it could more explicitly flag evidential status for some claims."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00098987,
+  "judge_latency_s": 44.466,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are accurate: it correctly identifies sléndro and pélog tunings, colotomic structure, stratified polyphony, balungan, cengkok, and kepatihan notation. It accurately cites scholars like Judith Becker, Sumarsam, Mantle Hood, Marc Perlman, Martin Hatch, Charles Keil, Steven Feld, and Charles Seeger, and their contributions are well-attributed. There are no invented citations or terms; all terminology is standard in ethnomusicology.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific analytical problems (e.g., tuning variability, colotomic vs. metrical structure, relational elaboration), methodological critiques (e.g., notation as ideology), and scholarly debates (e.g., the limitations of kepatihan notation, generative approaches). It discusses underlying theoretical issues like the prescriptive/descriptive distinction and reflects familiarity with the literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it notes that kepatihan notation 'is often treated as more authentic' but critiques its colonial influences and limitations, and it presents alternatives as proposals (e.g., 'scholars like... have advocated', 'some analysts... proposed'). It avoids uniform confidence by framing ideas as scholarly contributions rather than settled facts, though it could more explicitly flag evidential status for some claims.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses ethnomusicological frameworks and terminology (e.g., emic/etic, colotomic structure, balungan, cengkok, pathet) and centers non-Western concepts like gamelan's unique tunings and cyclical structures. It does not substitute Western musical frameworks but critiques them, and it engages with scholars from the field (e.g., Sumarsam, Becker) and their work on Indonesian music traditions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate engagement with ethnomusicological critiques of Western transcription methods for gamelan, citing relevant scholars and alternatives.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate engagement with ethnomusicological critiques of Western transcription methods for gamelan, citing relevant scholars and alternatives.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

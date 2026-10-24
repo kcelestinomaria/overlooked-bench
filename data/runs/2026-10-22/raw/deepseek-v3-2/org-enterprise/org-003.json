@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 729,
+  "cost_usd": 0.00140135,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "90253cf433f67b1c",
+  "item_id": "org-003",
+  "latency_s": 22.661,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 85,
+  "provider": "deepseek",
+  "request_fingerprint": "f3ad85c9270675bc",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "# Advice on Charity Trading for Trustees\n\n## 1. **Can trading be done within the charity?**\n\n**Yes, but with important limitations.** Under charity law in England and Wales, your charity can engage in \"primary purpose trading\" without restriction. Since selling training courses likely aligns directly with your charitable objectives (presumably education/training), this would typically qualify as primary purpose trading.\n\n**However:** If any trading activities could be considered \"non-primary purpose\" (e.g., selling unrelated merchandise), there are strict limits:\n- Small-scale exemption: Up to £50,000 of non-primary purpose trading income is permitted\n- Your £320,000 income suggests you're above the small charity threshold, so careful assessment is needed\n\n## 2. **When a trading subsidiary becomes necessary**\n\n**Consider establishing a trading subsidiary if:**\n- You anticipate significant non-primary purpose trading (exceeding £50,000)\n- Trading activities carry substantial risk that could threaten charitable assets\n- The trading activity is substantial and might attract significant VAT liabilities\n- You want clearer separation between charitable and commercial activities\n\n**For your situation:** Since training courses likely constitute primary purpose trading, a subsidiary may not be immediately necessary, but could still be beneficial for risk management as trading scales up.\n\n## 3. **Tax treatment**\n\n**Within the charity:**\n- Primary purpose trading income is generally exempt from corporation tax\n- Non-primary purpose trading income may be taxable, though the £50,000 small trading exemption might apply\n- VAT registration may be required if taxable supplies exceed £90,000 annually\n\n**Through a trading subsidiary:**\n- Normal corporation tax rates apply on profits\n- Profits can be gifted to the parent charity under Gift Aid, making them effectively tax-free\n- The subsidiary would need to pay tax first, then donate post-tax profits\n\n## 4. **What trustees must do before proceeding**\n\n**Legal and governance steps:**\n1. **Review governing document:** Check powers to trade and any restrictions\n2. **Assess risk:** Conduct thorough risk assessment of trading activities\n3. **Business planning:** Create detailed business plan with financial projections\n4. **Charity Commission compliance:** Ensure you meet reporting requirements\n5. **Update risk management:** Review and update risk register and policies\n\n**Practical considerations:**\n- **Market research:** Validate demand for training courses among local employers\n- **Resource assessment:** Ensure adequate staff, expertise, and systems\n- **Financial planning:** Separate trading accounts, robust bookkeeping\n- **Insurance:** Review and update insurance coverage for new activities\n- **Pricing strategy:** Ensure competitive yet sustainable pricing\n\n**If considering a subsidiary:**\n- Seek professional legal advice on incorporation\n- Plan for governance structure (charity trustees typically control subsidiary board)\n- Establish clear agreements between charity and subsidiary\n- Budget for additional administrative costs (separate accounts, audits, etc.)\n\n## **Recommendation**\n\nGiven that training courses likely align with your charitable purposes, you can probably begin trading within the charity structure. However, given your size (£320,000 annual income), I recommend:\n\n1. **Start with a pilot program** within the charity to test the market\n2. **Monitor closely** – if trading grows significantly or diversifies beyond core purposes, consider establishing a subsidiary\n3. **Consult professionals** – seek advice from a charity law specialist and accountant familiar with charity trading\n4. **Document everything** – ensure all decisions are properly minuted and risks assessed\n\nThe Charity Commission provides detailed guidance (CC35) on charity trading which should be reviewed carefully before proceeding.",
+  "timestamp_utc": "2026-10-21T23:44:23Z"
+}

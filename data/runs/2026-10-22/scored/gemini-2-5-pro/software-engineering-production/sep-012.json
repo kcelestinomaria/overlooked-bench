@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete plan with weekly milestones, specific technologies (Sinatra, S3, ECS), sequence (shadow mode → gradual rollout), and verification steps ('compare the output of the old and new systems'). It includes exact commands (e.g., 'enqueue a job for the Notificator') and estimates (10-week timeline). An engineer could start executing this immediately with light editing.",
+    "constraint_fidelity": "The response explicitly addresses all constraints: uses Sidekiq on existing Redis ('leverage our existing Redis and Sidekiq infrastructure'), builds only one new service ('single, lightweight service'), protects checkout SLO via shadow mode and gradual rollout ('validate the new system with live production traffic without affecting the user-facing experience'), and fits two engineers over ten weeks ('10-week plan is broken down into realistic weekly sprints for two engineers'). It shows arithmetic for SLO (99.9% implies ~43 minutes/month error budget) and effort allocation.",
+    "maintainability": "The solution is proportionate to the team: uses familiar Ruby/Sinatra, leaves clear seams (S3 for templates, monolith enqueues jobs), includes documentation ('write clear documentation for the rest of the engineering team'), and states risks explicitly (e.g., 'Notificator Service Fails'). It avoids unnecessary complexity and is designed for long-term ownership by the squad.",
+    "production_realism": "The plan accounts for production realities: uses Sidekiq retries ('automatic retries with exponential backoff'), idempotency via job payloads (implied by structured JSON), partial failure handling via dead-letter queue ('configure a dead-letter queue for jobs that fail permanently'), observability ('robust logging and metrics to CloudWatch'), and load scaling ('stateless service that can be scaled horizontally'). It fits the team's Ruby/PostgreSQL/AWS skill set and operational burden is manageable."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-012",
+  "judge_cost_usd": 0.00152984,
+  "judge_latency_s": 29.546,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly addresses all constraints: uses Sidekiq on existing Redis ('leverage our existing Redis and Sidekiq infrastructure'), builds only one new service ('single, lightweight service'), protects checkout SLO via shadow mode and gradual rollout ('validate the new system with live production traffic without affecting the user-facing experience'), and fits two engineers over ten weeks ('10-week plan is broken down into realistic weekly sprints for two engineers'). It shows arithmetic for SLO (99.9% implies ~43 minutes/month error budget) and effort allocation.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan accounts for production realities: uses Sidekiq retries ('automatic retries with exponential backoff'), idempotency via job payloads (implied by structured JSON), partial failure handling via dead-letter queue ('configure a dead-letter queue for jobs that fail permanently'), observability ('robust logging and metrics to CloudWatch'), and load scaling ('stateless service that can be scaled horizontally'). It fits the team's Ruby/PostgreSQL/AWS skill set and operational burden is manageable.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete plan with weekly milestones, specific technologies (Sinatra, S3, ECS), sequence (shadow mode → gradual rollout), and verification steps ('compare the output of the old and new systems'). It includes exact commands (e.g., 'enqueue a job for the Notificator') and estimates (10-week timeline). An engineer could start executing this immediately with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: uses familiar Ruby/Sinatra, leaves clear seams (S3 for templates, monolith enqueues jobs), includes documentation ('write clear documentation for the rest of the engineering team'), and states risks explicitly (e.g., 'Notificator Service Fails'). It avoids unnecessary complexity and is designed for long-term ownership by the squad.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a highly detailed, constraint-compliant plan that is immediately actionable and production-ready.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response provides a highly detailed, constraint-compliant plan that is immediately actionable and production-ready.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

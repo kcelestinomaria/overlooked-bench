@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for advice on how to spend the PEN 2 million, including a costed allocation. The response delivers a specific spending plan with line items (e.g., PEN 250k for DMA creation, PEN 400k for ALC team) and totals per phase, along with a rationale for sequencing. It produces the requested deliverable (a budget allocation and strategy) rather than describing how to approach it, and it could be taken into a board meeting with light editing.",
+    "constraint_fidelity": "The prompt's constraints are: a municipal water utility in Peru, serving 60,000 people, with PEN 2 million budget to 'fix leakage', and a requirement to address the split between physical and commercial losses. The response respects all constraints: it is tailored to Peru, uses PEN currency, allocates the full PEN 2 million (400k + 1.2M + 400k = 2M), and explicitly addresses the loss split (25-30% physical, 12-17% commercial). The arithmetic adds up, and it does not silently violate any constraints.",
+    "contextual_realism": "The response assumes capabilities appropriate for a mid-sized Peruvian utility: it recommends creating DMAs, pressure management, and meter sampling, which are feasible with the budget and do not presuppose dedicated HR, legal, or data teams. It acknowledges role overlap (e.g., training existing staff) and focuses on practical, sustainable tools (e.g., acoustic sensors, PRVs) rather than expensive or complex systems. It recognizes small-organization realities like prioritizing high-impact areas and phased investments.",
+    "jurisdictional_accuracy": "The prompt involves Peru, but does not explicitly touch on law, regulation, tax, or employment practice. The response makes no jurisdiction-specific legal claims and avoids US assumptions (e.g., it does not reference US contract norms or employment practices). It focuses on technical water utility management, which is general factual content, and is accurate in that context. There are no generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00109786,
+  "judge_latency_s": 20.069,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints are: a municipal water utility in Peru, serving 60,000 people, with PEN 2 million budget to 'fix leakage', and a requirement to address the split between physical and commercial losses. The response respects all constraints: it is tailored to Peru, uses PEN currency, allocates the full PEN 2 million (400k + 1.2M + 400k = 2M), and explicitly addresses the loss split (25-30% physical, 12-17% commercial). The arithmetic adds up, and it does not silently violate any constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes capabilities appropriate for a mid-sized Peruvian utility: it recommends creating DMAs, pressure management, and meter sampling, which are feasible with the budget and do not presuppose dedicated HR, legal, or data teams. It acknowledges role overlap (e.g., training existing staff) and focuses on practical, sustainable tools (e.g., acoustic sensors, PRVs) rather than expensive or complex systems. It recognizes small-organization realities like prioritizing high-impact areas and phased investments.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for advice on how to spend the PEN 2 million, including a costed allocation. The response delivers a specific spending plan with line items (e.g., PEN 250k for DMA creation, PEN 400k for ALC team) and totals per phase, along with a rationale for sequencing. It produces the requested deliverable (a budget allocation and strategy) rather than describing how to approach it, and it could be taken into a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Peru, but does not explicitly touch on law, regulation, tax, or employment practice. The response makes no jurisdiction-specific legal claims and avoids US assumptions (e.g., it does not reference US contract norms or employment practices). It focuses on technical water utility management, which is general factual content, and is accurate in that context. There are no generic 'consult a lawyer' disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly specific, actionable, and contextually appropriate plan that fully addresses the prompt's requirements and constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a highly specific, actionable, and contextually appropriate plan that fully addresses the prompt's requirements and constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

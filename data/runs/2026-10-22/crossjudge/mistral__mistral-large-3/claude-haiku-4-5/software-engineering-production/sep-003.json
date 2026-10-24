@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Total new cost: ~$23/month (0.24% increase)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a complete design, rollout plan, and risks, as requested. \n2. It includes specific, executable elements: SQL schema, Django middleware code, rollout timeline with owners (e.g., 'Engineer A + B'), and verification steps (e.g., load tests, latency checks). \n3. The rollout plan is sequenced (schema → logic → integration → canary → hardening) with clear deliverables per week. \n4. Engineers could start immediately with minimal edits (e.g., copy-paste middleware code, run migrations).",
+    "constraint_fidelity": "1. The response explicitly states 'No new infrastructure services allowed' and uses only PostgreSQL, respecting C1. \n2. The rollout plan is for 3 engineers and 4 weeks, respecting C2. \n3. The cost analysis shows a $23/month increase, well within the 8% ($752) cap, respecting C3. \n4. The response includes detailed capacity and cost arithmetic (e.g., storage growth, compute cost, latency impact) to verify constraints. \n5. No constraints are silently violated; all are addressed and justified with evidence.",
+    "maintainability": "1. The solution is proportionate to the team (3 engineers) and leaves clear seams: middleware, signals, and monitoring are modular. \n2. Risks and debt are explicitly stated (e.g., token bucket lock contention, usage_meter growth) with mitigations. \n3. Observability is built in (Prometheus metrics, alerts for latency/lock contention). \n4. Documentation and runbooks are included (e.g., how to adjust tier limits, investigate billing discrepancies). \n5. The design avoids complexity (e.g., no new services, no distributed state) and uses the existing stack (PostgreSQL, Django).",
+    "production_realism": "1. The response accounts for the stated scale (1,200 rps) and infrastructure (6 containers, PostgreSQL primary + replica). \n2. It addresses failure modes: lock contention (per-tenant rows), replication lag (rate limits hit primary only), and partial failure (atomic transactions for usage metering). \n3. The operational burden is proportionate to the team (3 engineers, 4 weeks) and includes monitoring, alerting, and rollback plans. \n4. The design avoids distributed state and uses PostgreSQL's atomic operations, which are production-proven at this scale. \n5. The latency impact (+2–3 ms) is explicitly calculated and stays within the 220 ms p99 budget."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-003",
+  "judge_cost_usd": 0.0046637,
+  "judge_latency_s": 10.625,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states 'No new infrastructure services allowed' and uses only PostgreSQL, respecting C1. \\n2. The rollout plan is for 3 engineers and 4 weeks, respecting C2. \\n3. The cost analysis shows a $23/month increase, well within the 8% ($752) cap, respecting C3. \\n4. The response includes detailed capacity and cost arithmetic (e.g., storage growth, compute cost, latency impact) to verify constraints. \\n5. No constraints are silently violated; all are addressed and justified with evidence.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (1,200 rps) and infrastructure (6 containers, PostgreSQL primary + replica). \\n2. It addresses failure modes: lock contention (per-tenant rows), replication lag (rate limits hit primary only), and partial failure (atomic transactions for usage metering). \\n3. The operational burden is proportionate to the team (3 engineers, 4 weeks) and includes monitoring, alerting, and rollback plans. \\n4. The design avoids distributed state and uses PostgreSQL's atomic operations, which are production-proven at this scale. \\n5. The latency impact (+2–3 ms) is explicitly calculated and stays within the 220 ms p99 budget.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a complete design, rollout plan, and risks, as requested. \\n2. It includes specific, executable elements: SQL schema, Django middleware code, rollout timeline with owners (e.g., 'Engineer A + B'), and verification steps (e.g., load tests, latency checks). \\n3. The rollout plan is sequenced (schema → logic → integration → canary → hardening) with clear deliverables per week. \\n4. Engineers could start immediately with minimal edits (e.g., copy-paste middleware code, run migrations).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (3 engineers) and leaves clear seams: middleware, signals, and monitoring are modular. \\n2. Risks and debt are explicitly stated (e.g., token bucket lock contention, usage_meter growth) with mitigations. \\n3. Observability is built in (Prometheus metrics, alerts for latency/lock contention). \\n4. Documentation and runbooks are included (e.g., how to adjust tier limits, investigate billing discrepancies). \\n5. The design avoids complexity (e.g., no new services, no distributed state) and uses the existing stack (PostgreSQL, Django).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a model of constraint-fidelity and production realism, with a fully actionable plan and clear maintainability.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Total new cost: ~$23/month (0.24% increase)\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response is a model of constraint-fidelity and production realism, with a fully actionable plan and clear maintainability.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

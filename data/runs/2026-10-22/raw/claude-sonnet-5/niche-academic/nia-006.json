@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 1589,
+  "cost_usd": 0.016012,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "e17498e521d132ae",
+  "item_id": "nia-006",
+  "latency_s": 20.557,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 61,
+  "provider": "anthropic",
+  "request_fingerprint": "5de873071705af57",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Teff Cultivation: Agronomic Constraints and Mechanisation Challenges\n\n## Agronomic Constraints\n\n**Seed characteristics**\nTeff (*Eragrostis tef*) has the smallest grain of any cultivated cereal—around 2,000-3,000 seeds per gram. This creates fundamental difficulties:\n- Precise seeding rates are hard to achieve; farmers typically broadcast rather than drill\n- Very shallow planting depth required (seeds have minimal energy reserves), making seed-soil contact and emergence uniformity difficult\n- Susceptible to being washed away by rain or buried too deep after broadcasting\n\n**Lodging susceptibility**\nTeff has a tall, thin stem relative to its panicle, making it highly prone to lodging (falling over) from wind, rain, or its own weight at maturity. Lodging:\n- Reduces yield directly\n- Complicates harvesting, especially mechanical harvesting\n- Increases losses from shattering and ground contact (mold, pre-harvest sprouting)\n\n**Uneven ripening**\nTillers and panicles mature asynchronously, so grain ripens unevenly across a single plant/field, complicating decisions about harvest timing and increasing losses whichever point is chosen.\n\n**Shattering**\nMature teff seed shatters easily, leading to significant field losses during harvesting and handling.\n\n**Soil and moisture sensitivity**\nTeff is often grown on heavy, waterlogged vertisols in Ethiopia but is also sensitive to both waterlogging and drought at different growth stages, requiring fairly precise moisture management.\n\n**Labour-intensive land preparation**\nTraditional practice involves multiple ploughings (sometimes 4-6 passes) to create a very fine seedbed suitable for the tiny seeds—itself a significant labour and time constraint.\n\n## Why Mechanisation Has Proved Difficult\n\n1. **Seeding equipment**: Conventional seed drills, designed for larger grains, cannot meter teff seed accurately—it flows almost like a liquid/powder, causing clumping or uneven flow.\n\n2. **Harvesting equipment**: Combine harvesters designed for wheat/barley have threshing and cleaning mechanisms calibrated for larger grains; they lose a high proportion of teff seed or fail to separate it efficiently from chaff. Lodged teff is especially difficult for combines to pick up.\n\n3. **Smallholder context**: Most teff is grown by smallholders in Ethiopia on fragmented plots, making investment in specialised machinery economically unviable for individual farmers.\n\n4. **Limited commercial R&D incentive**: Because teff is a minor global crop (mainly confined to Ethiopia and Eritrea), there has been little incentive for international agricultural machinery manufacturers to develop teff-specific equipment, unlike for maize, wheat, or rice.\n\n## What Has Been Tried\n\n- **Row planting/drilling trials**: Research (e.g., by Ethiopia's Agricultural Transformation Agency) has tested row planters and precision seeders calibrated for small seeds, showing yield improvements over broadcasting by improving plant spacing and reducing seed rate, but adoption has been limited by cost and need for calibration expertise.\n\n- **Seed pelleting/coating**: Attempts to coat teff seed to increase effective particle size for easier handling in conventional seeders.\n\n- **Modified combine harvesters**: Adjustments to combine settings (concave clearance, sieve size, fan speed) to reduce grain loss, alongside use of mid-sized combines in some commercial Ethiopian farms.\n\n- **Reduced tillage approaches**: Research into minimum-tillage systems to cut down on the traditional multiple-plough requirement, though fine seedbed needs limit how far this can go.\n\n- **Broadcasting improvement**: Simple mechanical or motorised broadcasters to improve seed distribution uniformity compared to hand broadcasting.\n\n- **Breeding for lodging resistance**: Varieties like **Quncho** (released 2006) combine higher yield with somewhat improved lodging tolerance, indirectly aiding mechanisation prospects by producing a more combine-friendly crop stand.\n\n- **International collaborative research**: Institutions (e.g., in the Netherlands, through partnerships with Ethiopian universities) have explored machinery adaptation and teff genetics to support both yield and mechanisation goals, though teff remains far behind major cereals in dedicated equipment development.\n\nOverall, mechanisation progress has been incremental and partial—mostly adaptations of existing equipment rather than purpose-built teff machinery—reflecting both the crop's inherent physical challenges and its relatively niche global status.",
+  "timestamp_utc": "2026-10-21T23:30:51Z"
+}

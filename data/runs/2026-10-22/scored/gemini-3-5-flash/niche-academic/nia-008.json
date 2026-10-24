@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific scholarly debates (e.g., equity outcomes vs. ecological success), methodological criticisms (e.g., lack of counterfactuals, selection bias), and field-specific nuances (e.g., Terai vs. Hills divide, remittance effects). It discusses evidence quality, publication bias, and temporal dynamics, indicating familiarity with the literature rather than summaries. A specialist would recognize this as informed by academic discourse.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established knowledge of Nepal's CFM: it correctly cites the Forest Act of 1993, identifies CFUGs, notes forest cover increases in the Middle Hills, mentions elite capture and equity issues, and accurately describes methodological criticisms like selection bias and confounding factors (e.g., remittances and energy transition). No invented citations, terms, or consensus claims are present. The claims are well-supported and load-bearing for the answer.",
+    "field_situatedness": "The response uses terminology and frameworks specific to Nepal's CFM and environmental governance scholarship (e.g., CFUGs, Terai vs. Hills, elite capture, REDD+), without substituting Western or Anglophone framings. It acknowledges regional variations and cites local contexts (e.g., Dalits, indigenous groups), demonstrating alignment with the field's scholarly tradition.",
+    "scholarly_calibration": "The response accurately calibrates confidence across claims: it distinguishes 'robust consensus' on ecological outcomes from 'mixed evidence' on socio-economic outcomes and 'generally negative/mixed evidence' on equity, and flags methodological weaknesses (e.g., 'impossible to attribute solely to CFM' without counterfactuals). It avoids uniform confidence, presents contested points as debated, and provides specific, targeted calibration rather than blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-008",
+  "judge_cost_usd": 0.00103835,
+  "judge_latency_s": 52.574,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established knowledge of Nepal's CFM: it correctly cites the Forest Act of 1993, identifies CFUGs, notes forest cover increases in the Middle Hills, mentions elite capture and equity issues, and accurately describes methodological criticisms like selection bias and confounding factors (e.g., remittances and energy transition). No invented citations, terms, or consensus claims are present. The claims are well-supported and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific scholarly debates (e.g., equity outcomes vs. ecological success), methodological criticisms (e.g., lack of counterfactuals, selection bias), and field-specific nuances (e.g., Terai vs. Hills divide, remittance effects). It discusses evidence quality, publication bias, and temporal dynamics, indicating familiarity with the literature rather than summaries. A specialist would recognize this as informed by academic discourse.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates confidence across claims: it distinguishes 'robust consensus' on ecological outcomes from 'mixed evidence' on socio-economic outcomes and 'generally negative/mixed evidence' on equity, and flags methodological weaknesses (e.g., 'impossible to attribute solely to CFM' without counterfactuals). It avoids uniform confidence, presents contested points as debated, and provides specific, targeted calibration rather than blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to Nepal's CFM and environmental governance scholarship (e.g., CFUGs, Terai vs. Hills, elite capture, REDD+), without substituting Western or Anglophone framings. It acknowledges regional variations and cites local contexts (e.g., Dalits, indigenous groups), demonstrating alignment with the field's scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate, and well-calibrated knowledge of Nepal's community forest management, including its evidence base and methodological criticisms.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate, and well-calibrated knowledge of Nepal's community forest management, including its evidence base and methodological criticisms.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response produces a complete runbook with exact commands for all requested procedures: service checks (e.g., 'systemctl status nginx --no-pager'), restarts, deployments, backup verification and restore (e.g., 'rclone copy b2:BUCKET_NAME/path/to/backup.sql.gz /tmp/restore/', 'gunzip -c /tmp/restore/backup.sql.gz | mysql -uroot -p DATABASE_NAME'), TLS renewal (e.g., 'sudo certbot renew --dry-run'), and incident response. It includes sequences, success criteria, and escalation steps. An engineer could execute it immediately with light editing for server-specific paths.",
+    "constraint_fidelity": "The response respects all hard constraints: no migration to new platforms (uses existing Hetzner VMs), no additional tooling spend (only uses existing free tools like certbot and rclone), and provides exact commands for all procedures (e.g., 'systemctl status nginx --no-pager', 'rclone ls b2:BUCKET_NAME | tail', 'sudo certbot renew --dry-run'). It explicitly avoids recommending Kubernetes, managed services, or paid tools, and all commands are concrete and executable by developers with basic Linux familiarity.",
+    "maintainability": "The response is proportionate to the team's skills: uses simple commands, avoids complex automation, and includes clear escalation rules. It documents risks (e.g., 'Never edit production directly without a backup', 'Stop if you do not understand the error') and provides a cheat sheet for quick reference. However, it lacks explicit mention of tests, observability setup, or long-term documentation beyond the runbook itself, and does not flag technical debt or maintenance cadence beyond routine checks.",
+    "production_realism": "The response accounts for production realities: includes checks for service status, disk space, logs, and backups; provides restart procedures with impact warnings (e.g., 'expect brief downtime' for MySQL restart); addresses partial failure scenarios (e.g., backup failure, cert renewal issues); and considers operational burden for a small team (e.g., escalation rules, cheat sheet). However, it does not deeply address locking, retries, or idempotency for database operations, and assumes existing scripts without validating their robustness."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-010",
+  "judge_cost_usd": 0.00242605,
+  "judge_latency_s": 53.972,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: no migration to new platforms (uses existing Hetzner VMs), no additional tooling spend (only uses existing free tools like certbot and rclone), and provides exact commands for all procedures (e.g., 'systemctl status nginx --no-pager', 'rclone ls b2:BUCKET_NAME | tail', 'sudo certbot renew --dry-run'). It explicitly avoids recommending Kubernetes, managed services, or paid tools, and all commands are concrete and executable by developers with basic Linux familiarity.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: includes checks for service status, disk space, logs, and backups; provides restart procedures with impact warnings (e.g., 'expect brief downtime' for MySQL restart); addresses partial failure scenarios (e.g., backup failure, cert renewal issues); and considers operational burden for a small team (e.g., escalation rules, cheat sheet). However, it does not deeply address locking, retries, or idempotency for database operations, and assumes existing scripts without validating their robustness.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a complete runbook with exact commands for all requested procedures: service checks (e.g., 'systemctl status nginx --no-pager'), restarts, deployments, backup verification and restore (e.g., 'rclone copy b2:BUCKET_NAME/path/to/backup.sql.gz /tmp/restore/', 'gunzip -c /tmp/restore/backup.sql.gz | mysql -uroot -p DATABASE_NAME'), TLS renewal (e.g., 'sudo certbot renew --dry-run'), and incident response. It includes sequences, success criteria, and escalation steps. An engineer could execute it immediately with light editing for server-specific paths.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response is proportionate to the team's skills: uses simple commands, avoids complex automation, and includes clear escalation rules. It documents risks (e.g., 'Never edit production directly without a backup', 'Stop if you do not understand the error') and provides a cheat sheet for quick reference. However, it lacks explicit mention of tests, observability setup, or long-term documentation beyond the runbook itself, and does not flag technical debt or maintenance cadence beyond routine checks.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A highly actionable and constraint-compliant runbook with concrete commands, though it could better address production nuances like database locking and long-term maintainability.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "A highly actionable and constraint-compliant runbook with concrete commands, though it could better address production nuances like database locking and long-term maintainability.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

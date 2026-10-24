@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for an explanation of cost differences, legal exposure, and a sequencing plan. The response delivers all three concretely: it provides a detailed cost breakdown with line items (INSS, FGTS, 13th salary, etc.), explains legal risks (retroactive liability, fake PJ criteria), and offers a step-by-step sequence (consult professionals, negotiate, terminate PJ agreement, sign CLT contract, address past liability). The output includes specific options (e.g., 'extrajudicial agreement') and could be used in a meeting with light editing, though it stops short of providing exact salary figures or templates.",
+    "constraint_fidelity": "The prompt describes a 9-person marketing agency in São Paulo, Brazil, converting two long-term PJ contractors to CLT employees due to client compliance demands. The response respects all constraints: it focuses on Brazil-specific labor laws (CLT, FGTS, INSS), provides cost breakdowns relevant to a small agency, and acknowledges the need for professional consultation without assuming large-company resources. It explicitly mentions the agency's likely tax regime (Simples Nacional) and provides arithmetic showing cost differences (e.g., CLT costs ~160-180% of gross salary). No constraints are ignored or violated.",
+    "contextual_realism": "The response is calibrated for a small, resource-constrained agency: it avoids assuming dedicated HR or legal teams, emphasizes consulting external professionals (accountant, lawyer), and notes cost-saving aspects of Simples Nacional. It recognizes role overlap (e.g., the agency handling negotiations directly) and the financial impact of benefits like health insurance and meal vouchers. However, it suggests variable benefits (e.g., health plan costs R$500–R$1,500+) without explicitly addressing affordability for a 9-person agency, which might be a minor gap.",
+    "jurisdictional_accuracy": "The response is highly accurate for Brazil: it correctly references CLT, FGTS, INSS, 13th salary, vacation bonus, eSocial, and CTPS Digital. It avoids US assumptions (no mention of IRS, W-2, 1099, or at-will employment) and focuses on Brazilian labor principles (e.g., 'princípio da primazia da realidade'). It also provides specific referrals to professionals (accountant, labor lawyer) with justified reasons (cost simulations, liability handling), not just generic disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-007",
+  "judge_cost_usd": 0.0013867,
+  "judge_latency_s": 63.105,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 9-person marketing agency in São Paulo, Brazil, converting two long-term PJ contractors to CLT employees due to client compliance demands. The response respects all constraints: it focuses on Brazil-specific labor laws (CLT, FGTS, INSS), provides cost breakdowns relevant to a small agency, and acknowledges the need for professional consultation without assuming large-company resources. It explicitly mentions the agency's likely tax regime (Simples Nacional) and provides arithmetic showing cost differences (e.g., CLT costs ~160-180% of gross salary). No constraints are ignored or violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small, resource-constrained agency: it avoids assuming dedicated HR or legal teams, emphasizes consulting external professionals (accountant, lawyer), and notes cost-saving aspects of Simples Nacional. It recognizes role overlap (e.g., the agency handling negotiations directly) and the financial impact of benefits like health insurance and meal vouchers. However, it suggests variable benefits (e.g., health plan costs R$500–R$1,500+) without explicitly addressing affordability for a 9-person agency, which might be a minor gap.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for an explanation of cost differences, legal exposure, and a sequencing plan. The response delivers all three concretely: it provides a detailed cost breakdown with line items (INSS, FGTS, 13th salary, etc.), explains legal risks (retroactive liability, fake PJ criteria), and offers a step-by-step sequence (consult professionals, negotiate, terminate PJ agreement, sign CLT contract, address past liability). The output includes specific options (e.g., 'extrajudicial agreement') and could be used in a meeting with light editing, though it stops short of providing exact salary figures or templates.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is highly accurate for Brazil: it correctly references CLT, FGTS, INSS, 13th salary, vacation bonus, eSocial, and CTPS Digital. It avoids US assumptions (no mention of IRS, W-2, 1099, or at-will employment) and focuses on Brazilian labor principles (e.g., 'princípio da primazia da realidade'). It also provides specific referrals to professionals (accountant, labor lawyer) with justified reasons (cost simulations, liability handling), not just generic disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly specific to Brazil's legal context and provides actionable, well-reasoned advice for a small agency.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response is highly specific to Brazil's legal context and provides actionable, well-reasoned advice for a small agency.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

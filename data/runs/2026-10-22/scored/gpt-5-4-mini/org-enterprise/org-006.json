@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a specific recommendation with named tools (KoBoToolbox, Android devices), a costed breakdown (line items and totals), and a concrete sustainability plan. It includes components like device procurement, training, migration prioritization, and ongoing cost estimates. The output could be taken into a meeting with light editing, as it provides executable steps rather than just describing the process.",
+    "constraint_fidelity": "The response respects all constraints: budget (PHP 400,000 total), timeline (18 months), low digital literacy, intermittent electricity/no reliable internet. It provides a detailed cost breakdown that sums to exactly PHP 400,000, showing arithmetic: devices PHP 120,000 + accessories PHP 25,000 + setup PHP 50,000 + training PHP 45,000 + migration PHP 40,000 + connectivity PHP 36,000 + support PHP 50,000 + contingency PHP 34,000 = PHP 400,000.",
+    "contextual_realism": "The response is calibrated for a small nonprofit: uses low-cost/free tools (KoBoToolbox, Android devices), avoids enterprise SaaS, accounts for low digital literacy with simple forms and training, and acknowledges field constraints (offline use, power banks). It does not assume dedicated IT/HR staff, instead recommending part-time support and internal super users. However, it suggests Airtable/Google Sheets/Looker Studio which may require internet access for admin use, slightly overlooking the intermittent connectivity constraint for back-office functions.",
+    "jurisdictional_accuracy": "The prompt involves the Philippines but does not specify legal/regulatory aspects. The response focuses on technical and operational recommendations without making jurisdiction-specific claims. It uses PHP for currency and suggests local IT support, but does not assert US defaults (e.g., no mention of US tax or employment practices). It is factually accurate for the tools proposed and avoids generic disclaimers like 'consult a lawyer'."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00116432,
+  "judge_latency_s": 54.268,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: budget (PHP 400,000 total), timeline (18 months), low digital literacy, intermittent electricity/no reliable internet. It provides a detailed cost breakdown that sums to exactly PHP 400,000, showing arithmetic: devices PHP 120,000 + accessories PHP 25,000 + setup PHP 50,000 + training PHP 45,000 + migration PHP 40,000 + connectivity PHP 36,000 + support PHP 50,000 + contingency PHP 34,000 = PHP 400,000.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small nonprofit: uses low-cost/free tools (KoBoToolbox, Android devices), avoids enterprise SaaS, accounts for low digital literacy with simple forms and training, and acknowledges field constraints (offline use, power banks). It does not assume dedicated IT/HR staff, instead recommending part-time support and internal super users. However, it suggests Airtable/Google Sheets/Looker Studio which may require internet access for admin use, slightly overlooking the intermittent connectivity constraint for back-office functions.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a specific recommendation with named tools (KoBoToolbox, Android devices), a costed breakdown (line items and totals), and a concrete sustainability plan. It includes components like device procurement, training, migration prioritization, and ongoing cost estimates. The output could be taken into a meeting with light editing, as it provides executable steps rather than just describing the process.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves the Philippines but does not specify legal/regulatory aspects. The response focuses on technical and operational recommendations without making jurisdiction-specific claims. It uses PHP for currency and suggests local IT support, but does not assert US defaults (e.g., no mention of US tax or employment practices). It is factually accurate for the tools proposed and avoids generic disclaimers like 'consult a lawyer'.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly actionable, constraint-aware plan with a fully costed budget and clear sustainability strategy.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a highly actionable, constraint-aware plan with a fully costed budget and clear sustainability strategy.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

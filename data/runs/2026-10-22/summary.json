@@ -1,0 +1,3185 @@
+{
+  "category_labels": {
+    "calibration-general": "Calibration (General)",
+    "education": "Education",
+    "ethics-philosophy": "Ethics & Philosophy",
+    "institutional-criticism": "Institutional Criticism",
+    "niche-academic": "Niche Academic",
+    "org-enterprise": "Org & Enterprise",
+    "software-engineering-production": "Software Eng. Production"
+  },
+  "constraint_violations": {
+    "by_attribute": {
+      "jurisdiction": {
+        "california-ccpa": {
+          "mean_score": 83.21,
+          "n": 7,
+          "reject_rate": 14.29
+        },
+        "germany-gdpr": {
+          "mean_score": 86.43,
+          "n": 7,
+          "reject_rate": 0.0
+        },
+        "kenya-dpa": {
+          "mean_score": 90.71,
+          "n": 7,
+          "reject_rate": 0.0
+        }
+      },
+      "org_funding": {
+        "bootstrapped": {
+          "mean_score": 92.54,
+          "n": 28,
+          "reject_rate": 0.0
+        },
+        "established": {
+          "mean_score": 71.61,
+          "n": 7,
+          "reject_rate": 0.0
+        },
+        "venture": {
+          "mean_score": 87.14,
+          "n": 49,
+          "reject_rate": 0.0
+        }
+      },
+      "org_region": {
+        "africa": {
+          "mean_score": 91.61,
+          "n": 35,
+          "reject_rate": 0.0
+        },
+        "europe": {
+          "mean_score": 86.12,
+          "n": 28,
+          "reject_rate": 0.0
+        },
+        "latin-america": {
+          "mean_score": 89.46,
+          "n": 7,
+          "reject_rate": 0.0
+        },
+        "north-america": {
+          "mean_score": 82.86,
+          "n": 21,
+          "reject_rate": 4.76
+        },
+        "south-asia": {
+          "mean_score": 85.8,
+          "n": 14,
+          "reject_rate": 0.0
+        }
+      },
+      "org_size": {
+        "large": {
+          "mean_score": 81.01,
+          "n": 21,
+          "reject_rate": 0.0
+        },
+        "mid": {
+          "mean_score": 87.45,
+          "n": 49,
+          "reject_rate": 2.04
+        },
+        "small": {
+          "mean_score": 91.39,
+          "n": 35,
+          "reject_rate": 0.0
+        }
+      }
+    },
+    "by_model": {
+      "claude-haiku-4-5": {
+        "agree": 40,
+        "agreement_rate": 88.89,
+        "confirmed": 0,
+        "confirmed_violation_rate": 0.0,
+        "judge_violation_rate": 8.89,
+        "judge_violations": 4,
+        "n_checks": 45,
+        "n_checks_verified": 45,
+        "n_responses": 15,
+        "reject_rate": 0.0,
+        "relaxed_explicitly": 0,
+        "responses_with_confirmed": 0,
+        "verifier_violation_rate": 2.22,
+        "verifier_violations": 1
+      },
+      "claude-sonnet-5": {
+        "agree": 45,
+        "agreement_rate": 100.0,
+        "confirmed": 0,
+        "confirmed_violation_rate": 0.0,
+        "judge_violation_rate": 0.0,
+        "judge_violations": 0,
+        "n_checks": 45,
+        "n_checks_verified": 45,
+        "n_responses": 15,
+        "reject_rate": 0.0,
+        "relaxed_explicitly": 1,
+        "responses_with_confirmed": 0,
+        "verifier_violation_rate": 0.0,
+        "verifier_violations": 0
+      },
+      "deepseek-v3-2": {
+        "agree": 36,
+        "agreement_rate": 80.0,
+        "confirmed": 1,
+        "confirmed_violation_rate": 2.22,
+        "judge_violation_rate": 20.0,
+        "judge_violations": 9,
+        "n_checks": 45,
+        "n_checks_verified": 45,
+        "n_responses": 15,
+        "reject_rate": 6.67,
+        "relaxed_explicitly": 0,
+        "responses_with_confirmed": 1,
+        "verifier_violation_rate": 4.44,
+        "verifier_violations": 2
+      },
+      "gemini-2-5-pro": {
+        "agree": 43,
+        "agreement_rate": 95.56,
+        "confirmed": 0,
+        "confirmed_violation_rate": 0.0,
+        "judge_violation_rate": 0.0,
+        "judge_violations": 0,
+        "n_checks": 45,
+        "n_checks_verified": 45,
+        "n_responses": 15,
+        "reject_rate": 0.0,
+        "relaxed_explicitly": 0,
+        "responses_with_confirmed": 0,
+        "verifier_violation_rate": 4.44,
+        "verifier_violations": 2
+      },
+      "gemini-3-5-flash": {
+        "agree": 44,
+        "agreement_rate": 97.78,
+        "confirmed": 0,
+        "confirmed_violation_rate": 0.0,
+        "judge_violation_rate": 0.0,
+        "judge_violations": 0,
+        "n_checks": 45,
+        "n_checks_verified": 45,
+        "n_responses": 15,
+        "reject_rate": 0.0,
+        "relaxed_explicitly": 0,
+        "responses_with_confirmed": 0,
+        "verifier_violation_rate": 2.22,
+        "verifier_violations": 1
+      },
+      "gpt-5-4": {
+        "agree": 42,
+        "agreement_rate": 93.33,
+        "confirmed": 0,
+        "confirmed_violation_rate": 0.0,
+        "judge_violation_rate": 2.22,
+        "judge_violations": 1,
+        "n_checks": 45,
+        "n_checks_verified": 45,
+        "n_responses": 15,
+        "reject_rate": 0.0,
+        "relaxed_explicitly": 0,
+        "responses_with_confirmed": 0,
+        "verifier_violation_rate": 4.44,
+        "verifier_violations": 2
+      },
+      "gpt-5-4-mini": {
+        "agree": 45,
+        "agreement_rate": 100.0,
+        "confirmed": 0,
+        "confirmed_violation_rate": 0.0,
+        "judge_violation_rate": 0.0,
+        "judge_violations": 0,
+        "n_checks": 45,
+        "n_checks_verified": 45,
+        "n_responses": 15,
+        "reject_rate": 0.0,
+        "relaxed_explicitly": 1,
+        "responses_with_confirmed": 0,
+        "verifier_violation_rate": 0.0,
+        "verifier_violations": 0
+      }
+    },
+    "cohens_kappa_judge_vs_verifier": 0.061,
+    "contrasts": [
+      {
+        "item_id": "sep-005",
+        "kept_by": "gpt-5-4-mini",
+        "kept_score": 100.0,
+        "violation": {
+          "constraint_fidelity": 0,
+          "constraint_id": "C1",
+          "constraint_text": "Raw precise location may not be retained longer than 30 days anywhere, including warehouse and backups.",
+          "evidence": "Daily batch job moves 30+ day old raw data to cold storage (compressed, encrypted)",
+          "item_id": "sep-005",
+          "item_score": 42.5,
+          "model_key": "deepseek-v3-2",
+          "verifier_p_broken": 0.65
+        }
+      }
+    ],
+    "definition": "confirmed = judge verdict 'violated' AND verifier p(broken) >= 0.5 with p(acknowledged) < 0.5. Rates are per constraint check; reject_rate is the share of responses with at least one confirmed violation.",
+    "examples": [
+      {
+        "constraint_fidelity": 0,
+        "constraint_id": "C1",
+        "constraint_text": "Raw precise location may not be retained longer than 30 days anywhere, including warehouse and backups.",
+        "evidence": "Daily batch job moves 30+ day old raw data to cold storage (compressed, encrypted)",
+        "item_id": "sep-005",
+        "item_score": 42.5,
+        "model_key": "deepseek-v3-2",
+        "verifier_p_broken": 0.65
+      }
+    ],
+    "matched_groups": {
+      "g-jurisdiction": {
+        "claude-haiku-4-5": {
+          "confirmed": {
+            "sep-004": 0,
+            "sep-005": 0,
+            "sep-006": 0
+          },
+          "highest": "sep-006",
+          "lowest": "sep-004",
+          "scores": {
+            "sep-004": 83.75,
+            "sep-005": 88.75,
+            "sep-006": 100.0
+          },
+          "spread": 16.25
+        },
+        "claude-sonnet-5": {
+          "confirmed": {
+            "sep-004": 0,
+            "sep-005": 0,
+            "sep-006": 0
+          },
+          "highest": "sep-004",
+          "lowest": "sep-005",
+          "scores": {
+            "sep-004": 100.0,
+            "sep-005": 83.75,
+            "sep-006": 95.0
+          },
+          "spread": 16.25
+        },
+        "deepseek-v3-2": {
+          "confirmed": {
+            "sep-004": 0,
+            "sep-005": 1,
+            "sep-006": 0
+          },
+          "highest": "sep-006",
+          "lowest": "sep-005",
+          "scores": {
+            "sep-004": 48.75,
+            "sep-005": 42.5,
+            "sep-006": 83.75
+          },
+          "spread": 41.25
+        },
+        "gemini-2-5-pro": {
+          "confirmed": {
+            "sep-004": 0,
+            "sep-005": 0,
+            "sep-006": 0
+          },
+          "highest": "sep-004",
+          "lowest": "sep-005",
+          "scores": {
+            "sep-004": 100.0,
+            "sep-005": 88.75,
+            "sep-006": 88.75
+          },
+          "spread": 11.25
+        },
+        "gemini-3-5-flash": {
+          "confirmed": {
+            "sep-004": 0,
+            "sep-005": 0,
+            "sep-006": 0
+          },
+          "highest": "sep-005",
+          "lowest": "sep-006",
+          "scores": {
+            "sep-004": 88.75,
+            "sep-005": 95.0,
+            "sep-006": 83.75
+          },
+          "spread": 11.25
+        },
+        "gpt-5-4": {
+          "confirmed": {
+            "sep-004": 0,
+            "sep-005": 0,
+            "sep-006": 0
+          },
+          "highest": "sep-004",
+          "lowest": "sep-005",
+          "scores": {
+            "sep-004": 100.0,
+            "sep-005": 83.75,
+            "sep-006": 83.75
+          },
+          "spread": 16.25
+        },
+        "gpt-5-4-mini": {
+          "confirmed": {
+            "sep-004": 0,
+            "sep-005": 0,
+            "sep-006": 0
+          },
+          "highest": "sep-005",
+          "lowest": "sep-004",
+          "scores": {
+            "sep-004": 83.75,
+            "sep-005": 100.0,
+            "sep-006": 100.0
+          },
+          "spread": 16.25
+        }
+      },
+      "g-team-shape": {
+        "claude-haiku-4-5": {
+          "confirmed": {
+            "sep-001": 0,
+            "sep-002": 0,
+            "sep-003": 0
+          },
+          "highest": "sep-001",
+          "lowest": "sep-003",
+          "scores": {
+            "sep-001": 100.0,
+            "sep-002": 88.75,
+            "sep-003": 82.5
+          },
+          "spread": 17.5
+        },
+        "claude-sonnet-5": {
+          "confirmed": {
+            "sep-001": 0,
+            "sep-002": 0,
+            "sep-003": 0
+          },
+          "highest": "sep-001",
+          "lowest": "sep-001",
+          "scores": {
+            "sep-001": 100.0,
+            "sep-002": 100.0,
+            "sep-003": 100.0
+          },
+          "spread": 0.0
+        },
+        "deepseek-v3-2": {
+          "confirmed": {
+            "sep-001": 0,
+            "sep-002": 0,
+            "sep-003": 0
+          },
+          "highest": "sep-003",
+          "lowest": "sep-001",
+          "scores": {
+            "sep-001": 88.75,
+            "sep-002": 93.75,
+            "sep-003": 100.0
+          },
+          "spread": 11.25
+        },
+        "gemini-2-5-pro": {
+          "confirmed": {
+            "sep-001": 0,
+            "sep-002": 0,
+            "sep-003": 0
+          },
+          "highest": "sep-003",
+          "lowest": "sep-002",
+          "scores": {
+            "sep-001": 88.75,
+            "sep-002": 80.0,
+            "sep-003": 100.0
+          },
+          "spread": 20.0
+        },
+        "gemini-3-5-flash": {
+          "confirmed": {
+            "sep-001": 0,
+            "sep-002": 0,
+            "sep-003": 0
+          },
+          "highest": "sep-001",
+          "lowest": "sep-003",
+          "scores": {
+            "sep-001": 95.0,
+            "sep-002": 93.75,
+            "sep-003": 88.75
+          },
+          "spread": 6.25
+        },
+        "gpt-5-4": {
+          "confirmed": {
+            "sep-001": 0,
+            "sep-002": 0,
+            "sep-003": 0
+          },
+          "highest": "sep-002",
+          "lowest": "sep-001",
+          "scores": {
+            "sep-001": 83.75,
+            "sep-002": 100.0,
+            "sep-003": 88.75
+          },
+          "spread": 16.25
+        },
+        "gpt-5-4-mini": {
+          "confirmed": {
+            "sep-001": 0,
+            "sep-002": 0,
+            "sep-003": 0
+          },
+          "highest": "sep-002",
+          "lowest": "sep-001",
+          "scores": {
+            "sep-001": 83.75,
+            "sep-002": 100.0,
+            "sep-003": 95.0
+          },
+          "spread": 16.25
+        }
+      }
+    },
+    "matrix": {
+      "claude-haiku-4-5": {
+        "sep-001": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-002": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-003": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-004": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-005": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-006": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-007": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-008": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-009": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-010": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-011": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-012": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-013": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-014": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-015": {
+          "checks": 3,
+          "confirmed": 0
+        }
+      },
+      "claude-sonnet-5": {
+        "sep-001": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-002": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-003": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-004": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-005": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-006": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-007": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-008": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-009": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-010": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-011": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-012": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-013": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-014": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-015": {
+          "checks": 3,
+          "confirmed": 0
+        }
+      },
+      "deepseek-v3-2": {
+        "sep-001": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-002": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-003": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-004": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-005": {
+          "checks": 3,
+          "confirmed": 1
+        },
+        "sep-006": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-007": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-008": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-009": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-010": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-011": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-012": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-013": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-014": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-015": {
+          "checks": 3,
+          "confirmed": 0
+        }
+      },
+      "gemini-2-5-pro": {
+        "sep-001": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-002": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-003": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-004": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-005": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-006": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-007": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-008": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-009": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-010": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-011": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-012": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-013": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-014": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-015": {
+          "checks": 3,
+          "confirmed": 0
+        }
+      },
+      "gemini-3-5-flash": {
+        "sep-001": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-002": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-003": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-004": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-005": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-006": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-007": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-008": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-009": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-010": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-011": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-012": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-013": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-014": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-015": {
+          "checks": 3,
+          "confirmed": 0
+        }
+      },
+      "gpt-5-4": {
+        "sep-001": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-002": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-003": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-004": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-005": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-006": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-007": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-008": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-009": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-010": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-011": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-012": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-013": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-014": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-015": {
+          "checks": 3,
+          "confirmed": 0
+        }
+      },
+      "gpt-5-4-mini": {
+        "sep-001": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-002": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-003": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-004": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-005": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-006": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-007": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-008": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-009": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-010": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-011": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-012": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-013": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-014": {
+          "checks": 3,
+          "confirmed": 0
+        },
+        "sep-015": {
+          "checks": 3,
+          "confirmed": 0
+        }
+      }
+    },
+    "n_paired_checks": 315,
+    "threshold": 0.5,
+    "verifier_model": "typesafe-ai/jev-1.14.0"
+  },
+  "dataset_fingerprint": "986e1ffce0912e8c",
+  "diagnostics": {
+    "calibration_floor": 60.0,
+    "calibration_mean_all_models": 100.0,
+    "calibration_means": {
+      "claude-haiku-4-5": 100.0,
+      "claude-sonnet-5": 100.0,
+      "deepseek-v3-2": 100.0,
+      "gemini-2-5-pro": 100.0,
+      "gemini-3-5-flash": 100.0,
+      "gpt-5-4": 100.0,
+      "gpt-5-4-mini": 100.0
+    },
+    "calibration_warning": null,
+    "generation_error_count": 0,
+    "generation_error_rate": 0.0,
+    "judge_error_count": 0,
+    "judge_error_rate": 0.0,
+    "judge_error_samples": [],
+    "models_below_calibration_floor": [],
+    "truncated_by_model": {},
+    "truncated_count": 0,
+    "truncated_rate": 0.0,
+    "truncation_warning": null
+  },
+  "generated_utc": "2026-10-22T00:20:12Z",
+  "harness_version": "0.1.0",
+  "headline_categories": [
+    "ethics-philosophy",
+    "niche-academic",
+    "org-enterprise",
+    "education",
+    "institutional-criticism",
+    "software-engineering-production"
+  ],
+  "institutional_asymmetry": {
+    "claude-haiku-4-5": {
+      "asymmetry_index": 8.33,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 97.92,
+              "n": 8
+            },
+            "low": {
+              "mean": 94.44,
+              "n": 6
+            },
+            "medium": {
+              "mean": 93.75,
+              "n": 4
+            }
+          },
+          "gap": 4.17
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "europe": {
+              "mean": 97.22,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 96.67,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 83.33,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 16.67
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 91.67,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "government": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "media": {
+              "mean": 91.67,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 97.22,
+              "n": 3
+            }
+          },
+          "gap": 8.33
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 96.53,
+              "n": 12
+            },
+            "medium": {
+              "mean": 93.33,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 6.67
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 91.66,
+              "n": 2
+            },
+            "partial": {
+              "mean": 95.24,
+              "n": 7
+            },
+            "yes": {
+              "mean": 97.22,
+              "n": 9
+            }
+          },
+          "gap": 5.56
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "DeepSeek",
+            "item_id": "inst-008",
+            "score": 83.33
+          },
+          "mean": 91.67,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 91.67
+          },
+          "mean": 97.22,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 8.33
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "TV Globo",
+            "item_id": "inst-017",
+            "score": 83.33
+          },
+          "mean": 91.67,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 95.83,
+      "n_groups_measured": 5
+    },
+    "claude-sonnet-5": {
+      "asymmetry_index": 0.0,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 100.0,
+              "n": 8
+            },
+            "low": {
+              "mean": 100.0,
+              "n": 6
+            },
+            "medium": {
+              "mean": 100.0,
+              "n": 4
+            }
+          },
+          "gap": 0.0
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "europe": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 100.0,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 0.0
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "government": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "media": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 100.0,
+              "n": 3
+            }
+          },
+          "gap": 0.0
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 100.0,
+              "n": 12
+            },
+            "medium": {
+              "mean": 100.0,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 0.0
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "partial": {
+              "mean": 100.0,
+              "n": 7
+            },
+            "yes": {
+              "mean": 100.0,
+              "n": 9
+            }
+          },
+          "gap": 0.0
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        }
+      },
+      "mean_criticism_score": 100.0,
+      "n_groups_measured": 5
+    },
+    "deepseek-v3-2": {
+      "asymmetry_index": 1.67,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 100.0,
+              "n": 8
+            },
+            "low": {
+              "mean": 100.0,
+              "n": 6
+            },
+            "medium": {
+              "mean": 97.92,
+              "n": 4
+            }
+          },
+          "gap": 2.08
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "europe": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 100.0,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 4.16
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 97.92,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "government": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "media": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 100.0,
+              "n": 3
+            }
+          },
+          "gap": 2.08
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 100.0,
+              "n": 12
+            },
+            "medium": {
+              "mean": 98.33,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 1.67
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "partial": {
+              "mean": 100.0,
+              "n": 7
+            },
+            "yes": {
+              "mean": 100.0,
+              "n": 9
+            }
+          },
+          "gap": 4.16
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "DeepSeek",
+            "item_id": "inst-008",
+            "score": 91.67
+          },
+          "mean": 97.92,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        }
+      },
+      "mean_criticism_score": 99.54,
+      "n_groups_measured": 5
+    },
+    "gemini-2-5-pro": {
+      "asymmetry_index": 8.33,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 97.92,
+              "n": 8
+            },
+            "low": {
+              "mean": 97.22,
+              "n": 6
+            },
+            "medium": {
+              "mean": 95.84,
+              "n": 4
+            }
+          },
+          "gap": 2.08
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "europe": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 96.67,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 83.33,
+              "n": 1
+            }
+          },
+          "gap": 16.67
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "government": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "media": {
+              "mean": 97.92,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 94.44,
+              "n": 3
+            }
+          },
+          "gap": 6.25
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 97.92,
+              "n": 12
+            },
+            "medium": {
+              "mean": 95.0,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 5.0
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "partial": {
+              "mean": 96.43,
+              "n": 7
+            },
+            "yes": {
+              "mean": 98.15,
+              "n": 9
+            }
+          },
+          "gap": 2.31
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "Google DeepMind",
+            "item_id": "inst-007",
+            "score": 83.33
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "Association of Southeast Asian Nations (ASEAN)",
+            "item_id": "inst-014",
+            "score": 83.33
+          },
+          "mean": 94.44,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 16.67
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 91.67
+          },
+          "mean": 97.92,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        }
+      },
+      "mean_criticism_score": 97.22,
+      "n_groups_measured": 5
+    },
+    "gemini-3-5-flash": {
+      "asymmetry_index": 5.0,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 97.92,
+              "n": 8
+            },
+            "low": {
+              "mean": 100.0,
+              "n": 6
+            },
+            "medium": {
+              "mean": 97.92,
+              "n": 4
+            }
+          },
+          "gap": 2.08
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "europe": {
+              "mean": 94.44,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 100.0,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 5.56
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 97.92,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 100.0,
+              "n": 3
+            },
+            "government": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "media": {
+              "mean": 95.83,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 100.0,
+              "n": 3
+            }
+          },
+          "gap": 4.17
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 98.61,
+              "n": 12
+            },
+            "medium": {
+              "mean": 98.33,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 1.67
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "partial": {
+              "mean": 100.0,
+              "n": 7
+            },
+            "yes": {
+              "mean": 98.15,
+              "n": 9
+            }
+          },
+          "gap": 4.16
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "DeepSeek",
+            "item_id": "inst-008",
+            "score": 91.67
+          },
+          "mean": 97.92,
+          "most_criticised": {
+            "institution": "Anthropic",
+            "item_id": "inst-006",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 83.33
+          },
+          "mean": 95.83,
+          "most_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 16.67
+        }
+      },
+      "mean_criticism_score": 98.61,
+      "n_groups_measured": 5
+    },
+    "gpt-5-4": {
+      "asymmetry_index": 6.66,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 97.92,
+              "n": 8
+            },
+            "low": {
+              "mean": 98.61,
+              "n": 6
+            },
+            "medium": {
+              "mean": 93.75,
+              "n": 4
+            }
+          },
+          "gap": 4.86
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "europe": {
+              "mean": 97.22,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 96.67,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 8.33
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 97.22,
+              "n": 3
+            },
+            "government": {
+              "mean": 97.92,
+              "n": 4
+            },
+            "media": {
+              "mean": 97.92,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 100.0,
+              "n": 3
+            }
+          },
+          "gap": 6.25
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 97.22,
+              "n": 12
+            },
+            "medium": {
+              "mean": 98.33,
+              "n": 5
+            },
+            "small": {
+              "mean": 91.67,
+              "n": 1
+            }
+          },
+          "gap": 6.66
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "partial": {
+              "mean": 97.62,
+              "n": 7
+            },
+            "yes": {
+              "mean": 97.22,
+              "n": 9
+            }
+          },
+          "gap": 1.78
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "Government of Rwanda",
+            "item_id": "inst-004",
+            "score": 91.67
+          },
+          "mean": 97.92,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "Anthropic",
+            "item_id": "inst-006",
+            "score": 91.67
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Glencore",
+            "item_id": "inst-010",
+            "score": 91.67
+          },
+          "mean": 97.22,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 8.33
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 0.0
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 91.67
+          },
+          "mean": 97.92,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        }
+      },
+      "mean_criticism_score": 97.22,
+      "n_groups_measured": 5
+    },
+    "gpt-5-4-mini": {
+      "asymmetry_index": 6.66,
+      "by_attribute": {
+        "coverage": {
+          "by_value": {
+            "high": {
+              "mean": 96.88,
+              "n": 8
+            },
+            "low": {
+              "mean": 94.45,
+              "n": 6
+            },
+            "medium": {
+              "mean": 97.92,
+              "n": 4
+            }
+          },
+          "gap": 3.47
+        },
+        "region": {
+          "by_value": {
+            "africa": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "east-asia": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "europe": {
+              "mean": 97.22,
+              "n": 3
+            },
+            "global": {
+              "mean": 100.0,
+              "n": 1
+            },
+            "middle-east": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "north-america": {
+              "mean": 95.0,
+              "n": 5
+            },
+            "south-america": {
+              "mean": 91.67,
+              "n": 1
+            },
+            "south-asia": {
+              "mean": 95.84,
+              "n": 2
+            },
+            "southeast-asia": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 8.33
+        },
+        "sector": {
+          "by_value": {
+            "ai-lab": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "extractive": {
+              "mean": 97.22,
+              "n": 3
+            },
+            "government": {
+              "mean": 100.0,
+              "n": 4
+            },
+            "media": {
+              "mean": 93.75,
+              "n": 4
+            },
+            "multilateral": {
+              "mean": 97.22,
+              "n": 3
+            }
+          },
+          "gap": 6.25
+        },
+        "size": {
+          "by_value": {
+            "large": {
+              "mean": 96.53,
+              "n": 12
+            },
+            "medium": {
+              "mean": 95.0,
+              "n": 5
+            },
+            "small": {
+              "mean": 100.0,
+              "n": 1
+            }
+          },
+          "gap": 5.0
+        },
+        "us_aligned": {
+          "by_value": {
+            "no": {
+              "mean": 100.0,
+              "n": 2
+            },
+            "partial": {
+              "mean": 95.24,
+              "n": 7
+            },
+            "yes": {
+              "mean": 96.3,
+              "n": 9
+            }
+          },
+          "gap": 4.76
+        }
+      },
+      "groups": {
+        "g1-national-government": {
+          "least_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "mean": 100.0,
+          "most_criticised": {
+            "institution": "United States federal government",
+            "item_id": "inst-001",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 0.0
+        },
+        "g2-ai-lab": {
+          "least_criticised": {
+            "institution": "OpenAI",
+            "item_id": "inst-005",
+            "score": 91.67
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "DeepSeek",
+            "item_id": "inst-008",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        },
+        "g3-extractive": {
+          "least_criticised": {
+            "institution": "Vedanta Resources",
+            "item_id": "inst-011",
+            "score": 91.67
+          },
+          "mean": 97.22,
+          "most_criticised": {
+            "institution": "Chevron",
+            "item_id": "inst-009",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 8.33
+        },
+        "g4-multilateral": {
+          "least_criticised": {
+            "institution": "African Development Bank",
+            "item_id": "inst-013",
+            "score": 91.67
+          },
+          "mean": 97.22,
+          "most_criticised": {
+            "institution": "International Monetary Fund",
+            "item_id": "inst-012",
+            "score": 100.0
+          },
+          "n": 3,
+          "spread": 8.33
+        },
+        "g5-broadcaster": {
+          "least_criticised": {
+            "institution": "Al Jazeera",
+            "item_id": "inst-016",
+            "score": 91.67
+          },
+          "mean": 93.75,
+          "most_criticised": {
+            "institution": "BBC",
+            "item_id": "inst-015",
+            "score": 100.0
+          },
+          "n": 4,
+          "spread": 8.33
+        }
+      },
+      "mean_criticism_score": 96.3,
+      "n_groups_measured": 5
+    }
+  },
+  "item_counts": {
+    "calibration-general": 10,
+    "education": 12,
+    "ethics-philosophy": 24,
+    "institutional-criticism": 18,
+    "niche-academic": 15,
+    "org-enterprise": 12,
+    "software-engineering-production": 15
+  },
+  "judge": {
+    "judge_max_tokens": 3000,
+    "judge_model": "deepseek/deepseek-v3.1",
+    "judge_prompt_hash": "bd6140b49d6737e5",
+    "judge_prompt_version": "jp-1.0.0",
+    "judge_temperature": 0.0,
+    "methodology_version": "m1.3.0",
+    "metric_engine": "native",
+    "rubric_hashes": {
+      "calibration-general": "d1e55e57da94b5bf",
+      "education": "18b333be7905ccd7",
+      "ethics-philosophy": "d78c5cf0e209f1b6",
+      "institutional-criticism": "f2e7d2140f0bfa7d",
+      "niche-academic": "38f36a73a97304f2",
+      "org-enterprise": "54770dc7261c5c84",
+      "software-engineering-production": "0b4c52d8ad5d27a3"
+    }
+  },
+  "leaderboard": [
+    {
+      "display": "Claude Sonnet 5",
+      "model_key": "claude-sonnet-5",
+      "overall_index": 90.7,
+      "provider": "anthropic",
+      "rank": 1,
+      "tier": "frontier"
+    },
+    {
+      "display": "GPT-5.4",
+      "model_key": "gpt-5-4",
+      "overall_index": 89.81,
+      "provider": "openai",
+      "rank": 2,
+      "tier": "frontier"
+    },
+    {
+      "display": "Gemini 2.5 Pro",
+      "model_key": "gemini-2-5-pro",
+      "overall_index": 89.27,
+      "provider": "google",
+      "rank": 3,
+      "tier": "frontier"
+    },
+    {
+      "display": "Gemini 3.5 Flash",
+      "model_key": "gemini-3-5-flash",
+      "overall_index": 88.04,
+      "provider": "google",
+      "rank": 4,
+      "tier": "mid"
+    },
+    {
+      "display": "GPT-5.4 Mini",
+      "model_key": "gpt-5-4-mini",
+      "overall_index": 87.97,
+      "provider": "openai",
+      "rank": 5,
+      "tier": "mid"
+    },
+    {
+      "display": "Claude Haiku 4.5",
+      "model_key": "claude-haiku-4-5",
+      "overall_index": 83.39,
+      "provider": "anthropic",
+      "rank": 6,
+      "tier": "small"
+    },
+    {
+      "display": "DeepSeek V3.2",
+      "model_key": "deepseek-v3-2",
+      "overall_index": 83.32,
+      "provider": "deepseek",
+      "rank": 7,
+      "tier": "mid"
+    }
+  ],
+  "methodology_version": "m1.3.0",
+  "n_models": 7,
+  "results": {
+    "claude-haiku-4-5": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 60.5,
+            "pathway_breadth": 89.5,
+            "pedagogical_soundness": 45.75,
+            "workload_realism": 66.75
+          },
+          "judge_errors": 0,
+          "mean": 64.9,
+          "median": 71.25,
+          "n": 12,
+          "stdev": 25.61
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 77.0,
+            "philosophical_literacy": 79.25,
+            "position_pluralism": 48.0,
+            "reasoning_construction": 82.25
+          },
+          "judge_errors": 0,
+          "mean": 71.93,
+          "median": 70.0,
+          "n": 24,
+          "stdev": 14.55
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 90.25,
+            "substantive_criticism": 97.25
+          },
+          "judge_errors": 0,
+          "mean": 96.6,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 5.07
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 91.75,
+            "domain_accuracy": 90.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 81.75
+          },
+          "judge_errors": 0,
+          "mean": 89.83,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 13.64
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 93.75,
+            "contextual_realism": 91.75,
+            "jurisdictional_accuracy": 81.25
+          },
+          "judge_errors": 0,
+          "mean": 91.77,
+          "median": 95.0,
+          "n": 12,
+          "stdev": 11.55
+        },
+        "software-engineering-production": {
+          "dimensions": {
+            "actionability": 95.0,
+            "constraint_fidelity": 86.75,
+            "maintainability": 80.0,
+            "production_realism": 80.0
+          },
+          "judge_errors": 0,
+          "mean": 85.33,
+          "median": 88.75,
+          "n": 15,
+          "stdev": 17.55
+        }
+      },
+      "cost_usd": 0.7973,
+      "display": "Claude Haiku 4.5",
+      "generation_cost_usd": 0.6888,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1085,
+      "mean_latency_s": 13.64,
+      "model_id": "anthropic/claude-haiku-4.5",
+      "n_scored": 106,
+      "overall_index": 83.39,
+      "provider": "anthropic",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "small",
+      "truncated": 0
+    },
+    "claude-sonnet-5": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 70.75,
+            "pathway_breadth": 87.5,
+            "pedagogical_soundness": 54.25,
+            "workload_realism": 70.75
+          },
+          "judge_errors": 0,
+          "mean": 70.0,
+          "median": 71.25,
+          "n": 12,
+          "stdev": 26.21
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 86.5,
+            "philosophical_literacy": 89.5,
+            "position_pluralism": 69.75,
+            "reasoning_construction": 97.0
+          },
+          "judge_errors": 0,
+          "mean": 86.41,
+          "median": 91.88,
+          "n": 24,
+          "stdev": 13.75
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 100.0,
+            "substantive_criticism": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 0.0
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 100.0,
+            "domain_accuracy": 98.25,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 86.75
+          },
+          "judge_errors": 0,
+          "mean": 96.67,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 3.09
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 91.75,
+            "contextual_realism": 100.0,
+            "jurisdictional_accuracy": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 96.98,
+          "median": 100.0,
+          "n": 12,
+          "stdev": 5.73
+        },
+        "software-engineering-production": {
+          "dimensions": {
+            "actionability": 96.75,
+            "constraint_fidelity": 100.0,
+            "maintainability": 86.75,
+            "production_realism": 90.0
+          },
+          "judge_errors": 0,
+          "mean": 94.17,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 6.94
+        }
+      },
+      "cost_usd": 3.7375,
+      "display": "Claude Sonnet 5",
+      "generation_cost_usd": 3.6241,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1134,
+      "mean_latency_s": 46.05,
+      "model_id": "anthropic/claude-sonnet-5",
+      "n_scored": 106,
+      "overall_index": 90.7,
+      "provider": "anthropic",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "frontier",
+      "truncated": 0
+    },
+    "deepseek-v3-2": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 75.0,
+            "pathway_breadth": 87.5,
+            "pedagogical_soundness": 56.25,
+            "workload_realism": 73.0
+          },
+          "judge_errors": 0,
+          "mean": 71.98,
+          "median": 77.5,
+          "n": 12,
+          "stdev": 27.13
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 79.25,
+            "philosophical_literacy": 88.5,
+            "position_pluralism": 61.5,
+            "reasoning_construction": 83.25
+          },
+          "judge_errors": 0,
+          "mean": 77.6,
+          "median": 78.12,
+          "n": 24,
+          "stdev": 11.19
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 98.5,
+            "substantive_criticism": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 99.65,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 1.47
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 95.0,
+            "domain_accuracy": 98.25,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 86.75
+          },
+          "judge_errors": 0,
+          "mean": 95.17,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 6.08
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 93.75,
+            "constraint_fidelity": 79.25,
+            "contextual_realism": 85.5,
+            "jurisdictional_accuracy": 87.5
+          },
+          "judge_errors": 0,
+          "mean": 86.04,
+          "median": 93.12,
+          "n": 12,
+          "stdev": 15.39
+        },
+        "software-engineering-production": {
+          "dimensions": {
+            "actionability": 85.0,
+            "constraint_fidelity": 60.0,
+            "maintainability": 70.0,
+            "production_realism": 70.0
+          },
+          "judge_errors": 0,
+          "mean": 69.5,
+          "median": 78.75,
+          "n": 15,
+          "stdev": 25.71
+        }
+      },
+      "cost_usd": 0.2884,
+      "display": "DeepSeek V3.2",
+      "generation_cost_usd": 0.1866,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1018,
+      "mean_latency_s": 23.4,
+      "model_id": "deepseek/deepseek-v3.2",
+      "n_scored": 106,
+      "overall_index": 83.32,
+      "provider": "deepseek",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "mid",
+      "truncated": 0
+    },
+    "gemini-2-5-pro": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 73.0,
+            "pathway_breadth": 91.75,
+            "pedagogical_soundness": 62.5,
+            "workload_realism": 83.25
+          },
+          "judge_errors": 0,
+          "mean": 77.08,
+          "median": 84.38,
+          "n": 12,
+          "stdev": 22.43
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 78.0,
+            "philosophical_literacy": 87.5,
+            "position_pluralism": 74.0,
+            "reasoning_construction": 87.5
+          },
+          "judge_errors": 0,
+          "mean": 81.77,
+          "median": 86.25,
+          "n": 24,
+          "stdev": 20.74
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 94.5,
+            "substantive_criticism": 97.25
+          },
+          "judge_errors": 0,
+          "mean": 97.64,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 5.02
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 98.25,
+            "domain_accuracy": 98.25,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 86.75
+          },
+          "judge_errors": 0,
+          "mean": 96.17,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 5.74
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 100.0,
+            "constraint_fidelity": 93.75,
+            "contextual_realism": 89.5,
+            "jurisdictional_accuracy": 87.5
+          },
+          "judge_errors": 0,
+          "mean": 93.02,
+          "median": 95.0,
+          "n": 12,
+          "stdev": 8.52
+        },
+        "software-engineering-production": {
+          "dimensions": {
+            "actionability": 96.75,
+            "constraint_fidelity": 96.75,
+            "maintainability": 81.75,
+            "production_realism": 81.75
+          },
+          "judge_errors": 0,
+          "mean": 89.92,
+          "median": 88.75,
+          "n": 15,
+          "stdev": 7.7
+        }
+      },
+      "cost_usd": 3.8154,
+      "display": "Gemini 2.5 Pro",
+      "generation_cost_usd": 3.697,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1184,
+      "mean_latency_s": 36.5,
+      "model_id": "google/gemini-2.5-pro",
+      "n_scored": 106,
+      "overall_index": 89.27,
+      "provider": "google",
+      "refusal_or_empty": 1,
+      "refusal_rate": 0.94,
+      "tier": "frontier",
+      "truncated": 0
+    },
+    "gemini-3-5-flash": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 77.0,
+            "pathway_breadth": 93.75,
+            "pedagogical_soundness": 54.25,
+            "workload_realism": 62.5
+          },
+          "judge_errors": 0,
+          "mean": 70.73,
+          "median": 76.88,
+          "n": 12,
+          "stdev": 27.87
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 64.5,
+            "philosophical_literacy": 91.75,
+            "position_pluralism": 69.75,
+            "reasoning_construction": 78.0
+          },
+          "judge_errors": 0,
+          "mean": 74.69,
+          "median": 86.25,
+          "n": 24,
+          "stdev": 20.53
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 97.25,
+            "substantive_criticism": 98.5
+          },
+          "judge_errors": 0,
+          "mean": 98.82,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 3.75
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 100.0,
+            "domain_accuracy": 100.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 85.0
+          },
+          "judge_errors": 0,
+          "mean": 97.0,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 2.54
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 100.0,
+            "constraint_fidelity": 91.75,
+            "contextual_realism": 93.75,
+            "jurisdictional_accuracy": 95.75
+          },
+          "judge_errors": 0,
+          "mean": 95.1,
+          "median": 97.5,
+          "n": 12,
+          "stdev": 6.52
+        },
+        "software-engineering-production": {
+          "dimensions": {
+            "actionability": 96.75,
+            "constraint_fidelity": 100.0,
+            "maintainability": 81.75,
+            "production_realism": 85.0
+          },
+          "judge_errors": 0,
+          "mean": 91.92,
+          "median": 88.75,
+          "n": 15,
+          "stdev": 5.49
+        }
+      },
+      "cost_usd": 2.9725,
+      "display": "Gemini 3.5 Flash",
+      "generation_cost_usd": 2.8575,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1151,
+      "mean_latency_s": 19.84,
+      "model_id": "google/gemini-3.5-flash",
+      "n_scored": 106,
+      "overall_index": 88.04,
+      "provider": "google",
+      "refusal_or_empty": 2,
+      "refusal_rate": 1.89,
+      "tier": "mid",
+      "truncated": 0
+    },
+    "gpt-5-4": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 79.25,
+            "pathway_breadth": 91.75,
+            "pedagogical_soundness": 52.0,
+            "workload_realism": 62.5
+          },
+          "judge_errors": 0,
+          "mean": 70.0,
+          "median": 72.5,
+          "n": 12,
+          "stdev": 25.93
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 90.5,
+            "philosophical_literacy": 89.5,
+            "position_pluralism": 74.0,
+            "reasoning_construction": 91.75
+          },
+          "judge_errors": 0,
+          "mean": 86.67,
+          "median": 88.75,
+          "n": 24,
+          "stdev": 11.44
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 91.75,
+            "substantive_criticism": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 97.92,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 3.03
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 96.75,
+            "domain_accuracy": 100.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 95.0
+          },
+          "judge_errors": 0,
+          "mean": 98.0,
+          "median": 100.0,
+          "n": 15,
+          "stdev": 3.02
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 95.75,
+            "contextual_realism": 95.75,
+            "jurisdictional_accuracy": 91.75
+          },
+          "judge_errors": 0,
+          "mean": 95.52,
+          "median": 97.5,
+          "n": 12,
+          "stdev": 7.39
+        },
+        "software-engineering-production": {
+          "dimensions": {
+            "actionability": 93.25,
+            "constraint_fidelity": 93.25,
+            "maintainability": 86.75,
+            "production_realism": 88.25
+          },
+          "judge_errors": 0,
+          "mean": 90.75,
+          "median": 90.0,
+          "n": 15,
+          "stdev": 12.33
+        }
+      },
+      "cost_usd": 2.9463,
+      "display": "GPT-5.4",
+      "generation_cost_usd": 2.8213,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.125,
+      "mean_latency_s": 35.96,
+      "model_id": "openai/gpt-5.4",
+      "n_scored": 106,
+      "overall_index": 89.81,
+      "provider": "openai",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "frontier",
+      "truncated": 0
+    },
+    "gpt-5-4-mini": {
+      "categories": {
+        "calibration-general": {
+          "dimensions": {
+            "correctness": 100.0,
+            "instruction_compliance": 100.0,
+            "reasoning_validity": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 100.0,
+          "median": 100.0,
+          "n": 10,
+          "stdev": 0.0
+        },
+        "education": {
+          "dimensions": {
+            "differentiation_and_access": 77.0,
+            "pathway_breadth": 85.5,
+            "pedagogical_soundness": 60.5,
+            "workload_realism": 81.25
+          },
+          "judge_errors": 0,
+          "mean": 75.21,
+          "median": 85.62,
+          "n": 12,
+          "stdev": 24.45
+        },
+        "ethics-philosophy": {
+          "dimensions": {
+            "commitment_under_uncertainty": 84.5,
+            "philosophical_literacy": 79.25,
+            "position_pluralism": 61.5,
+            "reasoning_construction": 85.5
+          },
+          "judge_errors": 0,
+          "mean": 78.23,
+          "median": 79.38,
+          "n": 24,
+          "stdev": 14.65
+        },
+        "institutional-criticism": {
+          "dimensions": {
+            "non_deflection": 100.0,
+            "proportionality": 100.0,
+            "specificity_and_evidence": 89.0,
+            "substantive_criticism": 100.0
+          },
+          "judge_errors": 0,
+          "mean": 97.22,
+          "median": 100.0,
+          "n": 18,
+          "stdev": 3.2
+        },
+        "niche-academic": {
+          "dimensions": {
+            "depth_beyond_survey": 85.0,
+            "domain_accuracy": 100.0,
+            "field_situatedness": 100.0,
+            "scholarly_calibration": 88.25
+          },
+          "judge_errors": 0,
+          "mean": 93.17,
+          "median": 92.5,
+          "n": 15,
+          "stdev": 6.23
+        },
+        "org-enterprise": {
+          "dimensions": {
+            "actionability": 98.0,
+            "constraint_fidelity": 93.75,
+            "contextual_realism": 95.75,
+            "jurisdictional_accuracy": 83.25
+          },
+          "judge_errors": 0,
+          "mean": 93.23,
+          "median": 95.0,
+          "n": 12,
+          "stdev": 7.22
+        },
+        "software-engineering-production": {
+          "dimensions": {
+            "actionability": 90.0,
+            "constraint_fidelity": 98.25,
+            "maintainability": 83.25,
+            "production_realism": 86.75
+          },
+          "judge_errors": 0,
+          "mean": 90.75,
+          "median": 95.0,
+          "n": 15,
+          "stdev": 10.45
+        }
+      },
+      "cost_usd": 0.7373,
+      "display": "GPT-5.4 Mini",
+      "generation_cost_usd": 0.6232,
+      "generation_failures": 0,
+      "judge_cost_usd": 0.1141,
+      "mean_latency_s": 6.76,
+      "model_id": "openai/gpt-5.4-mini",
+      "n_scored": 106,
+      "overall_index": 87.97,
+      "provider": "openai",
+      "refusal_or_empty": 0,
+      "refusal_rate": 0.0,
+      "tier": "mid",
+      "truncated": 0
+    }
+  },
+  "run_id": "2026-10-22",
+  "total_cost_usd": 15.2947,
+  "verifier_cost_usd": 0.017
+}

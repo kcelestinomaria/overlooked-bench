@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 584,
+  "cost_usd": 0.00112938,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "1668f95fcbe992a7",
+  "item_id": "inst-005",
+  "latency_s": 11.418,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 79,
+  "provider": "deepseek",
+  "request_fingerprint": "446ed8c97a1855d7",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "OpenAI’s transition from an open research nonprofit to a closed, commercially-driven entity represents a foundational breach of its original safety and transparency mandate. This shift is not merely philosophical but operational, with specific decisions directly undermining public accountability and increasing societal risk.\n\nA primary harmful decision was the dissolution of OpenAI’s “Founding” nonprofit board in November 2023, following the attempted ouster and reinstatement of CEO Sam Altman. The newly constituted board, devoid of members with strong AI safety backgrounds and heavily influenced by commercial partners like Microsoft, demonstrated that **corporate and investor interests now formally supersede the nonprofit’s mission to “benefit humanity.”** The mechanism of harm is clear: governance structures designed to enforce caution and prioritize safety over profit were dismantled. Accountability lies with Sam Altman and the previous board members who acquiesced to a restructuring that neutered independent oversight, placing effective control in the hands of actors with fiduciary duties to shareholders, not the public.\n\nThis governance failure is exacerbated by a persistent pattern of strategic non-disclosure. OpenAI has consistently withheld basic information about its model development, including the **sources and scale of training data, the energy and computational resources consumed, and the specific methodologies used for safety testing.** For instance, the company refused to disclose what data trained GPT-4, calling it a “competitive secret.” The harm here is twofold. First, it prevents independent researchers from auditing models for biases, copyright violations, or potential misuse, forcing society to accept OpenAI’s in-house, non-verifiable safety assurances. Second, it stifles public policy and informed democratic debate, as legislators and the public lack the facts necessary to regulate effectively. OpenAI’s leadership, particularly its C-suite and communications team, are accountable for enforcing this culture of secrecy, choosing market advantage over the collaborative, open science they once championed.\n\nFurthermore, specific product deployment decisions have demonstrated a reckless disregard for foreseeable harm. The **release of ChatGPT as a free, widely accessible tool** triggered a global surge in AI-generated disinformation, plagiarism, and automated phishing, without commensurate investment in robust, scalable mechanisms to track or mitigate these outcomes. The harm mechanism is the externalization of risk: society at large—educators, journalists, cybersecurity professionals—bears the cost of managing the downstream chaos, while OpenAI captures the user growth and data. Accountability rests with the product and leadership teams who prioritized viral adoption and network effects over staged, controlled release with enforceable use policies.\n\nIn conclusion, OpenAI’s record is defined by a deliberate retreat from transparency and a subordination of safety to commercial velocity. Through captured governance, intentional opacity, and precipitous deployment, the organization has actively eroded the very safeguards it purported to build. The accountability lies squarely with its executive leadership and board, who have chosen a path that protects proprietary advantage while exposing the public to escalating, unassessed risks.",
+  "timestamp_utc": "2026-10-21T23:44:41Z"
+}

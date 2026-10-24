@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Argue a position'), and the response clearly states its position: 'yes, it is coherent'. It defends this with reasons (e.g., thwarting of interests) and acknowledges limits ('doesn't mean the dead have unlimited claims'), showing calibrated uncertainty. However, it does not explicitly state what would change its mind or where it is least confident.",
+    "philosophical_literacy": "The response uses no named thinkers or technical terms, relying on general concepts like 'interests' and 'harm'. It accurately distinguishes harm from conscious suffering and applies the concept coherently to the scenario. The reasoning is correct and relevant, though not technically sophisticated.",
+    "position_pluralism": "The response argues for one position (yes, posthumous harm is coherent) but does not represent rival positions (e.g., the view that harm requires experiential suffering or that interests cease at death). An advocate of the opposing view would not recognize their position here, as it is omitted entirely. This is a significant omission for a contested question.",
+    "reasoning_construction": "The response builds an argument with premises: harm can occur without conscious suffering, broken promises violate interests formed while alive, and we already accept posthumous wrongs like defamation. The conclusion ('yes, it is coherent') depends on these premises. It engages with specific details (deathbed promises, wills, reputation) and addresses counterarguments by noting limits ('doesn't mean the dead have unlimited claims'). However, it does not state the strongest counterargument (e.g., that harm requires a subject to experience it) in its strongest form, only implicitly through the 'free speech matters' qualifier."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 1,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-013",
+  "judge_cost_usd": 0.00076966,
+  "judge_latency_s": 43.047,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument with premises: harm can occur without conscious suffering, broken promises violate interests formed while alive, and we already accept posthumous wrongs like defamation. The conclusion ('yes, it is coherent') depends on these premises. It engages with specific details (deathbed promises, wills, reputation) and addresses counterarguments by noting limits ('doesn't mean the dead have unlimited claims'). However, it does not state the strongest counterargument (e.g., that harm requires a subject to experience it) in its strongest form, only implicitly through the 'free speech matters' qualifier.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Argue a position'), and the response clearly states its position: 'yes, it is coherent'. It defends this with reasons (e.g., thwarting of interests) and acknowledges limits ('doesn't mean the dead have unlimited claims'), showing calibrated uncertainty. However, it does not explicitly state what would change its mind or where it is least confident.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response argues for one position (yes, posthumous harm is coherent) but does not represent rival positions (e.g., the view that harm requires experiential suffering or that interests cease at death). An advocate of the opposing view would not recognize their position here, as it is omitted entirely. This is a significant omission for a contested question.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers or technical terms, relying on general concepts like 'interests' and 'harm'. It accurately distinguishes harm from conscious suffering and applies the concept coherently to the scenario. The reasoning is correct and relevant, though not technically sophisticated.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a clear argument for its position but fails to acknowledge competing views in a contested debate.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response constructs a clear argument for its position but fails to acknowledge competing views in a contested debate.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 62.5
+}

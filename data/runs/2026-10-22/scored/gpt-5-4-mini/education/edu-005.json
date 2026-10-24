@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the large class size (55) through group work and oral activities, but does not explicitly differentiate for varying prior attainment, language barriers, or additional needs. It suggests 'group work to manage the large class' and uses simple language, but lacks concrete adaptations for diverse learners (e.g., no strategies for learners struggling with concepts or those with limited literacy). It assumes all learners can participate equally in oral and group activities without specific support.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is a statistics lesson plan. The response is inclusive of the learner context (rural Malawi, large class, resource constraints) by using locally relevant examples (e.g., farming, transport, livestock) and adaptable activities. It does not default to US-centric examples and acknowledges the Malawian context explicitly.",
+    "pedagogical_soundness": "The response provides clear learning objectives for Week 1 (e.g., 'Say what statistics means in simple language', 'Record data using tally marks'). Activities align with objectives: Day 1 discussion builds understanding of statistics, Day 3 survey teaches data collection, Day 4 tally marks practice directly supports recording data. Assessment includes oral questions and group activities that measure understanding. Sequencing is logical: starts with concepts, moves to data types, collection methods, and finally tally/frequency tables. However, cognitive demand is appropriate for Grade 8, and activities build prerequisites (e.g., understanding data before collecting it).",
+    "workload_realism": "The response uses only available resources: blackboard, chalk, textbooks (shared), and locally available materials like stones/sticks. No electricity, printing, or one-per-student materials are required. Activities are designed for large class (55) through group work and oral/board activities. Timings are implied but not explicitly summed; however, activities like group discussions and board work are feasible in a 6-week scheme. Preparation and marking load is low (oral assessments, group activities), suitable for a rural Malawian teacher."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-005",
+  "judge_cost_usd": 0.00124964,
+  "judge_latency_s": 50.825,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives for Week 1 (e.g., 'Say what statistics means in simple language', 'Record data using tally marks'). Activities align with objectives: Day 1 discussion builds understanding of statistics, Day 3 survey teaches data collection, Day 4 tally marks practice directly supports recording data. Assessment includes oral questions and group activities that measure understanding. Sequencing is logical: starts with concepts, moves to data types, collection methods, and finally tally/frequency tables. However, cognitive demand is appropriate for Grade 8, and activities build prerequisites (e.g., understanding data before collecting it).\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response uses only available resources: blackboard, chalk, textbooks (shared), and locally available materials like stones/sticks. No electricity, printing, or one-per-student materials are required. Activities are designed for large class (55) through group work and oral/board activities. Timings are implied but not explicitly summed; however, activities like group discussions and board work are feasible in a 6-week scheme. Preparation and marking load is low (oral assessments, group activities), suitable for a rural Malawian teacher.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is a statistics lesson plan. The response is inclusive of the learner context (rural Malawi, large class, resource constraints) by using locally relevant examples (e.g., farming, transport, livestock) and adaptable activities. It does not default to US-centric examples and acknowledges the Malawian context explicitly.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the large class size (55) through group work and oral activities, but does not explicitly differentiate for varying prior attainment, language barriers, or additional needs. It suggests 'group work to manage the large class' and uses simple language, but lacks concrete adaptations for diverse learners (e.g., no strategies for learners struggling with concepts or those with limited literacy). It assumes all learners can participate equally in oral and group activities without specific support.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"A contextually appropriate and pedagogically sound plan that realistically uses available resources but lacks explicit differentiation for diverse learners.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "A contextually appropriate and pedagogically sound plan that realistically uses available resources but lacks explicit differentiation for diverse learners.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

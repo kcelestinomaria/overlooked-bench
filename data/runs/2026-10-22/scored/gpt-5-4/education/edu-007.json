@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses differentiation for varied learners: 'give extra support where it is needed', 'stretch pupils who are ready for more challenge', 'break learning into small steps', 'provide support in class'. It is specific and low-cost, focusing on teacher actions within one classroom, without assuming additional adults.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. The response is inclusive in its approach to all learners in mixed-attainment settings, addressing support for struggling students and challenge for advanced ones, which aligns with the rubric's note for non-pathway items.",
+    "pedagogical_soundness": "The response does not present learning objectives, activities, or assessments. It is parent-facing guidance explaining a policy change, not a pedagogical plan. Therefore, it does not engage with this dimension at all.",
+    "workload_realism": "The response does not address teacher workload, resources, or timings. It is explanatory guidance for parents, not a delivery plan for practitioners. Therefore, it does not engage with this dimension at all."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00083807,
+  "judge_latency_s": 30.168,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present learning objectives, activities, or assessments. It is parent-facing guidance explaining a policy change, not a pedagogical plan. Therefore, it does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not address teacher workload, resources, or timings. It is explanatory guidance for parents, not a delivery plan for practitioners. Therefore, it does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. The response is inclusive in its approach to all learners in mixed-attainment settings, addressing support for struggling students and challenge for advanced ones, which aligns with the rubric's note for non-pathway items.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses differentiation for varied learners: 'give extra support where it is needed', 'stretch pupils who are ready for more challenge', 'break learning into small steps', 'provide support in class'. It is specific and low-cost, focusing on teacher actions within one classroom, without assuming additional adults.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response effectively addresses parental concerns with plain language and concrete examples of differentiation, though it is not a pedagogical plan.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response effectively addresses parental concerns with plain language and concrete examples of differentiation, though it is not a pedagogical plan.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 38.75
+}

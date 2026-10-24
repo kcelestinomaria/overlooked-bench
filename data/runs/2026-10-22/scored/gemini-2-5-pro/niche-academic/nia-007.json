@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing scribal practices (e.g., ligatures in Nuskhuri, ornamentation in Asomtavruli), the bicameral Khutsuri system, and contextual factors like provenance (script quality indicating monastic centers) and cultural roles (Church vs. State scripts). It engages with palaeographic methods (script evolution, terminology) and provides specific dating frameworks, suitable for a specialist audience.",
+    "domain_accuracy": "The response provides accurate distinctions between the scripts: Asomtavruli is majuscule, geometric, and used in early inscriptions (e.g., 5th-century Bolnisi Sioni); Nuskhuri is minuscule, angular, and used in the Khutsuri system; Mkhedruli is cursive, unicameral, and secular. Dating claims align with scholarly consensus: Asomtavruli dominant 5th–9th c., Khutsuri from 9th c., Mkhedruli appears 11th c. for secular use, replaces religious texts from 17th c. No invented citations or terms; references to Iviron, Gelati monasteries are plausible centers.",
+    "field_situatedness": "The response uses correct Georgian terminology (Asomtavruli, Nuskhuri, Mkhedruli, Khutsuri) and frames the discussion within Georgian palaeography, referencing specific cultural contexts (e.g., Georgian Orthodox Church, royal charters) and institutions (Iviron, Gelati monasteries). It does not substitute Western frameworks and aligns with the regional scholarly tradition.",
+    "scholarly_calibration": "The response distinguishes well-established facts (e.g., chronological script progression) from nuanced points, such as noting that Mkhedruli for religious texts pre-17th c. is 'exceptionally rare' and requires explanation, and that script quality can indicate provenance but is not definitive. It avoids blanket disclaimers and provides targeted uncertainty where appropriate, though it could more explicitly flag debated aspects (e.g., exact origins of scripts)."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-007",
+  "judge_cost_usd": 0.00125003,
+  "judge_latency_s": 53.833,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response provides accurate distinctions between the scripts: Asomtavruli is majuscule, geometric, and used in early inscriptions (e.g., 5th-century Bolnisi Sioni); Nuskhuri is minuscule, angular, and used in the Khutsuri system; Mkhedruli is cursive, unicameral, and secular. Dating claims align with scholarly consensus: Asomtavruli dominant 5th–9th c., Khutsuri from 9th c., Mkhedruli appears 11th c. for secular use, replaces religious texts from 17th c. No invented citations or terms; references to Iviron, Gelati monasteries are plausible centers.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing scribal practices (e.g., ligatures in Nuskhuri, ornamentation in Asomtavruli), the bicameral Khutsuri system, and contextual factors like provenance (script quality indicating monastic centers) and cultural roles (Church vs. State scripts). It engages with palaeographic methods (script evolution, terminology) and provides specific dating frameworks, suitable for a specialist audience.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established facts (e.g., chronological script progression) from nuanced points, such as noting that Mkhedruli for religious texts pre-17th c. is 'exceptionally rare' and requires explanation, and that script quality can indicate provenance but is not definitive. It avoids blanket disclaimers and provides targeted uncertainty where appropriate, though it could more explicitly flag debated aspects (e.g., exact origins of scripts).\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Georgian terminology (Asomtavruli, Nuskhuri, Mkhedruli, Khutsuri) and frames the discussion within Georgian palaeography, referencing specific cultural contexts (e.g., Georgian Orthodox Church, royal charters) and institutions (Iviron, Gelati monasteries). It does not substitute Western frameworks and aligns with the regional scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate knowledge of medieval Georgian palaeography with specific details on script distinctions and dating implications.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate knowledge of medieval Georgian palaeography with specific details on script distinctions and dating implications.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

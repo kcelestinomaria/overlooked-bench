@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with methodological distinctions: it contrasts Maliki teleological reasoning with Hanafi formalistic fidelity, explains how istihsan functions as a 'hidden qiyas,' and discusses the theoretical grounding of maslaha in maqasid (daruriyyat). It addresses scholarly debates (e.g., whether maslaha can be independent vs. textually derived) and provides specific tools (istislah vs. istihsan). A specialist would recognize this as informed by the literature, not just a summary of summaries.",
+    "domain_accuracy": "The response makes several accurate substantive claims: it correctly defines maslaha and its three categories (mu'tabara, mulghah, mursala), identifies the core tension around maslaha mursala, accurately describes Malik's approach to siyasa shar'iyya, correctly attributes istislah to Malikis and istihsan to Hanafis, and accurately characterizes al-Shatibi's role in systematizing maqasid theory. It correctly notes that Hanafis view istihsan as textually anchored (qiyas khafi) and Malikis ground maslaha in maqasid. No invented citations, terms, or false consensus are present. Minor quibbles (e.g., Malik's practice predating al-Shatibi is true but could be more precisely phrased) do not detract from overall accuracy.",
+    "field_situatedness": "The response uses correct Arabic terminology (maslaha, ijma, qiyas, istislah, istihsan, maqasid, daruriyyat) and frameworks specific to Islamic legal theory (usul al-fiqh). It stays within the tradition asked about, without substituting Western or Anglophone framings. It references key figures (Malik, al-Shatibi) and concepts (siyasa shar'iyya) central to the field. No silent substitution occurs.",
+    "scholarly_calibration": "The response accurately calibrates evidential status: it notes that 'most jurists agree' on maslaha mu'tabara and mulghah, centers the controversy on maslaha mursala, and distinguishes between schools without presenting either as settled fact. It uses phrases like 'more cautious,' 'greater willingness,' and 'more insistent' to signal divergence. However, it lacks explicit uncertainty markers (e.g., on dating or minority views) and could more clearly flag where positions are debated within schools. Calibration is specific but not exhaustive."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00104524,
+  "judge_latency_s": 55.156,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several accurate substantive claims: it correctly defines maslaha and its three categories (mu'tabara, mulghah, mursala), identifies the core tension around maslaha mursala, accurately describes Malik's approach to siyasa shar'iyya, correctly attributes istislah to Malikis and istihsan to Hanafis, and accurately characterizes al-Shatibi's role in systematizing maqasid theory. It correctly notes that Hanafis view istihsan as textually anchored (qiyas khafi) and Malikis ground maslaha in maqasid. No invented citations, terms, or false consensus are present. Minor quibbles (e.g., Malik's practice predating al-Shatibi is true but could be more precisely phrased) do not detract from overall accuracy.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with methodological distinctions: it contrasts Maliki teleological reasoning with Hanafi formalistic fidelity, explains how istihsan functions as a 'hidden qiyas,' and discusses the theoretical grounding of maslaha in maqasid (daruriyyat). It addresses scholarly debates (e.g., whether maslaha can be independent vs. textually derived) and provides specific tools (istislah vs. istihsan). A specialist would recognize this as informed by the literature, not just a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates evidential status: it notes that 'most jurists agree' on maslaha mu'tabara and mulghah, centers the controversy on maslaha mursala, and distinguishes between schools without presenting either as settled fact. It uses phrases like 'more cautious,' 'greater willingness,' and 'more insistent' to signal divergence. However, it lacks explicit uncertainty markers (e.g., on dating or minority views) and could more clearly flag where positions are debated within schools. Calibration is specific but not exhaustive.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Arabic terminology (maslaha, ijma, qiyas, istislah, istihsan, maqasid, daruriyyat) and frameworks specific to Islamic legal theory (usul al-fiqh). It stays within the tradition asked about, without substituting Western or Anglophone framings. It references key figures (Malik, al-Shatibi) and concepts (siyasa shar'iyya) central to the field. No silent substitution occurs.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates substantive competence in Islamic legal theory with accurate, detailed comparisons between Maliki and Hanafi methodologies.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates substantive competence in Islamic legal theory with accurate, detailed comparisons between Maliki and Hanafi methodologies.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

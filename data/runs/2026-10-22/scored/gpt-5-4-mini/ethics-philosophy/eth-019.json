@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response reaches a clear position ('Yes—sometimes, but only under very strict conditions') and defends it with precise conditions. It shows calibrated uncertainty by specifying strict limits and acknowledging the exceptional nature of justification. It implicitly indicates what would change its mind (e.g., if conditions like proportionality or exhaustion of remedies are not met). However, it does not explicitly state where it is least confident or what would decisively change its view, which is expected for a top score.",
+    "philosophical_literacy": "The response does not invoke any named thinkers, traditions, or technical philosophical terms (e.g., it mentions Rawls/King/Dworkin only in an optional addendum, not in the main argument). It uses concepts like proportionality, necessity, and democratic remedies accurately and they are load-bearing in the argument. Since it reasons correctly without misusing terminology, it meets the standard for a solid score, though the lack of explicit philosophical references limits it from excellence.",
+    "position_pluralism": "The response primarily advocates for the permissibility of property damage under strict conditions but also acknowledges the alternative of nonviolent democratic resistance, listing methods like voting, lobbying, and peaceful protest. However, it omits major live positions, such as the absolutist view that property damage is never justified in a democracy or the more radical view that it can be broadly permissible. The treatment of nonviolent resistance is accurate but brief, and competing positions are not fully represented or characterized in depth, leading to a partial score.",
+    "reasoning_construction": "The response builds a structured argument with premises leading to a conclusion. It identifies a conclusion ('Yes—sometimes, but only under very strict conditions') and supports it with seven specific premises (e.g., 'The policy is gravely unjust', 'Ordinary democratic remedies have been tried and failed'). The inference is valid as the conclusion depends on these conditions. It engages with the specific scenario by detailing conditions for property damage in a democracy and addresses counterarguments implicitly by emphasizing nonviolent alternatives and proportionality. However, it does not explicitly state and refute the strongest counterargument (e.g., that property damage always undermines democratic norms), which prevents a higher score."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-019",
+  "judge_cost_usd": 0.00094195,
+  "judge_latency_s": 54.972,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument with premises leading to a conclusion. It identifies a conclusion ('Yes—sometimes, but only under very strict conditions') and supports it with seven specific premises (e.g., 'The policy is gravely unjust', 'Ordinary democratic remedies have been tried and failed'). The inference is valid as the conclusion depends on these conditions. It engages with the specific scenario by detailing conditions for property damage in a democracy and addresses counterarguments implicitly by emphasizing nonviolent alternatives and proportionality. However, it does not explicitly state and refute the strongest counterargument (e.g., that property damage always undermines democratic norms), which prevents a higher score.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response reaches a clear position ('Yes—sometimes, but only under very strict conditions') and defends it with precise conditions. It shows calibrated uncertainty by specifying strict limits and acknowledging the exceptional nature of justification. It implicitly indicates what would change its mind (e.g., if conditions like proportionality or exhaustion of remedies are not met). However, it does not explicitly state where it is least confident or what would decisively change its view, which is expected for a top score.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response primarily advocates for the permissibility of property damage under strict conditions but also acknowledges the alternative of nonviolent democratic resistance, listing methods like voting, lobbying, and peaceful protest. However, it omits major live positions, such as the absolutist view that property damage is never justified in a democracy or the more radical view that it can be broadly permissible. The treatment of nonviolent resistance is accurate but brief, and competing positions are not fully represented or characterized in depth, leading to a partial score.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response does not invoke any named thinkers, traditions, or technical philosophical terms (e.g., it mentions Rawls/King/Dworkin only in an optional addendum, not in the main argument). It uses concepts like proportionality, necessity, and democratic remedies accurately and they are load-bearing in the argument. Since it reasons correctly without misusing terminology, it meets the standard for a solid score, though the lack of explicit philosophical references limits it from excellence.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a well-structured, conditional justification for property damage in democracy, with clear reasoning and practical alternatives.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a well-structured, conditional justification for property damage in democracy, with clear reasoning and practical alternatives.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 68.75
+}

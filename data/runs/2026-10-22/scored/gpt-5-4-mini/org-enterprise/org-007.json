@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requests an explanation of cost difference, legal exposure, and sequencing plan. The response delivers all three concretely: cost breakdown with percentages and example figures ('R$ 15,000 to R$ 18,000+'), legal exposure details ('retroactively: FGTS, 13th salary, Vacation + 1/3'), and a step-by-step sequencing plan ('Step 1: Review the actual working relationship' through 'Step 6: Keep records'). It provides usable content like a 'rough example' and practical recommendations, not just a framework, and could be used in a meeting with light editing.",
+    "constraint_fidelity": "The prompt describes a 9-person marketing agency in São Paulo, Brazil converting two contractors to employees. The response respects all constraints: it provides Brazil-specific cost calculations (e.g., 'INSS patronal: generally 20%', 'FGTS: R$ 800'), acknowledges the small agency context ('For a small agency', 'even one labor claim can be expensive relative to the business size'), and does not assume additional resources. The arithmetic is shown with a detailed example using R$ 10,000/month invoice, resulting in 'R$ 15,000 to R$ 18,000+ per month equivalent', demonstrating fidelity to budget and headcount constraints.",
+    "contextual_realism": "The response is calibrated for a small agency: it avoids assuming dedicated HR or legal teams (e.g., 'A labor lawyer should assess', implying external consultation), focuses on practical steps like 'Update org charts, policies, and timekeeping' that are feasible with limited staff, and acknowledges resource constraints ('even one labor claim can be expensive relative to the business size'). It does not recommend expensive tooling or unsustainable processes, instead offering a 'simple cost model spreadsheet template' and checklist tailored to small-scale operations.",
+    "jurisdictional_accuracy": "The response accurately addresses Brazilian labor law: it uses correct terms like 'CLT', 'FGTS', 'INSS', '13th salary', and '1/3 constitutional bonus', avoids US assumptions (no mention of IRS/W-2/1099 or at-will employment), and flags jurisdiction-specific risks ('pejotização', 'labor court can reclassify'). It substantively explains Brazilian requirements and recommends consulting a 'Brazilian labor lawyer' with specific reasons ('assess whether there is already a strong reclassification risk'), not just a generic disclaimer. The content is factually accurate for Brazil."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-007",
+  "judge_cost_usd": 0.00124708,
+  "judge_latency_s": 63.828,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 9-person marketing agency in São Paulo, Brazil converting two contractors to employees. The response respects all constraints: it provides Brazil-specific cost calculations (e.g., 'INSS patronal: generally 20%', 'FGTS: R$ 800'), acknowledges the small agency context ('For a small agency', 'even one labor claim can be expensive relative to the business size'), and does not assume additional resources. The arithmetic is shown with a detailed example using R$ 10,000/month invoice, resulting in 'R$ 15,000 to R$ 18,000+ per month equivalent', demonstrating fidelity to budget and headcount constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small agency: it avoids assuming dedicated HR or legal teams (e.g., 'A labor lawyer should assess', implying external consultation), focuses on practical steps like 'Update org charts, policies, and timekeeping' that are feasible with limited staff, and acknowledges resource constraints ('even one labor claim can be expensive relative to the business size'). It does not recommend expensive tooling or unsustainable processes, instead offering a 'simple cost model spreadsheet template' and checklist tailored to small-scale operations.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests an explanation of cost difference, legal exposure, and sequencing plan. The response delivers all three concretely: cost breakdown with percentages and example figures ('R$ 15,000 to R$ 18,000+'), legal exposure details ('retroactively: FGTS, 13th salary, Vacation + 1/3'), and a step-by-step sequencing plan ('Step 1: Review the actual working relationship' through 'Step 6: Keep records'). It provides usable content like a 'rough example' and practical recommendations, not just a framework, and could be used in a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses Brazilian labor law: it uses correct terms like 'CLT', 'FGTS', 'INSS', '13th salary', and '1/3 constitutional bonus', avoids US assumptions (no mention of IRS/W-2/1099 or at-will employment), and flags jurisdiction-specific risks ('pejotização', 'labor court can reclassify'). It substantively explains Brazilian requirements and recommends consulting a 'Brazilian labor lawyer' with specific reasons ('assess whether there is already a strong reclassification risk'), not just a generic disclaimer. The content is factually accurate for Brazil.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels by providing detailed, Brazil-specific, and actionable guidance tailored to a small agency's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response excels by providing detailed, Brazil-specific, and actionable guidance tailored to a small agency's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

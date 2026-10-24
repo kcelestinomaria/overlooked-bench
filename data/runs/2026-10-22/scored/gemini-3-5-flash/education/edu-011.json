@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response implicitly addresses access through financial constraints by detailing funding options (HEF, NG-CDF, county bursaries) and low-cost pathways (free digital training, subsidized TVET). It also differentiates by student strengths ('hands-on', 'analytical', 'academic') and recommends self-assessment. However, it does not explicitly address other access issues like language barriers, prior attainment variations, or material constraints beyond finances, and the differentiation is somewhat general.",
+    "pathway_breadth": "The response covers multiple non-degree pathways with substantial detail: TVET routes (diploma, certificate, artisan courses with entry requirements and financial aid), academic progression (certificate-to-diploma-to-degree), digital economy options (KASNEB, Ajira Digital, tech certifications), and KCSE repeating. Each is treated with specificity, including real entry requirements (e.g., 'C- or C plain' for diplomas), costs ('government covers up to 95%'), and outcomes ('employment faster than university graduates'). It avoids framing non-degree paths as failure and gives comparable depth to degree routes.",
+    "pedagogical_soundness": "This dimension is not applicable to the response type, as the prompt asks for guidance to a student, not a pedagogical plan with learning objectives, activities, and assessments. The response provides career and educational pathway advice, not instructional design.",
+    "workload_realism": "This dimension is not applicable to the response type, as the prompt asks for guidance to a student, not a lesson or unit plan requiring timing, materials, or marking load. The response provides advice on pathways and resources, not instructional delivery."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00104997,
+  "judge_latency_s": 39.099,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable to the response type, as the prompt asks for guidance to a student, not a pedagogical plan with learning objectives, activities, and assessments. The response provides career and educational pathway advice, not instructional design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension is not applicable to the response type, as the prompt asks for guidance to a student, not a lesson or unit plan requiring timing, materials, or marking load. The response provides advice on pathways and resources, not instructional delivery.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple non-degree pathways with substantial detail: TVET routes (diploma, certificate, artisan courses with entry requirements and financial aid), academic progression (certificate-to-diploma-to-degree), digital economy options (KASNEB, Ajira Digital, tech certifications), and KCSE repeating. Each is treated with specificity, including real entry requirements (e.g., 'C- or C plain' for diplomas), costs ('government covers up to 95%'), and outcomes ('employment faster than university graduates'). It avoids framing non-degree paths as failure and gives comparable depth to degree routes.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response implicitly addresses access through financial constraints by detailing funding options (HEF, NG-CDF, county bursaries) and low-cost pathways (free digital training, subsidized TVET). It also differentiates by student strengths ('hands-on', 'analytical', 'academic') and recommends self-assessment. However, it does not explicitly address other access issues like language barriers, prior attainment variations, or material constraints beyond finances, and the differentiation is somewhat general.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response excels in providing comprehensive, specific, and equitable pathway guidance tailored to the Kenyan context and the student's financial constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response excels in providing comprehensive, specific, and equitable pathway guidance tailored to the Kenyan context and the student's financial constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

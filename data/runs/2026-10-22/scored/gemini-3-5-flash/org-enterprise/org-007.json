@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for an explanation of cost difference, legal exposure, and sequencing plan. The response produces a concrete deliverable: it includes a detailed cost breakdown (with percentages and scenarios), explains legal risks (e.g., retroactive liabilities, subsidiary liability), and provides a step-by-step sequencing plan with specific actions (e.g., 'Step 1: Financial & Tax Assessment', 'Step 5: Mitigating the Past Risk'). It could be used in a meeting with light editing (e.g., the checklist at the end). It does not just describe the process but provides the output.",
+    "constraint_fidelity": "The prompt specifies a 9-person marketing agency in São Paulo, Brazil, converting two PJ contractors to CLT employees. The response respects all constraints: it focuses on Brazil-specific labor laws (CLT, FGTS, INSS), acknowledges the agency's small size (e.g., '9-person agency', 'Simples Nacional tax regime'), and provides cost calculations (e.g., R$8,000 PJ cost vs. R$14,000+ CLT cost) with explicit arithmetic. It does not assume additional resources beyond what the agency likely has (e.g., recommends consulting an accountant, which is feasible).",
+    "contextual_realism": "The response is calibrated for a small Brazilian agency: it assumes no dedicated HR or legal team (e.g., 'consult your accountant', 'both parties must be represented by different lawyers'), uses realistic cost estimates and tax regimes (Simples Nacional), acknowledges role overlap (e.g., accountant handles eSocial registration), and avoids tooling or process overhead beyond the agency's capacity (e.g., step-by-step plan with manageable steps like 'terminate PJ contract'). It recognizes small-organisation realities like reliance on external professionals and negotiated settlements.",
+    "jurisdictional_accuracy": "The response is accurate for Brazil: it correctly references CLT, FGTS, INSS, 13th salary, vacation bonus, Simples Nacional, and labor court practices (e.g., 'Article 9 of the CLT', 'Article 855-B of CLT'). It avoids US assumptions (no mention of IRS, W-2, 1099, or at-will employment) and flags where local advice is needed (e.g., 'consult your accountant', 'both parties must be represented by different lawyers'). It provides substantive content rather than generic disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-007",
+  "judge_cost_usd": 0.00127555,
+  "judge_latency_s": 58.419,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies a 9-person marketing agency in São Paulo, Brazil, converting two PJ contractors to CLT employees. The response respects all constraints: it focuses on Brazil-specific labor laws (CLT, FGTS, INSS), acknowledges the agency's small size (e.g., '9-person agency', 'Simples Nacional tax regime'), and provides cost calculations (e.g., R$8,000 PJ cost vs. R$14,000+ CLT cost) with explicit arithmetic. It does not assume additional resources beyond what the agency likely has (e.g., recommends consulting an accountant, which is feasible).\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Brazilian agency: it assumes no dedicated HR or legal team (e.g., 'consult your accountant', 'both parties must be represented by different lawyers'), uses realistic cost estimates and tax regimes (Simples Nacional), acknowledges role overlap (e.g., accountant handles eSocial registration), and avoids tooling or process overhead beyond the agency's capacity (e.g., step-by-step plan with manageable steps like 'terminate PJ contract'). It recognizes small-organisation realities like reliance on external professionals and negotiated settlements.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for an explanation of cost difference, legal exposure, and sequencing plan. The response produces a concrete deliverable: it includes a detailed cost breakdown (with percentages and scenarios), explains legal risks (e.g., retroactive liabilities, subsidiary liability), and provides a step-by-step sequencing plan with specific actions (e.g., 'Step 1: Financial & Tax Assessment', 'Step 5: Mitigating the Past Risk'). It could be used in a meeting with light editing (e.g., the checklist at the end). It does not just describe the process but provides the output.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for Brazil: it correctly references CLT, FGTS, INSS, 13th salary, vacation bonus, Simples Nacional, and labor court practices (e.g., 'Article 9 of the CLT', 'Article 855-B of CLT'). It avoids US assumptions (no mention of IRS, W-2, 1099, or at-will employment) and flags where local advice is needed (e.g., 'consult your accountant', 'both parties must be represented by different lawyers'). It provides substantive content rather than generic disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is highly specific, accurate, and actionable for a small Brazilian agency, with no US assumptions and full respect for constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is highly specific, accurate, and actionable for a small Brazilian agency, with no US assumptions and full respect for constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

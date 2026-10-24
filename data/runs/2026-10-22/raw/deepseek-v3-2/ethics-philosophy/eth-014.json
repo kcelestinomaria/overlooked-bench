@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 549,
+  "cost_usd": 0.00106897,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "af5e1448363504c4",
+  "item_id": "eth-014",
+  "latency_s": 14.24,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 86,
+  "provider": "deepseek",
+  "request_fingerprint": "3ac78f21a3cedd23",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "This is a classic ethical dilemma that pits consequentialist reasoning against deontological or virtue-based considerations.  \n\n**My view:** The government should choose the policy that saves a **statistically expected 900 unidentified future lives**, because it does more good overall — assuming the cost is the same and the probability estimates are reliable.  \n\n---\n\n### **Defense of choosing the 900 statistical lives**\n\n1. **Maximizing benefit**  \n   From a utilitarian perspective, saving 900 lives is better than saving 500, all else equal. Governments have a responsibility to use limited resources to do the greatest good for the greatest number, especially when dealing with public health or safety policies.\n\n2. **Fairness across time and anonymity**  \n   Favoring identified lives simply because we know their names and faces today would be arbitrary from a moral point of view. A life saved in the future is equally valuable. Ignoring statistical lives because they are not “identified” now would mean systematically undervaluing preventive measures, which often save more lives in the long run.\n\n3. **Consistency in policy**  \n   If governments consistently chose identified lives over more numerous statistical lives, public health would suffer. Many more people would die from preventable future harms because resources were diverted to fewer, currently identified individuals.\n\n---\n\n### **The “identified victim effect” — bias or moral intuition?**\n\nThe **identified victim effect** is the psychological tendency to feel greater empathy and allocate more resources to specific, identifiable individuals in immediate peril than to statistical, anonymous future victims.\n\n- **As a bias:**  \n  In policy-making, it should generally be **corrected**, because it leads to suboptimal outcomes. It arises from emotional salience, not from reasoned moral principle. If we care equally about all human lives, we shouldn’t let identifiability distort life-saving decisions when the numbers are clear.\n\n- **As a moral intuition to be respected:**  \n  Some argue that responding to identified individuals reflects virtues like solidarity, compassion, and commitment to not abandoning those right in front of us. However, in the governmental context, this intuition may conflict with duties of impartiality and efficient stewardship of public resources.\n\nA possible **middle ground**:  \nWe can respect the moral intuition by ensuring that policy does not *always* ignore identified victims, but we should not let it override large differences in expected lives saved. In this case, the gap (900 vs. 500) is large enough that the bias should be set aside.\n\n---\n\n**Conclusion:**  \nThe government ought to save the 900 statistical lives. The identified victim effect is largely a cognitive-emotional bias that, in public policy contexts where impartial reasoning is required, should be corrected rather than followed.",
+  "timestamp_utc": "2026-10-21T23:43:52Z"
+}

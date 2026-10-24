@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed implementation plan with a weekly sequence, concrete steps (e.g., 'Create a new Enterprise Application in the Entra ID Portal', 'Configure TAI Custom Properties'), and specific commands/properties. It includes verification steps like testing in staging and UAT. The deliverable is a plan that an engineer could execute immediately, with exact configuration details and timelines.",
+    "constraint_fidelity": "The response explicitly uses existing Microsoft 365 E3 licenses and WebSphere 8.5.5 features, avoiding new vendors or products. It states 'Zero Software Cost: Uses existing Microsoft 365 E3 licenses and built-in IBM WebSphere features' and 'No Java upgrade beyond 8 and no change of application server' is respected by leveraging SAML TAI without code changes. The timeline is exactly six weeks with a two-person team, as shown in the schedule: 'Timeline: 6 Weeks (Hard Deadline)' and 'Two-Person Delivery: The workload is cleanly split between the Senior Developer (WAS configuration) and the Windows SysAdmin (Entra ID/AD configuration)'. It also includes arithmetic-like planning with weekly breakdowns and risk mitigation.",
+    "maintainability": "The solution is proportionate to the two-person team, with clear ownership (developer for WAS, sysadmin for Entra ID). Risks are explicitly stated and mitigated (e.g., clock skew, user mapping). Documentation is planned ('Document troubleshooting steps for the helpdesk'). The approach avoids added complexity by using native features and leaves no unowned moving parts. However, it does not explicitly mention tests or long-term observability, but the configuration is straightforward and based on existing infrastructure.",
+    "production_realism": "The response addresses failure modes like clock skew ('SysAdmin will configure Windows Time Service (NTP) on the WAS host to sync with time.windows.com'), user mapping ('configure Entra ID to emit the sAMAccountName as the NameID'), and rollback ('take a backup of the WAS config directory'). It considers the team's skill mix by splitting tasks appropriately (developer handles WAS, sysadmin handles Entra ID/AD). It scales to the stated environment without assuming additional operational capacity, and the technologies (WebSphere SAML TAI, Entra ID) are used correctly based on the prompt."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.001617,
+  "judge_latency_s": 63.174,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly uses existing Microsoft 365 E3 licenses and WebSphere 8.5.5 features, avoiding new vendors or products. It states 'Zero Software Cost: Uses existing Microsoft 365 E3 licenses and built-in IBM WebSphere features' and 'No Java upgrade beyond 8 and no change of application server' is respected by leveraging SAML TAI without code changes. The timeline is exactly six weeks with a two-person team, as shown in the schedule: 'Timeline: 6 Weeks (Hard Deadline)' and 'Two-Person Delivery: The workload is cleanly split between the Senior Developer (WAS configuration) and the Windows SysAdmin (Entra ID/AD configuration)'. It also includes arithmetic-like planning with weekly breakdowns and risk mitigation.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response addresses failure modes like clock skew ('SysAdmin will configure Windows Time Service (NTP) on the WAS host to sync with time.windows.com'), user mapping ('configure Entra ID to emit the sAMAccountName as the NameID'), and rollback ('take a backup of the WAS config directory'). It considers the team's skill mix by splitting tasks appropriately (developer handles WAS, sysadmin handles Entra ID/AD). It scales to the stated environment without assuming additional operational capacity, and the technologies (WebSphere SAML TAI, Entra ID) are used correctly based on the prompt.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed implementation plan with a weekly sequence, concrete steps (e.g., 'Create a new Enterprise Application in the Entra ID Portal', 'Configure TAI Custom Properties'), and specific commands/properties. It includes verification steps like testing in staging and UAT. The deliverable is a plan that an engineer could execute immediately, with exact configuration details and timelines.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the two-person team, with clear ownership (developer for WAS, sysadmin for Entra ID). Risks are explicitly stated and mitigated (e.g., clock skew, user mapping). Documentation is planned ('Document troubleshooting steps for the helpdesk'). The approach avoids added complexity by using native features and leaves no unowned moving parts. However, it does not explicitly mention tests or long-term observability, but the configuration is straightforward and based on existing infrastructure.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response excellently leverages existing licenses and infrastructure to meet all constraints with a highly actionable and realistic plan.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response excellently leverages existing licenses and infrastructure to meet all constraints with a highly actionable and realistic plan.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a 'realistic 18-month plan'. The response produces a phased plan with concrete components: timelines, specific tasks (e.g., 'document current quality standards', 'implement record-keeping system'), and clear finance splits. It includes deliverables like 'draft cooperative export governance structure' and 'negotiate contract terms'. A practitioner could use this with light editing (e.g., adding more detail on certification costs). It does not just describe a process; it provides the plan.",
+    "constraint_fidelity": "The prompt states constraints: 40-member cooperative in Oaxaca, Mexico; smallholders averaging 1.5 hectares; working capital effectively zero between harvests; 18-month plan. The response respects all constraints: phases fit 18 months, explicitly splits 'no-cost' vs 'finance-dependent' steps, and acknowledges 'working capital constraint is the absolute barrier'. It shows arithmetic implicitly (e.g., '3-4 months between shipment and payment' aligns with zero working capital). However, it doesn't explicitly calculate costs or headcount, so not a 4.",
+    "contextual_realism": "The response assumes no dedicated HR, legal, or procurement teams; uses member labor ('internal skills inventory', 'volunteer design skills', 'community-based quality control committees'); recognizes role overlap ('roles, decision-making'); and avoids tooling they can't afford (e.g., manual sorting mentioned, not automated). It acknowledges small-organisation realities like 'cooperative governance across 40 members' and 'rotating savings fund among members'. However, some items like 'export logistics training' or 'travel to trade shows' might strain resources without explicit scaling, but overall realistic.",
+    "jurisdictional_accuracy": "The prompt involves Mexico (Oaxaca), and the response avoids US assumptions: no mention of US-specific regulations, at-will employment, or tax categories. It references 'export regulations, contracts, liability' generically but correctly suggests 'legal consultation' for jurisdiction-specific advice. It does not make confidently wrong claims. Since legal elements are involved, it handles them cautiously without substantive errors, but could be more specific on Mexican export requirements. No US defaults presented as universal."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-004",
+  "judge_cost_usd": 0.00101032,
+  "judge_latency_s": 15.681,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: 40-member cooperative in Oaxaca, Mexico; smallholders averaging 1.5 hectares; working capital effectively zero between harvests; 18-month plan. The response respects all constraints: phases fit 18 months, explicitly splits 'no-cost' vs 'finance-dependent' steps, and acknowledges 'working capital constraint is the absolute barrier'. It shows arithmetic implicitly (e.g., '3-4 months between shipment and payment' aligns with zero working capital). However, it doesn't explicitly calculate costs or headcount, so not a 4.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes no dedicated HR, legal, or procurement teams; uses member labor ('internal skills inventory', 'volunteer design skills', 'community-based quality control committees'); recognizes role overlap ('roles, decision-making'); and avoids tooling they can't afford (e.g., manual sorting mentioned, not automated). It acknowledges small-organisation realities like 'cooperative governance across 40 members' and 'rotating savings fund among members'. However, some items like 'export logistics training' or 'travel to trade shows' might strain resources without explicit scaling, but overall realistic.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a 'realistic 18-month plan'. The response produces a phased plan with concrete components: timelines, specific tasks (e.g., 'document current quality standards', 'implement record-keeping system'), and clear finance splits. It includes deliverables like 'draft cooperative export governance structure' and 'negotiate contract terms'. A practitioner could use this with light editing (e.g., adding more detail on certification costs). It does not just describe a process; it provides the plan.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Mexico (Oaxaca), and the response avoids US assumptions: no mention of US-specific regulations, at-will employment, or tax categories. It references 'export regulations, contracts, liability' generically but correctly suggests 'legal consultation' for jurisdiction-specific advice. It does not make confidently wrong claims. Since legal elements are involved, it handles them cautiously without substantive errors, but could be more specific on Mexican export requirements. No US defaults presented as universal.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response excels in realism and actionability by leveraging member labor and explicitly addressing the working capital constraint, making it highly usable for the cooperative.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response excels in realism and actionability by leveraging member labor and explicitly addressing the working capital constraint, making it highly usable for the cooperative.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

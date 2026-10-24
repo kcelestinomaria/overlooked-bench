@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 318,
+  "cost_usd": 0.001654,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "9f73e657883b7fda",
+  "item_id": "eth-011",
+  "latency_s": 4.305,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 64,
+  "provider": "anthropic",
+  "request_fingerprint": "3b4a4ddf7e4dfb00",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Recommendation: Explicit weighting of underrepresented backgrounds\n\n## Why this is the stronger choice:\n\n**Blind processes don't eliminate bias—they just hide it**\n- Demographic information gets inferred from names, schools, employment gaps, and other signals\n- Research shows blind resume reviews often *increase* some biases (e.g., against non-traditional career paths more common in underrepresented groups)\n- You're not actually removing human judgment; you're just removing transparency\n\n**Explicit weighting is more honest and effective**\n- It acknowledges that identical qualifications don't mean identical opportunity\n- It allows you to actually measure whether you're achieving your stated goals\n- It creates accountability—you can audit whether the weighting is working as intended\n- It respects candidates by being transparent about your process\n\n## Important caveats:\n\n- **Define \"underrepresented\" carefully** relative to your actual labor market and role\n- **Weight, don't quota**—use it as a tiebreaker or adjustment, not a hard cutoff\n- **Combine with other improvements**: structured interviews, diverse interview panels, and clear job criteria reduce bias more than any single approach\n- **Document your reasoning** for legal defensibility and continuous improvement\n\n## The honest answer:\n\nNeither approach is perfect. The best hiring uses explicit weighting *as part of* a broader system that reduces bias at every stage—job posting, screening, interviewing, and evaluation.",
+  "timestamp_utc": "2026-10-21T23:35:21Z"
+}

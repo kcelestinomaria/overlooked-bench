@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a specific, usable plan with named tools (KoboToolbox, Samsung tablets), costed breakdown, training details, and sustainability explanation. It includes concrete components like budget table, device quantities, and implementation steps, making it actionable with light editing.",
+    "constraint_fidelity": "The response respects all stated constraints: budget (PHP 400,000 total cost), field conditions (offline-first tools, power banks), low digital literacy (training strategies), and 18-month funding timeline (sustainability plan). It provides a detailed budget breakdown with arithmetic that sums to exactly PHP 400,000, showing fidelity to financial constraints.",
+    "contextual_realism": "The response is calibrated for a small nonprofit: uses free software (KoboToolbox, Google Workspace), affordable hardware (Samsung tablets, power banks), peer-to-peer support ('Tech Champions'), and low recurring costs. It avoids enterprise SaaS, dedicated IT staff, or complex infrastructure, acknowledging role overlap and budget limitations.",
+    "jurisdictional_accuracy": "The response uses Philippines-specific details (local dialects like Tagalog/Bisaya, local hardware availability, prepaid data costs) and avoids US assumptions. It does not make legal claims but focuses on practical implementation, so general factual accuracy is high with no jurisdictional errors."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00098877,
+  "judge_latency_s": 37.168,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all stated constraints: budget (PHP 400,000 total cost), field conditions (offline-first tools, power banks), low digital literacy (training strategies), and 18-month funding timeline (sustainability plan). It provides a detailed budget breakdown with arithmetic that sums to exactly PHP 400,000, showing fidelity to financial constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small nonprofit: uses free software (KoboToolbox, Google Workspace), affordable hardware (Samsung tablets, power banks), peer-to-peer support ('Tech Champions'), and low recurring costs. It avoids enterprise SaaS, dedicated IT staff, or complex infrastructure, acknowledging role overlap and budget limitations.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a specific, usable plan with named tools (KoboToolbox, Samsung tablets), costed breakdown, training details, and sustainability explanation. It includes concrete components like budget table, device quantities, and implementation steps, making it actionable with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response uses Philippines-specific details (local dialects like Tagalog/Bisaya, local hardware availability, prepaid data costs) and avoids US assumptions. It does not make legal claims but focuses on practical implementation, so general factual accuracy is high with no jurisdictional errors.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels by providing a fully costed, offline-first solution tailored to the Philippines context with clear sustainability.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response excels by providing a fully costed, offline-first solution tailored to the Philippines context with clear sustainability.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed plan with specific SQL schema, API payloads, ETL steps, and legal requirements. Includes sequence (Android -> backend -> PostgreSQL -> BigQuery), concrete commands (DELETE SQL, partition expiry), and estimates (data volume). A team could start execution immediately, though some areas like DSAR script details are light.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, Firebase not needed here); implements 30-day retention via PostgreSQL cleanup job and BigQuery partition expiry; acknowledges 2-engineer/6-week timeline and proposes phased delivery to meet it. It shows arithmetic for data volume (8.6M points per 1000 riders) and justifies pushback on interval to reduce load.",
+    "maintainability": "Design is proportionate to team size, with clear seams (separate tables, access roles) and stated risks (battery drain, misuse temptation). Includes documentation via DPIA and training, but lacks specifics on tests, observability (e.g., monitoring ETL jobs), and handover documentation for the new systems.",
+    "production_realism": "Accounts for Nairobi's network connectivity with batching, battery drain with interval pushback, and partial failure via batched API calls. Includes indexing for performance, access controls for security, and ETL jobs for data flow. However, it lacks details on retries, idempotency (e.g., duplicate POST handling), and rollback procedures for failed ETL jobs."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.0014911,
+  "judge_latency_s": 32.162,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, Firebase not needed here); implements 30-day retention via PostgreSQL cleanup job and BigQuery partition expiry; acknowledges 2-engineer/6-week timeline and proposes phased delivery to meet it. It shows arithmetic for data volume (8.6M points per 1000 riders) and justifies pushback on interval to reduce load.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for Nairobi's network connectivity with batching, battery drain with interval pushback, and partial failure via batched API calls. Includes indexing for performance, access controls for security, and ETL jobs for data flow. However, it lacks details on retries, idempotency (e.g., duplicate POST handling), and rollback procedures for failed ETL jobs.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed plan with specific SQL schema, API payloads, ETL steps, and legal requirements. Includes sequence (Android -> backend -> PostgreSQL -> BigQuery), concrete commands (DELETE SQL, partition expiry), and estimates (data volume). A team could start execution immediately, though some areas like DSAR script details are light.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Design is proportionate to team size, with clear seams (separate tables, access roles) and stated risks (battery drain, misuse temptation). Includes documentation via DPIA and training, but lacks specifics on tests, observability (e.g., monitoring ETL jobs), and handover documentation for the new systems.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design that balances technical feasibility with legal compliance and operational practicality.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design that balances technical feasibility with legal compliance and operational practicality.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

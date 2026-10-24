@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 840,
+  "cost_usd": 0.004249,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "82983b59ffff30f5",
+  "item_id": "eth-012",
+  "latency_s": 10.649,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 49,
+  "provider": "anthropic",
+  "request_fingerprint": "0c69e64b87bf616e",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# The Doctrine of Double Effect Does Real Moral Work\n\nI'll argue that DDE is not mere relabeling, but identifies a genuine moral distinction that our considered judgments actually track.\n\n## The Core Claim\n\nDDE permits actions with harmful side effects when: (1) the act itself is permissible, (2) the good effect is intended and outweighs the bad, (3) the bad effect is foreseen but unintended, and (4) there's no better alternative. The key insight is that **intention matters morally in a way consequences alone cannot capture**.\n\n## Why This Isn't Just Relabeling\n\n**The contrast cases work.** Consider:\n\n- A doctor giving high-dose morphine to a dying patient for pain relief, foreseeing death will come sooner\n- A doctor injecting lethal medication to end suffering\n\nThe outcomes are identical. The DDE says these differ morally because in the first case, death is a foreseen side effect of pain relief; in the second, it's the intended means. \n\nIf DDE were mere relabeling, we'd expect people's moral intuitions to track only consequences. But they don't—most people distinguish these cases, and this distinction seems *principled* rather than arbitrary.\n\n**It explains our actual moral practice.** We permit:\n- Collateral civilian deaths in justified wars (foreseen, not intended)\n- Organ damage from chemotherapy (side effect of treating cancer)\n\nBut we prohibit:\n- Killing one innocent person to harvest organs for five (intended harm as means)\n\nThese distinctions are embedded in law, medical ethics, and warfare conventions. DDE doesn't create these distinctions; it *articulates* them.\n\n## The Strongest Objection\n\nThe skeptic's best move: \"You're just calling intentions you approve of 'unintended' and intentions you disapprove of 'intended.' The real moral work is done by your prior judgment about what's acceptable.\"\n\nThis has force. But it proves too much. By this logic, *any* moral principle is \"just relabeling\"—we could say the same about rights, consent, or fairness. The question isn't whether DDE is independent of all moral judgment, but whether it *adds structure* to our moral reasoning.\n\n## Why It Does Add Structure\n\nDDE constrains what counts as a justified action in ways that pure consequentialism doesn't:\n\n1. **It forbids certain means even when beneficial.** You can't kill an innocent person as a means to save five others, even though the math works. This constraint comes from the intention requirement, not from consequences.\n\n2. **It explains why we require proportionality.** The doctrine doesn't just ask \"is the good effect bigger?\" It asks \"is the good effect *intended* and proportionate to the foreseen harm?\" These are different questions.\n\n3. **It provides guidance in genuine dilemmas.** When consequences are unclear or incommensurable, DDE offers a decision procedure: focus on what you're directly aiming at, not merely what you foresee.\n\n## The Real Insight\n\nDDE's deepest contribution is recognizing that **agency matters**. What you do is different from what merely happens as a result of what you do. A surgeon's hands causing tissue damage during necessary surgery is morally different from a surgeon's hands causing the same damage intentionally.\n\nThis isn't arbitrary relabeling—it reflects something true about moral responsibility: we are more responsible for what we intend than for what we merely foresee.\n\n---\n\n**Conclusion:** DDE does real work by identifying intention as a morally relevant category that consequences alone miss. It's not a perfect doctrine, but it's not empty either. It articulates distinctions we actually make and constrains our reasoning in ways that matter.",
+  "timestamp_utc": "2026-10-21T23:35:27Z"
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses mixed literacy levels and irregular attendance. It proposes specific, low-cost differentiation: oral responses before written, pairing stronger and weaker readers, sentence frames, word banks, and choice of text difficulty. It accounts for language needs (e.g., 'use visuals', 'say words aloud') and material constraints (activities can be done orally if copies are limited). Adaptations are implementable by one teacher (e.g., 'teacher moves between learners', 'peer support'). No generic 'differentiate as needed' language is used; instead, detailed strategies are provided.",
+    "pathway_breadth": "This item does not involve student futures pathway guidance; instead, the response is inclusive of the range of learners. It addresses adult motivations (helping children, driving licence, everyday tasks) with relevant content (school notes, driving texts, forms) and respects diverse goals. It avoids school-style material and treats learners with respect (e.g., 'avoiding childish presentation', 'praising small successes'). The plan is designed for irregular attendance and mixed levels, ensuring inclusivity.",
+    "pedagogical_soundness": "The response clearly states learning objectives (e.g., 'read and understand key information from short everyday texts', 'write a short response') and aligns activities to them: the warm-up activates prior knowledge, vocabulary focus pre-teaches key words, main reading activity practices comprehension, discussion builds speaking skills, and writing task applies learning. Assessment is informal but checks comprehension and application (e.g., 'ability to identify key details', 'writing attempt'). Sequencing is logical with welcome, warm-up, skill-building, application, and review. Cognitive demand is appropriate for adult literacy learners, with differentiation for mixed levels.",
+    "workload_realism": "The 90-minute timing is broken into realistic segments (10+10+15+20+10+15+5 minutes = 85 minutes, leaving 5 minutes flexible). Materials are low-cost and practical (whiteboard, markers, copies of texts, word cards) and can be reused or adapted orally. Preparation involves gathering everyday texts, which is feasible. Marking is informal and during class (e.g., 'teacher checklist'), minimizing extra workload. The plan scales for 4-14 learners with clear adaptations (e.g., whole group for small classes, stations for large classes), and does not assume additional staff or technology."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-009",
+  "judge_cost_usd": 0.0014197,
+  "judge_latency_s": 49.289,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response clearly states learning objectives (e.g., 'read and understand key information from short everyday texts', 'write a short response') and aligns activities to them: the warm-up activates prior knowledge, vocabulary focus pre-teaches key words, main reading activity practices comprehension, discussion builds speaking skills, and writing task applies learning. Assessment is informal but checks comprehension and application (e.g., 'ability to identify key details', 'writing attempt'). Sequencing is logical with welcome, warm-up, skill-building, application, and review. Cognitive demand is appropriate for adult literacy learners, with differentiation for mixed levels.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The 90-minute timing is broken into realistic segments (10+10+15+20+10+15+5 minutes = 85 minutes, leaving 5 minutes flexible). Materials are low-cost and practical (whiteboard, markers, copies of texts, word cards) and can be reused or adapted orally. Preparation involves gathering everyday texts, which is feasible. Marking is informal and during class (e.g., 'teacher checklist'), minimizing extra workload. The plan scales for 4-14 learners with clear adaptations (e.g., whole group for small classes, stations for large classes), and does not assume additional staff or technology.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures pathway guidance; instead, the response is inclusive of the range of learners. It addresses adult motivations (helping children, driving licence, everyday tasks) with relevant content (school notes, driving texts, forms) and respects diverse goals. It avoids school-style material and treats learners with respect (e.g., 'avoiding childish presentation', 'praising small successes'). The plan is designed for irregular attendance and mixed levels, ensuring inclusivity.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses mixed literacy levels and irregular attendance. It proposes specific, low-cost differentiation: oral responses before written, pairing stronger and weaker readers, sentence frames, word banks, and choice of text difficulty. It accounts for language needs (e.g., 'use visuals', 'say words aloud') and material constraints (activities can be done orally if copies are limited). Adaptations are implementable by one teacher (e.g., 'teacher moves between learners', 'peer support'). No generic 'differentiate as needed' language is used; instead, detailed strategies are provided.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly practical, well-structured, and specifically tailored to the constraints and needs of adult literacy learners with irregular attendance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response is highly practical, well-structured, and specifically tailored to the constraints and needs of adult literacy learners with irregular attendance.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

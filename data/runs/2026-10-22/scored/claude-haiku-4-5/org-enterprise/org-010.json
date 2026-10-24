@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces the requested guidance document addressed to factory owners, not an analysis. It includes concrete components: step-by-step actions, templates (labor policy), specific documentation requirements, priority timelines, and resource lists. It could be used immediately with light editing (e.g., filling in factory names). It does not describe how to approach the task but provides the deliverable itself, with actionable checklists and examples.",
+    "constraint_fidelity": "The prompt specifies small factories in Bangladesh with limited administrative capacity and inability to afford external consultants. The response respects these constraints by providing low-cost solutions, recommending free resources (BGMEA, ILO Better Work Programme), suggesting simple documentation methods, and explicitly stating 'hire help only if you need certification or have complex issues'. It shows arithmetic with certification costs (~$2,000-5,000 for BSCI audit) and acknowledges budget limitations. All constraints are honored with specific, actionable guidance.",
+    "contextual_realism": "The response is calibrated for small Bangladeshi textile factories: it assumes no dedicated compliance officer (assigns 'one person to lead compliance even part-time'), uses simple documentation methods (one-page policies, physical/digital folders), recommends free local resources (BGMEA, ILO Bangladesh), and acknowledges real constraints like limited budgets for wastewater treatment. It avoids presupposing HR departments or expensive tooling, focusing on role overlap and practical steps. Small-organisation realities are acknowledged throughout.",
+    "jurisdictional_accuracy": "The response correctly references Bangladesh-specific elements: 'check current Bangladesh rates' for minimum wage, 'comply with Bangladesh labor law', and local resources (BGMEA, Bangladesh Environmental Lawyers Association). It avoids US assumptions by not mentioning at-will employment or US benefits. It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it could more explicitly flag where local legal advice is needed (e.g., union regulations). Factual accuracy is maintained for the jurisdiction."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00133263,
+  "judge_latency_s": 54.929,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies small factories in Bangladesh with limited administrative capacity and inability to afford external consultants. The response respects these constraints by providing low-cost solutions, recommending free resources (BGMEA, ILO Better Work Programme), suggesting simple documentation methods, and explicitly stating 'hire help only if you need certification or have complex issues'. It shows arithmetic with certification costs (~$2,000-5,000 for BSCI audit) and acknowledges budget limitations. All constraints are honored with specific, actionable guidance.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small Bangladeshi textile factories: it assumes no dedicated compliance officer (assigns 'one person to lead compliance even part-time'), uses simple documentation methods (one-page policies, physical/digital folders), recommends free local resources (BGMEA, ILO Bangladesh), and acknowledges real constraints like limited budgets for wastewater treatment. It avoids presupposing HR departments or expensive tooling, focusing on role overlap and practical steps. Small-organisation realities are acknowledged throughout.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces the requested guidance document addressed to factory owners, not an analysis. It includes concrete components: step-by-step actions, templates (labor policy), specific documentation requirements, priority timelines, and resource lists. It could be used immediately with light editing (e.g., filling in factory names). It does not describe how to approach the task but provides the deliverable itself, with actionable checklists and examples.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly references Bangladesh-specific elements: 'check current Bangladesh rates' for minimum wage, 'comply with Bangladesh labor law', and local resources (BGMEA, Bangladesh Environmental Lawyers Association). It avoids US assumptions by not mentioning at-will employment or US benefits. It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it could more explicitly flag where local legal advice is needed (e.g., union regulations). Factual accuracy is maintained for the jurisdiction.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides highly actionable, context-aware guidance tailored to small Bangladeshi factories with limited resources.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response provides highly actionable, context-aware guidance tailored to small Bangladeshi factories with limited resources.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

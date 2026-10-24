@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 1262,
+  "cost_usd": 0.01273125,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 10.725,
+  "methodology_version": "m1.3.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 89,
+  "provider": "google",
+  "request_fingerprint": "067481aeaea5519d",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "Here is the working to calculate the tailor's total profit.\n\n**1. Calculate the total amount of fabric:**\nThe tailor buys 4 rolls, and each roll is 45 metres.\n4 rolls * 45 metres/roll = 180 metres of fabric\n\n**2. Calculate the total cost of the fabric:**\nThe fabric costs $8 per metre.\n180 metres * $8/metre = $1440\n\n**3. Calculate the number of dresses made:**\nThe tailor uses all the fabric, and each dress requires 12 metres.\n180 metres / 12 metres/dress = 15 dresses\n\n**4. Calculate the total revenue from selling the dresses:**\nEach dress is sold for $150.\n15 dresses * $150/dress = $2250\n\n**5. Calculate the total profit:**\nProfit is total revenue minus total cost.\n$2250 (revenue) - $1440 (cost) = $810\n\nANSWER: 810",
+  "timestamp_utc": "2026-10-21T23:43:22Z"
+}

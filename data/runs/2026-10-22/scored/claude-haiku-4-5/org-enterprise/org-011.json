@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for specific advice on spending PEN 2 million, including a loss split and costed allocation. The response provides a concrete budget breakdown with line items (e.g., PEN 700K for DMA infrastructure, PEN 350K for meter replacement), a rationale for sequencing (DMAs first), and expected outcomes. It is a usable deliverable that could be taken to a board meeting with light editing.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across three tiers: PEN 1.2M (60%) for physical loss reduction, PEN 600K (30%) for commercial loss reduction, and PEN 200K (10%) for capacity/sustainability, with detailed line items that sum to the total. It respects the budget constraint and shows arithmetic breakdown.",
+    "contextual_realism": "The response acknowledges the utility's size (60,000 people) and Peruvian context, avoids assuming dedicated HR or legal teams, and recommends practical measures like contractor use for an 18-month pilot rather than permanent hires. It considers political realities (e.g., resistance to meter replacement, negotiation with local government) and uses cost-effective tools (acoustic equipment, basic software upgrades), which are realistic for a mid-size Peruvian utility.",
+    "jurisdictional_accuracy": "The response is tailored to Peru, referencing Lima's NRW averages and regional norms, and avoids US-specific assumptions (e.g., no mention of US tax categories or employment practices). It focuses on technical and operational recommendations without making jurisdiction-specific legal claims, so general factual accuracy is assessed. The content is plausible and contextually appropriate."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00096502,
+  "judge_latency_s": 38.646,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across three tiers: PEN 1.2M (60%) for physical loss reduction, PEN 600K (30%) for commercial loss reduction, and PEN 200K (10%) for capacity/sustainability, with detailed line items that sum to the total. It respects the budget constraint and shows arithmetic breakdown.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges the utility's size (60,000 people) and Peruvian context, avoids assuming dedicated HR or legal teams, and recommends practical measures like contractor use for an 18-month pilot rather than permanent hires. It considers political realities (e.g., resistance to meter replacement, negotiation with local government) and uses cost-effective tools (acoustic equipment, basic software upgrades), which are realistic for a mid-size Peruvian utility.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for specific advice on spending PEN 2 million, including a loss split and costed allocation. The response provides a concrete budget breakdown with line items (e.g., PEN 700K for DMA infrastructure, PEN 350K for meter replacement), a rationale for sequencing (DMAs first), and expected outcomes. It is a usable deliverable that could be taken to a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is tailored to Peru, referencing Lima's NRW averages and regional norms, and avoids US-specific assumptions (e.g., no mention of US tax categories or employment practices). It focuses on technical and operational recommendations without making jurisdiction-specific legal claims, so general factual accuracy is assessed. The content is plausible and contextually appropriate.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly specific, actionable, and well-calibrated to the Peruvian utility's constraints and context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response is highly specific, actionable, and well-calibrated to the Peruvian utility's constraints and context.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

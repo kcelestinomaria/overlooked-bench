@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic summary by engaging with palaeographic methods (e.g., karagma abbreviation marks, punctuation evolution), evidence (specific manuscripts like Sinai Polykephalon), and scholarly debates (e.g., regional scriptoria distinctions, conservative vs. secular usage). It provides nuanced insights into dating clues (transitional letter forms) and provenance (monastic vs. royal scribal hands), which would be recognized by specialists as indicative of deeper literature familiarity rather than surface-level summaries.",
+    "domain_accuracy": "The response provides detailed factual claims about the three scripts: Asomtavruli (5th century, majuscule, geometric), Nuskhuri (9th century, minuscule, angular), Mkhedruli (10th-11th century, cursive, unicase). It correctly notes the Khutsuri system and mentions specific manuscripts (Sinai Polykephalon, 864 AD) and historical figures (King Bagrat IV). The dating table and provenance details (e.g., Tao-Klarjeti, Mount Athos, Sinai scriptoria) align with established scholarship. No invented citations or terms are detected; all information is consistent with known palaeographic research on Georgian manuscripts.",
+    "field_situatedness": "The response uses Georgian-specific terminology (Asomtavruli, Nuskhuri, Mkhedruli, Khutsuri, karagma) and frameworks (palaeographic analysis of scripts in Georgian monastic and secular contexts). It references key Georgian institutions (e.g., Iviron Monastery, Tao-Klarjeti) and avoids substituting Western or Anglophone framings. The focus on regional scriptoria and Georgian historical figures (e.g., Shota Rustaveli) aligns with the field's traditions, demonstrating appropriate situatedness in Georgian palaeography.",
+    "scholarly_calibration": "The response distinguishes well-established facts (e.g., script origins and functions) from nuanced or context-dependent claims (e.g., 'scribal hands became less uniform' during Mongol invasions, regional scriptoria characteristics). It avoids blanket disclaimers and instead provides specific, calibrated details (e.g., 'the earliest dated Nuskhuri manuscript is...', 'Mkhedruli begins to develop regional variations'). However, it does not explicitly flag areas of scholarly dispute or uncertainty (e.g., precise dating boundaries or contested attributions), presenting most information with uniform confidence."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-007",
+  "judge_cost_usd": 0.00130197,
+  "judge_latency_s": 65.138,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response provides detailed factual claims about the three scripts: Asomtavruli (5th century, majuscule, geometric), Nuskhuri (9th century, minuscule, angular), Mkhedruli (10th-11th century, cursive, unicase). It correctly notes the Khutsuri system and mentions specific manuscripts (Sinai Polykephalon, 864 AD) and historical figures (King Bagrat IV). The dating table and provenance details (e.g., Tao-Klarjeti, Mount Athos, Sinai scriptoria) align with established scholarship. No invented citations or terms are detected; all information is consistent with known palaeographic research on Georgian manuscripts.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic summary by engaging with palaeographic methods (e.g., karagma abbreviation marks, punctuation evolution), evidence (specific manuscripts like Sinai Polykephalon), and scholarly debates (e.g., regional scriptoria distinctions, conservative vs. secular usage). It provides nuanced insights into dating clues (transitional letter forms) and provenance (monastic vs. royal scribal hands), which would be recognized by specialists as indicative of deeper literature familiarity rather than surface-level summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established facts (e.g., script origins and functions) from nuanced or context-dependent claims (e.g., 'scribal hands became less uniform' during Mongol invasions, regional scriptoria characteristics). It avoids blanket disclaimers and instead provides specific, calibrated details (e.g., 'the earliest dated Nuskhuri manuscript is...', 'Mkhedruli begins to develop regional variations'). However, it does not explicitly flag areas of scholarly dispute or uncertainty (e.g., precise dating boundaries or contested attributions), presenting most information with uniform confidence.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Georgian-specific terminology (Asomtavruli, Nuskhuri, Mkhedruli, Khutsuri, karagma) and frameworks (palaeographic analysis of scripts in Georgian monastic and secular contexts). It references key Georgian institutions (e.g., Iviron Monastery, Tao-Klarjeti) and avoids substituting Western or Anglophone framings. The focus on regional scriptoria and Georgian historical figures (e.g., Shota Rustaveli) aligns with the field's traditions, demonstrating appropriate situatedness in Georgian palaeography.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of medieval Georgian palaeography with specific, accurate details and deep engagement beyond survey-level content.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of medieval Georgian palaeography with specific, accurate details and deep engagement beyond survey-level content.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

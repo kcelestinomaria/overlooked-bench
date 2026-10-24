@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting includes adults aged 25-60 with irregular attendance and varying motivations. Response addresses this concretely: stations are tiered (basic to challenging), instructions have visuals, activities are self-paced, and goal-setting is individualized. Adaptations are low-cost (reusable materials, verbal differentiation) and implementable by one instructor. No generic 'differentiate as needed' placeholders.",
+    "pathway_breadth": "The prompt is a lesson plan, not pathway guidance. The response is inclusive of the range of learners: activities connect to real-life needs (driving licence, helping children, job applications), respect adult motivations, and are accessible regardless of attendance history. It treats learners with respect and acknowledges their diverse goals.",
+    "pedagogical_soundness": "The objective is 'practice reading, writing, and comprehension using real-life materials'. Activities align: Station 1 (vocabulary matching) builds form-related vocabulary, Station 2 (reading mock forms) builds comprehension, Station 3 (filling forms) builds writing. The applied practice (noticeboard) integrates all skills. Sequencing is coherent with starter activating prior knowledge before skill stations. Assessment is through sharing and goal-setting, which measures practical application rather than formal testing. However, the assessment lacks specific criteria for measuring objective achievement.",
+    "workload_realism": "Timings sum to 90 minutes (15+30+25+15+5). Materials are realistic for adult literacy class: name tags, markers, laminated cards, sample forms, local leaflets. Preparation involves creating stations and gathering realia, which is manageable. Marking is minimal (goal cards review). Works with 4-14 learners through self-paced stations and modular group task. No technology or excessive printing assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-009",
+  "judge_cost_usd": 0.00101968,
+  "judge_latency_s": 12.744,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The objective is 'practice reading, writing, and comprehension using real-life materials'. Activities align: Station 1 (vocabulary matching) builds form-related vocabulary, Station 2 (reading mock forms) builds comprehension, Station 3 (filling forms) builds writing. The applied practice (noticeboard) integrates all skills. Sequencing is coherent with starter activating prior knowledge before skill stations. Assessment is through sharing and goal-setting, which measures practical application rather than formal testing. However, the assessment lacks specific criteria for measuring objective achievement.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 90 minutes (15+30+25+15+5). Materials are realistic for adult literacy class: name tags, markers, laminated cards, sample forms, local leaflets. Preparation involves creating stations and gathering realia, which is manageable. Marking is minimal (goal cards review). Works with 4-14 learners through self-paced stations and modular group task. No technology or excessive printing assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is a lesson plan, not pathway guidance. The response is inclusive of the range of learners: activities connect to real-life needs (driving licence, helping children, job applications), respect adult motivations, and are accessible regardless of attendance history. It treats learners with respect and acknowledges their diverse goals.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting includes adults aged 25-60 with irregular attendance and varying motivations. Response addresses this concretely: stations are tiered (basic to challenging), instructions have visuals, activities are self-paced, and goal-setting is individualized. Adaptations are low-cost (reusable materials, verbal differentiation) and implementable by one instructor. No generic 'differentiate as needed' placeholders.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The plan is highly practical, scalable, and directly tied to adult learners' real-world needs.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The plan is highly practical, scalable, and directly tied to adult learners' real-world needs.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The guidance implicitly addresses the student's specific constraints (limited funds, below-cut-off KCSE results) by offering multiple affordable pathways (diplomas, certificates, TVET, apprenticeships) and financing options (bursaries, sponsorships). It advises considering 'career goals, finances, and how soon you want to start studying or working,' which accounts for individual circumstances. However, it does not explicitly address broader learner diversity (e.g., language barriers, additional needs), though this may be less critical for one-on-one guidance.",
+    "pathway_breadth": "The response covers multiple non-degree pathways with substantial detail: self-sponsored university, diploma programmes (e.g., 'Diploma in Education, Nursing, ICT'), certificate courses (e.g., 'Certificate in Business, ICT, Hospitality'), TVET/technical training (e.g., 'electrical installation, plumbing, motor vehicle mechanics'), apprenticeships, and entrepreneurship. It gives specific examples, costs considerations, and outcomes for each, treating non-degree routes with equal seriousness to academic ones. It accurately references Kenyan systems like KUCCPS, TVET, and bursary sources.",
+    "pedagogical_soundness": "This is guidance rather than a lesson plan, so pedagogical elements like objectives, activities, and assessments are not applicable. The response provides structured advice but lacks explicit learning objectives or assessments, making this dimension not directly scorable in the traditional sense. However, the guidance is logically sequenced and builds understanding progressively.",
+    "workload_realism": "The guidance is designed for a practitioner (adviser) to deliver verbally or in written form to a student. It requires no special materials, technology, or excessive preparation time beyond knowledge of Kenyan education pathways. It is feasible for an adviser to provide this guidance in a single counselling session."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00123187,
+  "judge_latency_s": 48.299,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This is guidance rather than a lesson plan, so pedagogical elements like objectives, activities, and assessments are not applicable. The response provides structured advice but lacks explicit learning objectives or assessments, making this dimension not directly scorable in the traditional sense. However, the guidance is logically sequenced and builds understanding progressively.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The guidance is designed for a practitioner (adviser) to deliver verbally or in written form to a student. It requires no special materials, technology, or excessive preparation time beyond knowledge of Kenyan education pathways. It is feasible for an adviser to provide this guidance in a single counselling session.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple non-degree pathways with substantial detail: self-sponsored university, diploma programmes (e.g., 'Diploma in Education, Nursing, ICT'), certificate courses (e.g., 'Certificate in Business, ICT, Hospitality'), TVET/technical training (e.g., 'electrical installation, plumbing, motor vehicle mechanics'), apprenticeships, and entrepreneurship. It gives specific examples, costs considerations, and outcomes for each, treating non-degree routes with equal seriousness to academic ones. It accurately references Kenyan systems like KUCCPS, TVET, and bursary sources.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The guidance implicitly addresses the student's specific constraints (limited funds, below-cut-off KCSE results) by offering multiple affordable pathways (diplomas, certificates, TVET, apprenticeships) and financing options (bursaries, sponsorships). It advises considering 'career goals, finances, and how soon you want to start studying or working,' which accounts for individual circumstances. However, it does not explicitly address broader learner diversity (e.g., language barriers, additional needs), though this may be less critical for one-on-one guidance.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, specific, and realistic guidance for a Kenyan student with limited funds, covering multiple pathways with equal depth and practical advice.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, specific, and realistic guidance for a Kenyan student with limited funds, covering multiple pathways with equal depth and practical advice.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

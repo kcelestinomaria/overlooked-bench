@@ -26,6 +26,9 @@ import yaml
 
 from .config import CATEGORIES_DIR, CATEGORY_LABELS
 
+# Tracks whose items must carry machine-checkable `constraints`.
+CONSTRAINT_CATEGORIES = frozenset({"software-engineering-production"})
+
 
 @dataclass(frozen=True)
 class Item:
@@ -36,6 +39,7 @@ class Item:
     prompt: str
     rationale: str
     tags: list[str] = field(default_factory=list)
+    title: str | None = None          # Short display name for cards. Not shown to models.
 
     # Optional, category-dependent.
     reference: str | None = None      # Reference answer (calibration items).
@@ -46,6 +50,11 @@ class Item:
     group: str | None = None
     institution: str | None = None
     attributes: dict[str, Any] = field(default_factory=dict)
+
+    # Software-engineering-production: machine-checkable hard constraints. Each
+    # is {id, text, check}, where `check` is a yes/no question phrased so that
+    # YES means the response broke the constraint.
+    constraints: list[dict[str, str]] = field(default_factory=list)
 
     @property
     def content_hash(self) -> str:
@@ -116,6 +125,36 @@ def load_category(category: str, root: Path | None = None) -> list[Item]:
                 f"so matched-set asymmetry can be computed",
             )
 
+        constraints = list(raw.get("constraints") or [])
+        if category in CONSTRAINT_CATEGORIES:
+            # The violation-rate charts are only as good as these checks, so a
+            # vague or missing one is a dataset error, not a warning.
+            _require(
+                bool((raw.get("rubric_notes") or "").strip()),
+                f"{where} ({item_id}): {category} items require 'rubric_notes'",
+            )
+            _require(
+                bool(constraints),
+                f"{where} ({item_id}): {category} items require at least one "
+                f"entry under 'constraints'",
+            )
+            cids: set[str] = set()
+            for c in constraints:
+                _require(
+                    isinstance(c, dict) and all((c.get(k) or "").strip() for k in ("id", "text", "check")),
+                    f"{where} ({item_id}): every constraint needs non-empty 'id', 'text' and 'check'",
+                )
+                _require(c["id"] not in cids, f"{where} ({item_id}): duplicate constraint id {c['id']!r}")
+                cids.add(c["id"])
+                # A clarifying sentence may follow the question ("...? Existing
+                # Postgres does not count."), so require a question, not a
+                # trailing question mark.
+                _require(
+                    "?" in c["check"] and c["check"].split()[0] in ("Does", "Do", "Is", "Are"),
+                    f"{where} ({item_id}) {c['id']}: 'check' must be a yes/no question "
+                    f"where YES means the constraint was broken",
+                )
+
         items.append(
             Item(
                 id=item_id,
@@ -123,12 +162,18 @@ def load_category(category: str, root: Path | None = None) -> list[Item]:
                 prompt=prompt,
                 rationale=rationale,
                 tags=list(raw.get("tags") or []),
+                title=(raw.get("title") or None),
                 reference=(raw.get("reference") or None),
                 rubric_notes=(raw.get("rubric_notes") or None),
                 contested=bool(raw.get("contested", False)),
                 group=raw.get("group"),
                 institution=raw.get("institution"),
                 attributes=dict(raw.get("attributes") or {}),
+                constraints=[
+                    {"id": str(c["id"]), "text": str(c["text"]).strip(),
+                     "check": str(c["check"]).strip()}
+                    for c in constraints
+                ],
             )
         )
     return items

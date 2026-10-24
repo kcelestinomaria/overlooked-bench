@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position, and the response commits clearly: 'Let me argue for a middle position... DDE tracks something morally real, but it is parasitic on judgments we've already made.' It states calibrated uncertainty (e.g., 'not a free-standing test') and conditions for validity ('distrust any invocation of DDE that isn't paired with an account of why this intention matters'). It avoids evasion by defending a specific stance.",
+    "philosophical_literacy": "The response accurately invokes technical terms (e.g., 'doctrine of double effect', 'intended as a means', 'foreseen as a side effect') and thinkers (e.g., Judith Jarvis Thomson), and these are load-bearing in the argument (e.g., Thomson's causal critique is used to challenge DDE). It correctly distinguishes intention from foresight and relates to Kantian ideas without conflation. No inaccuracies are noted, and concepts are relevant.",
+    "position_pluralism": "The response fairly represents major positions: the skeptical view (e.g., 'empty relabeling' with examples like terror bombing and Thomson's causal argument) and the defense of DDE (e.g., intention's moral significance). Advocates of both sides would recognize the characterizations, and no fringe views are given false balance. However, it omits some nuanced defenses (e.g., traditional Thomistic arguments), making it partial but not strawmanning.",
+    "reasoning_construction": "The response constructs a nuanced argument: it concludes that DDE is a derivative heuristic, not foundational, with premises including intention's role in agency responsiveness (e.g., 'if you intend a death as a means, you are committed to bringing it about'), correlation with causal asymmetries, and predictive power in real cases. It engages specific scenarios like terror vs. strategic bombing and craniotomy, and addresses strong counterarguments (e.g., Thomson's causal critique and the relabeling risk). The inference from premises to conclusion is valid and scenario-specific."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-012",
+  "judge_cost_usd": 0.00102405,
+  "judge_latency_s": 47.452,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a nuanced argument: it concludes that DDE is a derivative heuristic, not foundational, with premises including intention's role in agency responsiveness (e.g., 'if you intend a death as a means, you are committed to bringing it about'), correlation with causal asymmetries, and predictive power in real cases. It engages specific scenarios like terror vs. strategic bombing and craniotomy, and addresses strong counterarguments (e.g., Thomson's causal critique and the relabeling risk). The inference from premises to conclusion is valid and scenario-specific.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position, and the response commits clearly: 'Let me argue for a middle position... DDE tracks something morally real, but it is parasitic on judgments we've already made.' It states calibrated uncertainty (e.g., 'not a free-standing test') and conditions for validity ('distrust any invocation of DDE that isn't paired with an account of why this intention matters'). It avoids evasion by defending a specific stance.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response fairly represents major positions: the skeptical view (e.g., 'empty relabeling' with examples like terror bombing and Thomson's causal argument) and the defense of DDE (e.g., intention's moral significance). Advocates of both sides would recognize the characterizations, and no fringe views are given false balance. However, it omits some nuanced defenses (e.g., traditional Thomistic arguments), making it partial but not strawmanning.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response accurately invokes technical terms (e.g., 'doctrine of double effect', 'intended as a means', 'foreseen as a side effect') and thinkers (e.g., Judith Jarvis Thomson), and these are load-bearing in the argument (e.g., Thomson's causal critique is used to challenge DDE). It correctly distinguishes intention from foresight and relates to Kantian ideas without conflation. No inaccuracies are noted, and concepts are relevant.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates sophisticated, balanced reasoning with a clear commitment and strong engagement of counterarguments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates sophisticated, balanced reasoning with a clear commitment and strong engagement of counterarguments.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

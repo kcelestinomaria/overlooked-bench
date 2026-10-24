@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Not purchasing any new MFA/IDP product",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Not upgrading Java or WebSphere",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "This plan delivers enforced MFA within six weeks using only existing M365/Entra entitlements and existing AD",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed week-by-week plan with specific tasks for dev and sysadmin, concrete steps like 'register the claims app as an Enterprise Application', and verification steps (e.g., testing in non-prod). It includes a risk register and documentation plans. However, it lacks exact commands or code snippets (e.g., for firewall rules or Entra configuration), and some steps are described rather than provided as executable (e.g., 'build Conditional Access policy' without specifics). It is actionable but requires further detailing for immediate execution.",
+    "constraint_fidelity": "The response explicitly states 'Not purchasing any new MFA/IDP product' and uses only existing Microsoft 365 E3/Entra ID entitlements, respecting the 'no new identity product or vendor purchase' constraint. It avoids Java or WebSphere upgrades, stating 'Not upgrading Java or WebSphere'. The plan is designed for two people (developer and sysadmin) over six weeks, with a week-by-week breakdown, and includes a risk mitigation for timeline (e.g., 'buffer week built into Weeks 3–4'). It acknowledges the constraint on team size and timeline and provides a feasible plan within those bounds.",
+    "maintainability": "The response documents risks and compensating controls (e.g., for service accounts), plans final documentation, and uses existing infrastructure (Entra ID) that the team likely already manages. However, it introduces a proxy layer that adds operational burden (monitoring Entra logs, maintaining connectors) without explicitly stating who will own it long-term or how it fits the team's skills. It does not mention tests, observability tools, or code seams for future changes, and the dual authentication (proxy + LDAP) might increase complexity without clear handover notes.",
+    "production_realism": "The response accounts for production issues: it plans for testing on non-prod WebSphere (Week 2), addresses failure modes like cookie/header issues and hardcoded URLs, includes firewall hardening to prevent bypass (Week 4), and has a rollback plan (Week 5). It considers the team's skill mix (Java dev and Windows sysadmin) by assigning appropriate tasks (e.g., sysadmin handles Entra/AD FS setup, dev handles app testing). However, it does not explicitly detail load testing or observability for the proxy setup, and the inner LDAP bind adds operational complexity that might not be fully addressed."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 2,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.00149595,
+  "judge_latency_s": 72.686,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states 'Not purchasing any new MFA/IDP product' and uses only existing Microsoft 365 E3/Entra ID entitlements, respecting the 'no new identity product or vendor purchase' constraint. It avoids Java or WebSphere upgrades, stating 'Not upgrading Java or WebSphere'. The plan is designed for two people (developer and sysadmin) over six weeks, with a week-by-week breakdown, and includes a risk mitigation for timeline (e.g., 'buffer week built into Weeks 3–4'). It acknowledges the constraint on team size and timeline and provides a feasible plan within those bounds.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production issues: it plans for testing on non-prod WebSphere (Week 2), addresses failure modes like cookie/header issues and hardcoded URLs, includes firewall hardening to prevent bypass (Week 4), and has a rollback plan (Week 5). It considers the team's skill mix (Java dev and Windows sysadmin) by assigning appropriate tasks (e.g., sysadmin handles Entra/AD FS setup, dev handles app testing). However, it does not explicitly detail load testing or observability for the proxy setup, and the inner LDAP bind adds operational complexity that might not be fully addressed.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed week-by-week plan with specific tasks for dev and sysadmin, concrete steps like 'register the claims app as an Enterprise Application', and verification steps (e.g., testing in non-prod). It includes a risk register and documentation plans. However, it lacks exact commands or code snippets (e.g., for firewall rules or Entra configuration), and some steps are described rather than provided as executable (e.g., 'build Conditional Access policy' without specifics). It is actionable but requires further detailing for immediate execution.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response documents risks and compensating controls (e.g., for service accounts), plans final documentation, and uses existing infrastructure (Entra ID) that the team likely already manages. However, it introduces a proxy layer that adds operational burden (monitoring Entra logs, maintaining connectors) without explicitly stating who will own it long-term or how it fits the team's skills. It does not mention tests, observability tools, or code seams for future changes, and the dual authentication (proxy + LDAP) might increase complexity without clear handover notes.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a constraint-compliant, realistic plan using existing Entra ID capabilities but adds operational complexity with a proxy approach.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Not purchasing any new MFA/IDP product\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Not upgrading Java or WebSphere\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"This plan delivers enforced MFA within six weeks using only existing M365/Entra entitlements and existing AD\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides a constraint-compliant, realistic plan using existing Entra ID capabilities but adds operational complexity with a proxy approach.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 78.75
+}

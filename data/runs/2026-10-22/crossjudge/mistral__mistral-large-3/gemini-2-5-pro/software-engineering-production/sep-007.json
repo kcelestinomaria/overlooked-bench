@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers exactly what was asked: a post-incident review with a timeline, root cause analysis, and action items.\n2. Action items include concrete steps (e.g., 'Update the on-call handbook'), effort estimates, and priorities.\n3. The table format provides clear sequence and ownership (e.g., 'Strengthen the PR Review Process' with 1 engineer-day).\n4. An engineer could execute the plan immediately with minor edits (e.g., copy-pasting the runbook steps).\n\nEvidence:\n- 'Total Estimated Effort: 13 Engineer-Days' with a detailed table.\n- 'Create a runbook/checklist for engineers to follow when creating and reviewing migrations' (specific deliverable).\n- 'Update the on-call handbook to define a clear, time-based escalation policy' (actionable command).",
+    "constraint_fidelity": "1. The response explicitly states it is blameless, focusing on system and process causes, not individuals (C1 kept).\n2. No new paid tooling is recommended; all action items use existing stack or open-source solutions (C2 kept).\n3. Action items are costed at 13 engineer-days, well within the 15-day limit, and are prioritised (C3 kept).\n4. The response shows arithmetic (effort estimates) and justifies all actions within constraints. No silent violations or unjustified relaxations.\n\nEvidence for constraint adherence:\n- C1: 'This was a systemic failure with multiple contributing factors. Our analysis is blameless and focuses on process and system improvements.'\n- C2: 'Our budget for new tooling is frozen... so all items leverage our existing stack or open-source solutions.'\n- C3: 'Total Estimated Effort: 13 Engineer-Days' with a clear table of priorities.",
+    "maintainability": "1. The proposed solutions are proportionate to a 5-engineer team (e.g., manual gate, not automated linting).\n2. Risks and debt are explicitly stated (e.g., 'Staging Environment Data Seeding' in backlog).\n3. Documentation and observability are prioritised (e.g., Grafana dashboard, runbook).\n4. No unowned moving parts or unsafe shortcuts; all actions are scoped to the team's capacity.\n\nEvidence:\n- 'Document a formal policy for database migrations' (clear handover).\n- 'Create a dedicated PostgreSQL dashboard' (observability for future maintainers).\n- 'Mandate two approvals for all schema changes' (reduces risk of recurrence).",
+    "production_realism": "1. The response accounts for the team's size (5 engineers) and skill mix, proposing realistic operational burdens (e.g., manual gate for migrations, Grafana dashboard).\n2. It addresses failure modes relevant to the scale: locking on a 61M-row table, retries (job queue backlog), and observability gaps.\n3. The proposed solutions (e.g., `CREATE INDEX CONCURRENTLY`, lock monitoring) are technically correct for PostgreSQL and align with the team's existing infrastructure.\n4. No assumptions about operational capacity beyond the team's stated capabilities.\n\nEvidence:\n- 'Mandate the use of `CREATE INDEX CONCURRENTLY` for new indexes' (correct for PostgreSQL).\n- 'Using our existing Grafana instance, create a dedicated PostgreSQL dashboard' (fits team size).\n- 'Modify the deployment pipeline to require a manual approval step' (realistic for 5 engineers)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-007",
+  "judge_cost_usd": 0.0028756,
+  "judge_latency_s": 12.489,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states it is blameless, focusing on system and process causes, not individuals (C1 kept).\\n2. No new paid tooling is recommended; all action items use existing stack or open-source solutions (C2 kept).\\n3. Action items are costed at 13 engineer-days, well within the 15-day limit, and are prioritised (C3 kept).\\n4. The response shows arithmetic (effort estimates) and justifies all actions within constraints. No silent violations or unjustified relaxations.\\n\\nEvidence for constraint adherence:\\n- C1: 'This was a systemic failure with multiple contributing factors. Our analysis is blameless and focuses on process and system improvements.'\\n- C2: 'Our budget for new tooling is frozen... so all items leverage our existing stack or open-source solutions.'\\n- C3: 'Total Estimated Effort: 13 Engineer-Days' with a clear table of priorities.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the team's size (5 engineers) and skill mix, proposing realistic operational burdens (e.g., manual gate for migrations, Grafana dashboard).\\n2. It addresses failure modes relevant to the scale: locking on a 61M-row table, retries (job queue backlog), and observability gaps.\\n3. The proposed solutions (e.g., `CREATE INDEX CONCURRENTLY`, lock monitoring) are technically correct for PostgreSQL and align with the team's existing infrastructure.\\n4. No assumptions about operational capacity beyond the team's stated capabilities.\\n\\nEvidence:\\n- 'Mandate the use of `CREATE INDEX CONCURRENTLY` for new indexes' (correct for PostgreSQL).\\n- 'Using our existing Grafana instance, create a dedicated PostgreSQL dashboard' (fits team size).\\n- 'Modify the deployment pipeline to require a manual approval step' (realistic for 5 engineers).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers exactly what was asked: a post-incident review with a timeline, root cause analysis, and action items.\\n2. Action items include concrete steps (e.g., 'Update the on-call handbook'), effort estimates, and priorities.\\n3. The table format provides clear sequence and ownership (e.g., 'Strengthen the PR Review Process' with 1 engineer-day).\\n4. An engineer could execute the plan immediately with minor edits (e.g., copy-pasting the runbook steps).\\n\\nEvidence:\\n- 'Total Estimated Effort: 13 Engineer-Days' with a detailed table.\\n- 'Create a runbook/checklist for engineers to follow when creating and reviewing migrations' (specific deliverable).\\n- 'Update the on-call handbook to define a clear, time-based escalation policy' (actionable command).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The proposed solutions are proportionate to a 5-engineer team (e.g., manual gate, not automated linting).\\n2. Risks and debt are explicitly stated (e.g., 'Staging Environment Data Seeding' in backlog).\\n3. Documentation and observability are prioritised (e.g., Grafana dashboard, runbook).\\n4. No unowned moving parts or unsafe shortcuts; all actions are scoped to the team's capacity.\\n\\nEvidence:\\n- 'Document a formal policy for database migrations' (clear handover).\\n- 'Create a dedicated PostgreSQL dashboard' (observability for future maintainers).\\n- 'Mandate two approvals for all schema changes' (reduces risk of recurrence).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint adherence and production-ready engineering, with specific, costed, and prioritised action items.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response is a model of constraint adherence and production-ready engineering, with specific, costed, and prioritised action items.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

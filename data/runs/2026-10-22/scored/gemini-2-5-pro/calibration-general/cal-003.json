@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 12', which exactly matches the reference answer 'ANSWER: 12' in substance. The numerical value is correct.",
+    "instruction_compliance": "The prompt requested 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response includes step-by-step working and ends with 'ANSWER: 12' in the exact specified format.",
+    "reasoning_validity": "The response shows working: calculates fill rate (1/4), drain rate (1/6), net rate (1/4 - 1/6 = 1/12), and time (1/(1/12)=12). Each step is mathematically sound and supports the answer. The reasoning is valid and complete."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-003",
+  "judge_cost_usd": 0.00051065,
+  "judge_latency_s": 9.479,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 12', which exactly matches the reference answer 'ANSWER: 12' in substance. The numerical value is correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: calculates fill rate (1/4), drain rate (1/6), net rate (1/4 - 1/6 = 1/12), and time (1/(1/12)=12). Each step is mathematically sound and supports the answer. The reasoning is valid and complete.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt requested 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response includes step-by-step working and ends with 'ANSWER: 12' in the exact specified format.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a fully correct answer with valid reasoning and perfect compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a fully correct answer with valid reasoning and perfect compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

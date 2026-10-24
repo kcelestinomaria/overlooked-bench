@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for an explanation of cost difference, legal exposure, and sequencing plan. The response delivers all three concretely: it provides a detailed cost comparison table with line items, lists specific legal risks (subordination indicators, liabilities), and offers a phased sequence with timelines and actionable steps (e.g., 'Get written consent', 'Document the client demand'). It could be taken into a meeting with light editing, as it includes specific numbers, phases, and mitigation strategies.",
+    "constraint_fidelity": "The prompt describes a 9-person marketing agency in São Paulo, Brazil converting two PJ contractors to CLT employees. The response respects all constraints: it calculates costs specifically for Brazil (FGTS, INSS, 13th salary), acknowledges the small agency size by recommending consultation with a labor attorney rather than assuming in-house legal, and provides a realistic 4-week timeline. It shows arithmetic for cost increases (33-35% per person, totaling R$6,600-7,000/month) and does not silently violate any constraints.",
+    "contextual_realism": "The response is calibrated for a small agency: it recommends consulting an external labor attorney rather than assuming in-house legal, acknowledges budget constraints by advising 'secure budget approval for 33-35% cost increase', and suggests practical steps like using payroll software (Gupy, Folha de Pagamento) that are accessible to small businesses. It avoids presupposing dedicated HR or complex tooling, and recognizes role overlap by outlining phases that existing staff could handle.",
+    "jurisdictional_accuracy": "The response accurately uses Brazilian terms and regulations: FGTS, INSS, CLT, 13th salary, vacation bonus, CTPS, Receita Federal, and probationary period (90 days). It avoids US assumptions (no mention of IRS, W-2, 1099, or at-will employment) and correctly notes statute of limitations (5 years for labor claims, 2 years for INSS). It recommends consulting a labor attorney specifically for Brazilian law, which is warranted and not a generic disclaimer."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-007",
+  "judge_cost_usd": 0.0011086,
+  "judge_latency_s": 47.73,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 9-person marketing agency in São Paulo, Brazil converting two PJ contractors to CLT employees. The response respects all constraints: it calculates costs specifically for Brazil (FGTS, INSS, 13th salary), acknowledges the small agency size by recommending consultation with a labor attorney rather than assuming in-house legal, and provides a realistic 4-week timeline. It shows arithmetic for cost increases (33-35% per person, totaling R$6,600-7,000/month) and does not silently violate any constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small agency: it recommends consulting an external labor attorney rather than assuming in-house legal, acknowledges budget constraints by advising 'secure budget approval for 33-35% cost increase', and suggests practical steps like using payroll software (Gupy, Folha de Pagamento) that are accessible to small businesses. It avoids presupposing dedicated HR or complex tooling, and recognizes role overlap by outlining phases that existing staff could handle.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for an explanation of cost difference, legal exposure, and sequencing plan. The response delivers all three concretely: it provides a detailed cost comparison table with line items, lists specific legal risks (subordination indicators, liabilities), and offers a phased sequence with timelines and actionable steps (e.g., 'Get written consent', 'Document the client demand'). It could be taken into a meeting with light editing, as it includes specific numbers, phases, and mitigation strategies.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately uses Brazilian terms and regulations: FGTS, INSS, CLT, 13th salary, vacation bonus, CTPS, Receita Federal, and probationary period (90 days). It avoids US assumptions (no mention of IRS, W-2, 1099, or at-will employment) and correctly notes statute of limitations (5 years for labor claims, 2 years for INSS). It recommends consulting a labor attorney specifically for Brazilian law, which is warranted and not a generic disclaimer.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly specific, actionable, and accurately tailored to a small Brazilian agency's constraints and legal context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response is highly specific, actionable, and accurately tailored to a small Brazilian agency's constraints and legal context.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

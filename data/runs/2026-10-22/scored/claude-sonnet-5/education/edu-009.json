@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting describes irregular attendance, mixed ages (25-60), and varied motivations. The response addresses this concretely: anchor tasks for latecomers, tiered texts for mixed ability, peer buddies for newcomers, and self-paced stations. Differentiation is low-cost (e.g., questioning levels, choice boards) and implementable by one tutor (e.g., floating support, peer leads). It avoids generic language, providing specific adaptations like 'easier questions alongside harder ones' and 'audio-assist option' at one station. No second adult is assumed.",
+    "pathway_breadth": "This item does not involve student futures pathway guidance; it is a lesson plan for adult literacy. The response is inclusive of the range of learners described (ages 25-60, varied motivations like parenting, driving, employment). It explicitly connects content to real-world needs (forms for licences, school notes, job applications) and treats adults with respect through low-exposure activities and choice. It addresses the mixed motivations substantively with tiered texts and application tasks tailored to individual goals.",
+    "pedagogical_soundness": "The response states clear learning objectives: scanning for information, completing forms, and identifying new skills. Activities align: the mini-lesson models scanning, stations practice scanning/form-filling, and the application task directly applies form completion. Assessment is through Skills Passport check-ins and exit slips, which measure progress toward objectives. Sequencing is coherent with warm-up, instruction, practice, and application. The plan avoids forced reading aloud and uses tiered materials, showing appropriate cognitive demand and respect for adult learners.",
+    "workload_realism": "Timings sum to 90 minutes with a break implied in the flexible stations block. Materials are reusable (laminated texts, bingo cards) and low-cost (blank forms, word searches), suitable for an adult literacy setting. Preparation is one-time for materials, with weekly text updates. The plan scales feasibly: with 4 learners, tutor floats; with 14, uses peer leads and self-checking stations. No technology or excessive printing is required. Marking is minimal (Skills Passport notes, exit slips), manageable within the session."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-009",
+  "judge_cost_usd": 0.00109745,
+  "judge_latency_s": 53.436,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states clear learning objectives: scanning for information, completing forms, and identifying new skills. Activities align: the mini-lesson models scanning, stations practice scanning/form-filling, and the application task directly applies form completion. Assessment is through Skills Passport check-ins and exit slips, which measure progress toward objectives. Sequencing is coherent with warm-up, instruction, practice, and application. The plan avoids forced reading aloud and uses tiered materials, showing appropriate cognitive demand and respect for adult learners.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 90 minutes with a break implied in the flexible stations block. Materials are reusable (laminated texts, bingo cards) and low-cost (blank forms, word searches), suitable for an adult literacy setting. Preparation is one-time for materials, with weekly text updates. The plan scales feasibly: with 4 learners, tutor floats; with 14, uses peer leads and self-checking stations. No technology or excessive printing is required. Marking is minimal (Skills Passport notes, exit slips), manageable within the session.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures pathway guidance; it is a lesson plan for adult literacy. The response is inclusive of the range of learners described (ages 25-60, varied motivations like parenting, driving, employment). It explicitly connects content to real-world needs (forms for licences, school notes, job applications) and treats adults with respect through low-exposure activities and choice. It addresses the mixed motivations substantively with tiered texts and application tasks tailored to individual goals.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting describes irregular attendance, mixed ages (25-60), and varied motivations. The response addresses this concretely: anchor tasks for latecomers, tiered texts for mixed ability, peer buddies for newcomers, and self-paced stations. Differentiation is low-cost (e.g., questioning levels, choice boards) and implementable by one tutor (e.g., floating support, peer leads). It avoids generic language, providing specific adaptations like 'easier questions alongside harder ones' and 'audio-assist option' at one station. No second adult is assumed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly practical, scalable, and respectful, with clear alignment to adult learners' real-world needs and constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response is highly practical, scalable, and respectful, with clear alignment to adult learners' real-world needs and constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

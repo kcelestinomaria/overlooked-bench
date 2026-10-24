@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "I’d budget: **$0 new infra** - **$200–$400/month potential DB performance headroom** - **still under the 8% cap**",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete design, rollout plan, and risks, as requested. 2. It includes specific SQL tables, middleware logic, and a week-by-week breakdown. 3. It provides sequence (phased rollout), estimates (4 weeks), and verification steps (shadow mode, canary testing). 4. An engineer could execute this with minor edits (e.g., pseudocode to actual Django middleware).",
+    "constraint_fidelity": "1. The response explicitly states it avoids new infrastructure services, adhering to C1. 2. It plans for 3 backend engineers and 4 weeks, respecting C2. 3. It addresses the 8% spend cap (C3) with a budget estimate of $200–$400/month, well under $752. 4. The response shows arithmetic for DB write load (2,400 writes/sec) and latency mitigation, demonstrating constraint awareness. 5. No silent violations; all constraints are explicitly checked and justified.",
+    "maintainability": "1. The design is proportionate to a 14-person team, using existing Django/Postgres skills. 2. It leaves clear seams (feature flags, modular middleware) and documentation (billing policy, reconciliation scripts). 3. Risks and debt (burstiness, undercounting) are explicitly stated. 4. Complexity is minimized (no new services, buffered writes). 5. Observability (metrics, alerts) ensures long-term operability.",
+    "production_realism": "1. The response accounts for the team's scale (1,200 RPS, 6 containers) and skill mix (Django/Postgres). 2. It addresses failure modes: buffering usage to reduce DB load, monitoring flush lag, and crash recovery. 3. It considers locking/contention risks and proposes mitigations (narrow tables, pruning). 4. The design avoids assumptions about operational capacity (e.g., no new services). 5. It includes observability (metrics, alerts) and rollback plans, fitting the team's size."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.0037341,
+  "judge_latency_s": 8.555,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states it avoids new infrastructure services, adhering to C1. 2. It plans for 3 backend engineers and 4 weeks, respecting C2. 3. It addresses the 8% spend cap (C3) with a budget estimate of $200–$400/month, well under $752. 4. The response shows arithmetic for DB write load (2,400 writes/sec) and latency mitigation, demonstrating constraint awareness. 5. No silent violations; all constraints are explicitly checked and justified.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the team's scale (1,200 RPS, 6 containers) and skill mix (Django/Postgres). 2. It addresses failure modes: buffering usage to reduce DB load, monitoring flush lag, and crash recovery. 3. It considers locking/contention risks and proposes mitigations (narrow tables, pruning). 4. The design avoids assumptions about operational capacity (e.g., no new services). 5. It includes observability (metrics, alerts) and rollback plans, fitting the team's size.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete design, rollout plan, and risks, as requested. 2. It includes specific SQL tables, middleware logic, and a week-by-week breakdown. 3. It provides sequence (phased rollout), estimates (4 weeks), and verification steps (shadow mode, canary testing). 4. An engineer could execute this with minor edits (e.g., pseudocode to actual Django middleware).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The design is proportionate to a 14-person team, using existing Django/Postgres skills. 2. It leaves clear seams (feature flags, modular middleware) and documentation (billing policy, reconciliation scripts). 3. Risks and debt (burstiness, undercounting) are explicitly stated. 4. Complexity is minimized (no new services, buffered writes). 5. Observability (metrics, alerts) ensures long-term operability.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a meticulously constrained, production-ready design that fits all stated limits and provides executable detail.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"I’d budget: **$0 new infra** - **$200–$400/month potential DB performance headroom** - **still under the 8% cap**\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is a meticulously constrained, production-ready design that fits all stated limits and provides executable detail.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

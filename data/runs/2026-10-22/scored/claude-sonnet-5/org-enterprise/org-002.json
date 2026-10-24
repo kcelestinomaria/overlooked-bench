@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a one-page go/no-go analysis with concrete components: financial snapshot, financing options table, break-even calculation (PLN 45,000–52,000/month), specific risks, and a clear conditional recommendation ('CONDITIONAL GO' with criteria). It is not a process description; it includes line items, totals, and rationale, and could be used in a meeting with light editing.",
+    "constraint_fidelity": "The response respects all stated constraints: uses PLN currency, acknowledges no equity dilution ('no equity dilution desired', 'avoids equity dilution'), uses available PLN 250,000 capital, and references Polish-specific financing (BGK-guaranteed loans, EU grants). It explicitly justifies conditional recommendations rather than silently violating constraints. However, it does not show detailed arithmetic for break-even (e.g., margin calculation: 8% of PLN 1.4m is PLN 112,000, but break-even revenue derivation lacks step-by-step math).",
+    "contextual_realism": "The response is calibrated for a small bakery: acknowledges '6-person team (likely stretched thin)', avoids assumptions of dedicated HR/legal, uses realistic Polish SME tools (BGK loans, leasing), and highlights risks like management bandwidth and cash flow strain. It recognizes role overlap ('owner splits attention') and no slack ('8% margin business that's already thin'). No unrealistic tooling or overhead is proposed.",
+    "jurisdictional_accuracy": "The response accurately uses Polish context: BGK-guaranteed loans, EU grants for Małopolska, Polish banks (PKO BP, Santander, mBank), and avoids US assumptions (no SBA references). It provides substantive content rather than generic 'consult a lawyer' disclaimers. All regulatory/financing claims align with Polish SME practices."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.00108138,
+  "judge_latency_s": 41.588,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all stated constraints: uses PLN currency, acknowledges no equity dilution ('no equity dilution desired', 'avoids equity dilution'), uses available PLN 250,000 capital, and references Polish-specific financing (BGK-guaranteed loans, EU grants). It explicitly justifies conditional recommendations rather than silently violating constraints. However, it does not show detailed arithmetic for break-even (e.g., margin calculation: 8% of PLN 1.4m is PLN 112,000, but break-even revenue derivation lacks step-by-step math).\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small bakery: acknowledges '6-person team (likely stretched thin)', avoids assumptions of dedicated HR/legal, uses realistic Polish SME tools (BGK loans, leasing), and highlights risks like management bandwidth and cash flow strain. It recognizes role overlap ('owner splits attention') and no slack ('8% margin business that's already thin'). No unrealistic tooling or overhead is proposed.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a one-page go/no-go analysis with concrete components: financial snapshot, financing options table, break-even calculation (PLN 45,000–52,000/month), specific risks, and a clear conditional recommendation ('CONDITIONAL GO' with criteria). It is not a process description; it includes line items, totals, and rationale, and could be used in a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately uses Polish context: BGK-guaranteed loans, EU grants for Małopolska, Polish banks (PKO BP, Santander, mBank), and avoids US assumptions (no SBA references). It provides substantive content rather than generic 'consult a lawyer' disclaimers. All regulatory/financing claims align with Polish SME practices.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly actionable and contextually realistic, with a clear conditional recommendation tailored to a small Polish bakery.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response is highly actionable and contextually realistic, with a clear conditional recommendation tailored to a small Polish bakery.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

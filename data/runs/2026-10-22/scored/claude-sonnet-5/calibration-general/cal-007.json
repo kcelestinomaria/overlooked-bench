@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: Tuesday 08:00', which exactly matches the reference answer 'ANSWER: Tuesday 08:00' in substance. The day and time are correct, and the format aligns with the reference.",
+    "instruction_compliance": "The prompt requested an explanation followed by a final line in 'ANSWER: <day> <HH:MM>' format. The response includes reasoning and ends with 'ANSWER: Tuesday 08:00', which matches the exact format specified.",
+    "reasoning_validity": "The response shows working: '14:00 − 3 = 11:00 UTC' and '11:00 − 3 = 08:00'. The steps are valid—subtracting Nairobi's UTC offset to get UTC time, then subtracting Sao Paulo's offset to get local time—and correctly lead to the answer. The reasoning about no date boundary crossing is also sound."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-007",
+  "judge_cost_usd": 0.0004904,
+  "judge_latency_s": 22.423,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: Tuesday 08:00', which exactly matches the reference answer 'ANSWER: Tuesday 08:00' in substance. The day and time are correct, and the format aligns with the reference.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: '14:00 − 3 = 11:00 UTC' and '11:00 − 3 = 08:00'. The steps are valid—subtracting Nairobi's UTC offset to get UTC time, then subtracting Sao Paulo's offset to get local time—and correctly lead to the answer. The reasoning about no date boundary crossing is also sound.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt requested an explanation followed by a final line in 'ANSWER: <day> <HH:MM>' format. The response includes reasoning and ends with 'ANSWER: Tuesday 08:00', which matches the exact format specified.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, well-reasoned, and compliant with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, well-reasoned, and compliant with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

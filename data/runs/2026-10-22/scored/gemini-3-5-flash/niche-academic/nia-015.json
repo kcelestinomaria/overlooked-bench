@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopedia level by engaging with specific scholarly debates, methodologies (e.g., legal analysis of waqf deeds, economic theories of capital formation), and evidence (cash waqf studies by Mandaville and Jennings). It discusses internal disagreements, such as the rigidity vs. flexibility of waqf terms, and provides detailed mechanisms like icareteyn leases. A specialist would recognize this as informed by the literature, not just summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established scholarship. It correctly identifies Halil İnalcık's work on imarets, Timur Kuran's 'The Long Divergence' thesis, and scholars like Murat Çizakça, Şevket Pamuk, and Haim Gerber in the revisionist school. It accurately describes cash waqfs, their interest rates (10-15%), legal mechanisms like muamele-i şer'iyye, and institutional features like perpetuity and inalienability. The mention of 19th-century centralization under the Ministry of Imperial Endowments is historically accurate. No invented citations or terms are detected.",
+    "field_situatedness": "The response uses appropriate terminology from Ottoman and Islamic studies (e.g., waqf, awqaf, vakıf, imaret, mutawalli, vakfiye, para vakfı, müsadere) and engages with regional scholars (İnalcık, Kuran, Çizakça, Pamuk). It avoids substituting Western frameworks, instead focusing on Ottoman-specific institutions and debates, reflecting the field's conventions.",
+    "scholarly_calibration": "The response clearly distinguishes between established views (e.g., waqf as primary provider of public goods) and contested areas (e.g., capital formation debate between Kuran and revisionists). It notes the 'modern consensus' on the waqf's historical role versus 19th-century limitations, signaling differing evidential status. However, it does not explicitly flag where its own knowledge might be weak or uncertain, presenting all claims confidently."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00112597,
+  "judge_latency_s": 55.156,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established scholarship. It correctly identifies Halil İnalcık's work on imarets, Timur Kuran's 'The Long Divergence' thesis, and scholars like Murat Çizakça, Şevket Pamuk, and Haim Gerber in the revisionist school. It accurately describes cash waqfs, their interest rates (10-15%), legal mechanisms like muamele-i şer'iyye, and institutional features like perpetuity and inalienability. The mention of 19th-century centralization under the Ministry of Imperial Endowments is historically accurate. No invented citations or terms are detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopedia level by engaging with specific scholarly debates, methodologies (e.g., legal analysis of waqf deeds, economic theories of capital formation), and evidence (cash waqf studies by Mandaville and Jennings). It discusses internal disagreements, such as the rigidity vs. flexibility of waqf terms, and provides detailed mechanisms like icareteyn leases. A specialist would recognize this as informed by the literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response clearly distinguishes between established views (e.g., waqf as primary provider of public goods) and contested areas (e.g., capital formation debate between Kuran and revisionists). It notes the 'modern consensus' on the waqf's historical role versus 19th-century limitations, signaling differing evidential status. However, it does not explicitly flag where its own knowledge might be weak or uncertain, presenting all claims confidently.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology from Ottoman and Islamic studies (e.g., waqf, awqaf, vakıf, imaret, mutawalli, vakfiye, para vakfı, müsadere) and engages with regional scholars (İnalcık, Kuran, Çizakça, Pamuk). It avoids substituting Western frameworks, instead focusing on Ottoman-specific institutions and debates, reflecting the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates deep, accurate engagement with Ottoman waqf scholarship, effectively synthesizing economic functions and key debates.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response demonstrates deep, accurate engagement with Ottoman waqf scholarship, effectively synthesizing economic functions and key debates.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

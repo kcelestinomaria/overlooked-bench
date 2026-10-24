@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the student's specific circumstances (19-year-old with informal work experience, financial constraints) by recommending subsidized programs, scholarships (TWSP, STEP, PESFA), and leveraging existing experience. It provides concrete funding options and low-barrier entry pathways, though it doesn't explicitly address other potential access issues like language or learning needs.",
+    "pathway_breadth": "The response demonstrates excellent pathway breadth by focusing exclusively on vocational and technical education rather than university degrees. It provides specific TESDA programs (Electrical Installation, Cookery, Contact Center Services, Automotive Servicing, Computer Systems Servicing, Caregiving) with realistic durations (3-12 months), costs (₱5,000-₱20,000), and employment outcomes. It also mentions community college diploma programs and alternative online certifications, all aligned with the 18-month constraint and Philippine context.",
+    "pedagogical_soundness": "This dimension is not applicable to the response as it provides career guidance rather than instructional planning. The response does not state learning objectives, activities, or assessments for teaching.",
+    "workload_realism": "This dimension is not applicable as the response provides advisory guidance rather than instructional delivery planning. There are no teaching timings, materials, or class size constraints to evaluate."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00083721,
+  "judge_latency_s": 13.749,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable to the response as it provides career guidance rather than instructional planning. The response does not state learning objectives, activities, or assessments for teaching.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension is not applicable as the response provides advisory guidance rather than instructional delivery planning. There are no teaching timings, materials, or class size constraints to evaluate.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response demonstrates excellent pathway breadth by focusing exclusively on vocational and technical education rather than university degrees. It provides specific TESDA programs (Electrical Installation, Cookery, Contact Center Services, Automotive Servicing, Computer Systems Servicing, Caregiving) with realistic durations (3-12 months), costs (₱5,000-₱20,000), and employment outcomes. It also mentions community college diploma programs and alternative online certifications, all aligned with the 18-month constraint and Philippine context.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the student's specific circumstances (19-year-old with informal work experience, financial constraints) by recommending subsidized programs, scholarships (TWSP, STEP, PESFA), and leveraging existing experience. It provides concrete funding options and low-barrier entry pathways, though it doesn't explicitly address other potential access issues like language or learning needs.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides highly specific, employment-focused guidance perfectly tailored to the Philippine context and the student's 18-month timeline.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response provides highly specific, employment-focused guidance perfectly tailored to the Philippine context and the student's 18-month timeline.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

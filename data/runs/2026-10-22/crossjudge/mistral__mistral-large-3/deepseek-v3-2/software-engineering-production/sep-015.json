@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete plan with phases, timelines, team allocations, and deliverables. Quote: 'Phase 1: Foundation (Weeks 1-4)' with specific goals and deliverables like 'Working POC with 7-day retention' and 'Migration playbook'.\n\n2. It includes exact commands or configurations (e.g., Terraform modules), estimates (e.g., compute costs), and verification steps (e.g., performance benchmarks, alert validation). Quote: 'Create Terraform modules for infrastructure' and 'Performance: P95 query latency < 2s'.\n\n3. The plan is sequenced and could be executed with light editing. It also includes a contingency plan and success metrics for verification.",
+    "constraint_fidelity": "1. CERT-In constraint (C1): The response explicitly states all resources will be in ap-south-1 and retention is 180 days, with monitoring for compliance. This is kept. Quote: 'All resources in ap-south-1, verified with legal' and '180-day retention: Built into storage design with monitoring'.\n\n2. Budget constraint (C2): The response provides detailed cost arithmetic showing a projected spend of $6,427/month, well under the $9,000 target. The arithmetic is transparent and includes buffers. Quote: 'Total: $6,427/month' and 'Total max projected: $7,712/month (well under $9,000 target)'.\n\n3. Alerting constraint (C3): The response explicitly states all tier-1 alerts will be migrated and validated before cutover. Quote: 'All tier-1 alerts migrated before cutover' and 'Alert coverage: 100% of tier-1 services'.\n\n4. The response does not violate any constraints and shows the arithmetic to verify cost and retention. It also explicitly addresses team capacity (4 engineers, one quarter).",
+    "maintainability": "1. The response considers the team's long-term ownership by including documentation, training, and runbooks. Quote: 'Documentation and handoff' and 'Runbooks and monitoring'.\n\n2. The added complexity (self-managed stack) is proportionate to the team's size and skill mix, with explicit upskilling. Quote: 'Training: Team upskilled on new stack'.\n\n3. Risks and accepted debt are stated, such as the need for monitoring of the new stack and backup validation. Quote: 'Data integrity: Regular backup validation to S3' and 'Monitoring of monitoring: $100/month'.\n\n4. The response avoids unsafe shortcuts and leaves clear seams (e.g., Terraform modules, phased rollout).",
+    "production_realism": "1. The response accounts for the team's size (4 engineers) and skill mix by proposing a phased rollout with clear team allocations. Quote: 'Team allocation: 2 engineers (50% time)' and 'Phased approach: Limits disruption to platform work'.\n\n2. It addresses failure modes: dual-write during migration, rollback plan, load testing, and performance benchmarks. Quote: 'Dual-write logs/traces to old and new systems', 'Rollback plan: Maintain old system for 30 days post-cutover', and 'Load testing with 2x current volume'.\n\n3. The response considers operational burden by including documentation, training, and monitoring of the new stack. Quote: 'Documentation: Reduces long-term maintenance burden' and 'Monitoring of monitoring: $100/month'.\n\n4. The proposed stack (Loki, Tempo, Prometheus) is compatible with the existing EKS infrastructure and scales to the stated log volume (600 GB/day). The response includes specific node types and counts, which are realistic for the workload.\n\n5. No technically incorrect claims about the named technologies are evident."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-015",
+  "judge_cost_usd": 0.0027051,
+  "judge_latency_s": 14.802,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. CERT-In constraint (C1): The response explicitly states all resources will be in ap-south-1 and retention is 180 days, with monitoring for compliance. This is kept. Quote: 'All resources in ap-south-1, verified with legal' and '180-day retention: Built into storage design with monitoring'.\\n\\n2. Budget constraint (C2): The response provides detailed cost arithmetic showing a projected spend of $6,427/month, well under the $9,000 target. The arithmetic is transparent and includes buffers. Quote: 'Total: $6,427/month' and 'Total max projected: $7,712/month (well under $9,000 target)'.\\n\\n3. Alerting constraint (C3): The response explicitly states all tier-1 alerts will be migrated and validated before cutover. Quote: 'All tier-1 alerts migrated before cutover' and 'Alert coverage: 100% of tier-1 services'.\\n\\n4. The response does not violate any constraints and shows the arithmetic to verify cost and retention. It also explicitly addresses team capacity (4 engineers, one quarter).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the team's size (4 engineers) and skill mix by proposing a phased rollout with clear team allocations. Quote: 'Team allocation: 2 engineers (50% time)' and 'Phased approach: Limits disruption to platform work'.\\n\\n2. It addresses failure modes: dual-write during migration, rollback plan, load testing, and performance benchmarks. Quote: 'Dual-write logs/traces to old and new systems', 'Rollback plan: Maintain old system for 30 days post-cutover', and 'Load testing with 2x current volume'.\\n\\n3. The response considers operational burden by including documentation, training, and monitoring of the new stack. Quote: 'Documentation: Reduces long-term maintenance burden' and 'Monitoring of monitoring: $100/month'.\\n\\n4. The proposed stack (Loki, Tempo, Prometheus) is compatible with the existing EKS infrastructure and scales to the stated log volume (600 GB/day). The response includes specific node types and counts, which are realistic for the workload.\\n\\n5. No technically incorrect claims about the named technologies are evident.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete plan with phases, timelines, team allocations, and deliverables. Quote: 'Phase 1: Foundation (Weeks 1-4)' with specific goals and deliverables like 'Working POC with 7-day retention' and 'Migration playbook'.\\n\\n2. It includes exact commands or configurations (e.g., Terraform modules), estimates (e.g., compute costs), and verification steps (e.g., performance benchmarks, alert validation). Quote: 'Create Terraform modules for infrastructure' and 'Performance: P95 query latency < 2s'.\\n\\n3. The plan is sequenced and could be executed with light editing. It also includes a contingency plan and success metrics for verification.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The response considers the team's long-term ownership by including documentation, training, and runbooks. Quote: 'Documentation and handoff' and 'Runbooks and monitoring'.\\n\\n2. The added complexity (self-managed stack) is proportionate to the team's size and skill mix, with explicit upskilling. Quote: 'Training: Team upskilled on new stack'.\\n\\n3. Risks and accepted debt are stated, such as the need for monitoring of the new stack and backup validation. Quote: 'Data integrity: Regular backup validation to S3' and 'Monitoring of monitoring: $100/month'.\\n\\n4. The response avoids unsafe shortcuts and leaves clear seams (e.g., Terraform modules, phased rollout).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable, constraint-compliant plan with detailed cost arithmetic and production-ready considerations.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a highly actionable, constraint-compliant plan with detailed cost arithmetic and production-ready considerations.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

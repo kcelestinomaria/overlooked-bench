@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "180-day retention policy with monitoring",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Total: $6,427/month",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "All tier-1 alerts migrated before cutover",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed plan with phases, timelines, team allocation, and deliverables (e.g., 'Phase 1: Weeks 1-4, 2 engineers (50% time), Deliverables: Working POC'). It includes concrete steps like Terraform modules and migration playbooks, but lacks specific commands or code snippets for immediate execution.",
+    "constraint_fidelity": "The response respects all hard constraints: logs retained 180 days in ap-south-1 ('180-day retention policy', 'All resources in ap-south-1'), spend reduced to $6,427/month (well under $9,000 with detailed arithmetic), and alerting coverage maintained ('All tier-1 alerts migrated before cutover'). It explicitly shows cost calculations and compliance measures.",
+    "maintainability": "The response addresses maintainability with documentation ('Runbooks and monitoring'), training ('Team upskilled'), and risk stating ('Risk Mitigation section'). However, it introduces significant complexity (self-managed Loki/Tempo/Prometheus stack) for a 4-person team without fully justifying the long-term operational load or explicitly acknowledging the debt.",
+    "production_realism": "The proposal accounts for production realities: it specifies resource sizing (10 EKS nodes), includes risk mitigation (rollback plan, load testing), and considers operational burden (phased implementation, documentation). However, it assumes a self-managed stack on a 4-person team without fully addressing the ongoing maintenance overhead, and uses estimated costs without vendor-specific comparisons."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 2,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-015",
+  "judge_cost_usd": 0.0012022,
+  "judge_latency_s": 15.339,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: logs retained 180 days in ap-south-1 ('180-day retention policy', 'All resources in ap-south-1'), spend reduced to $6,427/month (well under $9,000 with detailed arithmetic), and alerting coverage maintained ('All tier-1 alerts migrated before cutover'). It explicitly shows cost calculations and compliance measures.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The proposal accounts for production realities: it specifies resource sizing (10 EKS nodes), includes risk mitigation (rollback plan, load testing), and considers operational burden (phased implementation, documentation). However, it assumes a self-managed stack on a 4-person team without fully addressing the ongoing maintenance overhead, and uses estimated costs without vendor-specific comparisons.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed plan with phases, timelines, team allocation, and deliverables (e.g., 'Phase 1: Weeks 1-4, 2 engineers (50% time), Deliverables: Working POC'). It includes concrete steps like Terraform modules and migration playbooks, but lacks specific commands or code snippets for immediate execution.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response addresses maintainability with documentation ('Runbooks and monitoring'), training ('Team upskilled'), and risk stating ('Risk Mitigation section'). However, it introduces significant complexity (self-managed Loki/Tempo/Prometheus stack) for a 4-person team without fully justifying the long-term operational load or explicitly acknowledging the debt.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"A comprehensive plan that meets cost and compliance constraints but introduces high maintenance complexity for a small team.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"180-day retention policy with monitoring\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Total: $6,427/month\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"All tier-1 alerts migrated before cutover\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A comprehensive plan that meets cost and compliance constraints but introduces high maintenance complexity for a small team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 78.75
+}

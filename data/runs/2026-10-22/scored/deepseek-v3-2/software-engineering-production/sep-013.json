@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Check if already allocated",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "payments:reconcile every 5 minutes",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed plan with code snippets, a 3-week implementation timeline, concrete commands (e.g., 'payments:reconcile'), and specific steps. It delivers a design fix as requested, but some parts are descriptive (e.g., 'Configure Daraja API retry settings') rather than fully executable without light editing.",
+    "constraint_fidelity": "The response respects all hard constraints: no new paid services (uses existing infrastructure), includes idempotency via transaction_id checks ('Check if already allocated' with lockForUpdate), and implements active reconciliation via scheduled command ('payments:reconcile every 5 minutes') to meet the 15-minute allocation bound. It explicitly states 'KES 0 additional monthly spend' and uses Safaricom's free APIs.",
+    "maintainability": "The solution adds moderate complexity (new tables, commands) but is proportionate for a 9-person team. It includes monitoring ('check-backlog command'), documentation via code comments, and states risks (e.g., 'False positives: < 0.1%'). However, it does not explicitly address long-term ownership or debt acceptance, and some code (e.g., matching logic) lacks clarity.",
+    "production_realism": "The design accounts for production realities: uses Laravel's database queue (no Redis), handles partial failure (maintenance mode fallback), includes idempotency and locking, fits the team's skill set (Laravel/MySQL), and considers load (reconciliation runs <1 minute every 5 minutes). However, it lacks detail on rollback procedures and observability for the change itself."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-013",
+  "judge_cost_usd": 0.00133185,
+  "judge_latency_s": 15.988,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: no new paid services (uses existing infrastructure), includes idempotency via transaction_id checks ('Check if already allocated' with lockForUpdate), and implements active reconciliation via scheduled command ('payments:reconcile every 5 minutes') to meet the 15-minute allocation bound. It explicitly states 'KES 0 additional monthly spend' and uses Safaricom's free APIs.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: uses Laravel's database queue (no Redis), handles partial failure (maintenance mode fallback), includes idempotency and locking, fits the team's skill set (Laravel/MySQL), and considers load (reconciliation runs <1 minute every 5 minutes). However, it lacks detail on rollback procedures and observability for the change itself.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed plan with code snippets, a 3-week implementation timeline, concrete commands (e.g., 'payments:reconcile'), and specific steps. It delivers a design fix as requested, but some parts are descriptive (e.g., 'Configure Daraja API retry settings') rather than fully executable without light editing.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution adds moderate complexity (new tables, commands) but is proportionate for a 9-person team. It includes monitoring ('check-backlog command'), documentation via code comments, and states risks (e.g., 'False positives: < 0.1%'). However, it does not explicitly address long-term ownership or debt acceptance, and some code (e.g., matching logic) lacks clarity.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design that effectively addresses the callback loss issue with dual-layer reconciliation and idempotency.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Check if already allocated\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"payments:reconcile every 5 minutes\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design that effectively addresses the callback loss issue with dual-layer reconciliation and idempotency.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

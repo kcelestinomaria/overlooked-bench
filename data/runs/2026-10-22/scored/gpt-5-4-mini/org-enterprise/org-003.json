@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response provides specific advice on thresholds (GBP 8,000 exemption), tax treatment, governance steps, and structural decisions. It includes concrete elements like checking governing documents, preparing business plans, and considering subsidiary setup. It could be used by trustees with minor editing for their specific context.",
+    "constraint_fidelity": "The prompt specifies a charity in England and Wales with GBP 320,000 annual income. The response correctly references England and Wales jurisdiction, uses GBP currency, and calculates the small trading exemption threshold (25% of income capped at GBP 80,000, but correctly notes the lower limit is GBP 8,000). It respects all stated constraints without violating them.",
+    "contextual_realism": "The response acknowledges the charity's size and resource constraints by emphasizing risk assessment, business planning, and the need for professional advice rather than assuming dedicated legal/HR staff. It recognizes trustees' dual roles and avoids recommending expensive tooling or complex processes beyond a small charity's capacity.",
+    "jurisdictional_accuracy": "The response accurately covers England and Wales charity law concepts: primary-purpose vs. non-primary-purpose trading, small trading exemption (GBP 8,000/25% rule), corporation tax treatment, gift aid, and VAT considerations for training. It avoids all US references (no 501(c)(3), UBIT, IRS) and correctly focuses on UK-specific regulations."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00094372,
+  "judge_latency_s": 35.861,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies a charity in England and Wales with GBP 320,000 annual income. The response correctly references England and Wales jurisdiction, uses GBP currency, and calculates the small trading exemption threshold (25% of income capped at GBP 80,000, but correctly notes the lower limit is GBP 8,000). It respects all stated constraints without violating them.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges the charity's size and resource constraints by emphasizing risk assessment, business planning, and the need for professional advice rather than assuming dedicated legal/HR staff. It recognizes trustees' dual roles and avoids recommending expensive tooling or complex processes beyond a small charity's capacity.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides specific advice on thresholds (GBP 8,000 exemption), tax treatment, governance steps, and structural decisions. It includes concrete elements like checking governing documents, preparing business plans, and considering subsidiary setup. It could be used by trustees with minor editing for their specific context.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately covers England and Wales charity law concepts: primary-purpose vs. non-primary-purpose trading, small trading exemption (GBP 8,000/25% rule), corporation tax treatment, gift aid, and VAT considerations for training. It avoids all US references (no 501(c)(3), UBIT, IRS) and correctly focuses on UK-specific regulations.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides comprehensive, jurisdictionally accurate, and actionable advice tailored to a small UK charity's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response provides comprehensive, jurisdictionally accurate, and actionable advice tailored to a small UK charity's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

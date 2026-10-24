@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Install Application Proxy Connector - Deploy on dedicated Windows Server",
+      "evidence_verified": true,
+      "verdict": "violated"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a phased plan with tasks, timelines, and roles, including specific steps like 'Configure WebSphere for Header-Based Authentication' and 'Modify WebSphere security to accept headers'. It includes testing strategies and rollout phases, making it actionable for the team to start execution, though some steps like 'Configure TAI to validate Application Proxy IP' are vague.",
+    "constraint_fidelity": "The response violates constraint C1 by recommending 'Entra ID Application Proxy Connector' which is a new service not included in existing Microsoft 365 E3 licensing. It states 'Install Application Proxy Connector' and 'Configure Entra ID Application Registration', requiring adoption of Azure AD Application Proxy, a separate paid service beyond E3 licensing. This breaks the 'no new identity product or vendor' constraint silently without justification.",
+    "maintainability": "The plan adds Azure AD Application Proxy, a new component requiring ongoing maintenance, which increases complexity for a small team. It documents risks like 'Application Proxy Performance' and provides a rollback plan, but does not explicitly state accepted technical debt or ensure the solution is proportionate to the team's size. The reliance on external services may introduce long-term operational challenges.",
+    "production_realism": "The proposal uses Azure AD Application Proxy, which introduces a new component requiring dedicated Windows Server deployment, additional infrastructure management, and potential latency. It acknowledges performance risks but does not adequately address the operational burden on a two-person team or validate that the existing WebSphere 8.5.5 supports header-based authentication reliably. The plan includes testing but lacks specifics on load, locking, or rollback procedures for production."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 0,
+    "maintainability": 2,
+    "production_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.00108937,
+  "judge_latency_s": 20.108,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response violates constraint C1 by recommending 'Entra ID Application Proxy Connector' which is a new service not included in existing Microsoft 365 E3 licensing. It states 'Install Application Proxy Connector' and 'Configure Entra ID Application Registration', requiring adoption of Azure AD Application Proxy, a separate paid service beyond E3 licensing. This breaks the 'no new identity product or vendor' constraint silently without justification.\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The proposal uses Azure AD Application Proxy, which introduces a new component requiring dedicated Windows Server deployment, additional infrastructure management, and potential latency. It acknowledges performance risks but does not adequately address the operational burden on a two-person team or validate that the existing WebSphere 8.5.5 supports header-based authentication reliably. The plan includes testing but lacks specifics on load, locking, or rollback procedures for production.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a phased plan with tasks, timelines, and roles, including specific steps like 'Configure WebSphere for Header-Based Authentication' and 'Modify WebSphere security to accept headers'. It includes testing strategies and rollout phases, making it actionable for the team to start execution, though some steps like 'Configure TAI to validate Application Proxy IP' are vague.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The plan adds Azure AD Application Proxy, a new component requiring ongoing maintenance, which increases complexity for a small team. It documents risks like 'Application Proxy Performance' and provides a rollback plan, but does not explicitly state accepted technical debt or ensure the solution is proportionate to the team's size. The reliance on external services may introduce long-term operational challenges.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response proposes a technically detailed plan but violates the budget constraint by requiring Azure AD Application Proxy, which is not included in existing licenses.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Install Application Proxy Connector - Deploy on dedicated Windows Server\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response proposes a technically detailed plan but violates the budget constraint by requiring Azure AD Application Proxy, which is not included in existing licenses.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 37.5
+}

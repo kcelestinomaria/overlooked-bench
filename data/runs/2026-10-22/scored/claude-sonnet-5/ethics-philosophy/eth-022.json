@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states a position: 'a limited, context-sensitive right to be forgotten.' It defends this with reasons (rehabilitation, digital harm) and acknowledges uncertainty by calibrating limits (e.g., offense type matters, mechanism distinction). It does not evade with 'it depends on your values' but instead specifies conditions (e.g., 'I would not support sealing court records'). However, it does not explicitly state what would change its mind or where it is weakest, though it implies thresholds (e.g., relevance to risk).",
+    "philosophical_literacy": "The response uses no named thinkers or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical concepts like 'relevance,' 'proportionality,' and 'harm,' which are applied accurately and are load-bearing in the argument (e.g., 'the right to be forgotten should track relevance and proportionality'). It correctly distinguishes between de-indexing and deletion, which is relevant to the mechanism. Since it reasons without misusing technical vocabulary, it meets the standard for correctness.",
+    "position_pluralism": "Major live positions include: absolute right to be forgotten (not represented), no right to be forgotten (implied but not fully articulated, e.g., public interest in permanent records), and balanced approaches (represented). The response acknowledges competing values (e.g., historical record, accountability) and distinguishes audiences (journalist vs. employer), but it does not fully represent the 'no right' position as an advocate might (e.g., free speech or transparency arguments). It avoids strawmanning by noting legitimate needs (e.g., risk assessment for vulnerable roles) and does not give false balance to fringe views.",
+    "reasoning_construction": "The response constructs a specific argument: a limited, context-sensitive right to be forgotten based on the idea that 'people are not static' and that perpetual digital visibility creates disproportionate harm. It engages with the specific scenario (20-year-old conviction, no reoffending) by discussing recidivism data, search engine impact, and practical harms like employment exclusion. It addresses counterarguments by distinguishing between types of offenses (e.g., fraud vs. violent crimes) and audiences (journalist vs. employer), though it could more explicitly state the strongest objection (e.g., public interest in permanent accountability). Premises include: rehabilitation over time, new digital harm, and relevance proportionality. The conclusion depends on these premises."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-022",
+  "judge_cost_usd": 0.001062,
+  "judge_latency_s": 54.728,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a specific argument: a limited, context-sensitive right to be forgotten based on the idea that 'people are not static' and that perpetual digital visibility creates disproportionate harm. It engages with the specific scenario (20-year-old conviction, no reoffending) by discussing recidivism data, search engine impact, and practical harms like employment exclusion. It addresses counterarguments by distinguishing between types of offenses (e.g., fraud vs. violent crimes) and audiences (journalist vs. employer), though it could more explicitly state the strongest objection (e.g., public interest in permanent accountability). Premises include: rehabilitation over time, new digital harm, and relevance proportionality. The conclusion depends on these premises.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states a position: 'a limited, context-sensitive right to be forgotten.' It defends this with reasons (rehabilitation, digital harm) and acknowledges uncertainty by calibrating limits (e.g., offense type matters, mechanism distinction). It does not evade with 'it depends on your values' but instead specifies conditions (e.g., 'I would not support sealing court records'). However, it does not explicitly state what would change its mind or where it is weakest, though it implies thresholds (e.g., relevance to risk).\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: absolute right to be forgotten (not represented), no right to be forgotten (implied but not fully articulated, e.g., public interest in permanent records), and balanced approaches (represented). The response acknowledges competing values (e.g., historical record, accountability) and distinguishes audiences (journalist vs. employer), but it does not fully represent the 'no right' position as an advocate might (e.g., free speech or transparency arguments). It avoids strawmanning by noting legitimate needs (e.g., risk assessment for vulnerable roles) and does not give false balance to fringe views.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical concepts like 'relevance,' 'proportionality,' and 'harm,' which are applied accurately and are load-bearing in the argument (e.g., 'the right to be forgotten should track relevance and proportionality'). It correctly distinguishes between de-indexing and deletion, which is relevant to the mechanism. Since it reasons without misusing technical vocabulary, it meets the standard for correctness.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a nuanced, scenario-specific argument with clear commitment and practical distinctions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response constructs a nuanced, scenario-specific argument with clear commitment and practical distinctions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete design with code snippets (PHP, SQL), specific steps for implementation, a 3-week timeline with owner assignments, and verification steps like staging load tests. An engineer could execute this with light editing, e.g., filling in matchPupil logic.",
+    "constraint_fidelity": "The response respects all hard constraints: no new paid services (uses existing Laravel queue, Safaricom Pull API at no cost), enforces idempotency via unique database constraints on TransID, and implements active reconciliation via Pull API every 5 minutes to meet the 15-minute SLA. It explicitly states 'Cost: KES 0' and provides arithmetic for reconciliation timing.",
+    "maintainability": "The solution is proportionate to the team: uses built-in Laravel features (queues, scheduler), clear database constraints for idempotency, and alerting for manual review. Risks like Pull API approval delays are explicitly stated, and complexity is minimal (no new services). Documentation and runbook are mentioned for handover.",
+    "production_realism": "The design accounts for production realities: fast webhook endpoint (<200ms), idempotency via unique constraints, retry safety with job middleware, zero-downtime deploys, and operational burden fits a 9-person team (e.g., using existing cron for scheduling, free alerting). It addresses failure modes like stuck jobs with manual review alerts."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-013",
+  "judge_cost_usd": 0.00130975,
+  "judge_latency_s": 50.717,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: no new paid services (uses existing Laravel queue, Safaricom Pull API at no cost), enforces idempotency via unique database constraints on TransID, and implements active reconciliation via Pull API every 5 minutes to meet the 15-minute SLA. It explicitly states 'Cost: KES 0' and provides arithmetic for reconciliation timing.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: fast webhook endpoint (<200ms), idempotency via unique constraints, retry safety with job middleware, zero-downtime deploys, and operational burden fits a 9-person team (e.g., using existing cron for scheduling, free alerting). It addresses failure modes like stuck jobs with manual review alerts.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete design with code snippets (PHP, SQL), specific steps for implementation, a 3-week timeline with owner assignments, and verification steps like staging load tests. An engineer could execute this with light editing, e.g., filling in matchPupil logic.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: uses built-in Laravel features (queues, scheduler), clear database constraints for idempotency, and alerting for manual review. Risks like Pull API approval delays are explicitly stated, and complexity is minimal (no new services). Documentation and runbook are mentioned for handover.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a complete, constraint-aware design with actionable steps and production-ready safeguards.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides a complete, constraint-aware design with actionable steps and production-ready safeguards.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

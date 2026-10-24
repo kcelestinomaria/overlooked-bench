@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific legal mechanisms (ILGs, VCLR, SABLs), scholarly debates (critique of de Soto's 'dead capital' theory, elite capture, gender disenfranchisement), and evidence (SABL scandal involving 5 million hectares, corruption in DLPP). It discusses methodology (how registration processes work) and internal critiques (e.g., banks' reluctance to accept collateral). A specialist would recognize this as informed by the literature, not just summaries.",
+    "domain_accuracy": "The response makes specific factual claims: '97% of PNG’s land is held under customary tenure' (accurate per World Bank reports), mentions the Land Groups Incorporation Act 1974 (amended 2009) and Land Registration (Amendment) Act (real laws), cites scholars Colin Filer, Jim Fingleton, and John Burton (actual experts on PNG land tenure), describes SABLs and their controversies (well-documented), and notes matrilineal inheritance in Bougainville, East New Britain, and Milne Bay (correct). No invented citations or terms detected. Minor error: the 'lease-leaseback' mechanism is more associated with SABLs than a separate scheme, but this is nuanced. Overall, claims are substantively correct.",
+    "field_situatedness": "The response uses terminology and frameworks specific to PNG and Melanesian land tenure studies: 'customary tenure', 'ILGs', 'SABLs', references to local scholars (Filer, Fingleton, Burton), and concepts like 'secondary rights' and 'elite capture' from the regional literature. It does not substitute Western frameworks silently; it engages with the local context, including non-English scholarship (e.g., PNG laws and local critiques).",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it presents the 97% statistic as fact, but notes formalization is 'contested' and critiques are scholarly arguments (e.g., 'scholars argue this theory fails in PNG'). It flags where knowledge is weak or debated, such as the failure of de Soto's theory in practice and the institutional failures of DLPP. However, it does not explicitly calibrate uncertainty for all claims (e.g., matrilineal inheritance is stated confidently without noting variations). Overall, it shows good but not perfect calibration."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00114997,
+  "judge_latency_s": 64.836,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific factual claims: '97% of PNG’s land is held under customary tenure' (accurate per World Bank reports), mentions the Land Groups Incorporation Act 1974 (amended 2009) and Land Registration (Amendment) Act (real laws), cites scholars Colin Filer, Jim Fingleton, and John Burton (actual experts on PNG land tenure), describes SABLs and their controversies (well-documented), and notes matrilineal inheritance in Bougainville, East New Britain, and Milne Bay (correct). No invented citations or terms detected. Minor error: the 'lease-leaseback' mechanism is more associated with SABLs than a separate scheme, but this is nuanced. Overall, claims are substantively correct.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific legal mechanisms (ILGs, VCLR, SABLs), scholarly debates (critique of de Soto's 'dead capital' theory, elite capture, gender disenfranchisement), and evidence (SABL scandal involving 5 million hectares, corruption in DLPP). It discusses methodology (how registration processes work) and internal critiques (e.g., banks' reluctance to accept collateral). A specialist would recognize this as informed by the literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it presents the 97% statistic as fact, but notes formalization is 'contested' and critiques are scholarly arguments (e.g., 'scholars argue this theory fails in PNG'). It flags where knowledge is weak or debated, such as the failure of de Soto's theory in practice and the institutional failures of DLPP. However, it does not explicitly calibrate uncertainty for all claims (e.g., matrilineal inheritance is stated confidently without noting variations). Overall, it shows good but not perfect calibration.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to PNG and Melanesian land tenure studies: 'customary tenure', 'ILGs', 'SABLs', references to local scholars (Filer, Fingleton, Burton), and concepts like 'secondary rights' and 'elite capture' from the regional literature. It does not substitute Western frameworks silently; it engages with the local context, including non-English scholarship (e.g., PNG laws and local critiques).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate engagement with PNG's land tenure issues and scholarly critiques, reflecting specialist knowledge.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate engagement with PNG's land tenure issues and scholarly critiques, reflecting specialist knowledge.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

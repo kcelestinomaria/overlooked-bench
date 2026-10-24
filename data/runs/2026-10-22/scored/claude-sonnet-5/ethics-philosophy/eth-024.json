@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response reaches one: 'Do not approve... in its current form' but offers a modified path. It explicitly states uncertainty through unanswered questions ('Key questions the scenario leaves unanswered') and provides calibrated conditions for reversal ('What would make me recommend the opposite'). It avoids evasion by giving specific reasons for its position and what would change it, e.g., 'No viable alternative exists', 'Genuine consent and compensation'. It is honest about uncertainty but still commits to a defensible stance.",
+    "philosophical_literacy": "The response uses no named thinkers or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical reasoning about reversibility, consent, compensation, and equity. Concepts like 'irreversible harms' and 'asymmetry' are applied correctly and are load-bearing in the argument. Accuracy is high for the concepts invoked, though no tradition is cited. Since philosophical literacy is rewarded for correctness and relevance, not citation density, this scores well.",
+    "position_pluralism": "Major live positions include utilitarian (prioritize poverty reduction for many) vs. rights-based/deontological (protect minority from harm). The response acknowledges the utilitarian perspective implicitly by listing conditions for approval (e.g., 'no viable alternative') but focuses on the rights-based concern for the 8,000. It does not strawman the pro-extraction view; it characterizes it fairly through the conditions for reversal, such as compensation and lack of alternatives. However, it omits explicit naming or deep engagement with rival frameworks (e.g., utilitarianism), though it represents the tension accurately. No false balance is present.",
+    "reasoning_construction": "The response builds a structured argument: conclusion is 'Do not approve the extractive project in its current form' but pursue alternatives or modified versions. Premises include: asymmetry between temporary poverty reduction (reversible) vs. permanent uninhabitability (irreversible), unanswered questions about compensation/alternatives/equity, and specific conditions for reversal. It engages with scenario details (e.g., 'temporary improvement vs. permanent loss', '8,000 people displaced', '50-year timeline') and addresses counterarguments by listing conditions under which approval would be justified (e.g., 'no viable alternative exists', 'genuine consent and compensation'). The inference is valid—premises support the cautious conclusion."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-024",
+  "judge_cost_usd": 0.00100045,
+  "judge_latency_s": 55.561,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument: conclusion is 'Do not approve the extractive project in its current form' but pursue alternatives or modified versions. Premises include: asymmetry between temporary poverty reduction (reversible) vs. permanent uninhabitability (irreversible), unanswered questions about compensation/alternatives/equity, and specific conditions for reversal. It engages with scenario details (e.g., 'temporary improvement vs. permanent loss', '8,000 people displaced', '50-year timeline') and addresses counterarguments by listing conditions under which approval would be justified (e.g., 'no viable alternative exists', 'genuine consent and compensation'). The inference is valid—premises support the cautious conclusion.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response reaches one: 'Do not approve... in its current form' but offers a modified path. It explicitly states uncertainty through unanswered questions ('Key questions the scenario leaves unanswered') and provides calibrated conditions for reversal ('What would make me recommend the opposite'). It avoids evasion by giving specific reasons for its position and what would change it, e.g., 'No viable alternative exists', 'Genuine consent and compensation'. It is honest about uncertainty but still commits to a defensible stance.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include utilitarian (prioritize poverty reduction for many) vs. rights-based/deontological (protect minority from harm). The response acknowledges the utilitarian perspective implicitly by listing conditions for approval (e.g., 'no viable alternative') but focuses on the rights-based concern for the 8,000. It does not strawman the pro-extraction view; it characterizes it fairly through the conditions for reversal, such as compensation and lack of alternatives. However, it omits explicit naming or deep engagement with rival frameworks (e.g., utilitarianism), though it represents the tension accurately. No false balance is present.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical reasoning about reversibility, consent, compensation, and equity. Concepts like 'irreversible harms' and 'asymmetry' are applied correctly and are load-bearing in the argument. Accuracy is high for the concepts invoked, though no tradition is cited. Since philosophical literacy is rewarded for correctness and relevance, not citation density, this scores well.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong reasoning by constructing a nuanced argument, committing under uncertainty, and handling ethical trade-offs thoughtfully.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates strong reasoning by constructing a nuanced argument, committing under uncertainty, and handling ethical trade-offs thoughtfully.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

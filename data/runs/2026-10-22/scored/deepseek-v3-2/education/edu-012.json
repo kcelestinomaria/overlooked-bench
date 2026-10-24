@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the learner range: children with different home languages and varying French proficiency. Strategies are specific and low-cost, such as visual schedules, modified speech, scaffolding, peer support, and formative assessments. It acknowledges material constraints by not assuming additional resources like assistants or translation tools beyond basic dictionaries. However, it suggests using digital tools like Duolingo for independent practice, which may assume home internet access not stated, but this is minor. Differentiation is implementable by one teacher.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it focuses on classroom support for multilingual learners. The response is inclusive of the range of learners by addressing children with Arabic, Spanish, and Tagalog home languages in a French-instruction setting. It values linguistic diversity and provides strategies for all students, such as visual supports and peer grouping, which benefit the entire class.",
+    "pedagogical_soundness": "The response provides clear pedagogical principles (asset-based mindset, comprehensible input, low-anxiety environment) and aligns strategies to these objectives. For example, visual schedules and labels support comprehensible input, and peer grouping supports communication practice. Formative assessment methods like thumbs-up/down check understanding without requiring complex output, aligning with the goal of focusing on meaning. Sequencing is coherent, starting with routines and moving to instruction modifications and assessment. However, it lacks specific learning objectives for a particular lesson or unit, making full alignment assessment difficult.",
+    "workload_realism": "Strategies are designed for one teacher with no assistant and no knowledge of home languages: visual schedules, consistent routines, speech modifications, scaffolding, and peer grouping are all feasible. Materials like pictograms, labels, graphic organizers, and bilingual dictionaries are low-cost and available. Preparation time for creating visuals and routines is reasonable, and marking load is minimized through formative assessments like thumbs-up/down. The response avoids recommending bilingual staff or translated materials the teacher cannot produce."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00098553,
+  "judge_latency_s": 21.526,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear pedagogical principles (asset-based mindset, comprehensible input, low-anxiety environment) and aligns strategies to these objectives. For example, visual schedules and labels support comprehensible input, and peer grouping supports communication practice. Formative assessment methods like thumbs-up/down check understanding without requiring complex output, aligning with the goal of focusing on meaning. Sequencing is coherent, starting with routines and moving to instruction modifications and assessment. However, it lacks specific learning objectives for a particular lesson or unit, making full alignment assessment difficult.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Strategies are designed for one teacher with no assistant and no knowledge of home languages: visual schedules, consistent routines, speech modifications, scaffolding, and peer grouping are all feasible. Materials like pictograms, labels, graphic organizers, and bilingual dictionaries are low-cost and available. Preparation time for creating visuals and routines is reasonable, and marking load is minimized through formative assessments like thumbs-up/down. The response avoids recommending bilingual staff or translated materials the teacher cannot produce.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it focuses on classroom support for multilingual learners. The response is inclusive of the range of learners by addressing children with Arabic, Spanish, and Tagalog home languages in a French-instruction setting. It values linguistic diversity and provides strategies for all students, such as visual supports and peer grouping, which benefit the entire class.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the learner range: children with different home languages and varying French proficiency. Strategies are specific and low-cost, such as visual schedules, modified speech, scaffolding, peer support, and formative assessments. It acknowledges material constraints by not assuming additional resources like assistants or translation tools beyond basic dictionaries. However, it suggests using digital tools like Duolingo for independent practice, which may assume home internet access not stated, but this is minor. Differentiation is implementable by one teacher.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides practical, classroom-ready strategies that respect the Quebec context and are feasible for a solo teacher.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response provides practical, classroom-ready strategies that respect the Quebec context and are feasible for a solo teacher.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

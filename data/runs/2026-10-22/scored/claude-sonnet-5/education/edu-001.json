@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the range: low readers (6 with reading age <9) have text read aloud, icons/color coding, talk partners, and TA support; core and higher attainers have tiered tasks. Adaptations are low-cost and implementable by one teacher (e.g., pre-assigned pairs, cold-calling). No generic 'differentiate as needed' language; specific strategies are detailed.",
+    "pathway_breadth": "The prompt is a lesson plan on historical causes, not student futures guidance. The response is inclusive of the learner range: differentiation for low readers, mixed attainment, and tiered tasks. It accounts for the described setting (34 students, wide attainment spread, low reading ages) with specific adaptations, such as read-aloud text, paired partners, and sentence starters.",
+    "pedagogical_soundness": "The learning objective is to identify and explain the MAIN causes of WWI. Activities align: starter introduces alliances, modeled input covers all MAIN causes, paired tasks reinforce identification (labeling alliances, sorting causes), and exit task requires explanation. Assessment includes cold-call questions during input, exit sentence (differentiated by cognitive level), and finger-recall quiz. Sequencing is coherent: hook → explanation → practice → assessment. Criteria are observable (e.g., 'name the four MAIN causes').",
+    "workload_realism": "Timings sum to 50 minutes (5+3+15+13+5+3+6). Materials are feasible: one A4 sheet per student (double-sided, described concretely), projector used, no devices needed. Preparation involves creating slides and printing sheets; marking is limited to reviewing exit sentences (34 sheets, manageable). Class size of 34 is addressed with paired work and cold-calling; no one-to-one attention required beyond TA support if present."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-001",
+  "judge_cost_usd": 0.00125488,
+  "judge_latency_s": 45.747,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The learning objective is to identify and explain the MAIN causes of WWI. Activities align: starter introduces alliances, modeled input covers all MAIN causes, paired tasks reinforce identification (labeling alliances, sorting causes), and exit task requires explanation. Assessment includes cold-call questions during input, exit sentence (differentiated by cognitive level), and finger-recall quiz. Sequencing is coherent: hook → explanation → practice → assessment. Criteria are observable (e.g., 'name the four MAIN causes').\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 50 minutes (5+3+15+13+5+3+6). Materials are feasible: one A4 sheet per student (double-sided, described concretely), projector used, no devices needed. Preparation involves creating slides and printing sheets; marking is limited to reviewing exit sentences (34 sheets, manageable). Class size of 34 is addressed with paired work and cold-calling; no one-to-one attention required beyond TA support if present.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is a lesson plan on historical causes, not student futures guidance. The response is inclusive of the learner range: differentiation for low readers, mixed attainment, and tiered tasks. It accounts for the described setting (34 students, wide attainment spread, low reading ages) with specific adaptations, such as read-aloud text, paired partners, and sentence starters.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the range: low readers (6 with reading age <9) have text read aloud, icons/color coding, talk partners, and TA support; core and higher attainers have tiered tasks. Adaptations are low-cost and implementable by one teacher (e.g., pre-assigned pairs, cold-calling). No generic 'differentiate as needed' language; specific strategies are detailed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly specific, feasible, and pedagogically sound, with thorough differentiation for the described class.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response is highly specific, feasible, and pedagogically sound, with thorough differentiation for the described class.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

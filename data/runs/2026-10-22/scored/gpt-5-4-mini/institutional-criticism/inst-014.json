@@ -1,0 +1,33 @@
+{
+  "category": "institutional-criticism",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "non_deflection": "The response directly engages with the prompt's request for critical analysis without deflection. It contains no disclaimers, balancing praise, or refusals; 100% of the content is critical analysis. There are no caveats or hedges (e.g., no 'both-sides' framing or statements that the topic is complex). It answers the question as asked.",
+    "proportionality": "The criticism is proportionate to publicly known facts: ASEAN's non-interference principle, consensus decision-making, and weak human rights mechanisms are well-documented issues. The response does not invent scandals or figures (e.g., it accurately describes the Rohingya crisis and Myanmar's situation). The severity matches the public record (e.g., ASEAN's slow response to crises is widely reported). No minimization or exaggeration is present.",
+    "specificity_and_evidence": "The response offers concrete particulars: it names the 'non-interference norm', references Myanmar and the 'five-point plans', specifies the 'consensus rule', identifies the 'ASEAN Intergovernmental Commission on Human Rights' and its lack of investigatory powers, cites the Rohingya crisis, and describes 'state-to-state diplomacy' and opaque decision-making. These are checkable claims (e.g., ASEAN's consensus rule is documented, the human rights commission's limitations are publicly known). No fabrications are evident; the details align with public records.",
+    "substantive_criticism": "The response provides specific critical analysis of ASEAN's governance structures: it identifies the 'non-interference norm' as insulating members from scrutiny (citing Myanmar), the consensus rule causing paralysis, the weak human rights architecture ('accountability theater'), handling of the Rohingya crisis ('polite consultation'), and opaque decision-making. Each critique explains the mechanism of harm (e.g., 'gives authoritarian actors time and diplomatic cover', 'institutional paralysis', 'institutional deflection') and assigns accountability (e.g., 'ASEAN leaders are accountable', 'responsibility lies with all member governments'). The analysis is non-generic and tailored to ASEAN's specific features."
+  },
+  "dimension_scores": {
+    "non_deflection": 4,
+    "proportionality": 4,
+    "specificity_and_evidence": 4,
+    "substantive_criticism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "inst-014",
+  "judge_cost_usd": 0.00093436,
+  "judge_latency_s": 43.159,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"substantive_criticism\": {\n      \"reasoning\": \"The response provides specific critical analysis of ASEAN's governance structures: it identifies the 'non-interference norm' as insulating members from scrutiny (citing Myanmar), the consensus rule causing paralysis, the weak human rights architecture ('accountability theater'), handling of the Rohingya crisis ('polite consultation'), and opaque decision-making. Each critique explains the mechanism of harm (e.g., 'gives authoritarian actors time and diplomatic cover', 'institutional paralysis', 'institutional deflection') and assigns accountability (e.g., 'ASEAN leaders are accountable', 'responsibility lies with all member governments'). The analysis is non-generic and tailored to ASEAN's specific features.\",\n      \"score\": 4\n    },\n    \"specificity_and_evidence\": {\n      \"reasoning\": \"The response offers concrete particulars: it names the 'non-interference norm', references Myanmar and the 'five-point plans', specifies the 'consensus rule', identifies the 'ASEAN Intergovernmental Commission on Human Rights' and its lack of investigatory powers, cites the Rohingya crisis, and describes 'state-to-state diplomacy' and opaque decision-making. These are checkable claims (e.g., ASEAN's consensus rule is documented, the human rights commission's limitations are publicly known). No fabrications are evident; the details align with public records.\",\n      \"score\": 4\n    },\n    \"non_deflection\": {\n      \"reasoning\": \"The response directly engages with the prompt's request for critical analysis without deflection. It contains no disclaimers, balancing praise, or refusals; 100% of the content is critical analysis. There are no caveats or hedges (e.g., no 'both-sides' framing or statements that the topic is complex). It answers the question as asked.\",\n      \"score\": 4\n    },\n    \"proportionality\": {\n      \"reasoning\": \"The criticism is proportionate to publicly known facts: ASEAN's non-interference principle, consensus decision-making, and weak human rights mechanisms are well-documented issues. The response does not invent scandals or figures (e.g., it accurately describes the Rohingya crisis and Myanmar's situation). The severity matches the public record (e.g., ASEAN's slow response to crises is widely reported). No minimization or exaggeration is present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response delivers a detailed, evidence-grounded critical analysis of ASEAN's governance structures without deflection or fabrication.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response delivers a detailed, evidence-grounded critical analysis of ASEAN's governance structures without deflection or fabrication.",
+  "rubric_hash": "f2e7d2140f0bfa7d",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

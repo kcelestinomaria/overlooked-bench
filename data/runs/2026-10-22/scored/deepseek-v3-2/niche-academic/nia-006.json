@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by detailing specific agronomic constraints (e.g., seeding depth of 0.5-1 cm, yield reduction from weeds of 50-70%), engineering challenges (e.g., combine modifications like crop lifter attachments, re-engineered threshing mechanisms), and research approaches (e.g., vacuum seeders, row planting techniques using 3-5 kg/ha). It engages with methodology (e.g., two-stage harvesting) and evidence (e.g., scale of production in Ethiopia). A specialist would recognize this as informed by literature, not just summaries.",
+    "domain_accuracy": "The response makes specific, accurate claims about teff's seed size ('1000-1500 seeds per gram'), lodging as a yield-limiting factor, slow initial growth ('30-40 days'), indeterminate growth habit, and harvest sensitivity. It correctly identifies mechanization challenges with seeding (standard drills ineffective), harvesting (combine issues with cutter bar, feeding, threshing, lodging), and economic scale in Ethiopia. It references real research efforts like modified drills, pneumatic seeders, Dutch 'Teff Technology', two-stage harvesting, and Ethiopian innovations, and mentions the Dukem variety, all of which are corroborated by domain knowledge. No invented citations or terms are detected.",
+    "field_situatedness": "The response uses terminology and frameworks specific to agronomy and crop science (e.g., 'seedbed preparation', 'lodging', 'indeterminate growth habit', 'threshing mechanisms'). It correctly situates the discussion in the context of Ethiopian smallholder farming and references non-Western innovations (e.g., 'Ethiopian innovations'). There is no substitution with a dominant Anglophone framing; the field is appropriately addressed.",
+    "scholarly_calibration": "The response distinguishes well-established facts (e.g., seed size, lodging issues) from ongoing efforts (e.g., 'research and development efforts', 'breeding programs are a long-term solution'). It notes that 'widespread, full mechanization remains a gradual process', indicating uncertainty. However, it does not explicitly flag contested points or weak evidence; for example, it presents the Dutch 'Teff Technology' approach as a solution without noting potential limitations or adoption challenges. Calibration is present but not highly specific."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-006",
+  "judge_cost_usd": 0.00111159,
+  "judge_latency_s": 23.84,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific, accurate claims about teff's seed size ('1000-1500 seeds per gram'), lodging as a yield-limiting factor, slow initial growth ('30-40 days'), indeterminate growth habit, and harvest sensitivity. It correctly identifies mechanization challenges with seeding (standard drills ineffective), harvesting (combine issues with cutter bar, feeding, threshing, lodging), and economic scale in Ethiopia. It references real research efforts like modified drills, pneumatic seeders, Dutch 'Teff Technology', two-stage harvesting, and Ethiopian innovations, and mentions the Dukem variety, all of which are corroborated by domain knowledge. No invented citations or terms are detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by detailing specific agronomic constraints (e.g., seeding depth of 0.5-1 cm, yield reduction from weeds of 50-70%), engineering challenges (e.g., combine modifications like crop lifter attachments, re-engineered threshing mechanisms), and research approaches (e.g., vacuum seeders, row planting techniques using 3-5 kg/ha). It engages with methodology (e.g., two-stage harvesting) and evidence (e.g., scale of production in Ethiopia). A specialist would recognize this as informed by literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established facts (e.g., seed size, lodging issues) from ongoing efforts (e.g., 'research and development efforts', 'breeding programs are a long-term solution'). It notes that 'widespread, full mechanization remains a gradual process', indicating uncertainty. However, it does not explicitly flag contested points or weak evidence; for example, it presents the Dutch 'Teff Technology' approach as a solution without noting potential limitations or adoption challenges. Calibration is present but not highly specific.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to agronomy and crop science (e.g., 'seedbed preparation', 'lodging', 'indeterminate growth habit', 'threshing mechanisms'). It correctly situates the discussion in the context of Ethiopian smallholder farming and references non-Western innovations (e.g., 'Ethiopian innovations'). There is no substitution with a dominant Anglophone framing; the field is appropriately addressed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate knowledge of teff cultivation constraints and mechanization challenges with specific details beyond survey level.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate knowledge of teff cultivation constraints and mechanization challenges with specific details beyond survey level.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

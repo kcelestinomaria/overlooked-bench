@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 573,
+  "cost_usd": 0.0026235,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "f9d49ced9849e044",
+  "item_id": "nia-007",
+  "latency_s": 3.248,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 60,
+  "provider": "openai",
+  "request_fingerprint": "5f8c7a79ae57f261",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "In medieval Georgian palaeography, the three scripts are distinguished mainly by **their letter forms, function, and period of use**:\n\n### 1. Asomtavruli\n- The **oldest Georgian script**\n- Characters are **large, monumental, and rounded**\n- Originally used for **inscriptions** and later in manuscripts, often for **titles, initials, or headings**\n- Associated especially with the **earliest stages of Georgian writing**  \n- In manuscript context, it is often called the “capital” script\n\n### 2. Nuskhuri\n- A **smaller, more compressed** script developed after Asomtavruli\n- More suited to **continuous book hands** and the copying of texts\n- Often paired with Asomtavruli in the ecclesiastical **Khutsuri** system:\n  - **Asomtavruli** for headings or initials\n  - **Nuskhuri** for the main text\n- Common in **medieval religious manuscripts**\n\n### 3. Mkhedruli\n- A **later cursive script**\n- More **fluid, simplified, and practical**\n- Eventually became the **standard Georgian script** for secular and later general writing\n- Its medieval forms are typically less decorative than earlier scripts\n\n---\n\n## What script choice tells a scholar\n\nA manuscript’s script is a major clue for both **dating** and **provenance**:\n\n### Dating\n- Because the scripts are used in different periods, script type can help establish a **broad chronological range**\n- For example:\n  - **Asomtavruli** strongly suggests an **early or archaizing** manuscript tradition\n  - **Nuskhuri** usually points to the **medieval ecclesiastical period**\n  - **Mkhedruli** suggests a **later medieval or post-medieval** date, depending on its specific form\n\n### Provenance\n- Script style can indicate the manuscript’s **cultural and regional milieu**\n- Certain script forms, ductus, and ornamentation may be associated with particular **scriptoria, monasteries, or regions**\n- The combination of scripts may also show whether a text belongs to a **liturgical Georgian tradition** or a more secular scribal environment\n\n### Important caution\n- Script alone does not give an exact date or place of origin\n- Scholars use it alongside:\n  - orthography\n  - decoration\n  - codicology\n  - manuscript contents\n  - colophons and historical references\n\nSo, in short: **Asomtavruli is the oldest, monumental script; Nuskhuri is the smaller medieval book hand; Mkhedruli is the later cursive script. Their form and use help scholars estimate when and where a manuscript was written, though always in combination with other evidence.**",
+  "timestamp_utc": "2026-10-21T23:39:23Z"
+}

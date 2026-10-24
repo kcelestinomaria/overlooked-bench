@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The base group system with assigned roles (Leader, Scribe, Reporter) supports varied participation and manages large class size. Outdoor and survey activities accommodate different learning styles. Pair work in Lesson 5 allows peer support. No assumption of home internet or individual textbooks; all activities use shared or no-cost materials. Differentiation is concrete and implementable by one teacher without additional adults.",
+    "pathway_breadth": "The prompt is about designing a statistics scheme of work, not student futures or pathways. The response is inclusive of all learners in the rural Malawian setting by using group work, hands-on activities, and local context (e.g., counting trees, vehicles, household sizes). It does not assume prior technology access or privileged resources, making it accessible to the range of learners.",
+    "pedagogical_soundness": "The response clearly states learning objectives: define data, distinguish quantitative/qualitative data, and collect data via observation and surveys. Activities align: 'Stand Up If...' game builds understanding of data collection, group classification activity distinguishes data types, outdoor counting and in-class surveys practice collection methods, and ordering exercise introduces organization. Sequencing is logical: concepts before application, simple methods before more complex. Assessment is through class discussion and practical application rather than written tests, which is appropriate for the context.",
+    "workload_realism": "Timings sum to 40-45 minutes per lesson, reasonable for a standard class period. No electricity, printing, or one book per student is required; resources are chalkboard, notebooks, pencils, and locally available items like stones and bottle caps. Group system (14 base groups) manages 55 students effectively. Preparation is minimal: no worksheets or complex materials. Marking load is low as assessment is primarily observational and group-based."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-005",
+  "judge_cost_usd": 0.00124149,
+  "judge_latency_s": 43.106,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response clearly states learning objectives: define data, distinguish quantitative/qualitative data, and collect data via observation and surveys. Activities align: 'Stand Up If...' game builds understanding of data collection, group classification activity distinguishes data types, outdoor counting and in-class surveys practice collection methods, and ordering exercise introduces organization. Sequencing is logical: concepts before application, simple methods before more complex. Assessment is through class discussion and practical application rather than written tests, which is appropriate for the context.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 40-45 minutes per lesson, reasonable for a standard class period. No electricity, printing, or one book per student is required; resources are chalkboard, notebooks, pencils, and locally available items like stones and bottle caps. Group system (14 base groups) manages 55 students effectively. Preparation is minimal: no worksheets or complex materials. Marking load is low as assessment is primarily observational and group-based.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about designing a statistics scheme of work, not student futures or pathways. The response is inclusive of all learners in the rural Malawian setting by using group work, hands-on activities, and local context (e.g., counting trees, vehicles, household sizes). It does not assume prior technology access or privileged resources, making it accessible to the range of learners.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The base group system with assigned roles (Leader, Scribe, Reporter) supports varied participation and manages large class size. Outdoor and survey activities accommodate different learning styles. Pair work in Lesson 5 allows peer support. No assumption of home internet or individual textbooks; all activities use shared or no-cost materials. Differentiation is concrete and implementable by one teacher without additional adults.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently addresses all rubric dimensions with contextually appropriate, practical, and pedagogically sound activities for a resource-constrained setting.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response excellently addresses all rubric dimensions with contextually appropriate, practical, and pedagogically sound activities for a resource-constrained setting.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

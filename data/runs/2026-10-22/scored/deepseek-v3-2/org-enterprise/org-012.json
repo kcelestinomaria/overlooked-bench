@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a '12-month diversification plan,' and the response delivers a concrete, month-by-month plan with specific activities, responsible parties, time estimates, and outputs (e.g., 'Apply for 1–2 small grants,' 'Host 1 small donor event'). It includes prioritization (e.g., 'focus on low-risk, high-potential steps first'), a contingency section ('Risk Mitigation'), and income targets. The output is structured and detailed enough to be used in a meeting with light editing, rather than describing a process or framework.",
+    "constraint_fidelity": "The prompt specifies a 5-person organization in Jordan with 90% funding from one source exiting in 12 months, requiring a plan executable alongside existing casework. The response respects all constraints: it allocates ~20 hours/month total staff time (realistic for 5 people), avoids recommending new hires, focuses on low-cost activities (<$500), and explicitly prioritizes tasks to avoid overloading staff. It shows arithmetic with time estimates (e.g., 20 hours/month) and budget, and addresses the 12-month timeline with phased activities. No constraints are silently violated.",
+    "contextual_realism": "The response is calibrated for a small, resource-constrained organization: it leverages existing staff (e.g., Director, Senior lawyer) without assuming dedicated roles like HR or development, uses low-cost tools (website updates, social media), relies on volunteer help and in-kind support, and acknowledges capacity limits (e.g., 'do not overload any single staff member'). It avoids tooling or processes that require significant overhead (e.g., no major donor programs) and recognizes small-organisation realities like role overlap and minimal budget.",
+    "jurisdictional_accuracy": "The prompt involves Jordan, and the response avoids US assumptions: it recommends local/regional funders (e.g., 'UN Women, Jordanian foundations, EU grants'), uses context-appropriate tools (PayPal/local payment options), and does not reference US-specific concepts like at-will employment or tax categories. It focuses on realistic sources for Jordan (bilateral donors, INGO subgranting, pro bono partnerships) and does not make incorrect jurisdictional claims. However, it lacks explicit flags for local legal advice, though the task is primarily operational rather than legal, so general accuracy is sufficient."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-012",
+  "judge_cost_usd": 0.00110608,
+  "judge_latency_s": 24.785,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies a 5-person organization in Jordan with 90% funding from one source exiting in 12 months, requiring a plan executable alongside existing casework. The response respects all constraints: it allocates ~20 hours/month total staff time (realistic for 5 people), avoids recommending new hires, focuses on low-cost activities (<$500), and explicitly prioritizes tasks to avoid overloading staff. It shows arithmetic with time estimates (e.g., 20 hours/month) and budget, and addresses the 12-month timeline with phased activities. No constraints are silently violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small, resource-constrained organization: it leverages existing staff (e.g., Director, Senior lawyer) without assuming dedicated roles like HR or development, uses low-cost tools (website updates, social media), relies on volunteer help and in-kind support, and acknowledges capacity limits (e.g., 'do not overload any single staff member'). It avoids tooling or processes that require significant overhead (e.g., no major donor programs) and recognizes small-organisation realities like role overlap and minimal budget.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a '12-month diversification plan,' and the response delivers a concrete, month-by-month plan with specific activities, responsible parties, time estimates, and outputs (e.g., 'Apply for 1–2 small grants,' 'Host 1 small donor event'). It includes prioritization (e.g., 'focus on low-risk, high-potential steps first'), a contingency section ('Risk Mitigation'), and income targets. The output is structured and detailed enough to be used in a meeting with light editing, rather than describing a process or framework.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Jordan, and the response avoids US assumptions: it recommends local/regional funders (e.g., 'UN Women, Jordanian foundations, EU grants'), uses context-appropriate tools (PayPal/local payment options), and does not reference US-specific concepts like at-will employment or tax categories. It focuses on realistic sources for Jordan (bilateral donors, INGO subgranting, pro bono partnerships) and does not make incorrect jurisdictional claims. However, it lacks explicit flags for local legal advice, though the task is primarily operational rather than legal, so general accuracy is sufficient.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response is highly realistic and actionable for a small Jordanian legal aid organization, with careful attention to constraints and context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response is highly realistic and actionable for a small Jordanian legal aid organization, with careful attention to constraints and context.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

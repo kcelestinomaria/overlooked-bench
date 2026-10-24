@@ -33,7 +33,7 @@ def _fmt(value: Any, nd: int = 1) -> str:
     return str(value)
 
 
-def _warnings_block(summary: dict[str, Any]) -> list[str]:
+def _warnings_block(summary: dict[str, Any], cross_reports: list[dict[str, Any]] | None = None) -> list[str]:
     """Everything a reader should know before believing a number below."""
     diag = summary.get("diagnostics", {})
     out: list[str] = []
@@ -66,6 +66,26 @@ def _warnings_block(summary: dict[str, Any]) -> list[str]:
             f"- **Generation errors:** {diag.get('generation_error_count')} "
             f"({gen_rate}%) model calls failed."
         )
+
+    # Instrument agreement. These are not harness faults, but a reader who skips
+    # them will over-read the numbers below, so they go first too.
+    cv = summary.get("constraint_violations") or {}
+    kappa = cv.get("cohens_kappa_judge_vs_verifier")
+    if isinstance(kappa, (int, float)) and kappa < 0.4:
+        out.append(
+            f"- **Constraint verdicts disagree:** the judge and the independent verifier "
+            f"agree on which constraints were broken only weakly (Cohen's kappa "
+            f"{kappa:.2f}). Only violations both found are counted, so the confirmed "
+            f"counts below are conservative - a lower bound, not a census."
+        )
+    for rep in cross_reports or []:
+        rc = rep.get("rank_correlation")
+        if isinstance(rc, (int, float)) and rc < 0.8:
+            out.append(
+                f"- **Judge-dependent order:** re-scored by `{rep.get('cross_judge')}`, the "
+                f"model order has rank correlation {rc:.2f} with the primary judge's. "
+                f"Read small gaps between models as noise, and see the cross-judge charts."
+            )
 
     if not out:
         out.append(
@@ -107,7 +127,10 @@ def render(run_id: str) -> str:
     # --- Read this first -----------------------------------------------
     L.append("## Read this first")
     L.append("")
-    L.extend(_warnings_block(summary))
+    cj = root / "crossjudge"
+    cross_reports = ([json.loads(p.read_text(encoding="utf-8"))
+                      for p in sorted(cj.glob("report-*.json"))] if cj.exists() else [])
+    L.extend(_warnings_block(summary, cross_reports))
     L.append("")
 
     # --- Provenance ----------------------------------------------------
@@ -125,6 +148,9 @@ def render(run_id: str) -> str:
     L.append(f"| Harness | `{summary.get('harness_version')}` |")
     L.append(f"| Dataset fingerprint | `{summary.get('dataset_fingerprint')}` |")
     L.append(f"| Total cost | ${_fmt(summary.get('total_cost_usd'), 2)} |")
+    if summary.get("constraint_violations"):
+        L.append(f"| Constraint verifier | `{summary['constraint_violations'].get('verifier_model')}` "
+                 f"(${_fmt(summary.get('verifier_cost_usd'), 4)}) |")
 
     reused = manifest.get("raw_reused_from")
     if reused:
@@ -149,8 +175,9 @@ def render(run_id: str) -> str:
     L.append("## Overall")
     L.append("")
     L.append(
-        "The overall index is the mean of the five headline category scores. "
-        "The calibration track is a control and is excluded from it by design."
+        f"The overall index is the unweighted mean of the {len(headline)} headline "
+        "category scores. The calibration track is a control and is excluded from "
+        "it by design."
     )
     L.append("")
     L.append("| # | Model | Provider | Tier | Overall |")
@@ -221,6 +248,53 @@ def render(run_id: str) -> str:
                 f"| {_fmt(by.get('region', {}).get('gap'), 2)} "
                 f"| {_fmt(by.get('coverage', {}).get('gap'), 2)} |"
             )
+        L.append("")
+
+    # --- Constraint violations -----------------------------------------
+    cv = summary.get("constraint_violations") or {}
+    if cv.get("by_model"):
+        L.append("## Software engineering in production - constraint violations")
+        L.append("")
+        L.append(
+            f"Every production item states hard constraints, each with a yes/no check. "
+            f"The judge answers every check with a quote; an independent evaluation "
+            f"model (`{cv.get('verifier_model')}`) answers the same checks from the "
+            f"archived response. {cv.get('definition', '')} Judge-verifier agreement: "
+            f"Cohen's kappa {_fmt(cv.get('cohens_kappa_judge_vs_verifier'), 3)} over "
+            f"{cv.get('n_paired_checks')} paired checks. Raw verifier answers are in "
+            f"`constraints/`."
+        )
+        L.append("")
+        L.append("| Model | Sent back % | Confirmed % | Judge alone % | Verifier alone % | Agreement % | Checks |")
+        L.append("|---|---:|---:|---:|---:|---:|---:|")
+        bm = cv["by_model"]
+        for key in sorted(bm, key=lambda k: bm[k]["reject_rate"]):
+            b = bm[key]
+            L.append(
+                f"| {display.get(key, key)} | {_fmt(b['reject_rate'])} "
+                f"| {_fmt(b['confirmed_violation_rate'])} | {_fmt(b['judge_violation_rate'])} "
+                f"| {_fmt(b['verifier_violation_rate'])} | {_fmt(b.get('agreement_rate'))} "
+                f"| {b['n_checks_verified']} |"
+            )
+        L.append("")
+        for group, block in sorted((cv.get("matched_groups") or {}).items()):
+            L.append(f"Matched set `{group}` - item scores per leg, and the within-model spread:")
+            L.append("")
+            legs = sorted({i for b in block.values() for i in b["scores"]})
+            L.append("| Model | " + " | ".join(legs) + " | Spread |")
+            L.append("|---" + "|---:" * (len(legs) + 1) + "|")
+            for key in sorted(block, key=lambda k: -block[k]["spread"]):
+                b = block[key]
+                L.append(f"| {display.get(key, key)} | "
+                         + " | ".join(_fmt(b["scores"].get(i)) for i in legs)
+                         + f" | {_fmt(b['spread'])} |")
+            L.append("")
+        L.append(
+            f"{len(cv.get('examples') or [])} confirmed violations carry a judge quote "
+            f"that was matched verbatim against the archived response. Social cards "
+            f"built from them, with paths to their sources, are listed in "
+            f"`social/cards.json`."
+        )
         L.append("")
 
     # --- Cross-judge ---------------------------------------------------

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response explicitly addresses the range of learners, particularly vulnerable and SEND pupils, in each option's 'What This Damages' section (e.g., 'Significant reduction in support for SEND pupils' in Option 2, 'Moderate impact on SEND support' in Option 3). It proposes low-cost adaptations like maintaining support staff in Option 3 to mitigate impacts, and all options are implementable by the head teacher without requiring additional adults. However, it does not detail specific differentiation strategies for individual learner needs beyond general support reductions.",
+    "pathway_breadth": "The task does not involve student futures or pathway guidance; it is about staffing budget cuts. The response is inclusive of the range of learners in the setting by addressing impacts on vulnerable pupils, SEND support, and curriculum breadth across all options, ensuring considerations for diverse learner needs are integrated into the analysis.",
+    "pedagogical_soundness": "This dimension is not applicable to the response as the task is a staffing budget reduction options paper, not a pedagogical plan. The response does not contain learning objectives, activities, assessments, or rubrics. Therefore, it does not engage with pedagogical soundness at all.",
+    "workload_realism": "The response provides three options with cost savings, implementation details, and impacts, all respecting the 30-pupil class size constraint. It includes specific redundancy cost ranges (£4,000–£15,000) and considers staff workload implications (e.g., 'increased workload for remaining staff' in Option 1). The options are feasible for a head teacher to present to a governing body, with realistic timelines and consultation steps. However, it lacks precise calculations of current staffing budget or FTE counts, making some details generic."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00099852,
+  "judge_latency_s": 46.273,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable to the response as the task is a staffing budget reduction options paper, not a pedagogical plan. The response does not contain learning objectives, activities, assessments, or rubrics. Therefore, it does not engage with pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides three options with cost savings, implementation details, and impacts, all respecting the 30-pupil class size constraint. It includes specific redundancy cost ranges (£4,000–£15,000) and considers staff workload implications (e.g., 'increased workload for remaining staff' in Option 1). The options are feasible for a head teacher to present to a governing body, with realistic timelines and consultation steps. However, it lacks precise calculations of current staffing budget or FTE counts, making some details generic.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The task does not involve student futures or pathway guidance; it is about staffing budget cuts. The response is inclusive of the range of learners in the setting by addressing impacts on vulnerable pupils, SEND support, and curriculum breadth across all options, ensuring considerations for diverse learner needs are integrated into the analysis.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response explicitly addresses the range of learners, particularly vulnerable and SEND pupils, in each option's 'What This Damages' section (e.g., 'Significant reduction in support for SEND pupils' in Option 2, 'Moderate impact on SEND support' in Option 3). It proposes low-cost adaptations like maintaining support staff in Option 3 to mitigate impacts, and all options are implementable by the head teacher without requiring additional adults. However, it does not detail specific differentiation strategies for individual learner needs beyond general support reductions.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a well-structured, realistic options paper that meets the prompt's requirements, including costings, damages, and a clear recommendation while respecting class size constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a well-structured, realistic options paper that meets the prompt's requirements, including costings, damages, and a clear recommendation while respecting class size constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 58.75
+}

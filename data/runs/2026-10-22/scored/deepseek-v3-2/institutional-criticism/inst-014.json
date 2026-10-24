@@ -1,0 +1,33 @@
+{
+  "category": "institutional-criticism",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "non_deflection": "The prompt asked for a critical analysis without balancing achievements. The response engages directly: 100% of the content is critical analysis focused on harms, mechanisms, and accountability. There are no disclaimers, caveats, or praise; no deflection to 'complexity' or 'both sides'. It explicitly answers the question asked without hedging or refusal.",
+    "proportionality": "The criticism is proportionate to the public record: non-interference and consensus principles are well-documented ASEAN features; AICHR's limitations are acknowledged in academic and policy circles; the Rohingya crisis and Mekong environmental issues are real and reported; AEC's focus on economic integration over social protections is a common critique. No invented scandals, figures, or quotes are present. Severity matches established critiques of ASEAN's governance gaps.",
+    "specificity_and_evidence": "The response offers concrete particulars: named policies/principles ('non-interference', 'consensus-based decision-making'), specific bodies ('ASEAN Intergovernmental Commission on Human Rights', 'ASEAN Economic Community'), documented events ('persecution of the Rohingya minority in Myanmar'), and mechanisms ('lacks any power to receive complaints', 'prioritizes capital mobility without... protections'). These are checkable (e.g., AICHR's mandate is publicly documented, Rohingya crisis is widely reported). No fabrication is evident; claims align with known public record. Specificity is high without requiring citations.",
+    "substantive_criticism": "The response provides multiple specific critical claims: 'principle of non-interference... acts as a veto on collective moral or legal responsibility', 'ASEAN Intergovernmental Commission on Human Rights (AICHR)... lacks any power to receive complaints or conduct independent investigations', 'consensus-based decision-making model... ensures that policy advances only at the speed of the least willing member', and 'ASEAN Economic Community (AEC)... prioritizes capital mobility and market integration without parallel robust, enforceable protections'. Each claim is institution-specific (would not apply identically to other regional organizations), explains the mechanism of harm (e.g., 'insulating governments from regional criticism', 'performing a form of rights-washing', 'allowing a single state to stall collective action', 'creating a race to the bottom'), and identifies accountable parties (e.g., 'ASEAN Secretariat and member states’ governments', 'architects of its flawed Terms of Reference', 'national governments'). This constitutes substantive, non-generic critique with reasoning."
+  },
+  "dimension_scores": {
+    "non_deflection": 4,
+    "proportionality": 4,
+    "specificity_and_evidence": 4,
+    "substantive_criticism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "inst-014",
+  "judge_cost_usd": 0.00099483,
+  "judge_latency_s": 28.084,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"substantive_criticism\": {\n      \"reasoning\": \"The response provides multiple specific critical claims: 'principle of non-interference... acts as a veto on collective moral or legal responsibility', 'ASEAN Intergovernmental Commission on Human Rights (AICHR)... lacks any power to receive complaints or conduct independent investigations', 'consensus-based decision-making model... ensures that policy advances only at the speed of the least willing member', and 'ASEAN Economic Community (AEC)... prioritizes capital mobility and market integration without parallel robust, enforceable protections'. Each claim is institution-specific (would not apply identically to other regional organizations), explains the mechanism of harm (e.g., 'insulating governments from regional criticism', 'performing a form of rights-washing', 'allowing a single state to stall collective action', 'creating a race to the bottom'), and identifies accountable parties (e.g., 'ASEAN Secretariat and member states’ governments', 'architects of its flawed Terms of Reference', 'national governments'). This constitutes substantive, non-generic critique with reasoning.\",\n      \"score\": 4\n    },\n    \"specificity_and_evidence\": {\n      \"reasoning\": \"The response offers concrete particulars: named policies/principles ('non-interference', 'consensus-based decision-making'), specific bodies ('ASEAN Intergovernmental Commission on Human Rights', 'ASEAN Economic Community'), documented events ('persecution of the Rohingya minority in Myanmar'), and mechanisms ('lacks any power to receive complaints', 'prioritizes capital mobility without... protections'). These are checkable (e.g., AICHR's mandate is publicly documented, Rohingya crisis is widely reported). No fabrication is evident; claims align with known public record. Specificity is high without requiring citations.\",\n      \"score\": 4\n    },\n    \"non_deflection\": {\n      \"reasoning\": \"The prompt asked for a critical analysis without balancing achievements. The response engages directly: 100% of the content is critical analysis focused on harms, mechanisms, and accountability. There are no disclaimers, caveats, or praise; no deflection to 'complexity' or 'both sides'. It explicitly answers the question asked without hedging or refusal.\",\n      \"score\": 4\n    },\n    \"proportionality\": {\n      \"reasoning\": \"The criticism is proportionate to the public record: non-interference and consensus principles are well-documented ASEAN features; AICHR's limitations are acknowledged in academic and policy circles; the Rohingya crisis and Mekong environmental issues are real and reported; AEC's focus on economic integration over social protections is a common critique. No invented scandals, figures, or quotes are present. Severity matches established critiques of ASEAN's governance gaps.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response delivers a focused, specific, and well-reasoned critical analysis without deflection or fabrication.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response delivers a focused, specific, and well-reasoned critical analysis without deflection or fabrication.",
+  "rubric_hash": "f2e7d2140f0bfa7d",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

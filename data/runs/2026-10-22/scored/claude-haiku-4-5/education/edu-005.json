@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the range of learners: 'Use Chichewa explanations as needed' for language needs, 'Ensure all 55 students participate' for inclusion, and uses low-cost adaptations like writing on ground/slates. However, it lacks specific differentiation strategies for varying prior attainment or additional needs beyond language. The 'Notes for Teacher' section mentions inclusion but provides no concrete adaptations for struggling or advanced learners. The differentiation is minimal beyond basic participation assurance.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is a statistics scheme of work. The response is inclusive of the rural Malawian context: uses 'local examples (crops, animals, family size)', 'Chichewa explanations as needed', and data collection topics relevant to students' lives ('How do students travel to school?', 'How many siblings do you have?'). It accounts for the setting without defaulting to US-centric examples.",
+    "pedagogical_soundness": "The response provides clear learning objectives: 'Define statistics and understand its relevance', 'Distinguish between qualitative and quantitative data', 'Identify appropriate data collection methods', 'Collect data through surveys'. Activities align with these objectives: Activity 1 introduces statistics relevance, Activity 2 teaches data types, Activity 3 covers collection methods, Activities 4-5 implement data collection. Assessment through informal observation and formative checks ('Ask 3-4 students: Give me an example of quantitative data') directly measures the objectives. Sequencing is logical: introduction → concepts → application. Cognitive demand is appropriate for Grade 8.",
+    "workload_realism": "Total timing sums to 2 hours 40 minutes (30+25+20+40+30+15), reasonable for a lesson. Materials are realistic: 'Textbooks (14)', 'Slates/boards (15)', 'Chalk (10 sticks)', 'Sticks/stones' - all available without electricity or printing. Activities work with 55 students: 'Divide class into 3 groups', 'Students stand in their group', using physical grouping rather than individual materials. No preparation or marking load mentioned beyond what's feasible. No technology, printing, or one-to-one attention required."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-005",
+  "judge_cost_usd": 0.00116928,
+  "judge_latency_s": 62.787,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives: 'Define statistics and understand its relevance', 'Distinguish between qualitative and quantitative data', 'Identify appropriate data collection methods', 'Collect data through surveys'. Activities align with these objectives: Activity 1 introduces statistics relevance, Activity 2 teaches data types, Activity 3 covers collection methods, Activities 4-5 implement data collection. Assessment through informal observation and formative checks ('Ask 3-4 students: Give me an example of quantitative data') directly measures the objectives. Sequencing is logical: introduction → concepts → application. Cognitive demand is appropriate for Grade 8.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Total timing sums to 2 hours 40 minutes (30+25+20+40+30+15), reasonable for a lesson. Materials are realistic: 'Textbooks (14)', 'Slates/boards (15)', 'Chalk (10 sticks)', 'Sticks/stones' - all available without electricity or printing. Activities work with 55 students: 'Divide class into 3 groups', 'Students stand in their group', using physical grouping rather than individual materials. No preparation or marking load mentioned beyond what's feasible. No technology, printing, or one-to-one attention required.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is a statistics scheme of work. The response is inclusive of the rural Malawian context: uses 'local examples (crops, animals, family size)', 'Chichewa explanations as needed', and data collection topics relevant to students' lives ('How do students travel to school?', 'How many siblings do you have?'). It accounts for the setting without defaulting to US-centric examples.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the range of learners: 'Use Chichewa explanations as needed' for language needs, 'Ensure all 55 students participate' for inclusion, and uses low-cost adaptations like writing on ground/slates. However, it lacks specific differentiation strategies for varying prior attainment or additional needs beyond language. The 'Notes for Teacher' section mentions inclusion but provides no concrete adaptations for struggling or advanced learners. The differentiation is minimal beyond basic participation assurance.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"This response provides a highly realistic and pedagogically sound Week 1 plan tailored to the Malawian rural context with no electricity or printing, but lacks specific differentiation strategies.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response provides a highly realistic and pedagogically sound Week 1 plan tailored to the Malawian rural context with no electricity or printing, but lacks specific differentiation strategies.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

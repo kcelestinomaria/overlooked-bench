@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response reaches one: 'Yes—sometimes.' It provides precise conditions and defends them, acknowledging uncertainty by setting a high threshold and explaining why the answer isn't simply 'yes' or 'no'. It states what would justify the act (e.g., grave injustice, exhausted remedies) and where it is cautious (e.g., risks of escalation, fallibility of citizens). This is calibrated uncertainty, not evasion.",
+    "philosophical_literacy": "The response uses concepts like 'civil disobedience', 'proportionality', 'nonviolence', and 'communicative intent' accurately and they are load-bearing in the argument (e.g., distinguishing civil disobedience from sabotage or riots). It does not name-drop thinkers or traditions but applies these ideas correctly to the scenario. The reasoning is philosophically sound without technical errors.",
+    "position_pluralism": "The response acknowledges competing positions implicitly by setting strict conditions (implying opposition to unjustified property damage) and explicitly in sections like 'Why the answer is not simply “no”' and 'Why the answer is not simply “yes”'. It represents the pro-justification view with nuance and the anti-justification concerns (e.g., democratic degradation, fallibility) fairly. No major live positions are omitted or strawmanned, and there is no false balance with fringe views.",
+    "reasoning_construction": "The response constructs a clear argument: it concludes that property-damaging civil disobedience can be justified under specific cumulative conditions. Premises include the gravity of injustice, exhaustion of democratic remedies, nonviolence, proportionality, and communicative intent. The inference is valid—the conclusion depends on these premises. It engages with specific details (e.g., distinguishing between systematic disenfranchisement and ordinary policy disagreements) and addresses counterarguments (e.g., why property damage isn't always justified, risks of normalization)."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-019",
+  "judge_cost_usd": 0.00106348,
+  "judge_latency_s": 43.888,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument: it concludes that property-damaging civil disobedience can be justified under specific cumulative conditions. Premises include the gravity of injustice, exhaustion of democratic remedies, nonviolence, proportionality, and communicative intent. The inference is valid—the conclusion depends on these premises. It engages with specific details (e.g., distinguishing between systematic disenfranchisement and ordinary policy disagreements) and addresses counterarguments (e.g., why property damage isn't always justified, risks of normalization).\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response reaches one: 'Yes—sometimes.' It provides precise conditions and defends them, acknowledging uncertainty by setting a high threshold and explaining why the answer isn't simply 'yes' or 'no'. It states what would justify the act (e.g., grave injustice, exhausted remedies) and where it is cautious (e.g., risks of escalation, fallibility of citizens). This is calibrated uncertainty, not evasion.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges competing positions implicitly by setting strict conditions (implying opposition to unjustified property damage) and explicitly in sections like 'Why the answer is not simply “no”' and 'Why the answer is not simply “yes”'. It represents the pro-justification view with nuance and the anti-justification concerns (e.g., democratic degradation, fallibility) fairly. No major live positions are omitted or strawmanned, and there is no false balance with fringe views.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like 'civil disobedience', 'proportionality', 'nonviolence', and 'communicative intent' accurately and they are load-bearing in the argument (e.g., distinguishing civil disobedience from sabotage or riots). It does not name-drop thinkers or traditions but applies these ideas correctly to the scenario. The reasoning is philosophically sound without technical errors.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a well-reasoned, nuanced, and precise defense of when property-damaging civil disobedience is justified in a democracy.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a well-reasoned, nuanced, and precise defense of when property-damaging civil disobedience is justified in a democracy.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

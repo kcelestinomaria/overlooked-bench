@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for advice on how to spend the PEN 2 million budget. The response provides a specific, costed allocation with line items (e.g., 'Install Bulk Meters: PEN 180,000', 'Targeted Micro-Metering: PEN 600,000'), roles, and actions. It is a usable deliverable that could be taken to a board meeting with light editing.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across four pillars (PEN 300,000 + PEN 800,000 + PEN 700,000 + PEN 200,000 = PEN 2,000,000), showing arithmetic fidelity. It respects the constraint without exceeding it.",
+    "contextual_realism": "The response is calibrated for a Peruvian municipal utility with 60,000 people. It avoids assuming dedicated HR, legal, or procurement teams. Recommendations like training a 3-person 'Leak Squad', using motorcycles, GIS-based census, and pressure management are realistic for a small utility. It acknowledges role overlap and resource constraints.",
+    "jurisdictional_accuracy": "The response is tailored to Peru, referencing 'EPS (Entidad Prestadora de Servicios de Saneamiento)', 'Peruvian municipal utility', and 'intermittent supply' common in mid-sized Peruvian towns. It avoids US assumptions like at-will employment or US tax categories. The advice is jurisdictionally appropriate and factually accurate for the context."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00103552,
+  "judge_latency_s": 37.416,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response allocates exactly PEN 2 million across four pillars (PEN 300,000 + PEN 800,000 + PEN 700,000 + PEN 200,000 = PEN 2,000,000), showing arithmetic fidelity. It respects the constraint without exceeding it.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a Peruvian municipal utility with 60,000 people. It avoids assuming dedicated HR, legal, or procurement teams. Recommendations like training a 3-person 'Leak Squad', using motorcycles, GIS-based census, and pressure management are realistic for a small utility. It acknowledges role overlap and resource constraints.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for advice on how to spend the PEN 2 million budget. The response provides a specific, costed allocation with line items (e.g., 'Install Bulk Meters: PEN 180,000', 'Targeted Micro-Metering: PEN 600,000'), roles, and actions. It is a usable deliverable that could be taken to a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is tailored to Peru, referencing 'EPS (Entidad Prestadora de Servicios de Saneamiento)', 'Peruvian municipal utility', and 'intermittent supply' common in mid-sized Peruvian towns. It avoids US assumptions like at-will employment or US tax categories. The advice is jurisdictionally appropriate and factually accurate for the context.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excellently addresses the prompt with a strategic, costed plan tailored to a Peruvian municipal utility's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response excellently addresses the prompt with a strategic, costed plan tailored to a Peruvian municipal utility's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

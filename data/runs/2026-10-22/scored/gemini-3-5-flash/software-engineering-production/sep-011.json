@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "All data remains in eu-central-1 (Frankfurt)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Option A (Shared Reader) costs EUR 154.62/month (saving EUR 445.38)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "The design strictly utilizes the pre-approved stack: ECS, Aurora, S3, SQS, and SES",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed architectural design with data flow, technical decisions, code snippet (Node.js streaming pipeline), and cost breakdown. It includes sequence (scheduling via PostgreSQL cron, SQS queueing, processing), concrete commands (S3 lifecycle policy, concurrency capping), and estimates. An engineer could execute this with light editing.",
+    "constraint_fidelity": "The response respects all hard constraints: uses only existing AWS services in eu-central-1 (S3, ECS, Aurora, SQS, SES), keeps data in EU, provides cost arithmetic showing EUR 154.62 (shared reader) and EUR 329.24 (dedicated reader) both under EUR 600, and isolates export load to avoid degradation. It explicitly states 'All data remains in eu-central-1 (Frankfurt)' and 'strictly utilizes the pre-approved stack'.",
+    "maintainability": "The response uses existing stack components, proposes clear seams (dedicated reader option), includes lifecycle management (S3 expiration), and states risks (memory usage for XLSX not fully addressed, but streaming mentioned). It does not explicitly document tests, observability, or handover risks, but complexity is proportionate to the team.",
+    "production_realism": "The response accounts for production concerns: uses streaming to avoid OOM (O(1) memory), routes to Aurora reader, caps concurrency at 4 jobs, uses SQS with dead-letter queue, and considers database isolation. It addresses scale (3,000 exports/week) and team skill (NestJS/Node.js). However, it does not explicitly detail rollback procedures or partial failure handling beyond the dead-letter queue."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-011",
+  "judge_cost_usd": 0.00148422,
+  "judge_latency_s": 54.543,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses only existing AWS services in eu-central-1 (S3, ECS, Aurora, SQS, SES), keeps data in EU, provides cost arithmetic showing EUR 154.62 (shared reader) and EUR 329.24 (dedicated reader) both under EUR 600, and isolates export load to avoid degradation. It explicitly states 'All data remains in eu-central-1 (Frankfurt)' and 'strictly utilizes the pre-approved stack'.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production concerns: uses streaming to avoid OOM (O(1) memory), routes to Aurora reader, caps concurrency at 4 jobs, uses SQS with dead-letter queue, and considers database isolation. It addresses scale (3,000 exports/week) and team skill (NestJS/Node.js). However, it does not explicitly detail rollback procedures or partial failure handling beyond the dead-letter queue.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed architectural design with data flow, technical decisions, code snippet (Node.js streaming pipeline), and cost breakdown. It includes sequence (scheduling via PostgreSQL cron, SQS queueing, processing), concrete commands (S3 lifecycle policy, concurrency capping), and estimates. An engineer could execute this with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response uses existing stack components, proposes clear seams (dedicated reader option), includes lifecycle management (S3 expiration), and states risks (memory usage for XLSX not fully addressed, but streaming mentioned). It does not explicitly document tests, observability, or handover risks, but complexity is proportionate to the team.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a cost-effective, constraint-compliant design with detailed arithmetic and streaming implementation.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"All data remains in eu-central-1 (Frankfurt)\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Option A (Shared Reader) costs EUR 154.62/month (saving EUR 445.38)\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"The design strictly utilizes the pre-approved stack: ECS, Aurora, S3, SQS, and SES\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a cost-effective, constraint-compliant design with detailed arithmetic and streaming implementation.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

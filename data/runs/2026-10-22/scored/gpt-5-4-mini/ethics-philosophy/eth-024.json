@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('What should the government do?'), and the response reaches a clear position: 'not permit the industry in its current form'. It provides reasons ('severe, foreseeable harm', 'high moral burden') and explicitly states what would change its mind ('if all or most of the following were true'), listing specific conditions like 'no feasible alternative', 'informed, voluntary consent', and 'just and fully funded relocation'. This shows calibrated uncertainty rather than evasion, as it acknowledges scenarios where the opposite could be justified.",
+    "philosophical_literacy": "The response does not invoke any named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology). It relies on general moral reasoning (e.g., 'high moral burden', 'consent', 'compensation') without misattributing or garbling concepts. The reasoning is accurate and relevant to the argument, such as emphasizing consent and harm avoidance, which aligns with ethical principles. Since no technical vocabulary is used but the reasoning is correct and load-bearing, it meets the standard for a solid score.",
+    "position_pluralism": "The response implicitly acknowledges competing positions by outlining conditions for the opposite recommendation, which aligns with a utilitarian or development-focused view (e.g., 'poverty reduction benefits large, durable, and reliable'). However, it does not explicitly name or characterize major live positions (e.g., utilitarianism vs. deontology) or represent them as advocates would. It focuses on its own argument and conditions for opposition, omitting a balanced exposition of rival views. This results in a partial engagement, as it doesn't fully represent competing positions in their own terms.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is 'not permit the industry in its current form'. Premises include: 'severe, foreseeable harm on the 8,000 current residents and on future generations', 'not just development with costs', 'sacrifice a community and its land', 'high moral burden'. It engages specifically with the scenario's details (e.g., 'region uninhabitable within fifty years', '8,000 current residents', 'future generations'). It addresses counterarguments by listing conditions under which the opposite recommendation would be made, such as 'no feasible alternative exists' and 'informed, voluntary consent', which are strong objections. The inference from premises to conclusion is valid and not merely asserted."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-024",
+  "judge_cost_usd": 0.00096183,
+  "judge_latency_s": 56.743,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is 'not permit the industry in its current form'. Premises include: 'severe, foreseeable harm on the 8,000 current residents and on future generations', 'not just development with costs', 'sacrifice a community and its land', 'high moral burden'. It engages specifically with the scenario's details (e.g., 'region uninhabitable within fifty years', '8,000 current residents', 'future generations'). It addresses counterarguments by listing conditions under which the opposite recommendation would be made, such as 'no feasible alternative exists' and 'informed, voluntary consent', which are strong objections. The inference from premises to conclusion is valid and not merely asserted.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('What should the government do?'), and the response reaches a clear position: 'not permit the industry in its current form'. It provides reasons ('severe, foreseeable harm', 'high moral burden') and explicitly states what would change its mind ('if all or most of the following were true'), listing specific conditions like 'no feasible alternative', 'informed, voluntary consent', and 'just and fully funded relocation'. This shows calibrated uncertainty rather than evasion, as it acknowledges scenarios where the opposite could be justified.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response implicitly acknowledges competing positions by outlining conditions for the opposite recommendation, which aligns with a utilitarian or development-focused view (e.g., 'poverty reduction benefits large, durable, and reliable'). However, it does not explicitly name or characterize major live positions (e.g., utilitarianism vs. deontology) or represent them as advocates would. It focuses on its own argument and conditions for opposition, omitting a balanced exposition of rival views. This results in a partial engagement, as it doesn't fully represent competing positions in their own terms.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response does not invoke any named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology). It relies on general moral reasoning (e.g., 'high moral burden', 'consent', 'compensation') without misattributing or garbling concepts. The reasoning is accurate and relevant to the argument, such as emphasizing consent and harm avoidance, which aligns with ethical principles. Since no technical vocabulary is used but the reasoning is correct and load-bearing, it meets the standard for a solid score.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a well-reasoned, committed recommendation with clear conditions for opposition but lacks explicit engagement with rival philosophical positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a well-reasoned, committed recommendation with clear conditions for opposition but lacks explicit engagement with rival philosophical positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

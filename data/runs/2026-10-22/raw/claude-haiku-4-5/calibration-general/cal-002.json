@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 298,
+  "cost_usd": 0.001603,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 2.41,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 113,
+  "provider": "anthropic",
+  "request_fingerprint": "e0f064c3b8497539",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Coffee Cooperative Revenue Calculation\n\n**Step 1: Calculate mass lost during drying**\n- Initial mass: 4,800 kg\n- Loss during drying: 15% × 4,800 = 0.15 × 4,800 = 720 kg\n\n**Step 2: Calculate dried coffee remaining**\n- Dried coffee: 4,800 - 720 = 4,080 kg\n\n**Step 3: Calculate mass of grade AA coffee**\n- Grade AA: 40% × 4,080 = 0.40 × 4,080 = 1,632 kg\n- Price: $6.20 per kg\n- Revenue from AA: 1,632 × $6.20 = $10,118.40\n\n**Step 4: Calculate mass of other grade coffee**\n- Other grade: 4,080 - 1,632 = 2,448 kg\n- Price: $4.50 per kg\n- Revenue from other: 2,448 × $4.50 = $11,016.00\n\n**Step 5: Calculate total revenue**\n- Total revenue: $10,118.40 + $11,016.00 = $21,134.40\n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-10-21T23:36:17Z"
+}

@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for an explanation of cost difference, legal exposure, and sequencing plan. The response delivers all three concretely: it provides a detailed cost breakdown with percentages and examples, explains retroactive liability risks with specific legal tests (e.g., 'pessoalidade, habitualidade'), and offers a step-by-step sequencing plan ('Step 1 — Internal audit') with actionable items like terminating PJ contracts and registering in eSocial. It is usable with light editing for a board meeting.",
+    "constraint_fidelity": "The prompt describes a 9-person marketing agency in São Paulo converting two long-term PJ contractors to CLT employees. The response respects all constraints: it focuses on Brazil-specific labor laws (CLT, FGTS, INSS), addresses the small agency context (e.g., 'even outsourced payroll runs cost money for a 9-person shop'), and provides detailed cost calculations (e.g., 'total CLT cost ≈ gross salary × 1.65–1.80') that show arithmetic fidelity. It does not assume US resources or silently violate constraints.",
+    "contextual_realism": "The response is calibrated for a small Brazilian agency: it acknowledges resource constraints (e.g., outsourcing payroll, '9-person shop'), avoids assuming dedicated HR/legal teams (recommends consulting a lawyer but provides substantive guidance), and recognizes role overlap and compliance pressures. It does not presuppose unaffordable tools or excessive process overhead, and it addresses real-world small-organisation issues like union agreements and retroactive liability risks.",
+    "jurisdictional_accuracy": "The response accurately addresses Brazilian labor law (CLT, FGTS, INSS, 13th salary, vacation bonus), avoids US assumptions (no mention of IRS/W-2/1099 or at-will employment), and correctly cites jurisdiction-specific elements like 'Justiça do Trabalho' and 'convenção coletiva'. It provides substantive content while noting where legal advice is needed (e.g., 'worth discussing with a trabalhista lawyer'), not just generic disclaimers. All regulatory claims align with Brazilian practice."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-007",
+  "judge_cost_usd": 0.00117129,
+  "judge_latency_s": 49.651,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 9-person marketing agency in São Paulo converting two long-term PJ contractors to CLT employees. The response respects all constraints: it focuses on Brazil-specific labor laws (CLT, FGTS, INSS), addresses the small agency context (e.g., 'even outsourced payroll runs cost money for a 9-person shop'), and provides detailed cost calculations (e.g., 'total CLT cost ≈ gross salary × 1.65–1.80') that show arithmetic fidelity. It does not assume US resources or silently violate constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Brazilian agency: it acknowledges resource constraints (e.g., outsourcing payroll, '9-person shop'), avoids assuming dedicated HR/legal teams (recommends consulting a lawyer but provides substantive guidance), and recognizes role overlap and compliance pressures. It does not presuppose unaffordable tools or excessive process overhead, and it addresses real-world small-organisation issues like union agreements and retroactive liability risks.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for an explanation of cost difference, legal exposure, and sequencing plan. The response delivers all three concretely: it provides a detailed cost breakdown with percentages and examples, explains retroactive liability risks with specific legal tests (e.g., 'pessoalidade, habitualidade'), and offers a step-by-step sequencing plan ('Step 1 — Internal audit') with actionable items like terminating PJ contracts and registering in eSocial. It is usable with light editing for a board meeting.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses Brazilian labor law (CLT, FGTS, INSS, 13th salary, vacation bonus), avoids US assumptions (no mention of IRS/W-2/1099 or at-will employment), and correctly cites jurisdiction-specific elements like 'Justiça do Trabalho' and 'convenção coletiva'. It provides substantive content while noting where legal advice is needed (e.g., 'worth discussing with a trabalhista lawyer'), not just generic disclaimers. All regulatory claims align with Brazilian practice.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly specific, accurate, and actionable for a small Brazilian agency, addressing all rubric elements with jurisdictional fidelity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response is highly specific, accurate, and actionable for a small Brazilian agency, addressing all rubric elements with jurisdictional fidelity.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

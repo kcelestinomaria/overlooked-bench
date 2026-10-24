@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Finish cutover in **10–14 days**, leaving at least **2+ weeks of safety** for surprises.",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a detailed migration plan with concrete steps, SQL commands, and verification queries. 2. It includes sequence, owners (e.g., 'Backend engineer 1: application dual-write/read changes'), and estimates (e.g., 'Day 1–6: Backfill main table'). 3. Each phase has safety criteria and validation steps, enabling immediate execution. 4. The plan is structured as a runbook, with exact commands (e.g., 'CREATE UNIQUE INDEX CONCURRENTLY idx_shipment_events_id_bigint_unique') and rollback points. An engineer could start with minimal edits.",
+    "constraint_fidelity": "1. The response explicitly computes the runway: '(2,147,483,647 - 1,860,000,000) / 9,000,000, about 31.9 days' and sets a target to finish in 10–14 days, respecting the 32-day constraint. 2. It avoids any new instance, replica, or larger instance class, adhering to the frozen budget and infrastructure constraints. 3. It plans for a 5-minute maintenance window during cutover, respecting the downtime constraint. 4. Storage is managed within the 200 GB limit, with explicit monitoring and throttling to avoid exceeding free storage. 5. The response explicitly avoids ALTER COLUMN TYPE, RDS Blue/Green, and other prohibited approaches. The arithmetic and constraints are clearly shown and respected throughout.",
+    "maintainability": "1. The response leaves clear seams: shadow columns, triggers, and temporary legacy columns for rollback. 2. It includes documentation of risks (e.g., 'storage management is tight') and accepted debt (e.g., keeping old columns temporarily). 3. The solution is proportionate to the team's size and skill mix, with no added complexity beyond what they can maintain. 4. Observability and validation steps ensure the result remains operable (e.g., monitoring for mismatches, deadlocks). 5. The plan explicitly states what will be cleaned up later (e.g., 'Remove old triggers, drop old int4 FK constraints/columns/indexes').",
+    "production_realism": "1. The response accounts for the 2-vCPU, 8 GiB RAM constraints, throttling backfill batches and monitoring WAL, IOPS, and CPU utilization. 2. It addresses failure modes: locking, retries, partial failure (e.g., 'no sustained blocked sessions'), and rollback points. 3. It considers the operational burden on a small team (two backend engineers and a part-time DBA), with clear roles and tasks. 4. It includes observability steps (e.g., monitoring dead tuples, storage, latency) and validation queries for each phase. 5. The plan is specific to PostgreSQL 15 and the stated scale (1.7B rows, 900 writes/sec), with no incorrect claims about the technology."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.0040616,
+  "judge_latency_s": 10.969,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly computes the runway: '(2,147,483,647 - 1,860,000,000) / 9,000,000, about 31.9 days' and sets a target to finish in 10–14 days, respecting the 32-day constraint. 2. It avoids any new instance, replica, or larger instance class, adhering to the frozen budget and infrastructure constraints. 3. It plans for a 5-minute maintenance window during cutover, respecting the downtime constraint. 4. Storage is managed within the 200 GB limit, with explicit monitoring and throttling to avoid exceeding free storage. 5. The response explicitly avoids ALTER COLUMN TYPE, RDS Blue/Green, and other prohibited approaches. The arithmetic and constraints are clearly shown and respected throughout.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the 2-vCPU, 8 GiB RAM constraints, throttling backfill batches and monitoring WAL, IOPS, and CPU utilization. 2. It addresses failure modes: locking, retries, partial failure (e.g., 'no sustained blocked sessions'), and rollback points. 3. It considers the operational burden on a small team (two backend engineers and a part-time DBA), with clear roles and tasks. 4. It includes observability steps (e.g., monitoring dead tuples, storage, latency) and validation queries for each phase. 5. The plan is specific to PostgreSQL 15 and the stated scale (1.7B rows, 900 writes/sec), with no incorrect claims about the technology.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a detailed migration plan with concrete steps, SQL commands, and verification queries. 2. It includes sequence, owners (e.g., 'Backend engineer 1: application dual-write/read changes'), and estimates (e.g., 'Day 1–6: Backfill main table'). 3. Each phase has safety criteria and validation steps, enabling immediate execution. 4. The plan is structured as a runbook, with exact commands (e.g., 'CREATE UNIQUE INDEX CONCURRENTLY idx_shipment_events_id_bigint_unique') and rollback points. An engineer could start with minimal edits.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The response leaves clear seams: shadow columns, triggers, and temporary legacy columns for rollback. 2. It includes documentation of risks (e.g., 'storage management is tight') and accepted debt (e.g., keeping old columns temporarily). 3. The solution is proportionate to the team's size and skill mix, with no added complexity beyond what they can maintain. 4. Observability and validation steps ensure the result remains operable (e.g., monitoring for mismatches, deadlocks). 5. The plan explicitly states what will be cleaned up later (e.g., 'Remove old triggers, drop old int4 FK constraints/columns/indexes').\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a model of constraint-aware, production-ready engineering for a high-stakes migration.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Finish cutover in **10–14 days**, leaving at least **2+ weeks of safety** for surprises.\"\n    }\n  }\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response is a model of constraint-aware, production-ready engineering for a high-stakes migration.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position. The response clearly states its position: 'the Confucian approach is a genuine rival normative theory... and cannot be reduced to a description of moral psychology.' It defends this with reasons (foundational incompatibilities) and does not evade. It acknowledges the debate ('tempting to reconcile') but commits decisively. It does not explicitly state what would change its mind or where it is weakest, but it engages with the core conflict honestly.",
+    "philosophical_literacy": "The response invokes technical terms accurately: Categorical Imperative, hypothetical vs. categorical imperative, impartiality, filial piety (xiao), appropriateness (yi), humaneness (ren), ritual propriety (li), uprightness (zhi). It correctly distinguishes Kantian and Confucian foundations and uses these concepts load-bearingly in the argument (e.g., explaining how justification differs). It references the Analects correctly. No misattributions or garbled terms are present.",
+    "position_pluralism": "The major live positions are: Confucianism as rival theory vs. as psychology compatible with Kantianism. The response presents the rival theory position in depth. It also accurately characterizes the Kantian view (universal principles, impartiality) and the potential reductionist view (Confucianism as psychology), which an advocate of that view would recognize. It does not strawman the opposition or omit major positions. It avoids false balance by not presenting fringe views.",
+    "reasoning_construction": "The response constructs a clear argument: it concludes that Confucian ethics is a genuine rival normative theory to Kantianism. Premises include: 1) Kantian ethics grounds obligation in universal reason (Categorical Imperative), while Confucian ethics grounds it in relational roles; 2) Kantianism requires impartiality and duty from reason, while Confucianism endorses partiality and cultivated emotions; 3) They resolve moral conflicts differently, as shown in the 'father covers for son' example. The inference is valid: the conclusion follows from the premises. The response engages specific details (e.g., filial piety, the sheep-stealing dilemma) and addresses the strongest counterargument (that Confucianism might be mere psychology) by arguing it would strip it of normative force. It does not strawman the opposition."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-010",
+  "judge_cost_usd": 0.0011798,
+  "judge_latency_s": 53.715,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument: it concludes that Confucian ethics is a genuine rival normative theory to Kantianism. Premises include: 1) Kantian ethics grounds obligation in universal reason (Categorical Imperative), while Confucian ethics grounds it in relational roles; 2) Kantianism requires impartiality and duty from reason, while Confucianism endorses partiality and cultivated emotions; 3) They resolve moral conflicts differently, as shown in the 'father covers for son' example. The inference is valid: the conclusion follows from the premises. The response engages specific details (e.g., filial piety, the sheep-stealing dilemma) and addresses the strongest counterargument (that Confucianism might be mere psychology) by arguing it would strip it of normative force. It does not strawman the opposition.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position. The response clearly states its position: 'the Confucian approach is a genuine rival normative theory... and cannot be reduced to a description of moral psychology.' It defends this with reasons (foundational incompatibilities) and does not evade. It acknowledges the debate ('tempting to reconcile') but commits decisively. It does not explicitly state what would change its mind or where it is weakest, but it engages with the core conflict honestly.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The major live positions are: Confucianism as rival theory vs. as psychology compatible with Kantianism. The response presents the rival theory position in depth. It also accurately characterizes the Kantian view (universal principles, impartiality) and the potential reductionist view (Confucianism as psychology), which an advocate of that view would recognize. It does not strawman the opposition or omit major positions. It avoids false balance by not presenting fringe views.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes technical terms accurately: Categorical Imperative, hypothetical vs. categorical imperative, impartiality, filial piety (xiao), appropriateness (yi), humaneness (ren), ritual propriety (li), uprightness (zhi). It correctly distinguishes Kantian and Confucian foundations and uses these concepts load-bearingly in the argument (e.g., explaining how justification differs). It references the Analects correctly. No misattributions or garbled terms are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently constructs a reasoned argument for Confucianism as a rival normative theory, engaging deeply with specific philosophical distinctions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response excellently constructs a reasoned argument for Confucianism as a rival normative theory, engaging deeply with specific philosophical distinctions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

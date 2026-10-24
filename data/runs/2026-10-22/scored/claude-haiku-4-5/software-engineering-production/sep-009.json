@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "All fixable in <30 minutes",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a prioritized review with corrected code snippets for each issue, making it immediately actionable. It includes concrete code changes, logging adjustments, and a clear separation of follow-ups. However, it does not provide a complete, corrected handler code block (e.g., imports are listed separately), and misses some rubric elements like money handling and amount validation.",
+    "constraint_fidelity": "The response respects all hard constraints: it uses only existing dependencies (hmac, hashlib, json are standard library), requires no new infrastructure (no queue, Redis, Celery), and all required changes are code edits that can be done in this PR by one engineer in under three hours (estimated as '<30 minutes'). It explicitly separates bigger follow-ups to a separate list.",
+    "maintainability": "The changes are proportionate to the team (simple code edits), risks are stated (e.g., 'Attackers can trigger false paid events'), and complexity is low. However, it does not explicitly document accepted debt or add tests/observability for the changes, and the code remains somewhat error-prone (e.g., float money issue unaddressed).",
+    "production_realism": "The response addresses critical production issues: signature verification first (security), null checks (prevents 500 errors), idempotency (handles webhook retries), and logging sensitivity. It considers failure modes (SMS failures shouldn't block webhook) and operational burden (lightweight changes). However, it does not address float money handling (using integer kobo or Decimal) or checking amount/currency against order, which are noted in the rubric."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-009",
+  "judge_cost_usd": 0.00117917,
+  "judge_latency_s": 51.488,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: it uses only existing dependencies (hmac, hashlib, json are standard library), requires no new infrastructure (no queue, Redis, Celery), and all required changes are code edits that can be done in this PR by one engineer in under three hours (estimated as '<30 minutes'). It explicitly separates bigger follow-ups to a separate list.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response addresses critical production issues: signature verification first (security), null checks (prevents 500 errors), idempotency (handles webhook retries), and logging sensitivity. It considers failure modes (SMS failures shouldn't block webhook) and operational burden (lightweight changes). However, it does not address float money handling (using integer kobo or Decimal) or checking amount/currency against order, which are noted in the rubric.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a prioritized review with corrected code snippets for each issue, making it immediately actionable. It includes concrete code changes, logging adjustments, and a clear separation of follow-ups. However, it does not provide a complete, corrected handler code block (e.g., imports are listed separately), and misses some rubric elements like money handling and amount validation.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The changes are proportionate to the team (simple code edits), risks are stated (e.g., 'Attackers can trigger false paid events'), and complexity is low. However, it does not explicitly document accepted debt or add tests/observability for the changes, and the code remains somewhat error-prone (e.g., float money issue unaddressed).\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a practical, constraint-aware review with actionable fixes but misses some key rubric elements like money handling and order validation.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"All fixable in <30 minutes\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a practical, constraint-aware review with actionable fixes but misses some key rubric elements like money handling and order validation.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

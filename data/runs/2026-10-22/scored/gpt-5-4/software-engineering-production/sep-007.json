@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "No single person caused this incident.",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Build internal dashboards or scripts using existing stack and PostgreSQL system views",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Total: 14 engineer-days",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed post-incident review with specific action items, owners, effort estimates (e.g., '3 days'), and prioritization. It includes concrete steps like 'Add a lightweight migration safety check in CI' and 'Build internal dashboards or scripts using existing stack', making it executable with light editing.",
+    "constraint_fidelity": "The response explicitly states 'No single person caused this incident' and avoids naming individuals. It proposes solutions using 'existing stack and PostgreSQL system views' with no mention of paid tools. Action items are costed with specific engineer-day estimates summing to 14 days, within the 15-day limit, and are prioritized.",
+    "maintainability": "The response emphasizes 'small, practical, and low-cost' solutions proportionate to the team, such as adding CI checks and dashboards using existing tools. It documents risks like 'migration safety' and includes a backlog for future work, ensuring clarity and sustainability for the five-engineer team.",
+    "production_realism": "The response accounts for production realities: it addresses locking issues with 'CREATE INDEX CONCURRENTLY', proposes dashboards using PostgreSQL views for observability, considers on-call escalation for a small team, and includes rollback procedures. It fits the team's size and skill mix without assuming extra capacity."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-007",
+  "judge_cost_usd": 0.0014117,
+  "judge_latency_s": 52.627,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states 'No single person caused this incident' and avoids naming individuals. It proposes solutions using 'existing stack and PostgreSQL system views' with no mention of paid tools. Action items are costed with specific engineer-day estimates summing to 14 days, within the 15-day limit, and are prioritized.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: it addresses locking issues with 'CREATE INDEX CONCURRENTLY', proposes dashboards using PostgreSQL views for observability, considers on-call escalation for a small team, and includes rollback procedures. It fits the team's size and skill mix without assuming extra capacity.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed post-incident review with specific action items, owners, effort estimates (e.g., '3 days'), and prioritization. It includes concrete steps like 'Add a lightweight migration safety check in CI' and 'Build internal dashboards or scripts using existing stack', making it executable with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response emphasizes 'small, practical, and low-cost' solutions proportionate to the team, such as adding CI checks and dashboards using existing tools. It documents risks like 'migration safety' and includes a backlog for future work, ensuring clarity and sustainability for the five-engineer team.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a comprehensive, constraint-aware post-incident review with actionable, costed items that respect all hard limits.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"No single person caused this incident.\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Build internal dashboards or scripts using existing stack and PostgreSQL system views\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Total: 14 engineer-days\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response is a comprehensive, constraint-aware post-incident review with actionable, costed items that respect all hard limits.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

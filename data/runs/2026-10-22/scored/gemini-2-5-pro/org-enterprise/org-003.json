@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed advisory deliverable as requested, covering all required elements: primary vs. non-primary trading, small-scale exemption, trading subsidiary necessity, tax treatment, and trustee duties. It includes concrete components like turnover limits (£50k), tax rates, and an action plan with steps (e.g., 'Review Your Governing Document', 'Create a Business Plan'). It could be taken into a trustee meeting with light editing.",
+    "constraint_fidelity": "The prompt specifies a charity in England and Wales with £320,000 annual income. The response respects all constraints: it uses UK-specific terms (HMRC, Charity Commission, GBP limits), correctly applies the £50,000 small-scale exemption threshold for a charity of this size, and discusses VAT thresholds (£85,000) relevant to the jurisdiction. It does not assume additional resources beyond what a small charity would have.",
+    "contextual_realism": "The response is calibrated for a small charity: it emphasizes trustee duties, risk assessment, and the need for professional advice rather than assuming dedicated legal or HR staff. It acknowledges role overlap ('trustees must exercise their duty of care') and restricted resources ('protect the charity's assets'). It avoids recommending unaffordable tooling or excessive process overhead.",
+    "jurisdictional_accuracy": "The response is accurate for England and Wales: it references HMRC, Charity Commission, GBP thresholds, and UK tax concepts (Corporation Tax, Corporate Gift Aid, VAT). It avoids US assumptions (no mention of 501(c)(3), UBIT, or IRS). It provides substantive content while appropriately flagging the need for professional advice ('Seek Professional Advice') with specific reasons (legal interpretation, tax structuring)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00117727,
+  "judge_latency_s": 46.783,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies a charity in England and Wales with £320,000 annual income. The response respects all constraints: it uses UK-specific terms (HMRC, Charity Commission, GBP limits), correctly applies the £50,000 small-scale exemption threshold for a charity of this size, and discusses VAT thresholds (£85,000) relevant to the jurisdiction. It does not assume additional resources beyond what a small charity would have.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small charity: it emphasizes trustee duties, risk assessment, and the need for professional advice rather than assuming dedicated legal or HR staff. It acknowledges role overlap ('trustees must exercise their duty of care') and restricted resources ('protect the charity's assets'). It avoids recommending unaffordable tooling or excessive process overhead.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed advisory deliverable as requested, covering all required elements: primary vs. non-primary trading, small-scale exemption, trading subsidiary necessity, tax treatment, and trustee duties. It includes concrete components like turnover limits (£50k), tax rates, and an action plan with steps (e.g., 'Review Your Governing Document', 'Create a Business Plan'). It could be taken into a trustee meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for England and Wales: it references HMRC, Charity Commission, GBP thresholds, and UK tax concepts (Corporation Tax, Corporate Gift Aid, VAT). It avoids US assumptions (no mention of 501(c)(3), UBIT, or IRS). It provides substantive content while appropriately flagging the need for professional advice ('Seek Professional Advice') with specific reasons (legal interpretation, tax structuring).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is excellent, providing specific, jurisdictionally accurate, and actionable advice tailored to a small UK charity's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response is excellent, providing specific, jurisdictionally accurate, and actionable advice tailored to a small UK charity's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

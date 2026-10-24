@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response provides specific differentiation for low reading ages: pre-highlighting key words, reading instructions aloud, short sentences, structured tasks, peer pairing, oral rehearsal, and accepting bullet points. It also includes support for core and stretch groups. These are implementable by one teacher with stated resources (no extra adults needed). The adaptations are concrete and not generic placeholders.",
+    "pathway_breadth": "The prompt is a lesson plan on historical causes, not student futures or pathways, so this dimension is scored on inclusivity for the described learner range. The response addresses the wide attainment spread and specifically supports six students with reading ages below 9 with concrete adaptations (pre-highlighting, oral rehearsal, peer support, sentence stems). It also includes stretch for higher-attaining students. The range of learners is accounted for with specific, low-cost strategies.",
+    "pedagogical_soundness": "The response provides clear learning objectives (naming, describing, explaining, judging causes) and aligns activities: direct teaching builds knowledge, sorting task reinforces categorization, explanation task builds description/explanation, ranking task supports judgment. Assessment (oral checks, exit sentence) measures understanding of causes and importance. Sequencing is logical: starter activates prior knowledge, teaching introduces content, tasks build complexity. Differentiation is built in. However, the assessment relies heavily on oral checks which may not capture individual understanding fully, and the 'judge' criterion might be ambitious for all students in 50 minutes.",
+    "workload_realism": "Timings sum to 50 minutes (0-5 starter, 5-10 intro, 10-20 teaching, 20-28 sort task, 28-38 explanation, 38-44 ranking, 44-48 check, 48-50 plenary). Resources match prompt: projector used, one A4 sheet (double-sided but acceptable), no devices needed. Preparation is reasonable: creating slides and printing sheet. Marking load is low (live-marking during tasks, collecting sheets). Class size of 34 is addressed with whole-class strategies and circulation. However, the double-sided sheet might be borderline for 'one A4 sheet' interpretation, but it's feasible."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-001",
+  "judge_cost_usd": 0.00147188,
+  "judge_latency_s": 56.465,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives (naming, describing, explaining, judging causes) and aligns activities: direct teaching builds knowledge, sorting task reinforces categorization, explanation task builds description/explanation, ranking task supports judgment. Assessment (oral checks, exit sentence) measures understanding of causes and importance. Sequencing is logical: starter activates prior knowledge, teaching introduces content, tasks build complexity. Differentiation is built in. However, the assessment relies heavily on oral checks which may not capture individual understanding fully, and the 'judge' criterion might be ambitious for all students in 50 minutes.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 50 minutes (0-5 starter, 5-10 intro, 10-20 teaching, 20-28 sort task, 28-38 explanation, 38-44 ranking, 44-48 check, 48-50 plenary). Resources match prompt: projector used, one A4 sheet (double-sided but acceptable), no devices needed. Preparation is reasonable: creating slides and printing sheet. Marking load is low (live-marking during tasks, collecting sheets). Class size of 34 is addressed with whole-class strategies and circulation. However, the double-sided sheet might be borderline for 'one A4 sheet' interpretation, but it's feasible.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is a lesson plan on historical causes, not student futures or pathways, so this dimension is scored on inclusivity for the described learner range. The response addresses the wide attainment spread and specifically supports six students with reading ages below 9 with concrete adaptations (pre-highlighting, oral rehearsal, peer support, sentence stems). It also includes stretch for higher-attaining students. The range of learners is accounted for with specific, low-cost strategies.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response provides specific differentiation for low reading ages: pre-highlighting key words, reading instructions aloud, short sentences, structured tasks, peer pairing, oral rehearsal, and accepting bullet points. It also includes support for core and stretch groups. These are implementable by one teacher with stated resources (no extra adults needed). The adaptations are concrete and not generic placeholders.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a well-structured, realistic lesson plan with strong differentiation and alignment to objectives.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This is a well-structured, realistic lesson plan with strong differentiation and alignment to objectives.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

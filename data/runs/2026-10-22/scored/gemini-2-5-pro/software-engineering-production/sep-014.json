@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed implementation plan with weekly phases, concrete tasks for each role (e.g., 'Configure the Enterprise Application in Entra ID', 'Develop and configure the WebSphere Trust Association Interceptor'), and specific steps like DNS changes and deployment scheduling. It includes a bill of materials and success criteria. However, it lacks exact commands or code snippets for the TAI or Entra ID configuration, and verification steps are general (e.g., 'perform post-deployment verification tests') rather than specific.",
+    "constraint_fidelity": "The response explicitly states 'The proposed solution leverages our existing Microsoft 365 E3 licenses' and 'Total Project Cost: $0', respecting the 'no new identity product or vendor purchase' constraint. It specifies using 'IBM WebSphere Application Server 8.5.5' and 'Java 8', respecting the 'no Java upgrade beyond 8 and no change of application server' constraint. The plan is phased over six weeks with roles for one Java developer and one sysadmin, respecting the headcount and timeline constraint. It shows arithmetic (cost $0) and uses existing licenses (Entra ID P1/Application Proxy included in E3).",
+    "maintainability": "The plan includes documentation drafting, risk assessment with stated risks (e.g., 'TAI Fails to Map User'), and uses standard Microsoft components (Entra Application Proxy) that the Windows sysadmin can maintain. It plans to decommission old URLs and disable old login, reducing technical debt. However, it adds complexity with a custom TAI and on-premises connectors, which may require ongoing maintenance by the Java developer and sysadmin, and does not explicitly address testing, observability, or long-term ownership of these components.",
+    "production_realism": "The plan accounts for production realities: it includes phased testing (Weeks 3-4), risk assessment (e.g., connector failure mitigation via multiple servers), load testing mention, and rollback procedure drafting. It considers user onboarding and support. However, it does not explicitly address locking, retries, idempotency, or partial failure in the TAI or connector components, and assumes the sysadmin can handle Entra ID configuration without noting skill gaps."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.0015198,
+  "judge_latency_s": 32.909,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states 'The proposed solution leverages our existing Microsoft 365 E3 licenses' and 'Total Project Cost: $0', respecting the 'no new identity product or vendor purchase' constraint. It specifies using 'IBM WebSphere Application Server 8.5.5' and 'Java 8', respecting the 'no Java upgrade beyond 8 and no change of application server' constraint. The plan is phased over six weeks with roles for one Java developer and one sysadmin, respecting the headcount and timeline constraint. It shows arithmetic (cost $0) and uses existing licenses (Entra ID P1/Application Proxy included in E3).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan accounts for production realities: it includes phased testing (Weeks 3-4), risk assessment (e.g., connector failure mitigation via multiple servers), load testing mention, and rollback procedure drafting. It considers user onboarding and support. However, it does not explicitly address locking, retries, idempotency, or partial failure in the TAI or connector components, and assumes the sysadmin can handle Entra ID configuration without noting skill gaps.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed implementation plan with weekly phases, concrete tasks for each role (e.g., 'Configure the Enterprise Application in Entra ID', 'Develop and configure the WebSphere Trust Association Interceptor'), and specific steps like DNS changes and deployment scheduling. It includes a bill of materials and success criteria. However, it lacks exact commands or code snippets for the TAI or Entra ID configuration, and verification steps are general (e.g., 'perform post-deployment verification tests') rather than specific.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The plan includes documentation drafting, risk assessment with stated risks (e.g., 'TAI Fails to Map User'), and uses standard Microsoft components (Entra Application Proxy) that the Windows sysadmin can maintain. It plans to decommission old URLs and disable old login, reducing technical debt. However, it adds complexity with a custom TAI and on-premises connectors, which may require ongoing maintenance by the Java developer and sysadmin, and does not explicitly address testing, observability, or long-term ownership of these components.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a well-structured, constraint-aware plan leveraging existing Microsoft licenses for MFA implementation.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a well-structured, constraint-aware plan leveraging existing Microsoft licenses for MFA implementation.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

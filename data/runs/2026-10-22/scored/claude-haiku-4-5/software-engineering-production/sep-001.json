@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with code, rollout plan with weekly phases, concrete commands (SQL, Python, cron), estimates (cost, storage), verification steps (canary, load testing), and checklist. An engineer could execute it with light editing.",
+    "constraint_fidelity": "The response respects all hard constraints: uses only existing PostgreSQL and in-process memory (no new services), timeline is 4 weeks with 3 engineers, cost increase is $712/month (7.6% < 8%), and latency impact is 0.8ms (p99 remains under 220ms). It explicitly shows arithmetic for cost, capacity, and latency.",
+    "maintainability": "Solutions are proportionate to team (in-process, PostgreSQL), clear seams (middleware, management commands), tests (unit tests), documentation (runbooks, training), observability (metrics), and states risks explicitly (drift, eventual consistency). Avoids unnecessary complexity.",
+    "production_realism": "Addresses scale (1,200 rps), load (DB writes ~10/sec), locking (uses SELECT FOR UPDATE in flush), retries (async flush), partial failure (fire-and-forget logging), rollback (feature flags), observability (Prometheus metrics), and operational burden (cron jobs, runbooks). Fits team size and skill mix."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.00219645,
+  "judge_latency_s": 40.911,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses only existing PostgreSQL and in-process memory (no new services), timeline is 4 weeks with 3 engineers, cost increase is $712/month (7.6% < 8%), and latency impact is 0.8ms (p99 remains under 220ms). It explicitly shows arithmetic for cost, capacity, and latency.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses scale (1,200 rps), load (DB writes ~10/sec), locking (uses SELECT FOR UPDATE in flush), retries (async flush), partial failure (fire-and-forget logging), rollback (feature flags), observability (Prometheus metrics), and operational burden (cron jobs, runbooks). Fits team size and skill mix.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with code, rollout plan with weekly phases, concrete commands (SQL, Python, cron), estimates (cost, storage), verification steps (canary, load testing), and checklist. An engineer could execute it with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Solutions are proportionate to team (in-process, PostgreSQL), clear seams (middleware, management commands), tests (unit tests), documentation (runbooks, training), observability (metrics), and states risks explicitly (drift, eventual consistency). Avoids unnecessary complexity.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a comprehensive, constraint-aware design that could be executed immediately by the team.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response is a comprehensive, constraint-aware design that could be executed immediately by the team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

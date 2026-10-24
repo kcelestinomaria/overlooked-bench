@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedia level by engaging with specific methodological approaches (XRD, TEM, AAS for pharmacology; samskara and guna concepts for holistic approach), discusses underlying assumptions of both perspectives, and addresses the core scholarly debate about category errors and reductionism vs. holism. It provides arguments from both sides with substantive reasoning rather than just summarizing positions. A specialist would recognize this as engagement with the actual debate rather than a summary of summaries.",
+    "domain_accuracy": "The response accurately describes Rasashastra as 'the Science of Mercury' dealing with metals/minerals/animal products, mentions shodhana (purification) and marana (incineration) processes, correctly identifies bhasmas as the end products, and notes the heavy metal content controversy. It correctly characterizes the pharmacological approach as reductionist and the epistemic system approach as holistic, and accurately describes methodologies like XRD, TEM, AAS. No invented citations, terms, or false consensus claims are present. The substantive claims align with established knowledge of Ayurvedic rasashastra debates.",
+    "field_situatedness": "The response correctly uses Ayurvedic terminology (Rasashastra, shodhana, marana, bhasmas, Prakriti, Agni, Doshas, samskara, guna) and engages with the specific frameworks of Ayurvedic medicine rather than substituting Western biomedical frameworks. It maintains the field's conceptual language throughout and addresses the debate on its own terms rather than imposing external frameworks.",
+    "scholarly_calibration": "The response demonstrates good calibration by distinguishing between well-established claims (heavy metal content, processing methods) and contested areas (safety claims, reductionism vs. holism). It presents both sides as legitimate perspectives without presenting either as settled fact. The conclusion suggests a 'bifocal approach' acknowledging the validity of both frameworks. However, it could be more explicit about which specific aspects are most contested within the literature. The calibration is targeted rather than blanket."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00119778,
+  "judge_latency_s": 52.258,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes Rasashastra as 'the Science of Mercury' dealing with metals/minerals/animal products, mentions shodhana (purification) and marana (incineration) processes, correctly identifies bhasmas as the end products, and notes the heavy metal content controversy. It correctly characterizes the pharmacological approach as reductionist and the epistemic system approach as holistic, and accurately describes methodologies like XRD, TEM, AAS. No invented citations, terms, or false consensus claims are present. The substantive claims align with established knowledge of Ayurvedic rasashastra debates.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedia level by engaging with specific methodological approaches (XRD, TEM, AAS for pharmacology; samskara and guna concepts for holistic approach), discusses underlying assumptions of both perspectives, and addresses the core scholarly debate about category errors and reductionism vs. holism. It provides arguments from both sides with substantive reasoning rather than just summarizing positions. A specialist would recognize this as engagement with the actual debate rather than a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates good calibration by distinguishing between well-established claims (heavy metal content, processing methods) and contested areas (safety claims, reductionism vs. holism). It presents both sides as legitimate perspectives without presenting either as settled fact. The conclusion suggests a 'bifocal approach' acknowledging the validity of both frameworks. However, it could be more explicit about which specific aspects are most contested within the literature. The calibration is targeted rather than blanket.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses Ayurvedic terminology (Rasashastra, shodhana, marana, bhasmas, Prakriti, Agni, Doshas, samskara, guna) and engages with the specific frameworks of Ayurvedic medicine rather than substituting Western biomedical frameworks. It maintains the field's conceptual language throughout and addresses the debate on its own terms rather than imposing external frameworks.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A comprehensive and well-reasoned response that demonstrates substantive engagement with the Ayurvedic rasashastra debate while maintaining field-appropriate terminology and frameworks.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "A comprehensive and well-reasoned response that demonstrates substantive engagement with the Ayurvedic rasashastra debate while maintaining field-appropriate terminology and frameworks.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners: 55 students in a rural school with limited resources. The response addresses differentiation concretely: pairing stronger readers with less confident ones, rotating spokespeople, using tangible local examples, and allowing group collaboration. These are low-cost and implementable by one teacher without additional adults. It avoids generic 'differentiate as needed' language and provides specific strategies. However, it does not explicitly address language barriers (e.g., if instruction is not in students' first language) or material constraints beyond the stated ones, but the activities are designed to be accessible with available resources.",
+    "pathway_breadth": "The prompt does not involve student futures or pathway guidance; it is a statistics scheme of work. Therefore, score based on inclusivity of learners. The response uses real data from students' lives (e.g., crops, household size) and local examples, making it relevant to rural Malawian students. It does not assume urban or digital contexts, and differentiation notes address varying confidence levels and reading abilities, though it could be more explicit about language or prior attainment. Overall, it is inclusive of the described setting.",
+    "pedagogical_soundness": "The response states learning objectives: distinguish data categories, collect data with tally marks, construct frequency tables, and interpret frequency tables. Activities align: Day 1 oral discussion and tally demonstration build toward data collection; Day 2 converts tally to frequency tables; Day 3 applies collection; Day 4 introduces data types; Day 5 reinforces skills. Assessment includes observation, exercise book review, and oral Q&A, which measure the objectives practically. Sequencing is coherent, starting with basic concepts before application. No rubrics are used, so step 5 is not applicable.",
+    "workload_realism": "Timings sum to 40-45 minutes per day, appropriate for a lesson period. Materials are chalkboard, chalk, exercise books, pencils, and locally available items like stones or seeds—all feasible in a rural Malawian classroom with no electricity or printing. Activities use group sharing of textbooks (1 per 4 students) and whole-class chalkboard work, avoiding individual resources. Preparation is minimal (writing examples on board beforehand). Marking involves circulating and checking exercise books, manageable for one teacher. Class size of 55 is addressed through group work and peer-teaching, with activities like tally relay designed for large groups without requiring free movement."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-005",
+  "judge_cost_usd": 0.00125643,
+  "judge_latency_s": 58.228,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states learning objectives: distinguish data categories, collect data with tally marks, construct frequency tables, and interpret frequency tables. Activities align: Day 1 oral discussion and tally demonstration build toward data collection; Day 2 converts tally to frequency tables; Day 3 applies collection; Day 4 introduces data types; Day 5 reinforces skills. Assessment includes observation, exercise book review, and oral Q&A, which measure the objectives practically. Sequencing is coherent, starting with basic concepts before application. No rubrics are used, so step 5 is not applicable.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 40-45 minutes per day, appropriate for a lesson period. Materials are chalkboard, chalk, exercise books, pencils, and locally available items like stones or seeds—all feasible in a rural Malawian classroom with no electricity or printing. Activities use group sharing of textbooks (1 per 4 students) and whole-class chalkboard work, avoiding individual resources. Preparation is minimal (writing examples on board beforehand). Marking involves circulating and checking exercise books, manageable for one teacher. Class size of 55 is addressed through group work and peer-teaching, with activities like tally relay designed for large groups without requiring free movement.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt does not involve student futures or pathway guidance; it is a statistics scheme of work. Therefore, score based on inclusivity of learners. The response uses real data from students' lives (e.g., crops, household size) and local examples, making it relevant to rural Malawian students. It does not assume urban or digital contexts, and differentiation notes address varying confidence levels and reading abilities, though it could be more explicit about language or prior attainment. Overall, it is inclusive of the described setting.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners: 55 students in a rural school with limited resources. The response addresses differentiation concretely: pairing stronger readers with less confident ones, rotating spokespeople, using tangible local examples, and allowing group collaboration. These are low-cost and implementable by one teacher without additional adults. It avoids generic 'differentiate as needed' language and provides specific strategies. However, it does not explicitly address language barriers (e.g., if instruction is not in students' first language) or material constraints beyond the stated ones, but the activities are designed to be accessible with available resources.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response is highly practical and context-aware, designing activities that are feasible and pedagogically sound for a resource-constrained rural Malawian classroom.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response is highly practical and context-aware, designing activities that are feasible and pedagogically sound for a resource-constrained rural Malawian classroom.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

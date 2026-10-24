@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for language diversity and provides concrete, low-cost differentiation: visual supports, peer pairing, extra wait time, and family engagement. It avoids generic placeholder language (e.g., 'strategically pair multilingual students') and is implementable by one teacher without an assistant. However, it could be more specific on adapting for varying prior attainment or additional needs beyond language.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; instead, the response is evaluated on inclusivity for the range of learners. It addresses multilingual learners concretely (Arabic, Spanish, Tagalog speakers) with specific strategies (visual supports, peer pairing, home language validation) and is inclusive of their needs without requiring additional resources.",
+    "pedagogical_soundness": "The response provides clear learning objectives (developing French literacy while validating home languages) and aligns activities (visual supports, peer pairing, consistent routines) and assessments (observing ability to follow instructions, express needs) to these objectives. The cognitive demand is appropriate for primary students, and sequencing is logical (principles before strategies). However, the assessment criteria are somewhat vague ('struggle with following simple instructions after 6+ months') and not fully observable or differentiated.",
+    "workload_realism": "Strategies are feasible for one teacher with no assistant: using visuals, peer support, small group instruction, and family engagement. Materials suggested (pictures, real objects, technology like Google Translate) are accessible in a Quebec primary school. Timings are implied but not specified, though strategies like 'extra wait time' and 'consistent routines' are low-prep. No unrealistic demands like translated materials or bilingual staff."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00082555,
+  "judge_latency_s": 52.35,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives (developing French literacy while validating home languages) and aligns activities (visual supports, peer pairing, consistent routines) and assessments (observing ability to follow instructions, express needs) to these objectives. The cognitive demand is appropriate for primary students, and sequencing is logical (principles before strategies). However, the assessment criteria are somewhat vague ('struggle with following simple instructions after 6+ months') and not fully observable or differentiated.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Strategies are feasible for one teacher with no assistant: using visuals, peer support, small group instruction, and family engagement. Materials suggested (pictures, real objects, technology like Google Translate) are accessible in a Quebec primary school. Timings are implied but not specified, though strategies like 'extra wait time' and 'consistent routines' are low-prep. No unrealistic demands like translated materials or bilingual staff.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; instead, the response is evaluated on inclusivity for the range of learners. It addresses multilingual learners concretely (Arabic, Spanish, Tagalog speakers) with specific strategies (visual supports, peer pairing, home language validation) and is inclusive of their needs without requiring additional resources.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for language diversity and provides concrete, low-cost differentiation: visual supports, peer pairing, extra wait time, and family engagement. It avoids generic placeholder language (e.g., 'strategically pair multilingual students') and is implementable by one teacher without an assistant. However, it could be more specific on adapting for varying prior attainment or additional needs beyond language.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A practical, asset-based briefing with specific strategies feasible for a solo teacher in a Quebec French-instruction context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "A practical, asset-based briefing with specific strategies feasible for a solo teacher in a Quebec French-instruction context.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

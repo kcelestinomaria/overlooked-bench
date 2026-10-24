@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "finish cutover within 10–14 days",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response produces a detailed migration plan with phases, concrete SQL examples (e.g., 'ALTER TABLE shipment_events ADD COLUMN shipment_event_id_bigint bigint;'), and validation steps. 2. It includes a day-by-day schedule, team assignments, and safety checks for each step. 3. It provides exact commands for critical steps (e.g., backfill batches, index creation) and verification queries. 4. It offers to turn the plan into a checklist, SQL scripts, or runbook, showing readiness for execution. 5. The plan is sequenced and includes rollback points, e.g., 'If backfill causes pressure... stop job... reduce batch size'.",
+    "constraint_fidelity": "1. The response correctly computes the runway: (2,147,483,647 - 1,860,000,000) / 9,000,000 ≈ 31.9 days, but treats 17–20 days as the real deadline, which is conservative and justified. 2. It explicitly avoids ALTER COLUMN TYPE, new instances, or larger instances, respecting C2. 3. It uses batched backfill, CONCURRENTLY indexes, and NOT VALID constraints to avoid long locks, respecting C1. 4. It acknowledges the 5-minute maintenance window constraint and reserves it only for metadata swaps. 5. It respects the 200 GB storage limit by avoiding full table rewrites and using incremental backfill. 6. The response shows arithmetic for runway and storage, e.g., 'a concurrent index and new column on 1.7 billion rows needs tens of GB to well over 100 GB, against 520 GB free plus at most 200 GB'.",
+    "maintainability": "1. The response leaves clear seams: dual-write paths, feature flags, and gradual cutover to bigint. 2. It documents risks and accepted debt, e.g., 'keep old int4 columns temporarily read-only if any downstream consumer still needs them'. 3. It ensures the solution is proportionate to the team, e.g., 'DBA contractor reviews all SQL' and 'feature-flagged app rollout'. 4. It includes observability (dashboards, alerts) and handover considerations, e.g., 'monitor for at least 24–48 hours' after cutover. 5. The bigint migration is designed to be reversible until the final step, reducing long-term risk.",
+    "production_realism": "1. The response accounts for the 2-vCPU instance by using batched backfill with sleep intervals to avoid overloading the system. 2. It addresses locking, retries, and partial failure by using CONCURRENTLY indexes, NOT VALID constraints, and batched updates. 3. It includes observability (dashboards, alerts) and rollback plans for each phase. 4. It tailors the operational burden to the team (two backend engineers + part-time DBA), e.g., 'I would not let the engineers improvise DDL on the live system without the DBA reviewing exact statements'. 5. It avoids technically incorrect claims about PostgreSQL, e.g., correctly using CONCURRENTLY for indexes and NOT VALID for constraints."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.0035491,
+  "judge_latency_s": 13.884,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response correctly computes the runway: (2,147,483,647 - 1,860,000,000) / 9,000,000 ≈ 31.9 days, but treats 17–20 days as the real deadline, which is conservative and justified. 2. It explicitly avoids ALTER COLUMN TYPE, new instances, or larger instances, respecting C2. 3. It uses batched backfill, CONCURRENTLY indexes, and NOT VALID constraints to avoid long locks, respecting C1. 4. It acknowledges the 5-minute maintenance window constraint and reserves it only for metadata swaps. 5. It respects the 200 GB storage limit by avoiding full table rewrites and using incremental backfill. 6. The response shows arithmetic for runway and storage, e.g., 'a concurrent index and new column on 1.7 billion rows needs tens of GB to well over 100 GB, against 520 GB free plus at most 200 GB'.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the 2-vCPU instance by using batched backfill with sleep intervals to avoid overloading the system. 2. It addresses locking, retries, and partial failure by using CONCURRENTLY indexes, NOT VALID constraints, and batched updates. 3. It includes observability (dashboards, alerts) and rollback plans for each phase. 4. It tailors the operational burden to the team (two backend engineers + part-time DBA), e.g., 'I would not let the engineers improvise DDL on the live system without the DBA reviewing exact statements'. 5. It avoids technically incorrect claims about PostgreSQL, e.g., correctly using CONCURRENTLY for indexes and NOT VALID for constraints.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response produces a detailed migration plan with phases, concrete SQL examples (e.g., 'ALTER TABLE shipment_events ADD COLUMN shipment_event_id_bigint bigint;'), and validation steps. 2. It includes a day-by-day schedule, team assignments, and safety checks for each step. 3. It provides exact commands for critical steps (e.g., backfill batches, index creation) and verification queries. 4. It offers to turn the plan into a checklist, SQL scripts, or runbook, showing readiness for execution. 5. The plan is sequenced and includes rollback points, e.g., 'If backfill causes pressure... stop job... reduce batch size'.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The response leaves clear seams: dual-write paths, feature flags, and gradual cutover to bigint. 2. It documents risks and accepted debt, e.g., 'keep old int4 columns temporarily read-only if any downstream consumer still needs them'. 3. It ensures the solution is proportionate to the team, e.g., 'DBA contractor reviews all SQL' and 'feature-flagged app rollout'. 4. It includes observability (dashboards, alerts) and handover considerations, e.g., 'monitor for at least 24–48 hours' after cutover. 5. The bigint migration is designed to be reversible until the final step, reducing long-term risk.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a meticulously planned, constraint-aware migration that could be executed by the team as described.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"finish cutover within 10–14 days\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is a meticulously planned, constraint-aware migration that could be executed by the team as described.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

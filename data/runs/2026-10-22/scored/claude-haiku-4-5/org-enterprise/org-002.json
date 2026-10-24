@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a one-page go/no-go analysis with a clear conditional recommendation ('CONDITIONAL GO'), includes break-even calculation (PLN 794,400 annually, derived from fixed costs and margins), financing options (specific Polish banks and programs), and two critical risks with mitigations. It provides concrete components like financial metrics, timeline, and conditions for execution. It could be taken into a meeting with light editing, as it is structured and specific, not just a description of the process.",
+    "constraint_fidelity": "The prompt constraints: no equity dilution, PLN 250,000 capital, 6-person team, Polish context. The response explicitly states 'no equity dilution' and proposes debt financing (bank loan, supplier credit, leasing) rather than equity. It respects the PLN 250k capital by using it as part of a financing mix. It shows arithmetic: PLN 250k equity + PLN 150k loan + PLN 50k supplier credit + PLN 50k leasing = PLN 500k total, which respects the capital constraint while addressing the funding gap. It does not silently violate constraints but justifies the need for additional financing.",
+    "contextual_realism": "The response is calibrated for a small bakery: it assumes no dedicated HR or legal, proposes realistic financing (bank loans, supplier credit, leasing), acknowledges staffing constraints (6-person team cannot manage two locations, need to hire 4-5 new staff), and includes mitigation like hiring a shift manager. It avoids tooling or processes that require large overhead, such as professional site analysis at a cost (PLN 5-10k) that is feasible for the budget. It recognizes key-person dependency and operational challenges specific to small businesses.",
+    "jurisdictional_accuracy": "The response uses Polish context: mentions PKO BP, ING, Santander banks, BGK (Bank Gospodarstwa Krajowego), PARP (Polish Agency for Enterprise Development), and leasing options, avoiding US-specific references like SBA. It does not assert US defaults as universal. It provides substantive content rather than generic 'consult a lawyer' disclaimers. The financing options are accurate for Poland, and the break-even calculation uses local currency (PLN) and realistic assumptions."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.0010657,
+  "judge_latency_s": 48.866,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt constraints: no equity dilution, PLN 250,000 capital, 6-person team, Polish context. The response explicitly states 'no equity dilution' and proposes debt financing (bank loan, supplier credit, leasing) rather than equity. It respects the PLN 250k capital by using it as part of a financing mix. It shows arithmetic: PLN 250k equity + PLN 150k loan + PLN 50k supplier credit + PLN 50k leasing = PLN 500k total, which respects the capital constraint while addressing the funding gap. It does not silently violate constraints but justifies the need for additional financing.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small bakery: it assumes no dedicated HR or legal, proposes realistic financing (bank loans, supplier credit, leasing), acknowledges staffing constraints (6-person team cannot manage two locations, need to hire 4-5 new staff), and includes mitigation like hiring a shift manager. It avoids tooling or processes that require large overhead, such as professional site analysis at a cost (PLN 5-10k) that is feasible for the budget. It recognizes key-person dependency and operational challenges specific to small businesses.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a one-page go/no-go analysis with a clear conditional recommendation ('CONDITIONAL GO'), includes break-even calculation (PLN 794,400 annually, derived from fixed costs and margins), financing options (specific Polish banks and programs), and two critical risks with mitigations. It provides concrete components like financial metrics, timeline, and conditions for execution. It could be taken into a meeting with light editing, as it is structured and specific, not just a description of the process.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response uses Polish context: mentions PKO BP, ING, Santander banks, BGK (Bank Gospodarstwa Krajowego), PARP (Polish Agency for Enterprise Development), and leasing options, avoiding US-specific references like SBA. It does not assert US defaults as universal. It provides substantive content rather than generic 'consult a lawyer' disclaimers. The financing options are accurate for Poland, and the break-even calculation uses local currency (PLN) and realistic assumptions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is highly specific, respects constraints, and provides a actionable, contextually realistic analysis for a small Polish bakery.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is highly specific, respects constraints, and provides a actionable, contextually realistic analysis for a small Polish bakery.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

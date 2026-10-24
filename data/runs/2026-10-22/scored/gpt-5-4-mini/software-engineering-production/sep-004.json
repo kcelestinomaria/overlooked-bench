@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "six weeks is only realistic if legal and works council are already engaged immediately",
+      "evidence_verified": false,
+      "verdict": "relaxed_explicitly"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed data design with specific table schemas (e.g., 'rider_location_point' with columns), retention schedules ('0–30 days: raw precise location in Postgres'), access controls ('Only: a very small subset of support staff'), and implementation notes ('use table partitioning on recorded_at'). It includes a sequence for pre-launch steps (e.g., 'DPIA completed', 'Works council consulted') and pushback points. An engineer could start executing this with light editing, but it lacks exact commands, code snippets, or effort estimates for tasks like building the deletion job or aggregation pipeline.",
+    "constraint_fidelity": "The response explicitly states 'No to raw precise location retention beyond 30 days anywhere' and details retention mechanisms including Postgres deletion jobs, BigQuery expiration, and backup alignment. It uses only existing stack (PostgreSQL, BigQuery, Firebase) and does not add vendors. It acknowledges the six-week timeline is only feasible with immediate legal engagement and a narrowed MVP, but does not explicitly violate the constraint; instead, it proposes a realistic scope. The arithmetic for retention is shown (e.g., partitioning by day, scheduled jobs), and constraints are respected or explicitly relaxed with justification.",
+    "maintainability": "The response emphasizes proportionality ('analytics gets daily aggregated zone-level outputs, not raw traces'), clear seams (separate operational and analytics stores), and documentation ('updated privacy notice', 'Internal policy updated'). It states risks explicitly ('this is legally high-risk', 'no disciplinary surveillance unless separately justified') and proposes governance ('Assign owners for privacy, support access approvals'). However, it does not detail tests, observability (e.g., monitoring for deletion jobs), or handover documentation for the team, and the complexity of maintaining partitioned tables and aggregation pipelines may be high for a small team without further specification.",
+    "production_realism": "The response accounts for production-scale issues: it specifies indexing ('indexes on (shift_id, recorded_at) and geospatial index'), retention automation ('scheduled job deletes raw points older than 30 days'), access controls ('role-based access control', 'row-level security'), audit logging ('rider_location_access_log'), and partial failure considerations (e.g., 'stop immediately when shift ends'). It fits the team of two engineers by leveraging existing infrastructure and focusing on a narrowed MVP. However, it lacks detail on retries, idempotency, and rollback mechanisms for data ingestion or deletion jobs."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-004",
+  "judge_cost_usd": 0.00177995,
+  "judge_latency_s": 61.219,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states 'No to raw precise location retention beyond 30 days anywhere' and details retention mechanisms including Postgres deletion jobs, BigQuery expiration, and backup alignment. It uses only existing stack (PostgreSQL, BigQuery, Firebase) and does not add vendors. It acknowledges the six-week timeline is only feasible with immediate legal engagement and a narrowed MVP, but does not explicitly violate the constraint; instead, it proposes a realistic scope. The arithmetic for retention is shown (e.g., partitioning by day, scheduled jobs), and constraints are respected or explicitly relaxed with justification.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production-scale issues: it specifies indexing ('indexes on (shift_id, recorded_at) and geospatial index'), retention automation ('scheduled job deletes raw points older than 30 days'), access controls ('role-based access control', 'row-level security'), audit logging ('rider_location_access_log'), and partial failure considerations (e.g., 'stop immediately when shift ends'). It fits the team of two engineers by leveraging existing infrastructure and focusing on a narrowed MVP. However, it lacks detail on retries, idempotency, and rollback mechanisms for data ingestion or deletion jobs.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed data design with specific table schemas (e.g., 'rider_location_point' with columns), retention schedules ('0–30 days: raw precise location in Postgres'), access controls ('Only: a very small subset of support staff'), and implementation notes ('use table partitioning on recorded_at'). It includes a sequence for pre-launch steps (e.g., 'DPIA completed', 'Works council consulted') and pushback points. An engineer could start executing this with light editing, but it lacks exact commands, code snippets, or effort estimates for tasks like building the deletion job or aggregation pipeline.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response emphasizes proportionality ('analytics gets daily aggregated zone-level outputs, not raw traces'), clear seams (separate operational and analytics stores), and documentation ('updated privacy notice', 'Internal policy updated'). It states risks explicitly ('this is legally high-risk', 'no disciplinary surveillance unless separately justified') and proposes governance ('Assign owners for privacy, support access approvals'). However, it does not detail tests, observability (e.g., monitoring for deletion jobs), or handover documentation for the team, and the complexity of maintaining partitioned tables and aggregation pipelines may be high for a small team without further specification.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong constraint adherence and production awareness but lacks some operational specifics for immediate execution.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"relaxed_explicitly\",\n      \"evidence\": \"six weeks is only realistic if legal and works council are already engaged immediately\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates strong constraint adherence and production awareness but lacks some operational specifics for immediate execution.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

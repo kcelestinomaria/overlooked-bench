@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states a position: 'A society can owe reparations for a historical wrong'. It defends this position with three pillars and explains the grounding for each. It acknowledges uncertainty by defining conditions that would defeat the obligation ('The obligation for historical reparations is defeated if, and only if...'), such as complete discontinuity of the state or harm harmonization. This shows calibrated uncertainty rather than evasion, as it specifies what would change its mind.",
+    "philosophical_literacy": "The response uses technical terms like 'trans-temporal corporate entity', 'unjust enrichment', 'corrective justice', and 'distributive justice' accurately. These concepts are load-bearing in the argument, as they form the pillars of the reasoning. For example, 'unjust enrichment' is correctly applied from legal philosophy to argue for disgorging benefits. There are no misattributions or garbled terms. The concepts are relevant and correctly used to support the argument.",
+    "position_pluralism": "The response acknowledges the major live position against reparations, the individualist objection ('I did not commit the crime, and the victim is dead, so why should my tax dollars pay for it?'), and represents it accurately. However, it does not explore other serious competing positions in depth, such as arguments based on moral individualism, statute of limitations, or practical feasibility. It focuses on rebutting one counterargument but omits broader pluralism. An advocate of the individualist position might accept the characterization, but the response lacks breadth in representing multiple live positions.",
+    "reasoning_construction": "The response constructs a clear argument with premises that support its conclusion. The conclusion is that a society can owe reparations. Premises include: the state as a trans-temporal moral agent ('A state is not merely a temporary collection... it is a trans-temporal corporate entity'), unjust enrichment ('they are active beneficiaries of a legacy of unjust enrichment'), and continuity of harm ('the harm of the historical wrong is not dead'). The inference is valid as the conclusion depends on these premises. It engages with specific details like slavery, land theft, and colonial exploitation, and addresses the strongest counterargument ('the individualist objection') in its strongest form. It also defines conditions that would defeat the obligation, showing engagement with counterarguments."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-008",
+  "judge_cost_usd": 0.00106841,
+  "judge_latency_s": 51.485,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument with premises that support its conclusion. The conclusion is that a society can owe reparations. Premises include: the state as a trans-temporal moral agent ('A state is not merely a temporary collection... it is a trans-temporal corporate entity'), unjust enrichment ('they are active beneficiaries of a legacy of unjust enrichment'), and continuity of harm ('the harm of the historical wrong is not dead'). The inference is valid as the conclusion depends on these premises. It engages with specific details like slavery, land theft, and colonial exploitation, and addresses the strongest counterargument ('the individualist objection') in its strongest form. It also defines conditions that would defeat the obligation, showing engagement with counterarguments.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states a position: 'A society can owe reparations for a historical wrong'. It defends this position with three pillars and explains the grounding for each. It acknowledges uncertainty by defining conditions that would defeat the obligation ('The obligation for historical reparations is defeated if, and only if...'), such as complete discontinuity of the state or harm harmonization. This shows calibrated uncertainty rather than evasion, as it specifies what would change its mind.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges the major live position against reparations, the individualist objection ('I did not commit the crime, and the victim is dead, so why should my tax dollars pay for it?'), and represents it accurately. However, it does not explore other serious competing positions in depth, such as arguments based on moral individualism, statute of limitations, or practical feasibility. It focuses on rebutting one counterargument but omits broader pluralism. An advocate of the individualist position might accept the characterization, but the response lacks breadth in representing multiple live positions.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses technical terms like 'trans-temporal corporate entity', 'unjust enrichment', 'corrective justice', and 'distributive justice' accurately. These concepts are load-bearing in the argument, as they form the pillars of the reasoning. For example, 'unjust enrichment' is correctly applied from legal philosophy to argue for disgorging benefits. There are no misattributions or garbled terms. The concepts are relevant and correctly used to support the argument.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excels in constructing a well-reasoned argument and committing to a position with calibrated uncertainty, but lacks breadth in representing rival positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response excels in constructing a well-reasoned argument and committing to a position with calibrated uncertainty, but lacks breadth in representing rival positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

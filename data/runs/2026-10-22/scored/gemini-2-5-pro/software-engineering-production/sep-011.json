@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "All services (ECS, S3, SQS, Aurora, SES) will be provisioned and used exclusively within eu-central-1 (Frankfurt)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Total Estimated Additional Cost: €393.26 / month",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "The design exclusively uses our existing stack: ECS Fargate, Aurora, S3, SQS, and SES.",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete design with specific database schema, SQS message flow, worker logic steps (including SQL cursor usage and multipart uploads), and exact cost calculations. An engineer could implement this with light editing for specific libraries or cron syntax.",
+    "constraint_fidelity": "The response explicitly states 'All services (ECS, S3, SQS, Aurora, SES) will be provisioned and used exclusively within eu-central-1 (Frankfurt)', 'exclusively uses our existing stack', and provides detailed cost arithmetic totaling €393.26/month, which is under the €600 budget. It uses the read replica to avoid performance degradation and addresses all constraints directly.",
+    "maintainability": "The design integrates with existing patterns (SQS worker), adds clear database tables for tracking, includes error logging, and uses standard AWS services the team already operates. It notes GDPR considerations (data in EU) but does not explicitly flag encryption at rest or access logging risks, though S3 private buckets imply some security.",
+    "production_realism": "The response accounts for load by spreading exports hourly, uses server-side cursors and streaming to handle 2M rows, implements multipart uploads for S3, includes error handling and status tracking, and directs reads to the replica. It fits the existing team's operational pattern without requiring new skills."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-011",
+  "judge_cost_usd": 0.00141887,
+  "judge_latency_s": 29.337,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states 'All services (ECS, S3, SQS, Aurora, SES) will be provisioned and used exclusively within eu-central-1 (Frankfurt)', 'exclusively uses our existing stack', and provides detailed cost arithmetic totaling €393.26/month, which is under the €600 budget. It uses the read replica to avoid performance degradation and addresses all constraints directly.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for load by spreading exports hourly, uses server-side cursors and streaming to handle 2M rows, implements multipart uploads for S3, includes error handling and status tracking, and directs reads to the replica. It fits the existing team's operational pattern without requiring new skills.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete design with specific database schema, SQS message flow, worker logic steps (including SQL cursor usage and multipart uploads), and exact cost calculations. An engineer could implement this with light editing for specific libraries or cron syntax.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The design integrates with existing patterns (SQS worker), adds clear database tables for tracking, includes error logging, and uses standard AWS services the team already operates. It notes GDPR considerations (data in EU) but does not explicitly flag encryption at rest or access logging risks, though S3 private buckets imply some security.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides a highly detailed, constraint-aware design with actionable steps and realistic cost arithmetic.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"All services (ECS, S3, SQS, Aurora, SES) will be provisioned and used exclusively within eu-central-1 (Frankfurt)\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Total Estimated Additional Cost: €393.26 / month\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"The design exclusively uses our existing stack: ECS Fargate, Aurora, S3, SQS, and SES.\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response provides a highly detailed, constraint-aware design with actionable steps and realistic cost arithmetic.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

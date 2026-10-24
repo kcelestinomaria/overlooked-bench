@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete design with code snippets (e.g., TokenBucket class, middleware), a detailed rollout plan with weekly breakdowns, owners (Engineers A/B/C), exit criteria, and verification steps (load tests, shadow mode). It includes exact SQL schema changes and commands (e.g., CREATE TABLE, flush logic), enabling immediate execution with minor edits.",
+    "constraint_fidelity": "The response respects all hard constraints: uses only existing infrastructure (in-process memory and PostgreSQL), explicitly states no new services are added, estimates cost increase at $20-50/month (well under $752 cap), plans for 3 engineers over 4 weeks, and includes latency impact analysis showing <1ms added p99 (within 40ms budget). It also provides detailed arithmetic for cost and capacity.",
+    "maintainability": "The solution is proportionate to the team (3 engineers), with clear seams (modular libraries, feature flags), documentation (runbook, dashboards), and stated risks (e.g., approximate limits, durability gaps). It avoids unnecessary complexity (e.g., no new infrastructure) and flags accepted debt (e.g., 'bridge architecture'). Code is straightforward (dicts, locks) rather than clever, and ownership is explicit (handoff to finance).",
+    "production_realism": "The design accounts for production realities: addresses load distribution assumptions (A1), worker model implications (A2), locking and concurrency (token bucket with locks, sharded if needed), partial failure (graceful-shutdown hooks for metering), rollback (kill switch), observability (dashboards/metrics), and operational burden (runbook, alerts). It scales to stated traffic (1,200 rps) and team size (3 engineers), with specific mitigations for risks like skew and crashes."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.00198688,
+  "judge_latency_s": 48.975,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses only existing infrastructure (in-process memory and PostgreSQL), explicitly states no new services are added, estimates cost increase at $20-50/month (well under $752 cap), plans for 3 engineers over 4 weeks, and includes latency impact analysis showing <1ms added p99 (within 40ms budget). It also provides detailed arithmetic for cost and capacity.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: addresses load distribution assumptions (A1), worker model implications (A2), locking and concurrency (token bucket with locks, sharded if needed), partial failure (graceful-shutdown hooks for metering), rollback (kill switch), observability (dashboards/metrics), and operational burden (runbook, alerts). It scales to stated traffic (1,200 rps) and team size (3 engineers), with specific mitigations for risks like skew and crashes.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete design with code snippets (e.g., TokenBucket class, middleware), a detailed rollout plan with weekly breakdowns, owners (Engineers A/B/C), exit criteria, and verification steps (load tests, shadow mode). It includes exact SQL schema changes and commands (e.g., CREATE TABLE, flush logic), enabling immediate execution with minor edits.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team (3 engineers), with clear seams (modular libraries, feature flags), documentation (runbook, dashboards), and stated risks (e.g., approximate limits, durability gaps). It avoids unnecessary complexity (e.g., no new infrastructure) and flags accepted debt (e.g., 'bridge architecture'). Code is straightforward (dicts, locks) rather than clever, and ownership is explicit (handoff to finance).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design that provides executable plans with detailed arithmetic and risk mitigation.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design that provides executable plans with detailed arithmetic and risk mitigation.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

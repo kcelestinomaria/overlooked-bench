@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses learner diversity: it cautions against false positives from AI detectors for second-language writers (e.g., 'in Indonesia, where many students may write in English as an additional language'), allows for accessibility accommodations in prohibited uses, and proposes low-cost adaptations like declaration forms and selective audits. It avoids generic 'differentiate as needed' language and focuses on implementable strategies for one lecturer (e.g., random sampling, process notes). However, it does not explicitly address material constraints (e.g., no home internet) or varying prior attainment beyond language, leaving some gaps.",
+    "pathway_breadth": "This item does not involve student pathway guidance (e.g., vocational vs. academic futures); it focuses on academic integrity policy enforcement. The response is inclusive of the learner range by addressing language diversity (e.g., caution with AI detectors for second-language writers) and accessibility needs (e.g., accommodations for prohibited uses). It considers the Indonesian context (e.g., local case studies) and varied student backgrounds, but it does not explicitly cover non-academic pathways, as they are not relevant to this prompt.",
+    "pedagogical_soundness": "The response provides a structured policy with clear categories (A, B, C) and aligns activities (e.g., brainstorming, grammar checking) with objectives (e.g., supporting learning while ensuring originality). Assessments are tied to disclosure requirements and verification methods (e.g., oral explanations, draft history) that measure understanding rather than recall. Sequencing is logical, starting with general principles and moving to specific enforcement strategies. However, the policy lacks explicit learning objectives for students, and the alignment between activities and objectives is implied rather than explicitly stated, making it partial but not fully comprehensive.",
+    "workload_realism": "The response addresses the 200-student context with practical strategies: standardized declarations, random audits (5-10%), selective verification, and tutor support. It avoids reliance on unreliable AI detectors and emphasizes assessment redesign (e.g., local cases, staged submissions) to reduce marking load. Timings are feasible (e.g., weekly milestones), and materials (LMS checkboxes, declaration forms) are realistic. However, the suggestion of oral explanations for some students may be time-intensive without specifying how many, and tutor support is assumed but not guaranteed, leaving minor gaps."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 3,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00159297,
+  "judge_latency_s": 48.783,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides a structured policy with clear categories (A, B, C) and aligns activities (e.g., brainstorming, grammar checking) with objectives (e.g., supporting learning while ensuring originality). Assessments are tied to disclosure requirements and verification methods (e.g., oral explanations, draft history) that measure understanding rather than recall. Sequencing is logical, starting with general principles and moving to specific enforcement strategies. However, the policy lacks explicit learning objectives for students, and the alignment between activities and objectives is implied rather than explicitly stated, making it partial but not fully comprehensive.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response addresses the 200-student context with practical strategies: standardized declarations, random audits (5-10%), selective verification, and tutor support. It avoids reliance on unreliable AI detectors and emphasizes assessment redesign (e.g., local cases, staged submissions) to reduce marking load. Timings are feasible (e.g., weekly milestones), and materials (LMS checkboxes, declaration forms) are realistic. However, the suggestion of oral explanations for some students may be time-intensive without specifying how many, and tutor support is assumed but not guaranteed, leaving minor gaps.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student pathway guidance (e.g., vocational vs. academic futures); it focuses on academic integrity policy enforcement. The response is inclusive of the learner range by addressing language diversity (e.g., caution with AI detectors for second-language writers) and accessibility needs (e.g., accommodations for prohibited uses). It considers the Indonesian context (e.g., local case studies) and varied student backgrounds, but it does not explicitly cover non-academic pathways, as they are not relevant to this prompt.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses learner diversity: it cautions against false positives from AI detectors for second-language writers (e.g., 'in Indonesia, where many students may write in English as an additional language'), allows for accessibility accommodations in prohibited uses, and proposes low-cost adaptations like declaration forms and selective audits. It avoids generic 'differentiate as needed' language and focuses on implementable strategies for one lecturer (e.g., random sampling, process notes). However, it does not explicitly address material constraints (e.g., no home internet) or varying prior attainment beyond language, leaving some gaps.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, practical policy with realistic enforcement strategies tailored to a large Indonesian university context, though minor gaps remain in specificity across dimensions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, practical policy with realistic enforcement strategies tailored to a large Indonesian university context, though minor gaps remain in specificity across dimensions.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 75.0
+}

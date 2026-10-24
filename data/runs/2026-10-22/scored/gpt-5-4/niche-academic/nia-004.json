@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific scholarly debates, such as disputes over furnace typology (e.g., 'natural-draft vs bellows-driven,' 'slag-tapping vs non-slag-tapping'), methodological issues in dating ('poor stratigraphic control,' 'overreliance on single dates'), and critiques of evolutionary narratives ('“large” does not automatically mean universally superior'). It discusses evidence quality, internal debates, and regional variations, indicating familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims, such as the use of 'lateritic or hematitic ores,' 'tall shaft furnaces' in western Tanzania and Rwanda/Burundi, and debates over early dates (e.g., 'first millennium BCE') and their revision due to 'poor stratigraphic control.' These align with known archaeometallurgical literature on the Great Lakes region, including regional variability, technical sophistication, and dating controversies. No invented citations, terms, or consensus are detected; claims are plausible and well-grounded.",
+    "field_situatedness": "The response uses terminology and frameworks specific to African archaeometallurgy and regional studies, such as 'natural-draft furnaces,' 'slag-tapping,' 'tuyeres,' and references to regional traditions (e.g., 'western Tanzania, especially areas around Buhaya'). It does not substitute Western or Anglophone framings but engages with local evidence and scholarly debates within the field, including non-English influences where relevant (e.g., ethnographic work).",
+    "scholarly_calibration": "The response accurately distinguishes well-established from contested points, e.g., stating 'broad acceptance that iron production in the region is precolonial' but 'the exact onset of smelting in different subregions remains disputed,' and noting that 'many archaeometallurgists now prefer tighter chronologies.' It flags uncertainties, such as 'proving natural-draft operation archaeologically is difficult,' and avoids uniform confidence, presenting debates without oversimplifying. Specific calibration is evident, not blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-004",
+  "judge_cost_usd": 0.00147703,
+  "judge_latency_s": 49.33,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims, such as the use of 'lateritic or hematitic ores,' 'tall shaft furnaces' in western Tanzania and Rwanda/Burundi, and debates over early dates (e.g., 'first millennium BCE') and their revision due to 'poor stratigraphic control.' These align with known archaeometallurgical literature on the Great Lakes region, including regional variability, technical sophistication, and dating controversies. No invented citations, terms, or consensus are detected; claims are plausible and well-grounded.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific scholarly debates, such as disputes over furnace typology (e.g., 'natural-draft vs bellows-driven,' 'slag-tapping vs non-slag-tapping'), methodological issues in dating ('poor stratigraphic control,' 'overreliance on single dates'), and critiques of evolutionary narratives ('“large” does not automatically mean universally superior'). It discusses evidence quality, internal debates, and regional variations, indicating familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately distinguishes well-established from contested points, e.g., stating 'broad acceptance that iron production in the region is precolonial' but 'the exact onset of smelting in different subregions remains disputed,' and noting that 'many archaeometallurgists now prefer tighter chronologies.' It flags uncertainties, such as 'proving natural-draft operation archaeologically is difficult,' and avoids uniform confidence, presenting debates without oversimplifying. Specific calibration is evident, not blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to African archaeometallurgy and regional studies, such as 'natural-draft furnaces,' 'slag-tapping,' 'tuyeres,' and references to regional traditions (e.g., 'western Tanzania, especially areas around Buhaya'). It does not substitute Western or Anglophone framings but engages with local evidence and scholarly debates within the field, including non-English influences where relevant (e.g., ethnographic work).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of pre-colonial iron smelting in the Great Lakes region, engaging deeply with scholarly disputes and evidence.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of pre-colonial iron smelting in the Great Lakes region, engaging deeply with scholarly disputes and evidence.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

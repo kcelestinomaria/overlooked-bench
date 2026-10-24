@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response provides a specific, costed allocation (PEN 700k, 500k, 600k, 200k with detailed line items), a phased 24-month program, and deliverables like a water balance and NRW dashboard. It is usable with light editing for a board meeting, as it includes concrete components like spending breakdowns and implementation steps.",
+    "constraint_fidelity": "The response respects all constraints: the PEN 2 million budget is allocated fully and explicitly (PEN 700k, 500k, 600k, 200k), sums to PEN 2 million, and addresses the utility's size (60,000 people) and Peruvian context. It does not exceed or ignore any stated constraints.",
+    "contextual_realism": "The response avoids assumptions of large-scale resources; it focuses on practical, low-overhead interventions like zone metering, customer database cleanup, and targeted repairs, which are feasible for a mid-size Peruvian utility. It acknowledges role overlap (e.g., training staff, creating a small NRW team) and avoids recommending unaffordable tools or dedicated functions like a full data team.",
+    "jurisdictional_accuracy": "The response avoids US-specific assumptions (e.g., no mention of US tax categories or employment practices) and is general but plausible for Peru, focusing on universal water utility issues like metering and leakage. It does not make jurisdiction-specific legal claims, so it is scored on general factual accuracy, which is sound."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00120717,
+  "judge_latency_s": 36.15,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: the PEN 2 million budget is allocated fully and explicitly (PEN 700k, 500k, 600k, 200k), sums to PEN 2 million, and addresses the utility's size (60,000 people) and Peruvian context. It does not exceed or ignore any stated constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response avoids assumptions of large-scale resources; it focuses on practical, low-overhead interventions like zone metering, customer database cleanup, and targeted repairs, which are feasible for a mid-size Peruvian utility. It acknowledges role overlap (e.g., training staff, creating a small NRW team) and avoids recommending unaffordable tools or dedicated functions like a full data team.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a specific, costed allocation (PEN 700k, 500k, 600k, 200k with detailed line items), a phased 24-month program, and deliverables like a water balance and NRW dashboard. It is usable with light editing for a board meeting, as it includes concrete components like spending breakdowns and implementation steps.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response avoids US-specific assumptions (e.g., no mention of US tax categories or employment practices) and is general but plausible for Peru, focusing on universal water utility issues like metering and leakage. It does not make jurisdiction-specific legal claims, so it is scored on general factual accuracy, which is sound.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response excels by providing a detailed, constraint-aware plan that distinguishes physical and commercial losses and allocates funds strategically for a small utility.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response excels by providing a detailed, constraint-aware plan that distinguishes physical and commercial losses and allocates funds strategically for a small utility.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

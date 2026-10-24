@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Data Transfer: €54.00/month",
+      "evidence_verified": true,
+      "verdict": "violated"
+    },
+    "C3": {
+      "evidence": "New ECS Fargate task (separate from existing worker)",
+      "evidence_verified": true,
+      "verdict": "violated"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed implementation plan with phases, specific components (S3 lifecycle policies, SQS setup, database table creation), and cost breakdowns. It includes concrete steps like 'Create export_jobs table with indexes' and 'Implement chunked database querying', making it actionable for the team.",
+    "constraint_fidelity": "The response violates constraint C3 by proposing a 'New ECS Fargate task (separate from existing worker)' which is not allowed as it adds a new service beyond the existing stack. It also violates C2 by including data transfer costs to the internet (€54.00/month) which were not accounted for in the original budget arithmetic, and the total cost of €168.11/month exceeds the €600 budget only if misinterpreted, but the arithmetic is flawed. However, it respects C1 by keeping all data in eu-central-1 and uses only existing services except for the new Fargate task.",
+    "maintainability": "The response adds a new Fargate task, increasing complexity beyond the team's existing stack, which may not be proportionate. It does not explicitly state risks or accepted debt, such as the operational overhead of managing an additional service. However, it includes monitoring, logging, and security considerations, which aid maintainability.",
+    "production_realism": "The response addresses scale with specific numbers (3,000 exports/week, 400k rows each), includes chunking for memory management, uses the reader instance for isolation, and considers auto-scaling and monitoring. However, it proposes a new Fargate task which increases operational burden unnecessarily, and the cost arithmetic includes unapproved data transfer costs, reducing realism."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 0,
+    "maintainability": 2,
+    "production_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-011",
+  "judge_cost_usd": 0.00129467,
+  "judge_latency_s": 13.854,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response violates constraint C3 by proposing a 'New ECS Fargate task (separate from existing worker)' which is not allowed as it adds a new service beyond the existing stack. It also violates C2 by including data transfer costs to the internet (€54.00/month) which were not accounted for in the original budget arithmetic, and the total cost of €168.11/month exceeds the €600 budget only if misinterpreted, but the arithmetic is flawed. However, it respects C1 by keeping all data in eu-central-1 and uses only existing services except for the new Fargate task.\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response addresses scale with specific numbers (3,000 exports/week, 400k rows each), includes chunking for memory management, uses the reader instance for isolation, and considers auto-scaling and monitoring. However, it proposes a new Fargate task which increases operational burden unnecessarily, and the cost arithmetic includes unapproved data transfer costs, reducing realism.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed implementation plan with phases, specific components (S3 lifecycle policies, SQS setup, database table creation), and cost breakdowns. It includes concrete steps like 'Create export_jobs table with indexes' and 'Implement chunked database querying', making it actionable for the team.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response adds a new Fargate task, increasing complexity beyond the team's existing stack, which may not be proportionate. It does not explicitly state risks or accepted debt, such as the operational overhead of managing an additional service. However, it includes monitoring, logging, and security considerations, which aid maintainability.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response is detailed and actionable but violates key constraints by adding a new Fargate task and including unapproved costs.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Data Transfer: €54.00/month\"\n    },\n    \"C3\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"New ECS Fargate task (separate from existing worker)\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is detailed and actionable but violates key constraints by adding a new Fargate task and including unapproved costs.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 42.5
+}

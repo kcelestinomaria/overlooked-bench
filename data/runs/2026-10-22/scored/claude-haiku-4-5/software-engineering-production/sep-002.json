@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with code snippets, rollout plan with weekly tasks and owners, specific test scenarios, and implementation checklist. An engineer could start executing immediately with light editing. However, some elements like exact cron syntax or full middleware code are not provided verbatim.",
+    "constraint_fidelity": "The response respects all hard constraints: uses only existing PostgreSQL (no new services), timeline is exactly 4 weeks with 3 engineers, cloud spend increase is calculated at $150/month (1.6%, well under 8% cap), and p99 latency impact is calculated at 22 ms (keeping total under 220 ms). Arithmetic is shown for capacity, cost, and latency.",
+    "maintainability": "Addresses maintainability: documentation plans, runbooks, clear risks stated (e.g., latency regression, aggregation lag), and complexity is proportionate to the team. However, the synchronous write approach at high volume may create maintenance debt due to potential database load issues, and some risks like optimistic lock contention are noted but not fully mitigated.",
+    "production_realism": "Accounts for production realities: optimistic locking to handle database contention at 1,200 rps, synchronous writes with latency impact calculated, rollback via feature flag, monitoring setup, and operational risks like connection pool exhaustion are addressed. However, it proposes synchronous writes to usage_events at 1,200 writes/sec without batching, which adds significant write load and risk of contention, and does not fully address the operational burden of hourly cron jobs for aggregation."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-002",
+  "judge_cost_usd": 0.00213275,
+  "judge_latency_s": 49.232,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses only existing PostgreSQL (no new services), timeline is exactly 4 weeks with 3 engineers, cloud spend increase is calculated at $150/month (1.6%, well under 8% cap), and p99 latency impact is calculated at 22 ms (keeping total under 220 ms). Arithmetic is shown for capacity, cost, and latency.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for production realities: optimistic locking to handle database contention at 1,200 rps, synchronous writes with latency impact calculated, rollback via feature flag, monitoring setup, and operational risks like connection pool exhaustion are addressed. However, it proposes synchronous writes to usage_events at 1,200 writes/sec without batching, which adds significant write load and risk of contention, and does not fully address the operational burden of hourly cron jobs for aggregation.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with code snippets, rollout plan with weekly tasks and owners, specific test scenarios, and implementation checklist. An engineer could start executing immediately with light editing. However, some elements like exact cron syntax or full middleware code are not provided verbatim.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Addresses maintainability: documentation plans, runbooks, clear risks stated (e.g., latency regression, aggregation lag), and complexity is proportionate to the team. However, the synchronous write approach at high volume may create maintenance debt due to potential database load issues, and some risks like optimistic lock contention are noted but not fully mitigated.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive and constraint-aware design that is highly actionable but has some production realism gaps in write load handling.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "A comprehensive and constraint-aware design that is highly actionable but has some production realism gaps in write load handling.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the wide attainment spread and low reading ages: printed sheet uses icons, word banks, and sentence starters; teacher models tasks; support includes reading prompts aloud and encouraging symbols/drawings; challenge task for fast-finishers. Adaptations are low-cost and implementable by one teacher (no second adult needed). No generic 'differentiate as appropriate' language; specific strategies are detailed.",
+    "pathway_breadth": "The prompt is a history lesson plan, not involving student futures or pathway guidance. The response is inclusive of the range of learners: it specifically addresses the 6 students with low reading ages through visual aids, word banks, sentence starters, and teacher support, and includes challenge tasks for higher attainers. It does not default to university or academic pathways, as this is not relevant to the task.",
+    "pedagogical_soundness": "The response provides clear learning objectives (identify M.A.I.N. causes, describe assassination, explain 'powder keg', analyze significance). Activities align: starter introduces concepts, exposition teaches M.A.I.N., structured activity applies knowledge. Assessment includes thumbs checks, sticky note sorting, and exit ticket measuring understanding of causes. Sequencing is logical (spark → long-term causes → application → check). Rubric criteria on printed sheet are observable (completing tables, writing explanations).",
+    "workload_realism": "Timings sum to 50 minutes (5+15+20+10). Materials are feasible: projector, printed A4 sheet (one per student), whiteboard, sticky notes (one per pair). No technology or printing beyond stated constraints. Differentiation is teacher-led circulation, not requiring additional adults. Marking load is manageable (exit tickets scanned quickly, no complex grading). Class size of 34 is accounted for with pair work and whole-class activities."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-001",
+  "judge_cost_usd": 0.00103823,
+  "judge_latency_s": 13.131,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives (identify M.A.I.N. causes, describe assassination, explain 'powder keg', analyze significance). Activities align: starter introduces concepts, exposition teaches M.A.I.N., structured activity applies knowledge. Assessment includes thumbs checks, sticky note sorting, and exit ticket measuring understanding of causes. Sequencing is logical (spark → long-term causes → application → check). Rubric criteria on printed sheet are observable (completing tables, writing explanations).\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 50 minutes (5+15+20+10). Materials are feasible: projector, printed A4 sheet (one per student), whiteboard, sticky notes (one per pair). No technology or printing beyond stated constraints. Differentiation is teacher-led circulation, not requiring additional adults. Marking load is manageable (exit tickets scanned quickly, no complex grading). Class size of 34 is accounted for with pair work and whole-class activities.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is a history lesson plan, not involving student futures or pathway guidance. The response is inclusive of the range of learners: it specifically addresses the 6 students with low reading ages through visual aids, word banks, sentence starters, and teacher support, and includes challenge tasks for higher attainers. It does not default to university or academic pathways, as this is not relevant to the task.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the wide attainment spread and low reading ages: printed sheet uses icons, word banks, and sentence starters; teacher models tasks; support includes reading prompts aloud and encouraging symbols/drawings; challenge task for fast-finishers. Adaptations are low-cost and implementable by one teacher (no second adult needed). No generic 'differentiate as appropriate' language; specific strategies are detailed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a highly practical and well-structured lesson plan that meets all constraints and pedagogical needs effectively.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This is a highly practical and well-structured lesson plan that meets all constraints and pedagogical needs effectively.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

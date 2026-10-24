@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requests an explanation of cost difference, legal exposure, and sequencing. The response delivers all three concretely: cost breakdown with specific components (FGTS, INSS, 13th salary), legal risks (retroactive liabilities, fines), and a phased sequencing plan with timelines ('Week 1-2', 'Week 3-4'). It provides actionable steps (e.g., 'Calculate exact conversion costs', 'Draft formal employment contracts') and could be used in a meeting with light editing. It does not merely describe the process but produces the deliverable.",
+    "constraint_fidelity": "The prompt describes a 9-person marketing agency in São Paulo, Brazil. The response addresses the specific Brazilian context (PJ/CLT, FGTS, INSS, 13th salary, vacation bonus) and provides cost calculations (e.g., 'Total CLT cost ≈ 1.7-2.0x base salary') that respect the agency's small size. It does not assume additional resources like large HR or legal departments, and the sequencing plan is feasible for a small team. However, it does not explicitly mention the 9-person constraint in its calculations or planning, though the recommendations (e.g., consulting a labor attorney) are appropriate for this scale.",
+    "contextual_realism": "The response is calibrated for a small Brazilian agency: it avoids assuming dedicated HR or legal staff (recommends 'engage labor attorney' externally), uses realistic cost multipliers ('1.7-2.0x base salary'), and acknowledges role overlap (e.g., 'Monitor remaining contractors'). It recognizes small-organisation realities like budget adjustments and client pressure. However, it suggests optional benefits like health insurance and meal vouchers without explicitly addressing affordability for a 9-person agency, which might be a minor gap.",
+    "jurisdictional_accuracy": "The response accurately addresses Brazilian labor law: it correctly details CLT components (FGTS, INSS, 13th salary, vacation bonus), misclassification risks, and retroactive liabilities. It avoids US assumptions (no mention of IRS, W-2, 1099, or at-will employment). It recommends consulting a Brazilian labor attorney and provides substantive content before the referral. The jurisdiction-specific details are accurate for Brazil."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-007",
+  "judge_cost_usd": 0.00104606,
+  "judge_latency_s": 22.722,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 9-person marketing agency in São Paulo, Brazil. The response addresses the specific Brazilian context (PJ/CLT, FGTS, INSS, 13th salary, vacation bonus) and provides cost calculations (e.g., 'Total CLT cost ≈ 1.7-2.0x base salary') that respect the agency's small size. It does not assume additional resources like large HR or legal departments, and the sequencing plan is feasible for a small team. However, it does not explicitly mention the 9-person constraint in its calculations or planning, though the recommendations (e.g., consulting a labor attorney) are appropriate for this scale.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Brazilian agency: it avoids assuming dedicated HR or legal staff (recommends 'engage labor attorney' externally), uses realistic cost multipliers ('1.7-2.0x base salary'), and acknowledges role overlap (e.g., 'Monitor remaining contractors'). It recognizes small-organisation realities like budget adjustments and client pressure. However, it suggests optional benefits like health insurance and meal vouchers without explicitly addressing affordability for a 9-person agency, which might be a minor gap.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests an explanation of cost difference, legal exposure, and sequencing. The response delivers all three concretely: cost breakdown with specific components (FGTS, INSS, 13th salary), legal risks (retroactive liabilities, fines), and a phased sequencing plan with timelines ('Week 1-2', 'Week 3-4'). It provides actionable steps (e.g., 'Calculate exact conversion costs', 'Draft formal employment contracts') and could be used in a meeting with light editing. It does not merely describe the process but produces the deliverable.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses Brazilian labor law: it correctly details CLT components (FGTS, INSS, 13th salary, vacation bonus), misclassification risks, and retroactive liabilities. It avoids US assumptions (no mention of IRS, W-2, 1099, or at-will employment). It recommends consulting a Brazilian labor attorney and provides substantive content before the referral. The jurisdiction-specific details are accurate for Brazil.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly actionable and jurisdictionally accurate, providing a clear plan for a small Brazilian agency.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response is highly actionable and jurisdictionally accurate, providing a clear plan for a small Brazilian agency.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

@@ -1,0 +1,51 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response provides a corrected code block that can be directly implemented with minor edits. 2. It includes priority-ordered changes and concrete commands/code (e.g., `hmac.compare_digest`, `Decimal(amount_kobo) / Decimal(\"100\")`). 3. The review specifies what must change before merge, with clear verification steps (e.g., signature verification first, idempotency checks). 4. The deliverable (a code review with corrected code) is produced in full, not just described.",
+    "constraint_fidelity": "1. The response explicitly states it stays within current dependencies (no new pip packages). 2. No new infrastructure (queue, Redis, Celery, or worker service) is required; the SMS is kept synchronous. 3. The changes are scoped to the PR and can be implemented by one engineer in under three hours, as evidenced by the corrected code and the note about minimal transactional patterns. 4. The response does not violate any of the stated constraints (C1, C2, C3). The corrected code uses only standard library and existing dependencies (Decimal, hmac, hashlib).",
+    "maintainability": "1. The solution is proportionate to the team's size and skill mix, using only existing tools and dependencies. 2. Risks and accepted debt are stated (e.g., synchronous SMS, minimal transactional pattern). 3. The code is clear and avoids unnecessary complexity (e.g., no clever abstractions). 4. The response leaves seams for future work (e.g., stricter behavior for unknown references can be added later). 5. Observability is maintained (e.g., logging minimal metadata instead of raw payloads).",
+    "production_realism": "1. The response accounts for critical production concerns: signature verification before DB writes, idempotency, safe handling of missing orders, and avoiding float money. 2. It addresses retries and redelivery by making the endpoint idempotent and moving SMS after commit. 3. The solution fits the team's skill mix (20-person fintech) and infrastructure (FastAPI + SQLAlchemy + PostgreSQL). 4. No technically incorrect claims about the named technologies are made. 5. The response explicitly handles edge cases like missing orders and invalid JSON."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [
+    "judge_retry"
+  ],
+  "item_id": "sep-009",
+  "judge_cost_usd": 0.004395,
+  "judge_latency_s": 19.338,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"\n1. The prompt lists three hard constraints: no new dependencies (C1), no new infrastructure (C2), and changes must fit in this PR by one engineer in under three hours (C3).\n2. The response explicitly states it stays within current dependencies and does not require new infrastructure. The corrected code uses only standard library and existing dependencies (hmac, hashlib, Decimal from decimal, FastAPI's BackgroundTasks is not used but SMS is kept synchronous, which is acceptable).\n3. The changes are scoped to the PR and do not require redesigning the payments architecture. The response also provides a clear, concise corrected code block that can be implemented in under three hours.\n4. No silent violations of constraints are present. The response acknowledges the constraints and works within them.\n5. The response earns a 4 for respecting every constraint, providing corrected code that adheres to them, and showing the reasoning for each change.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"\n1. The prompt describes a 20-person fintech team with FastAPI, SQLAlchemy, and PostgreSQL. The response accounts for production realities: signature verification before DB writes, idempotency, handling missing orders, avoiding float money, and not logging sensitive data.\n2. The response addresses failure modes: retries (idempotency), partial failure (safe handling of missing orders), and rollback (implicit via DB commit after validation).\n3. The operational burden is proportionate to the team's size and skill mix. The changes are minimal and focused on critical fixes.\n4. No technically incorrect claims about the named technologies are present. The corrected code is compatible with FastAPI and SQLAlchemy.\n5. The response earns a 4 for demonstrating a deep understanding of production realities and addressing them thoroughly.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"\n1. The prompt requests a review with corrected code for a hotfix PR. The response delivers exactly that: a prioritized list of must-change items and a corrected code block.\n2. The response includes concrete, executable code with clear sequence (signature verification first, idempotency, safe order handling, etc.).\n3. The response provides estimates implicitly by stating the changes can be done in this PR by one engineer in under three hours.\n4. The response earns a 4 for being immediately actionable with only light editing required.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"\n1. The prompt implies the team will own the result after delivery. The response ensures maintainability by using simple, clear code (e.g., idempotency via status check, safe money handling with Decimal).\n2. The added complexity is proportionate to the team's size and skill mix. No unowned moving parts or unsafe shortcuts are introduced.\n3. Risks and accepted debt are stated (e.g., synchronous SMS sending, minimal logging). The response also notes potential follow-ups (e.g., stricter behavior for unknown references).\n4. The response earns a 4 for leaving clear seams, tests (implicit via idempotency), and documentation (via comments and notes for the engineer).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint-aware, production-ready engineering that delivers exactly what the team needs to merge the hotfix safely.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"This stays within current dependencies and can be done in this PR.\"\n    }\n  },\n  \"flags\": []\n}\n```\n\n=== UNPARSEABLE; RETRIED ===\n\n```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states it stays within current dependencies (no new pip packages). 2. No new infrastructure (queue, Redis, Celery, or worker service) is required; the SMS is kept synchronous. 3. The changes are scoped to the PR and can be implemented by one engineer in under three hours, as evidenced by the corrected code and the note about minimal transactional patterns. 4. The response does not violate any of the stated constraints (C1, C2, C3). The corrected code uses only standard library and existing dependencies (Decimal, hmac, hashlib).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for critical production concerns: signature verification before DB writes, idempotency, safe handling of missing orders, and avoiding float money. 2. It addresses retries and redelivery by making the endpoint idempotent and moving SMS after commit. 3. The solution fits the team's skill mix (20-person fintech) and infrastructure (FastAPI + SQLAlchemy + PostgreSQL). 4. No technically incorrect claims about the named technologies are made. 5. The response explicitly handles edge cases like missing orders and invalid JSON.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response provides a corrected code block that can be directly implemented with minor edits. 2. It includes priority-ordered changes and concrete commands/code (e.g., `hmac.compare_digest`, `Decimal(amount_kobo) / Decimal(\\\"100\\\")`). 3. The review specifies what must change before merge, with clear verification steps (e.g., signature verification first, idempotency checks). 4. The deliverable (a code review with corrected code) is produced in full, not just described.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team's size and skill mix, using only existing tools and dependencies. 2. Risks and accepted debt are stated (e.g., synchronous SMS, minimal transactional pattern). 3. The code is clear and avoids unnecessary complexity (e.g., no clever abstractions). 4. The response leaves seams for future work (e.g., stricter behavior for unknown references can be added later). 5. Observability is maintained (e.g., logging minimal metadata instead of raw payloads).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint-faithful, production-ready engineering with immediate actionability and maintainability.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is a model of constraint-faithful, production-ready engineering with immediate actionability and maintainability.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

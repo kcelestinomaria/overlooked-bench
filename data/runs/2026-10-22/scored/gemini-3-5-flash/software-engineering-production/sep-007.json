@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Total Estimated Effort: 11 Engineer-Days (Within the 15-day limit for the next two sprints).",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response produces a post-incident review with specific action items: each has a clear description, owner implied by context (team), effort estimates (e.g., '2 engineer-days'), and sequence (prioritized). It includes concrete steps like 'Add a step to our CI pipeline' and 'Configure our existing Prometheus PostgreSQL Exporter', making it executable with light editing.",
+    "constraint_fidelity": "The response respects all constraints: it is blameless (identifies system and process causes, e.g., 'lack of visibility into pg_stat_activity', 'on-call redundancy gap'), proposes no new paid tooling (uses 'open-source tools like sqlfluff', 'existing Grafana instance'), and action items total 11 engineer-days (explicitly stated 'Total Estimated Effort: 11 Engineer-Days') with prioritization, all within the 15-day limit.",
+    "maintainability": "The action items are proportionate to the team (e.g., CI checks, Grafana dashboard, runbooks) and leave clear seams (e.g., 'markdown-based runbook'). Risks and debt are stated in the backlog section (e.g., 'deferred to future sprints to protect team capacity'). The solutions are not overly complex and use existing infrastructure, ensuring maintainability.",
+    "production_realism": "The response accounts for production realities: it addresses locking ('SHARE lock on the table'), scale ('61 million rows'), team skill mix (proposes CI changes, Grafana dashboard, runbooks suitable for a 5-engineer team), and operational burden (action items are low-cost and internal). It correctly identifies PostgreSQL behavior and proposes concrete steps like 'CREATE INDEX CONCURRENTLY' and lock visibility improvements."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-007",
+  "judge_cost_usd": 0.00141409,
+  "judge_latency_s": 52.782,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: it is blameless (identifies system and process causes, e.g., 'lack of visibility into pg_stat_activity', 'on-call redundancy gap'), proposes no new paid tooling (uses 'open-source tools like sqlfluff', 'existing Grafana instance'), and action items total 11 engineer-days (explicitly stated 'Total Estimated Effort: 11 Engineer-Days') with prioritization, all within the 15-day limit.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: it addresses locking ('SHARE lock on the table'), scale ('61 million rows'), team skill mix (proposes CI changes, Grafana dashboard, runbooks suitable for a 5-engineer team), and operational burden (action items are low-cost and internal). It correctly identifies PostgreSQL behavior and proposes concrete steps like 'CREATE INDEX CONCURRENTLY' and lock visibility improvements.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a post-incident review with specific action items: each has a clear description, owner implied by context (team), effort estimates (e.g., '2 engineer-days'), and sequence (prioritized). It includes concrete steps like 'Add a step to our CI pipeline' and 'Configure our existing Prometheus PostgreSQL Exporter', making it executable with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The action items are proportionate to the team (e.g., CI checks, Grafana dashboard, runbooks) and leave clear seams (e.g., 'markdown-based runbook'). Risks and debt are stated in the backlog section (e.g., 'deferred to future sprints to protect team capacity'). The solutions are not overly complex and use existing infrastructure, ensuring maintainability.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is excellent, addressing all constraints and providing actionable, realistic, and maintainable solutions tailored to the team's context.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Total Estimated Effort: 11 Engineer-Days (Within the 15-day limit for the next two sprints).\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response is excellent, addressing all constraints and providing actionable, realistic, and maintainable solutions tailored to the team's context.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

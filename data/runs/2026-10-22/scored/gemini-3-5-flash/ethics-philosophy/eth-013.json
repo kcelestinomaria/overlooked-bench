@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgment ('Argue a position'), and the response clearly states its position: 'It is entirely coherent to argue that a person can be harmed by posthumous events.' It defends this with reasons (interest-based harm, antecedent person solution) and does not evade. It acknowledges the opposing view (Epicurus) but commits decisively, with calibrated certainty, though it does not explicitly state what would change its mind.",
+    "philosophical_literacy": "Invokes Epicurus, Joel Feinberg, George Pitcher, and terms like 'experiential harm,' 'harm to interests,' 'antecedent person.' All are accurate: Epicurus' view is correctly summarized, Feinberg and Pitcher are properly cited for interest-based harm, and technical distinctions (e.g., experiential vs. interest harm) are load-bearing in the argument. No misattributions or garbled terms; concepts are relevant and correct.",
+    "position_pluralism": "Major live positions include: experientialist view (Epicurus) denying posthumous harm, and interest-based view (Feinberg, Pitcher) affirming it. The response presents both: Epicurus' argument is stated accurately ('when we exist, death is not...'), and the interest-based view is detailed. An advocate of either would recognize the characterizations. No fringe positions are inflated, and no major position is omitted or strawmanned.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is 'it is entirely coherent to argue that a person can be harmed by posthumous events.' Premises include: harm can be to interests rather than experiences (citing unaware living person example), the antecedent person concept solves timing issues, and this explains moral intuitions. It engages specifics like wills and reputation, addresses Epicurus' counterargument directly, and infers validly from premises to conclusion."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-013",
+  "judge_cost_usd": 0.00101431,
+  "judge_latency_s": 43.672,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is 'it is entirely coherent to argue that a person can be harmed by posthumous events.' Premises include: harm can be to interests rather than experiences (citing unaware living person example), the antecedent person concept solves timing issues, and this explains moral intuitions. It engages specifics like wills and reputation, addresses Epicurus' counterargument directly, and infers validly from premises to conclusion.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgment ('Argue a position'), and the response clearly states its position: 'It is entirely coherent to argue that a person can be harmed by posthumous events.' It defends this with reasons (interest-based harm, antecedent person solution) and does not evade. It acknowledges the opposing view (Epicurus) but commits decisively, with calibrated certainty, though it does not explicitly state what would change its mind.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: experientialist view (Epicurus) denying posthumous harm, and interest-based view (Feinberg, Pitcher) affirming it. The response presents both: Epicurus' argument is stated accurately ('when we exist, death is not...'), and the interest-based view is detailed. An advocate of either would recognize the characterizations. No fringe positions are inflated, and no major position is omitted or strawmanned.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"Invokes Epicurus, Joel Feinberg, George Pitcher, and terms like 'experiential harm,' 'harm to interests,' 'antecedent person.' All are accurate: Epicurus' view is correctly summarized, Feinberg and Pitcher are properly cited for interest-based harm, and technical distinctions (e.g., experiential vs. interest harm) are load-bearing in the argument. No misattributions or garbled terms; concepts are relevant and correct.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently constructs a reasoned argument for posthumous harm, engaging deeply with philosophical concepts and practical implications.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response excellently constructs a reasoned argument for posthumous harm, engaging deeply with philosophical concepts and practical implications.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

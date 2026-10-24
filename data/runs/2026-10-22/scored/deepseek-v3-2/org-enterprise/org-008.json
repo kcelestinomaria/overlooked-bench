@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a turnaround plan with quantified recommendations (e.g., GHS 432,000 from improved collection, GHS 72,000 from teacher reduction), includes unpopular recommendations with justifications, and provides a timeline. It has concrete components like revenue calculations and specific measures. However, it relies on unsupported assumptions (e.g., teacher salary, total expenditure) that reduce usability, and some recommendations (e.g., digital payments) may not be immediately actionable without further detail.",
+    "constraint_fidelity": "The prompt states constraints: no fee increase (respected), Ghana context (respected), 400 pupils/22 teachers (used in calculations). However, the response assumes an average teacher salary of GHS 1,500/month without justification from prompt data, and calculates savings based on this assumption. It also assumes total expenditure (GHS 1,700,000) without derivation from given figures. While it respects the no-fee-increase constraint explicitly, it introduces unsupported assumptions about salaries and total costs, violating fidelity to stated constraints.",
+    "contextual_realism": "The response assumes capabilities like implementing digital payment options (may not be feasible in Ghana context), running marketing campaigns, and facility rentals without considering resource constraints of a small school. It recommends reducing teachers by 4 without addressing impact on education quality or staff morale in a resource-constrained setting. However, it does recognize the need for payment plans and acknowledges unpopular measures, showing some awareness of small-organisation realities.",
+    "jurisdictional_accuracy": "The prompt involves Ghana, but no specific legal/regulatory claims are made. The response does not assert US defaults (e.g., no mention of US-specific practices) and is generally factual. However, it assumes 'industry standard' ratios without Ghana context and recommends penalties/deposits without considering local norms or regulations. Since no legal aspects are deeply engaged, score based on general accuracy: calculations are logical but based on assumptions, not prompt data."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 2,
+    "contextual_realism": 2,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-008",
+  "judge_cost_usd": 0.00102173,
+  "judge_latency_s": 20.698,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: no fee increase (respected), Ghana context (respected), 400 pupils/22 teachers (used in calculations). However, the response assumes an average teacher salary of GHS 1,500/month without justification from prompt data, and calculates savings based on this assumption. It also assumes total expenditure (GHS 1,700,000) without derivation from given figures. While it respects the no-fee-increase constraint explicitly, it introduces unsupported assumptions about salaries and total costs, violating fidelity to stated constraints.\",\n      \"score\": 2\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes capabilities like implementing digital payment options (may not be feasible in Ghana context), running marketing campaigns, and facility rentals without considering resource constraints of a small school. It recommends reducing teachers by 4 without addressing impact on education quality or staff morale in a resource-constrained setting. However, it does recognize the need for payment plans and acknowledges unpopular measures, showing some awareness of small-organisation realities.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a turnaround plan with quantified recommendations (e.g., GHS 432,000 from improved collection, GHS 72,000 from teacher reduction), includes unpopular recommendations with justifications, and provides a timeline. It has concrete components like revenue calculations and specific measures. However, it relies on unsupported assumptions (e.g., teacher salary, total expenditure) that reduce usability, and some recommendations (e.g., digital payments) may not be immediately actionable without further detail.\",\n      \"score\": 3\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Ghana, but no specific legal/regulatory claims are made. The response does not assert US defaults (e.g., no mention of US-specific practices) and is generally factual. However, it assumes 'industry standard' ratios without Ghana context and recommends penalties/deposits without considering local norms or regulations. Since no legal aspects are deeply engaged, score based on general accuracy: calculations are logical but based on assumptions, not prompt data.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a structured plan with arithmetic but relies on unsupported assumptions that limit its fidelity to constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a structured plan with arithmetic but relies on unsupported assumptions that limit its fidelity to constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 56.25
+}

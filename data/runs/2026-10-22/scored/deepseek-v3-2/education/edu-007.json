@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses differentiation: 'Teachers will provide different tasks and support within the same classroom' and gives examples like 'some might use practical tools, others might solve number problems, and some might tackle complex puzzles.' It is specific, low-cost, and implementable by one teacher.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about teaching methods. The response is inclusive in its approach to all learners in mixed-attainment settings, addressing concerns for both struggling and advanced students.",
+    "pedagogical_soundness": "The response does not present a lesson plan with objectives, activities, or assessments, so pedagogical alignment cannot be evaluated. It is a parent communication explaining a policy change, not instructional design.",
+    "workload_realism": "The response does not describe a teaching plan with timings, materials, or class size details, so workload feasibility cannot be assessed. It is a policy announcement document."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00070638,
+  "judge_latency_s": 11.299,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with objectives, activities, or assessments, so pedagogical alignment cannot be evaluated. It is a parent communication explaining a policy change, not instructional design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a teaching plan with timings, materials, or class size details, so workload feasibility cannot be assessed. It is a policy announcement document.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about teaching methods. The response is inclusive in its approach to all learners in mixed-attainment settings, addressing concerns for both struggling and advanced students.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses differentiation: 'Teachers will provide different tasks and support within the same classroom' and gives examples like 'some might use practical tools, others might solve number problems, and some might tackle complex puzzles.' It is specific, low-cost, and implementable by one teacher.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a well-crafted parent communication that addresses concerns plainly and offers concrete differentiation strategies.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This is a well-crafted parent communication that addresses concerns plainly and offers concrete differentiation strategies.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 38.75
+}

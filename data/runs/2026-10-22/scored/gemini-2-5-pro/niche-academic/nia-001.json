@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing specific evidence (e.g., pronoun markers 't-' for 2nd person, 'k-' for 3rd; feminine '-t' suffix; Swadesh list analysis) and methodological debates (lexical vs. morphological evidence, borrowing vs. genetic inheritance). It engages with scholarly conflict and the problem of conflicting evidence types, which a specialist would recognize as central to the debate.",
+    "domain_accuracy": "The response accurately summarizes key positions: Afroasiatic (Cushitic and independent branch), Nilo-Saharan, and isolate hypotheses. It correctly attributes proponents (Fleming, Yilma for Cushitic; Savà and Tosco for isolate) and evidence types (lexical vs. morphological). It notes the dismissal of Cushitic and Nilo-Saharan hypotheses in modern scholarship and the focus on pronoun/gender systems for Afroasiatic. No invented citations or terms detected.",
+    "field_situatedness": "The response uses appropriate linguistic terminology (e.g., 'genetic classification', 'cognates', 'morphological parallels', 'Swadesh lists', 'relexification') and frameworks from African linguistics, without substituting Western or Anglophone perspectives. It acknowledges regional context (contact with Cushitic and Nilo-Saharan languages) and key scholars in the field, adhering to the tradition of the question.",
+    "scholarly_calibration": "The response explicitly calibrates evidence strength: 'Weak and now largely dismissed' for Cushitic, 'Very weak' for Nilo-Saharan, 'Moderate but problematic' for independent Afroasiatic, and 'Strong' for isolate. It distinguishes contested points (e.g., whether morphological features are genetic or contact-induced) and notes the lack of consensus, avoiding uniform confidence. Specific disclaimers are targeted, not blanket."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00106694,
+  "judge_latency_s": 46.372,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately summarizes key positions: Afroasiatic (Cushitic and independent branch), Nilo-Saharan, and isolate hypotheses. It correctly attributes proponents (Fleming, Yilma for Cushitic; Savà and Tosco for isolate) and evidence types (lexical vs. morphological). It notes the dismissal of Cushitic and Nilo-Saharan hypotheses in modern scholarship and the focus on pronoun/gender systems for Afroasiatic. No invented citations or terms detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing specific evidence (e.g., pronoun markers 't-' for 2nd person, 'k-' for 3rd; feminine '-t' suffix; Swadesh list analysis) and methodological debates (lexical vs. morphological evidence, borrowing vs. genetic inheritance). It engages with scholarly conflict and the problem of conflicting evidence types, which a specialist would recognize as central to the debate.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly calibrates evidence strength: 'Weak and now largely dismissed' for Cushitic, 'Very weak' for Nilo-Saharan, 'Moderate but problematic' for independent Afroasiatic, and 'Strong' for isolate. It distinguishes contested points (e.g., whether morphological features are genetic or contact-induced) and notes the lack of consensus, avoiding uniform confidence. Specific disclaimers are targeted, not blanket.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate linguistic terminology (e.g., 'genetic classification', 'cognates', 'morphological parallels', 'Swadesh lists', 'relexification') and frameworks from African linguistics, without substituting Western or Anglophone perspectives. It acknowledges regional context (contact with Cushitic and Nilo-Saharan languages) and key scholars in the field, adhering to the tradition of the question.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of the Ongota classification debate with precise evidence evaluation and scholarly calibration.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of the Ongota classification debate with precise evidence evaluation and scholarly calibration.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

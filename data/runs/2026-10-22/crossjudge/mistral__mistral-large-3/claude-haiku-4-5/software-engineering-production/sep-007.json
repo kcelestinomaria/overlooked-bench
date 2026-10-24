@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "No tooling cost: All solutions use PostgreSQL built-in views and Grafana (already in use)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Action Items (Next Two Sprints: ~13 engineer-days)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. Deliverable requested: Post-incident review with action items, costed in engineer-days, prioritised for the next two sprints.\n2. The response produces:\n   - A detailed timeline, root causes, and action items with owners, estimates, and justification.\n   - Concrete steps (e.g., 'Build a simple Grafana dashboard querying `pg_stat_activity` and `pg_locks`', 'Add script to estimate CREATE INDEX duration using `EXPLAIN (ANALYZE)`').\n   - Sequence (Sprint 1 and Sprint 2), owners, and verification steps (e.g., metrics to track).\n3. An engineer could execute this with light editing (e.g., copy-pasting commands or dashboard queries).",
+    "constraint_fidelity": "1. Listed constraints:\n   - C1: Blameless (system/process causes, not individuals)\n   - C2: No new paid tooling\n   - C3: Action items ≤15 engineer-days for next two sprints\n\n2. Evidence:\n   - C1: The response explicitly states 'Sipho's acknowledgement delay (21 min): Reasonable given driving; not a process failure' and avoids naming the PR author. No individual blame is assigned. (kept)\n   - C2: The response uses existing PostgreSQL views and Grafana (already in use), and explicitly notes 'No tooling cost: All solutions use PostgreSQL built-in views and Grafana (already in use)'. (kept)\n   - C3: Action items are costed (13 engineer-days total) and prioritised for the next two sprints, with a backlog for future work. The total is within the 15-day limit. (kept)\n\n3. Arithmetic: The response shows the effort estimates (13 days) and explicitly states it is within the constraint. No silent violations.\n\n4. Verdict: All constraints are respected, and the response demonstrates the arithmetic to verify this.",
+    "maintainability": "1. Ownership: The team of 5 engineers (4 on-call) will own the result. The response assigns owners (e.g., 'Database-focused engineer', 'Tech lead') and avoids unowned moving parts.\n2. Complexity: The proposed changes (checklist, dashboard, approval gate) are proportionate to the team size. No unsafe shortcuts are left unflagged.\n3. Risks/debt: The response explicitly states accepted debt (e.g., backlog items like concurrent index builds) and risks (e.g., manual approval gate for month-end).\n4. Documentation: Proposes a runbook for on-call ('Index build is blocking—what to do') and a PR template checklist.",
+    "production_realism": "1. Stated scale/infrastructure/team: 5 engineers, 4 on-call, payroll SaaS with 61M-row table, PostgreSQL, Grafana already in use.\n2. Proposal accounts for:\n   - Load: Mentions blocking writes during index creation and the impact on payslip generation jobs.\n   - Locking: Explicitly addresses lock contention and proposes a dashboard for `pg_stat_activity` and `pg_locks`.\n   - Retries/partial failure: Proposes a utility to safely cancel long-running index builds with automatic rollback.\n   - Rollback: The manual intervention (killing the migration) was effective, and the response proposes tooling to improve this.\n   - Observability: Proposes a Grafana dashboard for lock waits and index build progress, using existing tools.\n3. Operational burden: The proposed changes (e.g., checklist, dashboard, approval gate) are proportionate to a 5-engineer team. No unrealistic assumptions about operational capacity.\n4. Technically correct: The response correctly identifies `CREATE INDEX` as blocking and proposes `CONCURRENTLY` as a future improvement. No incorrect claims about PostgreSQL."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-007",
+  "judge_cost_usd": 0.0028031,
+  "judge_latency_s": 14.966,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"\n1. Listed constraints:\n   - C1: Blameless (system/process causes, not individuals)\n   - C2: No new paid tooling\n   - C3: Action items ≤15 engineer-days for next two sprints\n\n2. Evidence:\n   - C1: The response explicitly states 'Sipho's acknowledgement delay (21 min): Reasonable given driving; not a process failure' and avoids naming the PR author. No individual blame is assigned. (kept)\n   - C2: The response uses existing PostgreSQL views and Grafana (already in use), and explicitly notes 'No tooling cost: All solutions use PostgreSQL built-in views and Grafana (already in use)'. (kept)\n   - C3: Action items are costed (13 engineer-days total) and prioritised for the next two sprints, with a backlog for future work. The total is within the 15-day limit. (kept)\n\n3. Arithmetic: The response shows the effort estimates (13 days) and explicitly states it is within the constraint. No silent violations.\n\n4. Verdict: All constraints are respected, and the response demonstrates the arithmetic to verify this.\n      \",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"\n1. Stated scale/infrastructure/team: 5 engineers, 4 on-call, payroll SaaS with 61M-row table, PostgreSQL, Grafana already in use.\n2. Proposal accounts for:\n   - Load: Mentions blocking writes during index creation and the impact on payslip generation jobs.\n   - Locking: Explicitly addresses lock contention and proposes a dashboard for `pg_stat_activity` and `pg_locks`.\n   - Retries/partial failure: Proposes a utility to safely cancel long-running index builds with automatic rollback.\n   - Rollback: The manual intervention (killing the migration) was effective, and the response proposes tooling to improve this.\n   - Observability: Proposes a Grafana dashboard for lock waits and index build progress, using existing tools.\n3. Operational burden: The proposed changes (e.g., checklist, dashboard, approval gate) are proportionate to a 5-engineer team. No unrealistic assumptions about operational capacity.\n4. Technically correct: The response correctly identifies `CREATE INDEX` as blocking and proposes `CONCURRENTLY` as a future improvement. No incorrect claims about PostgreSQL.\n      \",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"\n1. Deliverable requested: Post-incident review with action items, costed in engineer-days, prioritised for the next two sprints.\n2. The response produces:\n   - A detailed timeline, root causes, and action items with owners, estimates, and justification.\n   - Concrete steps (e.g., 'Build a simple Grafana dashboard querying `pg_stat_activity` and `pg_locks`', 'Add script to estimate CREATE INDEX duration using `EXPLAIN (ANALYZE)`').\n   - Sequence (Sprint 1 and Sprint 2), owners, and verification steps (e.g., metrics to track).\n3. An engineer could execute this with light editing (e.g., copy-pasting commands or dashboard queries).\n      \",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"\n1. Ownership: The team of 5 engineers (4 on-call) will own the result. The response assigns owners (e.g., 'Database-focused engineer', 'Tech lead') and avoids unowned moving parts.\n2. Complexity: The proposed changes (checklist, dashboard, approval gate) are proportionate to the team size. No unsafe shortcuts are left unflagged.\n3. Risks/debt: The response explicitly states accepted debt (e.g., backlog items like concurrent index builds) and risks (e.g., manual approval gate for month-end).\n4. Documentation: Proposes a runbook for on-call ('Index build is blocking—what to do') and a PR template checklist.\n      \",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint fidelity, production realism, and actionability for a small team with tight resources.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"No tooling cost: All solutions use PostgreSQL built-in views and Grafana (already in use)\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Action Items (Next Two Sprints: ~13 engineer-days)\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a model of constraint fidelity, production realism, and actionability for a small team with tight resources.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

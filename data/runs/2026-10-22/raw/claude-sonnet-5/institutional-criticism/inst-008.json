@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 1259,
+  "cost_usd": 0.012848,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "698eb7adc7bf17df",
+  "item_id": "inst-008",
+  "latency_s": 17.589,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 129,
+  "provider": "anthropic",
+  "request_fingerprint": "7320d09271e48ad9",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# DeepSeek's Safety and Transparency Deficits: A Critical Analysis\n\n## Inadequate Disclosure of Training Data Provenance\n\nDeepSeek has released model weights for its R1 and V3 series but has not disclosed meaningful details about training data sources, filtering methodology, or data licensing status. This matters mechanically: without provenance information, downstream users cannot assess copyright exposure, cannot identify potential contamination with benchmark data (which would inflate perceived capability), and cannot evaluate whether toxic or biased content was adequately filtered. The \"open weights, closed data\" pattern lets DeepSeek claim an openness narrative while avoiding the harder accountability that full data transparency would invite. Accountability rests with DeepSeek's leadership, who control publication decisions and have had ample opportunity to follow the data-disclosure norms (datasheets, data statements) that parts of the research community have pushed for since at least 2018.\n\n## Censorship Embedded as Undisclosed Safety Behavior\n\nIndependent testing has shown DeepSeek's chat products refuse or deflect on politically sensitive topics (Tiananmen Square, Taiwan's status, Xinjiang) in ways that track Chinese government preferences rather than any stated, consistent safety policy. The harm here is specifically a transparency harm: this behavior is not documented as a policy choice in model cards or system documentation, so users encounter it as unexplained censorship rather than a disclosed content policy they can evaluate or route around. This differs from Western labs' RLHF-driven refusals mainly in that DeepSeek does not own the behavior publicly — there is no equivalent of a usage policy section explaining \"we restrict X category of content for Y reason.\" The accountability chain is murky by design: it's unclear whether restrictions are self-imposed anticipatory compliance, direct regulatory mandate, or downstream platform-level filtering distinct from the underlying model. DeepSeek's leadership is accountable for not clarifying this distinction, and the ambiguity itself functions as a liability shield.\n\n## Security Failures in Deployment Infrastructure\n\nIn early 2025, researchers found an exposed DeepSeek database (ClickHouse) accessible without authentication, leaking chat histories, API keys, and backend details. This is a straightforward engineering governance failure: basic access controls were absent on a service handling sensitive user data at scale. The mechanism of harm is direct — exposed API keys and conversation logs create immediate risk of credential theft and privacy violation for users who had no way to know their data was unprotected. This failure is attributable to DeepSeek's engineering and security leadership; the speed of their scaling apparently outpaced basic infosec hygiene that mature labs treat as table stakes before public launch.\n\n## Thin Model Cards Relative to Claimed Capabilities\n\nDeepSeek's technical reports emphasize benchmark performance extensively but are comparatively sparse on red-teaming results, known failure modes, dual-use risk assessment (e.g., bioweapon uplift, cyberoffense capability), and refusal-rate data across risk categories — areas that OpenAI, Anthropic, and Google DeepMind now report on, however imperfectly, in their own system cards. Because DeepSeek's models are openly downloadable and have been rapidly adopted, the absence of this risk documentation shifts evaluation burden onto third parties and downstream integrators who have less access and context than the original developer. The harm is diffuse but real: it slows collective understanding of a widely-deployed model's risk profile and externalizes safety evaluation costs. Responsibility again sits with DeepSeek's research leadership, who made the documentation choices, and secondarily with the open-source ecosystem for adopting models at scale before equivalent independent audits existed.",
+  "timestamp_utc": "2026-10-21T23:32:39Z"
+}

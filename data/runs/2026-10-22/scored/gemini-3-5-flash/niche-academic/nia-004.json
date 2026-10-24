@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopedia level by engaging with specific methodological debates (e.g., thermodynamic critiques of pre-heating, 'old wood' effect in radiocarbon dating), scholarly positions (Schmidt vs. Killick), and conceptual frameworks (technological style vs. linear evolution). It provides detail on evidence quality and internal disputes that a specialist would recognize as informed by the literature, not just summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established archaeometallurgical literature. It correctly identifies scholars (Peter Schmidt, Terry Childs, David Killick, Louise Iles), describes furnace design (semi-subterranean, use of reeds, tuyeres), cultural context (gender metaphors, political power), and key debates (pre-heating hypothesis, dating controversies). It accurately notes the shift in consensus toward the conservative chronology (~500 BCE) and the rejection of linear evolutionary typology. No invented citations, terms, or consensus claims are detected.",
+    "field_situatedness": "The response uses terminology and frameworks specific to African archaeometallurgy and regional scholarship (e.g., Urewe culture, ethnoarchaeological reconstructions, technological style). It centers African contexts and scholars without substituting Western framings, and it engages with debates intrinsic to the field (e.g., independent invention vs. diffusion).",
+    "scholarly_calibration": "The response clearly distinguishes well-established facts (e.g., furnace design, cultural context) from contested claims (pre-heating hypothesis, early dating). It signals evidential status with phrases like 'fiercely contested,' 'most modern archaeometallurgists side with the critics,' 'widely viewed with skepticism,' and 'current status of the debate.' It avoids uniform confidence and presents disputes accurately without blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-004",
+  "judge_cost_usd": 0.0011515,
+  "judge_latency_s": 53.845,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established archaeometallurgical literature. It correctly identifies scholars (Peter Schmidt, Terry Childs, David Killick, Louise Iles), describes furnace design (semi-subterranean, use of reeds, tuyeres), cultural context (gender metaphors, political power), and key debates (pre-heating hypothesis, dating controversies). It accurately notes the shift in consensus toward the conservative chronology (~500 BCE) and the rejection of linear evolutionary typology. No invented citations, terms, or consensus claims are detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopedia level by engaging with specific methodological debates (e.g., thermodynamic critiques of pre-heating, 'old wood' effect in radiocarbon dating), scholarly positions (Schmidt vs. Killick), and conceptual frameworks (technological style vs. linear evolution). It provides detail on evidence quality and internal disputes that a specialist would recognize as informed by the literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response clearly distinguishes well-established facts (e.g., furnace design, cultural context) from contested claims (pre-heating hypothesis, early dating). It signals evidential status with phrases like 'fiercely contested,' 'most modern archaeometallurgists side with the critics,' 'widely viewed with skepticism,' and 'current status of the debate.' It avoids uniform confidence and presents disputes accurately without blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to African archaeometallurgy and regional scholarship (e.g., Urewe culture, ethnoarchaeological reconstructions, technological style). It centers African contexts and scholars without substituting Western framings, and it engages with debates intrinsic to the field (e.g., independent invention vs. diffusion).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level engagement with niche archaeometallurgical debates, accurately summarizing known facts and scholarly disputes with precise calibration.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level engagement with niche archaeometallurgical debates, accurately summarizing known facts and scholarly disputes with precise calibration.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

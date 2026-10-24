@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a complete runbook with exact commands, sequences, and verification steps. \n2. Key procedures (restore, deploy, TLS renewal) include concrete commands (e.g., `gunzip -c /tmp/restore/backup.sql.gz | mysql -uroot -p DATABASE_NAME`), success criteria, and escalation triggers. \n3. The \"Minimal command cheat sheet\" and \"Common incidents\" sections provide immediate, executable steps. \n4. No prose descriptions without commands; every section includes actionable details.",
+    "constraint_fidelity": "1. The response explicitly states no platform migration, no new vendors, and no extra tooling spend. \n2. Every procedure includes exact commands (e.g., `systemctl status nginx`, `rclone copy b2:BUCKET_NAME/path/to/backup.sql.gz /tmp/restore/`). \n3. The arithmetic for backup retention (14 daily copies) and disk space checks (`df -h`) is shown. \n4. No silent violations of constraints are present. The response even flags the limitation of Uptime Kuma on app-1 and suggests a free external check, which aligns with zero additional spend.\n\nEvidence: \n- \"No platform change and no extra monthly tooling cost.\" \n- Exact commands for all key procedures (restore, TLS renewal, service restarts). \n- \"14 daily copies retained\" (backup retention arithmetic).",
+    "maintainability": "1. The runbook is designed for handover to two PHP developers with no server admin experience, using clear seams (e.g., `systemctl status`, `rclone ls`). \n2. Risks and debt are explicitly stated (e.g., \"Never reboot both servers at once\", \"Do not restore just because the app is slow\"). \n3. Observability is built in (log checks, Uptime Kuma, `df -h`). \n4. Complexity is proportionate to the team (e.g., no Kubernetes, no Terraform). \n5. Documentation is self-contained and includes escalation rules.",
+    "production_realism": "1. The response accounts for the team's skill mix (PHP developers with no Linux admin experience) by providing exact commands and clear success criteria. \n2. Failure modes are addressed: partial failure (e.g., `mysqladmin ping`), retries (e.g., `sudo systemctl restart mysql`), rollback (emergency rollback section), and observability (log checks, Uptime Kuma). \n3. Load and locking are implicitly addressed via `mysqladmin processlist` and disk space checks (`df -h`). \n4. No technically incorrect claims about named technologies (nginx, MySQL, certbot, rclone). \n5. Operational burden is proportionate to the team (e.g., no complex orchestration, just systemd and cron)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-010",
+  "judge_cost_usd": 0.0044701,
+  "judge_latency_s": 10.782,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states no platform migration, no new vendors, and no extra tooling spend. \\n2. Every procedure includes exact commands (e.g., `systemctl status nginx`, `rclone copy b2:BUCKET_NAME/path/to/backup.sql.gz /tmp/restore/`). \\n3. The arithmetic for backup retention (14 daily copies) and disk space checks (`df -h`) is shown. \\n4. No silent violations of constraints are present. The response even flags the limitation of Uptime Kuma on app-1 and suggests a free external check, which aligns with zero additional spend.\\n\\nEvidence: \\n- \\\"No platform change and no extra monthly tooling cost.\\\" \\n- Exact commands for all key procedures (restore, TLS renewal, service restarts). \\n- \\\"14 daily copies retained\\\" (backup retention arithmetic).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the team's skill mix (PHP developers with no Linux admin experience) by providing exact commands and clear success criteria. \\n2. Failure modes are addressed: partial failure (e.g., `mysqladmin ping`), retries (e.g., `sudo systemctl restart mysql`), rollback (emergency rollback section), and observability (log checks, Uptime Kuma). \\n3. Load and locking are implicitly addressed via `mysqladmin processlist` and disk space checks (`df -h`). \\n4. No technically incorrect claims about named technologies (nginx, MySQL, certbot, rclone). \\n5. Operational burden is proportionate to the team (e.g., no complex orchestration, just systemd and cron).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a complete runbook with exact commands, sequences, and verification steps. \\n2. Key procedures (restore, deploy, TLS renewal) include concrete commands (e.g., `gunzip -c /tmp/restore/backup.sql.gz | mysql -uroot -p DATABASE_NAME`), success criteria, and escalation triggers. \\n3. The \\\"Minimal command cheat sheet\\\" and \\\"Common incidents\\\" sections provide immediate, executable steps. \\n4. No prose descriptions without commands; every section includes actionable details.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The runbook is designed for handover to two PHP developers with no server admin experience, using clear seams (e.g., `systemctl status`, `rclone ls`). \\n2. Risks and debt are explicitly stated (e.g., \\\"Never reboot both servers at once\\\", \\\"Do not restore just because the app is slow\\\"). \\n3. Observability is built in (log checks, Uptime Kuma, `df -h`). \\n4. Complexity is proportionate to the team (e.g., no Kubernetes, no Terraform). \\n5. Documentation is self-contained and includes escalation rules.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This runbook is exceptionally actionable, constraint-compliant, and production-ready for the described team and infrastructure.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This runbook is exceptionally actionable, constraint-compliant, and production-ready for the described team and infrastructure.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

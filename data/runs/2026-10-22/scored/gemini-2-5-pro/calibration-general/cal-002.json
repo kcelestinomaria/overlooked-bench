@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance. The numerical value is identical.",
+    "instruction_compliance": "The prompt explicitly requests: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in detail and ends with 'ANSWER: 21134.40', which matches the required format exactly.",
+    "reasoning_validity": "The response shows working in four steps: Step 1 calculates dried coffee mass correctly as 4,800 * 0.85 = 4,080 kg (equivalent to 4,800 - 720). Step 2 correctly calculates AA grade mass (1,632 kg) and remainder mass (2,448 kg). Step 3 correctly computes revenue for each grade ($10,118.40 and $11,016.00). Step 4 correctly sums these to $21,134.40. All steps are valid and support the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00068018,
+  "judge_latency_s": 11.01,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance. The numerical value is identical.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working in four steps: Step 1 calculates dried coffee mass correctly as 4,800 * 0.85 = 4,080 kg (equivalent to 4,800 - 720). Step 2 correctly calculates AA grade mass (1,632 kg) and remainder mass (2,448 kg). Step 3 correctly computes revenue for each grade ($10,118.40 and $11,016.00). Step 4 correctly sums these to $21,134.40. All steps are valid and support the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in detail and ends with 'ANSWER: 21134.40', which matches the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, well-reasoned, and perfectly compliant with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response is fully correct, well-reasoned, and perfectly compliant with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

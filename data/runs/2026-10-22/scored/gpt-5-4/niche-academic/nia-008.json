@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedic summary by engaging with methodological critiques (e.g., selection bias, endogeneity, measurement issues) and scholarly debates (e.g., equity outcomes vs. ecological success). It discusses evidence quality, internal debates (e.g., 'social justice and poverty reduction outcomes are far less clear'), and context-dependent factors. A specialist would recognize this as informed by the literature, not just summaries, as seen in details like 'dependence on local perceptions rather than biophysical measures' and 'publication and success bias'.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established literature on Nepal's community forestry. It correctly identifies Forest User Groups (FUGs/CFUGs) as key institutions, notes regional variation (e.g., mid-hills focus), and accurately describes common findings on forest condition improvement, institutional effectiveness, and equity issues. It does not invent citations, terms, or consensus. For example, it states 'benefits often accrue disproportionately to local elites or better-off households' and 'selection bias is a central problem'—both well-documented critiques. No factual errors are evident.",
+    "field_situatedness": "The response uses terminology and frameworks specific to Nepal's community forestry scholarship, such as 'Forest User Groups (FUGs/CFUGs)', references to regional variation (mid-hills), and context factors like caste, ethnicity, and local power relations. It does not substitute Western frameworks but engages with Nepal-specific issues, e.g., 'participation is often unequal by caste, class, ethnicity, and gender'. The focus on methodological critiques aligns with scholarly conventions in this field.",
+    "scholarly_calibration": "The response effectively distinguishes well-established from contested claims. It notes strong evidence for forest condition improvement ('fairly strong evidence') but highlights uncertainty on equity ('much weaker and more contested evidence'). It signals evidential differences, e.g., 'ecological outcomes are often reported as positive, social justice... are far less clear' and 'methodological criticisms... causal inference, selection bias'. It avoids blanket disclaimers and provides specific calibration, such as noting context dependence and attribution problems."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-008",
+  "judge_cost_usd": 0.00107784,
+  "judge_latency_s": 47.617,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established literature on Nepal's community forestry. It correctly identifies Forest User Groups (FUGs/CFUGs) as key institutions, notes regional variation (e.g., mid-hills focus), and accurately describes common findings on forest condition improvement, institutional effectiveness, and equity issues. It does not invent citations, terms, or consensus. For example, it states 'benefits often accrue disproportionately to local elites or better-off households' and 'selection bias is a central problem'—both well-documented critiques. No factual errors are evident.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedic summary by engaging with methodological critiques (e.g., selection bias, endogeneity, measurement issues) and scholarly debates (e.g., equity outcomes vs. ecological success). It discusses evidence quality, internal debates (e.g., 'social justice and poverty reduction outcomes are far less clear'), and context-dependent factors. A specialist would recognize this as informed by the literature, not just summaries, as seen in details like 'dependence on local perceptions rather than biophysical measures' and 'publication and success bias'.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response effectively distinguishes well-established from contested claims. It notes strong evidence for forest condition improvement ('fairly strong evidence') but highlights uncertainty on equity ('much weaker and more contested evidence'). It signals evidential differences, e.g., 'ecological outcomes are often reported as positive, social justice... are far less clear' and 'methodological criticisms... causal inference, selection bias'. It avoids blanket disclaimers and provides specific calibration, such as noting context dependence and attribution problems.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to Nepal's community forestry scholarship, such as 'Forest User Groups (FUGs/CFUGs)', references to regional variation (mid-hills), and context factors like caste, ethnicity, and local power relations. It does not substitute Western frameworks but engages with Nepal-specific issues, e.g., 'participation is often unequal by caste, class, ethnicity, and gender'. The focus on methodological critiques aligns with scholarly conventions in this field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepal's community forestry evidence and its methodological limitations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepal's community forestry evidence and its methodological limitations.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

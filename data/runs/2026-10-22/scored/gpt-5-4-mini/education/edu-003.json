@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response is tailored to the specific student (16-year-old in Germany with practical strengths, exam dislike, solid grades, and parental pressure), but it does not address a range of learners in a classroom setting (e.g., prior attainment, additional needs, language barriers, material constraints), as it is individual advice, not group instruction. It focuses on the student's profile without broader differentiation.",
+    "pathway_breadth": "The response covers multiple pathways substantively: apprenticeship (Ausbildung) with details on entry, duration, pay, and progression; Fachoberschule/Fachabitur routes; Abitur; gap year options; and combined work/education paths. It treats vocational routes with equal depth and specificity as academic ones, correct for Germany (e.g., mentions Berufsschule, Meister, Techniker, Fachwirt), addresses parents' preference honestly, and avoids treating Abitur as the default goal.",
+    "pedagogical_soundness": "The response does not present a pedagogical plan with objectives, activities, or assessments; it is advisory content for a student, not instructional design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments.",
+    "workload_realism": "The response does not describe a lesson, unit, or instructional plan requiring delivery by a practitioner; it is advice for a student, not a teaching workload. Therefore, it cannot be evaluated for timing, resources, or feasibility."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00122839,
+  "judge_latency_s": 42.854,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a pedagogical plan with objectives, activities, or assessments; it is advisory content for a student, not instructional design. Therefore, it cannot be evaluated for alignment of objectives, activities, and assessments.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not describe a lesson, unit, or instructional plan requiring delivery by a practitioner; it is advice for a student, not a teaching workload. Therefore, it cannot be evaluated for timing, resources, or feasibility.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple pathways substantively: apprenticeship (Ausbildung) with details on entry, duration, pay, and progression; Fachoberschule/Fachabitur routes; Abitur; gap year options; and combined work/education paths. It treats vocational routes with equal depth and specificity as academic ones, correct for Germany (e.g., mentions Berufsschule, Meister, Techniker, Fachwirt), addresses parents' preference honestly, and avoids treating Abitur as the default goal.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response is tailored to the specific student (16-year-old in Germany with practical strengths, exam dislike, solid grades, and parental pressure), but it does not address a range of learners in a classroom setting (e.g., prior attainment, additional needs, language barriers, material constraints), as it is individual advice, not group instruction. It focuses on the student's profile without broader differentiation.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response excels in providing balanced, detailed pathway advice for the German context but is not pedagogical or workload-oriented.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response excels in providing balanced, detailed pathway advice for the German context but is not pedagogical or workload-oriented.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 35.0
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 279,
+  "cost_usd": 0.00056079,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "1d27ce48609390bc",
+  "item_id": "cal-004",
+  "latency_s": 7.218,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 72,
+  "provider": "deepseek",
+  "request_fingerprint": "1d62257fe2dcd248",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "Let's go step-by-step.  \n\n**Step 1: Find the full volume of the tank in cubic meters.**  \n\\[\n\\text{Volume} = \\text{length} \\times \\text{width} \\times \\text{height}\n\\]\n\\[\n\\text{Volume} = 2.5 \\, \\text{m} \\times 1.8 \\, \\text{m} \\times 1.2 \\, \\text{m}\n\\]\n\\[\n2.5 \\times 1.8 = 4.5\n\\]\n\\[\n4.5 \\times 1.2 = 5.4 \\, \\text{m}^3\n\\]\n\n**Step 2: Find the volume when 60% full.**  \n\\[\n60\\% \\text{ of } 5.4 \\, \\text{m}^3 = 0.6 \\times 5.4 = 3.24 \\, \\text{m}^3\n\\]\n\n**Step 3: Convert cubic meters to litres.**  \nWe know \\( 1 \\, \\text{m}^3 = 1000 \\, \\text{litres} \\).  \n\\[\n3.24 \\, \\text{m}^3 = 3.24 \\times 1000 = 3240 \\, \\text{litres}\n\\]\n\n**Step 4: Final answer.**  \nANSWER: 3240",
+  "timestamp_utc": "2026-10-21T23:55:56Z"
+}

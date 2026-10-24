@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing structural tensions (e.g., 'incompatible principles'), specific criticisms (e.g., 'neoliberal assumptions', 'gendered impacts'), and contemporary scholarly consensus (e.g., 'pluralism', 'hybrid solutions'). It engages with debates (e.g., 'empirically contested' productivity claims) and methods (e.g., 'community-based approaches'), indicating familiarity with the literature rather than just summaries.",
+    "domain_accuracy": "The response makes specific claims: '97% of PNG's land' under customary tenure (plausible but unverified), 'collective, inalienable group rights' vs. 'individual, transferable ownership' (accurate contrast), 'free, prior, and informed consent (FPIC)' (correct terminology), and cites critiques like dispossession risks and gendered impacts (consistent with literature). No invented citations or terms are present. Claims align with known scholarly discussions on land formalization in Melanesia.",
+    "field_situatedness": "The response uses terminology and frameworks specific to land tenure studies in PNG and Melanesia (e.g., 'customary tenure', 'clan ownership', 'FPIC', 'neoliberal assumptions'), avoiding substitution with Western frameworks. It references PNG's constitutional context and indigenous rights, aligning with the regional scholarly tradition.",
+    "scholarly_calibration": "The response distinguishes contested areas: it notes 'empirically contested' assumptions about productivity, presents formalization critiques as scholarly arguments rather than settled facts, and highlights 'recent scholarship emphasizes' pluralism and hybrid solutions. However, it lacks explicit uncertainty markers (e.g., no 'some scholars argue' phrasing) and presents criticisms uniformly without calibrating evidential strength for each point."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 3,
+    "field_situatedness": 4,
+    "scholarly_calibration": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00086022,
+  "judge_latency_s": 43.089,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims: '97% of PNG's land' under customary tenure (plausible but unverified), 'collective, inalienable group rights' vs. 'individual, transferable ownership' (accurate contrast), 'free, prior, and informed consent (FPIC)' (correct terminology), and cites critiques like dispossession risks and gendered impacts (consistent with literature). No invented citations or terms are present. Claims align with known scholarly discussions on land formalization in Melanesia.\",\n      \"score\": 3\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing structural tensions (e.g., 'incompatible principles'), specific criticisms (e.g., 'neoliberal assumptions', 'gendered impacts'), and contemporary scholarly consensus (e.g., 'pluralism', 'hybrid solutions'). It engages with debates (e.g., 'empirically contested' productivity claims) and methods (e.g., 'community-based approaches'), indicating familiarity with the literature rather than just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes contested areas: it notes 'empirically contested' assumptions about productivity, presents formalization critiques as scholarly arguments rather than settled facts, and highlights 'recent scholarship emphasizes' pluralism and hybrid solutions. However, it lacks explicit uncertainty markers (e.g., no 'some scholars argue' phrasing) and presents criticisms uniformly without calibrating evidential strength for each point.\",\n      \"score\": 2\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to land tenure studies in PNG and Melanesia (e.g., 'customary tenure', 'clan ownership', 'FPIC', 'neoliberal assumptions'), avoiding substitution with Western frameworks. It references PNG's constitutional context and indigenous rights, aligning with the regional scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive knowledge of PNG land tenure issues and critiques, though it could better calibrate confidence across claims.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive knowledge of PNG land tenure issues and critiques, though it could better calibrate confidence across claims.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 80.0
+}

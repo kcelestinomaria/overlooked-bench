@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response provides clear distinctions and dating frameworks but remains at an encyclopedic/survey level. It lacks engagement with specific scholarly debates, methodological nuances (e.g., how script analysis is conducted), evidence quality, or references to key scholars or works in Georgian palaeography. A specialist would recognize this as a competent summary but not as deep engagement with the literature.",
+    "domain_accuracy": "The response makes several substantive claims: Asomtavruli dated to 5th century (correct), Nuskhuri developed 9th-10th century (correct), Mkhedruli emerged 11th century (correct), script usage patterns (largely correct), and dating indicators (generally accurate). No invented citations, terms, or consensus are present. Minor issues include oversimplifying regional variations and scriptoria distinctions without specifics, but core facts are accurate.",
+    "field_situatedness": "The response uses correct Georgian script names (Asomtavruli, Nuskhuri, Mkhedruli) and terminology specific to Georgian palaeography (e.g., 'scriptoria', 'monastic traditions'). It focuses on the Georgian context without substituting Western frameworks and addresses provenance clues relevant to the field. The framing aligns with the scholarly tradition of the question.",
+    "scholarly_calibration": "The response shows some calibration by noting 'individual manuscripts often show hybrid features requiring nuanced analysis' and distinguishing between liturgical/secular contexts. However, it presents dating ranges (e.g., 'Pure Asomtavruli suggests pre-10th century') with uniform confidence without acknowledging uncertainties or disputes in chronology (e.g., debates over exact emergence dates). It does not flag where knowledge is weak or contested."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 3,
+    "field_situatedness": 4,
+    "scholarly_calibration": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-007",
+  "judge_cost_usd": 0.00079417,
+  "judge_latency_s": 40.966,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: Asomtavruli dated to 5th century (correct), Nuskhuri developed 9th-10th century (correct), Mkhedruli emerged 11th century (correct), script usage patterns (largely correct), and dating indicators (generally accurate). No invented citations, terms, or consensus are present. Minor issues include oversimplifying regional variations and scriptoria distinctions without specifics, but core facts are accurate.\",\n      \"score\": 3\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response provides clear distinctions and dating frameworks but remains at an encyclopedic/survey level. It lacks engagement with specific scholarly debates, methodological nuances (e.g., how script analysis is conducted), evidence quality, or references to key scholars or works in Georgian palaeography. A specialist would recognize this as a competent summary but not as deep engagement with the literature.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response shows some calibration by noting 'individual manuscripts often show hybrid features requiring nuanced analysis' and distinguishing between liturgical/secular contexts. However, it presents dating ranges (e.g., 'Pure Asomtavruli suggests pre-10th century') with uniform confidence without acknowledging uncertainties or disputes in chronology (e.g., debates over exact emergence dates). It does not flag where knowledge is weak or contested.\",\n      \"score\": 2\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Georgian script names (Asomtavruli, Nuskhuri, Mkhedruli) and terminology specific to Georgian palaeography (e.g., 'scriptoria', 'monastic traditions'). It focuses on the Georgian context without substituting Western frameworks and addresses provenance clues relevant to the field. The framing aligns with the scholarly tradition of the question.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides accurate, well-structured distinctions among the scripts but lacks depth in scholarly engagement and nuanced calibration.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides accurate, well-structured distinctions among the scripts but lacks depth in scholarly engagement and nuanced calibration.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 65.0
+}

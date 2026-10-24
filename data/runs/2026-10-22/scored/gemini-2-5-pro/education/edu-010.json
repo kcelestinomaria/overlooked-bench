@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response implicitly addresses learner diversity by designing assignments that require personalization and in-class elements, which can accommodate varying prior attainment and language skills. However, it does not explicitly mention differentiation for additional needs, language barriers, or material constraints like no home internet. The strategies are implementable by one lecturer but lack concrete adaptations for specific learner ranges.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it focuses on academic integrity policy. The response is inclusive by addressing all students in the course and providing clear, enforceable guidelines applicable to diverse learners, but it does not cover vocational or non-degree pathways as they are not relevant to the prompt.",
+    "pedagogical_soundness": "The policy establishes clear learning objectives: ethical AI use, critical thinking, and genuine student work. Activities like brainstorming, grammar checks, and personalized tutoring align with these objectives. Assessments are integrated through oral defenses and multi-stage assignments that verify understanding. Sequencing is coherent with prevention first, then assignment design, and finally verification. The rubric for acknowledgment is observable and specific.",
+    "workload_realism": "The response accounts for 200 students by emphasizing prevention, smart assignment design, and scalable verification like random spot checks (15%) and brief oral defenses for flagged papers. It avoids reliance on unreliable AI detectors and focuses on strategies feasible for one lecturer, such as in-class explanations and multi-stage assignments. Preparation and marking load are managed through targeted checks rather than comprehensive reviews."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00121967,
+  "judge_latency_s": 43.845,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The policy establishes clear learning objectives: ethical AI use, critical thinking, and genuine student work. Activities like brainstorming, grammar checks, and personalized tutoring align with these objectives. Assessments are integrated through oral defenses and multi-stage assignments that verify understanding. Sequencing is coherent with prevention first, then assignment design, and finally verification. The rubric for acknowledgment is observable and specific.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response accounts for 200 students by emphasizing prevention, smart assignment design, and scalable verification like random spot checks (15%) and brief oral defenses for flagged papers. It avoids reliance on unreliable AI detectors and focuses on strategies feasible for one lecturer, such as in-class explanations and multi-stage assignments. Preparation and marking load are managed through targeted checks rather than comprehensive reviews.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it focuses on academic integrity policy. The response is inclusive by addressing all students in the course and providing clear, enforceable guidelines applicable to diverse learners, but it does not cover vocational or non-degree pathways as they are not relevant to the prompt.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response implicitly addresses learner diversity by designing assignments that require personalization and in-class elements, which can accommodate varying prior attainment and language skills. However, it does not explicitly mention differentiation for additional needs, language barriers, or material constraints like no home internet. The strategies are implementable by one lecturer but lack concrete adaptations for specific learner ranges.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive and practical AI policy with scalable enforcement strategies tailored for a large class.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive and practical AI policy with scalable enforcement strategies tailored for a large class.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

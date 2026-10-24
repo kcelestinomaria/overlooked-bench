@@ -1,0 +1,63 @@
+{
+  "cards": [
+    {
+      "card": "asked-vs-got-01.png",
+      "constraint_fidelity": 0,
+      "constraint_id": "C1",
+      "constraint_text": "Raw precise location may not be retained longer than 30 days anywhere, including warehouse and backups.",
+      "evidence": "Daily batch job moves 30+ day old raw data to cold storage (compressed, encrypted)",
+      "item_id": "sep-005",
+      "item_score": 42.5,
+      "kind": "asked_vs_got",
+      "model_key": "deepseek-v3-2",
+      "raw_path": "data/runs/2026-10-22/raw/deepseek-v3-2/software-engineering-production/sep-005.json",
+      "scored_path": "data/runs/2026-10-22/scored/deepseek-v3-2/software-engineering-production/sep-005.json",
+      "verifier_p_broken": 0.65,
+      "verifier_path": "data/runs/2026-10-22/constraints/deepseek-v3-2/software-engineering-production/sep-005.json"
+    },
+    {
+      "card": "side-by-side-01.png",
+      "item_id": "sep-005",
+      "kept_by": "gpt-5-4-mini",
+      "kept_excerpt": "Store raw precise location for no more than 30 days",
+      "kind": "side_by_side",
+      "raw_paths": [
+        "data/runs/2026-10-22/raw/gpt-5-4-mini/software-engineering-production/sep-005.json",
+        "data/runs/2026-10-22/raw/deepseek-v3-2/software-engineering-production/sep-005.json"
+      ],
+      "violation": {
+        "constraint_fidelity": 0,
+        "constraint_id": "C1",
+        "constraint_text": "Raw precise location may not be retained longer than 30 days anywhere, including warehouse and backups.",
+        "evidence": "Daily batch job moves 30+ day old raw data to cold storage (compressed, encrypted)",
+        "item_id": "sep-005",
+        "item_score": 42.5,
+        "model_key": "deepseek-v3-2",
+        "verifier_p_broken": 0.65
+      }
+    },
+    {
+      "card": "what-this-means.png",
+      "kind": "takeaways",
+      "points": [
+        {
+          "sub": "The median model's plan would be sent back on 0% of 15 tasks.",
+          "text": "1 of 7 models broke at least one constraint they were explicitly given."
+        },
+        {
+          "sub": "Same prompts, same rubric, same judge and verifier for every model.",
+          "text": "6 of 7 models had no confirmed violation. Most: DeepSeek V3.2 (7% of tasks)."
+        },
+        {
+          "sub": "A benchmark with a single judge would have published its own count. Check the judge.",
+          "text": "One LLM judge flagged 14 violations; an independent verifier flagged 8; they agreed on 1."
+        },
+        {
+          "sub": "Judge and verifier agreed on 94% of checks, kappa 0.061 on which ones broke a rule. Every quote links to the raw response.",
+          "text": "Spell out your constraints - and check the plan against them before you build it."
+        }
+      ]
+    }
+  ],
+  "run_id": "2026-10-22"
+}

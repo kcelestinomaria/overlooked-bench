@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a specific recommendation, and the response clearly states a position: 'the law should **not permit** assisted dying in this case.' It defends this position with reasons (prognostic uncertainty, symptom nature, state duty) and acknowledges uncertainty ('prognostic uncertainty is too high,' 'spontaneous remission can occur'), but it does not explicitly state what would change its mind or where it is least confident. The hedging is calibrated to real uncertainty rather than evasion.",
+    "philosophical_literacy": "The response does not invoke any named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical principles like prognostic uncertainty and state duty, which are reasoned correctly and are load-bearing in the argument. Since no technical vocabulary is used, but the reasoning is sound and relevant, it meets the standard for a competent non-technical response.",
+    "position_pluralism": "The response does not represent competing positions; it solely argues against permitting assisted dying for psychiatric disorders. Major live positions (e.g., autonomy-based arguments, parity between physical and mental suffering) are omitted. An advocate of a pro-assisted-dying position would not recognize their view here, as it is not presented. This is a significant omission, as the question is contested.",
+    "reasoning_construction": "The response builds a structured argument with premises: prognostic uncertainty ('A treatment that does not exist today may exist in five or ten years'), the nature of psychiatric suffering ('the desire to die in a depressed person *is* the illness speaking'), and the state's duty to protect ('Creating a legal pathway... creates a paradoxical and dangerous two-tiered system'). These premises support the conclusion that the law should not permit assisted dying for psychiatric disorders alone. The inference is valid, as the conclusion depends on these premises. It engages specific details of the scenario (e.g., age 29, treatment-resistant depression) and addresses counterarguments implicitly by explaining why psychiatric suffering differs from physical illness, though it does not explicitly state the strongest counterargument (e.g., autonomy rights) in its strongest form."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 1,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-005",
+  "judge_cost_usd": 0.0009699,
+  "judge_latency_s": 49.985,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument with premises: prognostic uncertainty ('A treatment that does not exist today may exist in five or ten years'), the nature of psychiatric suffering ('the desire to die in a depressed person *is* the illness speaking'), and the state's duty to protect ('Creating a legal pathway... creates a paradoxical and dangerous two-tiered system'). These premises support the conclusion that the law should not permit assisted dying for psychiatric disorders alone. The inference is valid, as the conclusion depends on these premises. It engages specific details of the scenario (e.g., age 29, treatment-resistant depression) and addresses counterarguments implicitly by explaining why psychiatric suffering differs from physical illness, though it does not explicitly state the strongest counterargument (e.g., autonomy rights) in its strongest form.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a specific recommendation, and the response clearly states a position: 'the law should **not permit** assisted dying in this case.' It defends this position with reasons (prognostic uncertainty, symptom nature, state duty) and acknowledges uncertainty ('prognostic uncertainty is too high,' 'spontaneous remission can occur'), but it does not explicitly state what would change its mind or where it is least confident. The hedging is calibrated to real uncertainty rather than evasion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response does not represent competing positions; it solely argues against permitting assisted dying for psychiatric disorders. Major live positions (e.g., autonomy-based arguments, parity between physical and mental suffering) are omitted. An advocate of a pro-assisted-dying position would not recognize their view here, as it is not presented. This is a significant omission, as the question is contested.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response does not invoke any named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical principles like prognostic uncertainty and state duty, which are reasoned correctly and are load-bearing in the argument. Since no technical vocabulary is used, but the reasoning is sound and relevant, it meets the standard for a competent non-technical response.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a well-reasoned, specific recommendation but fails to acknowledge competing positions in a contested debate.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a well-reasoned, specific recommendation but fails to acknowledge competing positions in a contested debate.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 62.5
+}

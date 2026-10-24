@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing specific analytical distortions (e.g., 'Reduction to single melody line obscures interlocking patterns'), proposing multiple alternatives (cipher systems, graphic scores, tablature), and discussing epistemological shifts ('Western notation assumes individual authorship... gamelan operates through collective transmission'). It engages with methodology and scholarly debates, showing familiarity with the literature.",
+    "domain_accuracy": "The response accurately describes core incompatibilities: 'Slendro and pelog scales don't align with Western equal temperament' (true), 'colotomic structures' (correct term), 'heterophonic texture' (accurate). It correctly mentions Javanese kepatihan notation as an alternative. No invented citations or terms detected; all claims align with established ethnomusicological knowledge.",
+    "field_situatedness": "The response uses appropriate ethnomusicological terminology ('colotomic structures', 'heterophonic texture', 'kepatihan notation') and focuses on gamelan-specific concepts without substituting Western frameworks. It emphasizes cultural context and performance practice, aligning with the field's traditions.",
+    "scholarly_calibration": "The response distinguishes between well-established concepts (e.g., colotomic structures) and more nuanced issues (e.g., 'microtonal variations... become invisible'). It acknowledges limitations ('No single alternative fully solves the problem') and presents alternatives as proposals rather than settled facts. However, it lacks explicit signaling of contested points (e.g., regional variations in tuning might be debated) and could be more specific about evidential status."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00084529,
+  "judge_latency_s": 39.513,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes core incompatibilities: 'Slendro and pelog scales don't align with Western equal temperament' (true), 'colotomic structures' (correct term), 'heterophonic texture' (accurate). It correctly mentions Javanese kepatihan notation as an alternative. No invented citations or terms detected; all claims align with established ethnomusicological knowledge.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing specific analytical distortions (e.g., 'Reduction to single melody line obscures interlocking patterns'), proposing multiple alternatives (cipher systems, graphic scores, tablature), and discussing epistemological shifts ('Western notation assumes individual authorship... gamelan operates through collective transmission'). It engages with methodology and scholarly debates, showing familiarity with the literature.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established concepts (e.g., colotomic structures) and more nuanced issues (e.g., 'microtonal variations... become invisible'). It acknowledges limitations ('No single alternative fully solves the problem') and presents alternatives as proposals rather than settled facts. However, it lacks explicit signaling of contested points (e.g., regional variations in tuning might be debated) and could be more specific about evidential status.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate ethnomusicological terminology ('colotomic structures', 'heterophonic texture', 'kepatihan notation') and focuses on gamelan-specific concepts without substituting Western frameworks. It emphasizes cultural context and performance practice, aligning with the field's traditions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate engagement with ethnomusicological issues in gamelan transcription, offering specific alternatives and epistemological insights.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate engagement with ethnomusicological issues in gamelan transcription, offering specific alternatives and epistemological insights.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

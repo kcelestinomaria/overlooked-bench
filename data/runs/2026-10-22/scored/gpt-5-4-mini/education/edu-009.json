@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the range of learners: it provides differentiation for each activity (support/core/challenge levels), uses materials at different levels, allows oral/written responses, and includes flexible grouping. Adaptations are low-cost and implementable by one tutor (e.g., word banks, sentence frames, pairing). It accounts for language needs with decoding support and vocabulary building. No generic 'differentiate as needed' lines; specific strategies are detailed. The plan works for 4-14 learners without requiring additional adults.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is a lesson plan for adult literacy. Therefore, score based on inclusivity of the learner range. The response is highly inclusive: it acknowledges diverse adult motivations (helping children, driving test, forms, messages), provides multiple practical contexts, and offers choice activities tailored to personal goals. It respects adult learners by using real-life materials and avoiding childish content. The plan is designed for irregular attendance and varying abilities, ensuring all learners can participate meaningfully.",
+    "pedagogical_soundness": "The response clearly states learning objectives: 'read and understand short practical texts', 'identify key information', 'complete a simple form or message', 'practise spelling/punctuation', and 'build confidence'. Activities align: warm-up activates vocabulary, main reading task builds comprehension with text analysis, writing task practices functional writing, and sentence building reinforces mechanics. Assessment is informal observation and task completion, which measures the practical objectives. Sequencing is logical: welcome → warm-up → reading → break → writing → sentence practice → goal stations → review. Cognitive demand is appropriate for adult literacy learners, with differentiation for varying levels. No rubric is provided, so no penalty applies there.",
+    "workload_realism": "Timings sum to 90 minutes: 10 + 10 + 20 + 5 + 20 + 15 + 10 + 10 = 100 minutes, which exceeds 90. However, the break is 5 minutes and some activities (like choice station) are flexible. Materials are realistic: whiteboard, printed texts, forms, pens/paper, highlighters—all typical for adult literacy classes. Preparation involves printing texts and forms, which is manageable. Marking is informal and ongoing, not burdensome. Class size scaling is addressed with independent/pair work and optional extensions/supports. The 100-minute total is a minor overrun but adjustments could be made easily."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-009",
+  "judge_cost_usd": 0.0013256,
+  "judge_latency_s": 58.228,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response clearly states learning objectives: 'read and understand short practical texts', 'identify key information', 'complete a simple form or message', 'practise spelling/punctuation', and 'build confidence'. Activities align: warm-up activates vocabulary, main reading task builds comprehension with text analysis, writing task practices functional writing, and sentence building reinforces mechanics. Assessment is informal observation and task completion, which measures the practical objectives. Sequencing is logical: welcome → warm-up → reading → break → writing → sentence practice → goal stations → review. Cognitive demand is appropriate for adult literacy learners, with differentiation for varying levels. No rubric is provided, so no penalty applies there.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 90 minutes: 10 + 10 + 20 + 5 + 20 + 15 + 10 + 10 = 100 minutes, which exceeds 90. However, the break is 5 minutes and some activities (like choice station) are flexible. Materials are realistic: whiteboard, printed texts, forms, pens/paper, highlighters—all typical for adult literacy classes. Preparation involves printing texts and forms, which is manageable. Marking is informal and ongoing, not burdensome. Class size scaling is addressed with independent/pair work and optional extensions/supports. The 100-minute total is a minor overrun but adjustments could be made easily.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is a lesson plan for adult literacy. Therefore, score based on inclusivity of the learner range. The response is highly inclusive: it acknowledges diverse adult motivations (helping children, driving test, forms, messages), provides multiple practical contexts, and offers choice activities tailored to personal goals. It respects adult learners by using real-life materials and avoiding childish content. The plan is designed for irregular attendance and varying abilities, ensuring all learners can participate meaningfully.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the range of learners: it provides differentiation for each activity (support/core/challenge levels), uses materials at different levels, allows oral/written responses, and includes flexible grouping. Adaptations are low-cost and implementable by one tutor (e.g., word banks, sentence frames, pairing). It accounts for language needs with decoding support and vocabulary building. No generic 'differentiate as needed' lines; specific strategies are detailed. The plan works for 4-14 learners without requiring additional adults.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a highly practical and well-differentiated lesson plan tailored to adult learners with irregular attendance and diverse goals.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This is a highly practical and well-differentiated lesson plan tailored to adult learners with irregular attendance and diverse goals.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

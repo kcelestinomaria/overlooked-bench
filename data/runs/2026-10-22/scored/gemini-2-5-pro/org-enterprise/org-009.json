@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for a recommendation with reasoning and, if taking the contract, what must change first. The response provides a clear conditional recommendation ('conditionally pursue the contract, but do not sign it immediately') and a detailed 5-step action plan with specific elements like workflow audits, shift systems, contract renegotiation points, and contingency plans. It produces a usable deliverable that could be taken into a meeting with light editing, covering capacity analysis, penalty exposure, working capital (implied in financial modeling), and employment model impacts.",
+    "constraint_fidelity": "The prompt describes a 15-person social enterprise in Jakarta with a disability-focused employment model. The response acknowledges the small team size ('A 15-person team cannot suddenly handle triple the volume') and proposes hiring more staff and implementing shifts, but does not explicitly check if the budget or reserves can support this expansion. It mentions financial modeling ('Create a new budget') but does not provide specific arithmetic or show that the numbers add up within the enterprise's likely constraints. It respects the jurisdiction and social mission but does not fully demonstrate fidelity to financial or capacity constraints with calculable details.",
+    "contextual_realism": "The response shows strong awareness of small-organisation realities: it notes role overlap ('You may need to bring in an experienced Operations Manager'), acknowledges external factors like Jakarta traffic and power outages, and emphasizes the need for contingency plans and redundancy. However, it assumes the organisation can hire new roles like 'Operations/Shift Manager' and 'Logistics/Delivery Coordinator' and invest in industrial equipment and backup machines without explicitly addressing whether the budget or funding allows for this. It recognizes key constraints but may overestimate resource capacity in some recommendations.",
+    "jurisdictional_accuracy": "The prompt involves Jakarta, Indonesia, but does not explicitly touch on law or regulation. The response avoids US-specific assumptions and focuses on general operational and financial advice. It mentions local factors like 'Jakarta's traffic' and 'public holidays' contextually. There are no jurisdictional inaccuracies or unsupported legal claims; the advice is factually sound and generic, so this dimension is scored on general accuracy, which is solid."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 2,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-009",
+  "judge_cost_usd": 0.00115552,
+  "judge_latency_s": 57.954,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 15-person social enterprise in Jakarta with a disability-focused employment model. The response acknowledges the small team size ('A 15-person team cannot suddenly handle triple the volume') and proposes hiring more staff and implementing shifts, but does not explicitly check if the budget or reserves can support this expansion. It mentions financial modeling ('Create a new budget') but does not provide specific arithmetic or show that the numbers add up within the enterprise's likely constraints. It respects the jurisdiction and social mission but does not fully demonstrate fidelity to financial or capacity constraints with calculable details.\",\n      \"score\": 2\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response shows strong awareness of small-organisation realities: it notes role overlap ('You may need to bring in an experienced Operations Manager'), acknowledges external factors like Jakarta traffic and power outages, and emphasizes the need for contingency plans and redundancy. However, it assumes the organisation can hire new roles like 'Operations/Shift Manager' and 'Logistics/Delivery Coordinator' and invest in industrial equipment and backup machines without explicitly addressing whether the budget or funding allows for this. It recognizes key constraints but may overestimate resource capacity in some recommendations.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for a recommendation with reasoning and, if taking the contract, what must change first. The response provides a clear conditional recommendation ('conditionally pursue the contract, but do not sign it immediately') and a detailed 5-step action plan with specific elements like workflow audits, shift systems, contract renegotiation points, and contingency plans. It produces a usable deliverable that could be taken into a meeting with light editing, covering capacity analysis, penalty exposure, working capital (implied in financial modeling), and employment model impacts.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Jakarta, Indonesia, but does not explicitly touch on law or regulation. The response avoids US-specific assumptions and focuses on general operational and financial advice. It mentions local factors like 'Jakarta's traffic' and 'public holidays' contextually. There are no jurisdictional inaccuracies or unsupported legal claims; the advice is factually sound and generic, so this dimension is scored on general accuracy, which is solid.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a highly actionable and well-reasoned conditional plan but lacks explicit financial arithmetic to fully validate constraint fidelity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a highly actionable and well-reasoned conditional plan but lacks explicit financial arithmetic to fully validate constraint fidelity.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 73.75
+}

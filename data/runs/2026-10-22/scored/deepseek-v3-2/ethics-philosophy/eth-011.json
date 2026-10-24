@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Which should she choose, and why? Give a recommendation.'), and the response states a clear position: 'I recommend the hiring manager choose the fully blind process'. It provides reasons ('Focus on merit', 'Legal and ethical clarity', etc.) and does not evade with phrases like 'it depends on your values'. However, it does not acknowledge uncertainty or state what would change its mind (e.g., if evidence showed blind processes fail to address systemic biases), presenting the recommendation as definitive without calibrated hedging. This is solid but lacks explicit uncertainty handling.",
+    "philosophical_literacy": "The response uses no named thinkers, traditions, or technical philosophical terms (e.g., deontology, utilitarianism). It relies on practical concepts like 'merit', 'fairness', and 'bias', which are applied accurately and are load-bearing in the argument (e.g., 'focus on merit' supports the recommendation). There are no inaccuracies or misattributions, and the reasoning is correct for the context, though it lacks philosophical depth. This meets the standard for solid performance without technical vocabulary.",
+    "position_pluralism": "The major live positions on this contested question include: (1) blind processes for fairness/merit, (2) weighted processes to correct historical inequities, and (3) hybrid approaches. The response only presents the blind process position in detail and briefly alludes to 'perceptions of reverse discrimination' as a counterpoint, but does not represent the pro-weighting position as an advocate would (e.g., arguing for corrective justice or diversity benefits). It omits a major live position entirely and does not engage with it fairly, leading to a partial treatment.",
+    "reasoning_construction": "The response reaches a clear conclusion ('I recommend the hiring manager choose the fully blind process') and provides premises: focus on merit, legal/ethical clarity, long-term fairness, alternative diversity methods, and sustainability. The inference from premises to conclusion is valid (blind process promotes fairness and merit while avoiding bias), and it engages with specific details of the hiring scenario (e.g., 'structured interviews', 'track diversity metrics'). However, it does not address the strongest counterargument (e.g., that blind processes may perpetuate systemic biases by ignoring historical disadvantages) in a substantive way—it only mentions avoiding 'reverse discrimination' perceptions superficially. This is partial engagement with counterarguments."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-011",
+  "judge_cost_usd": 0.00091193,
+  "judge_latency_s": 21.322,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response reaches a clear conclusion ('I recommend the hiring manager choose the fully blind process') and provides premises: focus on merit, legal/ethical clarity, long-term fairness, alternative diversity methods, and sustainability. The inference from premises to conclusion is valid (blind process promotes fairness and merit while avoiding bias), and it engages with specific details of the hiring scenario (e.g., 'structured interviews', 'track diversity metrics'). However, it does not address the strongest counterargument (e.g., that blind processes may perpetuate systemic biases by ignoring historical disadvantages) in a substantive way—it only mentions avoiding 'reverse discrimination' perceptions superficially. This is partial engagement with counterarguments.\",\n      \"score\": 2\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Which should she choose, and why? Give a recommendation.'), and the response states a clear position: 'I recommend the hiring manager choose the fully blind process'. It provides reasons ('Focus on merit', 'Legal and ethical clarity', etc.) and does not evade with phrases like 'it depends on your values'. However, it does not acknowledge uncertainty or state what would change its mind (e.g., if evidence showed blind processes fail to address systemic biases), presenting the recommendation as definitive without calibrated hedging. This is solid but lacks explicit uncertainty handling.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The major live positions on this contested question include: (1) blind processes for fairness/merit, (2) weighted processes to correct historical inequities, and (3) hybrid approaches. The response only presents the blind process position in detail and briefly alludes to 'perceptions of reverse discrimination' as a counterpoint, but does not represent the pro-weighting position as an advocate would (e.g., arguing for corrective justice or diversity benefits). It omits a major live position entirely and does not engage with it fairly, leading to a partial treatment.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers, traditions, or technical philosophical terms (e.g., deontology, utilitarianism). It relies on practical concepts like 'merit', 'fairness', and 'bias', which are applied accurately and are load-bearing in the argument (e.g., 'focus on merit' supports the recommendation). There are no inaccuracies or misattributions, and the reasoning is correct for the context, though it lacks philosophical depth. This meets the standard for solid performance without technical vocabulary.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a clear, practical recommendation but lacks engagement with key counterarguments and rival positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a clear, practical recommendation but lacks engagement with key counterarguments and rival positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 60.0
+}

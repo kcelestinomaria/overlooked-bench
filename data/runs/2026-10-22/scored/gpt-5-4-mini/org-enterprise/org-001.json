@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a hiring plan with concrete components: roles (Programme Manager, Finance & Admin Officer, etc.), sequence (phased hiring timeline), salary bands in KES (e.g., Programme Manager 180,000–240,000 KES), employer on-costs (10% assumption), arithmetic (totals and conversion), and fit within grant envelope. It is usable with light editing (e.g., final budget table and timeline) and does not merely describe the process.",
+    "constraint_fidelity": "The response respects all constraints: uses Kenyan NGO salary bands, includes employer statutory on-costs (NSSF, SHIF, SDL), fits within the direct-cost envelope (USD 109,575 < USD 153,000), shows arithmetic for grant breakdown (15% indirect = USD 27,000, direct = USD 153,000), staff cost calculations (e.g., Programme Manager: 210,000 KES × 24 = 5,040,000 KES + 10% on-costs = 504,000 KES), and exchange rate conversion (KES 17,532,000 ÷ 160 = USD 109,575). It explicitly justifies the 10% on-cost assumption and casual labor handling.",
+    "contextual_realism": "The response is calibrated for a small Kenyan NGO: no dedicated HR (ED handles hiring, with practical notes like 'use written job descriptions' and 'simple approval matrix'), avoids expensive tools (e.g., no ATS or recruiter), uses part-time/shared roles (Finance & Admin Officer as 'part-time or shared'), acknowledges casual labor, and sequences hiring to reduce burn rate. It recognizes role overlap and resource constraints (e.g., 'build a small, field-lean programme team').",
+    "jurisdictional_accuracy": "The response uses Kenyan-specific elements: salary bands for Kenyan NGO sector, statutory on-costs (NSSF, SHIF, SDL), and avoids US assumptions (no equity compensation or US benefits). It correctly identifies employer obligations and uses a local exchange rate (1 USD = 160 KES). However, it does not flag areas requiring local professional advice (e.g., casual labor structuring or exact statutory rates), but provides substantive content rather than generic disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00149219,
+  "judge_latency_s": 54.267,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: uses Kenyan NGO salary bands, includes employer statutory on-costs (NSSF, SHIF, SDL), fits within the direct-cost envelope (USD 109,575 < USD 153,000), shows arithmetic for grant breakdown (15% indirect = USD 27,000, direct = USD 153,000), staff cost calculations (e.g., Programme Manager: 210,000 KES × 24 = 5,040,000 KES + 10% on-costs = 504,000 KES), and exchange rate conversion (KES 17,532,000 ÷ 160 = USD 109,575). It explicitly justifies the 10% on-cost assumption and casual labor handling.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Kenyan NGO: no dedicated HR (ED handles hiring, with practical notes like 'use written job descriptions' and 'simple approval matrix'), avoids expensive tools (e.g., no ATS or recruiter), uses part-time/shared roles (Finance & Admin Officer as 'part-time or shared'), acknowledges casual labor, and sequences hiring to reduce burn rate. It recognizes role overlap and resource constraints (e.g., 'build a small, field-lean programme team').\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a hiring plan with concrete components: roles (Programme Manager, Finance & Admin Officer, etc.), sequence (phased hiring timeline), salary bands in KES (e.g., Programme Manager 180,000–240,000 KES), employer on-costs (10% assumption), arithmetic (totals and conversion), and fit within grant envelope. It is usable with light editing (e.g., final budget table and timeline) and does not merely describe the process.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response uses Kenyan-specific elements: salary bands for Kenyan NGO sector, statutory on-costs (NSSF, SHIF, SDL), and avoids US assumptions (no equity compensation or US benefits). It correctly identifies employer obligations and uses a local exchange rate (1 USD = 160 KES). However, it does not flag areas requiring local professional advice (e.g., casual labor structuring or exact statutory rates), but provides substantive content rather than generic disclaimers.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is a highly practical and well-calibrated hiring plan that respects all constraints and is immediately usable for a small Kenyan NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is a highly practical and well-calibrated hiring plan that respects all constraints and is immediately usable for a small Kenyan NGO.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

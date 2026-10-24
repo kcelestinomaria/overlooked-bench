@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the range of learners: large class size (55) is managed with group roles (reader, writer, speaker); limited textbooks are accommodated with shared reading; no electricity or printing is handled with chalkboard and oral activities. Differentiation is concrete: think-pair-share, group work, oral and written assessments. However, it lacks specific adaptations for varying prior attainment, language barriers, or additional needs beyond general group strategies.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is a statistics scheme of work. The response is inclusive of the rural Malawian context, using locally relevant examples (farming, market prices, rainfall) and activities accessible to all learners without assuming prior resources. It does not default to a university track or exclude any learner types.",
+    "pedagogical_soundness": "The response provides clear learning objectives for Week 1 (e.g., 'Define statistics in simple terms,' 'Identify examples of data from daily life'). Activities align with objectives: Lesson 1 uses discussion and pair work to define statistics and identify examples; Lesson 2 sorts data types; Lesson 3 identifies sources; Lessons 4-5 involve data collection and interpretation. Sequencing is logical: starts with concepts, moves to application. Assessment methods (oral questions, observation, written exercises) match objectives. However, cognitive demand is appropriate for Grade 8, using concrete examples and hands-on activities.",
+    "workload_realism": "Timings sum to 4-5 lessons of 35-40 minutes each, fitting a week. Resources are realistic: chalkboard, textbooks (shared), exercise books, local objects (stones, sticks). No electricity, printing, or digital tools are used. Class size of 55 is addressed with group work (pairs, groups of 4-6) and whole-class activities, avoiding one-to-one attention. Preparation and marking load is manageable (oral assessments, group checks). Materials are locally available and free."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-005",
+  "judge_cost_usd": 0.00132703,
+  "judge_latency_s": 41.75,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives for Week 1 (e.g., 'Define statistics in simple terms,' 'Identify examples of data from daily life'). Activities align with objectives: Lesson 1 uses discussion and pair work to define statistics and identify examples; Lesson 2 sorts data types; Lesson 3 identifies sources; Lessons 4-5 involve data collection and interpretation. Sequencing is logical: starts with concepts, moves to application. Assessment methods (oral questions, observation, written exercises) match objectives. However, cognitive demand is appropriate for Grade 8, using concrete examples and hands-on activities.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 4-5 lessons of 35-40 minutes each, fitting a week. Resources are realistic: chalkboard, textbooks (shared), exercise books, local objects (stones, sticks). No electricity, printing, or digital tools are used. Class size of 55 is addressed with group work (pairs, groups of 4-6) and whole-class activities, avoiding one-to-one attention. Preparation and marking load is manageable (oral assessments, group checks). Materials are locally available and free.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is a statistics scheme of work. The response is inclusive of the rural Malawian context, using locally relevant examples (farming, market prices, rainfall) and activities accessible to all learners without assuming prior resources. It does not default to a university track or exclude any learner types.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the range of learners: large class size (55) is managed with group roles (reader, writer, speaker); limited textbooks are accommodated with shared reading; no electricity or printing is handled with chalkboard and oral activities. Differentiation is concrete: think-pair-share, group work, oral and written assessments. However, it lacks specific adaptations for varying prior attainment, language barriers, or additional needs beyond general group strategies.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response is highly realistic and pedagogically sound for the rural Malawian context, with careful attention to resource constraints and local relevance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response is highly realistic and pedagogically sound for the rural Malawian context, with careful attention to resource constraints and local relevance.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

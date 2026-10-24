@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by detailing script characteristics (e.g., 'bilinearity' for Asomtavruli, 'four-line system' for Nuskhuri), discussing the Xucuri hierarchical system, linking script use to material changes (parchment vs. paper), and identifying regional scriptoria styles (e.g., Tao-Klarjeti's 'severe angularity', Gelati's 'elegant style'). It engages with methodological aspects like stylistic analysis for dating and provenance, showing familiarity with specialist literature.",
+    "domain_accuracy": "The response makes specific claims: Asomtavruli developed 4th-5th centuries AD, dominant until 9th century; Nuskhuri emerged 9th century, primary from 10th-18th; Mkhedruli developed 10th-11th centuries, became sole script after 18th; Xucuri system from 9th century onward; regional scriptoria like Tao-Klarjeti (9th-10th centuries), Gelati (12th-13th), Svaneti. These align with established Georgian palaeography scholarship. No invented citations, terms, or consensus noted.",
+    "field_situatedness": "The response uses field-specific terminology: 'Asomtavruli', 'Nuskhuri', 'Mkhedruli', 'Xucuri', 'colophons', 'scriptoria', and references Georgian regions (Tao-Klarjeti, Gelati, Svaneti). It employs the frameworks of Georgian palaeography, such as linking scripts to historical periods and provenance, without substituting Western or Anglophone framings. Non-English terms are central and appropriately used.",
+    "scholarly_calibration": "The response distinguishes evidential status: uses 'almost certainly' for pure Asomtavruli dating pre-10th century, 'indicates' for Xucuri system, 'suggests' and 'points to' for Mkhedruli use, and notes stylistic evolution allows 'more precise dating'. It avoids blanket disclaimers and presents contested points (e.g., regional variations) as hypotheses without overstating certainty. However, it could be more explicit on uncertainties in specific dating ranges."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-007",
+  "judge_cost_usd": 0.00113728,
+  "judge_latency_s": 23.158,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims: Asomtavruli developed 4th-5th centuries AD, dominant until 9th century; Nuskhuri emerged 9th century, primary from 10th-18th; Mkhedruli developed 10th-11th centuries, became sole script after 18th; Xucuri system from 9th century onward; regional scriptoria like Tao-Klarjeti (9th-10th centuries), Gelati (12th-13th), Svaneti. These align with established Georgian palaeography scholarship. No invented citations, terms, or consensus noted.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by detailing script characteristics (e.g., 'bilinearity' for Asomtavruli, 'four-line system' for Nuskhuri), discussing the Xucuri hierarchical system, linking script use to material changes (parchment vs. paper), and identifying regional scriptoria styles (e.g., Tao-Klarjeti's 'severe angularity', Gelati's 'elegant style'). It engages with methodological aspects like stylistic analysis for dating and provenance, showing familiarity with specialist literature.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes evidential status: uses 'almost certainly' for pure Asomtavruli dating pre-10th century, 'indicates' for Xucuri system, 'suggests' and 'points to' for Mkhedruli use, and notes stylistic evolution allows 'more precise dating'. It avoids blanket disclaimers and presents contested points (e.g., regional variations) as hypotheses without overstating certainty. However, it could be more explicit on uncertainties in specific dating ranges.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses field-specific terminology: 'Asomtavruli', 'Nuskhuri', 'Mkhedruli', 'Xucuri', 'colophons', 'scriptoria', and references Georgian regions (Tao-Klarjeti, Gelati, Svaneti). It employs the frameworks of Georgian palaeography, such as linking scripts to historical periods and provenance, without substituting Western or Anglophone framings. Non-English terms are central and appropriately used.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates substantive competence in Georgian palaeography with accurate, detailed, and well-situated explanations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response demonstrates substantive competence in Georgian palaeography with accurate, detailed, and well-situated explanations.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

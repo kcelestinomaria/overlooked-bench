@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states a position: 'Yes—but only under a carefully stated principle' and 'The NGO is right to intervene'. It provides calibrated uncertainty by specifying conditions (e.g., intervention must be proportionate, not arrogant) and acknowledges counterarguments (e.g., hypocrisy objection). It states what would change its mind implicitly (if harm were minimal or consent were free) and is honest about tensions (e.g., cultural importance vs. harm).",
+    "philosophical_literacy": "The response uses terms like 'cultural relativism', 'paternalistic universalism', and 'consent', but does not invoke specific philosophers or technical philosophical concepts. The terms are used accurately (e.g., cultural relativism as non-judgment, paternalism as imposing values) and are load-bearing in the argument (e.g., to frame the principle and counter extremes). No misattributions or garbled terms are present. Reasoning is correct without dense references.",
+    "position_pluralism": "Major live positions include cultural relativism (no intervention) and paternalistic universalism (intervention without respect). The response explicitly names and characterizes both: 'Cultural relativism without limit' as avoiding judgment even with harm, and 'Paternalistic universalism' as suppressing unfamiliar practices. An advocate of relativism might accept the characterization as avoiding judgment, and a universalist might accept the criticism of arrogance. It does not strawman or omit major positions, and avoids false balance by not elevating fringe views.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is that NGO intervention is justified under a specific principle (substantial non-consensual harm to minors). Premises include: 14-year-olds cannot give fully free consent due to social constraints, real infection risk exists, cultural importance doesn't erase harm, and intervention should be gradual and respectful. It engages specifics (age, infection risk, cultural context), addresses a strong counterargument (hypocrisy in singling out non-Western practices) by emphasizing consistent application of harm/consent criteria, and inferences are valid (e.g., harm + lack of consent justifies intervention)."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 3,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-003",
+  "judge_cost_usd": 0.00101383,
+  "judge_latency_s": 47.85,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is that NGO intervention is justified under a specific principle (substantial non-consensual harm to minors). Premises include: 14-year-olds cannot give fully free consent due to social constraints, real infection risk exists, cultural importance doesn't erase harm, and intervention should be gradual and respectful. It engages specifics (age, infection risk, cultural context), addresses a strong counterargument (hypocrisy in singling out non-Western practices) by emphasizing consistent application of harm/consent criteria, and inferences are valid (e.g., harm + lack of consent justifies intervention).\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states a position: 'Yes—but only under a carefully stated principle' and 'The NGO is right to intervene'. It provides calibrated uncertainty by specifying conditions (e.g., intervention must be proportionate, not arrogant) and acknowledges counterarguments (e.g., hypocrisy objection). It states what would change its mind implicitly (if harm were minimal or consent were free) and is honest about tensions (e.g., cultural importance vs. harm).\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include cultural relativism (no intervention) and paternalistic universalism (intervention without respect). The response explicitly names and characterizes both: 'Cultural relativism without limit' as avoiding judgment even with harm, and 'Paternalistic universalism' as suppressing unfamiliar practices. An advocate of relativism might accept the characterization as avoiding judgment, and a universalist might accept the criticism of arrogance. It does not strawman or omit major positions, and avoids false balance by not elevating fringe views.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses terms like 'cultural relativism', 'paternalistic universalism', and 'consent', but does not invoke specific philosophers or technical philosophical concepts. The terms are used accurately (e.g., cultural relativism as non-judgment, paternalism as imposing values) and are load-bearing in the argument (e.g., to frame the principle and counter extremes). No misattributions or garbled terms are present. Reasoning is correct without dense references.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, principled argument that engages deeply with the ethical tensions and specifics of the scenario.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned, principled argument that engages deeply with the ethical tensions and specifics of the scenario.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 96.25
+}

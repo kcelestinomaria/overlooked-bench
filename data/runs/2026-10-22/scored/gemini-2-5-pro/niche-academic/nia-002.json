@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing specific methodological challenges (e.g., intra-annual bands, lobate growth) and advanced techniques like X-ray densitometry and stable isotope analysis. It explains mechanisms (e.g., how isotopes reflect environmental signals) and mentions practical applications (e.g., validating chronologies with bomb-pulse dating). A specialist would recognize this as engagement with technical literature, not just a summary.",
+    "domain_accuracy": "The response makes substantive claims that are accurate: it correctly identifies lack of annual seasonality, false rings, missing rings, indistinct boundaries, species diversity, and decay as key problems. It accurately describes site/species selection, anatomical/densitometric analysis, stable isotope methods (correctly explaining carbon and oxygen isotope roles), and bomb-pulse radiocarbon dating. Examples like teak and Cedrela are valid. No invented citations or terms are present.",
+    "field_situatedness": "The response uses correct terminology (e.g., 'dendrochronology', 'master chronology', 'false rings', 'stable isotopes', 'radiocarbon bomb-pulse') and frameworks specific to the field. It does not substitute a Western framing but addresses tropical contexts directly, referencing regions like monsoon Asia and Amazonia. It aligns with the scholarly conventions of dendrochronology and related environmental sciences.",
+    "scholarly_calibration": "The response distinguishes well-established from more specific methods: it presents the general problems as fundamental challenges but notes that approaches like species selection are straightforward, while isotope and bomb-pulse methods are breakthroughs. It does not overstate certainty—e.g., it says isotopic cycles 'can be' clear and rings are 'often' faint. However, it lacks explicit calibration on contested points (e.g., no mention of debates over isotope interpretation in some species), so it is solid but not excellent."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-002",
+  "judge_cost_usd": 0.00110479,
+  "judge_latency_s": 47.792,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are accurate: it correctly identifies lack of annual seasonality, false rings, missing rings, indistinct boundaries, species diversity, and decay as key problems. It accurately describes site/species selection, anatomical/densitometric analysis, stable isotope methods (correctly explaining carbon and oxygen isotope roles), and bomb-pulse radiocarbon dating. Examples like teak and Cedrela are valid. No invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing specific methodological challenges (e.g., intra-annual bands, lobate growth) and advanced techniques like X-ray densitometry and stable isotope analysis. It explains mechanisms (e.g., how isotopes reflect environmental signals) and mentions practical applications (e.g., validating chronologies with bomb-pulse dating). A specialist would recognize this as engagement with technical literature, not just a summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from more specific methods: it presents the general problems as fundamental challenges but notes that approaches like species selection are straightforward, while isotope and bomb-pulse methods are breakthroughs. It does not overstate certainty—e.g., it says isotopic cycles 'can be' clear and rings are 'often' faint. However, it lacks explicit calibration on contested points (e.g., no mention of debates over isotope interpretation in some species), so it is solid but not excellent.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct terminology (e.g., 'dendrochronology', 'master chronology', 'false rings', 'stable isotopes', 'radiocarbon bomb-pulse') and frameworks specific to the field. It does not substitute a Western framing but addresses tropical contexts directly, referencing regions like monsoon Asia and Amazonia. It aligns with the scholarly conventions of dendrochronology and related environmental sciences.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates high competence in tropical dendrochronology with accurate, detailed explanations of problems and solutions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates high competence in tropical dendrochronology with accurate, detailed explanations of problems and solutions.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

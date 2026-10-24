@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response states a clear position: 'should not permit' with an exception. It defends this with reasons (complexities, risks) and shows calibrated uncertainty by allowing for exceptions under strict conditions. It implies what would change its mind (meeting the safeguards) but does not explicitly state where it is weakest or least confident.",
+    "philosophical_literacy": "The response uses no named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical and medical reasoning (e.g., 'irremediability', 'societal risks') without philosophical framework invocation. The concepts are accurate and relevant to the argument, but lack philosophical depth, though this is not required for competence.",
+    "position_pluralism": "Major live positions include permitting assisted dying for psychiatric conditions (autonomy, suffering relief) and restricting it (slippery slope, irremediability uncertainty). The response focuses on the restrictive position with an exception, omitting a full representation of the permissive position. An advocate for permitting might not recognize their view fairly characterized, as the response emphasizes risks without acknowledging autonomy arguments. No false balance is present, but omission of key positions reduces fairness.",
+    "reasoning_construction": "The response reaches a conclusion: 'The law should not permit assisted dying... unless the following strict condition is met.' It provides premises: the complexities of diagnosing irremediability in mental illness, evolving treatments, societal risks, and the need for exhaustive safeguards. The inference is valid as the conclusion depends on these premises. It engages specific details (e.g., age 29, treatment-resistant depression, two refusals) and addresses counterarguments by proposing an exception pathway, though it does not explicitly state the strongest counterargument (e.g., autonomy and suffering of competent individuals) in its strongest form."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-005",
+  "judge_cost_usd": 0.000794,
+  "judge_latency_s": 23.3,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response reaches a conclusion: 'The law should not permit assisted dying... unless the following strict condition is met.' It provides premises: the complexities of diagnosing irremediability in mental illness, evolving treatments, societal risks, and the need for exhaustive safeguards. The inference is valid as the conclusion depends on these premises. It engages specific details (e.g., age 29, treatment-resistant depression, two refusals) and addresses counterarguments by proposing an exception pathway, though it does not explicitly state the strongest counterargument (e.g., autonomy and suffering of competent individuals) in its strongest form.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response states a clear position: 'should not permit' with an exception. It defends this with reasons (complexities, risks) and shows calibrated uncertainty by allowing for exceptions under strict conditions. It implies what would change its mind (meeting the safeguards) but does not explicitly state where it is weakest or least confident.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include permitting assisted dying for psychiatric conditions (autonomy, suffering relief) and restricting it (slippery slope, irremediability uncertainty). The response focuses on the restrictive position with an exception, omitting a full representation of the permissive position. An advocate for permitting might not recognize their view fairly characterized, as the response emphasizes risks without acknowledging autonomy arguments. No false balance is present, but omission of key positions reduces fairness.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical and medical reasoning (e.g., 'irremediability', 'societal risks') without philosophical framework invocation. The concepts are accurate and relevant to the argument, but lack philosophical depth, though this is not required for competence.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a specific, well-reasoned recommendation with practical safeguards but lacks full engagement with opposing philosophical positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a specific, well-reasoned recommendation with practical safeguards but lacks full engagement with opposing philosophical positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 68.75
+}

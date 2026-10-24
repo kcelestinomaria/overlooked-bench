@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 260,
+  "cost_usd": 0.00054362,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 6.677,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 101,
+  "provider": "deepseek",
+  "request_fingerprint": "6bd95258d720df79",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "Let’s go step-by-step.  \n\n**Step 1: Coffee after drying**  \nInitial mass = 4,800 kg  \nLoss during drying = 15% of 4,800 kg  \n\\[\n0.15 \\times 4800 = 720 \\text{ kg lost}\n\\]  \nMass after drying:  \n\\[\n4800 - 720 = 4080 \\text{ kg}\n\\]  \n\n**Step 2: Grading the dried coffee**  \n40% is graded AA:  \n\\[\n0.40 \\times 4080 = 1632 \\text{ kg AA}\n\\]  \nThe rest:  \n\\[\n4080 - 1632 = 2448 \\text{ kg non-AA}\n\\]  \n\n**Step 3: Revenue from each grade**  \nAA price = $6.20/kg  \n\\[\n1632 \\times 6.20 = 10118.40\n\\]  \nNon-AA price = $4.50/kg  \n\\[\n2448 \\times 4.50 = 11016.00\n\\]  \n\n**Step 4: Total revenue**  \n\\[\n10118.40 + 11016.00 = 21134.40\n\\]  \n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-10-21T23:55:55Z"
+}

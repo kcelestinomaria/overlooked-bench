@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses differentiation for language learners, e.g., 'Pair students who share a home language', 'Use sentence starters and frames', and 'Check understanding without relying on language alone'. Strategies are specific, low-cost, and implementable by one teacher, such as 'Pre-teach key vocabulary' and 'Use thumbs up/down, drawing'. It avoids generic placeholder language and provides actionable advice for the described setting.",
+    "pathway_breadth": "The prompt does not involve student futures or pathway guidance; it focuses on language support in the classroom. The response is inclusive of the range of learners (Arabic, Spanish, Tagalog speakers) and treats home languages as assets, e.g., 'Leverage home languages as an asset' and 'Allow students to think or jot notes in their home language'. It addresses the specific Quebec context and learner diversity substantively.",
+    "pedagogical_soundness": "The response provides sound pedagogical strategies but lacks explicit learning objectives, activities, and assessments. It offers general principles like 'scaffold language and content together' and 'check understanding without relying on language alone', but does not specify how these align with measurable outcomes or cognitive levels. The advice is educationally valid but not structured as a complete pedagogical plan with objectives, activities, and assessments.",
+    "workload_realism": "The strategies are feasible for one teacher with no assistant and no knowledge of home languages, as they rely on visuals, gestures, peer pairing, and simple tools like translation apps. No unrealistic materials or excessive preparation are suggested. For example, 'Pair spoken instructions with gestures, images, objects' and 'Use translation apps... for communication' are low-cost and implementable. Timings are not specified, but the advice is general and adaptable to real constraints."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 2,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00086032,
+  "judge_latency_s": 47.349,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides sound pedagogical strategies but lacks explicit learning objectives, activities, and assessments. It offers general principles like 'scaffold language and content together' and 'check understanding without relying on language alone', but does not specify how these align with measurable outcomes or cognitive levels. The advice is educationally valid but not structured as a complete pedagogical plan with objectives, activities, and assessments.\",\n      \"score\": 2\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The strategies are feasible for one teacher with no assistant and no knowledge of home languages, as they rely on visuals, gestures, peer pairing, and simple tools like translation apps. No unrealistic materials or excessive preparation are suggested. For example, 'Pair spoken instructions with gestures, images, objects' and 'Use translation apps... for communication' are low-cost and implementable. Timings are not specified, but the advice is general and adaptable to real constraints.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt does not involve student futures or pathway guidance; it focuses on language support in the classroom. The response is inclusive of the range of learners (Arabic, Spanish, Tagalog speakers) and treats home languages as assets, e.g., 'Leverage home languages as an asset' and 'Allow students to think or jot notes in their home language'. It addresses the specific Quebec context and learner diversity substantively.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses differentiation for language learners, e.g., 'Pair students who share a home language', 'Use sentence starters and frames', and 'Check understanding without relying on language alone'. Strategies are specific, low-cost, and implementable by one teacher, such as 'Pre-teach key vocabulary' and 'Use thumbs up/down, drawing'. It avoids generic placeholder language and provides actionable advice for the described setting.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides practical, asset-based strategies tailored to the Quebec primary school context with no assistant, but lacks explicit pedagogical structuring.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides practical, asset-based strategies tailored to the Quebec primary school context with no assistant, but lacks explicit pedagogical structuring.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 78.75
+}

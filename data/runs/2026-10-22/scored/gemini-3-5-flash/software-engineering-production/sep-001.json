@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with code snippets, rollout plan with weekly breakdown and owners (engineers 1-3), concrete commands (Gunicorn config), and verification steps (load testing, shadow mode). An engineer could execute this with light editing.",
+    "constraint_fidelity": "The response explicitly respects all constraints: no new infrastructure services (uses in-memory and existing PostgreSQL), 3 engineers and 4 weeks timeline (detailed rollout plan), p99 latency projection of 181 ms (below 220 ms), and $0 cloud spend increase (within 8% cap). It shows arithmetic for capacity, cost, and latency.",
+    "maintainability": "Identifies ownership (backend team), states risks explicitly (load imbalance, data loss, lock contention, GIL), provides mitigations, and uses clear seams (middleware, background thread). Complexity is proportionate (in-memory state, batch writes). However, threading model adds maintenance complexity compared to multi-process.",
+    "production_realism": "Addresses scale (1,200 rps, 6 containers), load balancing imbalance (burst factor 1.2), failure modes (container crash data loss mitigation via graceful shutdown, lock contention mitigation via jitter), and operational burden (threaded Gunicorn configuration, background flusher). However, relies on Gunicorn threading transition which may introduce GIL risks, though mitigated by I/O-bound nature."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.00194579,
+  "judge_latency_s": 45.193,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: no new infrastructure services (uses in-memory and existing PostgreSQL), 3 engineers and 4 weeks timeline (detailed rollout plan), p99 latency projection of 181 ms (below 220 ms), and $0 cloud spend increase (within 8% cap). It shows arithmetic for capacity, cost, and latency.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses scale (1,200 rps, 6 containers), load balancing imbalance (burst factor 1.2), failure modes (container crash data loss mitigation via graceful shutdown, lock contention mitigation via jitter), and operational burden (threaded Gunicorn configuration, background flusher). However, relies on Gunicorn threading transition which may introduce GIL risks, though mitigated by I/O-bound nature.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with code snippets, rollout plan with weekly breakdown and owners (engineers 1-3), concrete commands (Gunicorn config), and verification steps (load testing, shadow mode). An engineer could execute this with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Identifies ownership (backend team), states risks explicitly (load imbalance, data loss, lock contention, GIL), provides mitigations, and uses clear seams (middleware, background thread). Complexity is proportionate (in-memory state, batch writes). However, threading model adds maintenance complexity compared to multi-process.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design with detailed arithmetic and risk mitigation.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design with detailed arithmetic and risk mitigation.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

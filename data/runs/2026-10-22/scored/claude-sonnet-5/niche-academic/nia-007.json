@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing script evolution (e.g., Asomtavruli becoming decorative by 9th-10th c.), specific letterform changes (e.g., shapes of ღ, ყ, ხ), and regional scribal schools (Palestinian-Georgian vs. Georgia proper distinctions). It discusses methodological cross-checking with codicology and colophons, and notes archaizing practices. A specialist would recognize engagement with palaeographic debates (e.g., dating precision through script proportions) and evidence types (inscriptions vs. manuscripts).",
+    "domain_accuracy": "The response makes specific claims: Asomtavruli attested from 5th century (Bir el-Qutt, Bolnisi Sioni c. 494), Nuskhuri emerges 9th century, Mkhedruli appears 10th-11th century. These dates align with established palaeographic scholarship. It correctly describes Asomtavruli as monumental and uniform, Nuskhuri as angular with ascenders/descenders, and Mkhedruli as rounded/cursive. It accurately notes the bicameral Khutsuri system and liturgical vs. secular usage. No invented citations or terms are present. Minor quibble: 'Khutsuri' refers to the combined system, not just Nuskhuri, but this is nuanced rather than incorrect.",
+    "field_situatedness": "The response uses correct Georgian terminology (Asomtavruli, Nuskhuri, Mkhedruli, Khutsuri) and engages with Georgian-specific contexts (monastic centers like Mt. Sinai, Iviron, Shatberdi; Rustaveli's work). It does not substitute Western frameworks but stays focused on Georgian palaeographic traditions, including non-Anglophone scholarship implicitly through accurate details.",
+    "scholarly_calibration": "The response signals uncertainty appropriately: 'roughly the 10th–11th centuries' for Mkhedruli emergence, and cautions that 'script alone' is insufficient for dating, requiring cross-checking. It distinguishes well-established facts (Asomtavruli's early use) from more nuanced claims (regional script habits). However, it presents some contested points (e.g., exact dating boundaries) with moderate confidence without explicitly flagging debates, though it avoids blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-007",
+  "judge_cost_usd": 0.00106447,
+  "judge_latency_s": 51.232,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims: Asomtavruli attested from 5th century (Bir el-Qutt, Bolnisi Sioni c. 494), Nuskhuri emerges 9th century, Mkhedruli appears 10th-11th century. These dates align with established palaeographic scholarship. It correctly describes Asomtavruli as monumental and uniform, Nuskhuri as angular with ascenders/descenders, and Mkhedruli as rounded/cursive. It accurately notes the bicameral Khutsuri system and liturgical vs. secular usage. No invented citations or terms are present. Minor quibble: 'Khutsuri' refers to the combined system, not just Nuskhuri, but this is nuanced rather than incorrect.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing script evolution (e.g., Asomtavruli becoming decorative by 9th-10th c.), specific letterform changes (e.g., shapes of ღ, ყ, ხ), and regional scribal schools (Palestinian-Georgian vs. Georgia proper distinctions). It discusses methodological cross-checking with codicology and colophons, and notes archaizing practices. A specialist would recognize engagement with palaeographic debates (e.g., dating precision through script proportions) and evidence types (inscriptions vs. manuscripts).\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response signals uncertainty appropriately: 'roughly the 10th–11th centuries' for Mkhedruli emergence, and cautions that 'script alone' is insufficient for dating, requiring cross-checking. It distinguishes well-established facts (Asomtavruli's early use) from more nuanced claims (regional script habits). However, it presents some contested points (e.g., exact dating boundaries) with moderate confidence without explicitly flagging debates, though it avoids blanket disclaimers.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Georgian terminology (Asomtavruli, Nuskhuri, Mkhedruli, Khutsuri) and engages with Georgian-specific contexts (monastic centers like Mt. Sinai, Iviron, Shatberdi; Rustaveli's work). It does not substitute Western frameworks but stays focused on Georgian palaeographic traditions, including non-Anglophone scholarship implicitly through accurate details.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of medieval Georgian palaeography with specific, accurate details and appropriate scholarly depth.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of medieval Georgian palaeography with specific, accurate details and appropriate scholarly depth.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

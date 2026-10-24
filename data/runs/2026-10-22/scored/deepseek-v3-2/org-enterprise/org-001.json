@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a hiring plan with roles (Programme Manager, Community Liaison, M&E, Finance, Field Assistants), sequence (months 1-3), salary bands in KES, statutory on-costs (20% employer contributions), arithmetic showing two-year totals (KES 19.596M), and fit within direct-cost envelope (85%). It includes concrete components like timing, FTE, and cost calculations, and could be used in a meeting with light editing (e.g., refining on-cost details). It does not just describe the process but delivers the plan.",
+    "constraint_fidelity": "The response respects all constraints: uses USD 180,000 grant, caps indirect costs at 15% (USD 27,000), allocates 85% to direct costs (USD 153,000), converts to KES at KES 150/USD (KES 22.95M), hires within 12-person NGO context with no dedicated HR (ED handles hiring), and shows arithmetic for salaries, on-costs (20%), and totals (KES 19.596M personnel cost, leaving KES 3.354M for other direct costs). It does not exceed the envelope and explicitly checks indirect costs.",
+    "contextual_realism": "The plan is realistic for a small Kenyan NGO: salary bands are plausible for local NGO sector (e.g., Programme Manager KES 180K-220K, Field Assistants KES 40K-55K), avoids US assumptions (no equity, ATS, or recruiter role), uses simple recruitment (local ads, NGO boards), acknowledges ED handles hiring, and suggests outsourcing payroll due to no HR. However, it assumes 20% statutory on-costs without breakdown (NSSF, NHIF, pension), which may be slightly high but within reason, and process overhead is light.",
+    "jurisdictional_accuracy": "The response correctly identifies Kenyan statutory obligations: NSSF, NHIF, and pension (NITA) as employer on-costs, estimating ~20%. Salary bands are appropriate for Kenyan NGO sector (not US conversions). It avoids US assumptions (no at-will employment, US benefits). However, it does not specify exact NSSF/NHIF rates or thresholds (e.g., NSSF has tiered contributions), and the 20% estimate is approximate but reasonable. It does not flag need for local professional advice explicitly, but the detail is substantive."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00119705,
+  "judge_latency_s": 24.589,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: uses USD 180,000 grant, caps indirect costs at 15% (USD 27,000), allocates 85% to direct costs (USD 153,000), converts to KES at KES 150/USD (KES 22.95M), hires within 12-person NGO context with no dedicated HR (ED handles hiring), and shows arithmetic for salaries, on-costs (20%), and totals (KES 19.596M personnel cost, leaving KES 3.354M for other direct costs). It does not exceed the envelope and explicitly checks indirect costs.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The plan is realistic for a small Kenyan NGO: salary bands are plausible for local NGO sector (e.g., Programme Manager KES 180K-220K, Field Assistants KES 40K-55K), avoids US assumptions (no equity, ATS, or recruiter role), uses simple recruitment (local ads, NGO boards), acknowledges ED handles hiring, and suggests outsourcing payroll due to no HR. However, it assumes 20% statutory on-costs without breakdown (NSSF, NHIF, pension), which may be slightly high but within reason, and process overhead is light.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a hiring plan with roles (Programme Manager, Community Liaison, M&E, Finance, Field Assistants), sequence (months 1-3), salary bands in KES, statutory on-costs (20% employer contributions), arithmetic showing two-year totals (KES 19.596M), and fit within direct-cost envelope (85%). It includes concrete components like timing, FTE, and cost calculations, and could be used in a meeting with light editing (e.g., refining on-cost details). It does not just describe the process but delivers the plan.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Kenyan statutory obligations: NSSF, NHIF, and pension (NITA) as employer on-costs, estimating ~20%. Salary bands are appropriate for Kenyan NGO sector (not US conversions). It avoids US assumptions (no at-will employment, US benefits). However, it does not specify exact NSSF/NHIF rates or thresholds (e.g., NSSF has tiered contributions), and the 20% estimate is approximate but reasonable. It does not flag need for local professional advice explicitly, but the detail is substantive.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, arithmetic-backed hiring plan that respects all constraints and is tailored to a small Kenyan NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a detailed, arithmetic-backed hiring plan that respects all constraints and is tailored to a small Kenyan NGO.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

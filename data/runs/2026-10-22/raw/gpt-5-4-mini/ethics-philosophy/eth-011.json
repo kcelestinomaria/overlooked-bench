@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 351,
+  "cost_usd": 0.00162825,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "9f73e657883b7fda",
+  "item_id": "eth-011",
+  "latency_s": 2.377,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 65,
+  "provider": "openai",
+  "request_fingerprint": "33f9528d0dfbde0f",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "She should usually choose the **fully blind process**, unless she has a clear, job-related, legally vetted reason to use a targeted diversity intervention.\n\n### Recommendation\nUse a hiring process that:\n- **removes demographic information from evaluation** where possible,\n- **standardizes interviews and scoring**, and\n- **focuses on job-relevant criteria only**.\n\n### Why\nA blind process is generally the safer and more defensible choice because it:\n1. **Reduces bias** by limiting the influence of race, gender, age, school pedigree, name, etc.\n2. **Improves fairness perception** because candidates are judged on merit-related signals.\n3. **Avoids legal and reputational risk** that can come with explicitly weighting demographic traits, even if allowed.\n4. **Aligns with job performance** better than identity-based weighting, which is a blunt proxy and can be controversial.\n\n### When might explicit weighting make sense?\nIf she is facing severe underrepresentation and wants to improve diversity, she should usually prefer:\n- **broader sourcing and outreach**,\n- **structured screening**,\n- **skills-based assessment**, and\n- **removing unnecessary credential filters**,\n\nbefore considering any process that explicitly weights background. Identity-based weighting can help diversify outcomes, but it is more likely to raise concerns about fairness, consistency, and backlash.\n\n### Bottom line\n**Choose the blind process as the default.**  \nIf diversity remains a serious issue, address it through **inclusive recruiting and bias-resistant evaluation**, not by directly weighting demographic characteristics unless she has strong organizational and legal guidance to do so.\n\nIf you want, I can also give a **more nuanced answer balancing fairness, diversity goals, and legal risk**.",
+  "timestamp_utc": "2026-10-21T23:39:12Z"
+}

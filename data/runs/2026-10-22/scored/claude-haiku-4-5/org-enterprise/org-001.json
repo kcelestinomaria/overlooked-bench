@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed hiring plan with roles, sequence tied to milestones (e.g., 'Month 1: Programme Manager onboarded'), salary bands, on-costs, arithmetic showing total staff cost (USD 68,242), and budget reconciliation. It includes concrete components like job descriptions, statutory compliance checklist, and implementation timeline. It could be used in a meeting with light editing.",
+    "constraint_fidelity": "The response respects all constraints: uses Kenyan salary bands, includes statutory on-costs (NSSF, NHIF, Workers' Compensation at ~10%), fits within the direct-cost envelope (USD 153,000) with personnel costs at USD 68,242, shows arithmetic with phase-by-phase breakdowns, and acknowledges ED handles hiring. It explicitly states 'Plan fits within grant envelope with 7.2% contingency buffer' and avoids US assumptions.",
+    "contextual_realism": "The plan is lean (5-6 FTE), phased to reduce cash flow pressure, uses shared roles (M&E at 0.5 FTE), avoids dedicated HR (relies on ED and suggests part-time consultant), and acknowledges risks like ED capacity overload and recruitment delays. Salary bands align with Kenyan NGO sector (e.g., Programme Manager at 100,000 KES/month). It recognizes small-org constraints: 'Lean structure appropriate to grant size and NGO capacity'.",
+    "jurisdictional_accuracy": "The response accurately includes Kenyan statutory on-costs (NSSF at 6%, NHIF at ~2.75%, Workers' Compensation at ~1%), uses Kenyan salary benchmarks, and provides a compliance checklist specific to Kenya (e.g., 'PAYE withholding'). It avoids US assumptions (no equity compensation or US benefits) and flags where local advice might be needed (e.g., 'Consider engaging a part-time HR consultant to support compliance')."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00143902,
+  "judge_latency_s": 42.636,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: uses Kenyan salary bands, includes statutory on-costs (NSSF, NHIF, Workers' Compensation at ~10%), fits within the direct-cost envelope (USD 153,000) with personnel costs at USD 68,242, shows arithmetic with phase-by-phase breakdowns, and acknowledges ED handles hiring. It explicitly states 'Plan fits within grant envelope with 7.2% contingency buffer' and avoids US assumptions.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The plan is lean (5-6 FTE), phased to reduce cash flow pressure, uses shared roles (M&E at 0.5 FTE), avoids dedicated HR (relies on ED and suggests part-time consultant), and acknowledges risks like ED capacity overload and recruitment delays. Salary bands align with Kenyan NGO sector (e.g., Programme Manager at 100,000 KES/month). It recognizes small-org constraints: 'Lean structure appropriate to grant size and NGO capacity'.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed hiring plan with roles, sequence tied to milestones (e.g., 'Month 1: Programme Manager onboarded'), salary bands, on-costs, arithmetic showing total staff cost (USD 68,242), and budget reconciliation. It includes concrete components like job descriptions, statutory compliance checklist, and implementation timeline. It could be used in a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately includes Kenyan statutory on-costs (NSSF at 6%, NHIF at ~2.75%, Workers' Compensation at ~1%), uses Kenyan salary benchmarks, and provides a compliance checklist specific to Kenya (e.g., 'PAYE withholding'). It avoids US assumptions (no equity compensation or US benefits) and flags where local advice might be needed (e.g., 'Consider engaging a part-time HR consultant to support compliance').\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly usable, with detailed arithmetic, contextual awareness, and jurisdictional accuracy for a Kenyan NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response is highly usable, with detailed arithmetic, contextual awareness, and jurisdictional accuracy for a Kenyan NGO.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

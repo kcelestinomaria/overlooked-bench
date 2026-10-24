@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed plan with schema, SQL commands, data flow, and implementation timeline (weeks 1-6). Includes concrete steps like 'Nightly batch job', 'DELETE FROM rider_locations_raw', and API development. However, lacks exact commands for deployment, verification steps (e.g., how to audit retention), and some estimates are vague (e.g., '4–6 weeks' for legal work).",
+    "constraint_fidelity": "The response respects all hard constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, Firebase not needed), enforces 30-day raw data retention via 'DELETE FROM rider_locations_raw WHERE created_at < NOW() - INTERVAL '30 days'', explicitly aggregates analytics data to avoid raw retention, and states 'technically feasible in 6 weeks with 2 engineers'. It explicitly justifies relaxations (e.g., 7-year incident retention) and provides arithmetic (retention periods, cleanup jobs).",
+    "maintainability": "Design is proportionate to team: uses existing stack, clear schema, documented retention policies, and encryption. States risks (e.g., 'GDPR violation', 'Data breach') and mitigations. Includes audit logging and RLS for long-term operability. However, no mention of tests, documentation, or observability for the new components, and complexity (e.g., encryption key management) is not fully addressed for a small team.",
+    "production_realism": "Accounts for production scale: addresses 10s GPS from 1000+ riders in load testing, implements RLS for access control, encryption for incident data, audit logging, and cleanup jobs. Considers team skills (backend API, PostgreSQL schema, BigQuery pipeline) and operational burden (automated jobs, training). However, lacks detail on retries, idempotency, or partial failure handling for data ingestion."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-004",
+  "judge_cost_usd": 0.00182775,
+  "judge_latency_s": 57.267,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, Firebase not needed), enforces 30-day raw data retention via 'DELETE FROM rider_locations_raw WHERE created_at < NOW() - INTERVAL '30 days'', explicitly aggregates analytics data to avoid raw retention, and states 'technically feasible in 6 weeks with 2 engineers'. It explicitly justifies relaxations (e.g., 7-year incident retention) and provides arithmetic (retention periods, cleanup jobs).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for production scale: addresses 10s GPS from 1000+ riders in load testing, implements RLS for access control, encryption for incident data, audit logging, and cleanup jobs. Considers team skills (backend API, PostgreSQL schema, BigQuery pipeline) and operational burden (automated jobs, training). However, lacks detail on retries, idempotency, or partial failure handling for data ingestion.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed plan with schema, SQL commands, data flow, and implementation timeline (weeks 1-6). Includes concrete steps like 'Nightly batch job', 'DELETE FROM rider_locations_raw', and API development. However, lacks exact commands for deployment, verification steps (e.g., how to audit retention), and some estimates are vague (e.g., '4–6 weeks' for legal work).\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Design is proportionate to team: uses existing stack, clear schema, documented retention policies, and encryption. States risks (e.g., 'GDPR violation', 'Data breach') and mitigations. Includes audit logging and RLS for long-term operability. However, no mention of tests, documentation, or observability for the new components, and complexity (e.g., encryption key management) is not fully addressed for a small team.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive and legally-aware design that respects constraints and provides actionable steps, though with minor gaps in operational details.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "A comprehensive and legally-aware design that respects constraints and provides actionable steps, though with minor gaps in operational details.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

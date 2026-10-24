@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Argue a position'), and the response clearly states a position: 'yes, it is coherent to say a person can be harmed by an event that occurs after their death.' It defends this with reasons (interest-based harm definition) and acknowledges uncertainty by noting the counterargument (Epicurean view) but doesn't explicitly state what would change its mind or where it's least confident. It avoids evasion and reaches a defended conclusion.",
+    "philosophical_literacy": "The response invokes the Epicurean tradition accurately ('death cannot be bad for the one who dies') and uses the concept of interest-based harm (which aligns with philosophers like Joel Feinberg). The term 'ante-mortem person' is not standard but is conceptually correct. The Epicurean reference is load-bearing in the argument, as it sets up the counterargument to rebut. No technical terms are garbled or misattributed.",
+    "position_pluralism": "Major live positions include: 1) Posthumous harm is incoherent (Epicurean/view based on conscious experience), 2) Posthumous harm is coherent (interest-based view). The response presents the Epicurean position accurately ('harm requires a conscious subject to experience it') and the interest-based view. An advocate of the Epicurean position would accept the characterization. It doesn't strawman or omit major positions, and there's no false balance with fringe views.",
+    "reasoning_construction": "The response builds a clear argument: it concludes that posthumous harm is coherent by rejecting an experience-based definition of harm and adopting an interest-based one. Premises include: 1) Harm is frustration of significant interests (e.g., secret sterilization example), 2) Persons have life projects and interests that persist beyond death (e.g., reputation, promises), 3) The subject of harm is the ante-mortem person. The inference is valid—the conclusion depends on these premises. It engages specific details (wills, reputation, promises) and addresses the strongest counterargument (Epicurean view) fairly. However, it doesn't explicitly state what would change its mind or where it's weakest, which is a minor gap."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-013",
+  "judge_cost_usd": 0.00112375,
+  "judge_latency_s": 54.906,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: it concludes that posthumous harm is coherent by rejecting an experience-based definition of harm and adopting an interest-based one. Premises include: 1) Harm is frustration of significant interests (e.g., secret sterilization example), 2) Persons have life projects and interests that persist beyond death (e.g., reputation, promises), 3) The subject of harm is the ante-mortem person. The inference is valid—the conclusion depends on these premises. It engages specific details (wills, reputation, promises) and addresses the strongest counterargument (Epicurean view) fairly. However, it doesn't explicitly state what would change its mind or where it's weakest, which is a minor gap.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Argue a position'), and the response clearly states a position: 'yes, it is coherent to say a person can be harmed by an event that occurs after their death.' It defends this with reasons (interest-based harm definition) and acknowledges uncertainty by noting the counterargument (Epicurean view) but doesn't explicitly state what would change its mind or where it's least confident. It avoids evasion and reaches a defended conclusion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: 1) Posthumous harm is incoherent (Epicurean/view based on conscious experience), 2) Posthumous harm is coherent (interest-based view). The response presents the Epicurean position accurately ('harm requires a conscious subject to experience it') and the interest-based view. An advocate of the Epicurean position would accept the characterization. It doesn't strawman or omit major positions, and there's no false balance with fringe views.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes the Epicurean tradition accurately ('death cannot be bad for the one who dies') and uses the concept of interest-based harm (which aligns with philosophers like Joel Feinberg). The term 'ante-mortem person' is not standard but is conceptually correct. The Epicurean reference is load-bearing in the argument, as it sets up the counterargument to rebut. No technical terms are garbled or misattributed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument for posthumous harm using an interest-based definition and applies it concretely to wills and reputation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned argument for posthumous harm using an interest-based definition and applies it concretely to wills and reputation.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

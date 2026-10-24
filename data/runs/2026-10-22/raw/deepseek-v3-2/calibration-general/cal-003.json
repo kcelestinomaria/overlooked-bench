@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 210,
+  "cost_usd": 0.0004381,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "a3a44f19ee87a14d",
+  "item_id": "cal-003",
+  "latency_s": 5.264,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 80,
+  "provider": "deepseek",
+  "request_fingerprint": "ffb0d613e7aceaa4",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "Let's go step-by-step.\n\n---\n\n**Step 1: Find filling rates**\n\nPipe A fills the tank in 4 hours.  \nRate of pipe A = \\( \\frac{1}{4} \\) tank/hour.\n\nPipe B drains the tank in 6 hours.  \nRate of pipe B = \\( -\\frac{1}{6} \\) tank/hour.\n\n---\n\n**Step 2: Combined rate when both are open**\n\n\\[\n\\frac{1}{4} - \\frac{1}{6} = \\frac{3}{12} - \\frac{2}{12} = \\frac{1}{12} \\ \\text{tank/hour}.\n\\]\n\nSo net filling rate = \\( \\frac{1}{12} \\) tank/hour.\n\n---\n\n**Step 3: Time to fill 1 tank**\n\n\\[\n\\text{Time} = \\frac{1 \\ \\text{tank}}{\\frac{1}{12} \\ \\text{tank/hour}} = 12 \\ \\text{hours}.\n\\]\n\n---\n\nANSWER: 12",
+  "timestamp_utc": "2026-10-21T23:55:54Z"
+}

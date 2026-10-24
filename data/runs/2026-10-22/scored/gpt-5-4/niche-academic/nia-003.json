@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific juristic concepts (maslaha mursala, istihsan) and methodological differences between schools. It explains how each school approaches welfare considerations through different legal mechanisms, showing awareness of internal scholarly debates about the role of maslaha. A specialist would recognize this as engagement with the literature rather than summary of summaries, though it doesn't delve into specific historical debates or evidence quality.",
+    "domain_accuracy": "The response accurately describes the general relationship between maslaha and established sources, correctly identifying Qur'an, Sunna, Ijma', and Qiyas as primary sources. It properly characterizes maslaha as subordinate to revelation. The Maliki position is correctly described as giving significant role to maslaha mursala, and the Hanafi position is accurately portrayed as more cautious, preferring to mediate welfare through established tools like qiyas and istihsan. No invented citations, terms, or consensus claims are present. All substantive claims align with established Islamic legal theory.",
+    "field_situatedness": "The response correctly uses Arabic terminology (maslaha, maslaha mursala, qiyas, istihsan, ijma', Sunna) and engages with the frameworks of Islamic legal theory (usul al-fiqh). It remains situated within the Islamic scholarly tradition without substituting Western frameworks. The discussion of Maliki and Hanafi positions shows understanding of the specific regional scholarly traditions within Islamic jurisprudence.",
+    "scholarly_calibration": "The response demonstrates good calibration by distinguishing between areas of consensus (maslaha's subordinate position to revelation) and areas of divergence (treatment of maslaha mursala). It uses qualifying language like 'generally,' 'more willing,' 'more cautious,' and 'tended to' to signal differing evidential status. It presents both positions as legitimate scholarly approaches without presenting either as settled fact. The calibration is specific to the points of disagreement rather than blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00085919,
+  "judge_latency_s": 45.177,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes the general relationship between maslaha and established sources, correctly identifying Qur'an, Sunna, Ijma', and Qiyas as primary sources. It properly characterizes maslaha as subordinate to revelation. The Maliki position is correctly described as giving significant role to maslaha mursala, and the Hanafi position is accurately portrayed as more cautious, preferring to mediate welfare through established tools like qiyas and istihsan. No invented citations, terms, or consensus claims are present. All substantive claims align with established Islamic legal theory.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific juristic concepts (maslaha mursala, istihsan) and methodological differences between schools. It explains how each school approaches welfare considerations through different legal mechanisms, showing awareness of internal scholarly debates about the role of maslaha. A specialist would recognize this as engagement with the literature rather than summary of summaries, though it doesn't delve into specific historical debates or evidence quality.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates good calibration by distinguishing between areas of consensus (maslaha's subordinate position to revelation) and areas of divergence (treatment of maslaha mursala). It uses qualifying language like 'generally,' 'more willing,' 'more cautious,' and 'tended to' to signal differing evidential status. It presents both positions as legitimate scholarly approaches without presenting either as settled fact. The calibration is specific to the points of disagreement rather than blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses Arabic terminology (maslaha, maslaha mursala, qiyas, istihsan, ijma', Sunna) and engages with the frameworks of Islamic legal theory (usul al-fiqh). It remains situated within the Islamic scholarly tradition without substituting Western frameworks. The discussion of Maliki and Hanafi positions shows understanding of the specific regional scholarly traditions within Islamic jurisprudence.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates accurate knowledge of Islamic legal theory with specific engagement on the Maliki-Hanafi divergence regarding maslaha.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates accurate knowledge of Islamic legal theory with specific engagement on the Maliki-Hanafi divergence regarding maslaha.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

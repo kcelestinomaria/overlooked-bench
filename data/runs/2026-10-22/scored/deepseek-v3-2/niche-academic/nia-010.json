@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response engages with specific scholarly debates (e.g., race vs. class vs. universal emancipation, agency vs. structural forces, global impact debates), cites key works and authors, discusses methodological shifts (e.g., 'archival turn', interdisciplinary methods), and addresses internal divisions among scholars. It goes beyond encyclopedia level by analyzing historiographical trends, controversies, and the evolution of interpretations, demonstrating familiarity with the literature rather than just summaries.",
+    "domain_accuracy": "The response makes specific claims: names Michel-Rolph Trouillot ('Silencing the Past', 1995), David Geggus, Carolyn Fick ('The Making of Haiti', 1990), Laurent Dubois ('Avengers of the New World', 2004), Julius S. Scott ('The Common Wind', 2018), Ada Ferrer ('Freedom's Mirror', 2014), Julia Gaffield, Marlene Daut ('Tropics of Haiti', 2015), Jean Casimir; events like French indemnity (1825), Haitian bicentennial (2004), 2010 earthquake; frameworks like Atlantic History, postcolonial studies; and concepts like 'archival turn'. All these are verifiable and accurate for the historiography of the Haitian Revolution. No invented citations, terms, or consensus are present.",
+    "field_situatedness": "The response uses terminology and frameworks specific to Haitian Revolution historiography, such as 'gens de couleur', 'Vodou', 'maroon communities', 'colonial archives', 'subaltern studies', 'Atlantic History', and cites Haitian and diasporic scholars (e.g., Trouillot, Casimir). It does not substitute a Western framing but engages with the field's own debates and conventions, including non-English scholarship where relevant.",
+    "scholarly_calibration": "The response distinguishes contested points: e.g., 'scholars have debated whether the revolution was foremost a class struggle...', 'critics caution against overstating unity among the enslaved', 'the debate now focuses on the extent of its influence', 'scholars now debate whether the revolution’s radical ideals were betrayed internally or crushed by a hostile world'. It signals where evidential status differs, such as presenting multiple hypotheses without presenting any as settled fact, and avoids uniform confidence."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-010",
+  "judge_cost_usd": 0.0010774,
+  "judge_latency_s": 23.385,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims: names Michel-Rolph Trouillot ('Silencing the Past', 1995), David Geggus, Carolyn Fick ('The Making of Haiti', 1990), Laurent Dubois ('Avengers of the New World', 2004), Julius S. Scott ('The Common Wind', 2018), Ada Ferrer ('Freedom's Mirror', 2014), Julia Gaffield, Marlene Daut ('Tropics of Haiti', 2015), Jean Casimir; events like French indemnity (1825), Haitian bicentennial (2004), 2010 earthquake; frameworks like Atlantic History, postcolonial studies; and concepts like 'archival turn'. All these are verifiable and accurate for the historiography of the Haitian Revolution. No invented citations, terms, or consensus are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response engages with specific scholarly debates (e.g., race vs. class vs. universal emancipation, agency vs. structural forces, global impact debates), cites key works and authors, discusses methodological shifts (e.g., 'archival turn', interdisciplinary methods), and addresses internal divisions among scholars. It goes beyond encyclopedia level by analyzing historiographical trends, controversies, and the evolution of interpretations, demonstrating familiarity with the literature rather than just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes contested points: e.g., 'scholars have debated whether the revolution was foremost a class struggle...', 'critics caution against overstating unity among the enslaved', 'the debate now focuses on the extent of its influence', 'scholars now debate whether the revolution’s radical ideals were betrayed internally or crushed by a hostile world'. It signals where evidential status differs, such as presenting multiple hypotheses without presenting any as settled fact, and avoids uniform confidence.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to Haitian Revolution historiography, such as 'gens de couleur', 'Vodou', 'maroon communities', 'colonial archives', 'subaltern studies', 'Atlantic History', and cites Haitian and diasporic scholars (e.g., Trouillot, Casimir). It does not substitute a Western framing but engages with the field's own debates and conventions, including non-English scholarship where relevant.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the Haitian Revolution historiography, reflecting deep engagement with the field.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the Haitian Revolution historiography, reflecting deep engagement with the field.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

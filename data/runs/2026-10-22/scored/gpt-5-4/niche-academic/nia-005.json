@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with relationality, spatiotemporality, experiential quality, context dependence, and productive emptiness, and contrasts Japanese and Western treatments with specificity. It addresses nuances like avoiding reduction to 'Japaneseness,' ordinary linguistic uses, historical situating, and compositional manipulation, indicating familiarity with scholarly debates and literature.",
+    "domain_accuracy": "The response accurately characterizes 'ma' as a relational interval, spatiotemporal, experiential, context-dependent, and productive emptiness, aligning with Japanese scholarship. It correctly contrasts this with Western tendencies to simplify it as empty space, spiritualize it, or detach it from temporal/performative dimensions. No invented citations, terms, or consensus are present. Claims are substantively correct and well-supported.",
+    "field_situatedness": "The response uses frameworks and terminology from Japanese aesthetics (e.g., 'relational interval,' 'spatiotemporality,' 'productive emptiness') and contrasts them with Western approaches, avoiding silent substitution of dominant Anglophone framings. It emphasizes Japanese scholarly conventions like context dependence and functional analysis, and acknowledges non-English scholarship's centrality.",
+    "scholarly_calibration": "The response distinguishes well-established aspects (e.g., relational interval, spatiotemporality) from contested or nuanced points (e.g., avoidance of mystical essence, historical situating). It signals differences in treatment between Japanese and Western scholarship without overgeneralizing, and uses phrases like 'often,' 'frequently,' and 'tended to' to indicate variability rather than uniform confidence."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00081139,
+  "judge_latency_s": 39.233,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately characterizes 'ma' as a relational interval, spatiotemporal, experiential, context-dependent, and productive emptiness, aligning with Japanese scholarship. It correctly contrasts this with Western tendencies to simplify it as empty space, spiritualize it, or detach it from temporal/performative dimensions. No invented citations, terms, or consensus are present. Claims are substantively correct and well-supported.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with relationality, spatiotemporality, experiential quality, context dependence, and productive emptiness, and contrasts Japanese and Western treatments with specificity. It addresses nuances like avoiding reduction to 'Japaneseness,' ordinary linguistic uses, historical situating, and compositional manipulation, indicating familiarity with scholarly debates and literature.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established aspects (e.g., relational interval, spatiotemporality) from contested or nuanced points (e.g., avoidance of mystical essence, historical situating). It signals differences in treatment between Japanese and Western scholarship without overgeneralizing, and uses phrases like 'often,' 'frequently,' and 'tended to' to indicate variability rather than uniform confidence.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology from Japanese aesthetics (e.g., 'relational interval,' 'spatiotemporality,' 'productive emptiness') and contrasts them with Western approaches, avoiding silent substitution of dominant Anglophone framings. It emphasizes Japanese scholarly conventions like context dependence and functional analysis, and acknowledges non-English scholarship's centrality.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates thorough, accurate, and well-calibrated engagement with Japanese scholarship on 'ma' and its Western misinterpretations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates thorough, accurate, and well-calibrated engagement with Japanese scholarship on 'ma' and its Western misinterpretations.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

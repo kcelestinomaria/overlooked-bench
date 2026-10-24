@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by detailing technical barriers (e.g., 'tiny seeds clog conventional drills'), economic factors ('small farm sizes in traditional growing regions'), and specific mechanization attempts ('stripper headers', 'swather-combine systems'). It engages with methods (e.g., 'herbicide integration') and context-specific challenges (e.g., adoption disparities between traditional and non-traditional regions), indicating familiarity with the literature rather than just summaries.",
+    "domain_accuracy": "The response makes specific claims about teff's seed size ('1 seed = ~50 mg'), growth characteristics ('long growing season (7-8 months)'), yield ('typically 1-2 t/ha'), and mechanization challenges (e.g., 'vacuum seeders', 'modified combine harvesters'). These details align with known agronomic literature on teff, and there are no invented citations or terms. However, the claim about 'gentle threshing machines' and 'pedal-powered threshers' lacks specific references, but is plausible and not contradicted by domain knowledge.",
+    "field_situatedness": "The response uses agronomic terminology (e.g., 'lodging', 'indeterminate flowering', 'threshing') and frameworks specific to crop science, aligning with the field asked about. It references regional contexts (Ethiopia, Eritrea, India, Australia) without substituting Western framings and acknowledges socioeconomic factors relevant to traditional cultivation areas.",
+    "scholarly_calibration": "The response distinguishes well-established constraints (e.g., 'small seeds', 'lodging susceptibility') from areas of development (e.g., 'selective herbicides for teff still being developed') and adoption challenges ('limited adoption; manual broadcasting still dominant'). It notes regional disparities ('successful in large-scale operations but impractical for smallholders') and does not present contested points as settled. However, it lacks explicit uncertainty markers for less evidenced claims, such as the efficacy of 'intermediate technologies'."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 3,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-006",
+  "judge_cost_usd": 0.00095558,
+  "judge_latency_s": 44.082,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims about teff's seed size ('1 seed = ~50 mg'), growth characteristics ('long growing season (7-8 months)'), yield ('typically 1-2 t/ha'), and mechanization challenges (e.g., 'vacuum seeders', 'modified combine harvesters'). These details align with known agronomic literature on teff, and there are no invented citations or terms. However, the claim about 'gentle threshing machines' and 'pedal-powered threshers' lacks specific references, but is plausible and not contradicted by domain knowledge.\",\n      \"score\": 3\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by detailing technical barriers (e.g., 'tiny seeds clog conventional drills'), economic factors ('small farm sizes in traditional growing regions'), and specific mechanization attempts ('stripper headers', 'swather-combine systems'). It engages with methods (e.g., 'herbicide integration') and context-specific challenges (e.g., adoption disparities between traditional and non-traditional regions), indicating familiarity with the literature rather than just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established constraints (e.g., 'small seeds', 'lodging susceptibility') from areas of development (e.g., 'selective herbicides for teff still being developed') and adoption challenges ('limited adoption; manual broadcasting still dominant'). It notes regional disparities ('successful in large-scale operations but impractical for smallholders') and does not present contested points as settled. However, it lacks explicit uncertainty markers for less evidenced claims, such as the efficacy of 'intermediate technologies'.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses agronomic terminology (e.g., 'lodging', 'indeterminate flowering', 'threshing') and frameworks specific to crop science, aligning with the field asked about. It references regional contexts (Ethiopia, Eritrea, India, Australia) without substituting Western framings and acknowledges socioeconomic factors relevant to traditional cultivation areas.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive competence with specific, accurate details and contextual awareness of mechanization challenges in teff cultivation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive competence with specific, accurate details and contextual awareness of mechanization challenges in teff cultivation.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 85.0
+}

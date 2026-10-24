@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance and numerical value.",
+    "instruction_compliance": "The prompt explicitly requests 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows detailed working and ends with 'ANSWER: 21134.40', matching the required format precisely.",
+    "reasoning_validity": "The response shows working step-by-step: calculates drying loss (15% of 4,800 = 720 kg), dried coffee remaining (4,800 - 720 = 4,080 kg), grade AA mass (40% of 4,080 = 1,632 kg), revenue from AA (1,632 × 6.20 = $10,118.40), other grade mass (4,080 - 1,632 = 2,448 kg), revenue from other (2,448 × 4.50 = $11,016.00), and total revenue ($10,118.40 + $11,016.00 = $21,134.40). All steps are mathematically sound and correctly support the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00069883,
+  "judge_latency_s": 35.167,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance and numerical value.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working step-by-step: calculates drying loss (15% of 4,800 = 720 kg), dried coffee remaining (4,800 - 720 = 4,080 kg), grade AA mass (40% of 4,080 = 1,632 kg), revenue from AA (1,632 × 6.20 = $10,118.40), other grade mass (4,080 - 1,632 = 2,448 kg), revenue from other (2,448 × 4.50 = $11,016.00), and total revenue ($10,118.40 + $11,016.00 = $21,134.40). All steps are mathematically sound and correctly support the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows detailed working and ends with 'ANSWER: 21134.40', matching the required format precisely.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

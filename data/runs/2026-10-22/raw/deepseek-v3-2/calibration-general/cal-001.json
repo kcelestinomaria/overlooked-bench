@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 204,
+  "cost_usd": 0.00043072,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 7.642,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 86,
+  "provider": "deepseek",
+  "request_fingerprint": "0afe57fdf198420f",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "Let's go step by step.  \n\n---\n\n**Step 1: Find total metres of fabric**  \nEach roll = 45 metres  \nNumber of rolls = 4  \nTotal fabric = \\( 4 \\times 45 = 180 \\) metres  \n\n---\n\n**Step 2: Find total cost of fabric**  \nCost per metre = $8  \nTotal cost = \\( 180 \\times 8 = 1440 \\) dollars  \n\n---\n\n**Step 3: Find number of dresses made**  \nFabric per dress = 12 metres  \nNumber of dresses = \\( \\frac{180}{12} = 15 \\) dresses  \n\n---\n\n**Step 4: Find total revenue**  \nSelling price per dress = $150  \nTotal revenue = \\( 15 \\times 150 = 2250 \\) dollars  \n\n---\n\n**Step 5: Find total profit**  \nProfit = Revenue − Cost  \nProfit = \\( 2250 - 1440 = 810 \\) dollars  \n\n---\n\nANSWER: 810",
+  "timestamp_utc": "2026-10-21T23:55:56Z"
+}

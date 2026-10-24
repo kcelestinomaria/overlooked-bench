@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. **Deliverable:** The response provides a concrete data design (schema, pipeline), retention and access controls (SQL, access matrix, incident protocol), legal/organizational checklist, and pushback to product. It is not a description of how to approach the task but a ready-to-execute plan.\n2. **Sequence and estimates:** The timeline (`Implementation Timeline (6 Weeks)`) breaks down tasks by week, and the checklist provides clear steps. However, it lacks specific commands or code snippets for some components (e.g., BigQuery partitioning setup).\n3. **Verification steps:** The response includes audit logging and incident access protocols but does not detail how to verify the cleanup job or access controls (e.g., test cases).",
+    "constraint_fidelity": "1. **30-day retention (C1):** The response explicitly states raw GPS data is deleted after 30 days in PostgreSQL (`DELETE FROM rider_locations_raw WHERE created_at < NOW() - INTERVAL '30 days'`) and BigQuery tables auto-expire after 30 days. Aggregated data (zone-level) is retained indefinitely, which complies with the constraint. No evidence of raw precise location retention beyond 30 days.\n2. **No new vendors (C2):** The response uses only the existing stack (PostgreSQL/PostGIS, BigQuery, Firebase Cloud Messaging). No new third-party vendors or sub-processors are introduced.\n3. **Two engineers, six weeks (C3):** The timeline is explicitly broken down into 6 weeks (`Implementation Timeline (6 Weeks)`), and the design is scoped to fit this constraint. No indication of requiring more engineers or time.\n4. **Kenya Data Protection Act compliance:** The response addresses registration, DPIA, lawful basis, purpose limitation, notice to riders, and cross-border transfer (BigQuery hosted outside Kenya is acknowledged but not explicitly resolved; however, the constraint does not require resolving it, only complying with the law). The response cites specific sections (e.g., s.25, s.30) and avoids GDPR-only citations.\n5. **Arithmetic and capacity:** The response shows awareness of data volume (e.g., pushing back on 10-second intervals to reduce volume by 66%) and operational feasibility within the constraints.",
+    "maintainability": "1. **Ownership:** The response assumes the existing team will own the system and designs for their capacity (e.g., automated cleanup, clear access controls).\n2. **Complexity:** The added complexity (e.g., geohash conversion, aggregation pipeline) is proportionate to the team and problem. Risks (e.g., battery drain, data breach) are explicitly flagged.\n3. **Documentation and observability:** The response includes a privacy notice, access controls matrix, and audit logging, which are critical for handover. However, it does not explicitly mention tests or monitoring for the pipeline.",
+    "production_realism": "1. **Scale and infrastructure:** The response accounts for load (e.g., rate-limiting at the API gateway, indexing for PostgreSQL tables) and operational burden (e.g., automated cleanup jobs, role-based access controls).\n2. **Failure modes:** The design includes retries (implied by rate-limiting), idempotency (not explicitly addressed but not critical for this use case), and rollback (not applicable for data collection). Partial failure is mitigated by separating raw and aggregated data.\n3. **Team skill mix:** The response assumes a small team (two engineers) and designs for maintainability (e.g., automated jobs, clear access controls). No unrealistic operational burden is placed on the team.\n4. **Technical correctness:** The use of PostGIS for geospatial data, row-level security in PostgreSQL, and BigQuery partitioning is technically sound and aligned with the existing stack."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.0026391,
+  "judge_latency_s": 12.888,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"\n1. **30-day retention (C1):** The response explicitly states raw GPS data is deleted after 30 days in PostgreSQL (`DELETE FROM rider_locations_raw WHERE created_at < NOW() - INTERVAL '30 days'`) and BigQuery tables auto-expire after 30 days. Aggregated data (zone-level) is retained indefinitely, which complies with the constraint. No evidence of raw precise location retention beyond 30 days.\n2. **No new vendors (C2):** The response uses only the existing stack (PostgreSQL/PostGIS, BigQuery, Firebase Cloud Messaging). No new third-party vendors or sub-processors are introduced.\n3. **Two engineers, six weeks (C3):** The timeline is explicitly broken down into 6 weeks (`Implementation Timeline (6 Weeks)`), and the design is scoped to fit this constraint. No indication of requiring more engineers or time.\n4. **Kenya Data Protection Act compliance:** The response addresses registration, DPIA, lawful basis, purpose limitation, notice to riders, and cross-border transfer (BigQuery hosted outside Kenya is acknowledged but not explicitly resolved; however, the constraint does not require resolving it, only complying with the law). The response cites specific sections (e.g., s.25, s.30) and avoids GDPR-only citations.\n5. **Arithmetic and capacity:** The response shows awareness of data volume (e.g., pushing back on 10-second intervals to reduce volume by 66%) and operational feasibility within the constraints.\n      \",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"\n1. **Scale and infrastructure:** The response accounts for load (e.g., rate-limiting at the API gateway, indexing for PostgreSQL tables) and operational burden (e.g., automated cleanup jobs, role-based access controls).\n2. **Failure modes:** The design includes retries (implied by rate-limiting), idempotency (not explicitly addressed but not critical for this use case), and rollback (not applicable for data collection). Partial failure is mitigated by separating raw and aggregated data.\n3. **Team skill mix:** The response assumes a small team (two engineers) and designs for maintainability (e.g., automated jobs, clear access controls). No unrealistic operational burden is placed on the team.\n4. **Technical correctness:** The use of PostGIS for geospatial data, row-level security in PostgreSQL, and BigQuery partitioning is technically sound and aligned with the existing stack.\n      \",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"\n1. **Deliverable:** The response provides a concrete data design (schema, pipeline), retention and access controls (SQL, access matrix, incident protocol), legal/organizational checklist, and pushback to product. It is not a description of how to approach the task but a ready-to-execute plan.\n2. **Sequence and estimates:** The timeline (`Implementation Timeline (6 Weeks)`) breaks down tasks by week, and the checklist provides clear steps. However, it lacks specific commands or code snippets for some components (e.g., BigQuery partitioning setup).\n3. **Verification steps:** The response includes audit logging and incident access protocols but does not detail how to verify the cleanup job or access controls (e.g., test cases).\n      \",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"\n1. **Ownership:** The response assumes the existing team will own the system and designs for their capacity (e.g., automated cleanup, clear access controls).\n2. **Complexity:** The added complexity (e.g., geohash conversion, aggregation pipeline) is proportionate to the team and problem. Risks (e.g., battery drain, data breach) are explicitly flagged.\n3. **Documentation and observability:** The response includes a privacy notice, access controls matrix, and audit logging, which are critical for handover. However, it does not explicitly mention tests or monitoring for the pipeline.\n      \",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is a well-scoped, constraint-compliant design with clear actionability and production realism, though it could improve on verification steps and explicit testing.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a well-scoped, constraint-compliant design with clear actionability and production realism, though it could improve on verification steps and explicit testing.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

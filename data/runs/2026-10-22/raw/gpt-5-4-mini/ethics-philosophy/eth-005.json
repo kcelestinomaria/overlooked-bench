@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 173,
+  "cost_usd": 0.00084,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "baad8f173f0f5645",
+  "item_id": "eth-005",
+  "latency_s": 1.626,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 82,
+  "provider": "openai",
+  "request_fingerprint": "6b37a2e98ce3de70",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "**Recommendation:** **Do not permit assisted dying for this case under the law.**\n\nThe statute should **exclude requests based solely on psychiatric illness, including treatment-resistant depression, even when the person is judged competent and has made repeated requests**.\n\nA workable drafting rule would be:\n\n> Assisted dying may be available only to competent adults with a terminal, irreversible physical illness causing intolerable suffering, and **must not be available where the sole underlying condition is a mental disorder**.\n\nIf the drafters want a precise safeguard clause, they could add:\n\n> No person shall be eligible where the request is founded primarily on a mental illness, including major depressive disorder, regardless of duration, treatment resistance, or prior refusals.\n\nThis is the clearest legal line to draw if the goal is to minimize error and coercion risk in the most difficult cases.",
+  "timestamp_utc": "2026-10-21T23:39:06Z"
+}

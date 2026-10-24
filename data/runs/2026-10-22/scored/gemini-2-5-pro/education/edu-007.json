@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses differentiation concretely: 'The teacher will plan tasks that everyone can start, but that can be stretched for those who need a bigger challenge' and describes support through teamwork and teacher movement. It accounts for varying student needs without requiring additional resources, making it implementable by one practitioner.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. The rubric note states to score on inclusivity of learners in the described setting. The response addresses concerns for both high-achieving and struggling students ('high-flyer' and 'child who struggles with maths'), showing consideration for diverse learners in mixed-attainment settings.",
+    "pedagogical_soundness": "The response is not a pedagogical plan but a parent communication explaining a policy change. It does not state learning objectives, activities, assessments, or sequencing. The rubric dimension requires evaluating alignment of objectives, activities, and assessments, which are absent here. Therefore, it does not engage with this dimension.",
+    "workload_realism": "The response is a communication document, not a teaching plan. It does not describe activities, timings, materials, or class size implementation. The rubric requires checking timings, resources, and feasibility for delivery, which are not applicable here."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00087872,
+  "judge_latency_s": 42.247,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is not a pedagogical plan but a parent communication explaining a policy change. It does not state learning objectives, activities, assessments, or sequencing. The rubric dimension requires evaluating alignment of objectives, activities, and assessments, which are absent here. Therefore, it does not engage with this dimension.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a communication document, not a teaching plan. It does not describe activities, timings, materials, or class size implementation. The rubric requires checking timings, resources, and feasibility for delivery, which are not applicable here.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about explaining a teaching method change to parents. The rubric note states to score on inclusivity of learners in the described setting. The response addresses concerns for both high-achieving and struggling students ('high-flyer' and 'child who struggles with maths'), showing consideration for diverse learners in mixed-attainment settings.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses differentiation concretely: 'The teacher will plan tasks that everyone can start, but that can be stretched for those who need a bigger challenge' and describes support through teamwork and teacher movement. It accounts for varying student needs without requiring additional resources, making it implementable by one practitioner.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response effectively communicates a policy change to parents in plain language, addressing concerns and explaining benefits.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response effectively communicates a policy change to parents in plain language, addressing concerns and explaining benefits.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 38.75
+}

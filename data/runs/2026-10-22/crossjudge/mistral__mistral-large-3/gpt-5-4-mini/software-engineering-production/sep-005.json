@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers exactly what was requested: a data design, retention/access controls, legal/organizational pre-launch steps, and product pushback. It does not describe how to approach the task but provides a complete, executable plan.\n\n2. The deliverable includes concrete elements: a schema for `rider_location_event`, a 6-week delivery plan with owners (e.g., 'finalize legal/privacy requirements'), exact commands (e.g., 'delete raw events with `retention_expires_at < now()`'), and verification steps (e.g., 'verify count of deleted rows').\n\n3. The response is structured for immediate execution, with clear sequences (e.g., 'Weeks 1–2: design data model... Weeks 3–4: build purge job...') and no vague placeholders. An engineer could start with minimal edits.",
+    "constraint_fidelity": "1. The response explicitly respects the 30-day retention limit for raw precise location (C1), stating: 'raw precise location in Postgres: **delete at 30 days or sooner**' and 'no backup policy may preserve raw location beyond 30 days'. It also proposes mechanisms to exclude raw location from backups or make it unrecoverable after 30 days.\n\n2. The response adheres to the no-new-vendors constraint (C2) by using only PostgreSQL/PostGIS, BigQuery, and Firebase Cloud Messaging, with no mention of additional third-party services.\n\n3. The response fits the two-engineer, six-week timeline (C3), providing a detailed 6-week delivery plan and explicitly stating: 'We can likely ship a **limited rider safety location feature** in 6 weeks with 2 engineers'.\n\n4. The response shows arithmetic and reasoning for capacity, effort, and timeline, e.g., breaking down tasks into weeks and justifying scope limitations. It does not silently violate any constraints and explicitly pushes back on product requests that would break them.",
+    "maintainability": "1. The response identifies the team (two engineers) and future owners (support, data analysts) and ensures the design is proportionate to their capacity. For example, it avoids complex encryption schemes for backups unless absolutely necessary.\n\n2. It leaves clear seams: aggregated data for analytics, raw data for support, and strict access controls to prevent misuse. The schema and retention policies are documented in detail.\n\n3. Risks and accepted debt are explicitly stated, e.g., 'This is the hardest operational constraint' (backups) and 'avoid storing any field that can reasonably be re-linked to an individual rider’s trace'.\n\n4. The design prioritizes clarity over cleverness, e.g., using simple TTL-based deletion and coarse geospatial buckets for analytics. It also includes audit logs and incident-scoped access to ensure long-term operability.",
+    "production_realism": "1. The response accounts for the stated scale and infrastructure (PostgreSQL/PostGIS, BigQuery, Firebase), and tailors the design to the team's skill mix (two engineers).\n\n2. It addresses failure modes relevant to production: locking (indexes on `rider_location_event`), retries (buffering on-device if offline), partial failure (audit logs, purge job alerts), and rollback (feature flag for launch).\n\n3. The operational burden is proportionate to the team size, e.g., daily purge jobs, role-based access controls, and audit logging. It avoids over-engineering (e.g., no complex key destruction for backups unless necessary).\n\n4. The response demonstrates correct use of named technologies, e.g., PostGIS for geospatial data, BigQuery for analytics, and Firebase for messaging. It also flags the hardest operational constraint (backups) and proposes feasible solutions.\n\n5. The design is not just whiteboard-level; it includes concrete schema, retention policies, and access controls that would work in production."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-005",
+  "judge_cost_usd": 0.0036401,
+  "judge_latency_s": 13.956,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly respects the 30-day retention limit for raw precise location (C1), stating: 'raw precise location in Postgres: **delete at 30 days or sooner**' and 'no backup policy may preserve raw location beyond 30 days'. It also proposes mechanisms to exclude raw location from backups or make it unrecoverable after 30 days.\\n\\n2. The response adheres to the no-new-vendors constraint (C2) by using only PostgreSQL/PostGIS, BigQuery, and Firebase Cloud Messaging, with no mention of additional third-party services.\\n\\n3. The response fits the two-engineer, six-week timeline (C3), providing a detailed 6-week delivery plan and explicitly stating: 'We can likely ship a **limited rider safety location feature** in 6 weeks with 2 engineers'.\\n\\n4. The response shows arithmetic and reasoning for capacity, effort, and timeline, e.g., breaking down tasks into weeks and justifying scope limitations. It does not silently violate any constraints and explicitly pushes back on product requests that would break them.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale and infrastructure (PostgreSQL/PostGIS, BigQuery, Firebase), and tailors the design to the team's skill mix (two engineers).\\n\\n2. It addresses failure modes relevant to production: locking (indexes on `rider_location_event`), retries (buffering on-device if offline), partial failure (audit logs, purge job alerts), and rollback (feature flag for launch).\\n\\n3. The operational burden is proportionate to the team size, e.g., daily purge jobs, role-based access controls, and audit logging. It avoids over-engineering (e.g., no complex key destruction for backups unless necessary).\\n\\n4. The response demonstrates correct use of named technologies, e.g., PostGIS for geospatial data, BigQuery for analytics, and Firebase for messaging. It also flags the hardest operational constraint (backups) and proposes feasible solutions.\\n\\n5. The design is not just whiteboard-level; it includes concrete schema, retention policies, and access controls that would work in production.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers exactly what was requested: a data design, retention/access controls, legal/organizational pre-launch steps, and product pushback. It does not describe how to approach the task but provides a complete, executable plan.\\n\\n2. The deliverable includes concrete elements: a schema for `rider_location_event`, a 6-week delivery plan with owners (e.g., 'finalize legal/privacy requirements'), exact commands (e.g., 'delete raw events with `retention_expires_at < now()`'), and verification steps (e.g., 'verify count of deleted rows').\\n\\n3. The response is structured for immediate execution, with clear sequences (e.g., 'Weeks 1–2: design data model... Weeks 3–4: build purge job...') and no vague placeholders. An engineer could start with minimal edits.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The response identifies the team (two engineers) and future owners (support, data analysts) and ensures the design is proportionate to their capacity. For example, it avoids complex encryption schemes for backups unless absolutely necessary.\\n\\n2. It leaves clear seams: aggregated data for analytics, raw data for support, and strict access controls to prevent misuse. The schema and retention policies are documented in detail.\\n\\n3. Risks and accepted debt are explicitly stated, e.g., 'This is the hardest operational constraint' (backups) and 'avoid storing any field that can reasonably be re-linked to an individual rider’s trace'.\\n\\n4. The design prioritizes clarity over cleverness, e.g., using simple TTL-based deletion and coarse geospatial buckets for analytics. It also includes audit logs and incident-scoped access to ensure long-term operability.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint-aware, production-ready engineering that fits the team, infrastructure, and legal requirements precisely.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is a model of constraint-aware, production-ready engineering that fits the team, infrastructure, and legal requirements precisely.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

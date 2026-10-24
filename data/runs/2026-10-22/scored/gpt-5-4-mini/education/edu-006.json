@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response explicitly addresses differentiation and access concerns, particularly for vulnerable pupils: 'Reduced support for pupils with SEND and additional needs', 'Risk of lower progress for vulnerable pupils', and 'Protect statutory SEND and safeguarding duties'. It proposes concrete, low-cost adaptations like targeting remaining TAs to SEND pupils and monitoring impact on vulnerable groups.",
+    "pathway_breadth": "This item does not involve student pathway guidance; it is about staffing budget reduction options. The response is inclusive of the school's operational context and constraints, addressing the range of staffing considerations relevant to the setting.",
+    "pedagogical_soundness": "This is an options paper for budget reduction, not a teaching plan. There are no learning objectives, activities, or assessments to evaluate. The rubric requires checking alignment between objectives, activities, and assessments, but none exist here.",
+    "workload_realism": "The response provides specific options with estimated savings percentages and clearly states constraints like 'class sizes must not rise above 30'. It considers feasibility ('Only possible if pupil numbers and year-group spread allow it') and resource implications ('reducing teaching assistants may affect SEND, interventions and classroom support'). The options are tailored to a 400-pupil primary school context."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00122132,
+  "judge_latency_s": 33.735,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This is an options paper for budget reduction, not a teaching plan. There are no learning objectives, activities, or assessments to evaluate. The rubric requires checking alignment between objectives, activities, and assessments, but none exist here.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides specific options with estimated savings percentages and clearly states constraints like 'class sizes must not rise above 30'. It considers feasibility ('Only possible if pupil numbers and year-group spread allow it') and resource implications ('reducing teaching assistants may affect SEND, interventions and classroom support'). The options are tailored to a 400-pupil primary school context.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student pathway guidance; it is about staffing budget reduction options. The response is inclusive of the school's operational context and constraints, addressing the range of staffing considerations relevant to the setting.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response explicitly addresses differentiation and access concerns, particularly for vulnerable pupils: 'Reduced support for pupils with SEND and additional needs', 'Risk of lower progress for vulnerable pupils', and 'Protect statutory SEND and safeguarding duties'. It proposes concrete, low-cost adaptations like targeting remaining TAs to SEND pupils and monitoring impact on vulnerable groups.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a detailed, realistic, and well-structured options paper that meets the budget reduction constraint while addressing educational impacts.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response provides a detailed, realistic, and well-structured options paper that meets the budget reduction constraint while addressing educational impacts.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

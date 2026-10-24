@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes well beyond encyclopedia level by engaging with specific scholarly debates (e.g., agency from Paris vs. plantation, reinterpretation of violence, Atlantic vs. French-centric framing), methodologies (e.g., cultural turn, Atlantic history, history from below), and evidence (e.g., Vodou's role, archival research by Geggus). It explains how these disputes arose from shifts in historical scholarship, demonstrating familiarity with the literature and internal debates. A specialist would recognize this as a substantive historiographical overview.",
+    "domain_accuracy": "The response makes numerous substantive claims that are accurate: C.L.R. James's 'The Black Jacobins' (1938) as foundational, Carolyn Fick's 'The Making of Haiti' (1990) emphasizing bottom-up agency, Laurent Dubois's 'Avengers of the New World' (2004) synthesis, Philippe Girard's 'The Slaves Who Defeated Napoleon' (2011) on violence, Ada Ferrer's 'Freedom's Mirror' (2014) on discursive impact, Julius Scott's 'The Common Wind' (2018) on Atlantic networks, and David Geggus's empirical focus. All key works, scholars, and their central arguments are correctly cited and contextualized. No invented citations or terms are present.",
+    "field_situatedness": "The response uses the frameworks and terminology of Caribbean and Atlantic history, the correct scholarly traditions for the Haitian Revolution. It centers non-Western perspectives (e.g., Vodou, African-derived cultural practices, marronage) and engages with key works from the field (e.g., Fick, Scott, Ferrer) without substituting Anglophone or Western framings. It acknowledges the revolution's radical challenge to race and colonialism, aligning with post-colonial and subaltern studies influences in the field.",
+    "scholarly_calibration": "The response accurately distinguishes well-established from contested points: it notes James's dominance as a 'classic view' but describes challenges as 'revisionist' or 'synthesis,' signals debates (e.g., 'arguably the most significant area of debate,' 'a leading, if controversial, voice'), and avoids presenting any single scholar's proposal as settled fact. It provides specific calibration, such as noting Girard's controversial stance and Geggus's role as a 'corrective,' rather than using blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-010",
+  "judge_cost_usd": 0.00125119,
+  "judge_latency_s": 61.9,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are accurate: C.L.R. James's 'The Black Jacobins' (1938) as foundational, Carolyn Fick's 'The Making of Haiti' (1990) emphasizing bottom-up agency, Laurent Dubois's 'Avengers of the New World' (2004) synthesis, Philippe Girard's 'The Slaves Who Defeated Napoleon' (2011) on violence, Ada Ferrer's 'Freedom's Mirror' (2014) on discursive impact, Julius Scott's 'The Common Wind' (2018) on Atlantic networks, and David Geggus's empirical focus. All key works, scholars, and their central arguments are correctly cited and contextualized. No invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes well beyond encyclopedia level by engaging with specific scholarly debates (e.g., agency from Paris vs. plantation, reinterpretation of violence, Atlantic vs. French-centric framing), methodologies (e.g., cultural turn, Atlantic history, history from below), and evidence (e.g., Vodou's role, archival research by Geggus). It explains how these disputes arose from shifts in historical scholarship, demonstrating familiarity with the literature and internal debates. A specialist would recognize this as a substantive historiographical overview.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately distinguishes well-established from contested points: it notes James's dominance as a 'classic view' but describes challenges as 'revisionist' or 'synthesis,' signals debates (e.g., 'arguably the most significant area of debate,' 'a leading, if controversial, voice'), and avoids presenting any single scholar's proposal as settled fact. It provides specific calibration, such as noting Girard's controversial stance and Geggus's role as a 'corrective,' rather than using blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses the frameworks and terminology of Caribbean and Atlantic history, the correct scholarly traditions for the Haitian Revolution. It centers non-Western perspectives (e.g., Vodou, African-derived cultural practices, marronage) and engages with key works from the field (e.g., Fick, Scott, Ferrer) without substituting Anglophone or Western framings. It acknowledges the revolution's radical challenge to race and colonialism, aligning with post-colonial and subaltern studies influences in the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates exceptional competence in Haitian Revolution historiography, accurately synthesizing key disputes and their drivers with scholarly precision.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates exceptional competence in Haitian Revolution historiography, accurately synthesizing key disputes and their drivers with scholarly precision.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

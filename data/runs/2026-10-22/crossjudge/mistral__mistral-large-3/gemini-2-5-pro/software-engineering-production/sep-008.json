@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete migration plan with phases, owners, and exact SQL commands (e.g., `ALTER TABLE`, `CREATE TRIGGER`, backfill pseudocode). 2. It includes sequence (e.g., 'Phase 1: Days 1-3'), verification steps (e.g., 'Confirm backfill scripts have completed'), and estimates (e.g., 'under 30 seconds' for cutover). 3. An engineer could execute this with light editing (e.g., replacing pseudocode with actual script). 4. No vague descriptions or 'approach' language; the plan is immediately actionable.",
+    "constraint_fidelity": "1. The response explicitly calculates the runway (32 days) and respects the timeline constraint (C3) by planning completion before exhaustion. 2. It adheres to the no-new-instance constraint (C2) by using the existing RDS instance and only requesting a 200 GB storage increase, which is within the allowed limit. 3. The maintenance window is kept under 5 minutes (C1) by deferring all heavy lifting to online phases and performing only metadata operations during the cutover. 4. The response shows arithmetic for runway and explicitly justifies the storage increase, demonstrating constraint awareness. No silent violations are present.",
+    "maintainability": "1. The solution is proportionate to the team: triggers for dual-writes reduce app-side risk, and the backfill script is idempotent and throttled. 2. Risks are explicitly stated (e.g., 'rehearse the cutover script dozens of times'). 3. Observability is built in (e.g., monitoring for `pg_locks`, sequence value alerts). 4. The plan leaves clear seams (e.g., column renames for transparency) and documents accepted debt (e.g., cleanup deferred to Phase 4). 5. No unowned moving parts or unsafe shortcuts are left unflagged.",
+    "production_realism": "1. The plan accounts for the stated scale (1.7B rows, 900 writes/sec) by using throttled backfills, `CONCURRENTLY` indexes, and `SKIP LOCKED` to avoid overwhelming the 2-vCPU instance. 2. It addresses failure modes: idempotent backfills, monitoring for replication/WAL/IOPS, and rehearsing the cutover. 3. The operational burden fits the team (2 engineers + part-time DBA) by delegating tasks clearly and using triggers for dual-writes (minimizing app changes). 4. No technically incorrect claims about PostgreSQL are made; the use of `CONCURRENTLY`, `SKIP LOCKED`, and metadata-only operations is appropriate. 5. The plan explicitly considers the team's skill mix (e.g., DBA handles concurrent indexes)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.0029846,
+  "judge_latency_s": 12.912,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly calculates the runway (32 days) and respects the timeline constraint (C3) by planning completion before exhaustion. 2. It adheres to the no-new-instance constraint (C2) by using the existing RDS instance and only requesting a 200 GB storage increase, which is within the allowed limit. 3. The maintenance window is kept under 5 minutes (C1) by deferring all heavy lifting to online phases and performing only metadata operations during the cutover. 4. The response shows arithmetic for runway and explicitly justifies the storage increase, demonstrating constraint awareness. No silent violations are present.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The plan accounts for the stated scale (1.7B rows, 900 writes/sec) by using throttled backfills, `CONCURRENTLY` indexes, and `SKIP LOCKED` to avoid overwhelming the 2-vCPU instance. 2. It addresses failure modes: idempotent backfills, monitoring for replication/WAL/IOPS, and rehearsing the cutover. 3. The operational burden fits the team (2 engineers + part-time DBA) by delegating tasks clearly and using triggers for dual-writes (minimizing app changes). 4. No technically incorrect claims about PostgreSQL are made; the use of `CONCURRENTLY`, `SKIP LOCKED`, and metadata-only operations is appropriate. 5. The plan explicitly considers the team's skill mix (e.g., DBA handles concurrent indexes).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete migration plan with phases, owners, and exact SQL commands (e.g., `ALTER TABLE`, `CREATE TRIGGER`, backfill pseudocode). 2. It includes sequence (e.g., 'Phase 1: Days 1-3'), verification steps (e.g., 'Confirm backfill scripts have completed'), and estimates (e.g., 'under 30 seconds' for cutover). 3. An engineer could execute this with light editing (e.g., replacing pseudocode with actual script). 4. No vague descriptions or 'approach' language; the plan is immediately actionable.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team: triggers for dual-writes reduce app-side risk, and the backfill script is idempotent and throttled. 2. Risks are explicitly stated (e.g., 'rehearse the cutover script dozens of times'). 3. Observability is built in (e.g., monitoring for `pg_locks`, sequence value alerts). 4. The plan leaves clear seams (e.g., column renames for transparency) and documents accepted debt (e.g., cleanup deferred to Phase 4). 5. No unowned moving parts or unsafe shortcuts are left unflagged.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a textbook example of a constraint-aware, production-ready migration plan for a high-stakes database change.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response is a textbook example of a constraint-aware, production-ready migration plan for a high-stakes database change.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

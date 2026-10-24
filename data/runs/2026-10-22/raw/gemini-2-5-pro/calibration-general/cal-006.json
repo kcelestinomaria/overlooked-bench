@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 1401,
+  "cost_usd": 0.0141575,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "6bfb84015aab2a3a",
+  "item_id": "cal-006",
+  "latency_s": 11.823,
+  "methodology_version": "m1.3.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 118,
+  "provider": "google",
+  "request_fingerprint": "f7c640b4a82354c9",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "Here is the reasoning to determine the order of the books:\n\n1.  There are five positions on the shelf. Let's number them 1 (leftmost) to 5 (rightmost).\n2.  \"The blue book is the leftmost.\" This means the blue book is in position 1.\n3.  \"The red book is the rightmost.\" This means the red book is in position 5.\n    The order so far is: Blue, __, __, __, Red.\n4.  We have three books left (purple, white, green) to fill the three middle spots (positions 2, 3, and 4).\n5.  \"The purple book is somewhere to the left of the white book.\"\n6.  \"The green book is somewhere to the right of the white book.\"\n7.  Combining these two facts means the white book must be in the middle of the other two. The order of these three books must be: Purple, White, Green.\n8.  Since these three books must fill positions 2, 3, and 4, the purple book is in position 2, the white book is in position 3, and the green book is in position 4.\n\nThe final order of the books from left to right is: Blue, Purple, White, Green, Red.\n\nThe book that is third from the left is the white book.\n\nANSWER: White",
+  "timestamp_utc": "2026-10-21T23:43:32Z"
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Create shipment_events_new with int8 PK",
+      "evidence_verified": true,
+      "verdict": "violated"
+    },
+    "C3": {
+      "evidence": "Realistic working window: 14 days",
+      "evidence_verified": true,
+      "verdict": "violated"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed migration plan with phases, concrete SQL commands, timing estimates, verification steps (e.g., row counts, data integrity checks), and a rollback procedure. It is specific and executable, though some steps (like application code changes for dual-writes) are described rather than provided verbatim. An engineer could start immediately with light editing.",
+    "constraint_fidelity": "The response violates constraint C2 by requiring a new table ('shipment_events_new') and new sequence ('shipment_events_id_seq_new'), which effectively provisions new storage and objects, breaking the 'no new instance, replica, or larger instance class' rule. It also violates C3 by proposing a 14-day plan without an immediate stopgap (like negative sequence values) to address the 21-day runway, risking exhaustion. Storage arithmetic is provided (10 GB needed vs. 520 GB free) but constraints are broken.",
+    "maintainability": "The plan includes cleanup steps (dropping old tables, updating code), documentation (success criteria, risks), and monitoring. However, it adds complexity (dual-write logic, new table) that might be challenging for a small team to maintain, and risks (e.g., dual-write failures) are stated but not fully mitigated. The solution is proportionate but could leave operational burden.",
+    "production_realism": "The plan accounts for load (batched backfill, dual-writes), locking (avoids long locks, uses concurrent operations), retries (transaction wrapper), partial failure (rollback plan), and observability (monitoring steps). However, creating a new table on a 2-vCPU instance with 1.7B rows and indexes could strain resources, and dual-writes at 900 writes/sec might add significant overhead. The team size (2 engineers + DBA) is considered, but the complexity might be high for their capacity."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 0,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.0015136,
+  "judge_latency_s": 57.436,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response violates constraint C2 by requiring a new table ('shipment_events_new') and new sequence ('shipment_events_id_seq_new'), which effectively provisions new storage and objects, breaking the 'no new instance, replica, or larger instance class' rule. It also violates C3 by proposing a 14-day plan without an immediate stopgap (like negative sequence values) to address the 21-day runway, risking exhaustion. Storage arithmetic is provided (10 GB needed vs. 520 GB free) but constraints are broken.\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan accounts for load (batched backfill, dual-writes), locking (avoids long locks, uses concurrent operations), retries (transaction wrapper), partial failure (rollback plan), and observability (monitoring steps). However, creating a new table on a 2-vCPU instance with 1.7B rows and indexes could strain resources, and dual-writes at 900 writes/sec might add significant overhead. The team size (2 engineers + DBA) is considered, but the complexity might be high for their capacity.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed migration plan with phases, concrete SQL commands, timing estimates, verification steps (e.g., row counts, data integrity checks), and a rollback procedure. It is specific and executable, though some steps (like application code changes for dual-writes) are described rather than provided verbatim. An engineer could start immediately with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The plan includes cleanup steps (dropping old tables, updating code), documentation (success criteria, risks), and monitoring. However, it adds complexity (dual-write logic, new table) that might be challenging for a small team to maintain, and risks (e.g., dual-write failures) are stated but not fully mitigated. The solution is proportionate but could leave operational burden.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides a detailed and actionable plan but violates key constraints by creating new database objects and not addressing the immediate sequence exhaustion risk.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Create shipment_events_new with int8 PK\"\n    },\n    \"C3\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Realistic working window: 14 days\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response provides a detailed and actionable plan but violates key constraints by creating new database objects and not addressing the immediate sequence exhaustion risk.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 53.75
+}

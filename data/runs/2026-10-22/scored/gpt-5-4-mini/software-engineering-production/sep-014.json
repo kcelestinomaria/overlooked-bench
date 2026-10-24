@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "uses already licensed Microsoft 365 E3 / Entra capabilities",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "without changing the Java 8 / WebSphere 8.5.5 application",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "fits within six weeks, and has a credible chance of meeting the carrier deadline",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed week-by-week plan with specific tasks, deliverables, and exit criteria (e.g., 'Week 1 — Discovery and proof of feasibility' with inventory tasks and 'Go/no-go decision'). It includes concrete steps like installing connectors, configuring Conditional Access, and DNS changes. However, it lacks exact commands, code snippets, or precise verification steps (e.g., no SAML configuration details for WebSphere), making it more descriptive than immediately executable without further refinement.",
+    "constraint_fidelity": "The response explicitly uses Microsoft Entra ID capabilities included in Microsoft 365 E3 licensing, stating 'uses already licensed Microsoft 365 E3 / Entra capabilities' and 'no new identity vendor is introduced'. It avoids Java/WebSphere upgrades: 'without changing the Java 8 / WebSphere 8.5.5 application'. The plan fits two people over six weeks with a week-by-week breakdown, including buffer time. However, it does not explicitly show arithmetic for capacity, cost, or effort verification, so it meets constraints but lacks full validation transparency.",
+    "maintainability": "The plan assigns clear roles (Java developer and Windows admin), includes documentation (support guide, rollback plan), and states risks (e.g., connector outage, help desk overload). It uses existing Microsoft infrastructure, reducing long-term complexity. However, it introduces Entra Application Proxy as a new component without detailing its operational burden or long-term supportability for the team, and it does not explicitly address testing, observability, or debt acceptance for the proxy setup.",
+    "production_realism": "The plan accounts for production-scale issues: it includes testing for session persistence, logout, timeout, and deep links; addresses compatibility fixes like cookie settings and headers; considers help desk impact and user enrollment; and includes monitoring and rollback plans. It fits the team's skills (Java dev and Windows admin) and infrastructure. However, it relies heavily on Entra Application Proxy compatibility, which is noted as a risk but not fully mitigated with concrete technical details for WebSphere 8.5.5's SAML TAI, which is the expected approach per rubric notes."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 3,
+    "maintainability": 2,
+    "production_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.00167067,
+  "judge_latency_s": 59.831,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly uses Microsoft Entra ID capabilities included in Microsoft 365 E3 licensing, stating 'uses already licensed Microsoft 365 E3 / Entra capabilities' and 'no new identity vendor is introduced'. It avoids Java/WebSphere upgrades: 'without changing the Java 8 / WebSphere 8.5.5 application'. The plan fits two people over six weeks with a week-by-week breakdown, including buffer time. However, it does not explicitly show arithmetic for capacity, cost, or effort verification, so it meets constraints but lacks full validation transparency.\",\n      \"score\": 3\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan accounts for production-scale issues: it includes testing for session persistence, logout, timeout, and deep links; addresses compatibility fixes like cookie settings and headers; considers help desk impact and user enrollment; and includes monitoring and rollback plans. It fits the team's skills (Java dev and Windows admin) and infrastructure. However, it relies heavily on Entra Application Proxy compatibility, which is noted as a risk but not fully mitigated with concrete technical details for WebSphere 8.5.5's SAML TAI, which is the expected approach per rubric notes.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed week-by-week plan with specific tasks, deliverables, and exit criteria (e.g., 'Week 1 — Discovery and proof of feasibility' with inventory tasks and 'Go/no-go decision'). It includes concrete steps like installing connectors, configuring Conditional Access, and DNS changes. However, it lacks exact commands, code snippets, or precise verification steps (e.g., no SAML configuration details for WebSphere), making it more descriptive than immediately executable without further refinement.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The plan assigns clear roles (Java developer and Windows admin), includes documentation (support guide, rollback plan), and states risks (e.g., connector outage, help desk overload). It uses existing Microsoft infrastructure, reducing long-term complexity. However, it introduces Entra Application Proxy as a new component without detailing its operational burden or long-term supportability for the team, and it does not explicitly address testing, observability, or debt acceptance for the proxy setup.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The plan pragmatically leverages existing licenses but diverges from the rubric's expected SAML federation approach, introducing potential compatibility risks.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"uses already licensed Microsoft 365 E3 / Entra capabilities\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"without changing the Java 8 / WebSphere 8.5.5 application\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"fits within six weeks, and has a credible chance of meeting the carrier deadline\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The plan pragmatically leverages existing licenses but diverges from the rubric's expected SAML federation approach, introducing potential compatibility risks.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 63.75
+}

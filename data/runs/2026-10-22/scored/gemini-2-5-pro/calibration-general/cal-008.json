@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: +6', which exactly matches the reference answer 'ANSWER: +6' in substance. The oxidation state of chromium is correctly identified as +6.",
+    "instruction_compliance": "The prompt explicitly instructs to 'show your working' and 'end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in detail and ends with 'ANSWER: +6', which matches the required format exactly.",
+    "reasoning_validity": "The response shows working: it sets up the equation (2 × x) + (7 × -2) = -2, solves it step by step (2x - 14 = -2, 2x = 12, x = 6), and the reasoning is sound and supports the answer. Each step is valid and leads to the correct conclusion."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-008",
+  "judge_cost_usd": 0.00049917,
+  "judge_latency_s": 10.156,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: +6', which exactly matches the reference answer 'ANSWER: +6' in substance. The oxidation state of chromium is correctly identified as +6.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it sets up the equation (2 × x) + (7 × -2) = -2, solves it step by step (2x - 14 = -2, 2x = 12, x = 6), and the reasoning is sound and supports the answer. Each step is valid and leads to the correct conclusion.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'show your working' and 'end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in detail and ends with 'ANSWER: +6', which matches the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all requirements with correct reasoning and exact format compliance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response fully meets all requirements with correct reasoning and exact format compliance.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

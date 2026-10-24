@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a concrete 12-month diversification plan with specific deliverables: monthly milestones (e.g., 'Month 1: Audit + positioning'), revenue streams with targets (e.g., 'Corporate partnerships: JD 12,000 annually'), staffing assignments (e.g., 'Diversification lead: Senior lawyer'), and a financial projection table. It includes prioritisation ('focus on 3-4 high-probability revenue sources') and contingency planning ('Risk Mitigation' section). The output is detailed enough to be used in a staff meeting with light editing, as it provides actionable steps, timelines, and responsibilities.",
+    "constraint_fidelity": "The response explicitly respects the 5-person constraint by stating 'Don't hire new staff. Redistribute existing capacity' and assigns roles to existing staff with time allocations (e.g., 'Senior lawyer: 5-10%/week'). It acknowledges the 12-month timeline with phased monthly milestones and respects the need to avoid overwhelming casework by capping new activities at '10-15% per person' and stating 'Protect casework hours'. Financial projections are provided with arithmetic (e.g., JD 67,000 new income + JD 120,000 from original funder + JD 13,000 existing = JD 200,000 total), showing fidelity to budget constraints.",
+    "contextual_realism": "The response avoids assuming dedicated HR, legal counsel, or procurement functions. It leverages existing staff roles (e.g., 'Senior lawyer on staff (existing relationships)'), uses low-cost tools (e.g., 'simple online platform (Donorbox, JustGiving)'), and acknowledges small-organisation realities like role overlap ('Rotate among 2-3 staff'), part-time effort ('5-10% of their time'), and minimal overhead ('Use your existing office; no new materials needed'). It explicitly rejects unrealistic options like 'recommending a development hire' and focuses on '3-4 high-probability revenue sources' compatible with limited capacity.",
+    "jurisdictional_accuracy": "The response avoids US-centric assumptions and tailors recommendations to Jordan: it suggests targeting 'Arab regional funders (Abaad, Arab Women's Organisation)', 'bilateral donors with Jordan presence (GIZ, British Council)', and local law firms in Amman. It uses Jordanian dinar (JD) for financial figures and references context-appropriate entities (e.g., 'UN Women Jordan'). While it does not delve deeply into Jordanian legal specifics, it does not make incorrect jurisdictional claims or assert US norms as universal. It provides substantive content rather than generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-012",
+  "judge_cost_usd": 0.00162128,
+  "judge_latency_s": 60.007,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the 5-person constraint by stating 'Don't hire new staff. Redistribute existing capacity' and assigns roles to existing staff with time allocations (e.g., 'Senior lawyer: 5-10%/week'). It acknowledges the 12-month timeline with phased monthly milestones and respects the need to avoid overwhelming casework by capping new activities at '10-15% per person' and stating 'Protect casework hours'. Financial projections are provided with arithmetic (e.g., JD 67,000 new income + JD 120,000 from original funder + JD 13,000 existing = JD 200,000 total), showing fidelity to budget constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response avoids assuming dedicated HR, legal counsel, or procurement functions. It leverages existing staff roles (e.g., 'Senior lawyer on staff (existing relationships)'), uses low-cost tools (e.g., 'simple online platform (Donorbox, JustGiving)'), and acknowledges small-organisation realities like role overlap ('Rotate among 2-3 staff'), part-time effort ('5-10% of their time'), and minimal overhead ('Use your existing office; no new materials needed'). It explicitly rejects unrealistic options like 'recommending a development hire' and focuses on '3-4 high-probability revenue sources' compatible with limited capacity.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a concrete 12-month diversification plan with specific deliverables: monthly milestones (e.g., 'Month 1: Audit + positioning'), revenue streams with targets (e.g., 'Corporate partnerships: JD 12,000 annually'), staffing assignments (e.g., 'Diversification lead: Senior lawyer'), and a financial projection table. It includes prioritisation ('focus on 3-4 high-probability revenue sources') and contingency planning ('Risk Mitigation' section). The output is detailed enough to be used in a staff meeting with light editing, as it provides actionable steps, timelines, and responsibilities.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response avoids US-centric assumptions and tailors recommendations to Jordan: it suggests targeting 'Arab regional funders (Abaad, Arab Women's Organisation)', 'bilateral donors with Jordan presence (GIZ, British Council)', and local law firms in Amman. It uses Jordanian dinar (JD) for financial figures and references context-appropriate entities (e.g., 'UN Women Jordan'). While it does not delve deeply into Jordanian legal specifics, it does not make incorrect jurisdictional claims or assert US norms as universal. It provides substantive content rather than generic 'consult a lawyer' disclaimers.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response is highly realistic and actionable for a small Jordanian legal aid organisation, with careful attention to constraints and contextual appropriateness.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response is highly realistic and actionable for a small Jordanian legal aid organisation, with careful attention to constraints and contextual appropriateness.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

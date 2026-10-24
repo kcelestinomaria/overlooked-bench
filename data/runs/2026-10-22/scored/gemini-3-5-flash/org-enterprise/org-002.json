@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requested a one-page go/no-go analysis with recommendation, break-even calculation, financing options, and top risks. The response provides a clear NO-GO recommendation with rationale. It includes a detailed break-even table with monthly costs and revenue target, specific Polish financing options (BGK, leasing, term loans), and two concrete risks with quantified impacts. This could be taken to a meeting with light editing.",
+    "constraint_fidelity": "The prompt constraints: 6-person bakery, PLN 1.4m revenue, 8% margin, PLN 250k available, no equity dilution. The response explicitly respects the no-dilution constraint by only proposing debt/leasing options. It calculates break-even using the 8% margin (PLN 112k net profit). However, it violates the PLN 250k constraint by proposing a PLN 400k total cost, requiring PLN 150k additional financing without explicitly justifying why the constraint must be relaxed. The arithmetic is shown but the constraint is silently exceeded rather than justified.",
+    "contextual_realism": "The response assumes centralized production at Site 1 to save equipment costs, which is realistic for a small bakery. Staffing costs (PLN 7k gross-gross for sales staff) and rent (PLN 10k for 60sqm in Kraków) are plausible for Poland. It acknowledges labor shortages and energy volatility as risks specific to small businesses. However, it assumes the bakery can handle BGK guarantees and leasing processes without dedicated legal/HR staff, which may be optimistic but not entirely unrealistic for a family business.",
+    "jurisdictional_accuracy": "The response uses Polish-specific terms: BGK guarantee, 'leasing operacyjny', 'kredyt obrotowy/inwestycyjny', 'minimalna krajowa', and references Polish banks (PKO BP, Pekao, mBank). It avoids US assumptions (no SBA references). The labor and energy risks are contextually accurate for Poland. It does not generically say 'consult a lawyer' but provides substantive content. However, it does not flag where local professional advice is needed (e.g., for BGK applications), but this is minor."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 2,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.0010973,
+  "judge_latency_s": 52.967,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt constraints: 6-person bakery, PLN 1.4m revenue, 8% margin, PLN 250k available, no equity dilution. The response explicitly respects the no-dilution constraint by only proposing debt/leasing options. It calculates break-even using the 8% margin (PLN 112k net profit). However, it violates the PLN 250k constraint by proposing a PLN 400k total cost, requiring PLN 150k additional financing without explicitly justifying why the constraint must be relaxed. The arithmetic is shown but the constraint is silently exceeded rather than justified.\",\n      \"score\": 2\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes centralized production at Site 1 to save equipment costs, which is realistic for a small bakery. Staffing costs (PLN 7k gross-gross for sales staff) and rent (PLN 10k for 60sqm in Kraków) are plausible for Poland. It acknowledges labor shortages and energy volatility as risks specific to small businesses. However, it assumes the bakery can handle BGK guarantees and leasing processes without dedicated legal/HR staff, which may be optimistic but not entirely unrealistic for a family business.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested a one-page go/no-go analysis with recommendation, break-even calculation, financing options, and top risks. The response provides a clear NO-GO recommendation with rationale. It includes a detailed break-even table with monthly costs and revenue target, specific Polish financing options (BGK, leasing, term loans), and two concrete risks with quantified impacts. This could be taken to a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response uses Polish-specific terms: BGK guarantee, 'leasing operacyjny', 'kredyt obrotowy/inwestycyjny', 'minimalna krajowa', and references Polish banks (PKO BP, Pekao, mBank). It avoids US assumptions (no SBA references). The labor and energy risks are contextually accurate for Poland. It does not generically say 'consult a lawyer' but provides substantive content. However, it does not flag where local professional advice is needed (e.g., for BGK applications), but this is minor.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A well-structured and jurisdictionally accurate analysis that provides a clear recommendation but silently exceeds the funding constraint.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A well-structured and jurisdictionally accurate analysis that provides a clear recommendation but silently exceeds the funding constraint.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 78.75
+}

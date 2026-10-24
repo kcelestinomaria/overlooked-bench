@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a complete hiring plan with roles (Programme Manager, Finance & Admin Officer, Field Officers x2), sequence (Phase 1: Months 1-2, Phase 2: Months 3-4), salary bands in KES, employer on-costs (NSSF, medical, WIBA), and arithmetic showing total personnel costs (KES 10,404,890) and remaining funds. It includes concrete components like contract durations and exchange rate assumption, making it usable with light editing.",
+    "constraint_fidelity": "The response respects all stated constraints: uses USD 180,000 grant, limits indirect costs to 15%, calculates direct cost envelope as KES 19,890,000, and shows arithmetic for personnel costs (KES 10,404,890) which fits within the envelope. It explicitly uses Kenyan salary bands and statutory on-costs, and acknowledges the ED handles hiring without adding a recruiter role.",
+    "contextual_realism": "The plan is calibrated for a small Kenyan NGO: proposes lean team of 4 roles, avoids assumptions of dedicated HR (ED handles hiring), uses phased hiring to manage capacity, and includes realistic Kenyan NGO salary bands (e.g., Programme Manager at KES 175,000/month). However, it assumes private medical insurance at KES 6,000/employee/month, which may not be standard for all small Kenyan NGOs and could be a cost burden, slightly reducing realism.",
+    "jurisdictional_accuracy": "The response accurately identifies Kenyan employer statutory on-costs: NSSF (Tier II with correct calculation), WIBA (1% of gross salary), and notes NHIF is employee-deducted. It avoids US assumptions (no equity compensation, US benefits). However, it includes private medical insurance as 'standard practice,' which may not be universally accurate for all Kenyan NGOs and could be a jurisdictional overgeneralization, though it is plausibly sector-specific."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00117482,
+  "judge_latency_s": 50.298,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all stated constraints: uses USD 180,000 grant, limits indirect costs to 15%, calculates direct cost envelope as KES 19,890,000, and shows arithmetic for personnel costs (KES 10,404,890) which fits within the envelope. It explicitly uses Kenyan salary bands and statutory on-costs, and acknowledges the ED handles hiring without adding a recruiter role.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The plan is calibrated for a small Kenyan NGO: proposes lean team of 4 roles, avoids assumptions of dedicated HR (ED handles hiring), uses phased hiring to manage capacity, and includes realistic Kenyan NGO salary bands (e.g., Programme Manager at KES 175,000/month). However, it assumes private medical insurance at KES 6,000/employee/month, which may not be standard for all small Kenyan NGOs and could be a cost burden, slightly reducing realism.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a complete hiring plan with roles (Programme Manager, Finance & Admin Officer, Field Officers x2), sequence (Phase 1: Months 1-2, Phase 2: Months 3-4), salary bands in KES, employer on-costs (NSSF, medical, WIBA), and arithmetic showing total personnel costs (KES 10,404,890) and remaining funds. It includes concrete components like contract durations and exchange rate assumption, making it usable with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately identifies Kenyan employer statutory on-costs: NSSF (Tier II with correct calculation), WIBA (1% of gross salary), and notes NHIF is employee-deducted. It avoids US assumptions (no equity compensation, US benefits). However, it includes private medical insurance as 'standard practice,' which may not be universally accurate for all Kenyan NGOs and could be a jurisdictional overgeneralization, though it is plausibly sector-specific.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, arithmetic-backed hiring plan that respects grant constraints and is tailored to a small Kenyan NGO, though with minor assumptions on benefits.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a detailed, arithmetic-backed hiring plan that respects grant constraints and is tailored to a small Kenyan NGO, though with minor assumptions on benefits.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

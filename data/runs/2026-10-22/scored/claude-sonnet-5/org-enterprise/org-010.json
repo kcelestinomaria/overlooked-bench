@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces the requested guidance deliverable: it is addressed to factory owners, explains the requirement plainly, breaks compliance into concrete steps (e.g., 'Step-by-Step Action Plan'), includes templates and annexes, and identifies collective actions. It is usable with light editing (e.g., filling in contact details) and provides specific components like tables, templates, and common mistakes, rather than describing a process.",
+    "constraint_fidelity": "The prompt specifies constraints: small factories in Bangladesh with limited administrative capacity, cannot afford external consultants, and the association represents 200 members. The response respects all constraints: it provides a step-by-step plan using existing internal resources ('organize existing documents'), explicitly avoids consultants ('No Consultant Required'), leverages collective action through the association ('shared resources', 'group rates'), and is written as guidance for factory owners. It does not violate any constraints and shows how to work within them.",
+    "contextual_realism": "The response is calibrated for small factories: it assumes no dedicated compliance officer ('designate one internal focal point'), uses simple tools ('physical or digital folder', 'notebook or simple register'), relies on existing documents ('you likely already generate most of this'), and acknowledges role overlap ('owner, HR officer, or compliance staff'). It avoids presupposing functions like legal counsel or expensive tooling, and emphasizes low-overhead processes ('does not need software').",
+    "jurisdictional_accuracy": "The prompt involves EU regulations (CSDDD, Deforestation Regulation) and Bangladesh jurisdiction. The response accurately references EU directives and avoids US assumptions (e.g., no mention of at-will employment or US tax categories). It provides substantive content and flags where collective action helps, without generic 'consult a lawyer' disclaimers. It is factually correct for the context and jurisdiction-specific."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00100887,
+  "judge_latency_s": 44.363,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies constraints: small factories in Bangladesh with limited administrative capacity, cannot afford external consultants, and the association represents 200 members. The response respects all constraints: it provides a step-by-step plan using existing internal resources ('organize existing documents'), explicitly avoids consultants ('No Consultant Required'), leverages collective action through the association ('shared resources', 'group rates'), and is written as guidance for factory owners. It does not violate any constraints and shows how to work within them.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories: it assumes no dedicated compliance officer ('designate one internal focal point'), uses simple tools ('physical or digital folder', 'notebook or simple register'), relies on existing documents ('you likely already generate most of this'), and acknowledges role overlap ('owner, HR officer, or compliance staff'). It avoids presupposing functions like legal counsel or expensive tooling, and emphasizes low-overhead processes ('does not need software').\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces the requested guidance deliverable: it is addressed to factory owners, explains the requirement plainly, breaks compliance into concrete steps (e.g., 'Step-by-Step Action Plan'), includes templates and annexes, and identifies collective actions. It is usable with light editing (e.g., filling in contact details) and provides specific components like tables, templates, and common mistakes, rather than describing a process.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves EU regulations (CSDDD, Deforestation Regulation) and Bangladesh jurisdiction. The response accurately references EU directives and avoids US assumptions (e.g., no mention of at-will employment or US tax categories). It provides substantive content and flags where collective action helps, without generic 'consult a lawyer' disclaimers. It is factually correct for the context and jurisdiction-specific.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently meets all rubric criteria by providing practical, constraint-aware guidance tailored to small Bangladeshi factories.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response excellently meets all rubric criteria by providing practical, constraint-aware guidance tailored to small Bangladeshi factories.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

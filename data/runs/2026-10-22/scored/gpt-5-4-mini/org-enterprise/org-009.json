@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for a recommendation with reasoning and preconditions if taking the contract. The response provides a clear recommendation ('Do not accept the contract as-is') and specifies detailed preconditions (e.g., 'Renegotiate the contract terms', 'Start with a pilot', 'Build capacity first'). It includes concrete components like asking for 'longer turnaround', 'service credits instead of punitive penalties', and 'volume caps'. However, it stops short of producing a full deliverable like a drafted counterproposal or decision checklist (though it offers to help, it doesn't provide it). It is substantive but requires further work to be fully actionable in a meeting.",
+    "constraint_fidelity": "The prompt describes a 15-person social enterprise in Jakarta employing people with disabilities. The response consistently acknowledges the small size ('15-person social enterprise'), mission focus ('built to provide decent, supportive jobs for people with disabilities'), and operational constraints ('small team that also prioritizes inclusive employment'). It does not assume additional resources beyond what is stated and explicitly warns against risks like 'pressure to hire away from your mission' or cutting accommodations. However, it does not provide specific arithmetic on capacity, staffing, or financial modeling as would be needed for a full fidelity check, though it mentions 'model the contract under conservative assumptions' without executing it.",
+    "contextual_realism": "The response is highly realistic for a small social enterprise. It avoids assuming dedicated functions (e.g., no mention of HR or legal teams), focuses on practical constraints like 'equipment breaks down', 'staff are absent', and 'pickup/delivery logistics fail', and emphasizes mission risks such as 'stress and burnout' and 'higher turnover'. It recognizes role overlap and resource limitations, e.g., 'contingency staffing or on-call support' rather than assuming surplus capacity. Recommendations like 'pilot period' and 'renegotiate terms' are feasible for a small organization.",
+    "jurisdictional_accuracy": "The prompt specifies Jakarta, Indonesia, but the response does not address any jurisdiction-specific factors (e.g., Indonesian labor laws, contract norms, or regulatory requirements). It avoids US assumptions by not mentioning at-will employment or US-specific terms, but it also does not engage with Indonesian context. Since the task involves contract terms and employment practices, the lack of jurisdictional consideration is a gap. The response is generically cautious but not tailored to Indonesia."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-009",
+  "judge_cost_usd": 0.00101602,
+  "judge_latency_s": 57.329,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 15-person social enterprise in Jakarta employing people with disabilities. The response consistently acknowledges the small size ('15-person social enterprise'), mission focus ('built to provide decent, supportive jobs for people with disabilities'), and operational constraints ('small team that also prioritizes inclusive employment'). It does not assume additional resources beyond what is stated and explicitly warns against risks like 'pressure to hire away from your mission' or cutting accommodations. However, it does not provide specific arithmetic on capacity, staffing, or financial modeling as would be needed for a full fidelity check, though it mentions 'model the contract under conservative assumptions' without executing it.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is highly realistic for a small social enterprise. It avoids assuming dedicated functions (e.g., no mention of HR or legal teams), focuses on practical constraints like 'equipment breaks down', 'staff are absent', and 'pickup/delivery logistics fail', and emphasizes mission risks such as 'stress and burnout' and 'higher turnover'. It recognizes role overlap and resource limitations, e.g., 'contingency staffing or on-call support' rather than assuming surplus capacity. Recommendations like 'pilot period' and 'renegotiate terms' are feasible for a small organization.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for a recommendation with reasoning and preconditions if taking the contract. The response provides a clear recommendation ('Do not accept the contract as-is') and specifies detailed preconditions (e.g., 'Renegotiate the contract terms', 'Start with a pilot', 'Build capacity first'). It includes concrete components like asking for 'longer turnaround', 'service credits instead of punitive penalties', and 'volume caps'. However, it stops short of producing a full deliverable like a drafted counterproposal or decision checklist (though it offers to help, it doesn't provide it). It is substantive but requires further work to be fully actionable in a meeting.\",\n      \"score\": 3\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt specifies Jakarta, Indonesia, but the response does not address any jurisdiction-specific factors (e.g., Indonesian labor laws, contract norms, or regulatory requirements). It avoids US assumptions by not mentioning at-will employment or US-specific terms, but it also does not engage with Indonesian context. Since the task involves contract terms and employment practices, the lack of jurisdictional consideration is a gap. The response is generically cautious but not tailored to Indonesia.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a cautious, mission-aware analysis that is realistic for a small social enterprise but lacks jurisdictional specificity and full actionable deliverables.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a cautious, mission-aware analysis that is realistic for a small social enterprise but lacks jurisdictional specificity and full actionable deliverables.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 76.25
+}

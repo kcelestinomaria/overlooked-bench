@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "completion_tokens": 935,
+  "cost_usd": 0.00197837,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "def03d6f5755f4cb",
+  "item_id": "sep-007",
+  "latency_s": 22.078,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 401,
+  "provider": "deepseek",
+  "request_fingerprint": "e0ff9888adf59688",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "# Post-Incident Review: Database Migration Blocking Payroll Processing\n**Incident Date:** 24 June  \n**Impact Duration:** ~3 hours (16:52–19:50)  \n**Service Impact:** API p99 latency increased to 28 seconds, payslip generation delayed  \n**Business Impact:** 41 employers missed same-day EFT cut-off, resulting in employees paid one day late  \n\n---\n\n## Summary\nDuring month-end processing, a database migration to add an index on the payslips table (61M rows) blocked concurrent writes, causing job queue backlog and delayed payslip generation. The migration was automatically deployed via CI/CD, and limited database visibility delayed diagnosis.\n\n## Timeline\n- **16:40** – PR #2214 (adds index on payslips) merged after one approval; CI green.\n- **16:52** – Automated deployment runs migration (CREATE INDEX on 61M rows).\n- **17:05** – Payslip generation jobs queue; API p99 climbs to 28s.\n- **17:20** – Alert fires on job-queue depth; on-call (Sipho) acknowledges at 17:41.\n- **17:55** – Team suspects database but lacks visibility into lock contention.\n- **18:30** – Migration killed; index build rolls back, lock released.\n- **18:45** – Backlog begins draining.\n- **19:50** – All payslips generated; 41 employers missed same-day EFT cut-off.\n\n## Root Causes\n### System & Process Causes\n1. **Migration Strategy**: The migration used a standard `CREATE INDEX` on a large table (61M rows), which locks the table for writes in PostgreSQL, blocking payslip generation jobs.\n2. **Automated Deployment Risk**: The CI/CD pipeline automatically runs migrations before switching traffic, without considering migration size or timing (month-end).\n3. **Limited Database Observability**: No dashboard for `pg_stat_activity` or lock contention delayed diagnosis.\n4. **Code Review & Risk Assessment**: PR approval process did not flag the risk of a blocking index creation on a large table during peak payroll period.\n5. **On-Call Constraints**: On-call engineer was driving, leading to delayed response (acknowledged 21 minutes after alert).\n\n## Action Items (Next Two Sprints, ≤15 Engineer-Days)\n### Sprint 1 (High Priority)\n1. **Implement Non-Blocking Index Creation** (5 days)  \n   - Modify migration process to use `CREATE INDEX CONCURRENTLY` for large tables to avoid write locks.\n   - Update migration guidelines to require concurrent index creation for tables >1M rows.\n\n2. **Add Database Lock Monitoring** (3 days)  \n   - Build a simple dashboard using existing tooling (e.g., Grafana + PostgreSQL queries) to show `pg_stat_activity` and lock waits.\n\n3. **Deployment Timing Guardrails** (2 days)  \n   - Update CI/CD pipeline to prevent migrations from running automatically during known peak periods (e.g., last 3 business days of month).\n\n### Sprint 2 (Medium Priority)\n4. **Enhanced PR Review Checklist** (2 days)  \n   - Add a database migration section to PR template: assess table size, locking risk, and timing.\n   - Require a second reviewer for migrations on tables >10M rows.\n\n5. **Improve On-Call Responsiveness** (3 days)  \n   - Review on-call schedule to ensure at least one additional engineer is available as backup during critical periods (e.g., month-end).\n   - Implement escalation policy if primary on-call does not acknowledge within 10 minutes.\n\n**Total Estimated Effort:** 15 engineer-days\n\n## Backlog (Future Consideration)\n- **Database Migration Dry-Run Tooling**: Simulate migration impact on a staging environment with production-like data volumes.\n- **Automated Migration Risk Scoring**: Integrate migration analysis (table size, operation type) into CI to flag risky migrations before merge.\n- **Post-Incident Customer Communication Process**: Template for notifying affected employers of payment delays.\n\n## Lessons Learned\n- Database migrations on large tables require careful planning, especially during business-critical periods.\n- Observability gaps in database performance can significantly extend incident resolution time.\n- Automated processes must include business-context checks (e.g., calendar timing) to reduce risk.\n\n---\n\n**Review Participants:** Engineering Team  \n**Documented By:** [Your Name], Head of Engineering  \n**Date:** [Current Date]",
+  "timestamp_utc": "2026-10-21T23:45:13Z"
+}

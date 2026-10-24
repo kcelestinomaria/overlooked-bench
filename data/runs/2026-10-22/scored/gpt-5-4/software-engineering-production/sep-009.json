@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a prioritized list of changes and corrected code that can be implemented immediately. It includes concrete code with error handling, logging adjustments, and idempotency checks. The follow-up list is clearly separated. An engineer could start on this with light editing, though the money handling (float) might need correction.",
+    "constraint_fidelity": "The response explicitly avoids new dependencies and infrastructure, using only standard library and existing dependencies. It provides corrected code that fits within the three-hour constraint and separates bigger changes into a follow-up list. It uses hmac.compare_digest, handles idempotency without new tables, and moves SMS after commit without requiring new services.",
+    "maintainability": "The solution is proportionate to the team, with clear code and logging. It states risks (e.g., basic idempotency) and accepted debt (float for money). The follow-up list identifies areas for improvement. However, using float for financial amounts introduces maintainability risk due to potential precision issues, which is not flagged as a debt.",
+    "production_realism": "The response addresses key production issues: signature verification first, idempotency via status check, defensive error handling, avoiding PII logging, and committing before side effects. It considers webhook retry behavior and avoids 500s for unknown references. However, it uses float for money conversion instead of integer kobo or Decimal, which is a flaw for financial data."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-009",
+  "judge_cost_usd": 0.00126119,
+  "judge_latency_s": 53.29,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly avoids new dependencies and infrastructure, using only standard library and existing dependencies. It provides corrected code that fits within the three-hour constraint and separates bigger changes into a follow-up list. It uses hmac.compare_digest, handles idempotency without new tables, and moves SMS after commit without requiring new services.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response addresses key production issues: signature verification first, idempotency via status check, defensive error handling, avoiding PII logging, and committing before side effects. It considers webhook retry behavior and avoids 500s for unknown references. However, it uses float for money conversion instead of integer kobo or Decimal, which is a flaw for financial data.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a prioritized list of changes and corrected code that can be implemented immediately. It includes concrete code with error handling, logging adjustments, and idempotency checks. The follow-up list is clearly separated. An engineer could start on this with light editing, though the money handling (float) might need correction.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team, with clear code and logging. It states risks (e.g., basic idempotency) and accepted debt (float for money). The follow-up list identifies areas for improvement. However, using float for financial amounts introduces maintainability risk due to potential precision issues, which is not flagged as a debt.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a thorough, actionable code review that respects constraints but has a critical flaw in using float for monetary amounts.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a thorough, actionable code review that respects constraints but has a critical flaw in using float for monetary amounts.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

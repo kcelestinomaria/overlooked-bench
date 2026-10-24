@@ -1,0 +1,89 @@
+{
+  "answers": {
+    "C1_acknowledged": {
+      "probability": 0.07,
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "probability": 0.03,
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "probability": 0.12,
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "probability": 0.03,
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "probability": 0.25,
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "probability": 0.03,
+      "type": "boolean"
+    }
+  },
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "cost_usd": 0.000116592,
+  "generation_id": "gen_01M5GFKV0D9RTATRJWQ3HKT95C",
+  "item_content_hash": "a235565785763fb3",
+  "item_id": "sep-009",
+  "latency_s": 2.292,
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "protocol_version": "cv-1.0.0",
+  "question_hash": "d3127847bc23f631",
+  "questions": {
+    "C1_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"No new dependencies.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "instructions": "Does the review require adding a new dependency or library, such as a new pip package, to fix the issues in this PR?",
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"No new infrastructure (no queue, Redis, Celery, or worker service).\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "instructions": "Does the review require new infrastructure such as a message queue, Redis, Celery, or a separate background worker service before merge?",
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Required changes fit in this PR, one engineer, under three hours.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "instructions": "Does the review require, before merge, changes that clearly could not be done by one engineer in about three hours, such as redesigning the payments architecture, without moving them to a separate follow-up list?",
+      "type": "boolean"
+    }
+  },
+  "requested_model": "typesafe-ai/jev-1.14.0",
+  "state_truncated": false,
+  "usage": {
+    "inputTokens": 2776,
+    "outputTokens": 124
+  },
+  "verdicts": {
+    "C1": {
+      "p_acknowledged": 0.07,
+      "p_broken": 0.03,
+      "verdict": "kept"
+    },
+    "C2": {
+      "p_acknowledged": 0.12,
+      "p_broken": 0.03,
+      "verdict": "kept"
+    },
+    "C3": {
+      "p_acknowledged": 0.25,
+      "p_broken": 0.03,
+      "verdict": "kept"
+    }
+  },
+  "verifier_model": "typesafe-ai/jev-1.14.0"
+}

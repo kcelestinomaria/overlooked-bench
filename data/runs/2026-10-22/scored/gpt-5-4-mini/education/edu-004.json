@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the student's specific circumstances (2-year gap, informal work background, 18-month constraint) and includes considerations for financial constraints through scholarship information and budget-conscious program selection. It provides practical advice tailored to the student's situation.",
+    "pathway_breadth": "The response extensively covers vocational pathways (TESDA NC programs in 14 specific fields), provides detailed cost and earning information for each, mentions scholarship options, and explicitly prioritizes these over degree programs. It correctly focuses on the Philippine system with TESDA qualifications and realistic local salary ranges.",
+    "pedagogical_soundness": "This is advisory guidance rather than instructional design, so pedagogical elements like learning objectives, activities, and assessments are not applicable. The response focuses on practical career counseling rather than teaching methodology.",
+    "workload_realism": "The guidance is realistic for a community college adviser - it provides specific program options, costs, timelines, and actionable steps that can be delivered in a counseling session. The 18-month timeline is respected with a detailed month-by-month plan."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00113483,
+  "judge_latency_s": 32.055,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This is advisory guidance rather than instructional design, so pedagogical elements like learning objectives, activities, and assessments are not applicable. The response focuses on practical career counseling rather than teaching methodology.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The guidance is realistic for a community college adviser - it provides specific program options, costs, timelines, and actionable steps that can be delivered in a counseling session. The 18-month timeline is respected with a detailed month-by-month plan.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response extensively covers vocational pathways (TESDA NC programs in 14 specific fields), provides detailed cost and earning information for each, mentions scholarship options, and explicitly prioritizes these over degree programs. It correctly focuses on the Philippine system with TESDA qualifications and realistic local salary ranges.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the student's specific circumstances (2-year gap, informal work background, 18-month constraint) and includes considerations for financial constraints through scholarship information and budget-conscious program selection. It provides practical advice tailored to the student's situation.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides exceptionally specific and realistic vocational guidance tailored to the Philippine context and the student's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response provides exceptionally specific and realistic vocational guidance tailored to the Philippine context and the student's constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

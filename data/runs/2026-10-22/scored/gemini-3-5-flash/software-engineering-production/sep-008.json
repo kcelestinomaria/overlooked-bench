@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "this entire transaction takes less than 2 seconds to execute",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "without buying new hardware",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "We must be fully migrated within 4 weeks",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed migration plan with specific SQL commands, scripts, timelines (phased over days), and roles (DBA, engineers). It includes verification steps (e.g., count query for missed rows) and a rollback point (transaction rollback for cutover). An engineer could execute this with light editing, though some steps like backfill script implementation are described rather than provided fully.",
+    "constraint_fidelity": "The response respects all hard constraints: it computes the runway (31.9 days), uses the add-new-bigint-column pattern without provisioning new instances, stays within storage budget (increases by 200 GB to 720 GB free), and keeps the cutover under 5 minutes. It explicitly addresses constraints like no new instances ('without buying new hardware') and short maintenance window ('less than 2 seconds').",
+    "maintainability": "The solution leaves clear seams (old columns retained temporarily), includes validation steps, and drops old columns after confidence is gained. Risks are stated (e.g., negative ID audit, dynamic throttling needs). However, it adds complexity (triggers, concurrent indexing) that a small team (2 engineers + part-time DBA) must maintain, and it does not explicitly document all risks or debt (e.g., trigger performance impact).",
+    "production_realism": "The plan accounts for production realities: throttled backfill with dynamic sleep based on CPU/IOPS monitoring ('monitor the DB constantly'), autovacuum tuning, concurrent indexing, and lock timeouts. It considers the weak instance (2 vCPUs, 8 GiB RAM) and scales operations (e.g., 1,000 rows/sec backfill rate). However, it does not explicitly address rollback for partial failures during backfill or indexing phases."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.00151375,
+  "judge_latency_s": 55.168,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: it computes the runway (31.9 days), uses the add-new-bigint-column pattern without provisioning new instances, stays within storage budget (increases by 200 GB to 720 GB free), and keeps the cutover under 5 minutes. It explicitly addresses constraints like no new instances ('without buying new hardware') and short maintenance window ('less than 2 seconds').\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan accounts for production realities: throttled backfill with dynamic sleep based on CPU/IOPS monitoring ('monitor the DB constantly'), autovacuum tuning, concurrent indexing, and lock timeouts. It considers the weak instance (2 vCPUs, 8 GiB RAM) and scales operations (e.g., 1,000 rows/sec backfill rate). However, it does not explicitly address rollback for partial failures during backfill or indexing phases.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed migration plan with specific SQL commands, scripts, timelines (phased over days), and roles (DBA, engineers). It includes verification steps (e.g., count query for missed rows) and a rollback point (transaction rollback for cutover). An engineer could execute this with light editing, though some steps like backfill script implementation are described rather than provided fully.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution leaves clear seams (old columns retained temporarily), includes validation steps, and drops old columns after confidence is gained. Risks are stated (e.g., negative ID audit, dynamic throttling needs). However, it adds complexity (triggers, concurrent indexing) that a small team (2 engineers + part-time DBA) must maintain, and it does not explicitly document all risks or debt (e.g., trigger performance impact).\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A thorough, constraint-aware migration plan with executable details and realistic production considerations.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"this entire transaction takes less than 2 seconds to execute\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"without buying new hardware\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"We must be fully migrated within 4 weeks\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A thorough, constraint-aware migration plan with executable details and realistic production considerations.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

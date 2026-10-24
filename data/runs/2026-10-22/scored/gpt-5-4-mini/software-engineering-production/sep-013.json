@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed, executable design with specific database schemas, processing flows, and a 3-week implementation plan with developer tasks ('Week 1: build the durable intake'). It includes concrete steps like 'add mpesa_callbacks table' and 'build scheduler command', enabling immediate execution with light editing.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: uses only existing infrastructure ('use only your existing droplet, Laravel, and MySQL'), enforces idempotency via unique constraint on receipt_no ('unique constraint on receipt_no prevents double credit'), and includes active reconciliation ('scheduled reconciliation every few minutes') to meet the 15-minute SLA. It explicitly avoids paid services ('Don’t add paid queue/hosting services').",
+    "maintainability": "The solution is proportionate to the team size, with clear seams (separate tables for callbacks and payments), documentation (detailed schema and flow descriptions), and stated risks ('Failure modes and how this design handles them'). It avoids unnecessary complexity (uses database queue instead of Redis) and emphasizes idempotency and audit trails for long-term operability.",
+    "production_realism": "The design accounts for production realities: handles idempotency ('idempotent payment intake pipeline'), retries ('retry processing'), partial failure ('transaction rolls back'), and operational burden (fits 2 developers in 3 weeks with clear task breakdown). It uses Laravel's database queue driver, appropriate for the team's scale, and addresses deployment safety ('reconciliation job finds missed callbacks during deploys')."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-013",
+  "judge_cost_usd": 0.0015236,
+  "judge_latency_s": 45.173,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: uses only existing infrastructure ('use only your existing droplet, Laravel, and MySQL'), enforces idempotency via unique constraint on receipt_no ('unique constraint on receipt_no prevents double credit'), and includes active reconciliation ('scheduled reconciliation every few minutes') to meet the 15-minute SLA. It explicitly avoids paid services ('Don’t add paid queue/hosting services').\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: handles idempotency ('idempotent payment intake pipeline'), retries ('retry processing'), partial failure ('transaction rolls back'), and operational burden (fits 2 developers in 3 weeks with clear task breakdown). It uses Laravel's database queue driver, appropriate for the team's scale, and addresses deployment safety ('reconciliation job finds missed callbacks during deploys').\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed, executable design with specific database schemas, processing flows, and a 3-week implementation plan with developer tasks ('Week 1: build the durable intake'). It includes concrete steps like 'add mpesa_callbacks table' and 'build scheduler command', enabling immediate execution with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team size, with clear seams (separate tables for callbacks and payments), documentation (detailed schema and flow descriptions), and stated risks ('Failure modes and how this design handles them'). It avoids unnecessary complexity (uses database queue instead of Redis) and emphasizes idempotency and audit trails for long-term operability.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a comprehensive, constraint-aware design that is immediately actionable and production-ready for the given team and infrastructure.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response provides a comprehensive, constraint-aware design that is immediately actionable and production-ready for the given team and infrastructure.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

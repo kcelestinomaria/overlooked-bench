@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedia level by engaging with methodological debates ('chemical analysis, toxicity studies' vs 'historical, philological, and anthropological methods') and conceptual tensions ('levels of analysis'). It acknowledges the complexity ('The disagreement is not simply science vs tradition') and shows awareness of contemporary scholarly approaches ('Many scholars and practitioners now try to combine both'). However, it lacks specific references to key scholars, texts, or particular debates within rasashastra studies that would demonstrate deeper literature engagement.",
+    "domain_accuracy": "The response accurately describes the core debate: 'Researchers disagree on whether rasashastra should be treated mainly as: 1. A form of pharmacology [...] or 2. A distinct epistemic system'. It correctly identifies key concepts like purification, incineration, potency transformation, and rasa theory as Ayurvedic categories that don't map neatly to modern pharmacology. The characterization of arguments as 'pragmatic and evaluative' versus 'conceptual and historical' aligns with scholarly discussions. No invented citations, terms, or consensus claims are present.",
+    "field_situatedness": "The response correctly uses Ayurvedic terminology ('rasashastra', 'purification', 'incineration', 'potency transformation', 'rasa theory') and frames the debate within the context of Ayurvedic cosmology and therapeutic theory. It doesn't silently substitute Western biomedical frameworks but rather presents them as one side of an ongoing scholarly debate. The response maintains the distinct identity of Ayurvedic knowledge systems while acknowledging the engagement with modern pharmacology.",
+    "scholarly_calibration": "The response demonstrates good calibration by distinguishing between different types of arguments ('pragmatic and evaluative' vs 'conceptual and historical') and acknowledging the current state of the field ('Many scholars and practitioners now try to combine both'). It avoids presenting either position as settled fact and recognizes the tension as being about 'levels of analysis' rather than a simple binary. However, it doesn't explicitly flag where knowledge might be limited or where particular aspects are more contested than others within each position."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.0008808,
+  "judge_latency_s": 47.952,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes the core debate: 'Researchers disagree on whether rasashastra should be treated mainly as: 1. A form of pharmacology [...] or 2. A distinct epistemic system'. It correctly identifies key concepts like purification, incineration, potency transformation, and rasa theory as Ayurvedic categories that don't map neatly to modern pharmacology. The characterization of arguments as 'pragmatic and evaluative' versus 'conceptual and historical' aligns with scholarly discussions. No invented citations, terms, or consensus claims are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedia level by engaging with methodological debates ('chemical analysis, toxicity studies' vs 'historical, philological, and anthropological methods') and conceptual tensions ('levels of analysis'). It acknowledges the complexity ('The disagreement is not simply science vs tradition') and shows awareness of contemporary scholarly approaches ('Many scholars and practitioners now try to combine both'). However, it lacks specific references to key scholars, texts, or particular debates within rasashastra studies that would demonstrate deeper literature engagement.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates good calibration by distinguishing between different types of arguments ('pragmatic and evaluative' vs 'conceptual and historical') and acknowledging the current state of the field ('Many scholars and practitioners now try to combine both'). It avoids presenting either position as settled fact and recognizes the tension as being about 'levels of analysis' rather than a simple binary. However, it doesn't explicitly flag where knowledge might be limited or where particular aspects are more contested than others within each position.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses Ayurvedic terminology ('rasashastra', 'purification', 'incineration', 'potency transformation', 'rasa theory') and frames the debate within the context of Ayurvedic cosmology and therapeutic theory. It doesn't silently substitute Western biomedical frameworks but rather presents them as one side of an ongoing scholarly debate. The response maintains the distinct identity of Ayurvedic knowledge systems while acknowledging the engagement with modern pharmacology.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A well-structured and accurate overview of the rasashastra debate that demonstrates solid domain knowledge while maintaining appropriate scholarly framing.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "A well-structured and accurate overview of the rasashastra debate that demonstrates solid domain knowledge while maintaining appropriate scholarly framing.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

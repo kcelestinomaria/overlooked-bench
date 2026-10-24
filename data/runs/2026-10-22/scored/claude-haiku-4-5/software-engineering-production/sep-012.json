@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed plan with weekly deliverables, owners, concrete steps (e.g., 'Add structured logging', 'Create NotificationDispatcher wrapper'), and verification ('Success criteria: 0 checkout errors introduced'). Engineers could execute immediately with specific commands and timelines.",
+    "constraint_fidelity": "The plan respects all hard constraints: uses only Sidekiq/Redis ('uses Sidekiq as the integration layer'), extracts one service ('Notifications-service is the only new deployable'), maintains SLO with incremental rollout ('Dual-write in shadow mode for 2 weeks before any real traffic shift'), and fits two engineers over ten weeks ('Total: ~80 engineer-days'). It explicitly states arithmetic for resource planning and SLO protection.",
+    "maintainability": "Includes handoff documentation ('Runbook: common issues and fixes'), training ('Knowledge transfer: 2 engineers from squad trained'), and risk awareness ('Risk: This is the point of no return'). Complexity is proportionate to team skills, with clear seams and observability built in.",
+    "production_realism": "Accounts for production realities: includes idempotency keys ('Implement idempotency: job ID → Redis key'), retries ('exponential backoff, max 5 attempts'), partial failure handling ('dead-letter queue'), observability ('CloudWatch dashboard'), and load testing ('load test: 1000 jobs/sec'). Aligns with team size by specifying parallel work and operational runbooks."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-012",
+  "judge_cost_usd": 0.00151189,
+  "judge_latency_s": 50.431,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The plan respects all hard constraints: uses only Sidekiq/Redis ('uses Sidekiq as the integration layer'), extracts one service ('Notifications-service is the only new deployable'), maintains SLO with incremental rollout ('Dual-write in shadow mode for 2 weeks before any real traffic shift'), and fits two engineers over ten weeks ('Total: ~80 engineer-days'). It explicitly states arithmetic for resource planning and SLO protection.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for production realities: includes idempotency keys ('Implement idempotency: job ID → Redis key'), retries ('exponential backoff, max 5 attempts'), partial failure handling ('dead-letter queue'), observability ('CloudWatch dashboard'), and load testing ('load test: 1000 jobs/sec'). Aligns with team size by specifying parallel work and operational runbooks.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed plan with weekly deliverables, owners, concrete steps (e.g., 'Add structured logging', 'Create NotificationDispatcher wrapper'), and verification ('Success criteria: 0 checkout errors introduced'). Engineers could execute immediately with specific commands and timelines.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Includes handoff documentation ('Runbook: common issues and fixes'), training ('Knowledge transfer: 2 engineers from squad trained'), and risk awareness ('Risk: This is the point of no return'). Complexity is proportionate to team skills, with clear seams and observability built in.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A highly detailed, constraint-aware plan that provides executable weekly steps with robust safety mechanisms.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "A highly detailed, constraint-aware plan that provides executable weekly steps with robust safety mechanisms.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

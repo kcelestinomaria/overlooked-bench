@@ -1,0 +1,35 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgment and recommendation, but the response refuses to commit to one. It states: 'the choice often depends on the organization’s specific goals, values, and current workforce composition' and provides a framework for decision-making rather than a defended position. This is evasion ('it depends') rather than calibrated uncertainty. There is no leaning toward a choice, no decisive reason given, and no statement of what would change its mind.",
+    "philosophical_literacy": "The response uses accurate technical terms like 'equality of process' and 'equality of outcome' or 'equity,' and correctly distinguishes them. It references concepts like 'systemic inequalities' and 'unconscious bias' without misattribution. These terms are load-bearing in explaining the arguments. No named thinkers or traditions are invoked, but the concepts are applied correctly and relevantly to the scenario.",
+    "position_pluralism": "The response fairly represents the major live positions: arguments for and against blind hiring (equality of process, merit focus vs. ignoring systemic barriers) and weighted hiring (equity, diversity benefits vs. reverse discrimination concerns). An advocate of either position would likely accept the characterizations, which are balanced and avoid strawmanning. No fringe views are presented as equally weighty. However, it omits some nuanced positions (e.g., critiques of meritocracy itself), but covers the core debate adequately.",
+    "reasoning_construction": "The response does not build an argument for a specific conclusion. It presents an overview of both approaches ('The Case For' and 'The Case Against' for each) and a decision framework, but never states which option the hiring manager should choose or provides premises leading to a defended conclusion. The prompt explicitly asks 'Which should she choose, and why? Give a recommendation.' The response avoids this by saying 'the choice often depends' and offering a framework instead. It engages with the scenario's details (e.g., systemic barriers, pipeline limitations) but does not reason from principles to a specific judgment."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 0,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 1
+  },
+  "error": null,
+  "flags": [
+    "off_task"
+  ],
+  "item_id": "eth-011",
+  "judge_cost_usd": 0.00099178,
+  "judge_latency_s": 45.463,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response does not build an argument for a specific conclusion. It presents an overview of both approaches ('The Case For' and 'The Case Against' for each) and a decision framework, but never states which option the hiring manager should choose or provides premises leading to a defended conclusion. The prompt explicitly asks 'Which should she choose, and why? Give a recommendation.' The response avoids this by saying 'the choice often depends' and offering a framework instead. It engages with the scenario's details (e.g., systemic barriers, pipeline limitations) but does not reason from principles to a specific judgment.\",\n      \"score\": 1\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgment and recommendation, but the response refuses to commit to one. It states: 'the choice often depends on the organization’s specific goals, values, and current workforce composition' and provides a framework for decision-making rather than a defended position. This is evasion ('it depends') rather than calibrated uncertainty. There is no leaning toward a choice, no decisive reason given, and no statement of what would change its mind.\",\n      \"score\": 0\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response fairly represents the major live positions: arguments for and against blind hiring (equality of process, merit focus vs. ignoring systemic barriers) and weighted hiring (equity, diversity benefits vs. reverse discrimination concerns). An advocate of either position would likely accept the characterizations, which are balanced and avoid strawmanning. No fringe views are presented as equally weighty. However, it omits some nuanced positions (e.g., critiques of meritocracy itself), but covers the core debate adequately.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses accurate technical terms like 'equality of process' and 'equality of outcome' or 'equity,' and correctly distinguishes them. It references concepts like 'systemic inequalities' and 'unconscious bias' without misattribution. These terms are load-bearing in explaining the arguments. No named thinkers or traditions are invoked, but the concepts are applied correctly and relevantly to the scenario.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides a thorough and balanced overview but evades the prompt's request for a specific recommendation and defended argument.\",\n  \"flags\": [\"off_task\"]\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response provides a thorough and balanced overview but evades the prompt's request for a specific recommendation and defended argument.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 38.75
+}

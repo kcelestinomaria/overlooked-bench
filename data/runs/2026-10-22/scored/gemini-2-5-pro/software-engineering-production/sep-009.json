@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Provides a complete corrected code block with imports, concrete error handling, idempotency checks, and BackgroundTasks integration. Lists changes in priority order with explanations. However, it does not explicitly check amount/currency against the order as required, and the code includes a placeholder for imports ('Adjust imports as needed') which may require minor editing.",
+    "constraint_fidelity": "The response respects all hard constraints: no new dependencies (uses only standard library and existing FastAPI/SQLAlchemy), no new infrastructure (uses BackgroundTasks which is part of FastAPI), and all changes are implementable in this PR within three hours (security fixes, idempotency, error handling). It explicitly notes BackgroundTasks lacks retries but defers that to follow-up per constraints.",
+    "maintainability": "Uses standard FastAPI patterns (BackgroundTasks) and clear error logging. Notes the limitation of BackgroundTasks (no retries) and defers to follow-up. However, it introduces database locking (with_for_update) which adds complexity for concurrency but may be acceptable for this team. Does not explicitly state risks or accepted debt beyond the follow-up note.",
+    "production_realism": "Addresses critical production issues: signature verification first, request body handling, idempotency via status check, error handling to avoid 500s, and background SMS to prevent timeouts. Uses database locking (with_for_update) for concurrency. However, it logs the full payload ('webhook received and verified: {payload}') which violates the rule against logging sensitive data, and uses float for money (amount_paid = data.get('amount', 0) / 100) instead of integer kobo or Decimal."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-009",
+  "judge_cost_usd": 0.00128027,
+  "judge_latency_s": 29.854,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: no new dependencies (uses only standard library and existing FastAPI/SQLAlchemy), no new infrastructure (uses BackgroundTasks which is part of FastAPI), and all changes are implementable in this PR within three hours (security fixes, idempotency, error handling). It explicitly notes BackgroundTasks lacks retries but defers that to follow-up per constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses critical production issues: signature verification first, request body handling, idempotency via status check, error handling to avoid 500s, and background SMS to prevent timeouts. Uses database locking (with_for_update) for concurrency. However, it logs the full payload ('webhook received and verified: {payload}') which violates the rule against logging sensitive data, and uses float for money (amount_paid = data.get('amount', 0) / 100) instead of integer kobo or Decimal.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"Provides a complete corrected code block with imports, concrete error handling, idempotency checks, and BackgroundTasks integration. Lists changes in priority order with explanations. However, it does not explicitly check amount/currency against the order as required, and the code includes a placeholder for imports ('Adjust imports as needed') which may require minor editing.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Uses standard FastAPI patterns (BackgroundTasks) and clear error logging. Notes the limitation of BackgroundTasks (no retries) and defers to follow-up. However, it introduces database locking (with_for_update) which adds complexity for concurrency but may be acceptable for this team. Does not explicitly state risks or accepted debt beyond the follow-up note.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a secure and actionable hotfix but misses key details like not logging sensitive data and using float for money.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a secure and actionable hotfix but misses key details like not logging sensitive data and using float for money.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

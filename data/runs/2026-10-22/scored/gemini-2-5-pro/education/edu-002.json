@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not address the range of learners (e.g., differing prior attainment, language barriers, or material constraints) in the South African Grade 11 context. It provides no adaptations for diverse needs, such as strategies for English additional language learners or students with varying skill levels. The focus is solely on marking efficiency, with no mention of differentiation.",
+    "pathway_breadth": "The prompt does not involve student futures or pathway guidance; it is solely about creating an assessment rubric for essays. Therefore, this dimension is scored based on inclusivity for the described setting (Grade 11 students in South Africa). The rubric criteria (e.g., Language & Tone) implicitly account for varying language proficiency, but no explicit differentiation for diverse learners is mentioned. The response is focused on marking efficiency rather than learner inclusivity.",
+    "pedagogical_soundness": "The rubric identifies four key criteria (Argument & Stance, Structure & Cohesion, Language & Tone, Counter-argument & Rebuttal) that align with CAPS curriculum requirements for argumentative writing. Each criterion has observable descriptors (e.g., 'Stance is exceptionally clear, insightful, and sustained' for Excellent vs. 'Fails to take a clear stance' for Not Yet), and the cognitive demand is appropriate for Grade 11. The criteria are distinguishable between levels, and the assessment directly measures the stated objectives of argumentation skills.",
+    "workload_realism": "The response explicitly addresses the 120-essay constraint: it recommends a process aiming for 3-4 minutes per essay (totaling 6-8 hours for marking, plus 1 hour preparation), divided into batches over a weekend. It provides concrete time estimates ('Friday Evening - 1 hour', 'batches of 30') and low-resource tools (printed rubric, colored pens, simple coding system). The marking load is realistic for one practitioner without requiring additional adults or technology."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00114304,
+  "judge_latency_s": 53.181,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The rubric identifies four key criteria (Argument & Stance, Structure & Cohesion, Language & Tone, Counter-argument & Rebuttal) that align with CAPS curriculum requirements for argumentative writing. Each criterion has observable descriptors (e.g., 'Stance is exceptionally clear, insightful, and sustained' for Excellent vs. 'Fails to take a clear stance' for Not Yet), and the cognitive demand is appropriate for Grade 11. The criteria are distinguishable between levels, and the assessment directly measures the stated objectives of argumentation skills.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses the 120-essay constraint: it recommends a process aiming for 3-4 minutes per essay (totaling 6-8 hours for marking, plus 1 hour preparation), divided into batches over a weekend. It provides concrete time estimates ('Friday Evening - 1 hour', 'batches of 30') and low-resource tools (printed rubric, colored pens, simple coding system). The marking load is realistic for one practitioner without requiring additional adults or technology.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt does not involve student futures or pathway guidance; it is solely about creating an assessment rubric for essays. Therefore, this dimension is scored based on inclusivity for the described setting (Grade 11 students in South Africa). The rubric criteria (e.g., Language & Tone) implicitly account for varying language proficiency, but no explicit differentiation for diverse learners is mentioned. The response is focused on marking efficiency rather than learner inclusivity.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not address the range of learners (e.g., differing prior attainment, language barriers, or material constraints) in the South African Grade 11 context. It provides no adaptations for diverse needs, such as strategies for English additional language learners or students with varying skill levels. The focus is solely on marking efficiency, with no mention of differentiation.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"This response excels in pedagogical soundness and workload realism but completely neglects differentiation and access for diverse learners.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response excels in pedagogical soundness and workload realism but completely neglects differentiation and access for diverse learners.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 67.5
+}

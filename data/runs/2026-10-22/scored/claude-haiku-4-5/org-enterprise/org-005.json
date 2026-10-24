@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed breakdown of requirements, costs, and steps, including specific line items for one-time and ongoing costs, roles (e.g., DPO), and operational changes. It covers DPA contents, SCCs, sub-processors, and Article 32 measures at a small scale. It could be used in a meeting with light editing, as it provides concrete deliverables like cost tables and actionable recommendations.",
+    "constraint_fidelity": "The prompt describes a 25-person software consultancy in Bangalore. The response provides cost estimates in INR and acknowledges the firm's size, but does not explicitly address headcount constraints or show arithmetic for how costs scale with 25 people. It respects the jurisdiction (India) and avoids US assumptions, but does not fully demonstrate constraint arithmetic.",
+    "contextual_realism": "The response acknowledges the firm's small size (e.g., 'manageable for a consultancy of your size') and recommends cost-effective solutions like an external DPO instead of a full-time hire. However, it suggests infrastructure upgrades costing ₹5-15 lakhs and legal costs up to ₹5 lakhs, which may be high for a 25-person firm without assessing affordability relative to typical consultancy revenues. It avoids enterprise-scale programs but could better calibrate costs to a small business context.",
+    "jurisdictional_accuracy": "The response correctly addresses India as a third country for GDPR, mentions SCCs for data transfers, and avoids US law references. It discusses GDPR-specific elements like Article 28 DPA, breach notifications, and DPO requirements accurately. However, it does not explicitly mention an Article 27 EU representative or a transfer impact assessment, which are key items in the rubric notes. It provides substantive content rather than generic disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-005",
+  "judge_cost_usd": 0.00104387,
+  "judge_latency_s": 39.711,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 25-person software consultancy in Bangalore. The response provides cost estimates in INR and acknowledges the firm's size, but does not explicitly address headcount constraints or show arithmetic for how costs scale with 25 people. It respects the jurisdiction (India) and avoids US assumptions, but does not fully demonstrate constraint arithmetic.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges the firm's small size (e.g., 'manageable for a consultancy of your size') and recommends cost-effective solutions like an external DPO instead of a full-time hire. However, it suggests infrastructure upgrades costing ₹5-15 lakhs and legal costs up to ₹5 lakhs, which may be high for a 25-person firm without assessing affordability relative to typical consultancy revenues. It avoids enterprise-scale programs but could better calibrate costs to a small business context.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed breakdown of requirements, costs, and steps, including specific line items for one-time and ongoing costs, roles (e.g., DPO), and operational changes. It covers DPA contents, SCCs, sub-processors, and Article 32 measures at a small scale. It could be used in a meeting with light editing, as it provides concrete deliverables like cost tables and actionable recommendations.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly addresses India as a third country for GDPR, mentions SCCs for data transfers, and avoids US law references. It discusses GDPR-specific elements like Article 28 DPA, breach notifications, and DPO requirements accurately. However, it does not explicitly mention an Article 27 EU representative or a transfer impact assessment, which are key items in the rubric notes. It provides substantive content rather than generic disclaimers.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is highly actionable and jurisdictionally accurate but slightly overestimates costs for a small consultancy and misses some specific GDPR elements.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is highly actionable and jurisdictionally accurate but slightly overestimates costs for a small consultancy and misses some specific GDPR elements.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 81.25
+}

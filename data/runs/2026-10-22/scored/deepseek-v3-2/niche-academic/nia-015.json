@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with scholarly debates (e.g., Kuran vs. revisionists), methods (use of Ottoman archives, court records), and specific concepts like cash waqfs, 'provisionist' ethic, and legal mechanisms (istibdal). It discusses regional and temporal variations and contrasts with Western corporations. A specialist would recognize this as informed by literature, not just summaries, though it lacks deep methodological critique or granular evidence discussion.",
+    "domain_accuracy": "The response makes substantive claims that are generally accurate: it correctly identifies waqf functions (wealth preservation, public goods provision, urban development), mentions cash waqfs from the 16th century, cites scholars like Timur Kuran, Amy Singer, Murat Çizakça, and Mehmet Genç appropriately, and describes debates accurately. However, it slightly oversimplifies the 'provisionist' ethic attribution to Genç (who focused more on state provisioning systems) and uses 'icar-ı tavila' (should be 'icareteyn' or similar for long-term leases). These are minor errors, but no invented citations or terms are present. Overall, it is correct on main points.",
+    "field_situatedness": "The response uses Ottoman-specific terminology (waqf, mütevellis, istibdal, icar-ı tavila—though the latter is slightly misspelled) and engages with Ottoman economic historiography, citing relevant scholars (Kuran, Singer, Çizakça, Genç). It does not substitute Western frameworks silently; instead, it contrasts them explicitly. It reflects the field's conventions and debates accurately.",
+    "scholarly_calibration": "The response distinguishes consensus from disagreements effectively: it labels sections as 'consensus' vs. 'disagreements,' presents both sides neutrally, and notes contextual factors (e.g., 'varied by period and region'). It avoids uniform confidence—e.g., it states 'the debate continues' and highlights evolving perspectives. However, it could more explicitly flag evidential weaknesses (e.g., limited archival studies for certain regions) but does not overstate any claim as settled."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 3,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00096707,
+  "judge_latency_s": 16.182,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are generally accurate: it correctly identifies waqf functions (wealth preservation, public goods provision, urban development), mentions cash waqfs from the 16th century, cites scholars like Timur Kuran, Amy Singer, Murat Çizakça, and Mehmet Genç appropriately, and describes debates accurately. However, it slightly oversimplifies the 'provisionist' ethic attribution to Genç (who focused more on state provisioning systems) and uses 'icar-ı tavila' (should be 'icareteyn' or similar for long-term leases). These are minor errors, but no invented citations or terms are present. Overall, it is correct on main points.\",\n      \"score\": 3\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with scholarly debates (e.g., Kuran vs. revisionists), methods (use of Ottoman archives, court records), and specific concepts like cash waqfs, 'provisionist' ethic, and legal mechanisms (istibdal). It discusses regional and temporal variations and contrasts with Western corporations. A specialist would recognize this as informed by literature, not just summaries, though it lacks deep methodological critique or granular evidence discussion.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes consensus from disagreements effectively: it labels sections as 'consensus' vs. 'disagreements,' presents both sides neutrally, and notes contextual factors (e.g., 'varied by period and region'). It avoids uniform confidence—e.g., it states 'the debate continues' and highlights evolving perspectives. However, it could more explicitly flag evidential weaknesses (e.g., limited archival studies for certain regions) but does not overstate any claim as settled.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Ottoman-specific terminology (waqf, mütevellis, istibdal, icar-ı tavila—though the latter is slightly misspelled) and engages with Ottoman economic historiography, citing relevant scholars (Kuran, Singer, Çizakça, Genç). It does not substitute Western frameworks silently; instead, it contrasts them explicitly. It reflects the field's conventions and debates accurately.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain competence with accurate, nuanced engagement in Ottoman economic history, though it lacks some granularity in evidence discussion.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain competence with accurate, nuanced engagement in Ottoman economic history, though it lacks some granularity in evidence discussion.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

@@ -4,20 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>overlooked-bench - benchmarking what the benchmarks miss</title>
-<meta name="description" content="An open, recurring benchmark of AI models on ethics and philosophy, niche academic domains, small-organisation tasks, education, and institutional-criticism refusal patterns. Every raw response and judge score published.">
+<meta name="description" content="An open, recurring benchmark of AI models on ethics and philosophy, niche academic domains, small-organisation tasks, education, and institutional-criticism refusal patterns, and production software engineering under real constraints. Every raw response and judge score published.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://kcelestinomaria.github.io/overlooked-bench/site/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="overlooked-bench">
 <meta property="og:title" content="overlooked-bench - benchmarking what the benchmarks miss">
-<meta property="og:description" content="An open, recurring benchmark of AI models on five categories mainstream evaluations skip. Every raw response and judge score published.">
+<meta property="og:description" content="An open, recurring benchmark of AI models on six categories mainstream evaluations skip. Every raw response and judge score published.">
 <meta property="og:url" content="https://kcelestinomaria.github.io/overlooked-bench/site/">
 <meta property="og:image" content="https://kcelestinomaria.github.io/overlooked-bench/data/runs/2026-09-13/social/overall.png">
-<meta property="og:image:alt" content="Bar chart of ten AI models scored on five overlooked categories.">
+<meta property="og:image:alt" content="Bar chart of AI models scored on six overlooked categories.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="overlooked-bench - benchmarking what the benchmarks miss">
-<meta name="twitter:description" content="An open benchmark of AI models on five categories mainstream evaluations skip.">
+<meta name="twitter:description" content="An open benchmark of AI models on six categories mainstream evaluations skip.">
 <meta name="twitter:image" content="https://kcelestinomaria.github.io/overlooked-bench/data/runs/2026-09-13/social/overall.png">
 
 <link rel="stylesheet" href="styles.css">
@@ -69,10 +69,10 @@
 
     <section aria-labelledby="leaderboard-heading">
       <h2 id="leaderboard-heading">Leaderboard</h2>
-      <p class="section-note">
-        The overall index is the unweighted mean of the five headline category
-        scores. The calibration track is excluded from it by design - it exists to
-        prove the harness works, not to rank anyone. Click a column to sort.
+      <p class="section-note" id="lb-note">
+        The overall index is the unweighted mean of the headline category scores.
+        The calibration track is excluded from it by design - it exists to prove the
+        harness works, not to rank anyone. Click a column to sort.
       </p>
       <div class="table-scroll">
         <table id="leaderboard" class="data-table">
@@ -105,6 +105,33 @@
         </table>
       </div>
       <div id="asym-detail" class="asym-detail"></div>
+    </section>
+
+    <section id="cv-section" aria-labelledby="cv-heading" hidden>
+      <h2 id="cv-heading">Software engineering in production - constraint violations</h2>
+      <p class="section-note">
+        Every production task states hard constraints - no new services, a budget,
+        a headcount, a maintenance window, a retention rule. A violation is counted
+        only when the judge <em>and</em> an independent evaluation model both say the
+        response broke a constraint without acknowledging it. Explicit, justified
+        relaxations are not violations. <strong>Sent back</strong> is the share of
+        tasks with at least one confirmed violation. Lower is better.
+      </p>
+      <p class="section-note" id="cv-note"></p>
+      <div class="table-scroll">
+        <table id="cv" class="data-table">
+          <thead><tr>
+            <th scope="col">Model</th>
+            <th scope="col" class="num">Sent back %</th>
+            <th scope="col" class="num">Confirmed violations %</th>
+            <th scope="col" class="num">Judge alone %</th>
+            <th scope="col" class="num">Verifier alone %</th>
+            <th scope="col" class="num">Agreement %</th>
+            <th scope="col" class="num">Checks</th>
+          </tr></thead>
+          <tbody id="cv-body"></tbody>
+        </table>
+      </div>
     </section>
 
     <section aria-labelledby="charts-heading">

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete implementation plan with week-by-week tasks, owners, and deliverables. 2. It includes specific code snippets (e.g., SAML entry point servlet), exact commands (e.g., Maven dependencies), and verification steps (e.g., security audit, load testing). 3. The plan is executable immediately, with a clear sequence (POC → integration → pilot → production) and success criteria. 4. No vague descriptions or 'approach' language; the response is a ready-to-start playbook.",
+    "constraint_fidelity": "1. The response explicitly uses existing Microsoft 365 E3 licenses (Entra ID) and does not recommend any new identity product or vendor (C1 kept). 2. It adheres to Java 8 and WebSphere 8.5.5 constraints, using OpenSAML 2.13.0, which is compatible with Java 8 (C2 kept). 3. The plan is designed for one developer and one sysadmin over six weeks, with a detailed hour-by-hour allocation that sums to ~315 hours (C3 kept). 4. The response shows arithmetic (e.g., resource allocation table) and explicitly justifies the approach within constraints. No silent violations or unacknowledged relaxations are present.",
+    "maintainability": "1. The solution is proportionate to the team (one developer, one sysadmin) and avoids unnecessary complexity (e.g., no new vendors, minimal code changes). 2. Risks and debt are explicitly stated (e.g., SAML library compatibility, certificate rotation, MFA fatigue). 3. Documentation is thorough: runbooks, troubleshooting guides, video walkthroughs, and audit logs. 4. Observability is built in (audit logging, SIEM integration, sign-in logs). 5. The plan includes knowledge transfer (training, handoff) for future maintainers.",
+    "production_realism": "1. The response accounts for the stated scale (300 employees) and infrastructure (WebSphere 8.5.5, Java 8, on-prem AD). 2. It addresses failure modes: SAML assertion validation, replay attack prevention, CSRF protection, and rollback procedures. 3. Operational burden is proportionate to the team (e.g., pilot testing, runbooks, and troubleshooting guides). 4. The plan includes load testing, performance targets (<100ms latency), and observability (audit logs, SIEM integration). 5. No technically incorrect claims about the named technologies (e.g., Entra ID, WebSphere SAML TAI) are made."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.0014309,
+  "judge_latency_s": 11.185,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly uses existing Microsoft 365 E3 licenses (Entra ID) and does not recommend any new identity product or vendor (C1 kept). 2. It adheres to Java 8 and WebSphere 8.5.5 constraints, using OpenSAML 2.13.0, which is compatible with Java 8 (C2 kept). 3. The plan is designed for one developer and one sysadmin over six weeks, with a detailed hour-by-hour allocation that sums to ~315 hours (C3 kept). 4. The response shows arithmetic (e.g., resource allocation table) and explicitly justifies the approach within constraints. No silent violations or unacknowledged relaxations are present.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (300 employees) and infrastructure (WebSphere 8.5.5, Java 8, on-prem AD). 2. It addresses failure modes: SAML assertion validation, replay attack prevention, CSRF protection, and rollback procedures. 3. Operational burden is proportionate to the team (e.g., pilot testing, runbooks, and troubleshooting guides). 4. The plan includes load testing, performance targets (<100ms latency), and observability (audit logs, SIEM integration). 5. No technically incorrect claims about the named technologies (e.g., Entra ID, WebSphere SAML TAI) are made.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete implementation plan with week-by-week tasks, owners, and deliverables. 2. It includes specific code snippets (e.g., SAML entry point servlet), exact commands (e.g., Maven dependencies), and verification steps (e.g., security audit, load testing). 3. The plan is executable immediately, with a clear sequence (POC → integration → pilot → production) and success criteria. 4. No vague descriptions or 'approach' language; the response is a ready-to-start playbook.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (one developer, one sysadmin) and avoids unnecessary complexity (e.g., no new vendors, minimal code changes). 2. Risks and debt are explicitly stated (e.g., SAML library compatibility, certificate rotation, MFA fatigue). 3. Documentation is thorough: runbooks, troubleshooting guides, video walkthroughs, and audit logs. 4. Observability is built in (audit logging, SIEM integration, sign-in logs). 5. The plan includes knowledge transfer (training, handoff) for future maintainers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a meticulously detailed, constraint-compliant plan that could be executed immediately by the described team.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a meticulously detailed, constraint-compliant plan that could be executed immediately by the described team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

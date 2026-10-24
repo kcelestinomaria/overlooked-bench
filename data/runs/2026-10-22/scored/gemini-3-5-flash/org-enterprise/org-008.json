@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a concrete turnaround plan with quantified analysis: it calculates the collection gap (30% non-payment costing GHS 648,000), proposes specific collection interventions ('strict No Pay, No Class policy by Week 4'), analyzes staffing costs (reducing teachers from 22 to 16), and includes an implementation timeline with immediate actions. The output could be taken into a board meeting with light editing, as it provides line items, totals, and clear recommendations.",
+    "constraint_fidelity": "The prompt explicitly stated 'The board will not consider raising fees this year.' The response respects this constraint by stating 'The board has banned fee increases. Therefore, the turnaround must rely on two levers: maximizing fee collection and reducing staff costs.' It provides detailed arithmetic for staffing reduction (saving GHS 315,280), collection improvement (adding GHS 432,000), and operational cost cutting (saving GHS 54,400), with all calculations shown. The response does not violate any stated constraints.",
+    "contextual_realism": "The response is calibrated for a small Ghanaian school: it acknowledges the economic context ('tight Ghanaian economy'), proposes a student-teacher ratio (25:1) that is realistic compared to local public schools ('Ghanaian public school average is often over 35:1'), and avoids assuming specialized functions like dedicated HR or legal counsel. It considers staff morale, community backlash, and uses practical interventions like a 'No Pay, No Class' policy with a payment plan option, which is feasible for a resource-constrained organization.",
+    "jurisdictional_accuracy": "The prompt involves Ghana, and the response avoids US assumptions: it references Ghana-specific context ('Ghanaian economy', 'Ghanaian public school average'), does not assume US employment practices (e.g., at-will employment), and proposes actions like redundancy with severance pay, which aligns with common practices in many jurisdictions. It does not make incorrect jurisdictional claims or generically say 'consult a lawyer' but provides substantive content. However, it does not explicitly flag where local professional advice might be needed (e.g., for redundancy laws), so it falls short of a 4."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-008",
+  "judge_cost_usd": 0.00115312,
+  "judge_latency_s": 52.678,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt explicitly stated 'The board will not consider raising fees this year.' The response respects this constraint by stating 'The board has banned fee increases. Therefore, the turnaround must rely on two levers: maximizing fee collection and reducing staff costs.' It provides detailed arithmetic for staffing reduction (saving GHS 315,280), collection improvement (adding GHS 432,000), and operational cost cutting (saving GHS 54,400), with all calculations shown. The response does not violate any stated constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Ghanaian school: it acknowledges the economic context ('tight Ghanaian economy'), proposes a student-teacher ratio (25:1) that is realistic compared to local public schools ('Ghanaian public school average is often over 35:1'), and avoids assuming specialized functions like dedicated HR or legal counsel. It considers staff morale, community backlash, and uses practical interventions like a 'No Pay, No Class' policy with a payment plan option, which is feasible for a resource-constrained organization.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a concrete turnaround plan with quantified analysis: it calculates the collection gap (30% non-payment costing GHS 648,000), proposes specific collection interventions ('strict No Pay, No Class policy by Week 4'), analyzes staffing costs (reducing teachers from 22 to 16), and includes an implementation timeline with immediate actions. The output could be taken into a board meeting with light editing, as it provides line items, totals, and clear recommendations.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Ghana, and the response avoids US assumptions: it references Ghana-specific context ('Ghanaian economy', 'Ghanaian public school average'), does not assume US employment practices (e.g., at-will employment), and proposes actions like redundancy with severance pay, which aligns with common practices in many jurisdictions. It does not make incorrect jurisdictional claims or generically say 'consult a lawyer' but provides substantive content. However, it does not explicitly flag where local professional advice might be needed (e.g., for redundancy laws), so it falls short of a 4.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides a highly actionable, numbers-driven plan that respects all constraints and is realistically tailored to a small Ghanaian school.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response provides a highly actionable, numbers-driven plan that respects all constraints and is realistically tailored to a small Ghanaian school.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

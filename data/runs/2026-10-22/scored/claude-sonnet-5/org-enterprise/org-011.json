@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for advice on how to spend the PEN 2 million, including a costed allocation. The response provides specific line items (diagnostics, commercial recovery, physical reduction, institutional) with monetary ranges and rationale. It includes sequencing, payback periods, and practical steps like DMA delineation and meter replacement. It could be taken into a meeting with light editing to refine exact figures.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response allocates PEN 150,000–200,000 for diagnostics, PEN 900,000–1,100,000 for commercial loss recovery, PEN 700,000–900,000 for physical loss reduction, and PEN 100,000 for institutional costs, which sums to a range of PEN 1,850,000–2,200,000. The upper end exceeds the budget by PEN 200,000, and the response does not explicitly justify this potential overrun or show arithmetic to ensure it stays within PEN 2 million. However, it respects the utility's context and avoids spending the entire budget on pipe replacement as warned.",
+    "contextual_realism": "The response acknowledges the utility's size and common issues in Peruvian municipalities (e.g., aging meters, manual billing, illegal connections). It avoids assuming dedicated HR or legal counsel, focusing on practical steps like meter replacement, field verification, and staff training. It recognizes role overlap and resource constraints by prioritizing low-cost, high-impact measures like pressure management and commercial loss recovery with short payback.",
+    "jurisdictional_accuracy": "The response references SUNASS (Peru's water regulator) and World Bank LAC studies, showing awareness of the Peruvian context. It avoids US assumptions (e.g., no mention of US tax or employment norms) and focuses on region-specific issues like unmetered connections and informal settlements. It provides substantive content without generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 2,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00098392,
+  "judge_latency_s": 46.909,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response allocates PEN 150,000–200,000 for diagnostics, PEN 900,000–1,100,000 for commercial loss recovery, PEN 700,000–900,000 for physical loss reduction, and PEN 100,000 for institutional costs, which sums to a range of PEN 1,850,000–2,200,000. The upper end exceeds the budget by PEN 200,000, and the response does not explicitly justify this potential overrun or show arithmetic to ensure it stays within PEN 2 million. However, it respects the utility's context and avoids spending the entire budget on pipe replacement as warned.\",\n      \"score\": 2\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges the utility's size and common issues in Peruvian municipalities (e.g., aging meters, manual billing, illegal connections). It avoids assuming dedicated HR or legal counsel, focusing on practical steps like meter replacement, field verification, and staff training. It recognizes role overlap and resource constraints by prioritizing low-cost, high-impact measures like pressure management and commercial loss recovery with short payback.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for advice on how to spend the PEN 2 million, including a costed allocation. The response provides specific line items (diagnostics, commercial recovery, physical reduction, institutional) with monetary ranges and rationale. It includes sequencing, payback periods, and practical steps like DMA delineation and meter replacement. It could be taken into a meeting with light editing to refine exact figures.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response references SUNASS (Peru's water regulator) and World Bank LAC studies, showing awareness of the Peruvian context. It avoids US assumptions (e.g., no mention of US tax or employment norms) and focuses on region-specific issues like unmetered connections and informal settlements. It provides substantive content without generic 'consult a lawyer' disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excels in realism, actionability, and jurisdictional accuracy but slightly exceeds the budget constraint without explicit justification.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excels in realism, actionability, and jurisdictional accuracy but slightly exceeds the budget constraint without explicit justification.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 85.0
+}

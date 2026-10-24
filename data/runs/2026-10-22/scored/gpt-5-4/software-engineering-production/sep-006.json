@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed plan with specific components like schema definitions ('rider_location_points'), implementation steps for engineers, and clear pushbacks to product. It includes concrete commands (e.g., SQL schema), sequences, and estimates, making it actionable for the team to start execution. However, it does not provide exact runbook commands or code snippets for all parts, requiring some interpretation.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: it uses only existing stack (PostgreSQL/PostGIS, BigQuery, Firebase), proposes raw precise location deletion within 30 days ('Daily job drops partitions older than 30 days'), addresses backup retention compliance ('backup retention for databases containing raw precise location is capped at 30 days'), and fits within two engineers and six weeks ('Engineer 1: Android + ingestion', 'Engineer 2: backend + support view + retention'). It also justifies design choices to avoid constraint violations, such as not storing raw data in BigQuery.",
+    "maintainability": "The response emphasizes simplicity ('Don’t build a complex offline map-matching pipeline'), documents risks ('Risks and mitigations section'), and proposes clear access policies and aggregation safeguards. It considers the team's capacity and avoids unnecessary complexity. However, it does not explicitly mention tests, documentation, or handover processes, and some parts (e.g., backup retention solution) are noted as potential blockers without detailed mitigations.",
+    "production_realism": "The response accounts for production realities: it considers Android battery/network variance ('real-world variance from Android battery/network conditions'), proposes buffering and retries ('Buffer briefly on device if network is unavailable'), addresses database partitioning for performance ('daily partitions'), includes access controls and audit logging ('audit logs for access'), and fits the team's scale ('2 engineers / 6 weeks'). However, it lacks specific details on rollback procedures or observability of the change itself."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.00189531,
+  "judge_latency_s": 54.434,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: it uses only existing stack (PostgreSQL/PostGIS, BigQuery, Firebase), proposes raw precise location deletion within 30 days ('Daily job drops partitions older than 30 days'), addresses backup retention compliance ('backup retention for databases containing raw precise location is capped at 30 days'), and fits within two engineers and six weeks ('Engineer 1: Android + ingestion', 'Engineer 2: backend + support view + retention'). It also justifies design choices to avoid constraint violations, such as not storing raw data in BigQuery.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: it considers Android battery/network variance ('real-world variance from Android battery/network conditions'), proposes buffering and retries ('Buffer briefly on device if network is unavailable'), addresses database partitioning for performance ('daily partitions'), includes access controls and audit logging ('audit logs for access'), and fits the team's scale ('2 engineers / 6 weeks'). However, it lacks specific details on rollback procedures or observability of the change itself.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed plan with specific components like schema definitions ('rider_location_points'), implementation steps for engineers, and clear pushbacks to product. It includes concrete commands (e.g., SQL schema), sequences, and estimates, making it actionable for the team to start execution. However, it does not provide exact runbook commands or code snippets for all parts, requiring some interpretation.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response emphasizes simplicity ('Don’t build a complex offline map-matching pipeline'), documents risks ('Risks and mitigations section'), and proposes clear access policies and aggregation safeguards. It considers the team's capacity and avoids unnecessary complexity. However, it does not explicitly mention tests, documentation, or handover processes, and some parts (e.g., backup retention solution) are noted as potential blockers without detailed mitigations.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong constraint adherence and practical design for the given team and legal context, though it lacks some operational specifics.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates strong constraint adherence and practical design for the given team and legal context, though it lacks some operational specifics.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

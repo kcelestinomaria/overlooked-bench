@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a concrete one-page analysis with a clear conditional recommendation ('Conditional Go'), break-even calculation with line items and totals, specific financing options, and identified risks. It is not a framework or process description; it includes the deliverable requested (go/no-go analysis) with components like revenue target, cost breakdown, and actionable next steps (securing financing, appointing a manager). It could be taken to a meeting with light editing.",
+    "constraint_fidelity": "The response explicitly respects the no-dilution constraint by listing only non-equity financing options (bank loan, leasing, EU grants, BGK-guaranteed loans). It acknowledges the PLN 250,000 capital constraint but argues it is insufficient, proposing to seek additional financing rather than silently exceeding the budget. The break-even calculation uses the stated 8% margin (converted to 70% gross margin for the calculation) and shows arithmetic: PLN 28,500 / 0.70 = PLN 40,715 monthly break-even revenue. This is a justified relaxation with explicit reasoning, not a silent violation.",
+    "contextual_realism": "The response is calibrated for a small family business: it assumes modest rent (PLN 10,000/month for a 'non-prime location'), low staffing (2 new employees), and acknowledges operational strain on the family team. It avoids presupposing dedicated HR, legal, or procurement functions. The financing options (bank loans, leasing, EU grants, BGK guarantees) are realistic for a Polish SME and do not assume US-style resources. The risk of brand dilution due to family stretch is a small-business-specific insight.",
+    "jurisdictional_accuracy": "The response correctly identifies Polish financing mechanisms: 'Kredyt inwestycyjny' (investment loan), 'Leasing', 'Dotacje unijne' (EU grants), and 'Gwarancje de minimis BGK' (BGK guarantees). It references Polish institutions (Bank Gospodarstwa Krajowego, Małopolska region) and employment costs ('incl. ZUS' – Polish social security). It avoids US assumptions (no SBA references, no equity proposals). The advice is specific to Poland and does not rely on generic disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.0010909,
+  "judge_latency_s": 56.59,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the no-dilution constraint by listing only non-equity financing options (bank loan, leasing, EU grants, BGK-guaranteed loans). It acknowledges the PLN 250,000 capital constraint but argues it is insufficient, proposing to seek additional financing rather than silently exceeding the budget. The break-even calculation uses the stated 8% margin (converted to 70% gross margin for the calculation) and shows arithmetic: PLN 28,500 / 0.70 = PLN 40,715 monthly break-even revenue. This is a justified relaxation with explicit reasoning, not a silent violation.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small family business: it assumes modest rent (PLN 10,000/month for a 'non-prime location'), low staffing (2 new employees), and acknowledges operational strain on the family team. It avoids presupposing dedicated HR, legal, or procurement functions. The financing options (bank loans, leasing, EU grants, BGK guarantees) are realistic for a Polish SME and do not assume US-style resources. The risk of brand dilution due to family stretch is a small-business-specific insight.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a concrete one-page analysis with a clear conditional recommendation ('Conditional Go'), break-even calculation with line items and totals, specific financing options, and identified risks. It is not a framework or process description; it includes the deliverable requested (go/no-go analysis) with components like revenue target, cost breakdown, and actionable next steps (securing financing, appointing a manager). It could be taken to a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Polish financing mechanisms: 'Kredyt inwestycyjny' (investment loan), 'Leasing', 'Dotacje unijne' (EU grants), and 'Gwarancje de minimis BGK' (BGK guarantees). It references Polish institutions (Bank Gospodarstwa Krajowego, Małopolska region) and employment costs ('incl. ZUS' – Polish social security). It avoids US assumptions (no SBA references, no equity proposals). The advice is specific to Poland and does not rely on generic disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is highly specific, realistic, and actionable for a small Polish bakery, with accurate jurisdictional details and explicit constraint handling.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response is highly specific, realistic, and actionable for a small Polish bakery, with accurate jurisdictional details and explicit constraint handling.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

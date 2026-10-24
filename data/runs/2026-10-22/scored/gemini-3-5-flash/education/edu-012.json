@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses differentiation for language learners through multimodal instruction, peer support, non-verbal assessment, and language-specific strategies (e.g., color-coded grammar cues for Tagalog speakers). It accounts for varying language proficiencies and is implementable by a solo teacher with no assistant. No generic 'differentiate as needed' language is used; instead, it offers specific, low-cost adaptations.",
+    "pathway_breadth": "This item does not involve student pathway guidance; it focuses on classroom support for language learners. The response is inclusive of the range of learners (Arabic, Spanish, Tagalog speakers) and provides specific, actionable strategies tailored to their linguistic backgrounds, treating home languages as assets. It respects the Quebec context and addresses the diversity of the classroom effectively.",
+    "pedagogical_soundness": "The response provides clear pedagogical strategies aligned with language acquisition goals, such as multimodal instruction, peer pairing, and structured routines. It emphasizes French as the primary medium while leveraging home languages as assets, and includes non-verbal assessment methods. However, it lacks explicit learning objectives and detailed assessment alignment, focusing more on general strategies than a structured pedagogical plan.",
+    "workload_realism": "Strategies are designed for a solo teacher with no assistant and use low-cost, readily available resources like visual schedules, peer pairing, and classroom labels. Technology suggestions (QR codes, translation apps) are feasible in most modern classrooms. Preparation and marking loads are reasonable, with an emphasis on predictable routines and visual aids that reduce ongoing effort. Timings are not explicitly broken down, but the overall approach is realistic for the setting."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00094105,
+  "judge_latency_s": 39.2,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear pedagogical strategies aligned with language acquisition goals, such as multimodal instruction, peer pairing, and structured routines. It emphasizes French as the primary medium while leveraging home languages as assets, and includes non-verbal assessment methods. However, it lacks explicit learning objectives and detailed assessment alignment, focusing more on general strategies than a structured pedagogical plan.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Strategies are designed for a solo teacher with no assistant and use low-cost, readily available resources like visual schedules, peer pairing, and classroom labels. Technology suggestions (QR codes, translation apps) are feasible in most modern classrooms. Preparation and marking loads are reasonable, with an emphasis on predictable routines and visual aids that reduce ongoing effort. Timings are not explicitly broken down, but the overall approach is realistic for the setting.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student pathway guidance; it focuses on classroom support for language learners. The response is inclusive of the range of learners (Arabic, Spanish, Tagalog speakers) and provides specific, actionable strategies tailored to their linguistic backgrounds, treating home languages as assets. It respects the Quebec context and addresses the diversity of the classroom effectively.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses differentiation for language learners through multimodal instruction, peer support, non-verbal assessment, and language-specific strategies (e.g., color-coded grammar cues for Tagalog speakers). It accounts for varying language proficiencies and is implementable by a solo teacher with no assistant. No generic 'differentiate as needed' language is used; instead, it offers specific, low-cost adaptations.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides practical, solo-teacher-friendly strategies that are well-grounded in the Quebec context and treat home languages as assets.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response provides practical, solo-teacher-friendly strategies that are well-grounded in the Quebec context and treat home languages as assets.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

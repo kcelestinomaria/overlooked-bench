@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 305,
+  "cost_usd": 0.003368,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "6bfb84015aab2a3a",
+  "item_id": "cal-006",
+  "latency_s": 5.58,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 159,
+  "provider": "anthropic",
+  "request_fingerprint": "dceabb02306bf4c9",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "**Reasoning:**\n\nWe have 5 positions (1 = leftmost, 5 = rightmost).\n\n1. Blue is leftmost → Blue = position 1.\n2. Red is rightmost → Red = position 5.\n3. This leaves positions 2, 3, 4 for Purple, White, and Green.\n4. Purple is left of White → Purple comes before White.\n5. White is left of Green → White comes before Green.\n\nSo the order among the remaining three must be: Purple, White, Green (positions 2, 3, 4 respectively).\n\nFinal arrangement:\n1. Blue\n2. Purple\n3. White\n4. Green\n5. Red\n\nThe third book from the left is **White**.\n\nANSWER: White",
+  "timestamp_utc": "2026-10-21T23:35:17Z"
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the student's specific background (19-year-old with informal work experience) and considers financial access through free scholarship routes and low-cost options. It warns against scams and emphasizes verifying accreditation, which is practical and low-cost. However, it does not explicitly address other potential learner differences like language barriers or additional needs, though the guidance is tailored to the individual's described situation.",
+    "pathway_breadth": "The response thoroughly covers vocational pathways relevant to the Philippine context, specifically naming TESDA NC II courses, DOLE JobStart, and realistic durations and costs. It provides concrete details on non-degree options like technical training, apprenticeships, and employment routes, with specific pay ranges and warnings about overseas employment timelines. Academic university options are not mentioned, appropriately focusing on vocational tracks.",
+    "pedagogical_soundness": "This dimension evaluates educational planning, but the response provides career guidance rather than teaching materials. There are no learning objectives, activities, or assessments to evaluate for pedagogical alignment. The content is advisory, not instructional.",
+    "workload_realism": "The response outlines an adviser's guidance process, not a teaching plan requiring resources or timing. It suggests practical steps like visiting offices and checking programs, which are feasible for an adviser. No unrealistic workload or resource demands are presented."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00095442,
+  "judge_latency_s": 36.314,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension evaluates educational planning, but the response provides career guidance rather than teaching materials. There are no learning objectives, activities, or assessments to evaluate for pedagogical alignment. The content is advisory, not instructional.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response outlines an adviser's guidance process, not a teaching plan requiring resources or timing. It suggests practical steps like visiting offices and checking programs, which are feasible for an adviser. No unrealistic workload or resource demands are presented.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response thoroughly covers vocational pathways relevant to the Philippine context, specifically naming TESDA NC II courses, DOLE JobStart, and realistic durations and costs. It provides concrete details on non-degree options like technical training, apprenticeships, and employment routes, with specific pay ranges and warnings about overseas employment timelines. Academic university options are not mentioned, appropriately focusing on vocational tracks.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the student's specific background (19-year-old with informal work experience) and considers financial access through free scholarship routes and low-cost options. It warns against scams and emphasizes verifying accreditation, which is practical and low-cost. However, it does not explicitly address other potential learner differences like language barriers or additional needs, though the guidance is tailored to the individual's described situation.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides highly specific, realistic vocational guidance tailored to the Philippine context and the student's profile.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response provides highly specific, realistic vocational guidance tailored to the Philippine context and the student's profile.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 58.75
+}

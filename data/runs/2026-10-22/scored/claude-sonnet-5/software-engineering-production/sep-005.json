@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Daily partitions; scheduled job drops partitions >30 days old",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Two engineers/six weeks is workable",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete design with tables, pipelines, access controls, and pre-launch steps. It includes specific mechanisms like 'daily declarative partitions' and 'nightly job' for aggregation. However, it lacks sequence/timeline estimates, exact commands, or verification steps for execution, making it more descriptive than immediately actionable.",
+    "constraint_fidelity": "The response respects all hard constraints: 1) No new vendors are added (uses existing PostgreSQL/PostGIS, BigQuery, Firebase); 2) Raw precise location is retained ≤30 days via partitioned drops and backup policies; 3) Two engineers/six weeks is deemed feasible with parallel legal work. It explicitly addresses each constraint and provides mechanisms (e.g., 'Daily partitions; scheduled job drops partitions >30 days old') to enforce them.",
+    "maintainability": "The solution is proportionate to the team: uses existing tech, clear seams (separate pipelines/schemas), and states risks (e.g., 'legal sign-off is the critical path'). It includes documentation (retention table, audit logs) and observability ('Fail loud' alerting). However, it does not explicitly address tests or handover processes for long-term operability.",
+    "production_realism": "The design accounts for production realities: it specifies batch uploads to reduce load, partitioning for scalability, role-based access with audit logs, and failure handling (e.g., 'Fail loud' alerting for retention jobs). It considers team skill mix by leveraging existing stack and avoids overly complex solutions. However, it lacks detailed retry/rollback strategies for data pipelines."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-005",
+  "judge_cost_usd": 0.00149775,
+  "judge_latency_s": 53.556,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: 1) No new vendors are added (uses existing PostgreSQL/PostGIS, BigQuery, Firebase); 2) Raw precise location is retained ≤30 days via partitioned drops and backup policies; 3) Two engineers/six weeks is deemed feasible with parallel legal work. It explicitly addresses each constraint and provides mechanisms (e.g., 'Daily partitions; scheduled job drops partitions >30 days old') to enforce them.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: it specifies batch uploads to reduce load, partitioning for scalability, role-based access with audit logs, and failure handling (e.g., 'Fail loud' alerting for retention jobs). It considers team skill mix by leveraging existing stack and avoids overly complex solutions. However, it lacks detailed retry/rollback strategies for data pipelines.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete design with tables, pipelines, access controls, and pre-launch steps. It includes specific mechanisms like 'daily declarative partitions' and 'nightly job' for aggregation. However, it lacks sequence/timeline estimates, exact commands, or verification steps for execution, making it more descriptive than immediately actionable.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: uses existing tech, clear seams (separate pipelines/schemas), and states risks (e.g., 'legal sign-off is the critical path'). It includes documentation (retention table, audit logs) and observability ('Fail loud' alerting). However, it does not explicitly address tests or handover processes for long-term operability.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong constraint adherence and legal awareness but lacks some execution details for immediate actionability.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Daily partitions; scheduled job drops partitions >30 days old\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Two engineers/six weeks is workable\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates strong constraint adherence and legal awareness but lacks some execution details for immediate actionability.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

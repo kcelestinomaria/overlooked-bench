@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance, ignoring formatting differences.",
+    "instruction_compliance": "The prompt instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 21134.40', matching the exact format requested.",
+    "reasoning_validity": "The response shows working: calculates dried coffee as 4,800 × 0.85 = 4,080 kg (equivalent to subtracting 15% loss), AA grade as 40% of 4,080 = 1,632 kg, remainder as 2,448 kg, revenues correctly multiplied by prices, and sum is accurate. All steps are valid and support the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00051745,
+  "judge_latency_s": 29.74,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance, ignoring formatting differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: calculates dried coffee as 4,800 × 0.85 = 4,080 kg (equivalent to subtracting 15% loss), AA grade as 40% of 4,080 = 1,632 kg, remainder as 2,448 kg, revenues correctly multiplied by prices, and sum is accurate. All steps are valid and support the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 21134.40', matching the exact format requested.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and strict compliance to output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and strict compliance to output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

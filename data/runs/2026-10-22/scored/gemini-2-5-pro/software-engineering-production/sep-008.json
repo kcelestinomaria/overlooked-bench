@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "It should take under 30 seconds, well within our 5-minute window.",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "About 32 days. Calculation: 287.5M / 9M/day ≈ 31.9 days",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed migration plan with phases, concrete SQL commands (e.g., 'ALTER TABLE shipment_events ADD COLUMN id_bigint BIGINT;'), scripts for backfill, and a step-by-step cutover transaction. It includes timelines ('First 3 Days', 'Days 4 - 28'), owners ('Me', 'Part-time DBA', 'Engineer 1'), and verification steps ('monitor pg_locks', 'benchmark its impact'). An engineer could execute this with light editing, though some steps like the foreign key handling are not fully specified (e.g., 'exact syntax depends on constraint names').",
+    "constraint_fidelity": "The response explicitly calculates the runway as 31.9 days ('287.5M / 9M/day ≈ 31.9 days') and proposes a 28-day migration plan, respecting the 32-day constraint. It uses the add-new-bigint-column pattern, avoids ALTER COLUMN TYPE, and explicitly requests the allowed 200 GB storage increase ('request the 200 GB storage increase immediately'). It does not provision new instances or replicas, working within the existing RDS instance. The cutover is designed to take 'under 30 seconds', within the 5-minute maintenance window.",
+    "maintainability": "The response leaves clear seams by adding new columns and later cleaning them up, uses standard PostgreSQL features (CONCURRENTLY, triggers), and includes a cleanup phase. It acknowledges risks implicitly (e.g., throttling to avoid overload) but does not explicitly state accepted debt or risks. The complexity is proportionate to the team, with tasks distributed, but it lacks documentation or test specifics for long-term operability.",
+    "production_realism": "The response accounts for production realities: it throttles the backfill ('update rows in small batches... sleep for a few seconds'), uses FOR UPDATE SKIP LOCKED to avoid blocking writes, employs CONCURRENTLY for index creation, monitors resource usage ('monitor CPU and I/O'), and includes a rehearsed cutover transaction. It considers the team's skill mix by assigning specific tasks (e.g., 'Part-time DBA' for analysis, 'Engineer 1' for code audit). However, it does not explicitly address rollback steps or detailed observability for the migration itself beyond high-level monitoring."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.0017282,
+  "judge_latency_s": 40.202,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly calculates the runway as 31.9 days ('287.5M / 9M/day ≈ 31.9 days') and proposes a 28-day migration plan, respecting the 32-day constraint. It uses the add-new-bigint-column pattern, avoids ALTER COLUMN TYPE, and explicitly requests the allowed 200 GB storage increase ('request the 200 GB storage increase immediately'). It does not provision new instances or replicas, working within the existing RDS instance. The cutover is designed to take 'under 30 seconds', within the 5-minute maintenance window.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: it throttles the backfill ('update rows in small batches... sleep for a few seconds'), uses FOR UPDATE SKIP LOCKED to avoid blocking writes, employs CONCURRENTLY for index creation, monitors resource usage ('monitor CPU and I/O'), and includes a rehearsed cutover transaction. It considers the team's skill mix by assigning specific tasks (e.g., 'Part-time DBA' for analysis, 'Engineer 1' for code audit). However, it does not explicitly address rollback steps or detailed observability for the migration itself beyond high-level monitoring.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed migration plan with phases, concrete SQL commands (e.g., 'ALTER TABLE shipment_events ADD COLUMN id_bigint BIGINT;'), scripts for backfill, and a step-by-step cutover transaction. It includes timelines ('First 3 Days', 'Days 4 - 28'), owners ('Me', 'Part-time DBA', 'Engineer 1'), and verification steps ('monitor pg_locks', 'benchmark its impact'). An engineer could execute this with light editing, though some steps like the foreign key handling are not fully specified (e.g., 'exact syntax depends on constraint names').\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response leaves clear seams by adding new columns and later cleaning them up, uses standard PostgreSQL features (CONCURRENTLY, triggers), and includes a cleanup phase. It acknowledges risks implicitly (e.g., throttling to avoid overload) but does not explicitly state accepted debt or risks. The complexity is proportionate to the team, with tasks distributed, but it lacks documentation or test specifics for long-term operability.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This is a highly actionable and constraint-aware plan that demonstrates deep PostgreSQL knowledge and realistic production execution.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"It should take under 30 seconds, well within our 5-minute window.\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"About 32 days. Calculation: 287.5M / 9M/day ≈ 31.9 days\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This is a highly actionable and constraint-aware plan that demonstrates deep PostgreSQL knowledge and realistic production execution.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

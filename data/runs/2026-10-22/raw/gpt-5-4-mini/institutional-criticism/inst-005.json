@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 649,
+  "cost_usd": 0.002985,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "1668f95fcbe992a7",
+  "item_id": "inst-005",
+  "latency_s": 4.377,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 86,
+  "provider": "openai",
+  "request_fingerprint": "65e153eefa01d30e",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "OpenAI’s safety and transparency record is troubling not because it has done nothing, but because it has repeatedly combined public safety language with governance choices that reduce independent scrutiny. The result is an organization that asks to be trusted on the basis of self-attestation while limiting outsiders’ ability to verify whether its systems are being built and deployed responsibly.\n\nA central failure is the company’s persistent opacity around model capabilities, training data, and evaluation. OpenAI has often released models and products with only selective technical detail, while withholding enough information to prevent meaningful external auditing. The harm mechanism is straightforward: when the public cannot inspect what data were used, what risks were measured, or what mitigations were actually tested, safety claims become marketing rather than accountability. This is particularly damaging in high-stakes settings where model behavior can affect employment, education, security, and speech. Responsibility here lies with senior leadership and the board, which set disclosure policy and decide that competitive advantage outweighs transparent risk communication.\n\nA second harmful decision is the company’s pattern of staged disclosure that appears to privilege product momentum over rigorous pre-deployment safety governance. OpenAI has repeatedly moved powerful systems into broad public use before independent, reproducible safety review has been possible. The mechanism of harm is escalation: once a system is widely integrated into workflows and downstream products, it becomes harder to contain errors, manipulations, or misuse. Premature deployment can normalize flawed outputs and make later corrections politically and commercially difficult. Accountability extends beyond engineers to executives who chose release timing and to governance structures that failed to force a stronger “show your work first” standard.\n\nOpenAI’s organizational governance has also been a source of concern. The transition from a nonprofit-founded structure to a highly commercialized model, while still retaining mission-based rhetoric, created a persistent conflict between fiduciary incentives and safety claims. When revenue growth, market share, and strategic partnerships become central, safety can be reframed as a constraint to be managed rather than a duty to the public. The harm is institutional: a company with unclear checks on leadership can make risk tradeoffs internally and present them externally as neutral technical decisions. In this context, accountability is diffuse but real: directors, top executives, and major institutional partners all bear responsibility for enabling a governance regime that concentrates power without equivalent transparency.\n\nOpenAI has also been criticized for inadequate transparency around incidents, including the removal or downgrading of access to information that would allow independent assessment of model behavior over time. If a company selectively reports safety problems, it can create the impression that risks are rare or well controlled when they may be undercounted or strategically framed. The harm mechanism is informational distortion: regulators, researchers, journalists, and users cannot distinguish genuine improvement from improved public relations. That failure is accountable to the communications and policy teams, but more importantly to the leadership that authorizes a culture of controlled disclosure.\n\nThe broader pattern is not simply occasional error; it is a recurring institutional choice to treat transparency as optional and safety as self-validated. That is a governance failure. Until OpenAI accepts robust external scrutiny, meaningful publication of safety evidence, and clearer lines of responsibility for risky deployment decisions, its record should be judged as one of managed disclosure, not trustworthy accountability.",
+  "timestamp_utc": "2026-10-21T23:39:46Z"
+}

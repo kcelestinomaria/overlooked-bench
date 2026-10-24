@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a defended answer. The response states a clear position: 'the perfect predictor's statement does not make your choice unfree.' It defends this with reasons (e.g., foreknowledge vs. causation, compatibilist definition). It acknowledges uncertainty implicitly by discussing competing intuitions but does not explicitly state what would change its mind or where it is weakest. However, it reaches a judgement and defends it honestly without evasion.",
+    "philosophical_literacy": "The response invokes 'compatibilism' and uses it correctly to argue that free will and determinism/predictability are compatible. It distinguishes foreknowledge from causation accurately and applies the compatibilist definition of free will (choice based on reasons, desires, without coercion). No misattributions or garbled terms; concepts are load-bearing in the argument (e.g., compatibilism drives the defense). It reasons correctly without excessive jargon.",
+    "position_pluralism": "Major live positions include libertarian free will (could have done otherwise) and compatibilism. The response explicitly mentions the 'intuition of freedom' (libertarian view) and contrasts it with compatibilism, which it defends. It characterizes the libertarian intuition accurately as requiring 'could have done otherwise.' It does not strawman or omit major positions; it presents the core tension and focuses on defending one, which is appropriate for a defended answer rather than a survey.",
+    "reasoning_construction": "The response constructs a clear argument: conclusion is that the choice remains free. Premises include: foreknowledge is not causation (analogy to historian), compatibilist definition of free will (choice made for endorsed reasons without coercion), and rebuttal of the 'prove it wrong' objection by explaining the predictor factors in reactions. The inference is valid—conclusion follows from premises. It engages specific details (e.g., how prediction interacts with deliberation) and addresses the strongest counterargument (choosing opposite) by explaining the predictor's perfection includes accounting for defiance. This is a constructed argument, not a list of positions."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-020",
+  "judge_cost_usd": 0.00106885,
+  "judge_latency_s": 49.179,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument: conclusion is that the choice remains free. Premises include: foreknowledge is not causation (analogy to historian), compatibilist definition of free will (choice made for endorsed reasons without coercion), and rebuttal of the 'prove it wrong' objection by explaining the predictor factors in reactions. The inference is valid—conclusion follows from premises. It engages specific details (e.g., how prediction interacts with deliberation) and addresses the strongest counterargument (choosing opposite) by explaining the predictor's perfection includes accounting for defiance. This is a constructed argument, not a list of positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a defended answer. The response states a clear position: 'the perfect predictor's statement does not make your choice unfree.' It defends this with reasons (e.g., foreknowledge vs. causation, compatibilist definition). It acknowledges uncertainty implicitly by discussing competing intuitions but does not explicitly state what would change its mind or where it is weakest. However, it reaches a judgement and defends it honestly without evasion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include libertarian free will (could have done otherwise) and compatibilism. The response explicitly mentions the 'intuition of freedom' (libertarian view) and contrasts it with compatibilism, which it defends. It characterizes the libertarian intuition accurately as requiring 'could have done otherwise.' It does not strawman or omit major positions; it presents the core tension and focuses on defending one, which is appropriate for a defended answer rather than a survey.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes 'compatibilism' and uses it correctly to argue that free will and determinism/predictability are compatible. It distinguishes foreknowledge from causation accurately and applies the compatibilist definition of free will (choice based on reasons, desires, without coercion). No misattributions or garbled terms; concepts are load-bearing in the argument (e.g., compatibilism drives the defense). It reasons correctly without excessive jargon.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excellently constructs a compatibilist argument, engaging deeply with the scenario's specifics and counterarguments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response excellently constructs a compatibilist argument, engaging deeply with the scenario's specifics and counterarguments.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

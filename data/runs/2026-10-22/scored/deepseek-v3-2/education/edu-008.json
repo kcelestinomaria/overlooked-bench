@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting is a vocational training center in Morocco, implying diverse learners in prior attainment and language (e.g., Arabic/French vs. technical jargon). The response addresses language barriers by teaching 'jargon-free language' and using visual aids, and includes role-playing for communication practice, which is low-cost. However, it does not explicitly address varying prior knowledge, additional needs, or material constraints (e.g., access to technology). Differentiation is implied but not concrete for the full learner range.",
+    "pathway_breadth": "The prompt involves vocational training in automotive repair, a non-degree pathway. The response focuses entirely on enhancing vocational skills (diagnostics and communication) for employment in repair shops, with no mention of academic routes. It is specific to the vocational context, with real-world scenarios, industry professionals, and mock repair shop simulations, aligning with the Moroccan vocational system. Non-degree pathways are treated substantively, not as an afterthought.",
+    "pedagogical_soundness": "The response states learning objectives: systematic diagnosis of unfamiliar problems and clear customer communication. Activities align: PBL workshops, fault simulations, and role-playing build diagnostic and communication skills. Assessments measure these objectives: practical exams with unseen faults assess diagnostic methodology, recorded role-plays assess communication clarity. Sequencing is coherent, starting with fundamentals before complex faults. Rubrics include observable criteria like 'clarity of explanation' and 'methodology justification'. However, some assessments like written case studies may lean academic rather than workshop-appropriate.",
+    "workload_realism": "The 12-week module structure includes detailed weekly activities and assessments. Timings sum to the period, but preparation and marking load is high: practical exams with unseen faults, recorded role-plays, portfolio logbooks, and written case studies would require significant time for a vocational center instructor. Resources like interactive software, technical databases, and guest professionals are plausible in a Moroccan automotive center, but the assessment variety (e.g., recording role-plays) might strain resources. Class size feasibility isn't addressed, but the range of assessments suggests manageable groups."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-008",
+  "judge_cost_usd": 0.00093512,
+  "judge_latency_s": 14.89,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states learning objectives: systematic diagnosis of unfamiliar problems and clear customer communication. Activities align: PBL workshops, fault simulations, and role-playing build diagnostic and communication skills. Assessments measure these objectives: practical exams with unseen faults assess diagnostic methodology, recorded role-plays assess communication clarity. Sequencing is coherent, starting with fundamentals before complex faults. Rubrics include observable criteria like 'clarity of explanation' and 'methodology justification'. However, some assessments like written case studies may lean academic rather than workshop-appropriate.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The 12-week module structure includes detailed weekly activities and assessments. Timings sum to the period, but preparation and marking load is high: practical exams with unseen faults, recorded role-plays, portfolio logbooks, and written case studies would require significant time for a vocational center instructor. Resources like interactive software, technical databases, and guest professionals are plausible in a Moroccan automotive center, but the assessment variety (e.g., recording role-plays) might strain resources. Class size feasibility isn't addressed, but the range of assessments suggests manageable groups.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves vocational training in automotive repair, a non-degree pathway. The response focuses entirely on enhancing vocational skills (diagnostics and communication) for employment in repair shops, with no mention of academic routes. It is specific to the vocational context, with real-world scenarios, industry professionals, and mock repair shop simulations, aligning with the Moroccan vocational system. Non-degree pathways are treated substantively, not as an afterthought.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting is a vocational training center in Morocco, implying diverse learners in prior attainment and language (e.g., Arabic/French vs. technical jargon). The response addresses language barriers by teaching 'jargon-free language' and using visual aids, and includes role-playing for communication practice, which is low-cost. However, it does not explicitly address varying prior knowledge, additional needs, or material constraints (e.g., access to technology). Differentiation is implied but not concrete for the full learner range.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, vocationally-focused redesign with strong alignment to employer needs but may overestimate practical assessment workload.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, vocationally-focused redesign with strong alignment to employer needs but may overestimate practical assessment workload.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 76.25
+}

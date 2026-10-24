@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "use only your existing droplet, Laravel, and MySQL",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "unique constraint on that identifier so the same payment cannot be credited twice",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "reconciliation scheduler every 5 minutes",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response produces a concrete plan with sequence, owners, and estimates: a 3-week breakdown for 2 developers with weekly deliverables. Evidence: 'Week 1: build the durable intake', 'Week 2: reconciliation and review', 'Week 3: hardening and rollout'.\n\n2. The response includes specific database schema, processing flows, and Laravel techniques (e.g., 'UNIQUE(receipt_no)', 'DB::transaction()'). Evidence: 'Database tables' section and 'Specific Laravel/MySQL techniques'.\n\n3. The plan is executable with only light editing: it provides exact commands (e.g., 'Laravel scheduler command every 5 minutes') and verification steps (e.g., 'load test with replayed callbacks').",
+    "constraint_fidelity": "1. The response explicitly states it uses only the existing droplet, Laravel, and MySQL, with no new paid services or servers (Constraint C1 kept). Evidence: 'use only your existing droplet, Laravel, and MySQL' and 'zero new spend'.\n\n2. The response enforces idempotency with a unique constraint on the M-Pesa receipt number (TransID), ensuring no double-crediting (Constraint C2 kept). Evidence: 'unique constraint on that identifier so the same payment cannot be credited twice' and 'UNIQUE(receipt_no)' on payments table.\n\n3. The response includes a reconciliation job running every 5 minutes to catch missed callbacks, ensuring allocation or flagging within 15 minutes (Constraint C3 kept). Evidence: 'scheduled reconciliation every few minutes' and 'reconciliation job finds it later'.\n\n4. The response shows arithmetic for the 15-minute SLA: 'reconciliation scheduler every 5 minutes' and 'missed callback is detected within 5–10 minutes'.\n\n5. No constraints are silently violated or relaxed without justification.",
+    "maintainability": "1. The response is proportionate to the team: no added complexity, clear seams (database tables, jobs, dashboard), and documentation (runbook, audit trail). Evidence: 'clear ops procedure' and 'audit trail'.\n\n2. Risks and debt are stated: manual review for ambiguous cases, reconciliation as a fallback, and idempotency as a safeguard. Evidence: 'manual review queue for anything not confidently matched' and 'failure modes and how this design handles them'.\n\n3. The design leaves observability: logs, metrics, and a dashboard for unallocated payments. Evidence: 'add logs and metrics' and 'internal payments dashboard'.",
+    "production_realism": "1. The response accounts for the stated scale (140 schools, single droplet) and team skill mix (9-person company, 2 developers). Evidence: 'fits two developers in three weeks' and 'use only your existing droplet'.\n\n2. The design handles failure modes: locking (unique constraints), retries (reconciliation job), partial failure (database transactions), and rollback (transaction rollback on worker death). Evidence: 'transaction rolls back' and 'job retries safely'.\n\n3. The operational burden is proportionate to the team: simple ingestion endpoint, database as a buffer, and manual review dashboard for edge cases. Evidence: 'Keep the ingestion endpoint simple and fast' and 'internal payments dashboard'.\n\n4. No technically incorrect claims about Laravel or MySQL are made. The response leverages Laravel's database queue driver and MySQL constraints correctly."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-013",
+  "judge_cost_usd": 0.0028831,
+  "judge_latency_s": 13.589,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states it uses only the existing droplet, Laravel, and MySQL, with no new paid services or servers (Constraint C1 kept). Evidence: 'use only your existing droplet, Laravel, and MySQL' and 'zero new spend'.\\n\\n2. The response enforces idempotency with a unique constraint on the M-Pesa receipt number (TransID), ensuring no double-crediting (Constraint C2 kept). Evidence: 'unique constraint on that identifier so the same payment cannot be credited twice' and 'UNIQUE(receipt_no)' on payments table.\\n\\n3. The response includes a reconciliation job running every 5 minutes to catch missed callbacks, ensuring allocation or flagging within 15 minutes (Constraint C3 kept). Evidence: 'scheduled reconciliation every few minutes' and 'reconciliation job finds it later'.\\n\\n4. The response shows arithmetic for the 15-minute SLA: 'reconciliation scheduler every 5 minutes' and 'missed callback is detected within 5–10 minutes'.\\n\\n5. No constraints are silently violated or relaxed without justification.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (140 schools, single droplet) and team skill mix (9-person company, 2 developers). Evidence: 'fits two developers in three weeks' and 'use only your existing droplet'.\\n\\n2. The design handles failure modes: locking (unique constraints), retries (reconciliation job), partial failure (database transactions), and rollback (transaction rollback on worker death). Evidence: 'transaction rolls back' and 'job retries safely'.\\n\\n3. The operational burden is proportionate to the team: simple ingestion endpoint, database as a buffer, and manual review dashboard for edge cases. Evidence: 'Keep the ingestion endpoint simple and fast' and 'internal payments dashboard'.\\n\\n4. No technically incorrect claims about Laravel or MySQL are made. The response leverages Laravel's database queue driver and MySQL constraints correctly.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response produces a concrete plan with sequence, owners, and estimates: a 3-week breakdown for 2 developers with weekly deliverables. Evidence: 'Week 1: build the durable intake', 'Week 2: reconciliation and review', 'Week 3: hardening and rollout'.\\n\\n2. The response includes specific database schema, processing flows, and Laravel techniques (e.g., 'UNIQUE(receipt_no)', 'DB::transaction()'). Evidence: 'Database tables' section and 'Specific Laravel/MySQL techniques'.\\n\\n3. The plan is executable with only light editing: it provides exact commands (e.g., 'Laravel scheduler command every 5 minutes') and verification steps (e.g., 'load test with replayed callbacks').\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The response is proportionate to the team: no added complexity, clear seams (database tables, jobs, dashboard), and documentation (runbook, audit trail). Evidence: 'clear ops procedure' and 'audit trail'.\\n\\n2. Risks and debt are stated: manual review for ambiguous cases, reconciliation as a fallback, and idempotency as a safeguard. Evidence: 'manual review queue for anything not confidently matched' and 'failure modes and how this design handles them'.\\n\\n3. The design leaves observability: logs, metrics, and a dashboard for unallocated payments. Evidence: 'add logs and metrics' and 'internal payments dashboard'.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a comprehensive, constraint-compliant design that addresses all failure modes and is immediately actionable by the team.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"use only your existing droplet, Laravel, and MySQL\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"unique constraint on that identifier so the same payment cannot be credited twice\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"reconciliation scheduler every 5 minutes\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is a comprehensive, constraint-compliant design that addresses all failure modes and is immediately actionable by the team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

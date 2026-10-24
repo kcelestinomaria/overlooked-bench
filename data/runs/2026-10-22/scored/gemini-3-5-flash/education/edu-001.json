@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the range: wide attainment spread and 6 students with reading ages below 9. Specific adaptations: simplified text with bold terms and glossary on Side A, pairing with peers or small group support for reading, dual-coding with icons. These are low-cost and implementable by one teacher (no second adult assumed). No generic 'differentiate as needed' language; all differentiation is action-oriented.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is a history lesson plan. Therefore, score based on inclusivity of the learner range described. The response is highly inclusive: it specifically addresses the wide attainment spread and provides concrete differentiation for the 6 students with low reading ages (simplified text, glossary, peer/teacher support), and includes stretch tasks for higher attainers.",
+    "pedagogical_soundness": "The response states learning objectives: identify M-A-I-N causes, explain the spark, evaluate significance. Activities align: direct instruction on M-A-I-N (builds identification), guided reading/categorization (builds identification/explanation), chain reaction task (builds explanation), exit ticket (assesses identification/explanation). Assessment measures objectives: exit ticket questions directly test identification ('What does A stand for?', 'Who was assassinated?') and explanation ('why did a fight turn into a World War?'). Sequencing is coherent: hook introduces concepts, then instruction, then application tasks, then assessment. Cognitive demand is appropriate for Year 9: factual recall and basic explanation.",
+    "workload_realism": "Timings sum to 50 minutes (5+10+15+12+6+2). Materials are feasible: projector (stated), one double-sided A4 sheet per student (within printing budget). No technology or materials beyond what is stated. Preparation is low: one printed sheet, simple slides. Marking load is manageable: exit tickets are quick to scan, categorization grid can be checked during circulation. Class size of 34 is addressed with pair/group work and teacher circulation; no one-to-one attention assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-001",
+  "judge_cost_usd": 0.00126935,
+  "judge_latency_s": 48.423,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states learning objectives: identify M-A-I-N causes, explain the spark, evaluate significance. Activities align: direct instruction on M-A-I-N (builds identification), guided reading/categorization (builds identification/explanation), chain reaction task (builds explanation), exit ticket (assesses identification/explanation). Assessment measures objectives: exit ticket questions directly test identification ('What does A stand for?', 'Who was assassinated?') and explanation ('why did a fight turn into a World War?'). Sequencing is coherent: hook introduces concepts, then instruction, then application tasks, then assessment. Cognitive demand is appropriate for Year 9: factual recall and basic explanation.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 50 minutes (5+10+15+12+6+2). Materials are feasible: projector (stated), one double-sided A4 sheet per student (within printing budget). No technology or materials beyond what is stated. Preparation is low: one printed sheet, simple slides. Marking load is manageable: exit tickets are quick to scan, categorization grid can be checked during circulation. Class size of 34 is addressed with pair/group work and teacher circulation; no one-to-one attention assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is a history lesson plan. Therefore, score based on inclusivity of the learner range described. The response is highly inclusive: it specifically addresses the wide attainment spread and provides concrete differentiation for the 6 students with low reading ages (simplified text, glossary, peer/teacher support), and includes stretch tasks for higher attainers.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the range: wide attainment spread and 6 students with reading ages below 9. Specific adaptations: simplified text with bold terms and glossary on Side A, pairing with peers or small group support for reading, dual-coding with icons. These are low-cost and implementable by one teacher (no second adult assumed). No generic 'differentiate as needed' language; all differentiation is action-oriented.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a fully developed, highly realistic lesson plan that meets all specified constraints and provides substantive differentiation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response is a fully developed, highly realistic lesson plan that meets all specified constraints and provides substantive differentiation.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

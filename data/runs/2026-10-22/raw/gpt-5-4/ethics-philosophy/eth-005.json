@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 500,
+  "cost_usd": 0.007705,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "baad8f173f0f5645",
+  "item_id": "eth-005",
+  "latency_s": 13.83,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 82,
+  "provider": "openai",
+  "request_fingerprint": "5a83808a164a3605",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "Recommendation: do not permit assisted dying on these facts.\n\nDraft the law to exclude eligibility where the sole underlying condition is a mental disorder, including treatment-resistant depression, even if the person is currently judged competent and has made repeated requests.\n\nWhy I recommend that rule:\n\n1. The risk of mistake is too high  \nIn severe depression, the wish to die is often a symptom of the illness itself, and it can fluctuate. Competence can be present in a legal or clinical sense while judgment is still deeply shaped by hopelessness, anhedonia, and cognitive distortion. That makes error unusually hard to rule out.\n\n2. Irremediability is too uncertain in psychiatry  \nUnlike many terminal somatic illnesses, “treatment-resistant” depression does not reliably mean “no realistic prospect of meaningful improvement.” People can improve after long periods of nonresponse, with time, novel treatments, changed circumstances, or combinations not previously effective. A legal regime should not authorize an irreversible outcome where the core predictive judgment is especially unreliable.\n\n3. Age matters  \nAt 29, the person may live for decades. If the state authorizes death now and would have been wrong, the loss is enormous and final. The law should be cautious where there is substantial remaining life expectancy and an illness known for variability over time.\n\n4. Safeguards will not solve the core problem  \nMultiple requests, waiting periods, and independent assessments help, but they do not eliminate the central difficulty: in mental illness, the desire for death may be both sincere and pathology-driven, and clinicians are not able to distinguish those cases with enough confidence for the state to authorize death.\n\n5. A clear rule is administrable and protective  \nHard cases will pressure any safeguard system. A bright-line exclusion for sole mental illness is easier to apply, less vulnerable to gradual expansion, and better aligned with the state’s duty to protect people whose illness may directly generate self-destructive choices.\n\nSpecific drafting recommendation:\n\nInclude language such as:  \n“No person is eligible for assisted dying where the sole underlying medical condition is a mental disorder or mental illness, including depression, whether or not it is described as treatment-resistant. A coexisting mental disorder shall not by itself constitute eligibility, and no finding of decision-making capacity shall override this exclusion.”\n\nIf drafters want a narrow exception, I still would not recommend it for a 29-year-old with depression alone. But the cleaner and safer legislative choice is categorical exclusion of sole psychiatric illness from eligibility.",
+  "timestamp_utc": "2026-10-21T23:36:45Z"
+}

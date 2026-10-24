@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Drop partitions automatically once older than 30 days",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "No new vendors are added, but legal still needs to verify the existing processor setup",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Build in scope for two engineers / six weeks",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete plan with specific components (e.g., Android app changes, PostgreSQL schema with SQL examples, deletion jobs, audit logging), sequence (engineer allocations), and verification steps (e.g., 'test evidence that deleted records are not queryable'). It is executable with light editing, not just a description.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: no new vendors (uses only PostgreSQL/PostGIS, BigQuery, Firebase), enforces 30-day raw location deletion everywhere including backups (e.g., 'Drop partitions automatically once older than 30 days', 'backup retention alignment'), and scopes the plan for two engineers in six weeks (e.g., 'Build in scope' section with specific engineer allocations). It also justifies pushback on 10-second precision but does not violate constraints.",
+    "maintainability": "The response emphasizes simplicity ('no fancy geospatial features in v1'), clear seams (separate purposes and data stores), documentation (e.g., 'privacy notice', 'internal policy'), and stated risks ('Risks and mitigations' section). It avoids complexity the team cannot maintain and flags accepted debt (e.g., 'no rider-level exports in v1').",
+    "production_realism": "The response accounts for production realities: addresses scale with partitioning and indexing ('daily partitioning matters for deletes'), failure modes (e.g., 'reliable batching/retry'), access controls ('role-based access checks'), and operational burden for a small team (e.g., 'simple support UI', 'one aggregate pipeline only'). It avoids whiteboard assumptions and fits the team's capacity."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-004",
+  "judge_cost_usd": 0.00194774,
+  "judge_latency_s": 53.0,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: no new vendors (uses only PostgreSQL/PostGIS, BigQuery, Firebase), enforces 30-day raw location deletion everywhere including backups (e.g., 'Drop partitions automatically once older than 30 days', 'backup retention alignment'), and scopes the plan for two engineers in six weeks (e.g., 'Build in scope' section with specific engineer allocations). It also justifies pushback on 10-second precision but does not violate constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: addresses scale with partitioning and indexing ('daily partitioning matters for deletes'), failure modes (e.g., 'reliable batching/retry'), access controls ('role-based access checks'), and operational burden for a small team (e.g., 'simple support UI', 'one aggregate pipeline only'). It avoids whiteboard assumptions and fits the team's capacity.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete plan with specific components (e.g., Android app changes, PostgreSQL schema with SQL examples, deletion jobs, audit logging), sequence (engineer allocations), and verification steps (e.g., 'test evidence that deleted records are not queryable'). It is executable with light editing, not just a description.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response emphasizes simplicity ('no fancy geospatial features in v1'), clear seams (separate purposes and data stores), documentation (e.g., 'privacy notice', 'internal policy'), and stated risks ('Risks and mitigations' section). It avoids complexity the team cannot maintain and flags accepted debt (e.g., 'no rider-level exports in v1').\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, constraint-aware plan with strong pushback on risky product asks and clear executable steps.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Drop partitions automatically once older than 30 days\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"No new vendors are added, but legal still needs to verify the existing processor setup\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Build in scope for two engineers / six weeks\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, constraint-aware plan with strong pushback on risky product asks and clear executable steps.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

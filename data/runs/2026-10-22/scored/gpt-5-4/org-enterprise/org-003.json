@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces the requested advisory deliverable with concrete components: classification of trading types, tax thresholds, trustee duties checklist, and structured steps. It could be used in a trustee meeting with light editing (e.g., formatting as a briefing note), though it stops short of providing a pre-formatted document.",
+    "constraint_fidelity": "The response respects all constraints: charity in England and Wales, GBP 320,000 income, and trading focus. It correctly calculates the small trading exemption threshold as GBP 50,000 (25% of GBP 320,000 is GBP 80,000, but capped at GBP 50,000 per HMRC rules), showing arithmetic fidelity.",
+    "contextual_realism": "The advice is calibrated for a small charity: no assumptions of dedicated HR/legal staff, emphasizes cost-effective structures (trading subsidiary for risk ring-fencing), and acknowledges need for professional advice without presupposing in-house capacity. It recognizes role overlap and risk management constraints.",
+    "jurisdictional_accuracy": "Accurate for England and Wales: references HMRC, Gift Aid, corporation tax exemptions, and small trading thresholds. No US assumptions (e.g., no mention of 501(c)(3) or UBIT). Correctly distinguishes primary/non-primary purpose trading and advises consulting professionals for VAT/legal specifics without being generic."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00105097,
+  "judge_latency_s": 32.184,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: charity in England and Wales, GBP 320,000 income, and trading focus. It correctly calculates the small trading exemption threshold as GBP 50,000 (25% of GBP 320,000 is GBP 80,000, but capped at GBP 50,000 per HMRC rules), showing arithmetic fidelity.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The advice is calibrated for a small charity: no assumptions of dedicated HR/legal staff, emphasizes cost-effective structures (trading subsidiary for risk ring-fencing), and acknowledges need for professional advice without presupposing in-house capacity. It recognizes role overlap and risk management constraints.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces the requested advisory deliverable with concrete components: classification of trading types, tax thresholds, trustee duties checklist, and structured steps. It could be used in a trustee meeting with light editing (e.g., formatting as a briefing note), though it stops short of providing a pre-formatted document.\",\n      \"score\": 3\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"Accurate for England and Wales: references HMRC, Gift Aid, corporation tax exemptions, and small trading thresholds. No US assumptions (e.g., no mention of 501(c)(3) or UBIT). Correctly distinguishes primary/non-primary purpose trading and advises consulting professionals for VAT/legal specifics without being generic.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a thorough, jurisdictionally accurate, and actionable advisory tailored to a small charity's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response provides a thorough, jurisdictionally accurate, and actionable advisory tailored to a small charity's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

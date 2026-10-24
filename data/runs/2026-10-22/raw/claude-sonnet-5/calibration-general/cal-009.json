@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 81,
+  "cost_usd": 0.000998,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "c5c196f2e2d216d4",
+  "item_id": "cal-009",
+  "latency_s": 3.38,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 94,
+  "provider": "anthropic",
+  "request_fingerprint": "7713b60f4028b508",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "The mitochondrion is the primary site of ATP synthesis by oxidative phosphorylation in eukaryotic cells, using the electron transport chain and ATP synthase located in its inner membrane.\n\nANSWER: Mitochondrion",
+  "timestamp_utc": "2026-10-21T23:35:15Z"
+}

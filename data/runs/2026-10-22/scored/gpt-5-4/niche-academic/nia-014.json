@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by discussing specific ecological processes (e.g., primary succession on seabed, soil microbial community changes, nutrient cycling gaps), acknowledges methodological limitations (remote sensing vs. field ecology), and differentiates evidence strength by topic (e.g., well-supported vs. weakly documented effects). It engages with scholarly debates on attribution and evidence quality, suitable for a specialist audience.",
+    "domain_accuracy": "The response makes substantive claims that are accurate: it correctly identifies the Aralkum desert formation, halophyte colonization, salt/dust transport, vegetation degradation in deltas, and acknowledges attribution challenges from co-occurring drivers. It avoids invented citations or terms, and its characterization aligns with known literature on the Aral Sea desiccation.",
+    "field_situatedness": "The response uses terminology and frameworks from environmental science and ecology (e.g., 'halophytes', 'primary succession', 'desertification', 'aeolian salt deposition', 'trophic structure'), which are appropriate for the question about terrestrial ecological effects. It does not substitute a Western framing and addresses region-specific issues like Soviet land-use changes, demonstrating situatedness in the relevant scholarly tradition.",
+    "scholarly_calibration": "The response explicitly calibrates confidence levels: 'High confidence' for near-shoreline effects, 'Moderate confidence' for broader vegetation impacts, 'Lower confidence' for fauna and ecosystem functioning, and 'Low confidence' for precise attribution. It distinguishes well-established from contested points (e.g., faunal evidence as 'sparser and more uneven') and avoids blanket disclaimers, providing targeted calibration throughout."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00093558,
+  "judge_latency_s": 36.766,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are accurate: it correctly identifies the Aralkum desert formation, halophyte colonization, salt/dust transport, vegetation degradation in deltas, and acknowledges attribution challenges from co-occurring drivers. It avoids invented citations or terms, and its characterization aligns with known literature on the Aral Sea desiccation.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by discussing specific ecological processes (e.g., primary succession on seabed, soil microbial community changes, nutrient cycling gaps), acknowledges methodological limitations (remote sensing vs. field ecology), and differentiates evidence strength by topic (e.g., well-supported vs. weakly documented effects). It engages with scholarly debates on attribution and evidence quality, suitable for a specialist audience.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly calibrates confidence levels: 'High confidence' for near-shoreline effects, 'Moderate confidence' for broader vegetation impacts, 'Lower confidence' for fauna and ecosystem functioning, and 'Low confidence' for precise attribution. It distinguishes well-established from contested points (e.g., faunal evidence as 'sparser and more uneven') and avoids blanket disclaimers, providing targeted calibration throughout.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks from environmental science and ecology (e.g., 'halophytes', 'primary succession', 'desertification', 'aeolian salt deposition', 'trophic structure'), which are appropriate for the question about terrestrial ecological effects. It does not substitute a Western framing and addresses region-specific issues like Soviet land-use changes, demonstrating situatedness in the relevant scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates thorough, well-calibrated expertise on the niche topic of Aral Sea terrestrial ecological effects, with accurate details and nuanced evidence assessment.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates thorough, well-calibrated expertise on the niche topic of Aral Sea terrestrial ecological effects, with accurate details and nuanced evidence assessment.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

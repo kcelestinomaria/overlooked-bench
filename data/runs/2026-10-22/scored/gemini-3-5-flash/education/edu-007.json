@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response implicitly addresses differentiation by describing how mixed-attainment teaching benefits diverse learners: 'students who find math difficult' and 'students who are already good at math'. It mentions teacher support: 'teachers will still be checking on every student' and 'extra support outside of regular class time'. However, it lacks specific, low-cost adaptations and is more about policy than concrete classroom strategies. It is substantive but not highly detailed for implementation.",
+    "pathway_breadth": "The response does not involve student pathway guidance (vocational, academic, etc.). It focuses on teaching methods in mathematics. As per rubric, for items not involving pathway guidance, score on inclusivity of learner range. The response addresses mixed-attainment teaching for all students, including those who struggle and excel, showing inclusivity: 'helping every child succeed' and addressing concerns for both struggling and advanced learners.",
+    "pedagogical_soundness": "The response does not engage with pedagogical elements like learning objectives, activities, assessments, or sequencing. It is a parent communication explaining a policy change, not a teaching plan. Therefore, it does not address this dimension.",
+    "workload_realism": "The response does not discuss teacher workload, resources, timings, or class size. It is a communication document, not a delivery plan. Therefore, it does not engage with this dimension."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00085489,
+  "judge_latency_s": 39.276,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not engage with pedagogical elements like learning objectives, activities, assessments, or sequencing. It is a parent communication explaining a policy change, not a teaching plan. Therefore, it does not address this dimension.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not discuss teacher workload, resources, timings, or class size. It is a communication document, not a delivery plan. Therefore, it does not engage with this dimension.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response does not involve student pathway guidance (vocational, academic, etc.). It focuses on teaching methods in mathematics. As per rubric, for items not involving pathway guidance, score on inclusivity of learner range. The response addresses mixed-attainment teaching for all students, including those who struggle and excel, showing inclusivity: 'helping every child succeed' and addressing concerns for both struggling and advanced learners.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response implicitly addresses differentiation by describing how mixed-attainment teaching benefits diverse learners: 'students who find math difficult' and 'students who are already good at math'. It mentions teacher support: 'teachers will still be checking on every student' and 'extra support outside of regular class time'. However, it lacks specific, low-cost adaptations and is more about policy than concrete classroom strategies. It is substantive but not highly detailed for implementation.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"This is a well-crafted parent communication that addresses concerns and explains the policy change clearly, but it does not engage with pedagogical or workload dimensions as it is not a teaching plan.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This is a well-crafted parent communication that addresses concerns and explains the policy change clearly, but it does not engage with pedagogical or workload dimensions as it is not a teaching plan.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 28.75
+}

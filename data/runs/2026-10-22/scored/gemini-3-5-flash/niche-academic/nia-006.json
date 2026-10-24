@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedic summary by detailing specific agronomic constraints (e.g., seed size implications, lodging mechanics, weed competition dynamics), engineering challenges (metering mechanisms, fan speed adjustments, sieve designs), and research efforts (seed pelleting, modified planters, multi-crop threshers). It engages with methodological issues like breeding for semi-dwarf varieties and socio-economic barriers (smallholder plot sizes, affordability). A specialist would recognize this as informed by agricultural engineering and crop science literature, not just general summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with known agronomic literature on teff. It correctly identifies teff's scientific name (Eragrostis tef), its small seed size (1-1.5 mm), lodging as a major yield constraint, traditional broadcasting methods, high tillage requirements, shattering losses (25-30%), and challenges with mechanization depth control and seed metering. It accurately references Ethiopian research institutions (EIAR) and specific teff varieties (Kora, Dagim) known for lodging resistance. No invented citations or terms were detected; all claims are plausible and consistent with specialist knowledge of teff agronomy.",
+    "field_situatedness": "The response uses terminology and frameworks specific to agronomy and agricultural engineering (e.g., 'lodging,' 'seedbed preparation,' 'metering mechanisms,' 'threshing machines'). It centers Ethiopian context (smallholders, EIAR, local varieties) and does not substitute Western framing—it explicitly critiques 'large-scale Western machinery' as inappropriate. The focus on socio-economic constraints (plot sizes, affordability) aligns with regional agricultural development literature. No silent substitution to dominant Anglophone fields occurs.",
+    "scholarly_calibration": "The response distinguishes between established facts and ongoing challenges. It presents lodging as 'the single greatest yield-limiting factor' (well-established) but notes breeding progress is 'slow due to complex genetics' (contested). It states mechanical threshers have 'relatively high adoption' while sowing/harvesting remain 'major bottlenecks,' accurately reflecting current adoption disparities. However, it lacks explicit uncertainty markers (e.g., no phrases like 'evidence suggests' or 'studies indicate') and presents some innovations (e.g., seed pelleting outcomes) as settled rather than noting mixed results. Calibration is implicit but not explicitly articulated."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-006",
+  "judge_cost_usd": 0.00117534,
+  "judge_latency_s": 67.118,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with known agronomic literature on teff. It correctly identifies teff's scientific name (Eragrostis tef), its small seed size (1-1.5 mm), lodging as a major yield constraint, traditional broadcasting methods, high tillage requirements, shattering losses (25-30%), and challenges with mechanization depth control and seed metering. It accurately references Ethiopian research institutions (EIAR) and specific teff varieties (Kora, Dagim) known for lodging resistance. No invented citations or terms were detected; all claims are plausible and consistent with specialist knowledge of teff agronomy.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedic summary by detailing specific agronomic constraints (e.g., seed size implications, lodging mechanics, weed competition dynamics), engineering challenges (metering mechanisms, fan speed adjustments, sieve designs), and research efforts (seed pelleting, modified planters, multi-crop threshers). It engages with methodological issues like breeding for semi-dwarf varieties and socio-economic barriers (smallholder plot sizes, affordability). A specialist would recognize this as informed by agricultural engineering and crop science literature, not just general summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between established facts and ongoing challenges. It presents lodging as 'the single greatest yield-limiting factor' (well-established) but notes breeding progress is 'slow due to complex genetics' (contested). It states mechanical threshers have 'relatively high adoption' while sowing/harvesting remain 'major bottlenecks,' accurately reflecting current adoption disparities. However, it lacks explicit uncertainty markers (e.g., no phrases like 'evidence suggests' or 'studies indicate') and presents some innovations (e.g., seed pelleting outcomes) as settled rather than noting mixed results. Calibration is implicit but not explicitly articulated.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to agronomy and agricultural engineering (e.g., 'lodging,' 'seedbed preparation,' 'metering mechanisms,' 'threshing machines'). It centers Ethiopian context (smallholders, EIAR, local varieties) and does not substitute Western framing—it explicitly critiques 'large-scale Western machinery' as inappropriate. The focus on socio-economic constraints (plot sizes, affordability) aligns with regional agricultural development literature. No silent substitution to dominant Anglophone fields occurs.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of teff agronomy and mechanization challenges, with specific, accurate details and appropriate field context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of teff agronomy and mechanization challenges, with specific, accurate details and appropriate field context.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

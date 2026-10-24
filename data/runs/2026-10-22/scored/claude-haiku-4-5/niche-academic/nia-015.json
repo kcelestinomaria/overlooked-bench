@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific scholarly debates (Kuran vs. Faroqhi/İnalcık), methods (e.g., 'sophisticated financial management and accounting'), and unresolved questions (e.g., 'Comparative productivity'). It addresses internal scholarly debates and evidence quality, suitable for a specialist audience.",
+    "domain_accuracy": "The response makes substantive claims that are accurate: Timur Kuran is indeed a key scholar arguing that waqfs constrained capital formation (e.g., 'Removed property from market circulation'), and Suraiya Faroqhi and Halil İnalcık are correctly cited as proponents of the enabling view (e.g., 'Enabled long-term investment'). Terminology like 'perpetual dedication' and 'inalienable holdings' is correct. No invented citations or consensus claims are present.",
+    "field_situatedness": "The response uses appropriate Ottoman studies terminology (e.g., 'waqf institutions', 'Timur Kuran', 'Suraiya Faroqhi', 'Halil İnalcık') and frameworks (economic function debates within Ottoman historiography). It does not substitute Western or Anglophone framings and engages with the regional scholarly tradition directly.",
+    "scholarly_calibration": "The response distinguishes consensus ('Historians generally agree') from disagreements ('The Core Disagreement'), and flags unresolved questions ('Key Unresolved Questions'). It accurately presents contested points (e.g., Kuran's constraint thesis vs. enabling counterargument) without presenting them as settled, and provides specific calibration rather than blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00072177,
+  "judge_latency_s": 40.29,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are accurate: Timur Kuran is indeed a key scholar arguing that waqfs constrained capital formation (e.g., 'Removed property from market circulation'), and Suraiya Faroqhi and Halil İnalcık are correctly cited as proponents of the enabling view (e.g., 'Enabled long-term investment'). Terminology like 'perpetual dedication' and 'inalienable holdings' is correct. No invented citations or consensus claims are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific scholarly debates (Kuran vs. Faroqhi/İnalcık), methods (e.g., 'sophisticated financial management and accounting'), and unresolved questions (e.g., 'Comparative productivity'). It addresses internal scholarly debates and evidence quality, suitable for a specialist audience.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes consensus ('Historians generally agree') from disagreements ('The Core Disagreement'), and flags unresolved questions ('Key Unresolved Questions'). It accurately presents contested points (e.g., Kuran's constraint thesis vs. enabling counterargument) without presenting them as settled, and provides specific calibration rather than blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate Ottoman studies terminology (e.g., 'waqf institutions', 'Timur Kuran', 'Suraiya Faroqhi', 'Halil İnalcık') and frameworks (economic function debates within Ottoman historiography). It does not substitute Western or Anglophone framings and engages with the regional scholarly tradition directly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates excellent competence in Ottoman waqf studies with accurate, well-calibrated, and field-situated engagement.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates excellent competence in Ottoman waqf studies with accurate, well-calibrated, and field-situated engagement.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

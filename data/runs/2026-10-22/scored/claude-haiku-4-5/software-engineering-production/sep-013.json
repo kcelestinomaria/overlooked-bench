@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with code snippets, database schema, deployment steps, and testing checklist. Includes concrete commands ('php artisan queue:pause'), sequence, and estimates (3-week timeline). An engineer could start implementation immediately with light editing for API integration details.",
+    "constraint_fidelity": "The response respects all hard constraints: uses existing Laravel queue (database driver) with no new paid services (KES 0), enforces idempotency via unique index on mpesa_transaction_id ('$table->string(\"mpesa_transaction_id\")->unique();'), and implements active reconciliation every 5 minutes using Daraja API ('$schedule->command(\"mpesa:reconcile\")->everyFiveMinutes();') to meet the 15-minute SLA. Arithmetic is shown through queue retry intervals and reconciliation frequency.",
+    "maintainability": "Solution is proportionate to the team: uses standard Laravel patterns, adds clear monitoring ('Alert on: Failed jobs after 5 retries'), documentation via code comments, and states risks ('manual review queue'). However, the fuzzy matching logic ('LIKE \"%{$phone}%\"') may introduce maintenance debt and is not fully robust for allocation.",
+    "production_realism": "Accounts for production scale: uses database queue driver suitable for single droplet, handles locking ('lockForUpdate()'), retries ('$tries = 5'), idempotency, and partial failure. Operational burden fits a 9-person team with Laravel expertise. However, the reconciliation API call implementation is vague ('query by date range' not specified) and may not handle M-Pesa API limitations or high volume efficiently."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-013",
+  "judge_cost_usd": 0.00163825,
+  "judge_latency_s": 53.003,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses existing Laravel queue (database driver) with no new paid services (KES 0), enforces idempotency via unique index on mpesa_transaction_id ('$table->string(\\\"mpesa_transaction_id\\\")->unique();'), and implements active reconciliation every 5 minutes using Daraja API ('$schedule->command(\\\"mpesa:reconcile\\\")->everyFiveMinutes();') to meet the 15-minute SLA. Arithmetic is shown through queue retry intervals and reconciliation frequency.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for production scale: uses database queue driver suitable for single droplet, handles locking ('lockForUpdate()'), retries ('$tries = 5'), idempotency, and partial failure. Operational burden fits a 9-person team with Laravel expertise. However, the reconciliation API call implementation is vague ('query by date range' not specified) and may not handle M-Pesa API limitations or high volume efficiently.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with code snippets, database schema, deployment steps, and testing checklist. Includes concrete commands ('php artisan queue:pause'), sequence, and estimates (3-week timeline). An engineer could start implementation immediately with light editing for API integration details.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Solution is proportionate to the team: uses standard Laravel patterns, adds clear monitoring ('Alert on: Failed jobs after 5 retries'), documentation via code comments, and states risks ('manual review queue'). However, the fuzzy matching logic ('LIKE \\\"%{$phone}%\\\"') may introduce maintenance debt and is not fully robust for allocation.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design that uses existing infrastructure and includes active reconciliation to meet the 15-minute SLA.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design that uses existing infrastructure and includes active reconciliation to meet the 15-minute SLA.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

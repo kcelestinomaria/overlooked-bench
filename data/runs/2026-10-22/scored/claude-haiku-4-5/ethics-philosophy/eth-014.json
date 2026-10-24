@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgment ('Which should it choose?'), and the response states a position: 'I'd lean toward the 900'. It provides reasons ('if the choice is genuinely equivalent, the numbers should dominate') and acknowledges uncertainty ('The answer depends on context', 'tentative position'). It also mentions what would change its mind implicitly (if certainty levels differ). However, it ends with 'What's your instinct here?', which deflects to the reader, reducing commitment. The hedging is partially calibrated but includes evasion.",
+    "philosophical_literacy": "The response invokes 'utilitarian logic' and discusses the 'identified victim effect' accurately. It makes a distinction between 'failing to save someone already in your care' and 'failing to prevent a statistical future harm', which is relevant and correct. No technical terms are misused, and the concepts are load-bearing in the argument. It doesn't name specific thinkers but uses philosophical ideas appropriately without errors.",
+    "position_pluralism": "The response covers two major live positions: utilitarian (save 900) and duty-based (save 500). It characterizes utilitarianism accurately ('900 > 500', 'maximize lives saved') and the identified victim perspective ('special moral claim', 'already in crisis', 'duties to those already dependent'). An advocate of either position would likely accept the characterizations. It avoids false balance by not presenting fringe views. However, it omits other potential positions (e.g., rights-based approaches or contractualist views), but the two main ones are represented fairly.",
+    "reasoning_construction": "The response identifies a conclusion ('I'd lean toward the 900') and provides premises: '900 > 500', 'maximizing lives saved is the obvious choice', 'the government's primary obligation is to reduce mortality', and 'if the choice is genuinely equivalent, the numbers should dominate'. However, the inference is weak because it doesn't fully engage with the specific scenario's moral tensions—it acknowledges the identified victim effect but doesn't deeply analyze the 'already in crisis' claim or address the strongest counterargument (e.g., the duty to current dependents vs. statistical futures) in a rigorous way. The response is more a balanced survey than a constructed argument."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 2,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-014",
+  "judge_cost_usd": 0.00091688,
+  "judge_latency_s": 53.361,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response identifies a conclusion ('I'd lean toward the 900') and provides premises: '900 > 500', 'maximizing lives saved is the obvious choice', 'the government's primary obligation is to reduce mortality', and 'if the choice is genuinely equivalent, the numbers should dominate'. However, the inference is weak because it doesn't fully engage with the specific scenario's moral tensions—it acknowledges the identified victim effect but doesn't deeply analyze the 'already in crisis' claim or address the strongest counterargument (e.g., the duty to current dependents vs. statistical futures) in a rigorous way. The response is more a balanced survey than a constructed argument.\",\n      \"score\": 2\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgment ('Which should it choose?'), and the response states a position: 'I'd lean toward the 900'. It provides reasons ('if the choice is genuinely equivalent, the numbers should dominate') and acknowledges uncertainty ('The answer depends on context', 'tentative position'). It also mentions what would change its mind implicitly (if certainty levels differ). However, it ends with 'What's your instinct here?', which deflects to the reader, reducing commitment. The hedging is partially calibrated but includes evasion.\",\n      \"score\": 2\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response covers two major live positions: utilitarian (save 900) and duty-based (save 500). It characterizes utilitarianism accurately ('900 > 500', 'maximize lives saved') and the identified victim perspective ('special moral claim', 'already in crisis', 'duties to those already dependent'). An advocate of either position would likely accept the characterizations. It avoids false balance by not presenting fringe views. However, it omits other potential positions (e.g., rights-based approaches or contractualist views), but the two main ones are represented fairly.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes 'utilitarian logic' and discusses the 'identified victim effect' accurately. It makes a distinction between 'failing to save someone already in your care' and 'failing to prevent a statistical future harm', which is relevant and correct. No technical terms are misused, and the concepts are load-bearing in the argument. It doesn't name specific thinkers but uses philosophical ideas appropriately without errors.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a balanced overview of both positions but lacks deep argument construction and full commitment to a defended judgment.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a balanced overview of both positions but lacks deep argument construction and full commitment to a defended judgment.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 60.0
+}

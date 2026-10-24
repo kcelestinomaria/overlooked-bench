@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes significantly beyond encyclopedia level by detailing specific mechanisms like ILGs and Lease-Leaseback, discussing the SABL scandal's scale and impact, analyzing gendered rights implications ('Women often hold crucial, though distinct, gardening rights'), and engaging with economic critiques of the 'unlocking value' premise. It shows familiarity with scholarly debates and real-world cases rather than just summarizing summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that are accurate: the 97% customary land figure is widely cited, the Land Act 1996 and Land Groups Incorporation Act are real, the Lease-Leaseback scheme and SABLs are correctly described, and the 2013 Commission of Inquiry and 5.5 million hectare figure for SABLs are factual. It correctly identifies Hernando de Soto's influence and accurately describes the 'bundle of rights' concept. No invented citations or terms are detected.",
+    "field_situatedness": "The response correctly uses PNG-specific terminology ('kastom', 'big men', Incorporated Land Groups, SABLs) and engages with the Melanesian/Papua New Guinean scholarly tradition, including references to local laws and scandals. It does not silently substitute a Western framing but rather critiques it from within the context of PNG's unique land tenure challenges.",
+    "scholarly_calibration": "The response demonstrates strong calibration by distinguishing well-established facts (e.g., '97% customary land') from contested or problematic areas (e.g., 'the core argument for formalisation... critics point out several flaws'). It specifically notes where programs are 'controversial' and where outcomes differ from theoretical goals ('Banks remain wary... benefits flow outwards'). It avoids blanket disclaimers and provides targeted uncertainty where appropriate."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00110797,
+  "judge_latency_s": 48.898,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are accurate: the 97% customary land figure is widely cited, the Land Act 1996 and Land Groups Incorporation Act are real, the Lease-Leaseback scheme and SABLs are correctly described, and the 2013 Commission of Inquiry and 5.5 million hectare figure for SABLs are factual. It correctly identifies Hernando de Soto's influence and accurately describes the 'bundle of rights' concept. No invented citations or terms are detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes significantly beyond encyclopedia level by detailing specific mechanisms like ILGs and Lease-Leaseback, discussing the SABL scandal's scale and impact, analyzing gendered rights implications ('Women often hold crucial, though distinct, gardening rights'), and engaging with economic critiques of the 'unlocking value' premise. It shows familiarity with scholarly debates and real-world cases rather than just summarizing summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates strong calibration by distinguishing well-established facts (e.g., '97% customary land') from contested or problematic areas (e.g., 'the core argument for formalisation... critics point out several flaws'). It specifically notes where programs are 'controversial' and where outcomes differ from theoretical goals ('Banks remain wary... benefits flow outwards'). It avoids blanket disclaimers and provides targeted uncertainty where appropriate.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses PNG-specific terminology ('kastom', 'big men', Incorporated Land Groups, SABLs) and engages with the Melanesian/Papua New Guinean scholarly tradition, including references to local laws and scandals. It does not silently substitute a Western framing but rather critiques it from within the context of PNG's unique land tenure challenges.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of Papua New Guinea's land tenure issues with accurate details, deep engagement, and appropriate scholarly framing.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of Papua New Guinea's land tenure issues with accurate details, deep engagement, and appropriate scholarly framing.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

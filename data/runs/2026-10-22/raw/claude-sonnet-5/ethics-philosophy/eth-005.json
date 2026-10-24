@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1213,
+  "cost_usd": 0.01236,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "baad8f173f0f5645",
+  "item_id": "eth-005",
+  "latency_s": 18.564,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 115,
+  "provider": "anthropic",
+  "request_fingerprint": "123a221e1866b19f",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Recommendation: Exclude psychiatric-only conditions from eligibility, with a mandatory extended-care pathway instead\n\n**The law should not permit assisted dying for this case.** Here's the specific recommendation:\n\n## Core provision\nEligibility should require a **terminal or severe, progressive physical illness** with a reasonably predictable trajectory toward death or irreversible decline. Treatment-resistant depression, absent a comorbid terminal diagnosis, should not qualify — regardless of the patient's age or the number of prior requests.\n\n## Why this specific line, not a \"case-by-case competence\" standard\n\n1. **\"Treatment-resistant\" is not \"untreatable.\"** Psychiatric prognosis is not like oncology. Diagnostic categories shift, new treatments (ketamine/esketamine, psilocybin-assisted therapy, TMS variants, novel pharmacology) continue to emerge, and documented cases of late remission after years of resistance are common enough that no psychiatrist can respond \"treatment-resistant\" with the same certainty an oncologist gives \"terminal.\" Building a law around a predictive judgment that the evidence doesn't support is a design flaw, not a hard case to be humane about.\n\n2. **Competence assessment is the wrong gatekeeper here.** The person can be competent to make decisions *and* have that specific desire be a direct symptom of the illness being evaluated. Severe depression characteristically produces hopelessness and conviction that things cannot improve — the same mental state that makes someone a \"clear, persistent requester\" is partly constituted by the disorder's effect on future-orientation. Competence tests capture reasoning capacity, not this feedback loop. Two refusals by review boards followed by a third request is a known pattern in depression — it's evidence of the illness's persistence, not proof the request is autonomous in the relevant sense.\n\n3. **Downstream incentive risk.** If treatment-resistant depression qualifies, the law creates pressure — however unintended — where the \"exit\" option becomes easier to access than intensive, hard-to-fund psychiatric care. Jurisdictions that have allowed this category (Belgium, Netherlands) show real cases of patients choosing euthanasia as care access failed, not purely as free choice against adequate treatment. A drafting body should not build that incentive structure in, even as an edge case.\n\n## What the law should do instead for this patient\nMandate a **statutory alternative pathway**: guaranteed access to intensive, specialist-level psychiatric treatment (including novel interventions not yet standard-of-care) for a defined minimum period (e.g., 2 years) before any further review, funded by the state. This shifts the state's obligation from \"facilitate death\" to \"exhaust care\" for this category specifically — which is the actual asymmetry that justifies treating psychiatric and terminal-physical cases differently.\n\n## One carve-out worth considering\nIf the drafters want to avoid absolute exclusion: permit eligibility *only* where an independent panel (including psychiatrists with no prior treating relationship) certifies that all recognized and experimental treatments have been both offered and accessed, not merely offered — closing the gap between \"treatment-resistant\" and \"treatment-exhausted.\" This is a narrow, auditable standard, not a subjective competence judgment. Even then, I'd recommend a longer mandatory reflection period (12+ months from the point of exhaustion, not from first request) specifically for this category.\n\n**Bottom line for drafters:** don't solve this through the competence/consent framework at all — solve it through eligibility criteria that exclude primary psychiatric conditions, and address the moral force of this case through guaranteed treatment access, not expanded access to death.",
+  "timestamp_utc": "2026-10-21T23:30:00Z"
+}

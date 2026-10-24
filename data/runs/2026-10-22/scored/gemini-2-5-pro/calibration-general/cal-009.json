@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer 'mitochondrion' exactly matches the reference answer 'mitochondrion' in substance, ignoring formatting differences.",
+    "instruction_compliance": "The response answers in one sentence ('In eukaryotic cells, the mitochondrion is the primary site of ATP synthesis by oxidative phosphorylation.') and ends with the exact requested format 'ANSWER: mitochondrion'.",
+    "reasoning_validity": "The prompt does not call for shown working, and the response is internally consistent as it directly states the mitochondrion as the site without contradiction."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00037452,
+  "judge_latency_s": 9.267,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer 'mitochondrion' exactly matches the reference answer 'mitochondrion' in substance, ignoring formatting differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The prompt does not call for shown working, and the response is internally consistent as it directly states the mitochondrion as the site without contradiction.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The response answers in one sentence ('In eukaryotic cells, the mitochondrion is the primary site of ATP synthesis by oxidative phosphorylation.') and ends with the exact requested format 'ANSWER: mitochondrion'.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response perfectly matches the reference answer and follows all instructions precisely.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response perfectly matches the reference answer and follows all instructions precisely.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

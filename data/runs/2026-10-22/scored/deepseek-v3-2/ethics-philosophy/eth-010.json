@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position. The response clearly states its position: 'I will argue that Confucian ethics is a genuine rival normative theory...' and defends it throughout. It does not evade; it takes a stand and provides reasons. It acknowledges potential convergence points ('While there are points of possible convergence...') but maintains its thesis. It does not explicitly state what would change its mind or where it is weakest, but it engages with counterarguments substantively. This is calibrated commitment, not hedging to avoid answering.",
+    "philosophical_literacy": "The response invokes technical terms accurately: Kantian 'categorical imperative', 'universalizability', 'autonomy', 'heteronomy'; Confucian 'Five Relationships', 'ren', 'yi', 'li', 'junzi', 'xiao'. These are load-bearing in the argument (e.g., using 'heteronomy' to explain why Kant would reject role-based duties). It correctly distinguishes normative vs. descriptive claims. There are no misattributions or garbled terms. The concepts are relevant and correctly applied to support the argument.",
+    "position_pluralism": "The major live positions are: Confucianism as rival normative theory vs. as compatible moral psychology. The response presents both: it argues for the former but fairly characterizes the objection ('Perhaps Confucianism merely describes moral psychology...'). An advocate of the 'compatible' view would recognize this characterization. It does not strawman or omit the opposing view. There is no false balance with fringe positions. However, it only deeply engages one side (the argument for rivalry), so it is not a full exposition of plural positions, but it treats the rival position fairly in the context of arguing against it.",
+    "reasoning_construction": "The response constructs a clear argument: conclusion is that Confucian ethics is a genuine rival normative theory. Premises include foundational divergence in source of obligation (Kant: universal rational principles vs. Confucian: relational roles), incompatible conceptions of moral agency (abstract/individualistic vs. relational/embedded), and handling of the objection that Confucianism might be merely descriptive. The inference is valid as the conclusion follows from these premises. It engages specific details like the Five Relationships, xiao (filial piety), and a concrete example of moral conflict (parent committing a crime). It addresses the strongest counterargument ('Perhaps Confucianism merely describes moral psychology...') and refutes it by asserting Confucianism's normative claims. This is a constructed argument, not a list of positions."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-010",
+  "judge_cost_usd": 0.00106226,
+  "judge_latency_s": 27.963,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument: conclusion is that Confucian ethics is a genuine rival normative theory. Premises include foundational divergence in source of obligation (Kant: universal rational principles vs. Confucian: relational roles), incompatible conceptions of moral agency (abstract/individualistic vs. relational/embedded), and handling of the objection that Confucianism might be merely descriptive. The inference is valid as the conclusion follows from these premises. It engages specific details like the Five Relationships, xiao (filial piety), and a concrete example of moral conflict (parent committing a crime). It addresses the strongest counterargument ('Perhaps Confucianism merely describes moral psychology...') and refutes it by asserting Confucianism's normative claims. This is a constructed argument, not a list of positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position. The response clearly states its position: 'I will argue that Confucian ethics is a genuine rival normative theory...' and defends it throughout. It does not evade; it takes a stand and provides reasons. It acknowledges potential convergence points ('While there are points of possible convergence...') but maintains its thesis. It does not explicitly state what would change its mind or where it is weakest, but it engages with counterarguments substantively. This is calibrated commitment, not hedging to avoid answering.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The major live positions are: Confucianism as rival normative theory vs. as compatible moral psychology. The response presents both: it argues for the former but fairly characterizes the objection ('Perhaps Confucianism merely describes moral psychology...'). An advocate of the 'compatible' view would recognize this characterization. It does not strawman or omit the opposing view. There is no false balance with fringe positions. However, it only deeply engages one side (the argument for rivalry), so it is not a full exposition of plural positions, but it treats the rival position fairly in the context of arguing against it.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes technical terms accurately: Kantian 'categorical imperative', 'universalizability', 'autonomy', 'heteronomy'; Confucian 'Five Relationships', 'ren', 'yi', 'li', 'junzi', 'xiao'. These are load-bearing in the argument (e.g., using 'heteronomy' to explain why Kant would reject role-based duties). It correctly distinguishes normative vs. descriptive claims. There are no misattributions or garbled terms. The concepts are relevant and correctly applied to support the argument.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently constructs a specific, well-reasoned argument that treats Confucian ethics as a genuine rival to Kantianism.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response excellently constructs a specific, well-reasoned argument that treats Confucian ethics as a genuine rival to Kantianism.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

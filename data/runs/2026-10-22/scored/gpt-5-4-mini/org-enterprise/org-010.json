@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces guidance addressed to factory owners, not analysis for the association. It includes concrete components: step-by-step actions, document lists, policies, a 30-day plan, and a sample response. It is usable with light editing (e.g., filling in association name and date). It does not describe the process but delivers the guidance directly.",
+    "constraint_fidelity": "The prompt constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response explicitly addresses these: 'small factories with limited staff and budget', 'simple steps they can start immediately', 'without consultants', and provides practical steps like appointing one responsible person and using simple records. It respects all constraints and shows arithmetic implicitly (e.g., 30-day action plan with phased steps).",
+    "contextual_realism": "The response assumes no dedicated compliance officer or external consultants, instead recommending appointing an existing manager or owner. It uses simple, low-cost tools ('paper or digital file'), focuses on core records, and acknowledges limited capacity ('If your administrative capacity is limited, focus on these core items'). It avoids tooling or process overhead that would strain small factories.",
+    "jurisdictional_accuracy": "The prompt involves Bangladesh jurisdiction and EU regulations. The response avoids US assumptions (e.g., no mention of at-will employment or US tax categories). It focuses on universal issues like labor conditions and safety, and recommends local documents ('Trade license', 'Factory license') relevant to Bangladesh. It does not make jurisdiction-specific legal claims, staying general but accurate."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00123607,
+  "judge_latency_s": 41.872,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt constraints: small textile manufacturers in Bangladesh, limited administrative capacity, cannot afford external consultants. The response explicitly addresses these: 'small factories with limited staff and budget', 'simple steps they can start immediately', 'without consultants', and provides practical steps like appointing one responsible person and using simple records. It respects all constraints and shows arithmetic implicitly (e.g., 30-day action plan with phased steps).\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes no dedicated compliance officer or external consultants, instead recommending appointing an existing manager or owner. It uses simple, low-cost tools ('paper or digital file'), focuses on core records, and acknowledges limited capacity ('If your administrative capacity is limited, focus on these core items'). It avoids tooling or process overhead that would strain small factories.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces guidance addressed to factory owners, not analysis for the association. It includes concrete components: step-by-step actions, document lists, policies, a 30-day plan, and a sample response. It is usable with light editing (e.g., filling in association name and date). It does not describe the process but delivers the guidance directly.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Bangladesh jurisdiction and EU regulations. The response avoids US assumptions (e.g., no mention of at-will employment or US tax categories). It focuses on universal issues like labor conditions and safety, and recommends local documents ('Trade license', 'Factory license') relevant to Bangladesh. It does not make jurisdiction-specific legal claims, staying general but accurate.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is highly practical, tailored to small factories with limited resources, and directly addresses the prompt's request for actionable guidance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is highly practical, tailored to small factories with limited resources, and directly addresses the prompt's request for actionable guidance.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

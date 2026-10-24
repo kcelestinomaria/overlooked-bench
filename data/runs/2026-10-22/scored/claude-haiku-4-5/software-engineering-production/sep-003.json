@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Total new cost: ~$23/month (0.24% increase)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with schema, code, rollout plan (week-by-week tasks per engineer), testing checklist, and risks table. Includes concrete SQL, Python middleware, and deployment steps. An engineer could start executing immediately with light editing (e.g., auth implementation details).",
+    "constraint_fidelity": "The response respects all hard constraints: uses only existing PostgreSQL (no new services), plans for 3 engineers over 4 weeks, calculates latency impact (+2-3 ms p99, keeping total under 220 ms), and computes cost increase at $23/month (0.24% of budget, well under 8% cap). It explicitly states 'No new infrastructure' and provides arithmetic for cost, latency, and storage.",
+    "maintainability": "Identifies future owners (team of 3 backend engineers), provides monitoring/alerting, documents risks explicitly (e.g., lock contention, data growth), and includes runbooks and admin UI suggestions. Complexity is proportionate (uses existing stack patterns). However, the high-volume usage_meter table (1,200 inserts/sec) may become an operational burden long-term, and the solution relies on atomic database operations which could be complex to debug.",
+    "production_realism": "Addresses production concerns: accounts for locking (per-tenant rows minimize contention), retries (atomic operations ensure consistency), partial failure (usage inserts in same transaction as request), rollback (feature flag disable), observability (Prometheus metrics and alerts), and data volumes (1.2 TB storage growth computed). Fits team skills (Django/PostgreSQL stack). However, the plan to insert one row per request into usage_meter (1,200 inserts/sec) contradicts rubric notes advising against this and recommending aggregation; this could strain the database."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-003",
+  "judge_cost_usd": 0.0021058,
+  "judge_latency_s": 56.46,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses only existing PostgreSQL (no new services), plans for 3 engineers over 4 weeks, calculates latency impact (+2-3 ms p99, keeping total under 220 ms), and computes cost increase at $23/month (0.24% of budget, well under 8% cap). It explicitly states 'No new infrastructure' and provides arithmetic for cost, latency, and storage.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses production concerns: accounts for locking (per-tenant rows minimize contention), retries (atomic operations ensure consistency), partial failure (usage inserts in same transaction as request), rollback (feature flag disable), observability (Prometheus metrics and alerts), and data volumes (1.2 TB storage growth computed). Fits team skills (Django/PostgreSQL stack). However, the plan to insert one row per request into usage_meter (1,200 inserts/sec) contradicts rubric notes advising against this and recommending aggregation; this could strain the database.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with schema, code, rollout plan (week-by-week tasks per engineer), testing checklist, and risks table. Includes concrete SQL, Python middleware, and deployment steps. An engineer could start executing immediately with light editing (e.g., auth implementation details).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Identifies future owners (team of 3 backend engineers), provides monitoring/alerting, documents risks explicitly (e.g., lock contention, data growth), and includes runbooks and admin UI suggestions. Complexity is proportionate (uses existing stack patterns). However, the high-volume usage_meter table (1,200 inserts/sec) may become an operational burden long-term, and the solution relies on atomic database operations which could be complex to debug.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A highly detailed and constraint-compliant design that falters on production realism due to the high-volume per-request inserts into usage_meter.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Total new cost: ~$23/month (0.24% increase)\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "A highly detailed and constraint-compliant design that falters on production realism due to the high-volume per-request inserts into usage_meter.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 82.5
+}

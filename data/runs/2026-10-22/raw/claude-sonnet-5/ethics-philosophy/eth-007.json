@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1096,
+  "cost_usd": 0.011198,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "9cc2c03c85186ccc",
+  "item_id": "eth-007",
+  "latency_s": 16.756,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 119,
+  "provider": "anthropic",
+  "request_fingerprint": "b55d2926068143a2",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "This isn't a situation where I can hand you a confident answer, because the right call genuinely hinges on facts I don't have. But I can help you think through it more precisely than \"do the right thing\" or \"protect yourself,\" which are both too simple here.\n\n**Questions that should drive the decision, not abstract ethics:**\n\n1. **How serious and how certain is the harm?** \"Probably cause serious financial harm to a small number of users\" is doing a lot of work. Is this a near-certainty affecting dozens of people's life savings, or a plausible risk affecting a handful of people in moderate ways? The disclosure calculus changes enormously depending on where on that spectrum it sits.\n\n2. **Are there intermediate steps short of public disclosure?** Two failed internal escalations over eight months is real effort, but has she tried:\n   - Going above her direct chain (skip-level, legal/compliance, audit committee, board)?\n   - A regulator with jurisdiction (many have confidential whistleblower channels with legal protection that supersedes NDAs)?\n   - An ombudsperson or ethics hotline if the company has one?\n   - Consulting a lawyer who specializes in whistleblower cases *before* doing anything else?\n\n   Regulatory disclosure is often legally protected specifically *because* NDAs can't waive statutory whistleblower rights in many jurisdictions. This matters because it could let her act without the career-ending public exposure.\n\n3. **Can the affected users be warned or protected without implicating her?** Sometimes the goal isn't \"expose the company\" but \"prevent the harm\" — those aren't always the same path. Anonymous tips to a regulator, journalists, or even the affected users' representatives (if identifiable) can sometimes achieve the second without fully sacrificing the first.\n\n4. **What does she actually owe here, and to whom?** She has real obligations to her parents that aren't trivial sentimentality — they're a legitimate moral weight, not an excuse. At the same time, the users facing harm didn't consent to that risk, and she has specific knowledge that puts her in an unusually implicating position. Neither obligation erases the other; the question is whether there's a path that doesn't force a straight trade between them.\n\n**What I'd actually suggest as a sequence:**\n\n- Before anything irreversible: consult an employment/whistleblower lawyer, ideally one who works on contingency or through a legal aid org for whistleblowers. This costs little and clarifies her actual legal exposure — NDAs often don't cover disclosures of illegal conduct or harm to consumers, depending on jurisdiction.\n- Use a regulator or protected channel before a public one. This is less career-destroying and still addresses the harm.\n- Document everything now, dated, ideally backed up outside company systems (legally — not stolen trade secrets, just records of her own escalation attempts).\n- Treat \"go public and torch my career\" as the last resort, not the first move after two failed escalations — not because her instinct is wrong, but because there are likely less costly ways to get the same protective outcome.\n\nIf after exhausting those the harm is still imminent and serious and no protected channel exists, then she's facing the hard trade-off you described, and reasonable people could land differently on it depending on how she weighs her parents' dependency against the severity of harm to strangers. But I'd want her to get to that fork only after ruling out the paths that don't require it.",
+  "timestamp_utc": "2026-10-21T23:29:58Z"
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a recommendation ('Which should she choose, and why? Give a recommendation.'). The response states a clear position: 'Recommendation: A Hybrid Approach.' It provides reasons: 'It's Defensible,' 'It's Effective,' 'It Mitigates Risks.' It acknowledges uncertainty ('There is no single \"correct\" answer') but does not state what would change its mind or where it is least confident. The hedging is calibrated to real uncertainty but stops short of full commitment under uncertainty by not specifying conditions for revision.",
+    "philosophical_literacy": "The response uses no named thinkers or technical philosophical terms (e.g., deontology, utilitarianism). It relies on practical concepts like 'meritocracy,' 'unconscious bias,' 'systemic disadvantage,' and 'holistic review,' which are applied accurately and are load-bearing in the argument. For example, 'systemic disadvantage' is correctly used to argue against blind processes. The reasoning is sound without jargon, aligning with a score of 3 for correctness and relevance.",
+    "position_pluralism": "Major live positions include: blind hiring (for meritocracy/bias reduction) and weighted hiring (for diversity/equity). The response presents both: 'The Case for a Fully Blind Process' and 'The Case for Explicitly Weighting Underrepresented Backgrounds.' Each is represented with arguments advocates would recognize (e.g., blind process reduces bias but ignores systemic issues; weighted process builds diversity but risks tokenism). No fringe positions are given false balance. However, the representation is somewhat brief and lacks depth in tension between positions.",
+    "reasoning_construction": "The response concludes with a hybrid approach recommendation: 'A Hybrid Approach... The most effective and defensible strategy is a hybrid approach that leverages the strengths of both while mitigating their weaknesses.' Premises include: blind processes maximize objectivity but fail to address pipeline issues; weighted processes build diversity but risk tokenism; a hybrid approach uses blind screening for initial qualification and holistic review for final selection. The inference is valid: the hybrid solution directly addresses the weaknesses of each method. It engages specific details like 'redacting names, addresses' and 'structured interviews with a pre-defined rubric.' However, it does not address the strongest counterargument to its hybrid approach (e.g., that it might still introduce bias in the holistic phase or be seen as inconsistent)."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-011",
+  "judge_cost_usd": 0.00114283,
+  "judge_latency_s": 54.761,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response concludes with a hybrid approach recommendation: 'A Hybrid Approach... The most effective and defensible strategy is a hybrid approach that leverages the strengths of both while mitigating their weaknesses.' Premises include: blind processes maximize objectivity but fail to address pipeline issues; weighted processes build diversity but risk tokenism; a hybrid approach uses blind screening for initial qualification and holistic review for final selection. The inference is valid: the hybrid solution directly addresses the weaknesses of each method. It engages specific details like 'redacting names, addresses' and 'structured interviews with a pre-defined rubric.' However, it does not address the strongest counterargument to its hybrid approach (e.g., that it might still introduce bias in the holistic phase or be seen as inconsistent).\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a recommendation ('Which should she choose, and why? Give a recommendation.'). The response states a clear position: 'Recommendation: A Hybrid Approach.' It provides reasons: 'It's Defensible,' 'It's Effective,' 'It Mitigates Risks.' It acknowledges uncertainty ('There is no single \\\"correct\\\" answer') but does not state what would change its mind or where it is least confident. The hedging is calibrated to real uncertainty but stops short of full commitment under uncertainty by not specifying conditions for revision.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: blind hiring (for meritocracy/bias reduction) and weighted hiring (for diversity/equity). The response presents both: 'The Case for a Fully Blind Process' and 'The Case for Explicitly Weighting Underrepresented Backgrounds.' Each is represented with arguments advocates would recognize (e.g., blind process reduces bias but ignores systemic issues; weighted process builds diversity but risks tokenism). No fringe positions are given false balance. However, the representation is somewhat brief and lacks depth in tension between positions.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers or technical philosophical terms (e.g., deontology, utilitarianism). It relies on practical concepts like 'meritocracy,' 'unconscious bias,' 'systemic disadvantage,' and 'holistic review,' which are applied accurately and are load-bearing in the argument. For example, 'systemic disadvantage' is correctly used to argue against blind processes. The reasoning is sound without jargon, aligning with a score of 3 for correctness and relevance.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a well-structured, practical hybrid recommendation that engages with the contestation but lacks deep philosophical exploration.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a well-structured, practical hybrid recommendation that engages with the contestation but lacks deep philosophical exploration.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 75.0
+}

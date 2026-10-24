@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed design with code snippets (e.g., TenantRateLimiter, UsageMeter classes), rollout plan with weekly tasks and engineer assignments, concrete commands (Gunicorn config), and verification steps (load testing, shadow deployment). It includes specific risks and mitigations. An engineer could start execution immediately with light editing (e.g., integrating middleware into existing Django setup).",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: uses only existing infrastructure (PostgreSQL, in-memory), stays within 4 weeks and 3 engineers, adds no cost (0% increase), and maintains p99 latency under 220 ms with detailed arithmetic (e.g., CPU overhead <0.1 ms per request, database writes reduced to 0.6 TPS). It acknowledges risks but does not violate constraints.",
+    "maintainability": "The solution is proportionate to the team: uses existing Django/PostgreSQL stack, includes monitoring dashboards, cleanup routines for memory leaks, and documentation of risks (e.g., data loss on crash). It leaves clear seams (middleware integration, admin interface) and states accepted debt (approximate rate limits, data loss). However, it adds complexity with background threads and in-memory state management, which may require ongoing vigilance for thread safety and memory issues, but provides mitigations and is within the team's skill set.",
+    "production_realism": "The design accounts for production realities: thread-safe in-memory rate limiting with imbalance buffer (1.3x), buffered metering to reduce database writes, graceful shutdown for crash resilience, and monitoring for latency and IOPS. It addresses load balancer skew, partial failure (data loss mitigation), and operational burden (background flushing, cleanup routines). However, it assumes perfect ALB routing mitigation with a fixed buffer, which may not cover extreme imbalances, and relies on in-memory state without addressing cold starts or container restarts fully."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-002",
+  "judge_cost_usd": 0.00201359,
+  "judge_latency_s": 55.655,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: uses only existing infrastructure (PostgreSQL, in-memory), stays within 4 weeks and 3 engineers, adds no cost (0% increase), and maintains p99 latency under 220 ms with detailed arithmetic (e.g., CPU overhead <0.1 ms per request, database writes reduced to 0.6 TPS). It acknowledges risks but does not violate constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: thread-safe in-memory rate limiting with imbalance buffer (1.3x), buffered metering to reduce database writes, graceful shutdown for crash resilience, and monitoring for latency and IOPS. It addresses load balancer skew, partial failure (data loss mitigation), and operational burden (background flushing, cleanup routines). However, it assumes perfect ALB routing mitigation with a fixed buffer, which may not cover extreme imbalances, and relies on in-memory state without addressing cold starts or container restarts fully.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed design with code snippets (e.g., TenantRateLimiter, UsageMeter classes), rollout plan with weekly tasks and engineer assignments, concrete commands (Gunicorn config), and verification steps (load testing, shadow deployment). It includes specific risks and mitigations. An engineer could start execution immediately with light editing (e.g., integrating middleware into existing Django setup).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: uses existing Django/PostgreSQL stack, includes monitoring dashboards, cleanup routines for memory leaks, and documentation of risks (e.g., data loss on crash). It leaves clear seams (middleware integration, admin interface) and states accepted debt (approximate rate limits, data loss). However, it adds complexity with background threads and in-memory state management, which may require ongoing vigilance for thread safety and memory issues, but provides mitigations and is within the team's skill set.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A highly detailed and constraint-aware design that leverages existing infrastructure with minimal cost and latency impact.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A highly detailed and constraint-aware design that leverages existing infrastructure with minimal cost and latency impact.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

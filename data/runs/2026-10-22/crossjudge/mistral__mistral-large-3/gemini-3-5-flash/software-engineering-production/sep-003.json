@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a complete, executable plan with specific code (middleware, token bucket, accumulator), database schema, Gunicorn configuration, and a week-by-week rollout timeline. 2. It includes concrete commands (e.g., `gunicorn --workers=1 --threads=16`), verification steps (load testing, shadow mode), and owner assignments (Eng A/B/C). 3. An engineer could start implementation immediately with minimal edits.",
+    "constraint_fidelity": "1. The response explicitly adheres to the constraint of no new infrastructure services (C1) by using in-memory token buckets and PostgreSQL with batch flushing, avoiding Redis, Memcached, or other new services. 2. The timeline and headcount constraints (C2) are respected with a detailed 4-week plan for 3 engineers. 3. The cost constraint (C3) is addressed with arithmetic showing $0 additional spend, well within the 8% ($752) limit. 4. The response includes detailed capacity, latency, and cost arithmetic to justify compliance with all constraints. No silent violations or unacknowledged relaxations are present.",
+    "maintainability": "1. The solution is proportionate to the team's size, using simple, thread-safe Python structures and clear seams (middleware, background thread). 2. Risks and accepted debt (e.g., minor data loss on crash) are explicitly stated. 3. The design leaves observability (Datadog dashboards) and documentation (API endpoint for billing) for future maintainers. 4. Complexity is minimized where possible (e.g., no distributed coordination).",
+    "production_realism": "1. The response accounts for production-scale concerns: thread-safe in-memory structures, batch flushing to avoid database overload, and over-provisioning to handle load balancer skew. 2. It addresses failure modes like container crashes (graceful shutdown flush) and memory leaks (pruning inactive buckets). 3. The operational burden is proportionate to the team's size and skill mix, with clear monitoring and rollout steps. 4. The design is technically correct for the stated infrastructure (Django, PostgreSQL, Gunicorn)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-003",
+  "judge_cost_usd": 0.0039626,
+  "judge_latency_s": 10.734,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly adheres to the constraint of no new infrastructure services (C1) by using in-memory token buckets and PostgreSQL with batch flushing, avoiding Redis, Memcached, or other new services. 2. The timeline and headcount constraints (C2) are respected with a detailed 4-week plan for 3 engineers. 3. The cost constraint (C3) is addressed with arithmetic showing $0 additional spend, well within the 8% ($752) limit. 4. The response includes detailed capacity, latency, and cost arithmetic to justify compliance with all constraints. No silent violations or unacknowledged relaxations are present.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for production-scale concerns: thread-safe in-memory structures, batch flushing to avoid database overload, and over-provisioning to handle load balancer skew. 2. It addresses failure modes like container crashes (graceful shutdown flush) and memory leaks (pruning inactive buckets). 3. The operational burden is proportionate to the team's size and skill mix, with clear monitoring and rollout steps. 4. The design is technically correct for the stated infrastructure (Django, PostgreSQL, Gunicorn).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a complete, executable plan with specific code (middleware, token bucket, accumulator), database schema, Gunicorn configuration, and a week-by-week rollout timeline. 2. It includes concrete commands (e.g., `gunicorn --workers=1 --threads=16`), verification steps (load testing, shadow mode), and owner assignments (Eng A/B/C). 3. An engineer could start implementation immediately with minimal edits.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team's size, using simple, thread-safe Python structures and clear seams (middleware, background thread). 2. Risks and accepted debt (e.g., minor data loss on crash) are explicitly stated. 3. The design leaves observability (Datadog dashboards) and documentation (API endpoint for billing) for future maintainers. 4. Complexity is minimized where possible (e.g., no distributed coordination).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a model of constraint-aware, production-ready engineering with rigorous arithmetic and actionable detail.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response is a model of constraint-aware, production-ready engineering with rigorous arithmetic and actionable detail.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

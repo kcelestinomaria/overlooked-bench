@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedia-level summary by detailing specific mechanisms (e.g., phreatophyte dependence of Tugai forests, capillary action causing secondary salinization), methodological approaches (remote sensing with Landsat/MODIS, vegetation transects, NDVI analysis), and ecological succession processes. It discusses the transformation from productive ecosystems to low-diversity halophytic systems and impacts on fauna populations. A specialist would recognize engagement with field-specific evidence and causal relationships rather than superficial summary.",
+    "domain_accuracy": "The response makes numerous substantive claims that are accurate: the creation of the Aralkum desert (60,000 km²), groundwater drop (3-8m), death of Tugai forests, salt-dust storms transporting 100 million tons annually, dominance of halophytes like Haloxylon and Tamarix, and local climate changes. It correctly distinguishes mechanisms (aeolian transport vs capillary action) and cites appropriate methodologies (remote sensing, field studies). No invented citations or terms are present. The claims align with established scientific understanding of the Aral Sea disaster.",
+    "field_situatedness": "The response uses terminology and frameworks specific to environmental science and ecology (e.g., 'phreatophytes', 'halophytes', 'primary succession', 'aeolian transport', 'NDVI', 'riparian forests'). It focuses on the regional context (Amu Darya/Syr Darya deltas, Aralkum) without substituting Western frameworks. The scholarly conventions align with the field of arid land ecology and hydrological impact assessment.",
+    "scholarly_calibration": "The response explicitly calibrates evidence strength: labels the Aralkum creation as 'overwhelmingly clear', groundwater drop as 'well-documented', soil salinization as 'extensive', climate change supported by 'meteorological data and modeling', and fauna impacts as 'less-quantified' with 'sparse pre-disaster data'. It distinguishes between direct observation (remote sensing) and inferred relationships (fauna decline), avoiding uniform confidence. This demonstrates targeted calibration to evidential status."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00112938,
+  "judge_latency_s": 53.763,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are accurate: the creation of the Aralkum desert (60,000 km²), groundwater drop (3-8m), death of Tugai forests, salt-dust storms transporting 100 million tons annually, dominance of halophytes like Haloxylon and Tamarix, and local climate changes. It correctly distinguishes mechanisms (aeolian transport vs capillary action) and cites appropriate methodologies (remote sensing, field studies). No invented citations or terms are present. The claims align with established scientific understanding of the Aral Sea disaster.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedia-level summary by detailing specific mechanisms (e.g., phreatophyte dependence of Tugai forests, capillary action causing secondary salinization), methodological approaches (remote sensing with Landsat/MODIS, vegetation transects, NDVI analysis), and ecological succession processes. It discusses the transformation from productive ecosystems to low-diversity halophytic systems and impacts on fauna populations. A specialist would recognize engagement with field-specific evidence and causal relationships rather than superficial summary.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly calibrates evidence strength: labels the Aralkum creation as 'overwhelmingly clear', groundwater drop as 'well-documented', soil salinization as 'extensive', climate change supported by 'meteorological data and modeling', and fauna impacts as 'less-quantified' with 'sparse pre-disaster data'. It distinguishes between direct observation (remote sensing) and inferred relationships (fauna decline), avoiding uniform confidence. This demonstrates targeted calibration to evidential status.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to environmental science and ecology (e.g., 'phreatophytes', 'halophytes', 'primary succession', 'aeolian transport', 'NDVI', 'riparian forests'). It focuses on the regional context (Amu Darya/Syr Darya deltas, Aralkum) without substituting Western frameworks. The scholarly conventions align with the field of arid land ecology and hydrological impact assessment.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated expertise on the terrestrial ecological impacts of the Aral Sea desiccation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated expertise on the terrestrial ecological impacts of the Aral Sea desiccation.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

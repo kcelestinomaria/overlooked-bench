@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 675,
+  "cost_usd": 0.0104275,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "cd0663c047864a97",
+  "item_id": "eth-001",
+  "latency_s": 19.544,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 121,
+  "provider": "openai",
+  "request_fingerprint": "fab0638fd368a78f",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "Patient **B** should get the machine.\n\n### Why\nWhen a clinic has one life-saving resource and no policy, the strongest default is to use a **medically relevant, fair, and publicly defensible criterion**. Here, the clearest such criterion is **expected medical benefit**. On the facts given, B has the better prognosis: **80% five-year survival** versus **60%** for A. If both need the machine indefinitely and there is no other differentiating medical information, giving it to B is the more justified choice because it is more likely to preserve a life for longer.\n\nThis approach has several advantages:\n\n1. **It treats persons equally in moral worth.**  \n   It does not say B is more valuable than A. It says that when one machine must be allocated, the decision should rest on who is more likely to benefit medically, not on social status or personal circumstances.\n\n2. **It avoids controversial social judgments.**  \n   A is the sole earner for four dependents, which matters morally, but using that as the deciding factor invites the clinic to rank patients by family role, income role, or social usefulness. That is a dangerous standard. People who are older, isolated, unemployed, disabled, or socially marginalized would predictably lose out.\n\n3. **It is more consistent and easier to justify institutionally.**  \n   A clinic needs reasons it could state openly and apply across cases. Prognosis is imperfect, but it is still a recognizably medical criterion. “Has dependents” or “supports others” is morally salient, yet much harder to apply fairly and without bias.\n\n4. **Age alone should not decide the case.**  \n   A is younger, but the prompt gives no instruction to maximize life-years rather than likelihood of treatment success. If we rely on age here, we risk using it as a proxy for social worth or expected future contribution. Without an agreed policy, prognosis is the cleaner basis.\n\n### Strongest objection\nThe strongest objection is that **A should get the machine because saving A would likely protect not only A’s life but also the welfare of four dependents**, and A is younger besides. On this view, choosing B ignores the broader human consequences of the decision. If A dies, four others may suffer serious economic and emotional harm; if B dies, no dependents face that same direct loss. A utilitarian could argue that the total benefit of saving A is greater even with the lower survival probability.\n\n### Why I still hold my view\nI still favor **B** because once we let **dependent status or social role** decide access to a scarce life-saving treatment, we move from medicine into judgments about whose life has greater instrumental value to others. That is ethically unstable and prone to discrimination. A fair triage decision should be grounded primarily in **the patient’s own medical prospects**, not in whether they are a parent, breadwinner, married, employed, or socially connected. Those factors matter compassionately, but they should not control who gets a machine when the clinic lacks a prior policy authorizing them.\n\nSo although the case for A is powerful, especially given the dependents, **B remains the more justifiable choice because B has the better medical prognosis and that is the fairest decisive criterion available on the stated facts**.",
+  "timestamp_utc": "2026-10-21T23:36:41Z"
+}

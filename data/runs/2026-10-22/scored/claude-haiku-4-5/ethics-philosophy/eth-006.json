@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgment, and the response clearly states a position: 'the distinction matters, but not in the way common sense suggests' and specifies that its moral weight depends on causal responsibility, duty scope, and rights. It does not evade by deferring to personal values; instead, it argues for its view and acknowledges when the distinction becomes irrelevant (e.g., when underlying factors are identical). However, it does not explicitly state what would change its mind or where it is least confident, which prevents a perfect score.",
+    "philosophical_literacy": "The response uses concepts like causal responsibility, duty scope, and rights accurately and makes them load-bearing in the argument. It does not invoke named thinkers or technical terms incorrectly, and the reasoning is philosophically sound without relying on jargon. For example, it correctly distinguishes between causation and omission and ties duties to reasonable expectations and costs. No misattributions or garbled terms are present.",
+    "position_pluralism": "The response acknowledges the standard view that killing is worse than letting die and critiques it, but it does not fully represent major live positions (e.g., deontological arguments for the intrinsic wrongness of killing, or consequentialist views that might emphasize outcomes). It focuses on its own argument without strawmanning, but omits competing frameworks like deontology or virtue ethics. An advocate of the standard view might not feel fully represented, as the response quickly dismisses the intuition without deep engagement.",
+    "reasoning_construction": "The response builds a structured argument: it identifies the conclusion ('the distinction is not itself a fundamental moral category') and supports it with premises about causal responsibility, duty scope, and rights. It engages with specific scenarios (e.g., doctor injecting vs. withholding antibiotics, parent drowning vs. watching a child drown) and addresses counterarguments by showing when the distinction collapses. The inference from premises to conclusion is valid, as the conclusion depends on the analysis of underlying factors."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-006",
+  "judge_cost_usd": 0.00084966,
+  "judge_latency_s": 51.048,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument: it identifies the conclusion ('the distinction is not itself a fundamental moral category') and supports it with premises about causal responsibility, duty scope, and rights. It engages with specific scenarios (e.g., doctor injecting vs. withholding antibiotics, parent drowning vs. watching a child drown) and addresses counterarguments by showing when the distinction collapses. The inference from premises to conclusion is valid, as the conclusion depends on the analysis of underlying factors.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgment, and the response clearly states a position: 'the distinction matters, but not in the way common sense suggests' and specifies that its moral weight depends on causal responsibility, duty scope, and rights. It does not evade by deferring to personal values; instead, it argues for its view and acknowledges when the distinction becomes irrelevant (e.g., when underlying factors are identical). However, it does not explicitly state what would change its mind or where it is least confident, which prevents a perfect score.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges the standard view that killing is worse than letting die and critiques it, but it does not fully represent major live positions (e.g., deontological arguments for the intrinsic wrongness of killing, or consequentialist views that might emphasize outcomes). It focuses on its own argument without strawmanning, but omits competing frameworks like deontology or virtue ethics. An advocate of the standard view might not feel fully represented, as the response quickly dismisses the intuition without deep engagement.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like causal responsibility, duty scope, and rights accurately and makes them load-bearing in the argument. It does not invoke named thinkers or technical terms incorrectly, and the reasoning is philosophically sound without relying on jargon. For example, it correctly distinguishes between causation and omission and ties duties to reasonable expectations and costs. No misattributions or garbled terms are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response constructs a well-reasoned argument that the killing/letting die distinction is derivative rather than fundamental, supported by specific factors and examples.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response constructs a well-reasoned argument that the killing/letting die distinction is derivative rather than fundamental, supported by specific factors and examples.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 81.25
+}

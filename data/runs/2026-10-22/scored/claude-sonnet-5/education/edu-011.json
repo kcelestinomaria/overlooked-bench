@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses financial constraints explicitly: 'The family has limited funds' is considered with options like 'TVET graduates often get employed or start businesses faster than some degree holders. Costs are significantly lower than university', 'Vocational Training Centers (VTCs) / Youth Polytechnics — These are often the most affordable option', and detailed financing advice in 'Bursaries, Scholarships, and HELB'. It provides practical, low-cost adaptations like 'Apprenticeships and On-the-Job Skill Building' with 'zero or minimal cost' and 'Gap Year with Purpose' for immediate income needs. The guidance is concrete and implementable without additional resources.",
+    "pathway_breadth": "The response covers multiple non-university pathways with substantial detail: 'TVET / Technical and Vocational Training' with specific fields and institutions, 'KUCCPS Placement for Diploma/Certificate Programs', 'Vocational Training Centers (VTCs) / Youth Polytechnics', 'Apprenticeships and On-the-Job Skill Building', and 'Starting Small Business or Trade Work Immediately'. Each includes realistic entry requirements, costs, and outcomes specific to Kenya. Non-degree routes receive comparable depth to degree routes, with concrete program names and financing options like 'HELB loans and the Higher Education Loans Board bursaries are available for TVET students'.",
+    "pedagogical_soundness": "This dimension is not applicable to guidance counseling responses. The response provides career pathway advice rather than instructional design, so no learning objectives, activities, or assessments are present to evaluate.",
+    "workload_realism": "This dimension is not applicable to guidance counseling responses. The response provides advice to a student rather than instructional plans requiring teacher workload considerations."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00098317,
+  "judge_latency_s": 45.929,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable to guidance counseling responses. The response provides career pathway advice rather than instructional design, so no learning objectives, activities, or assessments are present to evaluate.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension is not applicable to guidance counseling responses. The response provides advice to a student rather than instructional plans requiring teacher workload considerations.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple non-university pathways with substantial detail: 'TVET / Technical and Vocational Training' with specific fields and institutions, 'KUCCPS Placement for Diploma/Certificate Programs', 'Vocational Training Centers (VTCs) / Youth Polytechnics', 'Apprenticeships and On-the-Job Skill Building', and 'Starting Small Business or Trade Work Immediately'. Each includes realistic entry requirements, costs, and outcomes specific to Kenya. Non-degree routes receive comparable depth to degree routes, with concrete program names and financing options like 'HELB loans and the Higher Education Loans Board bursaries are available for TVET students'.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses financial constraints explicitly: 'The family has limited funds' is considered with options like 'TVET graduates often get employed or start businesses faster than some degree holders. Costs are significantly lower than university', 'Vocational Training Centers (VTCs) / Youth Polytechnics — These are often the most affordable option', and detailed financing advice in 'Bursaries, Scholarships, and HELB'. It provides practical, low-cost adaptations like 'Apprenticeships and On-the-Job Skill Building' with 'zero or minimal cost' and 'Gap Year with Purpose' for immediate income needs. The guidance is concrete and implementable without additional resources.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides comprehensive, specific, and realistic guidance for Kenyan students with below-cutoff KCSE results, covering multiple pathways with equal depth and addressing financial constraints effectively.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response provides comprehensive, specific, and realistic guidance for Kenyan students with below-cutoff KCSE results, covering multiple pathways with equal depth and addressing financial constraints effectively.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

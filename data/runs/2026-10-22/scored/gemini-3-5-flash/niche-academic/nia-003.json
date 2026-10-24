@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with methodological differences (e.g., Maliki inductive/teleological vs. Hanafi deductive/systematic), specific tools (istislah, istihsan, munasaba), and scholarly conditions (e.g., al-Shatibi's criteria). It discusses internal debates (e.g., Hanafi rejection of maslaha mursala as independent) and provides a concrete example of divergence. A specialist would recognize this as informed by the literature.",
+    "domain_accuracy": "The response makes substantive claims that are accurate: it correctly defines maslaha and its three categories (mu'tabara, mulghah, mursala), accurately describes Maliki istislah and Hanafi istihsan/munasaba, and provides a valid example of divergence (accused thief case). It uses proper terminology (e.g., Usul al-Fiqh, Maqasid al-Shariah) and attributes positions correctly (e.g., Malikis to Imam Malik, Hanafis to Imam Abu Hanifa). No invented citations or consensus are detected.",
+    "field_situatedness": "The response uses frameworks and terminology specific to Islamic legal theory (e.g., Usul al-Fiqh, maslaha, istislah, istihsan, munasaba, Maqasid al-Shariah) and references key figures (Imam Malik, Abu Hanifa, al-Shatibi). It stays within the Islamic scholarly tradition without substituting Western or Anglophone framings.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it notes that maslaha cannot supersede definitive texts (established), describes Maliki acceptance and Hanafi rejection of maslaha mursala as independent (contested, but presented accurately as positions), and specifies conditions (e.g., al-Shatibi's criteria). It avoids uniform confidence by framing differences as methodological (e.g., 'divergence is not over whether public interest matters, but how'). No blanket disclaimers are used."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00114494,
+  "judge_latency_s": 57.169,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are accurate: it correctly defines maslaha and its three categories (mu'tabara, mulghah, mursala), accurately describes Maliki istislah and Hanafi istihsan/munasaba, and provides a valid example of divergence (accused thief case). It uses proper terminology (e.g., Usul al-Fiqh, Maqasid al-Shariah) and attributes positions correctly (e.g., Malikis to Imam Malik, Hanafis to Imam Abu Hanifa). No invented citations or consensus are detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with methodological differences (e.g., Maliki inductive/teleological vs. Hanafi deductive/systematic), specific tools (istislah, istihsan, munasaba), and scholarly conditions (e.g., al-Shatibi's criteria). It discusses internal debates (e.g., Hanafi rejection of maslaha mursala as independent) and provides a concrete example of divergence. A specialist would recognize this as informed by the literature.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it notes that maslaha cannot supersede definitive texts (established), describes Maliki acceptance and Hanafi rejection of maslaha mursala as independent (contested, but presented accurately as positions), and specifies conditions (e.g., al-Shatibi's criteria). It avoids uniform confidence by framing differences as methodological (e.g., 'divergence is not over whether public interest matters, but how'). No blanket disclaimers are used.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology specific to Islamic legal theory (e.g., Usul al-Fiqh, maslaha, istislah, istihsan, munasaba, Maqasid al-Shariah) and references key figures (Imam Malik, Abu Hanifa, al-Shatibi). It stays within the Islamic scholarly tradition without substituting Western or Anglophone framings.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate, and well-calibrated knowledge of Islamic legal theory regarding maslaha and Maliki-Hanafi differences.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate, and well-calibrated knowledge of Islamic legal theory regarding maslaha and Maliki-Hanafi differences.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

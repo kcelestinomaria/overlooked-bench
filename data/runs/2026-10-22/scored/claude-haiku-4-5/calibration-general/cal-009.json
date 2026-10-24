@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer 'ANSWER: Mitochondrion' matches the reference answer 'ANSWER: mitochondrion' in substance, as both identify the mitochondrion as the correct organelle. The capitalization difference is irrelevant per rubric guidance.",
+    "instruction_compliance": "The prompt instructed to 'Answer in one sentence, then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a one-sentence answer and ends with 'ANSWER: Mitochondrion', matching the required format exactly.",
+    "reasoning_validity": "The response provides reasoning: 'where the electron transport chain and chemiosmotic process generate most of the cell's ATP energy.' This is valid and specific, correctly identifying key components (electron transport chain) and process (chemiosmosis), supporting the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00043817,
+  "judge_latency_s": 23.953,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer 'ANSWER: Mitochondrion' matches the reference answer 'ANSWER: mitochondrion' in substance, as both identify the mitochondrion as the correct organelle. The capitalization difference is irrelevant per rubric guidance.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response provides reasoning: 'where the electron transport chain and chemiosmotic process generate most of the cell's ATP energy.' This is valid and specific, correctly identifying key components (electron transport chain) and process (chemiosmosis), supporting the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructed to 'Answer in one sentence, then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a one-sentence answer and ends with 'ANSWER: Mitochondrion', matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all rubric requirements with correct answer, valid reasoning, and strict format compliance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response fully meets all rubric requirements with correct answer, valid reasoning, and strict format compliance.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

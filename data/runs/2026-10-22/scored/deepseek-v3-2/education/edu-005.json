@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses differentiation: 'For slower learners: Use physical objects... pair with a supportive peer', 'For advanced learners: Challenge them to survey two questions'. These are concrete, low-cost adaptations implementable by one teacher. It accounts for large class size (55) with group work and teacher circulation. No generic 'differentiate as needed' language.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is a statistics scheme of work. The response is inclusive by using local contexts (crops, household sizes) relevant to rural Malawian students and employs hands-on, low-resource methods accessible to all learners in this setting.",
+    "pedagogical_soundness": "The response states learning objectives: 'Understand what data is and why it is useful', 'Learn to collect simple data through surveys', 'Organize data using lists and simple groupings'. Activities align: Lesson 1 defines data, Lesson 2 collects data via surveys, Lesson 3 organizes with lists/tallies, Lesson 4 applies with local materials. Assessment (exercise book submission) measures definitions and organization skills. Sequencing is logical: concepts before application. Cognitive demand is appropriate for Grade 8 introduction.",
+    "workload_realism": "Timings sum to 180 minutes (4x45 min lessons). Materials are chalkboard, exercise books, pencils, textbooks (shared), and local items like pebbles/beans - all available in rural Malawi without electricity or printing. Group work with 4 students per textbook is feasible for 55 students (14 groups). Preparation is minimal (gathering local materials), marking is light (checking exercise books). No technology or printing required."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-005",
+  "judge_cost_usd": 0.00102898,
+  "judge_latency_s": 31.223,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states learning objectives: 'Understand what data is and why it is useful', 'Learn to collect simple data through surveys', 'Organize data using lists and simple groupings'. Activities align: Lesson 1 defines data, Lesson 2 collects data via surveys, Lesson 3 organizes with lists/tallies, Lesson 4 applies with local materials. Assessment (exercise book submission) measures definitions and organization skills. Sequencing is logical: concepts before application. Cognitive demand is appropriate for Grade 8 introduction.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 180 minutes (4x45 min lessons). Materials are chalkboard, exercise books, pencils, textbooks (shared), and local items like pebbles/beans - all available in rural Malawi without electricity or printing. Group work with 4 students per textbook is feasible for 55 students (14 groups). Preparation is minimal (gathering local materials), marking is light (checking exercise books). No technology or printing required.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is a statistics scheme of work. The response is inclusive by using local contexts (crops, household sizes) relevant to rural Malawian students and employs hands-on, low-resource methods accessible to all learners in this setting.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses differentiation: 'For slower learners: Use physical objects... pair with a supportive peer', 'For advanced learners: Challenge them to survey two questions'. These are concrete, low-cost adaptations implementable by one teacher. It accounts for large class size (55) with group work and teacher circulation. No generic 'differentiate as needed' language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently adapts statistics instruction to a low-resource rural Malawian context with pedagogically sound, realistic, and inclusive methods.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response excellently adapts statistics instruction to a low-resource rural Malawian context with pedagogically sound, realistic, and inclusive methods.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

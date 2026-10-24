@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 515,
+  "cost_usd": 0.002613,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "52b9b041491ad3bb",
+  "item_id": "nia-011",
+  "latency_s": 6.523,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 38,
+  "provider": "anthropic",
+  "request_fingerprint": "34dc1cc1026bcf51",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Technical Obstacles in Proto-Bantu Tone Reconstruction\n\n## Principal Challenges\n\n### 1. **Tone System Complexity and Diversity**\n- Modern Bantu languages exhibit enormous variation: some have 2-3 tones, others 5-7+\n- Determining which systems are conservative vs. innovative is often unclear\n- Tone systems can change dramatically within geographically close languages, complicating phylogenetic inference\n\n### 2. **Limited Comparative Data**\n- Tone is often poorly documented in older sources and field materials\n- Many languages lack adequate tonal descriptions or have inconsistent transcription systems\n- Fewer languages have been studied tonologically compared to segmental phonology\n\n### 3. **Methodological Issues**\n- **Tone vs. stress**: Distinguishing inherited tonal patterns from stress-induced effects\n- **Morphological interaction**: Tone often interacts with inflectional morphology, making it hard to isolate inherited patterns\n- **Lexical vs. grammatical tone**: Separating lexical tone from grammatical tone marking (e.g., tense/aspect marking)\n\n### 4. **Phonetic Realization Problems**\n- Tone realization varies by context (phrase position, speaker, register)\n- Downstep and other prosodic phenomena obscure underlying patterns\n- Difficulty establishing equivalences across languages with different phonetic implementations\n\n## Current State of the Field\n\n### Established Consensus\n- Proto-Bantu likely had a **2-3 tone system** (High/Low, possibly Mid)\n- Tone was **lexically contrastive** on roots\n- Grammatical tone marking existed in the proto-language\n\n### Active Research Areas\n- **Bantu A (Northwest)** languages provide some of the most conservative systems\n- Work on **tone classes** and their distribution across word categories\n- Comparative studies examining tone in cognate sets (e.g., Haspelmath & Sims frameworks)\n\n### Remaining Uncertainties\n- Exact number and nature of proto-tones\n- Mechanisms of tone change (loss, merger, reanalysis)\n- Relationship between tone and other prosodic features in the proto-language\n\nThe field remains somewhat fragmented, with progress dependent on improved documentation and more systematic comparative work.",
+  "timestamp_utc": "2026-10-21T23:35:33Z"
+}

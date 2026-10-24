@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with methodological issues (e.g., 'lexical evidence is problematic... sound correspondences are not regular enough', 'morphological evidence is incomplete and difficult to interpret'), discusses evidence quality ('weak to moderate at best', 'not convincing'), and references internal debates (Cushitic vs. Omotic vs. isolate positions). A specialist would recognize this as informed by literature, not just summaries, though it stops short of detailed analysis of specific proposals.",
+    "domain_accuracy": "The response makes substantive claims such as 'Ongota is extremely mixed and may have undergone intense language shift and contact-induced change', 'core vocabulary and grammar do not show a clear pattern of affiliation', and 'lexical evidence is problematic with a very small corpus and likely borrowing'. These align with known scholarly discussions (e.g., work by Savà and Tosco) and accurately reflect the debated, inconclusive state. No invented citations, terms, or consensus are present; the response correctly notes the lack of secure classification.",
+    "field_situatedness": "The response uses appropriate frameworks and terminology from African linguistics and Afroasiatic studies (e.g., 'Cushitic', 'Omotic', 'language isolate', 'substrate', 'borrowing', 'sound correspondences'). It does not substitute Western or Anglophone framings; it engages with the regional scholarly tradition and acknowledges non-English scholarship implicitly through accurate representation of the debate.",
+    "scholarly_calibration": "The response distinguishes evidential status effectively: it labels Cushitic evidence as 'weak to moderate', Omotic as 'not convincing', and the isolate position as 'currently the strongest cautious position'. It uses specific calibration (e.g., 'the vocabulary is very limited and often contaminated by borrowing', 'similarity by geography is not evidence of descent') rather than blanket disclaimers. It accurately presents contested points as unsettled, e.g., 'no classification is secure'."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00095754,
+  "judge_latency_s": 50.264,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims such as 'Ongota is extremely mixed and may have undergone intense language shift and contact-induced change', 'core vocabulary and grammar do not show a clear pattern of affiliation', and 'lexical evidence is problematic with a very small corpus and likely borrowing'. These align with known scholarly discussions (e.g., work by Savà and Tosco) and accurately reflect the debated, inconclusive state. No invented citations, terms, or consensus are present; the response correctly notes the lack of secure classification.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with methodological issues (e.g., 'lexical evidence is problematic... sound correspondences are not regular enough', 'morphological evidence is incomplete and difficult to interpret'), discusses evidence quality ('weak to moderate at best', 'not convincing'), and references internal debates (Cushitic vs. Omotic vs. isolate positions). A specialist would recognize this as informed by literature, not just summaries, though it stops short of detailed analysis of specific proposals.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes evidential status effectively: it labels Cushitic evidence as 'weak to moderate', Omotic as 'not convincing', and the isolate position as 'currently the strongest cautious position'. It uses specific calibration (e.g., 'the vocabulary is very limited and often contaminated by borrowing', 'similarity by geography is not evidence of descent') rather than blanket disclaimers. It accurately presents contested points as unsettled, e.g., 'no classification is secure'.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate frameworks and terminology from African linguistics and Afroasiatic studies (e.g., 'Cushitic', 'Omotic', 'language isolate', 'substrate', 'borrowing', 'sound correspondences'). It does not substitute Western or Anglophone framings; it engages with the regional scholarly tradition and acknowledges non-English scholarship implicitly through accurate representation of the debate.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates strong domain accuracy and scholarly calibration, providing a nuanced summary of the debate with appropriate caution and evidence assessment.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response demonstrates strong domain accuracy and scholarly calibration, providing a nuanced summary of the debate with appropriate caution and evidence assessment.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

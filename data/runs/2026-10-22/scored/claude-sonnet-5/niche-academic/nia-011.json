@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific methodological challenges (e.g., morphotonological systems, downstep analysis, documentation biases), scholarly debates (tone melody vs. per mora), and uneven progress across Bantu zones. It cites key works and current open problems, demonstrating familiarity with the literature rather than summaries. A specialist would recognize this as informed by primary scholarship.",
+    "domain_accuracy": "The response makes substantive claims that are accurate: it correctly identifies Proto-Bantu as a two-tone system (H/L), mentions key scholars like Meeussen (1967), Hyman, Odden, and Kisseberth, and references the BLR database. It accurately describes challenges like tonal instability, grammatical tone interactions, downstep, documentation issues, and debates like tone melody vs. mora-based approaches. No invented citations, terms, or consensus are detected; all claims align with established Bantu tonology literature.",
+    "field_situatedness": "The response uses terminology and frameworks specific to Bantu tonology (e.g., 'morphotonological systems,' 'downstep/downdrift,' 'depressor consonants,' references to Bantu zones and scholars like Meeussen and Hyman). It does not substitute a Western or Anglophone framing but stays grounded in the Africanist linguistic tradition, acknowledging non-English scholarship (e.g., Guthrie's work, BLR database).",
+    "scholarly_calibration": "The response distinguishes well-established points (e.g., two-tone proto-system, verb stem reconstructions) from contested or incomplete areas (e.g., nominal tone less secure, zone-by-zone unevenness, lexicon-wide reconstruction unfinished). It uses phrases like 'considered less secure,' 'open problems,' and 'speculative' to signal uncertainty where appropriate, avoiding uniform confidence. Calibration is specific and targeted, not blanket."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00095272,
+  "judge_latency_s": 41.784,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are accurate: it correctly identifies Proto-Bantu as a two-tone system (H/L), mentions key scholars like Meeussen (1967), Hyman, Odden, and Kisseberth, and references the BLR database. It accurately describes challenges like tonal instability, grammatical tone interactions, downstep, documentation issues, and debates like tone melody vs. mora-based approaches. No invented citations, terms, or consensus are detected; all claims align with established Bantu tonology literature.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific methodological challenges (e.g., morphotonological systems, downstep analysis, documentation biases), scholarly debates (tone melody vs. per mora), and uneven progress across Bantu zones. It cites key works and current open problems, demonstrating familiarity with the literature rather than summaries. A specialist would recognize this as informed by primary scholarship.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established points (e.g., two-tone proto-system, verb stem reconstructions) from contested or incomplete areas (e.g., nominal tone less secure, zone-by-zone unevenness, lexicon-wide reconstruction unfinished). It uses phrases like 'considered less secure,' 'open problems,' and 'speculative' to signal uncertainty where appropriate, avoiding uniform confidence. Calibration is specific and targeted, not blanket.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to Bantu tonology (e.g., 'morphotonological systems,' 'downstep/downdrift,' 'depressor consonants,' references to Bantu zones and scholars like Meeussen and Hyman). It does not substitute a Western or Anglophone framing but stays grounded in the Africanist linguistic tradition, acknowledging non-English scholarship (e.g., Guthrie's work, BLR database).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of Bantu tonology reconstruction, with accurate, detailed, and well-calibrated content.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of Bantu tonology reconstruction, with accurate, detailed, and well-calibrated content.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

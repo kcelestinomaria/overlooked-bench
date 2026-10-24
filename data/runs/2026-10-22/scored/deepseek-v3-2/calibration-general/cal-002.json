@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance. The numerical value is identical, and the format follows the instruction.",
+    "instruction_compliance": "The prompt explicitly requests: 'Show your working' (which the response does with labeled steps and calculations) and 'end your response with a final line in exactly this format: ANSWER: <number>' (which it does with 'ANSWER: 21134.40'). All instructions are fully complied with.",
+    "reasoning_validity": "The response shows step-by-step working: calculates mass after drying (4800 - 0.15*4800 = 4080 kg), AA grade (0.40*4080 = 1632 kg), non-AA grade (4080 - 1632 = 2448 kg), revenue from AA (1632*6.20 = 10118.40), revenue from non-AA (2448*4.50 = 11016.00), and total (10118.40 + 11016.00 = 21134.40). Each step is mathematically sound and supports the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00057586,
+  "judge_latency_s": 8.934,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance. The numerical value is identical, and the format follows the instruction.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows step-by-step working: calculates mass after drying (4800 - 0.15*4800 = 4080 kg), AA grade (0.40*4080 = 1632 kg), non-AA grade (4080 - 1632 = 2448 kg), revenue from AA (1632*6.20 = 10118.40), revenue from non-AA (2448*4.50 = 11016.00), and total (10118.40 + 11016.00 = 21134.40). Each step is mathematically sound and supports the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests: 'Show your working' (which the response does with labeled steps and calculations) and 'end your response with a final line in exactly this format: ANSWER: <number>' (which it does with 'ANSWER: 21134.40'). All instructions are fully complied with.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

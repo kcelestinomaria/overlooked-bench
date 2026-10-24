@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Is she under a moral obligation... Argue a position'). The response clearly states a position: 'The trader is not under a moral obligation to register.' It provides decisive reasons (asymmetric costs, noncompliance, systemic failure) and acknowledges uncertainty ('benefits are real but uncertain'). It implicitly states what would change its mind: if the state created fair conditions or enforced uniformly. It doesn't explicitly say where it is weakest, but the hedging is calibrated to real uncertainty.",
+    "philosophical_literacy": "The response invokes 'collective action problem' (accurate and load-bearing), 'prima facie duty' (correct term), and references Rawls (accurately applied to unjust laws). No technical terms are garbled. Concepts are used substantively in the argument, not decoratively. It doesn't overuse references but applies them relevantly.",
+    "position_pluralism": "Major live positions include: obligation to obey law (deontological), utilitarian benefits of registration, fairness-based arguments. The response mentions the prima facie duty to obey law and represents it accurately ('one could argue she has a prima facie duty'). It omits utilitarian arguments for registration (e.g., long-term economic stability or moral example) but doesn't strawman the included position. It avoids false balance by not presenting fringe views. However, it misses one major position (pro-registration based on collective good or rule of law), so representation is partial.",
+    "reasoning_construction": "The response builds a structured argument with premises: widespread noncompliance, asymmetric costs (eliminated margin), uncertain benefits, systemic unfairness, and collective action problem. It concludes she is not morally obligated. The inference is valid: premises support the conclusion that individual sacrifice is unreasonable in an unfair system. It engages specific details (e.g., 'eliminates her margin', 'most competitors will remain unregistered'). It addresses counterarguments like prima facie duty to obey law but weakens it with Rawlsian reasoning on unjust laws. However, it doesn't fully engage the strongest counterargument (e.g., that registration might foster long-term systemic change or moral leadership)."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 2,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-021",
+  "judge_cost_usd": 0.00093415,
+  "judge_latency_s": 18.287,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument with premises: widespread noncompliance, asymmetric costs (eliminated margin), uncertain benefits, systemic unfairness, and collective action problem. It concludes she is not morally obligated. The inference is valid: premises support the conclusion that individual sacrifice is unreasonable in an unfair system. It engages specific details (e.g., 'eliminates her margin', 'most competitors will remain unregistered'). It addresses counterarguments like prima facie duty to obey law but weakens it with Rawlsian reasoning on unjust laws. However, it doesn't fully engage the strongest counterargument (e.g., that registration might foster long-term systemic change or moral leadership).\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Is she under a moral obligation... Argue a position'). The response clearly states a position: 'The trader is not under a moral obligation to register.' It provides decisive reasons (asymmetric costs, noncompliance, systemic failure) and acknowledges uncertainty ('benefits are real but uncertain'). It implicitly states what would change its mind: if the state created fair conditions or enforced uniformly. It doesn't explicitly say where it is weakest, but the hedging is calibrated to real uncertainty.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: obligation to obey law (deontological), utilitarian benefits of registration, fairness-based arguments. The response mentions the prima facie duty to obey law and represents it accurately ('one could argue she has a prima facie duty'). It omits utilitarian arguments for registration (e.g., long-term economic stability or moral example) but doesn't strawman the included position. It avoids false balance by not presenting fringe views. However, it misses one major position (pro-registration based on collective good or rule of law), so representation is partial.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes 'collective action problem' (accurate and load-bearing), 'prima facie duty' (correct term), and references Rawls (accurately applied to unjust laws). No technical terms are garbled. Concepts are used substantively in the argument, not decoratively. It doesn't overuse references but applies them relevantly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument against obligation, grounded in structural fairness and collective action problems, though it omits one major rival position.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned argument against obligation, grounded in structural fairness and collective action problems, though it omits one major rival position.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 72.5
+}

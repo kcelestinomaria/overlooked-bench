@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a one-page go/no-go analysis with a clear conditional recommendation ('CONDITIONAL GO'), break-even calculation (PLN 500,000 annually), financing options (bank loan, leasing, grants), and specific risks. It includes concrete components like next steps and could be used in a meeting with light editing, though it lacks detailed salary bands or exact grant application steps.",
+    "constraint_fidelity": "The response respects the PLN 250,000 owner capital constraint and explicitly states 'no equity dilution desired'. It calculates startup costs of PLN 400,000 and proposes financing with owner capital plus a bank loan, showing arithmetic: PLN 250,000 + PLN 150,000 = PLN 400,000. It does not propose equity financing, honoring the no-dilution constraint.",
+    "contextual_realism": "The response is calibrated for a small bakery: it assumes no dedicated HR or legal teams, proposes lean operations and minimal staff, and acknowledges cash flow constraints and market risks. However, it suggests applying for EU/Polish grants (PARP) which may require administrative capacity a 6-person bakery lacks, and recommends commissioning a location study which might be costly. It recognizes role overlap and financial constraints but includes some ambitious recommendations.",
+    "jurisdictional_accuracy": "The response correctly identifies Polish financing options (bank loans from PKO BP, Santander, mBank; PARP grants; leasing) and avoids US defaults like SBA loans. It does not make incorrect legal claims but also does not flag where local professional advice is needed (e.g., for grants or loans). It provides substantive content beyond a generic 'consult a lawyer' disclaimer."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.00093207,
+  "judge_latency_s": 13.152,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects the PLN 250,000 owner capital constraint and explicitly states 'no equity dilution desired'. It calculates startup costs of PLN 400,000 and proposes financing with owner capital plus a bank loan, showing arithmetic: PLN 250,000 + PLN 150,000 = PLN 400,000. It does not propose equity financing, honoring the no-dilution constraint.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small bakery: it assumes no dedicated HR or legal teams, proposes lean operations and minimal staff, and acknowledges cash flow constraints and market risks. However, it suggests applying for EU/Polish grants (PARP) which may require administrative capacity a 6-person bakery lacks, and recommends commissioning a location study which might be costly. It recognizes role overlap and financial constraints but includes some ambitious recommendations.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a one-page go/no-go analysis with a clear conditional recommendation ('CONDITIONAL GO'), break-even calculation (PLN 500,000 annually), financing options (bank loan, leasing, grants), and specific risks. It includes concrete components like next steps and could be used in a meeting with light editing, though it lacks detailed salary bands or exact grant application steps.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Polish financing options (bank loans from PKO BP, Santander, mBank; PARP grants; leasing) and avoids US defaults like SBA loans. It does not make incorrect legal claims but also does not flag where local professional advice is needed (e.g., for grants or loans). It provides substantive content beyond a generic 'consult a lawyer' disclaimer.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is a well-structured, actionable analysis that respects constraints and is tailored to a Polish small business context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a well-structured, actionable analysis that respects constraints and is tailored to a Polish small business context.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

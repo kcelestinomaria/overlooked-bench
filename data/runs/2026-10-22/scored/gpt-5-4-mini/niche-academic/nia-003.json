@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific juristic principles (maslaha mursala, istiḥsān) and methodological differences between schools. It discusses how maslaha is applied in interpretation and addresses scholarly divergence on its independent force, indicating familiarity with internal debates rather than just summary facts.",
+    "domain_accuracy": "The response accurately describes maslaha as 'consideration of public interest, welfare, or benefit' and correctly states it is not an independent source overriding revelation but a juristic principle subordinate to Qur'an, Sunna, and consensus. It correctly identifies the Maliki position on maslaha mursala as allowing independent rulings when no conflict with text exists, and the Hanafi preference for channeling it through qiyās and istiḥsān. All substantive claims align with established Islamic legal theory; no invented citations or terms are present.",
+    "field_situatedness": "The response uses correct Arabic terminology (uṣūl al-fiqh, maṣlaḥa, ijmāʿ, qiyās, istiḥsān, maṣlaḥa mursala) and frames the discussion within Islamic legal theory without substituting Western or Anglophone frameworks. It adheres to the conventions and vocabulary of the field asked about.",
+    "scholarly_calibration": "The response distinguishes between mainstream views and school-specific positions, noting that Malikis are 'generally' more willing and Hanafis 'usually more cautious,' which signals variation without overstating consensus. It avoids uniform confidence by qualifying statements (e.g., 'depending on the school'), but lacks explicit calibration on evidential status or contested points within each tradition."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00079097,
+  "judge_latency_s": 43.219,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes maslaha as 'consideration of public interest, welfare, or benefit' and correctly states it is not an independent source overriding revelation but a juristic principle subordinate to Qur'an, Sunna, and consensus. It correctly identifies the Maliki position on maslaha mursala as allowing independent rulings when no conflict with text exists, and the Hanafi preference for channeling it through qiyās and istiḥsān. All substantive claims align with established Islamic legal theory; no invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific juristic principles (maslaha mursala, istiḥsān) and methodological differences between schools. It discusses how maslaha is applied in interpretation and addresses scholarly divergence on its independent force, indicating familiarity with internal debates rather than just summary facts.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between mainstream views and school-specific positions, noting that Malikis are 'generally' more willing and Hanafis 'usually more cautious,' which signals variation without overstating consensus. It avoids uniform confidence by qualifying statements (e.g., 'depending on the school'), but lacks explicit calibration on evidential status or contested points within each tradition.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Arabic terminology (uṣūl al-fiqh, maṣlaḥa, ijmāʿ, qiyās, istiḥsān, maṣlaḥa mursala) and frames the discussion within Islamic legal theory without substituting Western or Anglophone frameworks. It adheres to the conventions and vocabulary of the field asked about.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates accurate and well-situated knowledge of Islamic legal theory with specific engagement on school divergences.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates accurate and well-situated knowledge of Islamic legal theory with specific engagement on school divergences.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 165,
+  "cost_usd": 0.001798,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "90edf2a06839956c",
+  "item_id": "cal-005",
+  "latency_s": 3.988,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 74,
+  "provider": "anthropic",
+  "request_fingerprint": "f492abe25d04db7a",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "Let the three consecutive even integers be n−2, n, and n+2.\n\nTheir sum: (n−2) + n + (n+2) = 3n\n\nSet equal to 174:\n3n = 174\nn = 58\n\nSo the three integers are 56, 58, and 60.\n\nCheck: 56 + 58 + 60 = 174 ✓\n\nThe largest integer is 60.\n\nANSWER: 60",
+  "timestamp_utc": "2026-10-21T23:35:15Z"
+}

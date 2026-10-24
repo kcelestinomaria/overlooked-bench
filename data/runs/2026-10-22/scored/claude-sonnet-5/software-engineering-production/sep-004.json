@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design doc with specific table schemas (e.g., 'rider_location_pings(rider_id, shift_id, ts, geom(Point,4326), accuracy_m, created_at)'), ETL steps, access control rules, and legal prerequisites. Includes concrete commands like 'scheduled job drops partitions where ts < now() - 30 days' and sequence for legal steps. Engineers could execute with light editing.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: no new vendors (uses existing stack), enforces 30-day retention via partition drops and backup policies, and acknowledges the two-engineer/six-week timeline while noting legal prerequisites may extend it. It shows arithmetic by specifying partition-based deletion and backup lifecycle policies.",
+    "maintainability": "Design is proportionate: uses partitioned tables for easy management, isolates schema for backup policies, and specifies audit logs. Risks are stated explicitly (e.g., 'pseudonymized ≠ anonymized', works council timeline risks). No undue complexity; leverages existing team skills with PostgreSQL/BigQuery.",
+    "production_realism": "Accounts for production scale: partitions for efficient deletion, read replicas for support access, audit logging, and ETL aggregation to handle data volume. Addresses failure modes via SLO alerts for retention jobs and break-glass procedures. Fits team skills by leveraging existing PostgreSQL/BigQuery expertise."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-004",
+  "judge_cost_usd": 0.001465,
+  "judge_latency_s": 42.679,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: no new vendors (uses existing stack), enforces 30-day retention via partition drops and backup policies, and acknowledges the two-engineer/six-week timeline while noting legal prerequisites may extend it. It shows arithmetic by specifying partition-based deletion and backup lifecycle policies.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for production scale: partitions for efficient deletion, read replicas for support access, audit logging, and ETL aggregation to handle data volume. Addresses failure modes via SLO alerts for retention jobs and break-glass procedures. Fits team skills by leveraging existing PostgreSQL/BigQuery expertise.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design doc with specific table schemas (e.g., 'rider_location_pings(rider_id, shift_id, ts, geom(Point,4326), accuracy_m, created_at)'), ETL steps, access control rules, and legal prerequisites. Includes concrete commands like 'scheduled job drops partitions where ts < now() - 30 days' and sequence for legal steps. Engineers could execute with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Design is proportionate: uses partitioned tables for easy management, isolates schema for backup policies, and specifies audit logs. Risks are stated explicitly (e.g., 'pseudonymized ≠ anonymized', works council timeline risks). No undue complexity; leverages existing team skills with PostgreSQL/BigQuery.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design that separates safety and analytics uses while addressing legal and operational realities.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design that separates safety and analytics uses while addressing legal and operational realities.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

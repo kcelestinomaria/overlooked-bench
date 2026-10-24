@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance. The intermediate calculations (4,800 × 0.85 = 4,080 kg, 4,080 × 0.40 = 1,632 kg, 1,632 × 6.20 = $10,118.40, 4,080 × 0.60 = 2,448 kg, 2,448 × 4.50 = $11,016.00, and $10,118.40 + $11,016.00 = $21,134.40) are all correct and align with the reference.",
+    "instruction_compliance": "The prompt explicitly requests 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows detailed working steps and ends with 'ANSWER: 21134.40', which matches the required format exactly, including the colon and space.",
+    "reasoning_validity": "The response shows working as requested. Each step is valid: calculating dried mass (4,800 × 0.85), AA mass (4,080 × 0.40), remaining mass (4,080 × 0.60), revenue for AA (1,632 × 6.20), revenue for remainder (2,448 × 4.50), and total sum ($10,118.40 + $11,016.00). The reasoning is sound and supports the final answer without errors."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.0007121,
+  "judge_latency_s": 39.923,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance. The intermediate calculations (4,800 × 0.85 = 4,080 kg, 4,080 × 0.40 = 1,632 kg, 1,632 × 6.20 = $10,118.40, 4,080 × 0.60 = 2,448 kg, 2,448 × 4.50 = $11,016.00, and $10,118.40 + $11,016.00 = $21,134.40) are all correct and align with the reference.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working as requested. Each step is valid: calculating dried mass (4,800 × 0.85), AA mass (4,080 × 0.40), remaining mass (4,080 × 0.60), revenue for AA (1,632 × 6.20), revenue for remainder (2,448 × 4.50), and total sum ($10,118.40 + $11,016.00). The reasoning is sound and supports the final answer without errors.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows detailed working steps and ends with 'ANSWER: 21134.40', which matches the required format exactly, including the colon and space.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully and correctly solves the problem with valid reasoning and strict compliance to output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response fully and correctly solves the problem with valid reasoning and strict compliance to output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

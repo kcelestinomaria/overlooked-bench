@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with methodological issues (e.g., critique of ethnocentrism, epistemological problems), specific notation alternatives (Kepatihan, graphic notation, spectrographic analysis), and scholarly debates (e.g., prescriptive vs. descriptive notation, aural vs. textual traditions). It discusses the fluidity of parts and the shift toward participant-observation, indicating familiarity with specialized literature rather than summaries.",
+    "domain_accuracy": "The response makes substantive claims that are accurate: it correctly identifies gamelan tunings (sléndro and pélog), instruments (gong ageng, kenong, gender, etc.), concepts (colotomic structure, balungan, cengkok), and notation systems (Kepatihan). It accurately describes the cyclical nature, improvisatory parts, and aural tradition. No invented citations or terms are present; all terminology aligns with established ethnomusicological literature.",
+    "field_situatedness": "The response uses terminology and frameworks specific to ethnomusicology and Javanese gamelan tradition (e.g., laras, colotomic, balungan, cengkok, Kepatihan). It does not substitute Western frameworks but critiques them and proposes alternatives rooted in the field's conventions. It acknowledges indigenous notation systems and non-Western scholarly practices, aligning with the ethnomusicological tradition.",
+    "scholarly_calibration": "The response distinguishes well-established concepts (e.g., cyclical structure, aural tradition) from more nuanced methodological shifts (e.g., 'aural priority' approach as a radical alternative). It presents Kepatihan notation as widely used and graphic notation as effective for cyclicity, without overstating consensus. However, it lacks explicit signals of evidential status for specific claims (e.g., the development timeline of Kepatihan), though it avoids uniform confidence or presenting contested ideas as settled."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00102525,
+  "judge_latency_s": 20.622,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are accurate: it correctly identifies gamelan tunings (sléndro and pélog), instruments (gong ageng, kenong, gender, etc.), concepts (colotomic structure, balungan, cengkok), and notation systems (Kepatihan). It accurately describes the cyclical nature, improvisatory parts, and aural tradition. No invented citations or terms are present; all terminology aligns with established ethnomusicological literature.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with methodological issues (e.g., critique of ethnocentrism, epistemological problems), specific notation alternatives (Kepatihan, graphic notation, spectrographic analysis), and scholarly debates (e.g., prescriptive vs. descriptive notation, aural vs. textual traditions). It discusses the fluidity of parts and the shift toward participant-observation, indicating familiarity with specialized literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established concepts (e.g., cyclical structure, aural tradition) from more nuanced methodological shifts (e.g., 'aural priority' approach as a radical alternative). It presents Kepatihan notation as widely used and graphic notation as effective for cyclicity, without overstating consensus. However, it lacks explicit signals of evidential status for specific claims (e.g., the development timeline of Kepatihan), though it avoids uniform confidence or presenting contested ideas as settled.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to ethnomusicology and Javanese gamelan tradition (e.g., laras, colotomic, balungan, cengkok, Kepatihan). It does not substitute Western frameworks but critiques them and proposes alternatives rooted in the field's conventions. It acknowledges indigenous notation systems and non-Western scholarly practices, aligning with the ethnomusicological tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates deep, accurate engagement with ethnomusicological issues in gamelan transcription, offering specific alternatives and methodological critiques.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response demonstrates deep, accurate engagement with ethnomusicological issues in gamelan transcription, offering specific alternatives and methodological critiques.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

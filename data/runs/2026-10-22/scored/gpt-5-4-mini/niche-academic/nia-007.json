@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response provides a clear, introductory overview but does not engage with specific scholarly debates, methodological nuances, or evidence quality. It summarizes well-known characteristics without delving into internal disputes or detailed literature, akin to an encyclopedia entry.",
+    "domain_accuracy": "The response accurately describes the three scripts: Asomtavruli as the oldest, monumental script; Nuskhuri as smaller and used for continuous text; Mkhedruli as later cursive. It correctly notes the Khutsuri system pairing Asomtavruli and Nuskhuri. The dating and provenance implications are broadly correct, and no invented citations or terms are present.",
+    "field_situatedness": "The response uses correct Georgian script names (Asomtavruli, Nuskhuri, Mkhedruli) and terminology like 'Khutsuri,' aligning with Georgian palaeography traditions. It does not substitute Western frameworks and respects the field's conventions.",
+    "scholarly_calibration": "The response includes a cautionary note ('Script alone does not give an exact date...') and lists complementary evidence, showing awareness of limitations. However, it does not distinguish evidential status for specific claims (e.g., whether dating ranges are well-established or contested) and presents information uniformly."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-007",
+  "judge_cost_usd": 0.0007092,
+  "judge_latency_s": 34.983,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes the three scripts: Asomtavruli as the oldest, monumental script; Nuskhuri as smaller and used for continuous text; Mkhedruli as later cursive. It correctly notes the Khutsuri system pairing Asomtavruli and Nuskhuri. The dating and provenance implications are broadly correct, and no invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response provides a clear, introductory overview but does not engage with specific scholarly debates, methodological nuances, or evidence quality. It summarizes well-known characteristics without delving into internal disputes or detailed literature, akin to an encyclopedia entry.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response includes a cautionary note ('Script alone does not give an exact date...') and lists complementary evidence, showing awareness of limitations. However, it does not distinguish evidential status for specific claims (e.g., whether dating ranges are well-established or contested) and presents information uniformly.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Georgian script names (Asomtavruli, Nuskhuri, Mkhedruli) and terminology like 'Khutsuri,' aligning with Georgian palaeography traditions. It does not substitute Western frameworks and respects the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is accurate and well-structured but lacks depth beyond a survey level.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is accurate and well-structured but lacks depth beyond a survey level.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 80.0
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Raw data purged after 30 days via partition drop",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Six weeks is insufficient for proper legal compliance Request 8-10 weeks",
+      "evidence_verified": false,
+      "verdict": "violated"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed data design, retention strategy, access controls, legal prerequisites, and pushback items as requested. It includes concrete elements like SQL schema definitions, data flow steps, and a before-launch checklist with specific actions (e.g., 'DPIA', 'Works Council Approval'). However, it lacks sequence, owners, and effort estimates for the implementation plan, and the pushback includes a timeline extension without a clear executable alternative.",
+    "constraint_fidelity": "The response respects most constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, FCM), implements 30-day raw data retention ('Automatic purge at 30 days via partition rotation'), and addresses GDPR compliance. However, it violates the six-week timeline constraint by explicitly requesting '8-10 weeks' without justifying this as a relaxation, stating 'Six weeks is insufficient for proper legal compliance' and proposing a phased rollout that extends beyond six weeks. This is a silent violation of the timeline constraint.",
+    "maintainability": "The response ensures maintainability by using proportional complexity (partitioned tables, aggregation jobs), stating risks (e.g., 'Breach Response Plan', 'Sunset Clause'), and providing clear documentation and access controls. It considers the team's ownership with audit logs and training plans. However, it introduces additional services (Aggregation Service, Retention Manager) without detailing their operational burden or testing strategies, which could impact long-term maintainability.",
+    "production_realism": "The response demonstrates production realism by addressing scale considerations (batching transmissions every 60s to reduce network usage), failure modes (partitioning for retention, audit logging), and operational burden (access controls, audit trails). It accounts for team skill mix by leveraging existing technologies and provides specific implementation details like encryption and indexing. However, it does not fully address partial failure or rollback mechanisms for the aggregation service or retention manager."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 0,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-004",
+  "judge_cost_usd": 0.00122039,
+  "judge_latency_s": 12.988,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects most constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, FCM), implements 30-day raw data retention ('Automatic purge at 30 days via partition rotation'), and addresses GDPR compliance. However, it violates the six-week timeline constraint by explicitly requesting '8-10 weeks' without justifying this as a relaxation, stating 'Six weeks is insufficient for proper legal compliance' and proposing a phased rollout that extends beyond six weeks. This is a silent violation of the timeline constraint.\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response demonstrates production realism by addressing scale considerations (batching transmissions every 60s to reduce network usage), failure modes (partitioning for retention, audit logging), and operational burden (access controls, audit trails). It accounts for team skill mix by leveraging existing technologies and provides specific implementation details like encryption and indexing. However, it does not fully address partial failure or rollback mechanisms for the aggregation service or retention manager.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed data design, retention strategy, access controls, legal prerequisites, and pushback items as requested. It includes concrete elements like SQL schema definitions, data flow steps, and a before-launch checklist with specific actions (e.g., 'DPIA', 'Works Council Approval'). However, it lacks sequence, owners, and effort estimates for the implementation plan, and the pushback includes a timeline extension without a clear executable alternative.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response ensures maintainability by using proportional complexity (partitioned tables, aggregation jobs), stating risks (e.g., 'Breach Response Plan', 'Sunset Clause'), and providing clear documentation and access controls. It considers the team's ownership with audit logs and training plans. However, it introduces additional services (Aggregation Service, Retention Manager) without detailing their operational burden or testing strategies, which could impact long-term maintainability.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is technically thorough and legally aware but silently violates the six-week timeline constraint, undermining its fidelity to stated constraints.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Raw data purged after 30 days via partition drop\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Six weeks is insufficient for proper legal compliance Request 8-10 weeks\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is technically thorough and legally aware but silently violates the six-week timeline constraint, undermining its fidelity to stated constraints.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 48.75
+}

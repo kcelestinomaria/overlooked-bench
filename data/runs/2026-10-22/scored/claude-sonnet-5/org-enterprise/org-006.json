@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response provides a specific, costed plan with named tools (KoboToolbox, Android tablets, solar chargers), line-item budget, and concrete sustainability steps. It delivers exactly what was requested: a recommendation with tools, costs, and post-funding plan. The output could be used immediately with light editing.",
+    "constraint_fidelity": "The response explicitly respects all constraints: budget (PHP 400,000 total with detailed breakdown), intermittent electricity (solar chargers), no reliable internet (offline-first tools), low digital literacy (training focus), and 18-month funding period (sustainability plan). It shows arithmetic: tablets (95k) + solar (28k) + laptop (35k) + backups (5k) + training (80k) + hosting (15k) + contingency (40k) + retainer (42k) + buffer (60k) = 400k exactly.",
+    "contextual_realism": "The response avoids US/enterprise assumptions: uses shared tablets (not 1:1), free/open-source software (KoboToolbox, LibreOffice), low-tech backups (USB drives), and accounts for role overlap ('digital champions'). It explicitly rejects impractical alternatives (custom apps, cloud SaaS) and focuses on sustainable, low-overhead solutions appropriate for a 30-staff nonprofit with limited resources.",
+    "jurisdictional_accuracy": "The response avoids US assumptions (no mention of US-specific tools or regulations) and is tailored to the Philippines context (local facilitator, Filipino dialects, reference to Philippine NGOs/LGUs). It focuses on practical, jurisdiction-agnostic solutions (offline tools, solar power) without making incorrect legal claims. General factual accuracy is high."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00104622,
+  "judge_latency_s": 40.676,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: budget (PHP 400,000 total with detailed breakdown), intermittent electricity (solar chargers), no reliable internet (offline-first tools), low digital literacy (training focus), and 18-month funding period (sustainability plan). It shows arithmetic: tablets (95k) + solar (28k) + laptop (35k) + backups (5k) + training (80k) + hosting (15k) + contingency (40k) + retainer (42k) + buffer (60k) = 400k exactly.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response avoids US/enterprise assumptions: uses shared tablets (not 1:1), free/open-source software (KoboToolbox, LibreOffice), low-tech backups (USB drives), and accounts for role overlap ('digital champions'). It explicitly rejects impractical alternatives (custom apps, cloud SaaS) and focuses on sustainable, low-overhead solutions appropriate for a 30-staff nonprofit with limited resources.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a specific, costed plan with named tools (KoboToolbox, Android tablets, solar chargers), line-item budget, and concrete sustainability steps. It delivers exactly what was requested: a recommendation with tools, costs, and post-funding plan. The output could be used immediately with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response avoids US assumptions (no mention of US-specific tools or regulations) and is tailored to the Philippines context (local facilitator, Filipino dialects, reference to Philippine NGOs/LGUs). It focuses on practical, jurisdiction-agnostic solutions (offline tools, solar power) without making incorrect legal claims. General factual accuracy is high.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels by providing a context-aware, sustainable, and fully costed digitization plan tailored to the constraints of a Philippine community health nonprofit.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response excels by providing a context-aware, sustainable, and fully costed digitization plan tailored to the constraints of a Philippine community health nonprofit.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

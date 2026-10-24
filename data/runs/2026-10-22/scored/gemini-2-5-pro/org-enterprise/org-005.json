@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed, usable plan covering DPA contents, SCCs, transfer impact assessment, technical measures, costs, and timeline. It includes concrete components like cost estimates in rupees, time allocations, and specific next steps. A practitioner could take this into a meeting with light editing.",
+    "constraint_fidelity": "The prompt describes a 25-person software consultancy in Bangalore. The response respects this size constraint by recommending a designated data protection lead rather than a full-time DPO, and provides cost estimates in Indian rupees. It acknowledges the need for GDPR compliance without assuming US resources. The response does not explicitly break any stated constraints and provides realistic cost and time estimates tailored to a small firm.",
+    "contextual_realism": "The response is calibrated for a small consultancy: it avoids recommending enterprise-scale solutions, focuses on practical measures like staff training and access control, and acknowledges role overlap (e.g., the ops head and tech lead taking on extra duties). It does not assume dedicated HR, legal, or compliance teams, and the cost estimates are realistic for a 25-person firm.",
+    "jurisdictional_accuracy": "The response correctly addresses GDPR requirements for an Indian company processing EU data, including SCCs, transfer impact assessment, and Article 27 representative considerations. It avoids US assumptions and focuses on EU-specific regulations. It provides substantive content and recommends consulting a GDPR specialist, which is warranted."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-005",
+  "judge_cost_usd": 0.00113438,
+  "judge_latency_s": 38.724,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 25-person software consultancy in Bangalore. The response respects this size constraint by recommending a designated data protection lead rather than a full-time DPO, and provides cost estimates in Indian rupees. It acknowledges the need for GDPR compliance without assuming US resources. The response does not explicitly break any stated constraints and provides realistic cost and time estimates tailored to a small firm.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small consultancy: it avoids recommending enterprise-scale solutions, focuses on practical measures like staff training and access control, and acknowledges role overlap (e.g., the ops head and tech lead taking on extra duties). It does not assume dedicated HR, legal, or compliance teams, and the cost estimates are realistic for a 25-person firm.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed, usable plan covering DPA contents, SCCs, transfer impact assessment, technical measures, costs, and timeline. It includes concrete components like cost estimates in rupees, time allocations, and specific next steps. A practitioner could take this into a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly addresses GDPR requirements for an Indian company processing EU data, including SCCs, transfer impact assessment, and Article 27 representative considerations. It avoids US assumptions and focuses on EU-specific regulations. It provides substantive content and recommends consulting a GDPR specialist, which is warranted.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, realistic, and actionable plan tailored to a small Bangalore consultancy engaging with a German client under GDPR.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, realistic, and actionable plan tailored to a small Bangalore consultancy engaging with a German client under GDPR.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

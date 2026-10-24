@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete plan with specific steps: Nginx configuration, PHP bunker script, database schema, Artisan command, Supervisor setup, Deployer usage, and reconciliation API code. It includes a 3-week implementation plan with tasks for two developers. However, it lacks exact estimates (e.g., time per task) and verification steps (e.g., how to test the 15-minute SLA), though it mentions load testing and monitoring.",
+    "constraint_fidelity": "The response respects all hard constraints: no new paid services (uses Supervisor and Deployer, both free), enforces idempotency via unique index on mpesa_transaction_id, and includes active reconciliation via Daraja Transaction Status Query and a 'Claim Missing Payment' feature to meet the 15-minute SLA. It explicitly states 'KES 0 additional spend' and provides detailed justification.",
+    "maintainability": "The solution is proportionate to the team: uses existing Laravel/MySQL stack, adds clear seams (bunker script, daemon), includes logging and error handling, and states risks (e.g., disk I/O not explicitly addressed). It provides documentation via code comments and configuration examples. However, it introduces a file-based queueing system that may require maintenance (e.g., disk space management, file locking issues), and the busy-wait daemon might need optimization, but these are not flagged as accepted debt.",
+    "production_realism": "The design accounts for production realities: uses a lightweight bunker script to handle callbacks during deploys, includes idempotency (unique index), retries (Supervisor daemon), partial failure handling (failed folder), and rollback (database transactions). It fits the team's skill set (Laravel, PHP, MySQL) and infrastructure (single droplet). However, the daemon uses a busy-wait loop with sleep(2), which may not be efficient, and file-based queueing could face disk I/O bottlenecks at scale, though not explicitly addressed."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-013",
+  "judge_cost_usd": 0.00178844,
+  "judge_latency_s": 58.746,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: no new paid services (uses Supervisor and Deployer, both free), enforces idempotency via unique index on mpesa_transaction_id, and includes active reconciliation via Daraja Transaction Status Query and a 'Claim Missing Payment' feature to meet the 15-minute SLA. It explicitly states 'KES 0 additional spend' and provides detailed justification.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: uses a lightweight bunker script to handle callbacks during deploys, includes idempotency (unique index), retries (Supervisor daemon), partial failure handling (failed folder), and rollback (database transactions). It fits the team's skill set (Laravel, PHP, MySQL) and infrastructure (single droplet). However, the daemon uses a busy-wait loop with sleep(2), which may not be efficient, and file-based queueing could face disk I/O bottlenecks at scale, though not explicitly addressed.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete plan with specific steps: Nginx configuration, PHP bunker script, database schema, Artisan command, Supervisor setup, Deployer usage, and reconciliation API code. It includes a 3-week implementation plan with tasks for two developers. However, it lacks exact estimates (e.g., time per task) and verification steps (e.g., how to test the 15-minute SLA), though it mentions load testing and monitoring.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: uses existing Laravel/MySQL stack, adds clear seams (bunker script, daemon), includes logging and error handling, and states risks (e.g., disk I/O not explicitly addressed). It provides documentation via code comments and configuration examples. However, it introduces a file-based queueing system that may require maintenance (e.g., disk space management, file locking issues), and the busy-wait daemon might need optimization, but these are not flagged as accepted debt.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design that addresses callback loss with a bunker pattern, idempotency, and reconciliation, though with minor production efficiency concerns.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design that addresses callback loss with a bunker pattern, idempotency, and reconciliation, though with minor production efficiency concerns.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

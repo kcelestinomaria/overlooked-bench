@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "The cost increase will be from marginal I/O operations, likely totaling less than **$100-$150/month**, well within our 8% budget.",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers exactly what was asked: a design, rollout plan, and risks. 2. The rollout plan is week-by-week with clear owners, tasks, and verification steps (e.g., performance tests, phased rollouts). 3. The design includes specific code snippets (middleware, SQL schema, background thread logic) and exact commands (e.g., `INSERT ... ON CONFLICT`). 4. The plan is executable with only light editing, as it includes concrete estimates, sequences, and monitoring steps.",
+    "constraint_fidelity": "1. The response explicitly avoids new infrastructure services (C1), using only in-memory structures and the existing PostgreSQL database. 2. The rollout plan fits within three backend engineers and four weeks (C2). 3. The response provides detailed arithmetic showing the added database load is within capacity and cost constraints, estimating a spend increase of less than $150/month (well under the $752 cap) (C3). 4. The response acknowledges and justifies the trade-offs (e.g., minor data loss, approximate rate limits) without violating constraints. The arithmetic and explicit checks against constraints are thorough and specific.",
+    "maintainability": "1. The solution is proportionate to the team's size and skill mix, using simple in-memory structures and batching. 2. Risks and accepted debt (e.g., minor data loss, approximate rate limits) are explicitly stated and documented. 3. The design leaves clear seams (feature flags, tunable flush interval) for future adjustments. 4. The added complexity (background thread, middleware) is minimal and well-documented, making it operable by the team in six months.",
+    "production_realism": "1. The design accounts for the stated scale (1,200 rps) and infrastructure (6 containers, PostgreSQL 14). 2. It addresses failure modes: in-memory data loss on container crash, lock contention, and spiky database writes. 3. The solution is operationally feasible for a team of three backend engineers, with no unrealistic assumptions about their capacity. 4. The design avoids high-latency operations on the hot path, keeping p99 latency under 220 ms. 5. The background flush and batching strategy are production-ready techniques for this context."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-003",
+  "judge_cost_usd": 0.0030916,
+  "judge_latency_s": 9.192,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly avoids new infrastructure services (C1), using only in-memory structures and the existing PostgreSQL database. 2. The rollout plan fits within three backend engineers and four weeks (C2). 3. The response provides detailed arithmetic showing the added database load is within capacity and cost constraints, estimating a spend increase of less than $150/month (well under the $752 cap) (C3). 4. The response acknowledges and justifies the trade-offs (e.g., minor data loss, approximate rate limits) without violating constraints. The arithmetic and explicit checks against constraints are thorough and specific.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The design accounts for the stated scale (1,200 rps) and infrastructure (6 containers, PostgreSQL 14). 2. It addresses failure modes: in-memory data loss on container crash, lock contention, and spiky database writes. 3. The solution is operationally feasible for a team of three backend engineers, with no unrealistic assumptions about their capacity. 4. The design avoids high-latency operations on the hot path, keeping p99 latency under 220 ms. 5. The background flush and batching strategy are production-ready techniques for this context.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers exactly what was asked: a design, rollout plan, and risks. 2. The rollout plan is week-by-week with clear owners, tasks, and verification steps (e.g., performance tests, phased rollouts). 3. The design includes specific code snippets (middleware, SQL schema, background thread logic) and exact commands (e.g., `INSERT ... ON CONFLICT`). 4. The plan is executable with only light editing, as it includes concrete estimates, sequences, and monitoring steps.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team's size and skill mix, using simple in-memory structures and batching. 2. Risks and accepted debt (e.g., minor data loss, approximate rate limits) are explicitly stated and documented. 3. The design leaves clear seams (feature flags, tunable flush interval) for future adjustments. 4. The added complexity (background thread, middleware) is minimal and well-documented, making it operable by the team in six months.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a model of constraint-aware, production-ready engineering with clear actionability and maintainability.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"The cost increase will be from marginal I/O operations, likely totaling less than **$100-$150/month**, well within our 8% budget.\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response is a model of constraint-aware, production-ready engineering with clear actionability and maintainability.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

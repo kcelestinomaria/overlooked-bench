@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Argue a position'), and the response clearly states a position: 'she is under no moral obligation to register.' It defends this with reasons (self-preservation, broken social contract, collective action) and acknowledges uncertainty indirectly by critiquing the system's flaws, but does not explicitly state what would change its mind or where it is least confident. It avoids evasion and reaches a defended conclusion.",
+    "philosophical_literacy": "The response invokes natural law (Aquinas, Hobbes), social contract (Rawls), and game theory ('sucker's payoff', Michael Taylor). These references are accurate and load-bearing: natural law supports self-preservation, Rawlsian reciprocity critiques the state, and game theory explains collective action. No technical terms are garbled. The concepts are relevant and correctly applied.",
+    "position_pluralism": "The response only argues one position (no obligation) and does not represent competing views. Major live positions omitted include: a duty to comply with laws for social order, potential long-term benefits of formalization, or moral arguments based on fairness or civic virtue. An advocate of these positions would not recognize their views here. There is no false balance, but the omission of serious counterpositions is a flaw.",
+    "reasoning_construction": "The response builds a structured argument with premises and a clear conclusion. The conclusion is 'she is under no moral obligation to register.' Premises include: registration eliminates her margin (threatens survival), the social contract is broken due to lack of reciprocity, and collective action problems make compliance a 'sucker's payoff.' The inference is valid: these premises directly support the conclusion. It engages specific details like 'tax liability that would eliminate her margin' and 'most competitors remain unregistered.' It addresses counterarguments implicitly by framing the state's failure, but does not explicitly state and rebut the strongest counterargument (e.g., duty to contribute to systemic improvement)."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 1,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-021",
+  "judge_cost_usd": 0.0009694,
+  "judge_latency_s": 56.086,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument with premises and a clear conclusion. The conclusion is 'she is under no moral obligation to register.' Premises include: registration eliminates her margin (threatens survival), the social contract is broken due to lack of reciprocity, and collective action problems make compliance a 'sucker's payoff.' The inference is valid: these premises directly support the conclusion. It engages specific details like 'tax liability that would eliminate her margin' and 'most competitors remain unregistered.' It addresses counterarguments implicitly by framing the state's failure, but does not explicitly state and rebut the strongest counterargument (e.g., duty to contribute to systemic improvement).\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Argue a position'), and the response clearly states a position: 'she is under no moral obligation to register.' It defends this with reasons (self-preservation, broken social contract, collective action) and acknowledges uncertainty indirectly by critiquing the system's flaws, but does not explicitly state what would change its mind or where it is least confident. It avoids evasion and reaches a defended conclusion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response only argues one position (no obligation) and does not represent competing views. Major live positions omitted include: a duty to comply with laws for social order, potential long-term benefits of formalization, or moral arguments based on fairness or civic virtue. An advocate of these positions would not recognize their views here. There is no false balance, but the omission of serious counterpositions is a flaw.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes natural law (Aquinas, Hobbes), social contract (Rawls), and game theory ('sucker's payoff', Michael Taylor). These references are accurate and load-bearing: natural law supports self-preservation, Rawlsian reciprocity critiques the state, and game theory explains collective action. No technical terms are garbled. The concepts are relevant and correctly applied.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument against registration but fails to acknowledge competing moral positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned argument against registration but fails to acknowledge competing moral positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 66.25
+}

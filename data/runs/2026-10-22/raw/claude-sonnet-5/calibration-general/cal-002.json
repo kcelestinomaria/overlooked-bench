@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 466,
+  "cost_usd": 0.004958,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 5.932,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 149,
+  "provider": "anthropic",
+  "request_fingerprint": "62205073404c0133",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "## Step 1: Calculate mass remaining after drying\n\nStarting mass: 4,800 kg\nLoss during drying: 15%\n\nRemaining mass = 4,800 × (1 − 0.15) = 4,800 × 0.85 = **4,080 kg**\n\n## Step 2: Split remaining coffee into grades\n\n**Grade AA (40%):**\n4,080 × 0.40 = 1,632 kg\n\n**Remaining grade (60%):**\n4,080 × 0.60 = 2,448 kg\n\n## Step 3: Calculate revenue from each grade\n\n**Revenue from Grade AA:**\n1,632 kg × $6.20/kg = $10,118.40\n\n**Revenue from remaining grade:**\n2,448 kg × $4.50/kg = $11,016.00\n\n## Step 4: Calculate total revenue\n\nTotal Revenue = $10,118.40 + $11,016.00 = **$21,134.40**\n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-10-21T23:35:17Z"
+}

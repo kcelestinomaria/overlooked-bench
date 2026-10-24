@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the range of learners: six students with reading ages below 9 receive 'simplified language; visual focus; peer support' during teaching, 'sentence starters; rank top 2 only; adult scribe' during practice, and 'visual corners; accept one-word answers' during plenary. Higher and middle attainment are also differentiated. Adaptations are low-cost (sentence starters, peer support, visual aids) and implementable by one teacher without additional adults. No generic 'differentiate as needed' language.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is a history lesson plan. The response is inclusive of the range of learners described: wide attainment spread including six students with reading ages below 9. Specific adaptations are provided for lower-attainment students (simplified language, visual focus, peer support, sentence starters, adult scribe). Higher and middle attainment are also addressed. The response does not default to university-track assumptions.",
+    "pedagogical_soundness": "The response states clear learning objectives (identify MAIN causes, explain how each increased tension, understand linkages). Activities align: Direct teaching introduces concepts, guided practice builds understanding through group discussion, independent practice requires synthesis through ranking. Assessment through Four Corners and final verbal check measures understanding of causes and linkages at appropriate cognitive level. Sequencing is logical: hook activates prior knowledge, teaching provides content, practice applies it, plenary assesses. Rubric criteria on printed sheet are observable (written responses, ranking).",
+    "workload_realism": "Timings sum to 50 minutes (3+12+15+12+8). Resources match prompt: projector used, one printed A4 sheet per student. Preparation: creating slides and printing sheet is feasible. Marking: formative checks during class (listening, observing) minimize marking load. Class size of 34 is accommodated through group work (4 groups of 8-9) and whole-class activities. No unrealistic demands like one-to-one attention or unstated technology."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-001",
+  "judge_cost_usd": 0.00125969,
+  "judge_latency_s": 60.297,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states clear learning objectives (identify MAIN causes, explain how each increased tension, understand linkages). Activities align: Direct teaching introduces concepts, guided practice builds understanding through group discussion, independent practice requires synthesis through ranking. Assessment through Four Corners and final verbal check measures understanding of causes and linkages at appropriate cognitive level. Sequencing is logical: hook activates prior knowledge, teaching provides content, practice applies it, plenary assesses. Rubric criteria on printed sheet are observable (written responses, ranking).\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 50 minutes (3+12+15+12+8). Resources match prompt: projector used, one printed A4 sheet per student. Preparation: creating slides and printing sheet is feasible. Marking: formative checks during class (listening, observing) minimize marking load. Class size of 34 is accommodated through group work (4 groups of 8-9) and whole-class activities. No unrealistic demands like one-to-one attention or unstated technology.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is a history lesson plan. The response is inclusive of the range of learners described: wide attainment spread including six students with reading ages below 9. Specific adaptations are provided for lower-attainment students (simplified language, visual focus, peer support, sentence starters, adult scribe). Higher and middle attainment are also addressed. The response does not default to university-track assumptions.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the range of learners: six students with reading ages below 9 receive 'simplified language; visual focus; peer support' during teaching, 'sentence starters; rank top 2 only; adult scribe' during practice, and 'visual corners; accept one-word answers' during plenary. Higher and middle attainment are also differentiated. Adaptations are low-cost (sentence starters, peer support, visual aids) and implementable by one teacher without additional adults. No generic 'differentiate as needed' language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a highly practical and well-differentiated lesson plan that fully addresses the constraints and needs of the described setting.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This is a highly practical and well-differentiated lesson plan that fully addresses the constraints and needs of the described setting.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

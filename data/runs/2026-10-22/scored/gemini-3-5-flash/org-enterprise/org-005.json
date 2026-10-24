@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for an explanation of what needs to be in place, what the intermediary handled, and costs. The response delivers: Part 1 lists concrete GDPR requirements (SCCs, TOMs, EU rep), Part 2 explains the intermediary's role, Part 3 provides a detailed budget table with line items and totals, and time estimates. It is specific and usable—e.g., 'MDM & Security Software... $1,500 – $2,500/yr'—and could be taken to a meeting with light editing. It does not just describe a process; it produces the deliverable.",
+    "constraint_fidelity": "The prompt describes a 25-person software consultancy in Bangalore. The response provides a detailed budget table with costs scaled for a small team (e.g., MDM at $5-$8/user/month for 25 laptops, legal counsel at $3k-$5k), and time estimates (40-60 hours for operations manager, 20-30 for lead sysadmin). It explicitly notes the need for EU representation and transfer mechanisms due to India's third-country status, respecting jurisdictional constraints. The arithmetic adds up: one-time costs $3.5k-$5.5k, annual $5k-$14k, which is plausible for a small firm. No constraints are silently violated.",
+    "contextual_realism": "The response avoids enterprise-scale assumptions: it states 'you do not need a full-time DPO' and recommends external legal help rather than in-house counsel. It specifies tools like MDM at per-user pricing ($5-$8/month) and acknowledges internal staff time (operations manager, lead sysadmin) rather than assuming dedicated HR or compliance roles. It recognizes small-firm realities like role overlap ('Operations Manager (You)') and lumpy costs (one-time legal fees). However, it suggests optional compliance platforms ($5k/yr) which may be ambitious for a 25-person firm, slightly overestimating resources.",
+    "jurisdictional_accuracy": "The response accurately addresses GDPR for a German client and India as a third country: it correctly notes India lacks adequacy, requires SCCs (Modules 2/3), an Article 27 EU representative, and TOMs. It avoids US assumptions (no references to US law) and flags jurisdiction ('defend yourself in a German court'). It provides specific referrals ('hire an EU-based GDPR lawyer') rather than generic 'consult a lawyer' disclaimers. However, it does not explicitly mention a transfer impact assessment (as noted in the rubric), which is a required element for third-country transfers under GDPR."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-005",
+  "judge_cost_usd": 0.00125929,
+  "judge_latency_s": 61.888,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 25-person software consultancy in Bangalore. The response provides a detailed budget table with costs scaled for a small team (e.g., MDM at $5-$8/user/month for 25 laptops, legal counsel at $3k-$5k), and time estimates (40-60 hours for operations manager, 20-30 for lead sysadmin). It explicitly notes the need for EU representation and transfer mechanisms due to India's third-country status, respecting jurisdictional constraints. The arithmetic adds up: one-time costs $3.5k-$5.5k, annual $5k-$14k, which is plausible for a small firm. No constraints are silently violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response avoids enterprise-scale assumptions: it states 'you do not need a full-time DPO' and recommends external legal help rather than in-house counsel. It specifies tools like MDM at per-user pricing ($5-$8/month) and acknowledges internal staff time (operations manager, lead sysadmin) rather than assuming dedicated HR or compliance roles. It recognizes small-firm realities like role overlap ('Operations Manager (You)') and lumpy costs (one-time legal fees). However, it suggests optional compliance platforms ($5k/yr) which may be ambitious for a 25-person firm, slightly overestimating resources.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for an explanation of what needs to be in place, what the intermediary handled, and costs. The response delivers: Part 1 lists concrete GDPR requirements (SCCs, TOMs, EU rep), Part 2 explains the intermediary's role, Part 3 provides a detailed budget table with line items and totals, and time estimates. It is specific and usable—e.g., 'MDM & Security Software... $1,500 – $2,500/yr'—and could be taken to a meeting with light editing. It does not just describe a process; it produces the deliverable.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses GDPR for a German client and India as a third country: it correctly notes India lacks adequacy, requires SCCs (Modules 2/3), an Article 27 EU representative, and TOMs. It avoids US assumptions (no references to US law) and flags jurisdiction ('defend yourself in a German court'). It provides specific referrals ('hire an EU-based GDPR lawyer') rather than generic 'consult a lawyer' disclaimers. However, it does not explicitly mention a transfer impact assessment (as noted in the rubric), which is a required element for third-country transfers under GDPR.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is highly actionable and constraint-aware but slightly misses the full jurisdictional depth required.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is highly actionable and constraint-aware but slightly misses the full jurisdictional depth required.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

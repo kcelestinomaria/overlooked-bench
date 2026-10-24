@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for a recommendation with reasoning and preconditions if taking the contract. The response provides a clear 'Conditional Yes' recommendation and specifies concrete changes needed: hiring 4-6 staff, implementing quality control, securing financial runway, and negotiating contract terms. It includes specific, actionable components like 'Test whether you can hit 24-hour targets for 2-4 weeks', 'Cap penalties at a reasonable percentage', and 'Build in a 30-day review clause'. This could be taken into a meeting with light editing.",
+    "constraint_fidelity": "The prompt describes a 15-person social enterprise in Jakarta employing people with disabilities. The response acknowledges the small team size ('15-person team'), the disability employment context ('employees who have disabilities likely has variable capacity'), and the need for accommodations ('plan accommodations'). It respects the constraints by recommending hiring 4-6 additional staff upfront and building capacity buffers, showing arithmetic where relevant (e.g., '20-30% capacity buffer', '3-6 months of operating capital'). It does not silently violate constraints but explicitly addresses how to meet them.",
+    "contextual_realism": "The response is calibrated for a small social enterprise: it acknowledges variable capacity due to disabilities ('people with disabilities may have variable health needs'), recommends hiring additional staff rather than assuming existing capacity, focuses on practical steps like cross-training and equipment investment, and warns against process overhead that could compromise the mission ('burning out your team or compromising your social mission'). It avoids presupposing dedicated HR, legal, or other functions a 15-person team lacks.",
+    "jurisdictional_accuracy": "The prompt specifies Jakarta, Indonesia, but the response does not address jurisdiction-specific legal, regulatory, or employment practices (e.g., Indonesian labor laws, contract norms, or disability accommodations). It avoids US-specific assumptions but remains generic, with no substantive jurisdictional content. Since the task involves contract penalties and employment, jurisdictional accuracy is relevant, but the response does not engage with it, making it minimally applicable."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-009",
+  "judge_cost_usd": 0.00089907,
+  "judge_latency_s": 46.016,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 15-person social enterprise in Jakarta employing people with disabilities. The response acknowledges the small team size ('15-person team'), the disability employment context ('employees who have disabilities likely has variable capacity'), and the need for accommodations ('plan accommodations'). It respects the constraints by recommending hiring 4-6 additional staff upfront and building capacity buffers, showing arithmetic where relevant (e.g., '20-30% capacity buffer', '3-6 months of operating capital'). It does not silently violate constraints but explicitly addresses how to meet them.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small social enterprise: it acknowledges variable capacity due to disabilities ('people with disabilities may have variable health needs'), recommends hiring additional staff rather than assuming existing capacity, focuses on practical steps like cross-training and equipment investment, and warns against process overhead that could compromise the mission ('burning out your team or compromising your social mission'). It avoids presupposing dedicated HR, legal, or other functions a 15-person team lacks.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for a recommendation with reasoning and preconditions if taking the contract. The response provides a clear 'Conditional Yes' recommendation and specifies concrete changes needed: hiring 4-6 staff, implementing quality control, securing financial runway, and negotiating contract terms. It includes specific, actionable components like 'Test whether you can hit 24-hour targets for 2-4 weeks', 'Cap penalties at a reasonable percentage', and 'Build in a 30-day review clause'. This could be taken into a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt specifies Jakarta, Indonesia, but the response does not address jurisdiction-specific legal, regulatory, or employment practices (e.g., Indonesian labor laws, contract norms, or disability accommodations). It avoids US-specific assumptions but remains generic, with no substantive jurisdictional content. Since the task involves contract penalties and employment, jurisdictional accuracy is relevant, but the response does not engage with it, making it minimally applicable.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response is highly actionable and realistic for a small social enterprise but lacks jurisdictional specificity for Indonesia.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is highly actionable and realistic for a small social enterprise but lacks jurisdictional specificity for Indonesia.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 85.0
+}

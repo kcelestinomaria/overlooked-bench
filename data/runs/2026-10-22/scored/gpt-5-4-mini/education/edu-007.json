@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses differentiation concretely by explaining how mixed-attainment teaching works: 'Teachers will still: give extra support where needed, provide harder work for pupils who are ready for it, check understanding carefully, adapt lessons so children can succeed at different levels.' This is specific, low-cost, and implementable by one teacher, showing awareness of varying learner needs without requiring additional resources.",
+    "pathway_breadth": "This dimension is not applicable to the response type. The task was about explaining a teaching methodology change to parents, not about student future pathways or educational tracking. The response does not discuss academic, vocational, or other pathways.",
+    "pedagogical_soundness": "This dimension is not applicable to the response type. The task was to write parent-facing guidance explaining an administrative change, not to design instructional activities, assessments, or learning objectives. The response does not contain pedagogical elements like objectives, activities, or assessments to evaluate.",
+    "workload_realism": "This dimension is not applicable to the response type. The task was to create communication materials for parents, not to design instructional plans requiring resource allocation, timing, or classroom implementation. The response does not involve teaching workload, materials, or timings."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 0,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00079214,
+  "judge_latency_s": 33.171,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable to the response type. The task was to write parent-facing guidance explaining an administrative change, not to design instructional activities, assessments, or learning objectives. The response does not contain pedagogical elements like objectives, activities, or assessments to evaluate.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension is not applicable to the response type. The task was to create communication materials for parents, not to design instructional plans requiring resource allocation, timing, or classroom implementation. The response does not involve teaching workload, materials, or timings.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This dimension is not applicable to the response type. The task was about explaining a teaching methodology change to parents, not about student future pathways or educational tracking. The response does not discuss academic, vocational, or other pathways.\",\n      \"score\": 0\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses differentiation concretely by explaining how mixed-attainment teaching works: 'Teachers will still: give extra support where needed, provide harder work for pupils who are ready for it, check understanding carefully, adapt lessons so children can succeed at different levels.' This is specific, low-cost, and implementable by one teacher, showing awareness of varying learner needs without requiring additional resources.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response effectively fulfills the prompt by providing clear, jargon-free parent guidance that addresses concerns and explains the rationale for mixed-attainment teaching.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response effectively fulfills the prompt by providing clear, jargon-free parent guidance that addresses concerns and explains the rationale for mixed-attainment teaching.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 20.0
+}

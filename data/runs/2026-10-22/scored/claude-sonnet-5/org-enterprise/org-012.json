@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a concrete 12-month diversification plan with specific, actionable components: a phased timeline, staff time allocations, funding source categories (Tracks A-D), and explicit prioritization ('pick 3 tracks, not 5'). It includes line items like 'one-page case for support', 'donor database spreadsheet', and 'paid training product', and provides a contingency plan ('structural choices if diversified income covers less than 25%'). It is not a description of process but a deliverable that could be used with light editing.",
+    "constraint_fidelity": "The response explicitly respects the 5-person constraint by stating 'you have maybe 0.5–1.5 FTE worth of capacity to dedicate to fundraising — realistically distributed in small increments across people rather than one dedicated hire' and deprioritizes hiring a full-time fundraiser. It respects the 12-month timeline with a phased plan and acknowledges the need to shift casework capacity ('caseload may need to flex down 10–15%'). It shows arithmetic by setting realistic income reduction goals (e.g., 'reducing dependency to 60–70%') and allocates staff time percentages per phase. All constraints are honored with explicit justification.",
+    "contextual_realism": "The response is highly realistic for a small Jordanian NGO: it avoids assuming dedicated HR/legal staff, recommends low-cost tools ('spreadsheet with funder names'), and focuses on capacity-appropriate actions like 'shared/pooled funding application' and 'minimal shared capacity'. It acknowledges role overlap ('distributed in small increments across people'), volunteer-like efforts ('individual-giving push via WhatsApp'), and key-person dependency. It explicitly deprioritizes resource-intensive strategies like large multilateral grants and a full-time hire, aligning with small-organisation realities.",
+    "jurisdictional_accuracy": "The response accurately references Jordan-specific elements: 'Ministry of Social Development notification' for foreign funding, local entities like 'Crown Prince Foundation' and 'Arab Bank', and regional funds like 'Mama Cash'. It avoids US assumptions (e.g., no mention of US tax categories or at-will employment) and tailors recommendations to the Jordan/MENA context. It provides substantive content while flagging the need for legal checks ('confirm your registration allows receiving diverse funding types'), going beyond a generic 'consult a lawyer' disclaimer."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-012",
+  "judge_cost_usd": 0.00124715,
+  "judge_latency_s": 53.604,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the 5-person constraint by stating 'you have maybe 0.5–1.5 FTE worth of capacity to dedicate to fundraising — realistically distributed in small increments across people rather than one dedicated hire' and deprioritizes hiring a full-time fundraiser. It respects the 12-month timeline with a phased plan and acknowledges the need to shift casework capacity ('caseload may need to flex down 10–15%'). It shows arithmetic by setting realistic income reduction goals (e.g., 'reducing dependency to 60–70%') and allocates staff time percentages per phase. All constraints are honored with explicit justification.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is highly realistic for a small Jordanian NGO: it avoids assuming dedicated HR/legal staff, recommends low-cost tools ('spreadsheet with funder names'), and focuses on capacity-appropriate actions like 'shared/pooled funding application' and 'minimal shared capacity'. It acknowledges role overlap ('distributed in small increments across people'), volunteer-like efforts ('individual-giving push via WhatsApp'), and key-person dependency. It explicitly deprioritizes resource-intensive strategies like large multilateral grants and a full-time hire, aligning with small-organisation realities.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a concrete 12-month diversification plan with specific, actionable components: a phased timeline, staff time allocations, funding source categories (Tracks A-D), and explicit prioritization ('pick 3 tracks, not 5'). It includes line items like 'one-page case for support', 'donor database spreadsheet', and 'paid training product', and provides a contingency plan ('structural choices if diversified income covers less than 25%'). It is not a description of process but a deliverable that could be used with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately references Jordan-specific elements: 'Ministry of Social Development notification' for foreign funding, local entities like 'Crown Prince Foundation' and 'Arab Bank', and regional funds like 'Mama Cash'. It avoids US assumptions (e.g., no mention of US tax categories or at-will employment) and tailors recommendations to the Jordan/MENA context. It provides substantive content while flagging the need for legal checks ('confirm your registration allows receiving diverse funding types'), going beyond a generic 'consult a lawyer' disclaimer.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels by providing a highly realistic, actionable, and jurisdictionally accurate plan tailored to a small Jordanian NGO's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response excels by providing a highly realistic, actionable, and jurisdictionally accurate plan tailored to a small Jordanian NGO's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

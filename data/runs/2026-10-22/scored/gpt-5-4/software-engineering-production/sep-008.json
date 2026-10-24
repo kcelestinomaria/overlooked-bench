@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed, step-by-step migration plan with concrete SQL commands, phased timeline (days 0-14), specific verification queries (e.g., count nulls, check mismatches), and clear ownership (backend engineers and DBA roles). It includes exact steps for each phase, safety criteria, and rollback points, making it executable with light editing.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: it avoids any maintenance window longer than 5 minutes (cutover phase is designed for <5 minutes), uses no new instances or larger classes (explicitly rejects logical replication and blue/green), and addresses the 32-day runway by targeting cutover in 10-14 days with a safety buffer. It also checks storage expansion needs and confirms it fits within the 200 GB allowance, showing arithmetic for runway (31.9 days) and storage considerations.",
+    "maintainability": "The solution is proportionate to the team: it avoids unnecessary complexity (e.g., no dropping old columns immediately, keeping them for audit), includes documentation of risks (e.g., sequence exhaustion danger, storage limits), and leaves clear seams (e.g., phased removal of legacy columns later). It states accepted debt (e.g., temporary dual columns) and ensures the operational burden is manageable for the team size.",
+    "production_realism": "The plan accounts for production realities: it throttles backfill batches (20k-100k rows) to protect the 2-vCPU/8 GiB instance, monitors WAL, dead tuples, and storage, includes observability steps (e.g., latency checks, storage alerts), handles locking strategies (e.g., concurrent indexes, NOT VALID constraints), and addresses rollback scenarios. It explicitly considers the team's skill mix (backend engineers for app changes and scripts, DBA for DB-specific tasks)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.00223005,
+  "judge_latency_s": 55.968,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: it avoids any maintenance window longer than 5 minutes (cutover phase is designed for <5 minutes), uses no new instances or larger classes (explicitly rejects logical replication and blue/green), and addresses the 32-day runway by targeting cutover in 10-14 days with a safety buffer. It also checks storage expansion needs and confirms it fits within the 200 GB allowance, showing arithmetic for runway (31.9 days) and storage considerations.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan accounts for production realities: it throttles backfill batches (20k-100k rows) to protect the 2-vCPU/8 GiB instance, monitors WAL, dead tuples, and storage, includes observability steps (e.g., latency checks, storage alerts), handles locking strategies (e.g., concurrent indexes, NOT VALID constraints), and addresses rollback scenarios. It explicitly considers the team's skill mix (backend engineers for app changes and scripts, DBA for DB-specific tasks).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed, step-by-step migration plan with concrete SQL commands, phased timeline (days 0-14), specific verification queries (e.g., count nulls, check mismatches), and clear ownership (backend engineers and DBA roles). It includes exact steps for each phase, safety criteria, and rollback points, making it executable with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: it avoids unnecessary complexity (e.g., no dropping old columns immediately, keeping them for audit), includes documentation of risks (e.g., sequence exhaustion danger, storage limits), and leaves clear seams (e.g., phased removal of legacy columns later). It states accepted debt (e.g., temporary dual columns) and ensures the operational burden is manageable for the team size.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware migration plan with detailed steps, verification, and risk management tailored to the team and infrastructure.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware migration plan with detailed steps, verification, and risk management tailored to the team and infrastructure.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

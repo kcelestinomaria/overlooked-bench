@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response delivers a fully actionable runbook with exact commands, sequences, and verification steps. For example, the database restore procedure includes step-by-step commands (`rclone copy`, `gunzip`, `mysql import`), success criteria (no errors during import), and cleanup (`rm /tmp/backup-2023-11-09.sql`). The deploy procedure includes maintenance mode (`php artisan down`), code updates (`git pull`), and cache clearing (`php artisan config:cache`). The runbook is executable immediately with only light editing (e.g., replacing placeholder IPs).",
+    "constraint_fidelity": "1. The response adheres to the constraint of no migration to new platforms (C1) by not recommending Kubernetes, managed DB, PaaS, or another cloud. 2. It respects the zero additional tooling spend constraint (C2) by not introducing any paid tools or services. 3. It provides exact commands for all key procedures (C3), such as restoring the database from backup (`rclone copy`, `gunzip`, `mysql import`), renewing TLS certificates (`sudo certbot renew --dry-run`), and restarting services (`sudo systemctl restart nginx`). The arithmetic and steps are clear and verifiable, e.g., checking disk space with `df -h` and verifying backups with `rclone ls`. No constraints are silently violated, and all are explicitly addressed.",
+    "maintainability": "The response ensures maintainability by the two PHP developers. It avoids added complexity (e.g., no new tools or services) and provides clear documentation, such as where credentials live (1Password) and how to verify backups (`grep \"backup.sh\" /var/log/syslog`). Risks and accepted debt are stated (e.g., \"Restoring a backup is a last resort\") rather than hidden. The runbook is written in plain language with exact commands, making it operable in six months by the team.",
+    "production_realism": "The response accounts for production realities at the stated scale and team skill mix. It includes failure modes like service restarts (`sudo systemctl restart nginx`), partial failure handling (checking logs with `tail -n 50 /var/log/nginx/error.log`), and rollback procedures (database restore with verification). It addresses operational burden by providing exact commands and clear escalation paths, fitting the team's limited server-administration experience. No technically incorrect claims about the named technologies (e.g., MySQL, nginx, certbot) are made. The response is tailored to the two Hetzner VMs and the team's skill set."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-010",
+  "judge_cost_usd": 0.004342,
+  "judge_latency_s": 9.666,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response adheres to the constraint of no migration to new platforms (C1) by not recommending Kubernetes, managed DB, PaaS, or another cloud. 2. It respects the zero additional tooling spend constraint (C2) by not introducing any paid tools or services. 3. It provides exact commands for all key procedures (C3), such as restoring the database from backup (`rclone copy`, `gunzip`, `mysql import`), renewing TLS certificates (`sudo certbot renew --dry-run`), and restarting services (`sudo systemctl restart nginx`). The arithmetic and steps are clear and verifiable, e.g., checking disk space with `df -h` and verifying backups with `rclone ls`. No constraints are silently violated, and all are explicitly addressed.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities at the stated scale and team skill mix. It includes failure modes like service restarts (`sudo systemctl restart nginx`), partial failure handling (checking logs with `tail -n 50 /var/log/nginx/error.log`), and rollback procedures (database restore with verification). It addresses operational burden by providing exact commands and clear escalation paths, fitting the team's limited server-administration experience. No technically incorrect claims about the named technologies (e.g., MySQL, nginx, certbot) are made. The response is tailored to the two Hetzner VMs and the team's skill set.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response delivers a fully actionable runbook with exact commands, sequences, and verification steps. For example, the database restore procedure includes step-by-step commands (`rclone copy`, `gunzip`, `mysql import`), success criteria (no errors during import), and cleanup (`rm /tmp/backup-2023-11-09.sql`). The deploy procedure includes maintenance mode (`php artisan down`), code updates (`git pull`), and cache clearing (`php artisan config:cache`). The runbook is executable immediately with only light editing (e.g., replacing placeholder IPs).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response ensures maintainability by the two PHP developers. It avoids added complexity (e.g., no new tools or services) and provides clear documentation, such as where credentials live (1Password) and how to verify backups (`grep \\\"backup.sh\\\" /var/log/syslog`). Risks and accepted debt are stated (e.g., \\\"Restoring a backup is a last resort\\\") rather than hidden. The runbook is written in plain language with exact commands, making it operable in six months by the team.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a meticulously detailed, constraint-compliant runbook that is immediately executable by the team.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response is a meticulously detailed, constraint-compliant runbook that is immediately executable by the team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

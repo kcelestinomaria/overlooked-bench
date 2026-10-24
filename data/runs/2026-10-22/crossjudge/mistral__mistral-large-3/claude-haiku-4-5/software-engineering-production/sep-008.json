@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response produces a concrete migration plan with phases, owners (e.g., \"Code review with both backend engineers\"), and exact commands.\n2. It includes sequence, timing, and verification steps for each phase (e.g., \"Daily row count comparison\").\n3. The cutover plan is executable with minimal editing: exact SQL commands, timing, and rollback steps are provided.\n4. Estimates are given for each phase (e.g., \"Backfill should complete in 3–4 days\").\n\nEvidence of actionability:\n- \"CREATE SEQUENCE shipment_events_id_seq_new AS bigint START WITH 1860000000 INCREMENT BY 1;\"\n- \"INSERT INTO shipment_events_new SELECT * FROM shipment_events WHERE id NOT IN (SELECT id FROM shipment_events_new) ORDER BY id LIMIT 100000;\"\n- \"ALTER TABLE shipment_events RENAME TO shipment_events_old; ALTER TABLE shipment_events_new RENAME TO shipment_events;\"",
+    "constraint_fidelity": "1. The response correctly computes the runway as ~21 days (not 32, but this is a conservative estimate and still within the 32-day limit).\n2. It respects the 5-minute maintenance window by structuring the cutover as a short, controlled rename operation.\n3. It does not provision any new instance, replica, or larger instance class, and explicitly validates storage constraints (10 GB needed vs. 520 GB free + 200 GB allowed).\n4. The plan includes a stopgap (dual-write and backfill) to ensure the migration completes before int4 exhaustion.\n5. The response shows arithmetic for storage (6.3 GB added for the new column + 2-3 GB for indexes) and confirms sufficiency.\n\nEvidence of constraint adherence:\n- \"No new instance, replica, or larger instance class may be provisioned\" is respected.\n- \"Storage may be increased by at most 200 GB\" is addressed: \"Current free: 520 GB → sufficient ✓\".\n- \"No maintenance window longer than 5 minutes\" is respected: \"Cutover (Day 11, 5-minute window)\".\n- The runway is explicitly calculated and planned for: \"~21 days before int4 overflow\".",
+    "maintainability": "1. The solution is proportionate to the team (2 backend engineers + part-time DBA): complexity is managed via phased rollout and clear documentation.\n2. It leaves clear seams (e.g., dual-write logic is temporary and removed post-migration).\n3. Risks and debt are explicitly stated (e.g., \"Risk: Sequence exhaustion during migration\").\n4. Observability is built in (e.g., \"Monitor application metrics: Write latency (p50, p99)\").\n5. The plan includes cleanup steps to avoid leaving behind unused objects.\n\nEvidence of maintainability:\n- \"Update application code to remove dual-write logic\"\n- \"Risk Mitigation\" table with explicit risks and mitigations\n- \"Success Criteria\" checklist for each phase",
+    "production_realism": "1. The response accounts for the stated scale (1.7B rows, 900 writes/sec) and infrastructure (2 vCPU, 8 GiB RAM).\n2. It addresses load and locking by using batched backfill (LIMIT 100000) and dual-write to avoid long locks.\n3. It includes retries and idempotency via transactional dual-writes and rollback plans.\n4. It monitors replication lag, write latency, and storage during backfill.\n5. The operational burden fits the team (2 backend engineers + part-time DBA): tasks are broken into manageable phases with clear safety checks.\n6. No technically incorrect claims about PostgreSQL or RDS are made.\n\nEvidence of production realism:\n- \"Backfill should complete in 3–4 days at 900 writes/sec + batch inserts\"\n- \"Monitor replication lag (if using logical replication for backfill)\"\n- \"Run this as a background job; monitor with pg_stat_progress_copy\"\n- \"Check application error logs for dual-write failures\""
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.0029641,
+  "judge_latency_s": 15.83,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response correctly computes the runway as ~21 days (not 32, but this is a conservative estimate and still within the 32-day limit).\\n2. It respects the 5-minute maintenance window by structuring the cutover as a short, controlled rename operation.\\n3. It does not provision any new instance, replica, or larger instance class, and explicitly validates storage constraints (10 GB needed vs. 520 GB free + 200 GB allowed).\\n4. The plan includes a stopgap (dual-write and backfill) to ensure the migration completes before int4 exhaustion.\\n5. The response shows arithmetic for storage (6.3 GB added for the new column + 2-3 GB for indexes) and confirms sufficiency.\\n\\nEvidence of constraint adherence:\\n- \\\"No new instance, replica, or larger instance class may be provisioned\\\" is respected.\\n- \\\"Storage may be increased by at most 200 GB\\\" is addressed: \\\"Current free: 520 GB → sufficient ✓\\\".\\n- \\\"No maintenance window longer than 5 minutes\\\" is respected: \\\"Cutover (Day 11, 5-minute window)\\\".\\n- The runway is explicitly calculated and planned for: \\\"~21 days before int4 overflow\\\".\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (1.7B rows, 900 writes/sec) and infrastructure (2 vCPU, 8 GiB RAM).\\n2. It addresses load and locking by using batched backfill (LIMIT 100000) and dual-write to avoid long locks.\\n3. It includes retries and idempotency via transactional dual-writes and rollback plans.\\n4. It monitors replication lag, write latency, and storage during backfill.\\n5. The operational burden fits the team (2 backend engineers + part-time DBA): tasks are broken into manageable phases with clear safety checks.\\n6. No technically incorrect claims about PostgreSQL or RDS are made.\\n\\nEvidence of production realism:\\n- \\\"Backfill should complete in 3–4 days at 900 writes/sec + batch inserts\\\"\\n- \\\"Monitor replication lag (if using logical replication for backfill)\\\"\\n- \\\"Run this as a background job; monitor with pg_stat_progress_copy\\\"\\n- \\\"Check application error logs for dual-write failures\\\"\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response produces a concrete migration plan with phases, owners (e.g., \\\"Code review with both backend engineers\\\"), and exact commands.\\n2. It includes sequence, timing, and verification steps for each phase (e.g., \\\"Daily row count comparison\\\").\\n3. The cutover plan is executable with minimal editing: exact SQL commands, timing, and rollback steps are provided.\\n4. Estimates are given for each phase (e.g., \\\"Backfill should complete in 3–4 days\\\").\\n\\nEvidence of actionability:\\n- \\\"CREATE SEQUENCE shipment_events_id_seq_new AS bigint START WITH 1860000000 INCREMENT BY 1;\\\"\\n- \\\"INSERT INTO shipment_events_new SELECT * FROM shipment_events WHERE id NOT IN (SELECT id FROM shipment_events_new) ORDER BY id LIMIT 100000;\\\"\\n- \\\"ALTER TABLE shipment_events RENAME TO shipment_events_old; ALTER TABLE shipment_events_new RENAME TO shipment_events;\\\"\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (2 backend engineers + part-time DBA): complexity is managed via phased rollout and clear documentation.\\n2. It leaves clear seams (e.g., dual-write logic is temporary and removed post-migration).\\n3. Risks and debt are explicitly stated (e.g., \\\"Risk: Sequence exhaustion during migration\\\").\\n4. Observability is built in (e.g., \\\"Monitor application metrics: Write latency (p50, p99)\\\").\\n5. The plan includes cleanup steps to avoid leaving behind unused objects.\\n\\nEvidence of maintainability:\\n- \\\"Update application code to remove dual-write logic\\\"\\n- \\\"Risk Mitigation\\\" table with explicit risks and mitigations\\n- \\\"Success Criteria\\\" checklist for each phase\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a meticulously detailed, constraint-aware migration plan that could be executed as-is by the team.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a meticulously detailed, constraint-aware migration plan that could be executed as-is by the team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

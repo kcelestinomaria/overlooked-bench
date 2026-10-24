@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "completion_tokens": 1096,
+  "cost_usd": 0.005898,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "a235565785763fb3",
+  "item_id": "sep-009",
+  "latency_s": 8.516,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 418,
+  "provider": "anthropic",
+  "request_fingerprint": "7e2573e3666d40cd",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Code Review: Paystack Webhook Handler\n\n## MUST FIX BEFORE MERGE\n\n### 1. **CRITICAL: Signature verification happens AFTER state change**\n**Risk:** Payment marked as complete even if webhook is forged. Attackers can trigger false \"paid\" events.\n\n```python\n@router.post(\"/webhooks/paystack\")\nasync def paystack_webhook(request: Request, db: Session = Depends(get_db)):\n    body = await request.body()\n    sig = request.headers.get(\"x-paystack-signature\")\n    expected = hmac.new(PAYSTACK_SECRET.encode(), body, hashlib.sha512).hexdigest()\n    \n    if sig != expected:\n        raise HTTPException(status_code=401, detail=\"Invalid signature\")\n    \n    payload = json.loads(body)\n    logger.info(f\"webhook received: {payload}\")\n    event = payload[\"event\"]\n    \n    if event == \"charge.success\":\n        data = payload[\"data\"]\n        order = db.query(Order).filter(Order.reference == data[\"reference\"]).first()\n        order.status = \"paid\"\n        order.amount_paid = data[\"amount\"] / 100\n        db.commit()\n        send_receipt_sms(order.customer_phone, order.amount_paid)\n    \n    return {\"ok\": True}\n```\n\n**Why:** Verify signature **first**, before touching the database.\n\n---\n\n### 2. **CRITICAL: Missing null checks**\n**Risk:** `AttributeError` if order not found or SMS fails silently.\n\n```python\nif event == \"charge.success\":\n    data = payload[\"data\"]\n    order = db.query(Order).filter(Order.reference == data[\"reference\"]).first()\n    \n    if not order:\n        logger.warning(f\"Order not found for reference: {data['reference']}\")\n        return {\"ok\": True}  # Acknowledge webhook to Paystack\n    \n    order.status = \"paid\"\n    order.amount_paid = data[\"amount\"] / 100\n    db.commit()\n    \n    try:\n        send_receipt_sms(order.customer_phone, order.amount_paid)\n    except Exception as e:\n        logger.error(f\"SMS failed for order {order.id}: {e}\")\n        # Don't fail the webhook—Paystack will retry\n```\n\n**Why:** Missing orders happen (race conditions, test webhooks). SMS failures shouldn't block webhook acknowledgment.\n\n---\n\n### 3. **HIGH: Idempotency not guaranteed**\n**Risk:** If Paystack retries the webhook, payment gets double-counted or SMS sent twice.\n\n```python\nif event == \"charge.success\":\n    data = payload[\"data\"]\n    order = db.query(Order).filter(Order.reference == data[\"reference\"]).first()\n    \n    if not order:\n        logger.warning(f\"Order not found for reference: {data['reference']}\")\n        return {\"ok\": True}\n    \n    # Skip if already processed\n    if order.status == \"paid\":\n        logger.info(f\"Order {order.id} already marked paid, skipping\")\n        return {\"ok\": True}\n    \n    order.status = \"paid\"\n    order.amount_paid = data[\"amount\"] / 100\n    db.commit()\n    \n    try:\n        send_receipt_sms(order.customer_phone, order.amount_paid)\n    except Exception as e:\n        logger.error(f\"SMS failed for order {order.id}: {e}\")\n```\n\n**Why:** Paystack retries failed webhooks. Idempotency prevents duplicate charges.\n\n---\n\n### 4. **HIGH: Missing import**\n```python\nimport json\nimport hmac\nimport hashlib\nfrom fastapi import APIRouter, Request, HTTPException\nfrom sqlalchemy.orm import Session\n```\n\n---\n\n### 5. **MEDIUM: Logging sensitive data**\n**Risk:** Payment references in logs could expose customer data if logs are breached.\n\n```python\nlogger.info(f\"webhook received: charge.success event\")  # Don't log full payload\n```\n\n---\n\n## FOLLOW-UP (separate PR)\n\n- [ ] Add webhook signature verification to integration tests\n- [ ] Implement webhook retry logic with exponential backoff (currently relies on Paystack's retry)\n- [ ] Add monitoring/alerting for failed SMS sends\n- [ ] Store webhook events in audit table for reconciliation\n- [ ] Rate-limit webhook endpoint by IP\n\n---\n\n## Summary\n**Merge blockers:** Signature verification order, null checks, idempotency. All fixable in <30 minutes.",
+  "timestamp_utc": "2026-10-21T23:36:18Z"
+}

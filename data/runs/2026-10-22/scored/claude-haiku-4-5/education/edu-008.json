@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers. It assumes all students can engage in 'role-play', 'peer teaching', and 'hands-on sessions' without adaptations. No mention of support for non-native speakers or resource constraints. This is a significant gap given the vocational setting where learner diversity is likely.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it focuses on module redesign for skill improvement. The response is inclusive of vocational learners by addressing practical, hands-on training relevant to automotive repair careers, not defaulting to academic routes. It emphasizes real-world application and employer-identified needs, which aligns with vocational education goals.",
+    "pedagogical_soundness": "The response identifies clear learning objectives: developing diagnostic reasoning and customer communication skills. Activities align with objectives: 'fault trees and diagnostic flowcharts' build diagnostic reasoning, 'role-play scenarios' build communication. Assessments measure objectives: 'diagnostic case study' measures reasoning, 'viva/oral exam' measures communication. Sequencing is coherent with teaching before assessment. Rubric criteria ('Diagnostic logic', 'Technical accuracy', etc.) are observable and distinguishable.",
+    "workload_realism": "The response assumes 'real broken vehicles' and 'deliberately sabotaged vehicles' which are plausible in an automotive workshop. Timings are not specified, but activities like 'hands-on sessions' and 'role-play' are feasible within a module timeframe. Preparation for 'real case studies' and 'sabotaged vehicles' is realistic for a vocational center. Class size feasibility is not addressed, but peer teaching and instructor observation imply manageable groups. No unrealistic technology or materials are assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 4,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-008",
+  "judge_cost_usd": 0.00081082,
+  "judge_latency_s": 54.267,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response identifies clear learning objectives: developing diagnostic reasoning and customer communication skills. Activities align with objectives: 'fault trees and diagnostic flowcharts' build diagnostic reasoning, 'role-play scenarios' build communication. Assessments measure objectives: 'diagnostic case study' measures reasoning, 'viva/oral exam' measures communication. Sequencing is coherent with teaching before assessment. Rubric criteria ('Diagnostic logic', 'Technical accuracy', etc.) are observable and distinguishable.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response assumes 'real broken vehicles' and 'deliberately sabotaged vehicles' which are plausible in an automotive workshop. Timings are not specified, but activities like 'hands-on sessions' and 'role-play' are feasible within a module timeframe. Preparation for 'real case studies' and 'sabotaged vehicles' is realistic for a vocational center. Class size feasibility is not addressed, but peer teaching and instructor observation imply manageable groups. No unrealistic technology or materials are assumed.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it focuses on module redesign for skill improvement. The response is inclusive of vocational learners by addressing practical, hands-on training relevant to automotive repair careers, not defaulting to academic routes. It emphasizes real-world application and employer-identified needs, which aligns with vocational education goals.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers. It assumes all students can engage in 'role-play', 'peer teaching', and 'hands-on sessions' without adaptations. No mention of support for non-native speakers or resource constraints. This is a significant gap given the vocational setting where learner diversity is likely.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response excellently addresses diagnostic reasoning and communication with concrete, pedagogically sound changes but lacks consideration for learner diversity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response excellently addresses diagnostic reasoning and communication with concrete, pedagogically sound changes but lacks consideration for learner diversity.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 72.5
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgment. The response states a clear position: 'I would give the machine to Patient A.' It defends this with reasons (utilitarian focus on dependents and life-years) and acknowledges uncertainty by calling it a 'classic ethical dilemma with no single correct answer' and noting the objection's power. It uses calibrated uncertainty ('in this specific instance') rather than evasion, and explains why it holds the position despite the objection, though it does not explicitly state what would change its mind.",
+    "philosophical_literacy": "The response invokes 'utilitarianism' accurately as seeking 'the greatest good for the greatest number' and applies it to the scenario (dependents, harm reduction). It mentions 'egalitarianism' correctly in the context of a lottery for fairness. No misattributions or garbled terms occur; concepts are load-bearing (utilitarianism drives the argument, egalitarianism is part of the counterargument). Accuracy and relevance are high, though no named thinkers are cited, which is not penalized.",
+    "position_pluralism": "Major live positions include: utilitarianism (prioritizing dependents), medical prognosis (prioritizing higher survival chance), and egalitarianism (lottery). The response presents utilitarianism (its chosen position), medical prognosis (as part of the objection), and egalitarianism (also in the objection). Each is characterized fairly: utilitarianism emphasizes overall good, medical prognosis focuses on resource efficiency, and egalitarianism advocates equal chance. No fringe positions are included, and balance is appropriate, with rival positions given in the objection section.",
+    "reasoning_construction": "The response constructs an argument: conclusion is 'give the machine to Patient A' based on utilitarianism. Premises include: Patient A's death harms four dependents (maximizing well-being), Patient A's younger age offers more potential life-years, and the 20% prognosis difference is insufficient to outweigh social harm. It engages specifics (dependents, ages, prognoses) and addresses the strongest counterargument (social worth objection) by distinguishing policy from a single forced choice and emphasizing concrete harm mitigation. The inference is valid: premises support the conclusion through utilitarian calculus."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-001",
+  "judge_cost_usd": 0.00102303,
+  "judge_latency_s": 51.205,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs an argument: conclusion is 'give the machine to Patient A' based on utilitarianism. Premises include: Patient A's death harms four dependents (maximizing well-being), Patient A's younger age offers more potential life-years, and the 20% prognosis difference is insufficient to outweigh social harm. It engages specifics (dependents, ages, prognoses) and addresses the strongest counterargument (social worth objection) by distinguishing policy from a single forced choice and emphasizing concrete harm mitigation. The inference is valid: premises support the conclusion through utilitarian calculus.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgment. The response states a clear position: 'I would give the machine to Patient A.' It defends this with reasons (utilitarian focus on dependents and life-years) and acknowledges uncertainty by calling it a 'classic ethical dilemma with no single correct answer' and noting the objection's power. It uses calibrated uncertainty ('in this specific instance') rather than evasion, and explains why it holds the position despite the objection, though it does not explicitly state what would change its mind.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: utilitarianism (prioritizing dependents), medical prognosis (prioritizing higher survival chance), and egalitarianism (lottery). The response presents utilitarianism (its chosen position), medical prognosis (as part of the objection), and egalitarianism (also in the objection). Each is characterized fairly: utilitarianism emphasizes overall good, medical prognosis focuses on resource efficiency, and egalitarianism advocates equal chance. No fringe positions are included, and balance is appropriate, with rival positions given in the objection section.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes 'utilitarianism' accurately as seeking 'the greatest good for the greatest number' and applies it to the scenario (dependents, harm reduction). It mentions 'egalitarianism' correctly in the context of a lottery for fairness. No misattributions or garbled terms occur; concepts are load-bearing (utilitarianism drives the argument, egalitarianism is part of the counterargument). Accuracy and relevance are high, though no named thinkers are cited, which is not penalized.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excels in constructing a reasoned argument and fairly representing rival positions while committing to a defensible conclusion.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response excels in constructing a reasoned argument and fairly representing rival positions while committing to a defensible conclusion.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1486,
+  "cost_usd": 0.015154,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "41014c00b9a48097",
+  "item_id": "org-011",
+  "latency_s": 20.498,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 147,
+  "provider": "anthropic",
+  "request_fingerprint": "baa87b0bb8f96aa7",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Advising a Peruvian Municipal Utility on NRW Reduction (PEN 2M Budget)\n\n## First: Don't Assume \"Leakage\" = Physical Losses\n\nThe board's framing (\"fix leakage\") likely conflates all Non-Revenue Water with pipe leaks. This is the single most common and costly mistake in NRW programs. Before allocating money, you need a **water balance audit** (IWA/World Bank methodology) — but since you likely don't have one yet, here's what the evidence from comparable utilities predicts.\n\n## Expected Split for This Utility Profile\n\nFor a mid-size Peruvian municipal utility (60,000 people, 42% NRW), the typical split based on regional benchmarks (SUNASS data, World Bank LAC studies) is:\n\n| Component | Likely Share of NRW | Likely Share of Total Production |\n|---|---|---|\n| **Physical (real) losses** | 55–65% | ~23–27% |\n| **Commercial (apparent) losses** | 35–45% | ~15–19% |\n\n**Why apparent losses are unusually high here:**\n- Small/mid Peruvian municipal operators typically have aging, under-registering meters (or no meters — many connections are unmetered or on flat tariffs)\n- Illegal connections and informal settlements on the periphery are common\n- Billing systems are often manual or poorly reconciled with the commercial cadastre\n- Water theft via clandestine taps on distribution mains is frequent in peri-urban zones\n\nA 42% NRW rate itself is a signal: utilities with *purely* physical-loss problems (old pipes, high pressure) rarely exceed 35% NRW without visible symptoms (constant main breaks, surface flooding). A rate this high, sustained over time, usually indicates the commercial/governance side is also badly broken — meters not read, bills not collected, connections not mapped.\n\n## Recommended Allocation of PEN 2M\n\n**Do NOT spend it all on pipe replacement.** That's the instinct but it's usually the lowest-ROI first move.\n\n### Step 1 — Diagnostic (PEN 150,000–200,000, non-negotiable)\n- Formal IWA water balance\n- District Metered Area (DMA) delineation on at least 3–5 zones\n- Night-flow (minimum night flow) measurement to split real vs. apparent losses empirically\n- Commercial cadastre audit — cross-check billing database against GIS/field survey of actual connections\n\nWithout this, PEN 2M spent on pipes could be fixing the wrong 20% of the problem.\n\n### Step 2 — Commercial Loss Recovery (~PEN 900,000–1,100,000)\nThis typically has **payback under 12 months** and should be funded first:\n- Meter replacement/installation program targeting largest users first (commercial, institutional accounts) — Pareto logic: top 20% of accounts often drive 70%+ of under-registration losses\n- Illegal connection regularization campaign (combine amnesty + enforcement)\n- Billing system digitization / reconciliation with GIS\n- Field verification of \"inactive\" or \"zero-consumption\" accounts (classic fraud indicator)\n\n### Step 3 — Physical Loss Reduction (~PEN 700,000–900,000)\n- Pressure management (PRVs in DMAs) — cheap, high-impact, reduces both burst frequency *and* background leakage\n- Active leak detection (acoustic survey) rather than blind pipe replacement\n- Targeted repair of located leaks, prioritized by DMA night-flow data\n- Reserve a small pipe-replacement budget only for segments with confirmed high burst-frequency history\n\n### Step 4 — Institutional (~PEN 100,000)\n- Staff training on DMA monitoring and leak detection equipment use\n- Establish a permanent NRW unit/KPI reporting to the board, so this isn't a one-off project\n\n## Key Message to the Board\n\n> \"PEN 2 million spent only on pipes will likely recover 20–25% of the lost water. The same money, split toward metering, billing, and connection audits first, recovers revenue directly and funds the physical repairs from future cash flow. Commercial losses are often the cheaper, faster win — we should buy the data and fix the meters/billing before we dig.\"\n\nRecommend framing this as a **phased program with an 18-month horizon**, not a single capital expenditure, and tie board reporting to NRW% and revenue recovery, not \"kilometers of pipe replaced.\"",
+  "timestamp_utc": "2026-10-21T23:31:31Z"
+}

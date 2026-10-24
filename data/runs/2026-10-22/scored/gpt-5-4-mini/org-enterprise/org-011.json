@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requests specific advice on how to spend the PEN 2 million. The response provides a costed allocation with line items and totals (e.g., 'PEN 700,000 — DMAs, bulk meters, pressure loggers'), a rationale for the split based on loss types, and a practical implementation sequence. It produces the deliverable requested and could be used in a board meeting with light editing.",
+    "constraint_fidelity": "The prompt states a budget constraint of PEN 2 million. The response explicitly allocates the entire budget: PEN 700,000 for DMAs and pressure management, PEN 500,000 for leak detection, PEN 400,000 for meter replacement and audits, PEN 300,000 for pipe rehabilitation, and PEN 100,000 for data systems, totaling PEN 2,000,000. It respects the constraint and shows arithmetic.",
+    "contextual_realism": "The response assumes capabilities appropriate for a mid-size Peruvian utility: DMAs, pressure loggers, acoustic surveys, meter replacement, and simple data systems. It does not presuppose dedicated HR, legal counsel, or expensive tooling. It acknowledges role overlap and practical implementation sequences, such as 'rapid repair crews' and 'simple asset database', which are realistic for a resource-constrained organisation.",
+    "jurisdictional_accuracy": "The prompt involves Peru, but no specific legal or regulatory claims are made. The response focuses on technical water utility practices (e.g., district metering, pressure management) without asserting US defaults. It is factually accurate and avoids jurisdictional errors, so this dimension is scored on general accuracy."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-011",
+  "judge_cost_usd": 0.00099322,
+  "judge_latency_s": 42.469,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states a budget constraint of PEN 2 million. The response explicitly allocates the entire budget: PEN 700,000 for DMAs and pressure management, PEN 500,000 for leak detection, PEN 400,000 for meter replacement and audits, PEN 300,000 for pipe rehabilitation, and PEN 100,000 for data systems, totaling PEN 2,000,000. It respects the constraint and shows arithmetic.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes capabilities appropriate for a mid-size Peruvian utility: DMAs, pressure loggers, acoustic surveys, meter replacement, and simple data systems. It does not presuppose dedicated HR, legal counsel, or expensive tooling. It acknowledges role overlap and practical implementation sequences, such as 'rapid repair crews' and 'simple asset database', which are realistic for a resource-constrained organisation.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests specific advice on how to spend the PEN 2 million. The response provides a costed allocation with line items and totals (e.g., 'PEN 700,000 — DMAs, bulk meters, pressure loggers'), a rationale for the split based on loss types, and a practical implementation sequence. It produces the deliverable requested and could be used in a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Peru, but no specific legal or regulatory claims are made. The response focuses on technical water utility practices (e.g., district metering, pressure management) without asserting US defaults. It is factually accurate and avoids jurisdictional errors, so this dimension is scored on general accuracy.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excellently addresses the prompt with a specific, costed plan that respects constraints and provides actionable advice tailored to a Peruvian utility.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response excellently addresses the prompt with a specific, costed plan that respects constraints and provides actionable advice tailored to a Peruvian utility.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,89 @@
+{
+  "answers": {
+    "C1_acknowledged": {
+      "probability": 0.03,
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "probability": 0.02,
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "probability": 0.02,
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "probability": 0.02,
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "probability": 0.05,
+      "type": "boolean"
+    }
+  },
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "cost_usd": 0.000278502,
+  "generation_id": "gen_01M5GFKX0VD7K2JPDVQQ3YWWAK",
+  "item_content_hash": "0a04bdfff1fbcd63",
+  "item_id": "sep-010",
+  "latency_s": 2.327,
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "protocol_version": "cv-1.0.0",
+  "question_hash": "8c52a648d121e81b",
+  "questions": {
+    "C1_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"No migration to Kubernetes, managed DB, PaaS, or another cloud.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "instructions": "Does the response recommend migrating to a new platform - Kubernetes, a managed database service, a PaaS, or a different cloud provider - as part of the handoff plan?",
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Zero additional tooling spend.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "instructions": "Does the response recommend a new paid tool, service or subscription, such as PagerDuty, Datadog, or a paid backup or monitoring service?",
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Procedures executable by the two developers, with exact commands.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "instructions": "Do the key procedures - restoring the database from backup, renewing TLS certificates, and restarting services - lack concrete commands that a developer with no server-administration experience could run?",
+      "type": "boolean"
+    }
+  },
+  "requested_model": "typesafe-ai/jev-1.14.0",
+  "state_truncated": false,
+  "usage": {
+    "inputTokens": 6631,
+    "outputTokens": 124
+  },
+  "verdicts": {
+    "C1": {
+      "p_acknowledged": 0.03,
+      "p_broken": 0.02,
+      "verdict": "kept"
+    },
+    "C2": {
+      "p_acknowledged": 0.02,
+      "p_broken": 0.02,
+      "verdict": "kept"
+    },
+    "C3": {
+      "p_acknowledged": 0.04,
+      "p_broken": 0.05,
+      "verdict": "kept"
+    }
+  },
+  "verifier_model": "typesafe-ai/jev-1.14.0"
+}

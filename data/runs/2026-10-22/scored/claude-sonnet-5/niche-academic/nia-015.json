@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with methodological debates (formal law vs. practice), scholarly tensions (institutional-economics vs. social-historical approaches), and specific evidence sources (şer'iye sicilleri, waqf registers). It discusses regional variation (Bursa, Cairo, Aleppo) and temporal shifts, indicating familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response makes substantive claims that are accurate: it correctly identifies waqf characteristics (perpetuity/ebediyet), legal fictions (bey' bi'l-wafa, istiglal), administrative roles (mütevelli), leasing arrangements (icareteyn, mukataa), and key scholars (Timur Kuran, Murat Çizakça, Miriam Hoexter). It accurately describes cash waqfs (para vakıfları) and their economic functions. No invented citations or terms are present.",
+    "field_situatedness": "The response uses Ottoman/Turkish terminology (waqf, ebediyet, mütevelli, para vakıfları, şer'iye sicilleri, icareteyn, mukataa) and engages with scholars (Kuran, Çizakça, Hoexter) central to the field. It does not substitute a Western framing but situates the debate within Ottoman studies, including non-English scholarship where relevant.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it notes that older scholarship linked waqfs to decline, while revisionist views emphasize flexibility. It specifically calibrates Kuran's thesis as 'influential but contested' and outlines criticisms, avoiding uniform confidence. It flags ongoing disagreements without presenting any as settled fact."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-015",
+  "judge_cost_usd": 0.00091255,
+  "judge_latency_s": 41.056,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are accurate: it correctly identifies waqf characteristics (perpetuity/ebediyet), legal fictions (bey' bi'l-wafa, istiglal), administrative roles (mütevelli), leasing arrangements (icareteyn, mukataa), and key scholars (Timur Kuran, Murat Çizakça, Miriam Hoexter). It accurately describes cash waqfs (para vakıfları) and their economic functions. No invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with methodological debates (formal law vs. practice), scholarly tensions (institutional-economics vs. social-historical approaches), and specific evidence sources (şer'iye sicilleri, waqf registers). It discusses regional variation (Bursa, Cairo, Aleppo) and temporal shifts, indicating familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it notes that older scholarship linked waqfs to decline, while revisionist views emphasize flexibility. It specifically calibrates Kuran's thesis as 'influential but contested' and outlines criticisms, avoiding uniform confidence. It flags ongoing disagreements without presenting any as settled fact.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Ottoman/Turkish terminology (waqf, ebediyet, mütevelli, para vakıfları, şer'iye sicilleri, icareteyn, mukataa) and engages with scholars (Kuran, Çizakça, Hoexter) central to the field. It does not substitute a Western framing but situates the debate within Ottoman studies, including non-English scholarship where relevant.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level engagement with Ottoman waqf historiography, accurately synthesizing key debates and evidence.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level engagement with Ottoman waqf historiography, accurately synthesizing key debates and evidence.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}
