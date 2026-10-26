@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting involves 120 Grade 11 essays in South Africa, implying a range of learners (e.g., varying language skills, prior attainment). The response does not address differentiation or access needs. There is no mention of adaptations for learners with additional needs, language barriers, or material constraints (e.g., no home internet). The focus is solely on marking efficiency, not inclusive assessment practices. This is a significant gap for the described setting.",
+    "pathway_breadth": "The prompt and response focus solely on creating an assessment rubric for marking essays, not on student futures or pathways. Therefore, this dimension is scored based on inclusivity for the range of learners in the setting (Grade 11 students in South Africa). The rubric criteria (e.g., Language & Conventions) implicitly account for varying language proficiency, but no explicit differentiation for prior attainment, additional needs, or material constraints is provided. The response is task-specific but does not address learner diversity.",
+    "pedagogical_soundness": "The rubric includes four criteria (Argument & Reasoning, Counter-Argument & Engagement, Structure & Cohesion, Language & Conventions) with observable descriptors at four levels each. The criteria align with argumentative writing objectives: thesis clarity, evidence use, structure, and language control. The descriptors are distinguishable (e.g., Level 4 Counter-Argument: 'specific and genuinely refuted with reasoning' vs. Level 3: 'refutation is thin or one-line'). Sequencing is coherent, with calibration and batching processes to ensure reliability. This is specific and educationally sound for Grade 11.",
+    "workload_realism": "The response explicitly addresses the 120-essay constraint, calculating 8-10 minutes per essay and providing a detailed time breakdown totaling ~16 hours. It recommends practical strategies like batching by criterion (reducing decision fatigue), time boxing (7 min/essay), comment banks (minimizing feedback time), and flagging borderline cases for efficient review. All materials assumed (rubric, timer, printed conversion table) are realistic for a teacher. The plan is feasible for one practitioner over a weekend."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 1,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00120042,
+  "judge_latency_s": 49.26,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The rubric includes four criteria (Argument & Reasoning, Counter-Argument & Engagement, Structure & Cohesion, Language & Conventions) with observable descriptors at four levels each. The criteria align with argumentative writing objectives: thesis clarity, evidence use, structure, and language control. The descriptors are distinguishable (e.g., Level 4 Counter-Argument: 'specific and genuinely refuted with reasoning' vs. Level 3: 'refutation is thin or one-line'). Sequencing is coherent, with calibration and batching processes to ensure reliability. This is specific and educationally sound for Grade 11.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses the 120-essay constraint, calculating 8-10 minutes per essay and providing a detailed time breakdown totaling ~16 hours. It recommends practical strategies like batching by criterion (reducing decision fatigue), time boxing (7 min/essay), comment banks (minimizing feedback time), and flagging borderline cases for efficient review. All materials assumed (rubric, timer, printed conversion table) are realistic for a teacher. The plan is feasible for one practitioner over a weekend.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt and response focus solely on creating an assessment rubric for marking essays, not on student futures or pathways. Therefore, this dimension is scored based on inclusivity for the range of learners in the setting (Grade 11 students in South Africa). The rubric criteria (e.g., Language & Conventions) implicitly account for varying language proficiency, but no explicit differentiation for prior attainment, additional needs, or material constraints is provided. The response is task-specific but does not address learner diversity.\",\n      \"score\": 1\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting involves 120 Grade 11 essays in South Africa, implying a range of learners (e.g., varying language skills, prior attainment). The response does not address differentiation or access needs. There is no mention of adaptations for learners with additional needs, language barriers, or material constraints (e.g., no home internet). The focus is solely on marking efficiency, not inclusive assessment practices. This is a significant gap for the described setting.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response excels in pedagogical soundness and workload realism but completely overlooks differentiation and access needs.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excels in pedagogical soundness and workload realism but completely overlooks differentiation and access needs.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 61.25
+}

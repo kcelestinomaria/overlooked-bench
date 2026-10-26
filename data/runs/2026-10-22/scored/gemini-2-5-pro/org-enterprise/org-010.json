@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces direct guidance for factory owners, not analysis for the association. It includes concrete components: a 6-step plan with specific actions (e.g., 'assign responsible person', 'gather documents'), templates for policies, a self-assessment checklist, and an improvement plan table. It is usable with light editing (e.g., filling in dates/names) and avoids describing process instead of delivering the product.",
+    "constraint_fidelity": "The prompt's constraints: small Bangladeshi textile factories, limited administrative capacity, cannot afford consultants. The response respects all constraints: assigns responsibility to existing staff ('factory owner or trusted manager'), emphasizes zero-cost steps ('Cost: 0'), provides practical self-assessment instead of consultant reliance, and focuses on collective association support. It does not assume external resources or violate budget constraints.",
+    "contextual_realism": "The response assumes no dedicated compliance roles ('doesn't need to be a new hire'), uses simple tools ('physical file or folder on computer'), acknowledges role overlap ('factory owner or manager'), and provides low-overhead steps like one-page policies. It avoids presupposing HR, legal, or data teams, and recognizes small-factory realities like limited documentation and supplier engagement challenges.",
+    "jurisdictional_accuracy": "The response correctly references Bangladesh law ('following Bangladesh law for wages, working hours, and safety') and avoids US assumptions. It does not make jurisdiction-specific legal claims beyond general alignment with local laws, and appropriately focuses on practical steps rather than legal interpretation. It does not assert US defaults (e.g., no mention of at-will employment or US tax categories). Since the prompt involves regulatory compliance, the response handles it generically but accurately for the context."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00113912,
+  "judge_latency_s": 49.559,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's constraints: small Bangladeshi textile factories, limited administrative capacity, cannot afford consultants. The response respects all constraints: assigns responsibility to existing staff ('factory owner or trusted manager'), emphasizes zero-cost steps ('Cost: 0'), provides practical self-assessment instead of consultant reliance, and focuses on collective association support. It does not assume external resources or violate budget constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes no dedicated compliance roles ('doesn't need to be a new hire'), uses simple tools ('physical file or folder on computer'), acknowledges role overlap ('factory owner or manager'), and provides low-overhead steps like one-page policies. It avoids presupposing HR, legal, or data teams, and recognizes small-factory realities like limited documentation and supplier engagement challenges.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces direct guidance for factory owners, not analysis for the association. It includes concrete components: a 6-step plan with specific actions (e.g., 'assign responsible person', 'gather documents'), templates for policies, a self-assessment checklist, and an improvement plan table. It is usable with light editing (e.g., filling in dates/names) and avoids describing process instead of delivering the product.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly references Bangladesh law ('following Bangladesh law for wages, working hours, and safety') and avoids US assumptions. It does not make jurisdiction-specific legal claims beyond general alignment with local laws, and appropriately focuses on practical steps rather than legal interpretation. It does not assert US defaults (e.g., no mention of at-will employment or US tax categories). Since the prompt involves regulatory compliance, the response handles it generically but accurately for the context.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response excels in providing practical, zero-cost guidance tailored to small Bangladeshi factories with limited resources.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response excels in providing practical, zero-cost guidance tailored to small Bangladeshi factories with limited resources.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

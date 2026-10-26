@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response specifically addresses access considerations: 'Disproportionately affects SEN support, disadvantaged pupils, and early reading interventions' in Option B, and mentions 'Loses flexibility for setting, intervention groups, or SEN support' in Option A. It shows concrete understanding of how budget cuts impact vulnerable student groups.",
+    "pathway_breadth": "This item does not involve student pathway guidance - it's about staffing budget reduction options. The response appropriately focuses on administrative and operational considerations rather than educational pathways, which is correct for this prompt.",
+    "pedagogical_soundness": "This is an administrative/budgetary options paper, not a pedagogical plan. There are no learning objectives, activities, assessments, or rubrics mentioned. The response does not engage with pedagogical elements at all.",
+    "workload_realism": "The response demonstrates realistic workload considerations: 'Increases marking, planning and pastoral load per teacher by ~7%' in Option A, 'Increases behaviour management burden on class teachers' in Option B, and 'Risk of leadership burnout' in Option C. It accounts for class size constraints and resource limitations specific to the 400-pupil primary school context."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00095574,
+  "judge_latency_s": 34.213,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This is an administrative/budgetary options paper, not a pedagogical plan. There are no learning objectives, activities, assessments, or rubrics mentioned. The response does not engage with pedagogical elements at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response demonstrates realistic workload considerations: 'Increases marking, planning and pastoral load per teacher by ~7%' in Option A, 'Increases behaviour management burden on class teachers' in Option B, and 'Risk of leadership burnout' in Option C. It accounts for class size constraints and resource limitations specific to the 400-pupil primary school context.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student pathway guidance - it's about staffing budget reduction options. The response appropriately focuses on administrative and operational considerations rather than educational pathways, which is correct for this prompt.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response specifically addresses access considerations: 'Disproportionately affects SEN support, disadvantaged pupils, and early reading interventions' in Option B, and mentions 'Loses flexibility for setting, intervention groups, or SEN support' in Option A. It shows concrete understanding of how budget cuts impact vulnerable student groups.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a comprehensive, realistic options paper that meets all the prompt requirements while demonstrating understanding of educational constraints and impacts.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response provides a comprehensive, realistic options paper that meets all the prompt requirements while demonstrating understanding of educational constraints and impacts.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 63.75
+}

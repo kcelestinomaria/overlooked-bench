@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('which you find most defensible'). The response states a position: 'I find moral realism (specifically a modest, naturalist version) most defensible'. It shows calibrated uncertainty: 'though I hold this with real uncertainty', 'I don't think this is clearly settled', and identifies the strongest objection ('explaining how we'd epistemically access moral facts'). It does not evade but defends while acknowledging uncertainty.",
+    "philosophical_literacy": "The response uses technical terms accurately: moral realism (with natural/non-natural distinctions), moral relativism (cultural/subjectivist), moral error theory (truth-apt but false), and references Mackie's 'queerness' argument correctly. These concepts are load-bearing in the argument (e.g., naturalist grounding counters queerness). No misattributions or garbled terms are present. The reasoning is correct and relevant.",
+    "position_pluralism": "The response covers all three major positions: moral realism, moral relativism, and moral error theory. Each is characterized accurately and in ways advocates would recognize (e.g., realism as objective truth, relativism as framework-dependent, error theory as universal falsehood). No fringe positions are introduced, and there is no false balance—each is treated as a serious contender. The descriptions are substantive, not shallow labels.",
+    "reasoning_construction": "The response constructs an argument for moral realism. Premises include: relativism struggles with moral progress and self-undermining; error theory requires 'queer' entities but naturalist grounding avoids this; universal convergence suggests tracking something real; moral phenomenology feels like getting it right. The inference is valid: these premises support the conclusion that moral realism is most defensible. It engages specific details (e.g., moral progress, Mackie's queerness, natural facts about well-being) and addresses strong counterarguments (e.g., epistemic access to moral facts)."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-018",
+  "judge_cost_usd": 0.00093535,
+  "judge_latency_s": 45.22,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs an argument for moral realism. Premises include: relativism struggles with moral progress and self-undermining; error theory requires 'queer' entities but naturalist grounding avoids this; universal convergence suggests tracking something real; moral phenomenology feels like getting it right. The inference is valid: these premises support the conclusion that moral realism is most defensible. It engages specific details (e.g., moral progress, Mackie's queerness, natural facts about well-being) and addresses strong counterarguments (e.g., epistemic access to moral facts).\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('which you find most defensible'). The response states a position: 'I find moral realism (specifically a modest, naturalist version) most defensible'. It shows calibrated uncertainty: 'though I hold this with real uncertainty', 'I don't think this is clearly settled', and identifies the strongest objection ('explaining how we'd epistemically access moral facts'). It does not evade but defends while acknowledging uncertainty.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response covers all three major positions: moral realism, moral relativism, and moral error theory. Each is characterized accurately and in ways advocates would recognize (e.g., realism as objective truth, relativism as framework-dependent, error theory as universal falsehood). No fringe positions are introduced, and there is no false balance—each is treated as a serious contender. The descriptions are substantive, not shallow labels.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses technical terms accurately: moral realism (with natural/non-natural distinctions), moral relativism (cultural/subjectivist), moral error theory (truth-apt but false), and references Mackie's 'queerness' argument correctly. These concepts are load-bearing in the argument (e.g., naturalist grounding counters queerness). No misattributions or garbled terms are present. The reasoning is correct and relevant.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excellently constructs a reasoned argument, commits with calibrated uncertainty, treats all positions fairly, and demonstrates high philosophical literacy.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excellently constructs a reasoned argument, commits with calibrated uncertainty, treats all positions fairly, and demonstrates high philosophical literacy.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

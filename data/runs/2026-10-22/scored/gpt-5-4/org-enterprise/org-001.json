@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a hiring plan with roles (Programme Manager, Field Officer, etc.), sequence (Month 1: approve structure, Month 1-2: hire Programme Manager, etc.), salary bands in KES (e.g., Programme Manager 180,000–230,000), employer on-costs (NSSF 6%, NITA levy), and arithmetic (e.g., lean option totals KES 15,370,000). It includes concrete components like phased start dates and contracting models, and could be used in a meeting with light editing.",
+    "constraint_fidelity": "The response explicitly respects all constraints: uses USD 180,000 grant with 15% indirect cost cap (KES 4,050,000 indirect, KES 22,950,000 direct), acknowledges no dedicated HR (ED handles hiring), provides detailed arithmetic for both initial and lean options (e.g., lean option totals KES 15,370,000 staffing cost within KES 22,950,000 envelope), and adjusts roles to fit budget. It does not silently violate constraints but justifies leaner staffing to preserve programme funds.",
+    "contextual_realism": "The response is calibrated for a small Kenyan NGO: avoids US assumptions (no equity compensation, ATS, or recruiter role), uses part-time/admin support instead of dedicated HR, acknowledges role overlap (Finance Officer handles some HR tasks), uses casual/consultant labor for flexibility, and notes ED's hiring capacity limits (recommends recruitment panel and safeguards). However, it assumes a Finance Officer role without confirming if existing staff can cover it, slightly overestimating capacity.",
+    "jurisdictional_accuracy": "The response accurately addresses Kenyan jurisdiction: uses KES salary bands (e.g., Field Officer 90,000–130,000), identifies employer statutory costs (NSSF 6%, NITA levy), notes NHIF/SHIF evolution and avoids US defaults (no US benefits), and provides specific referrals (e.g., 'confirm with a Kenyan payroll practitioner'). It does not make confidently wrong claims and flags where local advice is needed, though it could be more precise on NHIF/SHIF handling."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00189429,
+  "judge_latency_s": 47.771,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: uses USD 180,000 grant with 15% indirect cost cap (KES 4,050,000 indirect, KES 22,950,000 direct), acknowledges no dedicated HR (ED handles hiring), provides detailed arithmetic for both initial and lean options (e.g., lean option totals KES 15,370,000 staffing cost within KES 22,950,000 envelope), and adjusts roles to fit budget. It does not silently violate constraints but justifies leaner staffing to preserve programme funds.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Kenyan NGO: avoids US assumptions (no equity compensation, ATS, or recruiter role), uses part-time/admin support instead of dedicated HR, acknowledges role overlap (Finance Officer handles some HR tasks), uses casual/consultant labor for flexibility, and notes ED's hiring capacity limits (recommends recruitment panel and safeguards). However, it assumes a Finance Officer role without confirming if existing staff can cover it, slightly overestimating capacity.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a hiring plan with roles (Programme Manager, Field Officer, etc.), sequence (Month 1: approve structure, Month 1-2: hire Programme Manager, etc.), salary bands in KES (e.g., Programme Manager 180,000–230,000), employer on-costs (NSSF 6%, NITA levy), and arithmetic (e.g., lean option totals KES 15,370,000). It includes concrete components like phased start dates and contracting models, and could be used in a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses Kenyan jurisdiction: uses KES salary bands (e.g., Field Officer 90,000–130,000), identifies employer statutory costs (NSSF 6%, NITA levy), notes NHIF/SHIF evolution and avoids US defaults (no US benefits), and provides specific referrals (e.g., 'confirm with a Kenyan payroll practitioner'). It does not make confidently wrong claims and flags where local advice is needed, though it could be more precise on NHIF/SHIF handling.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a detailed, context-aware hiring plan with robust arithmetic and Kenyan jurisdictional accuracy, though it slightly overestimates organisational capacity in one area.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response provides a detailed, context-aware hiring plan with robust arithmetic and Kenyan jurisdictional accuracy, though it slightly overestimates organisational capacity in one area.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

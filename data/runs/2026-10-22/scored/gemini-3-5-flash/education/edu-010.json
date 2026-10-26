@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the range of learners by considering non-native English speakers (e.g., encouraging grammar tools for Indonesian students writing in English) and proposes low-cost, scalable adaptations like oral defenses and version history checks. It also includes an amnesty policy to support honesty without excessive burden. However, it does not explicitly address other potential diversities (e.g., prior attainment, additional needs, material constraints like internet access), though the strategies are generally implementable by one lecturer with TA support.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is about academic integrity policy and enforcement. The response is inclusive of the learner context by addressing non-native English speakers (e.g., Indonesian students) and proposing strategies like grammar correction support and localized assignments, which account for the specific student population. It does not default to a US-centric approach and tailors recommendations to the Indonesian educational context.",
+    "pedagogical_soundness": "The response provides a clear policy framework with a 'Traffic Light' system (Permitted, Restricted, Prohibited) and specific examples for each category, aligning with the objective of ethical AI use. It includes a disclosure framework for restricted uses, which helps students self-assess and promotes transparency. The enforcement strategy focuses on assessment redesign (e.g., localized contexts, multi-stage submissions) to discourage AI misuse and encourage genuine learning, which is pedagogically sound. However, it lacks explicit learning objectives for students, though the policy itself serves as an educational tool.",
+    "workload_realism": "The response acknowledges the challenge of enforcing the policy for 200 students and proposes scalable strategies: leveraging teaching assistants (Asisten Dosen) for triage, random and targeted oral defenses (micro-vivas) for 10% of students, using LMS version history checks, and an amnesty policy to reduce formal hearings. These are realistic for an Indonesian university setting with typical TA support. However, the oral defenses for 20 students (random 10%) and additional targeted checks may still require significant time, and the reliance on TAs assumes their availability, which is plausible but not fully quantified."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 3,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00119942,
+  "judge_latency_s": 49.028,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides a clear policy framework with a 'Traffic Light' system (Permitted, Restricted, Prohibited) and specific examples for each category, aligning with the objective of ethical AI use. It includes a disclosure framework for restricted uses, which helps students self-assess and promotes transparency. The enforcement strategy focuses on assessment redesign (e.g., localized contexts, multi-stage submissions) to discourage AI misuse and encourage genuine learning, which is pedagogically sound. However, it lacks explicit learning objectives for students, though the policy itself serves as an educational tool.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response acknowledges the challenge of enforcing the policy for 200 students and proposes scalable strategies: leveraging teaching assistants (Asisten Dosen) for triage, random and targeted oral defenses (micro-vivas) for 10% of students, using LMS version history checks, and an amnesty policy to reduce formal hearings. These are realistic for an Indonesian university setting with typical TA support. However, the oral defenses for 20 students (random 10%) and additional targeted checks may still require significant time, and the reliance on TAs assumes their availability, which is plausible but not fully quantified.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is about academic integrity policy and enforcement. The response is inclusive of the learner context by addressing non-native English speakers (e.g., Indonesian students) and proposing strategies like grammar correction support and localized assignments, which account for the specific student population. It does not default to a US-centric approach and tailors recommendations to the Indonesian educational context.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the range of learners by considering non-native English speakers (e.g., encouraging grammar tools for Indonesian students writing in English) and proposes low-cost, scalable adaptations like oral defenses and version history checks. It also includes an amnesty policy to support honesty without excessive burden. However, it does not explicitly address other potential diversities (e.g., prior attainment, additional needs, material constraints like internet access), though the strategies are generally implementable by one lecturer with TA support.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a concrete, scalable policy and enforcement strategy tailored to an Indonesian university context, with a strong focus on prevention through assessment design.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a concrete, scalable policy and enforcement strategy tailored to an Indonesian university context, with a strong focus on prevention through assessment design.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

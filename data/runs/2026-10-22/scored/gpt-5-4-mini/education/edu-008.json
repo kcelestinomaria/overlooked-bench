@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response implicitly addresses learner range through activities like small group work and oral explanations, which can support varying prior attainment and language needs (e.g., using local languages). However, it does not explicitly mention differentiation for additional needs, language barriers, or material constraints (e.g., no home internet). While the proposed adaptations (e.g., reasoning aloud, structured use of manuals) are low-cost and implementable by one practitioner, there is no concrete differentiation strategy outlined, such as for students struggling with diagnostics or communication.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it focuses on module redesign for vocational training. The response is inclusive of the learners in this setting (vocational students in Morocco) by emphasizing practical, hands-on skills relevant to automotive repair careers, and it uses language appropriate for the context (e.g., Arabic or French for customer communication). It does not default to academic routes and stays focused on vocational competence.",
+    "pedagogical_soundness": "The response clearly states learning objectives: systematic diagnosis of unfamiliar faults and effective customer communication. Activities like problem-based learning with unfamiliar faults, reasoning aloud, and structured use of technical information directly build diagnostic reasoning. Assessment includes unknown-fault scenarios and oral explanations that measure these objectives at appropriate cognitive levels (application and explanation). Sequencing is logical: teaching diagnostic process first, then applying it in cases, and assessing with similar scenarios. The rubric criteria (e.g., symptom identification, testing strategy, clarity) are observable and distinguishable.",
+    "workload_realism": "The response assumes a vocational workshop setting with existing equipment (diagnostic tools, manuals, vehicles) which is realistic. Activities like small group work, oral explanations, and brief written reflections are feasible with typical class sizes and resources. No additional materials or technology beyond what a Moroccan automotive center would have are required. Preparation involves creating unfamiliar fault scenarios, which is manageable, and marking includes practical and oral components, but the load is proportionate if integrated into regular assessment cycles."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-008",
+  "judge_cost_usd": 0.00100617,
+  "judge_latency_s": 50.789,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response clearly states learning objectives: systematic diagnosis of unfamiliar faults and effective customer communication. Activities like problem-based learning with unfamiliar faults, reasoning aloud, and structured use of technical information directly build diagnostic reasoning. Assessment includes unknown-fault scenarios and oral explanations that measure these objectives at appropriate cognitive levels (application and explanation). Sequencing is logical: teaching diagnostic process first, then applying it in cases, and assessing with similar scenarios. The rubric criteria (e.g., symptom identification, testing strategy, clarity) are observable and distinguishable.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response assumes a vocational workshop setting with existing equipment (diagnostic tools, manuals, vehicles) which is realistic. Activities like small group work, oral explanations, and brief written reflections are feasible with typical class sizes and resources. No additional materials or technology beyond what a Moroccan automotive center would have are required. Preparation involves creating unfamiliar fault scenarios, which is manageable, and marking includes practical and oral components, but the load is proportionate if integrated into regular assessment cycles.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it focuses on module redesign for vocational training. The response is inclusive of the learners in this setting (vocational students in Morocco) by emphasizing practical, hands-on skills relevant to automotive repair careers, and it uses language appropriate for the context (e.g., Arabic or French for customer communication). It does not default to academic routes and stays focused on vocational competence.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response implicitly addresses learner range through activities like small group work and oral explanations, which can support varying prior attainment and language needs (e.g., using local languages). However, it does not explicitly mention differentiation for additional needs, language barriers, or material constraints (e.g., no home internet). While the proposed adaptations (e.g., reasoning aloud, structured use of manuals) are low-cost and implementable by one practitioner, there is no concrete differentiation strategy outlined, such as for students struggling with diagnostics or communication.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a highly practical and pedagogically sound redesign focused on developing diagnostic reasoning and customer communication skills in a vocational context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a highly practical and pedagogically sound redesign focused on developing diagnostic reasoning and customer communication skills in a vocational context.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the learner range (students with varying French proficiency and home languages). It provides specific, low-cost differentiation strategies: using visuals, gestures, routines, partner talk, sentence starters, pre-teaching vocabulary, allowing oral responses, and fair assessment adaptations. These are implementable by one teacher with no assistant and no knowledge of home languages. It avoids generic placeholder language and offers actionable steps (e.g., 'Use gestures, facial expressions, pictures, real objects,' 'Give sentence starters').",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it focuses on classroom support for language learners. The response is inclusive of the range of learners described (Arabic, Spanish, Tagalog speakers in a French-instruction setting). It addresses differing language proficiencies and provides concrete differentiation strategies (e.g., visual supports, partner talk, sentence starters) that are implementable by one teacher. It treats home languages as assets and avoids deficit thinking.",
+    "pedagogical_soundness": "The response provides clear learning objectives implicitly: making French comprehensible, supporting speaking without pressure, building on prior knowledge, and fair assessment. Activities align with objectives (e.g., using gestures and visuals for comprehensibility, partner talk for speaking support). Assessment guidance focuses on separating language from content knowledge, which aligns with the objective of fair evaluation. Sequencing is logical, starting with core principles and moving to specific strategies. No rubric is provided, so criterion 5 is not applicable. The strategies are educationally sound and appropriate for primary students.",
+    "workload_realism": "The strategies are designed for one teacher with no assistant and no knowledge of home languages. They rely on low-cost, implementable actions like using gestures, visuals, routines, partner talk, and sentence starters. No materials are suggested that require printing budgets, technology, or bilingual staff. Preparation time is reasonable (e.g., pre-teaching vocabulary, creating visual supports). Marking load is addressed by allowing oral responses and visuals. Class size feasibility is considered through partner work and whole-class routines. Timings are not explicitly summed, but the strategies are scalable to a typical primary school lesson."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.0010662,
+  "judge_latency_s": 54.598,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives implicitly: making French comprehensible, supporting speaking without pressure, building on prior knowledge, and fair assessment. Activities align with objectives (e.g., using gestures and visuals for comprehensibility, partner talk for speaking support). Assessment guidance focuses on separating language from content knowledge, which aligns with the objective of fair evaluation. Sequencing is logical, starting with core principles and moving to specific strategies. No rubric is provided, so criterion 5 is not applicable. The strategies are educationally sound and appropriate for primary students.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The strategies are designed for one teacher with no assistant and no knowledge of home languages. They rely on low-cost, implementable actions like using gestures, visuals, routines, partner talk, and sentence starters. No materials are suggested that require printing budgets, technology, or bilingual staff. Preparation time is reasonable (e.g., pre-teaching vocabulary, creating visual supports). Marking load is addressed by allowing oral responses and visuals. Class size feasibility is considered through partner work and whole-class routines. Timings are not explicitly summed, but the strategies are scalable to a typical primary school lesson.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it focuses on classroom support for language learners. The response is inclusive of the range of learners described (Arabic, Spanish, Tagalog speakers in a French-instruction setting). It addresses differing language proficiencies and provides concrete differentiation strategies (e.g., visual supports, partner talk, sentence starters) that are implementable by one teacher. It treats home languages as assets and avoids deficit thinking.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the learner range (students with varying French proficiency and home languages). It provides specific, low-cost differentiation strategies: using visuals, gestures, routines, partner talk, sentence starters, pre-teaching vocabulary, allowing oral responses, and fair assessment adaptations. These are implementable by one teacher with no assistant and no knowledge of home languages. It avoids generic placeholder language and offers actionable steps (e.g., 'Use gestures, facial expressions, pictures, real objects,' 'Give sentence starters').\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides highly specific, practical, and context-aware strategies that are immediately usable by a teacher in the described setting.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response provides highly specific, practical, and context-aware strategies that are immediately usable by a teacher in the described setting.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

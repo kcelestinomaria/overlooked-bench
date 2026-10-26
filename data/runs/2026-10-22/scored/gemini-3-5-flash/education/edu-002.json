@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response implicitly addresses learner range through the rubric bands (e.g., accommodating varying language proficiency with 'Error Density' levels) and the code key provides actionable feedback for improvement. However, it does not explicitly mention differentiation for prior attainment, additional needs, or language barriers beyond the rubric criteria. The adaptations (e.g., code key) are low-cost and implementable by one teacher.",
+    "pathway_breadth": "The prompt does not involve student futures or pathway guidance; it focuses on essay marking. The response is inclusive by being designed for all Grade 11 students in South Africa (aligning with CAPS for both HL and FAL) and does not exclude any learner types relevant to the setting.",
+    "pedagogical_soundness": "The rubric includes observable criteria (e.g., 'Clear, consistent thesis', 'Integrates a strong counter-argument', 'Error density') and distinguishable levels (e.g., Outstanding vs. Meritorious bands). It aligns with CAPS guidelines for South African Grade 11 argumentative writing, focusing on argument structure, language, and formatting. The assessment measures the stated objectives through specific descriptors and a structured marking process.",
+    "workload_realism": "The response explicitly addresses the 120-essay constraint: '6 hours of active marking' with a '3-minute marking process' per essay (120 essays * 3 min = 360 min = 6 hours), which is realistic for a weekend. It provides concrete time management advice (batching, breaks) and avoids excessive commenting by using codes. Materials are minimal (rubric, code key), and no additional resources are assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00108583,
+  "judge_latency_s": 40.092,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The rubric includes observable criteria (e.g., 'Clear, consistent thesis', 'Integrates a strong counter-argument', 'Error density') and distinguishable levels (e.g., Outstanding vs. Meritorious bands). It aligns with CAPS guidelines for South African Grade 11 argumentative writing, focusing on argument structure, language, and formatting. The assessment measures the stated objectives through specific descriptors and a structured marking process.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses the 120-essay constraint: '6 hours of active marking' with a '3-minute marking process' per essay (120 essays * 3 min = 360 min = 6 hours), which is realistic for a weekend. It provides concrete time management advice (batching, breaks) and avoids excessive commenting by using codes. Materials are minimal (rubric, code key), and no additional resources are assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt does not involve student futures or pathway guidance; it focuses on essay marking. The response is inclusive by being designed for all Grade 11 students in South Africa (aligning with CAPS for both HL and FAL) and does not exclude any learner types relevant to the setting.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response implicitly addresses learner range through the rubric bands (e.g., accommodating varying language proficiency with 'Error Density' levels) and the code key provides actionable feedback for improvement. However, it does not explicitly mention differentiation for prior attainment, additional needs, or language barriers beyond the rubric criteria. The adaptations (e.g., code key) are low-cost and implementable by one teacher.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides a highly practical and realistic rubric and marking process tailored to South African Grade 11 constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response provides a highly practical and realistic rubric and marking process tailored to South African Grade 11 constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

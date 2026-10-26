@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states its position: 'No. Moral responsibility does not require libertarian free will.' It defends this with reasons and acknowledges uncertainty in the 'A concession' section: 'compatibilists may secure accountability and attributability more easily than they secure the strongest notion of basic desert.' It is honest about disagreement and what would satisfy the opposing view, showing calibrated uncertainty rather than evasion.",
+    "philosophical_literacy": "The response accurately invokes technical terms: libertarian free will, determinism, compatibilism, reasons-responsiveness, quality of will (Strawson), basic desert, historical compatibilism. It correctly distinguishes these concepts and uses them load-bearingly in the argument, e.g., 'compatibilists often interpret the relevant ability as: the agent would have done otherwise if they had had sufficiently different reasons.' No misattributions or garbled terms are present.",
+    "position_pluralism": "The response accurately represents libertarianism (including the ultimacy argument and Galen Strawson's basic argument) and hard incompatibilism. It characterizes these views as their advocates would recognize, e.g., 'if every choice is fully explained by factors outside the agent’s control... then the agent is never the ultimate source of action.' It does not strawman or omit major positions, and it avoids false balance by not presenting fringe views as equally weighty.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is 'No. Moral responsibility does not require libertarian free will' (compatibilist position). Premises include: responsibility requires reasons-responsive agency rather than indeterminism; distinctions like coercion vs voluntary action matter; indeterminism doesn't enhance control; conditional 'could have done otherwise' suffices. It engages specifics by addressing the ultimacy argument and Strawson's basic argument, and responds to the strongest libertarian challenge about ultimate sourcehood. The inference from premises to conclusion is valid and well-developed."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-004",
+  "judge_cost_usd": 0.00121348,
+  "judge_latency_s": 43.891,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is 'No. Moral responsibility does not require libertarian free will' (compatibilist position). Premises include: responsibility requires reasons-responsive agency rather than indeterminism; distinctions like coercion vs voluntary action matter; indeterminism doesn't enhance control; conditional 'could have done otherwise' suffices. It engages specifics by addressing the ultimacy argument and Strawson's basic argument, and responds to the strongest libertarian challenge about ultimate sourcehood. The inference from premises to conclusion is valid and well-developed.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states its position: 'No. Moral responsibility does not require libertarian free will.' It defends this with reasons and acknowledges uncertainty in the 'A concession' section: 'compatibilists may secure accountability and attributability more easily than they secure the strongest notion of basic desert.' It is honest about disagreement and what would satisfy the opposing view, showing calibrated uncertainty rather than evasion.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response accurately represents libertarianism (including the ultimacy argument and Galen Strawson's basic argument) and hard incompatibilism. It characterizes these views as their advocates would recognize, e.g., 'if every choice is fully explained by factors outside the agent’s control... then the agent is never the ultimate source of action.' It does not strawman or omit major positions, and it avoids false balance by not presenting fringe views as equally weighty.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response accurately invokes technical terms: libertarian free will, determinism, compatibilism, reasons-responsiveness, quality of will (Strawson), basic desert, historical compatibilism. It correctly distinguishes these concepts and uses them load-bearingly in the argument, e.g., 'compatibilists often interpret the relevant ability as: the agent would have done otherwise if they had had sufficiently different reasons.' No misattributions or garbled terms are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates excellent constructed argumentation, clear commitment, fair treatment of opposing views, and high philosophical accuracy.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates excellent constructed argumentation, clear commitment, fair treatment of opposing views, and high philosophical accuracy.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

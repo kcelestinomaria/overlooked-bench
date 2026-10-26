@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 401,
+  "cost_usd": 0.00081439,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "6bfb84015aab2a3a",
+  "item_id": "cal-006",
+  "latency_s": 12.8,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 117,
+  "provider": "deepseek",
+  "request_fingerprint": "a690323c70f440ad",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "Let’s go step by step.  \n\nWe have 5 positions: **1** (leftmost) to **5** (rightmost).  \n\n---\n\n**Clues:**\n\n1. *The blue book is the leftmost.*  \n   → Position 1 = Blue.\n\n2. *The red book is the rightmost.*  \n   → Position 5 = Red.\n\n3. *The green book is somewhere to the right of the white book.*  \n   → White is left of Green (not necessarily adjacent).\n\n4. *The purple book is somewhere to the left of the white book.*  \n   → Purple is left of White.\n\nFrom (3) and (4):  \nPurple < White < Green.  \nSo order: Purple … White … Green.\n\n---\n\n**Possible positions:**\n\nWe know:  \nBlue (1), Red (5).  \nPurple < White < Green.  \nSo Purple must be in position 2 or 3 (since Purple < White and Blue is already in 1).  \nWhite must be in position 3 or 4 (since White < Green and Green can’t be in 5 because Red is there).  \nGreen must be in position 4 (since White < Green and Red is 5).  \n\nIf Green is 4, then White must be 3 (because White < Green).  \nIf White is 3, then Purple must be 2 (because Purple < White and Blue is 1).  \n\n---\n\n**Fill in:**\n\nPosition 1: Blue  \nPosition 2: Purple  \nPosition 3: White  \nPosition 4: Green  \nPosition 5: Red  \n\nCheck all conditions:  \n- Green (4) is right of White (3) ✓  \n- Blue is leftmost ✓  \n- Purple (2) is left of White (3) ✓  \n- Red is rightmost ✓  \n\n---\n\n**Third from the left** is position 3 → White book.  \n\nANSWER: white",
+  "timestamp_utc": "2026-10-21T23:56:01Z"
+}

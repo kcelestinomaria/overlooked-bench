@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The policy includes the principle 'Fairness: All students should have equal understanding of permitted tools and practices' and implements preventive measures like 'syllabus integration' and 'mandatory online quiz' to ensure accessibility. However, it doesn't address specific learner differences such as language barriers, prior attainment, or material constraints (e.g., access to technology for disclosure forms). The response is generic in addressing learner diversity beyond the policy's scope.",
+    "pathway_breadth": "The prompt involves an academic integrity policy, not student futures or pathways. As per rubric note: 'If the item does not involve pathway guidance, score this dimension on whether the response is inclusive of the range of learners in the described setting'. The policy includes principles of 'Fairness: All students should have equal understanding' and addresses enforcement through educational measures, but doesn't specifically address diverse learner needs beyond the academic integrity context.",
+    "pedagogical_soundness": "This is a policy document, not a teaching plan with learning objectives, activities, and assessments. The rubric's evaluation steps (identifying learning objectives, checking activity alignment, assessing cognitive level) are not applicable here. The response does not engage with pedagogical design elements.",
+    "workload_realism": "The response addresses enforcement for 200 students with concrete measures: 'mandatory online quiz', 'standardized form on submission portal', 'targeted investigation' based on inconsistencies, and 'show your work' interviews. It acknowledges scale by using 'preliminary screening' rather than full detection and focuses on 'targeted investigation'. The preventive measures like syllabus integration and assignment-specific instructions are front-loaded and scalable. However, conducting 'show your work' interviews for 200 students might be impractical without additional staffing, though it's presented as targeted rather than universal."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 0,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00102367,
+  "judge_latency_s": 12.802,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This is a policy document, not a teaching plan with learning objectives, activities, and assessments. The rubric's evaluation steps (identifying learning objectives, checking activity alignment, assessing cognitive level) are not applicable here. The response does not engage with pedagogical design elements.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response addresses enforcement for 200 students with concrete measures: 'mandatory online quiz', 'standardized form on submission portal', 'targeted investigation' based on inconsistencies, and 'show your work' interviews. It acknowledges scale by using 'preliminary screening' rather than full detection and focuses on 'targeted investigation'. The preventive measures like syllabus integration and assignment-specific instructions are front-loaded and scalable. However, conducting 'show your work' interviews for 200 students might be impractical without additional staffing, though it's presented as targeted rather than universal.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves an academic integrity policy, not student futures or pathways. As per rubric note: 'If the item does not involve pathway guidance, score this dimension on whether the response is inclusive of the range of learners in the described setting'. The policy includes principles of 'Fairness: All students should have equal understanding' and addresses enforcement through educational measures, but doesn't specifically address diverse learner needs beyond the academic integrity context.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The policy includes the principle 'Fairness: All students should have equal understanding of permitted tools and practices' and implements preventive measures like 'syllabus integration' and 'mandatory online quiz' to ensure accessibility. However, it doesn't address specific learner differences such as language barriers, prior attainment, or material constraints (e.g., access to technology for disclosure forms). The response is generic in addressing learner diversity beyond the policy's scope.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"A comprehensive and practical AI policy with realistic enforcement strategies for large classes, though it lacks specific differentiation for diverse learners.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A comprehensive and practical AI policy with realistic enforcement strategies for large classes, though it lacks specific differentiation for diverse learners.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 41.25
+}

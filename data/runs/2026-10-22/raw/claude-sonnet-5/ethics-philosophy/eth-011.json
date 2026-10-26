@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1068,
+  "cost_usd": 0.010876,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "9f73e657883b7fda",
+  "item_id": "eth-011",
+  "latency_s": 14.548,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 98,
+  "provider": "anthropic",
+  "request_fingerprint": "21b49f2f55004167",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Recommendation: Favor the Blind Process, with a Caveat\n\n**My recommendation is to default to a fully blind process, but to pair it with deliberate structural changes to *sourcing and outreach* rather than to *evaluation*.**\n\nHere's the reasoning:\n\n## Why blind evaluation is the stronger default\n\n**1. It achieves the goal it claims to achieve.**\nBlind processes reduce the influence of bias (conscious or not) on judgments of merit. If the problem is \"qualified candidates from underrepresented groups are being evaluated unfairly,\" blinding the evaluator directly fixes that mechanism. Weighting by demographics addresses the *symptom* (unequal outcomes) without necessarily fixing the *cause* (biased evaluation), and can mask whether bias was ever actually removed.\n\n**2. It's more durable and defensible.**\nLegal permissibility today doesn't guarantee permissibility tomorrow — demographic-weighting policies are more likely to face legal challenges, political reversals, or reputational attacks than blind processes, which are hard to criticize on fairness grounds from any direction.\n\n**3. It avoids a credibility cost to the people it's meant to help.**\nExplicit weighting invites the (often false, but corrosive) inference that a hire was \"the diversity pick\" rather than \"the best candidate.\" This can undermine colleagues' trust in the hire and the hire's own confidence — a cost blind processes don't carry.\n\n**4. It's easier to audit and scale.**\nBlind criteria (skills tests, structured interviews, anonymized resumes) are consistent and replicable. Demographic weighting requires ongoing judgment calls about *how much* weight, *which* groups, and *why* — decisions that are harder to standardize and easier to apply inconsistently.\n\n## The caveat: blind evaluation ≠ blind sourcing\n\nA purely blind process only works well if the *applicant pool* is already diverse and representative. If underrepresented candidates aren't applying in the first place — due to network effects, biased job ads, or narrow sourcing channels — blind evaluation of a skewed pool just launders a biased outcome through a fair-looking process.\n\nSo the real fix is usually **upstream, not downstream**:\n- Actively diversify sourcing channels (different schools, networks, job boards, referral pipelines).\n- Rewrite job descriptions to avoid unnecessarily exclusionary language/requirements.\n- Ensure outreach actively invites applications from underrepresented groups.\n- *Then* evaluate everyone blindly once they're in the pool.\n\n## When demographic weighting might still make sense\n\nIf she's tried the above and structural barriers still produce clearly inequitable outcomes, or if there's a specific, justifiable rationale (e.g., building a team that needs to reflect the population it serves, like a public health service), a modest tiebreaker — not a thumb on the overall scale — can be reasonable. But this should be the exception, explicitly justified, not the default tool.\n\n## Bottom line\n\n**Blind evaluation + diverse sourcing** gets closer to true fairness, is more defensible, and avoids undermining the candidates it's meant to help — without sacrificing the goal of a genuinely diverse and qualified pool.",
+  "timestamp_utc": "2026-10-21T23:30:13Z"
+}

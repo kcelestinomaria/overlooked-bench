@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance and value.",
+    "instruction_compliance": "The prompt requested 'Show your working' (which was done), and 'end your response with a final line in exactly this format: ANSWER: <number>'. The response ends with 'ANSWER: 21134.40', matching the exact format.",
+    "reasoning_validity": "The response shows working: calculates remaining mass correctly (4,800 × 0.85 = 4,080 kg), splits grades correctly (40% AA = 1,632 kg, 60% remainder = 2,448 kg), computes revenues correctly (1,632 × 6.20 = 10,118.40 and 2,448 × 4.50 = 11,016.00), and sums correctly (10,118.40 + 11,016.00 = 21,134.40). All steps are valid and support the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.0005689,
+  "judge_latency_s": 24.594,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance and value.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: calculates remaining mass correctly (4,800 × 0.85 = 4,080 kg), splits grades correctly (40% AA = 1,632 kg, 60% remainder = 2,448 kg), computes revenues correctly (1,632 × 6.20 = 10,118.40 and 2,448 × 4.50 = 11,016.00), and sums correctly (10,118.40 + 11,016.00 = 21,134.40). All steps are valid and support the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt requested 'Show your working' (which was done), and 'end your response with a final line in exactly this format: ANSWER: <number>'. The response ends with 'ANSWER: 21134.40', matching the exact format.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, well-reasoned, and perfectly compliant with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, well-reasoned, and perfectly compliant with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

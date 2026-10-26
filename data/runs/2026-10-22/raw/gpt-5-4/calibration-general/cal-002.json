@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 175,
+  "cost_usd": 0.002895,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 3.012,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 108,
+  "provider": "openai",
+  "request_fingerprint": "da487c17887253a6",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "Fresh coffee cherries: 4,800 kg\n\nLoss during drying:\n15% of 4,800 = 0.15 × 4,800 = 720 kg\n\nDried coffee remaining:\n4,800 − 720 = 4,080 kg\n\nAA grade coffee:\n40% of 4,080 = 0.40 × 4,080 = 1,632 kg\n\nOther coffee:\n4,080 − 1,632 = 2,448 kg\n\nRevenue from AA:\n1,632 × 6.20 = 10,118.40\n\nRevenue from other coffee:\n2,448 × 4.50 = 11,016.00\n\nTotal revenue:\n10,118.40 + 11,016.00 = 21,134.40\n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-10-21T23:39:00Z"
+}

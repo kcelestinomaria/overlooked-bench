@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 362,
+  "cost_usd": 0.003858,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "a3a44f19ee87a14d",
+  "item_id": "cal-003",
+  "latency_s": 5.386,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 119,
+  "provider": "anthropic",
+  "request_fingerprint": "c92675caf7ba1d8e",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "**Working:**\n\n- Pipe A fills the tank at a rate of 1/4 tank per hour.\n- Pipe B drains the tank at a rate of 1/6 tank per hour.\n\nSince they work against each other, the net rate when both are open is:\n\n$$\\text{Net rate} = \\frac{1}{4} - \\frac{1}{6}$$\n\nFind a common denominator (12):\n\n$$\\frac{1}{4} = \\frac{3}{12}, \\quad \\frac{1}{6} = \\frac{2}{12}$$\n\n$$\\text{Net rate} = \\frac{3}{12} - \\frac{2}{12} = \\frac{1}{12} \\text{ tank per hour}$$\n\n**Time to fill the tank:**\n\n$$\\text{Time} = \\frac{1 \\text{ tank}}{\\frac{1}{12} \\text{ tank/hour}} = 12 \\text{ hours}$$\n\nANSWER: 12",
+  "timestamp_utc": "2026-10-21T23:35:17Z"
+}

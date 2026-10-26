@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position. The response clearly states a position: 'I will argue that loyalty is a genuine virtue'. It defends this with reasons (e.g., role in relationships, distinction from blind loyalty) and acknowledges uncertainty implicitly by noting the need for reason and hierarchy, but does not explicitly state what would change its mind or where it is weakest. It avoids evasion and reaches a defended conclusion.",
+    "philosophical_literacy": "The response uses concepts like 'virtue', 'genuine virtue', 'hierarchy of moral commitments', and examples (whistleblower, soldier) without named thinkers or technical errors. It accurately defines a virtue as 'an excellent and stable character trait that is good in and of itself' and applies it correctly. The concepts are load-bearing (e.g., virtue theory supports the argument). No inaccuracies or misattributions are present.",
+    "position_pluralism": "Major live positions include: loyalty as a virtue (defended), loyalty as a disposition with contingent value (opposed), and perhaps skepticism about its moral status. The response primarily argues for loyalty as a virtue and characterizes the opposing view as missing loyalty's role and conflating it with blind loyalty, which is a fair representation. However, it does not fully explore or represent the disposition-based view in depth; it dismisses it rather than engaging it as a live position. No false balance is introduced.",
+    "reasoning_construction": "The response concludes that 'loyalty is a genuine virtue'. Premises include: loyalty is the bedrock of relationships and communities (citing friendship, family, society); the problem is blind loyalty, not loyalty itself; loyalty requires a hierarchy of commitments (whistleblower example); and loyalty is admired for its own sake (soldier example). The inference is valid: the conclusion depends on these premises, which engage with the specific scenario (e.g., distinguishing true loyalty from blind obedience, using concrete examples). It addresses the strongest counterargument (atrocities) by attributing them to perversion, not loyalty itself, though it could state the counterargument more fully. The argument is constructed, not just a list of positions."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-023",
+  "judge_cost_usd": 0.00104951,
+  "judge_latency_s": 52.8,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response concludes that 'loyalty is a genuine virtue'. Premises include: loyalty is the bedrock of relationships and communities (citing friendship, family, society); the problem is blind loyalty, not loyalty itself; loyalty requires a hierarchy of commitments (whistleblower example); and loyalty is admired for its own sake (soldier example). The inference is valid: the conclusion depends on these premises, which engage with the specific scenario (e.g., distinguishing true loyalty from blind obedience, using concrete examples). It addresses the strongest counterargument (atrocities) by attributing them to perversion, not loyalty itself, though it could state the counterargument more fully. The argument is constructed, not just a list of positions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position. The response clearly states a position: 'I will argue that loyalty is a genuine virtue'. It defends this with reasons (e.g., role in relationships, distinction from blind loyalty) and acknowledges uncertainty implicitly by noting the need for reason and hierarchy, but does not explicitly state what would change its mind or where it is weakest. It avoids evasion and reaches a defended conclusion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: loyalty as a virtue (defended), loyalty as a disposition with contingent value (opposed), and perhaps skepticism about its moral status. The response primarily argues for loyalty as a virtue and characterizes the opposing view as missing loyalty's role and conflating it with blind loyalty, which is a fair representation. However, it does not fully explore or represent the disposition-based view in depth; it dismisses it rather than engaging it as a live position. No false balance is introduced.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like 'virtue', 'genuine virtue', 'hierarchy of moral commitments', and examples (whistleblower, soldier) without named thinkers or technical errors. It accurately defines a virtue as 'an excellent and stable character trait that is good in and of itself' and applies it correctly. The concepts are load-bearing (e.g., virtue theory supports the argument). No inaccuracies or misattributions are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument for loyalty as a virtue, engaging specifically with the question and counterarguments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned argument for loyalty as a virtue, engaging specifically with the question and counterarguments.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 81.25
+}

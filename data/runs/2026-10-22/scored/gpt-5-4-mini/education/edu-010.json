@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for diverse learners by including provisions for accessibility (e.g., 'language support,' 'accessibility support') and fairness (e.g., 'accommodate students who use AI for disability or language support'). It proposes concrete, low-cost adaptations like disclosure requirements and oral verification, which are implementable by one lecturer without additional staff. However, it lacks specific strategies for varying prior attainment or material constraints like no home internet.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it focuses on academic integrity policy and enforcement. The response is inclusive of the range of learners by addressing accessibility support (e.g., 'assisting students with disabilities or language needs') and fairness in enforcement (e.g., 'accommodate students who use AI for disability or language support'). It does not default to a specific educational track.",
+    "pedagogical_soundness": "The response provides clear learning objectives (e.g., understanding permitted, restricted, and prohibited AI uses) and aligns activities (e.g., requiring disclosure, process evidence) and assessments (e.g., oral verification, draft review) to measure these objectives. Sequencing is coherent, with prerequisites like clear instructions before enforcement. However, the rubric criteria are not fully observable (e.g., 'inconsistent writing style' is subjective).",
+    "workload_realism": "The response addresses a class of 200 students with scalable strategies like categorization of assessments, sampling for review, and targeted oral verification (e.g., 'flag only a manageable subset for review,' '5–10 minute conversation'). It avoids unrealistic one-to-one attention and emphasizes prevention through design (e.g., personalized prompts, staged submissions). Timings and resources (e.g., draft histories, disclosure statements) are feasible without excessive marking load."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00135192,
+  "judge_latency_s": 46.464,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives (e.g., understanding permitted, restricted, and prohibited AI uses) and aligns activities (e.g., requiring disclosure, process evidence) and assessments (e.g., oral verification, draft review) to measure these objectives. Sequencing is coherent, with prerequisites like clear instructions before enforcement. However, the rubric criteria are not fully observable (e.g., 'inconsistent writing style' is subjective).\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response addresses a class of 200 students with scalable strategies like categorization of assessments, sampling for review, and targeted oral verification (e.g., 'flag only a manageable subset for review,' '5–10 minute conversation'). It avoids unrealistic one-to-one attention and emphasizes prevention through design (e.g., personalized prompts, staged submissions). Timings and resources (e.g., draft histories, disclosure statements) are feasible without excessive marking load.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it focuses on academic integrity policy and enforcement. The response is inclusive of the range of learners by addressing accessibility support (e.g., 'assisting students with disabilities or language needs') and fairness in enforcement (e.g., 'accommodate students who use AI for disability or language support'). It does not default to a specific educational track.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for diverse learners by including provisions for accessibility (e.g., 'language support,' 'accessibility support') and fairness (e.g., 'accommodate students who use AI for disability or language support'). It proposes concrete, low-cost adaptations like disclosure requirements and oral verification, which are implementable by one lecturer without additional staff. However, it lacks specific strategies for varying prior attainment or material constraints like no home internet.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, scalable policy and enforcement plan tailored to large classes, emphasizing prevention and practical workflows.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, scalable policy and enforcement plan tailored to large classes, emphasizing prevention and practical workflows.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

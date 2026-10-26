@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed 18-month plan with phased objectives, concrete actions, outputs, and decision gates, not just a description of how to approach the task. It includes specific deliverables like member databases, cost models, buyer profiles, and sample strategies. It covers all rubric-required elements (certification costs/timeline, working capital as constraint, pre-harvest finance options, buyer relationships, governance, and no-cost vs. finance-dependent split). The output could be used in a cooperative meeting with light editing.",
+    "constraint_fidelity": "The response explicitly acknowledges the zero working capital constraint ('Working capital is effectively zero between harvests') and structures the entire plan around it, distinguishing between no-cost actions and finance-dependent steps. It respects the 40-member size, Oaxaca location, and 18-month timeline. It provides detailed cost breakdowns and financing requirements, showing arithmetic (e.g., '80–150 bags', '30–60% advance'). It does not silently violate constraints but justifies the need for external finance for aggregation and export execution.",
+    "contextual_realism": "The response avoids assuming dedicated functions (e.g., uses service providers for milling/export instead of in-house capacity), acknowledges role overlap and volunteer/partner support (e.g., 'allied NGOs, universities, buyers'), and recognizes small-organisation realities like member side-selling risk, cash flow constraints, and the need for gradual scaling. It does not recommend unaffordable tooling or overhead-heavy processes, instead focusing on low-cost preparatory steps and pragmatic piloting.",
+    "jurisdictional_accuracy": "The response references Mexico-specific elements like tax registration (RFC), member IDs (CURP), and logistics routes (Oaxaca/Puebla/Veracruz). It avoids US assumptions (e.g., no mention of US-specific employment or contract norms) and focuses on local context (e.g., coyote intermediaries, harvest timing variability). It provides substantive content on financing and legal requirements rather than generic 'consult a lawyer' disclaimers. No confidently wrong jurisdictional claims are made."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-004",
+  "judge_cost_usd": 0.00195085,
+  "judge_latency_s": 46.916,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly acknowledges the zero working capital constraint ('Working capital is effectively zero between harvests') and structures the entire plan around it, distinguishing between no-cost actions and finance-dependent steps. It respects the 40-member size, Oaxaca location, and 18-month timeline. It provides detailed cost breakdowns and financing requirements, showing arithmetic (e.g., '80–150 bags', '30–60% advance'). It does not silently violate constraints but justifies the need for external finance for aggregation and export execution.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response avoids assuming dedicated functions (e.g., uses service providers for milling/export instead of in-house capacity), acknowledges role overlap and volunteer/partner support (e.g., 'allied NGOs, universities, buyers'), and recognizes small-organisation realities like member side-selling risk, cash flow constraints, and the need for gradual scaling. It does not recommend unaffordable tooling or overhead-heavy processes, instead focusing on low-cost preparatory steps and pragmatic piloting.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed 18-month plan with phased objectives, concrete actions, outputs, and decision gates, not just a description of how to approach the task. It includes specific deliverables like member databases, cost models, buyer profiles, and sample strategies. It covers all rubric-required elements (certification costs/timeline, working capital as constraint, pre-harvest finance options, buyer relationships, governance, and no-cost vs. finance-dependent split). The output could be used in a cooperative meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response references Mexico-specific elements like tax registration (RFC), member IDs (CURP), and logistics routes (Oaxaca/Puebla/Veracruz). It avoids US assumptions (e.g., no mention of US-specific employment or contract norms) and focuses on local context (e.g., coyote intermediaries, harvest timing variability). It provides substantive content on financing and legal requirements rather than generic 'consult a lawyer' disclaimers. No confidently wrong jurisdictional claims are made.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels by rigorously adhering to constraints, providing a actionable plan tailored to a resource-limited cooperative, and avoiding common pitfalls like e-commerce or unrealistic scaling.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response excels by rigorously adhering to constraints, providing a actionable plan tailored to a resource-limited cooperative, and avoiding common pitfalls like e-commerce or unrealistic scaling.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

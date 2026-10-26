@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The guidance addresses financial constraints ('family has limited funds') and provides concrete steps for funding search (e.g., 'county government bursaries', 'constituency bursaries'). It acknowledges emotional needs ('feeling ashamed') and advises practical, low-cost actions like talking to school staff and comparing costs. It is tailored to the student's specific context without requiring additional resources.",
+    "pathway_breadth": "The response covers multiple non-degree pathways with specificity: TVET, polytechnics, apprenticeships, short courses, work-first options, and diploma-to-degree progression. It provides real examples (e.g., 'electrical installation', 'plumbing'), costs considerations, and Kenyan context (KUCCPS, county bursaries). Non-degree routes are treated with equal seriousness, not as failure, and include entry requirements and outcomes.",
+    "pedagogical_soundness": "This is guidance, not a lesson plan, so pedagogical alignment of objectives, activities, and assessments is not applicable. The response provides structured, actionable advice but does not claim educational objectives or assessments.",
+    "workload_realism": "The response is guidance for a student, not a teaching plan, so workload and resource realism for practitioners is not applicable. It does not describe activities, timings, or materials for a teacher to deliver."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00126632,
+  "judge_latency_s": 30.868,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This is guidance, not a lesson plan, so pedagogical alignment of objectives, activities, and assessments is not applicable. The response provides structured, actionable advice but does not claim educational objectives or assessments.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is guidance for a student, not a teaching plan, so workload and resource realism for practitioners is not applicable. It does not describe activities, timings, or materials for a teacher to deliver.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple non-degree pathways with specificity: TVET, polytechnics, apprenticeships, short courses, work-first options, and diploma-to-degree progression. It provides real examples (e.g., 'electrical installation', 'plumbing'), costs considerations, and Kenyan context (KUCCPS, county bursaries). Non-degree routes are treated with equal seriousness, not as failure, and include entry requirements and outcomes.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The guidance addresses financial constraints ('family has limited funds') and provides concrete steps for funding search (e.g., 'county government bursaries', 'constituency bursaries'). It acknowledges emotional needs ('feeling ashamed') and advises practical, low-cost actions like talking to school staff and comparing costs. It is tailored to the student's specific context without requiring additional resources.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels in providing comprehensive, realistic pathway guidance tailored to a Kenyan student with limited funds, covering non-degree options with depth and specificity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response excels in providing comprehensive, realistic pathway guidance tailored to a Kenyan student with limited funds, covering non-degree options with depth and specificity.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

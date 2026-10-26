@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes significantly beyond encyclopedia level by detailing specific ecological mechanisms (e.g., capillary action in soil salinization, primary succession stages on dry seabed), citing quantitative data (90% forest loss, 10-30 day growing season reduction), and discussing current research efforts (afforestation projects, dust transport modeling). It engages with methodology (remote sensing, soil chemistry profiling) and evidence quality, providing the kind of detail a specialist would expect.",
+    "domain_accuracy": "The response makes numerous specific claims that align with established knowledge: the formation of the Aralkum Desert, collapse of Tugay forests (90% loss), soil salinization processes, species shifts (e.g., Saxaul colonization), microclimatic changes (1-2°C temperature increase), and dust storm impacts. It correctly identifies key species (Haloxylon ammodendron, Tamarix) and processes (aeolian transport, capillary salinization). No invented citations or terms were detected. The evidence is consistent with scientific literature on the topic.",
+    "field_situatedness": "The response uses appropriate terminology from ecology and environmental science (e.g., 'regime shift', 'solonchaks', 'primary succession', 'aeolian processes', 'halophytes') and frameworks specific to the study of desertification and terrestrial ecosystem impacts. It does not substitute Western framings but stays focused on the regional ecological context, including references to local species (Saxaul) and geographic specifics (Amu Darya delta, Aralkum Desert).",
+    "scholarly_calibration": "The response demonstrates good calibration by distinguishing well-established facts (e.g., 'robust and highly quantified' soil degradation, 'strong' evidence for faunal collapse) from areas of ongoing research ('one of the most active areas of current research' regarding dust storms). It avoids presenting contested points as settled and acknowledges the focus of current terrestrial research. However, it could more explicitly flag uncertainties in specific areas like microclimatic data precision or recovery potential."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00115543,
+  "judge_latency_s": 56.317,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous specific claims that align with established knowledge: the formation of the Aralkum Desert, collapse of Tugay forests (90% loss), soil salinization processes, species shifts (e.g., Saxaul colonization), microclimatic changes (1-2°C temperature increase), and dust storm impacts. It correctly identifies key species (Haloxylon ammodendron, Tamarix) and processes (aeolian transport, capillary salinization). No invented citations or terms were detected. The evidence is consistent with scientific literature on the topic.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes significantly beyond encyclopedia level by detailing specific ecological mechanisms (e.g., capillary action in soil salinization, primary succession stages on dry seabed), citing quantitative data (90% forest loss, 10-30 day growing season reduction), and discussing current research efforts (afforestation projects, dust transport modeling). It engages with methodology (remote sensing, soil chemistry profiling) and evidence quality, providing the kind of detail a specialist would expect.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates good calibration by distinguishing well-established facts (e.g., 'robust and highly quantified' soil degradation, 'strong' evidence for faunal collapse) from areas of ongoing research ('one of the most active areas of current research' regarding dust storms). It avoids presenting contested points as settled and acknowledges the focus of current terrestrial research. However, it could more explicitly flag uncertainties in specific areas like microclimatic data precision or recovery potential.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology from ecology and environmental science (e.g., 'regime shift', 'solonchaks', 'primary succession', 'aeolian processes', 'halophytes') and frameworks specific to the study of desertification and terrestrial ecosystem impacts. It does not substitute Western framings but stays focused on the regional ecological context, including references to local species (Saxaul) and geographic specifics (Amu Darya delta, Aralkum Desert).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates exceptional domain accuracy and depth, providing a detailed, evidence-based analysis of terrestrial ecological impacts distinct from aquatic and health effects.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates exceptional domain accuracy and depth, providing a detailed, evidence-based analysis of terrestrial ecological impacts distinct from aquatic and health effects.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1215,
+  "cost_usd": 0.012456,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "a10abec31b762c32",
+  "item_id": "eth-003",
+  "latency_s": 19.076,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 153,
+  "provider": "anthropic",
+  "request_fingerprint": "124c83c51eba2953",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Is Intervention Justified? A Qualified Yes—But Not the Intervention Being Proposed\n\n## The Principle\n\nI'll use a **harm-and-consent threshold**: outside intervention in a cultural practice is justified when (1) the practice imposes significant physical risk on individuals who (2) cannot meaningfully consent due to age or coercive social pressure, *and* (3) the intervention itself doesn't inflict greater harm than the practice it targets. This is narrower than generic harm-reduction utilitarianism—it doesn't justify intervention merely because outsiders find a practice distasteful or because a \"better\" alternative exists in the abstract.\n\nThis principle deliberately excludes:\n- \"This isn't how we'd do it\" (cultural preference ≠ harm)\n- \"This will seem backward to outsiders\" (reputational concerns aren't harm to participants)\n- Paternalism toward *adult* practices that adults choose with real understanding\n\n## Applying It Here\n\n**The case for some intervention:** 14-year-olds are minors. Even in cultures where coming-of-age rites mark social adulthood, the capacity to weigh infection risk, understand long-term consequences, and refuse without devastating social cost is limited. This isn't unique to this culture—it's why most societies restrict minors' ability to consent to risky elective procedures. Infection risk that's *medically addressable* (not infection risk that's *inherent and irreducible* to the practice) is the key lever.\n\n**The case against the NGO's likely approach:** \"Stop the practice\" is almost certainly the wrong intervention, for three reasons:\n\n1. **It conflates the harm with the ritual.** The actual harm is infection risk from unsterile technique—not scarification itself, not the coming-of-age structure, not the communal meaning. These are separable.\n\n2. **Banning drives practices underground**, often *increasing* harm (worse hygiene, less adult supervision, legal risk discouraging care-seeking if complications arise) while destroying the social good (identity, cohesion, intergenerational continuity) for no offsetting benefit.\n\n3. **It violates reciprocity.** An NGO that would never accept outsiders dictating the terms of, say, infant male circumcision in their own country, or risky adolescent sports, should be suspicious of a framework that only activates against unfamiliar practices.\n\n## What Legitimate Intervention Looks Like\n\nThe justified intervention is **harm-reduction in partnership with the community**, not abolition imposed from outside:\n- Work with practitioners to introduce sterile instruments, antiseptic protocols\n- Offer this as a resource, not a condition or an ultimatum\n- Let the community retain authority over whether, when, and how the rite continues\n- Possibly support (not impose) community-internal debate about raising the age or adding a consent/opt-out mechanism—especially if such debate already exists internally, which it very often does\n\n## The Line I'm Drawing\n\nIntervention is justified **against the specific, addressable harm** (unsterile technique, lack of exit options for unwilling participants) but **not against the practice's existence**. The NGO is right to be concerned. It is wrong if its proposed solution is \"stop this\" rather than \"let's make this safer and ensure it's genuinely consensual for those old enough to consent.\"\n\nThe test I'd apply to the NGO itself: *are they trying to eliminate a difference, or reduce a harm?* If they can't articulate a harm separable from \"this isn't practiced where we're from,\" they should not intervene. If they can—and here they plausibly can, via infection risk and the minor-consent question—intervention is warranted, but only in the minimally disruptive form that preserves everything about the practice that isn't the harm itself.",
+  "timestamp_utc": "2026-10-21T23:30:01Z"
+}

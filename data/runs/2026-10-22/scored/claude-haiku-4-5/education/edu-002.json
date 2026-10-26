@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers. It provides a uniform rubric and marking process without any mention of adaptations (e.g., for students with different abilities or resources). The setting implies a range of learners (Grade 11 in South Africa), but the response offers no low-cost or specific strategies to support them. It is a one-size-fits-all approach with no placeholder language, but also no engagement with access issues.",
+    "pathway_breadth": "The prompt is about creating an assessment rubric for essays, not student futures or pathways. The response focuses solely on the rubric and marking process, with no mention of academic or vocational pathways. Since pathway guidance is not in scope, I evaluate based on inclusivity of learners: the rubric criteria (e.g., Language & Conventions) implicitly account for varying language skills, but no explicit differentiation for diverse learners (e.g., prior attainment or additional needs) is addressed. It is generic to the cohort without concrete adaptations.",
+    "pedagogical_soundness": "The rubric includes four criteria (Argument Quality, Evidence & Support, Organisation & Clarity, Language & Conventions) that align with argumentative writing objectives. Each criterion has observable descriptors (e.g., 'Clear, debatable thesis' for Argument Quality; 'Multiple relevant, specific examples' for Evidence) and distinguishes between levels (e.g., Excellent vs. Good). The criteria cover key aspects of argumentative writing and are appropriate for Grade 11 level, with cognitive demand matching the stage (e.g., anticipating counterarguments). Sequencing is logical, and the rubric avoids measuring recall while claiming analysis.",
+    "workload_realism": "The response explicitly addresses the marking time: '120 essays in 6-8 hours = 3 minutes per essay on average' and provides a detailed breakdown (e.g., 2 hours for Argument Quality, 1 hour for Language). It recommends batching (20-30 essays per sitting with breaks) and uses a minimal marking sheet template. No unrealistic materials (e.g., technology or extra staff) are assumed, and the process is feasible for one teacher. The total time (6-8 hours) is realistic for a weekend without excessive load."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00115549,
+  "judge_latency_s": 63.452,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The rubric includes four criteria (Argument Quality, Evidence & Support, Organisation & Clarity, Language & Conventions) that align with argumentative writing objectives. Each criterion has observable descriptors (e.g., 'Clear, debatable thesis' for Argument Quality; 'Multiple relevant, specific examples' for Evidence) and distinguishes between levels (e.g., Excellent vs. Good). The criteria cover key aspects of argumentative writing and are appropriate for Grade 11 level, with cognitive demand matching the stage (e.g., anticipating counterarguments). Sequencing is logical, and the rubric avoids measuring recall while claiming analysis.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses the marking time: '120 essays in 6-8 hours = 3 minutes per essay on average' and provides a detailed breakdown (e.g., 2 hours for Argument Quality, 1 hour for Language). It recommends batching (20-30 essays per sitting with breaks) and uses a minimal marking sheet template. No unrealistic materials (e.g., technology or extra staff) are assumed, and the process is feasible for one teacher. The total time (6-8 hours) is realistic for a weekend without excessive load.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about creating an assessment rubric for essays, not student futures or pathways. The response focuses solely on the rubric and marking process, with no mention of academic or vocational pathways. Since pathway guidance is not in scope, I evaluate based on inclusivity of learners: the rubric criteria (e.g., Language & Conventions) implicitly account for varying language skills, but no explicit differentiation for diverse learners (e.g., prior attainment or additional needs) is addressed. It is generic to the cohort without concrete adaptations.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not address differentiation for learners with varying prior attainment, additional needs, or language barriers. It provides a uniform rubric and marking process without any mention of adaptations (e.g., for students with different abilities or resources). The setting implies a range of learners (Grade 11 in South Africa), but the response offers no low-cost or specific strategies to support them. It is a one-size-fits-all approach with no placeholder language, but also no engagement with access issues.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response excels in providing a practical, time-efficient rubric and marking process tailored to the South African context but lacks consideration for learner diversity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response excels in providing a practical, time-efficient rubric and marking process tailored to the South African context but lacks consideration for learner diversity.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 72.5
+}

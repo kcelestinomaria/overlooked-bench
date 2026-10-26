@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1069,
+  "cost_usd": 0.00204213,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "4604fa0f592323da",
+  "item_id": "org-006",
+  "latency_s": 29.967,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 104,
+  "provider": "deepseek",
+  "request_fingerprint": "85ce97b09d915053",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "# Recommended Digitalization Approach for Community Health Nonprofit\n\n## **Core Strategy: Offline-First, Mobile-Focused System**\n\n### **1. Technology Stack & Tools**\n\n**Primary Platform:** **CommCare** (by Dimagi)\n- Purpose: Mobile data collection platform designed for low-resource settings\n- Key features:\n  - Fully functional offline with automatic sync when connectivity available\n  - Low-bandwidth optimized\n  - Simple, icon-based interface for low digital literacy\n  - Available in Filipino languages\n  - Free for nonprofits (up to 50 users)\n\n**Backup/Complementary Tool:** **KoboToolbox**\n- Purpose: Alternative for complex survey forms\n- Cost: Free for nonprofits\n\n**Hardware Recommendation:**\n- 15 Samsung Galaxy Tab A8 Lite tablets (for field staff) - PHP 12,000 × 15 = **PHP 180,000**\n- 5 Lenovo ThinkPad L14 laptops (for office/admin staff) - PHP 25,000 × 5 = **PHP 125,000**\n- 2 Portable solar chargers (20,000mAh) - PHP 5,000 × 2 = **PHP 10,000**\n- 2 4G WiFi routers with data plans (6 months) - PHP 8,000 × 2 = **PHP 16,000**\n\n**Data Storage:** Google Workspace for Nonprofits (Free)\n- Includes secure cloud storage and email\n\n### **2. Implementation Phases**\n\n**Phase 1: Foundation (Months 1-3)**\n- Digital literacy training (40 hours per staff)\n- Form digitization and testing\n- Pilot with 5 field staff\n\n**Phase 2: Rollout (Months 4-9)**\n- Full deployment\n- Parallel paper backup system\n- Continuous support\n\n**Phase 3: Optimization (Months 10-15)**\n- System refinement\n- Local champion development\n- Sustainability planning\n\n**Phase 4: Transition (Months 16-18)**\n- Local ownership transfer\n- Maintenance plan activation\n\n### **3. Total Cost Breakdown**\n\n| Item | Cost (PHP) |\n|------|------------|\n| Tablets (15) | 180,000 |\n| Laptops (5) | 125,000 |\n| Solar chargers (2) | 10,000 |\n| WiFi routers + data | 16,000 |\n| Training consultant (60 hours) | 45,000 |\n| Local IT support (18 months) | 20,000 |\n| Contingency (10%) | 39,600 |\n| **TOTAL** | **435,600** |\n\n**Budget Note:** Slightly over budget by PHP 35,600. Can be addressed by:\n- Reducing tablets to 12 instead of 15 (saving PHP 36,000)\n- Using refurbished laptops (saving PHP 25,000)\n- Seeking in-kind training support\n\n### **4. Sustainability Plan for Post-Funding**\n\n**Financial Sustainability:**\n- **Costs after 18 months:** ~PHP 5,000/month for:\n  - Mobile data (PHP 2,000)\n  - Basic maintenance (PHP 3,000)\n\n**Funding Strategy:**\n1. **Immediate (Months 1-12):** Allocate 15% of donor funds (PHP 60,000) to seed sustainability fund\n2. **Medium-term (Months 13-18):** \n   - Apply for local government eHealth grants\n   - Seek corporate CSR partnerships\n   - Develop small fee-for-service model for data analytics\n3. **Long-term:** Integrate digitalization costs into regular operational budget\n\n**Operational Sustainability:**\n1. **Local Capacity Building:**\n   - Train 3 \"digital champions\" among existing staff\n   - Develop simplified maintenance protocols\n   - Create local vendor relationships for repairs\n\n2. **System Design for Sustainability:**\n   - Use only free/open-source software\n   - Implement automated backup systems\n   - Design forms for minimum data entry\n   - Establish clear data ownership policies\n\n3. **Hybrid System Maintenance:**\n   - Keep essential paper backups for critical records\n   - Monthly data validation between digital and paper systems\n   - Regular device maintenance schedules\n\n**Exit Scenario if No Additional Funding:**\n1. System continues functioning offline indefinitely\n2. Data sync occurs when staff visit areas with connectivity\n3. Basic maintenance through trained staff champions\n4. Critical data exported to free cloud storage quarterly\n5. Gradual reversion to paper for new records if devices fail\n\n### **5. Key Success Factors**\n\n1. **Phased implementation** to manage change resistance\n2. **Continuous training** approach rather than one-time\n3. **Local adaptation** of all tools and processes\n4. **Strong feedback loops** from field staff\n5. **Clear accountability** for system maintenance\n\nThis approach balances immediate digitization needs with long-term sustainability, ensuring the system remains functional even with limited ongoing resources. The offline-first design guarantees continuous operation regardless of connectivity, while the focus on free tools and local capacity minimizes future costs.",
+  "timestamp_utc": "2026-10-21T23:44:34Z"
+}

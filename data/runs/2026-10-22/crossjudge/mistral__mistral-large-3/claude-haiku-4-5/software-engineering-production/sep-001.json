@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "**Delta**: +$700/month = +7.4% of $9,400. ✓ Within 8% budget.",
+      "evidence_verified": true,
+      "verdict": "relaxed_explicitly"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response produces the requested deliverables: a design, rollout plan, and risks with specific code, SQL, and commands.\n2. The rollout plan includes sequence (weekly phases), owners (Sales, Billing, Engineering), estimates (e.g., 5 minutes for rollback), and verification steps (canary testing, load testing).\n3. The implementation details (e.g., middleware, cron jobs, CSV export) are concrete and executable with light editing.\n4. The checklist and monitoring/alerting sections further enhance actionability.",
+    "constraint_fidelity": "1. The response explicitly avoids new infrastructure services, using in-process token buckets and PostgreSQL only (C1 kept).\n2. The rollout plan is designed for three backend engineers and four weeks, with clear weekly phases and deliverables (C2 kept).\n3. The cost analysis shows a +$712/month increase, which is +7.6% of the $9,400 budget, slightly exceeding the 8% cap (USD 752). However, the response acknowledges this and provides a safety margin of 0.4%, justifying the relaxation (C3 relaxed_explicitly).\n4. The latency impact is calculated and stays within the 220 ms p99 budget.\n5. The response demonstrates arithmetic for capacity, cost, and effort, allowing verification.",
+    "maintainability": "1. The solution is proportionate to the team (14-person company) and avoids added complexity (e.g., no new services).\n2. It leaves clear seams: feature flags for rollout, documented runbooks, and monitoring for observability.\n3. Risks and accepted debt are explicitly stated (e.g., rate limit drift, eventual consistency) rather than hidden.\n4. The code and design are straightforward (e.g., token bucket math, nightly aggregation) and avoid cleverness where clarity is needed.\n5. The response includes training and handover materials for Sales, Billing, and Support.",
+    "production_realism": "1. The design accounts for the stated scale (1,200 rps) and infrastructure (6 containers, PostgreSQL 14).\n2. It addresses failure modes: rate limit state loss (cache TTL + flush interval), usage events table bloat (partitioning + aggregation), and latency regression (load testing).\n3. The operational burden fits the team size (3 backend engineers) with clear runbooks, monitoring, and rollback plans.\n4. The response avoids assumptions about operational capacity the team lacks (e.g., no reliance on external services or complex orchestration).\n5. The design is technically correct for the named technologies (Django, PostgreSQL)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.0045126,
+  "judge_latency_s": 10.294,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly avoids new infrastructure services, using in-process token buckets and PostgreSQL only (C1 kept).\\n2. The rollout plan is designed for three backend engineers and four weeks, with clear weekly phases and deliverables (C2 kept).\\n3. The cost analysis shows a +$712/month increase, which is +7.6% of the $9,400 budget, slightly exceeding the 8% cap (USD 752). However, the response acknowledges this and provides a safety margin of 0.4%, justifying the relaxation (C3 relaxed_explicitly).\\n4. The latency impact is calculated and stays within the 220 ms p99 budget.\\n5. The response demonstrates arithmetic for capacity, cost, and effort, allowing verification.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The design accounts for the stated scale (1,200 rps) and infrastructure (6 containers, PostgreSQL 14).\\n2. It addresses failure modes: rate limit state loss (cache TTL + flush interval), usage events table bloat (partitioning + aggregation), and latency regression (load testing).\\n3. The operational burden fits the team size (3 backend engineers) with clear runbooks, monitoring, and rollback plans.\\n4. The response avoids assumptions about operational capacity the team lacks (e.g., no reliance on external services or complex orchestration).\\n5. The design is technically correct for the named technologies (Django, PostgreSQL).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response produces the requested deliverables: a design, rollout plan, and risks with specific code, SQL, and commands.\\n2. The rollout plan includes sequence (weekly phases), owners (Sales, Billing, Engineering), estimates (e.g., 5 minutes for rollback), and verification steps (canary testing, load testing).\\n3. The implementation details (e.g., middleware, cron jobs, CSV export) are concrete and executable with light editing.\\n4. The checklist and monitoring/alerting sections further enhance actionability.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (14-person company) and avoids added complexity (e.g., no new services).\\n2. It leaves clear seams: feature flags for rollout, documented runbooks, and monitoring for observability.\\n3. Risks and accepted debt are explicitly stated (e.g., rate limit drift, eventual consistency) rather than hidden.\\n4. The code and design are straightforward (e.g., token bucket math, nightly aggregation) and avoid cleverness where clarity is needed.\\n5. The response includes training and handover materials for Sales, Billing, and Support.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable, constraint-aware design that balances trade-offs for a small, bootstrapped team.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"relaxed_explicitly\",\n      \"evidence\": \"**Delta**: +$700/month = +7.4% of $9,400. ✓ Within 8% budget.\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a highly actionable, constraint-aware design that balances trade-offs for a small, bootstrapped team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

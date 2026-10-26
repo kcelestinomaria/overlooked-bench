@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific scholarly debates (Schmidt-Avery controversy, chronology disputes, typology classification issues), methodological concerns (taphonomy, experimental archaeology, ethnographic analogy), and evidence quality (limited furnace remains, reliance on slag heaps). It addresses internal debates (e.g., diffusion vs. independent invention, functional vs. symbolic interpretations) and cites key researchers and sites. A specialist would recognize this as informed by the literature rather than summaries of summaries.",
+    "domain_accuracy": "The response makes several substantive claims: radiocarbon dates from Rwanda/Burundi suggesting iron working from mid-first millennium BCE; Haya furnaces with 2-6+ meter shafts; Schmidt and Avery's 1978 Science paper on pre-heating achieving 1,800°C; critiques by Rehren and others; sites like Rwiyange, Ndora, Kemondo Bay with dates 800-400 BCE; disputes over taphonomy and old wood problem; mentions of Killick and Shaw urging caution; debates over diffusion vs. independent invention; Schmidt's symbolic interpretations. These are all accurate and well-documented in the archaeometallurgical literature on the Great Lakes region. No invented citations, terms, or consensus claims detected.",
+    "field_situatedness": "The response uses terminology and frameworks specific to African archaeometallurgy and the Great Lakes region: references to natural draft furnaces, tuyère design, slag-tapping vs. slag-pit systems, Haya ethnography, radiocarbon dating issues, and debates over independent invention vs. diffusion. It does not substitute Western or Anglophone framings and engages with regional scholarship (e.g., Schmidt's work in Tanzania, sites in Rwanda/Burundi). The framing is appropriate to the field.",
+    "scholarly_calibration": "The response clearly distinguishes contested from established claims: it notes that early dates are 'controversial' and details taphonomic issues; describes Schmidt's pre-heating as 'influential (and contested)' and outlines specific critiques; states that furnace typology lacks consensus; presents diffusion vs. independent invention as a 'long-standing debate'; and notes Schmidt's symbolic approach as 'both influential and critiqued'. It avoids uniform confidence and provides targeted calibration for each major dispute."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-004",
+  "judge_cost_usd": 0.00101109,
+  "judge_latency_s": 50.468,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: radiocarbon dates from Rwanda/Burundi suggesting iron working from mid-first millennium BCE; Haya furnaces with 2-6+ meter shafts; Schmidt and Avery's 1978 Science paper on pre-heating achieving 1,800°C; critiques by Rehren and others; sites like Rwiyange, Ndora, Kemondo Bay with dates 800-400 BCE; disputes over taphonomy and old wood problem; mentions of Killick and Shaw urging caution; debates over diffusion vs. independent invention; Schmidt's symbolic interpretations. These are all accurate and well-documented in the archaeometallurgical literature on the Great Lakes region. No invented citations, terms, or consensus claims detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific scholarly debates (Schmidt-Avery controversy, chronology disputes, typology classification issues), methodological concerns (taphonomy, experimental archaeology, ethnographic analogy), and evidence quality (limited furnace remains, reliance on slag heaps). It addresses internal debates (e.g., diffusion vs. independent invention, functional vs. symbolic interpretations) and cites key researchers and sites. A specialist would recognize this as informed by the literature rather than summaries of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response clearly distinguishes contested from established claims: it notes that early dates are 'controversial' and details taphonomic issues; describes Schmidt's pre-heating as 'influential (and contested)' and outlines specific critiques; states that furnace typology lacks consensus; presents diffusion vs. independent invention as a 'long-standing debate'; and notes Schmidt's symbolic approach as 'both influential and critiqued'. It avoids uniform confidence and provides targeted calibration for each major dispute.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to African archaeometallurgy and the Great Lakes region: references to natural draft furnaces, tuyère design, slag-tapping vs. slag-pit systems, Haya ethnography, radiocarbon dating issues, and debates over independent invention vs. diffusion. It does not substitute Western or Anglophone framings and engages with regional scholarship (e.g., Schmidt's work in Tanzania, sites in Rwanda/Burundi). The framing is appropriate to the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of Great Lakes archaeometallurgy, engaging deeply with scholarly disputes and evidence.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of Great Lakes archaeometallurgy, engaging deeply with scholarly disputes and evidence.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

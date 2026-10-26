@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses the range of learners through visual supports, scaffolding (e.g., modeling, sentence starters), peer strategies, and alternative assessment methods (e.g., thumbs-up/down). It considers language barriers and emphasizes low-anxiety participation. All proposals are implementable by one teacher with no assistant and no home language knowledge, such as using translation apps for parent communication and English sparingly for clarification. The strategies are specific and not generic placeholders.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it focuses on classroom support for multilingual learners. The response is inclusive of the range of learners described (Arabic, Spanish, Tagalog speakers in a French-instruction setting) and treats home languages as assets. It provides specific, actionable strategies for diverse language backgrounds without assuming teacher knowledge of those languages, aligning with the setting's constraints.",
+    "pedagogical_soundness": "The response provides clear learning objectives implicitly: creating a low-anxiety environment, making instruction comprehensible, and fostering participation. Activities like visual labeling, modeling, and peer partnering directly build toward these objectives. Assessment strategies (e.g., checking comprehension through gestures) align with the focus on understanding rather than production. Sequencing is logical, starting with environment setup, then instruction adaptation, peer support, and assessment. The approach is developmentally appropriate for primary students and emphasizes observable actions.",
+    "workload_realism": "Strategies are low-prep and feasible for one teacher: labeling objects, using visual schedules, employing gestures, and leveraging existing classroom materials (manipulatives, graphic organizers). No additional staff, specialized technology, or home language knowledge is required. Timings are not explicitly stated, but the strategies are designed for integration into regular teaching routines without excessive preparation. Class size is addressed through peer partnering and group work, which are manageable without an assistant."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00099067,
+  "judge_latency_s": 51.178,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives implicitly: creating a low-anxiety environment, making instruction comprehensible, and fostering participation. Activities like visual labeling, modeling, and peer partnering directly build toward these objectives. Assessment strategies (e.g., checking comprehension through gestures) align with the focus on understanding rather than production. Sequencing is logical, starting with environment setup, then instruction adaptation, peer support, and assessment. The approach is developmentally appropriate for primary students and emphasizes observable actions.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Strategies are low-prep and feasible for one teacher: labeling objects, using visual schedules, employing gestures, and leveraging existing classroom materials (manipulatives, graphic organizers). No additional staff, specialized technology, or home language knowledge is required. Timings are not explicitly stated, but the strategies are designed for integration into regular teaching routines without excessive preparation. Class size is addressed through peer partnering and group work, which are manageable without an assistant.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it focuses on classroom support for multilingual learners. The response is inclusive of the range of learners described (Arabic, Spanish, Tagalog speakers in a French-instruction setting) and treats home languages as assets. It provides specific, actionable strategies for diverse language backgrounds without assuming teacher knowledge of those languages, aligning with the setting's constraints.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses the range of learners through visual supports, scaffolding (e.g., modeling, sentence starters), peer strategies, and alternative assessment methods (e.g., thumbs-up/down). It considers language barriers and emphasizes low-anxiety participation. All proposals are implementable by one teacher with no assistant and no home language knowledge, such as using translation apps for parent communication and English sparingly for clarification. The strategies are specific and not generic placeholders.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides highly practical, context-aware strategies that are immediately usable by a teacher in the described Quebec primary school setting.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response provides highly practical, context-aware strategies that are immediately usable by a teacher in the described Quebec primary school setting.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

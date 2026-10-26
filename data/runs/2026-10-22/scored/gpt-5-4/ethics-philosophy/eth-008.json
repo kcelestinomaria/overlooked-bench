@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgment, and the response explicitly argues 'Yes—sometimes a society can owe reparations'. It states conditions and limits (e.g., 'The obligation weakens or fails when no meaningful continuity exists'), shows calibrated uncertainty by acknowledging when claims are weaker, and defends its position with reasons like institutional continuity and unjust enrichment. It does not evade but commits to a reasoned stance.",
+    "philosophical_literacy": "The response uses concepts like 'institutional continuity', 'unjust enrichment', and 'collective political responsibility' accurately and makes them load-bearing in the argument. It avoids technical jargon misattribution and relies on correct, relevant distinctions (e.g., distinguishing guilt from responsibility). No named thinkers are invoked, but the reasoning is sound and concepts are applied correctly to support the argument.",
+    "position_pluralism": "The response acknowledges the major live position against reparations (e.g., 'No one alive did it to anyone alive, so no one owes anything') and represents it fairly as a 'common objection'. It does not strawman or omit this view, and it engages with it seriously. However, it does not explore other competing positions in depth, focusing primarily on its own argument and one counterargument, which limits breadth but maintains fairness.",
+    "reasoning_construction": "The response constructs a clear argument with premises: (1) serious historical wrong, (2) institutional continuity, (3) ongoing material effects. It infers that reparations are owed based on these premises, engages with specific details like 'wealth accumulated through slavery' and 'land acquired by dispossession', and addresses the strongest objection ('current people should not be made to pay for acts they did not commit') by distinguishing guilt from responsibility. The argument is valid and scenario-specific."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-008",
+  "judge_cost_usd": 0.0010365,
+  "judge_latency_s": 40.712,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument with premises: (1) serious historical wrong, (2) institutional continuity, (3) ongoing material effects. It infers that reparations are owed based on these premises, engages with specific details like 'wealth accumulated through slavery' and 'land acquired by dispossession', and addresses the strongest objection ('current people should not be made to pay for acts they did not commit') by distinguishing guilt from responsibility. The argument is valid and scenario-specific.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgment, and the response explicitly argues 'Yes—sometimes a society can owe reparations'. It states conditions and limits (e.g., 'The obligation weakens or fails when no meaningful continuity exists'), shows calibrated uncertainty by acknowledging when claims are weaker, and defends its position with reasons like institutional continuity and unjust enrichment. It does not evade but commits to a reasoned stance.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges the major live position against reparations (e.g., 'No one alive did it to anyone alive, so no one owes anything') and represents it fairly as a 'common objection'. It does not strawman or omit this view, and it engages with it seriously. However, it does not explore other competing positions in depth, focusing primarily on its own argument and one counterargument, which limits breadth but maintains fairness.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like 'institutional continuity', 'unjust enrichment', and 'collective political responsibility' accurately and makes them load-bearing in the argument. It avoids technical jargon misattribution and relies on correct, relevant distinctions (e.g., distinguishing guilt from responsibility). No named thinkers are invoked, but the reasoning is sound and concepts are applied correctly to support the argument.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excels in constructing a well-reasoned, specific argument grounded in institutional responsibility and ongoing harms.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response excels in constructing a well-reasoned, specific argument grounded in institutional responsibility and ongoing harms.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

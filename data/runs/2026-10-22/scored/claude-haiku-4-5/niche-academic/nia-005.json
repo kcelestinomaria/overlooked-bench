@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with philosophical depth (ontological vs. aesthetic significance), methodological differences (integration vs. isolation), and scholarly debates (contrasting Japanese and Western frameworks). It provides specific analysis of terminology slippage and conceptual reduction, indicating familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response makes substantive claims about Japanese scholarship treating ma as 'relational emptiness', 'temporal and spatial', connected to Buddhist thought and sunyata, and integrated with Japanese worldview. It correctly identifies Western treatment as formalized, aestheticized, exoticized, and isolated from context. These claims align with established scholarship on ma in Japanese aesthetics and cross-cultural reception. No invented citations, terms, or consensus are present.",
+    "field_situatedness": "The response correctly uses Japanese frameworks (Buddhist metaphysics, cultural integration, terms like yohaku no bi) and contrasts them with Western approaches, avoiding silent substitution of dominant Anglophone frameworks. It explicitly addresses the Japanese-language scholarly tradition as requested.",
+    "scholarly_calibration": "The response accurately calibrates by distinguishing well-established aspects (ma as relational emptiness, Zen connections) from contested interpretations (Western exoticization, formalization). It uses specific language like 'typically understood', 'often reduced', and 'sometimes presented', showing awareness of varying evidential status without blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00069003,
+  "judge_latency_s": 35.541,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about Japanese scholarship treating ma as 'relational emptiness', 'temporal and spatial', connected to Buddhist thought and sunyata, and integrated with Japanese worldview. It correctly identifies Western treatment as formalized, aestheticized, exoticized, and isolated from context. These claims align with established scholarship on ma in Japanese aesthetics and cross-cultural reception. No invented citations, terms, or consensus are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with philosophical depth (ontological vs. aesthetic significance), methodological differences (integration vs. isolation), and scholarly debates (contrasting Japanese and Western frameworks). It provides specific analysis of terminology slippage and conceptual reduction, indicating familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates by distinguishing well-established aspects (ma as relational emptiness, Zen connections) from contested interpretations (Western exoticization, formalization). It uses specific language like 'typically understood', 'often reduced', and 'sometimes presented', showing awareness of varying evidential status without blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses Japanese frameworks (Buddhist metaphysics, cultural integration, terms like yohaku no bi) and contrasts them with Western approaches, avoiding silent substitution of dominant Anglophone frameworks. It explicitly addresses the Japanese-language scholarly tradition as requested.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate, and well-calibrated engagement with both Japanese and Western scholarly treatments of ma.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate, and well-calibrated engagement with both Japanese and Western scholarly treatments of ma.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

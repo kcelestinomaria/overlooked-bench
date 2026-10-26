@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response reaches one: 'A Qualified Yes—But Not the Intervention Being Proposed.' It states a position clearly: intervention is justified only for harm-reduction, not abolition. It shows calibrated uncertainty by acknowledging nuances (e.g., 'possibly support community-internal debate') and specifies what would change its mind: if harm is not separable from the practice or if intervention causes greater harm. It does not evade with phrases like 'it depends on your values.'",
+    "philosophical_literacy": "The response uses concepts like 'harm-and-consent threshold,' 'utilitarianism,' 'paternalism,' and 'reciprocity.' These are accurate and load-bearing in the argument (e.g., distinguishing from 'generic harm-reduction utilitarianism'). It does not misattribute positions or garble terms. The principle is applied specifically to the scenario, and no technical errors are evident. While it doesn't heavily cite philosophers, the concepts are used correctly and relevantly.",
+    "position_pluralism": "Major live positions include abolitionist (NGO's view), cultural relativist (no intervention), and harm-reduction (the response's position). The response implicitly acknowledges the abolitionist view ('the NGO wants it stopped') and cultural relativist concerns ('destroying the social good'). It represents the abolitionist position accurately but focuses on arguing against it. It does not strawman or omit major positions, and it avoids false balance by not presenting fringe views as equal. However, it could more explicitly outline rival positions before refuting them.",
+    "reasoning_construction": "The response builds a structured argument using a 'harm-and-consent threshold' principle. It identifies a conclusion: intervention is justified only against specific harms (infection risk, lack of consent for minors) but not against the practice itself. Premises include: minors cannot meaningfully consent, infection risk is medically addressable, banning drives practices underground, and reciprocity is violated. The inference is valid—the conclusion depends on these premises. It engages specific details (e.g., 'infection risk from unsterile technique,' '14-year-olds are minors') and addresses counterarguments (e.g., 'Banning drives practices underground,' 'It violates reciprocity')."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-003",
+  "judge_cost_usd": 0.0009935,
+  "judge_latency_s": 51.533,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument using a 'harm-and-consent threshold' principle. It identifies a conclusion: intervention is justified only against specific harms (infection risk, lack of consent for minors) but not against the practice itself. Premises include: minors cannot meaningfully consent, infection risk is medically addressable, banning drives practices underground, and reciprocity is violated. The inference is valid—the conclusion depends on these premises. It engages specific details (e.g., 'infection risk from unsterile technique,' '14-year-olds are minors') and addresses counterarguments (e.g., 'Banning drives practices underground,' 'It violates reciprocity').\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response reaches one: 'A Qualified Yes—But Not the Intervention Being Proposed.' It states a position clearly: intervention is justified only for harm-reduction, not abolition. It shows calibrated uncertainty by acknowledging nuances (e.g., 'possibly support community-internal debate') and specifies what would change its mind: if harm is not separable from the practice or if intervention causes greater harm. It does not evade with phrases like 'it depends on your values.'\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include abolitionist (NGO's view), cultural relativist (no intervention), and harm-reduction (the response's position). The response implicitly acknowledges the abolitionist view ('the NGO wants it stopped') and cultural relativist concerns ('destroying the social good'). It represents the abolitionist position accurately but focuses on arguing against it. It does not strawman or omit major positions, and it avoids false balance by not presenting fringe views as equal. However, it could more explicitly outline rival positions before refuting them.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like 'harm-and-consent threshold,' 'utilitarianism,' 'paternalism,' and 'reciprocity.' These are accurate and load-bearing in the argument (e.g., distinguishing from 'generic harm-reduction utilitarianism'). It does not misattribute positions or garble terms. The principle is applied specifically to the scenario, and no technical errors are evident. While it doesn't heavily cite philosophers, the concepts are used correctly and relevantly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excels in constructing a nuanced, principled argument that addresses specific harms while respecting cultural context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excels in constructing a nuanced, principled argument that addresses specific harms while respecting cultural context.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for learners with additional needs by prioritizing protection for 'SENCO compliance and high-needs provision' and 'support specified in EHCPs'. It explicitly addresses the impact on SEND pupils in multiple options (e.g., Option 2: 'Reduced support for SEND pupils and lower attainers') and recommends avoiding cuts that would harm inclusion. The adaptations are implementable by the head teacher and governing body without requiring additional resources.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about staffing budget reduction. The response is inclusive of the range of staff roles (teachers, TAs, admin, leadership) and considers impacts on SEND and vulnerable pupils, which aligns with the rubric note for non-pathway items.",
+    "pedagogical_soundness": "This dimension is not applicable to the response as it is an options paper for budget reduction, not a pedagogical plan. The response does not contain learning objectives, activities, assessments, or rubrics, so it cannot be evaluated for pedagogical soundness.",
+    "workload_realism": "The response provides detailed cost estimates and staffing assumptions, sums savings across options, and considers implementation through natural turnover and restructuring. It explicitly addresses the class size constraint ('cannot simply remove class teachers below the number needed to staff 14 classes') and resource feasibility ('use resignations, retirements, maternity cover ending'). The mixed package approach is realistic for a head teacher to implement."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00158197,
+  "judge_latency_s": 34.919,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable to the response as it is an options paper for budget reduction, not a pedagogical plan. The response does not contain learning objectives, activities, assessments, or rubrics, so it cannot be evaluated for pedagogical soundness.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides detailed cost estimates and staffing assumptions, sums savings across options, and considers implementation through natural turnover and restructuring. It explicitly addresses the class size constraint ('cannot simply remove class teachers below the number needed to staff 14 classes') and resource feasibility ('use resignations, retirements, maternity cover ending'). The mixed package approach is realistic for a head teacher to implement.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about staffing budget reduction. The response is inclusive of the range of staff roles (teachers, TAs, admin, leadership) and considers impacts on SEND and vulnerable pupils, which aligns with the rubric note for non-pathway items.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for learners with additional needs by prioritizing protection for 'SENCO compliance and high-needs provision' and 'support specified in EHCPs'. It explicitly addresses the impact on SEND pupils in multiple options (e.g., Option 2: 'Reduced support for SEND pupils and lower attainers') and recommends avoiding cuts that would harm inclusion. The adaptations are implementable by the head teacher and governing body without requiring additional resources.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a thorough, realistic, and well-reasoned options paper that meets the prompt's requirements while respecting constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a thorough, realistic, and well-reasoned options paper that meets the prompt's requirements while respecting constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

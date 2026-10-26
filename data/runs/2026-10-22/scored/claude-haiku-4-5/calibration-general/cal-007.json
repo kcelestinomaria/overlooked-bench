@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: Tuesday 08:00', which exactly matches the reference answer 'ANSWER: Tuesday 08:00' in substance, ignoring formatting differences.",
+    "instruction_compliance": "The prompt explicitly requests: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes reasoning and ends with 'ANSWER: Tuesday 08:00', matching the exact format.",
+    "reasoning_validity": "The response shows working: Step 1 correctly subtracts 3 hours from Nairobi time (14:00) to get UTC (11:00 Tuesday). Step 2 correctly subtracts 3 hours from UTC (11:00) to get Sao Paulo time (08:00 Tuesday). The reasoning is sound and supports the answer, including the alternative method calculating the 6-hour difference directly."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-007",
+  "judge_cost_usd": 0.0005207,
+  "judge_latency_s": 25.061,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: Tuesday 08:00', which exactly matches the reference answer 'ANSWER: Tuesday 08:00' in substance, ignoring formatting differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: Step 1 correctly subtracts 3 hours from Nairobi time (14:00) to get UTC (11:00 Tuesday). Step 2 correctly subtracts 3 hours from UTC (11:00) to get Sao Paulo time (08:00 Tuesday). The reasoning is sound and supports the answer, including the alternative method calculating the 6-hour difference directly.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes reasoning and ends with 'ANSWER: Tuesday 08:00', matching the exact format.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully matches the reference answer with valid reasoning and strict compliance to output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response fully matches the reference answer with valid reasoning and strict compliance to output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

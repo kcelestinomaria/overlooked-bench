@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a 'turnaround plan with numbers'. The response produces a detailed plan with quantified targets (e.g., 'Raise collection from 70% to 85%', 'GHS 324,000 additional cash'), concrete steps ('No pupil starts term without a payment plan signed', 'Monthly payment plans by standing order'), and a 90-day action plan. It includes line items, totals, and rationale, and could be used in a board meeting with light editing. It does not just describe the process but delivers the plan itself.",
+    "constraint_fidelity": "The prompt states constraints: no fee increase, 400 pupils, 22 teachers, GHS 1,800 per term fee, 70% collection rate, teacher salaries at 68% of expenditure. The response explicitly respects the no-fee-increase constraint ('Since the board will not raise fees this year') and uses the given numbers throughout. It shows arithmetic for revenue (400 × 1,800 × 3 = GHS 2,160,000), collections (2,160,000 × 70% = GHS 1,512,000), and teacher salary savings (e.g., 1,224,000 × 12% = GHS 146,880), allowing verification. All constraints are honored with transparent calculations.",
+    "contextual_realism": "The response is calibrated for a small Ghanaian school: it assumes no dedicated HR or legal counsel, recommends practical interventions like mobile money payments, standing orders, and a bursar dashboard rather than expensive software, and acknowledges role overlap (e.g., 'mixed teaching + pastoral/admin loads'). It recognizes resource constraints like volunteer labor ('referral campaign'), cash flow issues, and the need for board-backed policies. However, it assumes a 'dedicated bursar' without specifying if this role exists or must be created, which may be slightly optimistic but not unrealistic.",
+    "jurisdictional_accuracy": "The prompt involves a school in Ghana, but does not explicitly touch law or regulation. The response avoids US-specific assumptions (e.g., no mention of at-will employment or US tax categories) and uses context-appropriate terms like 'mobile money'. It focuses on general financial accuracy, which is correct for the scenario. There are no jurisdictional inaccuracies or unsupported legal claims."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-008",
+  "judge_cost_usd": 0.00167368,
+  "judge_latency_s": 61.483,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: no fee increase, 400 pupils, 22 teachers, GHS 1,800 per term fee, 70% collection rate, teacher salaries at 68% of expenditure. The response explicitly respects the no-fee-increase constraint ('Since the board will not raise fees this year') and uses the given numbers throughout. It shows arithmetic for revenue (400 × 1,800 × 3 = GHS 2,160,000), collections (2,160,000 × 70% = GHS 1,512,000), and teacher salary savings (e.g., 1,224,000 × 12% = GHS 146,880), allowing verification. All constraints are honored with transparent calculations.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Ghanaian school: it assumes no dedicated HR or legal counsel, recommends practical interventions like mobile money payments, standing orders, and a bursar dashboard rather than expensive software, and acknowledges role overlap (e.g., 'mixed teaching + pastoral/admin loads'). It recognizes resource constraints like volunteer labor ('referral campaign'), cash flow issues, and the need for board-backed policies. However, it assumes a 'dedicated bursar' without specifying if this role exists or must be created, which may be slightly optimistic but not unrealistic.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a 'turnaround plan with numbers'. The response produces a detailed plan with quantified targets (e.g., 'Raise collection from 70% to 85%', 'GHS 324,000 additional cash'), concrete steps ('No pupil starts term without a payment plan signed', 'Monthly payment plans by standing order'), and a 90-day action plan. It includes line items, totals, and rationale, and could be used in a board meeting with light editing. It does not just describe the process but delivers the plan itself.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a school in Ghana, but does not explicitly touch law or regulation. The response avoids US-specific assumptions (e.g., no mention of at-will employment or US tax categories) and uses context-appropriate terms like 'mobile money'. It focuses on general financial accuracy, which is correct for the scenario. There are no jurisdictional inaccuracies or unsupported legal claims.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a highly actionable, quantified turnaround plan that respects all constraints and is tailored to a small Ghanaian school's realities.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response provides a highly actionable, quantified turnaround plan that respects all constraints and is tailored to a small Ghanaian school's realities.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

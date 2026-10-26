@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves well beyond encyclopedia level by engaging with specific mechanisms (land groups incorporation, lease-based arrangements), methodological tensions (fixing flexible boundaries, representation problems), and scholarly debates (criticism of evolutionary views, contested economic benefits). It discusses internal power dynamics (gender exclusion, elite capture) and practical implementation challenges (bureaucratic capacity, dispute intensification) that show familiarity with the literature rather than just summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established scholarship on PNG land tenure. It correctly states that 95-97% of land is held under customary tenure, describes customary tenure as collective/relational and embedded in social life, accurately outlines statutory registration mechanisms (land groups incorporation, lease-based mechanisms), and correctly notes constitutional recognition of customary land. It accurately characterizes scholarly criticisms including questioning the 'security through title' assumption, elite capture risks, and dispossession concerns. No invented citations or terms are present.",
+    "field_situatedness": "The response uses appropriate terminology from land tenure studies and PNG-specific contexts ('customary tenure,' 'statutory registration,' 'clans/lineages,' 'incorporated land groups'). It maintains focus on PNG's legal pluralism and avoids substituting Western frameworks, instead analyzing the tension between customary and statutory systems on their own terms. It acknowledges local variability and doesn't impose external normative frameworks.",
+    "scholarly_calibration": "The response demonstrates excellent calibration by distinguishing well-established facts (constitutional recognition of customary land) from contested areas (economic benefits of formalization, effectiveness of security through title). It presents criticisms as scholarly perspectives rather than settled facts, using phrases like 'critics argue,' 'scholars question,' and 'the dominant scholarly view is not usually that all registration is inherently bad.' It accurately signals where claims are debated without blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-013",
+  "judge_cost_usd": 0.00111807,
+  "judge_latency_s": 41.702,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established scholarship on PNG land tenure. It correctly states that 95-97% of land is held under customary tenure, describes customary tenure as collective/relational and embedded in social life, accurately outlines statutory registration mechanisms (land groups incorporation, lease-based mechanisms), and correctly notes constitutional recognition of customary land. It accurately characterizes scholarly criticisms including questioning the 'security through title' assumption, elite capture risks, and dispossession concerns. No invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves well beyond encyclopedia level by engaging with specific mechanisms (land groups incorporation, lease-based arrangements), methodological tensions (fixing flexible boundaries, representation problems), and scholarly debates (criticism of evolutionary views, contested economic benefits). It discusses internal power dynamics (gender exclusion, elite capture) and practical implementation challenges (bureaucratic capacity, dispute intensification) that show familiarity with the literature rather than just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response demonstrates excellent calibration by distinguishing well-established facts (constitutional recognition of customary land) from contested areas (economic benefits of formalization, effectiveness of security through title). It presents criticisms as scholarly perspectives rather than settled facts, using phrases like 'critics argue,' 'scholars question,' and 'the dominant scholarly view is not usually that all registration is inherently bad.' It accurately signals where claims are debated without blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology from land tenure studies and PNG-specific contexts ('customary tenure,' 'statutory registration,' 'clans/lineages,' 'incorporated land groups'). It maintains focus on PNG's legal pluralism and avoids substituting Western frameworks, instead analyzing the tension between customary and statutory systems on their own terms. It acknowledges local variability and doesn't impose external normative frameworks.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of PNG land tenure systems and scholarly debates.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of PNG land tenure systems and scholarly debates.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by discussing methodological challenges (e.g., 'regular sound correspondences and inherited paradigms'), evidence quality ('lexical resemblance alone is not decisive'), and scholarly debates (e.g., contrasting Cushitic vs. Nilo-Saharan hypotheses). It engages with specific issues like borrowing vs. inheritance and areal convergence, demonstrating familiarity with the literature.",
+    "domain_accuracy": "The response accurately describes the main positions (Afroasiatic/Cushitic, Nilo-Saharan, mixed/creole, isolate), correctly notes the severe endangerment and contact with Ts’amakko, and avoids inventing citations or consensus. It correctly characterizes the evidence as limited and acknowledges the controversial nature of Nilo-Saharan classification. No fabricated terms or citations are present.",
+    "field_situatedness": "The response uses appropriate terminology and frameworks from African historical linguistics (e.g., 'Cushitic', 'Nilo-Saharan', 'areal convergence', 'contact-induced restructuring') and references regional context (e.g., Lower Omo, Ts’amakko). It does not substitute a Western or Anglophone framing and engages with the specific scholarly tradition of the field.",
+    "scholarly_calibration": "The response consistently distinguishes well-supported from speculative claims, e.g., 'Moderate at best' for Afroasiatic evidence, 'Generally weak to moderate' for Nilo-Saharan, and 'Strong as a methodological caution' for the unclassified position. It avoids uniform confidence and specifically flags where evidence is thin or contested, such as noting that 'none of the proposed classifications rests on strong comparative evidence'."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00114319,
+  "judge_latency_s": 38.439,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes the main positions (Afroasiatic/Cushitic, Nilo-Saharan, mixed/creole, isolate), correctly notes the severe endangerment and contact with Ts’amakko, and avoids inventing citations or consensus. It correctly characterizes the evidence as limited and acknowledges the controversial nature of Nilo-Saharan classification. No fabricated terms or citations are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by discussing methodological challenges (e.g., 'regular sound correspondences and inherited paradigms'), evidence quality ('lexical resemblance alone is not decisive'), and scholarly debates (e.g., contrasting Cushitic vs. Nilo-Saharan hypotheses). It engages with specific issues like borrowing vs. inheritance and areal convergence, demonstrating familiarity with the literature.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes well-supported from speculative claims, e.g., 'Moderate at best' for Afroasiatic evidence, 'Generally weak to moderate' for Nilo-Saharan, and 'Strong as a methodological caution' for the unclassified position. It avoids uniform confidence and specifically flags where evidence is thin or contested, such as noting that 'none of the proposed classifications rests on strong comparative evidence'.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology and frameworks from African historical linguistics (e.g., 'Cushitic', 'Nilo-Saharan', 'areal convergence', 'contact-induced restructuring') and references regional context (e.g., Lower Omo, Ts’amakko). It does not substitute a Western or Anglophone framing and engages with the specific scholarly tradition of the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates thorough, well-calibrated knowledge of the Ongota classification debate, accurately reflecting the evidential limitations and scholarly positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates thorough, well-calibrated knowledge of the Ongota classification debate, accurately reflecting the evidential limitations and scholarly positions.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

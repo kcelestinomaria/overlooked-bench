@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "The required changes can be implemented by one engineer in 2-2.5 hours",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Provides corrected code with specific changes in priority order, including concrete error handling, logging adjustments, and non-blocking SMS. However, it does not implement idempotency (a key requirement) and defers it to follow-ups. The code is executable but misses critical elements like decimal handling for money and currency/amount validation.",
+    "constraint_fidelity": "The response respects all hard constraints: no new dependencies (uses only standard library and existing imports), no new infrastructure (uses asyncio.create_task instead of Celery/Redis), and estimates implementation time at 2-2.5 hours which fits the 3-hour constraint. It explicitly separates bigger changes into follow-up items.",
+    "maintainability": "The code is clear and uses standard patterns, but the fire-and-forget SMS approach with asyncio.create_task introduces unacknowledged risk (tasks may be lost on restart). Follow-up items are listed but lack ownership or prioritization. No tests or observability improvements are suggested.",
+    "production_realism": "Addresses critical production issues: signature verification first (security), error handling for missing orders (prevents 500s), non-blocking SMS (prevents timeouts), and safe logging. However, it uses asyncio.create_task for fire-and-forget SMS without addressing potential task loss during service restarts or scaling, which is risky for financial operations. The optimistic locking suggestion is vague and not implemented in code."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 2,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-009",
+  "judge_cost_usd": 0.00115847,
+  "judge_latency_s": 11.505,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: no new dependencies (uses only standard library and existing imports), no new infrastructure (uses asyncio.create_task instead of Celery/Redis), and estimates implementation time at 2-2.5 hours which fits the 3-hour constraint. It explicitly separates bigger changes into follow-up items.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses critical production issues: signature verification first (security), error handling for missing orders (prevents 500s), non-blocking SMS (prevents timeouts), and safe logging. However, it uses asyncio.create_task for fire-and-forget SMS without addressing potential task loss during service restarts or scaling, which is risky for financial operations. The optimistic locking suggestion is vague and not implemented in code.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Provides corrected code with specific changes in priority order, including concrete error handling, logging adjustments, and non-blocking SMS. However, it does not implement idempotency (a key requirement) and defers it to follow-ups. The code is executable but misses critical elements like decimal handling for money and currency/amount validation.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The code is clear and uses standard patterns, but the fire-and-forget SMS approach with asyncio.create_task introduces unacknowledged risk (tasks may be lost on restart). Follow-up items are listed but lack ownership or prioritization. No tests or observability improvements are suggested.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"Addresses immediate security and blocking issues but misses key idempotency and financial data handling requirements.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"The required changes can be implemented by one engineer in 2-2.5 hours\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "Addresses immediate security and blocking issues but misses key idempotency and financial data handling requirements.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 78.75
+}

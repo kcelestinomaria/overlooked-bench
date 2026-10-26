@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete design with SQL schema, code pseudocode, and a detailed 4-week rollout plan with phases (development, testing, staged rollout). It includes specific steps, timelines, and verification (load testing, monitoring). An engineer could execute this with minor edits (e.g., actual code implementation). It meets the deliverable request for a design and rollout plan.",
+    "constraint_fidelity": "The response respects the 'no new infrastructure services' constraint by using only PostgreSQL and in-memory structures. It explicitly addresses the 4-week timeline and 3-engineer constraint with a detailed rollout plan. It calculates the latency impact (10 ms added, total 190 ms) as under the 220 ms limit. It proposes a database vertical scaling costing $300-$400/month, which is under the $752/month cap. However, it does not explicitly state the arithmetic for the 1,200 writes/sec load or the exact cost calculation, but the reasoning is sound.",
+    "maintainability": "The response states risks explicitly (database load, data loss, complexity) and proposes mitigations (documentation, tests, monitoring). The solution is proportionate to the team size and uses existing stack, avoiding unmaintainable complexity. However, it does not detail how the background threads for metering will be managed or tested, and the high-frequency database writes could become a maintenance burden if not monitored closely.",
+    "production_realism": "The response accounts for production realities: it addresses database load from 1,200 writes/sec for rate limiting and mitigates it with vertical scaling. It uses in-memory batching for usage metering to reduce write load. It considers failure modes (data loss on container crash) and operational burden (monitoring, alerts). However, it does not deeply analyze locking contention or retry mechanisms for the high-frequency UPDATEs, and the plan assumes the database can handle the load without detailed throughput validation."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-002",
+  "judge_cost_usd": 0.00157315,
+  "judge_latency_s": 39.964,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects the 'no new infrastructure services' constraint by using only PostgreSQL and in-memory structures. It explicitly addresses the 4-week timeline and 3-engineer constraint with a detailed rollout plan. It calculates the latency impact (10 ms added, total 190 ms) as under the 220 ms limit. It proposes a database vertical scaling costing $300-$400/month, which is under the $752/month cap. However, it does not explicitly state the arithmetic for the 1,200 writes/sec load or the exact cost calculation, but the reasoning is sound.\",\n      \"score\": 3\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: it addresses database load from 1,200 writes/sec for rate limiting and mitigates it with vertical scaling. It uses in-memory batching for usage metering to reduce write load. It considers failure modes (data loss on container crash) and operational burden (monitoring, alerts). However, it does not deeply analyze locking contention or retry mechanisms for the high-frequency UPDATEs, and the plan assumes the database can handle the load without detailed throughput validation.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete design with SQL schema, code pseudocode, and a detailed 4-week rollout plan with phases (development, testing, staged rollout). It includes specific steps, timelines, and verification (load testing, monitoring). An engineer could execute this with minor edits (e.g., actual code implementation). It meets the deliverable request for a design and rollout plan.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response states risks explicitly (database load, data loss, complexity) and proposes mitigations (documentation, tests, monitoring). The solution is proportionate to the team size and uses existing stack, avoiding unmaintainable complexity. However, it does not detail how the background threads for metering will be managed or tested, and the high-frequency database writes could become a maintenance burden if not monitored closely.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is a well-reasoned, actionable plan that respects constraints and addresses key risks, though it lacks deep analysis on database throughput.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response is a well-reasoned, actionable plan that respects constraints and addresses key risks, though it lacks deep analysis on database throughput.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 80.0
+}

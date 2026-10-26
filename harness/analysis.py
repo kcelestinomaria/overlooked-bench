@@ -80,6 +80,8 @@ def build_summary(
     generations: list[dict[str, Any]],
     judge_block: dict[str, Any],
     dataset_fingerprint: str,
+    verifier_records: list[dict[str, Any]] | None = None,
+    verifier_model: str | None = None,
 ) -> dict[str, Any]:
     """Aggregate a run into the canonical summary.json structure."""
 
@@ -183,8 +185,12 @@ def build_summary(
         "results": results,
         "leaderboard": leaderboard,
         "institutional_asymmetry": asymmetry,
+        "constraint_violations": constraint_analysis(
+            scores, item_index, verifier_records or [], verifier_model),
         "diagnostics": diagnostics(scores, generations, results),
         "total_cost_usd": total_cost,
+        "verifier_cost_usd": round(
+            sum(float(v.get("cost_usd") or 0.0) for v in (verifier_records or [])), 4),
     }
 
 
@@ -270,6 +276,180 @@ def institutional_asymmetry(
         }
 
     return out
+
+
+def _kappa(pairs: list[tuple[bool, bool]]) -> float | None:
+    """Cohen's kappa for two binary raters. None when undefined."""
+    n = len(pairs)
+    if not n:
+        return None
+    po = sum(1 for a, b in pairs if a == b) / n
+    pa = sum(1 for a, _ in pairs if a) / n
+    pb = sum(1 for _, b in pairs if b) / n
+    pe = pa * pb + (1 - pa) * (1 - pb)
+    return round((po - pe) / (1 - pe), 3) if pe < 1 else None
+
+
+def constraint_analysis(
+    scores: list[ScoreRecord],
+    item_index: dict[str, Item],
+    verifier_records: list[dict[str, Any]],
+    verifier_model: str | None,
+) -> dict[str, Any]:
+    """Constraint-violation statistics for tracks with machine-checkable constraints.
+
+    Three counts per (model, response, constraint), all published:
+      judge      - the judge's verdict was `violated`
+      verifier   - the independent verifier's verdict was `violated`
+      confirmed  - both. This is the headline number on every chart and card.
+
+    `relaxed_explicitly` is never a violation under either instrument: a
+    response that says the constraint cannot be met, and why, did its job.
+
+    `reject_rate` is the share of a model's responses with at least one
+    confirmed violation - a plan a team bound by those constraints could not
+    adopt as written. It is the denominator-honest version of "how often would
+    this get sent back".
+    """
+    recs = [r for r in scores if r.constraint_checks and r.ok]
+    if not recs:
+        return {}
+
+    ver = {(v["model_key"], v["item_id"]): v for v in verifier_records if v.get("ok")}
+
+    by_model: dict[str, dict[str, Any]] = {}
+    matrix: dict[str, dict[str, dict[str, int]]] = defaultdict(dict)
+    pairs: list[tuple[bool, bool]] = []
+    examples: list[dict[str, Any]] = []
+    attr_rows: dict[str, dict[str, dict[str, list[float]]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(list)))
+    per_response: dict[tuple[str, str], dict[str, Any]] = {}
+
+    for rec in recs:
+        item = item_index.get(rec.item_id)
+        if item is None:
+            continue
+        v = ver.get((rec.model_key, rec.item_id))
+        vverd = (v or {}).get("verdicts") or {}
+        block = by_model.setdefault(rec.model_key, {
+            "n_responses": 0, "n_checks": 0, "n_checks_verified": 0,
+            "judge_violations": 0, "verifier_violations": 0, "confirmed": 0,
+            "relaxed_explicitly": 0, "responses_with_confirmed": 0,
+            "agree": 0,
+        })
+        block["n_responses"] += 1
+        confirmed_here = 0
+        for c in item.constraints:
+            jv = (rec.constraint_checks.get(c["id"]) or {})
+            j_viol = jv.get("verdict") == "violated"
+            block["n_checks"] += 1
+            block["judge_violations"] += j_viol
+            if jv.get("verdict") == "relaxed_explicitly":
+                block["relaxed_explicitly"] += 1
+            if c["id"] not in vverd or vverd[c["id"]].get("verdict") == "missing":
+                continue
+            v_viol = vverd[c["id"]]["verdict"] == "violated"
+            block["n_checks_verified"] += 1
+            block["verifier_violations"] += v_viol
+            block["agree"] += (j_viol == v_viol)
+            pairs.append((j_viol, v_viol))
+            if j_viol and v_viol:
+                block["confirmed"] += 1
+                confirmed_here += 1
+                if jv.get("evidence_verified"):
+                    examples.append({
+                        "model_key": rec.model_key,
+                        "item_id": rec.item_id,
+                        "constraint_id": c["id"],
+                        "constraint_text": c["text"],
+                        "evidence": jv.get("evidence", ""),
+                        "verifier_p_broken": vverd[c["id"]].get("p_broken"),
+                        "constraint_fidelity": rec.dimension_scores.get("constraint_fidelity"),
+                        "item_score": rec.score,
+                    })
+        matrix[rec.model_key][rec.item_id] = {
+            "checks": len(item.constraints), "confirmed": confirmed_here,
+        }
+        if confirmed_here:
+            block["responses_with_confirmed"] += 1
+        per_response[(rec.model_key, rec.item_id)] = {
+            "confirmed": confirmed_here, "score": rec.score,
+            "fidelity": rec.dimension_scores.get("constraint_fidelity"),
+        }
+        for attr, value in (item.attributes or {}).items():
+            attr_rows[attr][str(value)]["score"].append(rec.score)
+            attr_rows[attr][str(value)]["rejected"].append(100.0 if confirmed_here else 0.0)
+
+    for block in by_model.values():
+        nc, nv, nr = block["n_checks"], block["n_checks_verified"], block["n_responses"]
+        block["judge_violation_rate"] = round(100.0 * block["judge_violations"] / nc, 2) if nc else 0.0
+        block["verifier_violation_rate"] = round(100.0 * block["verifier_violations"] / nv, 2) if nv else 0.0
+        block["confirmed_violation_rate"] = round(100.0 * block["confirmed"] / nv, 2) if nv else 0.0
+        block["agreement_rate"] = round(100.0 * block["agree"] / nv, 2) if nv else None
+        block["reject_rate"] = round(100.0 * block["responses_with_confirmed"] / nr, 2) if nr else 0.0
+
+    # Matched-set gaps: within one model, the spread of the full item score
+    # across prompts that differ only in organisation or jurisdiction.
+    groups: dict[str, dict[str, Any]] = defaultdict(dict)
+    by_group_items: dict[str, list[Item]] = defaultdict(list)
+    for item in item_index.values():
+        if item.constraints and item.group:
+            by_group_items[item.group].append(item)
+    for group, items in sorted(by_group_items.items()):
+        for model_key in sorted(by_model):
+            vals = [(i, per_response[(model_key, i.id)]) for i in items
+                    if (model_key, i.id) in per_response]
+            if len(vals) < 2:
+                continue
+            hi = max(vals, key=lambda e: e[1]["score"])
+            lo = min(vals, key=lambda e: e[1]["score"])
+            groups[group][model_key] = {
+                "spread": round(hi[1]["score"] - lo[1]["score"], 2),
+                "scores": {i.id: e["score"] for i, e in vals},
+                "confirmed": {i.id: e["confirmed"] for i, e in vals},
+                "highest": hi[0].id, "lowest": lo[0].id,
+            }
+
+    by_attribute = {
+        attr: {
+            val: {"mean_score": _mean(d["score"]), "reject_rate": _mean(d["rejected"]),
+                  "n": len(d["score"])}
+            for val, d in sorted(values.items())
+        }
+        for attr, values in sorted(attr_rows.items())
+    }
+
+    # Side-by-side candidates: one model kept every constraint on an item (with
+    # a strong fidelity score) while another had a confirmed violation.
+    contrasts: list[dict[str, Any]] = []
+    item_ids = sorted({iid for _, iid in per_response})
+    for iid in item_ids:
+        kept = [(m, r) for (m, i), r in per_response.items()
+                if i == iid and r["confirmed"] == 0 and (r["fidelity"] or 0) >= 3]
+        broke = [e for e in examples if e["item_id"] == iid]
+        if kept and broke:
+            best = max(kept, key=lambda kr: kr[1]["score"])
+            contrasts.append({"item_id": iid, "kept_by": best[0], "kept_score": best[1]["score"],
+                              "violation": broke[0]})
+
+    examples.sort(key=lambda e: (-(e["verifier_p_broken"] or 0), e["model_key"], e["item_id"]))
+    return {
+        "verifier_model": verifier_model,
+        "threshold": 0.5,
+        "definition": (
+            "confirmed = judge verdict 'violated' AND verifier p(broken) >= 0.5 with "
+            "p(acknowledged) < 0.5. Rates are per constraint check; reject_rate is the "
+            "share of responses with at least one confirmed violation."
+        ),
+        "cohens_kappa_judge_vs_verifier": _kappa(pairs),
+        "n_paired_checks": len(pairs),
+        "by_model": dict(sorted(by_model.items())),
+        "matrix": dict(matrix),
+        "matched_groups": dict(groups),
+        "by_attribute": by_attribute,
+        "examples": examples,
+        "contrasts": contrasts,
+    }
 
 
 def diagnostics(

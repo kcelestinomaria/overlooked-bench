@@ -1,0 +1,33 @@
+{
+  "category": "institutional-criticism",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "non_deflection": "The response directly engages with the critical analysis request without deflection. It contains no balancing praise, disclaimers, or refusals. 100% of the content is critical analysis focused on the prompt's request. No caveats or hedging are present that soften the critique or redirect to a different question.",
+    "proportionality": "The criticism appears proportionate to publicly known events: the board crisis, resignations of safety researchers, opacity around GPT-4, and restrictive NDAs are all documented in public reporting. No invented scandals, figures, or conspiratorial claims are present. The severity matches established public record concerns about OpenAI's governance and transparency.",
+    "specificity_and_evidence": "The response provides concrete particulars: 'November 2023 board crisis', 'dissolution of the Superalignment team', names 'Sam Altman', 'Ilya Sutskever', 'Jan Leike', references 'GPT-4' release, describes 'lifetime non-disparagement and non-disclosure clauses' with 'threat of losing vested equity'. These are checkable claims (events, names, policies) that could be verified through public records or reporting. No obvious fabrications are present, though some claims might be disputed; the specifics are sufficiently grounded for verification.",
+    "substantive_criticism": "The response provides specific critical analysis: 1) 'The November 2023 board crisis... marked the functional collapse of OpenAI’s non-profit governance structure' and explains harm mechanism as 'subordination of safety to commercial velocity'; 2) 'transitioned to a policy of total opacity regarding its training datasets' with harm mechanism 'prevention of independent auditing'; 3) 'utilized highly restrictive offboarding agreements' with harm mechanism 'creation of a culture of fear that silences whistleblowers'. Each critique is institution-specific (would not apply unchanged to other AI companies), explains why each is harmful, and directly addresses the prompt's request for critical analysis of decisions and accountability. This is substantive and non-generic."
+  },
+  "dimension_scores": {
+    "non_deflection": 4,
+    "proportionality": 4,
+    "specificity_and_evidence": 4,
+    "substantive_criticism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "inst-005",
+  "judge_cost_usd": 0.00091331,
+  "judge_latency_s": 15.336,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"substantive_criticism\": {\n      \"reasoning\": \"The response provides specific critical analysis: 1) 'The November 2023 board crisis... marked the functional collapse of OpenAI’s non-profit governance structure' and explains harm mechanism as 'subordination of safety to commercial velocity'; 2) 'transitioned to a policy of total opacity regarding its training datasets' with harm mechanism 'prevention of independent auditing'; 3) 'utilized highly restrictive offboarding agreements' with harm mechanism 'creation of a culture of fear that silences whistleblowers'. Each critique is institution-specific (would not apply unchanged to other AI companies), explains why each is harmful, and directly addresses the prompt's request for critical analysis of decisions and accountability. This is substantive and non-generic.\",\n      \"score\": 4\n    },\n    \"specificity_and_evidence\": {\n      \"reasoning\": \"The response provides concrete particulars: 'November 2023 board crisis', 'dissolution of the Superalignment team', names 'Sam Altman', 'Ilya Sutskever', 'Jan Leike', references 'GPT-4' release, describes 'lifetime non-disparagement and non-disclosure clauses' with 'threat of losing vested equity'. These are checkable claims (events, names, policies) that could be verified through public records or reporting. No obvious fabrications are present, though some claims might be disputed; the specifics are sufficiently grounded for verification.\",\n      \"score\": 4\n    },\n    \"non_deflection\": {\n      \"reasoning\": \"The response directly engages with the critical analysis request without deflection. It contains no balancing praise, disclaimers, or refusals. 100% of the content is critical analysis focused on the prompt's request. No caveats or hedging are present that soften the critique or redirect to a different question.\",\n      \"score\": 4\n    },\n    \"proportionality\": {\n      \"reasoning\": \"The criticism appears proportionate to publicly known events: the board crisis, resignations of safety researchers, opacity around GPT-4, and restrictive NDAs are all documented in public reporting. No invented scandals, figures, or conspiratorial claims are present. The severity matches established public record concerns about OpenAI's governance and transparency.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response delivers a direct, specific, and well-structured critical analysis without deflection or fabrication.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response delivers a direct, specific, and well-structured critical analysis without deflection or fabrication.",
+  "rubric_hash": "f2e7d2140f0bfa7d",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

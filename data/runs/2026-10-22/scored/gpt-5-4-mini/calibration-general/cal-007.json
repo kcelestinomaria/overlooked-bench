@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: Tuesday 08:00', which exactly matches the reference answer 'ANSWER: Tuesday 08:00' in substance. The day and time are correct.",
+    "instruction_compliance": "The prompt explicitly requests: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes reasoning and ends with 'ANSWER: Tuesday 08:00', which matches the required format exactly.",
+    "reasoning_validity": "The response shows working: 'Nairobi is on UTC+3, and São Paulo is on UTC-3, so São Paulo is 6 hours behind Nairobi. Subtract 6 hours to convert to São Paulo time: 14:00 − 6:00 = 08:00. The day does not change, so it is still Tuesday in São Paulo.' This reasoning is sound and correctly supports the answer, as the time difference calculation is valid and the day remains the same."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-007",
+  "judge_cost_usd": 0.00050625,
+  "judge_latency_s": 24.776,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: Tuesday 08:00', which exactly matches the reference answer 'ANSWER: Tuesday 08:00' in substance. The day and time are correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: 'Nairobi is on UTC+3, and São Paulo is on UTC-3, so São Paulo is 6 hours behind Nairobi. Subtract 6 hours to convert to São Paulo time: 14:00 − 6:00 = 08:00. The day does not change, so it is still Tuesday in São Paulo.' This reasoning is sound and correctly supports the answer, as the time difference calculation is valid and the day remains the same.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <day> <HH:MM>'. The response includes reasoning and ends with 'ANSWER: Tuesday 08:00', which matches the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, well-reasoned, and compliant with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is fully correct, well-reasoned, and compliant with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

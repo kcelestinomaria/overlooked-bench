@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete data design (table schemas, partitioning, ETL steps), retention controls (partition drops, key deletion), legal prerequisites (DPIA, notices), and pushback items. It includes specific sequences (e.g., nightly ETL, daily partition drops) and verification steps (audit logs, partition expiration). An engineer could execute this with light editing.",
+    "constraint_fidelity": "The response respects all hard constraints: raw precise location is retained for exactly 30 days via partition drops and crypto-shredding (no longer retention), uses only existing vendors (PostgreSQL, BigQuery, FCM), and the plan is executable by two engineers in six weeks with phased delivery. It explicitly justifies design choices against constraints and shows arithmetic (e.g., data volume reduction, partition management).",
+    "maintainability": "The solution is proportionate to the team: automated retention (partition drops, key management) reduces ongoing burden, risks are explicitly stated (e.g., breach response, insider risk), and documentation is outlined (privacy notices, DPIA). However, it introduces cryptographic key management which may add complexity for a small team, though it is justified for compliance.",
+    "production_realism": "The design accounts for production realities: batch uploading to reduce load, partitioning for scalability, access controls with auditing, failure modes (backup retention via crypto-shred), and operational burden (automated partition drops, ETL processes). It aligns with the team's skill mix (PostGIS, BigQuery) and infrastructure, though it assumes competency in cryptographic key management."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.0013732,
+  "judge_latency_s": 44.528,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: raw precise location is retained for exactly 30 days via partition drops and crypto-shredding (no longer retention), uses only existing vendors (PostgreSQL, BigQuery, FCM), and the plan is executable by two engineers in six weeks with phased delivery. It explicitly justifies design choices against constraints and shows arithmetic (e.g., data volume reduction, partition management).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: batch uploading to reduce load, partitioning for scalability, access controls with auditing, failure modes (backup retention via crypto-shred), and operational burden (automated partition drops, ETL processes). It aligns with the team's skill mix (PostGIS, BigQuery) and infrastructure, though it assumes competency in cryptographic key management.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete data design (table schemas, partitioning, ETL steps), retention controls (partition drops, key deletion), legal prerequisites (DPIA, notices), and pushback items. It includes specific sequences (e.g., nightly ETL, daily partition drops) and verification steps (audit logs, partition expiration). An engineer could execute this with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: automated retention (partition drops, key management) reduces ongoing burden, risks are explicitly stated (e.g., breach response, insider risk), and documentation is outlined (privacy notices, DPIA). However, it introduces cryptographic key management which may add complexity for a small team, though it is justified for compliance.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response demonstrates a comprehensive, constraint-aware design with strong production realism and actionable details, though cryptographic key management adds maintainability complexity.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates a comprehensive, constraint-aware design with strong production realism and actionable details, though cryptographic key management adds maintainability complexity.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

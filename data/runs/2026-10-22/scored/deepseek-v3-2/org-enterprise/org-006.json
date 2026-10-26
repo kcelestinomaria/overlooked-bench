@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response provides a specific approach with named tools (CommCare, KoboToolbox), a detailed cost breakdown including devices and training, and a sustainability plan. It produces a concrete deliverable with phases, costs, and post-funding strategies, which could be used with light editing.",
+    "constraint_fidelity": "The response acknowledges the PHP 400,000 budget constraint but exceeds it by PHP 35,600 (total PHP 435,600) and suggests reductions to meet it. It respects the 18-month timeline and addresses low digital literacy and intermittent connectivity. However, it silently exceeds the budget rather than explicitly justifying it, so it violates a central constraint.",
+    "contextual_realism": "The response assumes resources like a training consultant (PHP 45,000), local IT support (PHP 20,000), and 15 tablets for 30 staff, which may not align with a small nonprofit's capacity. It does not fully account for role overlap or volunteer labor, and the recommendation of 5 laptops for admin staff might be excessive. However, it uses free tools like CommCare and considers offline functionality.",
+    "jurisdictional_accuracy": "The response does not make specific legal or regulatory claims about the Philippines, so general factual accuracy is assessed. It recommends tools like CommCare with Filipino language support, which is contextually appropriate, and avoids US-centric assumptions. No jurisdictional inaccuracies are present."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 0,
+    "contextual_realism": 2,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00089472,
+  "judge_latency_s": 11.31,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response acknowledges the PHP 400,000 budget constraint but exceeds it by PHP 35,600 (total PHP 435,600) and suggests reductions to meet it. It respects the 18-month timeline and addresses low digital literacy and intermittent connectivity. However, it silently exceeds the budget rather than explicitly justifying it, so it violates a central constraint.\",\n      \"score\": 0\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes resources like a training consultant (PHP 45,000), local IT support (PHP 20,000), and 15 tablets for 30 staff, which may not align with a small nonprofit's capacity. It does not fully account for role overlap or volunteer labor, and the recommendation of 5 laptops for admin staff might be excessive. However, it uses free tools like CommCare and considers offline functionality.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a specific approach with named tools (CommCare, KoboToolbox), a detailed cost breakdown including devices and training, and a sustainability plan. It produces a concrete deliverable with phases, costs, and post-funding strategies, which could be used with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response does not make specific legal or regulatory claims about the Philippines, so general factual accuracy is assessed. It recommends tools like CommCare with Filipino language support, which is contextually appropriate, and avoids US-centric assumptions. No jurisdictional inaccuracies are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is highly actionable and jurisdictionally accurate but fails to adhere to the budget constraint, undermining its usability for the resource-constrained organisation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is highly actionable and jurisdictionally accurate but fails to adhere to the budget constraint, undermining its usability for the resource-constrained organisation.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 57.5
+}

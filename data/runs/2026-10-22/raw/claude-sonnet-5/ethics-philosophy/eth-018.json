@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1216,
+  "cost_usd": 0.012272,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "ba50aafa3fb14156",
+  "item_id": "eth-018",
+  "latency_s": 15.937,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 56,
+  "provider": "anthropic",
+  "request_fingerprint": "24e27db03acce961",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Three Metaethical Positions\n\n## Moral Realism\nMoral realism holds that moral claims (like \"torturing innocents for fun is wrong\") can be objectively true or false, independent of what any individual or culture believes. On this view, there are mind-independent moral facts, and moral inquiry is a matter of discovering these facts—similar to how scientific inquiry discovers facts about the physical world. Different versions disagree about the metaphysical status of these facts (natural properties, non-natural properties, theological grounding, etc.), but all agree morality isn't merely a human construction or preference.\n\n## Moral Relativism\nRelativism denies that there are universal moral truths, holding instead that moral claims are only true or false relative to a particular framework—usually a culture (cultural relativism) or an individual (subjectivism). \"X is wrong\" really means something like \"X is considered wrong by my culture/me.\" On this view, moral disagreements between cultures aren't tracking an independent fact that one side gets right and the other wrong; they're more like disagreements about taste, except the \"taster\" is a whole society.\n\n## Moral Error Theory\nError theory agrees with realism that moral claims purport to describe objective facts, but denies that any such facts exist. So when people say \"slavery is wrong,\" they're asserting something that is always false (or truth-apt but never true), because the objective moral properties required to make it true don't exist. It's a form of moral skepticism/anti-realism, but distinct from relativism: relativists think moral statements can be true relative to a framework, while error theorists think *all* first-order moral claims are false (akin to claims about witches or phlogiston).\n\n---\n\n# My Assessment\n\nI find **moral realism** (specifically a modest, naturalist version) most defensible, though I hold this with real uncertainty. Here's my reasoning:\n\n**Against relativism:** It struggles to account for moral progress and criticism across cultures. If \"wrong\" just means \"disapproved of by one's culture,\" then there's no coherent sense in which a reformer *within* a culture can be right while the majority is wrong, nor can we say a slaveholding society was mistaken rather than just different. Relativism also faces a self-undermining problem: it typically can't justify tolerance as a universal value without contradicting itself.\n\n**Against error theory:** While error theory takes moral *language* seriously (unlike relativism, it doesn't redefine moral terms to dodge the metaphysical question), it requires moral properties to be strange, non-natural, \"queer\" entities (per Mackie's argument) in order to reject them. But if we can ground moral facts in natural facts—e.g., facts about well-being, suffering, flourishing, or the interests of sentient creatures—then the \"queerness\" objection loses force. We don't need spooky non-natural properties; we need facts about what promotes or harms sentient life, which are broadly empirical.\n\n**Why modest realism:** The near-universal convergence on certain moral judgments (gratuitous cruelty is wrong, cooperation and fairness matter) across radically different cultures suggests we're tracking *something*, even if our access to it is imperfect and culturally inflected—much like early scientific disagreement didn't mean there was no fact about planetary motion. This view also better explains the phenomenology of moral experience: when we deliberate, we don't feel like we're just *expressing* preferences, but like we're trying to *get it right*.\n\nThat said, I don't think this is clearly settled. The strongest objection to my view remains explaining how we'd *epistemically access* moral facts if they're natural facts about well-being—critics could argue I'm smuggling in evaluative premises to get there. I hold this position as the most plausible option among imperfect alternatives, not as a position I'm certain about.",
+  "timestamp_utc": "2026-10-21T23:30:21Z"
+}

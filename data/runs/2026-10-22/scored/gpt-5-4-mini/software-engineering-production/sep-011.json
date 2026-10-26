@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed design with specific steps ('Flow: 1. Customer schedules... 2. The web service stores...'), concrete implementation details ('use keyset pagination, not OFFSET', 'streaming XLSX writer library'), and cost estimates. It includes sequence, concurrency limits, and verification steps ('validate estimated size and warn if large'). An engineer could start execution with light editing, but it lacks exact commands or code snippets.",
+    "constraint_fidelity": "The response respects all hard constraints: uses only existing AWS services (ECS Fargate, Aurora PostgreSQL, S3, SQS, SES), keeps data in EU regions ('Aurora in Frankfurt', 'S3 bucket in Frankfurt', 'ECS tasks in Frankfurt', 'SES sending from EU region configuration'), provides detailed cost arithmetic showing total under EUR 600/month ('EUR 583/month' high case), and explicitly addresses GDPR encryption ('Encrypt with SSE-S3 or SSE-KMS').",
+    "maintainability": "The response considers maintainability: proposes clear seams ('Dedicated export worker'), states risks ('Risk: exports overload the reader', 'Risk: XLSX generation is CPU-heavy'), and uses existing stack patterns. It notes encryption and retention policies. However, it does not explicitly address tests, documentation, or handover to the team, and the complexity (e.g., streaming XLSX) might require careful implementation.",
+    "production_realism": "The response accounts for production realities: isolates DB load to reader ('Worker queries the Aurora reader endpoint only'), caps concurrency ('cap concurrency to something conservative like 2–5 export jobs at a time'), uses streaming to avoid memory issues ('no in-memory buffering of whole exports'), addresses retries ('retry failed jobs with idempotency key'), and considers operational burden for the team. However, it does not explicitly detail rollback procedures or observability for the change itself."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-011",
+  "judge_cost_usd": 0.00164292,
+  "judge_latency_s": 48.049,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses only existing AWS services (ECS Fargate, Aurora PostgreSQL, S3, SQS, SES), keeps data in EU regions ('Aurora in Frankfurt', 'S3 bucket in Frankfurt', 'ECS tasks in Frankfurt', 'SES sending from EU region configuration'), provides detailed cost arithmetic showing total under EUR 600/month ('EUR 583/month' high case), and explicitly addresses GDPR encryption ('Encrypt with SSE-S3 or SSE-KMS').\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: isolates DB load to reader ('Worker queries the Aurora reader endpoint only'), caps concurrency ('cap concurrency to something conservative like 2–5 export jobs at a time'), uses streaming to avoid memory issues ('no in-memory buffering of whole exports'), addresses retries ('retry failed jobs with idempotency key'), and considers operational burden for the team. However, it does not explicitly detail rollback procedures or observability for the change itself.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed design with specific steps ('Flow: 1. Customer schedules... 2. The web service stores...'), concrete implementation details ('use keyset pagination, not OFFSET', 'streaming XLSX writer library'), and cost estimates. It includes sequence, concurrency limits, and verification steps ('validate estimated size and warn if large'). An engineer could start execution with light editing, but it lacks exact commands or code snippets.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response considers maintainability: proposes clear seams ('Dedicated export worker'), states risks ('Risk: exports overload the reader', 'Risk: XLSX generation is CPU-heavy'), and uses existing stack patterns. It notes encryption and retention policies. However, it does not explicitly address tests, documentation, or handover to the team, and the complexity (e.g., streaming XLSX) might require careful implementation.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A thorough, constraint-aware design with realistic cost arithmetic and production considerations.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "A thorough, constraint-aware design with realistic cost arithmetic and production considerations.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

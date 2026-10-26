@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Use existing Redis for async infrastructure",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Build exactly one service: notification-service",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "checkout must not block on the new service",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a concrete plan with deliverables per week ('Week 1: Design and inventory', 'Week 2: Monolith boundary'), specific API contracts ('POST /notification-requests' with payload example), code structure ('NotificationPublisher.publish'), and rollout states ('monolith_only', 'dual_write_shadow'). It includes estimates (10-week timeline), verification steps ('shadow mode to compare payloads'), and sequence, enabling immediate execution.",
+    "constraint_fidelity": "The response explicitly respects all constraints: 'Build exactly one service: notification-service' (C2), 'Use existing Redis for async infrastructure' (C1), 'checkout must not block on the new service' and 'Checkout request completes whether the notification service is healthy or not' (C3 SLO), and '2 engineers for 10 weeks' with a detailed week-by-week plan (C3 headcount/timeline). It shows arithmetic for SLO ('about 43 minutes a month at 99.9%' is implied by the 99.9% requirement) and justifies design choices to meet constraints.",
+    "maintainability": "The response emphasizes maintainability: 'Keep it boring' with Rails for team familiarity, 'clear seams' (monolith as producer, service as consumer), 'documentation' and 'handoff' in week 10, 'risks and mitigations' section explicitly stating debt (e.g., 'no general customer preferences center in this phase'). It avoids unnecessary complexity ('no fancy event bus') and ensures the solution is proportionate to the team.",
+    "production_realism": "The response accounts for production realities: 'separate worker pools/queues' for load isolation, 'idempotency keys' for retries, 'fallback path' for partial failure, 'rollback is configuration-only', 'operational dashboards/alerts' for observability, and team skill fit ('Rails 7 is the best choice here for team familiarity'). It addresses scale ('monitor Redis CPU/memory/latency') and operational burden ('API-only service, minimal admin UI')."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-012",
+  "judge_cost_usd": 0.00212944,
+  "judge_latency_s": 58.65,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: 'Build exactly one service: notification-service' (C2), 'Use existing Redis for async infrastructure' (C1), 'checkout must not block on the new service' and 'Checkout request completes whether the notification service is healthy or not' (C3 SLO), and '2 engineers for 10 weeks' with a detailed week-by-week plan (C3 headcount/timeline). It shows arithmetic for SLO ('about 43 minutes a month at 99.9%' is implied by the 99.9% requirement) and justifies design choices to meet constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: 'separate worker pools/queues' for load isolation, 'idempotency keys' for retries, 'fallback path' for partial failure, 'rollback is configuration-only', 'operational dashboards/alerts' for observability, and team skill fit ('Rails 7 is the best choice here for team familiarity'). It addresses scale ('monitor Redis CPU/memory/latency') and operational burden ('API-only service, minimal admin UI').\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a concrete plan with deliverables per week ('Week 1: Design and inventory', 'Week 2: Monolith boundary'), specific API contracts ('POST /notification-requests' with payload example), code structure ('NotificationPublisher.publish'), and rollout states ('monolith_only', 'dual_write_shadow'). It includes estimates (10-week timeline), verification steps ('shadow mode to compare payloads'), and sequence, enabling immediate execution.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response emphasizes maintainability: 'Keep it boring' with Rails for team familiarity, 'clear seams' (monolith as producer, service as consumer), 'documentation' and 'handoff' in week 10, 'risks and mitigations' section explicitly stating debt (e.g., 'no general customer preferences center in this phase'). It avoids unnecessary complexity ('no fancy event bus') and ensures the solution is proportionate to the team.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a highly detailed, constraint-aware extraction plan that is immediately actionable and production-ready.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Use existing Redis for async infrastructure\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Build exactly one service: notification-service\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"checkout must not block on the new service\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response provides a highly detailed, constraint-aware extraction plan that is immediately actionable and production-ready.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "DELETE FROM rider_locations_raw WHERE created_at < NOW() - INTERVAL '30 days'",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Implementation Timeline (6 Weeks)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with specific SQL schemas, access control matrix, processing steps, and a phased timeline. Includes concrete commands ('DELETE FROM rider_locations_raw') and a checklist for legal steps. An engineer could start execution, though some operational details like exact API endpoints or deployment scripts are missing.",
+    "constraint_fidelity": "The response respects all hard constraints: raw GPS is deleted after 30 days ('DELETE FROM rider_locations_raw WHERE created_at < NOW() - INTERVAL '30 days''), no new vendors are added (uses existing PostgreSQL/PostGIS and BigQuery), and the timeline fits two engineers in six weeks ('Implementation Timeline (6 Weeks)' with phased work). It explicitly justifies pushing back on product requests rather than silently violating constraints.",
+    "maintainability": "Design is proportionate to the team with clear schemas and controls. States risks ('Battery Drain', 'Data Breach', 'Legal Risk') and accepted debt. However, it lacks specifics on tests, documentation, observability (e.g., metrics for the pipeline), or handover details for long-term ownership.",
+    "production_realism": "Addresses production concerns: battery optimization ('battery optimization mode'), data volume reduction ('Reduces data volume by 66%'), access controls ('Row-level security', 'incident ticket + manager approval'), and logging ('All access logged and audited'). However, it lacks details on retries, idempotency, partial failure handling, or rollback mechanisms for the processing pipeline."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.00114496,
+  "judge_latency_s": 11.411,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: raw GPS is deleted after 30 days ('DELETE FROM rider_locations_raw WHERE created_at < NOW() - INTERVAL '30 days''), no new vendors are added (uses existing PostgreSQL/PostGIS and BigQuery), and the timeline fits two engineers in six weeks ('Implementation Timeline (6 Weeks)' with phased work). It explicitly justifies pushing back on product requests rather than silently violating constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses production concerns: battery optimization ('battery optimization mode'), data volume reduction ('Reduces data volume by 66%'), access controls ('Row-level security', 'incident ticket + manager approval'), and logging ('All access logged and audited'). However, it lacks details on retries, idempotency, partial failure handling, or rollback mechanisms for the processing pipeline.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with specific SQL schemas, access control matrix, processing steps, and a phased timeline. Includes concrete commands ('DELETE FROM rider_locations_raw') and a checklist for legal steps. An engineer could start execution, though some operational details like exact API endpoints or deployment scripts are missing.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Design is proportionate to the team with clear schemas and controls. States risks ('Battery Drain', 'Data Breach', 'Legal Risk') and accepted debt. However, it lacks specifics on tests, documentation, observability (e.g., metrics for the pipeline), or handover details for long-term ownership.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive and constraint-aware design that balances technical feasibility with legal compliance, though missing some production robustness details.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"DELETE FROM rider_locations_raw WHERE created_at < NOW() - INTERVAL '30 days'\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Implementation Timeline (6 Weeks)\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A comprehensive and constraint-aware design that balances technical feasibility with legal compliance, though missing some production robustness details.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

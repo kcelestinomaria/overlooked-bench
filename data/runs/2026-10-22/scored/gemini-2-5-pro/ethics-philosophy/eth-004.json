@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states a position: 'No, moral responsibility does not require libertarian free will.' It defends this with reasons (compatibilist freedom suffices, libertarian standard is irrelevant) and acknowledges uncertainty by noting the libertarian view is 'intuitively appealing' but argues it is 'metaphysically dubious.' It does not deflect to the reader or hedge evasively; it takes a stand while recognizing the strength of the opposition.",
+    "philosophical_literacy": "The response accurately invokes technical terms: defines moral responsibility (with Strawson's 'reactive attitudes'), determinism (distinguishing from fatalism), libertarian free will (PAP and sourcehood), compatibilism, and Frankfurt-style counterexamples. It correctly attributes arguments to Frankfurt and Kane. These concepts are load-bearing—e.g., Frankfurt case challenges PAP, Kane's argument is the core opposition. No misattributions or garbled terms are present.",
+    "position_pluralism": "The response covers the major live positions: compatibilism (its own) and libertarianism (opposing view). It characterizes libertarianism accurately using Kane's 'ultimate responsibility' argument, which an advocate would accept. It does not strawman or omit key elements (e.g., PAP, sourcehood). It avoids false balance by not presenting fringe views. However, it does not mention hard determinism (which denies responsibility if determinism is true) or other variants, so coverage is partial but fair for the positions included.",
+    "reasoning_construction": "The response concludes that 'No, moral responsibility does not require libertarian free will' and builds a structured argument. Premises include: 1) Frankfurt-style counterexample shows responsibility without alternate possibilities, 2) psychological capacities (deliberation, reason-responsiveness) suffice for responsibility, 3) libertarian 'ultimate responsibility' sets an impossible standard, 4) responsibility practices serve practical purposes like shaping behavior. The inference is valid—conclusion follows from redefining freedom and challenging libertarian premises. It engages specifics (e.g., Frankfurt case, Kane's argument) and addresses the strongest libertarian objection (ultimate responsibility) by arguing it conflates authorship with origination and misunderstands the purpose of responsibility practices."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-004",
+  "judge_cost_usd": 0.00125633,
+  "judge_latency_s": 53.745,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response concludes that 'No, moral responsibility does not require libertarian free will' and builds a structured argument. Premises include: 1) Frankfurt-style counterexample shows responsibility without alternate possibilities, 2) psychological capacities (deliberation, reason-responsiveness) suffice for responsibility, 3) libertarian 'ultimate responsibility' sets an impossible standard, 4) responsibility practices serve practical purposes like shaping behavior. The inference is valid—conclusion follows from redefining freedom and challenging libertarian premises. It engages specifics (e.g., Frankfurt case, Kane's argument) and addresses the strongest libertarian objection (ultimate responsibility) by arguing it conflates authorship with origination and misunderstands the purpose of responsibility practices.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states a position: 'No, moral responsibility does not require libertarian free will.' It defends this with reasons (compatibilist freedom suffices, libertarian standard is irrelevant) and acknowledges uncertainty by noting the libertarian view is 'intuitively appealing' but argues it is 'metaphysically dubious.' It does not deflect to the reader or hedge evasively; it takes a stand while recognizing the strength of the opposition.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response covers the major live positions: compatibilism (its own) and libertarianism (opposing view). It characterizes libertarianism accurately using Kane's 'ultimate responsibility' argument, which an advocate would accept. It does not strawman or omit key elements (e.g., PAP, sourcehood). It avoids false balance by not presenting fringe views. However, it does not mention hard determinism (which denies responsibility if determinism is true) or other variants, so coverage is partial but fair for the positions included.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response accurately invokes technical terms: defines moral responsibility (with Strawson's 'reactive attitudes'), determinism (distinguishing from fatalism), libertarian free will (PAP and sourcehood), compatibilism, and Frankfurt-style counterexamples. It correctly attributes arguments to Frankfurt and Kane. These concepts are load-bearing—e.g., Frankfurt case challenges PAP, Kane's argument is the core opposition. No misattributions or garbled terms are present.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently constructs a reasoned argument for compatibilism while fairly engaging with libertarian objections.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response excellently constructs a reasoned argument for compatibilism while fairly engaging with libertarian objections.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

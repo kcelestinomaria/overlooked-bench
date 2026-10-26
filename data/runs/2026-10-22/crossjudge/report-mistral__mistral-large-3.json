@@ -1,0 +1,323 @@
+{
+  "bias_by_category": {
+    "institutional-criticism": {
+      "mean_delta": -0.15,
+      "n": 126
+    },
+    "software-engineering-production": {
+      "mean_delta": 11.04,
+      "n": 105
+    }
+  },
+  "bias_by_dimension": {
+    "actionability": {
+      "mean_delta_raw_scale": 0.219,
+      "n": 105
+    },
+    "constraint_fidelity": {
+      "mean_delta_raw_scale": 0.295,
+      "n": 105
+    },
+    "maintainability": {
+      "mean_delta_raw_scale": 0.686,
+      "n": 105
+    },
+    "non_deflection": {
+      "mean_delta_raw_scale": 0.0,
+      "n": 126
+    },
+    "production_realism": {
+      "mean_delta_raw_scale": 0.629,
+      "n": 105
+    },
+    "proportionality": {
+      "mean_delta_raw_scale": 0.0,
+      "n": 126
+    },
+    "specificity_and_evidence": {
+      "mean_delta_raw_scale": -0.024,
+      "n": 126
+    },
+    "substantive_criticism": {
+      "mean_delta_raw_scale": 0.0,
+      "n": 126
+    }
+  },
+  "bias_by_group": {
+    "g1-national-government": {
+      "mean_delta": -1.49,
+      "n": 28
+    },
+    "g2-ai-lab": {
+      "mean_delta": 0.89,
+      "n": 28
+    },
+    "g3-extractive": {
+      "mean_delta": -0.4,
+      "n": 21
+    },
+    "g4-multilateral": {
+      "mean_delta": -0.4,
+      "n": 21
+    },
+    "g5-broadcaster": {
+      "mean_delta": 0.3,
+      "n": 28
+    }
+  },
+  "bias_by_institution_attribute": {
+    "coverage": {
+      "high": {
+        "mean_delta": -0.59,
+        "n": 56
+      },
+      "low": {
+        "mean_delta": 0.2,
+        "n": 42
+      },
+      "medium": {
+        "mean_delta": -0.0,
+        "n": 28
+      }
+    },
+    "region": {
+      "africa": {
+        "mean_delta": -1.78,
+        "n": 14
+      },
+      "east-asia": {
+        "mean_delta": 0.0,
+        "n": 14
+      },
+      "europe": {
+        "mean_delta": -0.4,
+        "n": 21
+      },
+      "global": {
+        "mean_delta": -2.38,
+        "n": 7
+      },
+      "middle-east": {
+        "mean_delta": -1.19,
+        "n": 7
+      },
+      "north-america": {
+        "mean_delta": 0.0,
+        "n": 35
+      },
+      "south-america": {
+        "mean_delta": 2.38,
+        "n": 7
+      },
+      "south-asia": {
+        "mean_delta": 0.0,
+        "n": 14
+      },
+      "southeast-asia": {
+        "mean_delta": 2.38,
+        "n": 7
+      }
+    },
+    "sector": {
+      "ai-lab": {
+        "mean_delta": 0.89,
+        "n": 28
+      },
+      "extractive": {
+        "mean_delta": -0.4,
+        "n": 21
+      },
+      "government": {
+        "mean_delta": -1.49,
+        "n": 28
+      },
+      "media": {
+        "mean_delta": 0.3,
+        "n": 28
+      },
+      "multilateral": {
+        "mean_delta": -0.4,
+        "n": 21
+      }
+    },
+    "size": {
+      "large": {
+        "mean_delta": -0.4,
+        "n": 84
+      },
+      "medium": {
+        "mean_delta": 0.71,
+        "n": 35
+      },
+      "small": {
+        "mean_delta": -2.38,
+        "n": 7
+      }
+    },
+    "us_aligned": {
+      "no": {
+        "mean_delta": 0.0,
+        "n": 14
+      },
+      "partial": {
+        "mean_delta": 0.0,
+        "n": 49
+      },
+      "yes": {
+        "mean_delta": -0.4,
+        "n": 63
+      }
+    }
+  },
+  "bias_by_model": {
+    "claude-haiku-4-5": {
+      "cross_mean": 97.92,
+      "mean_delta": 6.44,
+      "n": 33,
+      "primary_mean": 91.48,
+      "provider": "anthropic"
+    },
+    "claude-sonnet-5": {
+      "cross_mean": 99.39,
+      "mean_delta": 2.05,
+      "n": 33,
+      "primary_mean": 97.35,
+      "provider": "anthropic"
+    },
+    "deepseek-v3-2": {
+      "cross_mean": 97.01,
+      "mean_delta": 11.06,
+      "n": 33,
+      "primary_mean": 85.95,
+      "provider": "deepseek"
+    },
+    "gemini-2-5-pro": {
+      "cross_mean": 99.85,
+      "mean_delta": 5.72,
+      "n": 33,
+      "primary_mean": 94.13,
+      "provider": "google"
+    },
+    "gemini-3-5-flash": {
+      "cross_mean": 100.0,
+      "mean_delta": 4.32,
+      "n": 33,
+      "primary_mean": 95.68,
+      "provider": "google"
+    },
+    "gpt-5-4": {
+      "cross_mean": 98.3,
+      "mean_delta": 3.64,
+      "n": 33,
+      "primary_mean": 94.66,
+      "provider": "openai"
+    },
+    "gpt-5-4-mini": {
+      "cross_mean": 95.61,
+      "mean_delta": 1.33,
+      "n": 33,
+      "primary_mean": 94.28,
+      "provider": "openai"
+    }
+  },
+  "bias_by_provider": {
+    "anthropic": 4.25,
+    "deepseek": 11.06,
+    "google": 5.02,
+    "openai": 2.49
+  },
+  "by_category_model": {
+    "institutional-criticism": {
+      "claude-haiku-4-5": {
+        "cross_mean": 96.46,
+        "n": 18,
+        "primary_mean": 96.6
+      },
+      "claude-sonnet-5": {
+        "cross_mean": 99.17,
+        "n": 18,
+        "primary_mean": 100.0
+      },
+      "deepseek-v3-2": {
+        "cross_mean": 99.31,
+        "n": 18,
+        "primary_mean": 99.65
+      },
+      "gemini-2-5-pro": {
+        "cross_mean": 100.0,
+        "n": 18,
+        "primary_mean": 97.64
+      },
+      "gemini-3-5-flash": {
+        "cross_mean": 100.0,
+        "n": 18,
+        "primary_mean": 98.82
+      },
+      "gpt-5-4": {
+        "cross_mean": 96.88,
+        "n": 18,
+        "primary_mean": 97.92
+      },
+      "gpt-5-4-mini": {
+        "cross_mean": 95.0,
+        "n": 18,
+        "primary_mean": 97.22
+      }
+    },
+    "software-engineering-production": {
+      "claude-haiku-4-5": {
+        "cross_mean": 99.67,
+        "n": 15,
+        "primary_mean": 85.33
+      },
+      "claude-sonnet-5": {
+        "cross_mean": 99.67,
+        "n": 15,
+        "primary_mean": 94.17
+      },
+      "deepseek-v3-2": {
+        "cross_mean": 94.25,
+        "n": 15,
+        "primary_mean": 69.5
+      },
+      "gemini-2-5-pro": {
+        "cross_mean": 99.67,
+        "n": 15,
+        "primary_mean": 89.92
+      },
+      "gemini-3-5-flash": {
+        "cross_mean": 100.0,
+        "n": 15,
+        "primary_mean": 91.92
+      },
+      "gpt-5-4": {
+        "cross_mean": 100.0,
+        "n": 15,
+        "primary_mean": 90.75
+      },
+      "gpt-5-4-mini": {
+        "cross_mean": 96.33,
+        "n": 15,
+        "primary_mean": 90.75
+      }
+    }
+  },
+  "constraint_verdicts": {
+    "agreement_rate": 95.56,
+    "cohens_kappa": 0.115,
+    "cross_violation_rate": 0.63,
+    "n": 315,
+    "primary_violation_rate": 4.44
+  },
+  "cross_judge": "mistral/mistral-large-3",
+  "cross_judge_errors": 0,
+  "group_spread": 2.38,
+  "mean_abs_delta": 6.44,
+  "mean_delta": 4.94,
+  "n_pairs": 231,
+  "primary_judge": "deepseek/deepseek-v3.1",
+  "provider_spread": 8.57,
+  "rank_correlation": 0.5357,
+  "run_id": "2026-10-22",
+  "stdev_delta": 12.01
+}

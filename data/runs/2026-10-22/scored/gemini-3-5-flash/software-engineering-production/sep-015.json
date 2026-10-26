@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed 3-month plan with weekly tasks, concrete actions (e.g., 'Configure FluentBit/Vector to drop all DEBUG and INFO logs'), cost arithmetic, and validation steps ('Verify that all alerts for the 12 Tier-1 services remain fully functional'). An engineer could execute this with light editing.",
+    "constraint_fidelity": "The response explicitly addresses all constraints: logs are retained for 180 days in S3 in ap-south-1 (Indian jurisdiction), cost arithmetic shows $8,650/month (under $9,000), and alerting for tier-1 services is preserved with no reduction. It provides detailed cost calculations and explicitly states compliance.",
+    "maintainability": "The solution uses serverless S3 and existing tools (FluentBit/Vector), minimizing added complexity. It documents risks (e.g., lost 15-day search) and provides runbooks for Athena. However, it does not explicitly address long-term ownership, tests, or observability of the new S3/Athena setup, and relies on vendor lock-in for SaaS.",
+    "production_realism": "The plan accounts for production realities: dual-routing logs, S3 lifecycle policies, Athena for querying, filtering at source, and APM sampling. It considers operational burden (serverless S3, existing FluentBit/Vector) and fits the 4-person team's capacity. However, it does not deeply address partial failure, rollback, or observability of the change itself."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-015",
+  "judge_cost_usd": 0.00122505,
+  "judge_latency_s": 50.35,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly addresses all constraints: logs are retained for 180 days in S3 in ap-south-1 (Indian jurisdiction), cost arithmetic shows $8,650/month (under $9,000), and alerting for tier-1 services is preserved with no reduction. It provides detailed cost calculations and explicitly states compliance.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan accounts for production realities: dual-routing logs, S3 lifecycle policies, Athena for querying, filtering at source, and APM sampling. It considers operational burden (serverless S3, existing FluentBit/Vector) and fits the 4-person team's capacity. However, it does not deeply address partial failure, rollback, or observability of the change itself.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed 3-month plan with weekly tasks, concrete actions (e.g., 'Configure FluentBit/Vector to drop all DEBUG and INFO logs'), cost arithmetic, and validation steps ('Verify that all alerts for the 12 Tier-1 services remain fully functional'). An engineer could execute this with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution uses serverless S3 and existing tools (FluentBit/Vector), minimizing added complexity. It documents risks (e.g., lost 15-day search) and provides runbooks for Athena. However, it does not explicitly address long-term ownership, tests, or observability of the new S3/Athena setup, and relies on vendor lock-in for SaaS.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A well-structured plan with clear cost arithmetic and constraint adherence, though it could better address production risks and long-term maintainability.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A well-structured plan with clear cost arithmetic and constraint adherence, though it could better address production risks and long-term maintainability.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

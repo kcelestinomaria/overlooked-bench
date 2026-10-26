@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a 'realistic 18-month plan'. The response produces a detailed plan with concrete components: timeline (Months 1-3, 4-6, etc.), specific actions ('elect export committee', 'secure pre-export finance commitment'), and deliverables ('draft bylaws', 'cup/grade at central point'). It includes budget-relevant items ('certification costs $3,000-8,000 USD') and rationale ('financing gap is binding constraint'). It is not a framework or description of process; it is a usable plan that could be taken into a meeting with light editing. Score 4.",
+    "constraint_fidelity": "The prompt states constraints: 40-member cooperative in Oaxaca, Mexico; smallholders averaging 1.5 hectares; zero working capital between harvests; 18-month plan. The response explicitly addresses all constraints: '40 members, ~60 hectares total' (respecting size), 'zero internal cash means zero ability to compete' (acknowledges working capital constraint), and provides an 18-month timeline. It shows arithmetic: '40-80 tons annually' (derived from 40 members * 1.5 ha * yield estimates), and 'container-load logistics (250-300 sacks minimum, ~18,000 kg)'. It does not silently violate constraints; instead, it explicitly states where external finance is needed and justifies it. Score 4.",
+    "contextual_realism": "The response is calibrated for a small agricultural cooperative: it avoids assuming dedicated HR, legal, or procurement functions. It acknowledges role overlap ('elect export committee'), volunteer/part-time labor ('costs labor discipline, not cash'), and key-person dependency ('external advisor if possible'). It rejects unrealistic tooling (e.g., no e-commerce or DTC advice) and focuses on low-cost steps like 'contact established Oaxacan co-ops for guidance' and 'apply to grant-based technical assistance'. It recognizes small-organisation realities: 'financing gap is the actual binding constraint', 'not all 40 members' coffee will qualify', and 'keep intermediary relationship as insurance'. Score 4.",
+    "jurisdictional_accuracy": "The jurisdiction is Oaxaca, Mexico. The response avoids US assumptions: it references Mexican institutions ('FIRA/Financiera Nacional', 'SAGARPA/SENASICA'), local cooperatives ('UCIRI, CEPCO'), and Mexican grant programs ('Mexican SADER programs'). It does not assert US defaults (e.g., no mention of at-will employment or US tax categories). It provides specific, accurate recommendations for the context (e.g., 'phytosanitary certification' for Mexico) and flags where professional advice might be needed (e.g., finance facilities) without overusing generic disclaimers. Score 4."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-004",
+  "judge_cost_usd": 0.0013385,
+  "judge_latency_s": 62.436,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: 40-member cooperative in Oaxaca, Mexico; smallholders averaging 1.5 hectares; zero working capital between harvests; 18-month plan. The response explicitly addresses all constraints: '40 members, ~60 hectares total' (respecting size), 'zero internal cash means zero ability to compete' (acknowledges working capital constraint), and provides an 18-month timeline. It shows arithmetic: '40-80 tons annually' (derived from 40 members * 1.5 ha * yield estimates), and 'container-load logistics (250-300 sacks minimum, ~18,000 kg)'. It does not silently violate constraints; instead, it explicitly states where external finance is needed and justifies it. Score 4.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small agricultural cooperative: it avoids assuming dedicated HR, legal, or procurement functions. It acknowledges role overlap ('elect export committee'), volunteer/part-time labor ('costs labor discipline, not cash'), and key-person dependency ('external advisor if possible'). It rejects unrealistic tooling (e.g., no e-commerce or DTC advice) and focuses on low-cost steps like 'contact established Oaxacan co-ops for guidance' and 'apply to grant-based technical assistance'. It recognizes small-organisation realities: 'financing gap is the actual binding constraint', 'not all 40 members' coffee will qualify', and 'keep intermediary relationship as insurance'. Score 4.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a 'realistic 18-month plan'. The response produces a detailed plan with concrete components: timeline (Months 1-3, 4-6, etc.), specific actions ('elect export committee', 'secure pre-export finance commitment'), and deliverables ('draft bylaws', 'cup/grade at central point'). It includes budget-relevant items ('certification costs $3,000-8,000 USD') and rationale ('financing gap is binding constraint'). It is not a framework or description of process; it is a usable plan that could be taken into a meeting with light editing. Score 4.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Oaxaca, Mexico. The response avoids US assumptions: it references Mexican institutions ('FIRA/Financiera Nacional', 'SAGARPA/SENASICA'), local cooperatives ('UCIRI, CEPCO'), and Mexican grant programs ('Mexican SADER programs'). It does not assert US defaults (e.g., no mention of at-will employment or US tax categories). It provides specific, accurate recommendations for the context (e.g., 'phytosanitary certification' for Mexico) and flags where professional advice might be needed (e.g., finance facilities) without overusing generic disclaimers. Score 4.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels by directly addressing the working capital constraint and providing a actionable, jurisdiction-aware plan for a small cooperative.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response excels by directly addressing the working capital constraint and providing a actionable, jurisdiction-aware plan for a small cooperative.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

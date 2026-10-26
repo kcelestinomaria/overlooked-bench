@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1230,
+  "cost_usd": 0.006262,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "41014c00b9a48097",
+  "item_id": "org-011",
+  "latency_s": 14.509,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 112,
+  "provider": "anthropic",
+  "request_fingerprint": "5515b58e6a1c1989",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Water Loss Strategy for Peruvian Municipal Utility\n\n## Diagnostic: Splitting the 42% Non-Revenue Water\n\nFor a mid-size Peruvian utility with this profile, I'd estimate:\n\n| Category | % of NRW | Likely Range |\n|----------|----------|--------------|\n| **Physical Loss (leakage)** | 24-28% | 57-67% of NRW |\n| **Commercial Loss** | 14-18% | 33-43% of NRW |\n\n**Rationale for this split:**\n- Mid-size Peruvian utilities typically have aging infrastructure (1970s-1990s networks)\n- Moderate metering coverage (~70-80%), but significant meter under-registration\n- Informal settlements with illegal connections are common\n- 42% NRW is high but not extreme for the region (Lima averages ~35%, smaller towns 45-55%)\n\n---\n\n## Recommended Budget Allocation: PEN 2 Million\n\n### **Tier 1: Physical Loss Reduction (PEN 1.2M | 60%)**\n\n**1. District Metering Area (DMA) Infrastructure: PEN 700,000**\n- Install 8-12 permanent flow meters on main supply lines\n- Create 4-6 DMAs to isolate leakage zones\n- Enables real-time leak detection and prioritization\n- *Why first:* You can't manage what you don't measure. This creates the intelligence system.\n\n**2. Targeted Pipe Replacement: PEN 500,000**\n- Focus on the 2-3 DMAs with highest apparent losses (>15% per DMA)\n- Replace worst-performing segments (likely 1970s asbestos cement or unlined cast iron)\n- Target ~8-12 km of pipe in high-loss zones\n- *Avoid:* System-wide replacement (too expensive, low ROI initially)\n\n---\n\n### **Tier 2: Commercial Loss Reduction (PEN 600,000 | 30%)**\n\n**1. Meter Replacement & Audit: PEN 350,000**\n- Replace 3,000-4,000 oldest/largest meters (>10 years old, >50mm diameter)\n- Large meters drift significantly; this alone recovers 2-4% of NRW\n- Conduct field audit of 500 high-consumption accounts for illegal bypasses\n- *Why:* Highest ROI per peso spent; meters pay for themselves in 1-2 years\n\n**2. Billing System & Enforcement: PEN 250,000**\n- Upgrade billing software to flag anomalies (zero-consumption accounts, flat-rate users)\n- Fund 2-3 dedicated inspectors for 18 months to pursue illegal connections\n- Legalize/formalize ~200-300 informal connections with proper metering\n- *Why:* Converts theft into revenue; political win with informal communities\n\n---\n\n### **Tier 3: Capacity & Sustainability (PEN 200,000 | 10%)**\n\n**1. Staff Training & Equipment: PEN 100,000**\n- Train 4-6 technicians in leak detection (acoustic equipment, correlators)\n- Provide basic tools for proactive maintenance crews\n- *Why:* Ensures DMAs are actually monitored post-installation\n\n**2. Contingency & Quick Wins: PEN 100,000**\n- Emergency repairs in DMAs (burst mains, valve replacements)\n- Pilot pressure management in one DMA (reduce pressure 10-15% overnight = 5-8% loss reduction)\n\n---\n\n## Expected Outcomes (18-24 months)\n\n| Metric | Baseline | Target | Mechanism |\n|--------|----------|--------|-----------|\n| **NRW Rate** | 42% | 32-35% | Physical + commercial loss reduction |\n| **Physical Loss** | 24-28% | 18-20% | DMA isolation + targeted replacement |\n| **Commercial Loss** | 14-18% | 10-12% | Meter replacement + enforcement |\n| **Revenue Recovery** | — | +PEN 1.5-2M/year | Formalized connections + reduced theft |\n\n---\n\n## Critical Implementation Notes\n\n**Do NOT:**\n- Spend money on system-wide pressure reduction without DMAs (you won't know if it works)\n- Replace pipes randomly; this is expensive and low-impact without DMA data\n- Hire permanent staff; use contractors for 18-month pilot\n\n**Do:**\n- Get board commitment to *maintain* DMA infrastructure (ongoing cost ~PEN 150k/year)\n- Establish a leak hotline (community reports are free intelligence)\n- Publish monthly NRW targets publicly (accountability + political cover)\n\n**Political Reality:**\n- Meter replacement will face resistance from high-consumption users; frame as \"accuracy audit\"\n- Formalizing illegal connections requires negotiation with local government; do this early\n- Show quick wins (pressure reduction, visible pipe replacement) in first 6 months to maintain board support\n\n---\n\n## Bottom Line\n\n**Spend 60% on physical loss (DMAs + pipes), 30% on commercial loss (meters + enforcement), 10% on sustainability.** The DMA investment is the lynchpin—it tells you where the other money should go and prevents waste.",
+  "timestamp_utc": "2026-10-21T23:35:48Z"
+}

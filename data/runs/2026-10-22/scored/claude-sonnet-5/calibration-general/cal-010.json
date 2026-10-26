@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response provides the exact list 'Argentina, Bolivia, Brazil', which matches the reference answer 'Argentina, Bolivia, Brazil' in substance and order.",
+    "instruction_compliance": "The prompt instructed to 'output only the list' with 'no other text, explanation, or preamble'. The response contains only the list 'Argentina, Bolivia, Brazil' and no additional text, fully complying.",
+    "reasoning_validity": "The prompt did not call for shown working, and the response is internally consistent as it directly lists the correct countries without contradiction or extraneous information."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-010",
+  "judge_cost_usd": 0.00036777,
+  "judge_latency_s": 15.849,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response provides the exact list 'Argentina, Bolivia, Brazil', which matches the reference answer 'Argentina, Bolivia, Brazil' in substance and order.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The prompt did not call for shown working, and the response is internally consistent as it directly lists the correct countries without contradiction or extraneous information.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructed to 'output only the list' with 'no other text, explanation, or preamble'. The response contains only the list 'Argentina, Bolivia, Brazil' and no additional text, fully complying.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response perfectly matches the reference answer and follows all instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response perfectly matches the reference answer and follows all instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

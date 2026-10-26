@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedia-level summary by engaging with specific scholarly debates: it contrasts 'earlier view' vs. 'recent emphasis' on agency, discusses 'revisionist position' on free people of color, and addresses nuanced questions like 'Did Toussaint Louverture's regime represent revolutionary continuity or betrayal?'. It references methodologies ('microhistory', 'digital humanities'), theoretical frameworks ('subaltern studies'), and historiographical tensions (e.g., 'balancing Haitian exceptionalism with comparative frameworks'). A specialist would recognize this as informed by the literature, not just summaries.",
+    "domain_accuracy": "The response makes substantive claims that align with Haitian Revolution historiography: it correctly identifies debates on agency (e.g., 'enslaved Africans... autonomous political consciousness'), free people of color ('pursued their own class interests'), periodization ('distinct phases'), gender ('women's roles'), and international dimensions ('Atlantic revolutionary networks'). It accurately cites methodological shifts (e.g., 'archival expansion'), theoretical developments ('postcolonial theory'), and contextual factors ('Black Power movements'). No invented citations, terms, or consensus are detected; all claims reflect established scholarly discussions.",
+    "field_situatedness": "The response uses frameworks and terminology specific to Haitian Revolution historiography: it employs concepts like 'agency', 'periodization', 'subaltern studies', and 'Atlantic revolutionary networks', which are central to the field. It avoids substituting Western frameworks by emphasizing 'African oral traditions', 'Black radical tradition', and 'Haitian and diaspora historians'. The focus on anti-slavery, anti-colonial, and non-Eurocentric perspectives aligns with the field's traditions.",
+    "scholarly_calibration": "The response distinguishes contested from established points: it notes 'significant disagreement persists' about free people of color, describes 'emerging scholarship' on gender, and highlights 'persistent tensions' in the conclusion. It avoids uniform confidence by framing debates as open (e.g., 'disagreement over how much to emphasize Haiti's isolation versus connections'). However, it could more explicitly flag evidential weaknesses (e.g., limited sources on women's roles) and occasionally presents nuanced positions without full calibration (e.g., 'recent emphasis' implies consensus where debate exists)."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-010",
+  "judge_cost_usd": 0.00097364,
+  "judge_latency_s": 52.599,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that align with Haitian Revolution historiography: it correctly identifies debates on agency (e.g., 'enslaved Africans... autonomous political consciousness'), free people of color ('pursued their own class interests'), periodization ('distinct phases'), gender ('women's roles'), and international dimensions ('Atlantic revolutionary networks'). It accurately cites methodological shifts (e.g., 'archival expansion'), theoretical developments ('postcolonial theory'), and contextual factors ('Black Power movements'). No invented citations, terms, or consensus are detected; all claims reflect established scholarly discussions.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedia-level summary by engaging with specific scholarly debates: it contrasts 'earlier view' vs. 'recent emphasis' on agency, discusses 'revisionist position' on free people of color, and addresses nuanced questions like 'Did Toussaint Louverture's regime represent revolutionary continuity or betrayal?'. It references methodologies ('microhistory', 'digital humanities'), theoretical frameworks ('subaltern studies'), and historiographical tensions (e.g., 'balancing Haitian exceptionalism with comparative frameworks'). A specialist would recognize this as informed by the literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes contested from established points: it notes 'significant disagreement persists' about free people of color, describes 'emerging scholarship' on gender, and highlights 'persistent tensions' in the conclusion. It avoids uniform confidence by framing debates as open (e.g., 'disagreement over how much to emphasize Haiti's isolation versus connections'). However, it could more explicitly flag evidential weaknesses (e.g., limited sources on women's roles) and occasionally presents nuanced positions without full calibration (e.g., 'recent emphasis' implies consensus where debate exists).\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology specific to Haitian Revolution historiography: it employs concepts like 'agency', 'periodization', 'subaltern studies', and 'Atlantic revolutionary networks', which are central to the field. It avoids substituting Western frameworks by emphasizing 'African oral traditions', 'Black radical tradition', and 'Haitian and diaspora historians'. The focus on anti-slavery, anti-colonial, and non-Eurocentric perspectives aligns with the field's traditions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate engagement with Haitian Revolution historiography, reflecting deep familiarity with scholarly debates and methodologies.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate engagement with Haitian Revolution historiography, reflecting deep familiarity with scholarly debates and methodologies.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

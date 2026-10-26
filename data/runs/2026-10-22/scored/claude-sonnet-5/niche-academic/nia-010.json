@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedic summary by engaging with specific scholarly debates, methodologies (e.g., postcolonial and subaltern studies, archival recovery), and evidence (e.g., Vodou as organizing ideology, Kongo political culture). It discusses disputes like the role of African vs. European influences and the weighing of indemnity debt, showing awareness of contested grounds. A specialist would recognize this as a synthesis of current historiography, not a superficial overview.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established historiography: it correctly cites Michel-Rolph Trouillot's 'Silencing the Past' (1995) and its impact, Laurent Dubois's 'revolution within the Revolution' concept, C.L.R. James's 'The Black Jacobins' (1938), and scholars like Carolyn Fick, John Thornton, Marlene Daut, Jeremy Popkin, and David Geggus. It accurately describes debates on Enlightenment universalism vs. rupture, African cultural influences, global impact, indemnity debt, and archival sources. No invented citations, terms, or consensus are detected; all references are verifiable and contextually appropriate.",
+    "field_situatedness": "The response correctly uses frameworks and terminology from Haitian Revolution historiography, including references to Atlantic history, postcolonial studies, and specific scholars in the field. It avoids substituting dominant Western framings and engages with non-European perspectives (e.g., Vodou, African traditions). The focus on Haitian-authored sources and critiques of Eurocentrism aligns with the field's conventions.",
+    "scholarly_calibration": "The response distinguishes contested points from established ones: it notes that Trouillot's argument on 'unthinkability' is debated, presents both sides of the Enlightenment universalism vs. rupture dispute, and acknowledges skepticism about overstating Haiti's global influence. It uses phrases like 'scholars dispute,' 'others argue,' and 'skeptics caution,' providing targeted calibration rather than uniform confidence or blanket disclaimers. However, it could more explicitly flag evidential thinness in areas like African cultural influences, but overall it demonstrates good calibration."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-010",
+  "judge_cost_usd": 0.00099754,
+  "judge_latency_s": 47.515,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established historiography: it correctly cites Michel-Rolph Trouillot's 'Silencing the Past' (1995) and its impact, Laurent Dubois's 'revolution within the Revolution' concept, C.L.R. James's 'The Black Jacobins' (1938), and scholars like Carolyn Fick, John Thornton, Marlene Daut, Jeremy Popkin, and David Geggus. It accurately describes debates on Enlightenment universalism vs. rupture, African cultural influences, global impact, indemnity debt, and archival sources. No invented citations, terms, or consensus are detected; all references are verifiable and contextually appropriate.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedic summary by engaging with specific scholarly debates, methodologies (e.g., postcolonial and subaltern studies, archival recovery), and evidence (e.g., Vodou as organizing ideology, Kongo political culture). It discusses disputes like the role of African vs. European influences and the weighing of indemnity debt, showing awareness of contested grounds. A specialist would recognize this as a synthesis of current historiography, not a superficial overview.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes contested points from established ones: it notes that Trouillot's argument on 'unthinkability' is debated, presents both sides of the Enlightenment universalism vs. rupture dispute, and acknowledges skepticism about overstating Haiti's global influence. It uses phrases like 'scholars dispute,' 'others argue,' and 'skeptics caution,' providing targeted calibration rather than uniform confidence or blanket disclaimers. However, it could more explicitly flag evidential thinness in areas like African cultural influences, but overall it demonstrates good calibration.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response correctly uses frameworks and terminology from Haitian Revolution historiography, including references to Atlantic history, postcolonial studies, and specific scholars in the field. It avoids substituting dominant Western framings and engages with non-European perspectives (e.g., Vodou, African traditions). The focus on Haitian-authored sources and critiques of Eurocentrism aligns with the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated engagement with the specialized historiography of the Haitian Revolution.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated engagement with the specialized historiography of the Haitian Revolution.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

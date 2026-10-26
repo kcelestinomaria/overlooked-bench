@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for the student's background (informal work experience, age) and includes practical considerations like location-based salary differences ('Metro Manila/Cebu roles pay 20–30% more'), financial constraints (subsidized TESDA programs), and flexible pathways (combining TESDA with part-time study). It is specific and implementable by the adviser.",
+    "pathway_breadth": "The response extensively covers TESDA vocational qualifications (e.g., Welding NC II/III, Electrical Installation, Caregiving) with specific durations, costs, and earnings, and also includes community college diplomas. It addresses overseas employment pathways (e.g., 'OFW opportunities') and provides realistic earnings for the Philippine market. Non-degree options are treated substantively, not as an afterthought.",
+    "pedagogical_soundness": "This dimension is not applicable as the response provides career guidance rather than instructional design. The prompt asks for adviser guidance, not lesson planning or educational activities, so there are no learning objectives, activities, or assessments to evaluate.",
+    "workload_realism": "The response provides actionable steps for the adviser to guide the student, such as 'Check TESDA centers near you' and 'Visit your community college', which are feasible within an adviser's role. The guidance is practical and does not require unrealistic resources or time from the practitioner."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00103778,
+  "judge_latency_s": 37.619,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable as the response provides career guidance rather than instructional design. The prompt asks for adviser guidance, not lesson planning or educational activities, so there are no learning objectives, activities, or assessments to evaluate.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides actionable steps for the adviser to guide the student, such as 'Check TESDA centers near you' and 'Visit your community college', which are feasible within an adviser's role. The guidance is practical and does not require unrealistic resources or time from the practitioner.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response extensively covers TESDA vocational qualifications (e.g., Welding NC II/III, Electrical Installation, Caregiving) with specific durations, costs, and earnings, and also includes community college diplomas. It addresses overseas employment pathways (e.g., 'OFW opportunities') and provides realistic earnings for the Philippine market. Non-degree options are treated substantively, not as an afterthought.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for the student's background (informal work experience, age) and includes practical considerations like location-based salary differences ('Metro Manila/Cebu roles pay 20–30% more'), financial constraints (subsidized TESDA programs), and flexible pathways (combining TESDA with part-time study). It is specific and implementable by the adviser.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides highly specific, realistic, and actionable guidance tailored to the Philippine context and the student's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides highly specific, realistic, and actionable guidance tailored to the Philippine context and the student's constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 70.0
+}

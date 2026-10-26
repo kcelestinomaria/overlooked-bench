@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing technical obstacles (e.g., syntagmatic processes, inversion mechanisms, grammatical overlays, depressor consonants) and current research frontiers (grammatical tone reconstruction, phylogenetic methods, Bantu Initiative databases). It engages with methodology (autosegmental phonology) and evidence quality (divergent Zone A data). A specialist would recognize this as informed by literature, not just summaries.",
+    "domain_accuracy": "The response makes specific, accurate claims: Proto-Bantu had a two-tone system (H/L), privative contrast, four stem tone patterns, vowel length allowing contours, Meeussen's Rule, and autosegmental phonology as key framework. It correctly cites Meeussen (1967) and mentions scholars like Hyman, Odden, and Marlo. It accurately describes obstacles like tone shift/spread, inversion, grammatical overlays, depressor consonants, tonal reduction/loss, and the Zone A problem. No invented citations or terms detected.",
+    "field_situatedness": "The response uses Bantu-specific terminology (e.g., 'Zone A', 'depressor consonants', 'Meeussen's Rule', 'autosegmental phonology') and frameworks, adhering to the historical linguistics tradition. It references non-Anglophone scholarship (e.g., Royal Museum for Central Africa in Belgium) and focuses on African language data without substituting Western framings. It is squarely situated in Bantu studies.",
+    "scholarly_calibration": "The response distinguishes consensus (e.g., two-tone system, privative contrast) from active debate (grammatical tone reconstruction) and notes uncertainties (e.g., 'direction of change' in inversion, 'neutral environments' for grammatical tone). It avoids uniform confidence, specifying where consensus exists and where research is ongoing. However, it could more explicitly flag evidential status for some claims (e.g., depressor consonants' historical impact)."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00109522,
+  "judge_latency_s": 56.226,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific, accurate claims: Proto-Bantu had a two-tone system (H/L), privative contrast, four stem tone patterns, vowel length allowing contours, Meeussen's Rule, and autosegmental phonology as key framework. It correctly cites Meeussen (1967) and mentions scholars like Hyman, Odden, and Marlo. It accurately describes obstacles like tone shift/spread, inversion, grammatical overlays, depressor consonants, tonal reduction/loss, and the Zone A problem. No invented citations or terms detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing technical obstacles (e.g., syntagmatic processes, inversion mechanisms, grammatical overlays, depressor consonants) and current research frontiers (grammatical tone reconstruction, phylogenetic methods, Bantu Initiative databases). It engages with methodology (autosegmental phonology) and evidence quality (divergent Zone A data). A specialist would recognize this as informed by literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes consensus (e.g., two-tone system, privative contrast) from active debate (grammatical tone reconstruction) and notes uncertainties (e.g., 'direction of change' in inversion, 'neutral environments' for grammatical tone). It avoids uniform confidence, specifying where consensus exists and where research is ongoing. However, it could more explicitly flag evidential status for some claims (e.g., depressor consonants' historical impact).\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Bantu-specific terminology (e.g., 'Zone A', 'depressor consonants', 'Meeussen's Rule', 'autosegmental phonology') and frameworks, adhering to the historical linguistics tradition. It references non-Anglophone scholarship (e.g., Royal Museum for Central Africa in Belgium) and focuses on African language data without substituting Western framings. It is squarely situated in Bantu studies.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of Proto-Bantu tone reconstruction, accurately detailing obstacles and current research with precise terminology and calibration.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of Proto-Bantu tone reconstruction, accurately detailing obstacles and current research with precise terminology and calibration.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 12', which exactly matches the reference answer 'ANSWER: 12' in substance. The numerical value is correct.",
+    "instruction_compliance": "The prompt explicitly requests 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 12', matching the required format exactly.",
+    "reasoning_validity": "The response shows working: Step 1 correctly identifies rates (1/4 and -1/6), Step 2 computes net rate (1/4 - 1/6 = 1/12) with valid arithmetic, and Step 3 correctly calculates time (1 / (1/12) = 12). All steps are sound and support the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-003",
+  "judge_cost_usd": 0.00047627,
+  "judge_latency_s": 7.581,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 12', which exactly matches the reference answer 'ANSWER: 12' in substance. The numerical value is correct.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: Step 1 correctly identifies rates (1/4 and -1/6), Step 2 computes net rate (1/4 - 1/6 = 1/12) with valid arithmetic, and Step 3 correctly calculates time (1 / (1/12) = 12). All steps are sound and support the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 12', matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and perfect compliance with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and perfect compliance with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "Prompt asks for a judgement. Response states position clearly: 'I would allocate the machine to Patient B.' It defends it with reasons and acknowledges uncertainty by calling it 'a hard case' but does not evade. However, it does not explicitly state what would change its mind or where it is weakest, though it implies that if social impact were deemed primary, it might reconsider, but this is not directly stated. Calibrated uncertainty is present but not fully explicit.",
+    "philosophical_literacy": "No named thinkers or technical terms invoked. Uses common ethical concepts like 'medical triage,' 'scarce resource,' 'expected benefit,' and 'fairness' accurately and they are load-bearing in the argument. Reasoning is correct and relevant without jargon. No errors in concepts.",
+    "position_pluralism": "Major live positions include: prognosis-based allocation (prioritizing medical benefit), social utility-based allocation (considering dependents/economic impact), and egalitarian approaches (e.g., lottery). Response explicitly presents prognosis-based view and acknowledges social utility counterargument ('Patient A’s dependents and role as sole earner give them a much greater broader social impact'). It represents social utility fairly, not as a strawman, and does not omit it. No false balance with fringe views. However, it does not cover all major positions (e.g., egalitarian), but depth on two is adequate.",
+    "reasoning_construction": "The response builds an argument: conclusion is to allocate to Patient B. Premises include better medical benefit (80% vs 60% prognosis), efficient use of scarce resource (maximizing health benefit), and avoiding nonmedical factors (social roles). Inference is valid—conclusion depends on premises. Engages specifics: cites exact prognosis percentages and social contexts. Addresses strongest counterargument: Patient A's dependents and broader social impact, and rebuts by arguing medical triage should prioritize benefit and fairness over social worth. Not generic; tailored to scenario."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-001",
+  "judge_cost_usd": 0.00089453,
+  "judge_latency_s": 51.785,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument: conclusion is to allocate to Patient B. Premises include better medical benefit (80% vs 60% prognosis), efficient use of scarce resource (maximizing health benefit), and avoiding nonmedical factors (social roles). Inference is valid—conclusion depends on premises. Engages specifics: cites exact prognosis percentages and social contexts. Addresses strongest counterargument: Patient A's dependents and broader social impact, and rebuts by arguing medical triage should prioritize benefit and fairness over social worth. Not generic; tailored to scenario.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"Prompt asks for a judgement. Response states position clearly: 'I would allocate the machine to Patient B.' It defends it with reasons and acknowledges uncertainty by calling it 'a hard case' but does not evade. However, it does not explicitly state what would change its mind or where it is weakest, though it implies that if social impact were deemed primary, it might reconsider, but this is not directly stated. Calibrated uncertainty is present but not fully explicit.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: prognosis-based allocation (prioritizing medical benefit), social utility-based allocation (considering dependents/economic impact), and egalitarian approaches (e.g., lottery). Response explicitly presents prognosis-based view and acknowledges social utility counterargument ('Patient A’s dependents and role as sole earner give them a much greater broader social impact'). It represents social utility fairly, not as a strawman, and does not omit it. No false balance with fringe views. However, it does not cover all major positions (e.g., egalitarian), but depth on two is adequate.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"No named thinkers or technical terms invoked. Uses common ethical concepts like 'medical triage,' 'scarce resource,' 'expected benefit,' and 'fairness' accurately and they are load-bearing in the argument. Reasoning is correct and relevant without jargon. No errors in concepts.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, specific argument favoring Patient B based on medical benefit and fairness, while fairly engaging with the social utility counterargument.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned, specific argument favoring Patient B based on medical benefit and fairness, while fairly engaging with the social utility counterargument.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

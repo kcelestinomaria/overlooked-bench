@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response provides a clear comparison of Maliki and Hanafi positions, noting Malikis' broader acceptance of maslaha mursala and Hanafis' preference for qiyas, and mentions Malik's engagement with Medina's practices. However, it lacks engagement with specific scholarly debates, evidence quality, or methodological nuances beyond a general overview. It is competent but resembles a summary of a summary rather than deep specialist knowledge.",
+    "domain_accuracy": "The response makes several substantive claims: maslaha is defined as 'benefit' or 'public interest'; it operates hierarchically with Qur'an and Sunnah supreme; Malikis accept maslaha mursala without textual precedent; Hanafis prefer qiyas and subordinate maslaha to texts. These align with standard Islamic legal theory. No invented citations, terms, or consensus are present. The claims are accurate and load-bearing for the answer.",
+    "field_situatedness": "The response uses appropriate Islamic legal terminology (maslaha, Qur'an, Sunnah, qiyas, maslaha mursala) and frameworks (hierarchical sources, school comparisons). It is situated within the Islamic legal tradition without substituting Western or Anglophone framings. The vocabulary and conventions align with the field asked about.",
+    "scholarly_calibration": "The response distinguishes between the Maliki and Hanafi positions, noting Malikis as 'more expansive' and Hanafis as 'more restrictive,' which signals differing evidential status. It does not present contested points as settled and avoids uniform confidence. However, it lacks specific calibration, such as noting uncertainties or variations within schools, and relies on broad characterizations without targeted disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 2,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.00074719,
+  "judge_latency_s": 40.4,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: maslaha is defined as 'benefit' or 'public interest'; it operates hierarchically with Qur'an and Sunnah supreme; Malikis accept maslaha mursala without textual precedent; Hanafis prefer qiyas and subordinate maslaha to texts. These align with standard Islamic legal theory. No invented citations, terms, or consensus are present. The claims are accurate and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response provides a clear comparison of Maliki and Hanafi positions, noting Malikis' broader acceptance of maslaha mursala and Hanafis' preference for qiyas, and mentions Malik's engagement with Medina's practices. However, it lacks engagement with specific scholarly debates, evidence quality, or methodological nuances beyond a general overview. It is competent but resembles a summary of a summary rather than deep specialist knowledge.\",\n      \"score\": 2\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between the Maliki and Hanafi positions, noting Malikis as 'more expansive' and Hanafis as 'more restrictive,' which signals differing evidential status. It does not present contested points as settled and avoids uniform confidence. However, it lacks specific calibration, such as noting uncertainties or variations within schools, and relies on broad characterizations without targeted disclaimers.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate Islamic legal terminology (maslaha, Qur'an, Sunnah, qiyas, maslaha mursala) and frameworks (hierarchical sources, school comparisons). It is situated within the Islamic legal tradition without substituting Western or Anglophone framings. The vocabulary and conventions align with the field asked about.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response accurately compares Maliki and Hanafi positions on maslaha but lacks depth in scholarly debate and methodological engagement.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response accurately compares Maliki and Hanafi positions on maslaha but lacks depth in scholarly debate and methodological engagement.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 80.0
+}

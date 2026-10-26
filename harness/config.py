@@ -22,21 +22,40 @@ CATEGORIES_DIR = DATA_DIR / "categories"
 RUNS_DIR = DATA_DIR / "runs"
 MODELS_FILE = DATA_DIR / "models.yaml"
 
-# Category slug -> human-readable label, in canonical report order.
-CATEGORY_LABELS: dict[str, str] = {
-    "ethics-philosophy": "Ethics & Philosophy",
-    "niche-academic": "Niche Academic",
-    "org-enterprise": "Org & Enterprise",
-    "education": "Education",
-    "institutional-criticism": "Institutional Criticism",
-    "calibration-general": "Calibration (General)",
-}
+def _discover_categories() -> tuple[dict[str, str], list[str]]:
+    """Read the category list from `data/categories/*/items.yaml`.
 
-# Calibration is a harness sanity check, not a headline result. It is excluded
-# from the overall index so it cannot flatter or distort the ranking.
-HEADLINE_CATEGORIES: list[str] = [
-    c for c in CATEGORY_LABELS if c != "calibration-general"
-]
+    Every category folder declares its own `label`, report `order`, and whether
+    it is a `headline` track. Discovering them here, rather than keeping a list
+    in code, means adding a track is a data change: a new folder plus a metric
+    module, and nothing in charts or the site needs editing to show it.
+
+    Only the header of each file is needed, but the whole file is parsed because
+    YAML gives no cheap way to stop early and these files are small.
+    """
+    found: list[tuple[int, str, str, bool]] = []
+    for path in sorted(CATEGORIES_DIR.glob("*/items.yaml")):
+        with open(path, encoding="utf-8") as fh:
+            doc = yaml.safe_load(fh) or {}
+        slug = path.parent.name
+        found.append((
+            int(doc.get("order", 50)),
+            slug,
+            str(doc.get("label") or slug.replace("-", " ").title()),
+            bool(doc.get("headline", True)),
+        ))
+    found.sort()
+    labels = {slug: label for _, slug, label, _ in found}
+    headline = [slug for _, slug, _, is_headline in found if is_headline]
+    return labels, headline
+
+
+# Category slug -> human-readable label, in canonical report order.
+#
+# HEADLINE_CATEGORIES excludes any track that declares `headline: false`. Today
+# that is only calibration, a harness sanity check rather than a result, kept
+# out of the overall index so it cannot flatter or distort the ranking.
+CATEGORY_LABELS, HEADLINE_CATEGORIES = _discover_categories()
 
 
 def load_env() -> None:

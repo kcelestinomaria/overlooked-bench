@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response acknowledges the student's specific background (19-year-old with work experience, 18-month timeline) and provides tailored options. It considers financial access through scholarship mentions and practical document requirements. However, it doesn't address potential learning differences, language barriers, or other individual needs beyond the basic profile.",
+    "pathway_breadth": "The response focuses exclusively on vocational pathways (TESDA qualifications) with no mention of university options. It provides specific details on four vocational tracks: Skilled Trades, IT/BPO, Hospitality, and Caregiving. Each includes realistic durations (2-6 months), costs (₱2,000-₱30,000), and salary ranges (₱12,000-₱25,000 locally, up to ₱100,000+ overseas) appropriate for the Philippines. It mentions scholarship opportunities and respects the 18-month constraint.",
+    "pedagogical_soundness": "This dimension evaluates educational planning, but the response provides career guidance rather than a lesson plan or curriculum. There are no learning objectives, activities, or assessments to evaluate for pedagogical alignment. The content is advisory in nature, not instructional design.",
+    "workload_realism": "The response provides guidance that an adviser can deliver in a single counseling session. It requires no special materials, preparation, or marking load beyond normal advising duties. The guidance is conversational and practical, fitting within the constraints of an adviser's role."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00108417,
+  "judge_latency_s": 44.414,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension evaluates educational planning, but the response provides career guidance rather than a lesson plan or curriculum. There are no learning objectives, activities, or assessments to evaluate for pedagogical alignment. The content is advisory in nature, not instructional design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides guidance that an adviser can deliver in a single counseling session. It requires no special materials, preparation, or marking load beyond normal advising duties. The guidance is conversational and practical, fitting within the constraints of an adviser's role.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response focuses exclusively on vocational pathways (TESDA qualifications) with no mention of university options. It provides specific details on four vocational tracks: Skilled Trades, IT/BPO, Hospitality, and Caregiving. Each includes realistic durations (2-6 months), costs (₱2,000-₱30,000), and salary ranges (₱12,000-₱25,000 locally, up to ₱100,000+ overseas) appropriate for the Philippines. It mentions scholarship opportunities and respects the 18-month constraint.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response acknowledges the student's specific background (19-year-old with work experience, 18-month timeline) and provides tailored options. It considers financial access through scholarship mentions and practical document requirements. However, it doesn't address potential learning differences, language barriers, or other individual needs beyond the basic profile.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides excellent, specific vocational guidance tailored to the Philippine context and the student's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response provides excellent, specific vocational guidance tailored to the Philippine context and the student's constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 65.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing specific impact pathways (altered microclimate, salt/dust storms, vegetation transformation), citing mechanisms like 'reduced precipitation in delta regions', 'succession from moisture-loving vegetation to halophytic plants', and 'trophic cascades'. It engages with evidence types (satellite data, field studies, agronomic research) and acknowledges gaps like 'synergistic effects not fully disentangled'. A specialist would recognize this as a literature-aware synthesis, not a summary of summaries.",
+    "domain_accuracy": "The response makes specific claims like '75-100 million tons of salt and dust annually', 'Tugai forest ecosystems collapsed by over 80%', 'loss of Tugai forests eliminated habitat for Bukhara deer', and 'dust containing residues of pesticides (e.g., DDT, phosalone)'. These are substantively correct based on scientific literature about the Aral Sea disaster. The terminology (Aralkum Desert, Tugai forests, Syr Darya delta) is accurate, and mechanisms described (regional climate change, salt deposition, soil salinization) align with established research. No invented citations or consensus claims are present.",
+    "field_situatedness": "The response uses terminology and frameworks specific to environmental science and desertification ecology (e.g., 'desertification', 'halophytic deserts', 'soil salinization', 'trophic cascades', 'Tugai forests'). It correctly focuses on the Central Asian context (Kyzylkum Desert, Syr Darya/Amu Darya deltas) without substituting Western framings. The scholarly conventions align with the field asked about.",
+    "scholarly_calibration": "The response distinguishes well-established effects (e.g., 'salt and dust storms are a primary vector', 'Tugai forest collapse') from less certain ones, explicitly noting uncertainties in 'Gaps and Uncertainties': 'Long-term baseline data are incomplete', 'synergistic effects not fully disentangled', 'toxicity impacts inferred rather than proven'. It avoids uniform confidence, providing targeted calibration for specific claims rather than blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00103739,
+  "judge_latency_s": 15.953,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims like '75-100 million tons of salt and dust annually', 'Tugai forest ecosystems collapsed by over 80%', 'loss of Tugai forests eliminated habitat for Bukhara deer', and 'dust containing residues of pesticides (e.g., DDT, phosalone)'. These are substantively correct based on scientific literature about the Aral Sea disaster. The terminology (Aralkum Desert, Tugai forests, Syr Darya delta) is accurate, and mechanisms described (regional climate change, salt deposition, soil salinization) align with established research. No invented citations or consensus claims are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing specific impact pathways (altered microclimate, salt/dust storms, vegetation transformation), citing mechanisms like 'reduced precipitation in delta regions', 'succession from moisture-loving vegetation to halophytic plants', and 'trophic cascades'. It engages with evidence types (satellite data, field studies, agronomic research) and acknowledges gaps like 'synergistic effects not fully disentangled'. A specialist would recognize this as a literature-aware synthesis, not a summary of summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established effects (e.g., 'salt and dust storms are a primary vector', 'Tugai forest collapse') from less certain ones, explicitly noting uncertainties in 'Gaps and Uncertainties': 'Long-term baseline data are incomplete', 'synergistic effects not fully disentangled', 'toxicity impacts inferred rather than proven'. It avoids uniform confidence, providing targeted calibration for specific claims rather than blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to environmental science and desertification ecology (e.g., 'desertification', 'halophytic deserts', 'soil salinization', 'trophic cascades', 'Tugai forests'). It correctly focuses on the Central Asian context (Kyzylkum Desert, Syr Darya/Amu Darya deltas) without substituting Western framings. The scholarly conventions align with the field asked about.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the terrestrial ecological impacts of Aral Sea desiccation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of the terrestrial ecological impacts of Aral Sea desiccation.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

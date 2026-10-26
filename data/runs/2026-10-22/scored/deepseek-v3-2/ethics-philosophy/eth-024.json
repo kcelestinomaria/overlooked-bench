@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The response clearly states a position: 'should not permit'. It defends it with reasons and provides six specific conditions that would change its mind (e.g., 'no feasible alternative', 'full consent', 'reversibility'). This shows calibrated uncertainty—acknowledging what could alter the conclusion—rather than evasion. It reaches a judgement as prompted.",
+    "philosophical_literacy": "The response uses the term 'intergenerational justice' accurately and relevantly to the argument. It does not invoke other technical terms or named thinkers, but the concept is load-bearing in supporting the conclusion against long-term harm. The reasoning is sound without misattributions or garbled terminology.",
+    "position_pluralism": "The response does not explicitly represent rival positions (e.g., utilitarian prioritization of poverty reduction, or developmentalist views). It focuses solely on its own argument against permitting, without characterizing opposing views. This omits major live positions in this contested debate, such as those emphasizing immediate welfare gains or economic necessity.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is 'should not permit' based on premises including 'certain severe long-term harm', 'irreversible environmental damage', 'violation of intergenerational justice', and 'displacement of 8,000 residents'. It engages specifically with the 50-year timeline, region size, and poverty numbers. It addresses counterarguments implicitly through the 'what would change my mind' section, which lists strong conditions like 'no feasible alternative' and 'national existential necessity'. The inference from premises to conclusion is valid and scenario-specific."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 3,
+    "position_pluralism": 1,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-024",
+  "judge_cost_usd": 0.00078736,
+  "judge_latency_s": 13.521,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is 'should not permit' based on premises including 'certain severe long-term harm', 'irreversible environmental damage', 'violation of intergenerational justice', and 'displacement of 8,000 residents'. It engages specifically with the 50-year timeline, region size, and poverty numbers. It addresses counterarguments implicitly through the 'what would change my mind' section, which lists strong conditions like 'no feasible alternative' and 'national existential necessity'. The inference from premises to conclusion is valid and scenario-specific.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The response clearly states a position: 'should not permit'. It defends it with reasons and provides six specific conditions that would change its mind (e.g., 'no feasible alternative', 'full consent', 'reversibility'). This shows calibrated uncertainty—acknowledging what could alter the conclusion—rather than evasion. It reaches a judgement as prompted.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response does not explicitly represent rival positions (e.g., utilitarian prioritization of poverty reduction, or developmentalist views). It focuses solely on its own argument against permitting, without characterizing opposing views. This omits major live positions in this contested debate, such as those emphasizing immediate welfare gains or economic necessity.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses the term 'intergenerational justice' accurately and relevantly to the argument. It does not invoke other technical terms or named thinkers, but the concept is load-bearing in supporting the conclusion against long-term harm. The reasoning is sound without misattributions or garbled terminology.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument against permitting but fails to acknowledge competing ethical positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned argument against permitting but fails to acknowledge competing ethical positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

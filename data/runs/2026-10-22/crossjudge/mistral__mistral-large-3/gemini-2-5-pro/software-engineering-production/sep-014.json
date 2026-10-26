@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete implementation plan with a week-by-week breakdown, roles, and tasks.\n2. It includes specific steps (e.g., 'Configure the Enterprise Application in Entra ID', 'Develop and configure the WebSphere TAI').\n3. The plan has sequence, owners, and verification steps (e.g., 'Perform post-deployment verification tests').\n4. The 'Bill of Materials' and 'Success Criteria' provide clear deliverables.\n5. An engineer could execute this plan with minimal edits.\n\nEvidence: The 'Detailed Implementation Plan (Phased Approach)' section with weekly tasks and the 'Deployment Window' instructions.",
+    "constraint_fidelity": "1. The response explicitly states it uses existing Microsoft 365 E3 licenses (Entra ID Application Proxy and Conditional Access), so no new identity product or vendor is purchased (C1 kept).\n2. The response repeatedly confirms no Java upgrade beyond 8 and no change to WebSphere Application Server 8.5.5 (C2 kept).\n3. The plan is designed for one Java developer and one Windows systems administrator, and the timeline is six weeks with a phased approach (C3 kept).\n4. The response includes a 'Bill of Materials' showing $0 cost and explicitly states no new licensing costs.\n5. The response shows awareness of constraints and justifies the solution within them, including no application code changes.\n\nEvidence: 'The proposed solution leverages our existing Microsoft 365 E3 licenses... no upgrades to the application or its server, and no changes to the certified application code' and 'Total Project Cost: $0'.",
+    "maintainability": "1. The solution is proportionate to the team's size and skill mix, using existing infrastructure and licenses.\n2. The response includes documentation (user docs, technical summary for cyber-insurance) and observability (Entra ID sign-in logs, connector health).\n3. Risks and accepted debt are explicitly stated in the 'Risk Assessment & Mitigation' table.\n4. The solution avoids added complexity (e.g., no new vendors, minimal code changes).\n5. The TAI and connector are designed to be maintainable by the team.\n\nEvidence: 'Create simple user documentation for the new login process' and the 'Risk Assessment & Mitigation' table.",
+    "production_realism": "1. The response accounts for the team's size and skill mix (one Java developer, one Windows sysadmin) and assigns tasks proportionately.\n2. The plan includes failure modes: high availability for the connector, rollback procedures, and testing for negative paths (e.g., failed MFA).\n3. The solution is designed for the stated scale (300 employees) and infrastructure (on-premises WebSphere, AD, Entra ID).\n4. The response addresses operational burden: phased testing, UAT, hypercare support, and monitoring.\n5. The solution is technically feasible with the named technologies (WebSphere TAI, Entra ID Application Proxy, Conditional Access).\n\nEvidence: 'Install the connector on at least two separate on-premises servers for high availability' and 'Test negative paths (e.g., failed MFA, unauthorized user)'."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.0028211,
+  "judge_latency_s": 12.987,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states it uses existing Microsoft 365 E3 licenses (Entra ID Application Proxy and Conditional Access), so no new identity product or vendor is purchased (C1 kept).\\n2. The response repeatedly confirms no Java upgrade beyond 8 and no change to WebSphere Application Server 8.5.5 (C2 kept).\\n3. The plan is designed for one Java developer and one Windows systems administrator, and the timeline is six weeks with a phased approach (C3 kept).\\n4. The response includes a 'Bill of Materials' showing $0 cost and explicitly states no new licensing costs.\\n5. The response shows awareness of constraints and justifies the solution within them, including no application code changes.\\n\\nEvidence: 'The proposed solution leverages our existing Microsoft 365 E3 licenses... no upgrades to the application or its server, and no changes to the certified application code' and 'Total Project Cost: $0'.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the team's size and skill mix (one Java developer, one Windows sysadmin) and assigns tasks proportionately.\\n2. The plan includes failure modes: high availability for the connector, rollback procedures, and testing for negative paths (e.g., failed MFA).\\n3. The solution is designed for the stated scale (300 employees) and infrastructure (on-premises WebSphere, AD, Entra ID).\\n4. The response addresses operational burden: phased testing, UAT, hypercare support, and monitoring.\\n5. The solution is technically feasible with the named technologies (WebSphere TAI, Entra ID Application Proxy, Conditional Access).\\n\\nEvidence: 'Install the connector on at least two separate on-premises servers for high availability' and 'Test negative paths (e.g., failed MFA, unauthorized user)'.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete implementation plan with a week-by-week breakdown, roles, and tasks.\\n2. It includes specific steps (e.g., 'Configure the Enterprise Application in Entra ID', 'Develop and configure the WebSphere TAI').\\n3. The plan has sequence, owners, and verification steps (e.g., 'Perform post-deployment verification tests').\\n4. The 'Bill of Materials' and 'Success Criteria' provide clear deliverables.\\n5. An engineer could execute this plan with minimal edits.\\n\\nEvidence: The 'Detailed Implementation Plan (Phased Approach)' section with weekly tasks and the 'Deployment Window' instructions.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team's size and skill mix, using existing infrastructure and licenses.\\n2. The response includes documentation (user docs, technical summary for cyber-insurance) and observability (Entra ID sign-in logs, connector health).\\n3. Risks and accepted debt are explicitly stated in the 'Risk Assessment & Mitigation' table.\\n4. The solution avoids added complexity (e.g., no new vendors, minimal code changes).\\n5. The TAI and connector are designed to be maintainable by the team.\\n\\nEvidence: 'Create simple user documentation for the new login process' and the 'Risk Assessment & Mitigation' table.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly actionable, constraint-compliant plan that fits the team, timeline, and infrastructure perfectly.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response is a highly actionable, constraint-compliant plan that fits the team, timeline, and infrastructure perfectly.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

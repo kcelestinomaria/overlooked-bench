@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response explicitly addresses SEND support and EHCP requirements in multiple options (e.g., Option A damages 'SEND support', Option D maintains 'legal compliance for SEND pupils'). It considers the impact on struggling pupils through intervention groups. However, it does not address other access factors like language barriers or home internet constraints, focusing primarily on staffing and budgetary constraints.",
+    "pathway_breadth": "This item does not involve student pathway guidance; it is about staffing budget cuts. The response is inclusive of the school context (400 pupils, primary level, staffing constraints) but does not address learner pathways as they are not relevant to the prompt.",
+    "pedagogical_soundness": "This response is an options paper for budget cuts, not a pedagogical plan. There are no learning objectives, activities, assessments, or rubrics to evaluate. The rubric dimension asks about educational soundness of teaching approaches, which is not applicable here.",
+    "workload_realism": "The response provides specific costings (£128,000 total, with breakdowns per option), maintains the class size constraint (14 classes, average 28.5), and considers staffing realities (e.g., 'cannot reduce core teaching staff below 14 FTE', 'relying on natural wastage'). It addresses preparation/marking implicitly through PPA coverage discussions. The options are feasible for a head teacher to implement with governing body approval."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00105942,
+  "judge_latency_s": 37.826,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This response is an options paper for budget cuts, not a pedagogical plan. There are no learning objectives, activities, assessments, or rubrics to evaluate. The rubric dimension asks about educational soundness of teaching approaches, which is not applicable here.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides specific costings (£128,000 total, with breakdowns per option), maintains the class size constraint (14 classes, average 28.5), and considers staffing realities (e.g., 'cannot reduce core teaching staff below 14 FTE', 'relying on natural wastage'). It addresses preparation/marking implicitly through PPA coverage discussions. The options are feasible for a head teacher to implement with governing body approval.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student pathway guidance; it is about staffing budget cuts. The response is inclusive of the school context (400 pupils, primary level, staffing constraints) but does not address learner pathways as they are not relevant to the prompt.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response explicitly addresses SEND support and EHCP requirements in multiple options (e.g., Option A damages 'SEND support', Option D maintains 'legal compliance for SEND pupils'). It considers the impact on struggling pupils through intervention groups. However, it does not address other access factors like language barriers or home internet constraints, focusing primarily on staffing and budgetary constraints.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A well-structured, realistic options paper that meets the prompt's requirements while respecting constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A well-structured, realistic options paper that meets the prompt's requirements while respecting constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 58.75
+}

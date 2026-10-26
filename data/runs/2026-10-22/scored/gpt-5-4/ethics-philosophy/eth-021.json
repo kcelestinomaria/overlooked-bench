@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Is she under a moral obligation...? Argue a position'), and the response reaches a clear position: 'She is probably not under a straightforward moral obligation to register.' It defends this with reasons and acknowledges uncertainty ('probably', 'pro tanto reason... but defeated'), and implicitly states what would change its mind (e.g., if tax terms become survivable or if competitors also register). It avoids evasion and offers calibrated uncertainty.",
+    "philosophical_literacy": "The response uses concepts like 'ought implies can', reciprocity, and institutional failure accurately and they are load-bearing in the argument. It avoids technical jargon misattribution and does not name specific thinkers or traditions, but the concepts are applied correctly to the scenario. The reasoning is sound without reliance on decorative references.",
+    "position_pluralism": "The response focuses on one position (no obligation) but acknowledges the opposing view ('pro tanto reason to register') and mentions obligations like not defrauding customers. However, it omits major live positions (e.g., strong deontological arguments for compliance or utilitarian benefits of registration) and does not represent them as advocates would. It avoids strawmanning but lacks breadth in representing rival positions fairly.",
+    "reasoning_construction": "The response builds a structured argument: it concludes 'she is probably not under a straightforward moral obligation to register' and supports this with premises like 'ought implies can' (registration may require self-destruction), reciprocity/fairness (unilateral burden in a non-cooperative system), and institutional failure (state responsibility). It engages specifically with the trader's margin loss and competitor noncompliance, and addresses counterarguments by acknowledging 'pro tanto reason to register' but argues it is defeated by structural unfairness. The inference is valid and context-specific."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-021",
+  "judge_cost_usd": 0.00085705,
+  "judge_latency_s": 42.631,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument: it concludes 'she is probably not under a straightforward moral obligation to register' and supports this with premises like 'ought implies can' (registration may require self-destruction), reciprocity/fairness (unilateral burden in a non-cooperative system), and institutional failure (state responsibility). It engages specifically with the trader's margin loss and competitor noncompliance, and addresses counterarguments by acknowledging 'pro tanto reason to register' but argues it is defeated by structural unfairness. The inference is valid and context-specific.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Is she under a moral obligation...? Argue a position'), and the response reaches a clear position: 'She is probably not under a straightforward moral obligation to register.' It defends this with reasons and acknowledges uncertainty ('probably', 'pro tanto reason... but defeated'), and implicitly states what would change its mind (e.g., if tax terms become survivable or if competitors also register). It avoids evasion and offers calibrated uncertainty.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response focuses on one position (no obligation) but acknowledges the opposing view ('pro tanto reason to register') and mentions obligations like not defrauding customers. However, it omits major live positions (e.g., strong deontological arguments for compliance or utilitarian benefits of registration) and does not represent them as advocates would. It avoids strawmanning but lacks breadth in representing rival positions fairly.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like 'ought implies can', reciprocity, and institutional failure accurately and they are load-bearing in the argument. It avoids technical jargon misattribution and does not name specific thinkers or traditions, but the concepts are applied correctly to the scenario. The reasoning is sound without reliance on decorative references.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, specific argument against a moral obligation, grounded in structural unfairness and practical constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned, specific argument against a moral obligation, grounded in structural unfairness and practical constraints.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

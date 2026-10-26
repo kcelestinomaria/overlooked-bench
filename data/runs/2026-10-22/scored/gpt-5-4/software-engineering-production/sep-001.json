@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed design with specific SQL schemas, code snippets, rollout phases (weeks 1-4), testing plans, and metrics to collect. It includes concrete steps like 'CREATE TABLE', middleware pseudocode, and flush intervals. However, it lacks exact commands for deployment (e.g., migration scripts, feature flag implementation details) and some estimates are vague (e.g., 'reserve the option to increase DB size one notch'). An engineer could start but would need to fill in gaps.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: uses only existing PostgreSQL and in-process memory for rate limiting and metering ('No new infra/services'); states the plan is for 3 engineers over 4 weeks ('3 backend engineers, 4 weeks'); includes latency arithmetic showing headroom ('~40 ms p99 headroom') and avoids exceeding 220 ms; computes cost impact and concludes it likely stays within 8% increase ('very likely yes' under $752/month). It acknowledges constraints cannot be perfectly met (e.g., approximate rate limiting, metering loss on crash) but justifies these as necessary trade-offs under the constraints.",
+    "maintainability": "The response considers future ownership by the small team: documents risks explicitly (e.g., PostgreSQL hot path, metering loss), proposes simple schemas and indexes, avoids unnecessary complexity (e.g., no per-request logging), and includes operational metrics and runbook elements. However, it introduces high-churn tables (tenant_rate_limit_state) that may require autovacuum tuning and acknowledges technical debt (e.g., 'not the ideal long-term architecture'). The complexity is proportionate but leaves some maintenance burdens unaddressed (e.g., who handles cleanup jobs).",
+    "production_realism": "The response accounts for production realities: addresses load (1,200 RPS), locking (row contention for hot tenants), retries (none needed, but short-circuits 429s), partial failure (metering loss on crash), rollback (kill switches), observability (metrics listed), and operational burden (simple cleanup, monitoring). It considers team skill (Django/PostgreSQL stack) and scale (6 containers, 3 engineers). However, it downplays the risk of high write contention on PostgreSQL for rate limiting at 1,200 RPS, which could cause latency spikes or lock issues in practice."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.0025893,
+  "judge_latency_s": 63.18,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: uses only existing PostgreSQL and in-process memory for rate limiting and metering ('No new infra/services'); states the plan is for 3 engineers over 4 weeks ('3 backend engineers, 4 weeks'); includes latency arithmetic showing headroom ('~40 ms p99 headroom') and avoids exceeding 220 ms; computes cost impact and concludes it likely stays within 8% increase ('very likely yes' under $752/month). It acknowledges constraints cannot be perfectly met (e.g., approximate rate limiting, metering loss on crash) but justifies these as necessary trade-offs under the constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: addresses load (1,200 RPS), locking (row contention for hot tenants), retries (none needed, but short-circuits 429s), partial failure (metering loss on crash), rollback (kill switches), observability (metrics listed), and operational burden (simple cleanup, monitoring). It considers team skill (Django/PostgreSQL stack) and scale (6 containers, 3 engineers). However, it downplays the risk of high write contention on PostgreSQL for rate limiting at 1,200 RPS, which could cause latency spikes or lock issues in practice.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed design with specific SQL schemas, code snippets, rollout phases (weeks 1-4), testing plans, and metrics to collect. It includes concrete steps like 'CREATE TABLE', middleware pseudocode, and flush intervals. However, it lacks exact commands for deployment (e.g., migration scripts, feature flag implementation details) and some estimates are vague (e.g., 'reserve the option to increase DB size one notch'). An engineer could start but would need to fill in gaps.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response considers future ownership by the small team: documents risks explicitly (e.g., PostgreSQL hot path, metering loss), proposes simple schemas and indexes, avoids unnecessary complexity (e.g., no per-request logging), and includes operational metrics and runbook elements. However, it introduces high-churn tables (tenant_rate_limit_state) that may require autovacuum tuning and acknowledges technical debt (e.g., 'not the ideal long-term architecture'). The complexity is proportionate but leaves some maintenance burdens unaddressed (e.g., who handles cleanup jobs).\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A thorough, constraint-aware design that balances technical feasibility with operational pragmatism under tight limits.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "A thorough, constraint-aware design that balances technical feasibility with operational pragmatism under tight limits.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

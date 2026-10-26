@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 810', which exactly matches the reference answer's numerical value of 810. The response provides the correct profit calculation.",
+    "instruction_compliance": "The prompt explicitly requests 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response includes working and ends with 'ANSWER: 810', complying fully with the instructions.",
+    "reasoning_validity": "The response shows working in steps: total fabric (4 × 45 = 180 metres), total cost (180 × $8 = $1,440), number of dresses (180 ÷ 12 = 15), revenue (15 × $150 = $2,250), and profit ($2,250 - $1,440 = $810). Each step is valid and correctly supports the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-001",
+  "judge_cost_usd": 0.00058343,
+  "judge_latency_s": 22.816,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 810', which exactly matches the reference answer's numerical value of 810. The response provides the correct profit calculation.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working in steps: total fabric (4 × 45 = 180 metres), total cost (180 × $8 = $1,440), number of dresses (180 ÷ 12 = 15), revenue (15 × $150 = $2,250), and profit ($2,250 - $1,440 = $810). Each step is valid and correctly supports the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response includes working and ends with 'ANSWER: 810', complying fully with the instructions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, well-reasoned, and compliant with all instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, well-reasoned, and compliant with all instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

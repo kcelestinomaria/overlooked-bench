@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "partition_expiration_days = 30",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed plan with specific steps, SQL schema definitions, code snippets (e.g., partition dropping cron job), and a week-by-week breakdown for 2 engineers. It includes concrete commands and sequences, such as 'ALTER TABLE my_dataset.raw_rider_locations SET OPTIONS (partition_expiration_days = 30)' and the implementation timeline, making it executable with light editing.",
+    "constraint_fidelity": "The response explicitly addresses all hard constraints: it uses only existing stack (PostgreSQL, BigQuery, Firebase), enforces 30-day retention via partition expiration and backup exclusions ('DROP TABLE IF EXISTS rider_locations_y2023_m10_d01', 'partition_expiration_days = 30', 'configure our backup tool to exclude the rider_locations table'), and fits within 2 engineers and 6 weeks with a detailed timeline. It also justifies relaxation of the 10-second ping constraint with adaptive pinging due to battery concerns.",
+    "maintainability": "The solution is proportionate to the team: it uses familiar tools (PostgreSQL, BigQuery), includes clear partitioning and expiration policies, and documents risks (e.g., backup loophole addressed). It states accepted debt (e.g., no long-term backups for location data) and provides observability (indexing for queries). However, it does not explicitly mention tests or documentation for handover.",
+    "production_realism": "The design accounts for production realities: it addresses battery drain ('Android battery killer'), database performance (partitioning to avoid DELETE bloat), backup management (excluding transient data), access controls (API-level enforcement for support), and scalability (batching every 30s). It considers team skills by leveraging existing infrastructure and provides concrete implementation steps."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-005",
+  "judge_cost_usd": 0.0014628,
+  "judge_latency_s": 52.799,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly addresses all hard constraints: it uses only existing stack (PostgreSQL, BigQuery, Firebase), enforces 30-day retention via partition expiration and backup exclusions ('DROP TABLE IF EXISTS rider_locations_y2023_m10_d01', 'partition_expiration_days = 30', 'configure our backup tool to exclude the rider_locations table'), and fits within 2 engineers and 6 weeks with a detailed timeline. It also justifies relaxation of the 10-second ping constraint with adaptive pinging due to battery concerns.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: it addresses battery drain ('Android battery killer'), database performance (partitioning to avoid DELETE bloat), backup management (excluding transient data), access controls (API-level enforcement for support), and scalability (batching every 30s). It considers team skills by leveraging existing infrastructure and provides concrete implementation steps.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed plan with specific steps, SQL schema definitions, code snippets (e.g., partition dropping cron job), and a week-by-week breakdown for 2 engineers. It includes concrete commands and sequences, such as 'ALTER TABLE my_dataset.raw_rider_locations SET OPTIONS (partition_expiration_days = 30)' and the implementation timeline, making it executable with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: it uses familiar tools (PostgreSQL, BigQuery), includes clear partitioning and expiration policies, and documents risks (e.g., backup loophole addressed). It states accepted debt (e.g., no long-term backups for location data) and provides observability (indexing for queries). However, it does not explicitly mention tests or documentation for handover.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response demonstrates high fidelity to constraints with detailed technical and legal compliance measures, making it production-ready.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"partition_expiration_days = 30\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response demonstrates high fidelity to constraints with detailed technical and legal compliance measures, making it production-ready.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

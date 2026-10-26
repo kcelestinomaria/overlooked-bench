@@ -1,0 +1,89 @@
+{
+  "answers": {
+    "C1_acknowledged": {
+      "probability": 0.06,
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "probability": 0.02,
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "probability": 0.05,
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "probability": 0.12,
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "probability": 0.23,
+      "type": "boolean"
+    }
+  },
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "cost_usd": 0.000227262,
+  "generation_id": "gen_01M5GFKV0XGYGM02FH5HJFPA7D",
+  "item_content_hash": "3a69daedc2dd2cb7",
+  "item_id": "sep-001",
+  "latency_s": 2.254,
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "protocol_version": "cv-1.0.0",
+  "question_hash": "f17ff72b39dac350",
+  "questions": {
+    "C1_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"No new infrastructure services (no Redis, Memcached, broker, new managed DB, or API gateway product).\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "instructions": "Does the response recommend adding a new infrastructure service - such as Redis, Memcached, Kafka, RabbitMQ, a new managed database, or an API gateway product like Kong or AWS API Gateway - as part of its plan? In-process memory and the existing PostgreSQL do not count as new services.",
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Three backend engineers, four weeks.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "instructions": "Does the plan clearly require more than three engineers or more than four weeks, for example a timeline longer than four weeks or additional hires?",
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Monthly cloud spend may rise by at most 8% (USD 752).\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "instructions": "Does the response propose added infrastructure spend that would plausibly exceed USD 752 per month, such as a larger database instance class or additional managed services?",
+      "type": "boolean"
+    }
+  },
+  "requested_model": "typesafe-ai/jev-1.14.0",
+  "state_truncated": false,
+  "usage": {
+    "inputTokens": 5411,
+    "outputTokens": 124
+  },
+  "verdicts": {
+    "C1": {
+      "p_acknowledged": 0.06,
+      "p_broken": 0.02,
+      "verdict": "kept"
+    },
+    "C2": {
+      "p_acknowledged": 0.04,
+      "p_broken": 0.05,
+      "verdict": "kept"
+    },
+    "C3": {
+      "p_acknowledged": 0.12,
+      "p_broken": 0.23,
+      "verdict": "kept"
+    }
+  },
+  "verifier_model": "typesafe-ai/jev-1.14.0"
+}

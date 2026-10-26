@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "education",
+  "completion_tokens": 538,
+  "cost_usd": 0.002768,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "e0f3bc5260510545",
+  "item_id": "edu-008",
+  "latency_s": 6.664,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 78,
+  "provider": "anthropic",
+  "request_fingerprint": "137ae8ce75bf5a9c",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# Redesign: Diagnostic Reasoning & Customer Communication Module\n\n## Current Problem\nStudents memorize procedures for known faults but lack:\n- Problem-solving frameworks for unfamiliar issues\n- Understanding of underlying principles\n- Communication skills for non-technical customers\n\n---\n\n## Teaching Changes\n\n### 1. **Shift from Procedure-Memorization to Principle-Based Learning**\n- Teach *why* systems work, not just *how* to fix them\n- Use fault trees and diagnostic flowcharts (e.g., \"engine won't start\" → electrical vs. fuel vs. compression)\n- Real case studies of unusual/complex problems, not just textbook scenarios\n\n### 2. **Introduce Structured Diagnostic Methods**\n- Teach the **5-Why technique** or **systematic elimination process**\n- Use real broken vehicles with unknown faults (not pre-diagnosed)\n- Require students to gather information before jumping to solutions\n\n### 3. **Add Customer Communication Training**\n- Role-play scenarios: explaining findings to customers with varying knowledge levels\n- Teach translation of technical language into plain language\n- Practice writing repair estimates and explaining costs\n\n### 4. **Integrate Troubleshooting Workshops**\n- Hands-on sessions with deliberately sabotaged vehicles\n- Peer teaching: students explain diagnoses to classmates\n- Reflection on reasoning process, not just the answer\n\n---\n\n## Assessment Changes\n\n| **Current Assessment** | **New Assessment** |\n|---|---|\n| Written test on procedures | Diagnostic case study: given a faulty vehicle, students must identify the problem and explain their reasoning |\n| Practical: \"Fix this known fault\" | Practical: \"Diagnose this unknown fault\" (observed by instructor) |\n| None | **Viva/oral exam**: Explain a repair to an instructor role-playing as a customer |\n| None | **Portfolio**: Document 3 real diagnostic cases with reasoning shown |\n| None | **Peer assessment**: Students evaluate each other's explanations for clarity |\n\n### Key Assessment Principle\n**Students must show their thinking, not just their answer.** Grading includes:\n- Diagnostic logic (30%)\n- Technical accuracy (30%)\n- Communication clarity (25%)\n- Ability to adapt when initial diagnosis is wrong (15%)\n\n---\n\n## Expected Outcome\nGraduates can approach unfamiliar problems systematically and explain repairs confidently to customers.",
+  "timestamp_utc": "2026-10-21T23:35:53Z"
+}

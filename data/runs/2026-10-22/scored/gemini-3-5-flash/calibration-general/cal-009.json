@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer 'ANSWER: mitochondrion' matches the reference answer 'ANSWER: mitochondrion' exactly in substance, ignoring formatting and verbosity differences.",
+    "instruction_compliance": "The prompt instructed to 'Answer in one sentence, then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a one-sentence answer and correctly ends with 'ANSWER: mitochondrion' in the exact format specified.",
+    "reasoning_validity": "The prompt does not explicitly call for shown working, but the response provides a concise, internally consistent statement: 'In eukaryotic cells, the mitochondrion is the primary organelle responsible for ATP synthesis through the process of oxidative phosphorylation.' This reasoning is sound and directly supports the answer given."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-009",
+  "judge_cost_usd": 0.00042327,
+  "judge_latency_s": 22.0,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer 'ANSWER: mitochondrion' matches the reference answer 'ANSWER: mitochondrion' exactly in substance, ignoring formatting and verbosity differences.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The prompt does not explicitly call for shown working, but the response provides a concise, internally consistent statement: 'In eukaryotic cells, the mitochondrion is the primary organelle responsible for ATP synthesis through the process of oxidative phosphorylation.' This reasoning is sound and directly supports the answer given.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructed to 'Answer in one sentence, then end your response with a final line in exactly this format: ANSWER: <organelle>'. The response provides a one-sentence answer and correctly ends with 'ANSWER: mitochondrion' in the exact format specified.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully complies with instructions and provides a correct, well-reasoned answer.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response fully complies with instructions and provides a correct, well-reasoned answer.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

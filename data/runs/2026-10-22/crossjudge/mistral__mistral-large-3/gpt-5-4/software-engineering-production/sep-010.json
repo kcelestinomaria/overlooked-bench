@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response produces the exact deliverable requested: a runbook with concrete commands, sequences, and verification steps.\n2. The runbook includes:\n   - Exact commands for all critical procedures (e.g., `sudo systemctl restart nginx`, `rclone copy yourremote:yourbucket/path/backup-file.sql .`).\n   - Clear sequences for deployment, backup restoration, and incident response.\n   - Verification steps (e.g., `curl -I https://your-domain.com`, `mysql -uroot -p -e \"SHOW DATABASES;\"`).\n   - Owners (the two PHP developers) and escalation criteria.\n3. The response is immediately executable with only light editing (e.g., filling in placeholders like `/path/to/app`).",
+    "constraint_fidelity": "1. The response explicitly adheres to the constraint of no migration to Kubernetes, managed DB, PaaS, or another cloud (C1). It consistently refers to the existing Hetzner Cloud VMs and does not suggest any migration.\n2. The response adheres to zero additional tooling spend (C2). It does not recommend any new paid tools, services, or subscriptions.\n3. The response provides exact commands for all key procedures (C3), including restoring the database from backup, renewing TLS certificates, and restarting services. For example:\n   - Restoring a backup: `rclone copy yourremote:yourbucket/path/backup-file.sql .`, `mysql -uroot -p restore_test < backup-file.sql`\n   - Renewing TLS certificates: `sudo certbot renew --dry-run`, `sudo certbot renew`\n   - Restarting services: `sudo systemctl restart nginx`, `sudo systemctl restart php8.2-fpm`\n4. The response includes arithmetic and capacity checks (e.g., disk usage `df -h`, memory `free -h`) and explicitly states when to escalate, ensuring constraints are respected.\n5. No silent violations of constraints are present. The response is fully aligned with the stated constraints.",
+    "maintainability": "1. The response identifies the team that will own the result (two PHP developers with no Linux server administration experience) and tailors the runbook to their skill level.\n2. The added complexity is proportionate to the team. The response avoids advanced techniques and focuses on clear, repeatable steps.\n3. Risks and accepted debt are explicitly stated. For example:\n   - The response warns against changing MySQL/nginx/PHP-FPM config without escalation.\n   - It flags when to stop and escalate (e.g., disk usage above 90%, repeated data corruption).\n   - It includes a section on safe command references and what not to delete.\n4. The runbook includes documentation and observability steps (e.g., checking logs, verifying backups, testing restores).",
+    "production_realism": "1. The response accounts for the stated scale (2 VMs, small team) and infrastructure (Hetzner Cloud, MySQL 8.0, Laravel 10, etc.). It tailors procedures to the team's skill mix (PHP developers with no Linux server administration experience).\n2. The response addresses failure modes relevant to the scale:\n   - Load and locking: Not a major concern for this small setup, but the response includes checks for disk and memory usage (`df -h`, `free -h`).\n   - Retries and idempotency: The response includes commands for restarting services and retrying queue jobs (`php artisan queue:retry all`).\n   - Partial failure: The response includes steps for verifying backups and restoring to a test database before production.\n   - Rollback: The response includes a deployment rollback procedure via `git pull` and `php artisan down/up`.\n   - Observability: The response includes commands for checking logs (`journalctl`, `tail -f`) and service status (`systemctl status`).\n3. The operational burden is proportionate to the team's size and skill mix. The response avoids complex procedures and provides clear, step-by-step commands.\n4. No technically incorrect claims about the named technologies are present. The response accurately describes how to interact with MySQL, nginx, PHP-FPM, Supervisor, and certbot."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-010",
+  "judge_cost_usd": 0.0050041,
+  "judge_latency_s": 14.901,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"\n1. The response explicitly adheres to the constraint of no migration to Kubernetes, managed DB, PaaS, or another cloud (C1). It consistently refers to the existing Hetzner Cloud VMs and does not suggest any migration.\n2. The response adheres to zero additional tooling spend (C2). It does not recommend any new paid tools, services, or subscriptions.\n3. The response provides exact commands for all key procedures (C3), including restoring the database from backup, renewing TLS certificates, and restarting services. For example:\n   - Restoring a backup: `rclone copy yourremote:yourbucket/path/backup-file.sql .`, `mysql -uroot -p restore_test < backup-file.sql`\n   - Renewing TLS certificates: `sudo certbot renew --dry-run`, `sudo certbot renew`\n   - Restarting services: `sudo systemctl restart nginx`, `sudo systemctl restart php8.2-fpm`\n4. The response includes arithmetic and capacity checks (e.g., disk usage `df -h`, memory `free -h`) and explicitly states when to escalate, ensuring constraints are respected.\n5. No silent violations of constraints are present. The response is fully aligned with the stated constraints.\n      \",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"\n1. The response accounts for the stated scale (2 VMs, small team) and infrastructure (Hetzner Cloud, MySQL 8.0, Laravel 10, etc.). It tailors procedures to the team's skill mix (PHP developers with no Linux server administration experience).\n2. The response addresses failure modes relevant to the scale:\n   - Load and locking: Not a major concern for this small setup, but the response includes checks for disk and memory usage (`df -h`, `free -h`).\n   - Retries and idempotency: The response includes commands for restarting services and retrying queue jobs (`php artisan queue:retry all`).\n   - Partial failure: The response includes steps for verifying backups and restoring to a test database before production.\n   - Rollback: The response includes a deployment rollback procedure via `git pull` and `php artisan down/up`.\n   - Observability: The response includes commands for checking logs (`journalctl`, `tail -f`) and service status (`systemctl status`).\n3. The operational burden is proportionate to the team's size and skill mix. The response avoids complex procedures and provides clear, step-by-step commands.\n4. No technically incorrect claims about the named technologies are present. The response accurately describes how to interact with MySQL, nginx, PHP-FPM, Supervisor, and certbot.\n      \",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"\n1. The response produces the exact deliverable requested: a runbook with concrete commands, sequences, and verification steps.\n2. The runbook includes:\n   - Exact commands for all critical procedures (e.g., `sudo systemctl restart nginx`, `rclone copy yourremote:yourbucket/path/backup-file.sql .`).\n   - Clear sequences for deployment, backup restoration, and incident response.\n   - Verification steps (e.g., `curl -I https://your-domain.com`, `mysql -uroot -p -e \\\"SHOW DATABASES;\\\"`).\n   - Owners (the two PHP developers) and escalation criteria.\n3. The response is immediately executable with only light editing (e.g., filling in placeholders like `/path/to/app`).\n      \",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"\n1. The response identifies the team that will own the result (two PHP developers with no Linux server administration experience) and tailors the runbook to their skill level.\n2. The added complexity is proportionate to the team. The response avoids advanced techniques and focuses on clear, repeatable steps.\n3. Risks and accepted debt are explicitly stated. For example:\n   - The response warns against changing MySQL/nginx/PHP-FPM config without escalation.\n   - It flags when to stop and escalate (e.g., disk usage above 90%, repeated data corruption).\n   - It includes a section on safe command references and what not to delete.\n4. The runbook includes documentation and observability steps (e.g., checking logs, verifying backups, testing restores).\n      \",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a comprehensive, constraint-compliant runbook that is immediately actionable and tailored to the team's skill level.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response is a comprehensive, constraint-compliant runbook that is immediately actionable and tailored to the team's skill level.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

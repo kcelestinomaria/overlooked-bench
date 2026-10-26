@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response concretely addresses learners with differing language proficiencies through strategies like visual support, reduced language load, peer pairing, and home language inclusion. Adaptations are low-cost and implementable by one teacher (e.g., gestures, visuals, routines). It avoids generic placeholder language and provides specific examples (e.g., 'use sentence starters,' 'allow drawing or gestures'). No second adult is assumed.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it focuses on classroom support for language learners. The response is inclusive of the range of learners (Arabic, Spanish, Tagalog speakers) in the Quebec French-instruction context, treating home languages as assets and providing specific strategies for diverse needs. It does not default to academic-only approaches and respects the setting.",
+    "pedagogical_soundness": "The response provides clear learning objectives implicitly (e.g., making French comprehensible, supporting vocabulary, reducing language load while maintaining cognitive challenge) and aligns activities (gestures, visuals, routines, peer support) and assessments (observation, oral responses, visuals) to these goals. It emphasizes high expectations with scaffolds, ensuring cognitive demand is appropriate. Sequencing is logical, starting with comprehensibility and moving to routines, vocabulary, and peer support. Criteria are observable (e.g., 'point, show, match, circle, draw').",
+    "workload_realism": "Strategies are feasible for one teacher with no assistant: using gestures, visuals, routines, peer pairing, and simple family communication. No materials beyond basic classroom resources (pictures, board, real objects) are required, and preparation (pre-teaching vocabulary, visual schedules) is manageable. Timings are not specified, but activities are integrated into daily teaching, avoiding excessive workload. Class size is addressed through peer support and rotations, not one-to-one attention."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-012",
+  "judge_cost_usd": 0.00096755,
+  "judge_latency_s": 38.74,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives implicitly (e.g., making French comprehensible, supporting vocabulary, reducing language load while maintaining cognitive challenge) and aligns activities (gestures, visuals, routines, peer support) and assessments (observation, oral responses, visuals) to these goals. It emphasizes high expectations with scaffolds, ensuring cognitive demand is appropriate. Sequencing is logical, starting with comprehensibility and moving to routines, vocabulary, and peer support. Criteria are observable (e.g., 'point, show, match, circle, draw').\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Strategies are feasible for one teacher with no assistant: using gestures, visuals, routines, peer pairing, and simple family communication. No materials beyond basic classroom resources (pictures, board, real objects) are required, and preparation (pre-teaching vocabulary, visual schedules) is manageable. Timings are not specified, but activities are integrated into daily teaching, avoiding excessive workload. Class size is addressed through peer support and rotations, not one-to-one attention.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it focuses on classroom support for language learners. The response is inclusive of the range of learners (Arabic, Spanish, Tagalog speakers) in the Quebec French-instruction context, treating home languages as assets and providing specific strategies for diverse needs. It does not default to academic-only approaches and respects the setting.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response concretely addresses learners with differing language proficiencies through strategies like visual support, reduced language load, peer pairing, and home language inclusion. Adaptations are low-cost and implementable by one teacher (e.g., gestures, visuals, routines). It avoids generic placeholder language and provides specific examples (e.g., 'use sentence starters,' 'allow drawing or gestures'). No second adult is assumed.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is highly practical, context-aware, and provides actionable strategies for teachers in Quebec's French-instruction setting with no assistant.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response is highly practical, context-aware, and provides actionable strategies for teachers in Quebec's French-instruction setting with no assistant.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

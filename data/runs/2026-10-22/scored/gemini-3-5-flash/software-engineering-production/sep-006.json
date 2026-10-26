@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "BigQuery will automatically and permanently delete partitions older than 30 days",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Provides concrete schema definitions (SQL), ingestion patterns, partition management steps, and legal compliance actions (DPIA, consent screen, ODPC registration). Includes specific pushbacks with technical justifications. However, it lacks detailed sequence/timeline for the six-week plan and does not assign owners or effort estimates for each task.",
+    "constraint_fidelity": "The response explicitly addresses all hard constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, FCM); implements 30-day retention via PostgreSQL partition dropping ('DROP TABLE rider_locations_raw_p202X_XX_XX') and BigQuery partition expiration; excludes raw location data from backups ('exclude-table-data flag in pg_dump'); acknowledges two-engineer six-week timeline and proposes realistic scope reductions (e.g., no real-time dashboard). It demonstrates arithmetic for data volume and retention mechanisms.",
+    "maintainability": "Proposes solutions proportionate to the team (simple cron jobs, explicit backup exclusions), documents risks (backup trap, battery impact), and ensures anonymization for long-term analytics. However, it does not explicitly mention tests, observability, or documentation for the new components, and the H3 aggregation adds complexity without detailing how the data team will maintain it.",
+    "production_realism": "Accounts for Nairobi-specific constraints (battery/data usage on lower-end devices, mobile data costs), implements batching to reduce load, addresses partial failure via local caching, includes rollback via partition management, and designs access controls (RLS/API checks) appropriate for the team. However, it does not explicitly address locking concurrency or retry mechanisms for batch uploads."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.0014344,
+  "judge_latency_s": 53.084,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly addresses all hard constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, FCM); implements 30-day retention via PostgreSQL partition dropping ('DROP TABLE rider_locations_raw_p202X_XX_XX') and BigQuery partition expiration; excludes raw location data from backups ('exclude-table-data flag in pg_dump'); acknowledges two-engineer six-week timeline and proposes realistic scope reductions (e.g., no real-time dashboard). It demonstrates arithmetic for data volume and retention mechanisms.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for Nairobi-specific constraints (battery/data usage on lower-end devices, mobile data costs), implements batching to reduce load, addresses partial failure via local caching, includes rollback via partition management, and designs access controls (RLS/API checks) appropriate for the team. However, it does not explicitly address locking concurrency or retry mechanisms for batch uploads.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Provides concrete schema definitions (SQL), ingestion patterns, partition management steps, and legal compliance actions (DPIA, consent screen, ODPC registration). Includes specific pushbacks with technical justifications. However, it lacks detailed sequence/timeline for the six-week plan and does not assign owners or effort estimates for each task.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Proposes solutions proportionate to the team (simple cron jobs, explicit backup exclusions), documents risks (backup trap, battery impact), and ensures anonymization for long-term analytics. However, it does not explicitly mention tests, observability, or documentation for the new components, and the H3 aggregation adds complexity without detailing how the data team will maintain it.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong constraint adherence and production-aware design but lacks some operational details for immediate execution.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"BigQuery will automatically and permanently delete partitions older than 30 days\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response demonstrates strong constraint adherence and production-aware design but lacks some operational details for immediate execution.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

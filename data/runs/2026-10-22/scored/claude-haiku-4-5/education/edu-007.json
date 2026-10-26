@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses differentiation concretely in the 'How Will Teachers Make This Work?' section, listing specific strategies like 'Different tasks', 'Flexible grouping', and 'One-to-one support'. It is implementable by one practitioner and avoids generic placeholder language.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about a teaching method change. The response is inclusive in addressing parents who did not complete secondary school, using plain language and avoiding jargon, which aligns with the note to score on inclusivity for the setting.",
+    "pedagogical_soundness": "The response does not present a lesson plan with learning objectives, activities, or assessments, so there is no alignment to evaluate. It is parent-facing guidance explaining a policy change, not pedagogical design.",
+    "workload_realism": "The response does not propose a teaching plan with timings, materials, or class activities, so there is no workload to evaluate. It is informational guidance for parents."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00067224,
+  "judge_latency_s": 30.544,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not present a lesson plan with learning objectives, activities, or assessments, so there is no alignment to evaluate. It is parent-facing guidance explaining a policy change, not pedagogical design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response does not propose a teaching plan with timings, materials, or class activities, so there is no workload to evaluate. It is informational guidance for parents.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about a teaching method change. The response is inclusive in addressing parents who did not complete secondary school, using plain language and avoiding jargon, which aligns with the note to score on inclusivity for the setting.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses differentiation concretely in the 'How Will Teachers Make This Work?' section, listing specific strategies like 'Different tasks', 'Flexible grouping', and 'One-to-one support'. It is implementable by one practitioner and avoids generic placeholder language.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This is effective parent communication that addresses concerns plainly and concretely, though it is not a pedagogical plan.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This is effective parent communication that addresses concerns plainly and concretely, though it is not a pedagogical plan.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 33.75
+}

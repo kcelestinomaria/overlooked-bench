@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed migration plan with phases, concrete SQL commands (e.g., 'ALTER TABLE shipment_events ADD COLUMN shipment_event_id_bigint bigint'), sequence ('Day 0–1: inventory dependencies, Day 1–2: deploy app support'), estimates ('2 weeks to execute safely'), and verification steps ('validate correctness, monitor performance'). An engineer could start executing immediately with light editing.",
+    "constraint_fidelity": "The response respects all hard constraints: it explicitly rejects provisioning new instances ('introducing a new instance or replica, since that violates constraints'), uses only existing infrastructure with storage increase within 200 GB limit (mentions 'batched backfill throttled to protect a 2-vCPU instance'), and completes within the 32-day runway ('finish cutover within 10–14 days'). It acknowledges the 5-minute maintenance window constraint and reserves it only for metadata swaps, not heavy work.",
+    "maintainability": "The solution is proportionate to the team: it leaves clear seams (e.g., dual-write pattern), includes observability ('dashboards, alerting'), and states risks ('growth can spike, mistakes need rollback room'). It avoids unnecessary complexity and provides a rollback plan, ensuring operability by the current team.",
+    "production_realism": "The plan accounts for production realities: it addresses locking ('CREATE INDEX CONCURRENTLY avoids blocking writes'), load ('batched updates, ordered by PK, e.g. 10k–50k rows per batch'), retries ('idempotent batch processor'), partial failure ('rollback plan'), observability ('set up dashboards for sequence last_value, insert rate'), and data volumes ('410 GB table'). It fits the team's skill mix by assigning backend engineers to app changes and DBA to SQL review."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.00194033,
+  "judge_latency_s": 46.494,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: it explicitly rejects provisioning new instances ('introducing a new instance or replica, since that violates constraints'), uses only existing infrastructure with storage increase within 200 GB limit (mentions 'batched backfill throttled to protect a 2-vCPU instance'), and completes within the 32-day runway ('finish cutover within 10–14 days'). It acknowledges the 5-minute maintenance window constraint and reserves it only for metadata swaps, not heavy work.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan accounts for production realities: it addresses locking ('CREATE INDEX CONCURRENTLY avoids blocking writes'), load ('batched updates, ordered by PK, e.g. 10k–50k rows per batch'), retries ('idempotent batch processor'), partial failure ('rollback plan'), observability ('set up dashboards for sequence last_value, insert rate'), and data volumes ('410 GB table'). It fits the team's skill mix by assigning backend engineers to app changes and DBA to SQL review.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed migration plan with phases, concrete SQL commands (e.g., 'ALTER TABLE shipment_events ADD COLUMN shipment_event_id_bigint bigint'), sequence ('Day 0–1: inventory dependencies, Day 1–2: deploy app support'), estimates ('2 weeks to execute safely'), and verification steps ('validate correctness, monitor performance'). An engineer could start executing immediately with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: it leaves clear seams (e.g., dual-write pattern), includes observability ('dashboards, alerting'), and states risks ('growth can spike, mistakes need rollback room'). It avoids unnecessary complexity and provides a rollback plan, ensuring operability by the current team.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, constraint-aware migration plan with actionable steps and production-ready safeguards.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, constraint-aware migration plan with actionable steps and production-ready safeguards.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

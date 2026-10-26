@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific methodological challenges ('tone is often more morphologically than lexically conditioned', 'surface tone frequently reflects later innovations rather than inheritance'), discusses scholarly debates ('whether Proto-Bantu had two level tones or a more restricted system'), and references current approaches ('reconstruct tonal behavior tied to morphology, use comparative evidence from multiple branches'). It demonstrates familiarity with the literature and internal debates, suitable for a specialist audience.",
+    "domain_accuracy": "The response makes accurate substantive claims about Proto-Bantu tone reconstruction challenges, such as tone instability ('tone often changes through tonogenesis from segmental features, tone spreading and shifting, register changes'), morphological conditioning ('tone is controlled by noun class morphology, tense/aspect/mood'), and evidence issues ('limited tonal documentation, inconsistent transcription traditions'). It correctly identifies key obstacles without inventing citations or terms, and aligns with known scholarship in Bantu tonology.",
+    "field_situatedness": "The response uses appropriate Bantu linguistics terminology ('tonogenesis', 'downdrift/downstep', 'noun class morphology', 'floating tones', 'tonal melodies') and frameworks, focusing on the Bantu scholarly tradition without substituting Western or Anglophone framings. It acknowledges the centrality of morphological and prosodic factors in Bantu tone, aligning with the field's conventions.",
+    "scholarly_calibration": "The response distinguishes well-established from contested knowledge, e.g., 'Broad consensus... Proto-Bantu had a tonal system' vs. 'What is not fully settled... the exact inventory of Proto-Bantu tone contrasts'. It avoids uniform confidence, explicitly noting unresolved issues and current methodological shifts ('the field has moved away from trying to reconstruct Proto-Bantu tone purely as a simple set of lexical H/L contrasts'). Calibration is specific and targeted, not blanket."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00090527,
+  "judge_latency_s": 44.926,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes accurate substantive claims about Proto-Bantu tone reconstruction challenges, such as tone instability ('tone often changes through tonogenesis from segmental features, tone spreading and shifting, register changes'), morphological conditioning ('tone is controlled by noun class morphology, tense/aspect/mood'), and evidence issues ('limited tonal documentation, inconsistent transcription traditions'). It correctly identifies key obstacles without inventing citations or terms, and aligns with known scholarship in Bantu tonology.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific methodological challenges ('tone is often more morphologically than lexically conditioned', 'surface tone frequently reflects later innovations rather than inheritance'), discusses scholarly debates ('whether Proto-Bantu had two level tones or a more restricted system'), and references current approaches ('reconstruct tonal behavior tied to morphology, use comparative evidence from multiple branches'). It demonstrates familiarity with the literature and internal debates, suitable for a specialist audience.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested knowledge, e.g., 'Broad consensus... Proto-Bantu had a tonal system' vs. 'What is not fully settled... the exact inventory of Proto-Bantu tone contrasts'. It avoids uniform confidence, explicitly noting unresolved issues and current methodological shifts ('the field has moved away from trying to reconstruct Proto-Bantu tone purely as a simple set of lexical H/L contrasts'). Calibration is specific and targeted, not blanket.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate Bantu linguistics terminology ('tonogenesis', 'downdrift/downstep', 'noun class morphology', 'floating tones', 'tonal melodies') and frameworks, focusing on the Bantu scholarly tradition without substituting Western or Anglophone framings. It acknowledges the centrality of morphological and prosodic factors in Bantu tone, aligning with the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate, and well-calibrated knowledge of Proto-Bantu tone reconstruction challenges and current scholarly status.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate, and well-calibrated knowledge of Proto-Bantu tone reconstruction challenges and current scholarly status.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

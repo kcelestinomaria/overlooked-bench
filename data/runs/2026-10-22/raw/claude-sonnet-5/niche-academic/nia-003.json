@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "niche-academic",
+  "completion_tokens": 1413,
+  "cost_usd": 0.014266,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "4a20709e2a1f57a2",
+  "item_id": "nia-003",
+  "latency_s": 18.95,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 68,
+  "provider": "anthropic",
+  "request_fingerprint": "14e65d84830b68ba",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Maslaha and the Sources of Islamic Law\n\n## The Basic Concept\n\n**Maslaha** (مصلحة) refers to \"public interest,\" \"welfare,\" or \"benefit\" as a consideration in legal reasoning. The core tension in Islamic legal theory is whether maslaha can function as an *independent* source of law or whether it must always be derived from and subordinated to the textual sources—the Qur'an, Sunna, and consensus (ijma).\n\n## Maslaha's Relationship to the Sources\n\nMost jurists agree that:\n- Maslaha that is explicitly recognized by a text (**maslaha mu'tabara**) is unproblematic—it's simply the wisdom (hikma) behind established rulings\n- Maslaha that is explicitly rejected by a text (**maslaha mulghah**) is invalid\n- The controversy centers on **maslaha mursala** (\"unregulated\" or \"unattested\" interest)—benefits that texts neither explicitly validate nor invalidate\n\nThe key question: Can jurists derive rulings based on maslaha mursala alone, or must every ruling trace back to a specific textual indicator (even indirectly through qiyas/analogy)?\n\n## Where Maliki and Hanafi Positions Diverge\n\n### The Maliki Position\nMalikis (following al-Shatibi's later systematization, though the practice predates him) gave **maslaha mursala** significant independent weight as a legal principle. Key features:\n\n- Malik himself was known for considering public welfare broadly, especially in matters of **siyasa shar'iyya** (governance) and transactions\n- Maslaha could justify rulings even without a specific textual analog, provided the benefit aligned with the **general objectives (maqasid) of the Sharia**\n- This is tied to the Maliki principle of **istislah**—ruling by what serves the public good when no explicit text addresses the matter\n- Al-Shatibi later provided the theoretical framework, grounding maslaha in the **daruriyyat** (necessities: preservation of religion, life, intellect, lineage, property) as the ultimate purposes texts aim to protect\n\n### The Hanafi Position\nHanafis were more cautious about maslaha as an independent category, instead channeling similar concerns through:\n\n- **Istihsan** (\"juristic preference\")—a method of departing from strict analogy (qiyas) when it leads to a harsh or inappropriate result, in favor of a solution better suited to the situation\n- Istihsan is typically presented as still textually grounded—a *hidden qiyas* (qiyas khafi) or a departure justified by necessity, custom, or a stronger textual indicator—rather than a free-standing appeal to \"benefit\"\n- Hanafis were more insistent that any consideration of welfare be tied, even implicitly, to a recognizable textual root, resisting the idea that jurists could identify benefits as legally binding purely through independent rational assessment\n\n### The Core Divergence\n| | Maliki | Hanafi |\n|---|---|---|\n| **Primary tool** | Maslaha mursala / Istislah | Istihsan |\n| **Theoretical stance** | Benefit can ground rulings based on the *general* purposes of Sharia, even without specific textual analog | Departures from analogy still require textual anchoring (even if indirect/hidden) |\n| **Degree of independence from text** | Greater willingness to treat maslaha as quasi-autonomous when necessities are at stake | More insistent on textual derivation, viewing juristic preference as *within* the qiyas framework, not outside it |\n\n## Summary\n\nBoth schools sought flexibility to serve justice and public welfare beyond rigid literalism, but they justified this flexibility differently. Malikis were more willing to let **the rational assessment of benefit** itself carry legal weight (especially for protecting Sharia's essential objectives), while Hanafis preferred to keep the *same practical flexibility* under the explicitly text-adjacent umbrella of istihsan, maintaining a tighter formal link to revelation. This reflects a broader methodological distinction: Maliki usul leaned more toward teleological (purpose-driven) reasoning, while Hanafi usul emphasized more formalistic fidelity to textual-analogical structures even while achieving similar practical outcomes.",
+  "timestamp_utc": "2026-10-21T23:30:43Z"
+}

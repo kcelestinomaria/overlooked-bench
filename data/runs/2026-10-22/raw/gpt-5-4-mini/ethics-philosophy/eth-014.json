@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 529,
+  "cost_usd": 0.0024495,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "af5e1448363504c4",
+  "item_id": "eth-014",
+  "latency_s": 3.158,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4-mini",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "prompt_tokens": 92,
+  "provider": "openai",
+  "request_fingerprint": "7983250d0cdb020e",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4-mini",
+    "temperature": 0.0
+  },
+  "text": "A strong answer is: **the government should choose the policy that saves 900 lives**, all else equal.\n\n## Why\nIf the two policies cost the same and the only relevant difference is the number of lives saved, then saving 900 lives is better than saving 500 lives. The fact that the 500 are **identified, currently ill, named people** does not by itself make their lives morally more valuable than the 900 **unidentified future** people.\n\nIn other words, the moral question should not be “Who is easier to imagine or emotionally respond to?” but “Which policy produces the greater expected benefit?” On that standard, 900 > 500.\n\n## The identified victim effect\nThe “identified victim effect” is the tendency to feel more strongly about saving a known, named person than about helping a statistical or anonymous group, even when the numbers favor the latter. This is common and psychologically powerful.\n\n### Is it a bias or a moral intuition?\n**Mostly a bias to be corrected, not a moral principle to be followed.**\n\nWhy?\n\n1. **It is not morally relevant that a person is named or identified.**  \n   The moral status of a person does not depend on whether we know their name, face, or story.\n\n2. **It can distort judgment.**  \n   The effect often makes people give disproportionate weight to vivid individual cases while neglecting larger harms affecting more people.\n\n3. **It can conflict with impartiality.**  \n   Public policy should generally treat people equally, regardless of whether they are emotionally salient.\n\n## But is there anything valuable in the intuition?\nYes, a limited one.\n\nThe identified victim effect sometimes reflects morally relevant facts that statistical descriptions can hide:\n- the person’s suffering may be more concrete,\n- urgency may be clearer,\n- the social meaning of directly rescuing someone may matter emotionally and politically.\n\nSo the intuition is not worthless. It can be a useful signal that people are not abstract numbers. But it should **not override a clear numerical and moral advantage** when none of the relevant facts differ except identifiability.\n\n## A good principle\nA defensible policy rule is:\n\n> Give weight to vivid individual stories as a way of recognizing human reality, but do not let identifiability alone outweigh a substantially better outcome for more people.\n\n## Bottom line\nThe government should choose the policy that saves **900 unidentified future lives**. The identified victim effect is best understood as a **cognitive and moral bias** that often needs correction, though it can contain a kernel of humanly important concern that should not be dismissed entirely.",
+  "timestamp_utc": "2026-10-21T23:39:15Z"
+}

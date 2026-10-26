@@ -1,0 +1,89 @@
+{
+  "answers": {
+    "C1_acknowledged": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "probability": 0.18,
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "probability": 0.03,
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "probability": 0.07,
+      "type": "boolean"
+    }
+  },
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "cost_usd": 0.000188454,
+  "generation_id": "gen_01M5GFKX7HPGHP7Z3XEHYZD0QX",
+  "item_content_hash": "c4797b35ff7681fd",
+  "item_id": "sep-015",
+  "latency_s": 2.474,
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "protocol_version": "cv-1.0.0",
+  "question_hash": "a8f8b6a3a7c34bd4",
+  "questions": {
+    "C1_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Logs retained a rolling 180 days, within Indian jurisdiction (CERT-In).\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "instructions": "Does the response propose retaining any category of system or security logs for less than 180 days, or storing those logs outside India?",
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Observability spend at most USD 9,000 a month.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "instructions": "Does the plan leave projected monthly observability spend above USD 9,000, or give no cost arithmetic showing how it reaches that target?",
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"No reduction in alerting coverage for the 12 tier-1 services.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "instructions": "Does the response remove or weaken alerting for the tier-1 services?",
+      "type": "boolean"
+    }
+  },
+  "requested_model": "typesafe-ai/jev-1.14.0",
+  "state_truncated": false,
+  "usage": {
+    "inputTokens": 4487,
+    "outputTokens": 124
+  },
+  "verdicts": {
+    "C1": {
+      "p_acknowledged": 0.04,
+      "p_broken": 0.18,
+      "verdict": "kept"
+    },
+    "C2": {
+      "p_acknowledged": 0.03,
+      "p_broken": 0.04,
+      "verdict": "kept"
+    },
+    "C3": {
+      "p_acknowledged": 0.04,
+      "p_broken": 0.07,
+      "verdict": "kept"
+    }
+  },
+  "verifier_model": "typesafe-ai/jev-1.14.0"
+}

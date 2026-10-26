@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Provides exact commands for all key procedures, e.g., 'certbot renew --force-renewal', 'systemctl status mysql', 'git pull origin main'.",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response produces a runbook with exact commands for all requested procedures: checking service status (e.g., 'systemctl status nginx'), restarting services, reading logs, certificate renewal ('certbot renew --force-renewal'), deployment steps ('git pull', 'composer install'), and emergency procedures. It includes sequences, concrete commands, estimates (e.g., 'Time Required: 5 minutes'), and verification steps (e.g., 'curl -I returns HTTP 200'). A developer could execute it immediately with light editing (e.g., filling in IPs).",
+    "constraint_fidelity": "The response respects all hard constraints: it does not recommend migrating to Kubernetes, managed DB, PaaS, or another cloud (C1); it does not recommend any paid tools or services (C2); and it provides exact commands for all key procedures (restoring database, certificate renewal, restarting services) that developers with no server-admin experience could run (C3). It explicitly acknowledges constraints (e.g., 'No migration to a new platform') and includes arithmetic checks (e.g., disk space >20% free, file size >100MB).",
+    "maintainability": "The runbook is designed for maintainability by the two PHP developers: it uses simple, repeatable commands; includes a handover checklist; documents risks (e.g., 'Uptime Kuma on app-1 cannot alert if app-1 itself is down'); and suggests a free external check (though not explicitly stated). It avoids complexity (no Kubernetes, Terraform) and provides clear escalation paths. However, it does not explicitly state accepted debt or risks like security patching cadence, and some procedures (e.g., rollback) rely on manual steps.",
+    "production_realism": "The response accounts for production-scale issues: it includes checks for disk space, service status, and logs; addresses failure modes like MySQL connection drops and queue worker issues; provides rollback procedures; and considers operational burden (e.g., daily checks take 5 minutes, escalation paths). It uses the existing infrastructure (Hetzner VMs, MySQL, nginx) and tailors procedures to the team's skill level (e.g., simple SSH commands, clear success criteria)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-010",
+  "judge_cost_usd": 0.00172484,
+  "judge_latency_s": 66.25,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: it does not recommend migrating to Kubernetes, managed DB, PaaS, or another cloud (C1); it does not recommend any paid tools or services (C2); and it provides exact commands for all key procedures (restoring database, certificate renewal, restarting services) that developers with no server-admin experience could run (C3). It explicitly acknowledges constraints (e.g., 'No migration to a new platform') and includes arithmetic checks (e.g., disk space >20% free, file size >100MB).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production-scale issues: it includes checks for disk space, service status, and logs; addresses failure modes like MySQL connection drops and queue worker issues; provides rollback procedures; and considers operational burden (e.g., daily checks take 5 minutes, escalation paths). It uses the existing infrastructure (Hetzner VMs, MySQL, nginx) and tailors procedures to the team's skill level (e.g., simple SSH commands, clear success criteria).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a runbook with exact commands for all requested procedures: checking service status (e.g., 'systemctl status nginx'), restarting services, reading logs, certificate renewal ('certbot renew --force-renewal'), deployment steps ('git pull', 'composer install'), and emergency procedures. It includes sequences, concrete commands, estimates (e.g., 'Time Required: 5 minutes'), and verification steps (e.g., 'curl -I returns HTTP 200'). A developer could execute it immediately with light editing (e.g., filling in IPs).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The runbook is designed for maintainability by the two PHP developers: it uses simple, repeatable commands; includes a handover checklist; documents risks (e.g., 'Uptime Kuma on app-1 cannot alert if app-1 itself is down'); and suggests a free external check (though not explicitly stated). It avoids complexity (no Kubernetes, Terraform) and provides clear escalation paths. However, it does not explicitly state accepted debt or risks like security patching cadence, and some procedures (e.g., rollback) rely on manual steps.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A highly actionable and constraint-compliant runbook with exact commands tailored to the team's skill level.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Provides exact commands for all key procedures, e.g., 'certbot renew --force-renewal', 'systemctl status mysql', 'git pull origin main'.\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "A highly actionable and constraint-compliant runbook with exact commands tailored to the team's skill level.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

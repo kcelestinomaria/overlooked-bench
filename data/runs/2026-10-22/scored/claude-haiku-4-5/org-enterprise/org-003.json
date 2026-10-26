@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for advice to trustees covering specific elements. The response produces a structured deliverable with concrete components: it distinguishes primary-purpose vs. non-primary-purpose trading ('related/ancillary trading' vs. 'unrelated trading'), covers the small-scale exemption ('£50,000-100,000'), discusses when a subsidiary is needed ('Consider if trading courses generate >£50,000 profit'), explains tax treatment ('Corporation Tax: Exempt from corporation tax ✓'), and lists trustee duties ('Check your governing document', 'Obtain legal advice', 'Formal trustee resolution'). It is not a framework but actionable advice that could be used in a board meeting with light editing.",
+    "constraint_fidelity": "The prompt describes a charity in England and Wales with £320,000 annual income. The response respects this constraint by providing jurisdiction-specific advice (e.g., 'English & Welsh Charities', 'Corporation Tax', 'Charity Commission notification') and does not assume additional resources. It explicitly mentions the small-scale trading exemption threshold ('£50,000-100,000 annually') and provides a budget estimate ('£1,500-3,000' for advice) that is plausible for the organisation's size. The arithmetic is shown where relevant (e.g., profit thresholds), and all constraints are honored without silent violations.",
+    "contextual_realism": "The response is calibrated for a small charity: it avoids assuming dedicated HR, legal, or procurement teams, instead recommending 'specialist advice' (budgeted) and trustee involvement. It acknowledges role overlap ('clarify staff roles'), limited capacity ('you have capacity to manage separately'), and risk to reserves ('Could trading losses threaten charity reserves?'). It does not propose unaffordable tooling or excessive process overhead; steps like 'separate cost center' and 'trustee workshop' are feasible for a small organisation.",
+    "jurisdictional_accuracy": "The response is accurate for England and Wales: it references correct entities ('Charity Commission', 'Corporation Tax', 'gift-aids profits'), avoids US terms (no mention of 501(c)(3), UBIT, or IRS), and provides jurisdiction-specific details (e.g., 'VAT-exempt (education)', 'annual return if trading income >£10,000'). It correctly explains related trading exemption and subsidiary profit donation. It recommends 'specialist advice' where needed (e.g., VAT) but provides substantive content first, not just a generic disclaimer."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00124207,
+  "judge_latency_s": 53.439,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a charity in England and Wales with £320,000 annual income. The response respects this constraint by providing jurisdiction-specific advice (e.g., 'English & Welsh Charities', 'Corporation Tax', 'Charity Commission notification') and does not assume additional resources. It explicitly mentions the small-scale trading exemption threshold ('£50,000-100,000 annually') and provides a budget estimate ('£1,500-3,000' for advice) that is plausible for the organisation's size. The arithmetic is shown where relevant (e.g., profit thresholds), and all constraints are honored without silent violations.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small charity: it avoids assuming dedicated HR, legal, or procurement teams, instead recommending 'specialist advice' (budgeted) and trustee involvement. It acknowledges role overlap ('clarify staff roles'), limited capacity ('you have capacity to manage separately'), and risk to reserves ('Could trading losses threaten charity reserves?'). It does not propose unaffordable tooling or excessive process overhead; steps like 'separate cost center' and 'trustee workshop' are feasible for a small organisation.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for advice to trustees covering specific elements. The response produces a structured deliverable with concrete components: it distinguishes primary-purpose vs. non-primary-purpose trading ('related/ancillary trading' vs. 'unrelated trading'), covers the small-scale exemption ('£50,000-100,000'), discusses when a subsidiary is needed ('Consider if trading courses generate >£50,000 profit'), explains tax treatment ('Corporation Tax: Exempt from corporation tax ✓'), and lists trustee duties ('Check your governing document', 'Obtain legal advice', 'Formal trustee resolution'). It is not a framework but actionable advice that could be used in a board meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for England and Wales: it references correct entities ('Charity Commission', 'Corporation Tax', 'gift-aids profits'), avoids US terms (no mention of 501(c)(3), UBIT, or IRS), and provides jurisdiction-specific details (e.g., 'VAT-exempt (education)', 'annual return if trading income >£10,000'). It correctly explains related trading exemption and subsidiary profit donation. It recommends 'specialist advice' where needed (e.g., VAT) but provides substantive content first, not just a generic disclaimer.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is highly usable, jurisdictionally accurate, and tailored to the charity's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is highly usable, jurisdictionally accurate, and tailored to the charity's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

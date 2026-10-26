@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with specific components (token bucket, buffered counters), rollout plan with weekly breakdown and owner assignments (Eng A/B/C), concrete steps (migrations, load testing, staging rollout), and verification (metrics, dashboards). An engineer could execute with minor edits.",
+    "constraint_fidelity": "The response explicitly respects all constraints: uses only existing infrastructure (PostgreSQL, Django containers), no new services; plan fits 3 engineers and 4 weeks; latency impact estimated <1ms against 40ms budget; cost increase estimated <$10/month against $752 cap. It acknowledges trade-offs (e.g., rate limit approximation) but does not violate constraints.",
+    "maintainability": "Explicitly states risks (9 listed), future work, and operational responsibilities (cron monitoring, alerts). Complexity is proportionate (in-memory state, batched writes). Documentation implied in runbooks and alerts. No overly clever code; uses standard Django/Postgres patterns.",
+    "production_realism": "Addresses scale (1,200 rps, 6 containers), load balancing behavior, locking (sharded locks), retries (background flush), partial failure (bounded data loss on crash), rollback (feature flag), observability (dashboards, alerts), and operational burden (cron jobs, alerts). Assumes gthread worker model change is feasible and validated."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-003",
+  "judge_cost_usd": 0.00176843,
+  "judge_latency_s": 46.38,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: uses only existing infrastructure (PostgreSQL, Django containers), no new services; plan fits 3 engineers and 4 weeks; latency impact estimated <1ms against 40ms budget; cost increase estimated <$10/month against $752 cap. It acknowledges trade-offs (e.g., rate limit approximation) but does not violate constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses scale (1,200 rps, 6 containers), load balancing behavior, locking (sharded locks), retries (background flush), partial failure (bounded data loss on crash), rollback (feature flag), observability (dashboards, alerts), and operational burden (cron jobs, alerts). Assumes gthread worker model change is feasible and validated.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with specific components (token bucket, buffered counters), rollout plan with weekly breakdown and owner assignments (Eng A/B/C), concrete steps (migrations, load testing, staging rollout), and verification (metrics, dashboards). An engineer could execute with minor edits.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Explicitly states risks (9 listed), future work, and operational responsibilities (cron monitoring, alerts). Complexity is proportionate (in-memory state, batched writes). Documentation implied in runbooks and alerts. No overly clever code; uses standard Django/Postgres patterns.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware design that balances technical feasibility with operational pragmatism.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware design that balances technical feasibility with operational pragmatism.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

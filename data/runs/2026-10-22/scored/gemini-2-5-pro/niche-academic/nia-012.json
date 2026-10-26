@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedia level by engaging with specific analytical problems (e.g., loss of ombak, tyranny of bar lines, heterophony misrepresented as 'bad counterpoint'), detailed explanations of alternative notations (cipher notation's use of dots and lines, colotomic charts' grid structure), and methodological critiques (prescriptive vs. descriptive transcription). It addresses scholarly debates implicitly by contrasting Western and gamelan frameworks, showing familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response accurately describes core concepts: sléndro and pélog tuning systems, ombak (shimmer), cyclical structure with gong ageng marking the end, heterophony, kotekan interlocking rhythms, cipher notation (kepatihan), colotomic charts, and the oral tradition vs. 'work' distinction. It correctly attributes Mantle Hood as an ethnomusicologist who experimented with notation. No invented citations, terms, or consensus are present. All substantive claims align with established ethnomusicological knowledge.",
+    "field_situatedness": "The response consistently uses ethnomusicological frameworks and terminology: laras, sléndro, pélog, ombak, balungan, pokok, kotekan, colotomic, heterophony, kepatihan notation, and references to Javanese and Balinese traditions. It does not substitute Western musical frameworks silently; instead, it critiques them and centers gamelan-specific concepts. The vocabulary and framing belong squarely to ethnomusicology and the study of Indonesian gamelan.",
+    "scholarly_calibration": "The response distinguishes well-established from contested elements: it presents cipher notation as 'widely used and successful' and colotomic charts as 'often used by ethnomusicologists for analysis,' while noting limitations (e.g., cipher notation doesn't capture full texture). It avoids presenting one scholar's proposal as settled fact (e.g., Mantle Hood's experiments are described as 'complex for practical use'). However, it lacks explicit signals of evidential status differences (e.g., no mention of debates over transcription ethics) and relies on general confidence rather than targeted calibration."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00124952,
+  "judge_latency_s": 55.57,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes core concepts: sléndro and pélog tuning systems, ombak (shimmer), cyclical structure with gong ageng marking the end, heterophony, kotekan interlocking rhythms, cipher notation (kepatihan), colotomic charts, and the oral tradition vs. 'work' distinction. It correctly attributes Mantle Hood as an ethnomusicologist who experimented with notation. No invented citations, terms, or consensus are present. All substantive claims align with established ethnomusicological knowledge.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedia level by engaging with specific analytical problems (e.g., loss of ombak, tyranny of bar lines, heterophony misrepresented as 'bad counterpoint'), detailed explanations of alternative notations (cipher notation's use of dots and lines, colotomic charts' grid structure), and methodological critiques (prescriptive vs. descriptive transcription). It addresses scholarly debates implicitly by contrasting Western and gamelan frameworks, showing familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested elements: it presents cipher notation as 'widely used and successful' and colotomic charts as 'often used by ethnomusicologists for analysis,' while noting limitations (e.g., cipher notation doesn't capture full texture). It avoids presenting one scholar's proposal as settled fact (e.g., Mantle Hood's experiments are described as 'complex for practical use'). However, it lacks explicit signals of evidential status differences (e.g., no mention of debates over transcription ethics) and relies on general confidence rather than targeted calibration.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response consistently uses ethnomusicological frameworks and terminology: laras, sléndro, pélog, ombak, balungan, pokok, kotekan, colotomic, heterophony, kepatihan notation, and references to Javanese and Balinese traditions. It does not substitute Western musical frameworks silently; instead, it critiques them and centers gamelan-specific concepts. The vocabulary and framing belong squarely to ethnomusicology and the study of Indonesian gamelan.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate knowledge of gamelan transcription issues and proposed alternatives, with strong engagement beyond survey level.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate knowledge of gamelan transcription issues and proposed alternatives, with strong engagement beyond survey level.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

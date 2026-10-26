@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed design with specific steps (e.g., table schemas, code patterns, scheduler commands), a phased implementation plan with weekly deliverables, and concrete examples (e.g., unique constraints, interface definitions). An engineer could execute it with light editing, though some code snippets are pseudocode rather than exact commands.",
+    "constraint_fidelity": "The response respects all hard constraints: it uses only existing infrastructure (single droplet, MySQL, Laravel scheduler), adds no paid services, enforces idempotency via unique database constraints on mpesa_receipt, and implements active reconciliation via Daraja API polling to meet the 15-minute SLA. It explicitly avoids new servers, Redis, or paid services, and arithmetic (e.g., scheduler frequency, time bounds) is provided to verify constraints.",
+    "maintainability": "The solution is proportionate to the team: it uses simple, well-documented patterns (e.g., event logging, normalized references), states risks (e.g., wrong references, partial failures), and avoids unnecessary complexity. It includes observability (logging, metrics) and handover elements (runbook, reports), but some parts (e.g., manual review UI) are described briefly.",
+    "production_realism": "The design accounts for production realities: it addresses failure modes (e.g., DB transactions for atomicity, retries via scheduler), load (bounded reconciliation queries), partial failure (rollback on allocation errors), and operational burden (scheduler-based processing fits a small team). It leverages Laravel's built-in features and avoids assumptions beyond the team's capacity."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-013",
+  "judge_cost_usd": 0.00162322,
+  "judge_latency_s": 55.865,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: it uses only existing infrastructure (single droplet, MySQL, Laravel scheduler), adds no paid services, enforces idempotency via unique database constraints on mpesa_receipt, and implements active reconciliation via Daraja API polling to meet the 15-minute SLA. It explicitly avoids new servers, Redis, or paid services, and arithmetic (e.g., scheduler frequency, time bounds) is provided to verify constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: it addresses failure modes (e.g., DB transactions for atomicity, retries via scheduler), load (bounded reconciliation queries), partial failure (rollback on allocation errors), and operational burden (scheduler-based processing fits a small team). It leverages Laravel's built-in features and avoids assumptions beyond the team's capacity.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed design with specific steps (e.g., table schemas, code patterns, scheduler commands), a phased implementation plan with weekly deliverables, and concrete examples (e.g., unique constraints, interface definitions). An engineer could execute it with light editing, though some code snippets are pseudocode rather than exact commands.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: it uses simple, well-documented patterns (e.g., event logging, normalized references), states risks (e.g., wrong references, partial failures), and avoids unnecessary complexity. It includes observability (logging, metrics) and handover elements (runbook, reports), but some parts (e.g., manual review UI) are described briefly.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, constraint-aware design that addresses missed callbacks with idempotency and active reconciliation.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, constraint-aware design that addresses missed callbacks with idempotency and active reconciliation.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

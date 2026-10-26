@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete implementation plan with phases, tasks, and owners (e.g., 'Java Developer Tasks', 'Windows Administrator Tasks'). 2. It includes specific steps (e.g., 'Configure TAI to trust headers from Application Proxy', 'Map REMOTE_USER header to WebSphere security context'). 3. It provides a sequence (Phase 1-5), estimates (e.g., 'Week 1', '80% time'), and verification steps (e.g., 'Test MFA flow end-to-end', 'User Acceptance Testing'). 4. An engineer could execute this plan with minimal edits, as it includes exact commands or code where applicable (e.g., WebSphere TAI configuration steps).",
+    "constraint_fidelity": "1. The response explicitly leverages existing Microsoft 365 E3 licensing (Entra ID P1) and does not recommend purchasing a new identity product (C1 kept). 2. It does not require a Java upgrade beyond 8 or a change to WebSphere Application Server 8.5.5 (C2 kept). 3. The plan is designed for one developer and one sysadmin within six weeks, with clear resource allocation (C3 kept). 4. The response shows arithmetic for time and effort (e.g., '80% time on WebSphere configuration and testing' for the developer, '70% time on Entra ID and Application Proxy setup' for the sysadmin), and explicitly states the timeline is met. No constraints are silently violated, and the solution is tailored to the existing stack.",
+    "maintainability": "1. The solution is proportionate to the team (one developer, one sysadmin) and does not introduce unnecessary complexity. 2. It leaves clear seams (e.g., WebSphere TAI configuration, Entra ID Application Proxy setup) and documentation (e.g., 'Configuration guide for WebSphere TAI', 'Operational runbook for support team'). 3. Risks and accepted debt are explicitly stated (e.g., 'Header Injection Security', 'User Adoption Issues'). 4. The solution avoids unsafe shortcuts and provides a rollback plan, ensuring long-term operability by the team described.",
+    "production_realism": "1. The response accounts for the stated scale (300 employees) and infrastructure (on-premises AD, WebSphere 8.5.5, Entra ID). 2. It addresses failure modes: redundancy for Application Proxy, header injection security, and a rollback plan. 3. It considers operational burden (e.g., 'Deploy multiple connectors for redundancy', 'Monitor performance during pilot phase'). 4. The solution is technically correct for the named technologies (Entra ID Application Proxy, WebSphere TAI, Kerberos Constrained Delegation). 5. It includes performance testing and user acceptance testing, which are critical for production readiness."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.0021661,
+  "judge_latency_s": 9.643,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly leverages existing Microsoft 365 E3 licensing (Entra ID P1) and does not recommend purchasing a new identity product (C1 kept). 2. It does not require a Java upgrade beyond 8 or a change to WebSphere Application Server 8.5.5 (C2 kept). 3. The plan is designed for one developer and one sysadmin within six weeks, with clear resource allocation (C3 kept). 4. The response shows arithmetic for time and effort (e.g., '80% time on WebSphere configuration and testing' for the developer, '70% time on Entra ID and Application Proxy setup' for the sysadmin), and explicitly states the timeline is met. No constraints are silently violated, and the solution is tailored to the existing stack.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (300 employees) and infrastructure (on-premises AD, WebSphere 8.5.5, Entra ID). 2. It addresses failure modes: redundancy for Application Proxy, header injection security, and a rollback plan. 3. It considers operational burden (e.g., 'Deploy multiple connectors for redundancy', 'Monitor performance during pilot phase'). 4. The solution is technically correct for the named technologies (Entra ID Application Proxy, WebSphere TAI, Kerberos Constrained Delegation). 5. It includes performance testing and user acceptance testing, which are critical for production readiness.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete implementation plan with phases, tasks, and owners (e.g., 'Java Developer Tasks', 'Windows Administrator Tasks'). 2. It includes specific steps (e.g., 'Configure TAI to trust headers from Application Proxy', 'Map REMOTE_USER header to WebSphere security context'). 3. It provides a sequence (Phase 1-5), estimates (e.g., 'Week 1', '80% time'), and verification steps (e.g., 'Test MFA flow end-to-end', 'User Acceptance Testing'). 4. An engineer could execute this plan with minimal edits, as it includes exact commands or code where applicable (e.g., WebSphere TAI configuration steps).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (one developer, one sysadmin) and does not introduce unnecessary complexity. 2. It leaves clear seams (e.g., WebSphere TAI configuration, Entra ID Application Proxy setup) and documentation (e.g., 'Configuration guide for WebSphere TAI', 'Operational runbook for support team'). 3. Risks and accepted debt are explicitly stated (e.g., 'Header Injection Security', 'User Adoption Issues'). 4. The solution avoids unsafe shortcuts and provides a rollback plan, ensuring long-term operability by the team described.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly specific, constraint-compliant, and actionable plan that fits the team, timeline, and infrastructure perfectly.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a highly specific, constraint-compliant, and actionable plan that fits the team, timeline, and infrastructure perfectly.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

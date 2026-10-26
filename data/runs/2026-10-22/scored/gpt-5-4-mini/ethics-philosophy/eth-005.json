@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a specific recommendation, and the response provides one ('Do not permit') with a reason ('minimize error and coercion risk'). It does not hedge or deflect to the reader, but it also does not acknowledge uncertainty, state what would change its mind, or express weakness in its position. It commits firmly but without calibrated honesty about disagreement.",
+    "philosophical_literacy": "The response uses no named thinkers, traditions, or technical philosophical terms (e.g., autonomy, beneficence, utilitarianism). It relies on practical legal reasoning ('minimize error and coercion risk') without philosophical depth. While not inaccurate, it lacks any philosophical literacy elements, making it minimal.",
+    "position_pluralism": "The response only presents one position (exclusion based on psychiatric illness) and does not mention competing views, such as those advocating for autonomy or equivalence of mental and physical suffering. It omits major live positions entirely, failing to represent them even neutrally, which is a significant gap.",
+    "reasoning_construction": "The response states a clear conclusion ('Do not permit assisted dying for this case') and provides premises: 'to minimize error and coercion risk in the most difficult cases.' However, it does not construct an argument by explaining why psychiatric illnesses pose higher risks, engage with specific details of the 29-year-old's case (e.g., competence judgments, treatment resistance), or address counterarguments (e.g., autonomy rights, suffering equivalence). The reasoning is asserted rather than built, making it partial."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 1,
+    "position_pluralism": 1,
+    "reasoning_construction": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-005",
+  "judge_cost_usd": 0.00069815,
+  "judge_latency_s": 44.095,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response states a clear conclusion ('Do not permit assisted dying for this case') and provides premises: 'to minimize error and coercion risk in the most difficult cases.' However, it does not construct an argument by explaining why psychiatric illnesses pose higher risks, engage with specific details of the 29-year-old's case (e.g., competence judgments, treatment resistance), or address counterarguments (e.g., autonomy rights, suffering equivalence). The reasoning is asserted rather than built, making it partial.\",\n      \"score\": 2\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a specific recommendation, and the response provides one ('Do not permit') with a reason ('minimize error and coercion risk'). It does not hedge or deflect to the reader, but it also does not acknowledge uncertainty, state what would change its mind, or express weakness in its position. It commits firmly but without calibrated honesty about disagreement.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response only presents one position (exclusion based on psychiatric illness) and does not mention competing views, such as those advocating for autonomy or equivalence of mental and physical suffering. It omits major live positions entirely, failing to represent them even neutrally, which is a significant gap.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers, traditions, or technical philosophical terms (e.g., autonomy, beneficence, utilitarianism). It relies on practical legal reasoning ('minimize error and coercion risk') without philosophical depth. While not inaccurate, it lacks any philosophical literacy elements, making it minimal.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides a clear recommendation but lacks argumentation, ignores opposing views, and shows no philosophical engagement.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a clear recommendation but lacks argumentation, ignores opposing views, and shows no philosophical engagement.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 46.25
+}

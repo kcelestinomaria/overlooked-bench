@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with scholarly debates: it discusses methodological critiques of typology ('reduces complex local designs'), evidence quality issues in dating ('charcoal may be residual'), and internal debates (e.g., functionalist vs. cultural interpretations). It references specific approaches like 'chaîne opératoire' and acknowledges problems with ethnographic analogy. A specialist would recognize this as informed by literature, not just summaries, though it stops short of deep technical analysis of specific sites or data.",
+    "domain_accuracy": "The response makes substantive claims that are generally accurate: it correctly describes widespread iron smelting, regional diversity, furnace types (shaft furnaces), use of bellows, ritual dimensions, and chronological debates. It accurately identifies disputes over typology (morphological vs. chaîne opératoire approaches), dating issues (charcoal residual/intrusive concerns), and origin debates (innovation vs. diffusion). No invented citations, terms, or consensus are present. Minor issues include oversimplifying 'late first millennium BCE' as a contested start date without specifying regions, but overall, claims are well-supported and load-bearing errors are absent.",
+    "field_situatedness": "The response uses frameworks and terminology specific to African archaeometallurgy: it employs terms like 'chaîne opératoire,' 'technological style,' 'slag-tapping,' and references regional scholarly traditions (e.g., avoiding Western-centric typology critiques). It focuses on local African contexts and debates without substituting dominant Anglophone framings. Non-English scholarship isn't explicitly cited, but the response aligns with the field's conventions.",
+    "scholarly_calibration": "The response distinguishes well-established from contested knowledge: it notes 'exact starting dates remain contested,' challenges to early dates ('charcoal may be residual'), and typology disputes ('growing body of scholarship emphasizes'). It avoids uniform confidence, e.g., stating 'most current scholarship tends to avoid simplistic either/or models.' However, it could be more specific in calibrating individual claims (e.g., which dates are most disputed), but it provides targeted calibration rather than blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-004",
+  "judge_cost_usd": 0.00108103,
+  "judge_latency_s": 55.36,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are generally accurate: it correctly describes widespread iron smelting, regional diversity, furnace types (shaft furnaces), use of bellows, ritual dimensions, and chronological debates. It accurately identifies disputes over typology (morphological vs. chaîne opératoire approaches), dating issues (charcoal residual/intrusive concerns), and origin debates (innovation vs. diffusion). No invented citations, terms, or consensus are present. Minor issues include oversimplifying 'late first millennium BCE' as a contested start date without specifying regions, but overall, claims are well-supported and load-bearing errors are absent.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with scholarly debates: it discusses methodological critiques of typology ('reduces complex local designs'), evidence quality issues in dating ('charcoal may be residual'), and internal debates (e.g., functionalist vs. cultural interpretations). It references specific approaches like 'chaîne opératoire' and acknowledges problems with ethnographic analogy. A specialist would recognize this as informed by literature, not just summaries, though it stops short of deep technical analysis of specific sites or data.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested knowledge: it notes 'exact starting dates remain contested,' challenges to early dates ('charcoal may be residual'), and typology disputes ('growing body of scholarship emphasizes'). It avoids uniform confidence, e.g., stating 'most current scholarship tends to avoid simplistic either/or models.' However, it could be more specific in calibrating individual claims (e.g., which dates are most disputed), but it provides targeted calibration rather than blanket disclaimers.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology specific to African archaeometallurgy: it employs terms like 'chaîne opératoire,' 'technological style,' 'slag-tapping,' and references regional scholarly traditions (e.g., avoiding Western-centric typology critiques). It focuses on local African contexts and debates without substituting dominant Anglophone framings. Non-English scholarship isn't explicitly cited, but the response aligns with the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain knowledge and engages deeply with scholarly disputes, though it could offer more granular detail on specific evidence.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain knowledge and engages deeply with scholarly disputes, though it could offer more granular detail on specific evidence.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('What should the government do?'), and the response reaches a clear position: 'the government should not permit the extractive industry under these terms.' It defends this with reasons (duty to protect, catastrophic harm, dangerous precedent) and explicitly states conditions for reversing the recommendation (e.g., preventing greater catastrophe, full consent, lack of alternatives). This shows calibrated uncertainty—it takes a stand but acknowledges what would change its mind.",
+    "philosophical_literacy": "The response invokes utilitarian and deontological frameworks accurately. Utilitarianism is correctly described as 'the greatest good for the greatest number' and applied numerically. Deontology is correctly linked to rights and government duty. The terms are load-bearing in the argument, structuring the analysis. No technical terms are garbled or misattributed. The response uses these concepts to reason through the dilemma, not just name-drop.",
+    "position_pluralism": "The response presents two major live positions: utilitarian (for the project) and deontological/rights-based (against). The utilitarian argument is characterized accurately (focus on net benefit, numerical comparison), and the rights-based argument is also well-represented (emphasis on fundamental rights, government duty, irreversible harm). There is no strawmanning or omission of key positions, and no false balance with fringe views. Both positions are rendered in tension with each other.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is 'the government should not permit the extractive industry' based on premises of government's duty to protect citizens from catastrophic harm, the irreversible nature of the harm to the 8,000 residents, and the dangerous precedent it sets. It engages specifically with the scenario's numbers (200,000 vs. 8,000) and the 'uninhabitable' consequence. It addresses the strongest counterargument (utilitarian benefit) by acknowledging its weight but arguing it is overridden by rights-based concerns. The inference is valid: the conclusion follows from the premises about rights and precedent."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-024",
+  "judge_cost_usd": 0.00107318,
+  "judge_latency_s": 53.464,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is 'the government should not permit the extractive industry' based on premises of government's duty to protect citizens from catastrophic harm, the irreversible nature of the harm to the 8,000 residents, and the dangerous precedent it sets. It engages specifically with the scenario's numbers (200,000 vs. 8,000) and the 'uninhabitable' consequence. It addresses the strongest counterargument (utilitarian benefit) by acknowledging its weight but arguing it is overridden by rights-based concerns. The inference is valid: the conclusion follows from the premises about rights and precedent.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('What should the government do?'), and the response reaches a clear position: 'the government should not permit the extractive industry under these terms.' It defends this with reasons (duty to protect, catastrophic harm, dangerous precedent) and explicitly states conditions for reversing the recommendation (e.g., preventing greater catastrophe, full consent, lack of alternatives). This shows calibrated uncertainty—it takes a stand but acknowledges what would change its mind.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response presents two major live positions: utilitarian (for the project) and deontological/rights-based (against). The utilitarian argument is characterized accurately (focus on net benefit, numerical comparison), and the rights-based argument is also well-represented (emphasis on fundamental rights, government duty, irreversible harm). There is no strawmanning or omission of key positions, and no false balance with fringe views. Both positions are rendered in tension with each other.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes utilitarian and deontological frameworks accurately. Utilitarianism is correctly described as 'the greatest good for the greatest number' and applied numerically. Deontology is correctly linked to rights and government duty. The terms are load-bearing in the argument, structuring the analysis. No technical terms are garbled or misattributed. The response uses these concepts to reason through the dilemma, not just name-drop.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excellently constructs a reasoned argument, commits to a position with calibrated uncertainty, fairly represents rival views, and accurately uses philosophical concepts.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response excellently constructs a reasoned argument, commits to a position with calibrated uncertainty, fairly represents rival views, and accurately uses philosophical concepts.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

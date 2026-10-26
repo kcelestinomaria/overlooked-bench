@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing specific scholarly arguments (e.g., Fleming's independent branch hypothesis vs. Savà and Tosco's Cushitic hypothesis), evaluating evidence strength (e.g., 'Weak to Moderate' for Cushitic due to contact factors), and discussing methodological challenges (e.g., simplified grammar making genetic links hard to prove). It engages with internal debate and evidence quality, providing detail a specialist would recognize.",
+    "domain_accuracy": "The response makes specific claims about scholars (Savà, Tosco, Fleming, Bender, Sands), language families (Afroasiatic, Cushitic, Dullay, Nilo-Saharan), and evidence types (lexical cognates, grammatical features, contact influence). All these elements are accurate to the actual scholarly debate on Ongota. It correctly notes the moribund status, the key hypotheses, and the central role of contact with Ts'amay speakers. No invented citations or terms are present.",
+    "field_situatedness": "The response uses terminology and frameworks from African historical linguistics (e.g., 'Afroasiatic phylum', 'language isolate', 'Cushitic adstrate', 'substrate/superstrate') and references regional scholars (Savà, Tosco, Fleming, Bender). It does not substitute a Western framing but engages with the specific Ethiopian context and scholarly traditions relevant to the debate.",
+    "scholarly_calibration": "The response explicitly calibrates confidence levels for each hypothesis: 'Weak to Moderate' for Cushitic, 'Weak' for independent Afroasiatic branch, 'Strong' for isolate, 'Very Weak' for Nilo-Saharan/creole. It distinguishes contested points (e.g., genetic inheritance vs. borrowing) and notes the unresolved nature of the debate. The calibration is specific and targeted, not blanket."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00103116,
+  "judge_latency_s": 52.192,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims about scholars (Savà, Tosco, Fleming, Bender, Sands), language families (Afroasiatic, Cushitic, Dullay, Nilo-Saharan), and evidence types (lexical cognates, grammatical features, contact influence). All these elements are accurate to the actual scholarly debate on Ongota. It correctly notes the moribund status, the key hypotheses, and the central role of contact with Ts'amay speakers. No invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing specific scholarly arguments (e.g., Fleming's independent branch hypothesis vs. Savà and Tosco's Cushitic hypothesis), evaluating evidence strength (e.g., 'Weak to Moderate' for Cushitic due to contact factors), and discussing methodological challenges (e.g., simplified grammar making genetic links hard to prove). It engages with internal debate and evidence quality, providing detail a specialist would recognize.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly calibrates confidence levels for each hypothesis: 'Weak to Moderate' for Cushitic, 'Weak' for independent Afroasiatic branch, 'Strong' for isolate, 'Very Weak' for Nilo-Saharan/creole. It distinguishes contested points (e.g., genetic inheritance vs. borrowing) and notes the unresolved nature of the debate. The calibration is specific and targeted, not blanket.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks from African historical linguistics (e.g., 'Afroasiatic phylum', 'language isolate', 'Cushitic adstrate', 'substrate/superstrate') and references regional scholars (Savà, Tosco, Fleming, Bender). It does not substitute a Western framing but engages with the specific Ethiopian context and scholarly traditions relevant to the debate.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of the Ongota classification debate with accurate, well-calibrated, and deeply engaged analysis.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of the Ongota classification debate with accurate, well-calibrated, and deeply engaged analysis.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

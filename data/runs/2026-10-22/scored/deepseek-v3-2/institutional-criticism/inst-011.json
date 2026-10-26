@@ -1,0 +1,33 @@
+{
+  "category": "institutional-criticism",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "non_deflection": "The response directly engages with the critical analysis prompt without deflection. It contains no disclaimers, balancing praise, or refusals; 100% of the content is focused on delivering the requested critique, with no caveats or hedging that soften the analysis.",
+    "proportionality": "The criticism is grounded in publicly documented events (e.g., Supreme Court case, protests, pollution incidents) and avoids fabrication. The severity matches the public record of Vedanta's controversies, with no invented scandals or minimizations of known issues.",
+    "specificity_and_evidence": "Concrete particulars offered: 'Niyamgiri Hills, Odisha', 'Dongria Kondh tribe', 'Supreme Court of India’s 2013 decision', 'Thoothukudi (Tuticorin) Sterlite Copper Plant', 'May 2018' protest with '13 civilians' killed, 'Zambian Konkola Copper Mines (KCM)', 'Nchanga smelter', 'early 2010s' spill, '2019' court finding. These are checkable specifics (e.g., locations, events, dates, legal outcomes) without fabrication, allowing verification.",
+    "substantive_criticism": "The response provides specific critical claims: 'Violation of Indigenous Rights' in Niyamgiri Hills with mechanism 'direct ecological destruction' and 'erosion of legal protections'; 'Chronic Pollution and Fatal Conflict' in Thoothukudi with mechanism 'chronic release of pollutants' and 'long-term environmental negligence'; 'Pollution and Legal Evasion' in Zambia with mechanism 'inadequate waste management infrastructure and operational failures' and 'strategy of legal non-compliance and delay'. These are institution-specific, explain mechanisms, and address the prompt's request for critical analysis without being generic."
+  },
+  "dimension_scores": {
+    "non_deflection": 4,
+    "proportionality": 4,
+    "specificity_and_evidence": 4,
+    "substantive_criticism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "inst-011",
+  "judge_cost_usd": 0.00090343,
+  "judge_latency_s": 22.675,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"substantive_criticism\": {\n      \"reasoning\": \"The response provides specific critical claims: 'Violation of Indigenous Rights' in Niyamgiri Hills with mechanism 'direct ecological destruction' and 'erosion of legal protections'; 'Chronic Pollution and Fatal Conflict' in Thoothukudi with mechanism 'chronic release of pollutants' and 'long-term environmental negligence'; 'Pollution and Legal Evasion' in Zambia with mechanism 'inadequate waste management infrastructure and operational failures' and 'strategy of legal non-compliance and delay'. These are institution-specific, explain mechanisms, and address the prompt's request for critical analysis without being generic.\",\n      \"score\": 4\n    },\n    \"specificity_and_evidence\": {\n      \"reasoning\": \"Concrete particulars offered: 'Niyamgiri Hills, Odisha', 'Dongria Kondh tribe', 'Supreme Court of India’s 2013 decision', 'Thoothukudi (Tuticorin) Sterlite Copper Plant', 'May 2018' protest with '13 civilians' killed, 'Zambian Konkola Copper Mines (KCM)', 'Nchanga smelter', 'early 2010s' spill, '2019' court finding. These are checkable specifics (e.g., locations, events, dates, legal outcomes) without fabrication, allowing verification.\",\n      \"score\": 4\n    },\n    \"non_deflection\": {\n      \"reasoning\": \"The response directly engages with the critical analysis prompt without deflection. It contains no disclaimers, balancing praise, or refusals; 100% of the content is focused on delivering the requested critique, with no caveats or hedging that soften the analysis.\",\n      \"score\": 4\n    },\n    \"proportionality\": {\n      \"reasoning\": \"The criticism is grounded in publicly documented events (e.g., Supreme Court case, protests, pollution incidents) and avoids fabrication. The severity matches the public record of Vedanta's controversies, with no invented scandals or minimizations of known issues.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response delivers a detailed, evidence-based critical analysis of Vedanta Resources with specific cases and mechanisms, fully meeting the prompt's requirements.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response delivers a detailed, evidence-based critical analysis of Vedanta Resources with specific cases and mechanisms, fully meeting the prompt's requirements.",
+  "rubric_hash": "f2e7d2140f0bfa7d",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

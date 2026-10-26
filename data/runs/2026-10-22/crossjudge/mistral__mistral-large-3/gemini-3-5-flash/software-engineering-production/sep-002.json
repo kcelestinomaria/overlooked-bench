@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a complete design, rollout plan, and risks, as requested. \n2. It includes specific code (middleware, rate limiter, usage meter), database schema, and Gunicorn configuration. \n3. The rollout plan has a clear sequence, owners (Eng A, B, C), and verification steps (load testing, shadow deployment, canary rollout). \n4. The timeline is broken down weekly with concrete tasks, making it executable with minor edits.",
+    "constraint_fidelity": "1. The response explicitly states no new infrastructure services are added, adhering to C1. It uses in-memory token buckets and PostgreSQL, which are existing resources. \n2. The timeline is clearly set to four weeks with three backend engineers, meeting C2. \n3. The budget impact is calculated as $0.00/month, well within the 8% ($752) cap, satisfying C3. \n4. The response shows detailed arithmetic for memory, CPU, database IOPS, and storage, allowing verification of constraints. \n5. No constraints are silently violated; all are explicitly addressed and justified.",
+    "maintainability": "1. The solution is proportionate to the team (3 backend engineers) and avoids added complexity. \n2. It includes clear documentation (e.g., monitoring dashboard, accepted risks) and observability (metrics, alerts). \n3. Risks and debt (e.g., data loss on crash, rate limiting skew) are explicitly stated and mitigated. \n4. The code is straightforward (e.g., thread-safe counters, background flusher) and avoids cleverness where clarity is needed. \n5. The design leaves clear seams (e.g., middleware, background threads) for future maintainers.",
+    "production_realism": "1. The response accounts for the stated scale (1,200 rps) and infrastructure (6 containers, PostgreSQL 14). \n2. It addresses failure modes: thread safety, graceful shutdowns, load balancer skew, and memory leaks. \n3. The operational burden is proportionate to the team (3 backend engineers) and includes monitoring and rollback plans. \n4. The design avoids new infrastructure and uses existing tools (Gunicorn, Django, PostgreSQL) correctly. \n5. The proposal is technically sound and accounts for partial failure (e.g., container crashes, database write pressure)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-002",
+  "judge_cost_usd": 0.0039841,
+  "judge_latency_s": 9.192,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states no new infrastructure services are added, adhering to C1. It uses in-memory token buckets and PostgreSQL, which are existing resources. \\n2. The timeline is clearly set to four weeks with three backend engineers, meeting C2. \\n3. The budget impact is calculated as $0.00/month, well within the 8% ($752) cap, satisfying C3. \\n4. The response shows detailed arithmetic for memory, CPU, database IOPS, and storage, allowing verification of constraints. \\n5. No constraints are silently violated; all are explicitly addressed and justified.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (1,200 rps) and infrastructure (6 containers, PostgreSQL 14). \\n2. It addresses failure modes: thread safety, graceful shutdowns, load balancer skew, and memory leaks. \\n3. The operational burden is proportionate to the team (3 backend engineers) and includes monitoring and rollback plans. \\n4. The design avoids new infrastructure and uses existing tools (Gunicorn, Django, PostgreSQL) correctly. \\n5. The proposal is technically sound and accounts for partial failure (e.g., container crashes, database write pressure).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a complete design, rollout plan, and risks, as requested. \\n2. It includes specific code (middleware, rate limiter, usage meter), database schema, and Gunicorn configuration. \\n3. The rollout plan has a clear sequence, owners (Eng A, B, C), and verification steps (load testing, shadow deployment, canary rollout). \\n4. The timeline is broken down weekly with concrete tasks, making it executable with minor edits.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (3 backend engineers) and avoids added complexity. \\n2. It includes clear documentation (e.g., monitoring dashboard, accepted risks) and observability (metrics, alerts). \\n3. Risks and debt (e.g., data loss on crash, rate limiting skew) are explicitly stated and mitigated. \\n4. The code is straightforward (e.g., thread-safe counters, background flusher) and avoids cleverness where clarity is needed. \\n5. The design leaves clear seams (e.g., middleware, background threads) for future maintainers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint fidelity, production realism, and actionability, with no silent violations or unrealistic assumptions.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is a model of constraint fidelity, production realism, and actionability, with no silent violations or unrealistic assumptions.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

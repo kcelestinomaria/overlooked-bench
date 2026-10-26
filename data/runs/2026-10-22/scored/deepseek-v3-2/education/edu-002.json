@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not address differentiation for varying prior attainment, additional needs, language barriers, or material constraints. It focuses solely on efficient marking for a homogeneous set of essays without suggesting adaptations for diverse learners. There is no mention of how to support students with different abilities or backgrounds.",
+    "pathway_breadth": "The prompt does not involve student futures or pathway guidance; it focuses on assessment rubric design. The response is inclusive by addressing the marking process for all learners in a Grade 11 South African context without excluding any group, but it does not explicitly discuss learner diversity beyond the rubric's applicability.",
+    "pedagogical_soundness": "The rubric includes five criteria (Argument & Thesis, Evidence & Support, Structure & Coherence, Language & Style, Persuasive Impact) that align with argumentative writing objectives. Each criterion has observable descriptors (e.g., 'Clear, debatable thesis', 'Relevant, specific examples', 'Logical paragraph flow') that are distinguishable between levels (A-D). The assessment measures the claimed objectives at appropriate cognitive levels for Grade 11, and the scoring formula ensures alignment. Sequencing is coherent with a clear marking process.",
+    "workload_realism": "The response explicitly addresses the 120-essay constraint: estimates 6-7 minutes per essay, totaling 14-16 hours over a weekend, and provides a detailed schedule (three 4-hour sessions). It recommends practical tools like pre-printed checklists, quick reference codes, and timing strategies to reduce marking load. All materials (checklists, timer) are feasible for a teacher, and no unrealistic resources (e.g., additional staff) are assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00092293,
+  "judge_latency_s": 17.656,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The rubric includes five criteria (Argument & Thesis, Evidence & Support, Structure & Coherence, Language & Style, Persuasive Impact) that align with argumentative writing objectives. Each criterion has observable descriptors (e.g., 'Clear, debatable thesis', 'Relevant, specific examples', 'Logical paragraph flow') that are distinguishable between levels (A-D). The assessment measures the claimed objectives at appropriate cognitive levels for Grade 11, and the scoring formula ensures alignment. Sequencing is coherent with a clear marking process.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses the 120-essay constraint: estimates 6-7 minutes per essay, totaling 14-16 hours over a weekend, and provides a detailed schedule (three 4-hour sessions). It recommends practical tools like pre-printed checklists, quick reference codes, and timing strategies to reduce marking load. All materials (checklists, timer) are feasible for a teacher, and no unrealistic resources (e.g., additional staff) are assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt does not involve student futures or pathway guidance; it focuses on assessment rubric design. The response is inclusive by addressing the marking process for all learners in a Grade 11 South African context without excluding any group, but it does not explicitly discuss learner diversity beyond the rubric's applicability.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not address differentiation for varying prior attainment, additional needs, language barriers, or material constraints. It focuses solely on efficient marking for a homogeneous set of essays without suggesting adaptations for diverse learners. There is no mention of how to support students with different abilities or backgrounds.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"This response excels in pedagogical soundness and workload realism but lacks attention to differentiation and access.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response excels in pedagogical soundness and workload realism but lacks attention to differentiation and access.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 78.75
+}

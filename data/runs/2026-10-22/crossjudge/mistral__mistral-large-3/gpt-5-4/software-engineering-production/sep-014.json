@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response delivers a detailed implementation plan with sequence, owners, and verification steps. It includes a six-week schedule, specific tasks by role (Java developer and Windows admin), and a checklist of deliverables. The plan is executable immediately, with concrete commands (e.g., 'Install Application Proxy connector', 'Create enterprise app objects') and risk mitigations. No generic descriptions or 'approach' language; it is a step-by-step guide.",
+    "constraint_fidelity": "The response explicitly acknowledges the constraints (no new identity product, no Java/WebSphere upgrade, one developer and one sysadmin in six weeks) and designs the solution around them. It flags a potential licensing gap (Entra ID P1 not included in M365 E3) and treats it as a blocker to escalate, rather than silently violating the 'no new purchases' constraint. The arithmetic of effort (two people, six weeks) is respected, with a phased plan that fits the timeline. No silent violations of central constraints are present. The response shows the reasoning and arithmetic to let the reader check fidelity.",
+    "maintainability": "The solution is proportionate to the team (one developer, one sysadmin) and leaves clear seams (App Proxy as a boundary, minimal app changes). It documents risks (licensing gap, double login) and accepted debt (keeping legacy form login). The response includes a runbook, support instructions, and compliance evidence package for handover. Complexity is minimized, and the solution is designed to be operable in six months by the same small team.",
+    "production_realism": "The response accounts for production realities at the stated scale: it tests behind a proxy in non-production first, addresses failure modes (rollback plan, break-glass accounts, session handling), and considers the operational burden on a small team (one developer, one sysadmin). It flags likely issues (hardcoded URLs, mixed-content warnings, cookie assumptions) and provides concrete mitigations. The solution is designed for the existing infrastructure (WebSphere 8.5.5, Java 8, on-prem AD) and does not assume operational capacity the team lacks."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.0034011,
+  "judge_latency_s": 11.882,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly acknowledges the constraints (no new identity product, no Java/WebSphere upgrade, one developer and one sysadmin in six weeks) and designs the solution around them. It flags a potential licensing gap (Entra ID P1 not included in M365 E3) and treats it as a blocker to escalate, rather than silently violating the 'no new purchases' constraint. The arithmetic of effort (two people, six weeks) is respected, with a phased plan that fits the timeline. No silent violations of central constraints are present. The response shows the reasoning and arithmetic to let the reader check fidelity.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities at the stated scale: it tests behind a proxy in non-production first, addresses failure modes (rollback plan, break-glass accounts, session handling), and considers the operational burden on a small team (one developer, one sysadmin). It flags likely issues (hardcoded URLs, mixed-content warnings, cookie assumptions) and provides concrete mitigations. The solution is designed for the existing infrastructure (WebSphere 8.5.5, Java 8, on-prem AD) and does not assume operational capacity the team lacks.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response delivers a detailed implementation plan with sequence, owners, and verification steps. It includes a six-week schedule, specific tasks by role (Java developer and Windows admin), and a checklist of deliverables. The plan is executable immediately, with concrete commands (e.g., 'Install Application Proxy connector', 'Create enterprise app objects') and risk mitigations. No generic descriptions or 'approach' language; it is a step-by-step guide.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team (one developer, one sysadmin) and leaves clear seams (App Proxy as a boundary, minimal app changes). It documents risks (licensing gap, double login) and accepted debt (keeping legacy form login). The response includes a runbook, support instructions, and compliance evidence package for handover. Complexity is minimized, and the solution is designed to be operable in six months by the same small team.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a model of constraint-fidelity and production realism, delivering an actionable, maintainable plan that fits the team and infrastructure exactly.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response is a model of constraint-fidelity and production realism, delivering an actionable, maintainable plan that fits the team and infrastructure exactly.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

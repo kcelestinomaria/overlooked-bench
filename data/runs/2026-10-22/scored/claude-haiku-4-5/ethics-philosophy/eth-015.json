@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states a position: 'Yes, duties to oneself exist, and self-harm can be genuinely wrong'. It defends this with reasons like intrinsic value and autonomy, showing calibrated commitment. However, it does not explicitly state what would change its mind or where it is least confident, which is expected for a high score.",
+    "philosophical_literacy": "The response uses concepts like 'intrinsic value' and 'autonomy' accurately and they are load-bearing in the argument. It does not invoke named thinkers or technical terms incorrectly, but it also does not use extensive philosophical vocabulary. The reasoning is correct and relevant without misattributions.",
+    "position_pluralism": "The response only argues for the pro-duty position and does not represent major live competing positions (e.g., the liberal view that self-harm is not wrong if it harms no others, or consequentialist views). It omits these entirely, so an advocate of a rival position would not see their view characterized.",
+    "reasoning_construction": "The response builds an argument with premises: 'A person's own life has intrinsic value', 'Autonomy itself requires self-respect', 'We recognize other self-regarding wrongs', and 'The dependency claim is empirically fragile'. It concludes that 'duties to oneself exist, and self-harm can be genuinely wrong'. The inference is valid as the conclusion follows from these premises, and it engages specific details like the 'no dependents' scenario. However, it does not address the strongest counterargument (e.g., the liberal harm principle or full sovereignty over oneself) in its strongest form, only a weaker version."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 1,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-015",
+  "judge_cost_usd": 0.00075593,
+  "judge_latency_s": 41.729,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument with premises: 'A person's own life has intrinsic value', 'Autonomy itself requires self-respect', 'We recognize other self-regarding wrongs', and 'The dependency claim is empirically fragile'. It concludes that 'duties to oneself exist, and self-harm can be genuinely wrong'. The inference is valid as the conclusion follows from these premises, and it engages specific details like the 'no dependents' scenario. However, it does not address the strongest counterargument (e.g., the liberal harm principle or full sovereignty over oneself) in its strongest form, only a weaker version.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states a position: 'Yes, duties to oneself exist, and self-harm can be genuinely wrong'. It defends this with reasons like intrinsic value and autonomy, showing calibrated commitment. However, it does not explicitly state what would change its mind or where it is least confident, which is expected for a high score.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response only argues for the pro-duty position and does not represent major live competing positions (e.g., the liberal view that self-harm is not wrong if it harms no others, or consequentialist views). It omits these entirely, so an advocate of a rival position would not see their view characterized.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like 'intrinsic value' and 'autonomy' accurately and they are load-bearing in the argument. It does not invoke named thinkers or technical terms incorrectly, but it also does not use extensive philosophical vocabulary. The reasoning is correct and relevant without misattributions.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a clear argument for duties to oneself but fails to acknowledge competing positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response constructs a clear argument for duties to oneself but fails to acknowledge competing positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 62.5
+}

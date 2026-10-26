@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Chosen approach: **Partitioned BigInt migration using logical replication**",
+      "evidence_verified": true,
+      "verdict": "violated"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response provides a step-by-step plan with concrete SQL commands (e.g., ALTER TABLE, CREATE TABLE) and verification steps. \n2. It includes sequence, owners (e.g., Backend Engineer 1/2, DBA), and estimates (e.g., Days 4-7 for preparation). \n3. However, the plan is not fully actionable because the logical replication approach is infeasible for the given constraints, and the storage arithmetic is missing. \n4. The rollback plan and risk mitigation steps are well-defined, but the core strategy undermines the actionability.",
+    "constraint_fidelity": "1. The response correctly computes the runway (32 days) and acknowledges the constraints. However, it proposes a 'Partitioned BigInt migration using logical replication' which is problematic. \n2. The plan requires setting up logical replication, which in RDS typically involves creating a new instance or using a larger instance class to handle the replication load, violating C2 (no new instance or larger instance class). The response does not explicitly acknowledge this violation or justify relaxing the constraint. \n3. The response does not violate C1 (no maintenance window longer than 5 minutes) as the cutover is planned within a 5-minute window. \n4. The response does not violate C3 (finish before int4 key is exhausted) as it proposes a plan within the 32-day window, though the feasibility is questionable due to the logical replication approach. \n5. The response does not show arithmetic for storage capacity (e.g., whether the 200 GB limit is respected during the concurrent index and new column creation). The storage constraint is not explicitly addressed beyond a vague mention of monitoring.",
+    "maintainability": "1. The response includes post-migration steps like documentation updates and monitoring, which are good for maintainability. \n2. It acknowledges risks (e.g., replication lag, storage growth) and includes rollback plans, which are proportionate to the team size. \n3. However, the added complexity of logical replication and partitioning is not justified for a team of this size and skill mix. The response does not flag the long-term maintenance burden of managing partitions or logical replication on a small instance. \n4. The plan leaves clear seams (e.g., old table retained for 7 days), but the core approach is overly complex for the team.",
+    "production_realism": "1. The response acknowledges the scale (1.7B rows, 900 writes/sec) and team constraints (2 engineers, part-time DBA). \n2. It accounts for failure modes like replication lag, CPU load, and storage growth, and includes monitoring and throttling. \n3. However, the proposed logical replication approach is unrealistic for a db.m6g.large instance with 2 vCPUs and 8 GiB RAM, as it would likely overwhelm the instance. The response does not address the operational burden of managing logical replication on such a constrained instance. \n4. The plan includes batched backfills and verification steps, which are realistic, but the core approach (logical replication) is not feasible for the given infrastructure."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 1,
+    "maintainability": 2,
+    "production_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.0024751,
+  "judge_latency_s": 13.98,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response correctly computes the runway (32 days) and acknowledges the constraints. However, it proposes a 'Partitioned BigInt migration using logical replication' which is problematic. \\n2. The plan requires setting up logical replication, which in RDS typically involves creating a new instance or using a larger instance class to handle the replication load, violating C2 (no new instance or larger instance class). The response does not explicitly acknowledge this violation or justify relaxing the constraint. \\n3. The response does not violate C1 (no maintenance window longer than 5 minutes) as the cutover is planned within a 5-minute window. \\n4. The response does not violate C3 (finish before int4 key is exhausted) as it proposes a plan within the 32-day window, though the feasibility is questionable due to the logical replication approach. \\n5. The response does not show arithmetic for storage capacity (e.g., whether the 200 GB limit is respected during the concurrent index and new column creation). The storage constraint is not explicitly addressed beyond a vague mention of monitoring.\",\n      \"score\": 1\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response acknowledges the scale (1.7B rows, 900 writes/sec) and team constraints (2 engineers, part-time DBA). \\n2. It accounts for failure modes like replication lag, CPU load, and storage growth, and includes monitoring and throttling. \\n3. However, the proposed logical replication approach is unrealistic for a db.m6g.large instance with 2 vCPUs and 8 GiB RAM, as it would likely overwhelm the instance. The response does not address the operational burden of managing logical replication on such a constrained instance. \\n4. The plan includes batched backfills and verification steps, which are realistic, but the core approach (logical replication) is not feasible for the given infrastructure.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response provides a step-by-step plan with concrete SQL commands (e.g., ALTER TABLE, CREATE TABLE) and verification steps. \\n2. It includes sequence, owners (e.g., Backend Engineer 1/2, DBA), and estimates (e.g., Days 4-7 for preparation). \\n3. However, the plan is not fully actionable because the logical replication approach is infeasible for the given constraints, and the storage arithmetic is missing. \\n4. The rollback plan and risk mitigation steps are well-defined, but the core strategy undermines the actionability.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The response includes post-migration steps like documentation updates and monitoring, which are good for maintainability. \\n2. It acknowledges risks (e.g., replication lag, storage growth) and includes rollback plans, which are proportionate to the team size. \\n3. However, the added complexity of logical replication and partitioning is not justified for a team of this size and skill mix. The response does not flag the long-term maintenance burden of managing partitions or logical replication on a small instance. \\n4. The plan leaves clear seams (e.g., old table retained for 7 days), but the core approach is overly complex for the team.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response proposes a technically sophisticated but infeasible plan due to the logical replication approach violating hard constraints.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Chosen approach: **Partitioned BigInt migration using logical replication**\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response proposes a technically sophisticated but infeasible plan due to the logical replication approach violating hard constraints.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 46.25
+}

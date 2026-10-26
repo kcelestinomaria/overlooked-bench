@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 810', which exactly matches the reference answer 'ANSWER: 810'. The numerical value is correct and the format matches.",
+    "instruction_compliance": "The prompt explicitly requests: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 810', complying fully with both instructions.",
+    "reasoning_validity": "The response shows working: '4 rolls × 45 metres each = 180 metres', 'Total cost = 180 × 8 = $1440', 'Number of dresses = 180 ÷ 12 = 15', 'Total revenue = 15 × 150 = $2250', 'Profit = 2250 − 1440 = $810'. Each step is mathematically sound and logically supports the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-001",
+  "judge_cost_usd": 0.00058663,
+  "judge_latency_s": 21.239,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 810', which exactly matches the reference answer 'ANSWER: 810'. The numerical value is correct and the format matches.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: '4 rolls × 45 metres each = 180 metres', 'Total cost = 180 × 8 = $1440', 'Number of dresses = 180 ÷ 12 = 15', 'Total revenue = 15 × 150 = $2250', 'Profit = 2250 − 1440 = $810'. Each step is mathematically sound and logically supports the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests: 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 810', complying fully with both instructions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, well-reasoned, and perfectly compliant with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is fully correct, well-reasoned, and perfectly compliant with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

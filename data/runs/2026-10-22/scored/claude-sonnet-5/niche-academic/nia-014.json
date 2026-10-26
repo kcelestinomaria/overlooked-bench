@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by discussing methodological constraints ('Politically fragmented research', 'reliance on remote sensing', 'funding priorities'), specific gaps ('soil microbiome and belowground ecology almost entirely unstudied'), and contested areas ('succession dynamics and future trajectory of the Aralkum'). It engages with evidence quality and scholarly debates, suitable for a specialist audience.",
+    "domain_accuracy": "The response makes specific, accurate claims: '~5.5 million hectare exposed seabed', 'halophytic pioneer vegetation (Tamarix, Haloxylon, Salsola species)', 'salt, pesticide residues like DDT', 'increase in continentality', 'Tugai forest decline', 'saxaul planting', and references to German Aerospace Center and Central Asian institutions. All terms and claims align with established literature on Aral Sea desiccation, with no invented citations or consensus.",
+    "field_situatedness": "The response uses terminology and frameworks specific to the field of arid land ecology and Central Asian environmental studies (e.g., 'Aralkum Desert', 'Tugai forest', 'saxaul planting', references to Uzbek/Kazakh programs). It does not substitute Western framings and acknowledges regional scholarly contexts.",
+    "scholarly_calibration": "The response explicitly distinguishes well-established from thin or contested evidence: 'reasonably well-studied', 'fairly robust', 'well-documented' vs. 'lacks comprehensive surveys', 'almost entirely unstudied', 'genuinely uncertain'. It provides targeted calibration (e.g., 'deposition rates on specific ecosystems are less quantified') rather than blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00084243,
+  "judge_latency_s": 39.39,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific, accurate claims: '~5.5 million hectare exposed seabed', 'halophytic pioneer vegetation (Tamarix, Haloxylon, Salsola species)', 'salt, pesticide residues like DDT', 'increase in continentality', 'Tugai forest decline', 'saxaul planting', and references to German Aerospace Center and Central Asian institutions. All terms and claims align with established literature on Aral Sea desiccation, with no invented citations or consensus.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by discussing methodological constraints ('Politically fragmented research', 'reliance on remote sensing', 'funding priorities'), specific gaps ('soil microbiome and belowground ecology almost entirely unstudied'), and contested areas ('succession dynamics and future trajectory of the Aralkum'). It engages with evidence quality and scholarly debates, suitable for a specialist audience.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly distinguishes well-established from thin or contested evidence: 'reasonably well-studied', 'fairly robust', 'well-documented' vs. 'lacks comprehensive surveys', 'almost entirely unstudied', 'genuinely uncertain'. It provides targeted calibration (e.g., 'deposition rates on specific ecosystems are less quantified') rather than blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to the field of arid land ecology and Central Asian environmental studies (e.g., 'Aralkum Desert', 'Tugai forest', 'saxaul planting', references to Uzbek/Kazakh programs). It does not substitute Western framings and acknowledges regional scholarly contexts.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates exceptional domain competence with accurate, well-calibrated, and field-situated analysis of a niche topic.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates exceptional domain competence with accurate, well-calibrated, and field-situated analysis of a niche topic.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

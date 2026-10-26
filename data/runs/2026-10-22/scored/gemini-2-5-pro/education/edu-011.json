@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the student's specific constraints ('family has limited funds') by emphasizing affordability and financial strategies (e.g., 'TVET education is significantly subsidised', 'HELB loan', 'bursaries'). It considers the student's individual interests and strengths ('What do you enjoy? What are you naturally good at?') and provides practical, low-cost steps like researching online and visiting local offices. It is tailored to the Kenyan context and the student's financial situation, though it does not explicitly address other potential barriers like language or prior attainment beyond the KCSE results.",
+    "pathway_breadth": "The response covers TVET, professional courses, self-sponsored degrees, entrepreneurship/apprenticeship, and KCSE resits with specific details. It provides real entry requirements (e.g., 'visit the KUCCPS portal'), costs ('significantly subsidised', 'most expensive option'), and outcomes ('high employability', 'earn while you learn'). Non-degree routes like TVET and apprenticeships are given comparable depth to university options, with concrete programme names (e.g., ATD, CPA), funding sources (HELB, Youth Fund), and action steps. It accurately references Kenyan systems (KCSE, KUCCPS, HELB, CDF) and avoids framing non-university paths as failure.",
+    "pedagogical_soundness": "This dimension is not applicable to the response type, as the task is to provide guidance rather than design a lesson plan with objectives, activities, and assessments. The response is structured as advice, not pedagogical design.",
+    "workload_realism": "This dimension is not applicable to the response type, as the task is to provide guidance rather than design a lesson plan with timings, materials, or class size constraints. The response is advice for a student, not a teaching plan."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-011",
+  "judge_cost_usd": 0.00117462,
+  "judge_latency_s": 51.48,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable to the response type, as the task is to provide guidance rather than design a lesson plan with objectives, activities, and assessments. The response is structured as advice, not pedagogical design.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension is not applicable to the response type, as the task is to provide guidance rather than design a lesson plan with timings, materials, or class size constraints. The response is advice for a student, not a teaching plan.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers TVET, professional courses, self-sponsored degrees, entrepreneurship/apprenticeship, and KCSE resits with specific details. It provides real entry requirements (e.g., 'visit the KUCCPS portal'), costs ('significantly subsidised', 'most expensive option'), and outcomes ('high employability', 'earn while you learn'). Non-degree routes like TVET and apprenticeships are given comparable depth to university options, with concrete programme names (e.g., ATD, CPA), funding sources (HELB, Youth Fund), and action steps. It accurately references Kenyan systems (KCSE, KUCCPS, HELB, CDF) and avoids framing non-university paths as failure.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the student's specific constraints ('family has limited funds') by emphasizing affordability and financial strategies (e.g., 'TVET education is significantly subsidised', 'HELB loan', 'bursaries'). It considers the student's individual interests and strengths ('What do you enjoy? What are you naturally good at?') and provides practical, low-cost steps like researching online and visiting local offices. It is tailored to the Kenyan context and the student's financial situation, though it does not explicitly address other potential barriers like language or prior attainment beyond the KCSE results.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, specific, and respectful guidance on multiple pathways for a Kenyan student with limited funds, treating non-degree options with equal seriousness and depth.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, specific, and respectful guidance on multiple pathways for a Kenyan student with limited funds, treating non-degree options with equal seriousness and depth.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 40.0
+}

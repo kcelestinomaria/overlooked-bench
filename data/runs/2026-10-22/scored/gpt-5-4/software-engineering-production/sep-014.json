@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Entra Application Proxy and Conditional Access/MFA for this use typically require Entra ID P1",
+      "evidence_verified": true,
+      "verdict": "violated"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed implementation plan with weekly phases, concrete tasks, owners, and deliverables (e.g., 'Week 1: Verify Entra licensing/capabilities', 'Java developer tasks: Document current auth flow', 'Deliverables: Published claims application through Entra Application Proxy'). It includes sequence, verification steps (pilot testing), and evidence collection, making it actionable for the team to execute with minor adjustments.",
+    "constraint_fidelity": "The response explicitly acknowledges that Entra Application Proxy and Conditional Access typically require Entra ID P1, which may not be included in Microsoft 365 E3, and states 'if P1 is not already licensed, then under the \"no new purchases\" constraint, this recommendation may be blocked.' It then proposes escalating to leadership and seeking policy exceptions, but does not guarantee compliance with the 'no new identity product or vendor purchase' constraint if P1 is not already owned. This violates constraint C1 if P1 is not already licensed, and the response does not provide a fallback that strictly adheres to the constraint without potential violation.",
+    "maintainability": "The response addresses maintainability by proposing minimal code changes ('keep app login intact'), documenting risks (e.g., 'Risk 3: App breaks behind proxy'), providing rollback plans, and ensuring operational procedures (runbooks, support documentation). It considers the team's capacity and avoids unnecessary complexity, but the reliance on Entra Application Proxy introduces a new component that the Windows admin must maintain, which is proportionate but not fully aligned with the existing stack.",
+    "production_realism": "The response demonstrates production realism by addressing failure modes (e.g., hardcoded URLs, mixed-content warnings, session timeouts), operational burden (task breakdown by role, support readiness, hypercare), and scalability (group assignments, logging). It considers the team's skill mix (Java dev and Windows admin) and infrastructure constraints, but relies on a solution that may not be feasible under licensing constraints, which undermines its practicality."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 0,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-014",
+  "judge_cost_usd": 0.00190347,
+  "judge_latency_s": 64.539,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly acknowledges that Entra Application Proxy and Conditional Access typically require Entra ID P1, which may not be included in Microsoft 365 E3, and states 'if P1 is not already licensed, then under the \\\"no new purchases\\\" constraint, this recommendation may be blocked.' It then proposes escalating to leadership and seeking policy exceptions, but does not guarantee compliance with the 'no new identity product or vendor purchase' constraint if P1 is not already owned. This violates constraint C1 if P1 is not already licensed, and the response does not provide a fallback that strictly adheres to the constraint without potential violation.\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response demonstrates production realism by addressing failure modes (e.g., hardcoded URLs, mixed-content warnings, session timeouts), operational burden (task breakdown by role, support readiness, hypercare), and scalability (group assignments, logging). It considers the team's skill mix (Java dev and Windows admin) and infrastructure constraints, but relies on a solution that may not be feasible under licensing constraints, which undermines its practicality.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed implementation plan with weekly phases, concrete tasks, owners, and deliverables (e.g., 'Week 1: Verify Entra licensing/capabilities', 'Java developer tasks: Document current auth flow', 'Deliverables: Published claims application through Entra Application Proxy'). It includes sequence, verification steps (pilot testing), and evidence collection, making it actionable for the team to execute with minor adjustments.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response addresses maintainability by proposing minimal code changes ('keep app login intact'), documenting risks (e.g., 'Risk 3: App breaks behind proxy'), providing rollback plans, and ensuring operational procedures (runbooks, support documentation). It considers the team's capacity and avoids unnecessary complexity, but the reliance on Entra Application Proxy introduces a new component that the Windows admin must maintain, which is proportionate but not fully aligned with the existing stack.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a highly actionable plan but risks violating the 'no new purchases' constraint if Entra ID P1 is not already licensed.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Entra Application Proxy and Conditional Access/MFA for this use typically require Entra ID P1\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a highly actionable plan but risks violating the 'no new purchases' constraint if Entra ID P1 is not already licensed.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 53.75
+}

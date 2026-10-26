@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response produces the requested deliverable: a data design, retention/access controls, legal/organisational prerequisites, and product pushback. 2. It includes concrete elements: PostgreSQL schema (e.g., `rider_location_ping` table with `retention_expires_at`), BigQuery dataset recommendations, and a six-week delivery plan with sequence and verification steps (e.g., 'test deletion and restore'). 3. An engineer could execute this with light editing, as it provides exact commands (e.g., partitioning), code-like structures (e.g., table definitions), and estimates (weekly breakdown).",
+    "constraint_fidelity": "1. The response explicitly respects the 30-day retention rule for raw precise location (C1), stating: 'raw precise location may not be retained for longer than 30 days anywhere, including the warehouse and backups' and detailing enforcement in operational, warehouse, and backup layers. 2. No new third-party vendors or sub-processors are added (C2); the response sticks to PostgreSQL/PostGIS, BigQuery, and Firebase Cloud Messaging. 3. The delivery plan is scoped for two engineers and six weeks (C3), with a week-by-week breakdown that fits the timeline. The response also shows arithmetic (e.g., retention_expires_at = captured_at + interval '30 days') and justifies relaxations (e.g., pushing back on raw location in the warehouse).",
+    "maintainability": "1. The response identifies the team (two engineers) and future owners (support, operations, data team). 2. It leaves clear seams: aggregated data for analytics, coarse features for the warehouse, and strict access controls. 3. Risks and debt are stated explicitly (e.g., 'backup system cannot guarantee this' as a risk, 'push back on raw location in warehouse' as debt avoidance). 4. The design is proportionate: no unowned moving parts, and complexity is justified (e.g., partitioning for retention). 5. Documentation and observability are addressed (e.g., audit logs, rider notices, internal policies).",
+    "production_realism": "1. The response accounts for the stated scale (Nairobi, independent contractors) and infrastructure (PostgreSQL/PostGIS, BigQuery, Firebase). 2. It addresses failure modes: throttling for GPS unavailability, local buffering for connectivity issues, encryption at rest, and TLS for transit. 3. It includes operational burden considerations: partitioning for cheap deletion, role-based access controls, audit logging, and pilot testing. 4. No technically incorrect claims about the named technologies are made. 5. The design fits the team's skill mix (two engineers) and avoids over-engineering."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.0035206,
+  "judge_latency_s": 10.061,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly respects the 30-day retention rule for raw precise location (C1), stating: 'raw precise location may not be retained for longer than 30 days anywhere, including the warehouse and backups' and detailing enforcement in operational, warehouse, and backup layers. 2. No new third-party vendors or sub-processors are added (C2); the response sticks to PostgreSQL/PostGIS, BigQuery, and Firebase Cloud Messaging. 3. The delivery plan is scoped for two engineers and six weeks (C3), with a week-by-week breakdown that fits the timeline. The response also shows arithmetic (e.g., retention_expires_at = captured_at + interval '30 days') and justifies relaxations (e.g., pushing back on raw location in the warehouse).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (Nairobi, independent contractors) and infrastructure (PostgreSQL/PostGIS, BigQuery, Firebase). 2. It addresses failure modes: throttling for GPS unavailability, local buffering for connectivity issues, encryption at rest, and TLS for transit. 3. It includes operational burden considerations: partitioning for cheap deletion, role-based access controls, audit logging, and pilot testing. 4. No technically incorrect claims about the named technologies are made. 5. The design fits the team's skill mix (two engineers) and avoids over-engineering.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response produces the requested deliverable: a data design, retention/access controls, legal/organisational prerequisites, and product pushback. 2. It includes concrete elements: PostgreSQL schema (e.g., `rider_location_ping` table with `retention_expires_at`), BigQuery dataset recommendations, and a six-week delivery plan with sequence and verification steps (e.g., 'test deletion and restore'). 3. An engineer could execute this with light editing, as it provides exact commands (e.g., partitioning), code-like structures (e.g., table definitions), and estimates (weekly breakdown).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The response identifies the team (two engineers) and future owners (support, operations, data team). 2. It leaves clear seams: aggregated data for analytics, coarse features for the warehouse, and strict access controls. 3. Risks and debt are stated explicitly (e.g., 'backup system cannot guarantee this' as a risk, 'push back on raw location in warehouse' as debt avoidance). 4. The design is proportionate: no unowned moving parts, and complexity is justified (e.g., partitioning for retention). 5. Documentation and observability are addressed (e.g., audit logs, rider notices, internal policies).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint fidelity, demonstrating how to fit a complex feature into tight legal, technical, and resource boundaries while remaining actionable and maintainable.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is a model of constraint fidelity, demonstrating how to fit a complex feature into tight legal, technical, and resource boundaries while remaining actionable and maintainable.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

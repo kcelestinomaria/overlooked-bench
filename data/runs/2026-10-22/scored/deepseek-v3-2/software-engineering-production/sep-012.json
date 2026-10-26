@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Redis.current.xadd(\"notifications:events\", { type: event_type, payload: payload.to_json })",
+      "evidence_verified": false,
+      "verdict": "violated"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The plan provides a phased timeline with specific deliverables, code snippets, and concrete steps. It includes sequence, estimates, and verification via monitoring. An engineer could execute this with minor edits, though some details like exact LGPD handling are missing.",
+    "constraint_fidelity": "The plan introduces Redis streams ('Redis.current.xadd') which is a new message broker feature not part of the existing Sidekiq/Redis setup, violating constraint C1. It uses shared PostgreSQL database which may violate 'no new services' if considered a new deployable component, but explicitly states 'single new deployable service'. It includes incremental rollout and SLO protection, but the Redis streams usage breaks the 'no new message broker' constraint.",
+    "maintainability": "The solution adds complexity with Redis streams and shared database, but provides monitoring, documentation, and clear ownership. Risks like database coupling are noted. It is proportionate for the team, but the Redis streams addition may increase maintenance burden.",
+    "production_realism": "The response addresses scale with load testing, includes retries via DLQ, circuit breakers, and monitoring. However, it introduces Redis streams which may cause locking/load issues on shared Redis, and the dual-write interceptor could impact performance. The operational burden seems reasonable for two engineers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 0,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-012",
+  "judge_cost_usd": 0.00122809,
+  "judge_latency_s": 13.195,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The plan introduces Redis streams ('Redis.current.xadd') which is a new message broker feature not part of the existing Sidekiq/Redis setup, violating constraint C1. It uses shared PostgreSQL database which may violate 'no new services' if considered a new deployable component, but explicitly states 'single new deployable service'. It includes incremental rollout and SLO protection, but the Redis streams usage breaks the 'no new message broker' constraint.\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response addresses scale with load testing, includes retries via DLQ, circuit breakers, and monitoring. However, it introduces Redis streams which may cause locking/load issues on shared Redis, and the dual-write interceptor could impact performance. The operational burden seems reasonable for two engineers.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The plan provides a phased timeline with specific deliverables, code snippets, and concrete steps. It includes sequence, estimates, and verification via monitoring. An engineer could execute this with minor edits, though some details like exact LGPD handling are missing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution adds complexity with Redis streams and shared database, but provides monitoring, documentation, and clear ownership. Risks like database coupling are noted. It is proportionate for the team, but the Redis streams addition may increase maintenance burden.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The plan is detailed and actionable but violates the 'no new message broker' constraint by using Redis streams.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Redis.current.xadd(\\\"notifications:events\\\", { type: event_type, payload: payload.to_json })\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The plan is detailed and actionable but violates the 'no new message broker' constraint by using Redis streams.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 53.75
+}

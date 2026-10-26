@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies varied literacy levels and motivations. Response addresses this concretely: 'Choose Your Path' allows choice based on personal goals, teacher provides 1-on-1 reading support, lower-level readers get spelling help, higher-level readers get challenges. Adaptations are low-cost and implementable by one teacher (grouping, circulating). No generic 'differentiate as needed' language.",
+    "pathway_breadth": "This item does not involve student futures pathway guidance; it is a lesson plan. The response is inclusive of the range of learners by offering differentiated content (Driver, Parent, General/Health paths) that connects to their real-world motivations, respecting diverse adult goals without defaulting to academic themes.",
+    "pedagogical_soundness": "The response states clear objectives: identify form vocabulary, extract information from instructions, and complete a relevant form. Activities align: warm-up introduces forms, vocabulary instruction teaches key terms, guided practice applies scanning skills, differentiated practice allows form completion, and exit ticket assesses core objectives. Sequencing is logical (vocabulary before application), and cognitive demand is appropriate for adult literacy. Assessment (exit ticket) directly measures objectives 1 and 3.",
+    "workload_realism": "Timings sum to 90 minutes (15+15+20+25+15). Materials are low-cost and realistic (sign-in sheet, flashcards, highlighters, form packets, exit tickets). Preparation involves creating customizable form packets but is feasible for one teacher. Class size scaling is addressed (pairs for 14, table work for 4). No technology or excessive printing assumed. Marking load is light (exit tickets only)."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-009",
+  "judge_cost_usd": 0.0011087,
+  "judge_latency_s": 38.212,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states clear objectives: identify form vocabulary, extract information from instructions, and complete a relevant form. Activities align: warm-up introduces forms, vocabulary instruction teaches key terms, guided practice applies scanning skills, differentiated practice allows form completion, and exit ticket assesses core objectives. Sequencing is logical (vocabulary before application), and cognitive demand is appropriate for adult literacy. Assessment (exit ticket) directly measures objectives 1 and 3.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 90 minutes (15+15+20+25+15). Materials are low-cost and realistic (sign-in sheet, flashcards, highlighters, form packets, exit tickets). Preparation involves creating customizable form packets but is feasible for one teacher. Class size scaling is addressed (pairs for 14, table work for 4). No technology or excessive printing assumed. Marking load is light (exit tickets only).\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures pathway guidance; it is a lesson plan. The response is inclusive of the range of learners by offering differentiated content (Driver, Parent, General/Health paths) that connects to their real-world motivations, respecting diverse adult goals without defaulting to academic themes.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies varied literacy levels and motivations. Response addresses this concretely: 'Choose Your Path' allows choice based on personal goals, teacher provides 1-on-1 reading support, lower-level readers get spelling help, higher-level readers get challenges. Adaptations are low-cost and implementable by one teacher (grouping, circulating). No generic 'differentiate as needed' language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels in creating a practical, scalable, and respectful lesson plan tailored to adult learners' real-world needs.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response excels in creating a practical, scalable, and respectful lesson plan tailored to adult learners' real-world needs.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

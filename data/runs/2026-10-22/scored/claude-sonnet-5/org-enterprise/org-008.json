@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requests a 'turnaround plan with numbers'. The response produces a concrete plan with quantified analysis (GHS 144,000 from collection improvement, GHS 15,000-20,000 from salary freeze, GHS 18,000 from non-salary cuts), specific interventions (staggered payments, down-payment rule, SMS reminders), and a summary table. It could be taken to a board meeting with light editing. It does not merely describe a process but delivers the requested product.",
+    "constraint_fidelity": "The prompt states constraints: no fee increase, school in Ghana, 400 pupils, 22 teachers, 70% collection rate, teacher salaries at 68% of expenditure. The response explicitly respects the no-fee-increase constraint ('Do NOT raise fees this year'), uses Ghana-specific context (mobile money, SMS reminders), and provides arithmetic showing collection gap (GHS 216,000/term) and potential savings from interventions. It does not violate any stated constraints and shows arithmetic for money involved.",
+    "contextual_realism": "The response assumes capabilities appropriate for a small Ghanaian school: SMS/mobile money reminders, staggered payment plans, bulk procurement from wholesalers, renting the compound for events. It does not presuppose dedicated HR, legal counsel, or expensive tooling. It acknowledges role overlap (procurement audit may involve existing staff) and small-organisation realities like 'excuse culture' and vendor relationships. Recommendations are calibrated to resource level.",
+    "jurisdictional_accuracy": "The prompt involves Ghana, and the response uses context-appropriate elements (mobile money, SMS reminders, which are common in Ghana). It does not assert US defaults (e.g., no mention of US-style payroll, at-will employment, or US tax categories). While it doesn't make strong legal/regulatory claims, it avoids jurisdictional errors and is generally factually accurate for the context. No generic 'consult a lawyer' disclaimers are used."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-008",
+  "judge_cost_usd": 0.00104967,
+  "judge_latency_s": 47.244,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: no fee increase, school in Ghana, 400 pupils, 22 teachers, 70% collection rate, teacher salaries at 68% of expenditure. The response explicitly respects the no-fee-increase constraint ('Do NOT raise fees this year'), uses Ghana-specific context (mobile money, SMS reminders), and provides arithmetic showing collection gap (GHS 216,000/term) and potential savings from interventions. It does not violate any stated constraints and shows arithmetic for money involved.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes capabilities appropriate for a small Ghanaian school: SMS/mobile money reminders, staggered payment plans, bulk procurement from wholesalers, renting the compound for events. It does not presuppose dedicated HR, legal counsel, or expensive tooling. It acknowledges role overlap (procurement audit may involve existing staff) and small-organisation realities like 'excuse culture' and vendor relationships. Recommendations are calibrated to resource level.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requests a 'turnaround plan with numbers'. The response produces a concrete plan with quantified analysis (GHS 144,000 from collection improvement, GHS 15,000-20,000 from salary freeze, GHS 18,000 from non-salary cuts), specific interventions (staggered payments, down-payment rule, SMS reminders), and a summary table. It could be taken to a board meeting with light editing. It does not merely describe a process but delivers the requested product.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Ghana, and the response uses context-appropriate elements (mobile money, SMS reminders, which are common in Ghana). It does not assert US defaults (e.g., no mention of US-style payroll, at-will employment, or US tax categories). While it doesn't make strong legal/regulatory claims, it avoids jurisdictional errors and is generally factually accurate for the context. No generic 'consult a lawyer' disclaimers are used.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates high fidelity to constraints, contextual realism, actionability, and jurisdictional accuracy, providing a usable turnaround plan for a small Ghanaian school.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response demonstrates high fidelity to constraints, contextual realism, actionability, and jurisdictional accuracy, providing a usable turnaround plan for a small Ghanaian school.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

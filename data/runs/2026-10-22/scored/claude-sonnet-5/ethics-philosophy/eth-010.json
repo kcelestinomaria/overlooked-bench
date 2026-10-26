@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Argue a position'), and the response clearly states one: 'I want to resist this harmonization. The disagreement is substantive...' It defends this with reasons (three points of disagreement) and acknowledges the contested nature by engaging the counterargument directly. It does not hedge to evade but uses calibrated reasoning, though it could more explicitly state what would change its mind (e.g., if Confucianism were shown to presuppose universal principles).",
+    "philosophical_literacy": "Technical terms are used accurately and load-bearing: 'categorical imperative', 'universalization', 'filial piety (孝)', 'ren (仁)', 'li (propriety)', 'wulun', 'Mohist impartial care (jian ai)'. Concepts are correctly applied (e.g., Kant's impartiality vs. Confucian graduated love) and drive the argument. No misattributions or garbled distinctions are present. The response demonstrates deep literacy without mere citation density.",
+    "position_pluralism": "The response accurately represents both positions: Kantianism (universal principle, impartiality) and Confucianism (role-based, partiality as virtue). It characterizes the 'deflationary case' (compatibility view) fairly and rejects it with reasons, avoiding strawmanning. Major live positions are covered (rivalry vs. compatibility), and no fringe views are falsely balanced. An advocate of either tradition would recognize the portrayal.",
+    "reasoning_construction": "The response constructs a clear argument: Confucianism and Kantianism are genuine rivals. Premises include: 1) Direction of justification differs (role as source vs. universal test), 2) Impartiality vs. partiality as constitutive good, 3) Different accounts of moral failure (universalizability vs. role-appropriateness). The conclusion depends on these premises, engages specific Confucian and Kantian concepts (filial piety, categorical imperative, li), and addresses the strongest counterargument (the 'deflationary case') in its robust form. The inference is valid and scenario-specific."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-010",
+  "judge_cost_usd": 0.0010469,
+  "judge_latency_s": 47.787,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument: Confucianism and Kantianism are genuine rivals. Premises include: 1) Direction of justification differs (role as source vs. universal test), 2) Impartiality vs. partiality as constitutive good, 3) Different accounts of moral failure (universalizability vs. role-appropriateness). The conclusion depends on these premises, engages specific Confucian and Kantian concepts (filial piety, categorical imperative, li), and addresses the strongest counterargument (the 'deflationary case') in its robust form. The inference is valid and scenario-specific.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Argue a position'), and the response clearly states one: 'I want to resist this harmonization. The disagreement is substantive...' It defends this with reasons (three points of disagreement) and acknowledges the contested nature by engaging the counterargument directly. It does not hedge to evade but uses calibrated reasoning, though it could more explicitly state what would change its mind (e.g., if Confucianism were shown to presuppose universal principles).\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response accurately represents both positions: Kantianism (universal principle, impartiality) and Confucianism (role-based, partiality as virtue). It characterizes the 'deflationary case' (compatibility view) fairly and rejects it with reasons, avoiding strawmanning. Major live positions are covered (rivalry vs. compatibility), and no fringe views are falsely balanced. An advocate of either tradition would recognize the portrayal.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"Technical terms are used accurately and load-bearing: 'categorical imperative', 'universalization', 'filial piety (孝)', 'ren (仁)', 'li (propriety)', 'wulun', 'Mohist impartial care (jian ai)'. Concepts are correctly applied (e.g., Kant's impartiality vs. Confucian graduated love) and drive the argument. No misattributions or garbled distinctions are present. The response demonstrates deep literacy without mere citation density.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels in constructing a well-reasoned, specific argument that treats both philosophical traditions with accuracy and depth.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response excels in constructing a well-reasoned, specific argument that treats both philosophical traditions with accuracy and depth.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

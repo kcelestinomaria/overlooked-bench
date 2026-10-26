@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a go/no-go analysis with a clear conditional recommendation ('Conditional GO only if...'), break-even calculation (PLN 77k–120k/month), financing options (bank loan, leasing, etc.), and specific risks. It includes line items (rent, staff costs) and totals, and could be used in a meeting with light editing. It does not just describe the process but delivers the analysis.",
+    "constraint_fidelity": "The response explicitly respects the no-equity-dilution constraint by stating 'Constraint: no equity dilution' and only proposing debt/leasing/owner cash options. It uses the given PLN 250,000 owner funds and PLN 1.4m revenue with 8% margin (calculating PLN 112k net profit). However, it does not show arithmetic for how the PLN 250k combines with proposed debt (PLN 150k–400k) to cover total costs, and it exceeds the one-page limit implied by 'one-page go/no-go analysis'.",
+    "contextual_realism": "The response is calibrated for a small bakery: it assumes no dedicated HR/legal (e.g., '6-person bakery', 'family business'), proposes realistic Polish financing (bank loans, leasing, EU programs), acknowledges cash flow constraints ('margin of safety is thin'), and uses conservative estimates (e.g., rent PLN 12k–18k). It avoids presupposing large-firm functions and recognizes role overlap/small buffers.",
+    "jurisdictional_accuracy": "The response accurately references Polish-context financing (bank term loans, leasing, EU regional programs, BGK-guaranteed lending implied by 'government/EU-backed SME support') and avoids US assumptions (no SBA references). It does not make incorrect legal claims but also does not flag where local advice is needed (e.g., for loans/leases). It is factually accurate for Poland."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-002",
+  "judge_cost_usd": 0.0010633,
+  "judge_latency_s": 51.746,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the no-equity-dilution constraint by stating 'Constraint: no equity dilution' and only proposing debt/leasing/owner cash options. It uses the given PLN 250,000 owner funds and PLN 1.4m revenue with 8% margin (calculating PLN 112k net profit). However, it does not show arithmetic for how the PLN 250k combines with proposed debt (PLN 150k–400k) to cover total costs, and it exceeds the one-page limit implied by 'one-page go/no-go analysis'.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small bakery: it assumes no dedicated HR/legal (e.g., '6-person bakery', 'family business'), proposes realistic Polish financing (bank loans, leasing, EU programs), acknowledges cash flow constraints ('margin of safety is thin'), and uses conservative estimates (e.g., rent PLN 12k–18k). It avoids presupposing large-firm functions and recognizes role overlap/small buffers.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a go/no-go analysis with a clear conditional recommendation ('Conditional GO only if...'), break-even calculation (PLN 77k–120k/month), financing options (bank loan, leasing, etc.), and specific risks. It includes line items (rent, staff costs) and totals, and could be used in a meeting with light editing. It does not just describe the process but delivers the analysis.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately references Polish-context financing (bank term loans, leasing, EU regional programs, BGK-guaranteed lending implied by 'government/EU-backed SME support') and avoids US assumptions (no SBA references). It does not make incorrect legal claims but also does not flag where local advice is needed (e.g., for loans/leases). It is factually accurate for Poland.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a realistic, actionable analysis tailored to a small Polish bakery but slightly exceeds length constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a realistic, actionable analysis tailored to a small Polish bakery but slightly exceeds length constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete extraction plan with sequence (week-by-week milestones), owners (Engineer A/B), and verification steps (shadow mode, success criteria). 2. It includes exact commands/code (e.g., HTTP API payload, DB schema, Sidekiq job flow). 3. Estimates are provided (e.g., 'Week 1: Design and inventory'). 4. The rollback plan is explicit and executable. Example quotes: 'Week-by-week plan', 'POST /notification-requests' payload, 'rollback is configuration-only'.",
+    "constraint_fidelity": "1. The response explicitly states it will build only one new deployable service (Notification Service), respecting C2. 2. It repeatedly confirms the use of existing Sidekiq/Redis infrastructure, avoiding any new message broker (C1). 3. The plan ensures checkout remains asynchronous and independent of the new service, preserving the 99.9% SLO (C3). 4. The team plan fits two engineers over ten weeks (C3). 5. The response includes arithmetic-like reasoning for capacity (e.g., queue isolation, concurrency controls) and explicitly addresses constraints without silent violations. Example quotes: 'No Kafka or other new message broker' (C1), 'one new deployable service' (C2), 'checkout must not block on the new service' (C3).",
+    "maintainability": "1. The solution is proportionate to the team (Rails, shared patterns, minimal complexity). 2. Risks and debt are explicitly stated (e.g., 'Risk 1: Duplicate notifications', 'Risk 5: Two engineers run out of time'). 3. Clear seams are left (e.g., `NotificationPublisher` abstraction, HTTP API). 4. Observability and documentation are prioritized (e.g., dashboards, audit trails). 5. The response avoids unsafe shortcuts (e.g., no arbitrary ERB execution). Example quotes: 'shared patterns', 'risks and mitigations', 'documentation'.",
+    "production_realism": "1. The response accounts for failure modes at the stated scale: idempotency keys, retries with backoff, dead-letter visibility, and queue isolation to prevent Redis contention. 2. It addresses partial failure (e.g., fallback to monolith) and rollback (config-only rollback). 3. Observability is detailed (metrics, dashboards, alerts). 4. The operational burden is proportionate to a six-person team (e.g., Rails for familiarity, minimal admin UI). 5. No technically incorrect claims about named technologies (Rails, Sidekiq, Redis, PostgreSQL). Example quotes: 'separate Sidekiq queues for notification service', 'idempotency keys', 'fallback path sends for configured event types'."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-012",
+  "judge_cost_usd": 0.0039031,
+  "judge_latency_s": 9.854,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states it will build only one new deployable service (Notification Service), respecting C2. 2. It repeatedly confirms the use of existing Sidekiq/Redis infrastructure, avoiding any new message broker (C1). 3. The plan ensures checkout remains asynchronous and independent of the new service, preserving the 99.9% SLO (C3). 4. The team plan fits two engineers over ten weeks (C3). 5. The response includes arithmetic-like reasoning for capacity (e.g., queue isolation, concurrency controls) and explicitly addresses constraints without silent violations. Example quotes: 'No Kafka or other new message broker' (C1), 'one new deployable service' (C2), 'checkout must not block on the new service' (C3).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for failure modes at the stated scale: idempotency keys, retries with backoff, dead-letter visibility, and queue isolation to prevent Redis contention. 2. It addresses partial failure (e.g., fallback to monolith) and rollback (config-only rollback). 3. Observability is detailed (metrics, dashboards, alerts). 4. The operational burden is proportionate to a six-person team (e.g., Rails for familiarity, minimal admin UI). 5. No technically incorrect claims about named technologies (Rails, Sidekiq, Redis, PostgreSQL). Example quotes: 'separate Sidekiq queues for notification service', 'idempotency keys', 'fallback path sends for configured event types'.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete extraction plan with sequence (week-by-week milestones), owners (Engineer A/B), and verification steps (shadow mode, success criteria). 2. It includes exact commands/code (e.g., HTTP API payload, DB schema, Sidekiq job flow). 3. Estimates are provided (e.g., 'Week 1: Design and inventory'). 4. The rollback plan is explicit and executable. Example quotes: 'Week-by-week plan', 'POST /notification-requests' payload, 'rollback is configuration-only'.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (Rails, shared patterns, minimal complexity). 2. Risks and debt are explicitly stated (e.g., 'Risk 1: Duplicate notifications', 'Risk 5: Two engineers run out of time'). 3. Clear seams are left (e.g., `NotificationPublisher` abstraction, HTTP API). 4. Observability and documentation are prioritized (e.g., dashboards, audit trails). 5. The response avoids unsafe shortcuts (e.g., no arbitrary ERB execution). Example quotes: 'shared patterns', 'risks and mitigations', 'documentation'.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a meticulously detailed, constraint-aware extraction plan that could be executed as-is by the team.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response is a meticulously detailed, constraint-aware extraction plan that could be executed as-is by the team.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "rollout should be gated on DB load test results",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed design with SQL schema, middleware pseudocode, rollout plan with weekly tasks per engineer, and concrete steps (e.g., 'Week 1: design finalization + schema + instrumentation'). It includes specific sequences, estimates, and verification steps (load testing scenarios, success criteria). An engineer could start executing this immediately with light editing for environment-specific tuning.",
+    "constraint_fidelity": "The response explicitly uses only existing infrastructure (PostgreSQL and Django), respects the 3-engineer 4-week timeline, includes latency impact estimates (10-25 ms p99, under 220 ms budget), and provides cost arithmetic showing potential DB upgrade costs ($200-600/month) but gates rollout on load testing to stay within the $752/month cap. It acknowledges and justifies tradeoffs like fixed-window approximation and metering loss risks, rather than silently violating constraints.",
+    "maintainability": "The response considers future ownership by the same team, with clear seams (feature flags, kill switches), documentation of risks (e.g., 'not a forever architecture'), and operational notes (tuning, cleanup jobs). It avoids unnecessary complexity (e.g., no sharding initially) and states accepted debt explicitly. However, it lacks details on tests, documentation, or long-term observability beyond initial rollout.",
+    "production_realism": "The response accounts for production-scale issues: hot-row contention mitigation (sharding discussed but deferred), fail-open policies for DB errors, load testing plans, graceful shutdown handling for metering, and monitoring (DB CPU, IOPS, locks, latency). It considers the team's operational capacity with feature flags and staged rollout. However, it does not fully address rollback procedures or observability of the change itself in detail."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-003",
+  "judge_cost_usd": 0.00217575,
+  "judge_latency_s": 51.066,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly uses only existing infrastructure (PostgreSQL and Django), respects the 3-engineer 4-week timeline, includes latency impact estimates (10-25 ms p99, under 220 ms budget), and provides cost arithmetic showing potential DB upgrade costs ($200-600/month) but gates rollout on load testing to stay within the $752/month cap. It acknowledges and justifies tradeoffs like fixed-window approximation and metering loss risks, rather than silently violating constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production-scale issues: hot-row contention mitigation (sharding discussed but deferred), fail-open policies for DB errors, load testing plans, graceful shutdown handling for metering, and monitoring (DB CPU, IOPS, locks, latency). It considers the team's operational capacity with feature flags and staged rollout. However, it does not fully address rollback procedures or observability of the change itself in detail.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed design with SQL schema, middleware pseudocode, rollout plan with weekly tasks per engineer, and concrete steps (e.g., 'Week 1: design finalization + schema + instrumentation'). It includes specific sequences, estimates, and verification steps (load testing scenarios, success criteria). An engineer could start executing this immediately with light editing for environment-specific tuning.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response considers future ownership by the same team, with clear seams (feature flags, kill switches), documentation of risks (e.g., 'not a forever architecture'), and operational notes (tuning, cleanup jobs). It avoids unnecessary complexity (e.g., no sharding initially) and states accepted debt explicitly. However, it lacks details on tests, documentation, or long-term observability beyond initial rollout.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A thorough, constraint-aware design that provides executable plans and explicitly justifies tradeoffs.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"rollout should be gated on DB load test results\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "A thorough, constraint-aware design that provides executable plans and explicitly justifies tradeoffs.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

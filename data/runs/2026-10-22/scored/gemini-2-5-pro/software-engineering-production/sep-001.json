@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed design with specific implementation steps (middleware, database schema, background threads), a week-by-week rollout plan with engineer assignments, and concrete commands (e.g., bulk_create(), cron job). Includes testing and monitoring steps. An engineer could execute this with light editing.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: uses existing PostgreSQL and in-memory processing (no new services), plans for 3 engineers over 4 weeks, calculates latency impact at <2 ms (well under 40 ms budget), and estimates cost increase at $200-$400/month (under $752 cap). It provides arithmetic for latency, database load, and cost.",
+    "maintainability": "Identifies risks explicitly (imperfect limiting, data loss, DB load, SPOF) and proposes mitigations. Complexity is proportionate to the team (3 backend engineers). However, the cron job for aggregation is a single point of failure and may require future refactoring, and the in-memory state per container adds operational burden for restarts/crashes.",
+    "production_realism": "Addresses failure modes: acknowledges imperfect rate limiting due to load balancer distribution, data loss on container crash, and database write load increase. Proposes monitoring and tuning (e.g., batch interval adjustment). However, it assumes the load balancer has no sticky sessions without verification and relies on a single cron job for aggregation (SPOF), which may not be robust for production at 1,200 rps scale."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.0016143,
+  "judge_latency_s": 36.746,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: uses existing PostgreSQL and in-memory processing (no new services), plans for 3 engineers over 4 weeks, calculates latency impact at <2 ms (well under 40 ms budget), and estimates cost increase at $200-$400/month (under $752 cap). It provides arithmetic for latency, database load, and cost.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses failure modes: acknowledges imperfect rate limiting due to load balancer distribution, data loss on container crash, and database write load increase. Proposes monitoring and tuning (e.g., batch interval adjustment). However, it assumes the load balancer has no sticky sessions without verification and relies on a single cron job for aggregation (SPOF), which may not be robust for production at 1,200 rps scale.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed design with specific implementation steps (middleware, database schema, background threads), a week-by-week rollout plan with engineer assignments, and concrete commands (e.g., bulk_create(), cron job). Includes testing and monitoring steps. An engineer could execute this with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Identifies risks explicitly (imperfect limiting, data loss, DB load, SPOF) and proposes mitigations. Complexity is proportionate to the team (3 backend engineers). However, the cron job for aggregation is a single point of failure and may require future refactoring, and the in-memory state per container adds operational burden for restarts/crashes.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A well-reasoned, constraint-aware design that provides actionable plans and explicit risk acceptance, though with some production robustness gaps.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "A well-reasoned, constraint-aware design that provides actionable plans and explicit risk acceptance, though with some production robustness gaps.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

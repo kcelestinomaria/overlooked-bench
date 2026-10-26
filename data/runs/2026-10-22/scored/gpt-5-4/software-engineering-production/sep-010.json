@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "systemctl status nginx --no-pager",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a complete runbook with exact commands for all requested procedures: service status checks (e.g., 'systemctl status nginx'), restarts, log reading, backup restore (with step-by-step commands like 'rclone copy'), TLS renewal ('certbot renew --dry-run'), deployment sequences, and escalation triggers. It includes concrete steps, success criteria, and verification, making it executable immediately by the developers.",
+    "constraint_fidelity": "The response respects all hard constraints: it does not recommend migrating to Kubernetes, managed DB, PaaS, or another cloud (C1 kept); it does not recommend any paid tools (C2 kept); and it provides exact commands for all key procedures like restoring database, renewing TLS, and restarting services (C3 kept). It explicitly warns against actions that violate constraints (e.g., 'Do not: change server architecture') and includes arithmetic checks (e.g., disk usage thresholds, backup verification).",
+    "maintainability": "The response is proportionate to the team's skills (PHP developers with basic Linux), with clear, simple commands and warnings against unnecessary complexity. It includes documentation of config locations, risks (e.g., 'stop and escalate if...'), and a handover checklist. However, it does not explicitly mention tests, observability setup, or long-term debt acceptance, and some commands (e.g., grep for backup scripts) might require minor adaptation.",
+    "production_realism": "The response accounts for production realities: it includes failure modes (e.g., disk full, service crashes), retry procedures (e.g., restarting services), rollback steps (e.g., maintenance mode during deploy), and observability (log checks). It tailors commands to the team's skill level (basic Linux) and infrastructure scale (2 VMs), avoiding assumptions of advanced ops capacity. However, it lacks explicit discussion of locking or idempotency for database operations, which is a minor gap."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-010",
+  "judge_cost_usd": 0.00234304,
+  "judge_latency_s": 56.912,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: it does not recommend migrating to Kubernetes, managed DB, PaaS, or another cloud (C1 kept); it does not recommend any paid tools (C2 kept); and it provides exact commands for all key procedures like restoring database, renewing TLS, and restarting services (C3 kept). It explicitly warns against actions that violate constraints (e.g., 'Do not: change server architecture') and includes arithmetic checks (e.g., disk usage thresholds, backup verification).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production realities: it includes failure modes (e.g., disk full, service crashes), retry procedures (e.g., restarting services), rollback steps (e.g., maintenance mode during deploy), and observability (log checks). It tailors commands to the team's skill level (basic Linux) and infrastructure scale (2 VMs), avoiding assumptions of advanced ops capacity. However, it lacks explicit discussion of locking or idempotency for database operations, which is a minor gap.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a complete runbook with exact commands for all requested procedures: service status checks (e.g., 'systemctl status nginx'), restarts, log reading, backup restore (with step-by-step commands like 'rclone copy'), TLS renewal ('certbot renew --dry-run'), deployment sequences, and escalation triggers. It includes concrete steps, success criteria, and verification, making it executable immediately by the developers.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response is proportionate to the team's skills (PHP developers with basic Linux), with clear, simple commands and warnings against unnecessary complexity. It includes documentation of config locations, risks (e.g., 'stop and escalate if...'), and a handover checklist. However, it does not explicitly mention tests, observability setup, or long-term debt acceptance, and some commands (e.g., grep for backup scripts) might require minor adaptation.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response is a highly actionable and constraint-compliant runbook tailored to the team's capabilities, with minor gaps in production realism and maintainability details.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"systemctl status nginx --no-pager\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response is a highly actionable and constraint-compliant runbook tailored to the team's capabilities, with minor gaps in production realism and maintainability details.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

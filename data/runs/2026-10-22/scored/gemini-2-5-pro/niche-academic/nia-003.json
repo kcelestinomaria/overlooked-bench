@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific methodological debates, detailing the conditions for maslaha mursala application in Malikism (genuine, general, non-contradictory, rational), explaining istihsan's mechanism in Hanafism (departing from qiyas due to impractical outcomes), and providing classic examples. It addresses internal scholarly divergence and evidence-based reasoning, suitable for a specialist audience.",
+    "domain_accuracy": "The response accurately defines maslaha and its three categories (mu'tabara, mulgha, mursala), correctly identifies the Maliki school's championing of maslaha mursala as an independent source with strict conditions, and the Hanafi school's use of istihsan as a vehicle for maslaha. It provides valid examples (compilation of the Qur'an for Malikis, contracts of manufacture for Hanafis) and correctly contrasts the methodologies. No invented citations, terms, or consensus are present; all claims align with established Islamic legal theory.",
+    "field_situatedness": "The response uses correct Arabic terminology (uṣūl al-fiqh, maslaha, Maqāṣid al-Sharīʿah, qiyas, istihsan) and frameworks specific to Islamic legal theory, referencing scholars like al-Ghazali and al-Shatibi. It stays within the tradition without substituting Western or Anglophone framings, adhering to the field's conventions.",
+    "scholarly_calibration": "The response distinguishes between unanimously accepted (maslaha mu'tabara), rejected (maslaha mulgha), and contested (maslaha mursala) concepts. It notes that maslaha mursala is 'the heart of the debate' and explicitly contrasts Maliki and Hanafi positions without presenting either as settled fact. It avoids uniform confidence by highlighting methodological differences and conditions, though it could more explicitly flag evidential status nuances."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.0011949,
+  "judge_latency_s": 49.481,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately defines maslaha and its three categories (mu'tabara, mulgha, mursala), correctly identifies the Maliki school's championing of maslaha mursala as an independent source with strict conditions, and the Hanafi school's use of istihsan as a vehicle for maslaha. It provides valid examples (compilation of the Qur'an for Malikis, contracts of manufacture for Hanafis) and correctly contrasts the methodologies. No invented citations, terms, or consensus are present; all claims align with established Islamic legal theory.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific methodological debates, detailing the conditions for maslaha mursala application in Malikism (genuine, general, non-contradictory, rational), explaining istihsan's mechanism in Hanafism (departing from qiyas due to impractical outcomes), and providing classic examples. It addresses internal scholarly divergence and evidence-based reasoning, suitable for a specialist audience.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between unanimously accepted (maslaha mu'tabara), rejected (maslaha mulgha), and contested (maslaha mursala) concepts. It notes that maslaha mursala is 'the heart of the debate' and explicitly contrasts Maliki and Hanafi positions without presenting either as settled fact. It avoids uniform confidence by highlighting methodological differences and conditions, though it could more explicitly flag evidential status nuances.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Arabic terminology (uṣūl al-fiqh, maslaha, Maqāṣid al-Sharīʿah, qiyas, istihsan) and frameworks specific to Islamic legal theory, referencing scholars like al-Ghazali and al-Shatibi. It stays within the tradition without substituting Western or Anglophone framings, adhering to the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates thorough, accurate, and well-situated knowledge of Islamic legal theory, effectively contrasting Maliki and Hanafi positions on maslaha.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates thorough, accurate, and well-situated knowledge of Islamic legal theory, effectively contrasting Maliki and Hanafi positions on maslaha.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses learner range implicitly through references to 'pupils with SEND' and 'vulnerable learners', and impacts on their support. However, it does not propose specific, low-cost differentiation strategies; instead, it focuses on budget harms. There is no substantive differentiation content, only generic mentions of impact, so it is minimal engagement.",
+    "pathway_breadth": "The item does not involve student pathway guidance; it is about staffing budget reduction. As per rubric, score on inclusivity of learners. The response mentions 'pupils with SEND' and 'vulnerable learners' in Option 1 damages, showing consideration for diverse needs, but it is not deeply developed. It acknowledges impact but lacks concrete adaptations, making it partial engagement.",
+    "pedagogical_soundness": "The response is an options paper for budget reduction, not a pedagogical plan. It contains no learning objectives, activities, assessments, or rubrics. The rubric dimension is about educational soundness of teaching approaches, which is not applicable here. Therefore, it does not engage with this dimension at all.",
+    "workload_realism": "The response provides specific options for budget reduction in a 400-pupil primary school with class size constraint of ≤30. It addresses staffing roles (TAs, leadership), mentions realistic constraints like 'increased workload for remaining staff' and 'timetable adjustments', and proposes a blended approach that appears feasible within the school context. However, it lacks precise cost calculations ('£[insert exact amount if known]') and detailed implementation timelines, making it partial but not fully specific."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 0,
+    "workload_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00093368,
+  "judge_latency_s": 18.822,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response is an options paper for budget reduction, not a pedagogical plan. It contains no learning objectives, activities, assessments, or rubrics. The rubric dimension is about educational soundness of teaching approaches, which is not applicable here. Therefore, it does not engage with this dimension at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides specific options for budget reduction in a 400-pupil primary school with class size constraint of ≤30. It addresses staffing roles (TAs, leadership), mentions realistic constraints like 'increased workload for remaining staff' and 'timetable adjustments', and proposes a blended approach that appears feasible within the school context. However, it lacks precise cost calculations ('£[insert exact amount if known]') and detailed implementation timelines, making it partial but not fully specific.\",\n      \"score\": 2\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student pathway guidance; it is about staffing budget reduction. As per rubric, score on inclusivity of learners. The response mentions 'pupils with SEND' and 'vulnerable learners' in Option 1 damages, showing consideration for diverse needs, but it is not deeply developed. It acknowledges impact but lacks concrete adaptations, making it partial engagement.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses learner range implicitly through references to 'pupils with SEND' and 'vulnerable learners', and impacts on their support. However, it does not propose specific, low-cost differentiation strategies; instead, it focuses on budget harms. There is no substantive differentiation content, only generic mentions of impact, so it is minimal engagement.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response provides a structured options paper with cost-saving ideas and a clear recommendation, but lacks precise financial details and deep inclusivity measures.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a structured options paper with cost-saving ideas and a clear recommendation, but lacks precise financial details and deep inclusivity measures.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 30.0
+}

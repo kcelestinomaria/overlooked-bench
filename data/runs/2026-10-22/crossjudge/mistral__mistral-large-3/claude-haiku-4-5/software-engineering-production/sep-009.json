@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "All fixable in <30 minutes",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response provides a prioritized list of MUST FIX items with corrected code snippets for each issue.\n2. It includes concrete changes (e.g., signature verification order, null checks, idempotency) and exact code to implement them.\n3. The follow-up items are clearly separated, ensuring the PR can be merged today.\n4. An engineer could start implementing the changes immediately with minimal editing.\nEvidence: Corrected code blocks for each issue, e.g., 'Verify signature **first**, before touching the database' and the full corrected handler code.",
+    "constraint_fidelity": "1. The response explicitly states no new dependencies are added (only uses standard library and existing dependencies like `hmac`, `hashlib`, `json`).\n2. No new infrastructure is proposed; all changes fit within the existing FastAPI and PostgreSQL setup.\n3. The response states all required changes are fixable in under 30 minutes, well within the 3-hour constraint, and separates follow-ups into a separate list.\n4. The corrected code does not introduce any new packages or services, and the arithmetic (time/effort) is clearly within bounds.\nEvidence: 'All fixable in <30 minutes' and no new dependencies or infrastructure are mentioned or implied.",
+    "maintainability": "1. The changes are proportionate to the team size (20-person fintech) and do not add unnecessary complexity.\n2. Risks (e.g., SMS failures, missing orders) are explicitly stated and handled, not hidden.\n3. The solution uses existing dependencies and avoids clever or obscure code.\n4. The follow-up list ensures long-term maintainability (e.g., monitoring, audit table).\nEvidence: 'Don't fail the webhook—Paystack will retry', 'Skip if already processed', and the follow-up list for reconciliation and monitoring.",
+    "production_realism": "1. The response addresses critical production concerns: signature verification before state change, idempotency, null checks, and logging sensitive data.\n2. It accounts for failure modes like missing orders, SMS failures, and webhook retries, which are realistic at the stated scale.\n3. The operational burden is minimal (no new infrastructure or dependencies) and fits the team's skill mix.\n4. The response avoids assumptions about operational capacity (e.g., no Celery or Redis) and works within the existing stack.\nEvidence: 'Skip if already processed', 'Don't fail the webhook—Paystack will retry', and 'SMS failures shouldn't block webhook acknowledgment'."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-009",
+  "judge_cost_usd": 0.0021176,
+  "judge_latency_s": 9.94,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states no new dependencies are added (only uses standard library and existing dependencies like `hmac`, `hashlib`, `json`).\\n2. No new infrastructure is proposed; all changes fit within the existing FastAPI and PostgreSQL setup.\\n3. The response states all required changes are fixable in under 30 minutes, well within the 3-hour constraint, and separates follow-ups into a separate list.\\n4. The corrected code does not introduce any new packages or services, and the arithmetic (time/effort) is clearly within bounds.\\nEvidence: 'All fixable in <30 minutes' and no new dependencies or infrastructure are mentioned or implied.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response addresses critical production concerns: signature verification before state change, idempotency, null checks, and logging sensitive data.\\n2. It accounts for failure modes like missing orders, SMS failures, and webhook retries, which are realistic at the stated scale.\\n3. The operational burden is minimal (no new infrastructure or dependencies) and fits the team's skill mix.\\n4. The response avoids assumptions about operational capacity (e.g., no Celery or Redis) and works within the existing stack.\\nEvidence: 'Skip if already processed', 'Don't fail the webhook—Paystack will retry', and 'SMS failures shouldn't block webhook acknowledgment'.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response provides a prioritized list of MUST FIX items with corrected code snippets for each issue.\\n2. It includes concrete changes (e.g., signature verification order, null checks, idempotency) and exact code to implement them.\\n3. The follow-up items are clearly separated, ensuring the PR can be merged today.\\n4. An engineer could start implementing the changes immediately with minimal editing.\\nEvidence: Corrected code blocks for each issue, e.g., 'Verify signature **first**, before touching the database' and the full corrected handler code.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The changes are proportionate to the team size (20-person fintech) and do not add unnecessary complexity.\\n2. Risks (e.g., SMS failures, missing orders) are explicitly stated and handled, not hidden.\\n3. The solution uses existing dependencies and avoids clever or obscure code.\\n4. The follow-up list ensures long-term maintainability (e.g., monitoring, audit table).\\nEvidence: 'Don't fail the webhook—Paystack will retry', 'Skip if already processed', and the follow-up list for reconciliation and monitoring.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint fidelity and actionability, providing corrected code and clear priorities for a same-day merge.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"All fixable in <30 minutes\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is a model of constraint fidelity and actionability, providing corrected code and clear priorities for a same-day merge.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific scholars (Isozaki, Watsuji), methodological concepts (spatiotemporal unity, relationality), and internal debates (e.g., Western reductionism vs. Japanese holism). It discusses evidence from performing arts, architecture, and philosophy, and a specialist would recognize this as informed by the literature, not just summaries.",
+    "domain_accuracy": "The response makes substantive claims that are accurate: it correctly identifies Isozaki Arata's 1978 exhibition, Watsuji Tetsurō's concept of 'aida' and 'ningen', the Shinto and Buddhist origins, and the performative tension in Noh/Kabuki. It avoids invented citations or terms, and the comparisons (e.g., Heidegger's 'Lichtung') are legitimate scholarly references. Minor quibbles exist (e.g., the kanji etymology is debated, but it's presented as historical context, not fact), but overall, the claims are correct and well-supported.",
+    "field_situatedness": "The response uses Japanese frameworks (e.g., 'jikūkan', 'aida', 'ki', Shinto/Buddhist contexts) and terminology directly from Japanese scholarship. It contrasts these with Western frameworks (Cartesian dualism, phenomenology) without substituting them, and emphasizes the indigenous lineage. It accurately situates the discussion within Japanese aesthetic and philosophical traditions.",
+    "scholarly_calibration": "The response distinguishes well-established elements (e.g., the spatiotemporal nature, Watsuji's contribution) from contested or nuanced aspects (e.g., Western exoticization, architectural adoption). It notes that Western treatments 'often' or 'historically' differ, implying variability, and concludes with contemporary bridging efforts, showing awareness of evolving scholarship. It avoids presenting any single view as settled fact."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00110035,
+  "judge_latency_s": 54.502,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that are accurate: it correctly identifies Isozaki Arata's 1978 exhibition, Watsuji Tetsurō's concept of 'aida' and 'ningen', the Shinto and Buddhist origins, and the performative tension in Noh/Kabuki. It avoids invented citations or terms, and the comparisons (e.g., Heidegger's 'Lichtung') are legitimate scholarly references. Minor quibbles exist (e.g., the kanji etymology is debated, but it's presented as historical context, not fact), but overall, the claims are correct and well-supported.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific scholars (Isozaki, Watsuji), methodological concepts (spatiotemporal unity, relationality), and internal debates (e.g., Western reductionism vs. Japanese holism). It discusses evidence from performing arts, architecture, and philosophy, and a specialist would recognize this as informed by the literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established elements (e.g., the spatiotemporal nature, Watsuji's contribution) from contested or nuanced aspects (e.g., Western exoticization, architectural adoption). It notes that Western treatments 'often' or 'historically' differ, implying variability, and concludes with contemporary bridging efforts, showing awareness of evolving scholarship. It avoids presenting any single view as settled fact.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Japanese frameworks (e.g., 'jikūkan', 'aida', 'ki', Shinto/Buddhist contexts) and terminology directly from Japanese scholarship. It contrasts these with Western frameworks (Cartesian dualism, phenomenology) without substituting them, and emphasizes the indigenous lineage. It accurately situates the discussion within Japanese aesthetic and philosophical traditions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate engagement with Japanese scholarship on 'ma' and a nuanced contrast with Western interpretations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate engagement with Japanese scholarship on 'ma' and a nuanced contrast with Western interpretations.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

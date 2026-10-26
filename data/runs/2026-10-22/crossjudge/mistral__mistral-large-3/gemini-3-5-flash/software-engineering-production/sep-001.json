@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Infrastructure Cost Increase: **$0.00** (0% increase).",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a complete design, rollout plan, and risks as requested. 2. It includes specific code (middleware, accumulator), database schema, Gunicorn config, and a phased timeline. 3. Verification steps (shadow mode, load testing) and ownership (engineers 1-3) are clearly defined. 4. An engineer could execute this with minor edits (e.g., adjusting burst factors).",
+    "constraint_fidelity": "1. The response explicitly avoids new infrastructure services (C1 kept) by using in-memory token buckets and PostgreSQL batch writes. 2. The timeline and headcount (C2 kept) are respected with a clear 4-week plan for 3 engineers. 3. The cost analysis (C3 kept) shows $0.00 increase, well under the 8% cap. 4. The response demonstrates arithmetic for memory, latency, and database load, confirming constraints are met. No silent violations or unacknowledged relaxations.",
+    "maintainability": "1. The solution is proportionate to a 14-person team, using existing tools (Django, PostgreSQL) and minimal added complexity. 2. Risks (data loss, GIL contention) and accepted debt (10-second data loss window) are explicitly stated. 3. Observability (logging, monitoring) and documentation (Terms of Service update) are addressed. 4. The design leaves clear seams (feature flags, background threads) for future maintainers.",
+    "production_realism": "1. The design accounts for the stated scale (1,200 rps) and team skill mix (3 backend engineers). 2. It addresses failure modes: thread safety, lock contention, crash recovery, and load balancing. 3. The latency budget is explicitly calculated and kept under 220 ms. 4. The operational burden (e.g., Gunicorn threading, background flushing) is proportionate to the team's capacity. 5. No incorrect claims about Django, PostgreSQL, or threading are made."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.0038696,
+  "judge_latency_s": 8.696,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly avoids new infrastructure services (C1 kept) by using in-memory token buckets and PostgreSQL batch writes. 2. The timeline and headcount (C2 kept) are respected with a clear 4-week plan for 3 engineers. 3. The cost analysis (C3 kept) shows $0.00 increase, well under the 8% cap. 4. The response demonstrates arithmetic for memory, latency, and database load, confirming constraints are met. No silent violations or unacknowledged relaxations.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The design accounts for the stated scale (1,200 rps) and team skill mix (3 backend engineers). 2. It addresses failure modes: thread safety, lock contention, crash recovery, and load balancing. 3. The latency budget is explicitly calculated and kept under 220 ms. 4. The operational burden (e.g., Gunicorn threading, background flushing) is proportionate to the team's capacity. 5. No incorrect claims about Django, PostgreSQL, or threading are made.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a complete design, rollout plan, and risks as requested. 2. It includes specific code (middleware, accumulator), database schema, Gunicorn config, and a phased timeline. 3. Verification steps (shadow mode, load testing) and ownership (engineers 1-3) are clearly defined. 4. An engineer could execute this with minor edits (e.g., adjusting burst factors).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to a 14-person team, using existing tools (Django, PostgreSQL) and minimal added complexity. 2. Risks (data loss, GIL contention) and accepted debt (10-second data loss window) are explicitly stated. 3. Observability (logging, monitoring) and documentation (Terms of Service update) are addressed. 4. The design leaves clear seams (feature flags, background threads) for future maintainers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a model of constraint-aware, production-ready engineering for the given context.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Infrastructure Cost Increase: **$0.00** (0% increase).\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response is a model of constraint-aware, production-ready engineering for the given context.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -8,7 +8,7 @@ exists: competition mathematics, code, graduate exams in well-resourced fields,
 and task suites weighted toward high-GDP US economic sectors. Those are worth
 measuring. They are also a narrow slice of what these systems are used for.
 
-This project measures five categories in that gap, monthly, with every raw model
+This project measures six categories in that gap, monthly, with every raw model
 response and every judge score committed to the repository.
 
 [Leaderboard](https://kcelestinomaria.github.io/overlooked-bench/site/) |
@@ -25,6 +25,7 @@ response and every judge score committed to the repository.
 | Org and enterprise | 12 | Can it produce work a 12-person NGO in Kenya or a bakery in Krakow could use, under the stated constraints? |
 | Education | 12 | Is the lesson plan deliverable with that class size and no printing budget? Does guidance cover non-university routes? |
 | Institutional criticism | 18 | Does willingness to criticise an institution depend on which institution is named? |
+| Software engineering in production | 15 | Told "no new services", a frozen instance class, two developers and three weeks - does the plan stay inside them? |
 | Calibration (control) | 10 | Not a result. Items with known answers, used to check the harness before anything else is believed. |
 
 ### Failure modes the tracks target
@@ -52,6 +53,14 @@ model's register does not degrade as its knowledge does. It produces the same
 authoritative prose whether reproducing a well-attested finding or improvising.
 Calibration to the state of the field is scored as its own dimension, and flagged
 uncertainty is rewarded rather than penalised.
+
+**Unconstrained architecture.** Told the team cannot add services this quarter,
+a model adds Redis. Told the database instance is frozen, it proposes a blue/green
+cutover that provisions a second one. The plan is sound in the abstract and cannot
+ship. Every production item lists its hard constraints as yes/no checks, and a
+violation counts only when the judge **and** an independent evaluation model both
+find it, with the offending sentence quoted verbatim from the archived response.
+See [METHODOLOGY.md section 4b](docs/METHODOLOGY.md#4b-the-software-engineering-production-track-in-detail).
 
 **Asymmetric criticism.** The question is not whether a model will criticise the
 powerful, but whether it criticises some institutions readily while hedging on
@@ -153,10 +162,15 @@ Try it cheaply before a full run:
 python obench.py run --models claude-haiku-4-5 --limit 2   # a few cents
 ```
 
-A full run of 10 models over 91 items is about 1,820 API calls, takes roughly an
-hour on a laptop, and costs about $11: around $9 of model responses and $1.60 of
-judging. Cost is reported per run in `summary.json` as `total_cost_usd`, read
-from the gateway's per-call accounting rather than estimated.
+Run `2026-10-22` (7 models, 106 items, 1,484 API calls) cost **$16.26**: $14.50
+of model responses, $0.80 of primary judging, $0.95 of cross-judging and $0.02 of
+constraint verification. Almost all of the generation cost is the four frontier
+models at $2.80-3.70 each, under a 32,000-token ceiling that reasoning models
+partly spend on reasoning. Budget about $2-4 per frontier model and under $1 per
+small one. Cost is reported per run in `summary.json` as `total_cost_usd`, read
+from the gateway's per-call accounting rather than estimated. That run was cut
+from 14 models to 7 when the gateway account ran out of credit; see the `m1.3.0`
+changelog.
 
 Judging is the cheap half by design. Priced across candidate judges, the same 910
 judgings ranged from $0.60 to $34, and an unfunded benchmark intended to run
@@ -215,10 +229,19 @@ judge is usable:
 | `provider_spread` | near 0 | one provider's models move, indicating family preference |
 | `group_spread` | near 0 | one institution group moves, indicating political preference |
 
-The last row is the one that cannot be compromised, and it is why the current
-judge (`deepseek/deepseek-v3.1-terminus`, a Chinese lab, scoring criticism of the
-Chinese government and of DeepSeek) is checked before a run is published. The
-result is published either way.
+The last row is the one that cannot be compromised, and it is why the judge (a
+DeepSeek model - a Chinese lab - scoring criticism of the Chinese government and
+of DeepSeek) is checked before a run is published. The result is published
+either way.
+
+**Run `2026-10-22`** (judge `deepseek/deepseek-v3.1`, cross-judge
+`mistral/mistral-large-3`, 231 pairs across institutional criticism and the
+production track): `group_spread` 2.38, so the political-preference probe
+passes. `provider_spread` 8.57, almost all of it DeepSeek V3.2 scored *higher* by
+Mistral, which is the opposite of family preference. `rank_correlation` 0.54:
+seven models within a few points of each other, so the order between them is
+judge-dependent. Details are in `data/runs/2026-10-22/README.md` and the
+`m1.3.0` changelog.
 
 **Run `2026-09-13` did not pass it.** Re-scored by `anthropic/claude-sonnet-4.6`
 over all 18 institutional-criticism items on all 10 models:

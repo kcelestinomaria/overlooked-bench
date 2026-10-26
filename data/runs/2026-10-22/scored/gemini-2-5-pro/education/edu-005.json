@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses the learner range through group work with rotating roles (scribe, reporter, etc.), which allows for peer support. It uses physical activities ('Human Data') and observational tasks that are accessible without technology. Differentiation is concrete: groups work at their own pace, and the teacher monitors and guides. No generic 'differentiate as needed' language is used. The adaptations are implementable by one teacher with stated resources.",
+    "pathway_breadth": "The prompt is about designing a statistics scheme of work, not student futures or pathways. The response is inclusive of the learner range in the described setting (rural Malawi, large class, resource constraints) by using contextual examples (e.g., nsima, rice, chickens, local travel) and group work that engages all students. It does not default to US-centric examples.",
+    "pedagogical_soundness": "The response provides clear learning objectives for Week 1: defining statistics/data, differentiating categorical/numerical data, and collecting data. Activities align: 'Human Data' activity builds understanding of data types through physical grouping, 'Question Creators' reinforces categorization, and 'Class Census' practices data collection. Assessment is through in-class activities and notebook entries, which measure the objectives at an appropriate cognitive level (understanding and applying). Sequencing is logical: introduction to concepts, then practice, then application. No rubrics are provided, so that step is not applicable.",
+    "workload_realism": "The response accounts for all constraints: no electricity (uses chalkboard), no printing (uses notebooks), one textbook per four students (groups of four share). Activities are feasible for 55 students through group work (~14 groups). Timings sum to 135 minutes for Week 1 (three 45-minute lessons), which is reasonable. Materials are locally available (chalk, notebooks, pens). Preparation and marking load is low (monitoring group work, reviewing notebooks). No technology or printing is assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-005",
+  "judge_cost_usd": 0.00172429,
+  "judge_latency_s": 54.229,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides clear learning objectives for Week 1: defining statistics/data, differentiating categorical/numerical data, and collecting data. Activities align: 'Human Data' activity builds understanding of data types through physical grouping, 'Question Creators' reinforces categorization, and 'Class Census' practices data collection. Assessment is through in-class activities and notebook entries, which measure the objectives at an appropriate cognitive level (understanding and applying). Sequencing is logical: introduction to concepts, then practice, then application. No rubrics are provided, so that step is not applicable.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response accounts for all constraints: no electricity (uses chalkboard), no printing (uses notebooks), one textbook per four students (groups of four share). Activities are feasible for 55 students through group work (~14 groups). Timings sum to 135 minutes for Week 1 (three 45-minute lessons), which is reasonable. Materials are locally available (chalk, notebooks, pens). Preparation and marking load is low (monitoring group work, reviewing notebooks). No technology or printing is assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about designing a statistics scheme of work, not student futures or pathways. The response is inclusive of the learner range in the described setting (rural Malawi, large class, resource constraints) by using contextual examples (e.g., nsima, rice, chickens, local travel) and group work that engages all students. It does not default to US-centric examples.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses the learner range through group work with rotating roles (scribe, reporter, etc.), which allows for peer support. It uses physical activities ('Human Data') and observational tasks that are accessible without technology. Differentiation is concrete: groups work at their own pace, and the teacher monitors and guides. No generic 'differentiate as needed' language is used. The adaptations are implementable by one teacher with stated resources.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excellently addresses all constraints and provides a pedagogically sound, realistic plan for teaching statistics in a resource-limited setting.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response excellently addresses all constraints and provides a pedagogically sound, realistic plan for teaching statistics in a resource-limited setting.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

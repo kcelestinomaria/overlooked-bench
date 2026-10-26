@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1178,
+  "cost_usd": 0.006021,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "fc43c905ce874d10",
+  "item_id": "org-002",
+  "latency_s": 13.16,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 131,
+  "provider": "anthropic",
+  "request_fingerprint": "3bba49cb3d16d90d",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "# GO/NO-GO ANALYSIS: SECOND BAKERY LOCATION\n**Kraków-based Family Bakery Expansion**\n\n---\n\n## EXECUTIVE SUMMARY\n**RECOMMENDATION: CONDITIONAL GO** – Expansion is viable if management can secure debt financing and the new location achieves 70% of flagship revenue within 18 months. Without additional capital beyond PLN 250k, the project carries unacceptable risk.\n\n---\n\n## FINANCIAL FOUNDATION\n\n| Metric | Value |\n|--------|-------|\n| Current Annual Revenue | PLN 1.4m |\n| Net Profit (8% margin) | PLN 112,000 |\n| Available Capital | PLN 250,000 |\n| Estimated Build-out Cost | PLN 350–450k |\n| **Funding Gap** | **PLN 100–200k** |\n\n---\n\n## REALISTIC FINANCING OPTIONS IN POLAND\n\n1. **Bank Loan (Primary Option)**\n   - PKO BP, ING, Santander offer SME loans up to PLN 500k at 6–8% for established businesses\n   - Requirement: 2–3 years audited financials (✓ available), personal guarantees\n   - Timeline: 4–6 weeks\n   - **Realistic amount: PLN 150–200k**\n\n2. **Government-Backed Lending**\n   - BGK (Bank Gospodarstwa Krajowego) SME programs offer favorable terms\n   - PARP (Polish Agency for Enterprise Development) subsidized loans for expansion\n   - **Realistic amount: PLN 50–100k (supplementary)**\n\n3. **Supplier Credit**\n   - Equipment manufacturers (ovens, display cases) often offer 12–24 month terms\n   - **Realistic amount: PLN 30–50k**\n\n4. **Leasing (Equipment)**\n   - Reduces upfront capex; monthly payments ~PLN 3–5k for bakery equipment\n   - **Realistic amount: PLN 80–120k equivalent**\n\n**Recommended Mix:** PLN 250k equity + PLN 150k bank loan + PLN 50k supplier credit + PLN 50k equipment leasing = **PLN 500k total** (sufficient for location, equipment, working capital, 3-month buffer).\n\n---\n\n## BREAK-EVEN ANALYSIS\n\n**Assumptions:**\n- New location build-out: PLN 400k (rent deposit, kitchen, POS, permits)\n- Monthly fixed costs: PLN 35k (rent PLN 12k, utilities PLN 3k, staff PLN 18k, insurance/other PLN 2k)\n- Gross margin: 65% (standard for bakery retail)\n- Debt service: PLN 8k/month (PLN 200k loan @ 7% over 5 years)\n\n**Monthly Break-Even Revenue:**\n- Fixed costs + debt service = PLN 43k\n- Required gross profit = PLN 43k ÷ 0.65 = **PLN 66,200/month**\n- **Annual break-even: PLN 794,400 (~57% of flagship location)**\n\n**Safe Target:** PLN 980,000 annually (70% of flagship) = **PLN 81,700/month** to cover debt, reinvestment, and owner draw.\n\n---\n\n## TWO CRITICAL RISKS\n\n### 1. **LOCATION SELECTION & CANNIBALIZATION** (Probability: High)\n- Kraków's bakery market is saturated; poor site selection could capture existing customers rather than new demand\n- **Mitigation:** Commission professional site analysis (PLN 5–10k); target underserved neighborhoods or commuter hubs, not city center\n- **Impact if realized:** New location reaches only PLN 400k revenue; debt becomes unsustainable; forces closure within 24 months\n\n### 2. **OPERATIONAL OVEREXTENSION** (Probability: High)\n- 6-person team cannot simultaneously manage two locations; requires hiring/training 4–5 new staff\n- Bakery operations demand early mornings, quality control, and owner presence—difficult to replicate\n- **Mitigation:** Hire experienced shift manager (PLN 5–6k/month salary) 2 months before opening; implement standardized recipes/processes; plan for 6-month ramp-up\n- **Impact if realized:** Quality drops, customer dissatisfaction, staff turnover; flagship location suffers; both locations underperform\n\n---\n\n## CONDITIONS FOR GO DECISION\n\n✓ Secure PLN 150k+ bank financing within 8 weeks  \n✓ Identify location with demographic/traffic analysis showing 40%+ new customer potential  \n✓ Hire and train operations manager before opening  \n✓ Maintain PLN 50k emergency reserve (not deployed to expansion)  \n✓ Achieve PLN 980k annual revenue by month 18, or trigger exit strategy\n\n**Timeline:** 3 months planning/financing → 2 months build-out → Month 6 opening → Month 18 evaluation",
+  "timestamp_utc": "2026-10-21T23:35:41Z"
+}

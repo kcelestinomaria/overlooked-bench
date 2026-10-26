@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "Set up logical replication publication on original table",
+      "evidence_verified": true,
+      "verdict": "violated"
+    },
+    "C3": {
+      "evidence": "Migration Execution (Weeks 2-3)",
+      "evidence_verified": true,
+      "verdict": "violated"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed plan with steps, timelines, and SQL commands, but many steps are vague (e.g., 'custom batch process', 'join queries during low traffic') and it proposes infeasible methods like logical replication. It includes verification steps but the plan is not executable due to constraint violations.",
+    "constraint_fidelity": "The response violates constraint C2 by proposing logical replication which requires a new instance/replica ('Create subscription to shipment_events_new', 'logical replication publication'), and violates C3 by proposing a 28-day plan with no immediate stopgap for the 32-day runway. It does not acknowledge these constraint breaks, making them silent violations.",
+    "maintainability": "The response adds significant complexity (partitioning, logical replication) that a team with part-time DBA cannot maintain. It does not state risks or debt explicitly, and the partitioning strategy is disproportionate to the team's skills. The plan leaves unowned moving parts like replication setup.",
+    "production_realism": "The response ignores the team's limited resources (2 backend engineers, part-time DBA) by proposing complex logical replication and partitioning which require significant DBA expertise. It suggests using a replica ('Read-only queries on replica') despite no replica being available per constraints. The plan lacks specifics on throttling, retries, or monitoring for a 2-vCPU instance."
+  },
+  "dimension_scores": {
+    "actionability": 2,
+    "constraint_fidelity": 0,
+    "maintainability": 1,
+    "production_realism": 1
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-008",
+  "judge_cost_usd": 0.00120295,
+  "judge_latency_s": 11.396,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response violates constraint C2 by proposing logical replication which requires a new instance/replica ('Create subscription to shipment_events_new', 'logical replication publication'), and violates C3 by proposing a 28-day plan with no immediate stopgap for the 32-day runway. It does not acknowledge these constraint breaks, making them silent violations.\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response ignores the team's limited resources (2 backend engineers, part-time DBA) by proposing complex logical replication and partitioning which require significant DBA expertise. It suggests using a replica ('Read-only queries on replica') despite no replica being available per constraints. The plan lacks specifics on throttling, retries, or monitoring for a 2-vCPU instance.\",\n      \"score\": 1\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed plan with steps, timelines, and SQL commands, but many steps are vague (e.g., 'custom batch process', 'join queries during low traffic') and it proposes infeasible methods like logical replication. It includes verification steps but the plan is not executable due to constraint violations.\",\n      \"score\": 2\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response adds significant complexity (partitioning, logical replication) that a team with part-time DBA cannot maintain. It does not state risks or debt explicitly, and the partitioning strategy is disproportionate to the team's skills. The plan leaves unowned moving parts like replication setup.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response proposes a technically detailed but constraint-violating plan that is infeasible for the given team and infrastructure.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Set up logical replication publication on original table\"\n    },\n    \"C3\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Migration Execution (Weeks 2-3)\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response proposes a technically detailed but constraint-violating plan that is infeasible for the given team and infrastructure.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 21.25
+}

@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses varied literacy levels through differentiated handouts (Level 1, 2, 3 forms) and instructor facilitation (circulating to support struggling, challenging advanced learners). It encourages peer support and uses low-cost adaptations like large-print handouts. It accounts for irregular attendance by being self-contained and not requiring prior knowledge. The plan is implementable by one practitioner with stated resources.",
+    "pathway_breadth": "The prompt involves adult literacy for practical goals (helping children, driving licence), not academic pathways. The response focuses on life skills like form-filling, which directly supports vocational and practical needs (e.g., job applications, driving licences) rather than defaulting to academic tracks. It is inclusive of diverse adult motivations and treats them substantively with real-world examples.",
+    "pedagogical_soundness": "The response states clear learning objectives: identify form vocabulary, write personal information, attempt a form, and set a personal goal. Activities align: vocabulary handout and modeling build vocabulary, guided practice builds writing skills, individual form practice builds completion ability, and goal-setting connects to motivation. Assessment is formative through observation and sharing, matching the objectives. Sequencing is coherent with welcome, instruction, practice, and wrap-up. Cognitive demand is appropriate for adult literacy learners.",
+    "workload_realism": "Timings sum to 90 minutes (15+20+40+15). Materials are realistic: whiteboard, name tags, handouts, pens—all feasible in a typical adult literacy setting. Preparation involves creating handouts, which is reasonable. Marking is minimal as it's observational. The plan scales by using pair/group work for larger classes and one-on-one for smaller, which is feasible for one instructor. No unrealistic technology or resources are assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-009",
+  "judge_cost_usd": 0.0012361,
+  "judge_latency_s": 52.471,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states clear learning objectives: identify form vocabulary, write personal information, attempt a form, and set a personal goal. Activities align: vocabulary handout and modeling build vocabulary, guided practice builds writing skills, individual form practice builds completion ability, and goal-setting connects to motivation. Assessment is formative through observation and sharing, matching the objectives. Sequencing is coherent with welcome, instruction, practice, and wrap-up. Cognitive demand is appropriate for adult literacy learners.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 90 minutes (15+20+40+15). Materials are realistic: whiteboard, name tags, handouts, pens—all feasible in a typical adult literacy setting. Preparation involves creating handouts, which is reasonable. Marking is minimal as it's observational. The plan scales by using pair/group work for larger classes and one-on-one for smaller, which is feasible for one instructor. No unrealistic technology or resources are assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves adult literacy for practical goals (helping children, driving licence), not academic pathways. The response focuses on life skills like form-filling, which directly supports vocational and practical needs (e.g., job applications, driving licences) rather than defaulting to academic tracks. It is inclusive of diverse adult motivations and treats them substantively with real-world examples.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses varied literacy levels through differentiated handouts (Level 1, 2, 3 forms) and instructor facilitation (circulating to support struggling, challenging advanced learners). It encourages peer support and uses low-cost adaptations like large-print handouts. It accounts for irregular attendance by being self-contained and not requiring prior knowledge. The plan is implementable by one practitioner with stated resources.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly practical, flexible, and relevant lesson plan tailored to adult learners' real-world needs and constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a highly practical, flexible, and relevant lesson plan tailored to adult learners' real-world needs and constraints.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

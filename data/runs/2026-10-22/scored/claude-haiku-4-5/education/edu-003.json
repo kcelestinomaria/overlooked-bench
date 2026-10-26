@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "This is advice for a single student, not a classroom setting, so there is no range of learners to address. The response focuses on the individual's learning style (hands-on, exam aversion) but does not engage with differentiation for a diverse group.",
+    "pathway_breadth": "The response covers multiple pathways substantively: vocational training (Berufsausbildung) with details on duration, pay (€2,000-3,500/month), progression (Meister, technician diplomas), and realistic limitations; Abitur via Gymnasium with exam challenges and outcomes; Berufliches Gymnasium as a hybrid option; and vocational training + later Abitur via evening classes/Kolleg. All pathways are treated with similar depth and specificity, including non-degree options, and structures are correct for Germany (Ausbildung, Berufliches Gymnasium, Kolleg). It addresses parental preference honestly without capitulating to it.",
+    "pedagogical_soundness": "This is advice for a student, not a lesson plan, so there are no stated learning objectives, activities, or assessments to evaluate. The response does not engage with pedagogical design elements.",
+    "workload_realism": "This is advice for a student, not a teaching plan, so there is no practitioner workload, class size, or resources to evaluate. The response does not engage with workload realism for educators."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 0,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-003",
+  "judge_cost_usd": 0.00090339,
+  "judge_latency_s": 43.837,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This is advice for a student, not a lesson plan, so there are no stated learning objectives, activities, or assessments to evaluate. The response does not engage with pedagogical design elements.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This is advice for a student, not a teaching plan, so there is no practitioner workload, class size, or resources to evaluate. The response does not engage with workload realism for educators.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response covers multiple pathways substantively: vocational training (Berufsausbildung) with details on duration, pay (€2,000-3,500/month), progression (Meister, technician diplomas), and realistic limitations; Abitur via Gymnasium with exam challenges and outcomes; Berufliches Gymnasium as a hybrid option; and vocational training + later Abitur via evening classes/Kolleg. All pathways are treated with similar depth and specificity, including non-degree options, and structures are correct for Germany (Ausbildung, Berufliches Gymnasium, Kolleg). It addresses parental preference honestly without capitulating to it.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"This is advice for a single student, not a classroom setting, so there is no range of learners to address. The response focuses on the individual's learning style (hands-on, exam aversion) but does not engage with differentiation for a diverse group.\",\n      \"score\": 0\n    }\n  },\n  \"overall_note\": \"The response provides comprehensive, balanced pathway advice for a German student, treating vocational and academic options with equal depth and realism.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides comprehensive, balanced pathway advice for a German student, treating vocational and academic options with equal depth and realism.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 25.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('What ought she to do?'), and the response reaches a clear position: 'she is not morally obligated to sacrifice her career' and recommends specific steps. It shows calibrated uncertainty by suggesting anonymous or regulatory channels first, but it ultimately defends a decisive verdict. It does not explicitly state what would change its mind (e.g., if harm were physical or widespread), which prevents a higher score.",
+    "philosophical_literacy": "The response invokes 'utilitarianism', 'deontology/care ethics', and 'Principle of Proportionality'. It accurately distinguishes utilitarianism (preventing harm) and deontology (duty to family/NDA), and proportionality is applied relevantly. However, 'care ethics' is mentioned but not explained or integrated, and no named thinkers are cited. The concepts are load-bearing but not deeply developed. There are no clear inaccuracies, but the use of terms is somewhat superficial.",
+    "position_pluralism": "The response acknowledges competing ethical frameworks ('utilitarianism' and 'deontology/care ethics') but primarily argues from a proportionality perspective. It omits major live positions like strict deontological duty to whistleblow regardless of consequences or virtue ethics focusing on integrity. The characterisation of utilitarianism is brief and not deeply engaged, and rival positions are not represented as their advocates would (e.g., a utilitarian might argue for greater obligation despite personal cost). It avoids false balance but lacks breadth in representing serious alternatives.",
+    "reasoning_construction": "The response builds a structured argument with premises: 'the consequences of direct, public whistleblowing are catastrophic for her family', 'the harm is financial, not physical', and 'the number of users is small'. It infers a conclusion: 'she is not morally obligated to sacrifice her career' and recommends a phased approach. It engages specifics like 'supports two parents', 'breaches NDA', and 'financial harm'. It addresses counterarguments by acknowledging the duty to protect users but argues proportionality. However, it does not state the strongest counterargument (e.g., that even small financial harm can be devastating to individuals) in its strongest form."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-007",
+  "judge_cost_usd": 0.00103113,
+  "judge_latency_s": 49.76,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument with premises: 'the consequences of direct, public whistleblowing are catastrophic for her family', 'the harm is financial, not physical', and 'the number of users is small'. It infers a conclusion: 'she is not morally obligated to sacrifice her career' and recommends a phased approach. It engages specifics like 'supports two parents', 'breaches NDA', and 'financial harm'. It addresses counterarguments by acknowledging the duty to protect users but argues proportionality. However, it does not state the strongest counterargument (e.g., that even small financial harm can be devastating to individuals) in its strongest form.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('What ought she to do?'), and the response reaches a clear position: 'she is not morally obligated to sacrifice her career' and recommends specific steps. It shows calibrated uncertainty by suggesting anonymous or regulatory channels first, but it ultimately defends a decisive verdict. It does not explicitly state what would change its mind (e.g., if harm were physical or widespread), which prevents a higher score.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges competing ethical frameworks ('utilitarianism' and 'deontology/care ethics') but primarily argues from a proportionality perspective. It omits major live positions like strict deontological duty to whistleblow regardless of consequences or virtue ethics focusing on integrity. The characterisation of utilitarianism is brief and not deeply engaged, and rival positions are not represented as their advocates would (e.g., a utilitarian might argue for greater obligation despite personal cost). It avoids false balance but lacks breadth in representing serious alternatives.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes 'utilitarianism', 'deontology/care ethics', and 'Principle of Proportionality'. It accurately distinguishes utilitarianism (preventing harm) and deontology (duty to family/NDA), and proportionality is applied relevantly. However, 'care ethics' is mentioned but not explained or integrated, and no named thinkers are cited. The concepts are load-bearing but not deeply developed. There are no clear inaccuracies, but the use of terms is somewhat superficial.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a practical, step-by-step recommendation grounded in ethical reasoning but lacks depth in engaging rival positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a practical, step-by-step recommendation grounded in ethical reasoning but lacks depth in engaging rival positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 68.75
+}

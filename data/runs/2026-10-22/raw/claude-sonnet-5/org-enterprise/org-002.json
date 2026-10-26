@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1353,
+  "cost_usd": 0.01387,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "fc43c905ce874d10",
+  "item_id": "org-002",
+  "latency_s": 17.246,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 170,
+  "provider": "anthropic",
+  "request_fingerprint": "a135e4005bf54c16",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Go/No-Go Analysis: Second Bakery Location — Kraków\n\n## Current Financial Snapshot\n- Annual revenue: PLN 1.4m\n- Net margin: ~8% (~PLN 112,000 net profit/year)\n- Available capital: PLN 250,000 (no equity dilution desired)\n- Team: 6 people (likely stretched thin for multi-site management)\n\n## Financing Options (Poland, no equity dilution)\n\n| Option | Typical Terms | Fit for This Business |\n|---|---|---|\n| **BGK-guaranteed bank loan** (de minimis guarantee) | Guarantees up to 80% of loan via Bank Gospodarstwa Krajowego; partner banks (PKO BP, Santander, mBank) offer SME loans 3–5 yr terms, ~8-11% APR | **Best fit** — reduces collateral burden, widely used by small F&B businesses |\n| **EU/regional grants** (FENG, Fundusze Europejskie dla Małopolski 2021–2027) | Co-financing 30–60% for SME investment projects, often requires own contribution | Worth checking Małopolska regional calls; timeline risk (6-12mo processing) |\n| **Equipment leasing** | Ovens, proofers, display cases — 100% financing, fixed payments, VAT-deductible | Reduces upfront capex significantly; preserves cash for buildout/working capital |\n| **Merchant cash advance / revenue-based financing** | Based on card turnover (e.g., iuvo, Finiata-type lenders) | Fast but expensive (effective APR often 20-30%+); use only as bridge, not core financing |\n| **Supplier credit** | Extended payment terms from flour/dairy suppliers | Minor but helps working capital cushion |\n\n**Realistic stack:** PLN 250k own capital + BGK-guaranteed loan (PLN 150-250k) + equipment leasing for ovens/fixtures. This avoids equity dilution and matches typical Polish SME bakery financing patterns.\n\n## Break-Even Requirement for Site #2\n\nAssuming similar cost structure to current location:\n- Estimated fixed costs for new site (rent, staff, utilities): **PLN 25,000–30,000/month** (Kraków commercial rent + 3-4 staff)\n- At bakery-typical gross margins (~55-60% on COGS), site needs:\n\n**Break-even revenue ≈ PLN 45,000–52,000/month (PLN 540,000–625,000/year)**\n\nThis represents **~40% of current single-site revenue** — a realistic but non-trivial target requiring strong location selection and 12-18 months of ramp-up tolerance in the financial plan.\n\n## Two Risks Most Likely to Sink It\n\n1. **Management bandwidth collapse.** A 6-person team running two locations means either the owner splits attention (quality/consistency drops at both sites) or you hire a site manager immediately — adding payroll before revenue justifies it. This is the #1 killer of small-business second locations.\n\n2. **Debt service during ramp-up.** New bakeries typically take 6-12 months to reach break-even. If loan repayments start immediately on day one, cash flow from Site #1 will need to subsidize Site #2's losses — straining the 8% margin business that's already thin. A repayment holiday (grace period) on the BGK loan is essential, not optional.\n\n## Recommendation: **CONDITIONAL GO**\n\nProceed **only if**:\n- A BGK-guaranteed loan with 6-month grace period is secured\n- A dedicated site manager is hired/promoted *before* opening (non-negotiable)\n- Break-even is modeled at 18 months, not 12\n- Site #1's cash flow can absorb 6 months of Site #2 operating losses without disrupting payroll\n\nIf any of these conditions can't be met, **delay 6-12 months** to build the management structure and secure financing with better terms (e.g., via a Małopolska regional grant cycle) rather than launching undercapitalized and understaffed.",
+  "timestamp_utc": "2026-10-21T23:31:10Z"
+}

@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces the requested advice in usable form: it covers all required elements (primary vs. non-primary trading, small-scale exemption, subsidiary necessity, tax treatment, trustee duties) with concrete details like turnover thresholds, tax tables, and specific steps (e.g., 'check the governing document,' 'minute a risk assessment'). It could be taken into a trustee meeting with light editing, as it provides a structured plan rather than just describing the process.",
+    "constraint_fidelity": "The prompt specifies a charity in England and Wales with £320,000 annual income. The response respects all constraints: it uses UK-specific terms (HMRC, Charity Commission, GBP thresholds), correctly calculates the small trading exemption threshold as £80,000 (25% of £320,000), and does not assume additional resources. It explicitly addresses the charity's size and legal context without exceeding stated limitations.",
+    "contextual_realism": "The response is calibrated for a small charity: it acknowledges the need for professional advice due to limited in-house expertise, warns against undercapitalization, and emphasizes risk assessment and governance without assuming dedicated HR, legal, or procurement teams. It recognizes role overlap (e.g., trustees monitoring the subsidiary) and avoids recommending unaffordable tooling or unsustainable process overhead.",
+    "jurisdictional_accuracy": "The response is accurate for England and Wales: it references HMRC, Charity Commission guidance (CC35), Charities Act 2011, Companies Act 2006, and UK-specific thresholds (£80,000 exemption, £90,000 VAT registration). It avoids US assumptions (no mention of 501(c)(3), UBIT, or IRS) and provides substantive content while appropriately flagging areas for professional advice (e.g., VAT exemptions, legal compliance)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00112647,
+  "judge_latency_s": 40.731,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies a charity in England and Wales with £320,000 annual income. The response respects all constraints: it uses UK-specific terms (HMRC, Charity Commission, GBP thresholds), correctly calculates the small trading exemption threshold as £80,000 (25% of £320,000), and does not assume additional resources. It explicitly addresses the charity's size and legal context without exceeding stated limitations.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small charity: it acknowledges the need for professional advice due to limited in-house expertise, warns against undercapitalization, and emphasizes risk assessment and governance without assuming dedicated HR, legal, or procurement teams. It recognizes role overlap (e.g., trustees monitoring the subsidiary) and avoids recommending unaffordable tooling or unsustainable process overhead.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces the requested advice in usable form: it covers all required elements (primary vs. non-primary trading, small-scale exemption, subsidiary necessity, tax treatment, trustee duties) with concrete details like turnover thresholds, tax tables, and specific steps (e.g., 'check the governing document,' 'minute a risk assessment'). It could be taken into a trustee meeting with light editing, as it provides a structured plan rather than just describing the process.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is accurate for England and Wales: it references HMRC, Charity Commission guidance (CC35), Charities Act 2011, Companies Act 2006, and UK-specific thresholds (£80,000 exemption, £90,000 VAT registration). It avoids US assumptions (no mention of 501(c)(3), UBIT, or IRS) and provides substantive content while appropriately flagging areas for professional advice (e.g., VAT exemptions, legal compliance).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is excellent, providing specific, jurisdictionally accurate, and actionable advice tailored to a small charity's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response is excellent, providing specific, jurisdictionally accurate, and actionable advice tailored to a small charity's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces direct guidance for factory owners (not analysis), with concrete steps: document practices, create policies using provided templates, communicate with buyers, and use free resources. It includes specific components like templates, checklists, and next steps ('start documenting this week'), making it usable with light editing.",
+    "constraint_fidelity": "The prompt specifies small factories in Bangladesh with limited administrative capacity and inability to afford external consultants. The response respects these constraints by providing low-cost steps, using existing staff ('designate one person even part-time'), leveraging free resources (BGMEA, ILO), and avoiding recommendations for expensive consultants. It shows arithmetic through practical resource allocation rather than monetary calculations.",
+    "contextual_realism": "The response is calibrated for small factories: it assumes no dedicated compliance officer ('designate one person even part-time'), uses simple documentation methods (photos, logbooks), recommends free local resources (BGMEA, ILO), and avoids complex tooling or overhead. It acknowledges role overlap and limited capacity, e.g., 'keep records organized' and 'phased improvements'.",
+    "jurisdictional_accuracy": "The response references Bangladesh-specific resources (BGMEA, BKMEA, ILO guidelines in Bangla) and local context, avoiding US assumptions. It correctly notes Bangladesh's minimum wage and legal age limits (under 15, under 18 in hazardous roles), and does not assert US defaults. It provides substantive content rather than generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.0008611,
+  "judge_latency_s": 16.032,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies small factories in Bangladesh with limited administrative capacity and inability to afford external consultants. The response respects these constraints by providing low-cost steps, using existing staff ('designate one person even part-time'), leveraging free resources (BGMEA, ILO), and avoiding recommendations for expensive consultants. It shows arithmetic through practical resource allocation rather than monetary calculations.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories: it assumes no dedicated compliance officer ('designate one person even part-time'), uses simple documentation methods (photos, logbooks), recommends free local resources (BGMEA, ILO), and avoids complex tooling or overhead. It acknowledges role overlap and limited capacity, e.g., 'keep records organized' and 'phased improvements'.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces direct guidance for factory owners (not analysis), with concrete steps: document practices, create policies using provided templates, communicate with buyers, and use free resources. It includes specific components like templates, checklists, and next steps ('start documenting this week'), making it usable with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response references Bangladesh-specific resources (BGMEA, BKMEA, ILO guidelines in Bangla) and local context, avoiding US assumptions. It correctly notes Bangladesh's minimum wage and legal age limits (under 15, under 18 in hazardous roles), and does not assert US defaults. It provides substantive content rather than generic 'consult a lawyer' disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excellently addresses the needs of small Bangladeshi textile factories with practical, actionable, and jurisdictionally appropriate guidance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response excellently addresses the needs of small Bangladeshi textile factories with practical, actionable, and jurisdictionally appropriate guidance.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

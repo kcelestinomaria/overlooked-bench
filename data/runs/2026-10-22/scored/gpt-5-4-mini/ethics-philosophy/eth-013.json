@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states a position: 'Yes, it is coherent' and defends it with reasoning. It acknowledges uncertainty by distinguishing harm types and notes that force depends on moral weight ('the force of a will depends on whether we think...'), but does not explicitly state what would change its mind or where it is weakest. It avoids evasion and leans toward calibrated uncertainty.",
+    "philosophical_literacy": "The response uses accurate distinctions (experiential vs. interest-based harm) and correctly applies them to ethical concepts (wills, reputation). It invokes no named thinkers or technical terms beyond these, but the concepts are load-bearing and correct. No misattributions or garbled terms; reasoning is sound without reliance on citations.",
+    "position_pluralism": "The response acknowledges the opposing view ('death ends all possible harm') only briefly at the end and offers to present it later, but does not actually represent it or any other major live positions (e.g., Epicurean view, psychological continuity arguments) in the main argument. It focuses solely on the interest-based harm position without fair treatment of rivals, though it does not strawman or create false balance.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is 'Yes, it is coherent to say someone can be harmed after death' based on the premise that harm can be defined as defeat of interests rather than felt suffering, and applies this to promises, wills, and reputation. It engages specific details (e.g., promise-breaking, wills, reputation) and addresses the counterargument that death ends experiential harm, though it doesn't fully engage the strongest objection (e.g., whether interests can meaningfully persist without a subject). Inference is valid: interests survive death → their defeat constitutes harm."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 1,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-013",
+  "judge_cost_usd": 0.00088757,
+  "judge_latency_s": 47.233,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is 'Yes, it is coherent to say someone can be harmed after death' based on the premise that harm can be defined as defeat of interests rather than felt suffering, and applies this to promises, wills, and reputation. It engages specific details (e.g., promise-breaking, wills, reputation) and addresses the counterargument that death ends experiential harm, though it doesn't fully engage the strongest objection (e.g., whether interests can meaningfully persist without a subject). Inference is valid: interests survive death → their defeat constitutes harm.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states a position: 'Yes, it is coherent' and defends it with reasoning. It acknowledges uncertainty by distinguishing harm types and notes that force depends on moral weight ('the force of a will depends on whether we think...'), but does not explicitly state what would change its mind or where it is weakest. It avoids evasion and leans toward calibrated uncertainty.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges the opposing view ('death ends all possible harm') only briefly at the end and offers to present it later, but does not actually represent it or any other major live positions (e.g., Epicurean view, psychological continuity arguments) in the main argument. It focuses solely on the interest-based harm position without fair treatment of rivals, though it does not strawman or create false balance.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses accurate distinctions (experiential vs. interest-based harm) and correctly applies them to ethical concepts (wills, reputation). It invokes no named thinkers or technical terms beyond these, but the concepts are load-bearing and correct. No misattributions or garbled terms; reasoning is sound without reliance on citations.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a coherent argument for posthumous harm based on interests but lacks engagement with opposing philosophical positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response constructs a coherent argument for posthumous harm based on interests but lacks engagement with opposing philosophical positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 62.5
+}

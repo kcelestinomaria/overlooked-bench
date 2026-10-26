@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific evidence types (vocabulary, morphology, typological features), methodological issues (contact effects, comparative data gaps), and internal scholarly debate (contrasting positions of Bender, Tosco, and Savà & Tosco). It discusses tripartite number marking, gender marking, and sociohistorical context of hunter-gatherer communities - details a specialist would recognize. However, it doesn't delve deeply into specific sound correspondences or detailed morphological analysis that would show deep literature engagement.",
+    "domain_accuracy": "The response makes several substantive claims: Lionel Bender (1975) proposed Afroasiatic link, Mauro Tosco (2000) argued for Nilo-Saharan, Savà and Tosco (2007) described it as isolate. These are accurate attributions. It correctly notes tripartite number marking as Nilo-Saharan feature, SOV word order as Afroasiatic trait, and mentions contact with Tsamai. No invented citations or terms appear. The evidence strength assessments ('weak to moderate', 'moderate but inconclusive', 'strong in terms of caution') are reasonable and match scholarly discussions.",
+    "field_situatedness": "The response uses appropriate historical linguistics terminology ('language isolate', 'genetic relatives', 'cognates', 'contact effects', 'convergence') and engages with the specific scholarly debate around African language classification. It references relevant scholars (Bender, Tosco, Savà) and correctly frames the problem within African linguistics context without substituting Western frameworks. It acknowledges the importance of contact with local languages (Tsamai) and the regional context.",
+    "scholarly_calibration": "The response consistently distinguishes evidential status: 'weak to moderate' for Afroasiatic hypothesis, 'moderate but inconclusive' for Nilo-Saharan, 'strong in terms of caution' for isolate hypothesis, and 'weak' for mixed language hypothesis. It specifically notes that similarities 'could be due to long-term contact' and that 'the evidence is fragmentary'. It avoids blanket disclaimers and provides targeted calibration for each position. The conclusion appropriately notes that 'the question may remain unanswered' due to data scarcity."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00098179,
+  "judge_latency_s": 16.989,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: Lionel Bender (1975) proposed Afroasiatic link, Mauro Tosco (2000) argued for Nilo-Saharan, Savà and Tosco (2007) described it as isolate. These are accurate attributions. It correctly notes tripartite number marking as Nilo-Saharan feature, SOV word order as Afroasiatic trait, and mentions contact with Tsamai. No invented citations or terms appear. The evidence strength assessments ('weak to moderate', 'moderate but inconclusive', 'strong in terms of caution') are reasonable and match scholarly discussions.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific evidence types (vocabulary, morphology, typological features), methodological issues (contact effects, comparative data gaps), and internal scholarly debate (contrasting positions of Bender, Tosco, and Savà & Tosco). It discusses tripartite number marking, gender marking, and sociohistorical context of hunter-gatherer communities - details a specialist would recognize. However, it doesn't delve deeply into specific sound correspondences or detailed morphological analysis that would show deep literature engagement.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes evidential status: 'weak to moderate' for Afroasiatic hypothesis, 'moderate but inconclusive' for Nilo-Saharan, 'strong in terms of caution' for isolate hypothesis, and 'weak' for mixed language hypothesis. It specifically notes that similarities 'could be due to long-term contact' and that 'the evidence is fragmentary'. It avoids blanket disclaimers and provides targeted calibration for each position. The conclusion appropriately notes that 'the question may remain unanswered' due to data scarcity.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate historical linguistics terminology ('language isolate', 'genetic relatives', 'cognates', 'contact effects', 'convergence') and engages with the specific scholarly debate around African language classification. It references relevant scholars (Bender, Tosco, Savà) and correctly frames the problem within African linguistics context without substituting Western frameworks. It acknowledges the importance of contact with local languages (Tsamai) and the regional context.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A well-calibrated response that accurately summarizes the scholarly debate while appropriately signaling uncertainty where evidence is thin.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A well-calibrated response that accurately summarizes the scholarly debate while appropriately signaling uncertainty where evidence is thin.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

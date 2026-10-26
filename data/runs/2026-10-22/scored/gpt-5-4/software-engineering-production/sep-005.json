@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed data design with schema definitions ('Table: rider_location_events'), data flows ('App -> backend'), retention implementation ('Daily scheduled job drops partitions'), and access controls ('RBAC'). It includes concrete steps for legal/organizational work ('Update privacy documentation', 'Training and SOPs') and a launch checklist summary. However, it does not provide exact commands, code snippets, or a sequenced timeline with owners and estimates, making it more descriptive than immediately executable.",
+    "constraint_fidelity": "The response explicitly addresses all hard constraints: 1) Raw precise location retention is strictly limited to 30 days via partitioning and backup policy adjustments ('Raw precise location deleted after 30 days via partition drop', 'Backups/WAL/snapshots also <= 30 days'). 2) No new vendors are proposed; it uses only PostgreSQL/PostGIS, BigQuery (for aggregates), and Firebase (implied for app). 3) The plan is scoped for two engineers in six weeks ('Feasible scope: ... retention deletion job ... simple daily aggregate export ... audit logging'). It acknowledges backup retention as a potential blocker but proposes solutions within constraints.",
+    "maintainability": "The response emphasizes maintainability: it uses existing stack components, avoids unnecessary complexity ('no new vendors'), documents risks explicitly ('Risk 1: Backup retention makes compliance impossible'), and proposes clear seams (e.g., separate tables for raw vs. aggregated data). It considers future ownership by detailing audit logs, training, and documentation updates. However, it does not explicitly address testing, observability, or code quality for the new components, and some parts (e.g., aggregation jobs) are described at a high level.",
+    "production_realism": "The response accounts for production-scale concerns: partitioning for volume ('partitioning by recorded_at day or week'), rate limiting ('event volume/rate limits reasonable'), audit logging ('incident_location_access_log'), role-based access ('RBAC, incident-based support access'), and failure modes (offline persistence with timestamp checks). It considers team skill mix by avoiding new dependencies (e.g., 'avoid adding a new vendor or major dependency') and operational burden (e.g., 'simple daily aggregate export'). However, it lacks specifics on retries, idempotency, or rollback mechanisms for data ingestion."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-005",
+  "judge_cost_usd": 0.00207356,
+  "judge_latency_s": 70.551,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly addresses all hard constraints: 1) Raw precise location retention is strictly limited to 30 days via partitioning and backup policy adjustments ('Raw precise location deleted after 30 days via partition drop', 'Backups/WAL/snapshots also <= 30 days'). 2) No new vendors are proposed; it uses only PostgreSQL/PostGIS, BigQuery (for aggregates), and Firebase (implied for app). 3) The plan is scoped for two engineers in six weeks ('Feasible scope: ... retention deletion job ... simple daily aggregate export ... audit logging'). It acknowledges backup retention as a potential blocker but proposes solutions within constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for production-scale concerns: partitioning for volume ('partitioning by recorded_at day or week'), rate limiting ('event volume/rate limits reasonable'), audit logging ('incident_location_access_log'), role-based access ('RBAC, incident-based support access'), and failure modes (offline persistence with timestamp checks). It considers team skill mix by avoiding new dependencies (e.g., 'avoid adding a new vendor or major dependency') and operational burden (e.g., 'simple daily aggregate export'). However, it lacks specifics on retries, idempotency, or rollback mechanisms for data ingestion.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed data design with schema definitions ('Table: rider_location_events'), data flows ('App -> backend'), retention implementation ('Daily scheduled job drops partitions'), and access controls ('RBAC'). It includes concrete steps for legal/organizational work ('Update privacy documentation', 'Training and SOPs') and a launch checklist summary. However, it does not provide exact commands, code snippets, or a sequenced timeline with owners and estimates, making it more descriptive than immediately executable.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response emphasizes maintainability: it uses existing stack components, avoids unnecessary complexity ('no new vendors'), documents risks explicitly ('Risk 1: Backup retention makes compliance impossible'), and proposes clear seams (e.g., separate tables for raw vs. aggregated data). It considers future ownership by detailing audit logs, training, and documentation updates. However, it does not explicitly address testing, observability, or code quality for the new components, and some parts (e.g., aggregation jobs) are described at a high level.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response thoroughly addresses constraints and legal requirements while proposing a realistic, narrowed scope for implementation.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response thoroughly addresses constraints and legal requirements while proposing a realistic, narrowed scope for implementation.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

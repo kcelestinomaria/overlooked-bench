@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for diverse learners through 'Accessibility support' in permitted uses (e.g., 'Text-to-speech for reading difficulties', 'Content simplification for ESL students') and considers language barriers. It also includes practical, low-cost adaptations like disclosure statements and verification conversations that are implementable by one lecturer without additional resources.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about an academic integrity policy for AI use. The response is inclusive of all students in the setting (university in Indonesia) by addressing accessibility support (e.g., 'Text-to-speech for reading difficulties', 'Content simplification for ESL students') and enforcement fairness, but does not specifically cover vocational or non-degree pathways as they are not relevant here.",
+    "pedagogical_soundness": "The response does not address pedagogical soundness as it is drafting a policy and enforcement strategy, not designing learning activities, objectives, or assessments. There are no learning objectives, activities, or assessments to evaluate for alignment, cognitive demand, or sequencing.",
+    "workload_realism": "The response provides a detailed enforcement workflow with time estimates: 5-10 hours for course prep, 15-20 hours per major assignment for screening, 30-60 minutes per investigation, and 1-2 hours per resolution. It acknowledges the scale of 200 students and proposes a tiered approach to manage workload, but does not explicitly sum timings or check against a real teaching timetable, though the estimates seem plausible for a large course."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00119497,
+  "judge_latency_s": 41.029,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response does not address pedagogical soundness as it is drafting a policy and enforcement strategy, not designing learning activities, objectives, or assessments. There are no learning objectives, activities, or assessments to evaluate for alignment, cognitive demand, or sequencing.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides a detailed enforcement workflow with time estimates: 5-10 hours for course prep, 15-20 hours per major assignment for screening, 30-60 minutes per investigation, and 1-2 hours per resolution. It acknowledges the scale of 200 students and proposes a tiered approach to manage workload, but does not explicitly sum timings or check against a real teaching timetable, though the estimates seem plausible for a large course.\",\n      \"score\": 3\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about an academic integrity policy for AI use. The response is inclusive of all students in the setting (university in Indonesia) by addressing accessibility support (e.g., 'Text-to-speech for reading difficulties', 'Content simplification for ESL students') and enforcement fairness, but does not specifically cover vocational or non-degree pathways as they are not relevant here.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for diverse learners through 'Accessibility support' in permitted uses (e.g., 'Text-to-speech for reading difficulties', 'Content simplification for ESL students') and considers language barriers. It also includes practical, low-cost adaptations like disclosure statements and verification conversations that are implementable by one lecturer without additional resources.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a comprehensive, practical, and scalable AI integrity policy with realistic enforcement strategies for a large class.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a comprehensive, practical, and scalable AI integrity policy with realistic enforcement strategies for a large class.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 57.5
+}

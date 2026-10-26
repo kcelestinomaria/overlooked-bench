@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The response clearly argues for a 'limited, context-dependent right to be forgotten' and defends it with reasons like rehabilitation values and proportionality. It acknowledges uncertainty through calibrated hedging (e.g., 'might require longer periods or judicial review') and proposes safeguards, but does not explicitly state what would change its mind or where it is weakest.",
+    "philosophical_literacy": "The response uses concepts like rehabilitation, proportionality, and human dignity accurately and they are load-bearing in the argument. It references practical models (GDPR, U.S. record sealing) without misattributing philosophical traditions. No technical philosophical terms are misused, and the reasoning is correct without relying on named thinkers.",
+    "position_pluralism": "The response addresses major positions: the right to be forgotten (argued for), public interest/free speech concerns (counterargument), and victim interests. It characterizes public interest fairly by distinguishing it from curiosity and proposes balanced solutions like delisting rather than erasure. However, it omits explicit mention of some live positions like absolute free speech or no right to be forgotten, though these are implied in counterarguments.",
+    "reasoning_construction": "The response constructs a clear argument with premises: rehabilitation is a social value, information loses relevance over time, and privacy is tied to human dignity. It applies these to the specific case of a 20-year-old conviction without reoffending, addressing counterarguments like public interest vs. curiosity and proposing safeguards. The conclusion depends on these premises and engages with specifics, though the counterargument handling could be slightly stronger."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-022",
+  "judge_cost_usd": 0.00083173,
+  "judge_latency_s": 13.75,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument with premises: rehabilitation is a social value, information loses relevance over time, and privacy is tied to human dignity. It applies these to the specific case of a 20-year-old conviction without reoffending, addressing counterarguments like public interest vs. curiosity and proposing safeguards. The conclusion depends on these premises and engages with specifics, though the counterargument handling could be slightly stronger.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The response clearly argues for a 'limited, context-dependent right to be forgotten' and defends it with reasons like rehabilitation values and proportionality. It acknowledges uncertainty through calibrated hedging (e.g., 'might require longer periods or judicial review') and proposes safeguards, but does not explicitly state what would change its mind or where it is weakest.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response addresses major positions: the right to be forgotten (argued for), public interest/free speech concerns (counterargument), and victim interests. It characterizes public interest fairly by distinguishing it from curiosity and proposes balanced solutions like delisting rather than erasure. However, it omits explicit mention of some live positions like absolute free speech or no right to be forgotten, though these are implied in counterarguments.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like rehabilitation, proportionality, and human dignity accurately and they are load-bearing in the argument. It references practical models (GDPR, U.S. record sealing) without misattributing philosophical traditions. No technical philosophical terms are misused, and the reasoning is correct without relying on named thinkers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned, specific argument for a limited right to be forgotten, engaging deeply with the scenario and balancing multiple values.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned, specific argument for a limited right to be forgotten, engaging deeply with the scenario and balancing multiple values.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 87.5
+}

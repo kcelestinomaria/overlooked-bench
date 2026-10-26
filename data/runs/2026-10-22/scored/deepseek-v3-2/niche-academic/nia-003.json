@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing methodological differences: Maliki use of maslaha mursala as independent proof vs. Hanafi subordination to qiyās and use of istihsān, provides specific conditions (e.g., legitimate interest types, real/general), cites historical examples (ʿUmar, salam contract), and references scholar al-Shāṭibī. It engages with internal scholarly mechanisms and debates, suitable for a specialist question.",
+    "domain_accuracy": "The response makes specific claims: defines maslaha as public interest/welfare, describes its role as basis for qiyās or independent proof, outlines Maliki emphasis on maslaha mursala as independent proof with conditions (legitimate interest, no text, real/general), cites Caliph ʿUmar example and al-Shāṭibī, describes Hanafi caution preferring textual sources/qiyās, mentions istihsān and salam contract example. All these are accurate representations of mainstream Islamic legal theory positions. No invented citations or terms are present.",
+    "field_situatedness": "The response uses correct Islamic legal terminology (uṣūl al-fiqh, maṣlaḥa, naṣṣ, maqāṣid al-sharīʿa, ijmāʿ, qiyās, maslaha mursala, dalīl mustaqill, istihsān, darar, madhhab) and frameworks (Maliki and Hanafi schools, reference to scholars like al-Shāṭibī). It stays within the Islamic legal tradition without substituting Western frameworks.",
+    "scholarly_calibration": "The response distinguishes contested areas: notes that maslaha's relationship is 'debated' regarding independent vs. subsidiary status, specifies conditions for validity (e.g., must not contradict text), and contrasts Maliki and Hanafi positions without presenting either as settled fact. It avoids uniform confidence by framing differences in methodology and acceptance, though it lacks explicit uncertainty markers; calibration is implicit through comparative analysis."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-003",
+  "judge_cost_usd": 0.0009231,
+  "judge_latency_s": 22.82,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims: defines maslaha as public interest/welfare, describes its role as basis for qiyās or independent proof, outlines Maliki emphasis on maslaha mursala as independent proof with conditions (legitimate interest, no text, real/general), cites Caliph ʿUmar example and al-Shāṭibī, describes Hanafi caution preferring textual sources/qiyās, mentions istihsān and salam contract example. All these are accurate representations of mainstream Islamic legal theory positions. No invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing methodological differences: Maliki use of maslaha mursala as independent proof vs. Hanafi subordination to qiyās and use of istihsān, provides specific conditions (e.g., legitimate interest types, real/general), cites historical examples (ʿUmar, salam contract), and references scholar al-Shāṭibī. It engages with internal scholarly mechanisms and debates, suitable for a specialist question.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes contested areas: notes that maslaha's relationship is 'debated' regarding independent vs. subsidiary status, specifies conditions for validity (e.g., must not contradict text), and contrasts Maliki and Hanafi positions without presenting either as settled fact. It avoids uniform confidence by framing differences in methodology and acceptance, though it lacks explicit uncertainty markers; calibration is implicit through comparative analysis.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Islamic legal terminology (uṣūl al-fiqh, maṣlaḥa, naṣṣ, maqāṣid al-sharīʿa, ijmāʿ, qiyās, maslaha mursala, dalīl mustaqill, istihsān, darar, madhhab) and frameworks (Maliki and Hanafi schools, reference to scholars like al-Shāṭibī). It stays within the Islamic legal tradition without substituting Western frameworks.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates accurate, detailed knowledge of Islamic legal theory with clear differentiation between Maliki and Hanafi positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response demonstrates accurate, detailed knowledge of Islamic legal theory with clear differentiation between Maliki and Hanafi positions.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

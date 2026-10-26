@@ -1,0 +1,51 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a concrete, phased plan with code snippets (migrations, jobs, commands), exact commands (e.g., `php artisan queue:table`), and supervisor config. 2. Includes sequence (3 phases), owners (Dev 1/Dev 2), and verification steps (e.g., `mpesa:reconcile` command output). 3. An engineer could execute this with light editing (e.g., replacing placeholder API calls with actual Safaricom endpoints). 4. No generic descriptions or lists of considerations; every section is executable.",
+    "constraint_fidelity": "1. The response explicitly states it uses only the existing Laravel/MySQL stack on the single droplet, incurring zero additional cost (meets C1). 2. It enforces idempotency with a unique index on `mpesa_transaction_id` and `firstOrCreate` logic, preventing double-crediting (meets C2). 3. The reconciliation command runs every 5 minutes, ensuring all payments are allocated or flagged within 15 minutes (meets C3). 4. The response shows arithmetic (e.g., 5-minute reconciliation schedule) and justifies all design choices within constraints. No silent violations or unacknowledged relaxations.",
+    "maintainability": "1. The solution is proportionate to the team (9-person company, 2 developers) and uses familiar tools (Laravel, MySQL). 2. Leaves clear seams: database queue, scheduled commands, and modular jobs. 3. Risks and debt are stated (e.g., Safaricom API limitations, manual review queue). 4. Documentation is implied (e.g., logging, UI for pending payments). 5. No unowned moving parts or unsafe shortcuts; complexity is justified (e.g., unique index for idempotency).",
+    "production_realism": "1. The response accounts for the stated scale (140 schools, single droplet) and team skill mix (9-person company, 2 developers). 2. It addresses failure modes: database-level idempotency, queue retries (`--tries=3`), and partial failure handling (logging, manual review). 3. Operational burden is proportionate: uses Laravel's built-in database queue and scheduler, no new infrastructure. 4. No technically incorrect claims about Laravel, MySQL, or Safaricom's APIs. 5. Includes rollback considerations (e.g., atomic symlink releases are implied in zero-downtime deploys)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [
+    "judge_retry"
+  ],
+  "item_id": "sep-013",
+  "judge_cost_usd": 0.006306,
+  "judge_latency_s": 20.11,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"\n1. The response explicitly states it uses only the existing Laravel/MySQL stack on the single DigitalOcean droplet, incurring zero additional cost (C1 kept).\n2. It enforces idempotency with a unique index on `mpesa_transaction_id` and uses `firstOrCreate` to prevent double-crediting (C2 kept).\n3. The reconciliation command runs every 5 minutes, ensuring all payments are allocated or flagged within 15 minutes (C3 kept).\n4. The response shows arithmetic for capacity (e.g., 2 queue workers, 5-minute reconciliation schedule) and justifies all design choices within the constraints. No silent violations or unjustified relaxations are present.\n5. The response even includes a 'Constraint Checklist' that explicitly verifies each constraint, demonstrating thorough attention to fidelity.\n      \",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"\n1. The response accounts for the stated scale (140 schools, single droplet) and team skill mix (9-person company, 2 developers). It avoids complex infrastructure changes and uses Laravel's built-in tools (database queue, scheduler).\n2. It addresses failure modes: database-level idempotency, queue retries (`--tries=3`), and logging for API failures. It also handles partial failure (e.g., `firstOrCreate` race conditions) and rollback (via the unique index).\n3. The operational burden is proportionate to the team: the design uses simple cron jobs, supervisor-managed queue workers, and Laravel's native features, requiring no new operational expertise.\n4. No technically incorrect claims about the named technologies (Laravel, MySQL, Safaricom API) are made. The response even notes the need to clarify Safaricom's API capabilities, showing awareness of real-world limitations.\n      \",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"\n1. The response delivers a concrete, phased plan with code snippets, commands, and configuration examples (e.g., migration, job, controller, supervisor config, cron job).\n2. It includes sequence (three phases), owners (Dev 1/Dev 2 assignments), estimates (three weeks), and verification steps (e.g., logging, manual review UI, alerting).\n3. An engineer could execute this immediately with only light editing (e.g., adapting the Safaricom API call to the actual endpoint).\n4. The response avoids generic descriptions and provides exact commands (e.g., `php artisan make:job ProcessMpesaPayment`, `queue:work --sleep=3 --tries=3`).\n      \",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"\n1. The solution is proportionate to the team (9-person company, 2 developers) and uses simple, well-documented Laravel patterns (database queue, scheduler, migrations).\n2. It leaves clear seams: the `ProcessMpesaPayment` job encapsulates all payment logic, the reconciliation command is isolated, and the manual review UI is straightforward.\n3. Risks and debt are explicitly stated (e.g., Safaricom API limitations, logging for failed reconciliations, accepted debt like the 5-minute reconciliation window).\n4. The code is clear and avoids cleverness (e.g., `firstOrCreate` for idempotency, unique index for safety). Documentation is implied via logging and the manual review UI.\n      \",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a model of constraint fidelity and production-ready engineering for the given context.\",\n  \"flags\": []\n}\n```\n\n=== UNPARSEABLE; RETRIED ===\n\n```json\n{\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states it uses only the existing Laravel/MySQL stack on the single droplet, incurring zero additional cost (meets C1). 2. It enforces idempotency with a unique index on `mpesa_transaction_id` and `firstOrCreate` logic, preventing double-crediting (meets C2). 3. The reconciliation command runs every 5 minutes, ensuring all payments are allocated or flagged within 15 minutes (meets C3). 4. The response shows arithmetic (e.g., 5-minute reconciliation schedule) and justifies all design choices within constraints. No silent violations or unacknowledged relaxations.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale (140 schools, single droplet) and team skill mix (9-person company, 2 developers). 2. It addresses failure modes: database-level idempotency, queue retries (`--tries=3`), and partial failure handling (logging, manual review). 3. Operational burden is proportionate: uses Laravel's built-in database queue and scheduler, no new infrastructure. 4. No technically incorrect claims about Laravel, MySQL, or Safaricom's APIs. 5. Includes rollback considerations (e.g., atomic symlink releases are implied in zero-downtime deploys).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a concrete, phased plan with code snippets (migrations, jobs, commands), exact commands (e.g., `php artisan queue:table`), and supervisor config. 2. Includes sequence (3 phases), owners (Dev 1/Dev 2), and verification steps (e.g., `mpesa:reconcile` command output). 3. An engineer could execute this with light editing (e.g., replacing placeholder API calls with actual Safaricom endpoints). 4. No generic descriptions or lists of considerations; every section is executable.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The solution is proportionate to the team (9-person company, 2 developers) and uses familiar tools (Laravel, MySQL). 2. Leaves clear seams: database queue, scheduled commands, and modular jobs. 3. Risks and debt are stated (e.g., Safaricom API limitations, manual review queue). 4. Documentation is implied (e.g., logging, UI for pending payments). 5. No unowned moving parts or unsafe shortcuts; complexity is justified (e.g., unique index for idempotency).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a textbook example of constraint-faithful, production-ready engineering for the given scenario.\",\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response is a textbook example of constraint-faithful, production-ready engineering for the given scenario.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

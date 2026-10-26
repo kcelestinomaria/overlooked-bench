@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 1619,
+  "cost_usd": 0.0147285,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7b0abe9742bb4134",
+  "item_id": "cal-002",
+  "latency_s": 8.539,
+  "methodology_version": "m1.3.0",
+  "model_id": "google/gemini-3.5-flash",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "prompt_tokens": 105,
+  "provider": "google",
+  "request_fingerprint": "d16316ac2ced103d",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "google/gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "text": "To find the cooperative's total revenue, we can break down the calculation into the following steps:\n\n1. **Calculate the mass of the dried coffee remaining after drying:**\n   The cooperative loses 15% of the initial 4,800 kg mass, meaning 85% remains.\n   $$\\text{Dried coffee mass} = 4,800 \\text{ kg} \\times (1 - 0.15) = 4,800 \\text{ kg} \\times 0.85 = 4,080 \\text{ kg}$$\n\n2. **Calculate the mass of each grade of coffee:**\n   * **Grade AA (40% of the dried coffee):**\n     $$\\text{Mass of AA} = 4,080 \\text{ kg} \\times 0.40 = 1,632 \\text{ kg}$$\n   * **Remaining coffee (60% of the dried coffee):**\n     $$\\text{Mass of remaining coffee} = 4,080 \\text{ kg} \\times 0.60 = 2,448 \\text{ kg}$$\n\n3. **Calculate the revenue from each grade:**\n   * **Revenue from Grade AA (sold at $6.20 per kg):**\n     $$\\text{Revenue from AA} = 1,632 \\text{ kg} \\times \\$6.20/\\text{kg} = \\$10,118.40$$\n   * **Revenue from remaining coffee (sold at $4.50 per kg):**\n     $$\\text{Revenue from remaining coffee} = 2,448 \\text{ kg} \\times \\$4.50/\\text{kg} = \\$11,016.00$$\n\n4. **Calculate the total revenue:**\n   $$\\text{Total Revenue} = \\$10,118.40 + \\$11,016.00 = \\$21,134.40$$\n\nANSWER: 21134.40",
+  "timestamp_utc": "2026-10-21T23:41:11Z"
+}

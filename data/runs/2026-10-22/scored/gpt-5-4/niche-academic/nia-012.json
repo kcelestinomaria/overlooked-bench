@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedia-level summaries by engaging with specific analytical issues (e.g., colotomic structure vs. Western melody privileging, kepatihan's limitations), methodological alternatives (graphic notation, performance-centered analysis), and indigenous frameworks (pathet, irama). It demonstrates familiarity with scholarly debates about representation and ontology, suitable for a specialist audience.",
+    "domain_accuracy": "The response accurately identifies key problems: pitch standardization issues with sléndro/pélog, colotomic structure vs. melody/harmony focus, metric rigidity, oral vs. written tradition, timbre neglect, and imposed Western categories. It correctly cites kepatihan notation, indigenous concepts (pathet, irama), multi-layered transcription, graphic notation, and performance-centered analysis. No invented citations or terms are present; all concepts align with established ethnomusicological discourse.",
+    "field_situatedness": "The response uses ethnomusicology-specific terminology (sléndro, pélog, pathet, balungan, colotomic, irama, kepatihan) and centers non-Western frameworks, avoiding substitution with Western musicological concepts. It correctly situates the discussion within the critique of Western notation's cultural assumptions, aligning with the field's scholarly tradition.",
+    "scholarly_calibration": "The response consistently distinguishes contested or nuanced points: it notes that 'different ensembles are tuned differently' (variability), acknowledges kepatihan 'has limits because it usually records only part of the total texture' (partial solution), and frames alternatives as proposals ('ethnomusicologists have proposed', 'some scholars use'). It avoids presenting any single view as settled fact and maintains calibrated language throughout."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00092494,
+  "judge_latency_s": 47.538,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately identifies key problems: pitch standardization issues with sléndro/pélog, colotomic structure vs. melody/harmony focus, metric rigidity, oral vs. written tradition, timbre neglect, and imposed Western categories. It correctly cites kepatihan notation, indigenous concepts (pathet, irama), multi-layered transcription, graphic notation, and performance-centered analysis. No invented citations or terms are present; all concepts align with established ethnomusicological discourse.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedia-level summaries by engaging with specific analytical issues (e.g., colotomic structure vs. Western melody privileging, kepatihan's limitations), methodological alternatives (graphic notation, performance-centered analysis), and indigenous frameworks (pathet, irama). It demonstrates familiarity with scholarly debates about representation and ontology, suitable for a specialist audience.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes contested or nuanced points: it notes that 'different ensembles are tuned differently' (variability), acknowledges kepatihan 'has limits because it usually records only part of the total texture' (partial solution), and frames alternatives as proposals ('ethnomusicologists have proposed', 'some scholars use'). It avoids presenting any single view as settled fact and maintains calibrated language throughout.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses ethnomusicology-specific terminology (sléndro, pélog, pathet, balungan, colotomic, irama, kepatihan) and centers non-Western frameworks, avoiding substitution with Western musicological concepts. It correctly situates the discussion within the critique of Western notation's cultural assumptions, aligning with the field's scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates comprehensive, accurate, and well-calibrated knowledge of ethnomusicological critiques and alternatives for gamelan transcription.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response demonstrates comprehensive, accurate, and well-calibrated knowledge of ethnomusicological critiques and alternatives for gamelan transcription.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

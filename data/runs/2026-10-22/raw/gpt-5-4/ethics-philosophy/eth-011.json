@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 381,
+  "cost_usd": 0.0058775,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "9f73e657883b7fda",
+  "item_id": "eth-011",
+  "latency_s": 7.63,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 65,
+  "provider": "openai",
+  "request_fingerprint": "eb09422bc0bf7ddb",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "She should choose the process that is most likely to produce fair, job-relevant, and defensible outcomes in her actual hiring context—not automatically “fully blind” or automatically “explicitly weighted.”\n\nRecommendation: use a primarily job-relevant, structured process, and if underrepresentation is a real concern and the law allows it, prefer a carefully designed process that includes limited, explicit equity weighting over a purely blind process.\n\nWhy:\n- Fully blind hiring can reduce some forms of bias at early stages, but it does not guarantee fairness. It may ignore real structural disadvantages that affect who gets certain credentials or opportunities.\n- Explicit weighting for underrepresented backgrounds can better advance representation and counteract systemic barriers, but it must be narrowly designed, consistent, and tied to legitimate organizational goals to avoid unfairness or lowered confidence in the process.\n- In practice, the strongest approach is usually not “blind only” versus “demographics only,” but:\n  - structured evaluation criteria,\n  - standardized interviews,\n  - skills-based assessment,\n  - trained reviewers,\n  - documentation of decisions,\n  - and, where lawful and appropriate, a modest tie-breaker or contextual consideration for underrepresented candidates.\n\nConcrete recommendation:\n1. Use blind screening in early resume review where possible.\n2. Evaluate all candidates with clear, role-related scoring rubrics.\n3. If the organization has a legitimate diversity goal and the law permits it, include underrepresented background as one factor among many—not as the sole determinant.\n4. Audit outcomes regularly for quality, fairness, and adverse impact.\n\nThis is preferable because it balances:\n- merit and job fit,\n- reduction of bias,\n- improved representation,\n- and legal/organizational defensibility.\n\nSo: do not rely on a purely blind process alone if the goal is equitable outcomes; use a structured process with limited, explicit consideration of underrepresented backgrounds when justified and lawful.",
+  "timestamp_utc": "2026-10-21T23:36:51Z"
+}

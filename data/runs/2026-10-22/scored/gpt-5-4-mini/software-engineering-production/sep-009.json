@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "This stays within current dependencies and can be done in this PR.",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a corrected code block with specific changes, prioritizes issues, and includes implementation notes. However, it lacks explicit estimates (e.g., time for each change), verification steps (e.g., how to test signature or idempotency), and does not separate follow-ups (e.g., reconciliation job) as required by rubric notes. The code is actionable but misses some structured elements.",
+    "constraint_fidelity": "The response respects all constraints: no new dependencies are required (uses only standard library and existing imports), no new infrastructure is proposed (keeps processing synchronous), and all changes are implementable in this PR within three hours (code corrections are minimal and focused). The response explicitly states 'This stays within current dependencies and can be done in this PR.'",
+    "maintainability": "The corrected code is clear and uses standard practices (e.g., Decimal for money, safe logging). It avoids unnecessary complexity and notes risks (e.g., synchronous SMS). However, it does not explicitly state accepted debt (e.g., synchronous SMS as a temporary solution) or provide tests/documentation, which would aid handover. The complexity is proportionate to the team.",
+    "production_realism": "The response addresses key production issues: signature verification first to prevent attacks, idempotency via status check to handle retries, safe handling of missing orders (returns 200 instead of 500), and moving SMS after commit to avoid timeouts. However, it does not fully address currency/amount validation against the order ('check amount and currency against the order before marking it paid' from rubric notes is missing), and the SMS send is still synchronous, which could cause timeouts if slow, though it's noted as a limitation."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-009",
+  "judge_cost_usd": 0.00123007,
+  "judge_latency_s": 49.084,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: no new dependencies are required (uses only standard library and existing imports), no new infrastructure is proposed (keeps processing synchronous), and all changes are implementable in this PR within three hours (code corrections are minimal and focused). The response explicitly states 'This stays within current dependencies and can be done in this PR.'\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response addresses key production issues: signature verification first to prevent attacks, idempotency via status check to handle retries, safe handling of missing orders (returns 200 instead of 500), and moving SMS after commit to avoid timeouts. However, it does not fully address currency/amount validation against the order ('check amount and currency against the order before marking it paid' from rubric notes is missing), and the SMS send is still synchronous, which could cause timeouts if slow, though it's noted as a limitation.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a corrected code block with specific changes, prioritizes issues, and includes implementation notes. However, it lacks explicit estimates (e.g., time for each change), verification steps (e.g., how to test signature or idempotency), and does not separate follow-ups (e.g., reconciliation job) as required by rubric notes. The code is actionable but misses some structured elements.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The corrected code is clear and uses standard practices (e.g., Decimal for money, safe logging). It avoids unnecessary complexity and notes risks (e.g., synchronous SMS). However, it does not explicitly state accepted debt (e.g., synchronous SMS as a temporary solution) or provide tests/documentation, which would aid handover. The complexity is proportionate to the team.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a well-prioritized review with corrected code that respects constraints but misses some nuanced validation and follow-up separation.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"This stays within current dependencies and can be done in this PR.\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a well-prioritized review with corrected code that respects constraints but misses some nuanced validation and follow-up separation.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

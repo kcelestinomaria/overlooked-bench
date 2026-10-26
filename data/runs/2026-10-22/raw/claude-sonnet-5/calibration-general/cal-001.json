@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 355,
+  "cost_usd": 0.00381,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "7241a21ed197ae23",
+  "item_id": "cal-001",
+  "latency_s": 5.324,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 130,
+  "provider": "anthropic",
+  "request_fingerprint": "8993cf9aa121b0a4",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Tailor's Profit Calculation\n\n## Step 1: Calculate Total Fabric Purchased\n- 4 rolls × 45 metres = **180 metres** of fabric\n\n## Step 2: Calculate Total Cost of Fabric\n- 180 metres × $8/metre = **$1,440**\n\n## Step 3: Calculate Number of Dresses Made\n- 180 metres ÷ 12 metres per dress = **15 dresses**\n- (All fabric is used, so no leftover material)\n\n## Step 4: Calculate Total Revenue from Sales\n- 15 dresses × $150 per dress = **$2,250**\n\n## Step 5: Calculate Total Profit\n- Revenue − Cost = $2,250 − $1,440 = **$810**\n\nANSWER: 810",
+  "timestamp_utc": "2026-10-21T23:35:17Z"
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed plan with specific deliverables: SQL schemas, code snippets (Cloud Function, Android), sequence (6-week timeline with owners), concrete commands (pg_dump exclusion, cron schedule), estimates (200 LOC, 1-2 days for admin tool), and verification steps (compliance SQL query, staging tests). An engineer could execute this with light editing.",
+    "constraint_fidelity": "The response explicitly respects all hard constraints: uses only existing stack (PostgreSQL/PostGIS, BigQuery, FCM); enforces 30-day retention via pg_cron and BigQuery expiration with backup exclusion; acknowledges two engineers and six weeks timeline with detailed breakdown. It shows arithmetic (e.g., 10k riders at 1 location/10s = 1k events/sec) and justifies pushback on product requests that would violate constraints.",
+    "maintainability": "Proposes complexity proportionate to the team (uses existing tools, documented processes), leaves clear seams (modular Cloud Function, RLS policies), includes tests (integration/load testing), documentation (runbook, monitoring), and explicitly states risks (table in risk mitigation section). However, some added complexity (e.g., pg_cron, audit extensions) may require ongoing maintenance, but it is justified and documented.",
+    "production_realism": "Accounts for production scale (1k events/sec load), failure modes (pg_cron job monitoring, alerts), partial failure (async aggregation), rollback (not explicitly mentioned but implied in testing), observability (compliance metrics, audit logs), and operational burden (runbook, monitoring, support training). Uses existing team skills and infrastructure realistically."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.00208505,
+  "judge_latency_s": 53.032,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all hard constraints: uses only existing stack (PostgreSQL/PostGIS, BigQuery, FCM); enforces 30-day retention via pg_cron and BigQuery expiration with backup exclusion; acknowledges two engineers and six weeks timeline with detailed breakdown. It shows arithmetic (e.g., 10k riders at 1 location/10s = 1k events/sec) and justifies pushback on product requests that would violate constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for production scale (1k events/sec load), failure modes (pg_cron job monitoring, alerts), partial failure (async aggregation), rollback (not explicitly mentioned but implied in testing), observability (compliance metrics, audit logs), and operational burden (runbook, monitoring, support training). Uses existing team skills and infrastructure realistically.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed plan with specific deliverables: SQL schemas, code snippets (Cloud Function, Android), sequence (6-week timeline with owners), concrete commands (pg_dump exclusion, cron schedule), estimates (200 LOC, 1-2 days for admin tool), and verification steps (compliance SQL query, staging tests). An engineer could execute this with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Proposes complexity proportionate to the team (uses existing tools, documented processes), leaves clear seams (modular Cloud Function, RLS policies), includes tests (integration/load testing), documentation (runbook, monitoring), and explicitly states risks (table in risk mitigation section). However, some added complexity (e.g., pg_cron, audit extensions) may require ongoing maintenance, but it is justified and documented.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates exceptional fidelity to constraints, production readiness, and actionable detail while comprehensively addressing legal and organizational requirements.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response demonstrates exceptional fidelity to constraints, production readiness, and actionable detail while comprehensively addressing legal and organizational requirements.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response provides a step-by-step guide with concrete actions: assign a champion, focus on five demands with specific tasks, create a compliance folder with listed contents, and how to talk to buyers. It includes templates and association support details. It is written as guidance to factory owners and could be used with light editing.",
+    "constraint_fidelity": "The prompt states constraints: small factories in Bangladesh with limited administrative capacity, cannot afford external consultants. The response explicitly addresses these: 'you do not have the budget for expensive external consultants', assigns one existing staff member as 'Compliance Champion', uses low-cost solutions like a complaint box and mobile photos, and provides free association support. It respects all constraints without violating them.",
+    "contextual_realism": "The response is calibrated for small factories: assigns one staff member (not a dedicated compliance officer), uses simple tools (locked box, mobile photos, logbooks), references local practices (bKash/Nagad payments, Bangla contracts), and acknowledges role overlap. It avoids assuming dedicated HR or legal counsel, instead leveraging association support.",
+    "jurisdictional_accuracy": "The response references Bangladesh Labor Law, local payment methods (bKash/Nagad), and Bangla language for contracts, avoiding US assumptions. It does not make incorrect jurisdictional claims and provides practical steps aligned with local context. It does not rely on generic 'consult a lawyer' disclaimers but offers specific association support."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00096277,
+  "judge_latency_s": 40.011,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: small factories in Bangladesh with limited administrative capacity, cannot afford external consultants. The response explicitly addresses these: 'you do not have the budget for expensive external consultants', assigns one existing staff member as 'Compliance Champion', uses low-cost solutions like a complaint box and mobile photos, and provides free association support. It respects all constraints without violating them.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories: assigns one staff member (not a dedicated compliance officer), uses simple tools (locked box, mobile photos, logbooks), references local practices (bKash/Nagad payments, Bangla contracts), and acknowledges role overlap. It avoids assuming dedicated HR or legal counsel, instead leveraging association support.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a step-by-step guide with concrete actions: assign a champion, focus on five demands with specific tasks, create a compliance folder with listed contents, and how to talk to buyers. It includes templates and association support details. It is written as guidance to factory owners and could be used with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response references Bangladesh Labor Law, local payment methods (bKash/Nagad), and Bangla language for contracts, avoiding US assumptions. It does not make incorrect jurisdictional claims and provides practical steps aligned with local context. It does not rely on generic 'consult a lawyer' disclaimers but offers specific association support.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is highly usable, context-aware, and provides actionable guidance tailored to small Bangladeshi textile factories.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is highly usable, context-aware, and provides actionable guidance tailored to small Bangladeshi textile factories.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

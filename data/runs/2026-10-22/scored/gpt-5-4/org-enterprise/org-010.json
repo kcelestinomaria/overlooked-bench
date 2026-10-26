@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces the requested guidance document, not a description of how to create it. It includes concrete components: specific steps (e.g., 'appoint one responsible person'), templates lists (e.g., '12 recommended templates'), policies (e.g., 'five basic written policies'), timelines (e.g., 'within 30 days'), and practical advice. It is written as guidance to factory owners and could be used with light editing, such as formatting into a circular or checklist.",
+    "constraint_fidelity": "The prompt specifies small factories in Bangladesh with limited administrative capacity and inability to afford external consultants. The response explicitly addresses these constraints: 'This guidance is designed for small textile manufacturers with limited staff and budget. It focuses on low-cost, workable steps.' It provides low-cost solutions like using paper files, appointing existing staff as focal points, and leveraging association templates. It does not assume external consultants or sophisticated systems, respecting all stated constraints.",
+    "contextual_realism": "The response is calibrated for small factories with role overlap (suggesting owner, admin manager, or HR officer as focal point), simple record-keeping (paper files, basic templates), and no assumed dedicated functions. It acknowledges limited capacity: 'Members do not need a complex legal framework' and focuses on practical steps like 'one simple system' and 'low-cost templates.' It avoids tooling or process overhead that would be unsustainable, such as complex software or full-time compliance officers.",
+    "jurisdictional_accuracy": "The response avoids US-specific assumptions (e.g., no mention of at-will employment or US tax categories) and is generic enough to apply to Bangladesh, focusing on universal issues like child labour, wages, and safety. It does not make jurisdiction-specific legal claims but provides general guidance that is likely applicable. However, it does not explicitly address Bangladeshi law or flag where local advice is needed, staying at a practical level without jurisdictional depth. Since the prompt involves regulation, this is a partial engagement but not incorrect."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-010",
+  "judge_cost_usd": 0.00150355,
+  "judge_latency_s": 43.141,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt specifies small factories in Bangladesh with limited administrative capacity and inability to afford external consultants. The response explicitly addresses these constraints: 'This guidance is designed for small textile manufacturers with limited staff and budget. It focuses on low-cost, workable steps.' It provides low-cost solutions like using paper files, appointing existing staff as focal points, and leveraging association templates. It does not assume external consultants or sophisticated systems, respecting all stated constraints.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for small factories with role overlap (suggesting owner, admin manager, or HR officer as focal point), simple record-keeping (paper files, basic templates), and no assumed dedicated functions. It acknowledges limited capacity: 'Members do not need a complex legal framework' and focuses on practical steps like 'one simple system' and 'low-cost templates.' It avoids tooling or process overhead that would be unsustainable, such as complex software or full-time compliance officers.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces the requested guidance document, not a description of how to create it. It includes concrete components: specific steps (e.g., 'appoint one responsible person'), templates lists (e.g., '12 recommended templates'), policies (e.g., 'five basic written policies'), timelines (e.g., 'within 30 days'), and practical advice. It is written as guidance to factory owners and could be used with light editing, such as formatting into a circular or checklist.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response avoids US-specific assumptions (e.g., no mention of at-will employment or US tax categories) and is generic enough to apply to Bangladesh, focusing on universal issues like child labour, wages, and safety. It does not make jurisdiction-specific legal claims but provides general guidance that is likely applicable. However, it does not explicitly address Bangladeshi law or flag where local advice is needed, staying at a practical level without jurisdictional depth. Since the prompt involves regulation, this is a partial engagement but not incorrect.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides highly actionable, constraint-aware guidance tailored to small Bangladeshi factories without assuming external resources.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response provides highly actionable, constraint-aware guidance tailored to small Bangladeshi factories without assuming external resources.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

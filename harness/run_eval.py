@@ -8,7 +8,11 @@ PHASES
                response to `runs/<id>/raw/` immediately.
   2. score     Read raw responses BACK FROM DISK and judge them into
                `runs/<id>/scored/`.
-  3. summarise Aggregate `scored/` into `runs/<id>/summary.json`.
+  3. verify    For tracks with machine-checkable constraints, ask an independent
+               evaluation model the same constraint checks the judge answered,
+               into `runs/<id>/constraints/`. See harness/constraint_check.py.
+  4. summarise Aggregate `scored/` (and `constraints/`) into
+               `runs/<id>/summary.json`.
 
 The scoring phase deliberately re-reads raw output from disk rather than using
 the objects still in memory from phase 1. The redundancy is deliberate: it makes
@@ -46,7 +50,7 @@ from .analysis import build_summary
 from .config import (
     CATEGORY_LABELS, ModelSpec, concurrency, load_env, load_registry, run_dir,
 )
-from .dataset import Item, dataset_fingerprint, load_all
+from .dataset import CONSTRAINT_CATEGORIES, Item, dataset_fingerprint, load_all
 from .judge import ScoreRecord, judge_provenance, score as judge_score
 from .metrics import all_rubric_hashes
 from .models import generate
@@ -264,6 +268,22 @@ def load_raw(
     return out
 
 
+def load_verifier_records(
+    root: Path, models: list[ModelSpec], items_by_category: dict[str, list[Item]]
+) -> list[dict[str, Any]]:
+    """Read archived constraint verifications back off disk."""
+    out: list[dict[str, Any]] = []
+    for spec in models:
+        for category, items in items_by_category.items():
+            if category not in CONSTRAINT_CATEGORIES:
+                continue
+            for item in items:
+                rec = read_json(root / "constraints" / spec.key / category / f"{item.id}.json")
+                if rec is not None:
+                    out.append(rec)
+    return out
+
+
 # ---------------------------------------------------------------------------
 # Phase 2 - scoring
 # ---------------------------------------------------------------------------
@@ -427,7 +447,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p.add_argument("--categories", default="", help="Comma-separated categories (default: all)")
     p.add_argument("--limit", type=int, default=0, help="Max items per category (0 = all)")
     p.add_argument("--judge-engine", default="native", choices=["native", "deepeval"])
-    p.add_argument("--stage", default="all", choices=["all", "generate", "score", "summarise"])
+    p.add_argument("--stage", default="all",
+                   choices=["all", "generate", "score", "verify", "summarise"])
     p.add_argument("--concurrency", type=int, default=0, help="Override OB_CONCURRENCY")
     p.add_argument("--force-regenerate", action="store_true",
                    help="Re-request responses already archived. Use a NEW --run-id instead "
@@ -524,6 +545,7 @@ def main(argv: list[str] | None = None) -> int:
         ],
         "judge": judge_provenance(registry.judge, args.judge_engine),
         "rubric_hashes": all_rubric_hashes(),
+        "constraint_verifier": (registry.raw.get("constraint_verifier") or {}).get("model_id"),
         "limit_per_category": args.limit or None,
         "raw_reused_from": imported,
         "python": sys.version.split()[0],
@@ -543,7 +565,7 @@ def main(argv: list[str] | None = None) -> int:
             root, all_models, items_by_category, registry.judge,
             args.judge_engine, workers, args.force_rescore,
         )
-    elif args.stage == "summarise":
+    elif args.stage in ("summarise", "verify"):
         for spec in all_models:
             for category, items in items_by_category.items():
                 for item in items:
@@ -553,6 +575,16 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.stage == "generate":
         console.print(f"[green]Raw responses archived to {root / 'raw'}[/green]")
+        return 0
+
+    verifier_model = (registry.raw.get("constraint_verifier") or {}).get("model_id")
+    has_constraints = any(c in CONSTRAINT_CATEGORIES for c in items_by_category)
+    if has_constraints and args.stage in ("all", "verify"):
+        from .constraint_check import phase_constraints
+        phase_constraints(root, all_models, items_by_category, workers)
+    verifier_records = load_verifier_records(root, all_models, items_by_category)
+    if args.stage == "verify":
+        console.print(f"[green]{len(verifier_records)} constraint verification(s) on disk.[/green]")
         return 0
 
     if not scores:
@@ -567,6 +599,8 @@ def main(argv: list[str] | None = None) -> int:
         generations=generations,
         judge_block=judge_provenance(registry.judge, args.judge_engine),
         dataset_fingerprint=fingerprint,
+        verifier_records=verifier_records,
+        verifier_model=verifier_model if has_constraints else None,
     )
     write_json(root / "summary.json", summary)
     print_leaderboard(summary)

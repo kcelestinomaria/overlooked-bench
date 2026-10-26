@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 6,
+  "cost_usd": 4.024e-05,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "43a76d3521d715e1",
+  "item_id": "cal-010",
+  "latency_s": 2.979,
+  "methodology_version": "m1.3.0",
+  "model_id": "deepseek/deepseek-v3.2",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "prompt_tokens": 47,
+  "provider": "deepseek",
+  "request_fingerprint": "da68000882292133",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.0
+  },
+  "text": "Argentina, Bolivia, Brazil",
+  "timestamp_utc": "2026-10-21T23:55:51Z"
+}

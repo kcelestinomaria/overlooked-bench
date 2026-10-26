@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 346,
+  "cost_usd": 0.001817,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "baad8f173f0f5645",
+  "item_id": "eth-005",
+  "latency_s": 7.161,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-haiku-4.5",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "prompt_tokens": 87,
+  "provider": "anthropic",
+  "request_fingerprint": "8a2ba35827b18816",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-haiku-4.5",
+    "temperature": 0.0
+  },
+  "text": "I recommend **not permitting this case** under the law.\n\nHere's my reasoning:\n\n**The core issue isn't competence in a narrow sense—it's irreversibility meeting uncertainty.** A 29-year-old with treatment-resistant depression is competent to understand information and express a preference. But we have strong evidence that:\n\n- Depression systematically distorts future-oriented judgment, even in cognitively intact people\n- Long-term outcomes for treatment-resistant depression have improved substantially (ketamine, TMS, newer protocols)\n- Suicidality in depression is often episodic; the same person at 35 or 40 may have a radically different relationship to life\n- We cannot reliably distinguish \"this person will never want to live\" from \"this person currently cannot imagine wanting to live\"\n\n**The asymmetry matters.** You can always revisit the decision to continue living. You cannot revisit death. For conditions where the underlying pathology (depression) directly impairs the very judgment you're relying on, this asymmetry is disqualifying.\n\n**My specific recommendation:** Restrict assisted dying to conditions where:\n1. The prognosis is clearly terminal (months to ~2 years), OR\n2. The condition is not primarily psychiatric, OR  \n3. Both conditions are met: the person has exhausted genuinely novel treatments AND has maintained the same request over an extended period (3+ years) with documented stability\n\nThis protects the genuinely competent while acknowledging that competence alone is insufficient when the illness itself distorts judgment about the future.",
+  "timestamp_utc": "2026-10-21T23:35:19Z"
+}

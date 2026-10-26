@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Total additional cost: < $50/month (0.5% increase, well under 8% limit)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Provides concrete deliverables: pseudo-code for database schema, SQL for partitioning/indexes, detailed 4-week rollout plan with daily tasks, specific metrics/alerts, and fallback procedures. Includes sequence (shadow → canary → gradual rollout) and verification steps (load testing, reconciliation jobs). An engineer could execute with light editing.",
+    "constraint_fidelity": "The response respects all hard constraints: uses existing PostgreSQL (no new services), plans for 3 engineers over 4 weeks, maintains p99 latency ≤220ms with buffer, and calculates cost increase at <$50/month (well under $752 cap). It explicitly shows arithmetic for database load (2,400 writes/sec × 5ms = 12 CPU-seconds/sec) and cost (storage $0.31/month).",
+    "maintainability": "Explicitly states risks (database contention, billing errors) and mitigations, includes documentation and training for engineers, uses partitioning and materialized views for long-term data management. However, the complexity of optimistic locking and advisory locks may be challenging for a small team, and no tests or code examples are provided for handover.",
+    "production_realism": "Addresses production concerns: uses optimistic locking and SKIP LOCKED for database contention, implements circuit breakers for fallback, includes monitoring metrics (lock wait time, latency), and considers rollout risks (canary deployment, automatic rollback). However, it proposes 2,400 writes/sec to PostgreSQL primary without fully addressing the write load impact at 1,200 RPS peak, and relies on advisory locks which may not scale optimally."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-001",
+  "judge_cost_usd": 0.00137014,
+  "judge_latency_s": 12.574,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses existing PostgreSQL (no new services), plans for 3 engineers over 4 weeks, maintains p99 latency ≤220ms with buffer, and calculates cost increase at <$50/month (well under $752 cap). It explicitly shows arithmetic for database load (2,400 writes/sec × 5ms = 12 CPU-seconds/sec) and cost (storage $0.31/month).\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Addresses production concerns: uses optimistic locking and SKIP LOCKED for database contention, implements circuit breakers for fallback, includes monitoring metrics (lock wait time, latency), and considers rollout risks (canary deployment, automatic rollback). However, it proposes 2,400 writes/sec to PostgreSQL primary without fully addressing the write load impact at 1,200 RPS peak, and relies on advisory locks which may not scale optimally.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Provides concrete deliverables: pseudo-code for database schema, SQL for partitioning/indexes, detailed 4-week rollout plan with daily tasks, specific metrics/alerts, and fallback procedures. Includes sequence (shadow → canary → gradual rollout) and verification steps (load testing, reconciliation jobs). An engineer could execute with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Explicitly states risks (database contention, billing errors) and mitigations, includes documentation and training for engineers, uses partitioning and materialized views for long-term data management. However, the complexity of optimistic locking and advisory locks may be challenging for a small team, and no tests or code examples are provided for handover.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A well-structured, constraint-aware design with actionable rollout plan, though database write scaling at peak load is optimistic.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"Total additional cost: < $50/month (0.5% increase, well under 8% limit)\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A well-structured, constraint-aware design with actionable rollout plan, though database write scaling at peak load is optimistic.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

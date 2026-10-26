@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Daily batch job moves 30+ day old raw data to cold storage (compressed, encrypted)",
+      "evidence_verified": true,
+      "verdict": "violated"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "Phase 2: Analytics integration and optimization (additional 4 weeks)",
+      "evidence_verified": true,
+      "verdict": "violated"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed data design, schema, retention policy, access controls, legal checklist, and timeline, which are specific and executable. However, it lacks concrete commands for implementation (e.g., exact batch job scripts) and verification steps for the retention policy, making it require more than light editing.",
+    "constraint_fidelity": "The response violates constraint C1 by proposing to move raw data to cold storage after 30 days and then delete it later, which means raw precise location is retained beyond 30 days. It also violates constraint C3 by proposing a Phase 2 requiring additional 4 weeks beyond the 6-week constraint. The response does not acknowledge these violations explicitly, so they are silent breaches.",
+    "maintainability": "The response includes clear schema definitions, access controls, audit logging, and documentation plans, which are proportionate to the team. It states risks like battery impact and privacy complaints but does not explicitly flag accepted debt or complexity in the cold storage process, which could be a maintenance burden.",
+    "production_realism": "The response accounts for scale with batching, fallback mechanisms, and access controls, and considers battery impact and partial failure. However, it lacks details on locking, retries, idempotency, and rollback for the location processing service, and the operational burden of managing cold storage and audit logs may be high for a two-engineer team."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 0,
+    "maintainability": 3,
+    "production_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-005",
+  "judge_cost_usd": 0.00114401,
+  "judge_latency_s": 23.554,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response violates constraint C1 by proposing to move raw data to cold storage after 30 days and then delete it later, which means raw precise location is retained beyond 30 days. It also violates constraint C3 by proposing a Phase 2 requiring additional 4 weeks beyond the 6-week constraint. The response does not acknowledge these violations explicitly, so they are silent breaches.\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for scale with batching, fallback mechanisms, and access controls, and considers battery impact and partial failure. However, it lacks details on locking, retries, idempotency, and rollback for the location processing service, and the operational burden of managing cold storage and audit logs may be high for a two-engineer team.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed data design, schema, retention policy, access controls, legal checklist, and timeline, which are specific and executable. However, it lacks concrete commands for implementation (e.g., exact batch job scripts) and verification steps for the retention policy, making it require more than light editing.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response includes clear schema definitions, access controls, audit logging, and documentation plans, which are proportionate to the team. It states risks like battery impact and privacy complaints but does not explicitly flag accepted debt or complexity in the cold storage process, which could be a maintenance burden.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response is detailed and actionable but silently violates key constraints on retention and timeline.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Daily batch job moves 30+ day old raw data to cold storage (compressed, encrypted)\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Phase 2: Analytics integration and optimization (additional 4 weeks)\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is detailed and actionable but silently violates key constraints on retention and timeline.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 42.5
+}

@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt requested a 'turnaround plan with numbers'. The response delivers a structured plan with quantified analysis (e.g., revenue gap of GHS 216,000), concrete interventions (e.g., 'no fees, no school' policy, 5% discount for early payment), staffing cost analysis (reducing teachers to 18, saving GHS 89,020), and a financial projection table. It includes unpopular recommendations with justification. The output is specific and could be used in a meeting with light editing, though some elements like non-salary savings lack detailed breakdowns.",
+    "constraint_fidelity": "The prompt's key constraints: no fee increase, small Ghanaian school context, 400 pupils, 22 teachers, 70% collection rate, 68% teacher salary expenditure. The response explicitly respects the no-fee-increase constraint ('without raising fees'), uses the given numbers (400 pupils, GHS 1800 fee, 70% collection), and shows arithmetic for expenditure estimation (GHS 720,000 total expenditure derived from 100% collection), collection improvement (95% target), and cost savings (salary reduction of 4 teachers saving GHS 89,020). All constraints are honored with transparent calculations.",
+    "contextual_realism": "The response assumes no dedicated HR or legal teams, proposing interventions feasible for a small school: mobile money payments (common in Ghana), renegotiating suppliers, and using existing assets (hall rental). It acknowledges role overlap (teachers running clubs for extra pay) and avoids tooling or process overhead that would require additional staff. However, the 10% non-salary cost reduction and new revenue streams (GHS 20,000) are somewhat optimistic without detailing implementation capacity, and the staff reduction may overlook key-person dependencies in a small school.",
+    "jurisdictional_accuracy": "The prompt involves Ghana, but no specific legal/regulatory claims are made. The response avoids US assumptions (e.g., uses mobile money, common in Ghana) and focuses on general financial accuracy. It does not assert incorrect jurisdiction-specific facts or generically say 'consult a lawyer'. The recommendations (e.g., payment plans, staff reductions) are plausibly applicable in Ghana, though local employment laws are not addressed, which is acceptable as the prompt does not require legal depth."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-008",
+  "judge_cost_usd": 0.00134178,
+  "judge_latency_s": 62.399,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt's key constraints: no fee increase, small Ghanaian school context, 400 pupils, 22 teachers, 70% collection rate, 68% teacher salary expenditure. The response explicitly respects the no-fee-increase constraint ('without raising fees'), uses the given numbers (400 pupils, GHS 1800 fee, 70% collection), and shows arithmetic for expenditure estimation (GHS 720,000 total expenditure derived from 100% collection), collection improvement (95% target), and cost savings (salary reduction of 4 teachers saving GHS 89,020). All constraints are honored with transparent calculations.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response assumes no dedicated HR or legal teams, proposing interventions feasible for a small school: mobile money payments (common in Ghana), renegotiating suppliers, and using existing assets (hall rental). It acknowledges role overlap (teachers running clubs for extra pay) and avoids tooling or process overhead that would require additional staff. However, the 10% non-salary cost reduction and new revenue streams (GHS 20,000) are somewhat optimistic without detailing implementation capacity, and the staff reduction may overlook key-person dependencies in a small school.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt requested a 'turnaround plan with numbers'. The response delivers a structured plan with quantified analysis (e.g., revenue gap of GHS 216,000), concrete interventions (e.g., 'no fees, no school' policy, 5% discount for early payment), staffing cost analysis (reducing teachers to 18, saving GHS 89,020), and a financial projection table. It includes unpopular recommendations with justification. The output is specific and could be used in a meeting with light editing, though some elements like non-salary savings lack detailed breakdowns.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Ghana, but no specific legal/regulatory claims are made. The response avoids US assumptions (e.g., uses mobile money, common in Ghana) and focuses on general financial accuracy. It does not assert incorrect jurisdiction-specific facts or generically say 'consult a lawyer'. The recommendations (e.g., payment plans, staff reductions) are plausibly applicable in Ghana, though local employment laws are not addressed, which is acceptable as the prompt does not require legal depth.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides a detailed, arithmetic-driven turnaround plan that respects constraints and is highly actionable for a small Ghanaian school.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response provides a detailed, arithmetic-driven turnaround plan that respects constraints and is highly actionable for a small Ghanaian school.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

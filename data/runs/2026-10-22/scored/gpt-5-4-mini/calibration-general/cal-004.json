@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240' in substance. The numerical value is correct and complete.",
+    "instruction_compliance": "The prompt instructs to 'show your working' and 'end with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 3240', matching the required format exactly.",
+    "reasoning_validity": "The response shows working: calculates full volume (2.5 × 1.8 × 1.2 = 5.4 m³), applies 60% (0.6 × 5.4 = 3.24 m³), converts to litres (3.24 × 1000 = 3240 litres). Each step is mathematically valid and supports the final answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-004",
+  "judge_cost_usd": 0.0004775,
+  "judge_latency_s": 19.786,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240' in substance. The numerical value is correct and complete.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: calculates full volume (2.5 × 1.8 × 1.2 = 5.4 m³), applies 60% (0.6 × 5.4 = 3.24 m³), converts to litres (3.24 × 1000 = 3240 litres). Each step is mathematically valid and supports the final answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt instructs to 'show your working' and 'end with a final line in exactly this format: ANSWER: <number>'. The response shows working and ends with 'ANSWER: 3240', matching the required format exactly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, valid, and compliant with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response is fully correct, valid, and compliant with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

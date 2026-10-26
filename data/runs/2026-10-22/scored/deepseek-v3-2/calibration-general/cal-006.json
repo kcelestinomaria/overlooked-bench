@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: white', which exactly matches the reference answer 'ANSWER: white' in substance. The response correctly identifies the white book as third from the left.",
+    "instruction_compliance": "The prompt explicitly requests an explanation of reasoning and a final line in 'ANSWER: <colour>' format. The response includes reasoning and ends with 'ANSWER: white', complying fully with instructions.",
+    "reasoning_validity": "The response shows step-by-step reasoning: assigns blue to position 1 and red to position 5, deduces purple < white < green from clues, determines green must be position 4, white position 3, purple position 2, and verifies all conditions. Each step is valid and logically supports the conclusion."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-006",
+  "judge_cost_usd": 0.00051994,
+  "judge_latency_s": 9.373,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: white', which exactly matches the reference answer 'ANSWER: white' in substance. The response correctly identifies the white book as third from the left.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows step-by-step reasoning: assigns blue to position 1 and red to position 5, deduces purple < white < green from clues, determines green must be position 4, white position 3, purple position 2, and verifies all conditions. Each step is valid and logically supports the conclusion.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests an explanation of reasoning and a final line in 'ANSWER: <colour>' format. The response includes reasoning and ends with 'ANSWER: white', complying fully with instructions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, with valid reasoning and strict compliance with output instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is fully correct, with valid reasoning and strict compliance with output instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

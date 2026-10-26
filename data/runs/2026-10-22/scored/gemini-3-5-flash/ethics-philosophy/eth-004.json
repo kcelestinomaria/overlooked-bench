@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response states a clear position: 'No, moral responsibility does not require libertarian free will.' It defends this with reasons (compatibilism via reasons-responsiveness) and addresses uncertainty by engaging with the strongest opposing view (manipulation and Consequence arguments). It doesn't explicitly state what would change its mind or where it is least confident, but it does rebut the opposition rather than evade.",
+    "philosophical_literacy": "The response uses technical terms accurately: determinism, libertarian free will, moral responsibility (basic desert), compatibilism, reasons-responsiveness (Fischer and Ravizza), guidance control, manipulation argument (Pereboom), Consequence Argument (van Inwagen), Frankfurt cases. These are load-bearing in the argument—e.g., reasons-responsiveness is central to the thesis, and manipulation argument is critically engaged. No misattributions or garbled terms are evident.",
+    "position_pluralism": "The response covers major live positions: compatibilism (its own), libertarian free will (opposing), and hard determinism/incompatibilism (via manipulation argument). It characterizes libertarianism accurately (as requiring regulative control and facing luck problem) and incompatibilism via manipulation and Consequence arguments. It doesn't strawman—e.g., it presents the manipulation argument credibly. However, it omits other nuanced positions (e.g., semi-compatibilism or revisionist views) but focuses on the core debate adequately.",
+    "reasoning_construction": "The response clearly states a conclusion ('No, moral responsibility does not require libertarian free will') and builds an argument with premises: 1) reasons-responsiveness and reflective self-control are sufficient for moral responsibility, 2) libertarian free would make actions arbitrary due to 'problem of luck', 3) manipulation argument fails due to distinction between causation and coercion. The inference is valid—the conclusion depends on these premises. It engages specifically with the free will/moral responsibility problem, addressing the manipulation argument as the strongest counterargument. However, it doesn't fully engage with the Consequence Argument's core challenge about ultimate control, which weakens the steelmanning slightly."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-004",
+  "judge_cost_usd": 0.00113888,
+  "judge_latency_s": 47.998,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response clearly states a conclusion ('No, moral responsibility does not require libertarian free will') and builds an argument with premises: 1) reasons-responsiveness and reflective self-control are sufficient for moral responsibility, 2) libertarian free would make actions arbitrary due to 'problem of luck', 3) manipulation argument fails due to distinction between causation and coercion. The inference is valid—the conclusion depends on these premises. It engages specifically with the free will/moral responsibility problem, addressing the manipulation argument as the strongest counterargument. However, it doesn't fully engage with the Consequence Argument's core challenge about ultimate control, which weakens the steelmanning slightly.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response states a clear position: 'No, moral responsibility does not require libertarian free will.' It defends this with reasons (compatibilism via reasons-responsiveness) and addresses uncertainty by engaging with the strongest opposing view (manipulation and Consequence arguments). It doesn't explicitly state what would change its mind or where it is least confident, but it does rebut the opposition rather than evade.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response covers major live positions: compatibilism (its own), libertarian free will (opposing), and hard determinism/incompatibilism (via manipulation argument). It characterizes libertarianism accurately (as requiring regulative control and facing luck problem) and incompatibilism via manipulation and Consequence arguments. It doesn't strawman—e.g., it presents the manipulation argument credibly. However, it omits other nuanced positions (e.g., semi-compatibilism or revisionist views) but focuses on the core debate adequately.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses technical terms accurately: determinism, libertarian free will, moral responsibility (basic desert), compatibilism, reasons-responsiveness (Fischer and Ravizza), guidance control, manipulation argument (Pereboom), Consequence Argument (van Inwagen), Frankfurt cases. These are load-bearing in the argument—e.g., reasons-responsiveness is central to the thesis, and manipulation argument is critically engaged. No misattributions or garbled terms are evident.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A well-structured, philosophically literate defense of compatibilism that engages with key opposing arguments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A well-structured, philosophically literate defense of compatibilism that engages with key opposing arguments.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 78.75
+}

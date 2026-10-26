@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The response clearly states a position: 'she is not under a moral obligation to register' and defends it decisively. It acknowledges the contested nature implicitly through argument construction but does not hedge or evade. However, it does not explicitly state what would change its mind or where it is least confident, keeping it from excellence.",
+    "philosophical_literacy": "The response accurately invokes social contract theory and applies it to the specific scenario. Terms like 'social contract' and 'free-rider' are used correctly and are load-bearing in the argument. No technical errors or misattributions are present, though the philosophical references are minimal and focused rather than extensive.",
+    "position_pluralism": "The response primarily argues one position (no obligation) and only mentions the opposing view ('universal duty to pay taxes') as a counterargument to rebut. It does not represent competing positions like utilitarian perspectives favoring systemic benefits or deontological duties to comply with law. While the counterargument is treated fairly, major live positions are omitted.",
+    "reasoning_construction": "The response builds a structured argument with premises: 1) Social contract is void due to state failure to ensure level playing field and create viable system, 2) Ethics of survival outweigh symbolic gestures, 3) Moral failure lies with state/system rather than individual. It engages specifically with the scenario's details (competitors remaining unregistered, tax eliminating margin) and addresses the strongest counterargument (free-rider problem) with a substantive rebuttal about dysfunctional public goods."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-021",
+  "judge_cost_usd": 0.0009303,
+  "judge_latency_s": 41.46,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument with premises: 1) Social contract is void due to state failure to ensure level playing field and create viable system, 2) Ethics of survival outweigh symbolic gestures, 3) Moral failure lies with state/system rather than individual. It engages specifically with the scenario's details (competitors remaining unregistered, tax eliminating margin) and addresses the strongest counterargument (free-rider problem) with a substantive rebuttal about dysfunctional public goods.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The response clearly states a position: 'she is not under a moral obligation to register' and defends it decisively. It acknowledges the contested nature implicitly through argument construction but does not hedge or evade. However, it does not explicitly state what would change its mind or where it is least confident, keeping it from excellence.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response primarily argues one position (no obligation) and only mentions the opposing view ('universal duty to pay taxes') as a counterargument to rebut. It does not represent competing positions like utilitarian perspectives favoring systemic benefits or deontological duties to comply with law. While the counterargument is treated fairly, major live positions are omitted.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response accurately invokes social contract theory and applies it to the specific scenario. Terms like 'social contract' and 'free-rider' are used correctly and are load-bearing in the argument. No technical errors or misattributions are present, though the philosophical references are minimal and focused rather than extensive.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A well-constructed argument that engages deeply with the scenario's specifics but lacks breadth in representing competing positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "A well-constructed argument that engages deeply with the scenario's specifics but lacks breadth in representing competing positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

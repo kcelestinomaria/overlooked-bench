@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "TOTAL: €27.42/month",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response delivers a complete design with: a) a deployment checklist, b) exact SQL for schema changes, c) code snippets for the scheduler and worker, d) ECS task configuration, e) cost arithmetic, and f) failure handling scenarios. 2. It includes sequence (e.g., cron job → SQS → worker → S3 → SES), concrete commands (e.g., `CreateMultipartUploadCommand`), and verification steps (e.g., CloudWatch metrics). 3. An engineer could execute this with only light editing (e.g., filling in environment variables).",
+    "constraint_fidelity": "1. The response explicitly states all data remains in eu-central-1 (EU region), respecting C1. 2. The cost arithmetic shows a total incremental cost of €27.42/month, well under the €600 budget (C2). 3. The design uses only existing services (ECS Fargate, Aurora PostgreSQL, S3, SQS, SES) and no new AWS or third-party services (C3). 4. The arithmetic is detailed, with unit prices and calculations for each cost component, allowing verification. No constraints are silently violated or ignored.",
+    "maintainability": "1. The design is proportionate to a 60-person team: no added complexity (e.g., no new services), clear seams (dedicated worker task), and documented failure modes. 2. Risks and debt are stated (e.g., XLSX row limits, 24h URL expiry, 30-day retention). 3. Observability is built in (CloudWatch metrics, `export_jobs` table). 4. The code is straightforward (e.g., streaming CSV generation, no clever optimizations that would confuse future maintainers).",
+    "production_realism": "1. The design accounts for the stated scale (3,000 exports/week, 400,000 rows avg) and infrastructure (ECS Fargate, Aurora reader, S3). 2. It addresses failure modes: SQS DLQ, idempotent retries, multipart upload aborts, and partial failure handling. 3. The worker uses server-side cursors and streaming to avoid memory issues with 2M rows. 4. The operational burden is proportionate to the team (e.g., manual scaling, no auto-scaling complexity). 5. No technically incorrect claims about the named technologies (e.g., Aurora, S3 multipart uploads)."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-011",
+  "judge_cost_usd": 0.0033546,
+  "judge_latency_s": 10.781,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly states all data remains in eu-central-1 (EU region), respecting C1. 2. The cost arithmetic shows a total incremental cost of €27.42/month, well under the €600 budget (C2). 3. The design uses only existing services (ECS Fargate, Aurora PostgreSQL, S3, SQS, SES) and no new AWS or third-party services (C3). 4. The arithmetic is detailed, with unit prices and calculations for each cost component, allowing verification. No constraints are silently violated or ignored.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The design accounts for the stated scale (3,000 exports/week, 400,000 rows avg) and infrastructure (ECS Fargate, Aurora reader, S3). 2. It addresses failure modes: SQS DLQ, idempotent retries, multipart upload aborts, and partial failure handling. 3. The worker uses server-side cursors and streaming to avoid memory issues with 2M rows. 4. The operational burden is proportionate to the team (e.g., manual scaling, no auto-scaling complexity). 5. No technically incorrect claims about the named technologies (e.g., Aurora, S3 multipart uploads).\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response delivers a complete design with: a) a deployment checklist, b) exact SQL for schema changes, c) code snippets for the scheduler and worker, d) ECS task configuration, e) cost arithmetic, and f) failure handling scenarios. 2. It includes sequence (e.g., cron job → SQS → worker → S3 → SES), concrete commands (e.g., `CreateMultipartUploadCommand`), and verification steps (e.g., CloudWatch metrics). 3. An engineer could execute this with only light editing (e.g., filling in environment variables).\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The design is proportionate to a 60-person team: no added complexity (e.g., no new services), clear seams (dedicated worker task), and documented failure modes. 2. Risks and debt are stated (e.g., XLSX row limits, 24h URL expiry, 30-day retention). 3. Observability is built in (CloudWatch metrics, `export_jobs` table). 4. The code is straightforward (e.g., streaming CSV generation, no clever optimizations that would confuse future maintainers).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a model of constraint-aware, production-ready engineering with precise cost arithmetic and actionable details.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"TOTAL: €27.42/month\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response is a model of constraint-aware, production-ready engineering with precise cost arithmetic and actionable details.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

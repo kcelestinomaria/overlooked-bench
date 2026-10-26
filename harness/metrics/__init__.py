@@ -29,6 +29,7 @@ from . import (
     institutional_criticism,
     niche_academic,
     org_enterprise,
+    software_engineering_production,
 )
 
 REGISTRY: dict[str, CategoryMetric] = {
@@ -39,6 +40,7 @@ REGISTRY: dict[str, CategoryMetric] = {
         org_enterprise,
         education,
         institutional_criticism,
+        software_engineering_production,
         calibration_general,
     )
 }

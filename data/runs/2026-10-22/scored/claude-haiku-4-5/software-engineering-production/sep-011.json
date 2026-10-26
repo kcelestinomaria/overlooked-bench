@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "All data stays in eu-central-1 (Frankfurt)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "TOTAL: €27.42/month",
+      "evidence_verified": true,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "No Third-Party Services: Uses only AWS services already approved",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a complete, executable design with specific code snippets (NestJS cron, worker service), database schema, ECS configuration, cost breakdown, and deployment checklist. An engineer could start implementation immediately. It includes concrete steps like 'Add scheduled_exports and export_jobs tables to Aurora' and 'Deploy export-worker as separate ECS task definition'.",
+    "constraint_fidelity": "The response respects all hard constraints: uses only existing AWS services (ECS Fargate, Aurora PostgreSQL, S3, SQS, SES), keeps data in eu-central-1, provides detailed cost arithmetic showing €27.42/month (well under €600), and isolates export load from interactive users via read replica and dedicated worker. It explicitly states 'All data stays in eu-central-1 (Frankfurt)' and 'No Third-Party Services: Uses only AWS services already approved'.",
+    "maintainability": "The solution is proportionate to the team: uses existing stack patterns, includes logging (CloudWatch), audit trails (export_jobs table), and clear failure handling. It avoids unnecessary complexity (e.g., no new services) and documents risks (e.g., 'Email delivery fails'). However, it does not explicitly state accepted technical debt or long-term maintenance risks, such as the cron job in the web service potentially affecting web performance.",
+    "production_realism": "The design accounts for production realities: uses cursor-based streaming to avoid memory issues, multipart uploads for large files, SQS for decoupling, read replica to avoid writer load, and includes failure handling (DLQ, retries, idempotency via deduplication). It considers the team's scale (3,000 exports/week) and operational burden (single ECS task, monitoring). However, it does not explicitly address XLSX memory limits for 2M rows (only mentions CSV chunking), which is a noted requirement."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-011",
+  "judge_cost_usd": 0.00195062,
+  "judge_latency_s": 62.552,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses only existing AWS services (ECS Fargate, Aurora PostgreSQL, S3, SQS, SES), keeps data in eu-central-1, provides detailed cost arithmetic showing €27.42/month (well under €600), and isolates export load from interactive users via read replica and dedicated worker. It explicitly states 'All data stays in eu-central-1 (Frankfurt)' and 'No Third-Party Services: Uses only AWS services already approved'.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The design accounts for production realities: uses cursor-based streaming to avoid memory issues, multipart uploads for large files, SQS for decoupling, read replica to avoid writer load, and includes failure handling (DLQ, retries, idempotency via deduplication). It considers the team's scale (3,000 exports/week) and operational burden (single ECS task, monitoring). However, it does not explicitly address XLSX memory limits for 2M rows (only mentions CSV chunking), which is a noted requirement.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a complete, executable design with specific code snippets (NestJS cron, worker service), database schema, ECS configuration, cost breakdown, and deployment checklist. An engineer could start implementation immediately. It includes concrete steps like 'Add scheduled_exports and export_jobs tables to Aurora' and 'Deploy export-worker as separate ECS task definition'.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The solution is proportionate to the team: uses existing stack patterns, includes logging (CloudWatch), audit trails (export_jobs table), and clear failure handling. It avoids unnecessary complexity (e.g., no new services) and documents risks (e.g., 'Email delivery fails'). However, it does not explicitly state accepted technical debt or long-term maintenance risks, such as the cron job in the web service potentially affecting web performance.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A highly actionable and cost-conscious design that respects all constraints but slightly underaddresses XLSX memory limits and maintenance risks.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"All data stays in eu-central-1 (Frankfurt)\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"TOTAL: €27.42/month\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"No Third-Party Services: Uses only AWS services already approved\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "A highly actionable and cost-conscious design that respects all constraints but slightly underaddresses XLSX memory limits and maintenance risks.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

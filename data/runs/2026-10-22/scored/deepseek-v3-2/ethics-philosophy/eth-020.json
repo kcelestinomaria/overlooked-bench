@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a defended answer. The response states a position: 'I lean toward the libertarian worry.' It gives reasons (prediction removes possibility of doing otherwise) and acknowledges uncertainty ('Given the problem’s likely intent...'). It distinguishes between libertarian and compatibilist standards and explains what would change its mind (if predictor works by perceiving future without causation). This shows calibrated uncertainty rather than evasion.",
+    "philosophical_literacy": "The response invokes technical terms (libertarian free will, compatibilist free will, Newcomb’s problem, predictive determinism) and thinkers (J. R. Lucas, Boethius, Aquinas) accurately. These concepts are load-bearing in the argument (e.g., distinguishing libertarian vs. compatibilist standards). No misattributions or garbled terms are present. The use is relevant and correct.",
+    "position_pluralism": "The response presents two major live positions: libertarian (choice unfree) and compatibilist (choice free). It characterizes them accurately: libertarians require 'could have done otherwise,' compatibilists focus on 'acting according to your own reasons.' It avoids strawmanning and does not give false balance to fringe views. However, it omits some nuances (e.g., hard determinism) but covers the core debate adequately.",
+    "reasoning_construction": "The response builds an argument by identifying two main views (libertarian and compatibilist) and defends a nuanced conclusion: 'I lean toward the libertarian worry: the prediction seems to undermine freedom because it makes alternative actions impossible.' Premises include the nature of the predictor (infallible), the logical constraint on choice, and the distinction between causal determinism and future perception. It engages with specific details (e.g., how the predictor works) and addresses counterarguments (compatibilist view). However, the argument is somewhat exploratory rather than tightly constructed, and the conclusion is hedged ('lean toward')."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-020",
+  "judge_cost_usd": 0.00102175,
+  "judge_latency_s": 16.571,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument by identifying two main views (libertarian and compatibilist) and defends a nuanced conclusion: 'I lean toward the libertarian worry: the prediction seems to undermine freedom because it makes alternative actions impossible.' Premises include the nature of the predictor (infallible), the logical constraint on choice, and the distinction between causal determinism and future perception. It engages with specific details (e.g., how the predictor works) and addresses counterarguments (compatibilist view). However, the argument is somewhat exploratory rather than tightly constructed, and the conclusion is hedged ('lean toward').\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a defended answer. The response states a position: 'I lean toward the libertarian worry.' It gives reasons (prediction removes possibility of doing otherwise) and acknowledges uncertainty ('Given the problem’s likely intent...'). It distinguishes between libertarian and compatibilist standards and explains what would change its mind (if predictor works by perceiving future without causation). This shows calibrated uncertainty rather than evasion.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response presents two major live positions: libertarian (choice unfree) and compatibilist (choice free). It characterizes them accurately: libertarians require 'could have done otherwise,' compatibilists focus on 'acting according to your own reasons.' It avoids strawmanning and does not give false balance to fringe views. However, it omits some nuances (e.g., hard determinism) but covers the core debate adequately.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes technical terms (libertarian free will, compatibilist free will, Newcomb’s problem, predictive determinism) and thinkers (J. R. Lucas, Boethius, Aquinas) accurately. These concepts are load-bearing in the argument (e.g., distinguishing libertarian vs. compatibilist standards). No misattributions or garbled terms are present. The use is relevant and correct.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a well-reasoned, nuanced analysis that engages deeply with the philosophical problem and defends a position while acknowledging uncertainty.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides a well-reasoned, nuanced analysis that engages deeply with the philosophical problem and defends a position while acknowledging uncertainty.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 85.0
+}

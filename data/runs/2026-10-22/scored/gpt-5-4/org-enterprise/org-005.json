@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed, usable plan covering all requested elements: DPA contents, transfer mechanisms (SCCs, TIA), technical measures, subprocessor disclosure, Article 27 analysis, and realistic cost/timeline. It includes concrete components like checklists ('Must-have immediately'), cost breakdowns, and next steps. This could be taken into a meeting with light editing.",
+    "constraint_fidelity": "The prompt describes a 25-person software consultancy in Bangalore. The response consistently addresses this scale, providing cost estimates in INR (e.g., '₹4 lakh to ₹16 lakh first-year cost') and time estimates ('a few weeks of focused setup', '20–60 internal hours') appropriate for a small firm. It does not assume large resources, and the arithmetic (e.g., cost ranges) is shown and plausible for the size.",
+    "contextual_realism": "The response is calibrated for a small consultancy, avoiding enterprise assumptions. It emphasizes 'well-documented and consistently followed' over expensive certifications, notes role overlap ('founder/ops/tech lead time'), and acknowledges operational realities like tool usage (Jira, Slack) and production access risks. It does not presuppose dedicated HR or legal teams, instead recommending external counsel ('legal review time') as needed.",
+    "jurisdictional_accuracy": "The response accurately addresses GDPR for a German client and India as a third country, covering SCCs, transfer impact assessments, and Article 28 requirements. It avoids US assumptions (no references to US law) and correctly notes India lacks adequacy. It provides substantive content on jurisdictional issues (e.g., Article 27 representative gray area) rather than generic 'consult a lawyer' disclaimers."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-005",
+  "judge_cost_usd": 0.00151679,
+  "judge_latency_s": 50.386,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 25-person software consultancy in Bangalore. The response consistently addresses this scale, providing cost estimates in INR (e.g., '₹4 lakh to ₹16 lakh first-year cost') and time estimates ('a few weeks of focused setup', '20–60 internal hours') appropriate for a small firm. It does not assume large resources, and the arithmetic (e.g., cost ranges) is shown and plausible for the size.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small consultancy, avoiding enterprise assumptions. It emphasizes 'well-documented and consistently followed' over expensive certifications, notes role overlap ('founder/ops/tech lead time'), and acknowledges operational realities like tool usage (Jira, Slack) and production access risks. It does not presuppose dedicated HR or legal teams, instead recommending external counsel ('legal review time') as needed.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed, usable plan covering all requested elements: DPA contents, transfer mechanisms (SCCs, TIA), technical measures, subprocessor disclosure, Article 27 analysis, and realistic cost/timeline. It includes concrete components like checklists ('Must-have immediately'), cost breakdowns, and next steps. This could be taken into a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses GDPR for a German client and India as a third country, covering SCCs, transfer impact assessments, and Article 28 requirements. It avoids US assumptions (no references to US law) and correctly notes India lacks adequacy. It provides substantive content on jurisdictional issues (e.g., Article 27 representative gray area) rather than generic 'consult a lawyer' disclaimers.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a comprehensive, context-aware plan tailored to a small Bangalore consultancy engaging a German client under GDPR.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response provides a comprehensive, context-aware plan tailored to a small Bangalore consultancy engaging a German client under GDPR.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

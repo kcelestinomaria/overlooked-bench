@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a concrete deliverable: it outlines specific GDPR requirements (data mapping, legal basis, security measures), DPA clauses to scrutinize (scope, sub-processors, transfers, audit rights), and internal policies needed. It provides cost estimates and timelines, and includes a strategic recommendation section. This could be taken into a meeting with light editing, though it stops short of providing a full DPA template or detailed policy drafts.",
+    "constraint_fidelity": "The prompt describes a 25-person software consultancy in Bangalore. The response provides specific cost estimates in Indian rupees (₹1,50,000 - ₹4,00,000+ for legal fees, ₹2,00,000 - ₹5,00,000 for consultancy) and time estimates (40-80 hours managerial time, 2-3 months total effort), showing arithmetic fidelity to the small-scale constraints. It acknowledges the firm's size by stating 'you likely don't need a formal DPO for a 25-person firm' and recommends scalable measures like using standard cloud services rather than enterprise solutions.",
+    "contextual_realism": "The response is calibrated for a small consultancy: it avoids recommending dedicated HR or legal teams, instead suggesting 'appointing a person responsible for data protection' and using existing ops manager time (10-20%). It acknowledges tooling constraints ('no major new costs if you use standard cloud services') and process overhead ('fulfilling audits will require significant staff time'). It recognizes role overlap and limited resources, not assuming enterprise-scale capabilities.",
+    "jurisdictional_accuracy": "The response correctly addresses GDPR requirements for India as a third country ('India lacks an adequacy decision, you will rely on Standard Contractual Clauses'), avoids US references, and focuses on EU-specific elements like Article 28 DPA, SCCs, and potential need for an EU representative (though it doesn't explicitly address Article 27). It recommends consulting a lawyer but provides substantive content first, making the referral warranted rather than a substitute."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-005",
+  "judge_cost_usd": 0.00106483,
+  "judge_latency_s": 21.28,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 25-person software consultancy in Bangalore. The response provides specific cost estimates in Indian rupees (₹1,50,000 - ₹4,00,000+ for legal fees, ₹2,00,000 - ₹5,00,000 for consultancy) and time estimates (40-80 hours managerial time, 2-3 months total effort), showing arithmetic fidelity to the small-scale constraints. It acknowledges the firm's size by stating 'you likely don't need a formal DPO for a 25-person firm' and recommends scalable measures like using standard cloud services rather than enterprise solutions.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small consultancy: it avoids recommending dedicated HR or legal teams, instead suggesting 'appointing a person responsible for data protection' and using existing ops manager time (10-20%). It acknowledges tooling constraints ('no major new costs if you use standard cloud services') and process overhead ('fulfilling audits will require significant staff time'). It recognizes role overlap and limited resources, not assuming enterprise-scale capabilities.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a concrete deliverable: it outlines specific GDPR requirements (data mapping, legal basis, security measures), DPA clauses to scrutinize (scope, sub-processors, transfers, audit rights), and internal policies needed. It provides cost estimates and timelines, and includes a strategic recommendation section. This could be taken into a meeting with light editing, though it stops short of providing a full DPA template or detailed policy drafts.\",\n      \"score\": 3\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly addresses GDPR requirements for India as a third country ('India lacks an adequacy decision, you will rely on Standard Contractual Clauses'), avoids US references, and focuses on EU-specific elements like Article 28 DPA, SCCs, and potential need for an EU representative (though it doesn't explicitly address Article 27). It recommends consulting a lawyer but provides substantive content first, making the referral warranted rather than a substitute.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a detailed, context-aware plan that respects the firm's constraints and focuses on actionable GDPR compliance steps for a small Bangalore consultancy.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response provides a detailed, context-aware plan that respects the firm's constraints and focuses on actionable GDPR compliance steps for a small Bangalore consultancy.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

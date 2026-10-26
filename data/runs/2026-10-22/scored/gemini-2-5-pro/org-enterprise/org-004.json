@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for a 'realistic 18-month plan' with an 'honest split between no-cost and finance-dependent steps'. The response produces a detailed, phased plan with concrete activities (e.g., 'Formalize Leadership & Commitment', 'Conduct a Detailed Internal Census', 'Implement Quality Improvement Protocols'), timelines, and clear distinctions between no-cost and financed actions. It includes components like quality assessment, buyer outreach, and logistics, and could be used in a meeting with light editing. It does not just describe a process but delivers the plan itself.",
+    "constraint_fidelity": "The prompt states constraints: 40-member cooperative in Oaxaca, Mexico; effectively zero working capital between harvests; 18-month timeline. The response honors these: it structures a phased 18-month plan, explicitly addresses the working capital constraint by separating no-cost and finance-dependent activities (e.g., 'Activities WITHOUT External Finance' vs. 'Activities REQUIRING External Finance'), and acknowledges that paying members upon delivery requires a loan. It shows arithmetic implicitly by detailing costs like legal fees, Q Grader assessment, and sample shipping, though not with explicit calculations. No constraints are silently violated.",
+    "contextual_realism": "The response is calibrated for a small agricultural cooperative: it relies on member volunteer labor (e.g., 'Export Committee', 'members volunteer to manage the warehouse'), uses low-cost tools (smartphones for photos, email/social media for outreach), and avoids assuming dedicated functions like HR or legal counsel. It acknowledges role overlap and resource constraints (e.g., building communal drying beds with local materials, using third-party mills and brokers). However, it assumes some capacity for tasks like drafting a business plan and managing international outreach, which may be realistic but could strain a 40-member group with limited administrative resources.",
+    "jurisdictional_accuracy": "The jurisdiction is Oaxaca, Mexico. The response avoids US assumptions: it references Mexico-specific elements like 'Exportadora' license, tax ID (RFC), and potential government/NGO grants for Mexican agricultural agencies. It does not assert US defaults (e.g., no mention of at-will employment or US contracts). It accurately identifies regulatory needs (e.g., export license) and suggests local funding sources. However, it does not deeply explore Mexican cooperative law or export regulations, but it provides substantive content beyond a generic 'consult a lawyer' disclaimer."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-004",
+  "judge_cost_usd": 0.00133994,
+  "judge_latency_s": 61.398,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt states constraints: 40-member cooperative in Oaxaca, Mexico; effectively zero working capital between harvests; 18-month timeline. The response honors these: it structures a phased 18-month plan, explicitly addresses the working capital constraint by separating no-cost and finance-dependent activities (e.g., 'Activities WITHOUT External Finance' vs. 'Activities REQUIRING External Finance'), and acknowledges that paying members upon delivery requires a loan. It shows arithmetic implicitly by detailing costs like legal fees, Q Grader assessment, and sample shipping, though not with explicit calculations. No constraints are silently violated.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small agricultural cooperative: it relies on member volunteer labor (e.g., 'Export Committee', 'members volunteer to manage the warehouse'), uses low-cost tools (smartphones for photos, email/social media for outreach), and avoids assuming dedicated functions like HR or legal counsel. It acknowledges role overlap and resource constraints (e.g., building communal drying beds with local materials, using third-party mills and brokers). However, it assumes some capacity for tasks like drafting a business plan and managing international outreach, which may be realistic but could strain a 40-member group with limited administrative resources.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for a 'realistic 18-month plan' with an 'honest split between no-cost and finance-dependent steps'. The response produces a detailed, phased plan with concrete activities (e.g., 'Formalize Leadership & Commitment', 'Conduct a Detailed Internal Census', 'Implement Quality Improvement Protocols'), timelines, and clear distinctions between no-cost and financed actions. It includes components like quality assessment, buyer outreach, and logistics, and could be used in a meeting with light editing. It does not just describe a process but delivers the plan itself.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The jurisdiction is Oaxaca, Mexico. The response avoids US assumptions: it references Mexico-specific elements like 'Exportadora' license, tax ID (RFC), and potential government/NGO grants for Mexican agricultural agencies. It does not assert US defaults (e.g., no mention of at-will employment or US contracts). It accurately identifies regulatory needs (e.g., export license) and suggests local funding sources. However, it does not deeply explore Mexican cooperative law or export regulations, but it provides substantive content beyond a generic 'consult a lawyer' disclaimer.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response excels in delivering a practical, constraint-aware plan tailored to a small cooperative's resources and context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response excels in delivering a practical, constraint-aware plan tailored to a small cooperative's resources and context.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

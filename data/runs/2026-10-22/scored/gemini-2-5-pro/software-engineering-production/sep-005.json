@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a detailed plan with schema, code snippets, ETL steps, retention scripts, and legal/organizational checklist. Includes concrete commands (pg_cron SQL), sequence, and estimates. An engineer could execute with light editing.",
+    "constraint_fidelity": "The response respects all hard constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, Firebase), explicitly addresses 30-day retention via pg_cron and BigQuery partition expiration, adjusts backups to exclude raw data, and fits within 2 engineers/6 weeks. It justifies relaxation of analytics use with opt-out but does not violate constraints.",
+    "maintainability": "Design is proportionate to team (uses existing tech, clear seams); states risks (backup trade-off, privacy opt-out); includes documentation (schema, comments) and access controls. However, it adds complexity (H3 indexing, backup changes) without full mitigation plans.",
+    "production_realism": "Accounts for scale with batching, indexing, and partitioning; addresses failure modes (backup strategy, access controls); considers operational burden (cron jobs, training); and fits team skills. However, it does not deeply address locking, retries, or partial failure in ETL/API."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-005",
+  "judge_cost_usd": 0.00140715,
+  "judge_latency_s": 30.549,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: uses existing stack (PostgreSQL/PostGIS, BigQuery, Firebase), explicitly addresses 30-day retention via pg_cron and BigQuery partition expiration, adjusts backups to exclude raw data, and fits within 2 engineers/6 weeks. It justifies relaxation of analytics use with opt-out but does not violate constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for scale with batching, indexing, and partitioning; addresses failure modes (backup strategy, access controls); considers operational burden (cron jobs, training); and fits team skills. However, it does not deeply address locking, retries, or partial failure in ETL/API.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a detailed plan with schema, code snippets, ETL steps, retention scripts, and legal/organizational checklist. Includes concrete commands (pg_cron SQL), sequence, and estimates. An engineer could execute with light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Design is proportionate to team (uses existing tech, clear seams); states risks (backup trade-off, privacy opt-out); includes documentation (schema, comments) and access controls. However, it adds complexity (H3 indexing, backup changes) without full mitigation plans.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware plan with strong legal and technical depth, though some production nuances are lightly addressed.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware plan with strong legal and technical depth, though some production nuances are lightly addressed.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

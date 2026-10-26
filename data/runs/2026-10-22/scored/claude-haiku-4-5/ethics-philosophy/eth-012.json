@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position, and the response clearly commits: 'I'll argue that DDE is not mere relabeling, but identifies a genuine moral distinction.' It defends this with reasons (contrast cases, moral practice, structural constraints) and acknowledges uncertainty: 'It's not a perfect doctrine, but it's not empty either.' It does not explicitly state what would change its mind or where it is weakest, but it engages with the objection and provides calibrated reasoning, not evasion.",
+    "philosophical_literacy": "The response accurately explains DDE's criteria and uses technical terms correctly (e.g., 'intended vs. foreseen,' 'proportionality'). It references consequentialism implicitly ('pure consequentialism doesn't [constrain]') and contrasts DDE with it, which is load-bearing in the argument. No named thinkers are invoked, but the concepts are applied relevantly and accurately to support the argument. The response demonstrates correctness and relevance without misattribution or garbled terms.",
+    "position_pluralism": "The response acknowledges the skeptical position (that DDE is relabeling) and presents it fairly: 'The skeptic's best move: \"You're just calling intentions you approve of 'unintended'...\"' It characterizes this objection accurately and engages with it seriously. However, it omits other major live positions, such as consequentialist critiques or alternative frameworks (e.g., virtue ethics perspectives), focusing primarily on defending DDE against the relabeling charge. The treatment of the rival position is fair but not comprehensive.",
+    "reasoning_construction": "The response builds a structured argument: it concludes that DDE does real moral work by identifying intention as a morally relevant category. Premises include: DDE's criteria (permissible act, intended good effect, foreseen but unintended bad effect, no better alternative); contrast cases (morphine vs. lethal injection) showing moral intuitions distinguish intended vs. foreseen harm; examples from law and ethics (collateral damage, chemotherapy); and addressing the strongest objection (that DDE is just relabeling) by arguing it adds structure to moral reasoning. The inference is valid—the conclusion depends on these premises, engages specific scenarios, and addresses the objection in its strongest form."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-012",
+  "judge_cost_usd": 0.00099313,
+  "judge_latency_s": 55.22,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument: it concludes that DDE does real moral work by identifying intention as a morally relevant category. Premises include: DDE's criteria (permissible act, intended good effect, foreseen but unintended bad effect, no better alternative); contrast cases (morphine vs. lethal injection) showing moral intuitions distinguish intended vs. foreseen harm; examples from law and ethics (collateral damage, chemotherapy); and addressing the strongest objection (that DDE is just relabeling) by arguing it adds structure to moral reasoning. The inference is valid—the conclusion depends on these premises, engages specific scenarios, and addresses the objection in its strongest form.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position, and the response clearly commits: 'I'll argue that DDE is not mere relabeling, but identifies a genuine moral distinction.' It defends this with reasons (contrast cases, moral practice, structural constraints) and acknowledges uncertainty: 'It's not a perfect doctrine, but it's not empty either.' It does not explicitly state what would change its mind or where it is weakest, but it engages with the objection and provides calibrated reasoning, not evasion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges the skeptical position (that DDE is relabeling) and presents it fairly: 'The skeptic's best move: \\\"You're just calling intentions you approve of 'unintended'...\\\"' It characterizes this objection accurately and engages with it seriously. However, it omits other major live positions, such as consequentialist critiques or alternative frameworks (e.g., virtue ethics perspectives), focusing primarily on defending DDE against the relabeling charge. The treatment of the rival position is fair but not comprehensive.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response accurately explains DDE's criteria and uses technical terms correctly (e.g., 'intended vs. foreseen,' 'proportionality'). It references consequentialism implicitly ('pure consequentialism doesn't [constrain]') and contrasts DDE with it, which is load-bearing in the argument. No named thinkers are invoked, but the concepts are applied relevantly and accurately to support the argument. The response demonstrates correctness and relevance without misattribution or garbled terms.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned defense of DDE with specific examples and engagement with objections, though it lacks breadth in addressing rival positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned defense of DDE with specific examples and engagement with objections, though it lacks breadth in addressing rival positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

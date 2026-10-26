@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a structured advisory document covering all requested topics: trading within charity, subsidiary necessity, tax treatment, and trustee steps. It includes specific thresholds (£50k, £90k), legal references (CC35), and actionable steps like 'review governing document,' 'conduct risk assessment,' and 'create business plan.' It could be used in a trustee meeting with light editing.",
+    "constraint_fidelity": "The prompt describes a charity in England and Wales with £320,000 annual income. The response correctly addresses England and Wales jurisdiction, references specific monetary thresholds (£50,000 small-scale exemption, £90,000 VAT registration), and acknowledges the charity's size. It does not violate any stated constraints and provides specific numerical guidance where relevant.",
+    "contextual_realism": "The response acknowledges the charity's resource constraints by recommending a pilot program, monitoring growth, and consulting professionals rather than assuming dedicated legal/HR staff. It notes the need for risk assessment, separate accounts, and insurance without presuming extensive infrastructure. However, it suggests 'robust bookkeeping' and 'separate audits' for a subsidiary without fully addressing the administrative burden for a small charity.",
+    "jurisdictional_accuracy": "The response accurately references England and Wales charity law, primary/non-primary purpose trading, £50k exemption, VAT thresholds, and Charity Commission guidance (CC35). It avoids US-specific terms (e.g., no 501(c)(3), UBIT, IRS) and correctly notes the need for professional advice while providing substantive content. Corporation tax and Gift Aid references are jurisdictionally appropriate."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-003",
+  "judge_cost_usd": 0.00083108,
+  "judge_latency_s": 18.033,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a charity in England and Wales with £320,000 annual income. The response correctly addresses England and Wales jurisdiction, references specific monetary thresholds (£50,000 small-scale exemption, £90,000 VAT registration), and acknowledges the charity's size. It does not violate any stated constraints and provides specific numerical guidance where relevant.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges the charity's resource constraints by recommending a pilot program, monitoring growth, and consulting professionals rather than assuming dedicated legal/HR staff. It notes the need for risk assessment, separate accounts, and insurance without presuming extensive infrastructure. However, it suggests 'robust bookkeeping' and 'separate audits' for a subsidiary without fully addressing the administrative burden for a small charity.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a structured advisory document covering all requested topics: trading within charity, subsidiary necessity, tax treatment, and trustee steps. It includes specific thresholds (£50k, £90k), legal references (CC35), and actionable steps like 'review governing document,' 'conduct risk assessment,' and 'create business plan.' It could be used in a trustee meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately references England and Wales charity law, primary/non-primary purpose trading, £50k exemption, VAT thresholds, and Charity Commission guidance (CC35). It avoids US-specific terms (e.g., no 501(c)(3), UBIT, IRS) and correctly notes the need for professional advice while providing substantive content. Corporation tax and Gift Aid references are jurisdictionally appropriate.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides specific, actionable, and jurisdictionally accurate advice tailored to a small English/Welsh charity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response provides specific, actionable, and jurisdictionally accurate advice tailored to a small English/Welsh charity.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

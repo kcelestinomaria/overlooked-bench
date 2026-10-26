@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves well beyond encyclopedia level by engaging with specific scholarly debates: it contrasts 'older work' with recent Atlantic history approaches, discusses methodological disputes about archives and subaltern voices, analyzes competing interpretations of labor policies (coercion vs. pragmatism), and references specific theoretical influences (postcolonial theory, critical race scholarship). It demonstrates familiarity with historiographical nuances, such as the debate over whether Haitian revolutionaries 'remade political modernity on different terms'—a specialist-level discussion.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established historiography: it correctly identifies the shift from 'exceptional event' to 'Atlantic and global revolution' framing, accurately describes debates over universalism vs. Black autonomy (citing Toussaint Louverture, 1793 emancipation, 1804 independence), correctly characterizes disputes over class vs. race, labor policies post-emancipation, Vodou's evidentiary challenges, violence interpretations, leadership vs. mass action debates, and Trouillot's influence on archival erasure. All key scholars (Trouillot), events (Bois Caïman, 1825 indemnity), and methodological shifts (Atlantic history, cultural turn) are accurately represented without invented citations or terms.",
+    "field_situatedness": "The response firmly situates itself in Haitian Revolution historiography, using field-specific terminology ('grands blancs', 'petits blancs', 'maroons', 'Bois Caïman', 'indemnity of 1825'), engaging with key figures (Trouillot, Toussaint, Dessalines), and employing frameworks central to the field (Atlantic history, postcolonial theory). It does not substitute Western frameworks but accurately reflects the transnational and critical approaches that define recent scholarship in this domain.",
+    "scholarly_calibration": "The response consistently distinguishes contested from established points: it notes that 'historians have argued over' universalism vs. autonomy, describes Vodou evidence as 'thin and often filtered through hostile colonial observers', states that violence interpretations 'differ', and frames post-independence state strength as a debate rather than fact. It avoids blanket disclaimers and provides specific calibration, e.g., 'Some historians see... others emphasize...' throughout. However, it occasionally presents debates without explicitly labeling the most contentious claims (e.g., the 1804 massacre interpretation), keeping it from a perfect score."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-010",
+  "judge_cost_usd": 0.00122395,
+  "judge_latency_s": 53.184,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established historiography: it correctly identifies the shift from 'exceptional event' to 'Atlantic and global revolution' framing, accurately describes debates over universalism vs. Black autonomy (citing Toussaint Louverture, 1793 emancipation, 1804 independence), correctly characterizes disputes over class vs. race, labor policies post-emancipation, Vodou's evidentiary challenges, violence interpretations, leadership vs. mass action debates, and Trouillot's influence on archival erasure. All key scholars (Trouillot), events (Bois Caïman, 1825 indemnity), and methodological shifts (Atlantic history, cultural turn) are accurately represented without invented citations or terms.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves well beyond encyclopedia level by engaging with specific scholarly debates: it contrasts 'older work' with recent Atlantic history approaches, discusses methodological disputes about archives and subaltern voices, analyzes competing interpretations of labor policies (coercion vs. pragmatism), and references specific theoretical influences (postcolonial theory, critical race scholarship). It demonstrates familiarity with historiographical nuances, such as the debate over whether Haitian revolutionaries 'remade political modernity on different terms'—a specialist-level discussion.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes contested from established points: it notes that 'historians have argued over' universalism vs. autonomy, describes Vodou evidence as 'thin and often filtered through hostile colonial observers', states that violence interpretations 'differ', and frames post-independence state strength as a debate rather than fact. It avoids blanket disclaimers and provides specific calibration, e.g., 'Some historians see... others emphasize...' throughout. However, it occasionally presents debates without explicitly labeling the most contentious claims (e.g., the 1804 massacre interpretation), keeping it from a perfect score.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response firmly situates itself in Haitian Revolution historiography, using field-specific terminology ('grands blancs', 'petits blancs', 'maroons', 'Bois Caïman', 'indemnity of 1825'), engaging with key figures (Trouillot, Toussaint, Dessalines), and employing frameworks central to the field (Atlantic history, postcolonial theory). It does not substitute Western frameworks but accurately reflects the transnational and critical approaches that define recent scholarship in this domain.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and nuanced engagement with the major historiographical disputes in Haitian Revolution scholarship over the past thirty years.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and nuanced engagement with the major historiographical disputes in Haitian Revolution scholarship over the past thirty years.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

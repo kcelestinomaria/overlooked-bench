@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with methodological tensions (e.g., 'reductionist analysis vs. embodied knowledge'), evidential status ('some rasashastra preparations show measurable bioactivity'), and internal scholarly debate (e.g., 'incommensurability can become unfalsifiable'). It discusses metaphysical assumptions, safety definitions, and asymmetric validation approaches, indicating familiarity with the literature rather than summaries. A specialist would recognize this as engaged with the field's complexities.",
+    "domain_accuracy": "The response makes substantive claims about rasashastra, Ayurvedic theory, and the debate's structure. It correctly identifies key concepts: mercury-based preparations, doshas, rasa-dhatu transformation, and the tension between biomedical and traditional frameworks. It accurately characterizes arguments for integration (safety, empirical validation) and autonomy (incommensurable frameworks, different definitions of safety). No invented citations, terms, or consensus are present. The claims align with known scholarly debates in Ayurvedic studies.",
+    "field_situatedness": "The response uses correct Ayurvedic terminology (rasashastra, doshas, rasa-dhatu transformation) and frames the debate within Ayurvedic scholarly traditions, not substituting Western frameworks silently. It acknowledges non-Western expertise and avoids Anglophone dominance by discussing 'colonizing knowledge systems' and 'embodied, contextual knowledge.' It situates the debate appropriately in the field of Ayurvedic studies.",
+    "scholarly_calibration": "The response distinguishes between well-established and contested points. It notes that 'mercury's toxicity is a material fact' (well-established) but also flags that 'some rasashastra preparations show measurable bioactivity' (emerging evidence). It presents both sides as arguments with weaknesses, not settled facts, and acknowledges asymmetry in frameworks. However, it lacks specific calibration on evidential status (e.g., which claims are thinly supported) and uses general disclaimers like 'risks' rather than targeted signals."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00079759,
+  "judge_latency_s": 46.736,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about rasashastra, Ayurvedic theory, and the debate's structure. It correctly identifies key concepts: mercury-based preparations, doshas, rasa-dhatu transformation, and the tension between biomedical and traditional frameworks. It accurately characterizes arguments for integration (safety, empirical validation) and autonomy (incommensurable frameworks, different definitions of safety). No invented citations, terms, or consensus are present. The claims align with known scholarly debates in Ayurvedic studies.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with methodological tensions (e.g., 'reductionist analysis vs. embodied knowledge'), evidential status ('some rasashastra preparations show measurable bioactivity'), and internal scholarly debate (e.g., 'incommensurability can become unfalsifiable'). It discusses metaphysical assumptions, safety definitions, and asymmetric validation approaches, indicating familiarity with the literature rather than summaries. A specialist would recognize this as engaged with the field's complexities.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established and contested points. It notes that 'mercury's toxicity is a material fact' (well-established) but also flags that 'some rasashastra preparations show measurable bioactivity' (emerging evidence). It presents both sides as arguments with weaknesses, not settled facts, and acknowledges asymmetry in frameworks. However, it lacks specific calibration on evidential status (e.g., which claims are thinly supported) and uses general disclaimers like 'risks' rather than targeted signals.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Ayurvedic terminology (rasashastra, doshas, rasa-dhatu transformation) and frames the debate within Ayurvedic scholarly traditions, not substituting Western frameworks silently. It acknowledges non-Western expertise and avoids Anglophone dominance by discussing 'colonizing knowledge systems' and 'embodied, contextual knowledge.' It situates the debate appropriately in the field of Ayurvedic studies.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates substantive competence in Ayurvedic studies by accurately engaging with the debate's core arguments and terminology.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response demonstrates substantive competence in Ayurvedic studies by accurately engaging with the debate's core arguments and terminology.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

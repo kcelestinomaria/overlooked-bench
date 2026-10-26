@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific scholarly debates (linear vs. co-existing technologies, dating disputes), methodologies (radiocarbon dating issues like 'old wood problem'), and evidence (slag chemistry, furnace thermodynamics). It discusses internal debates (e.g., Schmidt vs. Van Grunderbeek) and contextual factors (fuel availability, ore type). A specialist would recognize this as informed by the literature, not just summaries.",
+    "domain_accuracy": "The response makes specific claims: 'early to mid-1st millennium BCE (around 500-800 BCE)', 'natural-draft furnaces', 'preheating technique', 'direct steel production', 'Peter Schmidt and Donald Avery' proposing linear evolution, 'Marie-Claude Van Grunderbeek' challenging it, 'KM2 and KM3 sites', '8th to 6th centuries BCE dates'. These are accurate based on archaeometallurgical literature. No invented citations or terms are present; all scholars and sites are real and relevant. The claims are substantively correct and load-bearing for the answer.",
+    "field_situatedness": "The response uses terminology and frameworks specific to African archaeometallurgy: 'natural-draft furnaces', 'bloomery steel', 'preheating technique', 'ethnoarchaeology', and references regional scholars (Schmidt, Van Grunderbeek) and sites (KM2, KM3). It focuses on the African context without substituting Western framings, and acknowledges the socio-cultural dimensions (rituals, anthropomorphization) central to the field.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: e.g., 'firmly established by the mid-1st millennium BCE' vs. 'debate over whether reliable evidence pushes it back to early 1st millennium BCE'. It signals evidential status: 'methodological concerns', 'skepticism of ultra-early claims', 'current consensus leans away from linear evolution'. It avoids blanket disclaimers and provides specific calibration, such as noting dating disputes are over methodology and sample integrity."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-004",
+  "judge_cost_usd": 0.0010989,
+  "judge_latency_s": 22.524,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims: 'early to mid-1st millennium BCE (around 500-800 BCE)', 'natural-draft furnaces', 'preheating technique', 'direct steel production', 'Peter Schmidt and Donald Avery' proposing linear evolution, 'Marie-Claude Van Grunderbeek' challenging it, 'KM2 and KM3 sites', '8th to 6th centuries BCE dates'. These are accurate based on archaeometallurgical literature. No invented citations or terms are present; all scholars and sites are real and relevant. The claims are substantively correct and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific scholarly debates (linear vs. co-existing technologies, dating disputes), methodologies (radiocarbon dating issues like 'old wood problem'), and evidence (slag chemistry, furnace thermodynamics). It discusses internal debates (e.g., Schmidt vs. Van Grunderbeek) and contextual factors (fuel availability, ore type). A specialist would recognize this as informed by the literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: e.g., 'firmly established by the mid-1st millennium BCE' vs. 'debate over whether reliable evidence pushes it back to early 1st millennium BCE'. It signals evidential status: 'methodological concerns', 'skepticism of ultra-early claims', 'current consensus leans away from linear evolution'. It avoids blanket disclaimers and provides specific calibration, such as noting dating disputes are over methodology and sample integrity.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to African archaeometallurgy: 'natural-draft furnaces', 'bloomery steel', 'preheating technique', 'ethnoarchaeology', and references regional scholars (Schmidt, Van Grunderbeek) and sites (KM2, KM3). It focuses on the African context without substituting Western framings, and acknowledges the socio-cultural dimensions (rituals, anthropomorphization) central to the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge with accurate details, deep engagement, and proper calibration to the field's disputes.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge with accurate details, deep engagement, and proper calibration to the field's disputes.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

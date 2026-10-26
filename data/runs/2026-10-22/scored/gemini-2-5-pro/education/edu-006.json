@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for the range of learners by detailing how cuts would affect support for 'vulnerable pupils', 'children with SEND', and those needing 'targeted interventions'. It specifies concrete harms, such as 'drastically reduce the availability of 1:1 support', which addresses differing needs. However, it does not propose adaptations or differentiation strategies; it only describes the negative impacts of budget cuts, so engagement is partial but not substantive in providing actionable differentiation.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about budget cuts and staffing. The response is inclusive of the range of learners in the described setting by explicitly addressing impacts on 'vulnerable pupils', 'children with Special Educational Needs and Disabilities (SEND)', and 'lower-attaining pupils', ensuring considerations for diverse needs are integrated into the options analysis.",
+    "pedagogical_soundness": "This dimension evaluates educational approaches, but the response is an administrative options paper for budget cuts, not a pedagogical plan. There are no learning objectives, activities, assessments, or rubrics to evaluate. The response does not engage with pedagogical soundness at all.",
+    "workload_realism": "The response provides specific cost savings and operational impacts for each option, grounded in the context of a 400-pupil primary school with a class size constraint of 30. It details realistic staffing changes (e.g., 'Make four full-time equivalent (FTE) Teaching Assistant posts redundant', 'Delete the post of the non-class-based Deputy Head') and their consequences, such as increased teacher workload and reduced support. The timings, resources, and feasibility are addressed concretely for the setting."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 2,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-006",
+  "judge_cost_usd": 0.00109887,
+  "judge_latency_s": 49.56,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension evaluates educational approaches, but the response is an administrative options paper for budget cuts, not a pedagogical plan. There are no learning objectives, activities, assessments, or rubrics to evaluate. The response does not engage with pedagogical soundness at all.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response provides specific cost savings and operational impacts for each option, grounded in the context of a 400-pupil primary school with a class size constraint of 30. It details realistic staffing changes (e.g., 'Make four full-time equivalent (FTE) Teaching Assistant posts redundant', 'Delete the post of the non-class-based Deputy Head') and their consequences, such as increased teacher workload and reduced support. The timings, resources, and feasibility are addressed concretely for the setting.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about budget cuts and staffing. The response is inclusive of the range of learners in the described setting by explicitly addressing impacts on 'vulnerable pupils', 'children with Special Educational Needs and Disabilities (SEND)', and 'lower-attaining pupils', ensuring considerations for diverse needs are integrated into the options analysis.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for the range of learners by detailing how cuts would affect support for 'vulnerable pupils', 'children with SEND', and those needing 'targeted interventions'. It specifies concrete harms, such as 'drastically reduce the availability of 1:1 support', which addresses differing needs. However, it does not propose adaptations or differentiation strategies; it only describes the negative impacts of budget cuts, so engagement is partial but not substantive in providing actionable differentiation.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"This response thoroughly addresses budget reduction options with realistic costings and clear harms while adhering to the class-size constraint.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response thoroughly addresses budget reduction options with realistic costings and clear harms while adhering to the class-size constraint.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 60.0
+}

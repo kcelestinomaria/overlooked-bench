@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed 12-month plan with month-by-month tasks, roles, and specific deliverables (e.g., 'Survival Budget', 'Case for Support', 'Funder Prospect List', 'Master Proposal', 'One-Pager'). It includes prioritisation ('This is the top priority' for grant writing) and a contingency plan. It is structured as a usable deliverable that could be taken into a meeting with light editing, though some elements like the 'Friend-Raiser' event logistics might need more detail.",
+    "constraint_fidelity": "The response respects the 5-person constraint by assigning specific fundraising roles to each member (ED 50%, Senior Lawyer 20%, Junior Lawyers 10% each, Administrator 20%) and acknowledges the need to work alongside existing casework. It explicitly states 'the plan integrates fundraising into existing work, not as a separate, overwhelming burden' and includes a contingency plan ('Survival Budget'). However, it does not show arithmetic for the time allocation (e.g., 50% of ED time equals 20 hours/week if full-time, but this isn't quantified), so it cannot be fully checked.",
+    "contextual_realism": "The response avoids recommending a dedicated development hire and instead assigns fundraising tasks to existing roles. It focuses on realistic funding sources for Jordan (embassies, UN agencies, regional foundations, corporate CSR) and avoids inappropriate individual-giving programs. It acknowledges small-organisation realities like shared responsibility ('This is not just the Executive Director's job'), role overlap, and the need for a 'Survival Budget'. However, it suggests tasks like a 'Friend-Raiser' event and digital campaign that may still require more staff effort than a 5-person team can sustain alongside casework.",
+    "jurisdictional_accuracy": "The response correctly identifies Jordan-specific funding sources (e.g., embassies of US, Canada, UK, Germany, Netherlands, Norway, EU delegation, UN agencies) and avoids US assumptions. It does not make incorrect legal or regulatory claims but focuses on fundraising strategies. It does not generically say 'consult a lawyer' but provides substantive content. Since the prompt does not involve law/regulation, this dimension is scored on general factual accuracy, which is solid."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-012",
+  "judge_cost_usd": 0.00133205,
+  "judge_latency_s": 60.417,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects the 5-person constraint by assigning specific fundraising roles to each member (ED 50%, Senior Lawyer 20%, Junior Lawyers 10% each, Administrator 20%) and acknowledges the need to work alongside existing casework. It explicitly states 'the plan integrates fundraising into existing work, not as a separate, overwhelming burden' and includes a contingency plan ('Survival Budget'). However, it does not show arithmetic for the time allocation (e.g., 50% of ED time equals 20 hours/week if full-time, but this isn't quantified), so it cannot be fully checked.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response avoids recommending a dedicated development hire and instead assigns fundraising tasks to existing roles. It focuses on realistic funding sources for Jordan (embassies, UN agencies, regional foundations, corporate CSR) and avoids inappropriate individual-giving programs. It acknowledges small-organisation realities like shared responsibility ('This is not just the Executive Director's job'), role overlap, and the need for a 'Survival Budget'. However, it suggests tasks like a 'Friend-Raiser' event and digital campaign that may still require more staff effort than a 5-person team can sustain alongside casework.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed 12-month plan with month-by-month tasks, roles, and specific deliverables (e.g., 'Survival Budget', 'Case for Support', 'Funder Prospect List', 'Master Proposal', 'One-Pager'). It includes prioritisation ('This is the top priority' for grant writing) and a contingency plan. It is structured as a usable deliverable that could be taken into a meeting with light editing, though some elements like the 'Friend-Raiser' event logistics might need more detail.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Jordan-specific funding sources (e.g., embassies of US, Canada, UK, Germany, Netherlands, Norway, EU delegation, UN agencies) and avoids US assumptions. It does not make incorrect legal or regulatory claims but focuses on fundraising strategies. It does not generically say 'consult a lawyer' but provides substantive content. Since the prompt does not involve law/regulation, this dimension is scored on general factual accuracy, which is solid.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a highly actionable and contextually aware plan that respects most constraints but could better quantify time and effort for a 5-person team.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response provides a highly actionable and contextually aware plan that respects most constraints but could better quantify time and effort for a 5-person team.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 81.25
+}

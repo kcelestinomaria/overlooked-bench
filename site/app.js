@@ -24,6 +24,10 @@ const els = {
   lbBody: document.getElementById('leaderboard-body'),
   asymBody: document.getElementById('asym-body'),
   asymDetail: document.getElementById('asym-detail'),
+  cvSection: document.getElementById('cv-section'),
+  cvBody: document.getElementById('cv-body'),
+  cvNote: document.getElementById('cv-note'),
+  lbNote: document.getElementById('lb-note'),
   charts: document.getElementById('charts'),
   diagnostics: document.getElementById('diagnostics'),
 };
@@ -222,10 +226,38 @@ function renderAsymmetry(s) {
   }));
 }
 
+/* --- constraint violations ---------------------------------------------- */
+
+function renderConstraints(s) {
+  const cv = s.constraint_violations || {};
+  const rows = Object.entries(cv.by_model || {})
+    .filter(([k]) => s.results[k])
+    .map(([k, b]) => ({ display: s.results[k].display, ...b }))
+    .sort((a, b) => a.reject_rate - b.reject_rate);
+  els.cvSection.hidden = rows.length === 0;
+  if (!rows.length) return;
+  const kappa = cv.cohens_kappa_judge_vs_verifier;
+  els.cvNote.textContent =
+    `Verifier: ${cv.verifier_model}. Judge-verifier agreement kappa `
+    + `${kappa === null || kappa === undefined ? 'n/a' : fmt(kappa, 2)} over `
+    + `${cv.n_paired_checks} paired checks. ${cv.definition || ''}`;
+  els.cvBody.replaceChildren(...rows.map((r) => {
+    const tr = el('tr');
+    tr.appendChild(el('td', { class: 'model-name', text: r.display }));
+    tr.appendChild(barCell(r.reject_rate, 100, true));
+    tr.appendChild(barCell(r.confirmed_violation_rate, 100, true));
+    tr.appendChild(el('td', { class: 'num', text: fmt(r.judge_violation_rate) }));
+    tr.appendChild(el('td', { class: 'num', text: fmt(r.verifier_violation_rate) }));
+    tr.appendChild(el('td', { class: 'num', text: fmt(r.agreement_rate) }));
+    tr.appendChild(el('td', { class: 'num', text: String(r.n_checks_verified) }));
+    return tr;
+  }));
+}
+
 /* --- charts -------------------------------------------------------------- */
 
 const CHART_CAPTIONS = {
-  'overall': 'Overall index - mean of the five headline category scores.',
+  'overall': 'Overall index - unweighted mean of the headline category scores.',
   'ethics-philosophy': 'Ethics & philosophy: constructed argument, commitment under uncertainty, fair treatment of rival positions, philosophical literacy.',
   'niche-academic': 'Niche academic: accuracy, depth beyond survey level, calibration to the state of the field, field situatedness.',
   'org-enterprise': 'Org & enterprise: constraint fidelity, realism for the organisation described, actionability, jurisdictional accuracy.',
@@ -234,12 +266,29 @@ const CHART_CAPTIONS = {
   'calibration-general': 'Control track. Items have known answers. Low scores here mean the harness is broken, not that a model is weak.',
   'institutional-asymmetry': 'Score spread within matched institution groups. Higher means criticism depends more on who is named.',
   'criticism-vs-asymmetry': 'Mean willingness to criticise, shown against how unevenly that willingness is applied.',
+  'software-engineering-production': 'Software engineering in production: constraint fidelity, production realism, actionability, maintainability.',
+  'production-constraint-violations': 'Share of explicit hard constraints each model broke without acknowledging it. Confirmed only when the judge and an independent verifier agree.',
+  'production-judge-vs-verifier': 'Constraint violations flagged by the LLM judge alone, by the independent verifier alone, and by both. Only agreements count as violations.',
+  'crossjudge-software-engineering-production': 'Production track scored by two judges from different providers. Where the dots sit far apart, the position of that model depends on the judge.',
+  'crossjudge-institutional-criticism': 'Institutional criticism scored by two judges from different providers. Where the dots sit far apart, the position of that model depends on the judge.',
+  'production-reject-leaderboard': 'Share of production tasks where the plan broke at least one hard constraint - plans a constrained team would send back.',
+  'production-violation-heatmap': 'Every production task for every model: how many of its hard constraints were broken.',
+  'production-dimension-radar': 'Each model on the four production rubric dimensions, same 0-100 scale in every panel.',
+  'production-matched-organisation': 'Identical task and constraints; only the organisation changes (Nairobi, Austin, Lisbon). One item per leg - directional.',
+  'production-matched-jurisdiction': 'Identical feature and constraints; only the jurisdiction changes (Germany, California, Kenya). One item per leg - directional.',
+  'production-region-split': 'Responses with a confirmed violation, grouped by where the organisation is. Tasks differ by region, so read with the matched sets.',
 };
 
 async function renderCharts(s) {
   const base = `${RUNS_BASE}/${s.run_id}/charts`;
   const names = ['overall', ...Object.keys(s.category_labels),
                  'institutional-asymmetry', 'criticism-vs-asymmetry',
+                 'production-judge-vs-verifier', 'production-constraint-violations',
+                 'production-reject-leaderboard',
+                 'production-violation-heatmap', 'production-dimension-radar',
+                 'production-matched-organisation', 'production-matched-jurisdiction',
+                 'production-region-split',
+                 'crossjudge-software-engineering-production', 'crossjudge-institutional-criticism',
                  'trend-overall', 'trend-institutional-criticism'];
 
   const cards = [];
@@ -302,6 +351,11 @@ async function loadRun(runId) {
   renderProvenance(current);
   renderLeaderboard(current);
   renderAsymmetry(current);
+  renderConstraints(current);
+  els.lbNote.textContent = `The overall index is the unweighted mean of the `
+    + `${current.headline_categories.length} headline category scores. The calibration `
+    + `track is excluded from it by design - it exists to prove the harness works, not `
+    + `to rank anyone. Click a column to sort.`;
   renderDiagnostics(current);
   await renderCharts(current);
   els.status.hidden = true;

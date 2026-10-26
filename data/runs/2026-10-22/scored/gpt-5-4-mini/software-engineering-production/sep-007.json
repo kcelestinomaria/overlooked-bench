@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response delivers a complete post-incident review with blameless analysis, timeline, root cause, and prioritized action items. Each action has an owner, estimate, priority, and description, e.g., 'Add safe-migration checks to CI/deploy (3 engineer-days)'. It includes a backlog section for lower-priority items. The team could start executing immediately.",
+    "constraint_fidelity": "The response explicitly states 'This was a system and process failure, not an individual failure' and avoids naming individuals as causes. It proposes dashboards 'using existing Postgres metrics' and specifies 'no new paid tooling'. Action items are costed and sum to 13 engineer-days, under the 15-day limit. All constraints are respected with explicit justification where needed.",
+    "maintainability": "The action items are designed for a 5-engineer team, e.g., 'Add database lock dashboards (3 days)' is feasible. Risks are stated explicitly, e.g., 'Automated migrations need explicit guardrails'. Solutions like 'concurrent index creation' are standard and maintainable. The response avoids unnecessary complexity and flags accepted debt in the backlog.",
+    "production_realism": "The response addresses scale (61M rows, 1900 employers), identifies locking issues, and proposes concrete solutions like concurrent index creation and lock dashboards using existing tools. It considers team size (5 engineers) and operational burden, e.g., 'Add safe-migration checks to CI/deploy' (3 days) and 'Add database lock and activity visibility dashboards' (3 days) are proportionate. It correctly identifies Postgres-specific issues like pg_stat_activity."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-007",
+  "judge_cost_usd": 0.00144119,
+  "judge_latency_s": 47.402,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states 'This was a system and process failure, not an individual failure' and avoids naming individuals as causes. It proposes dashboards 'using existing Postgres metrics' and specifies 'no new paid tooling'. Action items are costed and sum to 13 engineer-days, under the 15-day limit. All constraints are respected with explicit justification where needed.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response addresses scale (61M rows, 1900 employers), identifies locking issues, and proposes concrete solutions like concurrent index creation and lock dashboards using existing tools. It considers team size (5 engineers) and operational burden, e.g., 'Add safe-migration checks to CI/deploy' (3 days) and 'Add database lock and activity visibility dashboards' (3 days) are proportionate. It correctly identifies Postgres-specific issues like pg_stat_activity.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response delivers a complete post-incident review with blameless analysis, timeline, root cause, and prioritized action items. Each action has an owner, estimate, priority, and description, e.g., 'Add safe-migration checks to CI/deploy (3 engineer-days)'. It includes a backlog section for lower-priority items. The team could start executing immediately.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The action items are designed for a 5-engineer team, e.g., 'Add database lock dashboards (3 days)' is feasible. Risks are stated explicitly, e.g., 'Automated migrations need explicit guardrails'. Solutions like 'concurrent index creation' are standard and maintainable. The response avoids unnecessary complexity and flags accepted debt in the backlog.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is a highly actionable, constraint-aware post-incident review with well-prioritized, costed action items.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response is a highly actionable, constraint-aware post-incident review with well-prioritized, costed action items.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

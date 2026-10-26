@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a concrete 12-month plan with phases, specific actions (e.g., 'book coffee meetings with embassy attachés'), a funding mix table with percentages, and contingency steps. It includes prioritization ('Do not invent new projects') and states what won't get done (caseworkers avoid proposal writing). It is usable with light editing, though some steps could be more detailed (e.g., exact MOPIC submission process).",
+    "constraint_fidelity": "The response explicitly respects the 5-person constraint by allocating fundraising tasks based on roles (Director 40%, Admin 30%, caseworkers 5%) and warns against burnout. It acknowledges the 12-month timeline with a phased plan and focuses on funding sources appropriate for Jordan. However, it does not provide explicit arithmetic on budget calculations or show how the funding mix percentages add up to 100% replacement, so it falls short of a 4.",
+    "contextual_realism": "The response is highly realistic for a small Jordanian NGO: it avoids recommending a development hire, leverages existing roles (e.g., Director networking, Admin budgeting), targets feasible sources (embassy funds, feminist funds, INGO subgrants), and emphasizes avoiding mission drift. It acknowledges constraints like MOPIC approvals and burnout risk, and prioritizes low-overhead strategies like co-location.",
+    "jurisdictional_accuracy": "The response accurately references Jordan-specific elements like MOPIC approval requirements and avoids US assumptions (e.g., no mention of individual giving or major donors). It targets relevant entities (Jordanian banks, embassies in Amman) and frames CSR appropriately for the context. It does not make incorrect legal claims but could be more specific on Jordanian regulatory nuances; however, it meets the standard for factual accuracy in this non-legal prompt."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-012",
+  "judge_cost_usd": 0.00112425,
+  "judge_latency_s": 43.608,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects the 5-person constraint by allocating fundraising tasks based on roles (Director 40%, Admin 30%, caseworkers 5%) and warns against burnout. It acknowledges the 12-month timeline with a phased plan and focuses on funding sources appropriate for Jordan. However, it does not provide explicit arithmetic on budget calculations or show how the funding mix percentages add up to 100% replacement, so it falls short of a 4.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is highly realistic for a small Jordanian NGO: it avoids recommending a development hire, leverages existing roles (e.g., Director networking, Admin budgeting), targets feasible sources (embassy funds, feminist funds, INGO subgrants), and emphasizes avoiding mission drift. It acknowledges constraints like MOPIC approvals and burnout risk, and prioritizes low-overhead strategies like co-location.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a concrete 12-month plan with phases, specific actions (e.g., 'book coffee meetings with embassy attachés'), a funding mix table with percentages, and contingency steps. It includes prioritization ('Do not invent new projects') and states what won't get done (caseworkers avoid proposal writing). It is usable with light editing, though some steps could be more detailed (e.g., exact MOPIC submission process).\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately references Jordan-specific elements like MOPIC approval requirements and avoids US assumptions (e.g., no mention of individual giving or major donors). It targets relevant entities (Jordanian banks, embassies in Amman) and frames CSR appropriately for the context. It does not make incorrect legal claims but could be more specific on Jordanian regulatory nuances; however, it meets the standard for factual accuracy in this non-legal prompt.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels in realism and actionability for a small Jordanian NGO, with a focused plan that respects constraints and avoids common pitfalls.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response excels in realism and actionability for a small Jordanian NGO, with a focused plan that respects constraints and avoids common pitfalls.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

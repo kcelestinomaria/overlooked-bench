@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asks for a recommendation with reasoning and preconditions if taking the contract. The response provides a clear conditional 'yes' recommendation and specifies concrete prerequisites across contract negotiation, operations, logistics, and HR. It includes actionable steps like negotiating phased rollout and penalty caps, securing funding for equipment, acquiring a delivery van, and restructuring the team. The output could be taken into a meeting with light editing, as it outlines specific changes needed rather than just describing considerations.",
+    "constraint_fidelity": "The prompt describes a 15-person social enterprise in Jakarta with no mention of additional resources. The response respects the headcount constraint by proposing a 'Two-Tier Staffing Model' that expands the team with new hires for night shifts and an operations manager, but does not specify how this aligns with the 15-person base. It acknowledges budget constraints by recommending securing capital via loans or grants, but does not provide specific arithmetic or cost breakdowns for equipment, transport, or new hires. While it explicitly addresses the need to overcome constraints rather than silently violating them, it lacks detailed financial calculations.",
+    "contextual_realism": "The response demonstrates strong realism for a small social enterprise. It avoids assuming dedicated HR or legal counsel by recommending hiring an operations manager and negotiating contract terms directly. It recognizes role overlap ('allowing the founders to focus on employee welfare and quality control') and acknowledges resource constraints (e.g., need for grants/loans for equipment). It addresses Jakarta-specific challenges like traffic and flooding, and considers workforce accommodations for people with disabilities, showing awareness of small-organisation realities like limited slack and key-person dependency.",
+    "jurisdictional_accuracy": "The response is set in Jakarta, Indonesia, and avoids US defaults. It incorporates Jakarta-specific factors like traffic, flooding ('banjir'), and accessibility challenges, showing local awareness. It does not make explicit legal or regulatory claims, so general factual accuracy is assessed. The recommendations (e.g., force majeure for flooding, safe transport for PWDs) are contextually appropriate and do not rely on US norms. It does not generically say 'consult a lawyer' but provides substantive negotiation points."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-009",
+  "judge_cost_usd": 0.0010312,
+  "judge_latency_s": 52.847,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 15-person social enterprise in Jakarta with no mention of additional resources. The response respects the headcount constraint by proposing a 'Two-Tier Staffing Model' that expands the team with new hires for night shifts and an operations manager, but does not specify how this aligns with the 15-person base. It acknowledges budget constraints by recommending securing capital via loans or grants, but does not provide specific arithmetic or cost breakdowns for equipment, transport, or new hires. While it explicitly addresses the need to overcome constraints rather than silently violating them, it lacks detailed financial calculations.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response demonstrates strong realism for a small social enterprise. It avoids assuming dedicated HR or legal counsel by recommending hiring an operations manager and negotiating contract terms directly. It recognizes role overlap ('allowing the founders to focus on employee welfare and quality control') and acknowledges resource constraints (e.g., need for grants/loans for equipment). It addresses Jakarta-specific challenges like traffic and flooding, and considers workforce accommodations for people with disabilities, showing awareness of small-organisation realities like limited slack and key-person dependency.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asks for a recommendation with reasoning and preconditions if taking the contract. The response provides a clear conditional 'yes' recommendation and specifies concrete prerequisites across contract negotiation, operations, logistics, and HR. It includes actionable steps like negotiating phased rollout and penalty caps, securing funding for equipment, acquiring a delivery van, and restructuring the team. The output could be taken into a meeting with light editing, as it outlines specific changes needed rather than just describing considerations.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response is set in Jakarta, Indonesia, and avoids US defaults. It incorporates Jakarta-specific factors like traffic, flooding ('banjir'), and accessibility challenges, showing local awareness. It does not make explicit legal or regulatory claims, so general factual accuracy is assessed. The recommendations (e.g., force majeure for flooding, safe transport for PWDs) are contextually appropriate and do not rely on US norms. It does not generically say 'consult a lawyer' but provides substantive negotiation points.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly realistic and actionable conditional recommendation tailored to the small social enterprise's constraints and Jakarta context.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a highly realistic and actionable conditional recommendation tailored to the small social enterprise's constraints and Jakarta context.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

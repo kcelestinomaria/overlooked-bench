@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by discussing functional contexts (e.g., Asomtavruli for prestigious contexts, Nuskhuri for monastic scriptoria, Mkhedruli for administrative use), cautions about archaizing practices, and mentions additional evidence like ductus, ligatures, and colophons. It engages with scholarly nuances like script overlap and relative dating, indicating familiarity with the literature rather than just summaries.",
+    "domain_accuracy": "The response correctly identifies Asomtavruli as the oldest script with large, rounded letters used in early inscriptions and manuscripts; Nuskhuri as a smaller, angular ecclesiastical book hand often combined with Asomtavruli as Khutsuri; and Mkhedruli as a cursive, flowing script for secular use. It accurately notes script overlap and cautions against simplistic dating. No invented citations, terms, or consensus claims are present. All substantive claims align with established Georgian palaeography knowledge.",
+    "field_situatedness": "The response uses correct Georgian terminology (Asomtavruli, Nuskhuri, Mkhedruli, Khutsuri) and frameworks specific to Georgian palaeography, such as ecclesiastical vs. secular contexts and script evolution. It does not substitute Western frameworks and accurately reflects the regional scholarly tradition.",
+    "scholarly_calibration": "The response explicitly calibrates confidence, e.g., 'Scholars must be careful: use of Asomtavruli does not automatically mean the manuscript itself is early' and 'this is not a simple replacement model. Scripts overlapped for centuries'. It distinguishes well-established sequences from contextual complexities and avoids presenting contested points as settled, showing targeted calibration."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-007",
+  "judge_cost_usd": 0.00089122,
+  "judge_latency_s": 40.086,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Asomtavruli as the oldest script with large, rounded letters used in early inscriptions and manuscripts; Nuskhuri as a smaller, angular ecclesiastical book hand often combined with Asomtavruli as Khutsuri; and Mkhedruli as a cursive, flowing script for secular use. It accurately notes script overlap and cautions against simplistic dating. No invented citations, terms, or consensus claims are present. All substantive claims align with established Georgian palaeography knowledge.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by discussing functional contexts (e.g., Asomtavruli for prestigious contexts, Nuskhuri for monastic scriptoria, Mkhedruli for administrative use), cautions about archaizing practices, and mentions additional evidence like ductus, ligatures, and colophons. It engages with scholarly nuances like script overlap and relative dating, indicating familiarity with the literature rather than just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly calibrates confidence, e.g., 'Scholars must be careful: use of Asomtavruli does not automatically mean the manuscript itself is early' and 'this is not a simple replacement model. Scripts overlapped for centuries'. It distinguishes well-established sequences from contextual complexities and avoids presenting contested points as settled, showing targeted calibration.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses correct Georgian terminology (Asomtavruli, Nuskhuri, Mkhedruli, Khutsuri) and frameworks specific to Georgian palaeography, such as ecclesiastical vs. secular contexts and script evolution. It does not substitute Western frameworks and accurately reflects the regional scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of medieval Georgian palaeography with precise terminology, nuanced context, and appropriate scholarly caution.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of medieval Georgian palaeography with precise terminology, nuanced context, and appropriate scholarly caution.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

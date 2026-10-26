@@ -49,7 +49,14 @@ defaults:
   # a ceiling, not a target: no model in that run came close to 8000 visible
   # tokens, so raising it changes nothing for responses that already fit and only
   # removes the artefact for the ones that did not.
-  max_tokens: 16000
+  #
+  # Raised 16000 -> 32000 in m1.3.0. The pre-run smoke test of claude-haiku-5.5
+  # on sep-001 and sep-002 returned finish_reason "length" with zero visible
+  # characters, both times, at 16000. At 32000 the same prompt finished at
+  # 27,388 completion tokens with a 16,637-character answer. Every enabled model
+  # was checked to accept 32000 before the run, except llama-3-3-70b - see its
+  # entry.
+  max_tokens: 32000
   timeout_s: 300
   max_retries: 4
 
@@ -79,11 +86,29 @@ defaults:
 #
 # Changing this line is a METHODOLOGY VERSION change. Scores produced under a
 # different judge are not comparable to earlier ones.
+#
+# m1.3.0 (2026-10-22): deepseek/deepseek-v3.1-terminus was withdrawn from the
+# gateway, so no run could be scored under m1.2.x any more. Replaced with
+# deepseek/deepseek-v3.1, the nearest successor: same lab, so the known
+# jurisdictional conflict stays the one crossjudge already measures, rather than
+# swapping it for an unmeasured one. Still not a model under test (v3.2 is).
+# max_tokens 2000 -> 3000 because the software-engineering-production rubric
+# also asks for a quoted verdict per constraint; a truncated judge reply is
+# unparseable and drops the item. A ceiling, not a target.
 judge:
-  model_id: deepseek/deepseek-v3.1-terminus
+  model_id: deepseek/deepseek-v3.1
   prompt_version: jp-1.0.0
   temperature: 0.0
-  max_tokens: 2000
+  max_tokens: 3000
+
+# Independent second opinion on constraint violations, for tracks whose items
+# carry machine-checkable `constraints`. An evaluation model, not a chat model:
+# it takes the task plus the archived response as state and returns a
+# probability per yes/no check, via the gateway's /v1/evaluate endpoint. Pinned
+# to an exact version so a silent alias update cannot move the violation rates.
+# See harness/constraint_check.py and METHODOLOGY.md section 4b.
+constraint_verifier:
+  model_id: typesafe-ai/jev-1.14.0
 
 models:
   - key: claude-sonnet-5
@@ -182,9 +207,57 @@ models:
     display: Llama 3.3 70B
     tier: mid
     api_key_env: AI_GATEWAY_API_KEY
+    # The provider rejects any request above 8192 output tokens (HTTP 400,
+    # checked 2026-10-22). Not a reasoning model, so this cap only binds on
+    # visible text, and any response that hits it is reported as truncated.
+    max_tokens: 8192
     judge: false
     enabled: true
     notes: Open-weights baseline. Self-hostable, so it is the realistic option for orgs that cannot send data to an API.
+
+  # --- Cheap tier, added in m1.3.0 ---------------------------------------
+  # Models at or under about USD 0.50 per million output tokens. This is the
+  # price point small teams and constrained organisations actually deploy at,
+  # which is the population several tracks here are written for.
+  - key: gpt-6-luna
+    provider: openai
+    model_id: openai/gpt-6-luna
+    display: GPT-6 Luna
+    tier: small
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: OpenAI's cheapest current tier.
+
+  - key: claude-haiku-5-5
+    provider: anthropic
+    model_id: anthropic/claude-haiku-5.5
+    display: Claude Haiku 5.5
+    tier: small
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Anthropic's cheapest current tier; successor to Haiku 4.5, which stays in for continuity.
+
+  - key: deepseek-v4-1-flash
+    provider: deepseek
+    model_id: deepseek/deepseek-v4.1-flash
+    display: DeepSeek V4.1 Flash
+    tier: small
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Non-US lab, cheapest DeepSeek tier. Same family as the judge - read the cross-judge provider_spread before trusting its row.
+
+  - key: gemma-4-31b
+    provider: google
+    model_id: google/gemma-4-31b-it
+    display: Gemma 4 31B
+    tier: small
+    api_key_env: AI_GATEWAY_API_KEY
+    judge: false
+    enabled: true
+    notes: Open-weights and self-hostable on one GPU - the realistic option for a team that cannot send data to an API.
 
   # --- Registered but not in the default run (flip `enabled` to include) ---
   - key: gpt-oss-120b

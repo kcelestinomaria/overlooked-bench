@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 3394,
+  "cost_usd": 0.03408875,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "fc43c905ce874d10",
+  "item_id": "org-002",
+  "latency_s": 30.339,
+  "methodology_version": "m1.3.0",
+  "model_id": "google/gemini-2.5-pro",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "prompt_tokens": 119,
+  "provider": "google",
+  "request_fingerprint": "ea3d3e996a10b52d",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "google/gemini-2.5-pro",
+    "temperature": 0.0
+  },
+  "text": "Of course. Here is a one-page go/no-go analysis for the bakery's expansion.\n\n---\n\n### **Go/No-Go Analysis: Second Location Expansion**\n**For: Kraków Family Bakery**\n**Date:** October 26, 2023\n\n---\n\n#### **1. Recommendation: Conditional Go**\n\nExpansion is recommended, but it is contingent on two critical actions: **(1)** Securing a minimum of PLN 150,000 in additional, non-equity financing to ensure the project is adequately capitalized, and **(2)** Appointing a trusted manager for the new location to mitigate operational strain on the family owners.\n\nThe project is financially viable on paper, but the current capital of PLN 250,000 is insufficient to cover all costs and provide a necessary working capital buffer, creating an unacceptably high risk of failure.\n\n---\n\n#### **2. Current Situation Snapshot**\n\n*   **Business:** 6-person family-owned bakery in Kraków.\n*   **Annual Revenue:** PLN 1,400,000\n*   **Annual Net Profit:** ~PLN 112,000 (at 8% margin)\n*   **Available Capital:** PLN 250,000\n*   **Constraint:** No equity dilution.\n\n---\n\n#### **3. Break-Even Analysis (New Location)**\n\nThis analysis estimates the monthly revenue the second location must generate to cover its own costs.\n\n| **Estimated Monthly Costs (New Location)** | **Amount (PLN)** | **Notes** |\n| :--- | :--- | :--- |\n| **Fixed Costs** | | |\n| Rent (Good, non-prime location) | 10,000 | Key variable; requires careful site selection. |\n| Salaries (2 new staff, incl. ZUS) | 12,000 | Assumes PLN 6,000 gross cost per employee. |\n| Loan Repayment | 3,000 | Based on a PLN 150k loan over 5 years at ~10%. |\n| Utilities, Insurance, Marketing, etc. | 3,500 | Accounting, software, waste disposal. |\n| **Total Monthly Fixed Costs** | **PLN 28,500** | |\n| | | |\n| **Variable Costs (COGS)** | **~30% of Revenue** | Ingredients, packaging. Assumes a 70% Gross Margin. |\n\n**Break-Even Calculation:**\n*   `Monthly Break-Even Revenue = Total Fixed Costs / Gross Margin %`\n*   `PLN 28,500 / 0.70 =` **PLN 40,715 per month**\n\n**Annual Break-Even Revenue:** **~PLN 490,000**\n\n**Conclusion:** A target revenue of ~PLN 500k/year for the new site is required to break even. This represents just over one-third of the original location's revenue and appears to be a highly achievable target, suggesting the business model is sound.\n\n---\n\n#### **4. Financing Options (Non-Equity)**\n\nThe estimated total project cost (fit-out, equipment, deposits, initial inventory, 3-month working capital buffer) is likely to be **PLN 400,000 - 500,000**. With PLN 250,000 available, a funding gap of PLN 150k-250k exists. Realistic options in Poland include:\n\n1.  **Bank Investment Loan (Kredyt inwestycyjny):** The most direct route. The bakery's profitable history is a strong asset. Banks will require a detailed business plan and may ask for personal guarantees or collateral.\n2.  **Equipment Leasing (Leasing):** Instead of buying ovens, mixers, and display cases outright, lease them. This significantly reduces the upfront capital needed, allowing the PLN 250,000 to be used for renovation and working capital.\n3.  **EU / Regional Grants (Dotacje unijne):** Poland, particularly the Małopolska region, has programs supporting SMEs, job creation, and local development. These are highly competitive and bureaucratic but can provide non-repayable funds. This is a very attractive option to explore.\n4.  **Government-Guaranteed Loans (Gwarancje de minimis BGK):** Bank Gospodarstwa Krajowego (BGK) can provide a guarantee for an SME loan, making commercial banks much more likely to approve financing by reducing their risk.\n\n---\n\n#### **5. Top Two Risks That Could Sink the Project**\n\n1.  **Cash Flow Crisis (Under-capitalization):** This is the single greatest threat. The PLN 250,000 is not enough. Unexpected renovation delays, slow initial sales, or a sudden rise in ingredient costs could deplete cash reserves before the new location becomes profitable. Without an adequate loan and working capital buffer (at least 3 months of operating costs), the business could fail while trying to pay two sets of rent and salaries.\n\n2.  **Operational Strain & Brand Dilution:** The magic of a family business is the family. Spreading the 6-person team across two locations will stretch them thin. If a family member isn't always present at the new site, quality control, customer service, and the unique \"feel\" of the bakery could suffer. A hired manager may not have the same passion or attention to detail, potentially damaging the brand's hard-earned reputation across both locations.",
+  "timestamp_utc": "2026-10-21T23:42:25Z"
+}

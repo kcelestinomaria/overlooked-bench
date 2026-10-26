@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The response clearly states a position: 'The NGO is justified in intervening, but its initial goal—to have the practice 'stopped'—is misguided.' It defends this with the principle of protecting vulnerable individuals from harm and explains why abolition is counterproductive. It acknowledges uncertainty by proposing a nuanced approach (harm reduction) rather than a binary solution, and implicitly recognizes that the community's agency might lead to evolution of the practice over time. It does not explicitly state what would change its mind, but the reasoning is calibrated to the complexity.",
+    "philosophical_literacy": "The response accurately invokes 'cultural relativism' and correctly notes its limits when fundamental rights are violated. It uses the term 'harm reduction' appropriately in an ethical context. No technical terms are misused, and the concepts are load-bearing in the argument (e.g., cultural relativism frames the tension, harm reduction is the proposed solution). It does not name specific philosophers or traditions, but the reasoning is conceptually sound and relevant.",
+    "position_pluralism": "The response acknowledges cultural relativism ('the idea that a culture's practices can only be judged by its own standards') and represents it fairly as having limits. It also implicitly recognizes the neocolonial critique by warning against top-down imposition. However, it omits other major live positions, such as a strong abolitionist view that might argue the practice is inherently wrong and must be stopped regardless of cultural context, or a strong cultural preservationist view that might reject any intervention. The treatment of the positions it does include is fair, but the omission of these alternatives limits the score.",
+    "reasoning_construction": "The response constructs a clear argument: conclusion is that the NGO is justified in intervening but should pursue harm reduction rather than abolition. Premises include: 1) 14-year-olds are vulnerable and cannot give free consent due to social pressure, 2) the practice carries significant infection risk in a low-income context, 3) cultural relativism has limits when fundamental rights are violated. The inference is valid - the conclusion follows from applying the stated principle to the specific details (age, infection risk, social context). It engages with the strongest counterargument (neocolonial imposition) by proposing harm reduction as an alternative. However, it does not fully address why abolition might be morally necessary rather than just impractical."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-003",
+  "judge_cost_usd": 0.00125623,
+  "judge_latency_s": 59.707,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument: conclusion is that the NGO is justified in intervening but should pursue harm reduction rather than abolition. Premises include: 1) 14-year-olds are vulnerable and cannot give free consent due to social pressure, 2) the practice carries significant infection risk in a low-income context, 3) cultural relativism has limits when fundamental rights are violated. The inference is valid - the conclusion follows from applying the stated principle to the specific details (age, infection risk, social context). It engages with the strongest counterargument (neocolonial imposition) by proposing harm reduction as an alternative. However, it does not fully address why abolition might be morally necessary rather than just impractical.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The response clearly states a position: 'The NGO is justified in intervening, but its initial goal—to have the practice 'stopped'—is misguided.' It defends this with the principle of protecting vulnerable individuals from harm and explains why abolition is counterproductive. It acknowledges uncertainty by proposing a nuanced approach (harm reduction) rather than a binary solution, and implicitly recognizes that the community's agency might lead to evolution of the practice over time. It does not explicitly state what would change its mind, but the reasoning is calibrated to the complexity.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges cultural relativism ('the idea that a culture's practices can only be judged by its own standards') and represents it fairly as having limits. It also implicitly recognizes the neocolonial critique by warning against top-down imposition. However, it omits other major live positions, such as a strong abolitionist view that might argue the practice is inherently wrong and must be stopped regardless of cultural context, or a strong cultural preservationist view that might reject any intervention. The treatment of the positions it does include is fair, but the omission of these alternatives limits the score.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response accurately invokes 'cultural relativism' and correctly notes its limits when fundamental rights are violated. It uses the term 'harm reduction' appropriately in an ethical context. No technical terms are misused, and the concepts are load-bearing in the argument (e.g., cultural relativism frames the tension, harm reduction is the proposed solution). It does not name specific philosophers or traditions, but the reasoning is conceptually sound and relevant.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a nuanced argument for intervention through harm reduction, engaging with specific details of the scenario and avoiding simplistic answers.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response constructs a nuanced argument for intervention through harm reduction, engaging with specific details of the scenario and avoiding simplistic answers.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 68.75
+}

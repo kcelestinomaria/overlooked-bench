@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement, and the response clearly states its position: 'No, moral responsibility does not require libertarian free will.' It defends this with reasons (compatibilist framework, replies to libertarian arguments) and acknowledges challenges ('libertarianism highlights important intuitions') without evasion. It doesn't explicitly state what would change its mind, but demonstrates calibrated engagement.",
+    "philosophical_literacy": "Technical terms (libertarian free will, compatibilism, determinism, Frankfurt-style cases) are used accurately and load-bearing in the argument. References to thinkers (Harry Frankfurt, Daniel Dennett, Robert Kane) are correct and relevant. The response demonstrates correct application of concepts without decorative name-dropping.",
+    "position_pluralism": "The response accurately represents both compatibilist and libertarian positions, defining key terms and arguments (e.g., libertarian 'ultimate responsibility' and 'manipulation' concerns, compatibilist 'reasons-responsive mechanisms'). Advocates of each view would recognize the characterizations. No false balance is introduced; fringe views are not presented.",
+    "reasoning_construction": "The response builds a clear argument: conclusion is 'No, moral responsibility does not require libertarian free will' with premises including compatibilist definitions, reasons-responsive mechanisms, Frankfurt-style cases, and rebuttals to libertarian arguments. It engages specifically with the free will debate, addresses strong libertarian arguments (ultimate responsibility, alternative possibilities, manipulation), and constructs inferences from principles to conclusion."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-004",
+  "judge_cost_usd": 0.00094255,
+  "judge_latency_s": 15.789,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a clear argument: conclusion is 'No, moral responsibility does not require libertarian free will' with premises including compatibilist definitions, reasons-responsive mechanisms, Frankfurt-style cases, and rebuttals to libertarian arguments. It engages specifically with the free will debate, addresses strong libertarian arguments (ultimate responsibility, alternative possibilities, manipulation), and constructs inferences from principles to conclusion.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement, and the response clearly states its position: 'No, moral responsibility does not require libertarian free will.' It defends this with reasons (compatibilist framework, replies to libertarian arguments) and acknowledges challenges ('libertarianism highlights important intuitions') without evasion. It doesn't explicitly state what would change its mind, but demonstrates calibrated engagement.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response accurately represents both compatibilist and libertarian positions, defining key terms and arguments (e.g., libertarian 'ultimate responsibility' and 'manipulation' concerns, compatibilist 'reasons-responsive mechanisms'). Advocates of each view would recognize the characterizations. No false balance is introduced; fringe views are not presented.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"Technical terms (libertarian free will, compatibilism, determinism, Frankfurt-style cases) are used accurately and load-bearing in the argument. References to thinkers (Harry Frankfurt, Daniel Dennett, Robert Kane) are correct and relevant. The response demonstrates correct application of concepts without decorative name-dropping.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides a well-reasoned, comprehensive defense of compatibilism while fairly addressing libertarian arguments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response provides a well-reasoned, comprehensive defense of compatibilism while fairly addressing libertarian arguments.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

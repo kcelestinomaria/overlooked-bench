@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed 18-month plan with specific phases, objectives, actions, and deliverables (e.g., 'Deliverables by month 3: export committee established; legal/compliance gap list; production and cost model; initial buyer list; sample traceability template; first draft export business plan'). It includes concrete components like timelines, cost modeling, buyer outreach steps, and financing strategies. It is structured as a usable deliverable that could be taken into a meeting with light editing, rather than describing how to approach the task.",
+    "constraint_fidelity": "The response explicitly acknowledges the 'effectively zero working capital' constraint throughout, stating 'A cooperative with zero working capital cannot: buy coffee from members on delivery; pay for milling and packaging; pay freight and export costs; absorb rejection, quality claims, or exchange-rate timing problems.' It structures the plan around this constraint by separating no-cost preparatory steps from finance-dependent execution steps, and provides a realistic timeline that does not assume immediate export capability. It does not silently violate any constraints and justifies the need for external finance explicitly.",
+    "contextual_realism": "The response is calibrated for a small agricultural cooperative with 40 members and no working capital. It avoids assuming dedicated functions (e.g., suggests forming an export committee of 3-5 members instead of hiring staff), focuses on low-cost tools like 'paper or spreadsheets' for traceability, and acknowledges realities like 'role overlap' (e.g., member roles in the committee), 'volunteer and part-time labour' (implied in member involvement), and 'key-person dependency'. It does not recommend unaffordable tooling or unsustainable process overhead.",
+    "jurisdictional_accuracy": "The prompt involves Mexico, but the response avoids making specific jurisdictional claims about law, regulation, or employment practices. It focuses on operational and financial aspects without asserting US defaults (e.g., no mention of at-will employment or US tax categories). It generically recommends 'legal and tax review' and 'compliance preparation' but does not provide substantive jurisdiction-specific content, so it falls short of a fully accurate treatment. However, it does not make incorrect claims, so it is not penalized heavily."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-004",
+  "judge_cost_usd": 0.0015819,
+  "judge_latency_s": 58.462,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly acknowledges the 'effectively zero working capital' constraint throughout, stating 'A cooperative with zero working capital cannot: buy coffee from members on delivery; pay for milling and packaging; pay freight and export costs; absorb rejection, quality claims, or exchange-rate timing problems.' It structures the plan around this constraint by separating no-cost preparatory steps from finance-dependent execution steps, and provides a realistic timeline that does not assume immediate export capability. It does not silently violate any constraints and justifies the need for external finance explicitly.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small agricultural cooperative with 40 members and no working capital. It avoids assuming dedicated functions (e.g., suggests forming an export committee of 3-5 members instead of hiring staff), focuses on low-cost tools like 'paper or spreadsheets' for traceability, and acknowledges realities like 'role overlap' (e.g., member roles in the committee), 'volunteer and part-time labour' (implied in member involvement), and 'key-person dependency'. It does not recommend unaffordable tooling or unsustainable process overhead.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed 18-month plan with specific phases, objectives, actions, and deliverables (e.g., 'Deliverables by month 3: export committee established; legal/compliance gap list; production and cost model; initial buyer list; sample traceability template; first draft export business plan'). It includes concrete components like timelines, cost modeling, buyer outreach steps, and financing strategies. It is structured as a usable deliverable that could be taken into a meeting with light editing, rather than describing how to approach the task.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves Mexico, but the response avoids making specific jurisdictional claims about law, regulation, or employment practices. It focuses on operational and financial aspects without asserting US defaults (e.g., no mention of at-will employment or US tax categories). It generically recommends 'legal and tax review' and 'compliance preparation' but does not provide substantive jurisdiction-specific content, so it falls short of a fully accurate treatment. However, it does not make incorrect claims, so it is not penalized heavily.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"This response excels in respecting constraints and providing a realistic, actionable plan for a resource-limited cooperative.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response excels in respecting constraints and providing a realistic, actionable plan for a resource-limited cooperative.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

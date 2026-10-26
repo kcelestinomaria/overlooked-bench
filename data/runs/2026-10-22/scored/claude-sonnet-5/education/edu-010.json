@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for learner diversity: it explicitly supports non-native speakers with translation assistance, allows for course-level customization by lecturers, and includes scalable enforcement (e.g., oral follow-ups, stylistic comparison) that adapts to individual cases without requiring additional adults. It avoids generic differentiation language by providing concrete, low-cost strategies like AI Use Statements and preventive design.",
+    "pathway_breadth": "The prompt involves drafting an academic integrity policy for AI tool usage in a university setting, not student future pathways. The response is inclusive of the range of learners by addressing non-native speakers (translation assistance), varied assessment types (e.g., programming, essays), and practical enforcement for a large cohort, ensuring applicability across disciplines and student backgrounds.",
+    "pedagogical_soundness": "The response provides a structured academic integrity policy with clear tiers (permitted, restricted, prohibited) and aligns enforcement strategies with preventive design, scalable detection, and due process. Objectives (e.g., transparency, responsibility) are supported by concrete activities (e.g., AI Use Statements, assessment redesign) and assessments (e.g., oral follow-ups, stylistic comparison) that measure understanding and originality. Sequencing is coherent, with preventive measures before detection, and criteria are observable (e.g., disclosure requirements, explanation of process).",
+    "workload_realism": "The response explicitly addresses the 200-student scale by leveraging systemic design: LMS automation for disclosure collection, AI-detection flagging as a screening tool (not manual review), TAs for triage, and lecturer involvement only in escalated cases. It acknowledges unsustainable manual surveillance and proposes realistic timings (e.g., 5–10 min oral follow-ups) and resources (TAs, LMS tools). Preparation and marking load are proportionate, with emphasis on preventive measures and TA support."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-010",
+  "judge_cost_usd": 0.00104277,
+  "judge_latency_s": 45.012,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response provides a structured academic integrity policy with clear tiers (permitted, restricted, prohibited) and aligns enforcement strategies with preventive design, scalable detection, and due process. Objectives (e.g., transparency, responsibility) are supported by concrete activities (e.g., AI Use Statements, assessment redesign) and assessments (e.g., oral follow-ups, stylistic comparison) that measure understanding and originality. Sequencing is coherent, with preventive measures before detection, and criteria are observable (e.g., disclosure requirements, explanation of process).\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses the 200-student scale by leveraging systemic design: LMS automation for disclosure collection, AI-detection flagging as a screening tool (not manual review), TAs for triage, and lecturer involvement only in escalated cases. It acknowledges unsustainable manual surveillance and proposes realistic timings (e.g., 5–10 min oral follow-ups) and resources (TAs, LMS tools). Preparation and marking load are proportionate, with emphasis on preventive measures and TA support.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves drafting an academic integrity policy for AI tool usage in a university setting, not student future pathways. The response is inclusive of the range of learners by addressing non-native speakers (translation assistance), varied assessment types (e.g., programming, essays), and practical enforcement for a large cohort, ensuring applicability across disciplines and student backgrounds.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for learner diversity: it explicitly supports non-native speakers with translation assistance, allows for course-level customization by lecturers, and includes scalable enforcement (e.g., oral follow-ups, stylistic comparison) that adapts to individual cases without requiring additional adults. It avoids generic differentiation language by providing concrete, low-cost strategies like AI Use Statements and preventive design.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response excels in providing a practical, scalable, and pedagogically sound AI integrity policy tailored to a large university course.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excels in providing a practical, scalable, and pedagogically sound AI integrity policy tailored to a large university course.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

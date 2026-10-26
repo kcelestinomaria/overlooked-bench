@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "Elasticsearch: 15-day hot index, 165-day warm (S3 snapshot), archive to Glacier",
+      "evidence_verified": true,
+      "verdict": "violated"
+    },
+    "C2": {
+      "evidence": "Buffer to USD 8,500 allows for: Unexpected AWS pricing adjustments",
+      "evidence_verified": false,
+      "verdict": "violated"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed plan with phases, tasks, timelines, cost arithmetic, and resource allocation. It includes concrete steps like 'Deploy Fluent Bit DaemonSet', 'Configure Logstash pipeline', and 'Migrate 12 tier-1 service alerts'. However, it lacks exact commands or code snippets, and some steps are vague (e.g., 'Configure S3 bucket for log archive'). A team could start on it with light editing.",
+    "constraint_fidelity": "The response violates constraint C1 by proposing Elasticsearch retention of '15-day hot index, 165-day warm (S3 snapshot)' which does not guarantee all logs are retained for 180 days in a rolling manner (S3 snapshots are point-in-time backups, not continuous retention). It also violates C2 by showing a target cost of $5,940/month but then adding a 'buffer to USD 8,500' without arithmetic justification for the buffer, leaving uncertainty about whether it will stay under $9,000. However, it explicitly preserves tier-1 alerting (C3 kept).",
+    "maintainability": "The plan adds significant complexity (self-hosted ELK, Prometheus, Grafana, RDS) for a 4-person team, which may not be proportionate. It documents risks like 'Elasticsearch cluster instability' and 'Team burnout', and includes 'runbook updates' and training. However, it does not explicitly state accepted technical debt or long-term maintainability concerns, and the post-migration roadmap suggests further changes (e.g., 'Evaluate Jaeger'), indicating unresolved maintainability.",
+    "production_realism": "The proposal to run Elasticsearch, Prometheus, Grafana, and RDS on EKS with 3 nodes for Elasticsearch and 2 for Prometheus is operationally heavy for a 4-person team. It includes failure modes like 'Elasticsearch cluster instability' and mitigation via 'automated snapshots to S3 every 6 hours', but the team skill mix and scale (400-person company) may not support this complexity. The plan accounts for load and partial failure but underestimates operational burden."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 0,
+    "maintainability": 2,
+    "production_realism": 2
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-015",
+  "judge_cost_usd": 0.00145505,
+  "judge_latency_s": 61.62,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response violates constraint C1 by proposing Elasticsearch retention of '15-day hot index, 165-day warm (S3 snapshot)' which does not guarantee all logs are retained for 180 days in a rolling manner (S3 snapshots are point-in-time backups, not continuous retention). It also violates C2 by showing a target cost of $5,940/month but then adding a 'buffer to USD 8,500' without arithmetic justification for the buffer, leaving uncertainty about whether it will stay under $9,000. However, it explicitly preserves tier-1 alerting (C3 kept).\",\n      \"score\": 0\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The proposal to run Elasticsearch, Prometheus, Grafana, and RDS on EKS with 3 nodes for Elasticsearch and 2 for Prometheus is operationally heavy for a 4-person team. It includes failure modes like 'Elasticsearch cluster instability' and mitigation via 'automated snapshots to S3 every 6 hours', but the team skill mix and scale (400-person company) may not support this complexity. The plan accounts for load and partial failure but underestimates operational burden.\",\n      \"score\": 2\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed plan with phases, tasks, timelines, cost arithmetic, and resource allocation. It includes concrete steps like 'Deploy Fluent Bit DaemonSet', 'Configure Logstash pipeline', and 'Migrate 12 tier-1 service alerts'. However, it lacks exact commands or code snippets, and some steps are vague (e.g., 'Configure S3 bucket for log archive'). A team could start on it with light editing.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The plan adds significant complexity (self-hosted ELK, Prometheus, Grafana, RDS) for a 4-person team, which may not be proportionate. It documents risks like 'Elasticsearch cluster instability' and 'Team burnout', and includes 'runbook updates' and training. However, it does not explicitly state accepted technical debt or long-term maintainability concerns, and the post-migration roadmap suggests further changes (e.g., 'Evaluate Jaeger'), indicating unresolved maintainability.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a detailed plan but violates key constraints and introduces high operational complexity.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Elasticsearch: 15-day hot index, 165-day warm (S3 snapshot), archive to Glacier\"\n    },\n    \"C2\": {\n      \"verdict\": \"violated\",\n      \"evidence\": \"Buffer to USD 8,500 allows for: Unexpected AWS pricing adjustments\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a detailed plan but violates key constraints and introduces high operational complexity.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 37.5
+}

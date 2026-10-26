@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position. The response states a clear position: 'the Doctrine of Double Effect does real, indispensable moral work'. It defends this with reasons (e.g., distinction between intention and foresight, restrictive framework). It acknowledges uncertainty implicitly by engaging with criticism ('critics dismiss it') but does not explicitly state what would change its mind or where it is least confident. However, it avoids evasion and reaches a defended judgement.",
+    "philosophical_literacy": "Technical terms invoked: Doctrine of Double Effect, its four conditions, intention vs. foresight, consequentialist view. All are accurate and load-bearing in the argument (e.g., conditions are used to analyze examples). No misattributions or garbled terms. The response uses concepts correctly to support its reasoning.",
+    "position_pluralism": "Major live positions include: DDE does moral work (defended here) and DDE is mere relabeling (critic's view). The response presents the critic's position ('consequentialist would argue that if you know a bad outcome will result from your action, you are just as responsible') and represents it fairly, not as a strawman. It does not omit major positions, and there is no false balance with fringe views. The treatment is accurate and in tension.",
+    "reasoning_construction": "The response concludes that 'the Doctrine of Double Effect does real, indispensable moral work by forcing a crucial distinction between intention and foresight'. Premises include: the DDE's four conditions formalize a moral intuition; it distinguishes between the surgeon's unintended side effect and the abortionist's intended means; it restricts actions (e.g., forbids terror bombing); and it demands moral self-examination. The inference is valid—the conclusion depends on these premises. It engages specific details (e.g., surgical and bombing examples) and addresses the strongest counterargument (consequentialist view that intention/foresight distinction is illusory) by arguing it 'misses the fundamental role that intention plays'. The argument is constructed, not just listed."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-012",
+  "judge_cost_usd": 0.00101572,
+  "judge_latency_s": 48.405,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response concludes that 'the Doctrine of Double Effect does real, indispensable moral work by forcing a crucial distinction between intention and foresight'. Premises include: the DDE's four conditions formalize a moral intuition; it distinguishes between the surgeon's unintended side effect and the abortionist's intended means; it restricts actions (e.g., forbids terror bombing); and it demands moral self-examination. The inference is valid—the conclusion depends on these premises. It engages specific details (e.g., surgical and bombing examples) and addresses the strongest counterargument (consequentialist view that intention/foresight distinction is illusory) by arguing it 'misses the fundamental role that intention plays'. The argument is constructed, not just listed.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position. The response states a clear position: 'the Doctrine of Double Effect does real, indispensable moral work'. It defends this with reasons (e.g., distinction between intention and foresight, restrictive framework). It acknowledges uncertainty implicitly by engaging with criticism ('critics dismiss it') but does not explicitly state what would change its mind or where it is least confident. However, it avoids evasion and reaches a defended judgement.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: DDE does moral work (defended here) and DDE is mere relabeling (critic's view). The response presents the critic's position ('consequentialist would argue that if you know a bad outcome will result from your action, you are just as responsible') and represents it fairly, not as a strawman. It does not omit major positions, and there is no false balance with fringe views. The treatment is accurate and in tension.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"Technical terms invoked: Doctrine of Double Effect, its four conditions, intention vs. foresight, consequentialist view. All are accurate and load-bearing in the argument (e.g., conditions are used to analyze examples). No misattributions or garbled terms. The response uses concepts correctly to support its reasoning.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response constructs a well-reasoned argument with specific examples and fair treatment of opposing views.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response constructs a well-reasoned argument with specific examples and fair treatment of opposing views.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

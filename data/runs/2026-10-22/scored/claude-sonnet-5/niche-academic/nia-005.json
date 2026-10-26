@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with methodology (e.g., ma as experienced bodily, not calculated), evidence (specific arts like architecture, music, theater), and scholarly debates (distinguishing ma from Buddhist 'void,' critiquing Western Orientalist tendencies). It provides context-specific details like ken module systems and noh breathing techniques, indicating familiarity with the literature. A specialist would recognize this as informed by primary sources, not just summaries.",
+    "domain_accuracy": "The response makes substantive claims such as ma being 'the meaningful interval, pause, or negative space,' its ontological status as 'active, substantive presence,' cross-disciplinary unity, spatio-temporal fusion, and connections to concepts like yohaku, yojō, ku, and mu. It references scholars like Arata Isozaki, Tadao Ando, and the Kyoto School, and mentions specific contexts like gagaku, noh, and aun no kokyū. These align with established Japanese aesthetic scholarship, and there are no invented citations or terms. The Western treatment differences are accurately characterized, including formalist reduction, essentialization, decontextualization, influence on modernism, and translation challenges, with references to Bruno Taut and Mies van der Rohe being correct.",
+    "field_situatedness": "The response uses Japanese aesthetic frameworks and terminology (e.g., ma, yohaku, yojō, ku, mu, aun no kokyū, ken) and references Japanese scholars (Isozaki, Ando, Kyoto School). It contrasts with Western frameworks without substitution, maintaining focus on Japanese scholarly traditions. It acknowledges non-English scholarship's centrality and avoids silent Anglophone framing, though it cites Western influences like Taut and van der Rohe appropriately in the comparative section.",
+    "scholarly_calibration": "The response distinguishes well-established aspects (e.g., ma's definition, cross-disciplinary use) from contested or nuanced points, such as noting scholars are 'often careful to distinguish ma from a simple Buddhist void' and highlighting Western tendencies like 'essentialization and exoticization' as critiqued. It avoids uniform confidence by acknowledging shifts in Western treatment and translation difficulties, though it could more explicitly flag where knowledge is thin (e.g., specific Japanese scholars' debates). It provides targeted calibration rather than blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-005",
+  "judge_cost_usd": 0.00112363,
+  "judge_latency_s": 55.144,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims such as ma being 'the meaningful interval, pause, or negative space,' its ontological status as 'active, substantive presence,' cross-disciplinary unity, spatio-temporal fusion, and connections to concepts like yohaku, yojō, ku, and mu. It references scholars like Arata Isozaki, Tadao Ando, and the Kyoto School, and mentions specific contexts like gagaku, noh, and aun no kokyū. These align with established Japanese aesthetic scholarship, and there are no invented citations or terms. The Western treatment differences are accurately characterized, including formalist reduction, essentialization, decontextualization, influence on modernism, and translation challenges, with references to Bruno Taut and Mies van der Rohe being correct.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with methodology (e.g., ma as experienced bodily, not calculated), evidence (specific arts like architecture, music, theater), and scholarly debates (distinguishing ma from Buddhist 'void,' critiquing Western Orientalist tendencies). It provides context-specific details like ken module systems and noh breathing techniques, indicating familiarity with the literature. A specialist would recognize this as informed by primary sources, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established aspects (e.g., ma's definition, cross-disciplinary use) from contested or nuanced points, such as noting scholars are 'often careful to distinguish ma from a simple Buddhist void' and highlighting Western tendencies like 'essentialization and exoticization' as critiqued. It avoids uniform confidence by acknowledging shifts in Western treatment and translation difficulties, though it could more explicitly flag where knowledge is thin (e.g., specific Japanese scholars' debates). It provides targeted calibration rather than blanket disclaimers.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Japanese aesthetic frameworks and terminology (e.g., ma, yohaku, yojō, ku, mu, aun no kokyū, ken) and references Japanese scholars (Isozaki, Ando, Kyoto School). It contrasts with Western frameworks without substitution, maintaining focus on Japanese scholarly traditions. It acknowledges non-English scholarship's centrality and avoids silent Anglophone framing, though it cites Western influences like Taut and van der Rohe appropriately in the comparative section.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates deep, accurate engagement with Japanese scholarship on ma and astutely contrasts it with Western treatments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates deep, accurate engagement with Japanese scholarship on ma and astutely contrasts it with Western treatments.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

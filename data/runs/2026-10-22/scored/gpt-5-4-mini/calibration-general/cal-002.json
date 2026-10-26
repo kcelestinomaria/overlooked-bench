@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance and numerical value.",
+    "instruction_compliance": "The prompt explicitly requests 'Show your working' (done) and 'end your response with a final line in exactly this format: ANSWER: <number>' (response ends with 'ANSWER: 21134.40' in the exact format).",
+    "reasoning_validity": "The response shows working: calculates mass after drying (4,800 × 0.85 = 4,080 kg), AA grade mass (4,080 × 0.40 = 1,632 kg), remainder mass (4,080 - 1,632 = 2,448 kg), AA revenue (1,632 × 6.20 = 10,118.40), other revenue (2,448 × 4.50 = 11,016.00), and total (10,118.40 + 11,016.00 = 21,134.40). All steps are valid and support the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-002",
+  "judge_cost_usd": 0.00057315,
+  "judge_latency_s": 25.161,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 21134.40', which exactly matches the reference answer 'ANSWER: 21134.40' in substance and numerical value.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: calculates mass after drying (4,800 × 0.85 = 4,080 kg), AA grade mass (4,080 × 0.40 = 1,632 kg), remainder mass (4,080 - 1,632 = 2,448 kg), AA revenue (1,632 × 6.20 = 10,118.40), other revenue (2,448 × 4.50 = 11,016.00), and total (10,118.40 + 11,016.00 = 21,134.40). All steps are valid and support the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests 'Show your working' (done) and 'end your response with a final line in exactly this format: ANSWER: <number>' (response ends with 'ANSWER: 21134.40' in the exact format).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response perfectly matches the reference answer with valid reasoning and full compliance to instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response perfectly matches the reference answer with valid reasoning and full compliance to instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

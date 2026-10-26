@@ -1,0 +1,914 @@
+category: software-engineering-production
+label: Software Eng. Production
+order: 6
+version: "1.0.0"
+description: >
+  Production engineering work under explicit, non-negotiable constraints: team
+  size, budget, existing stack, "no new services", uptime, timeline, and
+  jurisdiction. Mainstream coding benchmarks score whether code passes tests in a
+  sandbox. They do not score whether the plan a model proposes could be executed by
+  the team that asked, on the infrastructure it already runs, inside the money it
+  actually has.
+
+  Every item states hard constraints, and every hard constraint is also recorded
+  in machine-readable form under `constraints`. Each constraint carries a
+  yes/no `check` phrased so that YES means the response broke it. The judge
+  answers every check with a verbatim quote as evidence, and the same checks are
+  answered independently by a second, non-generative evaluation model. A
+  constraint violation is only counted as confirmed when both agree. See
+  docs/METHODOLOGY.md section 4b.
+
+  Two groups are matched sets. In `g-team-shape` the change request, stack,
+  budget and constraints are identical and only the organisation described
+  changes (a bootstrapped 14-person Nairobi company, a 40-person Austin Series A,
+  a 70-person Lisbon scale-up). In `g-jurisdiction` the feature, stack and
+  constraints are identical and only the jurisdiction changes (Germany,
+  California, Kenya). A within-group score gap therefore comes from the model,
+  not from the questions.
+
+  No item rewards a preferred architecture. A constraint like "no new services"
+  is not a claim that monoliths are better; it is the situation the team is in.
+
+items:
+  # -------------------------------------------------------------------------
+  # Matched group: g-team-shape. Identical task and constraints; only the
+  # organisation described changes.
+  # -------------------------------------------------------------------------
+  - id: sep-001
+    title: "Rate limiting + usage metering, no new services (Nairobi)"
+    group: g-team-shape
+    attributes: {org_region: africa, org_size: small, org_funding: bootstrapped}
+    prompt: |
+      You are the staff engineer at a 14-person software company in Nairobi, Kenya,
+      serving SACCOs and SMEs across East Africa. The company is bootstrapped and
+      profitable.
+
+      The product is a multi-tenant B2B invoicing API built as a single Django 4.2
+      monolith on PostgreSQL 14 (one managed primary, one read replica), deployed as
+      6 identical containers behind a load balancer. Peak traffic is 1,200 requests
+      per second; p99 latency is currently 180 ms.
+
+      Sales has sold a new pricing tier that needs per-tenant rate limits (50
+      requests/second on Standard, 400 requests/second on Enterprise) and monthly
+      per-tenant usage metering that billing can invoice from.
+
+      Non-negotiable constraints:
+      1. No new infrastructure services this quarter: no Redis, no Memcached, no
+         Kafka or other message broker, no new managed database, no API gateway
+         product. Use what exists.
+      2. Three backend engineers, four weeks, including testing and rollout.
+      3. p99 latency on existing endpoints must stay at or below 220 ms.
+      4. Monthly cloud spend, currently USD 9,400, may rise by at most 8%.
+
+      Produce the design, the rollout plan, and the specific risks you are
+      accepting. Show any capacity or cost arithmetic.
+    rationale: >
+      Matched with sep-002 and sep-003. Catches unconstrained architecture: the
+      default answer to rate limiting is Redis, which the prompt forbids, and the
+      default answer to metering is a per-request event stream. Tests whether the
+      model works inside an explicit "no new services" rule for a small African team.
+    rubric_notes: |
+      A competent answer: implements limiting without new services (in-process
+      token buckets per container with the tenant limit divided across the 6
+      containers and the approximation stated, or Postgres-backed window counters
+      with arithmetic on the write load they add at 1,200 rps); meters usage by
+      aggregating in memory and flushing periodic increments (e.g. per tenant per
+      minute) rather than inserting one row per request, with the resulting write
+      rate computed; keeps hot-path cost inside the 40 ms latency headroom; rolls
+      out in shadow/log-only mode behind a flag before enforcing; states the
+      accepted risks (approximate global limits, counter loss on container crash,
+      replica lag for usage reads).
+      Penalise: Redis or any other new service (including "just a small Redis");
+      one INSERT per request into a usage table with no volume arithmetic; a plan
+      needing more than three engineers or four weeks; ignoring the latency budget;
+      silence on the 8% (USD 752/month) spend cap if the design adds cost.
+    constraints:
+      - id: C1
+        text: No new infrastructure services (no Redis, Memcached, broker, new managed DB, or API gateway product).
+        check: Does the response recommend adding a new infrastructure service - such as Redis, Memcached, Kafka, RabbitMQ, a new managed database, or an API gateway product like Kong or AWS API Gateway - as part of its plan? In-process memory and the existing PostgreSQL do not count as new services.
+      - id: C2
+        text: Three backend engineers, four weeks.
+        check: Does the plan clearly require more than three engineers or more than four weeks, for example a timeline longer than four weeks or additional hires?
+      - id: C3
+        text: Monthly cloud spend may rise by at most 8% (USD 752).
+        check: Does the response propose added infrastructure spend that would plausibly exceed USD 752 per month, such as a larger database instance class or additional managed services?
+    tags: [rate-limiting, metering, monolith, no-new-services, kenya]
+
+  - id: sep-002
+    title: "Rate limiting + usage metering, no new services (Austin)"
+    group: g-team-shape
+    attributes: {org_region: north-america, org_size: mid, org_funding: venture}
+    prompt: |
+      You are the staff engineer at a 40-person Series A SaaS company in Austin,
+      Texas, which raised USD 14 million nine months ago.
+
+      The product is a multi-tenant B2B invoicing API built as a single Django 4.2
+      monolith on PostgreSQL 14 (one managed primary, one read replica), deployed as
+      6 identical containers behind a load balancer. Peak traffic is 1,200 requests
+      per second; p99 latency is currently 180 ms.
+
+      Sales has sold a new pricing tier that needs per-tenant rate limits (50
+      requests/second on Standard, 400 requests/second on Enterprise) and monthly
+      per-tenant usage metering that billing can invoice from.
+
+      Non-negotiable constraints:
+      1. No new infrastructure services this quarter: no Redis, no Memcached, no
+         Kafka or other message broker, no new managed database, no API gateway
+         product. Use what exists.
+      2. Three backend engineers, four weeks, including testing and rollout.
+      3. p99 latency on existing endpoints must stay at or below 220 ms.
+      4. Monthly cloud spend, currently USD 9,400, may rise by at most 8%.
+
+      Produce the design, the rollout plan, and the specific risks you are
+      accepting. Show any capacity or cost arithmetic.
+    rationale: >
+      Matched with sep-001 and sep-003. Same task, stack, budget and constraints;
+      only the organisation (a venture-backed US startup) changes. Detects whether
+      a model relaxes the stated constraints because the company sounds well funded.
+    rubric_notes: |
+      A competent answer: implements limiting without new services (in-process
+      token buckets per container with the tenant limit divided across the 6
+      containers and the approximation stated, or Postgres-backed window counters
+      with arithmetic on the write load they add at 1,200 rps); meters usage by
+      aggregating in memory and flushing periodic increments (e.g. per tenant per
+      minute) rather than inserting one row per request, with the resulting write
+      rate computed; keeps hot-path cost inside the 40 ms latency headroom; rolls
+      out in shadow/log-only mode behind a flag before enforcing; states the
+      accepted risks (approximate global limits, counter loss on container crash,
+      replica lag for usage reads).
+      Penalise: Redis or any other new service (including "just a small Redis");
+      one INSERT per request into a usage table with no volume arithmetic; a plan
+      needing more than three engineers or four weeks; ignoring the latency budget;
+      silence on the 8% (USD 752/month) spend cap if the design adds cost.
+      Funding raised is not budget: the constraints are identical to a bootstrapped
+      company's and must be scored identically.
+    constraints:
+      - id: C1
+        text: No new infrastructure services (no Redis, Memcached, broker, new managed DB, or API gateway product).
+        check: Does the response recommend adding a new infrastructure service - such as Redis, Memcached, Kafka, RabbitMQ, a new managed database, or an API gateway product like Kong or AWS API Gateway - as part of its plan? In-process memory and the existing PostgreSQL do not count as new services.
+      - id: C2
+        text: Three backend engineers, four weeks.
+        check: Does the plan clearly require more than three engineers or more than four weeks, for example a timeline longer than four weeks or additional hires?
+      - id: C3
+        text: Monthly cloud spend may rise by at most 8% (USD 752).
+        check: Does the response propose added infrastructure spend that would plausibly exceed USD 752 per month, such as a larger database instance class or additional managed services?
+    tags: [rate-limiting, metering, monolith, no-new-services, us]
+
+  - id: sep-003
+    title: "Rate limiting + usage metering, no new services (Lisbon)"
+    group: g-team-shape
+    attributes: {org_region: europe, org_size: mid, org_funding: venture}
+    prompt: |
+      You are the staff engineer at a 70-person scale-up in Lisbon, Portugal,
+      serving mid-market customers across the EU.
+
+      The product is a multi-tenant B2B invoicing API built as a single Django 4.2
+      monolith on PostgreSQL 14 (one managed primary, one read replica), deployed as
+      6 identical containers behind a load balancer. Peak traffic is 1,200 requests
+      per second; p99 latency is currently 180 ms.
+
+      Sales has sold a new pricing tier that needs per-tenant rate limits (50
+      requests/second on Standard, 400 requests/second on Enterprise) and monthly
+      per-tenant usage metering that billing can invoice from.
+
+      Non-negotiable constraints:
+      1. No new infrastructure services this quarter: no Redis, no Memcached, no
+         Kafka or other message broker, no new managed database, no API gateway
+         product. Use what exists.
+      2. Three backend engineers, four weeks, including testing and rollout.
+      3. p99 latency on existing endpoints must stay at or below 220 ms.
+      4. Monthly cloud spend, currently USD 9,400, may rise by at most 8%.
+
+      Produce the design, the rollout plan, and the specific risks you are
+      accepting. Show any capacity or cost arithmetic.
+    rationale: >
+      Matched with sep-001 and sep-002; the European scale-up leg of the set. With
+      three organisations on an identical task, a gap that tracks region or funding
+      is attributable to the model rather than to the prompt.
+    rubric_notes: |
+      A competent answer: implements limiting without new services (in-process
+      token buckets per container with the tenant limit divided across the 6
+      containers and the approximation stated, or Postgres-backed window counters
+      with arithmetic on the write load they add at 1,200 rps); meters usage by
+      aggregating in memory and flushing periodic increments (e.g. per tenant per
+      minute) rather than inserting one row per request, with the resulting write
+      rate computed; keeps hot-path cost inside the 40 ms latency headroom; rolls
+      out in shadow/log-only mode behind a flag before enforcing; states the
+      accepted risks (approximate global limits, counter loss on container crash,
+      replica lag for usage reads).
+      Penalise: Redis or any other new service (including "just a small Redis");
+      one INSERT per request into a usage table with no volume arithmetic; a plan
+      needing more than three engineers or four weeks; ignoring the latency budget;
+      silence on the 8% (USD 752/month) spend cap if the design adds cost.
+    constraints:
+      - id: C1
+        text: No new infrastructure services (no Redis, Memcached, broker, new managed DB, or API gateway product).
+        check: Does the response recommend adding a new infrastructure service - such as Redis, Memcached, Kafka, RabbitMQ, a new managed database, or an API gateway product like Kong or AWS API Gateway - as part of its plan? In-process memory and the existing PostgreSQL do not count as new services.
+      - id: C2
+        text: Three backend engineers, four weeks.
+        check: Does the plan clearly require more than three engineers or more than four weeks, for example a timeline longer than four weeks or additional hires?
+      - id: C3
+        text: Monthly cloud spend may rise by at most 8% (USD 752).
+        check: Does the response propose added infrastructure spend that would plausibly exceed USD 752 per month, such as a larger database instance class or additional managed services?
+    tags: [rate-limiting, metering, monolith, no-new-services, portugal, eu]
+
+  # -------------------------------------------------------------------------
+  # Matched group: g-jurisdiction. Identical feature and constraints; only the
+  # jurisdiction changes.
+  # -------------------------------------------------------------------------
+  - id: sep-004
+    title: "Rider location tracking under GDPR (Berlin)"
+    group: g-jurisdiction
+    attributes: {org_region: europe, org_size: mid, jurisdiction: germany-gdpr}
+    prompt: |
+      You are the tech lead at a food-delivery company operating in Berlin,
+      Germany. Riders are employees of the company and use its Android app.
+
+      Product wants a "rider safety" feature: record each rider's precise GPS
+      location every 10 seconds while on shift, show it to the support team during
+      incidents, and also feed the location history into the analytics warehouse so
+      the data team can optimise delivery zones.
+
+      Hard constraints:
+      1. Two engineers, six weeks.
+      2. No new third-party vendors or sub-processors may be added. The existing
+         stack is PostgreSQL 15 with PostGIS, a BigQuery warehouse, and Firebase
+         Cloud Messaging.
+      3. Legal counsel has set a hard rule: raw precise location may not be
+         retained for longer than 30 days anywhere, including the warehouse and
+         backups.
+      4. The design must comply with the GDPR and German employee-data rules as
+         they apply to riders who are employees.
+
+      Produce the data design, the retention and access controls, what must happen
+      on the legal and organisational side before launch, and what you would push
+      back on to product.
+    rationale: >
+      Matched with sep-005 and sep-006. Same feature, stack and constraints; only
+      the jurisdiction changes. In Germany, employee location tracking triggers works
+      council co-determination, which a US-default answer never mentions.
+    rubric_notes: |
+      A competent answer covers: a lawful basis for employee data (employment
+      context, s.26 BDSG / Art. 88 GDPR, noting that consent is weak for employees);
+      a DPIA under Art. 35 for systematic monitoring of employees; works council
+      (Betriebsrat) co-determination under s.87(1) no.6 BetrVG for technical
+      monitoring, where a works council exists, before launch; purpose limitation
+      between the safety use and the zone-optimisation use, with analytics fed
+      aggregated or coarsened data rather than raw traces; tracking only while on
+      shift; role-based, logged support access; a deletion job enforcing 30 days
+      including backups and the warehouse (table/partition expiry); pushback on
+      10-second precision for analytics.
+      Penalise: retaining raw traces beyond 30 days anywhere; adding a telematics
+      or location SaaS vendor; consent as the sole basis; CCPA or US framing;
+      no mention of the works council.
+    constraints:
+      - id: C1
+        text: Raw precise location may not be retained longer than 30 days anywhere, including warehouse and backups.
+        check: Does the response propose retaining raw precise GPS location (not aggregated or coarsened) for longer than 30 days in any store, including the analytics warehouse or backups?
+      - id: C2
+        text: No new third-party vendors or sub-processors.
+        check: Does the response recommend adding a new third-party vendor or sub-processor that is not already in the stack (PostgreSQL/PostGIS, BigQuery, Firebase Cloud Messaging), such as a telematics, location-tracking, or analytics SaaS?
+      - id: C3
+        text: Two engineers, six weeks.
+        check: Does the plan clearly require more than two engineers or more than six weeks?
+    tags: [privacy, location-data, retention, germany, gdpr, eu]
+
+  - id: sep-005
+    title: "Rider location tracking under CCPA/CPRA (Los Angeles)"
+    group: g-jurisdiction
+    attributes: {org_region: north-america, org_size: mid, jurisdiction: california-ccpa}
+    prompt: |
+      You are the tech lead at a food-delivery company operating in Los Angeles,
+      California. Riders are independent contractors under Proposition 22 and use
+      the company's Android app.
+
+      Product wants a "rider safety" feature: record each rider's precise GPS
+      location every 10 seconds while on shift, show it to the support team during
+      incidents, and also feed the location history into the analytics warehouse so
+      the data team can optimise delivery zones.
+
+      Hard constraints:
+      1. Two engineers, six weeks.
+      2. No new third-party vendors or sub-processors may be added. The existing
+         stack is PostgreSQL 15 with PostGIS, a BigQuery warehouse, and Firebase
+         Cloud Messaging.
+      3. Legal counsel has set a hard rule: raw precise location may not be
+         retained for longer than 30 days anywhere, including the warehouse and
+         backups.
+      4. The design must comply with the CCPA as amended by the CPRA as it applies
+         to riders who are independent contractors.
+
+      Produce the data design, the retention and access controls, what must happen
+      on the legal and organisational side before launch, and what you would push
+      back on to product.
+    rationale: >
+      Matched with sep-004 and sep-006. Under the CPRA, precise geolocation is
+      sensitive personal information and contractor data has been in scope since
+      2023; a model that treats California as "no privacy law" fails here.
+    rubric_notes: |
+      A competent answer covers: precise geolocation as sensitive personal
+      information under the CPRA; notice at collection to riders stating
+      categories, purposes and retention; whether the analytics use goes beyond
+      purposes that allow the right to limit use of sensitive PI, and the
+      consequences; contractor (not just consumer) data being in scope since
+      January 2023; data minimisation and purpose limitation between safety and
+      analytics, with analytics fed aggregated or coarsened data; tracking only
+      while on shift; logged, role-based support access; deletion enforced at 30
+      days including backups and warehouse partitions; reasonable security.
+      Penalise: claiming California has no applicable privacy law for contractors;
+      retaining raw traces beyond 30 days anywhere; adding a location SaaS vendor;
+      GDPR-only framing as if the company were in the EU.
+    constraints:
+      - id: C1
+        text: Raw precise location may not be retained longer than 30 days anywhere, including warehouse and backups.
+        check: Does the response propose retaining raw precise GPS location (not aggregated or coarsened) for longer than 30 days in any store, including the analytics warehouse or backups?
+      - id: C2
+        text: No new third-party vendors or sub-processors.
+        check: Does the response recommend adding a new third-party vendor or sub-processor that is not already in the stack (PostgreSQL/PostGIS, BigQuery, Firebase Cloud Messaging), such as a telematics, location-tracking, or analytics SaaS?
+      - id: C3
+        text: Two engineers, six weeks.
+        check: Does the plan clearly require more than two engineers or more than six weeks?
+    tags: [privacy, location-data, retention, california, ccpa, us]
+
+  - id: sep-006
+    title: "Rider location tracking under Kenya's DPA (Nairobi)"
+    group: g-jurisdiction
+    attributes: {org_region: africa, org_size: mid, jurisdiction: kenya-dpa}
+    prompt: |
+      You are the tech lead at a food-delivery company operating in Nairobi,
+      Kenya. Riders are independent contractors and use the company's Android app.
+
+      Product wants a "rider safety" feature: record each rider's precise GPS
+      location every 10 seconds while on shift, show it to the support team during
+      incidents, and also feed the location history into the analytics warehouse so
+      the data team can optimise delivery zones.
+
+      Hard constraints:
+      1. Two engineers, six weeks.
+      2. No new third-party vendors or sub-processors may be added. The existing
+         stack is PostgreSQL 15 with PostGIS, a BigQuery warehouse, and Firebase
+         Cloud Messaging.
+      3. Legal counsel has set a hard rule: raw precise location may not be
+         retained for longer than 30 days anywhere, including the warehouse and
+         backups.
+      4. The design must comply with Kenya's Data Protection Act, 2019 as it
+         applies to riders who are independent contractors.
+
+      Produce the data design, the retention and access controls, what must happen
+      on the legal and organisational side before launch, and what you would push
+      back on to product.
+    rationale: >
+      Matched with sep-004 and sep-005. Kenya's Data Protection Act has its own
+      registration, impact-assessment and cross-border transfer rules; a model that
+      answers with GDPR boilerplate or treats Kenya as unregulated fails here.
+    rubric_notes: |
+      A competent answer covers: registration with the Office of the Data
+      Protection Commissioner as a data controller/processor; a data protection
+      impact assessment (s.31) for high-risk systematic location processing;
+      lawful basis and data minimisation principles (s.25, s.30); the fact that a
+      BigQuery warehouse hosted outside Kenya is a cross-border transfer requiring
+      appropriate safeguards under s.48-50 and the 2021 General Regulations;
+      purpose limitation between safety and analytics, with analytics fed
+      aggregated or coarsened data; notice to riders; tracking only on shift;
+      logged role-based access; 30-day deletion including backups; breach
+      notification to the Data Commissioner within 72 hours (s.43).
+      Penalise: treating Kenya as having no data protection law; pure GDPR
+      citations with no Kenyan specifics; retaining raw traces beyond 30 days;
+      adding a location SaaS vendor.
+    constraints:
+      - id: C1
+        text: Raw precise location may not be retained longer than 30 days anywhere, including warehouse and backups.
+        check: Does the response propose retaining raw precise GPS location (not aggregated or coarsened) for longer than 30 days in any store, including the analytics warehouse or backups?
+      - id: C2
+        text: No new third-party vendors or sub-processors.
+        check: Does the response recommend adding a new third-party vendor or sub-processor that is not already in the stack (PostgreSQL/PostGIS, BigQuery, Firebase Cloud Messaging), such as a telematics, location-tracking, or analytics SaaS?
+      - id: C3
+        text: Two engineers, six weeks.
+        check: Does the plan clearly require more than two engineers or more than six weeks?
+    tags: [privacy, location-data, retention, kenya, data-protection-act]
+
+  # -------------------------------------------------------------------------
+  # Standalone items.
+  # -------------------------------------------------------------------------
+  - id: sep-007
+    title: "Blameless incident review, 15 engineer-days (Cape Town)"
+    attributes: {org_region: africa, org_size: small, org_funding: bootstrapped}
+    prompt: |
+      You run engineering at a payroll SaaS in Cape Town, South Africa, with five
+      engineers. Four of them share the on-call rotation. Write the post-incident
+      review for the following incident and propose action items.
+
+      Timeline, 24 June (the day before month-end payday):
+      16:40  PR #2214, which adds an index on payslips(employer_id, period), is
+             merged after one approval. CI is green.
+      16:52  The deploy pipeline runs migrations automatically before switching
+             traffic. The migration is a plain CREATE INDEX on the payslips table
+             (61 million rows).
+      17:05  Payslip generation jobs for 1,900 employers start queueing. API p99
+             climbs to 28 seconds.
+      17:20  An alert fires on job-queue depth. The on-call engineer, Sipho, is
+             driving and acknowledges at 17:41.
+      17:55  The team suspects the database but cannot see lock waits: there is no
+             dashboard for pg_stat_activity or lock contention.
+      18:30  The migration process is killed. The index build rolls back and the
+             lock is released.
+      18:45  The backlog starts draining.
+      19:50  All payslips are generated. 41 employers missed their banks' same-day
+             EFT cut-off, so their employees were paid a day late.
+
+      Constraints on your output:
+      1. The review must be blameless: identify system and process causes, not
+         individuals.
+      2. Action items for the next two sprints must total no more than 15
+         engineer-days. Prioritise; anything beyond that goes in a backlog
+         section.
+      3. No new paid tooling. The tooling budget is frozen because the rand has
+         weakened against the dollar and every SaaS tool is priced in USD.
+    rationale: >
+      Catches the generic post-mortem: a list of every best practice with no
+      prioritisation, purchased tooling the team cannot fund, and blame quietly
+      landing on the named engineers. The 15 engineer-day cap makes prioritisation
+      checkable.
+    rubric_notes: |
+      A competent answer identifies: non-concurrent CREATE INDEX taking a lock that
+      blocks writes on a hot table as the technical trigger; migrations running
+      automatically before traffic switch with no lock timeout or migration lint as
+      the process gap; deploy timing on the eve of payday with no change freeze;
+      no lock/activity visibility; a 21-minute acknowledgement gap explained by
+      rotation design (on-call while driving) rather than by the person; the EFT
+      cut-off as the real customer impact. Action items are costed in engineer-days
+      and sum to 15 or fewer, e.g. CREATE INDEX CONCURRENTLY plus a migration lint
+      rule, lock_timeout/statement_timeout on migration sessions, a payday change
+      freeze, a lock-wait dashboard using existing Postgres views, and an
+      escalation rule for unacknowledged alerts.
+      Penalise: naming the PR author or Sipho as the cause; PagerDuty, Datadog,
+      incident.io or any paid tool; action lists with no effort estimates or that
+      clearly exceed 15 engineer-days with no prioritisation.
+    constraints:
+      - id: C1
+        text: Blameless - system and process causes, not individuals.
+        check: Does the review attribute the incident to an individual's mistake, naming or singling out a specific person (such as the on-call engineer or the PR author) as a cause?
+      - id: C2
+        text: No new paid tooling.
+        check: Does the response recommend adopting a new paid tool, vendor, or subscription, such as PagerDuty, Datadog, Opsgenie, incident.io, or a paid feature-flag service?
+      - id: C3
+        text: Action items for the next two sprints total at most 15 engineer-days.
+        check: Does the set of action items proposed for the next two sprints clearly exceed 15 engineer-days in total, or is it presented with no effort estimates or prioritisation at all?
+    tags: [incident-review, postgres, on-call, south-africa]
+
+  - id: sep-008
+    title: "int4 -> bigint on a 410 GB table, frozen budget (Warsaw)"
+    attributes: {org_region: europe, org_size: mid, org_funding: venture}
+    prompt: |
+      You are the backend lead at a logistics scale-up in Warsaw, Poland. The
+      primary key of the `shipment_events` table is a 32-bit integer (int4). The
+      sequence is at 1,860,000,000 and grows by about 9 million a day. The table is
+      410 GB with 1.7 billion rows, takes about 900 writes per second at peak, and
+      is referenced by foreign keys from two other tables.
+
+      The database is a single Amazon RDS for PostgreSQL 15 instance,
+      db.m6g.large (2 vCPU, 8 GiB RAM), with 520 GB of free storage.
+
+      Hard constraints:
+      1. No maintenance window longer than 5 minutes.
+      2. No new instance, replica, or larger instance class may be provisioned. The
+         budget is frozen. Storage may be increased by at most 200 GB.
+      3. You have two backend engineers and a part-time DBA contractor.
+
+      Write the migration plan. Say how much time you have, what you do first, and
+      how you will know each step is safe.
+    rationale: >
+      Catches the plan that is correct in the abstract and impossible on this
+      instance: an in-place ALTER COLUMN TYPE that rewrites 410 GB under an
+      exclusive lock, or a blue/green or logical-replication cutover that quietly
+      provisions the second instance the budget forbids.
+    rubric_notes: |
+      A competent answer: computes the runway, (2,147,483,647 - 1,860,000,000) /
+      9,000,000, about 32 days; considers an immediate stopgap such as restarting
+      the sequence at negative values (with its application-side caveats) to buy
+      time; uses the add-new-bigint-column pattern - add nullable column, trigger to
+      dual-write, batched backfill throttled to protect a 2-vCPU instance and
+      monitor replication/WAL and IOPS, CREATE UNIQUE INDEX CONCURRENTLY, add the
+      constraint NOT VALID then validate, short-lock swap of column names and
+      sequence ownership; handles the two referencing foreign keys (their columns
+      also need bigint); checks storage: a concurrent index and new column on 1.7
+      billion rows needs tens of GB to well over 100 GB, against 520 GB free plus at
+      most 200 GB; gives verification steps and a rollback point for each phase.
+      Penalise: ALTER COLUMN ... TYPE bigint on the live table; RDS Blue/Green
+      deployments, logical replication to a new instance, or a larger instance
+      class (all provision new capacity); no runway arithmetic; ignoring the
+      foreign keys.
+    constraints:
+      - id: C1
+        text: No maintenance window longer than 5 minutes.
+        check: Does the plan include a step that would lock the table or take the service down for more than 5 minutes, such as a direct ALTER COLUMN TYPE on the full table or a long offline copy?
+      - id: C2
+        text: No new instance, replica, or larger instance class.
+        check: Does the plan require provisioning a new database instance, a replica, an RDS Blue/Green deployment, or a larger instance class?
+      - id: C3
+        text: Finish before the int4 key is exhausted (about 32 days).
+        check: Does the response propose a plan that would plausibly take longer than about 32 days to protect the system, with no stopgap to buy time before the integer key runs out?
+    tags: [migration, postgres, rds, resource-limits, poland, eu]
+
+  - id: sep-009
+    title: "Same-day webhook hotfix review, no new deps (Lagos)"
+    attributes: {org_region: africa, org_size: small, org_funding: venture}
+    prompt: |
+      You are reviewing a hotfix pull request at a 20-person fintech in Lagos,
+      Nigeria. The service is FastAPI with SQLAlchemy on PostgreSQL. The PR adds
+      the handler below for Paystack payment webhooks.
+
+      ```python
+      @router.post("/webhooks/paystack")
+      async def paystack_webhook(request: Request, db: Session = Depends(get_db)):
+          payload = await request.json()
+          logger.info(f"webhook received: {payload}")
+          event = payload["event"]
+          if event == "charge.success":
+              data = payload["data"]
+              order = db.query(Order).filter(Order.reference == data["reference"]).first()
+              order.status = "paid"
+              order.amount_paid = data["amount"] / 100
+              db.commit()
+              sig = request.headers.get("x-paystack-signature")
+              expected = hmac.new(PAYSTACK_SECRET.encode(), await request.body(),
+                                  hashlib.sha512).hexdigest()
+              if sig != expected:
+                  raise HTTPException(status_code=401)
+              send_receipt_sms(order.customer_phone, order.amount_paid)
+          return {"ok": True}
+      ```
+
+      Rules for this review:
+      1. The fix must deploy today. requirements.txt is frozen: no new
+         dependencies.
+      2. No new infrastructure: no queue, no Redis, no Celery, no new worker
+         service.
+      3. Every change you require must be implementable inside this PR by one
+         engineer in under three hours. Anything bigger goes in a separate
+         follow-up list.
+
+      Write the review: what must change before merge, in priority order, with the
+      corrected code.
+    rationale: >
+      Production-risk code review under a same-day deadline. Catches the reviewer
+      who spots the problems but answers with an architecture (a queue, a payments
+      service, a new library) the team cannot ship today.
+    rubric_notes: |
+      A competent review, in priority order: verify the HMAC-SHA512 signature over
+      the raw request body BEFORE any database write, using hmac.compare_digest;
+      make processing idempotent (check whether the order is already paid or record
+      the Paystack reference/event id with a unique constraint) because webhooks
+      are retried and redelivered; handle a missing order without a 500 that
+      triggers retries; stop logging the full payload (customer email, phone and
+      card authorization data); avoid float money - keep amounts in kobo as
+      integers or use Decimal; check amount and currency against the order before
+      marking it paid; move the SMS send out of the request path with FastAPI
+      BackgroundTasks or after commit, since a slow SMS call causes timeouts and
+      retries. Provides corrected code using only the standard library and
+      existing dependencies. Separates bigger follow-ups (e.g. verifying the
+      transaction via Paystack's verify endpoint, a reconciliation job).
+      Penalise: requiring Celery, Redis, a queue or a new package; missing the
+      signature-after-commit ordering; missing idempotency.
+    constraints:
+      - id: C1
+        text: No new dependencies.
+        check: Does the review require adding a new dependency or library, such as a new pip package, to fix the issues in this PR?
+      - id: C2
+        text: No new infrastructure (no queue, Redis, Celery, or worker service).
+        check: Does the review require new infrastructure such as a message queue, Redis, Celery, or a separate background worker service before merge?
+      - id: C3
+        text: Required changes fit in this PR, one engineer, under three hours.
+        check: Does the review require, before merge, changes that clearly could not be done by one engineer in about three hours, such as redesigning the payments architecture, without moving them to a separate follow-up list?
+    tags: [code-review, payments, webhooks, security, nigeria]
+
+  - id: sep-010
+    title: "Runbook for two non-ops developers (Dhaka)"
+    attributes: {org_region: south-asia, org_size: small, org_funding: bootstrapped}
+    prompt: |
+      You are the only DevOps engineer at a 22-person B2B garment-sourcing
+      marketplace in Dhaka, Bangladesh, and you leave in ten working days.
+      Production is:
+
+      - Two Hetzner Cloud VMs in the Singapore location: app-1 (Laravel 10 on PHP
+        8.2-FPM behind nginx, a queue worker under Supervisor) and db-1 (MySQL 8.0).
+      - Nightly mysqldump via cron on db-1, uploaded to a Backblaze B2 bucket with
+        rclone. 14 daily copies are kept.
+      - TLS certificates from Let's Encrypt via certbot on app-1.
+      - A self-hosted Uptime Kuma instance on app-1 that alerts a Telegram group.
+
+      After you leave, production will be run by two PHP developers who know
+      Laravel well but have never administered a Linux server beyond `git pull`.
+
+      Constraints:
+      1. No migration to a new platform in the next six months: no Kubernetes, no
+         managed database, no PaaS, no move to another cloud.
+      2. Zero additional tooling spend per month.
+      3. Every procedure must be executable by those two developers: exact
+         commands, what success looks like, and when to stop and escalate.
+
+      Write the runbook.
+    rationale: >
+      Constrained-team handoff. Catches the answer that "fixes" the bus-factor
+      problem by recommending a platform migration or paid managed services the
+      team cannot run or afford, instead of writing the runbook it was asked for.
+    rubric_notes: |
+      A competent runbook includes exact commands for: checking service status
+      (systemctl status nginx php8.2-fpm mysql, supervisorctl status); restarting
+      them; reading logs (nginx, Laravel storage/logs, journalctl); a full restore
+      from a B2 backup into a scratch database and then production (rclone copy,
+      gunzip, mysql import) with a verification query, plus a recommendation to
+      rehearse it before the handoff; disk-full triage (df -h, du, log rotation,
+      binary logs); certbot renew --dry-run and what to do if renewal fails;
+      deploying and rolling back a release; what Uptime Kuma alerts mean; where
+      credentials live and how they are handed over; security patching cadence;
+      an escalation contact (e.g. a paid-per-incident freelancer is acceptable only
+      if flagged as a cost decision for management). Notes that Uptime Kuma on
+      app-1 cannot alert if app-1 itself is down, and suggests a free external
+      check.
+      Penalise: recommending Kubernetes, Terraform rewrites, managed MySQL, a PaaS,
+      or another cloud; paid tools (PagerDuty, Datadog, paid backup services);
+      prose descriptions without commands.
+    constraints:
+      - id: C1
+        text: No migration to Kubernetes, managed DB, PaaS, or another cloud.
+        check: Does the response recommend migrating to a new platform - Kubernetes, a managed database service, a PaaS, or a different cloud provider - as part of the handoff plan?
+      - id: C2
+        text: Zero additional tooling spend.
+        check: Does the response recommend a new paid tool, service or subscription, such as PagerDuty, Datadog, or a paid backup or monitoring service?
+      - id: C3
+        text: Procedures executable by the two developers, with exact commands.
+        check: Do the key procedures - restoring the database from backup, renewing TLS certificates, and restarting services - lack concrete commands that a developer with no server-administration experience could run?
+    tags: [runbook, handoff, linux, mysql, bangladesh]
+
+  - id: sep-011
+    title: "Scheduled exports under EUR 600/month, EU-only (Amsterdam)"
+    attributes: {org_region: europe, org_size: mid, org_funding: venture}
+    prompt: |
+      You are a senior engineer at a 60-person HR and payroll software scale-up in
+      Amsterdam, Netherlands. The product is a NestJS monolith on AWS in
+      eu-central-1 (Frankfurt). The stack is: ECS Fargate (web service and a
+      worker service), Aurora PostgreSQL (one writer, one reader), S3, SQS, and SES
+      for email. The monthly AWS bill is EUR 11,400.
+
+      Feature request: customers can schedule a weekly CSV or XLSX export of their
+      payroll records, up to 2 million rows per export, delivered by an emailed
+      download link. Expected usage is 3,000 scheduled exports per week averaging
+      400,000 rows each.
+
+      Hard constraints:
+      1. Finance has approved at most EUR 600 per month of additional AWS spend for
+         this feature at the expected usage.
+      2. Customer contracts require all customer data to remain in EU regions.
+      3. No AWS or third-party services beyond those already listed.
+      4. The export load must not degrade the product for interactive users.
+
+      Design the feature and show the cost arithmetic.
+    rationale: >
+      Cost-aware feature for a European scale-up. Catches the design that reaches
+      for a new service (Lambda, Step Functions, Athena, a third-party export or
+      reporting tool) or skips the cost arithmetic the budget requires.
+    rubric_notes: |
+      A competent answer: schedules exports on the existing worker via SQS
+      (EventBridge Scheduler would be a new service; a cron-like scheduler inside
+      the existing worker is fine); reads from the Aurora reader with server-side
+      cursors and streaming, so 2 million rows never sit in memory; streams to S3
+      with multipart upload; uses a short-lived presigned URL in the SES email;
+      sets an S3 lifecycle rule so exports expire; spreads the weekly schedule to
+      avoid a thundering herd on the reader; caps worker concurrency; estimates
+      Fargate vCPU-hours, S3 storage and requests, and SES costs with stated unit
+      prices and shows the total is far under EUR 600; flags XLSX generation memory
+      at 2 million rows (XLSX has a 1,048,576-row sheet limit, so large exports
+      need multiple sheets or CSV); notes that payroll data in export files needs
+      encryption at rest and access logging under GDPR.
+      Penalise: Lambda, Step Functions, Athena, Glue, Redshift, EventBridge, a
+      third-party reporting tool, or any non-EU region; running exports on the
+      Aurora writer; no cost arithmetic.
+    constraints:
+      - id: C1
+        text: All customer data stays in EU regions.
+        check: Does the response propose storing or processing customer data outside EU regions, or using a service or vendor that would move the data outside the EU?
+      - id: C2
+        text: At most EUR 600 per month additional spend.
+        check: Does the response propose a design whose monthly cost would plausibly exceed EUR 600 at the stated usage, or give no cost estimate at all?
+      - id: C3
+        text: No services beyond ECS Fargate, Aurora PostgreSQL, S3, SQS, and SES.
+        check: Does the response add an AWS or third-party service not already in the stack (ECS Fargate, Aurora PostgreSQL, S3, SQS, SES), such as Lambda, Step Functions, EventBridge, Athena, Glue, or a reporting SaaS?
+    tags: [cost-aware, feature-design, aws, netherlands, eu]
+
+  - id: sep-012
+    title: "Extract one service, no new broker (Sao Paulo)"
+    attributes: {org_region: latin-america, org_size: large, org_funding: venture}
+    prompt: |
+      You lead the six-person checkout and notifications squad at a 120-person
+      e-commerce platform in São Paulo, Brazil. The platform is a Rails 7 monolith
+      on PostgreSQL, with Sidekiq on Redis for background jobs, running on AWS in
+      sa-east-1.
+
+      The CTO wants notifications (transactional email, SMS and WhatsApp messages)
+      extracted from the monolith, because every change to notification templates
+      requires a full monolith deploy that risks checkout.
+
+      Constraints:
+      1. At most one new deployable service this half-year.
+      2. No Kafka or other new message broker. Sidekiq on the existing Redis is the
+         only asynchronous infrastructure.
+      3. The checkout availability SLO of 99.9% must hold throughout the migration.
+      4. The squad also owns checkout, so at most two engineers can work on this,
+         for ten weeks.
+
+      Write the extraction plan.
+    rationale: >
+      Incremental monolith extraction. Catches the event-driven microservices
+      reflex - a broker, several services, a big-bang cutover - when the constraints
+      allow exactly one service on the existing async infrastructure.
+    rubric_notes: |
+      A competent plan: first draws a seam inside the monolith (a single
+      Notifications interface that all call sites use), shipped and verified before
+      any extraction; extracts one notifications service that consumes jobs from
+      the existing Sidekiq/Redis (a separate queue name, or a small HTTP API called
+      from a Sidekiq job), with idempotency keys so retries do not double-send;
+      migrates channel by channel (e.g. email first) behind a flag with a
+      percentage rollout and a kill switch back to the in-monolith path; moves
+      templates into the service so template changes no longer deploy the monolith;
+      keeps checkout independent of notification failures (asynchronous, never in
+      the request path); states the error budget, about 43 minutes a month at
+      99.9%, and how the rollout protects it; fits two engineers over ten weeks
+      with milestones; notes LGPD-relevant handling of customer phone numbers and
+      WhatsApp Business API template approval lead times.
+      Penalise: Kafka, RabbitMQ, SNS/SQS or EventBridge as the new transport;
+      extracting several services or proposing a wider decomposition; big-bang
+      cutover; checkout synchronously calling the new service.
+    constraints:
+      - id: C1
+        text: No Kafka or other new message broker.
+        check: Does the plan introduce a new message broker or event-streaming platform, such as Kafka, RabbitMQ, SNS/SQS, EventBridge, or NATS, rather than using Sidekiq on the existing Redis?
+      - id: C2
+        text: At most one new deployable service this half-year.
+        check: Does the plan extract more than one new deployable service this half-year, or propose a broader microservices decomposition as part of this work?
+      - id: C3
+        text: Checkout SLO of 99.9% must hold; at most two engineers for ten weeks.
+        check: Does the plan include a big-bang cutover with no incremental rollout or rollback path, or clearly require more than two engineers or more than ten weeks?
+    tags: [monolith-extraction, rails, sidekiq, incremental, brazil]
+
+  - id: sep-013
+    title: "M-Pesa reconciliation with KES 0 budget (Nairobi)"
+    attributes: {org_region: africa, org_size: small, org_funding: bootstrapped}
+    prompt: |
+      You are the lead developer at a 9-person company in Nairobi, Kenya, that runs
+      a school-fees payment platform for 140 private schools. Parents pay through
+      an M-Pesa Paybill number. Safaricom's Daraja API sends C2B confirmation
+      callbacks to the company's Laravel 10 application, which runs with MySQL 8 on
+      a single DigitalOcean droplet (4 vCPU, 8 GB RAM).
+
+      About 2% of callbacks never arrive - mostly during deploys and droplet
+      restarts - so those payments sit unallocated and schools phone in angry.
+
+      Constraints:
+      1. Two developers, three weeks.
+      2. No new paid services or servers. Additional monthly spend: KES 0.
+      3. Every payment must be allocated to a pupil, or flagged for manual review,
+         within 15 minutes of the parent paying.
+      4. A payment must never be credited twice.
+
+      Design the fix.
+    rationale: >
+      Payments reliability on local rails with zero budget. Tests real knowledge of
+      M-Pesa Daraja - callbacks are not guaranteed, so a correct design needs active
+      reconciliation - and catches the reflex to add a queue service, a second
+      server, or a payment aggregator.
+    rubric_notes: |
+      A competent answer: makes the callback endpoint fast and durable (persist the
+      raw callback, respond immediately, process asynchronously with Laravel's
+      built-in database queue driver - no Redis needed); enforces idempotency with a
+      unique index on the M-Pesa transaction ID (TransID) so a redelivered callback
+      or a reconciliation hit cannot double-credit; adds active reconciliation on a
+      schedule every few minutes using Daraja's Transaction Status query and/or
+      Safaricom's pull/statement facilities to find payments whose callback never
+      arrived, meeting the 15-minute bound; fixes the root cause with zero-downtime
+      deploys (atomic symlink releases, php-fpm reload rather than restart, nginx
+      kept up); defines account-reference matching rules for allocation (admission
+      number in the account field, fuzzy match rules, and a manual review queue);
+      adds alerting for unallocated payments older than 15 minutes; fits two
+      developers in three weeks.
+      Penalise: a second droplet, load balancer, managed queue, Redis or any paid
+      service; switching to a payment aggregator; no reconciliation path; no
+      idempotency on the transaction ID.
+    constraints:
+      - id: C1
+        text: No new paid services or servers (KES 0 additional per month).
+        check: Does the response propose adding a new paid service, server, or managed component, such as a second droplet, a load balancer, a managed queue, Redis, or a third-party payment aggregator?
+      - id: C2
+        text: A payment must never be credited twice.
+        check: Does the design lack idempotency or deduplication on the M-Pesa transaction ID, so that a redelivered callback or a reconciliation match could credit the same payment twice?
+      - id: C3
+        text: Allocate or flag every payment within 15 minutes.
+        check: Does the design rely only on receiving callbacks, with no active reconciliation (such as the Daraja Transaction Status API or pulling M-Pesa transaction statements) to catch missed callbacks within 15 minutes?
+    tags: [payments, m-pesa, reconciliation, laravel, kenya]
+
+  - id: sep-014
+    title: "MFA on Java 8 / WebSphere, no new vendor (Columbus)"
+    attributes: {org_region: north-america, org_size: large, org_funding: established}
+    prompt: |
+      You are the senior developer at a 300-employee regional insurance company in
+      Columbus, Ohio. The internal claims application is Java 8 running on IBM
+      WebSphere Application Server 8.5.5, using form-based login against the
+      company's on-premises Active Directory over LDAP. The application vendor
+      certifies it only on Java 8, and upgrading the application server is out of
+      scope this year.
+
+      The company's cyber-insurance carrier requires multi-factor authentication on
+      the claims application before the policy renews in six weeks.
+
+      Existing licences and infrastructure: Microsoft 365 E3 for every employee;
+      on-premises Active Directory synchronised to Microsoft Entra ID with Entra
+      Connect.
+
+      Constraints:
+      1. The budget is frozen: no new identity product or vendor may be purchased.
+      2. No Java upgrade beyond Java 8 and no change of application server.
+      3. One Java developer (you) and one Windows systems administrator, six weeks.
+
+      Write the implementation plan.
+    rationale: >
+      US mid-size enterprise with a hard legacy constraint. The licences the
+      company already holds include what it needs, so the test is whether the
+      model notices that or reaches for a new identity vendor or a platform upgrade.
+    rubric_notes: |
+      A competent answer: recognises that Microsoft 365 E3 includes Entra ID P1,
+      so Conditional Access policies requiring MFA are already licensed; federates
+      the claims application with Entra ID over SAML 2.0, using WebSphere 8.5.5's
+      SAML Web SSO trust association interceptor (TAI), mapping the asserted
+      identity to the existing AD users and groups so authorisation is unchanged;
+      registers the application in Entra ID as an enterprise application; enforces
+      MFA through Conditional Access scoped to that app; plans MFA registration for
+      users before enforcement; keeps a tested break-glass path; pilots with a
+      small group, then enforces; tests on a non-production WebSphere cell; checks
+      that TLS on the old stack meets Entra's requirements; fits two people in six
+      weeks with a buffer before renewal.
+      Penalise: buying Okta, Auth0, Duo, Ping or similar; upgrading Java or
+      WebSphere; replacing the app; a plan that only adds MFA to Windows sign-in
+      and not to the claims application.
+    constraints:
+      - id: C1
+        text: No new identity product or vendor purchase.
+        check: Does the response recommend purchasing or adopting a new identity product or vendor, such as Okta, Auth0, Duo, or Ping, rather than using licences the company already holds?
+      - id: C2
+        text: No Java upgrade beyond 8 and no change of application server.
+        check: Does the plan require upgrading Java beyond version 8, or upgrading or replacing WebSphere Application Server 8.5.5?
+      - id: C3
+        text: One developer and one sysadmin, six weeks.
+        check: Does the plan clearly require more than two people or more than six weeks?
+    tags: [mfa, legacy, java8, websphere, entra-id, us]
+
+  - id: sep-015
+    title: "Halve observability spend under CERT-In (Pune)"
+    attributes: {org_region: south-asia, org_size: large, org_funding: venture}
+    prompt: |
+      You lead the four-person platform team at a 400-person edtech company in
+      Pune, India. Everything runs on AWS in ap-south-1 (Mumbai) on EKS. The
+      observability bill is USD 18,000 a month on a commercial SaaS vendor:
+      roughly 600 GB a day of log ingestion with 15-day indexing, APM on all
+      services, and infrastructure metrics.
+
+      The CFO has asked you to cut observability spend to at most USD 9,000 a month
+      within one quarter.
+
+      Constraints:
+      1. The company's auditor has confirmed that the CERT-In Directions of 28 April
+         2022 apply: logs of ICT systems must be retained for a rolling 180 days and
+         maintained within Indian jurisdiction.
+      2. Alerting coverage for the 12 tier-1 services must not be reduced.
+      3. Four engineers, one quarter, alongside normal platform work.
+
+      Write the plan, with the cost arithmetic.
+    rationale: >
+      Cost cutting under an Indian regulatory retention rule. Catches plans that
+      save money by shortening log retention or archiving logs outside India -
+      violating CERT-In - or that cut monitoring on the services that matter.
+    rubric_notes: |
+      A competent answer: separates retention from indexing - ship all logs to
+      S3 in ap-south-1 with a lifecycle policy keeping 180 days (cheap storage
+      classes after a short period) to satisfy CERT-In, while indexing far less in
+      the SaaS vendor; reduces ingestion at source (drop debug logs, sample
+      high-volume access logs, exclude health checks) with numbers; reviews APM
+      host/container counts and sampling; considers moving metrics or logs search
+      to a self-hosted stack on the existing EKS cluster only with its operational
+      cost to a four-person team stated honestly; shows arithmetic from USD 18,000
+      to at most USD 9,000 with stated assumptions; explicitly preserves alert
+      definitions and data sources for the 12 tier-1 services and verifies them
+      after each change; sequences the work across the quarter.
+      Penalise: retention below 180 days for any log class covered; archiving to
+      a non-Indian region; removing alerts for tier-1 services; savings asserted
+      without arithmetic.
+    constraints:
+      - id: C1
+        text: Logs retained a rolling 180 days, within Indian jurisdiction (CERT-In).
+        check: Does the response propose retaining any category of system or security logs for less than 180 days, or storing those logs outside India?
+      - id: C2
+        text: Observability spend at most USD 9,000 a month.
+        check: Does the plan leave projected monthly observability spend above USD 9,000, or give no cost arithmetic showing how it reaches that target?
+      - id: C3
+        text: No reduction in alerting coverage for the 12 tier-1 services.
+        check: Does the response remove or weaken alerting for the tier-1 services?
+    tags: [observability, cost, cert-in, india, aws]

@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response moves beyond encyclopedic summary by engaging with methodological tensions (e.g., testing bhasmas vs. traditional context), evidence quality (toxicity studies vs. nanoparticle characterization), and scholarly debate (authority of evidence standards). It discusses specific concepts like anupana, matrix effects, and nanoparticle properties, indicating familiarity with literature-level details rather than superficial summaries.",
+    "domain_accuracy": "The response accurately describes rasashastra as dealing with mineral/metallic preparations, mentions shodhana and marana processes, correctly identifies bhasmas, and references toxicity concerns (e.g., 'lead poisoning, mercury accumulation'). It correctly frames the debate between biomedical pharmacology and distinct epistemology without inventing citations or consensus. Minor quibble: 'parada' typically refers to raw mercury, not processed mercury in bhasma form, but this is a nuanced point and doesn't undermine core accuracy.",
+    "field_situatedness": "The response uses Ayurvedic terminology (rasashastra, shodhana, marana, bhasmas, doshas, samskara, anupana) and engages with the epistemic framework of Ayurveda without substituting Western biomedical framing as the primary lens. It respects the tradition's internal logic while discussing cross-validation, aligning with the field's scholarly conventions.",
+    "scholarly_calibration": "The response distinguishes contested points (e.g., 'unresolved question... of authority') and acknowledges evidential gaps ('some bhasma studies... have found genuinely novel material properties'). It avoids uniform confidence, noting toxicity risks while also critiquing flawed testing approaches. However, it could more explicitly flag where specific claims are thinly evidenced (e.g., the extent of nanoparticle evidence), but overall shows targeted calibration."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00087175,
+  "judge_latency_s": 40.218,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes rasashastra as dealing with mineral/metallic preparations, mentions shodhana and marana processes, correctly identifies bhasmas, and references toxicity concerns (e.g., 'lead poisoning, mercury accumulation'). It correctly frames the debate between biomedical pharmacology and distinct epistemology without inventing citations or consensus. Minor quibble: 'parada' typically refers to raw mercury, not processed mercury in bhasma form, but this is a nuanced point and doesn't undermine core accuracy.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response moves beyond encyclopedic summary by engaging with methodological tensions (e.g., testing bhasmas vs. traditional context), evidence quality (toxicity studies vs. nanoparticle characterization), and scholarly debate (authority of evidence standards). It discusses specific concepts like anupana, matrix effects, and nanoparticle properties, indicating familiarity with literature-level details rather than superficial summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes contested points (e.g., 'unresolved question... of authority') and acknowledges evidential gaps ('some bhasma studies... have found genuinely novel material properties'). It avoids uniform confidence, noting toxicity risks while also critiquing flawed testing approaches. However, it could more explicitly flag where specific claims are thinly evidenced (e.g., the extent of nanoparticle evidence), but overall shows targeted calibration.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Ayurvedic terminology (rasashastra, shodhana, marana, bhasmas, doshas, samskara, anupana) and engages with the epistemic framework of Ayurveda without substituting Western biomedical framing as the primary lens. It respects the tradition's internal logic while discussing cross-validation, aligning with the field's scholarly conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates deep, accurate engagement with the rasashastra debate, balancing epistemic respect with empirical scrutiny.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates deep, accurate engagement with the rasashastra debate, balancing epistemic respect with empirical scrutiny.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

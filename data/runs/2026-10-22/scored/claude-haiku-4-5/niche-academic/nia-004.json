@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond basic encyclopedic level by discussing specific disputes (e.g., furnace typology classification, radiocarbon calibration issues, and debates over independent invention vs. diffusion) and mentions methodological challenges like stratigraphic ambiguity and slag chemistry standardization. It engages with scholarly tensions and research gaps, indicating some familiarity with the literature. However, it lacks detailed engagement with specific evidence, site examples, or named scholars, remaining at a general overview level rather than deep specialist detail.",
+    "domain_accuracy": "The response makes several substantive claims: dating iron smelting to '2000-1500 BCE' in the Great Lakes region, 'high-quality bloomery furnaces', temperatures 'reaching 1200°C+', and debates over 'independent invention vs. external influence'. However, the dating claim is significantly inaccurate; current archaeological consensus places the earliest iron smelting in the Great Lakes region around 500 BCE to 0 CE, not 2000-1500 BCE, which would predate iron smelting in the Near East. This is a major factual error. Other claims about furnace types and debates are plausible but lack specific citations or corroboration, and the early dating error is load-bearing for the response's narrative.",
+    "field_situatedness": "The response uses appropriate terminology (e.g., 'bloomery furnaces', 'slag analysis', 'radiocarbon calibration', 'archaeometallurgical literature') and frameworks specific to African archaeometallurgy and pre-colonial technology. It focuses on regional debates (e.g., African innovation vs. external influence) without substituting Western or Anglophone framings. It acknowledges the centrality of African contexts and does not ignore non-English scholarship implicitly.",
+    "scholarly_calibration": "The response effectively distinguishes contested areas (e.g., 'Scholars debate whether furnaces represent distinct types or a continuum', 'Disagreement about whether different regions developed iron-working independently or through diffusion') and notes uncertainties ('Limited intact furnaces make typological classification contentious', 'Difficulty distinguishing primary smelting contexts'). It avoids blanket disclaimers and provides targeted calibration for specific disputes. However, it presents the inaccurate early dating claim with uniform confidence, without signaling its highly contested or erroneous status."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 3,
+    "domain_accuracy": 1,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-004",
+  "judge_cost_usd": 0.00089229,
+  "judge_latency_s": 49.212,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: dating iron smelting to '2000-1500 BCE' in the Great Lakes region, 'high-quality bloomery furnaces', temperatures 'reaching 1200°C+', and debates over 'independent invention vs. external influence'. However, the dating claim is significantly inaccurate; current archaeological consensus places the earliest iron smelting in the Great Lakes region around 500 BCE to 0 CE, not 2000-1500 BCE, which would predate iron smelting in the Near East. This is a major factual error. Other claims about furnace types and debates are plausible but lack specific citations or corroboration, and the early dating error is load-bearing for the response's narrative.\",\n      \"score\": 1\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond basic encyclopedic level by discussing specific disputes (e.g., furnace typology classification, radiocarbon calibration issues, and debates over independent invention vs. diffusion) and mentions methodological challenges like stratigraphic ambiguity and slag chemistry standardization. It engages with scholarly tensions and research gaps, indicating some familiarity with the literature. However, it lacks detailed engagement with specific evidence, site examples, or named scholars, remaining at a general overview level rather than deep specialist detail.\",\n      \"score\": 3\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response effectively distinguishes contested areas (e.g., 'Scholars debate whether furnaces represent distinct types or a continuum', 'Disagreement about whether different regions developed iron-working independently or through diffusion') and notes uncertainties ('Limited intact furnaces make typological classification contentious', 'Difficulty distinguishing primary smelting contexts'). It avoids blanket disclaimers and provides targeted calibration for specific disputes. However, it presents the inaccurate early dating claim with uniform confidence, without signaling its highly contested or erroneous status.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate terminology (e.g., 'bloomery furnaces', 'slag analysis', 'radiocarbon calibration', 'archaeometallurgical literature') and frameworks specific to African archaeometallurgy and pre-colonial technology. It focuses on regional debates (e.g., African innovation vs. external influence) without substituting Western or Anglophone framings. It acknowledges the centrality of African contexts and does not ignore non-English scholarship implicitly.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates good scholarly calibration and field situatedness but is undermined by a critical factual error in dating that severely impacts domain accuracy.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates good scholarly calibration and field situatedness but is undermined by a critical factual error in dating that severely impacts domain accuracy.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 57.5
+}

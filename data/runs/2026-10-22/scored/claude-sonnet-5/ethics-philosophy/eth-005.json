@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Should the law permit this case?'), and the response states a clear position: 'The law should not permit assisted dying for this case.' It defends this with reasons (e.g., prognostic uncertainty, competence issues) and acknowledges uncertainty by proposing an alternative pathway ('guaranteed access to intensive treatment') and a potential carve-out, but it does not explicitly state what would change its mind or where it is least confident, focusing more on policy design than personal uncertainty.",
+    "philosophical_literacy": "The response does not invoke named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical and policy arguments (e.g., competence, incentives) without philosophical framework references. While accurate in its empirical claims (e.g., psychiatric treatment advancements), it lacks philosophical literacy elements, though the reasoning is coherent and relevant to the ethical question.",
+    "position_pluralism": "The response omits major live positions, such as arguments for permitting assisted dying based on autonomy, relief of unbearable suffering, or parity between physical and mental illness. It only presents the exclusionary position and does not represent rival views (e.g., from advocates in jurisdictions like Belgium or the Netherlands) in a way their proponents would recognize, instead critiquing those systems. This constitutes a silent omission of competing positions, though it avoids false balance by not elevating fringe views.",
+    "reasoning_construction": "The response builds a structured argument with premises: 1) 'Treatment-resistant' is not 'untreatable' due to evolving psychiatric treatments and documented remissions, 2) Competence assessment is flawed because depression's symptoms (hopelessness) directly influence the request, 3) Downstream incentive risks exist where assisted dying becomes easier than care access. These premises lead to the conclusion that psychiatric-only conditions should be excluded. It engages specific details (e.g., ketamine, TMS, Belgium/Netherlands cases) and addresses counterarguments by proposing a narrow carve-out ('treatment-exhausted' certification) and mandatory reflection periods, though it doesn't fully engage the strongest objection (e.g., autonomy rights in severe suffering)."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 2,
+    "position_pluralism": 1,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-005",
+  "judge_cost_usd": 0.0009658,
+  "judge_latency_s": 50.029,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a structured argument with premises: 1) 'Treatment-resistant' is not 'untreatable' due to evolving psychiatric treatments and documented remissions, 2) Competence assessment is flawed because depression's symptoms (hopelessness) directly influence the request, 3) Downstream incentive risks exist where assisted dying becomes easier than care access. These premises lead to the conclusion that psychiatric-only conditions should be excluded. It engages specific details (e.g., ketamine, TMS, Belgium/Netherlands cases) and addresses counterarguments by proposing a narrow carve-out ('treatment-exhausted' certification) and mandatory reflection periods, though it doesn't fully engage the strongest objection (e.g., autonomy rights in severe suffering).\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Should the law permit this case?'), and the response states a clear position: 'The law should not permit assisted dying for this case.' It defends this with reasons (e.g., prognostic uncertainty, competence issues) and acknowledges uncertainty by proposing an alternative pathway ('guaranteed access to intensive treatment') and a potential carve-out, but it does not explicitly state what would change its mind or where it is least confident, focusing more on policy design than personal uncertainty.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response omits major live positions, such as arguments for permitting assisted dying based on autonomy, relief of unbearable suffering, or parity between physical and mental illness. It only presents the exclusionary position and does not represent rival views (e.g., from advocates in jurisdictions like Belgium or the Netherlands) in a way their proponents would recognize, instead critiquing those systems. This constitutes a silent omission of competing positions, though it avoids false balance by not elevating fringe views.\",\n      \"score\": 1\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response does not invoke named thinkers, traditions, or technical philosophical terms (e.g., utilitarianism, deontology). It relies on practical and policy arguments (e.g., competence, incentives) without philosophical framework references. While accurate in its empirical claims (e.g., psychiatric treatment advancements), it lacks philosophical literacy elements, though the reasoning is coherent and relevant to the ethical question.\",\n      \"score\": 2\n    }\n  },\n  \"overall_note\": \"The response provides a well-structured, policy-focused argument against permitting assisted dying for psychiatric cases but neglects opposing ethical positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response provides a well-structured, policy-focused argument against permitting assisted dying for psychiatric cases but neglects opposing ethical positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 58.75
+}

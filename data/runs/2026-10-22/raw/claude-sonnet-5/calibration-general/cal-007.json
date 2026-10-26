@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 271,
+  "cost_usd": 0.00302,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "e22f8d7bee6eeb19",
+  "item_id": "cal-007",
+  "latency_s": 4.941,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 155,
+  "provider": "anthropic",
+  "request_fingerprint": "9415d0a39e08e173",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "The meeting is at 14:00 Tuesday in Nairobi, which is UTC+3. To find UTC time, subtract 3 hours: 14:00 − 3 = 11:00 UTC on Tuesday.\n\nSao Paulo is UTC−3, so to convert from UTC to Sao Paulo time, subtract 3 hours: 11:00 − 3 = 08:00.\n\nSince no date boundary is crossed (11:00 UTC minus 3 hours stays within the same day), the day remains Tuesday.\n\nANSWER: Tuesday 08:00",
+  "timestamp_utc": "2026-10-21T23:35:16Z"
+}

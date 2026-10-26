@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "rclone copy backblaze:your-bucket-name/db-backups/latest.sql.gz /tmp/; gzip -d /tmp/latest.sql.gz; mysql -u root -p < /tmp/latest.sql",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response is a complete runbook with exact commands for all requested procedures: service status checks ('sudo systemctl status nginx php8.2-fpm mysql'), restart commands, log reading ('sudo tail -50 /var/log/nginx/error.log'), full database restore (Section 3.2), certificate renewal ('sudo certbot renew --dry-run'), deployment steps, and escalation contacts. It includes verification steps ('Success: HTTP 200 response') and sequence. A developer could execute this immediately.",
+    "constraint_fidelity": "The response respects all hard constraints: no migration to new platforms (C1 kept), no paid tools recommended (C2 kept), and provides exact commands for all key procedures (C3 kept). It explicitly states 'No changes' to infrastructure platform and uses only existing tools. The restore procedure includes concrete commands: 'rclone copy backblaze:your-bucket-name/db-backups/latest.sql.gz /tmp/', 'gzip -d /tmp/latest.sql.gz', 'mysql -u root -p < /tmp/latest.sql'.",
+    "maintainability": "The runbook is designed for the PHP developers: uses simple commands, documents critical file locations (Section 8.1), and includes a troubleshooting flowchart. It states risks explicitly (e.g., Section 7.2: 'site without HTTPS is temporary fix'). However, it does not explicitly discuss testing, observability setup, or long-term debt acceptance. The complexity is proportionate, but could be more thorough in handover documentation.",
+    "production_realism": "The runbook accounts for production realities: includes service restart commands, disk space checks ('df -h', 'du -sh /var/* | sort -hr'), log checking procedures, and partial failure handling (e.g., Section 7.1: 'Wait 60 seconds, check site' then escalate). It considers the team's skill level by providing exact commands and clear success/failure conditions. However, it lacks explicit discussion of locking during database restore or idempotency of operations."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-010",
+  "judge_cost_usd": 0.0017037,
+  "judge_latency_s": 15.91,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: no migration to new platforms (C1 kept), no paid tools recommended (C2 kept), and provides exact commands for all key procedures (C3 kept). It explicitly states 'No changes' to infrastructure platform and uses only existing tools. The restore procedure includes concrete commands: 'rclone copy backblaze:your-bucket-name/db-backups/latest.sql.gz /tmp/', 'gzip -d /tmp/latest.sql.gz', 'mysql -u root -p < /tmp/latest.sql'.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The runbook accounts for production realities: includes service restart commands, disk space checks ('df -h', 'du -sh /var/* | sort -hr'), log checking procedures, and partial failure handling (e.g., Section 7.1: 'Wait 60 seconds, check site' then escalate). It considers the team's skill level by providing exact commands and clear success/failure conditions. However, it lacks explicit discussion of locking during database restore or idempotency of operations.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response is a complete runbook with exact commands for all requested procedures: service status checks ('sudo systemctl status nginx php8.2-fpm mysql'), restart commands, log reading ('sudo tail -50 /var/log/nginx/error.log'), full database restore (Section 3.2), certificate renewal ('sudo certbot renew --dry-run'), deployment steps, and escalation contacts. It includes verification steps ('Success: HTTP 200 response') and sequence. A developer could execute this immediately.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The runbook is designed for the PHP developers: uses simple commands, documents critical file locations (Section 8.1), and includes a troubleshooting flowchart. It states risks explicitly (e.g., Section 7.2: 'site without HTTPS is temporary fix'). However, it does not explicitly discuss testing, observability setup, or long-term debt acceptance. The complexity is proportionate, but could be more thorough in handover documentation.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A highly actionable runbook that respects all constraints and provides concrete commands for the developers.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"rclone copy backblaze:your-bucket-name/db-backups/latest.sql.gz /tmp/; gzip -d /tmp/latest.sql.gz; mysql -u root -p < /tmp/latest.sql\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "A highly actionable runbook that respects all constraints and provides concrete commands for the developers.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

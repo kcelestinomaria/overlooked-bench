@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not explicitly address differentiation for learners with varying prior attainment, additional needs, or language barriers. While team work (small groups of 3-4) could support peer learning, there is no concrete mention of adaptations for diverse learners. The setting implies a vocational center with shared resources, but no specific strategies for accessibility are proposed.",
+    "pathway_breadth": "The prompt involves vocational training for automotive repair, a non-degree pathway. The response is entirely focused on enhancing vocational skills (diagnostic reasoning, communication) relevant to employment as technicians. It does not mention academic routes, staying specific to the vocational context described. The design is tailored to the Moroccan vocational system, with practical, workshop-based assessment.",
+    "pedagogical_soundness": "The response clearly states learning objectives: developing diagnostic reasoning and client communication skills. Activities align: 'Faulty Car of the Week' builds diagnostic reasoning through hands-on problem-solving, and role-playing builds communication. Assessment measures objectives: Part 1 assesses diagnostic process and tool use, Part 2 assesses communication clarity and professionalism. Sequencing is coherent with 'First-Principles Framework' taught first. Rubrics are observable (e.g., 'Logical Process', 'Clarity').",
+    "workload_realism": "Timings are specified (e.g., 90-minute diagnostic test, 15-minute consultation) and sum reasonably for a module. Materials are standard workshop tools (multimeter, scanner) available in a vocational center. Preparation involves setting up 'Faulty Car of the Week' faults, which is feasible for instructors. Class size is addressed with small teams of 3-4, manageable in a workshop. No unrealistic resources are assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-008",
+  "judge_cost_usd": 0.00104119,
+  "judge_latency_s": 50.566,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response clearly states learning objectives: developing diagnostic reasoning and client communication skills. Activities align: 'Faulty Car of the Week' builds diagnostic reasoning through hands-on problem-solving, and role-playing builds communication. Assessment measures objectives: Part 1 assesses diagnostic process and tool use, Part 2 assesses communication clarity and professionalism. Sequencing is coherent with 'First-Principles Framework' taught first. Rubrics are observable (e.g., 'Logical Process', 'Clarity').\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings are specified (e.g., 90-minute diagnostic test, 15-minute consultation) and sum reasonably for a module. Materials are standard workshop tools (multimeter, scanner) available in a vocational center. Preparation involves setting up 'Faulty Car of the Week' faults, which is feasible for instructors. Class size is addressed with small teams of 3-4, manageable in a workshop. No unrealistic resources are assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves vocational training for automotive repair, a non-degree pathway. The response is entirely focused on enhancing vocational skills (diagnostic reasoning, communication) relevant to employment as technicians. It does not mention academic routes, staying specific to the vocational context described. The design is tailored to the Moroccan vocational system, with practical, workshop-based assessment.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not explicitly address differentiation for learners with varying prior attainment, additional needs, or language barriers. While team work (small groups of 3-4) could support peer learning, there is no concrete mention of adaptations for diverse learners. The setting implies a vocational center with shared resources, but no specific strategies for accessibility are proposed.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response excellently redesigns the module to target diagnostic reasoning and communication with specific, practical changes in teaching and assessment.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "The response excellently redesigns the module to target diagnostic reasoning and communication with specific, practical changes in teaching and assessment.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 85.0
+}

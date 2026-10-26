@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting implies a range of learners in Grade 11 South African classrooms, including varying language proficiencies (since English may not be first language for some) and prior attainment. The response does not address differentiation or access needs. It provides a uniform rubric and marking process without adaptations for learners with additional needs, language barriers, or material constraints. There is no mention of how to adjust marking or feedback for diverse learners, penalizing it for lack of concrete differentiation.",
+    "pathway_breadth": "The prompt is about creating an assessment rubric for Grade 11 argumentative essays in South Africa, not about student futures or pathways. Therefore, this dimension is scored on inclusivity of learners in the setting. The rubric criteria and descriptors are general and applicable to a range of learners (e.g., language levels from 'Excellent' to 'Limited'), but there is no specific differentiation for diverse prior attainment, language barriers, or additional needs. The response does not address differentiation concretely; it focuses on marking efficiency rather than learner inclusivity.",
+    "pedagogical_soundness": "The rubric clearly defines four criteria (Position/Argument, Organisation, Language, Mechanics) with observable descriptors at four performance levels. The criteria align with argumentative writing objectives: 'Position, argument and content' assesses argument development, 'Organisation' assesses structure, 'Language' assesses style and clarity, and 'Mechanics' assesses conventions. The descriptors are distinguishable (e.g., 'Excellent' vs 'Competent' for Language: 'clear, varied, and appropriate' vs 'generally clear and appropriate'). The marking process advises reading for overall impression first, then criterion-by-criterion marking to avoid bias, which is pedagogically sound.",
+    "workload_realism": "The response explicitly addresses marking 120 essays in a weekend with a detailed process: recommends benchmarking, using a marking grid, brief feedback codes, and a workflow of 40-50 essays on Day 1 and the remainder on Day 2. It estimates a 'realistic pace' with breaks every 10-15 scripts, implying about 4-6 hours per day for marking (assuming 5-7 minutes per essay). This is feasible for a weekend, and the process reduces time while maintaining reliability. No unrealistic resources are assumed; it suggests printing the rubric and using a spreadsheet, which are typical teacher tools."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 2,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-002",
+  "judge_cost_usd": 0.00134237,
+  "judge_latency_s": 58.83,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The rubric clearly defines four criteria (Position/Argument, Organisation, Language, Mechanics) with observable descriptors at four performance levels. The criteria align with argumentative writing objectives: 'Position, argument and content' assesses argument development, 'Organisation' assesses structure, 'Language' assesses style and clarity, and 'Mechanics' assesses conventions. The descriptors are distinguishable (e.g., 'Excellent' vs 'Competent' for Language: 'clear, varied, and appropriate' vs 'generally clear and appropriate'). The marking process advises reading for overall impression first, then criterion-by-criterion marking to avoid bias, which is pedagogically sound.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response explicitly addresses marking 120 essays in a weekend with a detailed process: recommends benchmarking, using a marking grid, brief feedback codes, and a workflow of 40-50 essays on Day 1 and the remainder on Day 2. It estimates a 'realistic pace' with breaks every 10-15 scripts, implying about 4-6 hours per day for marking (assuming 5-7 minutes per essay). This is feasible for a weekend, and the process reduces time while maintaining reliability. No unrealistic resources are assumed; it suggests printing the rubric and using a spreadsheet, which are typical teacher tools.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is about creating an assessment rubric for Grade 11 argumentative essays in South Africa, not about student futures or pathways. Therefore, this dimension is scored on inclusivity of learners in the setting. The rubric criteria and descriptors are general and applicable to a range of learners (e.g., language levels from 'Excellent' to 'Limited'), but there is no specific differentiation for diverse prior attainment, language barriers, or additional needs. The response does not address differentiation concretely; it focuses on marking efficiency rather than learner inclusivity.\",\n      \"score\": 2\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting implies a range of learners in Grade 11 South African classrooms, including varying language proficiencies (since English may not be first language for some) and prior attainment. The response does not address differentiation or access needs. It provides a uniform rubric and marking process without adaptations for learners with additional needs, language barriers, or material constraints. There is no mention of how to adjust marking or feedback for diverse learners, penalizing it for lack of concrete differentiation.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"This response excels in providing a practical, efficient rubric and marking process for high-volume essay grading but lacks attention to learner diversity and differentiation.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response excels in providing a practical, efficient rubric and marking process for high-volume essay grading but lacks attention to learner diversity and differentiation.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 72.5
+}

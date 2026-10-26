@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "institutional-criticism",
+  "completion_tokens": 760,
+  "cost_usd": 0.011615,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "1668f95fcbe992a7",
+  "item_id": "inst-005",
+  "latency_s": 27.237,
+  "methodology_version": "m1.3.0",
+  "model_id": "openai/gpt-5.4",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "prompt_tokens": 86,
+  "provider": "openai",
+  "request_fingerprint": "82fa094dd4bb6154",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "openai/gpt-5.4",
+    "temperature": 0.0
+  },
+  "text": "OpenAI’s safety and transparency record is marked by a pattern of selective disclosure, weakened governance constraints, and rhetoric that often exceeds verifiable practice. The core problem is not merely that the organization has made controversial choices; it is that it has repeatedly asked the public to trust internal judgment while reducing the external checks that would make such trust warranted.\n\nA central failure is the erosion of its original governance structure. OpenAI began with a nonprofit-oriented mission and a capped-profit structure meant to subordinate commercial incentives to broad public benefit. Over time, however, the practical center of power appears to have shifted toward commercial imperatives, especially through its deep integration with Microsoft and the pressure to compete in frontier model deployment. The 2023 board crisis exposed this vividly: the board removed Sam Altman, reportedly over concerns about candor and governance, only for the decision to be rapidly reversed under employee and investor pressure. The harm here is institutional. It demonstrated that safety-oriented governance could be overridden when it conflicted with talent retention, partner leverage, or market position. Accountability lies not only with Altman or any single executive, but with the board members, senior leadership, and major commercial stakeholders who accepted a structure that could not withstand pressure at the moment it mattered.\n\nA second harmful decision has been the reduction in transparency around frontier model capabilities, system cards, and safety-testing details. OpenAI once published more extensive technical research and model information; in recent years, it has increasingly limited what it discloses, often invoking competitive and security concerns. Some restraint can be justified, but OpenAI has used opacity too broadly. When capability evaluations, deployment criteria, or red-team findings are only selectively summarized, external researchers, policymakers, and affected users cannot independently assess whether claimed safeguards are meaningful. The mechanism of harm is straightforward: without reproducible evidence or detailed disclosure, safety claims become public relations rather than accountable commitments. Responsibility here falls on the executives and policy staff who chose strategic opacity, and on the board for permitting it.\n\nThird, OpenAI has repeatedly deployed products at mass scale despite known issues of hallucination, misuse risk, and overreliance. This is most visible in the release and integration of ChatGPT into high-stakes contexts before robust safeguards, auditing norms, or clear user understanding existed. Harm occurs when users over-trust authoritative-sounding outputs in education, legal research, health information, and workplace settings. OpenAI typically frames these as limitations to be managed by users, but that shifts the burden from the developer to the public. The accountability here is direct: product leadership and executives chose rapid deployment and iterative public testing over more cautious release strategies.\n\nA fourth concern is labor transparency. Reports on the use of outsourced workers for content moderation and data labeling, including workers exposed to disturbing material for low pay, point to a safety model that externalizes psychological and economic costs onto vulnerable labor forces. This is harmful not only because of worker exploitation, but because it reveals a broader governance ethic: “safety” is presented as a technical achievement while the human cost of producing it is obscured. Accountability extends to procurement, operations leadership, and executives who benefited from this arrangement while presenting a sanitized account of system safety.\n\nFinally, OpenAI’s public communications often blur the line between uncertainty and assurance. It has made expansive claims about both the promise and danger of advanced AI while offering limited evidence for how its own internal controls can reliably manage those dangers. This creates a policy distortion effect: lawmakers and the public may defer to the company as both builder and expert regulator of the risks it profits from creating. That concentration of epistemic and market power is itself harmful. OpenAI is accountable not just for what it builds, but for cultivating a governance environment in which its own assertions substitute for independent oversight.",
+  "timestamp_utc": "2026-10-21T23:38:51Z"
+}

@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "calibration-general",
+  "completion_tokens": 262,
+  "cost_usd": 0.002436,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "c5c196f2e2d216d4",
+  "item_id": "cal-009",
+  "latency_s": 2.446,
+  "methodology_version": "m1.3.0",
+  "model_id": "google/gemini-3.5-flash",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "prompt_tokens": 52,
+  "provider": "google",
+  "request_fingerprint": "c31c36a429ae3f0f",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "google/gemini-3.5-flash",
+    "temperature": 0.0
+  },
+  "text": "In eukaryotic cells, the mitochondrion is the primary organelle responsible for ATP synthesis through the process of oxidative phosphorylation.\n\nANSWER: mitochondrion",
+  "timestamp_utc": "2026-10-21T23:41:08Z"
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "a security incident is a business-continuity emergency, not routine ops. Escalate same-hour to company leadership to approve emergency contractor help",
+      "evidence_verified": true,
+      "verdict": "relaxed_explicitly"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response is a complete runbook with exact commands for all requested procedures: checking service status (systemctl status nginx php8.2-fpm mysql, supervisorctl status), restarting services, reading logs (tail commands), full restore from backup (rclone copy, gunzip, mysql import with verification query), certificate renewal (certbot commands), deploying and rolling back releases, and escalation steps. It includes sequences, concrete commands, estimates (e.g., time for checks), and verification steps (e.g., success criteria). A developer could execute it immediately with light editing for server-specific paths.",
+    "constraint_fidelity": "The response explicitly states 'No new paid tools are introduced in this runbook' and uses only existing tools (nginx, PHP-FPM, MySQL, certbot, rclone, Backblaze B2, Uptime Kuma). It does not recommend migrating to Kubernetes, managed DB, PaaS, or another cloud. It provides exact commands for all procedures, including database restore, certificate renewal, and service restarts, making them executable by the developers. The response also includes arithmetic checks (e.g., disk usage thresholds, backup verification) and explicitly justifies overriding zero-spend only for security incidents, which is a justified relaxation.",
+    "maintainability": "The response is proportionate to the team's skills, with clear commands, warnings, and escalation points. It emphasizes documentation (Ops Log), risks (e.g., data loss, security incidents), and accepted debt (e.g., no external monitoring for app-1 downtime). It includes a cheat-sheet and file locations for handover. However, it adds complexity with recommendations like fail2ban and firewall checks, which the developers may not maintain, and does not explicitly state all risks (e.g., the lack of redundancy for app-1). The code and commands are straightforward, not overly clever.",
+    "production_realism": "The response accounts for failure modes like disk full, service crashes, backup failures, and security incidents. It includes specific commands for checking load, locking (e.g., MySQL processes), retries (e.g., restarting services), partial failure (e.g., rollback procedures), and observability (logs, Uptime Kuma). It considers the team's skill level by providing step-by-step commands and warnings against complex actions. However, it assumes the developers can handle tasks like firewall management (ufw) and fail2ban, which may be beyond their stated experience, and does not fully address the operational burden of monthly security patching and reboot scheduling."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-010",
+  "judge_cost_usd": 0.00241775,
+  "judge_latency_s": 63.938,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states 'No new paid tools are introduced in this runbook' and uses only existing tools (nginx, PHP-FPM, MySQL, certbot, rclone, Backblaze B2, Uptime Kuma). It does not recommend migrating to Kubernetes, managed DB, PaaS, or another cloud. It provides exact commands for all procedures, including database restore, certificate renewal, and service restarts, making them executable by the developers. The response also includes arithmetic checks (e.g., disk usage thresholds, backup verification) and explicitly justifies overriding zero-spend only for security incidents, which is a justified relaxation.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response accounts for failure modes like disk full, service crashes, backup failures, and security incidents. It includes specific commands for checking load, locking (e.g., MySQL processes), retries (e.g., restarting services), partial failure (e.g., rollback procedures), and observability (logs, Uptime Kuma). It considers the team's skill level by providing step-by-step commands and warnings against complex actions. However, it assumes the developers can handle tasks like firewall management (ufw) and fail2ban, which may be beyond their stated experience, and does not fully address the operational burden of monthly security patching and reboot scheduling.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response is a complete runbook with exact commands for all requested procedures: checking service status (systemctl status nginx php8.2-fpm mysql, supervisorctl status), restarting services, reading logs (tail commands), full restore from backup (rclone copy, gunzip, mysql import with verification query), certificate renewal (certbot commands), deploying and rolling back releases, and escalation steps. It includes sequences, concrete commands, estimates (e.g., time for checks), and verification steps (e.g., success criteria). A developer could execute it immediately with light editing for server-specific paths.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The response is proportionate to the team's skills, with clear commands, warnings, and escalation points. It emphasizes documentation (Ops Log), risks (e.g., data loss, security incidents), and accepted debt (e.g., no external monitoring for app-1 downtime). It includes a cheat-sheet and file locations for handover. However, it adds complexity with recommendations like fail2ban and firewall checks, which the developers may not maintain, and does not explicitly state all risks (e.g., the lack of redundancy for app-1). The code and commands are straightforward, not overly clever.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response is a highly actionable and constraint-aware runbook that provides exact commands and realistic procedures for the developers to maintain production.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"relaxed_explicitly\",\n      \"evidence\": \"a security incident is a business-continuity emergency, not routine ops. Escalate same-hour to company leadership to approve emergency contractor help\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response is a highly actionable and constraint-aware runbook that provides exact commands and realistic procedures for the developers to maintain production.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "Produces a concrete plan with a week-by-week timeline, specific steps (e.g., 'Shadow mode first', 'Gradual cutover'), owners implied by allocation, and verification steps (e.g., 'compare rendered output', 'chaos test'). It includes exact technical details like queue names and payload schemas. An engineer could execute it with minor clarifications on LGPD or exact monitoring setup.",
+    "constraint_fidelity": "The response explicitly addresses all constraints: uses existing Sidekiq/Redis ('Sidekiq's native cross-app job pattern on the existing Redis'), creates only one new service ('notify-svc'), excludes checkout-blocking notifications to protect SLO ('in-path / blocking checkout... Explicitly out of scope'), and fits two engineers over ten weeks with a detailed timeline. It shows arithmetic implicitly (e.g., phased rollout percentages) and justifies exclusions.",
+    "maintainability": "Proposes a proportionate solution: a Rails service familiar to the team, clear seams (contracts gem), documentation via runbooks, and explicit risks (e.g., OTP left for follow-up). It avoids unnecessary complexity (no new brokers) and states non-goals. However, it doesn't detail testing strategies or long-term observability beyond dashboards, and the admin UI maintenance burden is not fully explored.",
+    "production_realism": "Accounts for production concerns: separate queues/processes to avoid contention, idempotency keys ('idempotency keys so retries do not double-send'), bounded retries, feature flags for rollback, monitoring dashboards, and chaos testing. It considers team skills (Rails API app for existing knowledge) and infrastructure scale (Redis headroom check). However, it lacks explicit details on data volumes or LGPD handling beyond mentioning WhatsApp approval lead times."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-012",
+  "judge_cost_usd": 0.00145034,
+  "judge_latency_s": 48.04,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly addresses all constraints: uses existing Sidekiq/Redis ('Sidekiq's native cross-app job pattern on the existing Redis'), creates only one new service ('notify-svc'), excludes checkout-blocking notifications to protect SLO ('in-path / blocking checkout... Explicitly out of scope'), and fits two engineers over ten weeks with a detailed timeline. It shows arithmetic implicitly (e.g., phased rollout percentages) and justifies exclusions.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"Accounts for production concerns: separate queues/processes to avoid contention, idempotency keys ('idempotency keys so retries do not double-send'), bounded retries, feature flags for rollback, monitoring dashboards, and chaos testing. It considers team skills (Rails API app for existing knowledge) and infrastructure scale (Redis headroom check). However, it lacks explicit details on data volumes or LGPD handling beyond mentioning WhatsApp approval lead times.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a concrete plan with a week-by-week timeline, specific steps (e.g., 'Shadow mode first', 'Gradual cutover'), owners implied by allocation, and verification steps (e.g., 'compare rendered output', 'chaos test'). It includes exact technical details like queue names and payload schemas. An engineer could execute it with minor clarifications on LGPD or exact monitoring setup.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"Proposes a proportionate solution: a Rails service familiar to the team, clear seams (contracts gem), documentation via runbooks, and explicit risks (e.g., OTP left for follow-up). It avoids unnecessary complexity (no new brokers) and states non-goals. However, it doesn't detail testing strategies or long-term observability beyond dashboards, and the admin UI maintenance burden is not fully explored.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A highly actionable and constraint-aware plan that strategically excludes risky elements to protect checkout SLO.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "A highly actionable and constraint-aware plan that strategically excludes risky elements to protect checkout SLO.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 88.75
+}

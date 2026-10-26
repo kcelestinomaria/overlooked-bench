@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "Produces a complete hiring plan with roles (Project Coordinator, Field Assistant), sequence (Month 1-3), salary bands (KES 120k-160k), on-costs (NSSF, Housing Levy), and arithmetic (KES 6,726,970 total). It includes concrete components like monthly costs, durations, and remaining budget. Could be used in a meeting with light editing.",
+    "constraint_fidelity": "The response respects all constraints: uses Kenyan salary bands (KES 120k-160k for Project Coordinator), includes statutory on-costs (NSSF, Housing Levy), stays within 15% indirect cost limit (USD 27,000), and shows arithmetic (total personnel cost USD 51,745.92 vs. USD 153,000 direct envelope). It explicitly calculates staggered hiring months and exchange rate (1 USD = 130 KES).",
+    "contextual_realism": "The plan is realistic for a 12-person Kenyan NGO: proposes lean team (2 new hires, partial existing staff), avoids US assumptions (no equity/ATS), acknowledges ED handles hiring ('delegate initial screening'), recommends affordable local tools (Workpay), and uses coastal networks for recruitment. However, it assumes a Finance & Admin Assistant exists (prompt says no dedicated HR, but doesn't specify existing roles), which might be a minor gap.",
+    "jurisdictional_accuracy": "Accurate for Kenya: cites NSSF (6%, capped at KES 2,160), Housing Levy (1.5%), NITA (KES 50), WIBA (1%), and correctly notes PAYE/SHIF are employee deductions. Avoids US defaults (no US benefits). Recommends local payroll software (Workpay) and flags KRA compliance. Specific and substantive, not generic 'consult lawyer'."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00128372,
+  "judge_latency_s": 46.904,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: uses Kenyan salary bands (KES 120k-160k for Project Coordinator), includes statutory on-costs (NSSF, Housing Levy), stays within 15% indirect cost limit (USD 27,000), and shows arithmetic (total personnel cost USD 51,745.92 vs. USD 153,000 direct envelope). It explicitly calculates staggered hiring months and exchange rate (1 USD = 130 KES).\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The plan is realistic for a 12-person Kenyan NGO: proposes lean team (2 new hires, partial existing staff), avoids US assumptions (no equity/ATS), acknowledges ED handles hiring ('delegate initial screening'), recommends affordable local tools (Workpay), and uses coastal networks for recruitment. However, it assumes a Finance & Admin Assistant exists (prompt says no dedicated HR, but doesn't specify existing roles), which might be a minor gap.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"Produces a complete hiring plan with roles (Project Coordinator, Field Assistant), sequence (Month 1-3), salary bands (KES 120k-160k), on-costs (NSSF, Housing Levy), and arithmetic (KES 6,726,970 total). It includes concrete components like monthly costs, durations, and remaining budget. Could be used in a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"Accurate for Kenya: cites NSSF (6%, capped at KES 2,160), Housing Levy (1.5%), NITA (KES 50), WIBA (1%), and correctly notes PAYE/SHIF are employee deductions. Avoids US defaults (no US benefits). Recommends local payroll software (Workpay) and flags KRA compliance. Specific and substantive, not generic 'consult lawyer'.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"A highly actionable and jurisdictionally accurate plan that respects constraints and is tailored for a small Kenyan NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "A highly actionable and jurisdictionally accurate plan that respects constraints and is tailored for a small Kenyan NGO.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

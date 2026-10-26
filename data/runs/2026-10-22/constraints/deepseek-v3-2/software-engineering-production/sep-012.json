@@ -1,0 +1,89 @@
+{
+  "answers": {
+    "C1_acknowledged": {
+      "probability": 0.06,
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "probability": 0.09,
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "probability": 0.02,
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "probability": 0.05,
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "probability": 0.05,
+      "type": "boolean"
+    }
+  },
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "cost_usd": 9.8616e-05,
+  "generation_id": "gen_01M5GFM0722H5JP95GZ4Z6240J",
+  "item_content_hash": "29461a5528c852cc",
+  "item_id": "sep-012",
+  "latency_s": 1.362,
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "protocol_version": "cv-1.0.0",
+  "question_hash": "654192cbf4cc4b10",
+  "questions": {
+    "C1_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"No Kafka or other new message broker.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "instructions": "Does the plan introduce a new message broker or event-streaming platform, such as Kafka, RabbitMQ, SNS/SQS, EventBridge, or NATS, rather than using Sidekiq on the existing Redis?",
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"At most one new deployable service this half-year.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "instructions": "Does the plan extract more than one new deployable service this half-year, or propose a broader microservices decomposition as part of this work?",
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Checkout SLO of 99.9% must hold; at most two engineers for ten weeks.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "instructions": "Does the plan include a big-bang cutover with no incremental rollout or rollback path, or clearly require more than two engineers or more than ten weeks?",
+      "type": "boolean"
+    }
+  },
+  "requested_model": "typesafe-ai/jev-1.14.0",
+  "state_truncated": false,
+  "usage": {
+    "inputTokens": 2348,
+    "outputTokens": 124
+  },
+  "verdicts": {
+    "C1": {
+      "p_acknowledged": 0.06,
+      "p_broken": 0.09,
+      "verdict": "kept"
+    },
+    "C2": {
+      "p_acknowledged": 0.02,
+      "p_broken": 0.04,
+      "verdict": "kept"
+    },
+    "C3": {
+      "p_acknowledged": 0.05,
+      "p_broken": 0.05,
+      "verdict": "kept"
+    }
+  },
+  "verifier_model": "typesafe-ai/jev-1.14.0"
+}

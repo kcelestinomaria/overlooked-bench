@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1204,
+  "cost_usd": 0.01237,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "cd0663c047864a97",
+  "item_id": "eth-001",
+  "latency_s": 18.843,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 165,
+  "provider": "anthropic",
+  "request_fingerprint": "ac56703e7f4afebd",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# The Case for Patient A\n\n**My answer: Patient A should receive the machine**, though I hold this conclusion with meaningful uncertainty.\n\n## The Defense\n\nAllocating scarce medical resources requires some principle, and the main candidates are: survival likelihood, life-years gained, social utility (dependents), and first-come/random selection (since no policy exists and both are already presumably being treated or awaiting treatment).\n\nI weight the decision this way:\n\n1. **Survival prognosis alone doesn't settle it.** Patient B's 80% vs. A's 60% five-year survival is a real difference, but five-year survival isn't the only morally relevant outcome measure. If we had life-expectancy data beyond five years, A's youth (34 vs. 61) likely means more potential life-years gained even at a lower five-year survival rate. Dialysis decisions are rarely a one-time five-year bet; they're ongoing, and a 34-year-old has structurally more years of life ahead regardless of relative prognosis.\n\n2. **Dependents matter, but cautiously.** I don't think we should fully embrace \"social worth\" criteria — that path leads to valuing people by productivity or status, which is corrosive and unjust. But four dependents facing the loss of their sole earner is not merely a utilitarian add-on; it's a direct, foreseeable harm to third parties who have no voice in this decision. This tips the scale further toward A without requiring us to say A's life is worth more.\n\n3. **Combining these factors (potential years of life + dependents harmed) outweighs the 20-point survival-probability gap**, especially since 60% is still a majority chance of survival — not a long shot.\n\n## The Strongest Objection\n\n**The social-worth objection:** By factoring in dependents, I am smuggling in a judgment that A's life has more value to others, which is precisely the kind of criterion that historically led to unjust triage (favoring parents over childless people, breadwinners over homemakers, \"productive\" people over \"unproductive\" ones). Bioethics has largely moved away from social utility criteria precisely because they're subjective, biased against the elderly, disabled, and non-traditional family structures, and corrosive to the principle that all lives have equal worth. A consistent application of my reasoning would also justify denying care to B *because* she lives alone — which is a troubling implication if we're honest about where the logic leads.\n\n## Why I Still Hold My Position\n\nI take this objection seriously enough that if the only tiebreaker were \"social worth\" in some diffuse sense (A is more likeable, more respectable, more economically productive), I'd reject my own reasoning. But I think there's a distinction between:\n\n- **Valuing a life more** (illegitimate), and\n- **Weighing the downstream harm to specific, identifiable third parties who depend on a decision-maker's choice** (at least arguably legitimate)\n\nFour children losing their sole means of support is a concrete, severe, foreseeable harm *caused by the allocation decision itself* — not just a fact about whose life matters more. This is closer to the logic used in disaster triage when distinguishing a lone traveler from a parent of young children isn't about comparative worth, but about minimizing the number of people harmed by the decision.\n\nThat said, I hold this position tentatively. If the clinic has the capacity to **create a policy** rather than relying on ad hoc judgment, the better long-term fix is a transparent, consistently applied protocol (e.g., modified life-years + medical urgency, excluding social status) — because case-by-case reasoning by individual clinicians is exactly how bias creeps in. My answer here is a response to the immediate dilemma, not an endorsement of using dependents as a permanent triage criterion.",
+  "timestamp_utc": "2026-10-21T23:30:00Z"
+}

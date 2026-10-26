@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by detailing specific constraints (e.g., 'precision metering in planters is hard', 'dense, fine stems can clog machines') and discussing engineering and agronomic adaptations (e.g., 'mixing seed with sand or fertilizer to improve flow', 'adjusting combine header height'). It engages with practical challenges and solutions, showing familiarity with the literature on teff mechanization efforts, rather than just summarizing basic facts. A specialist would recognize this as informed by specific research.",
+    "domain_accuracy": "The response makes substantive claims about teff's agronomic constraints (e.g., 'very small seed size', 'shallow root system', 'lodging susceptibility', 'small plant stature') and mechanization challenges, all of which align with known characteristics of teff cultivation. It accurately describes attempts like 'modified planters', 'mechanical harvesting adaptations', 'breeding for machine-friendliness', and 'agronomic changes', which are documented in agricultural literature. No invented citations, terms, or consensus are present; the claims are factually correct and well-supported.",
+    "field_situatedness": "The response uses terminology and frameworks specific to agronomy and agricultural engineering (e.g., 'lodging susceptibility', 'precision metering', 'combine header height', 'smallholder systems'), which aligns with the field of teff cultivation and mechanization. It does not substitute a Western framing but focuses on the practical and technical aspects relevant to the crop's context, including smallholder challenges. No non-English scholarship is mentioned, but it is not central here as the response addresses universal agronomic issues.",
+    "scholarly_calibration": "The response distinguishes between well-established constraints (e.g., 'teff seed is tiny') and areas where progress is gradual (e.g., 'results have often been inconsistent because flow and depth control remain difficult', 'progress has been gradual and full mechanisation remains challenging'). It avoids uniform confidence, noting inconsistencies and partial solutions, and does not present contested points as settled. However, it lacks explicit calibration on evidential status (e.g., not specifying which adaptations are most evidence-based), so it is solid but not excellent."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-006",
+  "judge_cost_usd": 0.00099959,
+  "judge_latency_s": 50.905,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims about teff's agronomic constraints (e.g., 'very small seed size', 'shallow root system', 'lodging susceptibility', 'small plant stature') and mechanization challenges, all of which align with known characteristics of teff cultivation. It accurately describes attempts like 'modified planters', 'mechanical harvesting adaptations', 'breeding for machine-friendliness', and 'agronomic changes', which are documented in agricultural literature. No invented citations, terms, or consensus are present; the claims are factually correct and well-supported.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by detailing specific constraints (e.g., 'precision metering in planters is hard', 'dense, fine stems can clog machines') and discussing engineering and agronomic adaptations (e.g., 'mixing seed with sand or fertilizer to improve flow', 'adjusting combine header height'). It engages with practical challenges and solutions, showing familiarity with the literature on teff mechanization efforts, rather than just summarizing basic facts. A specialist would recognize this as informed by specific research.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes between well-established constraints (e.g., 'teff seed is tiny') and areas where progress is gradual (e.g., 'results have often been inconsistent because flow and depth control remain difficult', 'progress has been gradual and full mechanisation remains challenging'). It avoids uniform confidence, noting inconsistencies and partial solutions, and does not present contested points as settled. However, it lacks explicit calibration on evidential status (e.g., not specifying which adaptations are most evidence-based), so it is solid but not excellent.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to agronomy and agricultural engineering (e.g., 'lodging susceptibility', 'precision metering', 'combine header height', 'smallholder systems'), which aligns with the field of teff cultivation and mechanization. It does not substitute a Western framing but focuses on the practical and technical aspects relevant to the crop's context, including smallholder challenges. No non-English scholarship is mentioned, but it is not central here as the response addresses universal agronomic issues.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates thorough, accurate knowledge of teff's agronomic constraints and mechanization challenges, with specific details and practical insights.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates thorough, accurate knowledge of teff's agronomic constraints and mechanization challenges, with specific details and practical insights.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

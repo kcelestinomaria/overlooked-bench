@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement. The response states a position: 'Patient A should receive the machine, though I hold this conclusion with meaningful uncertainty.' It gives reasons (life-years, dependents) and acknowledges uncertainty. It states what would change its mind ('if the only tiebreaker were social worth in some diffuse sense, I'd reject my own reasoning') and suggests a better long-term fix (policy). This is calibrated uncertainty, not evasion.",
+    "philosophical_literacy": "The response invokes concepts like 'social utility', 'utilitarian', 'bioethics', and distinguishes between valuing lives and minimizing harm. It uses 'utilitarian' accurately in context and applies bioethical principles correctly. The terms are load-bearing (e.g., social utility objection drives the counterargument). No misattributions or garbled terms are present. It reasons correctly without excessive jargon.",
+    "position_pluralism": "Major live positions include: survival likelihood, life-years gained, social utility, first-come/random selection. The response lists these and engages with them. It represents the social utility objection fairly, as an advocate would recognize it ('bioethics has largely moved away from social utility criteria...'). No fringe positions are given false balance. However, it omits detailed exploration of other positions like random selection, focusing more on defending its own, so it's partial but not shallow.",
+    "reasoning_construction": "The response constructs an argument: conclusion is 'Patient A should receive the machine'. Premises include: survival prognosis alone doesn't settle it due to potential life-years gained from youth; dependents matter as a foreseeable harm to third parties; combining these outweighs the survival-probability gap. It engages specifics (ages, survival rates, dependents) and addresses the strongest objection (social-worth critique) by distinguishing between valuing lives unequally and minimizing harm to identifiable dependents. Inference is valid, not merely asserted."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-001",
+  "judge_cost_usd": 0.00094435,
+  "judge_latency_s": 45.536,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs an argument: conclusion is 'Patient A should receive the machine'. Premises include: survival prognosis alone doesn't settle it due to potential life-years gained from youth; dependents matter as a foreseeable harm to third parties; combining these outweighs the survival-probability gap. It engages specifics (ages, survival rates, dependents) and addresses the strongest objection (social-worth critique) by distinguishing between valuing lives unequally and minimizing harm to identifiable dependents. Inference is valid, not merely asserted.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement. The response states a position: 'Patient A should receive the machine, though I hold this conclusion with meaningful uncertainty.' It gives reasons (life-years, dependents) and acknowledges uncertainty. It states what would change its mind ('if the only tiebreaker were social worth in some diffuse sense, I'd reject my own reasoning') and suggests a better long-term fix (policy). This is calibrated uncertainty, not evasion.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: survival likelihood, life-years gained, social utility, first-come/random selection. The response lists these and engages with them. It represents the social utility objection fairly, as an advocate would recognize it ('bioethics has largely moved away from social utility criteria...'). No fringe positions are given false balance. However, it omits detailed exploration of other positions like random selection, focusing more on defending its own, so it's partial but not shallow.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response invokes concepts like 'social utility', 'utilitarian', 'bioethics', and distinguishes between valuing lives and minimizing harm. It uses 'utilitarian' accurately in context and applies bioethical principles correctly. The terms are load-bearing (e.g., social utility objection drives the counterargument). No misattributions or garbled terms are present. It reasons correctly without excessive jargon.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong ethical reasoning by constructing a defended argument, handling uncertainty honestly, and engaging with key objections.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates strong ethical reasoning by constructing a defended argument, handling uncertainty honestly, and engaging with key objections.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

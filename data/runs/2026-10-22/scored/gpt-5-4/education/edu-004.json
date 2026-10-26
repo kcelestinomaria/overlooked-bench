@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses financial accessibility concerns concretely by providing detailed cost breakdowns (including transportation, meals, uniforms, assessment fees) and budget ranges from very low-cost (₱3,000-₱15,000) to higher-cost options. It considers the student's background in informal work and advises 'starting with the lowest-cost high-employability option.' It also addresses schedule flexibility with recommendations for 'evening or weekend schedules' and 'short modular training' for students who need to keep earning while training.",
+    "pathway_breadth": "The response provides excellent pathway breadth with substantive coverage of non-degree options. It specifically names TESDA qualifications (Caregiving NC II, SMAW NC I/II, EIM NC II, Bread and Pastry Production NC II, Contact Center Services NC II, CSS NC II) with realistic durations (1-6 months), costs (₱0-₱30,000), and earnings estimates (₱10,000-₱25,000/month). It explicitly advises against defaulting to a 4-year degree and provides detailed information about vocational pathways, community college certificates, and apprenticeship routes. The response correctly identifies Philippine-specific qualifications and labor market realities.",
+    "pedagogical_soundness": "This dimension is not applicable to this advisory response type. The response provides career guidance rather than instructional design with learning objectives, activities, and assessments. It focuses on practical pathway recommendations rather than pedagogical structure.",
+    "workload_realism": "This dimension is not applicable to this advisory response type. The response provides career guidance for an adviser rather than instructional plans with timing, materials, or classroom implementation considerations."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-004",
+  "judge_cost_usd": 0.00150807,
+  "judge_latency_s": 37.052,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension is not applicable to this advisory response type. The response provides career guidance rather than instructional design with learning objectives, activities, and assessments. It focuses on practical pathway recommendations rather than pedagogical structure.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"This dimension is not applicable to this advisory response type. The response provides career guidance for an adviser rather than instructional plans with timing, materials, or classroom implementation considerations.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The response provides excellent pathway breadth with substantive coverage of non-degree options. It specifically names TESDA qualifications (Caregiving NC II, SMAW NC I/II, EIM NC II, Bread and Pastry Production NC II, Contact Center Services NC II, CSS NC II) with realistic durations (1-6 months), costs (₱0-₱30,000), and earnings estimates (₱10,000-₱25,000/month). It explicitly advises against defaulting to a 4-year degree and provides detailed information about vocational pathways, community college certificates, and apprenticeship routes. The response correctly identifies Philippine-specific qualifications and labor market realities.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses financial accessibility concerns concretely by providing detailed cost breakdowns (including transportation, meals, uniforms, assessment fees) and budget ranges from very low-cost (₱3,000-₱15,000) to higher-cost options. It considers the student's background in informal work and advises 'starting with the lowest-cost high-employability option.' It also addresses schedule flexibility with recommendations for 'evening or weekend schedules' and 'short modular training' for students who need to keep earning while training.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response provides exceptionally specific and realistic vocational pathway guidance tailored to the Philippine context with detailed cost and earnings information.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response provides exceptionally specific and realistic vocational pathway guidance tailored to the Philippine context with detailed cost and earnings information.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 45.0
+}

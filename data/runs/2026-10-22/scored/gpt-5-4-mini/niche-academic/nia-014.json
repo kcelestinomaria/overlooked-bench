@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by discussing methodological limitations (e.g., 'few long-term baseline datasets,' 'heavy reliance on remote sensing'), identifying specific knowledge gaps (e.g., 'magnitude, spatial extent, and recovery trajectories'), and distinguishing well-supported from weaker evidence. It engages with scholarly challenges like separating Aral-related impacts from other drivers (irrigation, climate variability), which indicates familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response makes specific claims about soil salinization, dust/salt storm transport, vegetation decline, and habitat loss, which align with known effects of Aral Sea desiccation. It correctly identifies the Aralkum Desert formation and mentions delta regions of Amu Darya and Syr Darya, which are accurate. It avoids invented citations or terms, and the consensus levels (high/moderate/low confidence) are plausibly calibrated to actual literature. No obvious factual errors are present.",
+    "field_situatedness": "The response uses terminology and frameworks specific to ecology and environmental science (e.g., 'soil salinization,' 'halophytic plant communities,' 'riparian zones,' 'microclimate alteration'), which aligns with the scholarly tradition of the question. It does not substitute a Western or dominant framing but stays focused on the ecological effects as asked, without ignoring regional context (e.g., mentioning Amu Darya and Syr Darya deltas).",
+    "scholarly_calibration": "The response explicitly calibrates confidence levels: 'High confidence' for desertification and degradation, 'Moderate confidence' for dust/salt transport effects, and 'Lower confidence' for long-term biodiversity and recovery dynamics. It distinguishes contested points (e.g., attribution of crop performance reductions) and flags evidence limitations (e.g., 'causally clean' comparisons). This is specific, targeted calibration rather than blanket disclaimers."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-014",
+  "judge_cost_usd": 0.00089873,
+  "judge_latency_s": 46.048,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific claims about soil salinization, dust/salt storm transport, vegetation decline, and habitat loss, which align with known effects of Aral Sea desiccation. It correctly identifies the Aralkum Desert formation and mentions delta regions of Amu Darya and Syr Darya, which are accurate. It avoids invented citations or terms, and the consensus levels (high/moderate/low confidence) are plausibly calibrated to actual literature. No obvious factual errors are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by discussing methodological limitations (e.g., 'few long-term baseline datasets,' 'heavy reliance on remote sensing'), identifying specific knowledge gaps (e.g., 'magnitude, spatial extent, and recovery trajectories'), and distinguishing well-supported from weaker evidence. It engages with scholarly challenges like separating Aral-related impacts from other drivers (irrigation, climate variability), which indicates familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response explicitly calibrates confidence levels: 'High confidence' for desertification and degradation, 'Moderate confidence' for dust/salt transport effects, and 'Lower confidence' for long-term biodiversity and recovery dynamics. It distinguishes contested points (e.g., attribution of crop performance reductions) and flags evidence limitations (e.g., 'causally clean' comparisons). This is specific, targeted calibration rather than blanket disclaimers.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to ecology and environmental science (e.g., 'soil salinization,' 'halophytic plant communities,' 'riparian zones,' 'microclimate alteration'), which aligns with the scholarly tradition of the question. It does not substitute a Western or dominant framing but stays focused on the ecological effects as asked, without ignoring regional context (e.g., mentioning Amu Darya and Syr Darya deltas).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain competence with well-calibrated confidence and specific engagement beyond survey-level knowledge.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain competence with well-calibrated confidence and specific engagement beyond survey-level knowledge.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

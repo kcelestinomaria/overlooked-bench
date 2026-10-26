@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The prompt asked for a recommendation with reasoning and preconditions if taking the contract. The response provides a clear conditional recommendation ('only take it conditionally'), specific preconditions (pilot phase, renegotiated terms, capacity upgrades), and offers to turn this into a 'board-style decision memo' or 'go/no-go checklist'. It includes concrete components like contract negotiation points, capacity calculations, staffing redesign needs, and quality control systems that could be used with light editing.",
+    "constraint_fidelity": "The prompt describes a 15-person social enterprise in Jakarta with employees with disabilities. The response consistently acknowledges these constraints: '15-person social enterprise', 'employees with disabilities', 'inclusive workforce', 'Jakarta traffic'. It does not assume additional resources beyond what's stated and shows arithmetic thinking with 'current daily volume capacity', 'required hotel volume', '130-150% of required demand', and detailed cost calculations. All constraints are respected without silent violations.",
+    "contextual_realism": "The response demonstrates strong awareness of small-organisation realities: 'bottlenecks in staffing, transport, machine uptime', 'no dedicated HR or legal counsel assumed', 'backup systems needed', 'cross-training so absences do not stop production', 'temporary staffing plan', 'working capital needs'. It avoids presupposing functions this organisation doesn't have and focuses on practical constraints like Jakarta traffic, machine maintenance, and staffing limitations.",
+    "jurisdictional_accuracy": "The response correctly identifies Jakarta, Indonesia as the jurisdiction but does not make any specific legal or regulatory claims about Indonesian law. It avoids US assumptions by not mentioning at-will employment, US tax categories, or US contract norms. Instead, it focuses on universal operational and business considerations that would apply in any jurisdiction. The response is factually accurate for the general business context described."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-009",
+  "judge_cost_usd": 0.00108517,
+  "judge_latency_s": 40.458,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt describes a 15-person social enterprise in Jakarta with employees with disabilities. The response consistently acknowledges these constraints: '15-person social enterprise', 'employees with disabilities', 'inclusive workforce', 'Jakarta traffic'. It does not assume additional resources beyond what's stated and shows arithmetic thinking with 'current daily volume capacity', 'required hotel volume', '130-150% of required demand', and detailed cost calculations. All constraints are respected without silent violations.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response demonstrates strong awareness of small-organisation realities: 'bottlenecks in staffing, transport, machine uptime', 'no dedicated HR or legal counsel assumed', 'backup systems needed', 'cross-training so absences do not stop production', 'temporary staffing plan', 'working capital needs'. It avoids presupposing functions this organisation doesn't have and focuses on practical constraints like Jakarta traffic, machine maintenance, and staffing limitations.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The prompt asked for a recommendation with reasoning and preconditions if taking the contract. The response provides a clear conditional recommendation ('only take it conditionally'), specific preconditions (pilot phase, renegotiated terms, capacity upgrades), and offers to turn this into a 'board-style decision memo' or 'go/no-go checklist'. It includes concrete components like contract negotiation points, capacity calculations, staffing redesign needs, and quality control systems that could be used with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Jakarta, Indonesia as the jurisdiction but does not make any specific legal or regulatory claims about Indonesian law. It avoids US assumptions by not mentioning at-will employment, US tax categories, or US contract norms. Instead, it focuses on universal operational and business considerations that would apply in any jurisdiction. The response is factually accurate for the general business context described.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response provides a thorough, conditional recommendation that respects all organizational constraints and offers actionable preconditions for contract acceptance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response provides a thorough, conditional recommendation that respects all organizational constraints and offers actionable preconditions for contract acceptance.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

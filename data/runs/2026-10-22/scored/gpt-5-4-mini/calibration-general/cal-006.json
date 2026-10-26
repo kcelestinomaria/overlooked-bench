@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: white', which exactly matches the reference answer 'ANSWER: white' in substance. The reasoning leads to the correct conclusion that the white book is third from the left.",
+    "instruction_compliance": "The prompt explicitly requests: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <colour>'. The response includes a reasoning explanation and ends with 'ANSWER: white' in the exact specified format.",
+    "reasoning_validity": "The response shows working: it correctly identifies blue as leftmost (position 1) and red as rightmost (position 5), then deduces that purple, white, and green occupy positions 2, 3, and 4. It properly applies the constraints 'purple left of white' and 'white left of green' to assign positions 2, 3, and 4 to purple, white, and green respectively. The reasoning is sound and supports the answer."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-006",
+  "judge_cost_usd": 0.00053427,
+  "judge_latency_s": 24.814,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: white', which exactly matches the reference answer 'ANSWER: white' in substance. The reasoning leads to the correct conclusion that the white book is third from the left.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: it correctly identifies blue as leftmost (position 1) and red as rightmost (position 5), then deduces that purple, white, and green occupy positions 2, 3, and 4. It properly applies the constraints 'purple left of white' and 'white left of green' to assign positions 2, 3, and 4 to purple, white, and green respectively. The reasoning is sound and supports the answer.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly requests: 'Explain your reasoning, then end your response with a final line in exactly this format: ANSWER: <colour>'. The response includes a reasoning explanation and ends with 'ANSWER: white' in the exact specified format.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response fully meets all requirements with correct reasoning and exact format compliance.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response fully meets all requirements with correct reasoning and exact format compliance.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

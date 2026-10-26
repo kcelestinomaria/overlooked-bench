@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by discussing methodological challenges ('Small vocabulary samples make statistical comparison difficult'), evidence quality ('Lexical similarities... are relatively superficial'), and scholarly debate ('Evidence remains contested and not universally accepted'). It engages with specific issues like borrowing vs. inheritance and data limitations, indicating familiarity with the literature rather than just summaries.",
+    "domain_accuracy": "The response makes substantive claims: 'Lexical similarities to Cushitic languages' (Afroasiatic), 'Proposed phonological and morphological correspondences with Nilo-Saharan languages' (Nilo-Saharan), 'Difficulty in establishing robust cognate sets' (isolate). These align with known scholarly positions (Heine, Bender for Afroasiatic; Ehret for Nilo-Saharan; Tosco for isolate). No invented citations or terms are present, and the claims reflect actual debate in linguistics literature.",
+    "field_situatedness": "The response uses appropriate linguistic terminology ('lexical similarities', 'morphological features', 'cognate sets', 'contact-induced borrowing') and frameworks (comparative method, classification debates) specific to the field of African linguistics and language classification, without substituting Western or Anglophone framings. It correctly situates the debate within African language studies.",
+    "scholarly_calibration": "The response accurately calibrates confidence: it notes weaknesses in Afroasiatic ('superficial' similarities) and Nilo-Saharan ('contested' evidence) proposals, and strengths in the isolate position ('gained credibility'). It distinguishes well-established facts (e.g., endangerment) from contested claims and explicitly states the lack of consensus, avoiding uniform confidence or presenting hypotheses as settled."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00074469,
+  "judge_latency_s": 41.859,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims: 'Lexical similarities to Cushitic languages' (Afroasiatic), 'Proposed phonological and morphological correspondences with Nilo-Saharan languages' (Nilo-Saharan), 'Difficulty in establishing robust cognate sets' (isolate). These align with known scholarly positions (Heine, Bender for Afroasiatic; Ehret for Nilo-Saharan; Tosco for isolate). No invented citations or terms are present, and the claims reflect actual debate in linguistics literature.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by discussing methodological challenges ('Small vocabulary samples make statistical comparison difficult'), evidence quality ('Lexical similarities... are relatively superficial'), and scholarly debate ('Evidence remains contested and not universally accepted'). It engages with specific issues like borrowing vs. inheritance and data limitations, indicating familiarity with the literature rather than just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates confidence: it notes weaknesses in Afroasiatic ('superficial' similarities) and Nilo-Saharan ('contested' evidence) proposals, and strengths in the isolate position ('gained credibility'). It distinguishes well-established facts (e.g., endangerment) from contested claims and explicitly states the lack of consensus, avoiding uniform confidence or presenting hypotheses as settled.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate linguistic terminology ('lexical similarities', 'morphological features', 'cognate sets', 'contact-induced borrowing') and frameworks (comparative method, classification debates) specific to the field of African linguistics and language classification, without substituting Western or Anglophone framings. It correctly situates the debate within African language studies.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates thorough, accurate, and well-calibrated engagement with the niche academic debate on Ongota classification.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates thorough, accurate, and well-calibrated engagement with the niche academic debate on Ongota classification.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

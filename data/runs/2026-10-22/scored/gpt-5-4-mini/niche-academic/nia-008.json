@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by engaging with specific evidence ('reduced illegal harvesting in many areas'), methodological debates ('selection bias', 'weak counterfactuals'), and scholarly concerns ('equity and inclusion are major concerns', 'publication and reporting bias'). It addresses internal critiques like 'measurement problems' and 'geographic and institutional heterogeneity', demonstrating familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response makes substantive claims that align with established knowledge on Nepal's CFM: 'forest condition has often improved' with specific indicators like 'increased forest regeneration and canopy cover', acknowledges 'mixed' livelihood outcomes and 'equity and inclusion are major concerns', and correctly identifies methodological criticisms like 'heavy reliance on observational case studies', 'selection bias', and 'weak counterfactuals'. No invented citations, terms, or consensus are present; all claims are corroborated by the literature.",
+    "field_situatedness": "The response uses terminology and frameworks specific to community forestry research in Nepal, such as 'community forest management (CFM)', 'elite capture', 'subsistence access', and references to local governance factors like 'inclusive user groups' and 'support from forestry officials'. It does not substitute Western framings and aligns with the regional scholarly tradition.",
+    "scholarly_calibration": "The response accurately calibrates confidence: 'strongest and most consistent finding' for forest condition improvement, 'much less certain about broader livelihood, equity, and poverty-reduction impacts', and flags methodological weaknesses like 'selection bias' and 'limited baseline data'. It distinguishes well-established from contested points without blanket disclaimers, e.g., 'evidence on whether community forestry has substantially reduced poverty is less consistent'."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-008",
+  "judge_cost_usd": 0.00092299,
+  "judge_latency_s": 41.626,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes substantive claims that align with established knowledge on Nepal's CFM: 'forest condition has often improved' with specific indicators like 'increased forest regeneration and canopy cover', acknowledges 'mixed' livelihood outcomes and 'equity and inclusion are major concerns', and correctly identifies methodological criticisms like 'heavy reliance on observational case studies', 'selection bias', and 'weak counterfactuals'. No invented citations, terms, or consensus are present; all claims are corroborated by the literature.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by engaging with specific evidence ('reduced illegal harvesting in many areas'), methodological debates ('selection bias', 'weak counterfactuals'), and scholarly concerns ('equity and inclusion are major concerns', 'publication and reporting bias'). It addresses internal critiques like 'measurement problems' and 'geographic and institutional heterogeneity', demonstrating familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response accurately calibrates confidence: 'strongest and most consistent finding' for forest condition improvement, 'much less certain about broader livelihood, equity, and poverty-reduction impacts', and flags methodological weaknesses like 'selection bias' and 'limited baseline data'. It distinguishes well-established from contested points without blanket disclaimers, e.g., 'evidence on whether community forestry has substantially reduced poverty is less consistent'.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to community forestry research in Nepal, such as 'community forest management (CFM)', 'elite capture', 'subsistence access', and references to local governance factors like 'inclusive user groups' and 'support from forestry officials'. It does not substitute Western framings and aligns with the regional scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepal's community forestry evidence base and its methodological criticisms.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepal's community forestry evidence base and its methodological criticisms.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

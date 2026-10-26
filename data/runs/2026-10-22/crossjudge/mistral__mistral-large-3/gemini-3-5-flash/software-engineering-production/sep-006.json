@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. The response produces a concrete data design, including schema definitions, retention policies, and access controls. Quote: 'CREATE TABLE rider_locations_raw... PARTITION BY RANGE (recorded_at);'.\n\n2. It provides a clear sequence of steps, such as daily aggregation jobs, partition management, and explicit commands for backup exclusion. Quote: 'Our daily production backup scripts will explicitly exclude this schema/database using the `--exclude-table-data` flag in `pg_dump`.'.\n\n3. The response includes estimates (e.g., six weeks, two engineers) and verification steps (e.g., DPIA submission, ODPC registration). Quote: 'Actions Required Before Launch: 1. Data Protection Impact Assessment (DPIA)...'.\n\n4. An engineer could execute this plan with only light editing, as it includes specific SQL, API-level checks, and operational procedures.",
+    "constraint_fidelity": "1. The response explicitly acknowledges and adheres to the 30-day retention rule for raw precise location data, using PostgreSQL partitioning and BigQuery partition expiration to enforce it. It also addresses the backup trap by excluding the raw location data from long-term backups. Quote: 'Partition Expiration to 30 days. BigQuery will automatically and permanently delete partitions older than 30 days.' and 'Our daily production backup scripts will explicitly exclude this schema/database...'.\n\n2. The response does not introduce any new third-party vendors or sub-processors, leveraging only PostgreSQL/PostGIS, BigQuery, and Firebase Cloud Messaging. Quote: 'leverage our existing stack (PostgreSQL/PostGIS, BigQuery, FCM)'.\n\n3. The response is designed to fit within the two-engineer, six-week constraint, with explicit pushbacks to product to ensure feasibility. Quote: 'To deliver this in six weeks with 2 engineers...'.\n\n4. The response includes arithmetic and capacity checks, such as batching uploads to reduce mobile data usage and battery drain, and explicitly states the effort required for each component.",
+    "maintainability": "1. The response considers the team that will own the result, proposing solutions proportionate to their size and skill mix (e.g., simple cron jobs, RLS for access control). Quote: 'We will write a simple pg_partman setup or a daily cron job...'.\n\n2. It leaves clear seams, such as partitioned tables for easy purging and aggregated data for analytics, reducing long-term complexity. Quote: 'The data team will have read access to the raw BigQuery table... but their service accounts will be restricted from exporting this raw data.'.\n\n3. Risks and accepted debt are explicitly stated, such as the lack of long-term backups for transient data and the manual process for rider erasure requests. Quote: 'Because this is transient tracking data, we do not need long-term backups of it...'.\n\n4. The design avoids unsafe shortcuts and unowned moving parts, ensuring the solution remains operable in six months.",
+    "production_realism": "1. The response accounts for the stated scale and infrastructure, including battery and data constraints for Nairobi riders, and proposes batching to mitigate these issues. Quote: 'To save battery and mobile data (critical for Nairobi riders on Safaricom/Airtel), the app will cache these points locally...'.\n\n2. The design addresses failure modes such as partial failure (local caching and batch uploads), rollback (partitioned tables for easy purging), and observability (logging and incident triggers). Quote: 'If the rider triggers an \"SOS/Incident\" state in the app, the client switches to real-time streaming...'.\n\n3. The operational burden is proportionate to the team size, with simple cron jobs for partition management and no complex streaming frameworks. Quote: 'We will write a simple pg_partman setup or a daily cron job...'.\n\n4. The response demonstrates correct use of the named technologies (PostgreSQL/PostGIS, BigQuery, FCM) and avoids technically incorrect claims."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-006",
+  "judge_cost_usd": 0.0031231,
+  "judge_latency_s": 13.007,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. The response explicitly acknowledges and adheres to the 30-day retention rule for raw precise location data, using PostgreSQL partitioning and BigQuery partition expiration to enforce it. It also addresses the backup trap by excluding the raw location data from long-term backups. Quote: 'Partition Expiration to 30 days. BigQuery will automatically and permanently delete partitions older than 30 days.' and 'Our daily production backup scripts will explicitly exclude this schema/database...'.\\n\\n2. The response does not introduce any new third-party vendors or sub-processors, leveraging only PostgreSQL/PostGIS, BigQuery, and Firebase Cloud Messaging. Quote: 'leverage our existing stack (PostgreSQL/PostGIS, BigQuery, FCM)'.\\n\\n3. The response is designed to fit within the two-engineer, six-week constraint, with explicit pushbacks to product to ensure feasibility. Quote: 'To deliver this in six weeks with 2 engineers...'.\\n\\n4. The response includes arithmetic and capacity checks, such as batching uploads to reduce mobile data usage and battery drain, and explicitly states the effort required for each component.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. The response accounts for the stated scale and infrastructure, including battery and data constraints for Nairobi riders, and proposes batching to mitigate these issues. Quote: 'To save battery and mobile data (critical for Nairobi riders on Safaricom/Airtel), the app will cache these points locally...'.\\n\\n2. The design addresses failure modes such as partial failure (local caching and batch uploads), rollback (partitioned tables for easy purging), and observability (logging and incident triggers). Quote: 'If the rider triggers an \\\"SOS/Incident\\\" state in the app, the client switches to real-time streaming...'.\\n\\n3. The operational burden is proportionate to the team size, with simple cron jobs for partition management and no complex streaming frameworks. Quote: 'We will write a simple pg_partman setup or a daily cron job...'.\\n\\n4. The response demonstrates correct use of the named technologies (PostgreSQL/PostGIS, BigQuery, FCM) and avoids technically incorrect claims.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. The response produces a concrete data design, including schema definitions, retention policies, and access controls. Quote: 'CREATE TABLE rider_locations_raw... PARTITION BY RANGE (recorded_at);'.\\n\\n2. It provides a clear sequence of steps, such as daily aggregation jobs, partition management, and explicit commands for backup exclusion. Quote: 'Our daily production backup scripts will explicitly exclude this schema/database using the `--exclude-table-data` flag in `pg_dump`.'.\\n\\n3. The response includes estimates (e.g., six weeks, two engineers) and verification steps (e.g., DPIA submission, ODPC registration). Quote: 'Actions Required Before Launch: 1. Data Protection Impact Assessment (DPIA)...'.\\n\\n4. An engineer could execute this plan with only light editing, as it includes specific SQL, API-level checks, and operational procedures.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. The response considers the team that will own the result, proposing solutions proportionate to their size and skill mix (e.g., simple cron jobs, RLS for access control). Quote: 'We will write a simple pg_partman setup or a daily cron job...'.\\n\\n2. It leaves clear seams, such as partitioned tables for easy purging and aggregated data for analytics, reducing long-term complexity. Quote: 'The data team will have read access to the raw BigQuery table... but their service accounts will be restricted from exporting this raw data.'.\\n\\n3. Risks and accepted debt are explicitly stated, such as the lack of long-term backups for transient data and the manual process for rider erasure requests. Quote: 'Because this is transient tracking data, we do not need long-term backups of it...'.\\n\\n4. The design avoids unsafe shortcuts and unowned moving parts, ensuring the solution remains operable in six months.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a highly specific, constraint-aware, and actionable design that fits the team, infrastructure, and legal requirements.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response is a highly specific, constraint-aware, and actionable design that fits the team, infrastructure, and legal requirements.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

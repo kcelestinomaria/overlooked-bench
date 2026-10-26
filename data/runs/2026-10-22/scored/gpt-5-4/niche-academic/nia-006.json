@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing specific mechanisms (e.g., 'seed can clog or flow irregularly unless equipment is modified'), engagement with methods ('mixing teff seed with sand or fertiliser to improve metering'), and scholarly debates (e.g., trade-offs in row planting vs. broadcasting). It discusses evidence-based constraints like 'sieve settings need careful adjustment' and 'two-stage systems work better than direct combining', indicating familiarity with technical literature and practical challenges rather than superficial summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims about teff cultivation that align with known agronomic literature: 'tiny seed size' (correct), 'delicate early growth' (correct), 'lodging is one of the best-known production constraints' (accurate), 'seedlings are fragile' (correct), 'broadcast rather than row-planted' (accurate traditional practice), 'modified seed drills' (real intervention), 'semi-dwarf and lodging-tolerant types' (actual breeding goals). No invented citations, terms, or consensus are detected. All claims are plausible and consistent with specialist knowledge of teff agronomy.",
+    "field_situatedness": "The response uses appropriate agronomic terminology ('lodging', 'seed drills', 'broadcasting', 'threshing') and frameworks specific to crop science and smallholder systems, without substituting Western-centric perspectives. It correctly focuses on Ethiopian highland contexts ('traditionally grown in Ethiopian highlands') and addresses constraints relevant to regional practices (e.g., 'animal traction dominates'). No silent substitution to dominant Anglophone fields is observed; it stays grounded in the agronomic and developmental literature of teff.",
+    "scholarly_calibration": "The response distinguishes well-established constraints (e.g., 'lodging is one of the best-known production constraints') from areas of ongoing effort (e.g., 'progress has been made, but lodging remains a central challenge') and economic limitations ('adoption may be low because machinery is expensive'). It avoids uniform confidence, noting where solutions are partial ('some success, but consistent field performance... remain issues') and does not present contested points as settled. However, it lacks explicit markers of evidential status for all claims, so it is solid but not excellent."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-006",
+  "judge_cost_usd": 0.00114384,
+  "judge_latency_s": 50.215,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims about teff cultivation that align with known agronomic literature: 'tiny seed size' (correct), 'delicate early growth' (correct), 'lodging is one of the best-known production constraints' (accurate), 'seedlings are fragile' (correct), 'broadcast rather than row-planted' (accurate traditional practice), 'modified seed drills' (real intervention), 'semi-dwarf and lodging-tolerant types' (actual breeding goals). No invented citations, terms, or consensus are detected. All claims are plausible and consistent with specialist knowledge of teff agronomy.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing specific mechanisms (e.g., 'seed can clog or flow irregularly unless equipment is modified'), engagement with methods ('mixing teff seed with sand or fertiliser to improve metering'), and scholarly debates (e.g., trade-offs in row planting vs. broadcasting). It discusses evidence-based constraints like 'sieve settings need careful adjustment' and 'two-stage systems work better than direct combining', indicating familiarity with technical literature and practical challenges rather than superficial summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established constraints (e.g., 'lodging is one of the best-known production constraints') from areas of ongoing effort (e.g., 'progress has been made, but lodging remains a central challenge') and economic limitations ('adoption may be low because machinery is expensive'). It avoids uniform confidence, noting where solutions are partial ('some success, but consistent field performance... remain issues') and does not present contested points as settled. However, it lacks explicit markers of evidential status for all claims, so it is solid but not excellent.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate agronomic terminology ('lodging', 'seed drills', 'broadcasting', 'threshing') and frameworks specific to crop science and smallholder systems, without substituting Western-centric perspectives. It correctly focuses on Ethiopian highland contexts ('traditionally grown in Ethiopian highlands') and addresses constraints relevant to regional practices (e.g., 'animal traction dominates'). No silent substitution to dominant Anglophone fields is observed; it stays grounded in the agronomic and developmental literature of teff.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates deep, accurate, and well-situated knowledge of teff agronomy and mechanisation challenges, with specific details beyond survey level.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates deep, accurate, and well-situated knowledge of teff agronomy and mechanisation challenges, with specific details beyond survey level.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

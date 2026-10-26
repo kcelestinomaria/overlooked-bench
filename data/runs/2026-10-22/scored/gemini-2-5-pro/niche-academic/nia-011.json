@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes far beyond encyclopedia level by engaging with methodological specifics (e.g., 'reversing' diachronic processes, instrumental verification of data), evidence quality (noting unreliable older sources), and scholarly debates (privative vs. binary systems, Ur-Bantu hypotheses). It discusses internal tonology rules (Meeussen's Rule environments, downstep mechanisms) and current research frontiers (grammatical tone reconstruction, computational methods). A specialist would recognize this as informed by primary literature, not summaries.",
+    "domain_accuracy": "The response makes numerous substantive claims that are accurate: Meeussen's foundational work on binary H/L tones, Meeussen's Rule (H-H > H-L), processes like tone shift/spread/downstep, depressor consonants, Swahili's tonal loss, lexical vs. grammatical tone distinction, Bastin/Coupez/Mann's BLR3 database, Hyman's privative vs. binary debate, and computational approaches. It correctly names scholars (Meinhof, Guthrie, Meeussen, Hyman) and concepts without inventing citations or terms. Minor quibbles exist (e.g., Meeussen's Rule formulation is simplified but not incorrect), but overall, claims are well-supported and load-bearing for the answer.",
+    "field_situatedness": "The response uses frameworks and terminology central to Bantu tonology (e.g., Meeussen's Rule, downstep, depressor consonants, tonal melodies, privative systems) and cites key scholars (Meeussen, Hyman) and resources (BLR3). It does not substitute Western linguistic frameworks silently; it engages directly with the African linguistics tradition, including non-English scholarship (Meeussen was Belgian). The framing is appropriate for the field.",
+    "scholarly_calibration": "The response distinguishes well-established from contested points: it presents Meeussen's binary system as 'undisputed' consensus, notes the privative vs. binary debate as 'major theoretical debate' with 'complex evidence', and labels the Ur-Bantu question as 'highly speculative'. It also flags data scarcity ('only a fraction have high-quality tonal analysis') and acknowledges limitations of languages like Swahili. Calibration is specific and targeted, not blanket."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00121937,
+  "judge_latency_s": 57.668,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that are accurate: Meeussen's foundational work on binary H/L tones, Meeussen's Rule (H-H > H-L), processes like tone shift/spread/downstep, depressor consonants, Swahili's tonal loss, lexical vs. grammatical tone distinction, Bastin/Coupez/Mann's BLR3 database, Hyman's privative vs. binary debate, and computational approaches. It correctly names scholars (Meinhof, Guthrie, Meeussen, Hyman) and concepts without inventing citations or terms. Minor quibbles exist (e.g., Meeussen's Rule formulation is simplified but not incorrect), but overall, claims are well-supported and load-bearing for the answer.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes far beyond encyclopedia level by engaging with methodological specifics (e.g., 'reversing' diachronic processes, instrumental verification of data), evidence quality (noting unreliable older sources), and scholarly debates (privative vs. binary systems, Ur-Bantu hypotheses). It discusses internal tonology rules (Meeussen's Rule environments, downstep mechanisms) and current research frontiers (grammatical tone reconstruction, computational methods). A specialist would recognize this as informed by primary literature, not summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established from contested points: it presents Meeussen's binary system as 'undisputed' consensus, notes the privative vs. binary debate as 'major theoretical debate' with 'complex evidence', and labels the Ur-Bantu question as 'highly speculative'. It also flags data scarcity ('only a fraction have high-quality tonal analysis') and acknowledges limitations of languages like Swahili. Calibration is specific and targeted, not blanket.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses frameworks and terminology central to Bantu tonology (e.g., Meeussen's Rule, downstep, depressor consonants, tonal melodies, privative systems) and cites key scholars (Meeussen, Hyman) and resources (BLR3). It does not substitute Western linguistic frameworks silently; it engages directly with the African linguistics tradition, including non-English scholarship (Meeussen was Belgian). The framing is appropriate for the field.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of Bantu tonology reconstruction, with accurate details, deep engagement, and well-calibrated scholarly discourse.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of Bantu tonology reconstruction, with accurate details, deep engagement, and well-calibrated scholarly discourse.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

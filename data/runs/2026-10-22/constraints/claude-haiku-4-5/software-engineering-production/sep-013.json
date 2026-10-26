@@ -1,0 +1,89 @@
+{
+  "answers": {
+    "C1_acknowledged": {
+      "probability": 0.08,
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "probability": 0.03,
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "probability": 0.1,
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "probability": 0.06,
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "probability": 0.03,
+      "type": "boolean"
+    }
+  },
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "cost_usd": 0.000158634,
+  "generation_id": "gen_01M5GFKT8J1RSYHEN311408ZBF",
+  "item_content_hash": "0abb76de0fe5d4b1",
+  "item_id": "sep-013",
+  "latency_s": 1.825,
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "protocol_version": "cv-1.0.0",
+  "question_hash": "74d3cbf2d23fb81a",
+  "questions": {
+    "C1_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"No new paid services or servers (KES 0 additional per month).\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "instructions": "Does the response propose adding a new paid service, server, or managed component, such as a second droplet, a load balancer, a managed queue, Redis, or a third-party payment aggregator?",
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"A payment must never be credited twice.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "instructions": "Does the design lack idempotency or deduplication on the M-Pesa transaction ID, so that a redelivered callback or a reconciliation match could credit the same payment twice?",
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Allocate or flag every payment within 15 minutes.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "instructions": "Does the design rely only on receiving callbacks, with no active reconciliation (such as the Daraja Transaction Status API or pulling M-Pesa transaction statements) to catch missed callbacks within 15 minutes?",
+      "type": "boolean"
+    }
+  },
+  "requested_model": "typesafe-ai/jev-1.14.0",
+  "state_truncated": false,
+  "usage": {
+    "inputTokens": 3777,
+    "outputTokens": 124
+  },
+  "verdicts": {
+    "C1": {
+      "p_acknowledged": 0.08,
+      "p_broken": 0.04,
+      "verdict": "kept"
+    },
+    "C2": {
+      "p_acknowledged": 0.03,
+      "p_broken": 0.1,
+      "verdict": "kept"
+    },
+    "C3": {
+      "p_acknowledged": 0.06,
+      "p_broken": 0.03,
+      "verdict": "kept"
+    }
+  },
+  "verifier_model": "typesafe-ai/jev-1.14.0"
+}

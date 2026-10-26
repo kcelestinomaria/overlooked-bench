@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response accounts for the range of learners: specific adaptations for the six students with reading ages below 9 (seating near peers, reading aloud, highlighting key words, oral answers) and for higher attainers (challenge questions, comparison). Adaptations are low-cost and implementable by one teacher (e.g., verbal explanations, structured pairing). No placeholder language; concrete strategies are provided.",
+    "pathway_breadth": "This item does not involve student futures or pathway guidance; it is a history lesson plan. The response is inclusive of the range of learners (wide attainment spread, low reading ages) with specific adaptations (seating, reading aloud, sentence starters, peer support). It addresses differentiation concretely and does not default to generic statements.",
+    "pedagogical_soundness": "The response includes clear learning objectives (identify causes, explain factors, judge significance), activities that build toward them (guided notes, paired task, causal chain, writing), and assessments that measure the objectives (exit quiz checks recall and explanation, writing task measures judgment). Sequencing is coherent with prerequisites introduced before application. The rubric on the sheet has observable criteria. However, the assessment for objective 3 (judgment) is only partially addressed in the exit quiz, which focuses more on recall.",
+    "workload_realism": "Timings sum to 50 minutes (0-5, 5-10, 10-20, 20-30, 30-38, 38-46, 46-50). Materials are feasible: projector, whiteboard, one A4 sheet per student. Preparation is reasonable (creating the sheet and slides). Marking load is low (exit quiz glance-check, verbal live-marking). Class size of 34 is accommodated with pair work and whole-class strategies. No unrealistic assumptions about resources."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-001",
+  "judge_cost_usd": 0.00142208,
+  "judge_latency_s": 39.01,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response includes clear learning objectives (identify causes, explain factors, judge significance), activities that build toward them (guided notes, paired task, causal chain, writing), and assessments that measure the objectives (exit quiz checks recall and explanation, writing task measures judgment). Sequencing is coherent with prerequisites introduced before application. The rubric on the sheet has observable criteria. However, the assessment for objective 3 (judgment) is only partially addressed in the exit quiz, which focuses more on recall.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 50 minutes (0-5, 5-10, 10-20, 20-30, 30-38, 38-46, 46-50). Materials are feasible: projector, whiteboard, one A4 sheet per student. Preparation is reasonable (creating the sheet and slides). Marking load is low (exit quiz glance-check, verbal live-marking). Class size of 34 is accommodated with pair work and whole-class strategies. No unrealistic assumptions about resources.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"This item does not involve student futures or pathway guidance; it is a history lesson plan. The response is inclusive of the range of learners (wide attainment spread, low reading ages) with specific adaptations (seating, reading aloud, sentence starters, peer support). It addresses differentiation concretely and does not default to generic statements.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response accounts for the range of learners: specific adaptations for the six students with reading ages below 9 (seating near peers, reading aloud, highlighting key words, oral answers) and for higher attainers (challenge questions, comparison). Adaptations are low-cost and implementable by one teacher (e.g., verbal explanations, structured pairing). No placeholder language; concrete strategies are provided.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a highly practical and well-structured lesson plan that realistically addresses constraints and differentiation needs.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This is a highly practical and well-structured lesson plan that realistically addresses constraints and differentiation needs.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

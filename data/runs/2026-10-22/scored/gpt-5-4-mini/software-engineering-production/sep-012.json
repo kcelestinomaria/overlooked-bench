@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a detailed plan with phases, deliverables per week, team allocation, and concrete steps like 'POST /notifications' API definition. It includes sequence, observability metrics, and fallback switches. However, it lacks exact commands, code snippets, or verification steps like specific alert thresholds, making it require some refinement before execution.",
+    "constraint_fidelity": "The response explicitly states 'using only existing Redis + Sidekiq' and 'shipping at most one new deployable service this half-year', and outlines a phased migration that protects checkout availability with fallbacks and incremental rollout. It calculates 'about 43 minutes a month at 99.9%' error budget and fits two engineers over ten weeks with a detailed week-by-week plan. All constraints are respected with explicit justification.",
+    "maintainability": "The plan emphasizes simplicity ('avoid event-bus patterns'), versioned APIs, clear ownership boundaries, and documentation of on-call procedures. It states risks like 'overengineering' and avoids complexity disproportionate to the team. However, it does not explicitly mention tests, documentation, or debt acceptance for the new service.",
+    "production_realism": "The plan addresses failure modes like duplicate notifications (idempotency keys), fallback mechanisms, Sidekiq/Redis contention (separate queues, monitoring), and operational burden (two-engineer allocation with specific roles). It considers scale through volume measurement, provider failures, and observability requirements. However, it lacks specific arithmetic on data volumes or concurrency limits."
+  },
+  "dimension_scores": {
+    "actionability": 3,
+    "constraint_fidelity": 4,
+    "maintainability": 3,
+    "production_realism": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-012",
+  "judge_cost_usd": 0.00154344,
+  "judge_latency_s": 43.034,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly states 'using only existing Redis + Sidekiq' and 'shipping at most one new deployable service this half-year', and outlines a phased migration that protects checkout availability with fallbacks and incremental rollout. It calculates 'about 43 minutes a month at 99.9%' error budget and fits two engineers over ten weeks with a detailed week-by-week plan. All constraints are respected with explicit justification.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The plan addresses failure modes like duplicate notifications (idempotency keys), fallback mechanisms, Sidekiq/Redis contention (separate queues, monitoring), and operational burden (two-engineer allocation with specific roles). It considers scale through volume measurement, provider failures, and observability requirements. However, it lacks specific arithmetic on data volumes or concurrency limits.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a detailed plan with phases, deliverables per week, team allocation, and concrete steps like 'POST /notifications' API definition. It includes sequence, observability metrics, and fallback switches. However, it lacks exact commands, code snippets, or verification steps like specific alert thresholds, making it require some refinement before execution.\",\n      \"score\": 3\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The plan emphasizes simplicity ('avoid event-bus patterns'), versioned APIs, clear ownership boundaries, and documentation of on-call procedures. It states risks like 'overengineering' and avoids complexity disproportionate to the team. However, it does not explicitly mention tests, documentation, or debt acceptance for the new service.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"A comprehensive, constraint-aware plan with a phased strangler pattern that prioritizes checkout safety and incremental delivery.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "A comprehensive, constraint-aware plan with a phased strangler pattern that prioritizes checkout safety and incremental delivery.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 83.75
+}

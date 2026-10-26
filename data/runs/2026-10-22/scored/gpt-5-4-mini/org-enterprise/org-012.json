@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a detailed, usable plan with concrete components: phased monthly actions (e.g., 'Months 1–2 — Stabilise and prepare'), deliverables (e.g., 'funding gap analysis'), specific targets (e.g., '2–3 institutional grants secured'), and practical tools (e.g., donor scoring system). It is not a description of process but a ready-to-implement deliverable that could be used in a meeting with light editing.",
+    "constraint_fidelity": "The response explicitly respects all constraints: it acknowledges the 5-person team ('For a 5-person team'), limits fundraising time to 10-20% of staff capacity ('no more than 10–15% of staff time diverted to fundraising'), avoids recommending new hires ('Do not launch anything that requires major operational expansion'), and focuses on executing alongside casework ('70–80% casework and client support'). It shows arithmetic in time allocation and prospect targets (e.g., '8–12 high-quality grant applications over 12 months').",
+    "contextual_realism": "The response is calibrated for a small Jordanian NGO: it avoids US-centric assumptions, recommends realistic funding sources (embassies, regional foundations, subgrants), acknowledges role overlap ('one person leads fundraising coordination'), uses lightweight tools (tracking sheets, templates), and explicitly avoids overhead-heavy activities ('Avoid complex membership programs'). It recognizes constraints like limited infrastructure and prioritizes quick wins.",
+    "jurisdictional_accuracy": "The response avoids US assumptions and is tailored to Jordan/MENA context: it recommends regional funders ('embassy funds, local corporate CSR'), acknowledges ethical storytelling considerations relevant to legal aid, and does not assert US norms. It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it does not deeply address Jordan-specific legal regulations, which is acceptable as the prompt focuses on fundraising diversification, not legal compliance."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-012",
+  "judge_cost_usd": 0.00169697,
+  "judge_latency_s": 48.878,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: it acknowledges the 5-person team ('For a 5-person team'), limits fundraising time to 10-20% of staff capacity ('no more than 10–15% of staff time diverted to fundraising'), avoids recommending new hires ('Do not launch anything that requires major operational expansion'), and focuses on executing alongside casework ('70–80% casework and client support'). It shows arithmetic in time allocation and prospect targets (e.g., '8–12 high-quality grant applications over 12 months').\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Jordanian NGO: it avoids US-centric assumptions, recommends realistic funding sources (embassies, regional foundations, subgrants), acknowledges role overlap ('one person leads fundraising coordination'), uses lightweight tools (tracking sheets, templates), and explicitly avoids overhead-heavy activities ('Avoid complex membership programs'). It recognizes constraints like limited infrastructure and prioritizes quick wins.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a detailed, usable plan with concrete components: phased monthly actions (e.g., 'Months 1–2 — Stabilise and prepare'), deliverables (e.g., 'funding gap analysis'), specific targets (e.g., '2–3 institutional grants secured'), and practical tools (e.g., donor scoring system). It is not a description of process but a ready-to-implement deliverable that could be used in a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response avoids US assumptions and is tailored to Jordan/MENA context: it recommends regional funders ('embassy funds, local corporate CSR'), acknowledges ethical storytelling considerations relevant to legal aid, and does not assert US norms. It provides substantive content rather than generic 'consult a lawyer' disclaimers, though it does not deeply address Jordan-specific legal regulations, which is acceptable as the prompt focuses on fundraising diversification, not legal compliance.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"This response excels in delivering a realistic, actionable plan that respects all constraints and is tailored to a small Jordanian NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response excels in delivering a realistic, actionable plan that respects all constraints and is tailored to a small Jordanian NGO.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

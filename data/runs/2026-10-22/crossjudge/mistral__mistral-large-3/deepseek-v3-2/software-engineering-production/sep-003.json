@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "$180/$9,400 = 1.9% (< 8% constraint)",
+      "evidence_verified": true,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "1. **Deliverable**: The response provides a complete design, rollout plan, and risk assessment, as requested. It includes specific code (middleware, signals), SQL schema, and a week-by-week rollout plan with owners implied (the three backend engineers).\n\n2. **Sequence and estimates**: The rollout plan is broken into four weeks with daily tasks, verification steps (e.g., load testing), and concrete milestones (e.g., 'Enable for 5 low-traffic tenants').\n\n3. **Concrete commands/code**: The response includes executable SQL, Python middleware, and signal handlers. The monitoring and alerting section specifies exact metrics and thresholds.\n\n4. **Verification steps**: The plan includes load testing, gradual rollout, and monitoring to verify p99 latency and other constraints.\n\nAn engineer could start executing this plan immediately with only light editing.",
+    "constraint_fidelity": "1. **C1 (No new infrastructure services)**: The response uses only PostgreSQL and in-process memory, no new services are introduced. This constraint is kept.\n\n2. **C2 (Three backend engineers, four weeks)**: The rollout plan explicitly spans four weeks and does not require more than three engineers. The plan is detailed and feasible within the timeline.\n\n3. **C3 (Monthly cloud spend may rise by at most 8%)**: The response provides a cost analysis showing a 1.9% increase in RDS costs ($180/$9,400), which is within the 8% cap. The arithmetic is shown and correct.\n\n4. **Latency constraint**: The response acknowledges the p99 latency must stay below 220ms and includes load testing to verify this. The design accounts for the latency headroom.\n\nThe response explicitly addresses all constraints, shows the arithmetic for cost and capacity, and does not silently violate any constraints.",
+    "maintainability": "1. **Ownership**: The response assumes the existing team (three backend engineers) will own the result, and the design is proportionate to their skills. The use of Django and PostgreSQL aligns with their current stack.\n\n2. **Complexity**: The added complexity (e.g., advisory locks, batching) is justified and documented. The response flags risks (e.g., advisory lock contention, data loss on restart) and accepted debt (e.g., batch processing lag).\n\n3. **Seams and observability**: The design includes clear seams (feature flags, middleware) and observability (dashboards, metrics). The risks are explicitly stated, not hidden.\n\n4. **Documentation**: The rollout plan includes handoff documentation to the billing team, and the design is straightforward enough for future maintainers.\n\nThe response leaves the system in a maintainable state for the team described.",
+    "production_realism": "1. **Scale and infrastructure**: The response accounts for the existing 1,200 RPS peak traffic and 6 containers, and designs for the additional load (14,400 queries/sec) on PostgreSQL. The use of advisory locks and `UNLOGGED` tables is appropriate for the scale.\n\n2. **Failure modes**: The response addresses partial failure (e.g., batch processing lag, advisory lock contention) and includes a fallback strategy (feature flag disable). It also accounts for rollback (30-minute recovery time) and operational burden (e.g., monitoring dashboards).\n\n3. **Team skill mix**: The design is proportionate to a team of three backend engineers, using Django and PostgreSQL, which they already operate. The rollout plan is gradual and includes testing phases.\n\n4. **Technical correctness**: The use of PostgreSQL advisory locks for rate limiting is technically sound, and the batching of usage metering reduces write load. The response avoids unsafe shortcuts like one INSERT per request.\n\nThe response demonstrates a clear understanding of production realities at the stated scale and team size."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-003",
+  "judge_cost_usd": 0.0030526,
+  "judge_latency_s": 12.75,
+  "judge_model": "mistral/mistral-large-3",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "```json\n{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"1. **C1 (No new infrastructure services)**: The response uses only PostgreSQL and in-process memory, no new services are introduced. This constraint is kept.\\n\\n2. **C2 (Three backend engineers, four weeks)**: The rollout plan explicitly spans four weeks and does not require more than three engineers. The plan is detailed and feasible within the timeline.\\n\\n3. **C3 (Monthly cloud spend may rise by at most 8%)**: The response provides a cost analysis showing a 1.9% increase in RDS costs ($180/$9,400), which is within the 8% cap. The arithmetic is shown and correct.\\n\\n4. **Latency constraint**: The response acknowledges the p99 latency must stay below 220ms and includes load testing to verify this. The design accounts for the latency headroom.\\n\\nThe response explicitly addresses all constraints, shows the arithmetic for cost and capacity, and does not silently violate any constraints.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"1. **Scale and infrastructure**: The response accounts for the existing 1,200 RPS peak traffic and 6 containers, and designs for the additional load (14,400 queries/sec) on PostgreSQL. The use of advisory locks and `UNLOGGED` tables is appropriate for the scale.\\n\\n2. **Failure modes**: The response addresses partial failure (e.g., batch processing lag, advisory lock contention) and includes a fallback strategy (feature flag disable). It also accounts for rollback (30-minute recovery time) and operational burden (e.g., monitoring dashboards).\\n\\n3. **Team skill mix**: The design is proportionate to a team of three backend engineers, using Django and PostgreSQL, which they already operate. The rollout plan is gradual and includes testing phases.\\n\\n4. **Technical correctness**: The use of PostgreSQL advisory locks for rate limiting is technically sound, and the batching of usage metering reduces write load. The response avoids unsafe shortcuts like one INSERT per request.\\n\\nThe response demonstrates a clear understanding of production realities at the stated scale and team size.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"1. **Deliverable**: The response provides a complete design, rollout plan, and risk assessment, as requested. It includes specific code (middleware, signals), SQL schema, and a week-by-week rollout plan with owners implied (the three backend engineers).\\n\\n2. **Sequence and estimates**: The rollout plan is broken into four weeks with daily tasks, verification steps (e.g., load testing), and concrete milestones (e.g., 'Enable for 5 low-traffic tenants').\\n\\n3. **Concrete commands/code**: The response includes executable SQL, Python middleware, and signal handlers. The monitoring and alerting section specifies exact metrics and thresholds.\\n\\n4. **Verification steps**: The plan includes load testing, gradual rollout, and monitoring to verify p99 latency and other constraints.\\n\\nAn engineer could start executing this plan immediately with only light editing.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"1. **Ownership**: The response assumes the existing team (three backend engineers) will own the result, and the design is proportionate to their skills. The use of Django and PostgreSQL aligns with their current stack.\\n\\n2. **Complexity**: The added complexity (e.g., advisory locks, batching) is justified and documented. The response flags risks (e.g., advisory lock contention, data loss on restart) and accepted debt (e.g., batch processing lag).\\n\\n3. **Seams and observability**: The design includes clear seams (feature flags, middleware) and observability (dashboards, metrics). The risks are explicitly stated, not hidden.\\n\\n4. **Documentation**: The rollout plan includes handoff documentation to the billing team, and the design is straightforward enough for future maintainers.\\n\\nThe response leaves the system in a maintainable state for the team described.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is a model of constraint fidelity and production realism, with a fully actionable plan and clear maintainability.\",\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"$180/$9,400 = 1.9% (< 8% constraint)\"\n    }\n  },\n  \"flags\": []\n}\n```",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "The response is a model of constraint fidelity and production realism, with a fully actionable plan and clear maintainability.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

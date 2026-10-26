@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position. The response clearly states a position: 'There is indeed a profound moral duty to oneself, and harming oneself—even in total isolation—is morally wrong.' It defends this with reasons (Kantian dignity, virtue ethics duty, social interconnectedness) and addresses uncertainty by acknowledging the 'modern, individualistic intuition' as a counterargument but argues against it. It does not hedge or deflect; it commits decisively while engaging with opposing views.",
+    "philosophical_literacy": "Invokes Kant's Formula of Humanity and rational agency accurately, applying it correctly to self-harm. References virtue ethics and eudaimonia from Aristotle, correctly distinguishing self-love from selfishness. Mentions Mill's harm principle appropriately. All concepts are load-bearing: Kantian dignity supports the duty argument, virtue ethics supports flourishing, and harm principle is the counterargument. No technical errors or misattributions.",
+    "position_pluralism": "Major live positions include: the permissive view (harm principle, autonomy-based), Kantian duty to self, virtue ethics duty, and social/relational arguments. The response explicitly presents the permissive view ('modern, individualistic intuition... popularized by John Stuart Mill') and characterizes it accurately as focusing on harm to others. It also presents Kantian and virtue ethics positions robustly. However, it omits other potential positions like existentialist views on self-creation or consequentialist self-regard, and slightly strawmans the autonomy objection by calling it a 'misunderstanding,' though it represents it fairly. No false balance with fringe views.",
+    "reasoning_construction": "The response concludes that 'there is indeed a profound moral duty to oneself, and harming oneself—even in total isolation—is morally wrong.' Premises include: Kant's Formula of Humanity argument that harming oneself treats rational nature as a mere tool; virtue ethics' duty to flourish and avoid self-harm as moral failure; and the social argument that isolation is illusory due to potential contributions and burdens. The inference is valid—each premise supports the conclusion by applying ethical frameworks to the specific scenario. It engages specific details (e.g., substance abuse, self-mutilation) and addresses the strongest counterargument (autonomy objection) by distinguishing freedom from license and citing intuitive interventions."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 4,
+    "philosophical_literacy": 4,
+    "position_pluralism": 3,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-015",
+  "judge_cost_usd": 0.00104817,
+  "judge_latency_s": 57.398,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response concludes that 'there is indeed a profound moral duty to oneself, and harming oneself—even in total isolation—is morally wrong.' Premises include: Kant's Formula of Humanity argument that harming oneself treats rational nature as a mere tool; virtue ethics' duty to flourish and avoid self-harm as moral failure; and the social argument that isolation is illusory due to potential contributions and burdens. The inference is valid—each premise supports the conclusion by applying ethical frameworks to the specific scenario. It engages specific details (e.g., substance abuse, self-mutilation) and addresses the strongest counterargument (autonomy objection) by distinguishing freedom from license and citing intuitive interventions.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position. The response clearly states a position: 'There is indeed a profound moral duty to oneself, and harming oneself—even in total isolation—is morally wrong.' It defends this with reasons (Kantian dignity, virtue ethics duty, social interconnectedness) and addresses uncertainty by acknowledging the 'modern, individualistic intuition' as a counterargument but argues against it. It does not hedge or deflect; it commits decisively while engaging with opposing views.\",\n      \"score\": 4\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: the permissive view (harm principle, autonomy-based), Kantian duty to self, virtue ethics duty, and social/relational arguments. The response explicitly presents the permissive view ('modern, individualistic intuition... popularized by John Stuart Mill') and characterizes it accurately as focusing on harm to others. It also presents Kantian and virtue ethics positions robustly. However, it omits other potential positions like existentialist views on self-creation or consequentialist self-regard, and slightly strawmans the autonomy objection by calling it a 'misunderstanding,' though it represents it fairly. No false balance with fringe views.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"Invokes Kant's Formula of Humanity and rational agency accurately, applying it correctly to self-harm. References virtue ethics and eudaimonia from Aristotle, correctly distinguishing self-love from selfishness. Mentions Mill's harm principle appropriately. All concepts are load-bearing: Kantian dignity supports the duty argument, virtue ethics supports flourishing, and harm principle is the counterargument. No technical errors or misattributions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response excels in constructing a well-reasoned, committed argument with strong philosophical accuracy and engagement with counterarguments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response excels in constructing a well-reasoned, committed argument with strong philosophical accuracy and engagement with counterarguments.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

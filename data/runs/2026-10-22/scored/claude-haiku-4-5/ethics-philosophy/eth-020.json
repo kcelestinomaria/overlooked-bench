@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a defended answer to a philosophical question. The response clearly states its position: 'I argue the predictor's accuracy does not make your choice unfree' and 'Your choice remains yours.' It provides decisive reasons (prediction ≠ causation, freedom about agency) and acknowledges the tension between determinist and compatibilist intuitions. While it doesn't explicitly state what would change its mind, it demonstrates calibrated commitment rather than evasion.",
+    "philosophical_literacy": "The response correctly identifies the scenario as a variant of Newcomb's Problem and uses technical terms appropriately: 'determinist intuition', 'compatibilist intuition', 'prediction ≠ causation', 'agency', 'metaphysical openness'. These concepts are load-bearing in the argument rather than decorative. The distinction between logical possibility and real alternative possibility is philosophically sound and relevant to the argument. No misattributions or garbled technical terms are evident.",
+    "position_pluralism": "The response identifies two major live positions: determinist intuition ('your choice is unfree') and compatibilist intuition ('choice can be both predictable and free'). Both are represented accurately as their advocates would recognize them - the determinist position is characterized as viewing choice as 'unfree' and 'predetermined', while compatibilism is described as requiring 'acting on your own desires and reasoning without external coercion'. No fringe positions are given false balance, and no major positions appear to be omitted or strawmanned.",
+    "reasoning_construction": "The response builds a constructed argument with premises that support its conclusion. The conclusion is that the choice remains free despite perfect prediction. Premises include: 1) Prediction ≠ causation (merely describes what you will freely choose), 2) Freedom is about agency not metaphysical openness (flows from reasoning/desires), 3) Ability to do otherwise is misleading (distinguishes logical vs. real possibility), 4) Practical reasoning remains intact (deliberation still occurs). The inference is valid - the conclusion depends on these premises. It engages specifically with the Newcomb's Problem scenario and addresses the strongest counterargument ('couldn't you prove the predictor wrong by choosing A?') in its strongest form."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 4,
+    "position_pluralism": 4,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-020",
+  "judge_cost_usd": 0.0009179,
+  "judge_latency_s": 50.91,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds a constructed argument with premises that support its conclusion. The conclusion is that the choice remains free despite perfect prediction. Premises include: 1) Prediction ≠ causation (merely describes what you will freely choose), 2) Freedom is about agency not metaphysical openness (flows from reasoning/desires), 3) Ability to do otherwise is misleading (distinguishes logical vs. real possibility), 4) Practical reasoning remains intact (deliberation still occurs). The inference is valid - the conclusion depends on these premises. It engages specifically with the Newcomb's Problem scenario and addresses the strongest counterargument ('couldn't you prove the predictor wrong by choosing A?') in its strongest form.\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a defended answer to a philosophical question. The response clearly states its position: 'I argue the predictor's accuracy does not make your choice unfree' and 'Your choice remains yours.' It provides decisive reasons (prediction ≠ causation, freedom about agency) and acknowledges the tension between determinist and compatibilist intuitions. While it doesn't explicitly state what would change its mind, it demonstrates calibrated commitment rather than evasion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response identifies two major live positions: determinist intuition ('your choice is unfree') and compatibilist intuition ('choice can be both predictable and free'). Both are represented accurately as their advocates would recognize them - the determinist position is characterized as viewing choice as 'unfree' and 'predetermined', while compatibilism is described as requiring 'acting on your own desires and reasoning without external coercion'. No fringe positions are given false balance, and no major positions appear to be omitted or strawmanned.\",\n      \"score\": 4\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response correctly identifies the scenario as a variant of Newcomb's Problem and uses technical terms appropriately: 'determinist intuition', 'compatibilist intuition', 'prediction ≠ causation', 'agency', 'metaphysical openness'. These concepts are load-bearing in the argument rather than decorative. The distinction between logical possibility and real alternative possibility is philosophically sound and relevant to the argument. No misattributions or garbled technical terms are evident.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates sophisticated philosophical reasoning with a well-constructed argument that engages deeply with the specific problem.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "This response demonstrates sophisticated philosophical reasoning with a well-constructed argument that engages deeply with the specific problem.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 93.75
+}

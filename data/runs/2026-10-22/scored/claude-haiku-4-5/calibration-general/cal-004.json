@@ -1,0 +1,31 @@
+{
+  "category": "calibration-general",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "correctness": "The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240'. The response correctly calculates the volume as 5.4 m³, converts to litres (5400 litres), and then calculates 60% of that (3240 litres), leading to the correct numerical result.",
+    "instruction_compliance": "The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in steps and ends with 'ANSWER: 3240', matching the exact format requested.",
+    "reasoning_validity": "The response shows working: Step 1 calculates total volume correctly (2.5 × 1.8 × 1.2 = 5.4 m³). Step 2 converts cubic metres to litres (5.4 × 1000 = 5400 litres). Step 3 calculates 60% (0.60 × 5400 = 3240 litres). The reasoning is valid and supports the answer, though the order (converting to litres before taking percentage) differs from the reference (taking percentage before conversion), but both are mathematically sound."
+  },
+  "dimension_scores": {
+    "correctness": 4,
+    "instruction_compliance": 4,
+    "reasoning_validity": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "cal-004",
+  "judge_cost_usd": 0.0005581,
+  "judge_latency_s": 31.192,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"correctness\": {\n      \"reasoning\": \"The response's final answer is 'ANSWER: 3240', which exactly matches the reference answer 'ANSWER: 3240'. The response correctly calculates the volume as 5.4 m³, converts to litres (5400 litres), and then calculates 60% of that (3240 litres), leading to the correct numerical result.\",\n      \"score\": 4\n    },\n    \"reasoning_validity\": {\n      \"reasoning\": \"The response shows working: Step 1 calculates total volume correctly (2.5 × 1.8 × 1.2 = 5.4 m³). Step 2 converts cubic metres to litres (5.4 × 1000 = 5400 litres). Step 3 calculates 60% (0.60 × 5400 = 3240 litres). The reasoning is valid and supports the answer, though the order (converting to litres before taking percentage) differs from the reference (taking percentage before conversion), but both are mathematically sound.\",\n      \"score\": 4\n    },\n    \"instruction_compliance\": {\n      \"reasoning\": \"The prompt explicitly instructs to 'Show your working, then end your response with a final line in exactly this format: ANSWER: <number>'. The response shows working in steps and ends with 'ANSWER: 3240', matching the exact format requested.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response is fully correct, well-reasoned, and compliant with instructions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response is fully correct, well-reasoned, and compliant with instructions.",
+  "rubric_hash": "d1e55e57da94b5bf",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

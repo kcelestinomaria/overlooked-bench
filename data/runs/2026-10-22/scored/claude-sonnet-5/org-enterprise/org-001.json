@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a hiring plan with concrete components: roles (with definitions), sequence (month-by-month), salary bands (in KES), employer on-costs (NSSF, Housing Levy), arithmetic (total costs, envelope fit), and HR actions (outsourcing, contracts). It is usable with light editing (e.g., actual exchange rate) and could be taken to a board meeting.",
+    "constraint_fidelity": "The response explicitly respects all constraints: uses the USD 180,000 grant, calculates 15% indirect cost cap (KES 4,050,000) and 85% direct cost envelope (KES 22,950,000), shows arithmetic for exchange rate (USD 1 = KES 150), personnel costs (KES 13,160,000), and remaining programme funds (KES 9,790,000), fits within the envelope, avoids dedicated HR (outsources payroll), and acknowledges ED handles hiring. All arithmetic adds up correctly.",
+    "contextual_realism": "The response is calibrated for a small Kenyan NGO: avoids dedicated HR (recommends outsourcing payroll), uses part-time roles (Finance and M&E at 0.5 FTE), avoids a driver (budgets field operations instead), acknowledges ED's role (forms a recruitment panel), uses realistic salary bands for Kenyan NGO sector, and flags FX risk and NSSF changes. It recognizes role overlap (Coordinator handles recruitment) and no slack.",
+    "jurisdictional_accuracy": "The response accurately addresses Kenyan jurisdiction: uses KES salary bands, identifies employer on-costs (NSSF, Housing Levy, WIBA), correctly notes PAYE/SHA are employee-borne, advises fixed-term contracts coterminous with grant (lawful termination), mentions NSSF exemption from service pay, and flags local compliance (KRA PIN, background checks). It avoids US assumptions (no equity, no ATS) and provides substantive content, not just 'consult a lawyer'."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-001",
+  "judge_cost_usd": 0.00153333,
+  "judge_latency_s": 48.034,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response explicitly respects all constraints: uses the USD 180,000 grant, calculates 15% indirect cost cap (KES 4,050,000) and 85% direct cost envelope (KES 22,950,000), shows arithmetic for exchange rate (USD 1 = KES 150), personnel costs (KES 13,160,000), and remaining programme funds (KES 9,790,000), fits within the envelope, avoids dedicated HR (outsources payroll), and acknowledges ED handles hiring. All arithmetic adds up correctly.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small Kenyan NGO: avoids dedicated HR (recommends outsourcing payroll), uses part-time roles (Finance and M&E at 0.5 FTE), avoids a driver (budgets field operations instead), acknowledges ED's role (forms a recruitment panel), uses realistic salary bands for Kenyan NGO sector, and flags FX risk and NSSF changes. It recognizes role overlap (Coordinator handles recruitment) and no slack.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a hiring plan with concrete components: roles (with definitions), sequence (month-by-month), salary bands (in KES), employer on-costs (NSSF, Housing Levy), arithmetic (total costs, envelope fit), and HR actions (outsourcing, contracts). It is usable with light editing (e.g., actual exchange rate) and could be taken to a board meeting.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The response accurately addresses Kenyan jurisdiction: uses KES salary bands, identifies employer on-costs (NSSF, Housing Levy, WIBA), correctly notes PAYE/SHA are employee-borne, advises fixed-term contracts coterminous with grant (lawful termination), mentions NSSF exemption from service pay, and flags local compliance (KRA PIN, background checks). It avoids US assumptions (no equity, no ATS) and provides substantive content, not just 'consult a lawyer'.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response is excellent, providing a detailed, context-aware hiring plan that respects all constraints and is actionable for a small Kenyan NGO.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "This response is excellent, providing a detailed, context-aware hiring plan that respects all constraints and is actionable for a small Kenyan NGO.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

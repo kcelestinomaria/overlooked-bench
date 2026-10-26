@@ -152,6 +152,11 @@ class ScoreRecord:
     judge_cost_usd: float | None = None
     judge_raw_output: str = ""
 
+    # Constraint tracks only: {constraint_id: {verdict, evidence,
+    # evidence_verified}}. Empty for every other category, and absent from
+    # records written before m1.3.0, which load with this default.
+    constraint_checks: dict[str, dict[str, Any]] = field(default_factory=dict)
+
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
 
@@ -206,12 +211,18 @@ def _extract_json(text: str) -> dict[str, Any] | None:
                     break
 
     for cand in candidates:
-        try:
-            parsed = json.loads(cand)
-            if isinstance(parsed, dict):
-                return parsed
-        except (json.JSONDecodeError, ValueError):
-            continue
+        # The second attempt per candidate tolerates two known, meaning-free
+        # defects seen from mistral-large-3 in run 2026-10-22 (55 of 231
+        # replies): literal newlines inside string values (strict=False) and
+        # apostrophes escaped as \' . Nothing else is rewritten, so a reply
+        # broken in any other way still fails and counts as a judge error.
+        for text, strict in ((cand, True), (cand.replace("\\'", "'"), False)):
+            try:
+                parsed = json.loads(text, strict=strict)
+                if isinstance(parsed, dict):
+                    return parsed
+            except (json.JSONDecodeError, ValueError):
+                continue
     return None
 
 
@@ -242,7 +253,49 @@ def _item_context(item: Item) -> str:
             "serious thinkers. There is no consensus answer. Do not award or deduct "
             "points for which position the response takes."
         )
+    if item.constraints:
+        lines = [
+            "# Hard constraints to check",
+            "",
+            "Answer every check in the `constraint_checks` block of your JSON. "
+            "YES to a check means the response broke that constraint.",
+            "",
+        ]
+        for c in item.constraints:
+            lines.append(f"- {c['id']}: {c['text']}\n  Check: {c['check']}")
+        parts.append("\n".join(lines))
     return "\n\n".join(parts)
+
+
+def _parse_constraint_checks(
+    item: Item, parsed: dict[str, Any], response_text: str
+) -> dict[str, dict[str, Any]]:
+    """Normalise the judge's per-constraint verdicts.
+
+    An unknown verdict becomes `not_addressed` rather than a guess, and every
+    evidence quote is checked against the response so that only verbatim quotes
+    can ever reach a chart or a card.
+    """
+    from .metrics.software_engineering_production import CONSTRAINT_VERDICTS
+    from .quotes import quote_in_text
+
+    raw = parsed.get("constraint_checks") or {}
+    out: dict[str, dict[str, Any]] = {}
+    for c in item.constraints:
+        entry = raw.get(c["id"]) if isinstance(raw, dict) else None
+        if not isinstance(entry, dict):
+            out[c["id"]] = {"verdict": "missing", "evidence": "", "evidence_verified": False}
+            continue
+        verdict = str(entry.get("verdict", "")).strip().lower()
+        if verdict not in CONSTRAINT_VERDICTS:
+            verdict = "not_addressed"
+        evidence = str(entry.get("evidence") or "").strip()
+        out[c["id"]] = {
+            "verdict": verdict,
+            "evidence": evidence,
+            "evidence_verified": bool(evidence) and quote_in_text(evidence, response_text),
+        }
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -357,6 +410,8 @@ def score_native(
     if isinstance(flags, list):
         rec.flags = rec.flags + [str(f) for f in flags]
     rec.score = metric.weighted_score(scores)
+    if item.constraints:
+        rec.constraint_checks = _parse_constraint_checks(item, parsed, response_text)
 
     if missing:
         # Partial output still yields a score, but it is marked so aggregation

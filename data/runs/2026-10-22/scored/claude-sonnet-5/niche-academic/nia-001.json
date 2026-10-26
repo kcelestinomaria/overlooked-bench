@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by discussing methodological debates (lexicostatistics vs. comparative method), evidence limitations (small corpus, inconsistent data), and specific scholarly positions (e.g., Savà & Tosco's agnosticism). It engages with internal debates (e.g., mixed language hypothesis) and critiques the evidence quality. A specialist would recognize this as informed by the literature, not just summaries.",
+    "domain_accuracy": "The response accurately summarizes key positions (Afroasiatic/Cushitic by Fleming, Nilo-Saharan by Bender, independent Afroasiatic branch by Fleming, mixed language by Vossen, isolate), correctly names scholars (Fleming, Bender, Vossen, Savà, Tosco), and describes methodological issues (lexicostatistics vs. comparative method, small corpus, contact influence). No invented citations or terms are present. Minor error: Fleming did not initially argue for Cushitic affiliation; his early work proposed Ongota as separate. Overall, claims are substantively correct.",
+    "field_situatedness": "The response uses appropriate frameworks and terminology from African historical linguistics (e.g., 'comparative method', 'lexicostatistics', 'genetic classification', 'contact language'), references key scholars in the field (Fleming, Bender, Vossen, Savà, Tosco), and focuses on the relevant regional context (Ethiopia, Lower Omo). It does not substitute Western frameworks and acknowledges non-English scholarship (e.g., Savà & Tosco).",
+    "scholarly_calibration": "The response clearly distinguishes well-established facts (e.g., near-extinction, lack of consensus) from contested claims (e.g., 'no proposal has been supported by systematic sound correspondences'), signals evidential weakness ('weak to moderate at best'), and notes uncertainty ('agnosticism'). It avoids uniform confidence and provides targeted calibration, e.g., 'lexicostatistic comparisons are inherently weak'."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 3,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-001",
+  "judge_cost_usd": 0.00108653,
+  "judge_latency_s": 43.841,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately summarizes key positions (Afroasiatic/Cushitic by Fleming, Nilo-Saharan by Bender, independent Afroasiatic branch by Fleming, mixed language by Vossen, isolate), correctly names scholars (Fleming, Bender, Vossen, Savà, Tosco), and describes methodological issues (lexicostatistics vs. comparative method, small corpus, contact influence). No invented citations or terms are present. Minor error: Fleming did not initially argue for Cushitic affiliation; his early work proposed Ongota as separate. Overall, claims are substantively correct.\",\n      \"score\": 3\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by discussing methodological debates (lexicostatistics vs. comparative method), evidence limitations (small corpus, inconsistent data), and specific scholarly positions (e.g., Savà & Tosco's agnosticism). It engages with internal debates (e.g., mixed language hypothesis) and critiques the evidence quality. A specialist would recognize this as informed by the literature, not just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response clearly distinguishes well-established facts (e.g., near-extinction, lack of consensus) from contested claims (e.g., 'no proposal has been supported by systematic sound correspondences'), signals evidential weakness ('weak to moderate at best'), and notes uncertainty ('agnosticism'). It avoids uniform confidence and provides targeted calibration, e.g., 'lexicostatistic comparisons are inherently weak'.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses appropriate frameworks and terminology from African historical linguistics (e.g., 'comparative method', 'lexicostatistics', 'genetic classification', 'contact language'), references key scholars in the field (Fleming, Bender, Vossen, Savà, Tosco), and focuses on the relevant regional context (Ethiopia, Lower Omo). It does not substitute Western frameworks and acknowledges non-English scholarship (e.g., Savà & Tosco).\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates strong domain competence with accurate, well-calibrated, and field-situated analysis of a niche linguistic debate.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response demonstrates strong domain competence with accurate, well-calibrated, and field-situated analysis of a niche linguistic debate.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 90.0
+}

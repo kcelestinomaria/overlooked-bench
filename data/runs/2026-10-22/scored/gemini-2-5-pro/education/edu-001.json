@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The setting includes a wide attainment spread and six students with reading ages below 9. The response provides concrete differentiation: 'Circulate the room, focusing on the six students... Help them decode the text. Point to the key sentence... Ask them questions... simple icons... act as a visual cue.' This is specific, low-cost, and implementable by one teacher. Also includes challenges for higher attainers. No generic placeholder language.",
+    "pathway_breadth": "The prompt is a lesson plan on historical causes, not student futures or pathway guidance. The response is inclusive of the range of learners: specifically addresses differentiation for six students with low reading ages through targeted support and visual cues, and includes varied activities (pair work, individual, whole-class) for wide attainment spread.",
+    "pedagogical_soundness": "The response states learning objectives: identify M.A.I.N. causes, explain how each contributed to tension, and evaluate significance. Activities align: 'Information Market' builds identification and explanation through slides and worksheet completion. Assessment through 'Four Corners Justification' measures evaluation of significance. Sequencing is coherent with prerequisites (introducing M.A.I.N. before main activity and spark). However, the assessment for 'explain' objective is weak (only cold-calling questions), and the rubric for 'Four Corners' is not observable criteria.",
+    "workload_realism": "Timings sum to 50 minutes: Starter (0-5), Introduction (5-10), Main Activity (10-35), Consolidation (35-45), Plenary (45-50). Materials are feasible: projector, computer, one A4 sheet per student (described concretely), whiteboard. Preparation involves creating slides and worksheet, marking is minimal (collecting worksheets optional). Class size of 34 is managed through individual/silent activity and whole-class strategies. No unrealistic resources assumed."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 4,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 3,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-001",
+  "judge_cost_usd": 0.00145133,
+  "judge_latency_s": 54.13,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response states learning objectives: identify M.A.I.N. causes, explain how each contributed to tension, and evaluate significance. Activities align: 'Information Market' builds identification and explanation through slides and worksheet completion. Assessment through 'Four Corners Justification' measures evaluation of significance. Sequencing is coherent with prerequisites (introducing M.A.I.N. before main activity and spark). However, the assessment for 'explain' objective is weak (only cold-calling questions), and the rubric for 'Four Corners' is not observable criteria.\",\n      \"score\": 3\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"Timings sum to 50 minutes: Starter (0-5), Introduction (5-10), Main Activity (10-35), Consolidation (35-45), Plenary (45-50). Materials are feasible: projector, computer, one A4 sheet per student (described concretely), whiteboard. Preparation involves creating slides and worksheet, marking is minimal (collecting worksheets optional). Class size of 34 is managed through individual/silent activity and whole-class strategies. No unrealistic resources assumed.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt is a lesson plan on historical causes, not student futures or pathway guidance. The response is inclusive of the range of learners: specifically addresses differentiation for six students with low reading ages through targeted support and visual cues, and includes varied activities (pair work, individual, whole-class) for wide attainment spread.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The setting includes a wide attainment spread and six students with reading ages below 9. The response provides concrete differentiation: 'Circulate the room, focusing on the six students... Help them decode the text. Point to the key sentence... Ask them questions... simple icons... act as a visual cue.' This is specific, low-cost, and implementable by one teacher. Also includes challenges for higher attainers. No generic placeholder language.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This is a well-structured, realistic lesson plan with strong differentiation and resource management.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-2-5-pro",
+  "ok": true,
+  "overall_note": "This is a well-structured, realistic lesson plan with strong differentiation and resource management.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 92.5
+}

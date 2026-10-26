@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for a judgement ('Which should she choose, and why? Give a recommendation'). The response states a clear position: 'prefer a carefully designed process that includes limited, explicit equity weighting over a purely blind process'. It provides reasons ('balances merit, reduction of bias, improved representation') and acknowledges uncertainty by specifying conditions ('if underrepresentation is a real concern and the law allows it'). It does not explicitly state what would change its mind or where it is weakest, but the hedging is calibrated to real uncertainty.",
+    "philosophical_literacy": "The response uses no named thinkers, traditions, or technical philosophical terms (e.g., deontology, utilitarianism). It relies on practical concepts like 'fairness', 'structural disadvantages', and 'systemic barriers', which are applied accurately and are load-bearing in the argument. The reasoning is correct and relevant to the ethical question, though it lacks philosophical depth. Since no technical vocabulary is misused, and the concepts are sound, it meets the standard for a non-technical but competent response.",
+    "position_pluralism": "Major live positions include: (1) fully blind processes to avoid bias, (2) explicit weighting to address systemic barriers. The response acknowledges both: 'Fully blind hiring can reduce bias... but may ignore structural disadvantages' and 'Explicit weighting... can advance representation'. Both are represented accurately—advocates would recognize these characterizations. No fringe positions are presented, and there is no false balance. However, it omits deeper philosophical positions (e.g., strict egalitarianism vs. compensatory justice), focusing on practical hybrid approaches.",
+    "reasoning_construction": "The response builds an argument by identifying premises: 'Fully blind hiring can reduce some forms of bias... but may ignore structural disadvantages' and 'Explicit weighting... can advance representation but must be narrowly designed'. It concludes with a hybrid recommendation: 'use a structured process with limited, explicit consideration of underrepresented backgrounds'. The inference is valid—the conclusion follows from balancing the premises. It engages specifics by mentioning 'early resume review', 'scoring rubrics', and 'audit outcomes'. However, it does not address the strongest counterargument (e.g., that explicit weighting might compromise meritocracy or fairness perceptions) in depth, only noting it must be 'narrowly designed'."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 3,
+    "reasoning_construction": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-011",
+  "judge_cost_usd": 0.00090348,
+  "judge_latency_s": 47.925,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response builds an argument by identifying premises: 'Fully blind hiring can reduce some forms of bias... but may ignore structural disadvantages' and 'Explicit weighting... can advance representation but must be narrowly designed'. It concludes with a hybrid recommendation: 'use a structured process with limited, explicit consideration of underrepresented backgrounds'. The inference is valid—the conclusion follows from balancing the premises. It engages specifics by mentioning 'early resume review', 'scoring rubrics', and 'audit outcomes'. However, it does not address the strongest counterargument (e.g., that explicit weighting might compromise meritocracy or fairness perceptions) in depth, only noting it must be 'narrowly designed'.\",\n      \"score\": 3\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for a judgement ('Which should she choose, and why? Give a recommendation'). The response states a clear position: 'prefer a carefully designed process that includes limited, explicit equity weighting over a purely blind process'. It provides reasons ('balances merit, reduction of bias, improved representation') and acknowledges uncertainty by specifying conditions ('if underrepresentation is a real concern and the law allows it'). It does not explicitly state what would change its mind or where it is weakest, but the hedging is calibrated to real uncertainty.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"Major live positions include: (1) fully blind processes to avoid bias, (2) explicit weighting to address systemic barriers. The response acknowledges both: 'Fully blind hiring can reduce bias... but may ignore structural disadvantages' and 'Explicit weighting... can advance representation'. Both are represented accurately—advocates would recognize these characterizations. No fringe positions are presented, and there is no false balance. However, it omits deeper philosophical positions (e.g., strict egalitarianism vs. compensatory justice), focusing on practical hybrid approaches.\",\n      \"score\": 3\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses no named thinkers, traditions, or technical philosophical terms (e.g., deontology, utilitarianism). It relies on practical concepts like 'fairness', 'structural disadvantages', and 'systemic barriers', which are applied accurately and are load-bearing in the argument. The reasoning is correct and relevant to the ethical question, though it lacks philosophical depth. Since no technical vocabulary is misused, and the concepts are sound, it meets the standard for a non-technical but competent response.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a practical, well-reasoned hybrid recommendation that balances competing ethical concerns without deep philosophical exploration.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a practical, well-reasoned hybrid recommendation that balances competing ethical concerns without deep philosophical exploration.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 75.0
+}

@@ -1,6 +1,6 @@
 """Cross-judge validation: score the same responses with a second judge.
 
-    python -m harness.crossjudge --run-id 2026-09-08 --judge deepseek/deepseek-v3.1-terminus
+    python -m harness.crossjudge --run-id 2026-10-22 --judge mistral/mistral-large-3
     python -m harness.crossjudge --run-id 2026-09-08 --judge anthropic/claude-sonnet-4.6 \
         --categories institutional-criticism
 
@@ -187,6 +187,7 @@ def compare(
     pairs: list[tuple[str, str, str, float, float]] = []  # model, cat, item, primary, alt
     dim_pairs: dict[str, list[tuple[int, int]]] = defaultdict(list)
     crit: list[tuple[str, str, float, float]] = []  # model, item, primary, alt
+    verdict_pairs: list[tuple[bool, bool]] = []     # constraint 'violated', primary vs alt
     alt_errors = 0
 
     for spec in specs:
@@ -203,6 +204,11 @@ def compare(
                 for dim, val in (prim.get("dimension_scores") or {}).items():
                     if dim in (alt.get("dimension_scores") or {}):
                         dim_pairs[dim].append((int(val), int(alt["dimension_scores"][dim])))
+                for cid, pv in (prim.get("constraint_checks") or {}).items():
+                    av = (alt.get("constraint_checks") or {}).get(cid)
+                    if av:
+                        verdict_pairs.append((pv.get("verdict") == "violated",
+                                              av.get("verdict") == "violated"))
                 if category == "institutional-criticism":
                     crit.append((
                         spec.key, item.id,
@@ -270,6 +276,21 @@ def compare(
             k: {"mean_delta": round(statistics.fmean(v), 2), "n": len(v)}
             for k, v in sorted(by_category.items())
         },
+        # Per track and model, both judges' means side by side, so a chart can
+        # show where a model's position depends on which judge scored it.
+        "by_category_model": {
+            cat: {
+                mk: {
+                    "primary_mean": round(statistics.fmean(p for m, c, _, p, _ in pairs
+                                                           if m == mk and c == cat), 2),
+                    "cross_mean": round(statistics.fmean(a for m, c, _, _, a in pairs
+                                                         if m == mk and c == cat), 2),
+                    "n": sum(1 for m, c, *_ in pairs if m == mk and c == cat),
+                }
+                for mk in sorted({m for m, c, *_ in pairs if c == cat})
+            }
+            for cat in sorted({c for _, c, *_ in pairs})
+        },
         "bias_by_group": {
             k: {"mean_delta": round(statistics.fmean(v), 2), "n": len(v)}
             for k, v in sorted(by_group.items())
@@ -291,6 +312,21 @@ def compare(
             for k, v in sorted(dim_pairs.items())
         },
     }
+
+    # Constraint verdicts: does a second judge find the same violations? This is
+    # the judge-vs-judge counterpart of the judge-vs-verifier kappa in summary.json.
+    if verdict_pairs:
+        from .analysis import _kappa
+        report["constraint_verdicts"] = {
+            "n": len(verdict_pairs),
+            "agreement_rate": round(
+                100.0 * sum(1 for a, b in verdict_pairs if a == b) / len(verdict_pairs), 2),
+            "primary_violation_rate": round(
+                100.0 * sum(1 for a, _ in verdict_pairs if a) / len(verdict_pairs), 2),
+            "cross_violation_rate": round(
+                100.0 * sum(1 for _, b in verdict_pairs if b) / len(verdict_pairs), 2),
+            "cohens_kappa": _kappa(verdict_pairs),
+        }
 
     # A judge swap is safe when levels shift uniformly and the ORDER survives.
     # Provider-specific movement or group-specific movement is not safe.
@@ -327,6 +363,10 @@ def print_report(rep: dict[str, Any]) -> None:
               "family preference - should be near 0")
     t.add_row("Group spread", f"{rep['group_spread']:.2f}",
               "political preference across matched groups - should be near 0")
+    cvd = rep.get("constraint_verdicts")
+    if cvd:
+        t.add_row("Constraint verdict agreement", f"{cvd['agreement_rate']:.1f}%",
+                  f"kappa {cvd['cohens_kappa']} - do both judges find the same violations?")
     console.print(t)
 
     m = Table(title="Per-model delta (cross - primary)")
@@ -360,7 +400,7 @@ def main(argv: list[str] | None = None) -> int:
         description="Re-score archived responses with a second judge and report the deltas.",
     )
     p.add_argument("--run-id", required=True)
-    p.add_argument("--judge", required=True, help="Cross-judge model id, e.g. deepseek/deepseek-v3.1-terminus")
+    p.add_argument("--judge", required=True, help="Cross-judge model id, e.g. mistral/mistral-large-3")
     p.add_argument("--categories", default="", help="Comma-separated categories (default: all)")
     p.add_argument("--models", default="", help="Comma-separated model keys (default: all enabled)")
     p.add_argument("--limit", type=int, default=0, help="Max items per category")

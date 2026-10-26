@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by detailing specific analytical problems (e.g., misrepresentation of rhythmic structure, imposition of Western harmonic assumptions) and proposing alternatives like graphic notation and local theoretical frameworks. It engages with methodology (e.g., spectrographic analysis) and scholarly debates about representation, indicating familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response accurately describes sléndro and pélog tuning systems, colotomic structure, heterophonic texture, and indigenous concepts like balungan and cengkok. It correctly identifies kepatihan cipher notation as a Javanese alternative and mentions valid analytical approaches like hybrid transcriptions and spectrographic analysis. No invented citations or terms are present, and all claims align with established ethnomusicological knowledge.",
+    "field_situatedness": "The response uses ethnomusicology-specific terminology (e.g., 'colotomic structure,' 'heterophonic,' 'kepatihan,' 'balungan,' 'cengkok') and centers Javanese/Balinese frameworks without substituting Western musical concepts. It acknowledges local pedagogical practices and theoretical traditions, aligning with the field's conventions.",
+    "scholarly_calibration": "The response distinguishes well-established concepts (e.g., sléndro/pélog tuning, colotomic structure) from nuanced issues (e.g., 'the exact intervals vary from one gamelan set to another,' 'cipher notation still simplifies tuning differences'). It avoids uniform confidence by noting limitations of alternatives (e.g., 'may not capture every performance nuance') and does not present contested points as settled."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-012",
+  "judge_cost_usd": 0.00089379,
+  "judge_latency_s": 37.935,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response accurately describes sléndro and pélog tuning systems, colotomic structure, heterophonic texture, and indigenous concepts like balungan and cengkok. It correctly identifies kepatihan cipher notation as a Javanese alternative and mentions valid analytical approaches like hybrid transcriptions and spectrographic analysis. No invented citations or terms are present, and all claims align with established ethnomusicological knowledge.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by detailing specific analytical problems (e.g., misrepresentation of rhythmic structure, imposition of Western harmonic assumptions) and proposing alternatives like graphic notation and local theoretical frameworks. It engages with methodology (e.g., spectrographic analysis) and scholarly debates about representation, indicating familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established concepts (e.g., sléndro/pélog tuning, colotomic structure) from nuanced issues (e.g., 'the exact intervals vary from one gamelan set to another,' 'cipher notation still simplifies tuning differences'). It avoids uniform confidence by noting limitations of alternatives (e.g., 'may not capture every performance nuance') and does not present contested points as settled.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses ethnomusicology-specific terminology (e.g., 'colotomic structure,' 'heterophonic,' 'kepatihan,' 'balungan,' 'cengkok') and centers Javanese/Balinese frameworks without substituting Western musical concepts. It acknowledges local pedagogical practices and theoretical traditions, aligning with the field's conventions.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of ethnomusicological issues in gamelan transcription.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of ethnomusicological issues in gamelan transcription.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

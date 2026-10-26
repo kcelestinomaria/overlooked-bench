@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response does not explicitly address learner diversity (e.g., prior attainment, language barriers, or resource constraints). While activities like 'pair work' and 'oral defense' could implicitly support varied learners, there is no concrete differentiation strategy mentioned, such as adaptations for language needs or varying skill levels. The setting in Morocco might imply multilingual learners, but this is not acknowledged or accommodated.",
+    "pathway_breadth": "The prompt involves vocational training for automotive repair, a non-degree pathway. The response focuses entirely on enhancing vocational skills (diagnostic reasoning and communication) relevant to employment in garages, with no mention of academic or university tracks. It addresses the specific employer complaints and designs for real-world workshop practice, demonstrating substantive engagement with the vocational context.",
+    "pedagogical_soundness": "The response clearly states learning objectives: developing diagnostic reasoning and customer communication skills. Activities align: 'system-mapping' builds understanding of component interactions, 'unfamiliar faults' practice diagnostic reasoning, 'explanation practice' builds communication skills. Assessments measure these objectives: 'unseen-fault practical exam' assesses diagnostic process with rubric, 'customer-explanation component' assesses communication with rubric, 'oral defense' assesses reasoning justification. Sequencing is coherent: foundational system understanding precedes diagnostic practice, which precedes communication integration. Rubrics specify observable criteria like 'checking logical order' and 'avoiding jargon'.",
+    "workload_realism": "The response assumes a vocational training center in Morocco with typical workshop equipment, which is realistic. Activities like 'building functional diagrams' and 'partner role-playing' require minimal additional resources. 'Partnering with local garages' leverages existing community resources without stated budget. '30% of practical sessions' with unfamiliar faults is feasible within module time. Assessment changes like 'oral defense' and 'role-play' are implementable by one instructor with available evaluators (e.g., peers or staff). No unrealistic technology or one-to-one attention demands are made."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 1,
+    "pathway_breadth": 4,
+    "pedagogical_soundness": 4,
+    "workload_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-008",
+  "judge_cost_usd": 0.00092862,
+  "judge_latency_s": 49.709,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"The response clearly states learning objectives: developing diagnostic reasoning and customer communication skills. Activities align: 'system-mapping' builds understanding of component interactions, 'unfamiliar faults' practice diagnostic reasoning, 'explanation practice' builds communication skills. Assessments measure these objectives: 'unseen-fault practical exam' assesses diagnostic process with rubric, 'customer-explanation component' assesses communication with rubric, 'oral defense' assesses reasoning justification. Sequencing is coherent: foundational system understanding precedes diagnostic practice, which precedes communication integration. Rubrics specify observable criteria like 'checking logical order' and 'avoiding jargon'.\",\n      \"score\": 4\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response assumes a vocational training center in Morocco with typical workshop equipment, which is realistic. Activities like 'building functional diagrams' and 'partner role-playing' require minimal additional resources. 'Partnering with local garages' leverages existing community resources without stated budget. '30% of practical sessions' with unfamiliar faults is feasible within module time. Assessment changes like 'oral defense' and 'role-play' are implementable by one instructor with available evaluators (e.g., peers or staff). No unrealistic technology or one-to-one attention demands are made.\",\n      \"score\": 4\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The prompt involves vocational training for automotive repair, a non-degree pathway. The response focuses entirely on enhancing vocational skills (diagnostic reasoning and communication) relevant to employment in garages, with no mention of academic or university tracks. It addresses the specific employer complaints and designs for real-world workshop practice, demonstrating substantive engagement with the vocational context.\",\n      \"score\": 4\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response does not explicitly address learner diversity (e.g., prior attainment, language barriers, or resource constraints). While activities like 'pair work' and 'oral defense' could implicitly support varied learners, there is no concrete differentiation strategy mentioned, such as adaptations for language needs or varying skill levels. The setting in Morocco might imply multilingual learners, but this is not acknowledged or accommodated.\",\n      \"score\": 1\n    }\n  },\n  \"overall_note\": \"The response excellently redesigns the module to address diagnostic reasoning and communication gaps with specific, practical changes, but lacks consideration for learner diversity.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response excellently redesigns the module to address diagnostic reasoning and communication gaps with specific, practical changes, but lacks consideration for learner diversity.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 85.0
+}

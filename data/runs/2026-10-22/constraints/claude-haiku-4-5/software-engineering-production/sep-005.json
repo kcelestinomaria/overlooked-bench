@@ -1,0 +1,89 @@
+{
+  "answers": {
+    "C1_acknowledged": {
+      "probability": 0.15,
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "probability": 0.09,
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "probability": 0.04,
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "probability": 0.16,
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "probability": 0.49,
+      "type": "boolean"
+    }
+  },
+  "attempts": 1,
+  "category": "software-engineering-production",
+  "cost_usd": 0.000300762,
+  "generation_id": "gen_01M5GFKRNXNNZBCAMB36Z4FXVM",
+  "item_content_hash": "b12496aa342f93b5",
+  "item_id": "sep-005",
+  "latency_s": 2.52,
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "protocol_version": "cv-1.0.0",
+  "question_hash": "5ddcbfa64babcf40",
+  "questions": {
+    "C1_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Raw precise location may not be retained longer than 30 days anywhere, including warehouse and backups.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C1_broken": {
+      "instructions": "Does the response propose retaining raw precise GPS location (not aggregated or coarsened) for longer than 30 days in any store, including the analytics warehouse or backups?",
+      "type": "boolean"
+    },
+    "C2_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"No new third-party vendors or sub-processors.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C2_broken": {
+      "instructions": "Does the response recommend adding a new third-party vendor or sub-processor that is not already in the stack (PostgreSQL/PostGIS, BigQuery, Firebase Cloud Messaging), such as a telematics, location-tracking, or analytics SaaS?",
+      "type": "boolean"
+    },
+    "C3_acknowledged": {
+      "instructions": "Does the response explicitly acknowledge that its proposal breaks or relaxes this constraint - \"Two engineers, six weeks.\" - and give a justification for doing so?",
+      "type": "boolean"
+    },
+    "C3_broken": {
+      "instructions": "Does the plan clearly require more than two engineers or more than six weeks?",
+      "type": "boolean"
+    }
+  },
+  "requested_model": "typesafe-ai/jev-1.14.0",
+  "state_truncated": false,
+  "usage": {
+    "inputTokens": 7161,
+    "outputTokens": 124
+  },
+  "verdicts": {
+    "C1": {
+      "p_acknowledged": 0.15,
+      "p_broken": 0.09,
+      "verdict": "kept"
+    },
+    "C2": {
+      "p_acknowledged": 0.04,
+      "p_broken": 0.04,
+      "verdict": "kept"
+    },
+    "C3": {
+      "p_acknowledged": 0.16,
+      "p_broken": 0.49,
+      "verdict": "kept"
+    }
+  },
+  "verifier_model": "typesafe-ai/jev-1.14.0"
+}

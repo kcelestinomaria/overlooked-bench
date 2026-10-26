@@ -34,6 +34,7 @@ mainstream benchmarks are missing and we cannot manufacture internally.
 | `reference` | **Required** for `calibration-general`. The known-correct answer. |
 | `contested` | `ethics-philosophy` only. `true` means no consensus answer exists; the judge is then told not to reward agreement with the mainstream position. |
 | `group`, `institution`, `attributes` | **Required** for `institutional-criticism`. See below. |
+| `constraints`, `title` | **`constraints` required** for `software-engineering-production`, along with `rubric_notes`. See below. |
 
 4. Validate before opening a PR - this makes no API calls and costs nothing:
 
@@ -122,6 +123,57 @@ scoring.
 
 ---
 
+## Adding to `software-engineering-production`
+
+Every number this track publishes - violation rates, the reject-rate leaderboard,
+the quote cards - comes from the constraints an item declares. So the rules are
+about making constraints checkable and hard to fake.
+
+**Every item needs at least one concrete, locally accurate, hard-to-fake
+constraint.** Numbers, not adjectives: "cloud spend may rise at most 8% (USD 752 a
+month)", not "cost-effectively". An existing stack named precisely enough that a
+violation is unambiguous: "PostgreSQL 15 on a single db.m6g.large, no new instance
+or replica", not "use what you have". Team size and skill mix. A real local rule,
+correctly stated: CERT-In's 180-day log retention, works-council co-determination
+under the BetrVG, M-Pesa Daraja's callback behaviour. A constraint that only
+someone who knows the context could have written is one a model cannot satisfy by
+pattern-matching US defaults, and one a copycat benchmark cannot reproduce
+without doing the same work.
+
+Required fields, on top of the usual ones:
+
+```yaml
+  - id: sep-016
+    title: "Short display name for cards (not shown to models)"
+    attributes: {org_region: africa, org_size: small, org_funding: bootstrapped}
+    prompt: |
+      ... the constraints stated in the prompt itself, numbered ...
+    rationale: >
+      The exact failure mode the constraint is meant to catch.
+    rubric_notes: |
+      What a competent answer includes, and what to penalise. Required here.
+    constraints:
+      - id: C1
+        text: No new infrastructure services.
+        check: Does the response recommend adding a new infrastructure service, such as ...?
+```
+
+- Every constraint's `check` must be a yes/no question beginning *Does*, *Do*,
+  *Is* or *Are*, where **YES means the response broke it**. The loader enforces
+  this. Name the specific things that count as a violation, and say what does
+  not ("the existing PostgreSQL does not count as a new service"), because two
+  different instruments answer the check and both must read it the same way.
+- `attributes.org_region` and `attributes.org_size` feed the region and org-size
+  splits. Use the values already present in the file.
+- **Prefer matched sets** when the point is a comparison: same task, stack and
+  constraints, and only the organisation or the jurisdiction changes. Add a
+  `group:` and add the legs together, as with `institutional-criticism`.
+- **No item may reward a preferred architecture, language, vendor or political
+  stance.** "No Redis" is acceptable when it describes the team's real
+  situation. Penalising Redis in an item that does not forbid it is not.
+
+---
+
 ## Changing a rubric
 
 Rubrics live in `harness/metrics/<category>.py`.
@@ -203,6 +255,9 @@ python -m harness.run_eval --run-id 2026-09-08 --stage score --force-rescore
 - Reusing an existing item `id` or model `key` for different content.
 - Adding a single item to an existing `institutional-criticism` group without
   justifying what it does to that group's matching.
+- A `software-engineering-production` constraint that is vague ("keep costs
+  reasonable"), unchecked, or that encodes an architectural preference rather
+  than the team's stated situation.
 - Anything that makes a run depend on state outside the repository.
 
 ---

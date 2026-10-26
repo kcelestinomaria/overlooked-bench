@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific methodological debates (e.g., ICP-MS vs. traditional testing methods like floating on water), discusses epistemic issues like reductionism vs. synergy, and addresses context-dependent efficacy based on Ayurvedic diagnosis (Dosha state). It provides detail on processing techniques (Shodhana, Marana) and contrasts pharmacological isolation with Ayurvedic synthesis, indicating familiarity with scholarly debates rather than just summaries.",
+    "domain_accuracy": "The response correctly identifies Rasashastra as the branch of Ayurveda for herbo-mineral-metallic preparations, mentions Bhasmas and specific metals (mercury, gold, lead, arsenic), accurately describes Tridosha theory, Panchamahabhuta, and concepts like Rasa, Guna, Virya, Vipaka. It correctly characterizes the debate between reductionist biomedical science and holistic epistemology, and introduces 'Reverse Pharmacology' as a contemporary middle ground. No invented citations, terms, or consensus are present; all claims align with established knowledge in Ayurvedic studies.",
+    "field_situatedness": "The response uses Ayurvedic terminology (Rasashastra, Bhasmas, Tridosha, Panchamahabhuta, Shodhana, Marana, Dosha) and frameworks (holistic epistemology, process-product synergy) appropriate to the field. It does not silently substitute Western frameworks but integrates them in the debate context, maintaining respect for the traditional scholarly tradition while discussing biomedical perspectives.",
+    "scholarly_calibration": "The response distinguishes well-established points (e.g., heavy metals as neurotoxins) from contested areas (e.g., whether pharmacological testing misinterprets efficacy). It signals uncertainty implicitly by presenting both sides of the debate and does not present any scholar's proposal as settled fact. However, it lacks explicit calibration markers (e.g., noting that some aspects are hypotheses or disputed) and tends toward balanced presentation rather than targeted calibration of evidential status."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-009",
+  "judge_cost_usd": 0.00098155,
+  "judge_latency_s": 54.317,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response correctly identifies Rasashastra as the branch of Ayurveda for herbo-mineral-metallic preparations, mentions Bhasmas and specific metals (mercury, gold, lead, arsenic), accurately describes Tridosha theory, Panchamahabhuta, and concepts like Rasa, Guna, Virya, Vipaka. It correctly characterizes the debate between reductionist biomedical science and holistic epistemology, and introduces 'Reverse Pharmacology' as a contemporary middle ground. No invented citations, terms, or consensus are present; all claims align with established knowledge in Ayurvedic studies.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific methodological debates (e.g., ICP-MS vs. traditional testing methods like floating on water), discusses epistemic issues like reductionism vs. synergy, and addresses context-dependent efficacy based on Ayurvedic diagnosis (Dosha state). It provides detail on processing techniques (Shodhana, Marana) and contrasts pharmacological isolation with Ayurvedic synthesis, indicating familiarity with scholarly debates rather than just summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established points (e.g., heavy metals as neurotoxins) from contested areas (e.g., whether pharmacological testing misinterprets efficacy). It signals uncertainty implicitly by presenting both sides of the debate and does not present any scholar's proposal as settled fact. However, it lacks explicit calibration markers (e.g., noting that some aspects are hypotheses or disputed) and tends toward balanced presentation rather than targeted calibration of evidential status.\",\n      \"score\": 3\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses Ayurvedic terminology (Rasashastra, Bhasmas, Tridosha, Panchamahabhuta, Shodhana, Marana, Dosha) and frameworks (holistic epistemology, process-product synergy) appropriate to the field. It does not silently substitute Western frameworks but integrates them in the debate context, maintaining respect for the traditional scholarly tradition while discussing biomedical perspectives.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates substantive competence in Ayurvedic studies by accurately engaging with the debate and providing detailed, field-specific arguments.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "This response demonstrates substantive competence in Ayurvedic studies by accurately engaging with the debate and providing detailed, field-specific arguments.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes significantly beyond encyclopedia level by engaging with specific technical issues (e.g., tone plateauing, polarity, prosodic domains), methodological debates (H vs Ø analysis, subgroup reconstruction), and scholarly trends. It discusses internal challenges like morpho-phonological interactions and areal convergence, which are specialist concerns. A Bantuist would recognize this as informed by the literature, not just summaries, as seen in details like 'tonelessness with default pitch realization' and the caution against reconstructing full complexity to Proto-Bantu.",
+    "domain_accuracy": "The response makes numerous substantive claims that align with established Bantu tonology scholarship. It correctly identifies key obstacles like tone instability, morphological interference, documentation issues, and the H vs Ø debate. It accurately references scholars like Malcolm Guthrie and Meeussen, and describes methodological trends without inventing citations or terms. For example, it states 'Meeussen in particular is central for comparative Bantu tonology, especially regarding reconstructed tone classes and tonal rules'—this is verifiable and well-attributed. No fabricated consensus or terminology is detected.",
+    "field_situatedness": "The response uses terminology and frameworks specific to Bantu linguistics, such as 'tonal polarity', 'noun class prefixes', 'Meeussen', and 'subgroup reconstruction'. It does not substitute Western or Anglophone frameworks but stays grounded in Bantu scholarly traditions, including references to key figures and methodological approaches unique to the field. There is no silent substitution or ignoring of non-English scholarship where relevant.",
+    "scholarly_calibration": "The response consistently distinguishes well-established from contested points. It notes broad consensus on Proto-Bantu having contrastive tone and a simple system, but highlights unresolved issues like 'whether Proto-Bantu had H/L or H/Ø' and 'how many lexical tonal patterns should be reconstructed'. It uses phrases like 'partially resolved', 'remain debated', and 'incompletely resolved', showing targeted calibration. It avoids uniform confidence, e.g., stating 'no universally accepted, fully explicit reconstruction... exists'."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00113352,
+  "judge_latency_s": 45.605,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes numerous substantive claims that align with established Bantu tonology scholarship. It correctly identifies key obstacles like tone instability, morphological interference, documentation issues, and the H vs Ø debate. It accurately references scholars like Malcolm Guthrie and Meeussen, and describes methodological trends without inventing citations or terms. For example, it states 'Meeussen in particular is central for comparative Bantu tonology, especially regarding reconstructed tone classes and tonal rules'—this is verifiable and well-attributed. No fabricated consensus or terminology is detected.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes significantly beyond encyclopedia level by engaging with specific technical issues (e.g., tone plateauing, polarity, prosodic domains), methodological debates (H vs Ø analysis, subgroup reconstruction), and scholarly trends. It discusses internal challenges like morpho-phonological interactions and areal convergence, which are specialist concerns. A Bantuist would recognize this as informed by the literature, not just summaries, as seen in details like 'tonelessness with default pitch realization' and the caution against reconstructing full complexity to Proto-Bantu.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response consistently distinguishes well-established from contested points. It notes broad consensus on Proto-Bantu having contrastive tone and a simple system, but highlights unresolved issues like 'whether Proto-Bantu had H/L or H/Ø' and 'how many lexical tonal patterns should be reconstructed'. It uses phrases like 'partially resolved', 'remain debated', and 'incompletely resolved', showing targeted calibration. It avoids uniform confidence, e.g., stating 'no universally accepted, fully explicit reconstruction... exists'.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to Bantu linguistics, such as 'tonal polarity', 'noun class prefixes', 'Meeussen', and 'subgroup reconstruction'. It does not substitute Western or Anglophone frameworks but stays grounded in Bantu scholarly traditions, including references to key figures and methodological approaches unique to the field. There is no silent substitution or ignoring of non-English scholarship where relevant.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates expert-level knowledge of Bantu tonology with precise, well-calibrated, and field-appropriate analysis.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "This response demonstrates expert-level knowledge of Bantu tonology with precise, well-calibrated, and field-appropriate analysis.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

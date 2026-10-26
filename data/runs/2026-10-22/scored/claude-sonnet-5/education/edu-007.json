@@ -1,0 +1,33 @@
+{
+  "category": "education",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "differentiation_and_access": "The response addresses differentiation concretely by explaining how mixed-attainment teaching will be managed: 'Teachers will still make sure every child gets the right level of support and challenge — this happens within the class, through different tasks, questions, and small-group help.' It also mentions 'additional support from teaching assistants' and targeted help, showing awareness of diverse learner needs without requiring unrealistic resources.",
+    "pathway_breadth": "The item does not involve student futures or pathway guidance; it is about teaching grouping methods. The response is inclusive in its approach by advocating for mixed-attainment teaching that benefits all learners, regardless of background or prior ability, and addresses concerns about fairness and support for diverse students.",
+    "pedagogical_soundness": "This dimension evaluates educational approaches, but the response is parent-facing guidance about policy change, not a teaching plan with objectives, activities, or assessments. It does not engage with pedagogical design elements like alignment of objectives, activities, or cognitive demand. The content is purely explanatory and persuasive, not instructional.",
+    "workload_realism": "The response is a communication document, not a teaching plan requiring resource allocation, timing, or workload considerations. It does not address practitioner delivery constraints, materials, or class management. It is a finished letter ready for distribution, not a plan to be implemented by teachers."
+  },
+  "dimension_scores": {
+    "differentiation_and_access": 3,
+    "pathway_breadth": 3,
+    "pedagogical_soundness": 0,
+    "workload_realism": 0
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "edu-007",
+  "judge_cost_usd": 0.00086014,
+  "judge_latency_s": 38.577,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"pedagogical_soundness\": {\n      \"reasoning\": \"This dimension evaluates educational approaches, but the response is parent-facing guidance about policy change, not a teaching plan with objectives, activities, or assessments. It does not engage with pedagogical design elements like alignment of objectives, activities, or cognitive demand. The content is purely explanatory and persuasive, not instructional.\",\n      \"score\": 0\n    },\n    \"workload_realism\": {\n      \"reasoning\": \"The response is a communication document, not a teaching plan requiring resource allocation, timing, or workload considerations. It does not address practitioner delivery constraints, materials, or class management. It is a finished letter ready for distribution, not a plan to be implemented by teachers.\",\n      \"score\": 0\n    },\n    \"pathway_breadth\": {\n      \"reasoning\": \"The item does not involve student futures or pathway guidance; it is about teaching grouping methods. The response is inclusive in its approach by advocating for mixed-attainment teaching that benefits all learners, regardless of background or prior ability, and addresses concerns about fairness and support for diverse students.\",\n      \"score\": 3\n    },\n    \"differentiation_and_access\": {\n      \"reasoning\": \"The response addresses differentiation concretely by explaining how mixed-attainment teaching will be managed: 'Teachers will still make sure every child gets the right level of support and challenge — this happens within the class, through different tasks, questions, and small-group help.' It also mentions 'additional support from teaching assistants' and targeted help, showing awareness of diverse learner needs without requiring unrealistic resources.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response effectively communicates a policy change to parents in plain language, addressing objections and providing evidence-backed reasoning.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "overall_note": "The response effectively communicates a policy change to parents in plain language, addressing objections and providing evidence-backed reasoning.",
+  "rubric_hash": "18b333be7905ccd7",
+  "rubric_version": "1.0.0",
+  "score": 33.75
+}

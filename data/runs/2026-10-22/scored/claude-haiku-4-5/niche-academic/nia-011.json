@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedic level by detailing specific methodological issues (tone vs. stress, morphological interaction, lexical vs. grammatical tone), phonetic realization problems (downstep, contextual variation), and active research areas (Bantu A languages, tone classes). It engages with evidence quality and internal debates, such as determining conservative vs. innovative systems and mechanisms of tone change.",
+    "domain_accuracy": "The response makes several substantive claims: Proto-Bantu likely had a 2-3 tone system (High/Low, possibly Mid), tone was lexically contrastive on roots, grammatical tone marking existed, Bantu A languages provide conservative systems, and Haspelmath & Sims frameworks are referenced. These claims are accurate and reflect current scholarly understanding. No invented citations or terms are present.",
+    "field_situatedness": "The response uses terminology and frameworks specific to Bantu tonology (e.g., 'tone classes', 'Bantu A languages', 'lexical vs. grammatical tone', 'downstep') and references relevant scholars (Haspelmath & Sims). It does not substitute Western or Anglophone framings and is situated within the correct scholarly tradition.",
+    "scholarly_calibration": "The response distinguishes established consensus (e.g., 'Proto-Bantu likely had a 2-3 tone system') from uncertainties (e.g., 'Exact number and nature of proto-tones', 'Mechanisms of tone change'). It uses hedging appropriately ('likely', 'possibly', 'often unclear') without blanket disclaimers, showing specific calibration to the state of the field."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-011",
+  "judge_cost_usd": 0.00073592,
+  "judge_latency_s": 39.439,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes several substantive claims: Proto-Bantu likely had a 2-3 tone system (High/Low, possibly Mid), tone was lexically contrastive on roots, grammatical tone marking existed, Bantu A languages provide conservative systems, and Haspelmath & Sims frameworks are referenced. These claims are accurate and reflect current scholarly understanding. No invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedic level by detailing specific methodological issues (tone vs. stress, morphological interaction, lexical vs. grammatical tone), phonetic realization problems (downstep, contextual variation), and active research areas (Bantu A languages, tone classes). It engages with evidence quality and internal debates, such as determining conservative vs. innovative systems and mechanisms of tone change.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes established consensus (e.g., 'Proto-Bantu likely had a 2-3 tone system') from uncertainties (e.g., 'Exact number and nature of proto-tones', 'Mechanisms of tone change'). It uses hedging appropriately ('likely', 'possibly', 'often unclear') without blanket disclaimers, showing specific calibration to the state of the field.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to Bantu tonology (e.g., 'tone classes', 'Bantu A languages', 'lexical vs. grammatical tone', 'downstep') and references relevant scholars (Haspelmath & Sims). It does not substitute Western or Anglophone framings and is situated within the correct scholarly tradition.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response demonstrates substantive competence in Proto-Bantu tone reconstruction with accurate, detailed, and well-calibrated content.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response demonstrates substantive competence in Proto-Bantu tone reconstruction with accurate, detailed, and well-calibrated content.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

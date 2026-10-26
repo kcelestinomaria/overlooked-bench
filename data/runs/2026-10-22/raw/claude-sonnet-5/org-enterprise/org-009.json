@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "org-enterprise",
+  "completion_tokens": 1329,
+  "cost_usd": 0.01358,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "2d90a492848e1f10",
+  "item_id": "org-009",
+  "latency_s": 17.871,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 145,
+  "provider": "anthropic",
+  "request_fingerprint": "b63ed90e0e0fa84a",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# Recommendation: Negotiate Before Accepting — Don't Take It As-Is\n\nA straight \"yes\" risks the mission and the people you exist to serve. A straight \"no\" leaves significant opportunity on the table. Here's the reasoning, then the path forward.\n\n## Why Not a Flat Yes\n\n**1. Tripling revenue likely requires tripling throughput, not just hours worked.**\nWith 15 people, you probably don't have slack capacity. Hitting 24-hour turnaround under penalty clauses will create pressure to:\n- Speed up processes in ways that may not suit workers who need accommodations (e.g., more processing time, predictable routines, sensory considerations)\n- Hire quickly without proper onboarding/accessibility planning\n- Push existing staff into overtime or stress that undermines the \"safe, dignified employment\" value proposition\n\n**2. Penalty clauses transfer hotel's business risk onto your most vulnerable point: cash flow and worker wellbeing.**\nA social enterprise with 15 staff likely has thin margins and no large buffer. One missed deadline (equipment failure, staff absence, power outage — common in Jakarta) could trigger penalties that wipe out the margin gain entirely, or worse, create a cycle where you're penalized specifically *because* of accommodations (e.g., a employee who needs more time, or absence due to a disability-related health issue).\n\n**3. Revenue tripling doesn't equal mission tripling.**\nIf the contract terms force you to operate like a conventional commercial laundry, you risk mission drift — becoming an organization that happens to employ people with disabilities, rather than one organized around their dignified employment.\n\n## Why Not a Flat No\n\nHotel contracts can provide stable, large-volume, recurring revenue that's hard to get from fragmented retail/individual customers. This could fund wage increases, better equipment, training, and expansion of positions — directly serving the mission if structured well.\n\n## What Must Change First\n\n**Before signing anything:**\n\n1. **Stress-test actual capacity.** Can you hit 24-hour turnaround on your *worst* day (staff absence, equipment issue) — not your best day? Model this concretely, don't assume.\n\n2. **Negotiate the penalty structure:**\n   - Cap penalties (e.g., max % of invoice, not uncapped liability)\n   - Build in a grace mechanism for a limited number of exceptions per month\n   - Propose tiered SLA: 24-hour for standard items, 48-hour for complex/bulk items\n\n3. **Negotiate a ramp-up period** — start with partial volume (e.g., 30-40% of hotel's total laundry) for 2-3 months before scaling to full contract volume. This lets you validate systems before penalties bite.\n\n4. **Secure a cash buffer** specifically earmarked to absorb 2-3 months of potential penalties, separate from operating funds — so a bad week doesn't threaten payroll.\n\n5. **Right-size hiring and training timeline.** If more staff are needed, hire and train them *before* the contract starts, not during ramp-up — with job accommodations built into the workflow design from day one, not retrofitted under deadline pressure.\n\n6. **Get legal review of the contract**, specifically the penalty clause triggers (what counts as \"late\"? force majeure provisions? dispute process?).\n\n7. **Set an internal review trigger** — e.g., if penalties exceed X% of contract revenue in the first quarter, you renegotiate or exit, with that exit clause written into the contract now.\n\n## Bottom Line\n\nThe contract is attractive but the current terms externalize risk onto a workforce structurally less able to absorb that risk (due to accommodation needs, thinner staffing bench, etc.). Go back to the hotel with a counter-proposal: phased ramp-up, capped/tiered penalties, and a pilot period. If they're unwilling to negotiate *any* of these, that's a signal about how they'll treat you as a long-term supplier — and a reason to walk away, even at 3x revenue.",
+  "timestamp_utc": "2026-10-21T23:31:27Z"
+}

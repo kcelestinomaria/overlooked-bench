@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "category": "ethics-philosophy",
+  "completion_tokens": 1356,
+  "cost_usd": 0.01371,
+  "error": null,
+  "finish_reason": "stop",
+  "harness_version": "0.1.0",
+  "item_content_hash": "c51fff86802b73da",
+  "item_id": "eth-006",
+  "latency_s": 21.178,
+  "methodology_version": "m1.3.0",
+  "model_id": "anthropic/claude-sonnet-5",
+  "model_key": "claude-sonnet-5",
+  "ok": true,
+  "prompt_tokens": 75,
+  "provider": "anthropic",
+  "request_fingerprint": "59de2068a432b0e4",
+  "request_params": {
+    "max_tokens": 32000,
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0
+  },
+  "text": "# On Killing and Letting Die\n\nMy position: the killing/letting-die distinction tracks *no intrinsic moral difference*, but it reliably correlates with factors that *do* matter, which explains why our intuitions treat it as significant. The distinction is morally inert in itself; it's a proxy variable.\n\n## The case for inertness\n\nConsider Rachels' paired cases: Smith drowns his nephew in the bathtub for inheritance money. Jones plans the same murder but arrives to find the nephew already slipping under, and simply watches, doing nothing, for the same selfish reason. Jones \"merely\" lets die.\n\nIf killing were intrinsically worse than letting die, Jones should be less culpable than Smith. Almost no one judges this way. Both are equally monstrous. This suggests the moral weight comes from elsewhere: intention, the value placed on the victim's life, the ease of prevention, what the act reveals about the agent's will.\n\n## What actually drives our intuitions\n\nThe distinction *feels* weighty because in ordinary life it's entangled with other variables:\n\n1. **Causal responsibility and counterfactual structure.** Killings typically make someone worse off than they would otherwise have been; lettings-die typically fail to improve a bad situation already in motion (illness, starvation, a fire not of your making). But this is contingent, not necessary — hence Rachels' cases strip it away.\n\n2. **Cost to the agent.** Killing usually requires no sacrifice to refrain from (you just don't act). Letting die often involves *not* helping at some cost to yourself (money, time, risk). Many ethical theories think cost-to-agent is relevant — but that's a fact about *sacrifice*, not about the killing/letting-die label itself. A costless failure to save (Jones) shows this.\n\n3. **Specificity and agency over the causal chain.** Killing usually involves initiating a novel causal sequence targeting a particular victim; omissions often just fail to interrupt one of many chains that could be interrupted. This affects *certainty of responsibility* and *fairness of blame* in cases with many potential rescuers (why am I more responsible than any other bystander?) — but this is a point about distributed responsibility, not about killing vs. letting die per se.\n\n4. **Legal and social coordination value.** We need bright-line rules against killing because prohibiting all failures-to-aid would be impossibly demanding and liberty-destroying. This is a *policy* reason for the law to treat them differently — not a moral reason that tracks the inherent nature of the acts.\n\n## When the distinction *does* matter, and why\n\nThe distinction tracks moral weight only when it's a reliable marker for:\n\n- **Difference in sacrifice required of the agent** (a bystander ignoring a drowning child at no cost vs. a bystander who'd have to risk their life)\n- **Difference in certainty/directness of causation** (vs. diffuse responsibility among many possible helpers)\n- **Difference in what the act signals about intention toward the victim** (targeting someone vs. general inattention)\n- **Institutional/role-based duties** (a doctor's omission is different from a stranger's, because the doctor has accepted a specific duty — but this is role morality, not killing/letting-die per se)\n\nWhere these factors are held constant, as in Rachels' cases, the distinction yields no difference in judgment at all.\n\n## Conclusion\n\nThe precise test: **ask whether removing the killing/letting-die label while holding fixed intention, cost, certainty of causal contribution, and role-based duty changes your judgment.** If not — and in the cleanest cases it doesn't — then the distinction itself is doing no moral work. It's a heuristic that normally tracks real differences (effort, certainty, intention) but should be abandoned when those come apart from it, as in euthanasia debates, trolley-adjacent dilemmas, and triage decisions where clinging to the labels rather than the underlying reasons produces perverse results (e.g., permitting disconnection of a ventilator being called \"letting die\" while a quicker, less painful lethal injection is called \"killing\" and forbidden, even though the patient's welfare interest favors the latter).",
+  "timestamp_utc": "2026-10-21T23:30:03Z"
+}

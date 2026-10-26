@@ -1,0 +1,33 @@
+{
+  "category": "niche-academic",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "depth_beyond_survey": "The response goes beyond encyclopedia level by engaging with specific methodological debates ('quasi-experimental methods', 'difference-in-differences'), distributional effects ('elite capture', 'gender inclusion limitations'), and contextual heterogeneity ('ecological zones, social structure'). It references nuanced scholarly discussions about measurement of complex concepts like 'empowerment' and 'governance', indicating familiarity with the literature rather than summaries.",
+    "domain_accuracy": "The response makes specific, accurate claims about forest condition recovery ('increased forest cover, improved canopy density'), institutional development ('Community Forest User Groups'), and equity issues ('elite capture', 'unequal distribution'). It correctly identifies methodological criticisms like selection bias ('Lure of the Successful Case'), lack of counterfactuals, and over-reliance on perceptual data, all of which align with known scholarly critiques in this field. No invented citations or terms are present.",
+    "field_situatedness": "The response uses terminology and frameworks specific to Nepalese community forestry, such as 'CFUGs' (Community Forest User Groups), references to regional contexts ('Middle Hills', 'Terai'), and policy details ('33% women participation mandate'). It does not substitute a Western framing and engages with the regional scholarly tradition, including social stratification and ecological diversity relevant to Nepal.",
+    "scholarly_calibration": "The response distinguishes well-established outcomes ('clear successes in forest condition') from contested ones ('poverty alleviation is the most critical area of debate') and signals evidential status ('overwhelming evidence', 'evidence suggests', 'mixed or contested'). It avoids uniform confidence and provides specific calibration, such as noting that equity success is 'highly context-dependent' and that methodological shortcomings led to 'over-generalized narratives'."
+  },
+  "dimension_scores": {
+    "depth_beyond_survey": 4,
+    "domain_accuracy": 4,
+    "field_situatedness": 4,
+    "scholarly_calibration": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "nia-008",
+  "judge_cost_usd": 0.00098191,
+  "judge_latency_s": 20.211,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"domain_accuracy\": {\n      \"reasoning\": \"The response makes specific, accurate claims about forest condition recovery ('increased forest cover, improved canopy density'), institutional development ('Community Forest User Groups'), and equity issues ('elite capture', 'unequal distribution'). It correctly identifies methodological criticisms like selection bias ('Lure of the Successful Case'), lack of counterfactuals, and over-reliance on perceptual data, all of which align with known scholarly critiques in this field. No invented citations or terms are present.\",\n      \"score\": 4\n    },\n    \"depth_beyond_survey\": {\n      \"reasoning\": \"The response goes beyond encyclopedia level by engaging with specific methodological debates ('quasi-experimental methods', 'difference-in-differences'), distributional effects ('elite capture', 'gender inclusion limitations'), and contextual heterogeneity ('ecological zones, social structure'). It references nuanced scholarly discussions about measurement of complex concepts like 'empowerment' and 'governance', indicating familiarity with the literature rather than summaries.\",\n      \"score\": 4\n    },\n    \"scholarly_calibration\": {\n      \"reasoning\": \"The response distinguishes well-established outcomes ('clear successes in forest condition') from contested ones ('poverty alleviation is the most critical area of debate') and signals evidential status ('overwhelming evidence', 'evidence suggests', 'mixed or contested'). It avoids uniform confidence and provides specific calibration, such as noting that equity success is 'highly context-dependent' and that methodological shortcomings led to 'over-generalized narratives'.\",\n      \"score\": 4\n    },\n    \"field_situatedness\": {\n      \"reasoning\": \"The response uses terminology and frameworks specific to Nepalese community forestry, such as 'CFUGs' (Community Forest User Groups), references to regional contexts ('Middle Hills', 'Terai'), and policy details ('33% women participation mandate'). It does not substitute a Western framing and engages with the regional scholarly tradition, including social stratification and ecological diversity relevant to Nepal.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepalese community forestry effectiveness and methodological critiques.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "deepseek-v3-2",
+  "ok": true,
+  "overall_note": "This response demonstrates comprehensive, accurate, and well-calibrated knowledge of Nepalese community forestry effectiveness and methodological critiques.",
+  "rubric_hash": "38f36a73a97304f2",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

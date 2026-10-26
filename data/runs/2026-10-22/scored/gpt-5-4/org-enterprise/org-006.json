@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a specific, costed approach with named tools (ODK Central, KoBoToolbox, Android devices), detailed budget breakdown, implementation steps, and sustainability plan. It includes concrete components like hardware lists, training costs, and post-funding scenarios. The output could be used in a meeting with light editing.",
+    "constraint_fidelity": "The response respects all constraints: budget (PHP 383,100 < 400,000), low digital literacy (uses simple mobile forms), intermittent electricity (includes UPS and power banks), no reliable internet (offline-first tools), and 18-month funding end (details sustainability). Arithmetic adds up: hardware PHP 170,600 + software/hosting PHP 37,500 + implementation/training PHP 155,000 + contingency PHP 20,000 = PHP 383,100. Explicitly avoids violating constraints (e.g., no cloud-only systems).",
+    "contextual_realism": "The response is calibrated for a small nonprofit: uses shared devices (not one per staff), avoids complex EMR systems, assumes no dedicated IT staff (recommends internal focal person), includes low-cost open-source tools, and acknowledges staff limitations (simple forms, training). It avoids presupposing enterprise functions and addresses real constraints like intermittent power and low digital literacy.",
+    "jurisdictional_accuracy": "The prompt involves the Philippines but does not specify legal/regulatory elements. The response focuses on technical and operational advice without making jurisdiction-specific claims. It avoids US assumptions (e.g., no mention of US tax or employment norms) and is factually accurate for the context. General accuracy is maintained."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00118862,
+  "judge_latency_s": 37.837,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all constraints: budget (PHP 383,100 < 400,000), low digital literacy (uses simple mobile forms), intermittent electricity (includes UPS and power banks), no reliable internet (offline-first tools), and 18-month funding end (details sustainability). Arithmetic adds up: hardware PHP 170,600 + software/hosting PHP 37,500 + implementation/training PHP 155,000 + contingency PHP 20,000 = PHP 383,100. Explicitly avoids violating constraints (e.g., no cloud-only systems).\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small nonprofit: uses shared devices (not one per staff), avoids complex EMR systems, assumes no dedicated IT staff (recommends internal focal person), includes low-cost open-source tools, and acknowledges staff limitations (simple forms, training). It avoids presupposing enterprise functions and addresses real constraints like intermittent power and low digital literacy.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a specific, costed approach with named tools (ODK Central, KoBoToolbox, Android devices), detailed budget breakdown, implementation steps, and sustainability plan. It includes concrete components like hardware lists, training costs, and post-funding scenarios. The output could be used in a meeting with light editing.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves the Philippines but does not specify legal/regulatory elements. The response focuses on technical and operational advice without making jurisdiction-specific claims. It avoids US assumptions (e.g., no mention of US tax or employment norms) and is factually accurate for the context. General accuracy is maintained.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a highly specific, budget-conscious, and sustainable offline-first digitization plan tailored to the nonprofit's constraints.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4",
+  "ok": true,
+  "overall_note": "The response provides a highly specific, budget-conscious, and sustainable offline-first digitization plan tailored to the nonprofit's constraints.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}

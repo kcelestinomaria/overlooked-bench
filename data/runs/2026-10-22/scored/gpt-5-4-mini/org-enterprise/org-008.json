@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a concrete turnaround plan with quantified analysis ('Improve collections from 70% to 85%', 'Reduce teacher salary bill by 15% to 20%'), specific actions ('No report cards... for persistent arrears', 'Merge underfilled classes'), and a 90-day timeline. It includes unpopular recommendations with justifications, as requested. The output could be used in a board meeting with light editing, though some recommendations (e.g., 'Cut non-essential operating costs') lack granularity.",
+    "constraint_fidelity": "The prompt explicitly stated 'The board will not consider raising fees this year.' The response respects this constraint by stating 'Because fees cannot rise this year' and focusing on other levers. It also quantifies the collection gap (30%) and provides arithmetic for savings (e.g., 'GHS 108,000 + 73,440 + 23,040 + 25,000 = GHS 229,480'), showing fidelity to financial constraints. However, it assumes total expenditure is GHS 720,000 without explicit confirmation from the prompt, which is a minor gap.",
+    "contextual_realism": "The response acknowledges the school's small size and resource constraints by recommending practical, low-cost interventions like 'weekly collections tracking by class', 'parent calls', and 'rent out classrooms after school hours'. It avoids assuming dedicated HR or legal teams, instead suggesting board-approved hardship cases and PTA-supported fundraising. However, it proposes 'subject-specialist part-time teachers', which may be realistic but doesn't fully address the feasibility of finding such staff in a Ghanaian context.",
+    "jurisdictional_accuracy": "The prompt involves a Ghanaian school, but the response makes no jurisdiction-specific legal or regulatory claims. It avoids US assumptions (e.g., no mention of at-will employment or US tax categories). Since the task doesn't explicitly involve law or regulation, I score on general factual accuracy: the arithmetic and recommendations are plausible and context-agnostic, with no errors detected."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 3,
+    "contextual_realism": 3,
+    "jurisdictional_accuracy": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-008",
+  "judge_cost_usd": 0.00123255,
+  "judge_latency_s": 56.826,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The prompt explicitly stated 'The board will not consider raising fees this year.' The response respects this constraint by stating 'Because fees cannot rise this year' and focusing on other levers. It also quantifies the collection gap (30%) and provides arithmetic for savings (e.g., 'GHS 108,000 + 73,440 + 23,040 + 25,000 = GHS 229,480'), showing fidelity to financial constraints. However, it assumes total expenditure is GHS 720,000 without explicit confirmation from the prompt, which is a minor gap.\",\n      \"score\": 3\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response acknowledges the school's small size and resource constraints by recommending practical, low-cost interventions like 'weekly collections tracking by class', 'parent calls', and 'rent out classrooms after school hours'. It avoids assuming dedicated HR or legal teams, instead suggesting board-approved hardship cases and PTA-supported fundraising. However, it proposes 'subject-specialist part-time teachers', which may be realistic but doesn't fully address the feasibility of finding such staff in a Ghanaian context.\",\n      \"score\": 3\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a concrete turnaround plan with quantified analysis ('Improve collections from 70% to 85%', 'Reduce teacher salary bill by 15% to 20%'), specific actions ('No report cards... for persistent arrears', 'Merge underfilled classes'), and a 90-day timeline. It includes unpopular recommendations with justifications, as requested. The output could be used in a board meeting with light editing, though some recommendations (e.g., 'Cut non-essential operating costs') lack granularity.\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a Ghanaian school, but the response makes no jurisdiction-specific legal or regulatory claims. It avoids US assumptions (e.g., no mention of at-will employment or US tax categories). Since the task doesn't explicitly involve law or regulation, I score on general factual accuracy: the arithmetic and recommendations are plausible and context-agnostic, with no errors detected.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a detailed, quantified turnaround plan that respects the no-fee-increase constraint and addresses key financial gaps with actionable recommendations.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response provides a detailed, quantified turnaround plan that respects the no-fee-increase constraint and addresses key financial gaps with actionable recommendations.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 86.25
+}

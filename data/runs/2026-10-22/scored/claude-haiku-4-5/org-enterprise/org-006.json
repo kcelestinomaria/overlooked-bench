@@ -1,0 +1,33 @@
+{
+  "category": "org-enterprise",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "actionability": "The response produces a specific, usable plan: it names actual tools (OpenMRS, CHT, specific hardware), provides a costed breakdown with line items and totals, includes a timeline, and explains post-funding sustainability concretely. It could be taken into a meeting with light editing, as it includes all components requested (tools, costs, sustainability).",
+    "constraint_fidelity": "The response respects all stated constraints: budget (PHP 400,000 total cost PHP 370,000 with buffer), intermittent electricity (solar panel, UPS), no reliable internet (offline-first system), low digital literacy (simple interface, training), and 18-month funding end (sustainability plan). It shows arithmetic with a detailed cost breakdown and totals, and explicitly addresses post-funding sustainability.",
+    "contextual_realism": "The response is calibrated for a small nonprofit: uses affordable hardware (used servers, Xiaomi phones), avoids enterprise SaaS, accounts for low digital literacy with training and simple interfaces, and acknowledges role overlap by training 'system champions' among existing staff. It does not assume dedicated IT or legal functions, and the solar power solution addresses intermittent electricity realistically.",
+    "jurisdictional_accuracy": "The prompt involves a Philippines context but does not specify legal or regulatory requirements. The response avoids US assumptions (e.g., no mention of US-specific tax or employment practices) and focuses on general factual accuracy. It recommends locally appropriate solutions (e.g., solar for intermittent power) and does not make incorrect jurisdiction-specific claims. However, it does not explicitly flag where local professional advice might be needed (e.g., data privacy laws), though this is not heavily emphasized in the prompt."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "contextual_realism": 4,
+    "jurisdictional_accuracy": 3
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "org-006",
+  "judge_cost_usd": 0.00099927,
+  "judge_latency_s": 37.537,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all stated constraints: budget (PHP 400,000 total cost PHP 370,000 with buffer), intermittent electricity (solar panel, UPS), no reliable internet (offline-first system), low digital literacy (simple interface, training), and 18-month funding end (sustainability plan). It shows arithmetic with a detailed cost breakdown and totals, and explicitly addresses post-funding sustainability.\",\n      \"score\": 4\n    },\n    \"contextual_realism\": {\n      \"reasoning\": \"The response is calibrated for a small nonprofit: uses affordable hardware (used servers, Xiaomi phones), avoids enterprise SaaS, accounts for low digital literacy with training and simple interfaces, and acknowledges role overlap by training 'system champions' among existing staff. It does not assume dedicated IT or legal functions, and the solar power solution addresses intermittent electricity realistically.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response produces a specific, usable plan: it names actual tools (OpenMRS, CHT, specific hardware), provides a costed breakdown with line items and totals, includes a timeline, and explains post-funding sustainability concretely. It could be taken into a meeting with light editing, as it includes all components requested (tools, costs, sustainability).\",\n      \"score\": 4\n    },\n    \"jurisdictional_accuracy\": {\n      \"reasoning\": \"The prompt involves a Philippines context but does not specify legal or regulatory requirements. The response avoids US assumptions (e.g., no mention of US-specific tax or employment practices) and focuses on general factual accuracy. It recommends locally appropriate solutions (e.g., solar for intermittent power) and does not make incorrect jurisdiction-specific claims. However, it does not explicitly flag where local professional advice might be needed (e.g., data privacy laws), though this is not heavily emphasized in the prompt.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response provides a highly realistic, actionable, and constraint-aware plan tailored to a resource-limited Philippine nonprofit.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "claude-haiku-4-5",
+  "ok": true,
+  "overall_note": "The response provides a highly realistic, actionable, and constraint-aware plan tailored to a resource-limited Philippine nonprofit.",
+  "rubric_hash": "54770dc7261c5c84",
+  "rubric_version": "1.0.0",
+  "score": 95.0
+}

@@ -1,0 +1,33 @@
+{
+  "category": "ethics-philosophy",
+  "constraint_checks": {},
+  "dimension_reasoning": {
+    "commitment_under_uncertainty": "The prompt asks for an argued position. The response clearly states a position: 'Yes—there is such a thing as a duty to oneself, and in many cases a person can do something wrong even if they harm only themselves.' It defends this with reasons (e.g., rational agency, degradation of personhood) and acknowledges uncertainty by noting it is 'one defensible position' and offering to present opposing views, but it does not explicitly state what would change its mind or where it is least confident. The hedging is calibrated to real uncertainty without evasion.",
+    "philosophical_literacy": "The response uses concepts like 'rational agency', 'dignity', and implicitly draws on Kantian ideas without misattributing them. It distinguishes moral wrongness from legal enforceability accurately. Terms are load-bearing (e.g., 'rational agency' supports the argument). No technical terms are garbled, and the reasoning is correct without relying on dense citations. It offers to provide 'a Kantian argument' or 'utilitarian argument', indicating awareness of traditions, but does not misuse them.",
+    "position_pluralism": "The response acknowledges one major live position (the autonomy-based objection: 'If it’s my life, it’s my choice') and represents it fairly ('One might argue that autonomy means I may use my life however I want, even foolishly'). However, it omits other serious positions, such as consequentialist arguments against duties to oneself or libertarian views emphasizing self-ownership. The treatment of the objection is accurate and not strawmanned, but the breadth is limited to one counterargument.",
+    "reasoning_construction": "The response constructs a clear argument: conclusion is 'A person has duties to themselves... self-harm can be morally wrong even when no one else is directly harmed.' Premises include: rational agency deserves respect (e.g., 'you owe it to yourself to respect that capacity'), some harms degrade the person ('it makes their life worse in a deep sense'), and moral wrongness is distinct from legal enforceability. The inference is valid—premises support the conclusion. It engages specific details (e.g., 'repeatedly intoxicated driving, deliberate self-starvation') and addresses the strongest objection ('If it’s my life, it’s my choice') with a substantive reply ('Autonomy is not the same as permission to disregard one’s own good')."
+  },
+  "dimension_scores": {
+    "commitment_under_uncertainty": 3,
+    "philosophical_literacy": 3,
+    "position_pluralism": 2,
+    "reasoning_construction": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "eth-015",
+  "judge_cost_usd": 0.0009728,
+  "judge_latency_s": 58.48,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"reasoning_construction\": {\n      \"reasoning\": \"The response constructs a clear argument: conclusion is 'A person has duties to themselves... self-harm can be morally wrong even when no one else is directly harmed.' Premises include: rational agency deserves respect (e.g., 'you owe it to yourself to respect that capacity'), some harms degrade the person ('it makes their life worse in a deep sense'), and moral wrongness is distinct from legal enforceability. The inference is valid—premises support the conclusion. It engages specific details (e.g., 'repeatedly intoxicated driving, deliberate self-starvation') and addresses the strongest objection ('If it’s my life, it’s my choice') with a substantive reply ('Autonomy is not the same as permission to disregard one’s own good').\",\n      \"score\": 4\n    },\n    \"commitment_under_uncertainty\": {\n      \"reasoning\": \"The prompt asks for an argued position. The response clearly states a position: 'Yes—there is such a thing as a duty to oneself, and in many cases a person can do something wrong even if they harm only themselves.' It defends this with reasons (e.g., rational agency, degradation of personhood) and acknowledges uncertainty by noting it is 'one defensible position' and offering to present opposing views, but it does not explicitly state what would change its mind or where it is least confident. The hedging is calibrated to real uncertainty without evasion.\",\n      \"score\": 3\n    },\n    \"position_pluralism\": {\n      \"reasoning\": \"The response acknowledges one major live position (the autonomy-based objection: 'If it’s my life, it’s my choice') and represents it fairly ('One might argue that autonomy means I may use my life however I want, even foolishly'). However, it omits other serious positions, such as consequentialist arguments against duties to oneself or libertarian views emphasizing self-ownership. The treatment of the objection is accurate and not strawmanned, but the breadth is limited to one counterargument.\",\n      \"score\": 2\n    },\n    \"philosophical_literacy\": {\n      \"reasoning\": \"The response uses concepts like 'rational agency', 'dignity', and implicitly draws on Kantian ideas without misattributing them. It distinguishes moral wrongness from legal enforceability accurately. Terms are load-bearing (e.g., 'rational agency' supports the argument). No technical terms are garbled, and the reasoning is correct without relying on dense citations. It offers to provide 'a Kantian argument' or 'utilitarian argument', indicating awareness of traditions, but does not misuse them.\",\n      \"score\": 3\n    }\n  },\n  \"overall_note\": \"The response constructs a well-reasoned argument for duties to oneself but lacks comprehensive coverage of rival positions.\",\n  \"flags\": []\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gpt-5-4-mini",
+  "ok": true,
+  "overall_note": "The response constructs a well-reasoned argument for duties to oneself but lacks comprehensive coverage of rival positions.",
+  "rubric_hash": "d78c5cf0e209f1b6",
+  "rubric_version": "1.0.0",
+  "score": 77.5
+}

@@ -1,0 +1,49 @@
+{
+  "category": "software-engineering-production",
+  "constraint_checks": {
+    "C1": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C2": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    },
+    "C3": {
+      "evidence": "",
+      "evidence_verified": false,
+      "verdict": "kept"
+    }
+  },
+  "dimension_reasoning": {
+    "actionability": "The response provides a complete corrected code replacement with concrete changes, prioritized critical fixes, and a clear follow-up list. An engineer could implement this immediately with the code provided, including specific error handling and background task usage.",
+    "constraint_fidelity": "The response respects all hard constraints: no new dependencies (uses only standard library and existing FastAPI/SQLAlchemy), no new infrastructure (uses BackgroundTasks), and all required changes are implementable in this PR within three hours (security fixes, idempotency, error handling). It explicitly moves bigger architectural changes to a follow-up list.",
+    "maintainability": "The corrected code is clear and uses helper functions (safe_send_sms) for error handling. Risks like background task failures are logged, and follow-up items (e.g., database locking, audit table) are explicitly noted for future work, keeping complexity proportionate for the team.",
+    "production_realism": "The response addresses critical production issues: signature verification timing, idempotency (checking order status), error handling (missing order returns 200 to prevent retries), non-blocking SMS via BackgroundTasks, and safe JSON parsing. It considers Paystack's 8-second timeout and duplicate webhook behavior, fitting the fintech context."
+  },
+  "dimension_scores": {
+    "actionability": 4,
+    "constraint_fidelity": 4,
+    "maintainability": 4,
+    "production_realism": 4
+  },
+  "error": null,
+  "flags": [],
+  "item_id": "sep-009",
+  "judge_cost_usd": 0.00123262,
+  "judge_latency_s": 42.6,
+  "judge_model": "deepseek/deepseek-v3.1",
+  "judge_prompt_hash": "bd6140b49d6737e5",
+  "judge_prompt_version": "jp-1.0.0",
+  "judge_raw_output": "{\n  \"dimensions\": {\n    \"constraint_fidelity\": {\n      \"reasoning\": \"The response respects all hard constraints: no new dependencies (uses only standard library and existing FastAPI/SQLAlchemy), no new infrastructure (uses BackgroundTasks), and all required changes are implementable in this PR within three hours (security fixes, idempotency, error handling). It explicitly moves bigger architectural changes to a follow-up list.\",\n      \"score\": 4\n    },\n    \"production_realism\": {\n      \"reasoning\": \"The response addresses critical production issues: signature verification timing, idempotency (checking order status), error handling (missing order returns 200 to prevent retries), non-blocking SMS via BackgroundTasks, and safe JSON parsing. It considers Paystack's 8-second timeout and duplicate webhook behavior, fitting the fintech context.\",\n      \"score\": 4\n    },\n    \"actionability\": {\n      \"reasoning\": \"The response provides a complete corrected code replacement with concrete changes, prioritized critical fixes, and a clear follow-up list. An engineer could implement this immediately with the code provided, including specific error handling and background task usage.\",\n      \"score\": 4\n    },\n    \"maintainability\": {\n      \"reasoning\": \"The corrected code is clear and uses helper functions (safe_send_sms) for error handling. Risks like background task failures are logged, and follow-up items (e.g., database locking, audit table) are explicitly noted for future work, keeping complexity proportionate for the team.\",\n      \"score\": 4\n    }\n  },\n  \"overall_note\": \"The response provides a thorough, constraint-aware code review with corrected code and clear prioritization.\",\n  \"flags\": [],\n  \"constraint_checks\": {\n    \"C1\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C2\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    },\n    \"C3\": {\n      \"verdict\": \"kept\",\n      \"evidence\": \"\"\n    }\n  }\n}",
+  "methodology_version": "m1.3.0",
+  "metric_engine": "native",
+  "model_key": "gemini-3-5-flash",
+  "ok": true,
+  "overall_note": "The response provides a thorough, constraint-aware code review with corrected code and clear prioritization.",
+  "rubric_hash": "0b4c52d8ad5d27a3",
+  "rubric_version": "1.0.0",
+  "score": 100.0
+}
